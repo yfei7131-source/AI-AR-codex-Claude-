@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AI/AR Glasses V1 app-level event draft",
+  "type": "object",
+  "required": ["version", "event", "request_id", "payload"],
+  "properties": {
+    "version": {"const": "1.0"},
+    "event": {"enum": ["capture.request", "capture.ready", "voice.note", "hud.update", "task.draft", "task.confirm", "device.status", "error"]},
+    "request_id": {"type": "string", "minLength": 1, "maxLength": 80},
+    "payload": {"type": "object"},
+    "timestamp_ms": {"type": "integer", "minimum": 0}
+  },
+  "additionalProperties": false
+}

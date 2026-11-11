@@ -1,0 +1,80 @@
+COMMAND ["C:/codex-tools/glasses-idf/venv/Scripts/python.exe", "C:\\codex-tools\\glasses-idf\\sdk\\esp-idf-v5.4.3\\tools\\idf.py", "-C", "C:\\codex-tools\\glasses-idf\\work\\eye-v22\\project", "-B", "C:\\codex-tools\\glasses-idf\\work\\eye-v22\\project\\build", "-DIDF_TARGET=esp32s3", "-DSDKCONFIG_DEFAULTS=sdkconfig.defaults;sdkconfig.eye.defaults", "reconfigure", "build"]
+Executing action: reconfigure
+Running cmake in directory C:\codex-tools\glasses-idf\work\eye-v22\project\build
+Executing "cmake -G Ninja -DPYTHON_DEPS_CHECKED=1 -DPYTHON=C:\codex-tools\glasses-idf\venv\Scripts\python.exe -DESP_PLATFORM=1 -DIDF_TARGET=esp32s3 -DSDKCONFIG_DEFAULTS=sdkconfig.defaults;sdkconfig.eye.defaults -DCCACHE_ENABLE=0 C:\codex-tools\glasses-idf\work\eye-v22\project"...
+-- Building ESP-IDF components for target esp32s3
+NOTICE: Processing 3 dependencies:
+NOTICE: [1/3] espressif/esp32-camera (2.0.16)
+NOTICE: [2/3] espressif/esp_jpeg (1.3.2)
+NOTICE: [3/3] idf (5.4.3)
+-- Project sdkconfig file C:/codex-tools/glasses-idf/work/eye-v22/project/sdkconfig
+Loading defaults file C:/codex-tools/glasses-idf/work/eye-v22/project/sdkconfig.defaults...
+Loading defaults file C:/codex-tools/glasses-idf/work/eye-v22/project/sdkconfig.eye.defaults...
+-- Compiler supported targets: xtensa-esp-elf
+-- USING O3
+-- App "ai_ar_glasses_device" version: 0.2.0
+-- Adding linker script C:/codex-tools/glasses-idf/work/eye-v22/project/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script C:/codex-tools/glasses-idf/work/eye-v22/project/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
+-- Adding linker script C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
+-- Adding linker script C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_rom/esp32s3/ld/esp32s3.rom.bt_funcs.ld
+-- Adding linker script C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
+-- Adding linker script C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_rom/esp32s3/ld/esp32s3.rom.wdt.ld
+-- Adding linker script C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_rom/esp32s3/ld/esp32s3.rom.version.ld
+-- Adding linker script C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_rom/esp32s3/ld/esp32s3.rom.ble_cca.ld
+-- Adding linker script C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_rom/esp32s3/ld/esp32s3.rom.ble_test.ld
+-- Adding linker script C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
+-- Adding linker script C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/soc/esp32s3/ld/esp32s3.peripherals.ld
+Traceback (most recent call last):
+  File "C:\codex-tools\glasses-idf\sdk\esp-idf-v5.4.3\components\esp_rom\gen_gdbinit.py", line 72, in <module>
+    gdbinit_lines = generate_gdbinit_rom_add_symbols(target)
+  File "C:\codex-tools\glasses-idf\sdk\esp-idf-v5.4.3\components\esp_rom\gen_gdbinit.py", line 32, in generate_gdbinit_rom_add_symbols
+    raise EnvironmentError(
+        'ESP_ROM_ELF_DIR environment variable is not defined. Please try to run IDF "install" and "export" scripts.')
+OSError: ESP_ROM_ELF_DIR environment variable is not defined. Please try to run IDF "install" and "export" scripts.
+CMake Warning at C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/tools/cmake/gdbinit.cmake:52 (message):
+  Error while generating esp_rom gdbinit
+Call Stack (most recent call first):
+  C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/tools/cmake/project.cmake:356 (__generate_gdbinit)
+  C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/tools/cmake/project.cmake:941 (__project_info)
+  CMakeLists.txt:3 (project)
+
+
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_driver_ana_cmpr esp_driver_cam esp_driver_dac esp_driver_gpio esp_driver_gptimer esp_driver_i2c esp_driver_i2s esp_driver_isp esp_driver_jpeg esp_driver_ledc esp_driver_mcpwm esp_driver_parlio esp_driver_pcnt esp_driver_ppa esp_driver_rmt esp_driver_sdio esp_driver_sdm esp_driver_sdmmc esp_driver_sdspi esp_driver_spi esp_driver_touch_sens esp_driver_tsens esp_driver_uart esp_driver_usb_serial_jtag esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_security esp_system esp_timer esp_vfs_console esp_wifi espcoredump espressif__esp32-camera espressif__esp_jpeg esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash nvs_sec_provider openthread partition_table perfmon protobuf-c protocomm pthread rt sdmmc soc spi_flash spiffs tcp_transport touch_element ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/app_trace C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/app_update C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/bootloader C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/bootloader_support C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/bt C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/cmock C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/console C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/cxx C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/driver C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/efuse C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp-tls C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_adc C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_app_format C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_bootloader_format C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_coex C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_common C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_driver_ana_cmpr C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_driver_cam C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_driver_dac C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_driver_gpio C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_driver_gptimer C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_driver_i2c C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_driver_i2s C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_driver_isp C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_driver_jpeg C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_driver_ledc C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_driver_mcpwm C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_driver_parlio C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_driver_pcnt C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_driver_ppa C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_driver_rmt C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_driver_sdio C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_driver_sdm C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_driver_sdmmc C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_driver_sdspi C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_driver_spi C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_driver_touch_sens C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_driver_tsens C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_driver_uart C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_driver_usb_serial_jtag C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_eth C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_event C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_gdbstub C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_hid C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_http_client C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_http_server C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_https_ota C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_https_server C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_hw_support C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_lcd C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_local_ctrl C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_mm C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_netif C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_netif_stack C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_partition C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_phy C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_pm C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_psram C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_ringbuf C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_rom C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_security C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_system C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_timer C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_vfs_console C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esp_wifi C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/espcoredump C:/codex-tools/glasses-idf/work/eye-v22/project/managed_components/espressif__esp32-camera C:/codex-tools/glasses-idf/work/eye-v22/project/managed_components/espressif__esp_jpeg C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/esptool_py C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/fatfs C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/freertos C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/hal C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/heap C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/http_parser C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/idf_test C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/ieee802154 C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/json C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/log C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/lwip C:/codex-tools/glasses-idf/work/eye-v22/project/main C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/mbedtls C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/mqtt C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/newlib C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/nvs_flash C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/nvs_sec_provider C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/openthread C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/partition_table C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/perfmon C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/protobuf-c C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/protocomm C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/pthread C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/rt C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/sdmmc C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/soc C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/spi_flash C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/spiffs C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/tcp_transport C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/touch_element C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/ulp C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/unity C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/usb C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/vfs C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/wear_levelling C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/wifi_provisioning C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/wpa_supplicant C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/xtensa
+-- Configuring done (12.1s)
+-- Generating done (2.7s)
+-- Build files have been written to: C:/codex-tools/glasses-idf/work/eye-v22/project/build
+Executing action: all (aliases: build)
+Running ninja in directory C:\codex-tools\glasses-idf\work\eye-v22\project\build
+Executing "ninja all"...
+[1/13] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[2/13] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/button.c.obj
+[3/13] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/media_core.c.obj
+[4/13] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ble_control.c.obj
+[5/13] Performing build step for 'bootloader'
+[1/1] C:\Windows\system32\cmd.exe /C "cd /D C:\codex-tools\glasses-idf\work\eye-v22\project\build\bootloader\esp-idf\esptool_py && C:\codex-tools\glasses-idf\venv\Scripts\python.exe C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/codex-tools/glasses-idf/work/eye-v22/project/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5130 bytes. 0x2ed0 bytes (37%) free.
+[6/13] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/media_service.c.obj
+[7/13] No install step for 'bootloader'
+[8/13] Completed 'bootloader'
+[9/13] Linking C static library esp-idf\main\libmain.a
+[10/13] Generating ld/sections.ld
+[11/13] Linking CXX executable ai_ar_glasses_device.elf
+[12/13] Generating binary image from built executable
+esptool.py v4.13.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated C:/codex-tools/glasses-idf/work/eye-v22/project/build/ai_ar_glasses_device.bin
+[13/13] C:\Windows\system32\cmd.exe /C "cd /D C:\codex-tools\glasses-idf\work\eye-v22\project\build\esp-idf\esptool_py && C:\codex-tools\glasses-idf\venv\Scripts\python.exe C:/codex-tools/glasses-idf/sdk/esp-idf-v5.4.3/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/codex-tools/glasses-idf/work/eye-v22/project/build/partition_table/partition-table.bin C:/codex-tools/glasses-idf/work/eye-v22/project/build/ai_ar_glasses_device.bin"
+ai_ar_glasses_device.bin binary size 0xb1650 bytes. Smallest app partition is 0x100000 bytes. 0x4e9b0 bytes (31%) free.
+
+Project build complete. To flash, run:
+ idf.py flash
+or
+ idf.py -p PORT flash
+or
+ python -m esptool --chip esp32s3 -b 460800 --before default_reset --after hard_reset write_flash --flash_mode dio --flash_size 8MB --flash_freq 80m 0x0 ..\..\..\..\..\..\codex-tools\glasses-idf\work\eye-v22\project\build\bootloader\bootloader.bin 0x8000 ..\..\..\..\..\..\codex-tools\glasses-idf\work\eye-v22\project\build\partition_table\partition-table.bin 0x10000 ..\..\..\..\..\..\codex-tools\glasses-idf\work\eye-v22\project\build\ai_ar_glasses_device.bin
+or from the "C:\codex-tools\glasses-idf\work\eye-v22\project\build" directory
+ python -m esptool --chip esp32s3 -b 460800 --before default_reset --after hard_reset write_flash "@flash_args"

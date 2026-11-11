@@ -1,0 +1,17 @@
+menu "AI/AR Glasses device"
+choice GL_BOARD
+    prompt "Board profile (does not certify privacy interlock)"
+    default GL_BOARD_UNCONFIGURED
+config GL_BOARD_UNCONFIGURED
+    bool "Unconfigured: never access camera/audio/button GPIO"
+config GL_BOARD_EYE_V22
+    bool "Espressif ESP32-S3-EYE MB v2.2 (camera locked: privacy interlock not verified)"
+endchoice
+config GL_MEDIA_DEV_AP
+    bool "Enable local development AP/media server after physical pairing window"
+    default n
+    help
+        Disabled by default. Does not unlock camera privacy interlocks.
+        Requires >=3s physical button pairing window and explicit encrypted BLE session open.
+        Development-only WPA2 + short-lived bearer HTTP, not production ownership/TLS certification.
+endmenu
