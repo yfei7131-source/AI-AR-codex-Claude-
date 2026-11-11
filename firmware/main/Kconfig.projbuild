@@ -6,6 +6,8 @@ config GL_BOARD_UNCONFIGURED
     bool "Unconfigured: never access camera/audio/button GPIO"
 config GL_BOARD_EYE_V22
     bool "Espressif ESP32-S3-EYE MB v2.2 (camera locked: privacy interlock not verified)"
+config GL_BOARD_S3_CARRIER_A
+    bool "S3-CARRIER-A / DevKitC-1 v1.1 N16R8 (bench, camera locked)"
 endchoice
 config GL_MEDIA_DEV_AP
     bool "Enable local development AP/media server after physical pairing window"
