@@ -1,0 +1,53 @@
+test_hud (test_core.CoreTest.test_hud) ... ok
+test_mock_marked_as_simulation (test_core.CoreTest.test_mock_marked_as_simulation) ... ok
+test_note_lifecycle (test_core.CoreTest.test_note_lifecycle) ... ok
+test_require_key (test_core.CoreTest.test_require_key) ... ok
+test_task_cannot_execute_without_confirmation (test_core.CoreTest.test_task_cannot_execute_without_confirmation) ... ok
+test_ask_hud (test_http.HttpTest.test_ask_hud) ... ok
+test_delete (test_http.HttpTest.test_delete) ... ok
+test_health (test_http.HttpTest.test_health) ... ok
+test_task_consent (test_http.HttpTest.test_task_consent) ... ok
+test_cli_output_contains_metadata_only (test_verify_live.LiveVerifierTest.test_cli_output_contains_metadata_only) ... ok
+test_consent_required_before_read_or_network (test_verify_live.LiveVerifierTest.test_consent_required_before_read_or_network) ... ok
+test_demo_or_unready_health_never_uploads (test_verify_live.LiveVerifierTest.test_demo_or_unready_health_never_uploads) ... ok
+test_invalid_json_is_safe_failure (test_verify_live.LiveVerifierTest.test_invalid_json_is_safe_failure) ... ok
+test_live_contract_sends_image_and_explicit_consent (test_verify_live.LiveVerifierTest.test_live_contract_sends_image_and_explicit_consent) ... ok
+test_nonimage_and_oversized_are_rejected (test_verify_live.LiveVerifierTest.test_nonimage_and_oversized_are_rejected) ... ok
+test_rejects_demo_or_malformed_success (test_verify_live.LiveVerifierTest.test_rejects_demo_or_malformed_success) ... ok
+test_rejects_nonlocal_or_ambiguous_urls (test_verify_live.LiveVerifierTest.test_rejects_nonlocal_or_ambiguous_urls) ... ok
+test_rejects_redirect (test_verify_live.LiveVerifierTest.test_rejects_redirect) ... ok
+test_timeout_and_http_error_are_safe_failures (test_verify_live.LiveVerifierTest.test_timeout_and_http_error_are_safe_failures) ... ok
+test_hud_three_lines_and_truncation (test_vision.ImageTest.test_hud_three_lines_and_truncation) ... ok
+test_metadata_and_trailing_bytes_removed (test_vision.ImageTest.test_metadata_and_trailing_bytes_removed) ... ok
+test_pixel_limit (test_vision.ImageTest.test_pixel_limit) ... ok
+test_reject_empty_fake_base64_url_and_mime (test_vision.ImageTest.test_reject_empty_fake_base64_url_and_mime) ... ok
+test_reject_truncated_jpeg_and_png (test_vision.ImageTest.test_reject_truncated_jpeg_and_png) ... ok
+test_two_mib_limit (test_vision.ImageTest.test_two_mib_limit) ... ok
+test_valid_jpeg_png (test_vision.ImageTest.test_valid_jpeg_png) ... ok
+test_auth_failure_not_retried_or_leaked (test_vision.ProviderTest.test_auth_failure_not_retried_or_leaked) ... ok
+test_bad_empty_incomplete_and_refusal (test_vision.ProviderTest.test_bad_empty_incomplete_and_refusal) ... ok
+test_invalid_json_and_network (test_vision.ProviderTest.test_invalid_json_and_network) ... ok
+test_invalid_timeout_config (test_vision.ProviderTest.test_invalid_timeout_config) ... ok
+test_live_payload_image_store_false_and_ocr_detail (test_vision.ProviderTest.test_live_payload_image_store_false_and_ocr_detail) ... ok
+test_live_requires_image (test_vision.ProviderTest.test_live_requires_image) ... ok
+test_retry_transient_http_only (test_vision.ProviderTest.test_retry_transient_http_only) ... ok
+test_timeout_no_retry (test_vision.ProviderTest.test_timeout_no_retry) ... ok
+test_unknown_provider_never_falls_back (test_vision.ProviderTest.test_unknown_provider_never_falls_back) ... ok
+test_chat_without_image (test_vision.VisionHttpTest.test_chat_without_image) ... ok
+test_consent_missing_false_or_truthy_rejected (test_vision.VisionHttpTest.test_consent_missing_false_or_truthy_rejected) ... ok
+test_demo_marked_in_response_and_hud (test_vision.VisionHttpTest.test_demo_marked_in_response_and_hud) ... ok
+test_errors_update_hud (test_vision.VisionHttpTest.test_errors_update_hud) ... ok
+test_image_required_and_malformed (test_vision.VisionHttpTest.test_image_required_and_malformed) ... ok
+test_live_adapter_to_http_hud_contract (test_vision.VisionHttpTest.test_live_adapter_to_http_hud_contract) ... ok
+test_live_in_demo_server_cannot_succeed (test_vision.VisionHttpTest.test_live_in_demo_server_cannot_succeed) ... ok
+test_mode_kind_and_question_types (test_vision.VisionHttpTest.test_mode_kind_and_question_types) ... ok
+test_origin_and_content_type (test_vision.VisionHttpTest.test_origin_and_content_type) ... ok
+test_privacy_delete_discards_inflight_result (test_vision.VisionHttpTest.test_privacy_delete_discards_inflight_result) ... ok
+test_privacy_delete_invalidates_slow_upload_before_mutation (test_vision.VisionHttpTest.test_privacy_delete_invalidates_slow_upload_before_mutation) ... ok
+test_task_hud_supersedes_old_inference (test_vision.VisionHttpTest.test_task_hud_supersedes_old_inference) ... ok
+test_browser_interaction_contracts (test_web_client.WebClientTest.test_browser_interaction_contracts) ... ok
+
+----------------------------------------------------------------------
+Ran 48 tests in 1.564s
+
+OK

@@ -1,0 +1,114 @@
+{
+  "date": "2026-11-11",
+  "baseline_commit": "c5563b5",
+  "frozen_requirements": {
+    "P0": 16,
+    "P1": 5,
+    "R": 1,
+    "product_complete": 0,
+    "product_partial": 12,
+    "product_unimplemented": 10
+  },
+  "tests": {
+    "python": {
+      "passed": 102,
+      "skipped": 0,
+      "includes_legacy_node_tests": 25,
+      "includes_gateway_tls_tests": 12
+    },
+    "flutter": {
+      "passed": 41,
+      "native_channel_stub_tests": 15
+    },
+    "web_bridge_node": {
+      "passed": 19,
+      "browser_apis_stubbed": true
+    },
+    "firmware_host": {
+      "passed": 38,
+      "media_tests": 18
+    },
+    "flutter_analyze": "No issues",
+    "ios_inputs": "passed",
+    "codemagic_official_schema": "passed",
+    "powershell_launcher_parser": "passed"
+  },
+  "builds": {
+    "web": {
+      "passed": true,
+      "main_dart_js_sha256": "0bbbdae8b1b770ae64c89a1b57f727f06694ea81dd5a84c4aad797bc5b91026c"
+    },
+    "android_arm64_debug": {
+      "passed": true,
+      "apk_sha256": "fe9952542724846d88cbd0a18d592132368bf4dd1fade932915af5484c4d64f0",
+      "installed": false
+    },
+    "esp32s3": [
+      {
+        "profile": "unconfigured",
+        "success": true,
+        "source_hashes_verified": 22,
+        "binary_bytes": 717776,
+        "binary_sha256": "f7852e2e24d9b641fc0796d28b1e89e6e190e92b063970fc8c6ffac120a2b662",
+        "sdkconfig_sha256": "85ec1dc90130b20004f505f2c34f5e08e0d649a83c282c9461a651d035dbd031",
+        "media_dev_ap_enabled": false
+      },
+      {
+        "profile": "eye-v22",
+        "success": true,
+        "source_hashes_verified": 22,
+        "binary_bytes": 726608,
+        "binary_sha256": "03a17b76d3ddbd2ca9c1b8e9ed0dc868a70585eba0232f8e3ae8cfa8fff50440",
+        "sdkconfig_sha256": "7fd33350de4927ca143d0e266af3bf6e82c99a24f2137ffe823bbc331dcbc5a4",
+        "media_dev_ap_enabled": false
+      },
+      {
+        "profile": "eye-v22-ap-enabled",
+        "success": true,
+        "source_hashes_verified": 22,
+        "binary_bytes": 1059168,
+        "binary_sha256": "923713365127b08df8280603a3907271c5410ccb0ab71028ee9f09ec916e0729",
+        "sdkconfig_sha256": "7d486e0a6ec6f8315c29ffe50ab829017c10baaf0df41f411e2191dfd5c8c4ba",
+        "media_dev_ap_enabled": true
+      }
+    ],
+    "ios_cloud": {
+      "executed": false,
+      "swift_compiled": false,
+      "unsigned_artifact_installable": false
+    }
+  },
+  "real_transport_smoke": {
+    "date": "2026-11-11",
+    "source": "windows_real_lan_tls_smoke",
+    "tls_chain_and_hostname_verified": true,
+    "same_origin_flutter_served": true,
+    "bearer_protected": true,
+    "backend_provider": "demo",
+    "local_media": {
+      "width": 80,
+      "height": 50,
+      "synthetic_input": true,
+      "cloud_sent": false
+    },
+    "live_without_key": {
+      "http": 503,
+      "code": "AI_NOT_CONFIGURED",
+      "answer_present": false
+    },
+    "iphone_safari_tested": false,
+    "trust_store_modified": false,
+    "firewall_modified": false,
+    "private_paths_excluded_from_static_root": true
+  },
+  "real_acceptance": {
+    "cloud_ai": false,
+    "iphone_safari": false,
+    "ios_native_ble": false,
+    "esp32_camera_wifi": false,
+    "optical_ar": false,
+    "camera_privacy_interlock_unlocked": false
+  },
+  "private_media_uploaded_externally": false,
+  "source_hash_file": "sprint03-source-sha256.json"
+}

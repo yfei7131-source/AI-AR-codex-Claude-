@@ -1,0 +1,27 @@
+✔ pair fragment is removed before Flutter bootstraps and consumed only once (2.8188ms)
+✔ a query token is never treated as a pairing credential (0.6217ms)
+✔ camera requires consent before invoking getUserMedia (1.0569ms)
+✔ insecure or unsupported camera offers photo fallback and does not acquire media (1.0009ms)
+✔ real browser acquisition contract requests video only, inline muted preview and canvas frame (1.037ms)
+✔ capture without consent or an active ready stream fails without inventing pixels (1.5134ms)
+✔ permission request expires after 15 seconds and a late stream is closed (4.9013ms)
+✔ stopping during pending permission closes late tracks and cannot start preview (1.1134ms)
+✔ a stalled video play expires and releases acquired stream (2.1911ms)
+✔ permission rejection is an error and never becomes a simulated frame (1.0685ms)
+✔ page hidden stops camera, recognition and publishes lifecycle event (1.1045ms)
+✔ track-ended and pagehide stop devices without automatic restart (0.6791ms)
+✔ recognition requires explicit audio processing consent (0.5822ms)
+✔ unsupported voice services are detected and fall back to text (0.6126ms)
+✔ voice result only produces a transcript event; it does not call AI or save notes (0.5045ms)
+✔ recognition is bounded to 30 seconds and late callbacks are ignored (4.3096ms)
+✔ TTS only reads an explicit non-empty result and supports cancellation (0.7719ms)
+✔ stale recognition abort errors cannot interrupt page cleanup (0.7509ms)
+✔ Flutter loader explicitly uses only same-origin engine and fallback font URLs (0.8592ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 19
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 105.0966

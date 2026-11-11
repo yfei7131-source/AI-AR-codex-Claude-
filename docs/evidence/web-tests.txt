@@ -1,0 +1,29 @@
+✔ camera refuses access without explicit local consent (5.4158ms)
+✔ camera capture remains local until explicit recognition; vision sends actual frame (1.4818ms)
+✔ live OCR sends chosen image with translate kind and shows live HUD source (1.3386ms)
+✔ no image or no upload consent means no request (0.9745ms)
+✔ chat omits images and does not require image consent (0.9738ms)
+✔ live never accepts a demo response or silently retries demo (1.1526ms)
+✔ live accepts only the configured openai provider identity (1.1685ms)
+✔ cloud failure replaces old result on HUD and prevents stale speech (1.4531ms)
+✔ client timeout produces error HUD with no unbounded spinner (14.1937ms)
+✔ deleting while inference runs clears frame and rejects late result (1.5508ms)
+✔ deleting rejects a pending task response so old private text cannot reappear (1.1028ms)
+✔ drafting task supersedes earlier inference so late error cannot replace task HUD (1.9727ms)
+✔ confirming task supersedes earlier inference so late result cannot replace confirmed HUD (1.1954ms)
+✔ privacy revoke or page exit closes camera tracks (0.8274ms)
+✔ camera permission resolved after revocation immediately closes stream (0.9118ms)
+✔ background tab stops camera; selected file also closes camera (1.0247ms)
+✔ unsupported voice input and speech fall back to readable text (0.9345ms)
+✔ voice requires consent and does not automatically save or submit transcript (0.8545ms)
+✔ saving notes requires explicit confirmation (0.8665ms)
+✔ health config failure displays readiness without replacing user mode choice (0.722ms)
+✔ empty, unsupported, and oversized files cannot become upload frames (0.8658ms)
+ℹ tests 21
+ℹ suites 0
+ℹ pass 21
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 109.4545

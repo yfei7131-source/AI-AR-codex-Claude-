@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI/AR Glasses V1 — AR HUD 原型</title>
+<style>
+:root{color-scheme:dark;--panel:#111d2d;--line:#263951;--teal:#5cebd4;--dim:#a9b8c9}*{box-sizing:border-box}body{margin:0;background:#08111c;color:#eef7ff;font-family:system-ui,-apple-system,'Microsoft YaHei',sans-serif}header{padding:20px 24px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}h1{font-size:19px;margin:0}p{color:var(--dim)}.pill{border:1px solid #2f817a;color:var(--teal);padding:4px 10px;border-radius:40px;font-size:12px}.wrap{max-width:1200px;margin:auto;padding:24px;display:grid;grid-template-columns:minmax(340px,1.45fr) minmax(320px,1fr);gap:20px}.screen{min-height:400px;background:radial-gradient(ellipse at 40% 50%,#1a303b,#090f1a 70%);position:relative;overflow:hidden;border:1px solid #3a4d5c;border-radius:22px;display:flex;align-items:center;justify-content:center}.screen video,.screen .still{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}.screen .still{display:none}.screen::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.6),transparent 23%,transparent 75%,rgba(0,0,0,.5));pointer-events:none}.hud{z-index:2;position:absolute;top:10%;left:9%;max-width:75%;padding:13px 16px;border-radius:12px;background:rgba(4,31,34,.78);border:1px solid rgba(92,235,212,.55);box-shadow:0 0 25px rgba(12,159,130,.12);backdrop-filter:blur(5px)}.hud h2{font-size:13px;color:var(--teal);margin:0 0 8px}.hud p{font-size:15px;line-height:1.6;color:white;margin:3px 0;overflow-wrap:anywhere}.reticle{position:absolute;z-index:1;border:1px solid rgba(92,235,212,.35);width:110px;height:110px;border-radius:50%}.corner{position:absolute;bottom:16px;left:18px;z-index:2;font-size:12px;color:#b7fbef}.panel{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:18px}.section{margin-top:18px}button,select,input{border:1px solid #36516a;background:#15283a;color:#f2fbff;border-radius:9px;padding:11px;font:inherit}button{cursor:pointer}button:hover{border-color:var(--teal)}button.primary{background:#17655e;border-color:#2c9888}button.danger{background:#48232b;border-color:#97525e}input,select{width:100%}.row{display:flex;gap:8px;flex-wrap:wrap}.row>*{flex:1}.label{display:block;color:#b0c5d5;font-size:13px;margin:13px 0 6px}.output{min-height:80px;border:1px solid #294057;background:#0b1929;border-radius:11px;padding:12px;white-space:pre-wrap;overflow-wrap:anywhere;color:#c8f2eb}.tiny{font-size:12px;color:#9dbaaf}.camera-ind{color:#9ef9ad;font-weight:700}.off{color:#f7b3a8}.upload{position:relative}#file{display:none}#pending{margin-top:8px}.stack{display:grid;gap:9px}footer{padding:0 24px 20px;color:#8fa2b4;font-size:12px;max-width:1200px;margin:auto}@media(max-width:840px){.wrap{grid-template-columns:1fr;padding:12px}.screen{min-height:320px}header{padding:15px}}
+</style></head><body>
+<header><div><h1>AI / AR GLASSES <span style="color:var(--teal)">V1.0</span></h1><div class="tiny">L1 信息显示 + L2 视觉 AI · 手机中枢模拟器</div></div><span id="health" class="pill">检查中...</span></header>
+<main class="wrap">
+<section><div class="screen" id="screen"><video id="video" autoplay muted playsinline></video><img class="still" id="still" alt="待识别的本地画面"><div class="reticle"></div><div class="hud" id="hud" aria-live="polite"><h2 id="hudTitle">AI/AR GLASSES</h2><div id="hudSource" class="tiny">浏览器 HUD 预览</div><div id="hudLines"><p>等待输入...</p></div></div><div class="corner" id="cameraState">● 摄像头未启动</div></div><div class="section panel"><label class="tiny"><input id="cameraConsent" type="checkbox" style="width:auto"> 我同意启动本地摄像头预览与采集</label><div class="row"><button id="cameraBtn" class="primary">开启摄像头</button><button id="captureBtn">采集画面</button><button id="uploadBtn">选择本地图片</button><input id="file" type="file" accept="image/png,image/jpeg"></div><button id="localValidateBtn" style="margin-top:8px">仅本地上传验证（不请求AI）</button><button id="clearFrameBtn" style="margin-top:8px">清除本地画面</button><p class="tiny">点击识别前图像仅留在浏览器内存。切换后台会关闭摄像头。预览指示不能替代真实硬件的物理摄像指示灯。</p></div></section>
+<section class="panel"><div class="stack"><label class="label" for="providerMode">AI 服务模式</label><select id="providerMode"><option value="demo">DEMO · 模拟演示，不分析图像</option><option value="live">真实 AI · 图片经本地服务转发云端</option></select><div id="modeHelp" class="tiny">正在读取服务配置...</div><label class="tiny"><input id="uploadConsent" type="checkbox" style="width:auto"> 我同意本次点击识别时提交图片；真实 AI 模式会发送至云端服务</label><label class="label" for="mode">功能</label><select id="mode"><option value="vision">F20 · 视觉识别 / 即拍即问</option><option value="translate">F17 · OCR + AR 文字翻译</option><option value="chat">F05 · AI 对话</option></select><label class="label" for="targetLanguage">OCR 目标语言（原文会保留）</label><select id="targetLanguage"><option value="zh-CN">中文</option><option value="en">English</option></select><label class="label" for="question">语音 / 文字问题</label><input id="question" placeholder="例如：眼前这是什么设备？" value="眼前这是什么？"><label class="tiny"><input id="speechConsent" type="checkbox" style="width:auto"> 我同意启动浏览器语音识别，浏览器服务可能上传音频</label><div class="row"><button id="micBtn">语音输入</button><button id="askBtn" class="primary">识别并投射到 HUD</button></div><button id="cancelBtn" disabled>取消当前请求</button><div class="row"><button id="speakBtn">朗读结果</button><button id="noteBtn">确认并保存笔记</button></div><label class="label" for="result">模型结果</label><div class="output" id="result" role="status" aria-live="polite">尚未请求</div><label class="label" for="taskText">F08 / F19 · 任务确认闭环</label><input id="taskText" placeholder="例如：提醒我检查设备温度"><button id="draftBtn">生成待确认任务卡</button><div id="pending" class="tiny">无待确认任务</div><div class="row"><button id="stateBtn">查看笔记与任务</button><button id="deleteBtn" class="danger">清除原型数据</button></div></div></section>
+</main><footer>技术演示边界：本页面显示的是屏幕上的 AR HUD 预览，不是光学透视 AR 成像；需要实际的微显示屏/光学模组和设备 SDK 才能到眼镜上显示。手机 App 与固件代码及构建状态见项目文档；蓝牙眼镜配对、光学显示与最终 PCB 仍需独立验收。</footer>
+<canvas id="canvas" style="display:none"></canvas>
+<script>
+const $ = id => document.getElementById(id);
+let cameraStream = null, cameraOpening = false, cameraGeneration = 0;
+let lastFrame = null, lastText = '', pendingId = null, recognition = null;
+let requestGeneration = 0, frameGeneration = 0, privacyGeneration = 0, activeRequest = null, userModeTouched = false;
+let activeClientId = null;
+let maxImageBytes = 2 * 1024 * 1024, requestTimeoutMs = 100000;
+
+async function api(path, data, options = {}) {
+  const controller = new AbortController();
+  let timedOut = false;
+  const forwardAbort = () => controller.abort();
+  if (options.signal) {
+    if (options.signal.aborted) controller.abort();
+    else options.signal.addEventListener('abort', forwardAbort, {once:true});
+  }
+  const timer = setTimeout(() => { timedOut = true; controller.abort(); }, options.timeoutMs || requestTimeoutMs);
+  try {
+    const response = await fetch('/api/' + path, {
+      method: data === undefined ? 'GET' : 'POST',
+      headers: data === undefined ? {} : {'Content-Type':'application/json'},
+      body: data === undefined ? undefined : JSON.stringify(data), signal:controller.signal
+    });
+    let value;
+    try { value = await response.json(); }
+    catch (_) { throw Error('服务返回格式错误，请检查本地服务'); }
+    if (!response.ok) {
+      const failure = Error(value.error || ('HTTP ' + response.status));
+      failure.hud = value.hud; failure.code = value.code; throw failure;
+    }
+    return value;
+  } catch (error) {
+    if (timedOut) throw Error('请求超时，未得到识别结果；后端可能仍在处理。请检查网络后手动重试。');
+    throw error;
+  } finally {
+    clearTimeout(timer);
+    options.signal?.removeEventListener('abort', forwardAbort);
+  }
+}
+function hud(value, source = '') {
+  $('hudTitle').textContent = value.title;
+  $('hudSource').textContent = source || '浏览器 HUD 预览';
+  $('hudLines').replaceChildren();
+  for (const line of value.lines || []) {
+    const p = document.createElement('p'); p.textContent = line; $('hudLines').appendChild(p);
+  }
+}
+function report(message) { $('result').textContent = message; }
+function err(error) { report('错误：' + error.message); }
+function stopSpeech() {
+  if (recognition) { const previous = recognition; recognition = null; previous.abort(); }
+  window.speechSynthesis?.cancel(); $('micBtn').textContent = '语音输入';
+}
+function invalidateResult() {
+  const cancelledId = activeClientId; activeClientId = null;
+  ++requestGeneration; activeRequest?.abort(); activeRequest = null;
+  $('cancelBtn').disabled = true;
+  if (cancelledId) api('requests/cancel', {client_request_id:cancelledId}, {timeoutMs:5000}).catch(() => {});
+  lastText = ''; $('askBtn').disabled = false; window.speechSynthesis?.cancel();
+}
+function stopCamera() {
+  ++cameraGeneration;
+  cameraStream?.getTracks().forEach(track => track.stop()); cameraStream = null;
+  $('video').srcObject = null; $('cameraBtn').textContent = '开启摄像头';
+  $('cameraState').textContent = '● 摄像头未启动';
+}
+function clearFrame() {
+  ++frameGeneration; lastFrame = null;
+  $('still').removeAttribute('src'); $('still').style.display = 'none'; $('file').value = '';
+}
+function modeSource(mode) { return mode === 'live' ? '真实 AI' : 'DEMO · 模拟演示'; }
+function updateModeHelp() {
+  $('modeHelp').textContent = $('providerMode').value === 'live'
+    ? '真实模式：仅请求云端模型；缺少密钥或服务失败会显示错误，不会切换到模拟结果。'
+    : 'DEMO 模式：不分析实际像素，所有模型反馈均为模拟演示。';
+}
+$('providerMode').onchange = () => {
+  userModeTouched = true; invalidateResult(); updateModeHelp();
+  hud({title:'等待识别', lines:['当前模式：' + modeSource($('providerMode').value)]}); report('模式已切换，请重新点击识别。');
+};
+$('targetLanguage').onchange = () => { invalidateResult(); hud({title:'翻译语言已更改',lines:['请重新点击识别']}); };
+$('cancelBtn').onclick = () => {
+  invalidateResult(); hud({title:'已取消',lines:['停止等待本次结果；云端处理可能已发生']}); report('已取消本地请求；不能保证撤销云端处理或费用。');
+};
+$('mode').onchange = () => { invalidateResult(); hud({title:'等待输入',lines:['请选择画面或输入问题']}); };
+$('cameraConsent').onchange = () => { if (!$('cameraConsent').checked) stopCamera(); };
+$('uploadConsent').onchange = () => {
+  if (!$('uploadConsent').checked) { invalidateResult(); hud({title:'已撤销提交授权',lines:['新的图像请求需要重新授权']}); }
+};
+$('speechConsent').onchange = () => { if (!$('speechConsent').checked) stopSpeech(); };
+$('cameraBtn').onclick = async () => {
+  if (cameraStream || cameraOpening) { stopCamera(); return; }
+  try {
+    if (!$('cameraConsent').checked) throw Error('请先同意启动本地摄像头预览与采集');
+    if (!navigator.mediaDevices?.getUserMedia) throw Error('浏览器不支持摄像头，或页面不在 localhost/HTTPS 安全环境；可选择本地图片');
+    cameraOpening = true; const generation = ++cameraGeneration;
+    let permissionTimer, permissionTimedOut = false;
+    const opening = navigator.mediaDevices.getUserMedia({video:{facingMode:'environment'},audio:false});
+    opening.then(stream => {
+      if (permissionTimedOut) stream.getTracks().forEach(track => track.stop());
+    }, () => {});
+    let stream;
+    try {
+      stream = await Promise.race([opening, new Promise((_, reject) => {
+        permissionTimer = setTimeout(() => { permissionTimedOut = true; ++cameraGeneration; reject(Error('摄像头授权或打开超时；请检查浏览器权限，或使用本地图片。')); }, 15000);
+      })]);
+    } finally { clearTimeout(permissionTimer); }
+
+    if (generation !== cameraGeneration || !$('cameraConsent').checked) { stream.getTracks().forEach(track => track.stop()); return; }
+    invalidateResult(); clearFrame(); cameraStream = stream; $('video').srcObject = stream;
+    $('cameraBtn').textContent = '关闭摄像头'; $('cameraState').textContent = '● 摄像头运行中（本地预览）：' + (stream.getVideoTracks?.()[0]?.label || '浏览器摄像头');
+    hud({title:'摄像头预览',lines:['点击采集画面，授权后开始识别']}); report('本地预览已启动，点击采集画面后识别。');
+  } catch (error) { err(error); }
+  finally { cameraOpening = false; }
+};
+function capture() {
+  const video = $('video'), canvas = $('canvas');
+  if (!cameraStream || !video.videoWidth || !video.videoHeight) throw Error('摄像头尚未就绪，请稍后采集或选择本地图片');
+  canvas.width = Math.min(video.videoWidth, 1280); canvas.height = Math.round(video.videoHeight * canvas.width / video.videoWidth);
+  canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
+  lastFrame = canvas.toDataURL('image/jpeg', .8);
+  $('still').src = lastFrame; $('still').style.display = 'block';
+  return lastFrame;
+}
+$('captureBtn').onclick = () => {
+  try { invalidateResult(); capture(); hud({title:'画面已采集',lines:['等待点击识别，尚未上传']}); report('本地画面已采集；点击识别提交当前静止画面，再次采集可更新。'); }
+  catch (error) { err(error); }
+};
+$('localValidateBtn').onclick = async () => {
+  invalidateResult(); const generation = requestGeneration;
+  try {
+    if (!$('uploadConsent').checked) throw Error('请先同意将图片提交到本地服务');
+    const frame = lastFrame || capture();
+    const response = await api('media/validate', {consent:true,image_data:frame});
+    if (generation !== requestGeneration) return;
+    if (response.scope !== 'local_only' || response.cloud_sent !== false || !response.validated) throw Error('本地验证响应无效');
+    const image = response.image;
+    report('仅本地上传验证通过：' + image.width + '×' + image.height + ' ' + image.format + '；未请求AI、未发往云端。请求ID：' + response.request_id);
+    hud({title:'本地采集链路通过',lines:[image.width + '×' + image.height + ' ' + image.format, '未请求AI，未上传云端']},'本地验证 · 非AI验收');
+  } catch (error) { if (generation === requestGeneration) { err(error); hud({title:'本地验证失败',lines:[error.message]}); } }
+};
+$('clearFrameBtn').onclick = () => { invalidateResult(); clearFrame(); hud({title:'画面已清除',lines:['重新采集或选择图片后识别']}); report('浏览器中的当前画面已清除。'); };
+$('uploadBtn').onclick = () => $('file').click();
+$('file').onchange = () => {
+  const file = $('file').files[0]; if (!file) return;
+  invalidateResult(); clearFrame(); stopCamera(); hud({title:'等待图片',lines:['正在检查本地图片']}); const generation = frameGeneration;
+  if (!['image/jpeg','image/png'].includes(file.type)) { err(Error('只支持 JPEG 或 PNG 图片')); return; }
+  if (!file.size || file.size > maxImageBytes) { err(Error('图片为空或超过 ' + (maxImageBytes / 1024 / 1024).toFixed(1) + 'MB，请压缩后重试')); return; }
+  const reader = new FileReader();
+  reader.onerror = () => { if (generation === frameGeneration) err(Error('图片读取失败')); };
+  reader.onload = () => {
+    if (generation !== frameGeneration) return;
+    const preview = new Image();
+    preview.onerror = () => { if (generation === frameGeneration) err(Error('浏览器无法解码此图片，请使用有效 JPEG/PNG')); };
+    preview.onload = () => {
+      if (generation !== frameGeneration) return;
+      lastFrame = reader.result; $('still').src = lastFrame; $('still').style.display = 'block';
+      hud({title:'图片已加载',lines:['等待点击识别，尚未上传']}); report('本地图片已加载，授权并点击识别时才提交。');
+    };
+    preview.src = reader.result;
+  };
+  reader.readAsDataURL(file);
+};
+$('askBtn').onclick = async () => {
+  invalidateResult(); const generation = requestGeneration, kind = $('mode').value, mode = $('providerMode').value;
+  const source = modeSource(mode); const controller = new AbortController(); activeRequest = controller;
+  try {
+    let imageData = kind === 'chat' ? null : lastFrame;
+    if (kind !== 'chat') {
+      if (!$('uploadConsent').checked) throw Error('请先同意点击识别时提交图片');
+      if (!imageData && cameraStream) imageData = capture();
+      if (!imageData) throw Error('视觉识别和 OCR 翻译需要图片，请先采集或选择本地图片');
+    }
+    $('askBtn').disabled = true; $('cancelBtn').disabled = false;
+    const clientId = window.crypto?.randomUUID?.() || ('web-' + Date.now().toString(36) + '-' + Math.random().toString(36).slice(2));
+    activeClientId = clientId;
+    hud({title:'正在处理',lines:[kind === 'translate' ? '图片上传 → OCR 与翻译 → HUD' : '正在请求回答，请稍候']}, source);
+    report('[' + source + '] 正在请求...');
+    const response = await api('ask', {kind, mode, question:$('question').value, image_data:imageData, consent:kind !== 'chat' && $('uploadConsent').checked, client_request_id:clientId, ...(kind === 'translate' ? {output_format:'ocr',source_language:'auto',target_language:$('targetLanguage').value || 'zh-CN'} : {})}, {signal:controller.signal});
+    if (generation !== requestGeneration) return;
+    if (response.mode !== mode || response.simulated !== (mode === 'demo') || !response.provider || (mode === 'live' && response.provider !== 'openai')) {
+      throw Error('服务返回的结果来源与请求模式不一致，已拒绝显示；请检查服务配置。');
+    }
+    if (typeof response.answer !== 'string' || !response.hud || !Array.isArray(response.hud.lines)) throw Error('服务缺少有效回答或 HUD 数据');
+    lastText = (response.simulated ? '模拟演示：' : '') + response.answer;
+    report('[' + source + ' · ' + response.provider + '] ' + response.answer);
+    hud(response.hud, source + ' · ' + response.provider);
+  } catch (error) {
+    if (generation !== requestGeneration) return;
+    lastText = ''; err(error);
+    hud(error.hud || {title:'识别失败', lines:[error.message]}, source + ' · 未获得结果');
+  } finally {
+    if (generation === requestGeneration) { activeRequest = null; activeClientId = null; $('askBtn').disabled = false; $('cancelBtn').disabled = true; }
+  }
+};
+$('speakBtn').onclick = () => {
+  if (!window.speechSynthesis || !window.SpeechSynthesisUtterance) { report('当前浏览器不支持语音播报，请阅读 HUD 文字。'); return; }
+  if (!lastText) { report('尚无可播报的有效结果，请先识别。'); return; }
+  window.speechSynthesis.cancel(); const speech = new window.SpeechSynthesisUtterance(lastText); speech.lang = 'zh-CN';
+  speech.onerror = () => report('语音播报失败，结果仍可在 HUD 阅读。'); window.speechSynthesis.speak(speech);
+};
+$('micBtn').onclick = () => {
+  if (recognition) { stopSpeech(); return; }
+  const Recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (!Recognition) { report('此浏览器不支持语音识别，请使用键盘输入。'); return; }
+  if (!$('speechConsent').checked) { report('请先同意启动浏览器语音识别；浏览器服务可能上传音频。'); return; }
+  try {
+    const current = new Recognition(); recognition = current; current.lang = 'zh-CN'; current.continuous = false;
+    current.onresult = event => { if (recognition === current) { $('question').value = event.results[0][0].transcript; report('语音已转为文字，请检查后点击识别或确认保存笔记。'); } };
+    current.onerror = event => { if (recognition === current) report('语音识别失败：' + event.error + '；可改用键盘输入。'); };
+    current.onend = () => { if (recognition === current) { recognition = null; $('micBtn').textContent = '语音输入'; } };
+    current.start(); $('micBtn').textContent = '停止语音输入';
+  } catch (error) { recognition = null; err(error); }
+};
+$('noteBtn').onclick = async () => {
+  const generation = privacyGeneration;
+  const text = $('question').value.trim();
+  if (!text) { err(Error('笔记不能为空')); return; }
+  if (!confirm('确认保存以下文字到本地原型进程内？\n' + text)) return;
+  try { const response = await api('notes', {text}); if (generation === privacyGeneration) report('笔记已保存（仅原型进程内）：' + response.note.text); }
+  catch (error) { if (generation === privacyGeneration) err(error); }
+};
+$('draftBtn').onclick = async () => {
+  invalidateResult();
+  const generation = privacyGeneration;
+  try {
+    const response = await api('tasks/draft', {text:$('taskText').value}); if (generation !== privacyGeneration) return; pendingId = response.task.id;
+    hud(response.hud, '本地任务 · 待用户确认');
+    $('pending').replaceChildren(document.createTextNode('待确认：' + response.task.text + ' '));
+    const button = document.createElement('button'); button.textContent = '确认任务（仅本地）'; const taskId = pendingId;
+    button.onclick = async () => {
+      if (pendingId !== taskId) return;
+      invalidateResult();
+      button.disabled = true;
+      try {
+        const confirmed = await api('tasks/confirm', {id:taskId}); if (generation !== privacyGeneration) return; hud(confirmed.hud, '本地任务 · 未外部执行');
+        $('pending').textContent = '已确认，但未调用任何外部系统'; pendingId = null;
+      } catch (error) { if (generation === privacyGeneration) { button.disabled = false; err(error); } }
+    };
+    $('pending').appendChild(button);
+  } catch (error) { if (generation === privacyGeneration) err(error); }
+};
+$('stateBtn').onclick = async () => {
+  const generation = privacyGeneration;
+  try { const state = await api('state'); if (generation === privacyGeneration) report(JSON.stringify({notes:state.notes,tasks:state.tasks},null,2)); }
+  catch (error) { if (generation === privacyGeneration) err(error); }
+};
+$('deleteBtn').onclick = async () => {
+  if (!confirm('清除浏览器当前图片/语音状态，以及服务器进程内笔记、任务和 HUD？云端数据不在删除范围内。')) return;
+  ++privacyGeneration; invalidateResult(); stopCamera(); clearFrame(); stopSpeech();
+  $('question').value = ''; $('taskText').value = ''; pendingId = null; $('pending').textContent = '无待确认任务';
+  for (const id of ['cameraConsent','uploadConsent','speechConsent']) $(id).checked = false;
+  try { await api('privacy/delete', {}); hud({title:'已清除',lines:['本地原型数据与浏览器画面已清除']}); report('已清除本地原型数据。云端服务的保留策略不受此按钮控制。'); }
+  catch (error) { hud({title:'本地画面已清除',lines:['服务器删除失败，请重试']}); err(error); }
+};
+window.addEventListener('pagehide', () => { ++privacyGeneration; invalidateResult(); stopCamera(); clearFrame(); stopSpeech(); });
+document.addEventListener('visibilitychange', () => { if (document.hidden) { stopCamera(); stopSpeech(); } });
+api('health', undefined, {timeoutMs:8000}).then(state => {
+  if (Number.isFinite(state.max_image_bytes) && state.max_image_bytes > 0) maxImageBytes = state.max_image_bytes;
+  if (Number.isFinite(state.request_timeout_seconds) && state.request_timeout_seconds > 0) requestTimeoutMs = (state.request_timeout_seconds + 15) * 1000;
+  if (!userModeTouched && ['live','demo'].includes(state.mode)) $('providerMode').value = state.mode;
+  const source = modeSource(state.mode);
+  $('health').textContent = source + ' · ' + (state.ready ? '已就绪' : '未就绪'); updateModeHelp();
+  if (!state.ready && state.configuration_error) report('服务配置未就绪：' + state.configuration_error);
+}).catch(error => { $('health').textContent = '本地服务不可用'; updateModeHelp(); err(error); });
+</script></body></html>

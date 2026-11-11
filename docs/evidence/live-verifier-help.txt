@@ -1,0 +1,21 @@
+usage: verify_live.py [-h] --image IMAGE [--consent-upload]
+                      [--base-url BASE_URL] [--kind {vision,translate}]
+                      [--question QUESTION] [--timeout TIMEOUT]
+
+Opt-in live API -> browser HUD contract check; never a hardware/quality test.
+
+Example (from the project root):
+    python tools/verify_live.py --image C:/test/label.png --consent-upload --kind translate
+
+No API key, image, or model answer is written to output or disk by this tool.
+The image is sent to the local server and, in live mode, its AI provider.
+
+options:
+  -h, --help            show this help message and exit
+  --image IMAGE         a local JPEG/PNG, maximum 2 MiB
+  --consent-upload      allow this image to be sent to the local server and
+                        its AI provider
+  --base-url BASE_URL   loopback HTTP(S) origin only
+  --kind {vision,translate}
+  --question QUESTION
+  --timeout TIMEOUT     AI request timeout in seconds (1-300, default 95)
