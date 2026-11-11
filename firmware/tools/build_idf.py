@@ -19,7 +19,7 @@ def main():
     parser.add_argument('--python',default=sys.executable)
     parser.add_argument('--tools-root',type=Path)
     parser.add_argument('--tool-bin',action='append',default=[])
-    parser.add_argument('--board',choices=['unconfigured','eye-v22'],default='unconfigured')
+    parser.add_argument('--board',choices=['unconfigured','eye-v22','s3-carrier-a'],default='unconfigured')
     args=parser.parse_args()
     source=Path(__file__).resolve().parents[1]
     version_file=args.idf_root/'tools/cmake/version.cmake'
@@ -36,7 +36,7 @@ def main():
     project.mkdir(parents=True,exist_ok=True)
     # Only copy source: no private files, toolchains or old generated config.
     source_files=[]
-    for name in ['CMakeLists.txt','sdkconfig.defaults','sdkconfig.eye.defaults','main']:
+    for name in ['CMakeLists.txt','sdkconfig.defaults','sdkconfig.eye.defaults','sdkconfig.carrier.defaults','main']:
         origin=source/name
         if origin.is_dir():
             shutil.copytree(origin,project/name,dirs_exist_ok=True)
@@ -50,7 +50,8 @@ def main():
     if args.tools_root: env['IDF_TOOLS_PATH']=str(args.tools_root.resolve())
     env['PATH']=os.pathsep.join(args.tool_bin+[str(Path(args.python).resolve().parent),env['PATH']])
     env['PYTHONUTF8']='1'
-    defaults='sdkconfig.defaults'+(';sdkconfig.eye.defaults' if args.board=='eye-v22' else '')
+    overlays={'eye-v22':';sdkconfig.eye.defaults','s3-carrier-a':';sdkconfig.carrier.defaults'}
+    defaults='sdkconfig.defaults'+overlays.get(args.board,'')
     command=[args.python,str(args.idf_root/'tools/idf.py'),'-C',str(project),'-B',str(project/'build'),
              '-DIDF_TARGET=esp32s3','-DSDKCONFIG_DEFAULTS='+defaults,'reconfigure','build']
     evidence=source/'evidence'; evidence.mkdir(exist_ok=True)
