@@ -1,0 +1,36 @@
+{
+  "validated_at_utc": "2026-11-11T05:52:27.876383+00:00",
+  "schema_url": "https://codemagic.io/codemagic-schema.json",
+  "schema_sha256": "6d8596cb0196d9f815804124b21bd5792a6dd0ebd193246f6c3e295fef20539c",
+  "codemagic_yaml_sha256": "f0f4401c3a5fb81d6872e64f74645b4ee33dcba97e987f75532086e664683164",
+  "official_schema_validation": "passed",
+  "python_runtime_guard": "3.12",
+  "node_version": "22",
+  "cloud_build_executed": false,
+  "swift_compiled": false,
+  "unsigned_installable_on_iphone": false,
+  "swift_compiler_on_path": false,
+  "native_bridge_unit_tests": {
+    "passed": 15,
+    "evidence": "Dart mock MethodChannel/EventStream and processed-ID/late-result policies; not actual BLE or Swift tests"
+  },
+  "ios_input_validation": "passed",
+  "swift_source_sha256": {
+    "AppDelegate.swift": "dcd524f55f768c824df5cdfa9e0766e0cfefe9a83237779ffbe34314dc003b5c",
+    "GlassesBleBridge.swift": "95cc4c96c58fa0320a10f48bb59ec0b81a9fa7571b3ab22d16b1cd89f21e8253",
+    "DeviceImageTransfer.swift": "bac75dc976a533c01fa326a5480935a5c80655908aed5e6391985b37250aadfe"
+  },
+  "dart_source_sha256": {
+    "device_adapter.dart": "6d239297df2f95c425ea6d94938a1af9db7f54c96ad536008776fbdf0d6d8c0f",
+    "native_ble_adapter.dart": "b4ee3fbb4bfee451230ccd0eb6896b77931af4624aa97d84197bbe7e2bf33bf0",
+    "native_ble_codec.dart": "dc363c1bfd333bc6a57af6e177628e3d98578a511b51d2856248a0f46e53edc0"
+  },
+  "handshake_contract": {
+    "v2_processed_request_id_required": true,
+    "session_poll_timeout_seconds": 10,
+    "frame_wait_timeout_seconds": 8,
+    "poll_interval_ms": 200,
+    "automatic_capture_retry": false,
+    "swift_poll_runtime_verified": false
+  }
+}
