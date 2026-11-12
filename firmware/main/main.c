@@ -1,6 +1,7 @@
 #include "runtime.h"
 #include "board.h"
 #include "camera_adapter.h"
+#include "camera_power.h"
 #include "display_adapter.h"
 #include "media_service.h"
 #include "esp_log.h"
@@ -56,6 +57,8 @@ void gl_status_snapshot(uint8_t out[GL_STATUS_SIZE]) {
 }
 void app_main(void) {
     const gl_board *board=gl_board_profile();
+    /* At boot only EVT-0 has an external camera rail. EYE/DevKit pins stay untouched. */
+    if (board->configured && board->cam_pwr_en>=0) ESP_ERROR_CHECK(gl_camera_power_off(board));
     events=xQueueCreate(8,sizeof(gl_event)); state_lock=xSemaphoreCreateMutex();
     configASSERT(events && state_lock);
     gl_init(&device,board->configured,board->privacy_interlock_verified);

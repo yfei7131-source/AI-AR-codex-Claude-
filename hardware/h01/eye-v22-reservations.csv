@@ -1,0 +1,22 @@
+gpio,board_resource,usage
+0,SW1 DOWNLOAD,active-low user button after boot; hold at reset selects downloader
+1,SW3-SW6,ADC key ladder; not four free GPIO
+2,U6 SDOUT,I2S microphone data into S3
+3,D10,stock power LED; strapping/open drain per Espressif; no privacy proof
+14,VBAT detect,ADC divider; telemetry needs calibration
+19,J1 D-,USB native; reserved
+20,J1 D+,USB native; reserved
+21,J9 LCD,reserved sub-board
+26..34,module flash/PSRAM,internal or not broken out on module; unavailable
+35..37,octal PSRAM,reserved on R8 version
+38,J2 CMD,SD 1-bit bus
+39,J2 CLK,SD 1-bit bus
+40,J2 DAT0,SD 1-bit bus
+41,U6 SCK,I2S BCLK from S3; RX standard stereo framing
+42,U6 WS,I2S LRCLK from S3
+43,J9 LCD,reserved sub-board/UART TX
+44,J9 LCD,reserved sub-board/UART RX
+45,strap,J8 expansion; no load during reset
+46,strap,J8 expansion; no load during reset
+47,J9 LCD,reserved sub-board
+48,J9 LCD,reserved sub-board

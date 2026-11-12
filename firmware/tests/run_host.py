@@ -26,5 +26,13 @@ def main():
                   str(root/'main/media_core.c'),str(root/'tests/test_media.c'),'-o',str(media)]
         subprocess.run(command,check=True,timeout=180)
         subprocess.run([str(media)],check=True,timeout=30)
+        camera=Path(directory)/('camera_tests.exe' if os.name=='nt' else 'camera_tests')
+        command=[compiler]+(['cc'] if Path(compiler).stem.lower()=='zig' else [])
+        command+=['-std=c11','-Wall','-Wextra','-Werror','-pedantic',
+                  '-I',str(root/'tests/fakes'),'-I',str(root/'main'),
+                  str(root/'main/camera_adapter.c'),str(root/'main/camera_power.c'),
+                  str(root/'tests/test_camera.c'),'-o',str(camera)]
+        subprocess.run(command,check=True,timeout=180)
+        subprocess.run([str(camera)],check=True,timeout=30)
 
 if __name__=='__main__': main()
