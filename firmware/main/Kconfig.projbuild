@@ -8,6 +8,8 @@ config GL_BOARD_EYE_V22
     bool "Espressif ESP32-S3-EYE MB v2.2 (camera locked: privacy interlock not verified)"
 config GL_BOARD_S3_CARRIER_A
     bool "S3-CARRIER-A / DevKitC-1 v1.1 N16R8 (bench, camera locked)"
+config GL_BOARD_AIAR_EVT0_R3
+    bool "AI/AR EVT-0 R3 N16R8 (unpopulated camera, privacy unverified)"
 endchoice
 config GL_MEDIA_DEV_AP
     bool "Enable local development AP/media server after physical pairing window"
@@ -16,4 +18,11 @@ config GL_MEDIA_DEV_AP
         Disabled by default. Does not unlock camera privacy interlocks.
         Requires >=3s physical button pairing window and explicit encrypted BLE session open.
         Development-only WPA2 + short-lived bearer HTTP, not production ownership/TLS certification.
+config GL_MEDIA_TX_POWER_QDBM
+    int "Development AP TX power ceiling (quarter dBm, driver quantizes)"
+    range 8 80
+    default 44
+    help
+        44 requests the 11 dBm driver step. Readback is logged after AP start.
+        This ceiling does not establish board peak current or regulatory compliance.
 endmenu

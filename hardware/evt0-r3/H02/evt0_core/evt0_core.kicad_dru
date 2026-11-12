@@ -1,0 +1,20 @@
+(version 1)
+# EVT-0 core board custom rules (KiCad 8). Targets a standard low-cost 4-layer process
+# (min trace/space 0.1/0.1 mm capability; design to 0.127/0.127; min drill 0.25 mm). Confirm with chosen fab in H04.
+(rule "USB2 diff pair width/gap (90R, verify with fab stackup calculator)"
+  (condition "A.NetClass == 'USB'")
+  (constraint track_width (min 0.18) (opt 0.2) (max 0.25))
+  (constraint diff_pair_gap (min 0.13) (opt 0.15) (max 0.2)))
+(rule "USB2 diff pair skew"
+  (condition "A.NetClass == 'USB'")
+  (constraint skew (max 1.0)))
+(rule "Camera/display clocks keep-away from other signals"
+  (condition "A.NetClass == 'CamClk' && B.NetClass != 'CamClk' && B.NetClass != 'Power'")
+  (constraint clearance (min 0.3)))
+(rule "Power traces minimum width"
+  (condition "A.NetClass == 'Power'")
+  (constraint track_width (min 0.3)))
+(rule "Via drill minimum"
+  (constraint hole_size (min 0.25)))
+(rule "Copper to board edge"
+  (constraint edge_clearance (min 0.3)))

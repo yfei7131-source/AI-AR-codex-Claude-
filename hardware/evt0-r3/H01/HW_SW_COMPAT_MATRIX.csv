@@ -1,0 +1,14 @@
+domain,source,physical_allocation,software_contract,remaining_gate
+board,firmware/main/board.c + Kconfig.projbuild,独立 EVT-0 N16R8 profile,板号DSP/CAM脚由固件选择,T01与实际板号核对
+capture,firmware/main/camera_adapter.c + camera_power.c,J3 DNP与GPIO3硬门控,DVP VGA JPEG 单帧PSRAM和运行时授权,T11/T12电气波形和已选相机模组才审解锁
+privacy,firmware/main/board.h + board.c,CAM_2V8物理指示和无强制跳线,privacy_interlock_verified=false,T12必须测遮挡故障及反灌
+button,firmware/main/button.c,GPIO0低有效及启动绑带,30ms消抖/1s撤销/3s物理窗口,T20真机时序与复位
+ble,firmware/main/ble_control.c + protocols/DEVICE_MEDIA_V1.md,S3 BLE,控制8 B状态20 B加密会话20 B与JSON快照,真机配对断连与撤销
+media,firmware/main/media_service.c + media_core.c,S3开发Wi-Fi AP,按请求显式开启并分片拉取JPEG TTL受限,T14/T31实际电流和延迟
+phone,mobile/ios/Runner/GlassesBleBridge.swift + DeviceImageTransfer.swift,iPhone原生CoreBluetooth+Wi-Fi,按request_id匹配会话并校验图像,真机上重连及失权清理
+call,H01/audio-interface.md,J7三针 UART+GND且EVB独立供电,HFP由BM83提供没有新BLE电话命令,T32双向通话并发与唤醒
+mic,firmware/main/board.h,J5 I2S 41/42/2,新增脚位元数据尚无ESP语音采集驱动,T23声学与PCM
+telemetry,firmware/main/core.c + board.h,GPIO1分压+ADC1,未校准保持unknown,T33四点校准
+console,firmware/sdkconfig.defaults,USB GPIO19/20,Serial JTAG与J7 UART隔离,冷启动波形与恢复下载
+display,app/hud_bitmap.py + firmware/main/display_adapter.c,独立Halo与J4未定光机,主机1bpp MSB圆屏软件适配; MCU sink未绑定,T22真实光学点亮和姿态验收
+power,H02/evt0_core/gen/design.py,BQ24072 TD低+默认禁充+USB100,充电硬件先于遥测和用户状态,T13/T14/T16; 电池和NTC料号待定

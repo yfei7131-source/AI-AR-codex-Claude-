@@ -7,6 +7,7 @@
 #include "esp_event.h"
 #include "esp_random.h"
 #include "esp_timer.h"
+#include "esp_log.h"
 #include "mbedtls/sha256.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/semphr.h"
@@ -125,6 +126,12 @@ static esp_err_t start_network(void) {
     result=esp_wifi_set_mode(WIFI_MODE_AP);if(result!=ESP_OK)return result;
     result=esp_wifi_set_config(WIFI_IF_AP,&config);zero(&config,sizeof(config));if(result!=ESP_OK)return result;
     result=esp_wifi_start();if(result!=ESP_OK)return result;wifi_running=true;
+    result=esp_wifi_set_max_tx_power(CONFIG_GL_MEDIA_TX_POWER_QDBM);
+    if(result!=ESP_OK)return result;
+    int8_t actual_power=0;
+    result=esp_wifi_get_max_tx_power(&actual_power);if(result!=ESP_OK)return result;
+    ESP_LOGI("glasses","AP TX power limit requested=%d readback=%d quarter-dBm",
+             CONFIG_GL_MEDIA_TX_POWER_QDBM,(int)actual_power);
     httpd_config_t http=HTTPD_DEFAULT_CONFIG();http.server_port=80;http.max_open_sockets=2;http.lru_purge_enable=true;
     http.recv_wait_timeout=2;http.send_wait_timeout=2;http.stack_size=6144;http.uri_match_fn=httpd_uri_match_wildcard;
     result=httpd_start(&server,&http);if(result!=ESP_OK)return result;

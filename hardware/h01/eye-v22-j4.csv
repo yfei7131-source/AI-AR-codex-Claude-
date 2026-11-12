@@ -1,0 +1,25 @@
+pin,schematic_net,firmware_signal,gpio,direction_at_mcu,electrical
+1,NC1,,,,open
+2,AGND,,,,analog return
+3,I2C_SDA,sda,4,inout,shared with U13; R81/R82 pullups to VDD_3V3 per drawing
+4,AVDD_2V8,,,,2.8 V analog
+5,I2C_SCL,scl,5,out,shared with U13
+6,CAM_RESET,,,fixed,R57 10k to DOVDD_2V8; firmware pin_reset=-1
+7,DVP_VSYNC,vsync,6,in,frame timing
+8,CAM_PWDN,,,fixed,R63 10k to DGND; firmware pin_pwdn=-1
+9,DVP_HREF,href,7,in,line timing
+10,DVDD_1V5,,,,1.5 V core
+11,DOVDD_2V8,,,,2.8 V IO
+12,DVP_Y9,d7,16,in,data bit 7
+13,XMCLK,xclk,15,out,firmware 16 MHz LEDC timer 0/channel 0
+14,DVP_Y8,d6,17,in,data bit 6
+15,DGND,,,,digital return
+16,DVP_Y7,d5,18,in,data bit 5
+17,DVP_PCLK,pclk,13,in,pixel clock
+18,DVP_Y6,d4,12,in,data bit 4
+19,DVP_Y2,d0,11,in,data bit 0
+20,DVP_Y5,d3,10,in,data bit 3
+21,DVP_Y3,d1,9,in,data bit 1
+22,DVP_Y4,d2,8,in,data bit 2
+23,NC2,,,,open
+24,NC3,,,,open

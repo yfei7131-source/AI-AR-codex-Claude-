@@ -7,13 +7,21 @@
  */
 const gl_board *gl_board_profile(void) {
 #if CONFIG_GL_BOARD_EYE_V22
-    static const gl_board board={"esp32_s3_eye_mb_v2.2",true,false,0,15,4,5,{11,9,8,10,12,18,17,16},6,7,13};
+    static const gl_board board={"esp32_s3_eye_mb_v2.2",true,false,0,15,4,5,{11,9,8,10,12,18,17,16},6,7,13,
+                                -1,-1,-1,-1,-1,-1,-1};
 #elif CONFIG_GL_BOARD_S3_CARRIER_A
     /* J4 breakout follows the EYE data-bit order. BOOT is active low.
      * The downstream power lamp alone does not establish fail-safe privacy. */
-    static const gl_board board={"devkitc_v1.1_s3_carrier_a",true,false,0,15,4,5,{11,9,8,10,12,18,17,16},6,7,13};
+    static const gl_board board={"devkitc_v1.1_s3_carrier_a",true,false,0,15,4,5,{11,9,8,10,12,18,17,16},6,7,13,
+                                -1,-1,-1,-1,-1,-1,-1};
+#elif CONFIG_GL_BOARD_AIAR_EVT0_R3
+    /* R3 has no fitted camera/FPC or audio UART isolation resistors.
+     * GPIO46 is a boot strap, never an audio enable. Optical sink stays unbound. */
+    static const gl_board board={"aiar_evt0_r3",true,false,0,15,4,5,{11,9,8,10,12,18,17,16},6,7,13,
+                                3,1,41,42,2,43,44};
 #else
-    static const gl_board board={"board_unconfigured",false,false,-1,-1,-1,-1,{-1,-1,-1,-1,-1,-1,-1,-1},-1,-1,-1};
+    static const gl_board board={"board_unconfigured",false,false,-1,-1,-1,-1,{-1,-1,-1,-1,-1,-1,-1,-1},-1,-1,-1,
+                                -1,-1,-1,-1,-1,-1,-1};
 #endif
     return &board;
 }

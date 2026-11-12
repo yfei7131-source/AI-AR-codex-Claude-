@@ -1,0 +1,73 @@
+{
+  "units": "mm",
+  "model_only": true,
+  "physical_test": "NOT_RUN",
+  "clearance_check": "8 fixture endpoint configurations + bare PCB and six modeled pin tails",
+  "meshes": {
+    "deck": {
+      "triangles": 1712,
+      "bbox_mm": [
+        -84.0,
+        -8.0,
+        0.0,
+        84.0,
+        70.0,
+        4.0
+      ],
+      "volume_mm3": 32177.11,
+      "sha256": "0341e7176d8dc3e290e7e9596ac5f58ed1ad5ed0251e5a8bdc199826e2594d7e"
+    },
+    "bridge": {
+      "triangles": 324,
+      "bbox_mm": [
+        -15.0,
+        -5.0,
+        0.0,
+        15.0,
+        5.0,
+        36.0
+      ],
+      "volume_mm3": 2206.57,
+      "sha256": "e6ddae5c7e4df458d9d4322c603c3996dfc029f13e9f9e57a8ba7fab8d734cba"
+    },
+    "temple": {
+      "triangles": 340,
+      "bbox_mm": [
+        -7.0,
+        -11.0,
+        0.0,
+        7.0,
+        11.0,
+        34.0
+      ],
+      "volume_mm3": 2103.77,
+      "sha256": "21ffba59e2e60c17e78bde75a9fe82657212601a28b88a40720544d855c35eab"
+    },
+    "pupil_mask": {
+      "triangles": 5504,
+      "bbox_mm": [
+        -16.0,
+        -1.2,
+        0.0,
+        16.0,
+        10.0,
+        40.0
+      ],
+      "volume_mm3": 2243.43,
+      "sha256": "c5490f24ae2b3f5710a69fb71668e8093793e8129f815559c59da2d0614bf1a8"
+    },
+    "cam_rail_tray": {
+      "triangles": 190,
+      "bbox_mm": [
+        -14.1,
+        -8.1,
+        0.0,
+        14.1,
+        8.1,
+        7.6
+      ],
+      "volume_mm3": 1118.13,
+      "sha256": "d6297a442bbade819735c52e3143619accc38acff47aa54355588117a67b7177"
+    }
+  }
+}

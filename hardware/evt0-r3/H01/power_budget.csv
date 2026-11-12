@@ -1,0 +1,14 @@
+load_or_mode,rail,design_value,basis,measurement_or_condition
+ESP32-S3 Wi-Fi,3V3,355mA peak,Espressif WROOM datasheet table 6-4 at 802.11b 1Mbps 20.5dBm,在11dBm请求值另测电流峰值与TP4最低
+MCU power supply,3V3,至少500mA供电能力,Espressif hardware design guidelines,供电额定边界而非平均功率
+R3 platform bench,3V3,700mA初始能力预算,500mA主控+150mA模组+15mA麦和控制+5mA灯+30mA裕量,预算等效2.31W；多个电压轨的实际功率应分别积分
+U3 input,VBUS,USB100档,EN2=0 EN1=0 初装诊断配置,禁止依赖无电池的100mA输入跑射频整机
+U3 charge,VBAT,默认禁充,CE高且R5/R36 DNP,装配和电芯资格通过后才评估快充档
+U3 programmed charge,VBAT,134..167mA条件范围,5.9kΩ±1%及TI KISET 797/890/975 AΩ,输入限流DPPM热环或TS可使电流更低；初装USB100无法达到标称151mA
+ADC divider,VBAT,2.1µA@4.2V,1M+1M连续分压,实测ADC漏电与掉电附加载荷
+indicator,CAM_2V8,(2.8V-Vf)/560Ω,红光LED Vf随温度电流变化,验最低电压可视度与开路故障
+camera,CAM_2V8/CAM_DVDD/CAM_DOVDD,待测,模组未选且DNP,分别记录预充首帧上传及断电电流和反灌
+AR,独立Halo/未来光机,待测,真实眼前亮度与显示占空比决定,独立EVB和未来产品分别测量
+audio,独立BM83 EVB/未来子板,待测,HFP射频和功放负载独立于S3,由EVB电源取样并记录音量与声压
+3V3 dropout,VSYS,VSYS>=3.3V+Vdrop(I/T),TI TLV757P工作区域; 还要考虑BAT到OUT路径压降,T14逐档扫VBAT并监测复位与范围
+storage,VBAT,待测,JP1断开分离电芯; BQ24072无SYSOFF,记录仪器测量下限与电池保护电路静态电流
