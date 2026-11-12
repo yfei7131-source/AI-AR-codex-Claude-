@@ -1,0 +1,123 @@
+{
+  "kind": "isolated_R4_DC_experiment_not_manufacturing_release",
+  "source_r3_sha256": "3632e183c941d3b813794538b99932f0903b6a71763394efd9d7cc2d3292850c",
+  "source_r3_unchanged": true,
+  "r4_board_sha256": "fb3db2dd3701b936d33b0167e3664280a77bddc95076dc08ae4fe70fb0d2f1da",
+  "source_drc_sha256": "f9caa598ecc67c6f2e5a41d46e02430cae6f7995fc62895259e9315513b235ed",
+  "allowed_route_nets": [
+    "/CHG_EN1",
+    "/CHG_PGOOD_N",
+    "/VBUS"
+  ],
+  "reason_for_ground_loop_removal": "Open U3 south fanout and J1 VBUS fanout; ground pads retain plane access, subject to native DRC connectivity verification",
+  "removed_copper": {
+    "216eafaa-97d9-4f9d-b063-2b8f9a254570": {
+      "kind": "PCB_TRACK",
+      "net": "/GND",
+      "start_iu": [
+        134750000,
+        116462500
+      ],
+      "end_iu": [
+        134750000,
+        117250000
+      ],
+      "width_iu": 300000,
+      "layer": 0,
+      "layer_set": "0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0001",
+      "locked": false
+    },
+    "3ece93f9-399b-4025-a836-aa37f139029b": {
+      "kind": "PCB_TRACK",
+      "net": "/GND",
+      "start_iu": [
+        133500000,
+        117500000
+      ],
+      "end_iu": [
+        133250000,
+        117250000
+      ],
+      "width_iu": 300000,
+      "layer": 0,
+      "layer_set": "0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0001",
+      "locked": false
+    },
+    "760974a8-678a-4e08-9e21-ddfe71cd8fe0": {
+      "kind": "PCB_TRACK",
+      "net": "/GND",
+      "start_iu": [
+        122000000,
+        120750000
+      ],
+      "end_iu": [
+        124250000,
+        120750000
+      ],
+      "width_iu": 300000,
+      "layer": 0,
+      "layer_set": "0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0001",
+      "locked": false
+    },
+    "83e519f3-f8d7-4a9b-ac76-d677cb81f5dd": {
+      "kind": "PCB_TRACK",
+      "net": "/GND",
+      "start_iu": [
+        134500000,
+        117500000
+      ],
+      "end_iu": [
+        133500000,
+        117500000
+      ],
+      "width_iu": 300000,
+      "layer": 0,
+      "layer_set": "0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0001",
+      "locked": false
+    },
+    "a5895f19-dc2b-427a-b368-fdfd668420f2": {
+      "kind": "PCB_TRACK",
+      "net": "/GND",
+      "start_iu": [
+        134750000,
+        117250000
+      ],
+      "end_iu": [
+        134500000,
+        117500000
+      ],
+      "width_iu": 300000,
+      "layer": 0,
+      "layer_set": "0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0001",
+      "locked": false
+    },
+    "b93f6155-d74d-4817-b623-abd119b85e71": {
+      "kind": "PCB_TRACK",
+      "net": "/GND",
+      "start_iu": [
+        133250000,
+        117250000
+      ],
+      "end_iu": [
+        133250000,
+        116462500
+      ],
+      "width_iu": 300000,
+      "layer": 0,
+      "layer_set": "0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0001",
+      "locked": false
+    }
+  },
+  "changed_existing_copper": {},
+  "added_copper": {},
+  "counts": {
+    "before": 1091,
+    "removed": 6,
+    "changed": 0,
+    "added": 0,
+    "after": 1085
+  },
+  "footprints_pads_positions_dnp_unchanged": true,
+  "manufacturing_release": false,
+  "native_drc_required": true
+}

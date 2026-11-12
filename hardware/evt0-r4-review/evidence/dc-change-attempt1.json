@@ -1,0 +1,43 @@
+{
+  "kind": "isolated_R4_DC_experiment_not_manufacturing_release",
+  "source_r3_sha256": "3632e183c941d3b813794538b99932f0903b6a71763394efd9d7cc2d3292850c",
+  "source_r3_unchanged": true,
+  "r4_board_sha256": "993b314718d8bcbaa081b03f8a5d259312fac2755da96370a2751255df606646",
+  "source_drc_sha256": "f9caa598ecc67c6f2e5a41d46e02430cae6f7995fc62895259e9315513b235ed",
+  "allowed_route_nets": [
+    "/CHG_EN1",
+    "/CHG_PGOOD_N",
+    "/VBUS"
+  ],
+  "reason_for_ground_loop_removal": "Open U3 south fanout; both ground pads retain independent plane access; verify with native DRC",
+  "removed_copper": {
+    "83e519f3-f8d7-4a9b-ac76-d677cb81f5dd": {
+      "kind": "PCB_TRACK",
+      "net": "/GND",
+      "start_iu": [
+        134500000,
+        117500000
+      ],
+      "end_iu": [
+        133500000,
+        117500000
+      ],
+      "width_iu": 300000,
+      "layer": 0,
+      "layer_set": "0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0000|0000_0001",
+      "locked": false
+    }
+  },
+  "changed_existing_copper": {},
+  "added_copper": {},
+  "counts": {
+    "before": 1091,
+    "removed": 1,
+    "changed": 0,
+    "added": 0,
+    "after": 1090
+  },
+  "footprints_pads_positions_dnp_unchanged": true,
+  "manufacturing_release": false,
+  "native_drc_required": true
+}
