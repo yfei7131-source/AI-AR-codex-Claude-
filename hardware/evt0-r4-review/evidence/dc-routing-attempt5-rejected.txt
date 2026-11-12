@@ -1,0 +1,10 @@
+Removed nine R4-only GND loop/bridge/stub segments; native DRC must verify ground continuity
+routed CHG_EN1
+Added connections: 1 search did not resolve: ['CHG_PGOOD_N']
+Added checked VBUS short fanout and 0.3mm-drill via
+Traceback (most recent call last):
+  File "C:\Users\Admin（无密码）\Desktop\产品设计\AI眼镜\hw-v1-dev\hardware\evt0-r4-review\H02\evt0_core\gen\minimal_dc_r4.py", line 160, in <module>
+    main()
+  File "C:\Users\Admin（无密码）\Desktop\产品设计\AI眼镜\hw-v1-dev\hardware\evt0-r4-review\H02\evt0_core\gen\minimal_dc_r4.py", line 112, in main
+    raise ValueError("Ground replacement candidate rejected; do not save this board")
+ValueError: Ground replacement candidate rejected; do not save this board
