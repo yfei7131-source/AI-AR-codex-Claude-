@@ -1,0 +1,11 @@
+id,status,affected_features,blocked_item,required_evidence,next_test
+G01,BLOCKED,F10/F17/F20,相机供电与物理隐私联锁,已选样件AVDD/DVDD/DOVDD与PCLK/LED同步波形; LED开短路遮挡及信号反灌时拒绝采集; 经评审后限定profile,T11/T12/T21a/T21b/T24
+G02,BLOCKED,F10/F17/F20,相机模组与J3封装选配,模组完整订货号和电路; FPC尺寸接触面逐针表; 电压容限与复位时序; R16/R17/R18装配决定,T11/T12
+G03,BLOCKED,F01/F02/F15/F17/F19/F20/F22,M3光机波导与J4接口,匹配光机驱动器波导图纸; 电平供电时序协议SDK许可; 眼盒眼距及结构基准; J4继续DNP,T22b/H04
+G04,BLOCKED,F03/F05/F13/F14,BM83音频与J7可选UART,EVB实际硬件固件版本; 双向UART电平和断电隔离; MFB/HOST_WAKE方案; iPhone双向HFP及A2DP/BLE并发记录,T32
+G05,BLOCKED,F02/F11,电池与充电装配,合格1S受保护电池/NTC完整料号线序额定电流温度曲线; TS开短路; CE默认禁充; 拟装R5/R36时完整终止与热测试,T13/T15/T16
+G06,BLOCKED,F02/F09/F11/F20,系统供电与LDO低电量边界,VBAT扫描下VSYS/3V3最低值与负载电流复位波形; USB100限制; 无线并发温升; 必要时重新设计电源,T10/T14/T20/T31
+G07,BLOCKED,F04/F09/F10/F11/F20/F22,PCB制造与封装释放,实际封装焊盘公差装配方向与BOM核对; 最终布局布线及DRC/原理图一致性; 厂商叠层阻抗热与DFM审查,H02/H03/T00/T02
+G08,BLOCKED,F01/F02/F10/F15,处方适配与佩戴光学热,带左右处方镜片整镜称重重心及4h试戴; 25°C指定工况接触温升; 光学眼盒遮挡及LED可见度,H04/T12/T22a/T22b
+G09,BLOCKED,F05/F06/F13/F16,J5音频采集与真实语音,具体数字麦料号; I2S时钟槽宽驱动; 获同意PCM采样和噪声中断; iPhone语音及实时字幕,T23
+G10,BLOCKED,F09/F10/F15/F17/F19/F20/F22,手机与真实设备端到端,Swift实际编译及合法安装; 设备扫描选择和网关凭据入口; BLE配对/断连撤销; 真实JPEG至光学HUD与时延,T21b/T22a/T30/T31

@@ -1,4 +1,10 @@
-# STATE_FOR_NEXT_SESSION — 2026-11-12 硬件 R2 已交付
+# 当前续接说明 — 2026-11-12 R3
+
+本目录是 R3 工作副本。当前 H01 裁决、全部 22 项需求、实现边界和未确认器件见 [H01/R3_STATUS.md](H01/R3_STATUS.md) 与 [H01/RELEASE_GATES.csv](H01/RELEASE_GATES.csv)；当前原理图审查见 [H02 电气审查](H02/evt0_core/ELECTRICAL_REVIEW.md)。PCB 结果以本目录 H02/H03 的当前原生报告为准，不能复用下面 R2 的“无 KiCad/空板”状态。
+
+以下 R2 原始交付记录为历史溯源而保留。JP2 台架上电、只读固件分工、尚未读取完整软件、请用户回传 KiCad/ERC 等文字已被 R3 的完整仓库集成工作取代，不能作为本轮执行步骤。R3 已去除强制相机上电跳线，保持所有 `privacy_interlock_verified=false`；相机/光机默认 DNP，电池充电默认关闭。实体电气、通话、iPhone、光学与佩戴测试未执行。
+
+# STATE_FOR_NEXT_SESSION — 2026-11-12 硬件 R2 已交付（历史原文）
 
 ## 本轮实际输入
 - `Claude_硬件_R1___R2_续话包.zip`（R1 基线）

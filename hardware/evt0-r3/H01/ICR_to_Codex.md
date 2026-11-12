@@ -2,6 +2,8 @@
 
 本表对应原交接 [ICR R2](../../claude_handoff/2026-11-12/R2/H01/ICR_to_Codex.md)。EYE、DevKitC-1 载板和 EVT-0 分别用自己的 profile。针号匹配只回答数字接线，物理层还有电压、上电和光学要求。
 
+2026-11-12 R3 续接：表内“接受”是接口裁决，不等于对应硬件验收通过。ICR-02 的受控开关/引脚隔离/错误清理代码、ICR-08 的独立 profile 和 ICR-10 的 AP TX 功率 set/get 已在当前固件源码中存在；实物电源时序、锁定解除、RF 电流与通话仍待测。当前冻结边界见 [R3_STATUS.md](R3_STATUS.md)，未解项逐项保留在 [RELEASE_GATES.csv](RELEASE_GATES.csv)。
+
 | 请求 | 裁决 | 对真实源码的答复、后续证据 |
 |---|---|---|
 | ICR-01 | 已存在 | 核对 `firmware/main/board.c`、`board.h`、`camera_adapter.c`。按键 GPIO0、XCLK15、SDA4、SCL5、D[0..7]=11/9/8/10/12/18/17/16、VSYNC6、HREF7、PCLK13 共 15 项与 J3 的 DVP 信号一致。EYE 原板 J4 与 EVT-0 的 J3 是不同连接器和供电设计。 |

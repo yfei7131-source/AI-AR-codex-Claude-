@@ -1,0 +1,534 @@
+{
+  "parent": "c6d1c275baac180aeaaf95d7cd08e2082a727686",
+  "recovery_commit": "739fd328d6c11ba11148a935a6a31882f5340582",
+  "files": {
+    ".gitignore": {
+      "sha256": "7dbca29e1ca86a9ef4fe5eff2607e8e49aa445ed9dfd619460447f1dd47b99b3",
+      "blob": "40d134073b96737b04fce9434cc41de1fdd4e40b"
+    },
+    "firmware/evidence/build-eye-v22.json": {
+      "sha256": "3b00a332d85a1d204ebfd7e4df7c45c7a0a1e904f00994dc3d7a03d812f5244c",
+      "blob": "9a1eda7078a4f80393c4795c57616b2569f63b3b"
+    },
+    "firmware/evidence/build-unconfigured.json": {
+      "sha256": "403a06cdf1a01a15e3b3ef4fbed53717b31c9faf08a52717f20f222583130619",
+      "blob": "9364e21008054963833de220fe28e993c7bf888a"
+    },
+    "firmware/evidence/idf-eye-v22.txt": {
+      "sha256": "ae5de9712702d51c01c66fe785c690dbddde7adb16935555b49704d6514c2585",
+      "blob": "fa5ba8633d100d8ee58c96d7597a1beab7973a0e"
+    },
+    "firmware/evidence/idf-unconfigured.txt": {
+      "sha256": "e6fe88f279b59e60f9defd0ce10488d3b32687802a615bd2602ac88912c8a7ad",
+      "blob": "1b357ebb46c1f381ea558a1fc4ef9b79e0446046"
+    },
+    "firmware/main/CMakeLists.txt": {
+      "sha256": "2ed7aa1ccbcf8023562508a6edd7b016ee561132016d4e5686049d4be720b39a",
+      "blob": "c6da83fb2c71163f41825f45564daadc31c17d4d"
+    },
+    "firmware/main/Kconfig.projbuild": {
+      "sha256": "f5f7feb4cf8f2f8974c9bdd5d6846c5fdc4c0ee17b2c811c2bd8f173039c1984",
+      "blob": "76498b9d487f6f060c02aaa8d42693d6a455db58"
+    },
+    "firmware/main/board.c": {
+      "sha256": "b1410fd2050e5ac8c41ac1dec14eebd8c318457bb0169a1ac94c6357ef499e8c",
+      "blob": "5db228fda6fe53133ba80f0148a50fbb59ac25a6"
+    },
+    "firmware/main/board.h": {
+      "sha256": "480ea6721a595cb1ef2206780be68e6f6a0a22a2ff0c7127553e0a17483b61c5",
+      "blob": "ffc1960874bc62734c51df9fe413873a2b6e8d9f"
+    },
+    "firmware/main/camera_adapter.c": {
+      "sha256": "17f68356d2480732a694992e64d2060d1f77d474436df32e1ef66c707f5ddea8",
+      "blob": "e9edc7a8060671531128535c33edc992aab9022b"
+    },
+    "firmware/main/main.c": {
+      "sha256": "78b874417c766d49d1c854bed4a17fad2638d07bccb06f5ab77539c51d1e5176",
+      "blob": "1249207492db1cb08d4c7e98391e2144a72f97f7"
+    },
+    "firmware/main/media_service.c": {
+      "sha256": "0b975fe6b5f3824b9b5b07911729b326995e3c4810cea1b1a6cda93b63edf707",
+      "blob": "f53bd4ebcd0939dbbdc19d8c3a544a7177e7df91"
+    },
+    "firmware/tests/run_host.py": {
+      "sha256": "fa023cdc5177a3e9555aed536ba85317b2645b2c7e7c125b54d314f105673241",
+      "blob": "4a93837c2929bddc38767c45c1c4ef06d5c8f5f4"
+    },
+    "firmware/tools/build_idf.py": {
+      "sha256": "a121d2235d82d1e33bebeeddda6f92a7f2b97a93f1c51c7ff608672bd8d89e04",
+      "blob": "3dba5f97099124b5358b6fd8b12be93bb6a74021"
+    },
+    "firmware/evidence/build-evt0-r3-ap.json": {
+      "sha256": "c62e3b46d7e89469920dd9926ad2b5f8f8a7d9e4f2ce7f5a9919f37ee36f3b75",
+      "blob": "6cab1fdcdcec415d22aa001803c06dae62b4c979"
+    },
+    "firmware/evidence/build-evt0-r3.json": {
+      "sha256": "54e0715c875154e23738956975f37197caca863b6566c7b85b4c5b3701baea58",
+      "blob": "c7716af4f60158415256eb5753524473098e3824"
+    },
+    "firmware/evidence/idf-evt0-r3-ap.txt": {
+      "sha256": "ec45a353b46804ea683129b7a3a1f1b0d7cd49b14e1692515f360848a5d2ca92",
+      "blob": "d4eeade587c31caefdd7aa6ca65fa3d9a60d88a3"
+    },
+    "firmware/evidence/idf-evt0-r3.txt": {
+      "sha256": "7ea657288e682fb35ffba288fce9b81b82bc9a847db7cd9c6799556fa4e1cf51",
+      "blob": "09cbc94751f90499a16e567c5c7f88badd4df429"
+    },
+    "firmware/evidence/idf-s3-carrier-a.txt": {
+      "sha256": "8d5bb6c7f079034129cbe043f13e4f3c8f8b5aac377420c6fb35dfec0138c895",
+      "blob": "965ead3b525ec60d270e07c3ed53b09cf2d115db"
+    },
+    "firmware/main/camera_power.c": {
+      "sha256": "9c10312f6e635a2621ceb37acf4d2c004fe616514fbf91cb74326e97867eeab9",
+      "blob": "ba1ce35a79092adf39be776c2e824b3d751b1d76"
+    },
+    "firmware/main/camera_power.h": {
+      "sha256": "d9e82f1ca6ec160893cba71c71c8a561aa51d9a1b2eff246981a79717149209d",
+      "blob": "364b4d0d8237869f2a3298d54f1b63ba4ff63eaf"
+    },
+    "firmware/sdkconfig.dev-ap.defaults": {
+      "sha256": "54f4c986bca98498a5417a9474650d1c04554390a873202658f8672955d0cf51",
+      "blob": "2e40f46d8438404ce55d86a689acb42466fb0c82"
+    },
+    "firmware/sdkconfig.evt0.defaults": {
+      "sha256": "6e84004fc37e4e225ea75e57a13761df834e4a7e4cc5bca010db34df4c2d024c",
+      "blob": "2a4aafd76235af0d8b1d53771329807b667b818f"
+    },
+    "firmware/tests/fakes/driver/gpio.h": {
+      "sha256": "c5be59061a151debdfcb2e220c7065110f7772dd4adf398cc4a74ea1221ad0e4",
+      "blob": "b35748ab1106b1635855ee905d55ffda48292dec"
+    },
+    "firmware/tests/fakes/esp_camera.h": {
+      "sha256": "2b6653ffb1910044a68f48fd4131086d19d2651bb6ef45eeb5516ba2e720fd97",
+      "blob": "0bce27c091b6dd45277f66a7f2e558ad141d4779"
+    },
+    "firmware/tests/fakes/esp_err.h": {
+      "sha256": "dad05e6627e2af361878fee47659c3e0c8ef58742948b5ca098b658c902237ee",
+      "blob": "2ef8467d9dceba78219247e9416b9df6f3942360"
+    },
+    "firmware/tests/fakes/esp_heap_caps.h": {
+      "sha256": "357838496bbfef9f7258d373d3a3bad31cc7239612e174f628ce25ec32cea92d",
+      "blob": "8c44ca9282ddf8eeede6510f8a60ba638e6790da"
+    },
+    "firmware/tests/fakes/freertos/FreeRTOS.h": {
+      "sha256": "782fa411b70b0b3d028599c5ac0d3200006e11a1ce302ec007e78f7118def935",
+      "blob": "be3835784e11265aecfdad28f6b0b2b181052651"
+    },
+    "firmware/tests/fakes/freertos/task.h": {
+      "sha256": "2bb27a1621664ad4b0544ce2be4c3a7566a8e8a968c04835322a979e8cf32fb3",
+      "blob": "97a10bfd7857cb3f6aae32a6ffa35743335119ff"
+    },
+    "firmware/tests/test_camera.c": {
+      "sha256": "374ffb0475c6106de21ccf322505ce696ad54e5d34ea647023794073c5883d61",
+      "blob": "b278a08d99215ca6964c84927c4800805115682e"
+    },
+    "hardware/evt0-r3/CHANGELOG_R1_to_R2.md": {
+      "sha256": "4524534488ea9a4f7d880f279322030684db099c41395c2e90eabf285051b582",
+      "blob": "09a08cd8cf583e9d69c3ebcc8d0b6a0c93d064da"
+    },
+    "hardware/evt0-r3/H01/F01_F22_trace.csv": {
+      "sha256": "5328da1f2085d255a92ba5bc9a0d3f243cab003aa83226571ea201d340ff321c",
+      "blob": "afbfdb0230c955d437a94fcb0b95b4d6b32c23e1"
+    },
+    "hardware/evt0-r3/H01/H01_architecture.md": {
+      "sha256": "aefa4d9b1c65092d46fd30e60b46f2cd3a96945dff4c58599f7f2e125e0528e7",
+      "blob": "a6e60cdf3b3cf0fc9762401bea321c2d84e1b47b"
+    },
+    "hardware/evt0-r3/H01/HW_SW_COMPAT_MATRIX.csv": {
+      "sha256": "6b54fcc75b2cf805fcfd17eed9d004522c8233eb06a5b7df737ea77388674d4b",
+      "blob": "2eea75411f409fff2b109215201490cf769e895c"
+    },
+    "hardware/evt0-r3/H01/ICR_to_Codex.md": {
+      "sha256": "435c2b6c35e48f2d2a4dad412fa63f79740b3b0fc9d2c9f8bb0e6d482dc24016",
+      "blob": "51275adf0ecb40fc07c94c4819dbf0c196042033"
+    },
+    "hardware/evt0-r3/H01/audio-interface.md": {
+      "sha256": "a5d1900cd6c1a9470ddeb6dbd6983d8e69ba70330f1f7a7eac945e35f97df6f7",
+      "blob": "b976c435f94b038087377e963be4bab59b9641ac"
+    },
+    "hardware/evt0-r3/H01/bom_system_candidates.csv": {
+      "sha256": "1c5a410af1f8c76b3bb97378dd35b96f4ecee8983b1182ac20947d82468307b8",
+      "blob": "9a43fbbf642c8b1a50ed19d1be86a87625a711f7"
+    },
+    "hardware/evt0-r3/H01/halo_hud.py": {
+      "sha256": "8239af35a73cc78bc1c262bad3adf447e671c2e742875b1342c56fe97a16004a",
+      "blob": "4d89a43a25161270d4ff6cef479b5542f52a3b2c"
+    },
+    "hardware/evt0-r3/H01/power_budget.csv": {
+      "sha256": "2e743054f59e5f4b78697ae54c783c3d3483909bdefdd461d8ff7136a9556369",
+      "blob": "e93ef56ee48ff30be4ef71376815a705e7a43f78"
+    },
+    "hardware/evt0-r3/H01/reference-eye-v22-j4.csv": {
+      "sha256": "ad44317400271a5bb54fae548063fdd7496d9aaea524850d90e2f6816eb6486e",
+      "blob": "32df32bf18675362c31a9599d3b28f4982bfcdd8"
+    },
+    "hardware/evt0-r3/H02/evt0_core/AUDIT_R0_to_R1.md": {
+      "sha256": "f2ed5ba49a6e2bc6b81d80abfd659969799c9faed014fc42c2cd3b93f521f90f",
+      "blob": "6b6ba7c638bc208854e5f894855b983a29f60203"
+    },
+    "hardware/evt0-r3/H02/evt0_core/ELECTRICAL_REVIEW.md": {
+      "sha256": "f42d3ffeba298e9c846b6e7b0ed52f77cdcd6dc60b9a906a38f58ecf81d0e7aa",
+      "blob": "d45dc770debc10abd003fa5b0592888b2026038f"
+    },
+    "hardware/evt0-r3/H02/evt0_core/aiar.kicad_sym": {
+      "sha256": "109cd71deaf8026bbe87c3076d164d88d0b20d970beb7b211a87bb7b3eab1ed0",
+      "blob": "93eb27f243a507c3807a8a04b15c047157b9ca91"
+    },
+    "hardware/evt0-r3/H02/evt0_core/bom_evt0_core.csv": {
+      "sha256": "ead80742a13476d3d0ae3fb9e87daa1046b5f02c6069b676e239aebbac1f524b",
+      "blob": "ea55d200ad6f43c6d626854286d399ba835badf4"
+    },
+    "hardware/evt0-r3/H02/evt0_core/evidence/evt0_core.xml": {
+      "sha256": "0533770ed90884a0fc4db33d88e3414c8fef34aa0fd2cc417e45bc90df62021a",
+      "blob": "d9460b4e966cacb4de0debfa13cfa74bfd555f20"
+    },
+    "hardware/evt0-r3/H02/evt0_core/evidence/pcb-drc.json": {
+      "sha256": "2e393e8967f8fcad47bbc543939a75f79790ee7f965d25823f97cb00398d4dec",
+      "blob": "08a4657903f37a94cbf920761ad161e6a06fa403"
+    },
+    "hardware/evt0-r3/H02/evt0_core/evt0_core.kicad_dru": {
+      "sha256": "1045210d29067a1dc84807559c864d5b51c6b182d30bc5a076d0b57de664cfcf",
+      "blob": "936d686fddd0e4a3b491483d7a8fcfce74f94b4d"
+    },
+    "hardware/evt0-r3/H02/evt0_core/evt0_core.kicad_pcb": {
+      "sha256": "08d60213f9e38acd081edf1af4d711196d405dd101a08bff10595dbfdef739c8",
+      "blob": "c03112d0d1a7166cf44f21fddde5e03602cb4402"
+    },
+    "hardware/evt0-r3/H02/evt0_core/evt0_core.kicad_pro": {
+      "sha256": "b06357ce8af94253add9769001ff898ae165b78ca72af0fb5ff863d2e870492f",
+      "blob": "8f8cbbb8d79e87dc4bab35378d0063e681b38f8c"
+    },
+    "hardware/evt0-r3/H02/evt0_core/evt0_core.kicad_sch": {
+      "sha256": "eaaeb603bf96d7ca14e9e0d20a2bfbdc620485b1e1bc4358bc3b6de00ef4408f",
+      "blob": "7dfa10f632ce6af3cdad9fb640d3ff7b3b9439b2"
+    },
+    "hardware/evt0-r3/H02/evt0_core/fp-lib-table": {
+      "sha256": "35724be539ebe5c915c65e0bdb6b599b89e16958a43c92ddfe67f309efd5d251",
+      "blob": "b98190707012855edb4e97f2dd69b124875e4124"
+    },
+    "hardware/evt0-r3/H02/evt0_core/fw_compat_report.md": {
+      "sha256": "0524f0aee6ed53538b29bd23b9bc253b5e89928d064e344cf266e02c52dbab21",
+      "blob": "2fc719f63a2e4d40bc7b48a6bef418c02447a111"
+    },
+    "hardware/evt0-r3/H02/evt0_core/gen/design.py": {
+      "sha256": "468a424263d592821434c555b84616ba2ffb36d89dd26d8ce1f7592e1773b043",
+      "blob": "c4350b8a3854829774d3fe35f67890e6a973311c"
+    },
+    "hardware/evt0-r3/H02/evt0_core/gen/gen_kicad.py": {
+      "sha256": "663805f0755d5992cf783c1e016a215888ba50113902cc01ab25cc7ef9cec250",
+      "blob": "41553a9bd7d3f3f8fc638a0c6db32d2ee0f04bd0"
+    },
+    "hardware/evt0-r3/H02/evt0_core/gen/pcb_layout.py": {
+      "sha256": "c5b58861946377e192537c67124591eb1da42a81f99f34b666325f62c145c65d",
+      "blob": "53bf790356beaebe40620e16e2fd438b3e0670a7"
+    },
+    "hardware/evt0-r3/H02/evt0_core/gen/recover_evt0_shell.py": {
+      "sha256": "a91136751c2df1ca419f514b2600e22c13e3e4dc1208f538792e02aa81314464",
+      "blob": "42d5d9ff50228eb726cd12766fc81ef191f3ee56"
+    },
+    "hardware/evt0-r3/H02/evt0_core/gen/verify_erc.py": {
+      "sha256": "cb3b5d65161e00b736d44fbb2705314b430a6ac7210754e7b88d30cd239b5ecf",
+      "blob": "e17b5fc56652ddaa39be6139f5d4a00706093f76"
+    },
+    "hardware/evt0-r3/H02/evt0_core/netlist.csv": {
+      "sha256": "d511c254fcf44d4697e939abf66b60c997dc78094205aa29f233b6c76fa36cee",
+      "blob": "6acdc5fe3c26511e637ef63eedd03a7774e9dcb1"
+    },
+    "hardware/evt0-r3/H02/evt0_core/pinmap_fw_crosscheck.csv": {
+      "sha256": "69850abe910624ab75a68c2ddb7c4306dfaed557a132db78e8756787f146281f",
+      "blob": "ba9f130977ed12bdbb48e5083a2c0f71631a4b68"
+    },
+    "hardware/evt0-r3/H02/evt0_core/pinmap_hw.csv": {
+      "sha256": "628e2cf5e77a1b3828f67f418ecedd551c4849611193ffba50a43c24e900ea23",
+      "blob": "c8386a6287a3ee658e0da832ae463610eefb7225"
+    },
+    "hardware/evt0-r3/H02/evt0_core/selfcheck_report.txt": {
+      "sha256": "2e7ce57cc4e75bec6b03c30cf8601c43de123fc7d0324eefe2e8a5c731c00b24",
+      "blob": "23b61d4fa16ca899528e331b84fe46a846c98f5d"
+    },
+    "hardware/evt0-r3/H02/evt0_core/sym-lib-table": {
+      "sha256": "c12391af8e6fb85d7de8b10c33e1435b4c35c9904d9b3f5cec30028dde24d7dd",
+      "blob": "609aaaf6ad30f8d25f1e1638a1cec937c8b89c60"
+    },
+    "hardware/evt0-r3/H03/H03_STACKUP_AND_RULES.md": {
+      "sha256": "9f21782e192c49483324b25bb65b81c3485818d498a26544cf3a570e2314cc1c",
+      "blob": "7b9d69f504c3548199236e7bf99ad619ad011023"
+    },
+    "hardware/evt0-r3/H03/H03_placement_plan.csv": {
+      "sha256": "17f4fb57138b69f1845624e3857c734501cf665f01a5f78299568e8109871a4d",
+      "blob": "8dc802356e5a4863a770749e9117012bbae14c33"
+    },
+    "hardware/evt0-r3/H04/H04_optics_mech_requirements.csv": {
+      "sha256": "995201b88b20f0aad428307fab66d10cd0558206f02485f55678bba5601adbc6",
+      "blob": "306f38425ed690af4535da07fdcfba558849a52f"
+    },
+    "hardware/evt0-r3/H05/H05_evt0_bringup_tests.csv": {
+      "sha256": "a9ed0129980e559b4b65ba88fdef2bdbdb089761104b98b4205143adacf72355",
+      "blob": "853ce5a881b9f94cda2300f9b3969574a9d32acc"
+    },
+    "hardware/evt0-r3/STATE_FOR_NEXT_SESSION.md": {
+      "sha256": "b3cc42c294428eb6f1085c5ab3bb14f3e03dd11e948a425c72f7cc77c4182782",
+      "blob": "346a8b57ad1b0d16f866eed19c84c50231e2e5e6"
+    },
+    "hardware/evt0-r3/VERIFICATION_R2.json": {
+      "sha256": "9ddbb2c1fa76dc853ff640832bb62e86398fe8551c98ac521812063b4b971a10",
+      "blob": "6289f0067aa0d080b75bf0f7849be24d424701bf"
+    },
+    "hardware/evt0-r3/evidence/evt0-erc-initial.rpt": {
+      "sha256": "5a5af628e3c8a797d1b8e688b6307da3b6fe913f796c5dda9bd7a445aea07864",
+      "blob": "e6908c38eccb9cfa50f014fd61b61be6d17a2596"
+    },
+    "hardware/evt0-r3/evidence/evt0-erc-inputs.json": {
+      "sha256": "e065feec12b09e4f4bef64288e1f6dfe03120b3dc888c5b4ec1491f31e41c2e9",
+      "blob": "353a92e30be4bb26c020028c71e5b449cec1dce8"
+    },
+    "hardware/evt0-r3/evidence/evt0-erc.rpt": {
+      "sha256": "46aecd44c5a1ce13025b1f1ac8b53bc4f50376e0ba6a8b100ad14de38be3fb59",
+      "blob": "b746a80efa9822ba4799fa155ab69e27e66aad37"
+    },
+    "hardware/evt0-r3/tools/check_fw_compat.py": {
+      "sha256": "fe7235959833bd146223954b6a12c2ddfb4294e201042c16853ecb720557389c",
+      "blob": "ee912f95074978ba227b77fa8081323ad0a3814f"
+    },
+    "hardware/h01/eye-v22-j4.csv": {
+      "sha256": "ad44317400271a5bb54fae548063fdd7496d9aaea524850d90e2f6816eb6486e",
+      "blob": "32df32bf18675362c31a9599d3b28f4982bfcdd8"
+    },
+    "hardware/h01/eye-v22-reservations.csv": {
+      "sha256": "be33cb9710fff3f8164e6cb52332ec84921b6e2cd0964ca44c618608c52aa330",
+      "blob": "a6b86cf9aa1d10ab8682db3016a824104250c4ee"
+    },
+    "hardware/h01/feature-handoff.csv": {
+      "sha256": "d16d5a0fe6886b45ca53c692a22908461f43fe2970134a26f44054333ad252ee",
+      "blob": "81b5f39bd01e1fbb43370339290f13bc0d1e764a"
+    },
+    "hardware/h01/halo_hud.py": {
+      "sha256": "8239af35a73cc78bc1c262bad3adf447e671c2e742875b1342c56fe97a16004a",
+      "blob": "4d89a43a25161270d4ff6cef479b5542f52a3b2c"
+    },
+    "hardware/h01/power-budget.csv": {
+      "sha256": "51382fb664f3db2aabd86b0d021ab974102a6f24df5fa06f7ffd4f7f57939c7d",
+      "blob": "435546fbac8d9a5bdbdb3e65a10088510254378c"
+    },
+    "hardware/h01/system-bom.csv": {
+      "sha256": "3d60fc406f351597ec901d7acf02f785804328939878116d802f068b2fc3c38b",
+      "blob": "2e5650e4aec5c00ec1463a92f6f354204bdb8988"
+    },
+    "hardware/h01/verify_design.py": {
+      "sha256": "485b2426f195e66d40edc45bc3a169c19e5c5e94de6a6a11314e5c5acd36890c",
+      "blob": "036448170a745cab96cf22e995d243825ae1a96c"
+    },
+    "hardware/kicad/cam-rail-a/BOM.csv": {
+      "sha256": "e406628e01c7d13724de170cb9b2246366fa66dd86b747eeafdb7f09591640d9",
+      "blob": "51de5fb779be3e4e6eca7ac454f191315b1c8f24"
+    },
+    "hardware/kicad/cam-rail-a/CamRail.kicad_sym": {
+      "sha256": "79bb104eb66aa8c3e854376ad4a2539f82a86013474ba9cc2889516381d749d5",
+      "blob": "c76018a0b37ab9627db7c8d606d0d7900b4bcbbe"
+    },
+    "hardware/kicad/cam-rail-a/CamRail.pretty/Chip_0805.kicad_mod": {
+      "sha256": "12e4e5821522dc6f5bc763fdac73da99df8bca428976a30fc2a414f6321e1286",
+      "blob": "dd168b59d738bade74d5ab64775534dfe999f56d"
+    },
+    "hardware/kicad/cam-rail-a/CamRail.pretty/Header_1x02.kicad_mod": {
+      "sha256": "67af8e4a779f94a5b348ad49c94d80546b689bacbbb7c616d99b54a36c2e3c18",
+      "blob": "fb79dfea7ad89444846ab874567a4d317dc38904"
+    },
+    "hardware/kicad/cam-rail-a/CamRail.pretty/LED_3mm.kicad_mod": {
+      "sha256": "607ace36dd1e85028ca7bf43b87b071849512f440be4f61b275bd6658e10b13d",
+      "blob": "39ce9ecfa71e2c2be70a9b3caf82a2e40f58a204"
+    },
+    "hardware/kicad/cam-rail-a/README.md": {
+      "sha256": "0d1e0b8cb267a0d1c65eff5a619427217406f5c247fac4d9a1c860cc8b01674e",
+      "blob": "6d2643aac1868eef400eb4e1f312d85ac5d9716e"
+    },
+    "hardware/kicad/cam-rail-a/build.py": {
+      "sha256": "3b8fbbf4a79ffceaaff86a6f0573e7d27ff2f29505a0aedefd4114d32a4c69a9",
+      "blob": "c58006e5f3cc5d05b6293816affbe5a3ab3e3182"
+    },
+    "hardware/kicad/cam-rail-a/cam-rail-a.kicad_pcb": {
+      "sha256": "ba7a0da302e5f087720add8207f61e1888a37cad8c2371a813b5191a25a1da0c",
+      "blob": "f32da1209ebd6717a21f522024d803169444475a"
+    },
+    "hardware/kicad/cam-rail-a/cam-rail-a.kicad_pro": {
+      "sha256": "728f067fb21f163100dd8da65383320b88fe55da0d64b653ae96282fe9590103",
+      "blob": "927e0f5bc1cd0a0bd6b917bca661c65c2657a13a"
+    },
+    "hardware/kicad/cam-rail-a/cam-rail-a.kicad_sch": {
+      "sha256": "5695cb4701a0f8939dcbbcc7a4bccefce614cc74312dc1138830993cc7f9c726",
+      "blob": "af0d1cf7e661ff4dee6ba3a43769948073763e83"
+    },
+    "hardware/kicad/cam-rail-a/fp-lib-table": {
+      "sha256": "88b494bddd564196ccfb3035166901491c49e048b9d4be534a56746dc90a7977",
+      "blob": "e41ea6d98b741ab788588b2d73a9bb29aed47570"
+    },
+    "hardware/kicad/cam-rail-a/manufacturing/assembly-top.pdf": {
+      "sha256": "64d0028835d4f22d7f70e86ff25e6447c55e6cb3bb37dd97b3d158056948403b",
+      "blob": "8563bd991242a1cb1349e7686d112a579518c928"
+    },
+    "hardware/kicad/cam-rail-a/manufacturing/cam-rail-a.step": {
+      "sha256": "66dc3f27c89535aa1da30a3645e322ecedb359ba662e6b307111b87ce983e294",
+      "blob": "15852385ef5f2932f7e2e2d844d27d6e34ad4d2b"
+    },
+    "hardware/kicad/cam-rail-a/manufacturing/drc.rpt": {
+      "sha256": "7cc35c51a2ebb2c3a99af1e7ceb674bf3fbc7b48b6aef9784b4c259dc8377f89",
+      "blob": "41e83e028fedf839fad5017e470258a525b4481e"
+    },
+    "hardware/kicad/cam-rail-a/manufacturing/erc.rpt": {
+      "sha256": "f9798e3449b28c2adf377b135013eda8094bf9ed5a4271b05db80d20d39c0df4",
+      "blob": "fa98bf6df62289dff35032ec802c139782d16033"
+    },
+    "hardware/kicad/cam-rail-a/manufacturing/gerbers/cam-rail-a-B_Cu.gbl": {
+      "sha256": "a6a36a0291f18bf3405dcb9bf791861538399930c92b3532d8a4b7970182d416",
+      "blob": "75e54a6c692cefe7deb2841ac3c86b8e586ce2f7"
+    },
+    "hardware/kicad/cam-rail-a/manufacturing/gerbers/cam-rail-a-B_Mask.gbs": {
+      "sha256": "d2a159ff6a53c0b0f34ab8b64e0dc67a0b2c767ee11cbbcb5ac0c479b50028fb",
+      "blob": "59330a5b03504f5562c85705806af51d70fde3b1"
+    },
+    "hardware/kicad/cam-rail-a/manufacturing/gerbers/cam-rail-a-B_Silkscreen.gbo": {
+      "sha256": "915bfcf5edbad1ac621de49930bad39c75bb5f9939894828e1d04cf2f09e1782",
+      "blob": "75ffccbfc7107811c613db9f4be8a44d17fee354"
+    },
+    "hardware/kicad/cam-rail-a/manufacturing/gerbers/cam-rail-a-Edge_Cuts.gm1": {
+      "sha256": "225e3f45aa57fa79de4905db124a253d353761621a54325717e30c626752802e",
+      "blob": "f08793413d697ebd5e1169abc673e39830588438"
+    },
+    "hardware/kicad/cam-rail-a/manufacturing/gerbers/cam-rail-a-F_Cu.gtl": {
+      "sha256": "c7e5673c4c213c3a8632dc96e3a988382280effa9bb75b6c9194abb54712372b",
+      "blob": "45bf063b518f6ffcb43dac1739e2feee66f3f8d1"
+    },
+    "hardware/kicad/cam-rail-a/manufacturing/gerbers/cam-rail-a-F_Mask.gts": {
+      "sha256": "de4794528c013e0132bf5c686bf31975bad1b65ba5c1f6d66413d27b2f3a0640",
+      "blob": "8f69a206ed744f7e40d553b6c0c275d38ad4c297"
+    },
+    "hardware/kicad/cam-rail-a/manufacturing/gerbers/cam-rail-a-F_Paste.gtp": {
+      "sha256": "8746c957801ffb039e4fdd5d0670d357d3aaec228f4fb0e3ecd45de44955e722",
+      "blob": "091855742ae481346f93e48db659548302f63f8c"
+    },
+    "hardware/kicad/cam-rail-a/manufacturing/gerbers/cam-rail-a-F_Silkscreen.gto": {
+      "sha256": "07edaff54d74eada7b207ea3ba8f7c1c6bef3ca87a1bf7fa3f3d631032a5e877",
+      "blob": "8c64e24b2d1ebc5d124a788d263527accab3862f"
+    },
+    "hardware/kicad/cam-rail-a/manufacturing/gerbers/cam-rail-a-job.gbrjob": {
+      "sha256": "fc0d5d8c5a15518df9284ab9387d7009a079c05cd66477eb47292ddc7224dce6",
+      "blob": "dbad973253f1c42ae42b892df22ec22b0cfbcaa8"
+    },
+    "hardware/kicad/cam-rail-a/manufacturing/gerbers/cam-rail-a.drl": {
+      "sha256": "d9d4f6da0c5e7d15da80837dd744e1ef595c63854934ccf8cdf38f9ccf7d7d17",
+      "blob": "0d2866189abb3a0f1e7cd4a5c4bebf4355131526"
+    },
+    "hardware/kicad/cam-rail-a/manufacturing/placement-mm.csv": {
+      "sha256": "99b2f464bdb99ba30bd59ea22ba909865b2f4de17b4112a10cd9fc1f67dc640b",
+      "blob": "6d9be92cf53c1639f6d833c1d963aee019e52834"
+    },
+    "hardware/kicad/cam-rail-a/manufacturing/schematic.pdf": {
+      "sha256": "e3e2ca7018756b652273ef15e9b16384a98e80eb624aca37c50d09cb77025f21",
+      "blob": "6bb0b5037a0d1315cc4ebde52488dd8f4ed3f991"
+    },
+    "hardware/kicad/cam-rail-a/manufacturing/schematic.xml": {
+      "sha256": "6588fad13d934f3f536ca6e51df2cc14ab1a875ce48b0b79eb4827c0f71a239d",
+      "blob": "3486d3fc53c668503b8810545e0619649d055e59"
+    },
+    "hardware/kicad/cam-rail-a/models/Chip_0805.step": {
+      "sha256": "712671337d44c82b3031164b4968c4d65d299d74e9d5b913688dc295d0491c0d",
+      "blob": "2dd59af6a6959ea70cb9e0d078eadf41ce06acf2"
+    },
+    "hardware/kicad/cam-rail-a/models/Header_1x02.step": {
+      "sha256": "34f87b45a2e4f77aedbd748b112e2105f9b88bc514b8a6fe63858cbb1c653df8",
+      "blob": "1602589b890ead71142c7fc126fbb879bcf1cd39"
+    },
+    "hardware/kicad/cam-rail-a/models/LED_3mm.step": {
+      "sha256": "dc60b36cd9b80763a906c22aebe8a4e5dfa295255108d0c079258b269f6098c7",
+      "blob": "ca9d4595ca5e93490f6f39b11071562df40faac1"
+    },
+    "hardware/kicad/cam-rail-a/models/envelopes.py": {
+      "sha256": "6be4f19e14969319fc50d02755843e6be9df9de48f8e8176fd28f125dbeac304",
+      "blob": "2e4449c7c08a4e6c234e7ea70413cb333ad39834"
+    },
+    "hardware/kicad/cam-rail-a/sym-lib-table": {
+      "sha256": "d1e98bd5d0712eaad982f0ac5078783e077e5ec93cf4021d7cd0d969761a4c63",
+      "blob": "f2546189dfd908b8fb272f4f41b22303bca88933"
+    },
+    "hardware/kicad/s3-carrier-a/Carrier.kicad_sym": {
+      "sha256": "76678a1b3e4920cbbc021626066d6308c32aea85031bd1cb163277944b25fc04",
+      "blob": "d7604b9cd9bf0fe75ac1dfb9f1d4fa8c853cf476"
+    },
+    "hardware/kicad/s3-carrier-a/build.py": {
+      "sha256": "46ef172f7735ae2045136b0ab16ae328809d9ea3de2fc8bc7c20ddeb7812c03f",
+      "blob": "b2a7a2fc5062daba4bf2b01c86852bff684cfa73"
+    },
+    "hardware/kicad/s3-carrier-a/pinmap.csv": {
+      "sha256": "bf5c503a90d90c298d76e13a1da1fbe95f9ce8b09e5538c38529c3ddaea7ea06",
+      "blob": "096f1b7a9af5ca893831ef474263c9baa35b4262"
+    },
+    "hardware/kicad/s3-carrier-a/s3-carrier-a.kicad_pro": {
+      "sha256": "7de4ed6d348aa462fcda57edb31dd66721f278b5d1e1ad6316827be51c32128f",
+      "blob": "5075ae0da6672228ca7c06e5fd36abfa07a452fb"
+    },
+    "hardware/kicad/s3-carrier-a/s3-carrier-a.kicad_sch": {
+      "sha256": "e551a489e40b96e40c31e7f3b2cea9d0ec69eb1c22a151b7229993908724524d",
+      "blob": "9e571c68fa05927fa5d631970a318e58423b6587"
+    },
+    "hardware/kicad/s3-carrier-a/sym-lib-table": {
+      "sha256": "91926cf7123e2273032097a9ecaa076a4fef897de029c64d11eee53b0c6aafc4",
+      "blob": "c4936ce21d0dd292f273cd9ff969151515efb00e"
+    },
+    "hardware/mechanical/README.md": {
+      "sha256": "74edb9cc6f7a94ed050839583ffee103f6dc0654fcdc541b2592abc330faea53",
+      "blob": "bbeecfdb62844435945852a067e2ebf33db08b8b"
+    },
+    "hardware/mechanical/build_fixture.py": {
+      "sha256": "ed5fa84b12e66d40f1651dc2e0fff8f09c97732e064c737bef1305936c3b406c",
+      "blob": "e86b62e04f845751e2f172b46fad53cdd741dc26"
+    },
+    "hardware/mechanical/check_halo_reference.py": {
+      "sha256": "bddda3a7669d2e5b7093cc52c8c488ed80998ecd227a0ff20acc2d79b6971a0d",
+      "blob": "a26f674fc54bbb53d2ecad21ca2ff0f0e795900f"
+    },
+    "hardware/mechanical/design.json": {
+      "sha256": "e830d118d8c4c2a29a5662aa8bdacc6aead110dc251ed066acae3c3dc6d55487",
+      "blob": "fea55932218aac952efa59b266593b5132cbd18f"
+    },
+    "hardware/mechanical/stl/bridge.stl": {
+      "sha256": "e6ddae5c7e4df458d9d4322c603c3996dfc029f13e9f9e57a8ba7fab8d734cba",
+      "blob": "67de082f7bd03447d91a02d662ebf0029f537e2a"
+    },
+    "hardware/mechanical/stl/cam_rail_tray.stl": {
+      "sha256": "d6297a442bbade819735c52e3143619accc38acff47aa54355588117a67b7177",
+      "blob": "2509dab84d8e85c71a260e39483bf5f01110fa75"
+    },
+    "hardware/mechanical/stl/deck.stl": {
+      "sha256": "0341e7176d8dc3e290e7e9596ac5f58ed1ad5ed0251e5a8bdc199826e2594d7e",
+      "blob": "88e5a0cfaecf7b6ac03f558d6af6783b7524d386"
+    },
+    "hardware/mechanical/stl/geometry.json": {
+      "sha256": "462ceac4c2b9598e9bd27796c14aa88e591b69c9fea4aa2e657e1213e1eebae2",
+      "blob": "c4c38746e6f5daa4d9b72258544ef3791d4736d4"
+    },
+    "hardware/mechanical/stl/pupil_mask.stl": {
+      "sha256": "c5490f24ae2b3f5710a69fb71668e8093793e8129f815559c59da2d0614bf1a8",
+      "blob": "1eb7dee0b0dda3b8ba98882444a7feb69e6d74d8"
+    },
+    "hardware/mechanical/stl/temple.stl": {
+      "sha256": "21ffba59e2e60c17e78bde75a9fe82657212601a28b88a40720544d855c35eab",
+      "blob": "cca1f4d4a04f1d82bb7e507b9ab6b514fe842cf2"
+    },
+    "hardware/validation/eyebox.csv": {
+      "sha256": "3787e238688b1f56b1a04bb3d409537bc5eb6a6e71d1e996fd9d1bbdad4ecc5b",
+      "blob": "0aa77c90043bf70c46fe8b32ecce2324a47ae9dc"
+    },
+    "hardware/validation/measurements.csv": {
+      "sha256": "7244efe58a54c9713c526861510155a82aa2ba890a9e37f9402b11fb65be0b37",
+      "blob": "16cfb853cd0e0baa25bc2b6d8e17d46b59eea2a1"
+    },
+    "hardware/validation/run_sheet.md": {
+      "sha256": "e56bdb874a8a0468779b088be555bf154499094f5d4881950baf5eeacb5a8708",
+      "blob": "4c8b7348573374bc3f14c9890a4cf45da1328fb9"
+    },
+    "hardware/validation/summarize.py": {
+      "sha256": "5a5814636f70822b812cb7db3f61b0f730e11b74dc6abcae6640c587703193e1",
+      "blob": "d5cf8c928d4d7e2c9e3818a933328490b7631167"
+    }
+  }
+}
