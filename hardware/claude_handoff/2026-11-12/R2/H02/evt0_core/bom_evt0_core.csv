@@ -1,0 +1,55 @@
+﻿item,refs,qty,value,footprint,MPN,manufacturer,fit,notes
+1,J1,1,USB-C 16P,Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12,TYPE-C-31-M-12,Korean Hroparts Elec,FIT,
+2,R1 R2,2,5.1k 1%,Resistor_SMD:R_0402_1005Metric,,,FIT,
+3,U2,1,USBLC6-2SC6,Package_TO_SOT_SMD:SOT-23-6,USBLC6-2SC6,STMicroelectronics,FIT,
+4,D1,1,TVS 5V SOD-323,Diode_SMD:D_SOD-323,TBD (5V standoff),TBD,FIT,"pin1=K, pin2=A"
+5,U3,1,BQ24072RGTR,Package_DFN_QFN:QFN-16-1EP_3x3mm_P0.5mm_EP1.7x1.7mm,BQ24072RGTR,Texas Instruments,FIT,"R2-F1: pin15=TD tied to VSS (termination enabled). alt: BQ24073RGTR (OUT=4.4V, pin15 also TD). BQ24075/79 are NOT drop-in: pin15=SYSOFF, OUT=5.5V"
+6,C1,1,1uF 10V X5R,Capacitor_SMD:C_0402_1005Metric,,,FIT,
+7,C2,1,4.7uF 10V X5R,Capacitor_SMD:C_0603_1608Metric,,,FIT,
+8,C3,1,10uF 10V X5R,Capacitor_SMD:C_0603_1608Metric,,,FIT,
+9,R3 R11 R12 R13 R14 R15 R21 R22,8,10k,Resistor_SMD:R_0402_1005Metric,,,FIT,"EN2=0,EN1=1 -> USB500 input limit; IO45 strap must be LOW at boot (VDD_SPI=3.3V); IO46 strap must be LOW at boot; camera rail OFF during reset/boot (IO3 strap: JTAG source only)"
+10,R4,1,1.6k 1%,Resistor_SMD:R_0402_1005Metric,,,FIT,ILIM not used in EN2/EN1=0/1 (USB500) mode; VERIFY allowed range vs datasheet
+11,R5,1,5.9k 1%,Resistor_SMD:R_0402_1005Metric,,,FIT,~150mA charge (K_ISET/R); VERIFY vs datasheet + cell spec
+12,R6 R16 R17,3,0R,Resistor_SMD:R_0402_1005Metric,,,FIT,"DNP for OV3660/OV5640 modules using internal DVDD; R2-F1: TD strapped to VSS = charge termination ENABLED (TI datasheet: TD read at startup only, do not float). No ship mode on BQ24072; EVT-0 battery disconnect = pull JP1; default DOVDD = gated 3V3"
+13,R7 R25 R32,3,1k,Resistor_SMD:R_0402_1005Metric,,,FIT,R2-F3: limits contention current to ~3.3mA if GPIO3 is driven low while JP2 is closed
+14,D2,1,LED red 0603,LED_SMD:LED_0603_1608Metric,TBD,,FIT,"pin1=K, pin2=A"
+15,R8,1,10k,Resistor_SMD:R_0402_1005Metric,,,DNP,fit only if pack has no NTC
+16,J2,1,BAT 1S LiPo,Connector_JST:JST_SH_SM03B-SRSS-TB_1x03-1MP_P1.00mm_Horizontal,SM03B-SRSS-TB,JST,FIT,
+17,JP1,1,I_BAT measure,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,,,FIT,jumper / ammeter insertion point for H05
+18,R9 R10,2,1M 1%,Resistor_SMD:R_0402_1005Metric,,,FIT,
+19,C4 C9 C16 C17 C18 C19,6,100nF,Capacitor_SMD:C_0402_1005Metric,,,FIT,
+20,U4,1,TLV75733PDBVR,Package_TO_SOT_SMD:SOT-23-5,TLV75733PDBVR,Texas Instruments,FIT,"alt: AP2112K-3.3TRG1 (600mA, same pinout). R1 RISK: LDO dropout, 3V3 sags at low VBAT; EVT-1 uses buck-boost (see H01)"
+21,C5 C6 C11 C12 C13 C14 C15 C20,8,1uF 10V,Capacitor_SMD:C_0402_1005Metric,,,FIT,
+22,C7 C8,2,22uF 6.3V X5R,Capacitor_SMD:C_0805_2012Metric,,,FIT,
+23,U1,1,ESP32-S3-WROOM-1-N16R8,RF_Module:ESP32-S3-WROOM-1,ESP32-S3-WROOM-1-N16R8,Espressif Systems,FIT,
+24,C10,1,10uF 10V,Capacitor_SMD:C_0603_1608Metric,,,FIT,
+25,SW1,1,RESET,Button_Switch_SMD:SW_SPST_TL3342,TL3342F160QG,E-Switch,FIT,
+26,SW2,1,BOOT/ACTION,Button_Switch_SMD:SW_SPST_TL3342,TL3342F160QG,E-Switch,FIT,
+27,U5,1,TLV75528PDBVR,Package_TO_SOT_SMD:SOT-23-5,TLV75528PDBVR,Texas Instruments,FIT,
+28,U6,1,TLV75512PDBVR,Package_TO_SOT_SMD:SOT-23-5,TLV75512PDBVR,Texas Instruments,FIT,EN chained to CAM_2V8; DNP for sensors with internal DVDD regulator
+29,Q2 Q1,2,BSS138,Package_TO_SOT_SMD:SOT-23,BSS138,onsemi,FIT,R1-F2: was 2N7002 (Vgs(th) max 2.5V vs 2.77V gate drive = no margin)
+30,Q3,1,DMG2305UX,Package_TO_SOT_SMD:SOT-23,DMG2305UX-7,Diodes Inc.,FIT,any logic-level SOT-23 P-FET with G/S/D = 1/2/3; VERIFY pinout of the part actually bought
+31,R29 R26,2,100k,Resistor_SMD:R_0402_1005Metric,,,FIT,Q3 off by default
+32,R18,1,0R,Resistor_SMD:R_0402_1005Metric,,,DNP,option DOVDD=2V8 (never fit together with R17)
+33,R19 R20,2,4.7k,Resistor_SMD:R_0402_1005Metric,,,FIT,
+34,R23 R24,2,33R,Resistor_SMD:R_0402_1005Metric,,,FIT,
+35,J3,1,CAM DVP 24P,Connector_FFC-FPC:Hirose_FH12-24S-0.5SH_1x24-1MP_P0.50mm_Horizontal,FH12-24S-0.5SH(55),Hirose,FIT,
+36,R27,1,330R,Resistor_SMD:R_0402_1005Metric,,,FIT,
+37,D3,1,LED white 0603,LED_SMD:LED_0603_1608Metric,TBD (>=100mcd @5mA),,FIT,"pin1=K, pin2=A; no firmware path can disable while sensor AVDD is on"
+38,J4,1,DISP QSPI breakout,Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical,,,FIT,"QSPI to AR light-engine EVK (baseline candidate: JBD 0.13in microLED, SPI/QSPI + frame buffer); FPC pinout/rails pending vendor datasheet"
+39,J5,1,MIC breakout,Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical,,,FIT,"I2S or PDM (CLK=SCK, DATA=SD) mic board"
+40,J6,1,DEBUG UART,Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical,,,FIT,
+41,J7,1,BT-AUDIO breakout,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,,,FIT,BT Classic audio SoC daughterboard (F03)
+42,TP1,1,VBUS,TestPoint:TestPoint_Pad_D1.0mm,,,FIT,
+43,TP2,1,VSYS,TestPoint:TestPoint_Pad_D1.0mm,,,FIT,
+44,TP3,1,VBAT,TestPoint:TestPoint_Pad_D1.0mm,,,FIT,
+45,TP4,1,3V3,TestPoint:TestPoint_Pad_D1.0mm,,,FIT,
+46,TP5,1,CAM_2V8,TestPoint:TestPoint_Pad_D1.0mm,,,FIT,
+47,TP6,1,CAM_1V2,TestPoint:TestPoint_Pad_D1.0mm,,,FIT,
+48,TP7,1,GND,TestPoint:TestPoint_Pad_D1.0mm,,,FIT,
+49,TP8,1,CHG_ISET,TestPoint:TestPoint_Pad_D1.0mm,,,FIT,
+50,TP9,1,CHG_PGOOD_N,TestPoint:TestPoint_Pad_D1.0mm,,,FIT,
+51,TP10,1,CAM_3V3,TestPoint:TestPoint_Pad_D1.0mm,,,FIT,
+52,R28,1,100k,Resistor_SMD:R_0402_1005Metric,,,DNP,pull-up for probing PGOOD
+53,R30 R31,2,4.7k,Resistor_SMD:R_0402_1005Metric,,,DNP,R2-F2 option: sensor I2C SCL pull-up (only after ICR-05 accepted); R2-F2 option: sensor I2C SDA pull-up (only after ICR-05 accepted)
+54,JP2,1,CAM_PWR force (bench),Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,,,FIT,R2-F3: OPEN by default; bench only

@@ -1,0 +1,37 @@
+gpio,module_pin,hw_net,constraint,fw_field,fw_profile,verdict
+0,27,KEY_BOOT,strap: boot mode (pull-up),button_gpio,esp32_s3_eye_mb_v2.2,match
+1,39,VBAT_ADC,,,,NOT IN FIRMWARE PROFILE
+2,38,MIC_SD,,,,NOT IN FIRMWARE PROFILE
+3,15,CAM_PWR_EN,strap: JTAG source,,,NOT IN FIRMWARE PROFILE
+4,4,CAM_SIOD,,sda,esp32_s3_eye_mb_v2.2,match
+5,5,CAM_SIOC,,scl,esp32_s3_eye_mb_v2.2,match
+6,6,CAM_VSYNC,,vsync,esp32_s3_eye_mb_v2.2,match
+7,7,CAM_HREF,,href,esp32_s3_eye_mb_v2.2,match
+8,12,CAM_Y4,,d[2],esp32_s3_eye_mb_v2.2,match
+9,17,CAM_Y3,,d[1],esp32_s3_eye_mb_v2.2,match
+10,18,CAM_Y5,,d[3],esp32_s3_eye_mb_v2.2,match
+11,19,CAM_Y2,,d[0],esp32_s3_eye_mb_v2.2,match
+12,20,CAM_Y6,,d[4],esp32_s3_eye_mb_v2.2,match
+13,21,CAM_PCLK_R,,pclk,esp32_s3_eye_mb_v2.2,match
+14,22,DISP_RST,,,,NOT IN FIRMWARE PROFILE
+15,8,CAM_XCLK_R,,xclk,esp32_s3_eye_mb_v2.2,match
+16,9,CAM_Y9,,d[7],esp32_s3_eye_mb_v2.2,match
+17,10,CAM_Y8,,d[6],esp32_s3_eye_mb_v2.2,match
+18,11,CAM_Y7,,d[5],esp32_s3_eye_mb_v2.2,match
+19,13,USB_DM,USB D-,,,n/a
+20,14,USB_DP,USB D+,,,n/a
+21,23,DISP_CS,,,,NOT IN FIRMWARE PROFILE
+35,28,NC,octal PSRAM - unusable,,,n/a
+36,29,NC,octal PSRAM - unusable,,,n/a
+37,30,NC,octal PSRAM - unusable,,,n/a
+38,31,DISP_D0,,,,NOT IN FIRMWARE PROFILE
+39,32,DISP_D1,,,,NOT IN FIRMWARE PROFILE
+40,33,DISP_D2,,,,NOT IN FIRMWARE PROFILE
+41,34,MIC_SCK,,,,NOT IN FIRMWARE PROFILE
+42,35,MIC_WS,,,,NOT IN FIRMWARE PROFILE
+43,37,U0TXD,U0TXD,,,n/a
+44,36,U0RXD,U0RXD,,,n/a
+45,26,DISP_PWR_EN,"strap: VDD_SPI, LOW at reset",,,NOT IN FIRMWARE PROFILE
+46,16,BT_AUD_EN,strap: LOW at reset,,,NOT IN FIRMWARE PROFILE
+47,24,DISP_CLK,,,,NOT IN FIRMWARE PROFILE
+48,25,DISP_D3,,,,NOT IN FIRMWARE PROFILE
