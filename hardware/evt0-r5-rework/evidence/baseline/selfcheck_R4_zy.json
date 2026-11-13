@@ -1,0 +1,130 @@
+{
+ "note": "zy_pcb selfcheck, NOT KiCad native DRC",
+ "gaps_total": 58,
+ "gaps_by_net": {
+  "/CAM_DOVDD": 6,
+  "/GND": 4,
+  "/USB_DM": 4,
+  "/USB_DP": 4,
+  "/CAM_2V8": 3,
+  "/CAM_DVDD": 2,
+  "/CAM_RST_N": 2,
+  "/CAM_SIOC": 2,
+  "/CAM_SIOD": 2,
+  "/DISP_PWR_EN": 2,
+  "/AUD_UART_RX": 1,
+  "/AUD_UART_TX": 1,
+  "/CAM_HREF": 1,
+  "/CAM_PCLK": 1,
+  "/CAM_PCLK_R": 1,
+  "/CAM_PWDN": 1,
+  "/CAM_VSYNC": 1,
+  "/CAM_XCLK": 1,
+  "/CAM_XCLK_R": 1,
+  "/CAM_Y2": 1,
+  "/CAM_Y3": 1,
+  "/CAM_Y4": 1,
+  "/CAM_Y5": 1,
+  "/CAM_Y6": 1,
+  "/CAM_Y7": 1,
+  "/CAM_Y8": 1,
+  "/CAM_Y9": 1,
+  "/CHG_PGOOD_N": 1,
+  "/DISP_CLK": 1,
+  "/DISP_CS": 1,
+  "/DISP_D0": 1,
+  "/DISP_D1": 1,
+  "/DISP_D2": 1,
+  "/DISP_D3": 1,
+  "/DISP_RST": 1,
+  "/VBUS": 1,
+  "/VSYS": 1
+ },
+ "violations": {
+  "drill_out_of_range": 12
+ },
+ "violation_detail": [
+  [
+   "drill_out_of_range",
+   "pad:U1.41[/GND]@122.100,74.560",
+   "None",
+   0.2
+  ],
+  [
+   "drill_out_of_range",
+   "pad:U1.41[/GND]@122.100,75.960",
+   "None",
+   0.2
+  ],
+  [
+   "drill_out_of_range",
+   "pad:U1.41[/GND]@122.800,73.860",
+   "None",
+   0.2
+  ],
+  [
+   "drill_out_of_range",
+   "pad:U1.41[/GND]@122.800,75.260",
+   "None",
+   0.2
+  ],
+  [
+   "drill_out_of_range",
+   "pad:U1.41[/GND]@122.800,76.660",
+   "None",
+   0.2
+  ],
+  [
+   "drill_out_of_range",
+   "pad:U1.41[/GND]@123.500,74.560",
+   "None",
+   0.2
+  ],
+  [
+   "drill_out_of_range",
+   "pad:U1.41[/GND]@123.500,75.960",
+   "None",
+   0.2
+  ],
+  [
+   "drill_out_of_range",
+   "pad:U1.41[/GND]@124.200,73.860",
+   "None",
+   0.2
+  ],
+  [
+   "drill_out_of_range",
+   "pad:U1.41[/GND]@124.200,75.260",
+   "None",
+   0.2
+  ],
+  [
+   "drill_out_of_range",
+   "pad:U1.41[/GND]@124.200,76.660",
+   "None",
+   0.2
+  ],
+  [
+   "drill_out_of_range",
+   "pad:U1.41[/GND]@124.900,74.560",
+   "None",
+   0.2
+  ],
+  [
+   "drill_out_of_range",
+   "pad:U1.41[/GND]@124.900,75.960",
+   "None",
+   0.2
+  ]
+ ],
+ "dangling": [
+  [
+   "trk:[/GND]@130.500,117.950",
+   [
+    130.25,
+    118.0
+   ]
+  ]
+ ],
+ "seconds": 0.6
+}

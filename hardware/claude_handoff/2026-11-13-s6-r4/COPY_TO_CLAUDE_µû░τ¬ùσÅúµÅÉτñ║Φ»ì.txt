@@ -1,0 +1,3 @@
+继续ZY AI/AR硬件H02/H03 R5整改。已上传【13:46新窗口续接工程包】。先读README_FIRST.md、STATE_FOR_NEXT_SESSION.md及现有R5工程STATE。已有S0–S5 r3真实KiCad工程，PCB SHA256前缀dc5f98a7，自检未连接51。13:46仅新增离线分析脚本、没有交付更新PCB；可查看RECOVERED_1346_UNVERIFIED但先验证再使用，禁止重开发检查器。
+
+第一步：立即建立工作副本并输出可下载基线工程ZIP，防额度中断。第二步：具备KiCad10则在副本中覆铜重铺并执行原生ERC/DRC/parity，保存报告和退出码；否则标记NOT RUN，不宣称通过。第三步：核查GND悬空、J3、PGOOD、VSYS，安全确认后逐项整改；USB缺叠层/90Ω/工艺确认时继续阻断，不得用单线布线器冒充差分。每完成一步马上更新PCB/BOM/CHANGELOG/STATE并交付完整ZIP。有GitHub权限则独立Draft PR，否则直接交付ZIP。R4/R5历史只读，禁止降低制造/隐私规则或出Gerber。少解释，直接执行。
