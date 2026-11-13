@@ -1,0 +1,37 @@
+gpio,module_pin,hw_net,constraint,fw_field,fw_profile,verdict
+0,27,KEY_BOOT,strap: boot mode (pull-up),button_gpio,CONFIG_GL_BOARD_AIAR_EVT0_R3,match
+1,39,VBAT_ADC,,vbat_adc,CONFIG_GL_BOARD_AIAR_EVT0_R3,match
+2,38,MIC_SD,,mic_sd,CONFIG_GL_BOARD_AIAR_EVT0_R3,match
+3,15,CAM_PWR_EN,strap: JTAG source,cam_pwr_en,CONFIG_GL_BOARD_AIAR_EVT0_R3,match
+4,4,CAM_SIOD,,sda,CONFIG_GL_BOARD_AIAR_EVT0_R3,match
+5,5,CAM_SIOC,,scl,CONFIG_GL_BOARD_AIAR_EVT0_R3,match
+6,6,CAM_VSYNC,,vsync,CONFIG_GL_BOARD_AIAR_EVT0_R3,match
+7,7,CAM_HREF,,href,CONFIG_GL_BOARD_AIAR_EVT0_R3,match
+8,12,CAM_Y4,,d[2],CONFIG_GL_BOARD_AIAR_EVT0_R3,match
+9,17,CAM_Y3,,d[1],CONFIG_GL_BOARD_AIAR_EVT0_R3,match
+10,18,CAM_Y5,,d[3],CONFIG_GL_BOARD_AIAR_EVT0_R3,match
+11,19,CAM_Y2,,d[0],CONFIG_GL_BOARD_AIAR_EVT0_R3,match
+12,20,CAM_Y6,,d[4],CONFIG_GL_BOARD_AIAR_EVT0_R3,match
+13,21,CAM_PCLK_R,,pclk,CONFIG_GL_BOARD_AIAR_EVT0_R3,match
+14,22,DISP_RST,,,CONFIG_GL_BOARD_AIAR_EVT0_R3,reserved: optical interface unreviewed
+15,8,CAM_XCLK_R,,xclk,CONFIG_GL_BOARD_AIAR_EVT0_R3,match
+16,9,CAM_Y9,,d[7],CONFIG_GL_BOARD_AIAR_EVT0_R3,match
+17,10,CAM_Y8,,d[6],CONFIG_GL_BOARD_AIAR_EVT0_R3,match
+18,11,CAM_Y7,,d[5],CONFIG_GL_BOARD_AIAR_EVT0_R3,match
+19,13,USB_DM,USB D-,,CONFIG_GL_BOARD_AIAR_EVT0_R3,hardware reserved
+20,14,USB_DP,USB D+,,CONFIG_GL_BOARD_AIAR_EVT0_R3,hardware reserved
+21,23,DISP_CS,,,CONFIG_GL_BOARD_AIAR_EVT0_R3,reserved: optical interface unreviewed
+35,28,NC,octal PSRAM - unusable,,CONFIG_GL_BOARD_AIAR_EVT0_R3,hardware reserved
+36,29,NC,octal PSRAM - unusable,,CONFIG_GL_BOARD_AIAR_EVT0_R3,hardware reserved
+37,30,NC,octal PSRAM - unusable,,CONFIG_GL_BOARD_AIAR_EVT0_R3,hardware reserved
+38,31,DISP_D0,,,CONFIG_GL_BOARD_AIAR_EVT0_R3,reserved: optical interface unreviewed
+39,32,DISP_D1,,,CONFIG_GL_BOARD_AIAR_EVT0_R3,reserved: optical interface unreviewed
+40,33,DISP_D2,,,CONFIG_GL_BOARD_AIAR_EVT0_R3,reserved: optical interface unreviewed
+41,34,MIC_SCK,,mic_sck,CONFIG_GL_BOARD_AIAR_EVT0_R3,match
+42,35,MIC_WS,,mic_ws,CONFIG_GL_BOARD_AIAR_EVT0_R3,match
+43,37,U0TXD,U0TXD,audio_uart_tx,CONFIG_GL_BOARD_AIAR_EVT0_R3,match
+44,36,U0RXD,U0RXD,audio_uart_rx,CONFIG_GL_BOARD_AIAR_EVT0_R3,match
+45,26,DISP_PWR_EN,"strap: VDD_SPI, LOW at reset",,CONFIG_GL_BOARD_AIAR_EVT0_R3,reserved: optical interface unreviewed
+46,16,STRAP46,strap: LOW at reset,,CONFIG_GL_BOARD_AIAR_EVT0_R3,strap only: never enable audio
+47,24,DISP_CLK,,,CONFIG_GL_BOARD_AIAR_EVT0_R3,reserved: optical interface unreviewed
+48,25,DISP_D3,,,CONFIG_GL_BOARD_AIAR_EVT0_R3,reserved: optical interface unreviewed

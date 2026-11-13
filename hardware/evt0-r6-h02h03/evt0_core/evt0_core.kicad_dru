@@ -1,0 +1,29 @@
+(version 1)
+# R3 lab constraints, checked with KiCad 10.0.7. No fabrication process approved.
+# Board minimum trace is 0.20 mm and through-drill 0.30 mm; do not relax for U1's 0.20 mm holes.
+# Netclass clearance is 0.15/0.20 mm.
+# R6: candidate stackup C1 (1.0 mm 4L, F.Cu / 0.2104 mm 7628 PP er4.4 / In1 GND) is in (setup (stackup)).
+# USB2 90R geometry W=0.22 / S=0.15 is a 2D-solver ESTIMATE (89.9 ohm, analytic ~92-98 ohm);
+# fab impedance calculation + coupon still required before release. USB min width raised 0.18->0.20
+# to match board minimum (raise only).
+(rule "USB2 diff pair width/gap (90R candidate C1, verify with fab stackup calculator)"
+  (condition "A.NetClass == 'USB'")
+  (constraint track_width (min 0.2) (opt 0.22) (max 0.25))
+  (constraint diff_pair_gap (min 0.13) (opt 0.15) (max 0.2))
+  (constraint diff_pair_uncoupled (max 3.0)))
+(rule "USB2 diff pair skew"
+  (condition "A.NetClass == 'USB'")
+  (constraint skew (max 1.0)))
+(rule "USB2 via count (keep pair on F.Cu over solid In1 GND)"
+  (condition "A.NetClass == 'USB'")
+  (constraint via_count (max 2)))
+(rule "Camera/display clocks keep-away from other signals"
+  (condition "A.NetClass == 'CamClk' && B.NetClass != 'CamClk' && B.NetClass != 'Power'")
+  (constraint clearance (min 0.3)))
+(rule "Power traces minimum width"
+  (condition "A.NetClass == 'Power'")
+  (constraint track_width (min 0.3)))
+(rule "Via drill minimum"
+  (constraint hole_size (min 0.3)))
+(rule "Copper to board edge"
+  (constraint edge_clearance (min 0.3)))

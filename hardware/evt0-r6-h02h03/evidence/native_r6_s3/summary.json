@@ -1,0 +1,59 @@
+{
+ "kicad": "10.0.8",
+ "exit_codes": [
+  "erc_json_exit=0",
+  "erc_rpt_exit=0",
+  "drc_json_exit=0",
+  "drc_rpt_exit=0",
+  "netlist_exit=0",
+  "inputs_unchanged=True"
+ ],
+ "erc": {
+  "total": 0,
+  "by_severity": {},
+  "by_type": {}
+ },
+ "drc": {
+  "violations": 0,
+  "by_severity": {},
+  "by_type": {},
+  "unconnected_items": 51,
+  "unconnected_by_net": {
+   "/AUD_UART_TX": 1,
+   "/USB_DP": 4,
+   "/USB_DM": 4,
+   "/CAM_2V8": 3,
+   "/CAM_DOVDD": 6,
+   "/CAM_SIOD": 2,
+   "/CAM_SIOC": 2,
+   "/CAM_VSYNC": 1,
+   "/CAM_HREF": 1,
+   "/CAM_XCLK_R": 1,
+   "/CAM_Y9": 1,
+   "/CAM_Y8": 1,
+   "/CAM_Y7": 1,
+   "/CAM_Y4": 1,
+   "/CAM_Y3": 1,
+   "/CAM_Y5": 1,
+   "/CAM_Y2": 1,
+   "/CAM_Y6": 1,
+   "/CAM_PCLK_R": 1,
+   "/DISP_RST": 1,
+   "/DISP_CS": 1,
+   "/DISP_CLK": 1,
+   "/DISP_D3": 1,
+   "/DISP_PWR_EN": 2,
+   "/DISP_D0": 1,
+   "/DISP_D1": 1,
+   "/DISP_D2": 1,
+   "/CAM_RST_N": 2,
+   "/CAM_PWDN": 1,
+   "/CAM_DVDD": 2,
+   "/CAM_XCLK": 1,
+   "/CAM_PCLK": 1,
+   "/AUD_UART_RX": 1
+  },
+  "schematic_parity": 0,
+  "parity_by_type": {}
+ }
+}
