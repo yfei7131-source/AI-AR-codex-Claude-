@@ -1,0 +1,14 @@
+item,domain,part_or_assembly,qty_per_selected_path,stage,decision,release_dependency
+M2REF,capture,Espressif ESP32-S3-EYE-MB V2.2 + original OV2640,1,bench,reference,match silkscreen MB_V2.2 and verify camera FPC/contact side; includes microphone and MCU
+M2ALT,capture,ESP32-S3-DevKitC-1-N8R8,1,bench,alternative to EYE not additive,verify exact headers rev and socket board; new pin profile required
+CAMALT,capture,3.3 V DVP/JPEG camera module with local regulators,1,bench for DevKitC only,not released,select numbered module and check IO VIH/VIL incl. SCCB before mating harness
+RAILA,test,CAM-RAIL-A coupon,1,bench,measurement fixture,verify schematic placement files separately; DMM burden and disconnected signal leakage
+M1,optics,Brilliant Labs Halo complete unit,1,bench,reference,obtain or loan one intact unit; neither bare display nor final optical engine BOM
+M3,audio,Microchip DM164152 evaluation kit with BM83SM1-00AA,1,bench,independent HFP route candidate,verify iPhone HFP HF and interrupt/resume; includes capture and speaker interfaces
+CELL,power,Protected single 4.2 V termination Li-ion pack with matching NTC,1,wearable,unselected,pack model capacity and C rating mechanical envelope PCM trip point and matched NTC curve
+CHG,power,TI BQ24074,1,wearable,candidate,NTC + ISET + ILIM ratios to match selected cell and approved USB current; heat test required
+BUCK,power,TI TPS63020,1,wearable,candidate,adjust to 3.3 V; freeze inductor divider capacitors and layout only after pulse-load validation
+RX,optics,Prescription insert + adjustable nose pads + retainers,1,wearable,unselected,individual optics fitting eye relief + rotation + mass incl lenses
+OPT,optics,Integrated engine with controller and combiner,1,wearable,unselected,Halo demonstrates independent optical route; need optical drawing interface SDK supplier quote and mass for custom integration
+SPK,audio,Open ear transducer and tuned amplifier,1,wearable,unselected,impedance sound pressure leakage case volume and call microphone acoustic path
+PACK,power,Temperature + charging status + fuel gauge,1,wearable,design requirement,CHG/PG and ADC or gauge calibration required; unknown until verified

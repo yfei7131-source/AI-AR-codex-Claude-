@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\Admin（无密码）\Desktop\产品设计\AI眼镜\hw-v1-dev\hardware\kicad\cam-rail-a\cam-rail-a.kicad_sch</source>
+    <date>2026-11-12T11:38:11</date>
+    <tool>Eeschema 10.0.7</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>CAM-RAIL-A | Camera module rail interposer</title>
+        <company/>
+        <rev>A</rev>
+        <date/>
+        <source>cam-rail-a.kicad_sch</source>
+        <comment number="1" value="Bench only | regulated 3.3 V input | no camera approval"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>100nF</value>
+      <footprint>CamRail:Chip_0805</footprint>
+      <fields>
+        <field name="Footprint">CamRail:Chip_0805</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CamRail" part="Capacitor" description=""/>
+      <property name="Sheetname" value="cam-rail-a"/>
+      <property name="Sheetfile" value="cam-rail-a.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>84f19d97-4234-5300-bb65-af05c9df27b1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D1">
+      <value>WP710A10LID</value>
+      <footprint>CamRail:LED_3mm</footprint>
+      <fields>
+        <field name="Footprint">CamRail:LED_3mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CamRail" part="LED" description=""/>
+      <property name="Sheetname" value="cam-rail-a"/>
+      <property name="Sheetfile" value="cam-rail-a.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>80d5add0-0947-5871-b961-2dfad136a0eb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J1">
+      <value>3V3 IN</value>
+      <footprint>CamRail:Header_1x02</footprint>
+      <fields>
+        <field name="Footprint">CamRail:Header_1x02</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CamRail" part="Header" description=""/>
+      <property name="Sheetname" value="cam-rail-a"/>
+      <property name="Sheetfile" value="cam-rail-a.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b3ed70e3-8ad1-5f27-8665-e69e20004294</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J2">
+      <value>CAM OUT</value>
+      <footprint>CamRail:Header_1x02</footprint>
+      <fields>
+        <field name="Footprint">CamRail:Header_1x02</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CamRail" part="Header" description=""/>
+      <property name="Sheetname" value="cam-rail-a"/>
+      <property name="Sheetfile" value="cam-rail-a.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1154bf59-c57b-56b5-af03-941931616b61</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J3">
+      <value>SHUNT</value>
+      <footprint>CamRail:Header_1x02</footprint>
+      <fields>
+        <field name="Footprint">CamRail:Header_1x02</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CamRail" part="Header" description=""/>
+      <property name="Sheetname" value="cam-rail-a"/>
+      <property name="Sheetfile" value="cam-rail-a.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7fdc965b-f856-5bfe-a1b8-93e8c213cfd1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1">
+      <value>680R</value>
+      <footprint>CamRail:Chip_0805</footprint>
+      <fields>
+        <field name="Footprint">CamRail:Chip_0805</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="CamRail" part="Resistor" description=""/>
+      <property name="Sheetname" value="cam-rail-a"/>
+      <property name="Sheetfile" value="cam-rail-a.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d2800158-6e68-5bb5-a078-00d7493bba10</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="CamRail" part="Capacitor">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100nF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="CamRail" part="Header">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Header</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="CamRail" part="LED">
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">Red</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="CamRail" part="Resistor">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">680</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="CamRail">
+      <uri>${KIPRJMOD}/CamRail.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/CAM_3V3" class="Default">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+    </net>
+    <net code="2" name="/GND" class="Default">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="D1" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="J2" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="3" name="/LED_A" class="Default">
+      <node ref="D1" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+    </net>
+    <net code="4" name="/VIN_3V3" class="Default">
+      <node ref="J1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="J3" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+  </nets>
+</export>

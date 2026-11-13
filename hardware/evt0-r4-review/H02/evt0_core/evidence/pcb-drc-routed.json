@@ -1,0 +1,4736 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-12T15:19:45",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "evt0_core.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 J3 的焊盘 MP [/GND]",
+                    "pos": {
+                        "x": 102.5,
+                        "y": 97.05
+                    },
+                    "uuid": "0f886b9d-b5be-4c13-8b4e-377db5b52309"
+                },
+                {
+                    "description": "F.Cu 上 J3 的焊盘 2 [/GND]",
+                    "pos": {
+                        "x": 105.75,
+                        "y": 99.45
+                    },
+                    "uuid": "6a876975-f9ae-45d8-b178-7b8c63e08093"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 J3 的焊盘 MP [/GND]",
+                    "pos": {
+                        "x": 102.5,
+                        "y": 112.35
+                    },
+                    "uuid": "67199a98-5099-462a-a148-5f4e37e6a5b6"
+                },
+                {
+                    "description": "走线 [/GND] (F.Cu), 长度: 2.1213 mm",
+                    "pos": {
+                        "x": 106.48,
+                        "y": 115.0
+                    },
+                    "uuid": "4d44db85-9ba1-4a88-8b96-af87f19629f9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 J3 的焊盘 2 [/GND]",
+                    "pos": {
+                        "x": 105.75,
+                        "y": 99.45
+                    },
+                    "uuid": "6a876975-f9ae-45d8-b178-7b8c63e08093"
+                },
+                {
+                    "description": "走线 [/GND] (F.Cu), 长度: 3.4800 mm",
+                    "pos": {
+                        "x": 106.85,
+                        "y": 97.38
+                    },
+                    "uuid": "8d3f36b6-521a-4ccd-92a6-11ee7e994640"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 J3 的焊盘 15 [/GND]",
+                    "pos": {
+                        "x": 105.75,
+                        "y": 105.95
+                    },
+                    "uuid": "ccf28d4a-38f4-4065-bafa-6f155a311e1e"
+                },
+                {
+                    "description": "走线 [/GND] (F.Cu), 长度: 0.6225 mm",
+                    "pos": {
+                        "x": 109.51,
+                        "y": 103.6225
+                    },
+                    "uuid": "cbd33ace-eae4-4ad9-b480-442af93edd0d"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 Q2 的焊盘 3 [/CAM_3V3_G]",
+                    "pos": {
+                        "x": 108.5625,
+                        "y": 105.5
+                    },
+                    "uuid": "d88b6dd9-d2b7-4e10-919f-8cb02e8e622f"
+                },
+                {
+                    "description": "F.Cu 上 R29 的焊盘 2 [/CAM_3V3_G]",
+                    "pos": {
+                        "x": 114.51,
+                        "y": 106.7
+                    },
+                    "uuid": "aea8e0ee-958e-4570-85ea-e5b49281d683"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R29 的焊盘 2 [/CAM_3V3_G]",
+                    "pos": {
+                        "x": 114.51,
+                        "y": 106.7
+                    },
+                    "uuid": "aea8e0ee-958e-4570-85ea-e5b49281d683"
+                },
+                {
+                    "description": "F.Cu 上 Q3 的焊盘 1 [/CAM_3V3_G]",
+                    "pos": {
+                        "x": 116.2625,
+                        "y": 104.55
+                    },
+                    "uuid": "d197181e-265d-46fc-ba93-a28513960121"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J7 的PTH 焊盘 2 [/AUD_UART_TX]",
+                    "pos": {
+                        "x": 132.54,
+                        "y": 100.0
+                    },
+                    "uuid": "1c8e65e8-91d2-4e7d-9c74-397ab509a620"
+                },
+                {
+                    "description": "F.Cu 上 R33 的焊盘 2 [/AUD_UART_TX]",
+                    "pos": {
+                        "x": 137.3,
+                        "y": 70.99
+                    },
+                    "uuid": "a52235e3-c6d8-41c6-af65-5df101ccfbe7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 J1 的焊盘 A4 [/VBUS]",
+                    "pos": {
+                        "x": 122.55,
+                        "y": 122.055
+                    },
+                    "uuid": "2119e471-65d0-4c50-b10d-e9105e27228c"
+                },
+                {
+                    "description": "走线 [/VBUS] (F.Cu), 长度: 0.8066 mm",
+                    "pos": {
+                        "x": 127.5,
+                        "y": 121.25
+                    },
+                    "uuid": "31a96229-ad8c-44b2-9077-4d175794c016"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [/VBUS] (B.Cu), 长度: 1.5000 mm",
+                    "pos": {
+                        "x": 129.0,
+                        "y": 121.0
+                    },
+                    "uuid": "045931a7-8e34-42c3-abda-01ab323ad1e8"
+                },
+                {
+                    "description": "走线 [/VBUS] (F.Cu), 长度: 0.8980 mm",
+                    "pos": {
+                        "x": 124.5,
+                        "y": 117.3625
+                    },
+                    "uuid": "dfb44f69-a493-4b46-850d-330439aaa295"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 U1 的焊盘 14 [/USB_DP]",
+                    "pos": {
+                        "x": 116.25,
+                        "y": 84.05
+                    },
+                    "uuid": "bc54395c-fde5-470e-b807-aeca27efc7c8"
+                },
+                {
+                    "description": "F.Cu 上 U2 的焊盘 6 [/USB_DP]",
+                    "pos": {
+                        "x": 123.55,
+                        "y": 117.3625
+                    },
+                    "uuid": "53f93e84-1703-4468-a181-8de26dd50cfe"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 U2 的焊盘 6 [/USB_DP]",
+                    "pos": {
+                        "x": 123.55,
+                        "y": 117.3625
+                    },
+                    "uuid": "53f93e84-1703-4468-a181-8de26dd50cfe"
+                },
+                {
+                    "description": "F.Cu 上 U2 的焊盘 1 [/USB_DP]",
+                    "pos": {
+                        "x": 123.55,
+                        "y": 119.6375
+                    },
+                    "uuid": "0b14dee4-cbf2-4002-a7ee-389ff7c1500f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 U2 的焊盘 1 [/USB_DP]",
+                    "pos": {
+                        "x": 123.55,
+                        "y": 119.6375
+                    },
+                    "uuid": "0b14dee4-cbf2-4002-a7ee-389ff7c1500f"
+                },
+                {
+                    "description": "F.Cu 上 J1 的焊盘 A6 [/USB_DP]",
+                    "pos": {
+                        "x": 124.75,
+                        "y": 122.055
+                    },
+                    "uuid": "0e6fd29e-0977-4012-83ba-50225bd2a033"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 J1 的焊盘 A6 [/USB_DP]",
+                    "pos": {
+                        "x": 124.75,
+                        "y": 122.055
+                    },
+                    "uuid": "0e6fd29e-0977-4012-83ba-50225bd2a033"
+                },
+                {
+                    "description": "F.Cu 上 J1 的焊盘 B6 [/USB_DP]",
+                    "pos": {
+                        "x": 125.75,
+                        "y": 122.055
+                    },
+                    "uuid": "912048d8-78e4-4404-994f-737d4f58e437"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 J1 的焊盘 B7 [/USB_DM]",
+                    "pos": {
+                        "x": 124.25,
+                        "y": 122.055
+                    },
+                    "uuid": "88589f7e-a942-4299-819d-e23f539c5962"
+                },
+                {
+                    "description": "F.Cu 上 J1 的焊盘 A7 [/USB_DM]",
+                    "pos": {
+                        "x": 125.25,
+                        "y": 122.055
+                    },
+                    "uuid": "6500623e-967b-46b9-a44f-cf2b3542942b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 J1 的焊盘 A7 [/USB_DM]",
+                    "pos": {
+                        "x": 125.25,
+                        "y": 122.055
+                    },
+                    "uuid": "6500623e-967b-46b9-a44f-cf2b3542942b"
+                },
+                {
+                    "description": "F.Cu 上 U2 的焊盘 3 [/USB_DM]",
+                    "pos": {
+                        "x": 125.45,
+                        "y": 119.6375
+                    },
+                    "uuid": "91fb03c4-542a-4f8d-9647-01bb06e81e13"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 U2 的焊盘 4 [/USB_DM]",
+                    "pos": {
+                        "x": 125.45,
+                        "y": 117.3625
+                    },
+                    "uuid": "067bc978-0b4c-41e0-b3c5-836183648463"
+                },
+                {
+                    "description": "F.Cu 上 U1 的焊盘 13 [/USB_DM]",
+                    "pos": {
+                        "x": 116.25,
+                        "y": 82.78
+                    },
+                    "uuid": "d90aefe2-2542-469b-bfe6-7a4547e2965c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 U2 的焊盘 3 [/USB_DM]",
+                    "pos": {
+                        "x": 125.45,
+                        "y": 119.6375
+                    },
+                    "uuid": "91fb03c4-542a-4f8d-9647-01bb06e81e13"
+                },
+                {
+                    "description": "F.Cu 上 U2 的焊盘 4 [/USB_DM]",
+                    "pos": {
+                        "x": 125.45,
+                        "y": 117.3625
+                    },
+                    "uuid": "067bc978-0b4c-41e0-b3c5-836183648463"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 J3 的焊盘 4 [/CAM_2V8]",
+                    "pos": {
+                        "x": 105.75,
+                        "y": 100.45
+                    },
+                    "uuid": "f2c2aec8-ff94-4066-84c5-e29186233267"
+                },
+                {
+                    "description": "走线 [/CAM_2V8] (F.Cu), 长度: 1.3825 mm",
+                    "pos": {
+                        "x": 115.52,
+                        "y": 100.05
+                    },
+                    "uuid": "3ff88d61-f597-4152-8de9-fb98e22dfbc5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 J3 的焊盘 4 [/CAM_2V8]",
+                    "pos": {
+                        "x": 105.75,
+                        "y": 100.45
+                    },
+                    "uuid": "f2c2aec8-ff94-4066-84c5-e29186233267"
+                },
+                {
+                    "description": "F.Cu 上 C18 的焊盘 1 [/CAM_2V8]",
+                    "pos": {
+                        "x": 107.02,
+                        "y": 119.0
+                    },
+                    "uuid": "4a16c9a8-4339-469a-ad93-374413c74f51"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R27 的焊盘 1 [/CAM_2V8]",
+                    "pos": {
+                        "x": 107.89,
+                        "y": 87.6
+                    },
+                    "uuid": "8cb6d308-a93c-4a8e-81a3-a64ac71142a9"
+                },
+                {
+                    "description": "F.Cu 上 J3 的焊盘 4 [/CAM_2V8]",
+                    "pos": {
+                        "x": 105.75,
+                        "y": 100.45
+                    },
+                    "uuid": "f2c2aec8-ff94-4066-84c5-e29186233267"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 J3 的焊盘 11 [/CAM_DOVDD]",
+                    "pos": {
+                        "x": 105.75,
+                        "y": 103.95
+                    },
+                    "uuid": "da011eaf-abfd-4aa5-b006-afb7710f8dd5"
+                },
+                {
+                    "description": "F.Cu 上 C17 的焊盘 1 [/CAM_DOVDD]",
+                    "pos": {
+                        "x": 107.02,
+                        "y": 117.0
+                    },
+                    "uuid": "98ccc683-0f7a-4fa3-aa4e-acea6fa7122b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R19 的焊盘 1 [/CAM_DOVDD]",
+                    "pos": {
+                        "x": 108.69,
+                        "y": 97.5
+                    },
+                    "uuid": "77a7cab6-6ab2-4abf-9f89-35aa13ed24d8"
+                },
+                {
+                    "description": "F.Cu 上 J3 的焊盘 11 [/CAM_DOVDD]",
+                    "pos": {
+                        "x": 105.75,
+                        "y": 103.95
+                    },
+                    "uuid": "da011eaf-abfd-4aa5-b006-afb7710f8dd5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R20 的焊盘 1 [/CAM_DOVDD]",
+                    "pos": {
+                        "x": 111.49,
+                        "y": 97.5
+                    },
+                    "uuid": "299b0b5d-a187-4fe1-af86-8591770cf744"
+                },
+                {
+                    "description": "F.Cu 上 R19 的焊盘 1 [/CAM_DOVDD]",
+                    "pos": {
+                        "x": 108.69,
+                        "y": 97.5
+                    },
+                    "uuid": "77a7cab6-6ab2-4abf-9f89-35aa13ed24d8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R21 的焊盘 1 [/CAM_DOVDD]",
+                    "pos": {
+                        "x": 114.29,
+                        "y": 97.5
+                    },
+                    "uuid": "f2d4878c-fca9-468d-a5cd-257507c0306e"
+                },
+                {
+                    "description": "F.Cu 上 R20 的焊盘 1 [/CAM_DOVDD]",
+                    "pos": {
+                        "x": 111.49,
+                        "y": 97.5
+                    },
+                    "uuid": "299b0b5d-a187-4fe1-af86-8591770cf744"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R21 的焊盘 1 [/CAM_DOVDD]",
+                    "pos": {
+                        "x": 114.29,
+                        "y": 97.5
+                    },
+                    "uuid": "f2d4878c-fca9-468d-a5cd-257507c0306e"
+                },
+                {
+                    "description": "F.Cu 上 R17 的焊盘 2 [/CAM_DOVDD]",
+                    "pos": {
+                        "x": 120.51,
+                        "y": 107.0
+                    },
+                    "uuid": "5fdf4e91-6221-4534-aace-a1b64ca3ddcd"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R17 的焊盘 2 [/CAM_DOVDD]",
+                    "pos": {
+                        "x": 120.51,
+                        "y": 107.0
+                    },
+                    "uuid": "5fdf4e91-6221-4534-aace-a1b64ca3ddcd"
+                },
+                {
+                    "description": "F.Cu 上 R18 的焊盘 2 [/CAM_DOVDD]",
+                    "pos": {
+                        "x": 123.51,
+                        "y": 107.0
+                    },
+                    "uuid": "087564a2-31c4-43a8-9ba5-516919d0495e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 J3 的焊盘 3 [/CAM_SIOD]",
+                    "pos": {
+                        "x": 105.75,
+                        "y": 99.95
+                    },
+                    "uuid": "b936084c-84b4-4433-b797-96b890de2a0a"
+                },
+                {
+                    "description": "F.Cu 上 R19 的焊盘 2 [/CAM_SIOD]",
+                    "pos": {
+                        "x": 109.71,
+                        "y": 97.5
+                    },
+                    "uuid": "d2a4fb7f-473b-41bb-9b9d-1c01e7ae36a8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R19 的焊盘 2 [/CAM_SIOD]",
+                    "pos": {
+                        "x": 109.71,
+                        "y": 97.5
+                    },
+                    "uuid": "d2a4fb7f-473b-41bb-9b9d-1c01e7ae36a8"
+                },
+                {
+                    "description": "F.Cu 上 U1 的焊盘 4 [/CAM_SIOD]",
+                    "pos": {
+                        "x": 116.25,
+                        "y": 71.35
+                    },
+                    "uuid": "de414e6f-f53a-45be-8374-5b30c3f2ae43"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 J3 的焊盘 5 [/CAM_SIOC]",
+                    "pos": {
+                        "x": 105.75,
+                        "y": 100.95
+                    },
+                    "uuid": "5bd1a869-97e0-4d7b-abac-67a4b5aa6c26"
+                },
+                {
+                    "description": "F.Cu 上 R20 的焊盘 2 [/CAM_SIOC]",
+                    "pos": {
+                        "x": 112.51,
+                        "y": 97.5
+                    },
+                    "uuid": "5c1e38f0-5a09-45b5-a821-3eb5ea5f51aa"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R20 的焊盘 2 [/CAM_SIOC]",
+                    "pos": {
+                        "x": 112.51,
+                        "y": 97.5
+                    },
+                    "uuid": "5c1e38f0-5a09-45b5-a821-3eb5ea5f51aa"
+                },
+                {
+                    "description": "F.Cu 上 U1 的焊盘 5 [/CAM_SIOC]",
+                    "pos": {
+                        "x": 116.25,
+                        "y": 72.62
+                    },
+                    "uuid": "9a0193ec-6f97-4c28-be2d-bd93a9ebc7e9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 J3 的焊盘 7 [/CAM_VSYNC]",
+                    "pos": {
+                        "x": 105.75,
+                        "y": 101.95
+                    },
+                    "uuid": "d43a4634-3d37-4a26-9e86-876074f256be"
+                },
+                {
+                    "description": "F.Cu 上 U1 的焊盘 6 [/CAM_VSYNC]",
+                    "pos": {
+                        "x": 116.25,
+                        "y": 73.89
+                    },
+                    "uuid": "691c7bca-b693-46e7-bc1d-e20215eeceba"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 J3 的焊盘 9 [/CAM_HREF]",
+                    "pos": {
+                        "x": 105.75,
+                        "y": 102.95
+                    },
+                    "uuid": "21378f19-bc19-4b3a-9786-7849bba737c7"
+                },
+                {
+                    "description": "F.Cu 上 U1 的焊盘 7 [/CAM_HREF]",
+                    "pos": {
+                        "x": 116.25,
+                        "y": 75.16
+                    },
+                    "uuid": "11165cf4-c472-4131-a5b2-eed1e2432796"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 U1 的焊盘 8 [/CAM_XCLK_R]",
+                    "pos": {
+                        "x": 116.25,
+                        "y": 76.43
+                    },
+                    "uuid": "e2b52fff-ed6b-4902-9780-bdab7be1769e"
+                },
+                {
+                    "description": "F.Cu 上 R23 的焊盘 1 [/CAM_XCLK_R]",
+                    "pos": {
+                        "x": 126.49,
+                        "y": 87.0
+                    },
+                    "uuid": "bb396ba2-d88c-4fad-b67a-3eca5ed8210a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 J3 的焊盘 12 [/CAM_Y9]",
+                    "pos": {
+                        "x": 105.75,
+                        "y": 104.45
+                    },
+                    "uuid": "dca09bdc-90f2-4210-8b84-19d8e37bd3d5"
+                },
+                {
+                    "description": "F.Cu 上 U1 的焊盘 9 [/CAM_Y9]",
+                    "pos": {
+                        "x": 116.25,
+                        "y": 77.7
+                    },
+                    "uuid": "3a5897c7-338f-491b-a3e3-f8ccb5fd1753"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 J3 的焊盘 14 [/CAM_Y8]",
+                    "pos": {
+                        "x": 105.75,
+                        "y": 105.45
+                    },
+                    "uuid": "59198c56-8e1f-469f-bdd4-2c8bdfd0e377"
+                },
+                {
+                    "description": "F.Cu 上 U1 的焊盘 10 [/CAM_Y8]",
+                    "pos": {
+                        "x": 116.25,
+                        "y": 78.97
+                    },
+                    "uuid": "bb235522-d73b-4440-b99c-54a25359cbad"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 J3 的焊盘 16 [/CAM_Y7]",
+                    "pos": {
+                        "x": 105.75,
+                        "y": 106.45
+                    },
+                    "uuid": "cf525751-2c87-4238-b531-75105cde4e8c"
+                },
+                {
+                    "description": "F.Cu 上 U1 的焊盘 11 [/CAM_Y7]",
+                    "pos": {
+                        "x": 116.25,
+                        "y": 80.24
+                    },
+                    "uuid": "c4bed14c-e67e-4978-8241-5c61638b5fae"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 J3 的焊盘 22 [/CAM_Y4]",
+                    "pos": {
+                        "x": 105.75,
+                        "y": 109.45
+                    },
+                    "uuid": "b800e16c-aa8b-4846-9321-e0014bff7d89"
+                },
+                {
+                    "description": "F.Cu 上 U1 的焊盘 12 [/CAM_Y4]",
+                    "pos": {
+                        "x": 116.25,
+                        "y": 81.51
+                    },
+                    "uuid": "b1972b68-7919-4ddb-98c8-16a9bdaf3ac1"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 J3 的焊盘 21 [/CAM_Y3]",
+                    "pos": {
+                        "x": 105.75,
+                        "y": 108.95
+                    },
+                    "uuid": "0a30d4a7-f86f-41a0-bdf0-fd5219c9709e"
+                },
+                {
+                    "description": "F.Cu 上 U1 的焊盘 17 [/CAM_Y3]",
+                    "pos": {
+                        "x": 120.555,
+                        "y": 85.3
+                    },
+                    "uuid": "22357a22-2082-47b9-8a12-d1b59c8397e7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 J3 的焊盘 20 [/CAM_Y5]",
+                    "pos": {
+                        "x": 105.75,
+                        "y": 108.45
+                    },
+                    "uuid": "1db65a14-a2b7-4088-b710-73807fc3f4c8"
+                },
+                {
+                    "description": "F.Cu 上 U1 的焊盘 18 [/CAM_Y5]",
+                    "pos": {
+                        "x": 121.825,
+                        "y": 85.3
+                    },
+                    "uuid": "f9906cb8-f2ec-41d7-ad0e-93b2dc095603"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 J3 的焊盘 19 [/CAM_Y2]",
+                    "pos": {
+                        "x": 105.75,
+                        "y": 107.95
+                    },
+                    "uuid": "0aa21be3-cc0e-4f5e-a298-3ddaec314d27"
+                },
+                {
+                    "description": "F.Cu 上 U1 的焊盘 19 [/CAM_Y2]",
+                    "pos": {
+                        "x": 123.095,
+                        "y": 85.3
+                    },
+                    "uuid": "a0c32d6e-87ff-46a4-92ca-2b23b72efc7f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 J3 的焊盘 18 [/CAM_Y6]",
+                    "pos": {
+                        "x": 105.75,
+                        "y": 107.45
+                    },
+                    "uuid": "499b09f4-3825-4be3-a93c-fbe3d51cbd36"
+                },
+                {
+                    "description": "F.Cu 上 U1 的焊盘 20 [/CAM_Y6]",
+                    "pos": {
+                        "x": 124.365,
+                        "y": 85.3
+                    },
+                    "uuid": "8bbcd5c2-5b49-4024-9683-58560879de11"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R24 的焊盘 2 [/CAM_PCLK_R]",
+                    "pos": {
+                        "x": 103.1,
+                        "y": 91.49
+                    },
+                    "uuid": "04962f76-124c-4666-b30d-b105d30bcaea"
+                },
+                {
+                    "description": "F.Cu 上 U1 的焊盘 21 [/CAM_PCLK_R]",
+                    "pos": {
+                        "x": 125.635,
+                        "y": 85.3
+                    },
+                    "uuid": "ce4ad456-6c51-4ef7-bea3-b0d2a1611f67"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 U1 的焊盘 22 [/DISP_RST]",
+                    "pos": {
+                        "x": 126.905,
+                        "y": 85.3
+                    },
+                    "uuid": "70e498ff-900d-4369-aa3e-a95340f28f75"
+                },
+                {
+                    "description": "J4 的PTH 焊盘 5 [/DISP_RST]",
+                    "pos": {
+                        "x": 147.0,
+                        "y": 79.16
+                    },
+                    "uuid": "df26534b-de26-4080-83dd-89f0caaaace1"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 U1 的焊盘 23 [/DISP_CS]",
+                    "pos": {
+                        "x": 128.175,
+                        "y": 85.3
+                    },
+                    "uuid": "a097c5d2-b806-49a3-8a61-98093fec7d33"
+                },
+                {
+                    "description": "J4 的PTH 焊盘 6 [/DISP_CS]",
+                    "pos": {
+                        "x": 147.0,
+                        "y": 81.7
+                    },
+                    "uuid": "c7d82486-98d3-4d08-92fe-5d94af09f2b0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 U1 的焊盘 24 [/DISP_CLK]",
+                    "pos": {
+                        "x": 129.445,
+                        "y": 85.3
+                    },
+                    "uuid": "46b05b4a-b691-4961-bbd4-d05fb528a094"
+                },
+                {
+                    "description": "J4 的PTH 焊盘 7 [/DISP_CLK]",
+                    "pos": {
+                        "x": 147.0,
+                        "y": 84.24
+                    },
+                    "uuid": "22ba31c1-15c8-48a1-9643-4e413269f669"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 U1 的焊盘 25 [/DISP_D3]",
+                    "pos": {
+                        "x": 130.715,
+                        "y": 85.3
+                    },
+                    "uuid": "740f421e-623a-4ae8-ab41-0c226beb265f"
+                },
+                {
+                    "description": "J4 的PTH 焊盘 11 [/DISP_D3]",
+                    "pos": {
+                        "x": 147.0,
+                        "y": 94.4
+                    },
+                    "uuid": "b8e6c22b-b49d-4a5b-8dc9-8966353074a5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R14 的焊盘 1 [/DISP_PWR_EN]",
+                    "pos": {
+                        "x": 142.5,
+                        "y": 72.01
+                    },
+                    "uuid": "e4ace285-61ad-4af3-91bf-204bd4618afa"
+                },
+                {
+                    "description": "F.Cu 上 U1 的焊盘 26 [/DISP_PWR_EN]",
+                    "pos": {
+                        "x": 131.985,
+                        "y": 85.3
+                    },
+                    "uuid": "a8cd4932-d2f4-4fdf-92e5-42f85982136f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J4 的PTH 焊盘 4 [/DISP_PWR_EN]",
+                    "pos": {
+                        "x": 147.0,
+                        "y": 76.62
+                    },
+                    "uuid": "90a5c897-a843-4663-8cae-e9e4f82df3a3"
+                },
+                {
+                    "description": "F.Cu 上 R14 的焊盘 1 [/DISP_PWR_EN]",
+                    "pos": {
+                        "x": 142.5,
+                        "y": 72.01
+                    },
+                    "uuid": "e4ace285-61ad-4af3-91bf-204bd4618afa"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 U1 的焊盘 31 [/DISP_D0]",
+                    "pos": {
+                        "x": 133.75,
+                        "y": 78.97
+                    },
+                    "uuid": "db26bcbc-2fcc-4765-85b2-d43e3980aade"
+                },
+                {
+                    "description": "J4 的PTH 焊盘 8 [/DISP_D0]",
+                    "pos": {
+                        "x": 147.0,
+                        "y": 86.78
+                    },
+                    "uuid": "80f7e0d0-63c0-4a91-936c-52a8f2dae87e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 U1 的焊盘 32 [/DISP_D1]",
+                    "pos": {
+                        "x": 133.75,
+                        "y": 77.7
+                    },
+                    "uuid": "47205b2f-27c4-487b-bbd4-d0ed9093b2c6"
+                },
+                {
+                    "description": "J4 的PTH 焊盘 9 [/DISP_D1]",
+                    "pos": {
+                        "x": 147.0,
+                        "y": 89.32
+                    },
+                    "uuid": "fbf14a63-72a3-4a66-bc0c-ba523130f4e1"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 U1 的焊盘 33 [/DISP_D2]",
+                    "pos": {
+                        "x": 133.75,
+                        "y": 76.43
+                    },
+                    "uuid": "a4d40e5a-fdef-4ea5-a7a8-261bec69d285"
+                },
+                {
+                    "description": "J4 的PTH 焊盘 10 [/DISP_D2]",
+                    "pos": {
+                        "x": 147.0,
+                        "y": 91.86
+                    },
+                    "uuid": "41cd00e5-9308-49c9-ae94-c2aa0f27c1f0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 J3 的焊盘 6 [/CAM_RST_N]",
+                    "pos": {
+                        "x": 105.75,
+                        "y": 101.45
+                    },
+                    "uuid": "7abf583a-e4d9-4edc-8b1f-e1d0172e3449"
+                },
+                {
+                    "description": "F.Cu 上 C19 的焊盘 1 [/CAM_RST_N]",
+                    "pos": {
+                        "x": 113.52,
+                        "y": 109.0
+                    },
+                    "uuid": "b61b4ade-e9f9-4ec5-9958-6a80131d117e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R21 的焊盘 2 [/CAM_RST_N]",
+                    "pos": {
+                        "x": 115.31,
+                        "y": 97.5
+                    },
+                    "uuid": "d175c0a3-26de-4de3-96d7-a8629657a98d"
+                },
+                {
+                    "description": "F.Cu 上 J3 的焊盘 6 [/CAM_RST_N]",
+                    "pos": {
+                        "x": 105.75,
+                        "y": 101.45
+                    },
+                    "uuid": "7abf583a-e4d9-4edc-8b1f-e1d0172e3449"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 J3 的焊盘 8 [/CAM_PWDN]",
+                    "pos": {
+                        "x": 105.75,
+                        "y": 102.45
+                    },
+                    "uuid": "dbdf430d-e1ea-47f0-b949-bb021c8fc288"
+                },
+                {
+                    "description": "F.Cu 上 R22 的焊盘 1 [/CAM_PWDN]",
+                    "pos": {
+                        "x": 117.09,
+                        "y": 97.5
+                    },
+                    "uuid": "d6ed586a-59a2-4da7-8ab6-5ecee68de466"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 J3 的焊盘 10 [/CAM_DVDD]",
+                    "pos": {
+                        "x": 105.75,
+                        "y": 103.45
+                    },
+                    "uuid": "01b734f8-d9a4-480a-ae6e-8cc13afbe374"
+                },
+                {
+                    "description": "F.Cu 上 C16 的焊盘 1 [/CAM_DVDD]",
+                    "pos": {
+                        "x": 105.52,
+                        "y": 115.0
+                    },
+                    "uuid": "5f062610-7eef-489d-9573-986b5cba6c44"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R16 的焊盘 2 [/CAM_DVDD]",
+                    "pos": {
+                        "x": 125.51,
+                        "y": 104.0
+                    },
+                    "uuid": "a3cb5fbc-535d-45a2-9342-b17fb21e0717"
+                },
+                {
+                    "description": "F.Cu 上 J3 的焊盘 10 [/CAM_DVDD]",
+                    "pos": {
+                        "x": 105.75,
+                        "y": 103.45
+                    },
+                    "uuid": "01b734f8-d9a4-480a-ae6e-8cc13afbe374"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 J3 的焊盘 13 [/CAM_XCLK]",
+                    "pos": {
+                        "x": 105.75,
+                        "y": 104.95
+                    },
+                    "uuid": "08208797-5b59-4991-bfae-9158b6f3875c"
+                },
+                {
+                    "description": "F.Cu 上 R23 的焊盘 2 [/CAM_XCLK]",
+                    "pos": {
+                        "x": 127.51,
+                        "y": 87.0
+                    },
+                    "uuid": "445a2d75-9c86-4d8c-97e3-860b2ad29fbd"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R24 的焊盘 1 [/CAM_PCLK]",
+                    "pos": {
+                        "x": 103.1,
+                        "y": 92.51
+                    },
+                    "uuid": "658e6b08-bb4a-44d3-a385-502ab17d509f"
+                },
+                {
+                    "description": "F.Cu 上 J3 的焊盘 17 [/CAM_PCLK]",
+                    "pos": {
+                        "x": 105.75,
+                        "y": 106.95
+                    },
+                    "uuid": "29fd4798-4e39-4f3e-9fa8-4ab63407f79a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J7 的PTH 焊盘 3 [/AUD_UART_RX]",
+                    "pos": {
+                        "x": 135.08,
+                        "y": 100.0
+                    },
+                    "uuid": "6a7eb84d-0da5-431c-962d-0baebef18751"
+                },
+                {
+                    "description": "F.Cu 上 R34 的焊盘 2 [/AUD_UART_RX]",
+                    "pos": {
+                        "x": 139.5,
+                        "y": 70.99
+                    },
+                    "uuid": "dab005be-a55b-401a-9334-39c809b8da86"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "J4 的PTH 焊盘 2 [/VSYS]",
+                    "pos": {
+                        "x": 147.0,
+                        "y": 71.54
+                    },
+                    "uuid": "9d8069a3-2dff-4a2b-8dd5-157e98e3a19c"
+                },
+                {
+                    "description": "走线 [/VSYS] (F.Cu), 长度: 0.2528 mm",
+                    "pos": {
+                        "x": 135.4625,
+                        "y": 114.75
+                    },
+                    "uuid": "8b96ccb0-2051-4402-a0b9-c6797e707e29"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R3 的焊盘 1 [/CHG_EN1]",
+                    "pos": {
+                        "x": 129.49,
+                        "y": 116.5
+                    },
+                    "uuid": "1ca7023b-9f28-4ee1-858f-ed6665e2b609"
+                },
+                {
+                    "description": "F.Cu 上 U3 的焊盘 6 [/CHG_EN1]",
+                    "pos": {
+                        "x": 133.75,
+                        "y": 116.4625
+                    },
+                    "uuid": "8721c513-7a0a-49fc-bae9-b423a367ee3e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [/CHG_PGOOD_N] (B.Cu), 长度: 2.8284 mm",
+                    "pos": {
+                        "x": 130.0,
+                        "y": 119.75
+                    },
+                    "uuid": "e2506366-463e-48df-9380-f5cd01650f75"
+                },
+                {
+                    "description": "F.Cu 上 U3 的焊盘 7 [/CHG_PGOOD_N]",
+                    "pos": {
+                        "x": 134.25,
+                        "y": 116.4625
+                    },
+                    "uuid": "dd2fa758-f0d9-438e-8f1e-db9cab228383"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "孔径超出范围 (电路板配置约束 最小孔径 0.3000 mm; 实际 0.2000 mm)",
+            "items": [
+                {
+                    "description": "U1 的PTH 焊盘 41 [/GND]",
+                    "pos": {
+                        "x": 122.1,
+                        "y": 74.56
+                    },
+                    "uuid": "0443776c-6462-446b-8302-c2b254ab024c"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "孔径超出范围 (电路板配置约束 最小孔径 0.3000 mm; 实际 0.2000 mm)",
+            "items": [
+                {
+                    "description": "U1 的PTH 焊盘 41 [/GND]",
+                    "pos": {
+                        "x": 122.1,
+                        "y": 75.96
+                    },
+                    "uuid": "97ca6334-a0f9-4208-936c-69c354374d88"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "孔径超出范围 (电路板配置约束 最小孔径 0.3000 mm; 实际 0.2000 mm)",
+            "items": [
+                {
+                    "description": "U1 的PTH 焊盘 41 [/GND]",
+                    "pos": {
+                        "x": 122.8,
+                        "y": 73.86
+                    },
+                    "uuid": "713b189c-6dc4-4d77-9bcb-2fcb803b3150"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "孔径超出范围 (电路板配置约束 最小孔径 0.3000 mm; 实际 0.2000 mm)",
+            "items": [
+                {
+                    "description": "U1 的PTH 焊盘 41 [/GND]",
+                    "pos": {
+                        "x": 122.8,
+                        "y": 75.26
+                    },
+                    "uuid": "a749b4ee-c4d0-46cc-94bc-78703a9fbe83"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "孔径超出范围 (电路板配置约束 最小孔径 0.3000 mm; 实际 0.2000 mm)",
+            "items": [
+                {
+                    "description": "U1 的PTH 焊盘 41 [/GND]",
+                    "pos": {
+                        "x": 122.8,
+                        "y": 76.66
+                    },
+                    "uuid": "3488506f-5666-432d-b022-cf3d8710ff94"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "孔径超出范围 (电路板配置约束 最小孔径 0.3000 mm; 实际 0.2000 mm)",
+            "items": [
+                {
+                    "description": "U1 的PTH 焊盘 41 [/GND]",
+                    "pos": {
+                        "x": 123.5,
+                        "y": 74.56
+                    },
+                    "uuid": "1f3e0833-fb07-4ace-bef3-01df96a91d5f"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "孔径超出范围 (电路板配置约束 最小孔径 0.3000 mm; 实际 0.2000 mm)",
+            "items": [
+                {
+                    "description": "U1 的PTH 焊盘 41 [/GND]",
+                    "pos": {
+                        "x": 123.5,
+                        "y": 75.96
+                    },
+                    "uuid": "5b377b12-57bf-4ef9-a4c5-067ad7e2c6ef"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "孔径超出范围 (电路板配置约束 最小孔径 0.3000 mm; 实际 0.2000 mm)",
+            "items": [
+                {
+                    "description": "U1 的PTH 焊盘 41 [/GND]",
+                    "pos": {
+                        "x": 124.2,
+                        "y": 73.86
+                    },
+                    "uuid": "10da2689-5314-44bf-8c25-3071329f6a0a"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "孔径超出范围 (电路板配置约束 最小孔径 0.3000 mm; 实际 0.2000 mm)",
+            "items": [
+                {
+                    "description": "U1 的PTH 焊盘 41 [/GND]",
+                    "pos": {
+                        "x": 124.2,
+                        "y": 75.26
+                    },
+                    "uuid": "8944e6a0-9718-4138-8d36-4c3150ee12d1"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "孔径超出范围 (电路板配置约束 最小孔径 0.3000 mm; 实际 0.2000 mm)",
+            "items": [
+                {
+                    "description": "U1 的PTH 焊盘 41 [/GND]",
+                    "pos": {
+                        "x": 124.2,
+                        "y": 76.66
+                    },
+                    "uuid": "c58fe6a6-a99b-4106-9cc4-7d5b194f862f"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "孔径超出范围 (电路板配置约束 最小孔径 0.3000 mm; 实际 0.2000 mm)",
+            "items": [
+                {
+                    "description": "U1 的PTH 焊盘 41 [/GND]",
+                    "pos": {
+                        "x": 124.9,
+                        "y": 74.56
+                    },
+                    "uuid": "6036c37a-a764-4e1e-90fd-3cf4f0a2fae6"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "孔径超出范围 (电路板配置约束 最小孔径 0.3000 mm; 实际 0.2000 mm)",
+            "items": [
+                {
+                    "description": "U1 的PTH 焊盘 41 [/GND]",
+                    "pos": {
+                        "x": 124.9,
+                        "y": 75.96
+                    },
+                    "uuid": "29146338-c39e-40a0-8f3f-fed45d1b479b"
+                }
+            ],
+            "severity": "error",
+            "type": "drill_out_of_range"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (F.Cu), 长度: 1.0607 mm",
+                    "pos": {
+                        "x": 108.25,
+                        "y": 104.0
+                    },
+                    "uuid": "040f99d1-90ac-44c3-9782-864139b261c1"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (F.Cu), 长度: 0.7160 mm",
+                    "pos": {
+                        "x": 109.75,
+                        "y": 106.25
+                    },
+                    "uuid": "25f0c1a5-cd03-4b6d-88ad-c6731291cd48"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (F.Cu), 长度: 0.9132 mm",
+                    "pos": {
+                        "x": 111.8625,
+                        "y": 101.95
+                    },
+                    "uuid": "28b33921-c11d-4961-80d3-b1b37a01c335"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (F.Cu), 长度: 0.7485 mm",
+                    "pos": {
+                        "x": 117.75,
+                        "y": 86.0
+                    },
+                    "uuid": "474fc9b7-5f1d-48dd-b1a3-363fcbd73790"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (F.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 108.25,
+                        "y": 103.75
+                    },
+                    "uuid": "48daa1af-749c-4433-a236-7a1f694db5c9"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (F.Cu), 长度: 3.2500 mm",
+                    "pos": {
+                        "x": 112.0,
+                        "y": 107.5
+                    },
+                    "uuid": "4fac4ef9-a8a3-4731-b98e-eefea807c948"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (F.Cu), 长度: 0.1231 mm",
+                    "pos": {
+                        "x": 111.8625,
+                        "y": 101.95
+                    },
+                    "uuid": "5571c990-ef39-47bf-9391-313f1632dae7"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (F.Cu), 长度: 0.7500 mm",
+                    "pos": {
+                        "x": 111.0,
+                        "y": 102.25
+                    },
+                    "uuid": "6ccc1ae8-8137-4c8a-8db5-81f9ec132319"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (F.Cu), 长度: 0.0100 mm",
+                    "pos": {
+                        "x": 108.5,
+                        "y": 103.0
+                    },
+                    "uuid": "6eb331ac-1b18-490b-9a4c-15902e37eee3"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (F.Cu), 长度: 1.0607 mm",
+                    "pos": {
+                        "x": 111.25,
+                        "y": 106.75
+                    },
+                    "uuid": "753e07b7-4f58-4094-acbe-d6e9fc8ea8ca"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (F.Cu), 长度: 1.5000 mm",
+                    "pos": {
+                        "x": 107.5,
+                        "y": 104.75
+                    },
+                    "uuid": "771aeca1-d95d-4729-ba3d-beb794991d37"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (F.Cu), 长度: 0.8661 mm",
+                    "pos": {
+                        "x": 110.4375,
+                        "y": 106.45
+                    },
+                    "uuid": "bf1f64f6-929c-448f-89ae-d878fe597a13"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (F.Cu), 长度: 0.7875 mm",
+                    "pos": {
+                        "x": 108.49,
+                        "y": 103.0
+                    },
+                    "uuid": "d48aa171-dc12-4cc4-b97c-e30a541d46f0"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (F.Cu), 长度: 2.2500 mm",
+                    "pos": {
+                        "x": 107.5,
+                        "y": 106.25
+                    },
+                    "uuid": "eb33fb11-872c-4127-9bda-8b72106573cc"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 124.0,
+                        "y": 114.5
+                    },
+                    "uuid": "004f70bd-0e01-47a2-ba0d-d4fa9440d53e"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 113.25,
+                        "y": 95.75
+                    },
+                    "uuid": "02a445ff-377c-4e27-84cb-58a704d36e32"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 116.0,
+                        "y": 89.75
+                    },
+                    "uuid": "066c7443-77a9-4675-a000-2cbec3b0c38b"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 1.5000 mm",
+                    "pos": {
+                        "x": 112.0,
+                        "y": 98.5
+                    },
+                    "uuid": "0c470376-a556-4d8c-a602-94801819bacf"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 129.25,
+                        "y": 117.0
+                    },
+                    "uuid": "130831b5-86eb-40c6-9a3f-476a97916901"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.5000 mm",
+                    "pos": {
+                        "x": 114.25,
+                        "y": 93.75
+                    },
+                    "uuid": "1b04ba19-4347-4cb9-b152-ba7ed96c5244"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 128.25,
+                        "y": 116.5
+                    },
+                    "uuid": "1ca62a16-d98d-4b2e-adf3-b0c7934c1d2a"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 125.25,
+                        "y": 115.25
+                    },
+                    "uuid": "1e599e8f-151e-4169-92bf-6a6df3a07832"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 115.75,
+                        "y": 90.0
+                    },
+                    "uuid": "20fce1ed-cbd5-4669-a282-64186e5ce366"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.5000 mm",
+                    "pos": {
+                        "x": 125.75,
+                        "y": 115.5
+                    },
+                    "uuid": "213a96d6-5adf-46af-a501-693ed47144ce"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 117.25,
+                        "y": 87.0
+                    },
+                    "uuid": "24f57b90-bc34-4f7c-8418-2fd5ac22a4cd"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 130.25,
+                        "y": 117.5
+                    },
+                    "uuid": "25d5752d-1421-49bf-b678-babf00639449"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 122.0,
+                        "y": 113.75
+                    },
+                    "uuid": "268327f5-ca23-4d37-9f07-96d6bc501e99"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.5000 mm",
+                    "pos": {
+                        "x": 123.0,
+                        "y": 114.25
+                    },
+                    "uuid": "2727c415-6087-421c-af17-a44372eb2dd6"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 122.75,
+                        "y": 114.0
+                    },
+                    "uuid": "27389cf9-dee3-48a2-9ae1-15ef7be04634"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 130.0,
+                        "y": 117.25
+                    },
+                    "uuid": "28271205-8d0d-484d-8b1a-585ffed1978b"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 117.0,
+                        "y": 87.5
+                    },
+                    "uuid": "29c815a2-1404-4542-88ec-5e540df731a7"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 114.75,
+                        "y": 92.5
+                    },
+                    "uuid": "2ebce108-0f20-4a02-8967-6271b13cfe42"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 117.25,
+                        "y": 86.75
+                    },
+                    "uuid": "2ee30add-1f4e-4455-952a-00bfc3975d03"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 129.75,
+                        "y": 117.25
+                    },
+                    "uuid": "2f11383b-4731-4b39-b631-84a658c2baae"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 116.25,
+                        "y": 89.0
+                    },
+                    "uuid": "30f5b518-7ac1-403c-8906-bac5fc6a8bac"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 117.5,
+                        "y": 86.25
+                    },
+                    "uuid": "31bf5a2d-59df-407c-b7e6-8b2fb9e6866f"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 129.0,
+                        "y": 116.75
+                    },
+                    "uuid": "3397c24a-ed45-4316-a2fe-c5c330529ca0"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 115.0,
+                        "y": 91.75
+                    },
+                    "uuid": "35788b84-87a8-4a27-a3e0-23a8306e9eca"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 130.5,
+                        "y": 117.5
+                    },
+                    "uuid": "35ba0147-e181-48e8-99bf-839c9e803feb"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 126.25,
+                        "y": 115.5
+                    },
+                    "uuid": "362f4fec-7c44-420d-b3f0-9100ae99e9b4"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 1.7678 mm",
+                    "pos": {
+                        "x": 112.0,
+                        "y": 97.0
+                    },
+                    "uuid": "38fdb6f7-97dc-4495-8664-778a1446d63f"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.5000 mm",
+                    "pos": {
+                        "x": 128.5,
+                        "y": 116.75
+                    },
+                    "uuid": "3bd045d5-425f-4965-b318-f1f13f6815b1"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 113.75,
+                        "y": 94.75
+                    },
+                    "uuid": "40d08996-b706-4305-a026-f7fde3c93619"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 123.75,
+                        "y": 114.5
+                    },
+                    "uuid": "4510b1de-99fa-4bb2-aa74-cc8ec6a1f24d"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 127.25,
+                        "y": 116.0
+                    },
+                    "uuid": "49ad4901-828a-4175-9877-59158a0438b8"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 115.5,
+                        "y": 90.5
+                    },
+                    "uuid": "53bcc121-ac19-4a65-9fa7-97ea0f4c3d38"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 127.0,
+                        "y": 116.0
+                    },
+                    "uuid": "553f0152-d15b-40a7-b588-918b4bda4076"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 109.75,
+                        "y": 102.5
+                    },
+                    "uuid": "660d0401-6f20-4ad9-b655-d5c4383ecbcf"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 114.0,
+                        "y": 94.0
+                    },
+                    "uuid": "69d6ff03-4e33-4c2b-9258-874b5e684645"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 129.5,
+                        "y": 117.0
+                    },
+                    "uuid": "6c2258b5-568c-4b32-82f0-6694c96c772c"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 114.25,
+                        "y": 93.25
+                    },
+                    "uuid": "6d8a560a-d277-4d9b-89b8-25b8172f693e"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 113.75,
+                        "y": 94.5
+                    },
+                    "uuid": "71d91e8c-4615-47b0-b510-68c945199391"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 124.75,
+                        "y": 115.0
+                    },
+                    "uuid": "751e768f-f5ff-4d8a-8b95-244ff661525e"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.5000 mm",
+                    "pos": {
+                        "x": 115.5,
+                        "y": 91.0
+                    },
+                    "uuid": "75d8cfb1-f2fd-4814-8d59-b7a31a6a4ec3"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 116.0,
+                        "y": 89.5
+                    },
+                    "uuid": "766ad7cc-5058-4730-8d20-a113a2e90b28"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.5000 mm",
+                    "pos": {
+                        "x": 118.75,
+                        "y": 111.0
+                    },
+                    "uuid": "7a8bd490-a1e8-4ab9-aaaf-307f5a2be6e0"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 124.25,
+                        "y": 114.75
+                    },
+                    "uuid": "7c79a029-affb-4f19-a314-ecec210125db"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 108.75,
+                        "y": 102.75
+                    },
+                    "uuid": "7fca82a8-f34c-41de-8e7b-4892a834f3b6"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 127.75,
+                        "y": 116.25
+                    },
+                    "uuid": "85e191c9-db85-4ecb-81f2-ff918cbb0e4e"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 114.5,
+                        "y": 93.0
+                    },
+                    "uuid": "8679f58e-956f-42ef-b728-3bc78c48526d"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 116.75,
+                        "y": 87.75
+                    },
+                    "uuid": "87ca4fb6-a729-4ef9-bbb7-45638777f5a9"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 109.5,
+                        "y": 102.5
+                    },
+                    "uuid": "88861772-0c2e-4e46-bbec-ecc409a1175e"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 115.75,
+                        "y": 90.25
+                    },
+                    "uuid": "899c3e80-a2f8-4454-85a2-a66533b95a7e"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.5000 mm",
+                    "pos": {
+                        "x": 116.75,
+                        "y": 88.25
+                    },
+                    "uuid": "96885806-dfc0-4637-afa5-41adf66c3086"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 117.5,
+                        "y": 86.5
+                    },
+                    "uuid": "96b085d9-d9f0-44cb-99e6-43849e01503e"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 110.0,
+                        "y": 102.25
+                    },
+                    "uuid": "97999ed0-5617-4f08-85aa-adc69c62b6e7"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 125.0,
+                        "y": 115.0
+                    },
+                    "uuid": "9e49ab5e-3a79-484f-9e74-61e2472482f8"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 117.0,
+                        "y": 87.25
+                    },
+                    "uuid": "9e6c1fb5-2acc-4a4c-8569-637390d3c6a9"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 115.25,
+                        "y": 91.5
+                    },
+                    "uuid": "a2f987ba-2d28-4338-91c8-eb5a0fc3a25f"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.5000 mm",
+                    "pos": {
+                        "x": 109.25,
+                        "y": 102.75
+                    },
+                    "uuid": "a3f5908c-b13a-421d-8172-80539c97c22d"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 122.5,
+                        "y": 114.0
+                    },
+                    "uuid": "a696de20-d30e-479b-ba77-6e8ee9007b7b"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 127.5,
+                        "y": 116.25
+                    },
+                    "uuid": "a8b70555-ef3b-47e4-aeb2-bc7fc3bcd3d9"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 115.0,
+                        "y": 92.0
+                    },
+                    "uuid": "af2e5374-e68c-4078-8bf8-6bcb62c9392d"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 126.75,
+                        "y": 115.75
+                    },
+                    "uuid": "af400761-0af3-409b-8019-fbcdec307052"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 124.5,
+                        "y": 114.75
+                    },
+                    "uuid": "b577e634-6acf-41e2-82ae-63c3fb5ba80d"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 114.5,
+                        "y": 92.75
+                    },
+                    "uuid": "b75bf66f-79d6-4cf9-8740-30c196b705aa"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 116.5,
+                        "y": 88.75
+                    },
+                    "uuid": "c0bed1b5-af08-4117-b828-8c23d463bf99"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 125.5,
+                        "y": 115.25
+                    },
+                    "uuid": "c38e4f02-e1b4-4f8c-b11c-81c2c77854fe"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.8860 mm",
+                    "pos": {
+                        "x": 130.75,
+                        "y": 117.75
+                    },
+                    "uuid": "c55ba1b1-441e-4bb2-8fee-df88f0bb9872"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 115.25,
+                        "y": 91.25
+                    },
+                    "uuid": "ca2e7df2-2312-4a93-9fa4-7461b27e326f"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 111.75,
+                        "y": 98.75
+                    },
+                    "uuid": "ced2e35f-636a-4be7-bd1e-8b4af1a6ca2f"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 122.25,
+                        "y": 113.75
+                    },
+                    "uuid": "cf85a205-03f8-436d-b05d-b0be6e84c817"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 114.0,
+                        "y": 94.25
+                    },
+                    "uuid": "d4deb463-6746-4180-bce2-e56222873202"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 3.2500 mm",
+                    "pos": {
+                        "x": 111.75,
+                        "y": 102.0
+                    },
+                    "uuid": "d5b8dcd7-b151-4da5-b8ff-e230bc315d8c"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 3.8891 mm",
+                    "pos": {
+                        "x": 119.25,
+                        "y": 111.0
+                    },
+                    "uuid": "d6b94cea-d340-46ba-bfe5-b2d6927f8d6f"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 110.25,
+                        "y": 102.25
+                    },
+                    "uuid": "d86fdb4b-bb6e-447d-9bd3-d2aee4a06d0b"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 113.25,
+                        "y": 95.5
+                    },
+                    "uuid": "e01d50a4-2748-4703-8e0a-ccc5c23f1223"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 116.25,
+                        "y": 89.25
+                    },
+                    "uuid": "e5ca5ec2-1c1d-4109-b9ac-1b26fb0cb471"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 123.5,
+                        "y": 114.25
+                    },
+                    "uuid": "e65a60bc-d460-4136-bf4e-42ce84e75c73"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 113.5,
+                        "y": 95.0
+                    },
+                    "uuid": "ee967804-5d67-4f6b-a28b-a32dbb91a1f1"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 128.0,
+                        "y": 116.5
+                    },
+                    "uuid": "efff53b1-6dca-48d8-9789-52abbaa16361"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 113.5,
+                        "y": 95.25
+                    },
+                    "uuid": "f060f79e-6a27-4881-8461-18a9db67d681"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 116.5,
+                        "y": 88.5
+                    },
+                    "uuid": "f4bf7a50-3b8e-43cb-bb82-c2a5d23aa961"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 126.5,
+                        "y": 115.75
+                    },
+                    "uuid": "f8b689bb-757e-401f-844e-538394b0a177"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 114.75,
+                        "y": 92.25
+                    },
+                    "uuid": "f953341f-0842-43d6-8ab6-19dc9dbbf2b9"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CAM_PWR_EN] (B.Cu), 长度: 4.9497 mm",
+                    "pos": {
+                        "x": 115.25,
+                        "y": 107.5
+                    },
+                    "uuid": "fbd48b71-c141-4836-9340-c089eff44a3e"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 1.0000 mm",
+                    "pos": {
+                        "x": 133.75,
+                        "y": 96.25
+                    },
+                    "uuid": "063a730d-e264-4256-b9cb-a899891bc065"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 134.75,
+                        "y": 89.0
+                    },
+                    "uuid": "065b4a6d-14e5-4de7-a8d3-69ed365eb520"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.5000 mm",
+                    "pos": {
+                        "x": 136.5,
+                        "y": 97.25
+                    },
+                    "uuid": "0ed5b856-95bf-4d54-b09c-e4a27f370e3e"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.5000 mm",
+                    "pos": {
+                        "x": 135.75,
+                        "y": 86.5
+                    },
+                    "uuid": "0fac7fe6-f5b5-45c1-98d9-1e3b81d8a2d9"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 134.75,
+                        "y": 88.75
+                    },
+                    "uuid": "129eca8d-fb86-4e2e-8b30-4f003eb2685e"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 133.75,
+                        "y": 91.0
+                    },
+                    "uuid": "146bdf05-4beb-46df-94de-3f0e99c839be"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 135.25,
+                        "y": 96.5
+                    },
+                    "uuid": "16ff198a-cfb5-4b03-90f3-a55c1ebee394"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 136.25,
+                        "y": 85.75
+                    },
+                    "uuid": "19202aa2-ae5c-4f79-86fa-0171f891cd01"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 133.75,
+                        "y": 91.25
+                    },
+                    "uuid": "1e8e685e-2d3b-49a1-bbc6-2325e3df0a9d"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.7690 mm",
+                    "pos": {
+                        "x": 132.25,
+                        "y": 94.25
+                    },
+                    "uuid": "2131c1c5-f39d-4dc0-b625-1a0468340ac3"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 132.75,
+                        "y": 93.25
+                    },
+                    "uuid": "2b67fe53-a5cb-4573-8b12-16c5258f744e"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 135.25,
+                        "y": 88.0
+                    },
+                    "uuid": "337f06e8-44e3-46b3-901e-5720a5d47fbc"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 86.25
+                    },
+                    "uuid": "3563f54d-a41a-405a-826f-d92551f2146e"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 136.5,
+                        "y": 85.25
+                    },
+                    "uuid": "3d5f11c1-01dc-4bb9-bae9-7d1c204ac94b"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 135.0,
+                        "y": 96.5
+                    },
+                    "uuid": "4441e8d6-cccb-44c7-8ed5-82d31f4668e7"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 135.75,
+                        "y": 87.0
+                    },
+                    "uuid": "45db39c9-722f-43a2-bb4b-b48f0554b33a"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 137.0,
+                        "y": 97.25
+                    },
+                    "uuid": "495dfa57-2f4e-47ad-8a3e-ff6b2f648b83"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 134.75,
+                        "y": 96.25
+                    },
+                    "uuid": "5395a691-0ae7-49a6-a2b0-20fa0e7be6a8"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 137.5,
+                        "y": 97.5
+                    },
+                    "uuid": "557e5263-6998-4081-a9a3-59f3f5b1d360"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 133.5,
+                        "y": 91.75
+                    },
+                    "uuid": "599d2019-01d4-44e0-9226-6daa763b1260"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 134.25,
+                        "y": 90.0
+                    },
+                    "uuid": "5f8c5603-16a5-48e6-935f-7bc132adbd0f"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 133.25,
+                        "y": 92.5
+                    },
+                    "uuid": "60d62de2-7f9e-400c-b3b3-7d1f2c6f60f6"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 137.25,
+                        "y": 97.5
+                    },
+                    "uuid": "667f2e0c-ec20-417b-9d12-ffa4b9547414"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 133.5,
+                        "y": 91.5
+                    },
+                    "uuid": "67e90b30-8ae0-4601-b3ad-ba87cf2eff0f"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 132.5,
+                        "y": 94.0
+                    },
+                    "uuid": "68dea46f-c034-4b2a-9bd8-e648d5367ed9"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 134.25,
+                        "y": 90.25
+                    },
+                    "uuid": "6e78c864-1522-4185-821d-f5f491f022b6"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 86.0
+                    },
+                    "uuid": "792662ef-fe73-4544-8cd9-7a6d551fbdfd"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 135.75,
+                        "y": 71.75
+                    },
+                    "uuid": "83b13817-04a6-4c3a-8796-144c562efbfe"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 134.5,
+                        "y": 89.75
+                    },
+                    "uuid": "899e8f14-5edc-4565-b5b9-99dd0fe16580"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.7500 mm",
+                    "pos": {
+                        "x": 136.5,
+                        "y": 71.75
+                    },
+                    "uuid": "95e5aa7a-ffbb-4f2d-a3c1-990848954819"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 135.25,
+                        "y": 87.75
+                    },
+                    "uuid": "97ad61c8-45e4-425a-8119-92e53eee8ff0"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 136.25,
+                        "y": 97.0
+                    },
+                    "uuid": "990d6e0d-b87f-497d-997f-28d7bb843157"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 136.75,
+                        "y": 84.5
+                    },
+                    "uuid": "996d9db2-36f1-43cb-a876-a76eb7d6dbd8"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 137.0,
+                        "y": 84.25
+                    },
+                    "uuid": "9b1fcee1-8d89-4dd2-b87e-77c0f15d1aa3"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 133.0,
+                        "y": 92.75
+                    },
+                    "uuid": "a1dd41b6-05a4-465d-a08a-7ea850dcee79"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 136.75,
+                        "y": 84.75
+                    },
+                    "uuid": "a2f21ea2-f669-4cf1-beee-bcc30d43924a"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.5000 mm",
+                    "pos": {
+                        "x": 134.5,
+                        "y": 89.25
+                    },
+                    "uuid": "ab8d31df-34da-43d2-8b2c-a42de7f37b71"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 133.0,
+                        "y": 93.0
+                    },
+                    "uuid": "ac9c1035-daf0-46a3-9599-163fc9237fab"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.7985 mm",
+                    "pos": {
+                        "x": 137.3,
+                        "y": 72.01
+                    },
+                    "uuid": "afe71ac4-acca-419a-b2d0-66a4639b7a08"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 135.0,
+                        "y": 88.5
+                    },
+                    "uuid": "bd3f4bea-81a1-45e1-ab42-29f377db946f"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 136.25,
+                        "y": 85.5
+                    },
+                    "uuid": "c0335df7-7e8d-4b60-aa93-7cb5c35da156"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 135.5,
+                        "y": 96.75
+                    },
+                    "uuid": "c3e9d4ff-f61a-4306-b3a3-934d5c388962"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 136.5,
+                        "y": 85.0
+                    },
+                    "uuid": "c566b7c3-1d0e-4932-a9b1-2c63862f9d5e"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 132.75,
+                        "y": 93.5
+                    },
+                    "uuid": "c71b34dd-615a-46d1-8a0a-2df74300995d"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 135.75,
+                        "y": 96.75
+                    },
+                    "uuid": "c825d06a-c9f2-49e1-8115-618ef9d98910"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 1.0678 mm",
+                    "pos": {
+                        "x": 138.75,
+                        "y": 97.75
+                    },
+                    "uuid": "d0625c9b-cdf3-428d-8cde-b16c0c8f6e91"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.5000 mm",
+                    "pos": {
+                        "x": 133.25,
+                        "y": 92.0
+                    },
+                    "uuid": "d1ed4962-d541-4bf7-aba1-eb71855f994e"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 1.4142 mm",
+                    "pos": {
+                        "x": 132.75,
+                        "y": 95.25
+                    },
+                    "uuid": "d677dc1f-a732-4614-be09-6a82e96824c8"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 136.0,
+                        "y": 97.0
+                    },
+                    "uuid": "d7bdfbf6-c22e-40f2-a22c-e5a6674ea4fe"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.7649 mm",
+                    "pos": {
+                        "x": 134.5,
+                        "y": 71.5
+                    },
+                    "uuid": "d975a84d-a7ce-44f9-9084-849c4b9a656a"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 135.5,
+                        "y": 87.5
+                    },
+                    "uuid": "dd85b12a-4b1d-4add-a61c-8ceb822db0ee"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 1.0000 mm",
+                    "pos": {
+                        "x": 135.5,
+                        "y": 71.5
+                    },
+                    "uuid": "e22bf514-468e-4dbd-9bf2-a0c8ac208499"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 135.0,
+                        "y": 88.25
+                    },
+                    "uuid": "e5bf694c-e8f5-43f0-81f0-d6a86d6c32e6"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 134.0,
+                        "y": 90.75
+                    },
+                    "uuid": "e985b655-76b2-49db-88a4-4c5ebf1db433"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.7151 mm",
+                    "pos": {
+                        "x": 132.08,
+                        "y": 95.0
+                    },
+                    "uuid": "eab2c4ee-80de-4fe8-9655-3fbd54d6c60d"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.8412 mm",
+                    "pos": {
+                        "x": 137.3,
+                        "y": 72.01
+                    },
+                    "uuid": "f0f6502e-5678-4813-8c85-4eab8edd090d"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 132.5,
+                        "y": 93.75
+                    },
+                    "uuid": "f1b19ac4-8a68-40f3-a07c-0b4b10fcf931"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 11.5000 mm",
+                    "pos": {
+                        "x": 137.0,
+                        "y": 72.75
+                    },
+                    "uuid": "f5587fb3-4c5c-4735-b36f-bd3bb7abcc4c"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 135.5,
+                        "y": 87.25
+                    },
+                    "uuid": "f5f47f84-f77a-49b3-bab2-ff009db62e8d"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 134.0,
+                        "y": 90.5
+                    },
+                    "uuid": "f63e48ee-c74e-4860-aee9-52f53f620ff3"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/U0TXD] (F.Cu), 长度: 1.0000 mm",
+                    "pos": {
+                        "x": 137.75,
+                        "y": 97.75
+                    },
+                    "uuid": "f9db8ddf-2be7-4c54-bbb1-524e5a7cf0d9"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CHG_CE_N] (F.Cu), 长度: 0.8262 mm",
+                    "pos": {
+                        "x": 132.5375,
+                        "y": 115.75
+                    },
+                    "uuid": "2a98cd68-5db2-44ce-b50f-4dd28a92d800"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CHG_CE_N] (F.Cu), 长度: 0.7811 mm",
+                    "pos": {
+                        "x": 114.25,
+                        "y": 104.25
+                    },
+                    "uuid": "4ac5f617-45a5-42cd-ba40-d9931591dc19"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CHG_CE_N] (F.Cu), 长度: 0.3810 mm",
+                    "pos": {
+                        "x": 132.25,
+                        "y": 116.0
+                    },
+                    "uuid": "8b9ed2d2-854b-49c6-8519-da1fc83ad41d"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CHG_CE_N] (F.Cu), 长度: 0.1208 mm",
+                    "pos": {
+                        "x": 132.199998,
+                        "y": 120.11
+                    },
+                    "uuid": "fcacccce-0f84-4376-90e2-a28753ad7685"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CHG_CE_N] (B.Cu), 长度: 1.0000 mm",
+                    "pos": {
+                        "x": 132.25,
+                        "y": 117.0
+                    },
+                    "uuid": "00186406-b47d-4923-aa31-a698162b6f3c"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CHG_CE_N] (B.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 122.5,
+                        "y": 108.0
+                    },
+                    "uuid": "01d51790-b819-4f69-9f3d-b7d278225512"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CHG_CE_N] (B.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 120.75,
+                        "y": 107.25
+                    },
+                    "uuid": "05b54d2a-026c-4e61-b166-ea235318e059"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CHG_CE_N] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 121.5,
+                        "y": 107.75
+                    },
+                    "uuid": "074a459c-7a96-47d9-8b8c-fe53aa55bb61"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CHG_CE_N] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 132.25,
+                        "y": 118.75
+                    },
+                    "uuid": "07e7892b-c637-4574-8e2c-f32e0b892e47"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CHG_CE_N] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 122.75,
+                        "y": 108.25
+                    },
+                    "uuid": "095b3d33-1c3f-40f6-b4cf-bb8ff6b7e5e2"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CHG_CE_N] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 123.25,
+                        "y": 108.5
+                    },
+                    "uuid": "2151facc-9aba-40a0-82c2-e74007bdb982"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CHG_CE_N] (B.Cu), 长度: 0.5000 mm",
+                    "pos": {
+                        "x": 129.0,
+                        "y": 113.25
+                    },
+                    "uuid": "24f716c9-157d-43f2-a1f1-97f51d221332"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CHG_CE_N] (B.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 123.5,
+                        "y": 108.5
+                    },
+                    "uuid": "35c2adce-d255-490a-a286-18ee5df209d6"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CHG_CE_N] (B.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 114.75,
+                        "y": 104.5
+                    },
+                    "uuid": "3701c4c5-b844-43ab-b38a-6269436a0890"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CHG_CE_N] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 114.5,
+                        "y": 104.5
+                    },
+                    "uuid": "3f1c63eb-0aca-4ea3-b4e2-73d2464c7d39"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CHG_CE_N] (B.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 118.5,
+                        "y": 106.25
+                    },
+                    "uuid": "40294099-ad0d-427e-a90c-ed0dc3065d2e"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CHG_CE_N] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 132.5,
+                        "y": 117.25
+                    },
+                    "uuid": "44f85da3-c685-4ea5-ab73-445dfa51dcd3"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CHG_CE_N] (B.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 123.0,
+                        "y": 108.25
+                    },
+                    "uuid": "46992f94-9bd1-4225-a960-c5e309f84af9"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CHG_CE_N] (B.Cu), 长度: 1.7500 mm",
+                    "pos": {
+                        "x": 116.75,
+                        "y": 104.75
+                    },
+                    "uuid": "47f96cbd-ddf3-447a-9e80-90c95c82a565"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CHG_CE_N] (B.Cu), 长度: 2.1213 mm",
+                    "pos": {
+                        "x": 118.25,
+                        "y": 106.25
+                    },
+                    "uuid": "5150b637-1828-4ea0-876b-7c3c549967dd"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CHG_CE_N] (B.Cu), 长度: 1.2500 mm",
+                    "pos": {
+                        "x": 132.5,
+                        "y": 118.5
+                    },
+                    "uuid": "524f9c30-59e9-4846-967e-65ede61f2f36"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CHG_CE_N] (B.Cu), 长度: 1.2500 mm",
+                    "pos": {
+                        "x": 132.25,
+                        "y": 120.0
+                    },
+                    "uuid": "875e4b73-bf27-4c61-a0ab-fcbb3deb85c6"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CHG_CE_N] (B.Cu), 长度: 0.5000 mm",
+                    "pos": {
+                        "x": 122.0,
+                        "y": 107.75
+                    },
+                    "uuid": "8cf1ffbc-305a-4594-a7d9-c2058d143940"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CHG_CE_N] (B.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 120.25,
+                        "y": 107.0
+                    },
+                    "uuid": "8ec3251f-1b8c-404a-9f38-89d1495b305e"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CHG_CE_N] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 120.5,
+                        "y": 107.25
+                    },
+                    "uuid": "947b0191-0ad1-4455-b59c-d5b07f1a92b7"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CHG_CE_N] (B.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 119.75,
+                        "y": 106.75
+                    },
+                    "uuid": "9576b4de-9ada-4d4f-b93e-bfe58321a755"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CHG_CE_N] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 122.25,
+                        "y": 108.0
+                    },
+                    "uuid": "9f9e5cc0-cb2f-4e87-9af2-d28c97e60b46"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CHG_CE_N] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 120.0,
+                        "y": 107.0
+                    },
+                    "uuid": "a1babd1d-8445-401a-89fc-b4b62b7ef0e7"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CHG_CE_N] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 115.0,
+                        "y": 104.75
+                    },
+                    "uuid": "a1c6b1f6-7950-46f5-a0df-a33074f51eca"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CHG_CE_N] (B.Cu), 长度: 3.8891 mm",
+                    "pos": {
+                        "x": 131.75,
+                        "y": 116.0
+                    },
+                    "uuid": "a1ccbdae-c1ca-4fef-8289-842b33709dd7"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CHG_CE_N] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 121.0,
+                        "y": 107.5
+                    },
+                    "uuid": "a2a22bd9-e251-47ae-9e61-104a8ca0b485"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CHG_CE_N] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 123.75,
+                        "y": 108.75
+                    },
+                    "uuid": "a2cdef60-30f2-46d9-a065-f3815bed8d0a"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CHG_CE_N] (B.Cu), 长度: 0.5000 mm",
+                    "pos": {
+                        "x": 119.25,
+                        "y": 106.5
+                    },
+                    "uuid": "be03f476-a9b4-40a4-a26d-474c47a4486b"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CHG_CE_N] (B.Cu), 长度: 6.3640 mm",
+                    "pos": {
+                        "x": 128.5,
+                        "y": 113.25
+                    },
+                    "uuid": "ce261c29-a435-4c1f-b9d1-52e8e52132a4"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CHG_CE_N] (B.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 121.25,
+                        "y": 107.5
+                    },
+                    "uuid": "d6e3cc29-2dfa-402d-a145-b10b0fc38ad2"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CHG_CE_N] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 119.5,
+                        "y": 106.75
+                    },
+                    "uuid": "dc01ddf3-9346-4d7f-ab7c-5d0e9f4f4c34"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CHG_CE_N] (B.Cu), 长度: 0.2500 mm",
+                    "pos": {
+                        "x": 124.0,
+                        "y": 108.75
+                    },
+                    "uuid": "e0a2e7e6-21a6-4ce6-b834-90a940aa60f4"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/CHG_CE_N] (B.Cu), 长度: 0.3536 mm",
+                    "pos": {
+                        "x": 118.75,
+                        "y": 106.5
+                    },
+                    "uuid": "e5aebaa3-38ac-4ef0-8f07-2fceacad195b"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/KEY_BOOT] (F.Cu), 长度: 0.6576 mm",
+                    "pos": {
+                        "x": 122.5,
+                        "y": 90.0
+                    },
+                    "uuid": "1049e281-2698-48c4-81bf-c64b1c5949cb"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/KEY_BOOT] (F.Cu), 长度: 1.7500 mm",
+                    "pos": {
+                        "x": 127.0,
+                        "y": 88.5
+                    },
+                    "uuid": "1bc7f30c-a0bb-4e18-83ff-b0babd85c120"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/KEY_BOOT] (F.Cu), 长度: 0.7811 mm",
+                    "pos": {
+                        "x": 130.509999,
+                        "y": 89.0
+                    },
+                    "uuid": "310fd6e8-2da7-4e54-9694-335012d91506"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "走线宽度 (电路板配置约束 最小宽度 0.2000 mm; 实际 0.1500 mm)",
+            "items": [
+                {
+                    "description": "走线 [/KEY_BOOT] (F.Cu), 长度: 0.7500 mm",
+                    "pos": {
+                        "x": 129.0,
+                        "y": 88.25
+                    },
+                    "uuid": "4020e7a8-8ae3-4cae-b3f1-98b4acf52460"
+                }
+            ],
+            "severity": "error",
+            "type": "track_width"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "走线 [/GND] (F.Cu), 长度: 0.7400 mm",
+                    "pos": {
+                        "x": 130.25,
+                        "y": 118.0
+                    },
+                    "uuid": "e2b48cff-45f5-4d74-a477-dc8e3b0eb66e"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "钻孔太靠近其他孔 (电路板配置约束 最小 0.2500 mm; 实际 0.2000 mm)",
+            "items": [
+                {
+                    "description": "过孔 [/CHG_CE_N] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 132.25,
+                        "y": 116.0
+                    },
+                    "uuid": "8f561614-d0eb-4d16-aabb-d342e0eacff7"
+                },
+                {
+                    "description": "过孔 [/CHG_CE_N] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 131.75,
+                        "y": 116.0
+                    },
+                    "uuid": "ed588ac0-5363-4937-acb0-b1764163a20c"
+                }
+            ],
+            "severity": "warning",
+            "type": "hole_to_hole"
+        },
+        {
+            "description": "Drilled holes co-located",
+            "items": [
+                {
+                    "description": "过孔 [/VBAT] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 132.5,
+                        "y": 115.0
+                    },
+                    "uuid": "85e24820-d3af-48cb-ae90-c871dd791a2e"
+                },
+                {
+                    "description": "过孔 [/VBAT] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 132.5,
+                        "y": 115.0
+                    },
+                    "uuid": "f5ea5765-b0fd-449c-9d56-93df0ec0e265"
+                }
+            ],
+            "severity": "warning",
+            "type": "holes_co_located"
+        },
+        {
+            "description": "封装 'ESP32-S3-WROOM-1' 与库 'RF_Module' 中的副本不匹配",
+            "items": [
+                {
+                    "description": "封装 U1",
+                    "pos": {
+                        "x": 125.0,
+                        "y": 72.8
+                    },
+                    "uuid": "37dd90f2-793f-4b1f-86e9-c1df8082c0ea"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "封装 'Hirose_FH12-24S-0.5SH_1x24-1MP_P0.50mm_Horizontal' 与库 'Connector_FFC-FPC' 中的副本不匹配",
+            "items": [
+                {
+                    "description": "封装 J3",
+                    "pos": {
+                        "x": 103.9,
+                        "y": 104.7
+                    },
+                    "uuid": "464b04da-df6f-43b9-aaf8-b4587b1dd3d7"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "封装 'USB_C_Receptacle_HRO_TYPE-C-31-M-12' 与库 'Connector_USB' 中的副本不匹配",
+            "items": [
+                {
+                    "description": "封装 J1",
+                    "pos": {
+                        "x": 125.0,
+                        "y": 126.1
+                    },
+                    "uuid": "b60b9f61-72c3-44da-89e1-cc30f1e35bf6"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        }
+    ]
+}

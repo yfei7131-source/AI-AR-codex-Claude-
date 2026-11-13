@@ -1,0 +1,15 @@
+领域,软件/固件事实,来源,硬件 R2 现状,结论,动作
+相机 DVP 引脚,"XCLK15 SDA4 SCL5 D0-7=11,9,8,10,12,18,17,16 VSYNC6 HREF7 PCLK13",board.c 节选,pinmap 逐脚相同,兼容（参考 profile）,自研 profile 沿用 ICR-08
+按键,button_gpio=0,board.c 节选,SW2→GPIO0 + 10k 上拉,兼容,复位时按住会进下载模式（绑带），属已知行为
+相机电源门控,gl_board 无 cam_pwr_en 字段,board.h 节选,GPIO3 高有效 + 10k 下拉；三路相机轨受控,固件缺口：不改固件相机不上电,ICR-08；台架用 JP2
+隐私联锁,privacy_interlock_verified=false；固件拒绝真实拍摄,board.c 节选 + 摘要,CAM_2V8→Q1→D3 纯硬件指示,硬件已设计、未实测 → 拍摄仍被阻断,H05 T11/T12 实测后走 ICR-09
+BLE 控制,v1 控制 8 字节 / 状态 20 字节；a004 v2 20 字节；a005 会话 JSON,摘要（源码未读）,ESP32-S3 BLE；协议与 PCB 无耦合,无硬件冲突；天线净空待 H03,H05 T30
+Wi-Fi 媒体,JPEG 走开发 Wi-Fi AP，不走 BLE 控制通道,摘要（源码未读）,3V3 为 LDO；2×22uF + 10uF 储能,条件兼容：低电量发射峰值下 3V3 可能跌落,H05 T14/T31；ICR-10；EVT-1 buck-boost
+iPhone 通信,原生 BLE 桥 + 图片传输（GlassesBleBridge / DeviceImageTransfer）,摘要（源码未读）,BLE + Wi-Fi 均由 ESP32-S3 提供,数据链路无硬件冲突；实机未测,H05 T30/T31
+iPhone 通话 F03,ESP32-S3 不支持 HFP/A2DP,摘要,仅 J7 预留 EN；音频 SoC 未选,不兼容（缺独立经典蓝牙音频子系统）,选型 + ICR-11
+AR 显示,光学显示未接入；DVP 不能当显示输出；HUD 位图非实机验收,摘要（display_adapter.h 未读）,J4 QSPI 预留，无光机规格书,阻断,索取光机规格书/EVK；ICR-04/12
+麦克风,固件 profile 无麦克风字段,board.h 节选,J5：SCK41 WS42 SD2,固件缺口,ICR-06/08
+电量检测,固件 profile 无 ADC 字段,board.h 节选,GPIO1 1M/1M 分压,固件缺口,ICR-07/08
+调试口,sdkconfig 未读,–,UART0=GPIO43/44（J6）；USB 接 GPIO19/20,未知,ICR-05
+充电/路径,无软件耦合,–,BQ24072 TD→GND；USB500；约 150 mA 充电,R1 错误已修,H05 T13/T16
+运输模式,无,–,BQ24072 无 SYSOFF；JP1 手动断电,EVT-0 不支持,EVT-1 充电器选型条件

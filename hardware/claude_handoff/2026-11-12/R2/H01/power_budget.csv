@@ -1,0 +1,14 @@
+block,mode,current_mA_at_rail,rail,basis,status
+ESP32-S3,Wi-Fi TX peak,340,3V3,module datasheet typical (recalled; re-read before use),ESTIMATE
+ESP32-S3,BLE connected idle + light sleep,1-5,3V3,depends on firmware connection interval,ESTIMATE-needs Codex input
+ESP32-S3,active CPU + BLE,60-100,3V3,datasheet modem-sleep class figure (recalled),ESTIMATE
+Camera OV2640/OV5640,capture,40-140,CAM rails,sensor dependent,ESTIMATE
+Camera,off,0,CAM rails,all three rails hardware-gated in R1,BY DESIGN-unmeasured
+Privacy LED,camera on,~3,VSYS,(VSYS-Vf)/330R,CALCULATED
+AR light engine (JBD mono green),display on,TBD,VSYS,vendor datasheet not obtained; public ref: Hummingbird colour 260 mW / Roadrunner I colour 90 mW,UNKNOWN
+BT audio SoC + amp,call,TBD,VSYS,part not selected,UNKNOWN
+BQ24072 + dividers,standby,<0.1,VBAT,2x1M divider ~2.1 uA + charger sleep current (datasheet; re-read),ESTIMATE
+Charger,charge,~150,VBAT,K_ISET/R5 with R5=5.9k (K_ISET from memory ~890 A-ohm; re-read datasheet),CALCULATED-unverified constant
+USB input,charging + system,<=500,VBUS,EN2/EN1=0/1 USB500 mode (TI pin table),BY DESIGN
+3V3 LDO headroom,battery mode Wi-Fi TX,n/a,3V3,3V3 regulated only while VBAT > 3.3V + Vdropout(I) + I*R(BAT-OUT); below that 3V3 tracks VBAT,RISK - measure in T14
+Ship mode,storage,n/a,VBAT,BQ24072 has no SYSOFF; JP1 open = 0 system load,BY DESIGN (EVT-0)

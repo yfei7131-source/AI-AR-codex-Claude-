@@ -1,0 +1,183 @@
+{
+  "label": "EXPERIMENTAL R5 POC — NOT KiCad-validated, NOT FOR MANUFACTURING",
+  "date": "2026-11-12",
+  "source": "Recovered Claude 23:05 R5 router + ChatGPT numpy boolean compatibility repair and demonstration candidate writer",
+  "native_kicad_drc": "NOT RUN",
+  "manufacturing_release": false,
+  "base_sha256": "8bd12a6f5e0cf8387e02309d92ff7ffc4a36350ab4e68a4f381ce8a96d1efed0",
+  "candidate_sha256": "229d479066ef7296262abbccc78e022a6a385989c645d3f22bae4b434ef47d67",
+  "net": "/CHG_PGOOD_N",
+  "original_custom_unconnected_count": 58,
+  "candidate_custom_unconnected_count": 57,
+  "added_track_segments": 9,
+  "added_vias": 1,
+  "all_baseline_bytes_preserved": true,
+  "notes": [
+    "自定义工具统计，不是 KiCad 原生 DRC",
+    "未确认差分/RF/板厂制程",
+    "没有进行实机通电测试",
+    "需重新运行原生 ERC/DRC 检查新连接并审核叠层/制造参数"
+  ],
+  "added_copper": [
+    {
+      "kind": "segment",
+      "start": [
+        134.25,
+        116.4625
+      ],
+      "end": [
+        134.25,
+        116.9
+      ],
+      "width": 0.2,
+      "layer": "F.Cu",
+      "net": "/CHG_PGOOD_N",
+      "uuid": "5bc47c8f-2bb4-4d2e-9b36-a3369445240c",
+      "tag": "/CHG_PGOOD_N"
+    },
+    {
+      "kind": "segment",
+      "start": [
+        134.25,
+        116.9
+      ],
+      "end": [
+        134.3,
+        116.95
+      ],
+      "width": 0.2,
+      "layer": "F.Cu",
+      "net": "/CHG_PGOOD_N",
+      "uuid": "5dbe841b-28d5-473f-852c-aedb020e1f35",
+      "tag": "/CHG_PGOOD_N"
+    },
+    {
+      "kind": "segment",
+      "start": [
+        134.3,
+        116.95
+      ],
+      "end": [
+        134.3,
+        117.05
+      ],
+      "width": 0.2,
+      "layer": "F.Cu",
+      "net": "/CHG_PGOOD_N",
+      "uuid": "3c6168df-334a-496a-837c-29fc554f84f2",
+      "tag": "/CHG_PGOOD_N"
+    },
+    {
+      "kind": "segment",
+      "start": [
+        134.3,
+        117.05
+      ],
+      "end": [
+        134.35,
+        117.05
+      ],
+      "width": 0.2,
+      "layer": "F.Cu",
+      "net": "/CHG_PGOOD_N",
+      "uuid": "22a656d7-c509-4474-90a5-ecf8f2bed6b8",
+      "tag": "/CHG_PGOOD_N"
+    },
+    {
+      "kind": "segment",
+      "start": [
+        134.35,
+        117.05
+      ],
+      "end": [
+        134.35,
+        117.55
+      ],
+      "width": 0.2,
+      "layer": "F.Cu",
+      "net": "/CHG_PGOOD_N",
+      "uuid": "c5bfdbef-b874-43c5-8683-f54dfaf69835",
+      "tag": "/CHG_PGOOD_N"
+    },
+    {
+      "kind": "segment",
+      "start": [
+        134.35,
+        117.55
+      ],
+      "end": [
+        133.8,
+        118.1
+      ],
+      "width": 0.2,
+      "layer": "F.Cu",
+      "net": "/CHG_PGOOD_N",
+      "uuid": "897ffba0-e22f-4fe7-805a-f0569f516dfe",
+      "tag": "/CHG_PGOOD_N"
+    },
+    {
+      "kind": "segment",
+      "start": [
+        133.8,
+        118.1
+      ],
+      "end": [
+        133.8,
+        120.3
+      ],
+      "width": 0.2,
+      "layer": "B.Cu",
+      "net": "/CHG_PGOOD_N",
+      "uuid": "81b71345-0068-4e13-b6be-e1970171f1d7",
+      "tag": "/CHG_PGOOD_N"
+    },
+    {
+      "kind": "segment",
+      "start": [
+        133.8,
+        120.3
+      ],
+      "end": [
+        132.35,
+        121.75
+      ],
+      "width": 0.2,
+      "layer": "B.Cu",
+      "net": "/CHG_PGOOD_N",
+      "uuid": "443a802a-b873-4289-9df4-46d95ca37afb",
+      "tag": "/CHG_PGOOD_N"
+    },
+    {
+      "kind": "segment",
+      "start": [
+        132.35,
+        121.75
+      ],
+      "end": [
+        132.0,
+        121.75
+      ],
+      "width": 0.2,
+      "layer": "B.Cu",
+      "net": "/CHG_PGOOD_N",
+      "uuid": "0e40fc42-ed15-41c2-ab98-16c1b75a7999",
+      "tag": "/CHG_PGOOD_N"
+    },
+    {
+      "kind": "via",
+      "at": [
+        133.8,
+        118.1
+      ],
+      "size": 0.6,
+      "drill": 0.3,
+      "layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "net": "/CHG_PGOOD_N",
+      "uuid": "2d937512-0f37-4456-b72e-230ab25e9f26",
+      "tag": "/CHG_PGOOD_N"
+    }
+  ]
+}

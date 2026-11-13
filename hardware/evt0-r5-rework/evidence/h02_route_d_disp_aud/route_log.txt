@@ -1,0 +1,28 @@
+  [/AUD_UART_RX] connected cluster (1 items) -> nearest (1 items): 9 seg, 4 via; gaps 1->0
+/AUD_UART_RX {'done': 1, 'failed': [], 'sec': 0.3}
+  [/AUD_UART_TX] connected cluster (1 items) -> nearest (1 items): 10 seg, 4 via; gaps 1->0
+/AUD_UART_TX {'done': 1, 'failed': [], 'sec': 0.3}
+  [/DISP_CLK] connected cluster (1 items) -> nearest (1 items): 7 seg, 1 via; gaps 1->0
+/DISP_CLK {'done': 1, 'failed': [], 'sec': 1.4}
+  [/DISP_CS] connected cluster (1 items) -> nearest (1 items): 13 seg, 6 via; gaps 1->0
+/DISP_CS {'done': 1, 'failed': [], 'sec': 0.3}
+  [/DISP_D0] connected cluster (1 items) -> nearest (1 items): 9 seg, 2 via; gaps 1->0
+/DISP_D0 {'done': 1, 'failed': [], 'sec': 0.3}
+  [/DISP_D1] UNROUTED, remaining gaps 1
+/DISP_D1 {'done': 0, 'failed': ['/DISP_D1'], 'sec': 1.6}
+  [/DISP_D2] UNROUTED, remaining gaps 1
+/DISP_D2 {'done': 0, 'failed': ['/DISP_D2'], 'sec': 1.8}
+  [/DISP_D3] connected cluster (1 items) -> nearest (1 items): 13 seg, 7 via; gaps 1->0
+/DISP_D3 {'done': 1, 'failed': [], 'sec': 0.3}
+  [/DISP_RST] connected cluster (1 items) -> nearest (1 items): 6 seg, 0 via; gaps 1->0
+/DISP_RST {'done': 1, 'failed': [], 'sec': 1.0}
+  [/DISP_PWR_EN] margin=7.0 extra=0.03: 2 viol e.g. clearance -> retry
+  [/DISP_PWR_EN] margin=14.0 extra=0.06: 2 viol e.g. clearance -> retry
+  [/DISP_PWR_EN] margin=30.0 extra=0.1: 2 viol e.g. clearance -> retry
+  [/DISP_PWR_EN] connected cluster (1 items) -> nearest (1 items): 2 seg, 0 via; gaps 2->1
+  [/DISP_PWR_EN] margin=7.0 extra=0.03: 2 viol e.g. clearance -> retry
+  [/DISP_PWR_EN] margin=14.0 extra=0.06: 2 viol e.g. clearance -> retry
+  [/DISP_PWR_EN] margin=30.0 extra=0.1: 2 viol e.g. clearance -> retry
+  [/DISP_PWR_EN] UNROUTED, remaining gaps 1
+/DISP_PWR_EN {'done': 1, 'failed': ['/DISP_PWR_EN'], 'sec': 4.8}
+gaps 42->34; new items 93; drc_lite(new) 0; dangling(new) 0

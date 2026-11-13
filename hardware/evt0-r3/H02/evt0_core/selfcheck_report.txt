@@ -1,0 +1,27 @@
+EVT-0 core R3 - connectivity + ERC-type pin rule self-check (NOT KiCad ERC)
+parts=86 nets=64 symbols=23
+ERRORS: 0
+WARNINGS: 23
+  W: net AUD_UART_RX has <2 fitted pins (others DNP): [('J7', '3', False), ('R34', '2', True)]
+  W: net AUD_UART_TX has <2 fitted pins (others DNP): [('J7', '2', False), ('R33', '2', True)]
+  W: net CAM_DVDD has <2 fitted pins (others DNP): [('R16', '2', True), ('C16', '1', False), ('J3', '10', True)]
+  W: net CAM_HREF has <2 fitted pins (others DNP): [('U1', '7', False), ('J3', '9', True)]
+  W: net CAM_PCLK has <2 fitted pins (others DNP): [('R24', '1', False), ('J3', '17', True)]
+  W: net CAM_PWDN has <2 fitted pins (others DNP): [('R22', '1', False), ('J3', '8', True)]
+  W: net CAM_VSYNC has <2 fitted pins (others DNP): [('U1', '6', False), ('J3', '7', True)]
+  W: net CAM_XCLK has <2 fitted pins (others DNP): [('R23', '2', False), ('J3', '13', True)]
+  W: net CAM_Y2 has <2 fitted pins (others DNP): [('U1', '19', False), ('J3', '19', True)]
+  W: net CAM_Y3 has <2 fitted pins (others DNP): [('U1', '17', False), ('J3', '21', True)]
+  W: net CAM_Y4 has <2 fitted pins (others DNP): [('U1', '12', False), ('J3', '22', True)]
+  W: net CAM_Y5 has <2 fitted pins (others DNP): [('U1', '18', False), ('J3', '20', True)]
+  W: net CAM_Y6 has <2 fitted pins (others DNP): [('U1', '20', False), ('J3', '18', True)]
+  W: net CAM_Y7 has <2 fitted pins (others DNP): [('U1', '11', False), ('J3', '16', True)]
+  W: net CAM_Y8 has <2 fitted pins (others DNP): [('U1', '10', False), ('J3', '14', True)]
+  W: net CAM_Y9 has <2 fitted pins (others DNP): [('U1', '9', False), ('J3', '12', True)]
+  W: net DISP_CLK has <2 fitted pins (others DNP): [('U1', '24', False), ('J4', '7', True)]
+  W: net DISP_CS has <2 fitted pins (others DNP): [('U1', '23', False), ('J4', '6', True)]
+  W: net DISP_D0 has <2 fitted pins (others DNP): [('U1', '31', False), ('J4', '8', True)]
+  W: net DISP_D1 has <2 fitted pins (others DNP): [('U1', '32', False), ('J4', '9', True)]
+  W: net DISP_D2 has <2 fitted pins (others DNP): [('U1', '33', False), ('J4', '10', True)]
+  W: net DISP_D3 has <2 fitted pins (others DNP): [('U1', '25', False), ('J4', '11', True)]
+  W: net DISP_RST has <2 fitted pins (others DNP): [('U1', '22', False), ('J4', '5', True)]

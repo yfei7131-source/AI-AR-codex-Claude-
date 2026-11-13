@@ -1,0 +1,44 @@
+{
+  "scope": "R3 H01 source and requirements contract; no ERC/DRC or physical hardware validation",
+  "contract_passed": true,
+  "feature_count": 22,
+  "priority_counts": {
+    "P0": 16,
+    "P1": 5,
+    "R": 1
+  },
+  "gpio_assignments_matched": 22,
+  "locked_profiles": [
+    "unconfigured",
+    "eye-v22",
+    "s3-carrier-a",
+    "evt0-r3"
+  ],
+  "ecad_declared_symbol_count": 86,
+  "physical_component_count": 84,
+  "open_release_gates": [
+    "G01",
+    "G02",
+    "G03",
+    "G04",
+    "G05",
+    "G06",
+    "G07",
+    "G08",
+    "G09",
+    "G10"
+  ],
+  "manufacturing_release": false,
+  "hardware_verified": false,
+  "source_sha256": {
+    "docs/FEATURES_F01_F22.md": "2b8af8853b42ca3a3d6123c6056667ddafb755dec73a03a03b4fb195e173e5d8",
+    "hardware/evt0-r3/H01/F01_F22_trace.csv": "5328da1f2085d255a92ba5bc9a0d3f243cab003aa83226571ea201d340ff321c",
+    "firmware/main/board.c": "b1410fd2050e5ac8c41ac1dec14eebd8c318457bb0169a1ac94c6357ef499e8c",
+    "firmware/main/board.h": "480ea6721a595cb1ef2206780be68e6f6a0a22a2ff0c7127553e0a17483b61c5",
+    "hardware/evt0-r3/H02/evt0_core/pinmap_hw.csv": "628e2cf5e77a1b3828f67f418ecedd551c4849611193ffba50a43c24e900ea23",
+    "hardware/evt0-r3/tools/check_fw_compat.py": "fe7235959833bd146223954b6a12c2ddfb4294e201042c16853ecb720557389c",
+    "hardware/evt0-r3/H02/evt0_core/gen/design.py": "468a424263d592821434c555b84616ba2ffb36d89dd26d8ce1f7592e1773b043",
+    "hardware/evt0-r3/H01/RELEASE_GATES.csv": "092552f91d1fdd83461fcd01ce4f7a32fddbdae15c9c4124081764176c0e6d8c",
+    "hardware/evt0-r3/H01/verify_h01.py": "639f7a3eb65f0091b3e7fccc107e4f9a22fe3752dd98e6ffb9ccb535bf0afd96"
+  }
+}

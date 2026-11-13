@@ -1,0 +1,13 @@
+block,candidate,key interface,selection status,price status,open item
+MCU/radio,ESP32-S3-WROOM-1-N16R8,USB/DVP/QSPI/I2S,firmware platform ESP32-S3 confirmed by handoff summary; camera pins match board.c excerpt,未查价,GPIO budget exhausted
+AR light engine,JBD 0.13in mono-green microLED projector (JBD4UM480P family),SPI/QSPI per vendor PR,baseline candidate - NOT locked,未查价,need datasheet + EVK
+Waveguide,diffractive waveguide matched to projector FOV/pupil,optical,not selected,未查价,H04
+Camera,24P DVP module OV2640 / OV5640,DVP + SCCB,footprint provisioned,未查价,confirm sensor used by firmware
+Charger/power path,BQ24072RGTR (pin15=TD tied low; no ship mode),analog,in EVT-0 R2 schematic,未查价,ISET vs cell spec; EVT-1: charger with ship mode to select
+3V3 rail EVT-0,TLV75733PDBVR,LDO,in schematic,未查价,dropout at low VBAT
+3V3 rail EVT-1,buck-boost (to select),switching,not selected,未查价,replace LDO
+Camera rails,TLV75528 + TLV75512 + BSS138/DMG2305UX,LDO + load switch,in schematic R1,未查价,-
+BT classic audio,HFP/A2DP audio SoC (to select),UART/I2S + EN,not selected,未查价,iPhone routing validation
+Mics,I2S/PDM MEMS (to select),I2S/PDM,breakout only,未查价,owner: ESP or BT SoC
+Battery,1S LiPo + PCM + 10k NTC (to select),JST-SH 3P on EVT-0,not selected,未查价,capacity/weight
+IMU / touch / ALS,to select,I2C,not in EVT-0,未查价,blocked by GPIO budget + F-list

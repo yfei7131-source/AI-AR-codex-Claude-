@@ -1,0 +1,18 @@
+group,refs,x_mm,y_mm,side,rotation,constraint
+MCU,U1,25,13,top,0,antenna end at y=0 edge; keep-out all layers under antenna
+MCU decoupling,C9 C10 R11 C11,25,27,top,0,C9 within 2 mm of U1 pin 2
+Buttons,SW1 SW2,8,34,top,0,SW1=RESET left of SW2=BOOT
+USB,J1 U2 D1 R1 R2,25,66,top,0,J1 on bottom edge centre; U2 within 5 mm of J1
+Charger,U3 C1 C2 C3 R3 R4 R5 R6 R7 D2,36,56,top,0,EP via array to L2; R5/R4 next to pins 16/12
+Battery,J2 JP1 R8,44,62,top,90,J2 on right edge
+3V3 rail,U4 C5 C6 C7 C8,14,54,top,0,C7/C8 between U4 and U1 supply path
+VBAT sense,R9 R10 C4,40,44,top,0,C4 at GPIO1 side
+Camera connector,J3,4,44,top,270,FPC exits left edge; confirm contact side vs module
+Camera rails,U5 U6 Q2 Q3 R29 C12-C20 R16-R18 R13 JP2 R32,12,42,top,0,short AVDD path to J3 pin 4
+Camera series R,R23 R24 R19-R22,9,36,top,0,R23 at U1 (source); R24 at J3 (source)
+Privacy LED,D3 Q1 R25 R26 R27,3,30,top,0,visible; isolated from lens
+Display breakout,J4 R14,46,22,top,90,right edge
+Mic breakout,J5,46,38,top,90,right edge
+Debug,J6 R30 R31,25,40,top,0,
+BT audio breakout,J7 R15,36,40,top,0,
+Test points,TP1-TP10 R28,25,48,bottom,0,probe access

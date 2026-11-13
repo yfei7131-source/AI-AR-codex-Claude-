@@ -1,0 +1,158 @@
+{
+  "checked_at_utc": "2026-11-12T08:52:02.516699+00:00",
+  "manufacturing_release": false,
+  "hardware_tested": false,
+  "source_board_saved_by_checker": false,
+  "refill_zones_in_memory": true,
+  "issues": [
+    "Native DRC contains violations, unconnected items, or parity issues",
+    "Native DRC returned nonzero"
+  ],
+  "commands": [
+    {
+      "argv": [
+        "C:\\codex-tools\\kicad-10.0.7\\bin\\kicad-cli.exe",
+        "pcb",
+        "drc",
+        "--severity-all",
+        "--schematic-parity",
+        "--exit-code-violations",
+        "--refill-zones",
+        "--format",
+        "json",
+        "-o",
+        "C:\\Users\\Admin（无密码）\\Desktop\\产品设计\\AI眼镜\\hw-v1-dev\\hardware\\evt0-r4-review\\H02\\evt0_core\\evidence\\pcb-drc-final.json",
+        "C:\\Users\\Admin（无密码）\\Desktop\\产品设计\\AI眼镜\\hw-v1-dev\\hardware\\evt0-r4-review\\H02\\evt0_core\\evt0_core.kicad_pcb"
+      ],
+      "exit_code": 5,
+      "stdout": "发现 15 条违规项\n发现 58 个未连接的项目\n发现 0 个原理图一致性问题\n保存 DRC 报告到 C:/Users/Admin（无密码）/Desktop/产品设计/AI眼镜/hw-v1-dev/hardware/evt0-r4-review/H02/evt0_core/evidence/pcb-drc-final.json\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:\\codex-tools\\kicad-10.0.7\\bin\\kicad-cli.exe",
+        "pcb",
+        "drc",
+        "--severity-all",
+        "--schematic-parity",
+        "--exit-code-violations",
+        "--refill-zones",
+        "--format",
+        "report",
+        "-o",
+        "C:\\Users\\Admin（无密码）\\Desktop\\产品设计\\AI眼镜\\hw-v1-dev\\hardware\\evt0-r4-review\\H02\\evt0_core\\evidence\\pcb-drc-final.rpt",
+        "C:\\Users\\Admin（无密码）\\Desktop\\产品设计\\AI眼镜\\hw-v1-dev\\hardware\\evt0-r4-review\\H02\\evt0_core\\evt0_core.kicad_pcb"
+      ],
+      "exit_code": 5,
+      "stdout": "发现 15 条违规项\n发现 58 个未连接的项目\n发现 0 个原理图一致性问题\n保存 DRC 报告到 C:/Users/Admin（无密码）/Desktop/产品设计/AI眼镜/hw-v1-dev/hardware/evt0-r4-review/H02/evt0_core/evidence/pcb-drc-final.rpt\n",
+      "stderr": ""
+    }
+  ],
+  "inputs_sha256": {
+    "evt0_core.kicad_pcb": "8bd12a6f5e0cf8387e02309d92ff7ffc4a36350ab4e68a4f381ce8a96d1efed0",
+    "evidence\\evt0_core.xml": "03064d96530195199d25bcbca74e51d80b039e2a71c39f60f5274b777389de03",
+    "evt0_core.kicad_sch": "eaaeb603bf96d7ca14e9e0d20a2bfbdc620485b1e1bc4358bc3b6de00ef4408f",
+    "evt0_core.kicad_pro": "db4c0b5187d919ced91fd78ad3fbd7183ab75ef331c1ab74931a6c9e33ae347d",
+    "evt0_core.kicad_dru": "d78c1bde463032fa7310755038be575a440e372aa004ae32d37c67d9db98ba49",
+    "fp-lib-table": "35724be539ebe5c915c65e0bdb6b599b89e16958a43c92ddfe67f309efd5d251",
+    "sym-lib-table": "c12391af8e6fb85d7de8b10c33e1435b4c35c9904d9b3f5cec30028dde24d7dd",
+    "gen\\verify_pcb.py": "3dc5c311518cd1945dc7b897d620bd1ea13b71877570d3ee5a6235a71932f3dd"
+  },
+  "kicad_cli_version": "10.0.7",
+  "board": {
+    "footprints": 84,
+    "top_footprints": 73,
+    "bottom_footprints": 11,
+    "track_segments_and_arcs": 1013,
+    "vias": 86,
+    "copper_items": 1099,
+    "copper_layers": 4,
+    "zones": 2,
+    "board_thickness_mm": 1.0,
+    "min_through_drill_mm": 0.3
+  },
+  "netlist_mapping": {
+    "xml_components": 84,
+    "physical_numbered_pads_checked": 305,
+    "unique_numbered_pins_checked": 284,
+    "xml_numbered_pins": 284,
+    "dnp_references": [
+      "J3",
+      "J4",
+      "R16",
+      "R17",
+      "R18",
+      "R28",
+      "R30",
+      "R31",
+      "R33",
+      "R34",
+      "R36",
+      "R5"
+    ],
+    "matches": true,
+    "problems": []
+  },
+  "drc": {
+    "violations": {
+      "count": 15,
+      "by_type": {
+        "drill_out_of_range": 12,
+        "lib_footprint_mismatch": 3
+      },
+      "by_severity": {
+        "error": 12,
+        "warning": 3
+      }
+    },
+    "unconnected_items": {
+      "count": 58,
+      "by_type": {
+        "unconnected_items": 58
+      },
+      "by_severity": {
+        "error": 58
+      }
+    },
+    "schematic_parity": {
+      "count": 0,
+      "by_type": {},
+      "by_severity": {}
+    },
+    "remaining_unconnected_items": 58,
+    "ignored_checks": [
+      {
+        "description": "Footprint has no courtyard defined",
+        "key": "missing_courtyard"
+      },
+      {
+        "description": "Track endpoint not centered on via",
+        "key": "track_not_centered_on_via"
+      },
+      {
+        "description": "Tuning profile track geometries",
+        "key": "tuning_profile_track_geometries"
+      },
+      {
+        "description": "Footprint doesn't match symbol's footprint filters",
+        "key": "footprint_filters_mismatch"
+      },
+      {
+        "description": "Footprint component type doesn't match footprint pads",
+        "key": "footprint_type_mismatch"
+      }
+    ],
+    "included_severities": [
+      "error",
+      "warning",
+      "exclusion"
+    ]
+  },
+  "outputs_sha256": {
+    "pcb-drc-final.json": "d1af182690c35782ed875f811c1ac0451e90a61a8fbb71e4536fc2ee4341a0d4",
+    "pcb-drc-final.rpt": "4ddfe57231e44a823f1a510844a2f91f9d3602c4fdfe882c19eee6cd5fb4dbef"
+  },
+  "source_board_unchanged": true,
+  "static_checks_passed": false,
+  "script_exit_code": 5
+}

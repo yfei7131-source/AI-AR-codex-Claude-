@@ -1,0 +1,13 @@
+block,candidate,stage,decision,procurement_and_release
+MCU,ESP32-S3-WROOM-1-N16R8,R3 core,使用16MB Flash/8MB OPI PSRAM配置,核对后缀板号与天线净空
+camera,Hirose FH12-24S-0.5SH(55) + 待定DVP相机模组,R3 DNP,J3与电压选配位均默认不装,需供应商相机料号电压时序与FPC接触面相符
+camera_indicator,Kingbright WP710A10LID + 560Ω,R3 core,从2.8V驱动红光LED,可见度与单故障均未测
+charger,TI BQ24072RGTR,R3 core,TD低启用终止且CE高默认禁充,禁充变体与合格电芯及TS验证分别记录
+regulator,TI TLV75733PDBVR,R3 core,3.3V LDO用于台架,测VSYS低电压及启动跌落
+regulator_next,TI TPS63020,EVT-1 candidate,升降压候选,原理图和电感电流热与报价需另评审
+audio,Microchip DM164152 / BM83SM1-00AA,独立EVB与J7台架,先借用现有EVB独立测HFP,不能作为整机成本/重量或量产BOM
+optical_reference,Brilliant Labs Halo完整设备,M1独立台架,复用厂商SDK与已验证栅格化,需借用或取得实机
+optical_product,光机+驱动器+匹配波导,M3 unselected,J4 DNP,要求报价尺寸眼盒电气图SDK许可
+cell,受保护4.2V终止1S包+适配NTC,wearable unselected,需要容量/重量/厚度/温升与C-rating,核对线序温度曲线和故障断流条件
+mic,J5 3.3V I2S数字麦模块,bench candidate,CLK/WS/SD,选料后确认采样宽度与声学开孔
+rx,处方插片及鼻托和镜腿,wearable unselected,与波导组合专业验配,按带镜片整镜重心温升与工时核算

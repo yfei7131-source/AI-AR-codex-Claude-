@@ -1,0 +1,77 @@
+{
+  "version": "ID-HW-A02; derived engineering inputs from user V1.0",
+  "status": "TARGET_ALLOCATION_ONLY_NOT_MEASURED",
+  "mass_challenge_g": 40,
+  "mass_engineering_target_g": 50,
+  "mass_warning_g": 55,
+  "prescription_lenses": "Weigh separately by complete fitted variant; excluded from this allocation.",
+  "source": "references/ZY_AIAR_Glasses_外观驱动硬件架构_V1.0.md §4",
+  "items": [
+    {
+      "id": "W01",
+      "category": "金属镜框、双镜腿、铰链、鼻托",
+      "allocated_g": 12,
+      "measured_g": null,
+      "part_number": null,
+      "measurement_record": null,
+      "status": "TARGET_NOT_MEASURED"
+    },
+    {
+      "id": "W02",
+      "category": "双波导、双光机、显示相关结构",
+      "allocated_g": 14,
+      "measured_g": null,
+      "part_number": null,
+      "measurement_record": null,
+      "status": "TARGET_NOT_MEASURED"
+    },
+    {
+      "id": "W03",
+      "category": "主/副板、FPC、连接器、RF",
+      "allocated_g": 7,
+      "measured_g": null,
+      "part_number": null,
+      "measurement_record": null,
+      "status": "TARGET_NOT_MEASURED"
+    },
+    {
+      "id": "W04",
+      "category": "两侧受保护电芯及电源辅件",
+      "allocated_g": 9,
+      "measured_g": null,
+      "part_number": null,
+      "measurement_record": null,
+      "status": "TARGET_NOT_MEASURED"
+    },
+    {
+      "id": "W05",
+      "category": "摄像头、音频、IMU、触控、USB-C",
+      "allocated_g": 6,
+      "measured_g": null,
+      "part_number": null,
+      "measurement_record": null,
+      "status": "TARGET_NOT_MEASURED"
+    },
+    {
+      "id": "W06",
+      "category": "胶材、密封与装配余量",
+      "allocated_g": 2,
+      "measured_g": null,
+      "part_number": null,
+      "measurement_record": null,
+      "status": "TARGET_NOT_MEASURED"
+    }
+  ],
+  "comparison_only": {
+    "candidate": "JBD Hummingbird I binocular optical module",
+    "source_url": "https://www.jb-display.com/product_des/8.html",
+    "public_field": "Waveguide Weight",
+    "public_value_approx_g": 16,
+    "scope": "Single/pair and carrier boundary not confirmed; not full optical system mass.",
+    "status": "BLOCKED_WEIGHT_SCOPE_AND_ALLOCATION_CONFLICT",
+    "allocation_difference_g": 2,
+    "measured": false
+  },
+  "complete_measured_mass_g": null,
+  "mass_verified": false
+}

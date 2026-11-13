@@ -1,0 +1,41 @@
+{
+ "date": "2026-11-12",
+ "revision": "R2",
+ "generator": {
+  "cmd": "python3 gen/gen_kicad.py",
+  "exit": 0,
+  "stdout_tail": [
+   "EVT-0 core R2 - connectivity + ERC-type pin rule self-check (NOT KiCad ERC)",
+   "parts=87 nets=64 symbols=23",
+   "ERRORS: 0",
+   "WARNINGS: 0"
+  ]
+ },
+ "fw_compat": {
+  "cmd": "python3 tools/check_fw_compat.py '<Codex交接包>/最小GPIO参考_勿作为完整源码'",
+  "exit": 2,
+  "stdout_tail": [
+   "- configured=false, privacy_interlock_verified=false",
+   "",
+   "## Other GPIO-like definitions under firmware/ (0, review manually)",
+   "",
+   "## RESULT",
+   "conflicts=0 incomplete_items=3 exit=2 (pins match where defined; NOT freezable)"
+  ]
+ },
+ "fw_compat_note": "input = board.c/.h excerpt from Codex handoff tool package (2 files). exit 2 = pins match where defined, repo incomplete. 15/15 camera+button fields match.",
+ "guard_mutation_test": "pin15 renamed back to SYSOFF -> generator ERRORS: 1 'U3 BQ24072RGTR: pin 15 must be TD per TI datasheet, symbol says SYSOFF' (then reverted)",
+ "fw_tool_negative_test": "board.c mutated (d[3]=35, pclk=14) -> 2 CONFLICT lines, exit 1",
+ "py_compile": "PASS",
+ "sexpr_paren_balance": {
+  "evt0_core.kicad_sch": 0,
+  "aiar.kicad_sym": 0,
+  "evt0_core.kicad_pcb": 0
+ },
+ "kicad_cli_available": false,
+ "kicad_ERC": "NOT_RUN",
+ "kicad_DRC": "NOT_RUN",
+ "real_hardware": "NOT_RUN",
+ "full_software_source_read": false,
+ "github_reachable_from_session": false
+}

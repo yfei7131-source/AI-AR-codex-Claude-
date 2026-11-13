@@ -1,0 +1,14 @@
+id,stage,test,method,pass criterion,result
+T00,pre-layout,KiCad ERC on evt0_core.kicad_sch,KiCad 8 Inspect>ERC,0 errors (review warnings),NOT RUN
+T01,pre-layout,firmware pin cross-check,python3 tools/check_fw_compat.py <repo>,exit 0 or every CHECK line resolved,NOT RUN (no repo)
+T02,pre-fab,KiCad DRC,after layout,0 errors,NOT RUN
+T10,power,rails unloaded,USB in / battery out; DMM on TP1-TP6,VSYS/3V3 within datasheet tolerance; CAM rails 0 V,NOT RUN
+T11,power,camera gate,drive CAM_PWR_EN high,TP5 2.8V / TP6 1.2V / TP10 3.3V; D3 lit; low => all <0.1 V and D3 off,NOT RUN
+T12,power,privacy interlock,try every firmware state with sensor streaming,D3 always lit while TP5>2.5 V,NOT RUN
+T13,power,charge,1S cell on J2 / ammeter at JP1,CC current matches R5 setting; terminates at 4.2 V; NTC open => no charge,NOT RUN
+T14,power,3V3 droop,Wi-Fi TX burst at VBAT 4.2 / 3.7 / 3.5 / 3.3 V; scope on TP4,3V3 stays above ESP32-S3 minimum supply,NOT RUN
+T15,power,ship mode,SYSOFF high via TP8,battery current ~charger leakage only,NOT RUN
+T20,MCU,USB download + boot,idf.py flash via USB-Serial-JTAG,enumerates and boots; straps correct,NOT RUN
+T21,camera,JPEG capture,Codex firmware unmodified,frames received by phone app,NOT RUN
+T22,display,QSPI to light-engine EVK via J4,vendor init sequence,test pattern visible through waveguide,NOT RUN
+T23,audio,mic I2S via J5,Codex firmware,valid PCM,NOT RUN
