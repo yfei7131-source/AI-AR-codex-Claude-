@@ -16,3 +16,6 @@ zy_pcb `selfcheck` 仅为辅助，**不是原生 DRC**。
 | S3c | 标题栏 rev `R6-S3b`，注明 NOT FOR FAB、原生已跑、USB 未布、联锁与电池保护未改；采用 KiCad 重铺后的板作为工作板（重铺幂等：重铺前后 SHA 一致 `4efbde7f…`） | 0/0 · 0 · 0 · 51 | `evidence/native_r6_s3/`、`evidence/render_r6_s3/` |
 
 注：此前名为 `native_after_s3/` 的目录其输入 PCB 哈希为 S3 之前的板（`6dbc5dc8…`），已更名为 `native_r6_s2_stackup_pre_s3/`，避免误读。
+| S4 | `tools/r6_s4_uart_move.py`：DNP 音频 UART 桥 R33/R34 自板顶 (y≈71) 移至 J7 旁（R33 (131.6,97.5) 0°，位于 J6/J7 courtyard 间 1.4 mm 间隙；R34 (137.6,102.0) 270°）。删除仅通往旧 R34.1 的 U0RXD 分支（5 段+2 过孔，否则成悬空短桩）；新增 11 段 0.2 mm 短线。AUD_UART_TX/RX 由需纵穿全板（各 ~37 mm、3–4 过孔，且封死 U1→J4 通道）变为 <5 mm 本地连接。首版位置原生报 3 处 courtyard 重叠，已改方向/位置后复核 | **0/0 · 0 · 0 · 49** | `evidence/step_r6_s4_uart_move/`、`evidence/native_r6_s4/` |
+
+**S4 后发现（未改，列为下一项整改）**：U1 右列 ↔ J4 走廊被 R3 遗留 0.25 mm 网格阶梯走线占满——F.Cu 有 /VBAT_ADC x=140.25（y 70–93）、/MIC_WS x=135.5、/U0TXD x=137 三道竖墙；B.Cu 有 /MIC_SCK、/MIC_WS 长阶梯斜线 (134.75,75.5)→(145.75,99.25)。显示 9 项在此条件下自动布线最好结果仍为 ~233 mm/18 过孔且不全通，判定不可接受；需先拆除重布这些遗留线（独立步骤、原生复核）再布显示总线。
