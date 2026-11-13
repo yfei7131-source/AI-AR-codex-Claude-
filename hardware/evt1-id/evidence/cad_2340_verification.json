@@ -1,0 +1,74 @@
+{
+  "source_date": "2026-11-12 23:40",
+  "basis": "Claude 23:40 conversation and 30KB Markdown artifact",
+  "git_base": "24facfb34ab16f07f57368526f38f444240da686",
+  "github_pushed_by_claude": false,
+  "native_kicad_executed_here": false,
+  "R4_original_changed": false,
+  "cadquery_run_environment": "This local independent container (not Claude session)",
+  "cadquery_variants": [
+    {
+      "variant": "resin",
+      "actual_script_total_g": 43.81,
+      "reserve10_g": 48.19,
+      "side_imbalance_g": 1.9,
+      "issues": [
+        [
+          "GAP<min",
+          "camera_L",
+          "privacy_led_L",
+          0.3
+        ]
+      ],
+      "generated_STEP": "R5/evt1/cad/out/ZY_EVT1_resin.step",
+      "STEP_validated_by_reimport": true,
+      "verified_as_real_product": false
+    },
+    {
+      "variant": "sic075",
+      "actual_script_total_g": 43.4,
+      "reserve10_g": 47.74,
+      "side_imbalance_g": 1.9,
+      "issues": [
+        [
+          "GAP<min",
+          "camera_L",
+          "privacy_led_L",
+          0.3
+        ]
+      ],
+      "generated_STEP": "R5/evt1/cad/out/ZY_EVT1_sic075.step",
+      "STEP_validated_by_reimport": true,
+      "verified_as_real_product": false
+    },
+    {
+      "variant": "sic035",
+      "actual_script_total_g": 39.77,
+      "reserve10_g": 43.75,
+      "side_imbalance_g": 1.9,
+      "issues": [
+        [
+          "GAP<min",
+          "camera_L",
+          "privacy_led_L",
+          0.3
+        ]
+      ],
+      "generated_STEP": "R5/evt1/cad/out/ZY_EVT1_sic035.step",
+      "STEP_validated_by_reimport": true,
+      "verified_as_real_product": false
+    }
+  ],
+  "missing_original_files": [
+    "R5/evt1/thermal/thermal_budget.py (listed but not present as actual code in original document)",
+    "silvergrey STEP ID reference"
+  ],
+  "blockers": [
+    "front bridge camera placement inconsistent: delivered code places camera_L in left endpiece",
+    "candidate 50g model based on assumptions only; not true weigh-in",
+    "thermal effective area 0.0072m2 exceeds single temple gross all-faces envelope 0.00522m2 unless heat spreading to adjacent frame validated",
+    "selfcheck 58->57 not native DRC; R4 58 unconnected / 12 drill / 3 library remains",
+    "Claude native KiCad script code syntax has not been executed against KiCad; no kicad-cli in this runtime"
+  ],
+  "no_production_release": true
+}
