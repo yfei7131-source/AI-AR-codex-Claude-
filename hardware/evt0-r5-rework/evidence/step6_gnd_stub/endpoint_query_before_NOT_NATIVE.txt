@@ -1,0 +1,18 @@
+--- items within 0.40mm (edge distance) of (130.25,118.0) ---
+ -0.150  trk 40b55a19           net=/GND         layers=['F'] contains_pt=True
+  0.025  pad D1.2               net=/GND         layers=['F'] contains_pt=False
+  0.105  trk 8cfd814c           net=/GND         layers=['F'] contains_pt=False
+  0.400  trk 25d5752d           net=/CAM_PWR_EN  layers=['B'] contains_pt=False
+  0.400  trk 28271205           net=/CAM_PWR_EN  layers=['B'] contains_pt=False
+  0.400  trk 6adae946           net=/CHG_EN1     layers=['F'] contains_pt=False
+--- items within 0.40mm (edge distance) of (130.5,117.95) ---
+ -0.150  trk 40b55a19           net=/GND         layers=['F'] contains_pt=True
+ -0.150  trk 8cfd814c           net=/GND         layers=['F'] contains_pt=True
+ -0.113  pad D1.2               net=/GND         layers=['F'] contains_pt=True
+  0.218  trk 35ba0147           net=/CAM_PWR_EN  layers=['B'] contains_pt=False
+  0.220  trk c55ba1b1           net=/CAM_PWR_EN  layers=['B'] contains_pt=False
+  0.350  trk 25d5752d           net=/CAM_PWR_EN  layers=['B'] contains_pt=False
+  0.389  trk e5707bd7           net=/GND         layers=['F'] contains_pt=False
+
+zones: {'/GND': ('In1.Cu', 4), '/3V3': ('In2.Cu', 4)}
+project dangling(): [('trk:[/GND]@130.500,117.950', (130.25, 118.0))]
