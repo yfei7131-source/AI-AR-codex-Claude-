@@ -1,0 +1,21 @@
+# 环境探测 2026-11-13T10:28:19+00:00 (UTC容器时钟)
+$ uname -a
+Linux vm 6.18.44-fc-v445 #1 SMP PREEMPT_DYNAMIC @0 x86_64 x86_64 x86_64 GNU/Linux
+$ which kicad-cli kicad pcbnew eeschema
+kicad-cli: not found
+kicad: not found
+pcbnew: not found
+eeschema: not found
+$ python3 -c 'import pcbnew'
+ModuleNotFoundError: No module named 'pcbnew'
+$ dpkg -l | grep -i kicad
+(none)
+$ find / -xdev -iname 'kicad-cli*' -o -iname 'pcbnew*' (排除工程目录)
+(find done, 无结果即未安装)
+$ curl -sS -I https://pypi.org (网络)
+curl: (6) Could not resolve host: pypi.org
+$ apt-cache policy kicad
+(apt exit: 0)
+$ pip download kicad-cli
+ERROR: Could not find a version that satisfies the requirement kicad-cli (from versions: none)
+ERROR: No matching distribution found for kicad-cli

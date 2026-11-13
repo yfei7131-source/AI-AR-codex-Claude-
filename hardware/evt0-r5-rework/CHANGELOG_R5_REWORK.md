@@ -36,3 +36,21 @@
 - 同时撤销本窗口早先误放的 `STATE_R5_REWORK_session4_addendum.md`（重复且过时的STATE副本）。
 - 未新增任何替代检查器；仅复用项目自带 pcb_edit/zy_pcb/selfcheck/verify_rework。
 - USB_DP/DM 仍阻断；GitHub 无网络，未创建 Draft PR，无 Commit SHA。
+
+## 第五轮 stage1（2026-11-13 新窗口）：环境确认与基线复核（无工程文件改动）
+- 入包 `ZY_AIAR_Claude_PR5_Core.zip` SHA256 `ab6fd780…1587`；03_SHA256SUMS 249/249 OK；PCB `c0f1ca5c…4477`、SCH `81d599e6…42e6` 与 STATE 一致。
+- 原生检查：`bash tools/run_native_checks.sh evt0_core evidence/native_NOTRUN_round5_start` → 输出 NOT RUN，**退出码2**（`exit_code.txt`）；`env_probe.txt` 记录环境探测原始输出。ERC/DRC/覆铜重铺/parity 均未运行，不得称通过。
+- 离线自检复现（非原生）：`selfcheck.py` → 缺口51/违规0/悬空0；`verify_rework.py` S1–S4 回归项不变。
+- 新增 `tools/make_stage_zip.py`：重算包内SHA256并打全量阶段ZIP，回读校验；不改动任何工程源文件。
+- R4/R5实验板/PR#4历史目录未触碰。
+
+## 第五轮 S7（2026-11-13）：规则/标识整改（无铜、无封装、无原理图改动）
+| 改动 | 内容 | 依据 |
+|---|---|---|
+| S7a `.kicad_pro` | 网络类 Default/CamClk/USB 的 `via_diameter 0.5→0.6`、`via_drill 0.25→0.3`（共3处；Power 原即 0.6/0.3） | 板最小孔 0.30、DRU `Via drill minimum 0.3`；USB_DIFF_BLOCKERS 已列为必改；仅影响今后新建过孔默认值，现有91个过孔不变 |
+| S7b PCB 标题栏 | `rev "R4-DC-review"→"R5-S7"`；`comment 1` 改为 NOT FOR FAB/原生NOT RUN；新增 `comment 2`（USB未布线、隐私联锁与电池保护未改） | 旧标题栏仍写 R4 DC 实验，易被误当制造版本 |
+- PCB 除标题栏外**逐字节不变**（前缀与自 `(layers` 起后缀均一致，见 `evidence/step7_cfg_title/`）；离线自检前后完全一致（缺口51/违规0/悬空0，逐网一致）。
+- 新 SHA256：PCB `b6ff6dd25e6bbd05912485d4e4d8b766747021804476e2e6c94f3ec786518935`；PRO `88775ef8793c42da79d376000c3a4e2e359d2f69ee4988f6101a7bc23308c962`；SCH 不变 `81d599e6d107563f43d2521262fd50ffaea25e8457332b169c59d1ca32a142e6`。差异补丁 `evidence/step7_cfg_title/S7_diff.patch`。
+- 原生检查：`evidence/step7_cfg_title/native_NOTRUN_S7/`（NOT RUN，退出码2，已记录新输入哈希）。
+- 新增 `NATIVE_RUN_PLAYBOOK.md`（原生复检命令/预期/分诊/规则待决项）、`tools/compare_native_expected.py`（原生 drc.json 与预期逐网比对器；解析逻辑已用 R4 真实原生JSON自测，**非检查器**）、`evidence/round5_calibration/`（R4原生逐网未连接 vs 离线模型：差异为空；R5 预期 51 逐网）。
+- 未做（原因）：J3/PGOOD/VSYS 铜改动——无原生违规依据，且 J3 短线零余量等于焊盘本身 0.5mm 间距的 0.20 间隙，不是新增缺陷；USB 布线——阻断；原理图改动——无可用 ERC。
