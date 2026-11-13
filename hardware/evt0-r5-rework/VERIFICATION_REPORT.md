@@ -24,3 +24,16 @@
 | S6 | 删除GND悬空短线 40b55a19（-8行/-157字节），D1.2仍在唯一GND簇；见 evidence/step6_gnd_stub |
 | 未变更的待原生复核项 | J3短线零余量；PGOOD↔CHG_EN1过孔余量0.035mm；VSYS≈35mm（仅连DNP焊盘J4.2）；封装库告警 |
 模型结果不等于 KiCad DRC。**不得出Gerber，非生产放行。**
+
+## 第五轮更新（H02/H03，PCB c8aceeaf）
+| 项目 | 状态 |
+|---|---|
+| 原生 ERC / DRC / 覆铜重铺 / parity | **NOT RUN**（无KiCad；evidence/native_NOTRUN_h02_20261113，退出码2） |
+| zy_pcb 自检（非原生） | 缺口 51→28、违规0、悬空0；UUID 1694 唯一 |
+| J3 GND 短线 | 实测净距恰=0.200=规则（0.5排距×0.3电源最小线宽几何强制；缩宽违DRU、移孔不改y向净距）→ 保留，原生DRC复核项 |
+| PGOOD | 最差两段对 CHG_EN1 过孔净距0.185（规则0.15，余量+0.035）；走廊总余量0.084，无有效扩距空间 → 保留 |
+| S5 VSYS/VBUS | 15项新铜最小余量+0.05；/VSYS /VBUS 缺口0 |
+| 新增布线 A–E | 23缺口连通（17网全通+CAM_DOVDD/DISP_PWR_EN部分）；drc_lite(new)=0、dangling(new)=0 |
+| CAM_2V8 手动绕行 | --dry 干跑14项违规（GND/PWDN/SIOD阻挡+穿越J3焊盘）→ 确认拥堵，未写入任何铜 |
+| 封装库告警 | 是否消除未知（需原生） |
+自检数字来自 zy_pcb，不等于 KiCad DRC。**不得出Gerber，非生产放行。**

@@ -36,3 +36,17 @@
 - 同时撤销本窗口早先误放的 `STATE_R5_REWORK_session4_addendum.md`（重复且过时的STATE副本）。
 - 未新增任何替代检查器；仅复用项目自带 pcb_edit/zy_pcb/selfcheck/verify_rework。
 - USB_DP/DM 仍阻断；GitHub 无网络，未创建 Draft PR，无 Commit SHA。
+
+## 第五轮（2026-11-13 H02，Kimi 窗口，独立分支 hardware/evt0-r5-h02h03-kimi-20261113）
+- P0 基线核对：PCB `c0f1ca5c…`、SCH `81d599e6…` 与 PR#5 记录一致；R3/R4 原版、DNP、规则、隐私联锁均未触碰。
+- P1 原生检查：`tools/run_native_checks.sh` → **NOT RUN**（本机无 KiCad/kicad-cli，退出码2），证据 `evidence/native_NOTRUN_h02_20261113/`。ERC/DRC/覆铜重铺/parity 均未运行，不得以自检代替。
+- 优先项实测（zy_pcb，非原生）：J3 两条GND短线净距恰=规则0.200mm（0.5mm排距+DRU电源最小线宽0.3几何强制，缩线宽违规、移过孔不改y向净距）→ 保留并标记原生复核；PGOOD 最差为两段对 CHG_EN1 过孔净距0.185（规则0.15，余量+0.035）合规；S5 VSYS/VBUS 新铜15项最小余量+0.05，/VSYS /VBUS 缺口0。
+- H02 route A（rw_route，既有工具）：CAM_PWDN/RST_N/SIOC/SIOD/HREF 连通，51→43；CAM_VSYNC 未布。
+- H02 route B：CAM_DOVDD 连通1/6，43→42；CAM_2V8/CAM_DVDD 未布。
+- H03 route C：电源 plane 模式重试无进展（42→42，回滚）。
+- H03 route D：AUD_UART_RX/TX、DISP_CLK/CS/D0/D3/RST 连通，42→34；DISP_D1/D2 未布、DISP_PWR_EN 余1。
+- H03 route E：CAM_Y2/Y3/Y4/Y5、CAM_XCLK_R、CAM_PCLK_R 连通，34→28；Y6–Y9/XCLK/PCLK 未布。
+- 手动绕行评估（manual_copper --dry 干跑，未写入）：CAM_2V8 北侧绕行14项违规（GND/PWDN/SIOD阻挡、穿越J3焊盘），确认拥堵，放弃手动布线，不留未验证铜。
+- 每批次自检：drc_lite(new)=0、dangling(new)=0、verify_rework S1–S4 回归通过；UUID 1694 无重复。
+- PCB SHA256 演进：c0f1ca5c → f611f228(A) → 0a5dbabc(B) → 44f17fe5(D) → c8aceeaf(E)。
+- USB_DP/DM 仍阻断（USB_DIFF_BLOCKERS.md）；原生 ERC/DRC/重铺仍 NOT RUN；**不得出Gerber，非生产放行**。
