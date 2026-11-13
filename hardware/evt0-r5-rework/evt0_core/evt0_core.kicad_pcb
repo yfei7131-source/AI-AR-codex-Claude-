@@ -9,8 +9,9 @@
 	(paper "A4")
 	(title_block
 		(title "AI/AR V1 EVT-0 core verification board")
-		(rev "R4-DC-review")
-		(comment 1 "Isolated DC routing experiment; DRC and safety gates remain open")
+		(rev "R5-S7")
+		(comment 1 "NOT FOR FAB - native ERC/DRC/zone refill NOT RUN (R5 S1-S7 verified offline only)")
+		(comment 2 "USB DP/DM unrouted: stackup/90R/fab limits pending. Privacy interlock and battery protection unchanged")
 	)
 	(layers
 		(0 "F.Cu" signal)

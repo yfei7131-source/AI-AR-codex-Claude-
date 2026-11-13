@@ -1,0 +1,49 @@
+--- a/evt0_core.kicad_pcb	2026-11-13 10:34:06.096985374 +0000
++++ b/evt0_core.kicad_pcb	2026-11-13 10:34:06.098699645 +0000
+@@ -9,8 +9,9 @@
+ 	(paper "A4")
+ 	(title_block
+ 		(title "AI/AR V1 EVT-0 core verification board")
+-		(rev "R4-DC-review")
+-		(comment 1 "Isolated DC routing experiment; DRC and safety gates remain open")
++		(rev "R5-S7")
++		(comment 1 "NOT FOR FAB - native ERC/DRC/zone refill NOT RUN (R5 S1-S7 verified offline only)")
++		(comment 2 "USB DP/DM unrouted: stackup/90R/fab limits pending. Privacy interlock and battery protection unchanged")
+ 	)
+ 	(layers
+ 		(0 "F.Cu" signal)
+--- a/evt0_core.kicad_pro	2026-11-13 10:34:06.097214598 +0000
++++ b/evt0_core.kicad_pro	2026-11-13 10:34:06.099368099 +0000
+@@ -289,8 +289,8 @@
+         "schematic_color": "rgba(0, 0, 0, 0.000)",
+         "track_width": 0.2,
+         "tuning_profile": "",
+-        "via_diameter": 0.5,
+-        "via_drill": 0.25,
++        "via_diameter": 0.6,
++        "via_drill": 0.3,
+         "wire_width": 6
+       },
+       {
+@@ -308,8 +308,8 @@
+         "schematic_color": "rgba(0, 0, 0, 0.000)",
+         "track_width": 0.2,
+         "tuning_profile": "",
+-        "via_diameter": 0.5,
+-        "via_drill": 0.25,
++        "via_diameter": 0.6,
++        "via_drill": 0.3,
+         "wire_width": 6
+       },
+       {
+@@ -346,8 +346,8 @@
+         "schematic_color": "rgba(0, 0, 0, 0.000)",
+         "track_width": 0.2,
+         "tuning_profile": "",
+-        "via_diameter": 0.5,
+-        "via_drill": 0.25,
++        "via_diameter": 0.6,
++        "via_drill": 0.3,
+         "wire_width": 6
+       }
+     ],

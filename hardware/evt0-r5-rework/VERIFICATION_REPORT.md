@@ -24,3 +24,21 @@
 | S6 | 删除GND悬空短线 40b55a19（-8行/-157字节），D1.2仍在唯一GND簇；见 evidence/step6_gnd_stub |
 | 未变更的待原生复核项 | J3短线零余量；PGOOD↔CHG_EN1过孔余量0.035mm；VSYS≈35mm（仅连DNP焊盘J4.2）；封装库告警 |
 模型结果不等于 KiCad DRC。**不得出Gerber，非生产放行。**
+
+## 第五轮 stage1 更新（PCB c0f1ca5c 未变）
+| 项目 | 状态 |
+|---|---|
+| 原生 ERC / DRC / 覆铜重铺 / parity | **NOT RUN**（无KiCad、无网络；`evidence/native_NOTRUN_round5_start`，退出码2） |
+| 包完整性 | 03_SHA256SUMS 249/249 OK |
+| zy_pcb 自检（非原生） | 缺口51、违规0、悬空0（复现） |
+模型结果不等于 KiCad DRC。**不得出Gerber，非生产放行。**
+
+## 第五轮 S7 更新（PCB b6ff6dd2）
+| 项目 | 状态 |
+|---|---|
+| 原生 ERC / DRC / 覆铜重铺 / parity | **NOT RUN**（`evidence/step7_cfg_title/native_NOTRUN_S7`，退出码2） |
+| 离线自检（非原生） | 缺口51/违规0/悬空0，与S7前逐网一致 |
+| PCB 几何不变性 | 除标题栏外逐字节一致 |
+| 离线模型 vs R4 原生 | 未连接逐网差异为空（58=58）；仅证连通性 |
+| aiar_fp 封装库 vs 板上封装 | fp_promote 重生成与库文件逐字一致（U1/J3/J1） |
+**不得出Gerber，非生产放行。**
