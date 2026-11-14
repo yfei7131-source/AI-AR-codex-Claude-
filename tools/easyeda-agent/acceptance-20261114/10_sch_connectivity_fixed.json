@@ -1,0 +1,264 @@
+{
+  "schemaVersion": "1.4",
+  "projectId": "0fb3d3be968de9d900a1e973182026b4e3234bbb6604aacacee001af222755b0",
+  "documentId": "1c4cc46f72ecf8cf",
+  "components": [
+    {
+      "id": "cmp-C1",
+      "uniqueId": "gge4",
+      "ref": "C1",
+      "device": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "deviceUuid": "87bb635d0b2f489a9f60e7cd225beb3c",
+        "name": "={Value}"
+      },
+      "footprint": "48846e663a371283",
+      "footprintRef": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "C0402",
+        "uuid": "48846e663a371283"
+      },
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "x": 465,
+          "y": 500
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "x": 465,
+          "y": 460
+        }
+      ],
+      "placement": {
+        "x": 465,
+        "y": 480,
+        "rotation": 270,
+        "bbox": {
+          "minX": 456.5,
+          "minY": 469.5,
+          "maxX": 473.5,
+          "maxY": 490.5
+        }
+      }
+    },
+    {
+      "id": "cmp-C2",
+      "uniqueId": "gge2",
+      "ref": "C2",
+      "device": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "deviceUuid": "6e5726223dd84f70bc3b626fc7d1f72c",
+        "name": "={Value}"
+      },
+      "footprint": "7eb0d5205b69c7ac",
+      "footprintRef": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "C0805",
+        "uuid": "7eb0d5205b69c7ac"
+      },
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "x": 335,
+          "y": 490
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "x": 335,
+          "y": 450
+        }
+      ],
+      "placement": {
+        "x": 335,
+        "y": 470,
+        "rotation": 270,
+        "bbox": {
+          "minX": 326.5,
+          "minY": 459.5,
+          "maxX": 343.5,
+          "maxY": 480.5
+        }
+      }
+    },
+    {
+      "id": "cmp-C3",
+      "uniqueId": "gge3",
+      "ref": "C3",
+      "device": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "deviceUuid": "159c3da60be9490abf4e97599788a0d5",
+        "name": "={Value}"
+      },
+      "footprint": "7eb0d5205b69c7ac",
+      "footprintRef": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "C0805",
+        "uuid": "7eb0d5205b69c7ac"
+      },
+      "pins": [
+        {
+          "number": "1",
+          "name": "1",
+          "x": 465,
+          "y": 520
+        },
+        {
+          "number": "2",
+          "name": "2",
+          "x": 465,
+          "y": 560
+        }
+      ],
+      "placement": {
+        "x": 465,
+        "y": 540,
+        "rotation": 90,
+        "bbox": {
+          "minX": 456.5,
+          "minY": 529.5,
+          "maxX": 473.5,
+          "maxY": 550.5
+        }
+      }
+    },
+    {
+      "id": "cmp-U1",
+      "uniqueId": "gge1",
+      "ref": "U1",
+      "device": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "deviceUuid": "9f9c6cb41c7449fd8acf96aceed2661a",
+        "name": "={Manufacturer Part}"
+      },
+      "footprint": "c94875681fdde333",
+      "footprintRef": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "SOT-223-3_L6.5-W3.4-P2.30-LS7.0-BR",
+        "uuid": "c94875681fdde333"
+      },
+      "pins": [
+        {
+          "number": "1",
+          "name": "GND",
+          "x": 355,
+          "y": 520
+        },
+        {
+          "number": "2",
+          "name": "VOUT",
+          "x": 355,
+          "y": 510
+        },
+        {
+          "number": "3",
+          "name": "VIN",
+          "x": 355,
+          "y": 500
+        },
+        {
+          "number": "4",
+          "name": "VOUT",
+          "x": 445,
+          "y": 510
+        }
+      ],
+      "placement": {
+        "x": 400,
+        "y": 510,
+        "bbox": {
+          "minX": 364.5,
+          "minY": 489.5,
+          "maxX": 435.5,
+          "maxY": 530.5
+        }
+      }
+    }
+  ],
+  "nets": [
+    {
+      "id": "net-436512e5babfbe83cb49b2bec450620750c3f161cceb6d26d9b9cc806a4f19c1",
+      "name": "+5V",
+      "scope": "global",
+      "role": "power"
+    },
+    {
+      "id": "net-7e78ea734d524af3e40d173d91899c6bc066d240275c2c81ce50192b2de6f0b0",
+      "name": "+3V3",
+      "scope": "global",
+      "role": "power"
+    },
+    {
+      "id": "net-ccdd8d41edbac58e6d53310d1fccffd0f92fee7ae510446f885743c5226f1b30",
+      "name": "GND",
+      "scope": "global",
+      "role": "ground"
+    }
+  ],
+  "connections": [
+    {
+      "componentId": "cmp-C1",
+      "pinNumber": "1",
+      "netId": "net-7e78ea734d524af3e40d173d91899c6bc066d240275c2c81ce50192b2de6f0b0",
+      "kind": "netlist"
+    },
+    {
+      "componentId": "cmp-C1",
+      "pinNumber": "2",
+      "netId": "net-ccdd8d41edbac58e6d53310d1fccffd0f92fee7ae510446f885743c5226f1b30",
+      "kind": "netlist"
+    },
+    {
+      "componentId": "cmp-C2",
+      "pinNumber": "1",
+      "netId": "net-436512e5babfbe83cb49b2bec450620750c3f161cceb6d26d9b9cc806a4f19c1",
+      "kind": "netlist"
+    },
+    {
+      "componentId": "cmp-C2",
+      "pinNumber": "2",
+      "netId": "net-ccdd8d41edbac58e6d53310d1fccffd0f92fee7ae510446f885743c5226f1b30",
+      "kind": "netlist"
+    },
+    {
+      "componentId": "cmp-C3",
+      "pinNumber": "1",
+      "netId": "net-7e78ea734d524af3e40d173d91899c6bc066d240275c2c81ce50192b2de6f0b0",
+      "kind": "netlist"
+    },
+    {
+      "componentId": "cmp-C3",
+      "pinNumber": "2",
+      "netId": "net-ccdd8d41edbac58e6d53310d1fccffd0f92fee7ae510446f885743c5226f1b30",
+      "kind": "netlist"
+    },
+    {
+      "componentId": "cmp-U1",
+      "pinNumber": "1",
+      "netId": "net-ccdd8d41edbac58e6d53310d1fccffd0f92fee7ae510446f885743c5226f1b30",
+      "kind": "netlist"
+    },
+    {
+      "componentId": "cmp-U1",
+      "pinNumber": "2",
+      "netId": "net-7e78ea734d524af3e40d173d91899c6bc066d240275c2c81ce50192b2de6f0b0",
+      "kind": "netlist"
+    },
+    {
+      "componentId": "cmp-U1",
+      "pinNumber": "3",
+      "netId": "net-436512e5babfbe83cb49b2bec450620750c3f161cceb6d26d9b9cc806a4f19c1",
+      "kind": "netlist"
+    },
+    {
+      "componentId": "cmp-U1",
+      "pinNumber": "4",
+      "netId": "net-7e78ea734d524af3e40d173d91899c6bc066d240275c2c81ce50192b2de6f0b0",
+      "kind": "netlist"
+    }
+  ]
+}

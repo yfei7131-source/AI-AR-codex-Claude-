@@ -1,0 +1,64 @@
+⚠ staleRisk: PCB was mutated by pcb.outline.set since the last reload — pcb.nets.list (and DRC) may read stale engine state; authoritative workflows should save, run `easyeda doc reload`, then read back; if refresh fails, treat the data as unavailable
+{
+  "id": "req_127",
+  "type": "response",
+  "version": "v1",
+  "windowId": "63024054-ed33-45ba-a755-32cc6831b6a3",
+  "createdAt": "2026-11-14T06:37:33.2049454Z",
+  "ok": true,
+  "result": {
+    "count": 3,
+    "nets": [
+      {
+        "color": {
+          "alpha": 1,
+          "b": 0,
+          "g": 0,
+          "r": 0
+        },
+        "length": 0,
+        "net": "GND"
+      },
+      {
+        "color": {
+          "alpha": 1,
+          "b": 0,
+          "g": 0,
+          "r": 0
+        },
+        "length": 0,
+        "net": "+3V3"
+      },
+      {
+        "color": {
+          "alpha": 1,
+          "b": 0,
+          "g": 0,
+          "r": 0
+        },
+        "length": 0,
+        "net": "+5V"
+      }
+    ]
+  },
+  "context": {
+    "projectUuid": "0fb3d3be968de9d900a1e973182026b4e3234bbb6604aacacee001af222755b0",
+    "projectName": "New Project_2026-11-14_14-30-17",
+    "documentUuid": "dbf0342ee1b2d9a4",
+    "documentType": "pcb",
+    "tabId": "dbf0342ee1b2d9a4@0fb3d3be968de9d900a1e973182026b4e3234bbb6604aacacee001af222755b0",
+    "pageVisibility": "hidden"
+  },
+  "mutationContext": {
+    "projectUuid": "0fb3d3be968de9d900a1e973182026b4e3234bbb6604aacacee001af222755b0",
+    "projectName": "New Project_2026-11-14_14-30-17",
+    "documentUuid": "dbf0342ee1b2d9a4",
+    "documentType": "pcb",
+    "tabId": "dbf0342ee1b2d9a4@0fb3d3be968de9d900a1e973182026b4e3234bbb6604aacacee001af222755b0",
+    "pageVisibility": "hidden"
+  },
+  "mutationContextAvailable": true,
+  "staleRisk": "PCB was mutated by pcb.outline.set since the last reload — pcb.nets.list (and DRC) may read stale engine state; authoritative workflows should save, run `easyeda doc reload`, then read back; if refresh fails, treat the data as unavailable",
+  "seq": 131,
+  "seqAbandoned": 0
+}

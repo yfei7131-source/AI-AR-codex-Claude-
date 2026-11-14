@@ -1,0 +1,1643 @@
+⚠ staleRisk: PCB was mutated by pcb.outline.set since the last reload — pcb.components.list (and DRC) may read stale engine state; authoritative workflows should save, run `easyeda doc reload`, then read back; if refresh fails, treat the data as unavailable
+⚠ staleRisk: PCB was mutated by pcb.outline.set since the last reload — pcb.outline.get (and DRC) may read stale engine state; authoritative workflows should save, run `easyeda doc reload`, then read back; if refresh fails, treat the data as unavailable
+⚠ staleRisk: PCB was mutated by pcb.outline.set since the last reload — pcb.line.list (and DRC) may read stale engine state; authoritative workflows should save, run `easyeda doc reload`, then read back; if refresh fails, treat the data as unavailable
+⚠ staleRisk: PCB was mutated by pcb.outline.set since the last reload — pcb.silk.list (and DRC) may read stale engine state; authoritative workflows should save, run `easyeda doc reload`, then read back; if refresh fails, treat the data as unavailable
+⚠ staleRisk: PCB was mutated by pcb.outline.set since the last reload — pcb.drc.rules (and DRC) may read stale engine state; authoritative workflows should save, run `easyeda doc reload`, then read back; if refresh fails, treat the data as unavailable
+⚠ staleRisk: PCB was mutated by pcb.outline.set since the last reload — pcb.layers.list (and DRC) may read stale engine state; authoritative workflows should save, run `easyeda doc reload`, then read back; if refresh fails, treat the data as unavailable
+{
+  "components": [
+    {
+      "primitiveId": "4b7bded78dad3239",
+      "uniqueId": "gge4",
+      "designator": "C1",
+      "name": "={Value}",
+      "device": "CL05B104KO5NNNC",
+      "layer": 1,
+      "x": 642.1665,
+      "y": -603.9474,
+      "rotation": 0,
+      "bbox": {
+        "minX": 604.7645,
+        "minY": -626.6184,
+        "maxX": 679.5685000000001,
+        "maxY": -581.2764
+      },
+      "pads": [
+        {
+          "primitiveId": "4b7bded78dad3239e17",
+          "padNumber": "2",
+          "net": "GND",
+          "layer": 1,
+          "x": 658.7,
+          "y": -603.9,
+          "width": 19.7,
+          "height": 21.3,
+          "rotation": 0,
+          "shape": [
+            "RECT",
+            19.7,
+            21.3,
+            0
+          ],
+          "specialPad": [],
+          "metallization": true,
+          "specialPadPresent": false,
+          "availability": {
+            "hole": "available",
+            "shape": "available",
+            "specialPad": "available"
+          }
+        },
+        {
+          "primitiveId": "4b7bded78dad3239e18",
+          "padNumber": "1",
+          "net": "+3V3",
+          "layer": 1,
+          "x": 625.6,
+          "y": -603.9,
+          "width": 19.7,
+          "height": 21.3,
+          "rotation": 0,
+          "shape": [
+            "RECT",
+            19.7,
+            21.3,
+            0
+          ],
+          "specialPad": [],
+          "metallization": true,
+          "specialPadPresent": false,
+          "availability": {
+            "hole": "available",
+            "shape": "available",
+            "specialPad": "available"
+          }
+        }
+      ],
+      "availability": {
+        "bbox": "available",
+        "pads": "available"
+      }
+    },
+    {
+      "primitiveId": "253e5365d5ee4f4c",
+      "uniqueId": "gge2",
+      "designator": "C2",
+      "name": "={Value}",
+      "device": "GRM21BR61H106KE43L",
+      "layer": 1,
+      "x": 80.30699999999999,
+      "y": -684.8784,
+      "rotation": 0,
+      "bbox": {
+        "minX": -1.7763568394002505e-14,
+        "minY": -723.4534000000001,
+        "maxX": 160.61399999999998,
+        "maxY": -646.3034
+      },
+      "pads": [
+        {
+          "primitiveId": "253e5365d5ee4f4ce15",
+          "padNumber": "2",
+          "net": "GND",
+          "layer": 1,
+          "x": 119.7,
+          "y": -684.9,
+          "width": 55.5,
+          "height": 53.1,
+          "rotation": 0,
+          "shape": [
+            "RECT",
+            55.5,
+            53.1,
+            0
+          ],
+          "specialPad": [],
+          "metallization": true,
+          "specialPadPresent": false,
+          "availability": {
+            "hole": "available",
+            "shape": "available",
+            "specialPad": "available"
+          }
+        },
+        {
+          "primitiveId": "253e5365d5ee4f4ce16",
+          "padNumber": "1",
+          "net": "+5V",
+          "layer": 1,
+          "x": 40.9,
+          "y": -684.9,
+          "width": 55.5,
+          "height": 53.1,
+          "rotation": 0,
+          "shape": [
+            "RECT",
+            55.5,
+            53.1,
+            0
+          ],
+          "specialPad": [],
+          "metallization": true,
+          "specialPadPresent": false,
+          "availability": {
+            "hole": "available",
+            "shape": "available",
+            "specialPad": "available"
+          }
+        }
+      ],
+      "availability": {
+        "bbox": "available",
+        "pads": "available"
+      }
+    },
+    {
+      "primitiveId": "98e4549b51167a8e",
+      "uniqueId": "gge3",
+      "designator": "C3",
+      "name": "={Value}",
+      "device": "CL21A226MAQNNNE",
+      "layer": 1,
+      "x": 642.1665,
+      "y": -235.4254,
+      "rotation": 0,
+      "bbox": {
+        "minX": 561.8595,
+        "minY": -274.00039999999996,
+        "maxX": 722.4735,
+        "maxY": -196.8504
+      },
+      "pads": [
+        {
+          "primitiveId": "98e4549b51167a8ee15",
+          "padNumber": "2",
+          "net": "GND",
+          "layer": 1,
+          "x": 681.5,
+          "y": -235.4,
+          "width": 55.5,
+          "height": 53.1,
+          "rotation": 0,
+          "shape": [
+            "RECT",
+            55.5,
+            53.1,
+            0
+          ],
+          "specialPad": [],
+          "metallization": true,
+          "specialPadPresent": false,
+          "availability": {
+            "hole": "available",
+            "shape": "available",
+            "specialPad": "available"
+          }
+        },
+        {
+          "primitiveId": "98e4549b51167a8ee16",
+          "padNumber": "1",
+          "net": "+3V3",
+          "layer": 1,
+          "x": 602.8,
+          "y": -235.4,
+          "width": 55.5,
+          "height": 53.1,
+          "rotation": 0,
+          "shape": [
+            "RECT",
+            55.5,
+            53.1,
+            0
+          ],
+          "specialPad": [],
+          "metallization": true,
+          "specialPadPresent": false,
+          "availability": {
+            "hole": "available",
+            "shape": "available",
+            "specialPad": "available"
+          }
+        }
+      ],
+      "availability": {
+        "bbox": "available",
+        "pads": "available"
+      }
+    },
+    {
+      "primitiveId": "819a4a7e0e551f92",
+      "uniqueId": "gge1",
+      "designator": "U1",
+      "name": "={Manufacturer Part}",
+      "device": "AMS1117-3.3",
+      "layer": 1,
+      "x": 343.29,
+      "y": -427.63840000000005,
+      "rotation": 0,
+      "bbox": {
+        "minX": 180.299,
+        "minY": -561.5914,
+        "maxX": 542.1745,
+        "maxY": -293.6854
+      },
+      "pads": [
+        {
+          "primitiveId": "819a4a7e0e551f92e8",
+          "padNumber": "1",
+          "net": "GND",
+          "layer": 1,
+          "x": 460.2,
+          "y": -518.2,
+          "width": 98.4,
+          "height": 43.3,
+          "rotation": 0,
+          "shape": [
+            "RECT",
+            98.4,
+            43.3,
+            0
+          ],
+          "specialPad": [],
+          "metallization": true,
+          "specialPadPresent": false,
+          "availability": {
+            "hole": "available",
+            "shape": "available",
+            "specialPad": "available"
+          }
+        },
+        {
+          "primitiveId": "819a4a7e0e551f92e9",
+          "padNumber": "2",
+          "net": "+3V3",
+          "layer": 1,
+          "x": 460.2,
+          "y": -427.6,
+          "width": 98.4,
+          "height": 43.3,
+          "rotation": 0,
+          "shape": [
+            "RECT",
+            98.4,
+            43.3,
+            0
+          ],
+          "specialPad": [],
+          "metallization": true,
+          "specialPadPresent": false,
+          "availability": {
+            "hole": "available",
+            "shape": "available",
+            "specialPad": "available"
+          }
+        },
+        {
+          "primitiveId": "819a4a7e0e551f92e10",
+          "padNumber": "3",
+          "net": "+5V",
+          "layer": 1,
+          "x": 460.2,
+          "y": -337.1,
+          "width": 98.4,
+          "height": 43.3,
+          "rotation": 0,
+          "shape": [
+            "RECT",
+            98.4,
+            43.3,
+            0
+          ],
+          "specialPad": [],
+          "metallization": true,
+          "specialPadPresent": false,
+          "availability": {
+            "hole": "available",
+            "shape": "available",
+            "specialPad": "available"
+          }
+        },
+        {
+          "primitiveId": "819a4a7e0e551f92e11",
+          "padNumber": "4",
+          "net": "+3V3",
+          "layer": 1,
+          "x": 226.4,
+          "y": -427.6,
+          "width": 92.1,
+          "height": 141.7,
+          "rotation": 0,
+          "shape": [
+            "RECT",
+            92.1,
+            141.7,
+            0
+          ],
+          "specialPad": [],
+          "metallization": true,
+          "specialPadPresent": false,
+          "availability": {
+            "hole": "available",
+            "shape": "available",
+            "specialPad": "available"
+          }
+        }
+      ],
+      "availability": {
+        "bbox": "available",
+        "pads": "available"
+      }
+    }
+  ],
+  "componentsAvailability": "available",
+  "outline": {
+    "bbox": {
+      "minX": -25,
+      "minY": -790,
+      "maxX": 747,
+      "maxY": -129.99999999999997
+    },
+    "points": [
+      [
+        58,
+        -785
+      ],
+      [
+        55.27783925720492,
+        -784.9524845074895
+      ],
+      [
+        52.55899504795821,
+        -784.8099959202663
+      ],
+      [
+        49.846779865123025,
+        -784.5727078387254
+      ],
+      [
+        47.14449812511489,
+        -784.2409093618425
+      ],
+      [
+        44.455442141979425,
+        -783.8150047349523
+      ],
+      [
+        41.78288811621476,
+        -783.2955128572369
+      ],
+      [
+        39.1300921432259,
+        -782.6830666495277
+      ],
+      [
+        36.50028624627406,
+        -781.9784122831888
+      ],
+      [
+        33.89667443875409,
+        -781.182408271022
+      ],
+      [
+        31.322428820597825,
+        -780.2960244213009
+      ],
+      [
+        28.78068571355886,
+        -779.3203406562094
+      ],
+      [
+        26.27454184008758,
+        -778.2565456961229
+      ],
+      [
+        23.807050550451955,
+        -777.105935611335
+      ],
+      [
+        21.381218102700508,
+        -775.8699122429963
+      ],
+      [
+        18.999999999999986,
+        -774.5499814951862
+      ],
+      [
+        16.666297389809998,
+        -773.1477515002013
+      ],
+      [
+        14.382953529281721,
+        -771.6649306592933
+      ],
+      [
+        12.1527503211871,
+        -770.1033255612459
+      ],
+      [
+        9.97840492459865,
+        -768.4648387813244
+      ],
+      [
+        7.862566444449925,
+        -766.7514665632802
+      ],
+      [
+        5.807812704009052,
+        -764.9652963872368
+      ],
+      [
+        3.8166471041982035,
+        -763.1085044264148
+      ],
+      [
+        1.8914955735852033,
+        -761.1833528958018
+      ],
+      [
+        0.03470361276323786,
+        -759.192187295991
+      ],
+      [
+        -1.751466563280303,
+        -757.13743355555
+      ],
+      [
+        -3.4648387813243318,
+        -755.0215950754014
+      ],
+      [
+        -5.103325561245896,
+        -752.8472496788129
+      ],
+      [
+        -6.664930659293283,
+        -750.6170464707183
+      ],
+      [
+        -8.147751500201231,
+        -748.33370261019
+      ],
+      [
+        -9.549981495186223,
+        -746
+      ],
+      [
+        -10.869912242996314,
+        -743.6187818972995
+      ],
+      [
+        -12.105935611335035,
+        -741.192949449548
+      ],
+      [
+        -13.256545696122878,
+        -738.7254581599124
+      ],
+      [
+        -14.320340656209432,
+        -736.2193142864411
+      ],
+      [
+        -15.296024421300864,
+        -733.6775711794021
+      ],
+      [
+        -16.182408271021977,
+        -731.1033255612459
+      ],
+      [
+        -16.978412283188895,
+        -728.4997137537259
+      ],
+      [
+        -17.68306664952774,
+        -725.869907856774
+      ],
+      [
+        -18.29551285723685,
+        -723.2171118837853
+      ],
+      [
+        -18.815004734952232,
+        -720.5445578580205
+      ],
+      [
+        -19.24090936184249,
+        -717.8555018748851
+      ],
+      [
+        -19.57270783872533,
+        -715.153220134877
+      ],
+      [
+        -19.809995920266296,
+        -712.4410049520418
+      ],
+      [
+        -19.95248450748948,
+        -709.722160742795
+      ],
+      [
+        -20,
+        -707
+      ],
+      [
+        -20,
+        -213
+      ],
+      [
+        -19.95248450748948,
+        -210.2778392572049
+      ],
+      [
+        -19.809995920266296,
+        -207.5589950479582
+      ],
+      [
+        -19.57270783872533,
+        -204.846779865123
+      ],
+      [
+        -19.24090936184249,
+        -202.14449812511486
+      ],
+      [
+        -18.815004734952232,
+        -199.45544214197943
+      ],
+      [
+        -18.29551285723685,
+        -196.78288811621476
+      ],
+      [
+        -17.68306664952774,
+        -194.1300921432259
+      ],
+      [
+        -16.97841228318888,
+        -191.50028624627407
+      ],
+      [
+        -16.182408271021977,
+        -188.89667443875408
+      ],
+      [
+        -15.29602442130085,
+        -186.32242882059782
+      ],
+      [
+        -14.320340656209417,
+        -183.78068571355885
+      ],
+      [
+        -13.256545696122863,
+        -181.27454184008755
+      ],
+      [
+        -12.10593561133502,
+        -178.80705055045195
+      ],
+      [
+        -10.869912242996314,
+        -176.38121810270053
+      ],
+      [
+        -9.549981495186223,
+        -174
+      ],
+      [
+        -8.147751500201231,
+        -171.66629738981
+      ],
+      [
+        -6.664930659293255,
+        -169.38295352928174
+      ],
+      [
+        -5.103325561245896,
+        -167.15275032118709
+      ],
+      [
+        -3.4648387813243104,
+        -164.97840492459864
+      ],
+      [
+        -1.7514665632802817,
+        -162.8625664444499
+      ],
+      [
+        0.03470361276326628,
+        -160.80781270400905
+      ],
+      [
+        1.8914955735852246,
+        -158.81664710419818
+      ],
+      [
+        3.8166471041982035,
+        -156.8914955735852
+      ],
+      [
+        5.807812704009052,
+        -155.03470361276322
+      ],
+      [
+        7.862566444449925,
+        -153.2485334367197
+      ],
+      [
+        9.97840492459865,
+        -151.53516121867568
+      ],
+      [
+        12.1527503211871,
+        -149.89667443875408
+      ],
+      [
+        14.382953529281757,
+        -148.33506934070675
+      ],
+      [
+        16.666297389810026,
+        -146.85224849979875
+      ],
+      [
+        18.999999999999986,
+        -145.45001850481378
+      ],
+      [
+        21.381218102700537,
+        -144.13008775700368
+      ],
+      [
+        23.807050550451955,
+        -142.89406438866496
+      ],
+      [
+        26.274541840087597,
+        -141.74345430387712
+      ],
+      [
+        28.780685713558878,
+        -140.67965934379055
+      ],
+      [
+        31.322428820597843,
+        -139.70397557869913
+      ],
+      [
+        33.89667443875411,
+        -138.81759172897802
+      ],
+      [
+        36.50028624627407,
+        -138.0215877168111
+      ],
+      [
+        39.130092143225916,
+        -137.31693335047225
+      ],
+      [
+        41.78288811621478,
+        -136.70448714276313
+      ],
+      [
+        44.45544214197944,
+        -136.18499526504775
+      ],
+      [
+        47.14449812511489,
+        -135.7590906381575
+      ],
+      [
+        49.84677986512305,
+        -135.42729216127466
+      ],
+      [
+        52.558995047958234,
+        -135.19000407973368
+      ],
+      [
+        55.27783925720493,
+        -135.0475154925105
+      ],
+      [
+        58,
+        -135
+      ],
+      [
+        664,
+        -135
+      ],
+      [
+        666.722160742795,
+        -135.0475154925105
+      ],
+      [
+        669.4410049520418,
+        -135.19000407973368
+      ],
+      [
+        672.153220134877,
+        -135.42729216127466
+      ],
+      [
+        674.8555018748851,
+        -135.7590906381575
+      ],
+      [
+        677.5445578580205,
+        -136.18499526504775
+      ],
+      [
+        680.2171118837853,
+        -136.70448714276316
+      ],
+      [
+        682.869907856774,
+        -137.31693335047225
+      ],
+      [
+        685.4997137537259,
+        -138.0215877168111
+      ],
+      [
+        688.1033255612459,
+        -138.81759172897802
+      ],
+      [
+        690.6775711794022,
+        -139.70397557869916
+      ],
+      [
+        693.2193142864412,
+        -140.67965934379058
+      ],
+      [
+        695.7254581599125,
+        -141.74345430387712
+      ],
+      [
+        698.192949449548,
+        -142.89406438866496
+      ],
+      [
+        700.6187818972995,
+        -144.1300877570037
+      ],
+      [
+        703,
+        -145.45001850481378
+      ],
+      [
+        705.33370261019,
+        -146.85224849979875
+      ],
+      [
+        707.6170464707183,
+        -148.33506934070675
+      ],
+      [
+        709.8472496788129,
+        -149.89667443875408
+      ],
+      [
+        712.0215950754014,
+        -151.53516121867568
+      ],
+      [
+        714.13743355555,
+        -153.2485334367197
+      ],
+      [
+        716.192187295991,
+        -155.03470361276322
+      ],
+      [
+        718.1833528958018,
+        -156.8914955735852
+      ],
+      [
+        720.1085044264148,
+        -158.81664710419818
+      ],
+      [
+        721.9652963872368,
+        -160.80781270400905
+      ],
+      [
+        723.7514665632802,
+        -162.86256644444993
+      ],
+      [
+        725.4648387813244,
+        -164.97840492459866
+      ],
+      [
+        727.1033255612459,
+        -167.15275032118709
+      ],
+      [
+        728.6649306592933,
+        -169.38295352928174
+      ],
+      [
+        730.1477515002013,
+        -171.66629738981
+      ],
+      [
+        731.5499814951862,
+        -174
+      ],
+      [
+        732.8699122429963,
+        -176.3812181027005
+      ],
+      [
+        734.1059356113351,
+        -178.80705055045195
+      ],
+      [
+        735.2565456961229,
+        -181.27454184008758
+      ],
+      [
+        736.3203406562094,
+        -183.78068571355885
+      ],
+      [
+        737.2960244213009,
+        -186.32242882059782
+      ],
+      [
+        738.182408271022,
+        -188.8966744387541
+      ],
+      [
+        738.9784122831888,
+        -191.50028624627407
+      ],
+      [
+        739.6830666495277,
+        -194.1300921432259
+      ],
+      [
+        740.2955128572369,
+        -196.78288811621476
+      ],
+      [
+        740.8150047349523,
+        -199.45544214197943
+      ],
+      [
+        741.2409093618425,
+        -202.14449812511486
+      ],
+      [
+        741.5727078387254,
+        -204.84677986512304
+      ],
+      [
+        741.8099959202663,
+        -207.5589950479582
+      ],
+      [
+        741.9524845074895,
+        -210.27783925720493
+      ],
+      [
+        742,
+        -213
+      ],
+      [
+        742,
+        -707
+      ],
+      [
+        741.9524845074895,
+        -709.722160742795
+      ],
+      [
+        741.8099959202663,
+        -712.4410049520418
+      ],
+      [
+        741.5727078387254,
+        -715.153220134877
+      ],
+      [
+        741.2409093618425,
+        -717.8555018748851
+      ],
+      [
+        740.8150047349523,
+        -720.5445578580205
+      ],
+      [
+        740.2955128572369,
+        -723.2171118837853
+      ],
+      [
+        739.6830666495277,
+        -725.869907856774
+      ],
+      [
+        738.9784122831888,
+        -728.4997137537259
+      ],
+      [
+        738.182408271022,
+        -731.1033255612459
+      ],
+      [
+        737.2960244213009,
+        -733.6775711794022
+      ],
+      [
+        736.3203406562094,
+        -736.2193142864411
+      ],
+      [
+        735.2565456961229,
+        -738.7254581599124
+      ],
+      [
+        734.1059356113351,
+        -741.192949449548
+      ],
+      [
+        732.8699122429963,
+        -743.6187818972995
+      ],
+      [
+        731.5499814951862,
+        -746
+      ],
+      [
+        730.1477515002013,
+        -748.33370261019
+      ],
+      [
+        728.6649306592933,
+        -750.6170464707183
+      ],
+      [
+        727.1033255612459,
+        -752.8472496788129
+      ],
+      [
+        725.4648387813244,
+        -755.0215950754014
+      ],
+      [
+        723.7514665632802,
+        -757.13743355555
+      ],
+      [
+        721.9652963872368,
+        -759.192187295991
+      ],
+      [
+        720.1085044264148,
+        -761.1833528958018
+      ],
+      [
+        718.1833528958018,
+        -763.1085044264148
+      ],
+      [
+        716.192187295991,
+        -764.9652963872368
+      ],
+      [
+        714.13743355555,
+        -766.7514665632802
+      ],
+      [
+        712.0215950754014,
+        -768.4648387813244
+      ],
+      [
+        709.8472496788129,
+        -770.1033255612459
+      ],
+      [
+        707.6170464707183,
+        -771.6649306592933
+      ],
+      [
+        705.33370261019,
+        -773.1477515002013
+      ],
+      [
+        703,
+        -774.5499814951862
+      ],
+      [
+        700.6187818972995,
+        -775.8699122429963
+      ],
+      [
+        698.192949449548,
+        -777.1059356113351
+      ],
+      [
+        695.7254581599125,
+        -778.2565456961229
+      ],
+      [
+        693.2193142864411,
+        -779.3203406562094
+      ],
+      [
+        690.6775711794022,
+        -780.2960244213009
+      ],
+      [
+        688.1033255612459,
+        -781.182408271022
+      ],
+      [
+        685.4997137537259,
+        -781.9784122831888
+      ],
+      [
+        682.8699078567741,
+        -782.6830666495277
+      ],
+      [
+        680.2171118837853,
+        -783.2955128572369
+      ],
+      [
+        677.5445578580205,
+        -783.8150047349523
+      ],
+      [
+        674.8555018748851,
+        -784.2409093618425
+      ],
+      [
+        672.153220134877,
+        -784.5727078387254
+      ],
+      [
+        669.4410049520418,
+        -784.8099959202663
+      ],
+      [
+        666.722160742795,
+        -784.9524845074895
+      ],
+      [
+        664,
+        -785
+      ]
+    ],
+    "source": "polygon",
+    "format": "arc-polyline"
+  },
+  "silk": [
+    {
+      "ID": "4b7bded78dad3239e1",
+      "Kind": "attribute",
+      "Key": "Name",
+      "Text": "100nF",
+      "Layer": 3,
+      "Mirror": false,
+      "Reverse": false,
+      "Rotation": 0,
+      "FontSize": 67.5,
+      "CompID": "4b7bded78dad3239",
+      "CompLayer": 1,
+      "X": 0,
+      "Y": 0,
+      "BBox": null,
+      "fontFamily": "default",
+      "lineWidth": 6,
+      "lineWidthAvailability": "available",
+      "lineWidthSource": "getState_LineWidth",
+      "visible": false,
+      "visibilityAvailability": "available",
+      "visibilitySource": "getState_ValueVisible",
+      "keyVisible": false,
+      "keyVisibilityAvailability": "available",
+      "keyVisibilitySource": "getState_KeyVisible"
+    },
+    {
+      "ID": "4b7bded78dad3239e2",
+      "Kind": "attribute",
+      "Key": "Designator",
+      "Text": "C1",
+      "Layer": 3,
+      "Mirror": false,
+      "Reverse": false,
+      "Rotation": 0,
+      "FontSize": 45,
+      "CompID": "4b7bded78dad3239",
+      "CompLayer": 1,
+      "X": 604.7645,
+      "Y": -576.2764,
+      "BBox": {
+        "MinX": 604.7645,
+        "MinY": -576.2764,
+        "MaxX": 646.9645,
+        "MaxY": -531.2764
+      },
+      "fontFamily": "default",
+      "lineWidth": 6,
+      "lineWidthAvailability": "available",
+      "lineWidthSource": "getState_LineWidth",
+      "visible": true,
+      "visibilityAvailability": "available",
+      "visibilitySource": "getState_ValueVisible",
+      "keyVisible": false,
+      "keyVisibilityAvailability": "available",
+      "keyVisibilitySource": "getState_KeyVisible"
+    },
+    {
+      "ID": "4b7bded78dad3239ee0",
+      "Kind": "attribute",
+      "Key": "Footprint",
+      "Text": "C0402",
+      "Layer": 3,
+      "Mirror": false,
+      "Reverse": false,
+      "Rotation": 0,
+      "FontSize": 45,
+      "CompID": "4b7bded78dad3239",
+      "CompLayer": 1,
+      "X": 0,
+      "Y": 0,
+      "BBox": null,
+      "fontFamily": "default",
+      "lineWidth": 6,
+      "lineWidthAvailability": "available",
+      "lineWidthSource": "getState_LineWidth",
+      "visible": false,
+      "visibilityAvailability": "available",
+      "visibilitySource": "getState_ValueVisible",
+      "keyVisible": false,
+      "keyVisibilityAvailability": "available",
+      "keyVisibilitySource": "getState_KeyVisible"
+    },
+    {
+      "ID": "4b7bded78dad3239e0",
+      "Kind": "attribute",
+      "Key": "Device",
+      "Text": "CL05B104KO5NNNC",
+      "Layer": 3,
+      "Mirror": false,
+      "Reverse": false,
+      "Rotation": 0,
+      "FontSize": 45,
+      "CompID": "4b7bded78dad3239",
+      "CompLayer": 1,
+      "X": 0,
+      "Y": 0,
+      "BBox": null,
+      "fontFamily": "default",
+      "lineWidth": 6,
+      "lineWidthAvailability": "available",
+      "lineWidthSource": "getState_LineWidth",
+      "visible": false,
+      "visibilityAvailability": "available",
+      "visibilitySource": "getState_ValueVisible",
+      "keyVisible": false,
+      "keyVisibilityAvailability": "available",
+      "keyVisibilitySource": "getState_KeyVisible"
+    },
+    {
+      "ID": "253e5365d5ee4f4ce19",
+      "Kind": "attribute",
+      "Key": "Footprint",
+      "Text": "C0805",
+      "Layer": 3,
+      "Mirror": false,
+      "Reverse": false,
+      "Rotation": 0,
+      "FontSize": 45,
+      "CompID": "253e5365d5ee4f4c",
+      "CompLayer": 1,
+      "X": 0,
+      "Y": 0,
+      "BBox": null,
+      "fontFamily": "default",
+      "lineWidth": 6,
+      "lineWidthAvailability": "available",
+      "lineWidthSource": "getState_LineWidth",
+      "visible": false,
+      "visibilityAvailability": "available",
+      "visibilitySource": "getState_ValueVisible",
+      "keyVisible": false,
+      "keyVisibilityAvailability": "available",
+      "keyVisibilitySource": "getState_KeyVisible"
+    },
+    {
+      "ID": "253e5365d5ee4f4ce20",
+      "Kind": "attribute",
+      "Key": "Designator",
+      "Text": "C2",
+      "Layer": 3,
+      "Mirror": false,
+      "Reverse": false,
+      "Rotation": 0,
+      "FontSize": 45,
+      "CompID": "253e5365d5ee4f4c",
+      "CompLayer": 1,
+      "X": 0,
+      "Y": -641.3034,
+      "BBox": {
+        "MinX": 0,
+        "MinY": -641.3034,
+        "MaxX": 53.199999999999996,
+        "MaxY": -596.3034
+      },
+      "fontFamily": "default",
+      "lineWidth": 6,
+      "lineWidthAvailability": "available",
+      "lineWidthSource": "getState_LineWidth",
+      "visible": true,
+      "visibilityAvailability": "available",
+      "visibilitySource": "getState_ValueVisible",
+      "keyVisible": false,
+      "keyVisibilityAvailability": "available",
+      "keyVisibilitySource": "getState_KeyVisible"
+    },
+    {
+      "ID": "253e5365d5ee4f4ce0",
+      "Kind": "attribute",
+      "Key": "Device",
+      "Text": "GRM21BR61H106KE43L",
+      "Layer": 3,
+      "Mirror": false,
+      "Reverse": false,
+      "Rotation": 0,
+      "FontSize": 45,
+      "CompID": "253e5365d5ee4f4c",
+      "CompLayer": 1,
+      "X": 0,
+      "Y": 0,
+      "BBox": null,
+      "fontFamily": "default",
+      "lineWidth": 6,
+      "lineWidthAvailability": "available",
+      "lineWidthSource": "getState_LineWidth",
+      "visible": false,
+      "visibilityAvailability": "available",
+      "visibilitySource": "getState_ValueVisible",
+      "keyVisible": false,
+      "keyVisibilityAvailability": "available",
+      "keyVisibilitySource": "getState_KeyVisible"
+    },
+    {
+      "ID": "98e4549b51167a8ee19",
+      "Kind": "attribute",
+      "Key": "Footprint",
+      "Text": "C0805",
+      "Layer": 3,
+      "Mirror": false,
+      "Reverse": false,
+      "Rotation": 0,
+      "FontSize": 45,
+      "CompID": "98e4549b51167a8e",
+      "CompLayer": 1,
+      "X": 0,
+      "Y": 0,
+      "BBox": null,
+      "fontFamily": "default",
+      "lineWidth": 6,
+      "lineWidthAvailability": "available",
+      "lineWidthSource": "getState_LineWidth",
+      "visible": false,
+      "visibilityAvailability": "available",
+      "visibilitySource": "getState_ValueVisible",
+      "keyVisible": false,
+      "keyVisibilityAvailability": "available",
+      "keyVisibilitySource": "getState_KeyVisible"
+    },
+    {
+      "ID": "98e4549b51167a8ee20",
+      "Kind": "attribute",
+      "Key": "Designator",
+      "Text": "C3",
+      "Layer": 3,
+      "Mirror": false,
+      "Reverse": false,
+      "Rotation": 0,
+      "FontSize": 45,
+      "CompID": "98e4549b51167a8e",
+      "CompLayer": 1,
+      "X": 561.8595,
+      "Y": -191.8504,
+      "BBox": {
+        "MinX": 561.8595,
+        "MinY": -191.8504,
+        "MaxX": 615.0595000000001,
+        "MaxY": -146.8504
+      },
+      "fontFamily": "default",
+      "lineWidth": 6,
+      "lineWidthAvailability": "available",
+      "lineWidthSource": "getState_LineWidth",
+      "visible": true,
+      "visibilityAvailability": "available",
+      "visibilitySource": "getState_ValueVisible",
+      "keyVisible": false,
+      "keyVisibilityAvailability": "available",
+      "keyVisibilitySource": "getState_KeyVisible"
+    },
+    {
+      "ID": "98e4549b51167a8ee0",
+      "Kind": "attribute",
+      "Key": "Device",
+      "Text": "CL21A226MAQNNNE",
+      "Layer": 3,
+      "Mirror": false,
+      "Reverse": false,
+      "Rotation": 0,
+      "FontSize": 45,
+      "CompID": "98e4549b51167a8e",
+      "CompLayer": 1,
+      "X": 0,
+      "Y": 0,
+      "BBox": null,
+      "fontFamily": "default",
+      "lineWidth": 6,
+      "lineWidthAvailability": "available",
+      "lineWidthSource": "getState_LineWidth",
+      "visible": false,
+      "visibilityAvailability": "available",
+      "visibilitySource": "getState_ValueVisible",
+      "keyVisible": false,
+      "keyVisibilityAvailability": "available",
+      "keyVisibilitySource": "getState_KeyVisible"
+    },
+    {
+      "ID": "819a4a7e0e551f92e20",
+      "Kind": "attribute",
+      "Key": "Footprint",
+      "Text": "SOT-223-3_L6.5-W3.4-P2.30-LS7.0-BR",
+      "Layer": 3,
+      "Mirror": false,
+      "Reverse": false,
+      "Rotation": 0,
+      "FontSize": 45,
+      "CompID": "819a4a7e0e551f92",
+      "CompLayer": 1,
+      "X": 0,
+      "Y": 0,
+      "BBox": null,
+      "fontFamily": "default",
+      "lineWidth": 6,
+      "lineWidthAvailability": "available",
+      "lineWidthSource": "getState_LineWidth",
+      "visible": false,
+      "visibilityAvailability": "available",
+      "visibilitySource": "getState_ValueVisible",
+      "keyVisible": false,
+      "keyVisibilityAvailability": "available",
+      "keyVisibilitySource": "getState_KeyVisible"
+    },
+    {
+      "ID": "819a4a7e0e551f92e21",
+      "Kind": "attribute",
+      "Key": "Designator",
+      "Text": "U1",
+      "Layer": 3,
+      "Mirror": false,
+      "Reverse": false,
+      "Rotation": 0,
+      "FontSize": 45,
+      "CompID": "819a4a7e0e551f92",
+      "CompLayer": 1,
+      "X": 180.299,
+      "Y": -288.6854,
+      "BBox": {
+        "MinX": 180.299,
+        "MinY": -288.6854,
+        "MaxX": 221.29899999999998,
+        "MaxY": -243.68540000000002
+      },
+      "fontFamily": "default",
+      "lineWidth": 6,
+      "lineWidthAvailability": "available",
+      "lineWidthSource": "getState_LineWidth",
+      "visible": true,
+      "visibilityAvailability": "available",
+      "visibilitySource": "getState_ValueVisible",
+      "keyVisible": false,
+      "keyVisibilityAvailability": "available",
+      "keyVisibilitySource": "getState_KeyVisible"
+    },
+    {
+      "ID": "819a4a7e0e551f92e0",
+      "Kind": "attribute",
+      "Key": "Device",
+      "Text": "AMS1117-3.3_C6186",
+      "Layer": 3,
+      "Mirror": false,
+      "Reverse": false,
+      "Rotation": 0,
+      "FontSize": 45,
+      "CompID": "819a4a7e0e551f92",
+      "CompLayer": 1,
+      "X": 0,
+      "Y": 0,
+      "BBox": null,
+      "fontFamily": "default",
+      "lineWidth": 6,
+      "lineWidthAvailability": "available",
+      "lineWidthSource": "getState_LineWidth",
+      "visible": false,
+      "visibilityAvailability": "available",
+      "visibilitySource": "getState_ValueVisible",
+      "keyVisible": false,
+      "keyVisibilityAvailability": "available",
+      "keyVisibilitySource": "getState_KeyVisible"
+    }
+  ],
+  "copperLayers": 2,
+  "rules": {
+    "clearanceMil": 5.98,
+    "clearanceTrackTrackMil": 4.02,
+    "trackWidthMil": 10,
+    "powerWidthMil": 20,
+    "trackWidthMinMil": 5,
+    "viaDrillMil": 12.01,
+    "viaDiameterMil": 24.02,
+    "copperToEdgeMil": 10,
+    "source": "live"
+  },
+  "routedLines": 0,
+  "capturedAt": "2026-11-14T06:37:33.278988Z",
+  "semanticSha256": "7fdca3038d630aafb2b5b150ea82683fac26c2a6252d03e7223e2f659ba7ded7",
+  "capture": {
+    "windowId": "63024054-ed33-45ba-a755-32cc6831b6a3",
+    "projectUuid": "0fb3d3be968de9d900a1e973182026b4e3234bbb6604aacacee001af222755b0",
+    "projectName": "New Project_2026-11-14_14-30-17",
+    "documentUuid": "dbf0342ee1b2d9a4",
+    "documentType": "pcb",
+    "tabId": "dbf0342ee1b2d9a4@0fb3d3be968de9d900a1e973182026b4e3234bbb6604aacacee001af222755b0",
+    "startedAt": "2026-11-14T06:37:33.278988Z",
+    "completedAt": "2026-11-14T06:37:33.6348597Z",
+    "consistency": "sequential-response-boundaries",
+    "identityVerified": true,
+    "requests": [
+      {
+        "action": "pcb.components.list",
+        "requestId": "req_128",
+        "windowId": "63024054-ed33-45ba-a755-32cc6831b6a3",
+        "startedAt": "2026-11-14T06:37:33.278988Z",
+        "completedAt": "2026-11-14T06:37:33.3779501Z",
+        "responseCreatedAt": "2026-11-14T06:37:33.3749019Z",
+        "resultSha256": "09c8d8bd23817a89b1bed4e6646d1db57e68c8b695526d7c999e523c432af66b",
+        "context": {
+          "projectUuid": "0fb3d3be968de9d900a1e973182026b4e3234bbb6604aacacee001af222755b0",
+          "projectName": "New Project_2026-11-14_14-30-17",
+          "documentUuid": "dbf0342ee1b2d9a4",
+          "documentType": "pcb",
+          "tabId": "dbf0342ee1b2d9a4@0fb3d3be968de9d900a1e973182026b4e3234bbb6604aacacee001af222755b0"
+        },
+        "sequence": {
+          "Known": true,
+          "Seq": 132,
+          "SeqAbandoned": 0,
+          "Unordered": false,
+          "AbandonedIDs": null
+        },
+        "status": "available"
+      },
+      {
+        "action": "pcb.outline.get",
+        "requestId": "req_129",
+        "windowId": "63024054-ed33-45ba-a755-32cc6831b6a3",
+        "startedAt": "2026-11-14T06:37:33.3824024Z",
+        "completedAt": "2026-11-14T06:37:33.4025776Z",
+        "responseCreatedAt": "2026-11-14T06:37:33.400976Z",
+        "resultSha256": "0b5923590b9e7360faafbd01ae79a40fc8c883de4dae0403a11bcbf28cc8a348",
+        "context": {
+          "projectUuid": "0fb3d3be968de9d900a1e973182026b4e3234bbb6604aacacee001af222755b0",
+          "projectName": "New Project_2026-11-14_14-30-17",
+          "documentUuid": "dbf0342ee1b2d9a4",
+          "documentType": "pcb",
+          "tabId": "dbf0342ee1b2d9a4@0fb3d3be968de9d900a1e973182026b4e3234bbb6604aacacee001af222755b0"
+        },
+        "sequence": {
+          "Known": true,
+          "Seq": 133,
+          "SeqAbandoned": 0,
+          "Unordered": false,
+          "AbandonedIDs": null
+        },
+        "status": "available"
+      },
+      {
+        "action": "pcb.line.list",
+        "requestId": "req_130",
+        "windowId": "63024054-ed33-45ba-a755-32cc6831b6a3",
+        "startedAt": "2026-11-14T06:37:33.4025776Z",
+        "completedAt": "2026-11-14T06:37:33.4260142Z",
+        "responseCreatedAt": "2026-11-14T06:37:33.4246849Z",
+        "resultSha256": "3e1cbb7e2283b7c0baef63908866616c731413c4f78e606b35342f216a671364",
+        "context": {
+          "projectUuid": "0fb3d3be968de9d900a1e973182026b4e3234bbb6604aacacee001af222755b0",
+          "projectName": "New Project_2026-11-14_14-30-17",
+          "documentUuid": "dbf0342ee1b2d9a4",
+          "documentType": "pcb",
+          "tabId": "dbf0342ee1b2d9a4@0fb3d3be968de9d900a1e973182026b4e3234bbb6604aacacee001af222755b0"
+        },
+        "sequence": {
+          "Known": true,
+          "Seq": 134,
+          "SeqAbandoned": 0,
+          "Unordered": false,
+          "AbandonedIDs": null
+        },
+        "status": "available"
+      },
+      {
+        "action": "pcb.silk.list",
+        "requestId": "req_131",
+        "windowId": "63024054-ed33-45ba-a755-32cc6831b6a3",
+        "startedAt": "2026-11-14T06:37:33.4260142Z",
+        "completedAt": "2026-11-14T06:37:33.4738907Z",
+        "responseCreatedAt": "2026-11-14T06:37:33.4721431Z",
+        "resultSha256": "abec914545c8434e9f5854ef7bedfb0e53785622503b0ee282656869ce876bbe",
+        "context": {
+          "projectUuid": "0fb3d3be968de9d900a1e973182026b4e3234bbb6604aacacee001af222755b0",
+          "projectName": "New Project_2026-11-14_14-30-17",
+          "documentUuid": "dbf0342ee1b2d9a4",
+          "documentType": "pcb",
+          "tabId": "dbf0342ee1b2d9a4@0fb3d3be968de9d900a1e973182026b4e3234bbb6604aacacee001af222755b0"
+        },
+        "sequence": {
+          "Known": true,
+          "Seq": 135,
+          "SeqAbandoned": 0,
+          "Unordered": false,
+          "AbandonedIDs": null
+        },
+        "status": "available"
+      },
+      {
+        "action": "pcb.drc.rules",
+        "requestId": "req_132",
+        "windowId": "63024054-ed33-45ba-a755-32cc6831b6a3",
+        "startedAt": "2026-11-14T06:37:33.4743969Z",
+        "completedAt": "2026-11-14T06:37:33.5007205Z",
+        "responseCreatedAt": "2026-11-14T06:37:33.4991024Z",
+        "resultSha256": "dbc085c8494d4e445af9d260128a36f285aa8cd789150774ccb5d6eb7946c02f",
+        "context": {
+          "projectUuid": "0fb3d3be968de9d900a1e973182026b4e3234bbb6604aacacee001af222755b0",
+          "projectName": "New Project_2026-11-14_14-30-17",
+          "documentUuid": "dbf0342ee1b2d9a4",
+          "documentType": "pcb",
+          "tabId": "dbf0342ee1b2d9a4@0fb3d3be968de9d900a1e973182026b4e3234bbb6604aacacee001af222755b0"
+        },
+        "sequence": {
+          "Known": true,
+          "Seq": 136,
+          "SeqAbandoned": 0,
+          "Unordered": false,
+          "AbandonedIDs": null
+        },
+        "status": "available"
+      },
+      {
+        "action": "pcb.layers.list",
+        "requestId": "req_133",
+        "windowId": "63024054-ed33-45ba-a755-32cc6831b6a3",
+        "startedAt": "2026-11-14T06:37:33.5012986Z",
+        "completedAt": "2026-11-14T06:37:33.6348597Z",
+        "responseCreatedAt": "2026-11-14T06:37:33.6232182Z",
+        "resultSha256": "82788987d9e99a55276ecff8271586968a7ce280231693d701c7a748c4ccc9a1",
+        "context": {
+          "projectUuid": "0fb3d3be968de9d900a1e973182026b4e3234bbb6604aacacee001af222755b0",
+          "projectName": "New Project_2026-11-14_14-30-17",
+          "documentUuid": "dbf0342ee1b2d9a4",
+          "documentType": "pcb",
+          "tabId": "dbf0342ee1b2d9a4@0fb3d3be968de9d900a1e973182026b4e3234bbb6604aacacee001af222755b0"
+        },
+        "sequence": {
+          "Known": true,
+          "Seq": 137,
+          "SeqAbandoned": 0,
+          "Unordered": false,
+          "AbandonedIDs": null
+        },
+        "status": "available"
+      }
+    ]
+  },
+  "availability": {
+    "components": "available",
+    "copper": "not-requested",
+    "layers": "available",
+    "outline": "available",
+    "routedLines": "available",
+    "rules": "available",
+    "silk": "available"
+  }
+}
