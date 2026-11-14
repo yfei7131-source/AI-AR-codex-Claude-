@@ -1,0 +1,25 @@
+# Lattice iCE40UP5K-UWG30ITR Physical Constraints (.pcf)
+set_io clk_48m_in     B2
+set_io rst_n          C1
+# Bank 0: ESP32-S3 QSPI Slave (40 MHz SCLK domain)
+set_io s3_cs_n        E1
+set_io s3_sclk        F1
+set_io s3_io[0]       F2
+set_io s3_io[1]       E2
+set_io s3_io[2]       D1
+set_io s3_io[3]       D2
+# Bank 2 & Bank 1: Dual JBD 0.13" Optical Engine QSPI Master (1.8V VCCIO)
+set_io opt_sclk       A4
+set_io opt_cs_l_n     B4
+set_io opt_cs_r_n     B5
+set_io opt_l_io[0]    A5
+set_io opt_l_io[1]    B6
+set_io opt_l_io[2]    C5
+set_io opt_l_io[3]    C6
+set_io opt_r_io[0]    D5
+set_io opt_r_io[1]    D6
+set_io opt_r_io[2]    E5
+set_io opt_r_io[3]    F5
+set_io bridge_crc_err A3
+set_io bridge_cdc_err B3
+set_io vsync_out      C4
