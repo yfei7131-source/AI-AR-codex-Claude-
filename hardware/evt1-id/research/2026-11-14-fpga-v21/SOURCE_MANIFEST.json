@@ -1,0 +1,189 @@
+{
+  "schema_version": "1.0-archive",
+  "date": "2026-11-14",
+  "project": "EVT-1 FPGA V2.1 binocular AR display bridge",
+  "status": "ARCHIVED_SOURCE_ONLY_CLAIMS_NOT_ACCEPTED_AS_VERIFIED",
+  "base_branch": "handoff/evt1-fpga-v2-20261114",
+  "base_commit": "8d65c53a5320bf2e6b90b469828e565a71d4d7c7",
+  "archive_branch": "handoff/evt1-fpga-v21-20261114",
+  "previous_version_path": "hardware/evt1-id/research/2026-11-14-fpga-v2/evt1_ar_display_fpga_bridge_v2",
+  "source_archives": {
+    "outer_zip": {
+      "name": "gemini新输出内容.zip",
+      "bytes": 119762,
+      "sha256": "77473d828813117e4a18143076b56ae216f840cf08d430cda4a41b4c52e991ec"
+    },
+    "source_markdown": {
+      "name": "gemini-export-请连接并检查我的AI_AR智能眼镜研发GitHub仓库：_https___github.com_yfei7131-source_AI-AR-codex-Claude-_本轮仅做GitHub连接验证，禁_2026-11-14 22_13_15.md",
+      "bytes": 124262,
+      "sha256": "47eb3418b8125b12c57a10a416637679bc1c251cd0cd68f78283cf807f34c4da"
+    },
+    "inner_project_zip": {
+      "name": "evt1_ar_display_fpga_bridge_v2.zip",
+      "bytes": 80530,
+      "sha256": "ded8aed7de664c4b533c902e54aa721cc8965b12064207f6ac2946910ab3f615"
+    }
+  },
+  "project_root": "evt1_ar_display_fpga_bridge_v2",
+  "project_file_count": 20,
+  "source_asset_count": 2,
+  "comparison_to_v2_0": {
+    "changed": 6,
+    "unchanged": 14,
+    "added": 0,
+    "removed": 0,
+    "diff_manifest": "V2_0_TO_V2_1_DIFF.csv"
+  },
+  "files": [
+    {
+      "repository_path": "evt1_ar_display_fpga_bridge_v2/constraints/ice40up5k_uwg30.pcf",
+      "origin": "extracted_project",
+      "bytes": 732,
+      "sha256": "a8d684d0be3e2ffc844b1eb220146b22a4b5e52ea811a99953064f447c556544"
+    },
+    {
+      "repository_path": "evt1_ar_display_fpga_bridge_v2/evidence/ast_resource_breakdown.json",
+      "origin": "extracted_project",
+      "bytes": 1181,
+      "sha256": "06c01e05c78002f9ec47eec04c4c9ed1c770e2217fa1bf5abbeab0306a43385e"
+    },
+    {
+      "repository_path": "evt1_ar_display_fpga_bridge_v2/evidence/EDA_AND_RTL_VERIFICATION_REPORT.txt",
+      "origin": "extracted_project",
+      "bytes": 4196,
+      "sha256": "a33482a26793793f417f93957a3f740d5d8377112d52f9717e73f42af5c0413c"
+    },
+    {
+      "repository_path": "evt1_ar_display_fpga_bridge_v2/evidence/evt1-ar-display-fpga-bridge-v2.bundle",
+      "origin": "extracted_project",
+      "bytes": 66103,
+      "sha256": "8774f9fc5650b8568a417cea4dd8c39d0c70039e49a8ba4b1beaec50799bd166"
+    },
+    {
+      "repository_path": "evt1_ar_display_fpga_bridge_v2/evidence/rtl_dual_clock_test_log.txt",
+      "origin": "extracted_project",
+      "bytes": 657,
+      "sha256": "bac9bb2554bb67a5c11c8b43cb6cb4230a8d4c1649bb526918dc3235d76f9d80"
+    },
+    {
+      "repository_path": "evt1_ar_display_fpga_bridge_v2/evidence/tb_jbd_dual_bridge.vcd",
+      "origin": "extracted_project",
+      "bytes": 1344,
+      "sha256": "25a070e72f195dbe0d2cfc3da7a4f366d858d85a7dfa361868f95f739cec1668"
+    },
+    {
+      "repository_path": "evt1_ar_display_fpga_bridge_v2/firmware_driver/jbd_fpga_bridge_drv.c",
+      "origin": "extracted_project",
+      "bytes": 2150,
+      "sha256": "417c3798e43cec2dcb9687171fdf8bb059dd9914deb215622fd39ad1104dea94"
+    },
+    {
+      "repository_path": "evt1_ar_display_fpga_bridge_v2/firmware_driver/jbd_fpga_bridge_drv.h",
+      "origin": "extracted_project",
+      "bytes": 1789,
+      "sha256": "763f3e21395d19930efafd7cefb4a657207162a4c18550cba4c4b243c84671ac"
+    },
+    {
+      "repository_path": "evt1_ar_display_fpga_bridge_v2/kimi_hw_handoff/BLOCKED_VS_VERIFIED_MATRIX.csv",
+      "origin": "extracted_project",
+      "bytes": 2177,
+      "sha256": "a39af9674cdfe3a33fe966a61121d00031f00a66138e027461f8381b713a7fc8"
+    },
+    {
+      "repository_path": "evt1_ar_display_fpga_bridge_v2/kimi_hw_handoff/PINMAP_EVT1_BRIDGE.csv",
+      "origin": "extracted_project",
+      "bytes": 1776,
+      "sha256": "98561786e5c03dffab4c9c3bf7f813c70a35c8e8f56506ec3eee5ca6b0a75e0e"
+    },
+    {
+      "repository_path": "evt1_ar_display_fpga_bridge_v2/Makefile",
+      "origin": "extracted_project",
+      "bytes": 913,
+      "sha256": "4e1851b4be8b71a5466c4455bce5a556d362444537f4398c9ed4d6f8007d560e"
+    },
+    {
+      "repository_path": "evt1_ar_display_fpga_bridge_v2/rtl/binocular_scanline_engine.v",
+      "origin": "extracted_project",
+      "bytes": 11226,
+      "sha256": "901155e908b3ff2998ff05a0f77d08359ca986484d958b7b453789aa81f6d03b"
+    },
+    {
+      "repository_path": "evt1_ar_display_fpga_bridge_v2/rtl/jbd_ar_bridge_pkg.vh",
+      "origin": "extracted_project",
+      "bytes": 1306,
+      "sha256": "63a6af1910e73aefd8249295487406ea8601314f5dd69297ab5f87fd0c6f87a6"
+    },
+    {
+      "repository_path": "evt1_ar_display_fpga_bridge_v2/rtl/jbd_dual_bridge_top.v",
+      "origin": "extracted_project",
+      "bytes": 3819,
+      "sha256": "972df325f4ff82353fd670c62c1de0d545baccc55c14c86ead3486efbdb52cfb"
+    },
+    {
+      "repository_path": "evt1_ar_display_fpga_bridge_v2/rtl/qspi_cdc_async_fifo.v",
+      "origin": "extracted_project",
+      "bytes": 4858,
+      "sha256": "f4da42537e926dd7104f81435703625fd431e475aa65ff55aec255561f7c0e37"
+    },
+    {
+      "repository_path": "evt1_ar_display_fpga_bridge_v2/rtl/s3_qspi_slave_rx.v",
+      "origin": "extracted_project",
+      "bytes": 17777,
+      "sha256": "7c0d9ebba73ad44e07aaf587c58e9ad27019f3a16e0e516e3156f921179cb4cd"
+    },
+    {
+      "repository_path": "evt1_ar_display_fpga_bridge_v2/rtl/spram_framebuffer_ctrl.v",
+      "origin": "extracted_project",
+      "bytes": 4118,
+      "sha256": "9188ca0be16deeab87cf7ef54be3105adc957dcbd1328b8234651394fcb2c1e0"
+    },
+    {
+      "repository_path": "evt1_ar_display_fpga_bridge_v2/scripts/rtl_ast_verifier_and_sim.py",
+      "origin": "extracted_project",
+      "bytes": 11792,
+      "sha256": "c36f18ae9e89a3f974a4e2f62b8a940c13e9b90274bcd386c00f4c77018a6b3a"
+    },
+    {
+      "repository_path": "evt1_ar_display_fpga_bridge_v2/tb/dual_clock_rtl_event_sim.c",
+      "origin": "extracted_project",
+      "bytes": 24677,
+      "sha256": "7d20b93bdcebb4fe457e880902e16346e6f78825dc5d68cd29411f6aba14a16e"
+    },
+    {
+      "repository_path": "evt1_ar_display_fpga_bridge_v2/tb/tb_jbd_dual_bridge.v",
+      "origin": "extracted_project",
+      "bytes": 3894,
+      "sha256": "a8cb7f86c11d1798f7e4680beba39095bd5166d60051eff63cdd15a739a3288c"
+    },
+    {
+      "repository_path": "source/evt1_ar_display_fpga_bridge_v2.zip",
+      "origin": "source_asset",
+      "bytes": 80530,
+      "sha256": "ded8aed7de664c4b533c902e54aa721cc8965b12064207f6ac2946910ab3f615"
+    },
+    {
+      "repository_path": "source/gemini-export-请连接并检查我的AI_AR智能眼镜研发GitHub仓库：_https___github.com_yfei7131-source_AI-AR-codex-Claude-_本轮仅做GitHub连接验证，禁_2026-11-14 22_13_15.md",
+      "origin": "source_asset",
+      "bytes": 124262,
+      "sha256": "47eb3418b8125b12c57a10a416637679bc1c251cd0cd68f78283cf807f34c4da"
+    }
+  ],
+  "verification": {
+    "zip_crc": "PASS",
+    "source_files_unmodified": true,
+    "native_eda_toolchain": "BLOCKED_MISSING_LOCAL_EDA_BINARY",
+    "rtl_simulation_reproduced": false,
+    "c_model_compiled": false,
+    "board_level_validation": "BLOCKED",
+    "jbd_icd_and_fpc": "BLOCKED_EXTERNAL_NDA",
+    "physical_sample_validation": "BLOCKED_PHYSICAL_SAMPLE",
+    "manufacturing_release": false
+  },
+  "notes": [
+    "All 20 project files are byte-for-byte copies from the supplied V2.1 inner ZIP.",
+    "The V2.1 test log contains PASS statements, but the source report still records iverilog/yosys/nextpnr as NOT_INSTALLED; this archive does not accept them as native EDA evidence.",
+    "The source EDA report is still titled V2.0 and is preserved unchanged.",
+    "V2.0 remains at its original path; no prior files were overwritten.",
+    "Kimi R8 files, main and prior baselines are unchanged."
+  ]
+}

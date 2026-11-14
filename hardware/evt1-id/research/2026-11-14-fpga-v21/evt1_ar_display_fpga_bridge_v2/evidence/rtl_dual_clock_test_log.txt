@@ -1,0 +1,7 @@
+=== DUAL-CLOCK (40MHz <-> 48MHz) RTL EVENT SIMULATION REPORT ===
+[PASS] 1. CDC Gray-Code Async FIFO (40MHz s3_sclk -> 48MHz clk_sys): overflow_err=0
+[PASS] 2. Hardware RLE4 Decompression (8B RLE -> 320B / 160 words): SPRAM[0]=0x2222, SPRAM[159]=0xACDF
+[PASS] 3. Pre-CRC EBR Staging Write Safety: Corrupted packet rejected, SPRAM[0]=0x2222 (0 corrupt writes)
+[PASS] 4. Word-160 (x=636..639) Pipeline Drain Fix: Left_Eye[y=40,x=632..635]=[0xA,0xC,0xD,0xF]
+[PASS] 5. VSYNC Atomic Frame Commit: Mid-frame disparity held at 0px, switched to +8px on VSYNC pulse
+[PASS] 6. Lossless SPRAM Stall Handshake: 0 write cycles safely stalled during active scanline reads

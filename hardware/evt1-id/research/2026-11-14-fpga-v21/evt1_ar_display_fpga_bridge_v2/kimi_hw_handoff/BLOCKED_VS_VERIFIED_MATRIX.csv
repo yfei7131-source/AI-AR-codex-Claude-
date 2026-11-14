@@ -1,0 +1,8 @@
+Item_ID,PR12_Ref,Technical_Domain,Previous_PR12_Status,New_Resolution_Status,Verification_Evidence_or_Blocker_Reason
+B01,C01,iCE40UP5K 1.14Mb 容量不足以容纳 640x480x4-bit (1.20Mb),BLOCKED,VERIFIED_SOLVED,"RTL + C 仿真验证：采用 640x400x4-bit 有效视窗 (128,000 B <= 131,072 B SPRAM, 占用 97.66%) + 640x480x2-bit 全幅模式 (76,800 B)；或升级 LIFCL-17 (374 KiB)"
+B02,C02,ESP32-S3 单路 40MHz QSPI 带宽占峰值 92.2%,BLOCKED,VERIFIED_SOLVED,"RTL + C 仿真验证：FPGA 内部 SPRAM 自主 60Hz 刷新（静态画面 S3 带宽 0%）；动态 HUD 采用 RLE4 压缩后单帧 9,667 B，传输仅需 0.483 ms，30fps 总线占用仅 1.45%"
+B03,V01/V02,双目光机水平镜像翻转与视差同步硬件实现,BLOCKED,VERIFIED_SOLVED,RTL (binocular_scanline_engine.v) + C 仿真验证：EBR 行缓存同时正序读取左眼 (x+d/2)、逆序读取右眼 (639-x-d/2)，双目时钟偏差 0 cycle
+B04,C04,单颗 BQ24072 + LM66200 无法实现双电池独立充电,BLOCKED,VERIFIED_SOLVED,修正电源拓扑：充电侧采用左 BQ24072 (135mA) + 右 BQ25180 (135mA) 双独立充电器（各自带 NTC），放电侧经 LM66200 双理想二极管合路至 TPS63020
+B05,C03/C05/C06/C07,单位换算 (0.1°=6 arcmin)、材料牌号 (LZ91 镁锂 vs AZ91D)、S3R8 封装描述与 2.56x1.92mm 有效显示区修正,UNVERIFIED,VERIFIED_CORRECTED,已修正：0.1°=6 arcmin (0.05°=3 arcmin)；镁锂合金牌号修正为 LZ91 (1.5 g/cm3)；ESP32-S3R8 明确为 7x7mm QFN-56 芯片；JBD 640x4um=2.56x1.92mm (2.64x2.02mm 含外环)
+B06,IF-02 / V01,JBD Hummingbird Mini II 私有 SPI/QSPI 寄存器指令集 (Hex Opcodes) 与 FPC 尾线引脚定义,BLOCKED,BLOCKED_EXTERNAL_NDA,JBD 公开资料仅披露 QSPI <=128Mbps、640x480 4-bit 与 60mW；具体初始化寄存器指令码与 FPC 焊盘线序受 NDA 保护未公开，RTL 已通过可动态加载的 CMD_LUT 解耦，物理投板前须向 JBD 获取 ICD
+B07,V04/V05/V08,镜架受控 3D STEP 包络、双波导主动对准治具实测与真机热成像实测,BLOCKED,BLOCKED_PHYSICAL_SAMPLE,依赖 ID/结构提供受控 STEP 文件及光机/波导实物样品台架实测，严禁以软件估算冒充实测
