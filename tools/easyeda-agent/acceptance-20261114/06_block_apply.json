@@ -1,0 +1,75 @@
+origin: 400,300 → 400,510 (默认原点与已有图元(含 marker 连名字带)重叠,已自动移到最近的、连本块 marker 晕圈都放得下的空位(显式传 --at 可固定原点))
+warn: relation-seed: estimated anchor/flow/pair envelope; attach pin positions remain pending until fresh anchor readback. These coordinates are not a verified layout
+device preflight: 4/4 device(s) resolved
+placed U1     ldo.ams1117_3v3    @ 400,510 [anchor]
+relational: 锚 U1 实测 bbox [364,490]-[436,530],7 个引脚;求解 3 件
+placed C2     cap.10uf_0805      @ 335,470 [attach]
+placed C3     cap.22uf_0805      @ 465,540 [attach]
+placed C1     cap.100nf_0402     @ 465,480 [attach]
+layout ✓ no overlap or pin coincidence involving this instance
+wire ✓ trunk C2:1 → U1:VIN as +5V
+autoconnect: 9 connection(s), mode=connect — 9 new, 0 already-connected, 0 conflict
+  ⚠ PARTIAL: 7 succeeded, 2 failed — retry ONLY the failed pins (C3:1, C1:1), then `sch check` for duplicate-net-marker
+  ✓ (335.00,500.00) → +5V [power]: left offset=30 end=(305.00,500.00) score=83.00
+      wire=e83247fada4c5f5b flag=a25f9df49f35a033
+      rejected up    offset=18 score=1000001091.80 — 引出方向不沿引脚朝外方向（hard reject）
+      rejected down  offset=48 score=3000001504.80 — stub crosses a non-target pin (hard reject)
+      rejected right offset=42 score=3000010604.20 — stub crosses a non-target pin (hard reject)
+  ✓ U1:2 → +3V3 [power]: left offset=18 end=(335.00,510.00) score=1081.80
+      ⚠ WARN 落点带痕(score=1082):stub or label blocks another pin's exit —— 建议挪件腾位后重连
+      wire=603f17412eaaed17 flag=71b6ecefbc104561
+      rejected right offset=24 score=1000010602.40 — 引出方向不沿引脚朝外方向（hard reject）
+      rejected up    offset=18 score=2000001091.80 — stub crosses a non-target pin (hard reject)
+      rejected down  offset=48 score=3000000104.80 — stub crosses a non-target pin (hard reject)
+  ✓ U1:4 → +3V3 [power]: right offset=18 end=(465.00,510.00) score=1081.80
+      ⚠ WARN 落点带痕(score=1082):stub or label blocks another pin's exit —— 建议挪件腾位后重连
+      wire=e931f8461312e68c flag=1b316517cb191af4
+      rejected up    offset=42 score=999999994.20 — 引出方向不沿引脚朝外方向（hard reject）
+      rejected down  offset=42 score=1000000004.20 — 引出方向不沿引脚朝外方向（hard reject）
+      rejected left  offset=18 score=1000010501.80 — 引出方向不沿引脚朝外方向（hard reject）
+  ✗ C3:1 → +3V3 [power]: no safe candidate: every direction/offset is unsafe (引出方向不沿引脚朝外方向（hard reject）) — resolve the layout (move the part, clear the wire, or free the title-block corner) and retry
+  ✗ C1:1 → +3V3 [power]: no safe candidate: every direction/offset is unsafe (引出方向不沿引脚朝外方向（hard reject）) — resolve the layout (move the part, clear the wire, or free the title-block corner) and retry
+  ✓ U1:GND → GND [gnd]: left offset=78 end=(275.00,520.00) score=1087.80
+      ⚠ WARN 落点带痕(score=1088):stub runs through an existing flag/port/label —— 建议挪件腾位后重连
+      wire=7a5669fb86444422 flag=738adc6e84cdde7a
+      rejected up    offset=18 score=1000001101.80 — 引出方向不沿引脚朝外方向（hard reject）
+      rejected right offset=24 score=1000011602.40 — 引出方向不沿引脚朝外方向（hard reject）
+      rejected down  offset=24 score=3000000992.40 — stub crosses a non-target pin (hard reject)
+  ✓ C2:2 → GND [gnd]: down offset=18 end=(335.00,430.00) score=-28.20
+      wire=f929fa6d4ba7bfed flag=5d20838709259134
+      rejected left  offset=30 score=1000000003.00 — 引出方向不沿引脚朝外方向（hard reject）
+      rejected right offset=30 score=1000000003.00 — 引出方向不沿引脚朝外方向（hard reject）
+      rejected up    offset=24 score=1000002502.40 — 引出方向不沿引脚朝外方向（hard reject）
+  ✓ C3:2 → GND [gnd]: up offset=18 end=(465.00,580.00) score=-18.20
+      wire=b652410aa61ab9be flag=00ca1474d4761d50
+      rejected left  offset=30 score=1000000003.00 — 引出方向不沿引脚朝外方向（hard reject）
+      rejected right offset=30 score=1000000003.00 — 引出方向不沿引脚朝外方向（hard reject）
+      rejected down  offset=24 score=1000003492.40 — 引出方向不沿引脚朝外方向（hard reject）
+  ✓ C1:2 → GND [gnd]: down offset=18 end=(465.00,440.00) score=-28.20
+      wire=deeed8e72e90e3bb flag=d0c39acc06047644
+      rejected left  offset=30 score=1000000003.00 — 引出方向不沿引脚朝外方向（hard reject）
+      rejected right offset=30 score=1000000003.00 — 引出方向不沿引脚朝外方向（hard reject）
+      rejected up    offset=24 score=1000003502.40 — 引出方向不沿引脚朝外方向（hard reject）
+reconcile ✗ net +3V3: missing C3.1, C1.1
+clusters ✓ 4 个虚拟组:0 重叠 / 0 出图纸(器件 + 它自己的 marker/桩线)
+grouped ✓ g1 (ams1117_ldo_3v3(C1)) — 4 件
+applied-mismatch  block.ams1117_ldo_3v3  [ready]  instance=C1
+origin relocated: 400,300 → 400,510
+
+REF    ROLE     PART                 AT           LAYOUT
+U1     U        ldo.ams1117_3v3      400,510      anchor
+C2     C_IN     cap.10uf_0805        335,470      attach r90
+C3     C_OUT    cap.22uf_0805        465,540      attach r270
+C1     C_BYP    cap.100nf_0402       465,480      attach r90
+warn: relation-seed: estimated anchor/flow/pair envelope; attach pin positions remain pending until fresh anchor readback. These coordinates are not a verified layout
+warn: 干线 U.VIN 末端的 VIN_5V 标签预留不到净空(压到别的外围件 / marker 通道 / 干线标签)—— 落线后仍在线端按引出方向挂标签,注意核对
+
+NET            KIND      MEMBERS
++5V            power     U1:VIN C2:1 (port VIN_5V)
++3V3           power     U1:VOUT* C3:1 C1:1 (port 3V3)
+GND            gnd       U1:GND C2:2 C3:2 C1:2 (port GND)
+
+wires: 1 drawn, 0 fell back to labels, 1 port label(s) at trunk ends
+
+NOT applied (v1 scope): pcb_layout
+block-apply: 1 net(s) do not match the plan — run `easyeda sch bridge-check` and fix before trusting this instance

@@ -1,0 +1,136 @@
+{
+  "status": "found",
+  "host": "127.0.0.1",
+  "ports": "60832-60841",
+  "found": {
+    "port": 60832,
+    "service": "easyeda-agent",
+    "raw": {
+      "pid": 28720,
+      "service": "easyeda-agent",
+      "version": "v1.17.0",
+      "status": "ok",
+      "port": 60832,
+      "windows": [
+        {
+          "windowId": "63024054-ed33-45ba-a755-32cc6831b6a3",
+          "connectorVersion": "1.17.0",
+          "easyedaVersion": "4.1.97",
+          "capabilities": [
+            "schematic.v1",
+            "pcb.v1"
+          ],
+          "host": {
+            "kind": "electron",
+            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) JLCEDAPro/4.1.97.04b092ac Chrome/146.0.7680.188 Electron/41.2.1-jlc-sa-win-x64.6 Safari/537.36"
+          },
+          "context": {
+            "projectUuid": "fc2420f04825ae1764e1c5b4ec6ef8ecc67d8788d2a7b870f5d23aa82699ce46",
+            "projectName": "New Project_2026-11-14_14-22-24",
+            "pageVisibility": "visible"
+          },
+          "connectedAt": "2026-11-14T06:17:44.0989076Z",
+          "lastSeen": "2026-11-14T06:26:07.8764239Z",
+          "connectorVersionOk": true
+        }
+      ],
+      "writeHealth": {
+        "63024054-ed33-45ba-a755-32cc6831b6a3": {
+          "samples": 1,
+          "failures": 1,
+          "failureRate": 1,
+          "consecutiveFailures": 1,
+          "degraded": false,
+          "verified": 0,
+          "lastFailureAction": "schematic.pages.list",
+          "lastFailureAt": "2026-11-14T06:19:58Z",
+          "lastFailureError": "INTERNAL_ERROR: Cannot read properties of undefined (reading 'map')",
+          "actions": {
+            "schematic.pages.list": {
+              "samples": 1,
+              "failures": 1,
+              "failureRate": 1,
+              "consecutiveFailures": 1,
+              "verified": 0,
+              "degraded": false
+            }
+          }
+        }
+      }
+    }
+  },
+  "versionGate": {
+    "cli": "v1.17.0",
+    "daemon": "v1.17.0",
+    "connectors": [
+      "1.17.0"
+    ],
+    "verdict": "ok",
+    "findings": [
+      {
+        "component": "daemon",
+        "version": "v1.17.0",
+        "severity": "ok",
+        "reason": "与 CLI 同版 v1.17.0"
+      },
+      {
+        "component": "connector",
+        "version": "1.17.0",
+        "severity": "ok",
+        "reason": "与 CLI 同版 v1.17.0"
+      }
+    ]
+  },
+  "hostCompatibility": {
+    "baseline": "4.0.0",
+    "recommended": "4.1.60",
+    "verdict": "ok",
+    "findings": [
+      {
+        "windowId": "63024054-ed33-45ba-a755-32cc6831b6a3",
+        "version": "4.1.97",
+        "severity": "ok",
+        "reason": "EasyEDA Pro 4.1.97 满足 V4 主线基线"
+      }
+    ]
+  },
+  "checks": [
+    {
+      "name": "daemon",
+      "status": "ok",
+      "detail": "v1.17.0 运行在端口 60832"
+    },
+    {
+      "name": "connector",
+      "status": "ok",
+      "detail": "1 个窗口已连接（连接器 v1.17.0）"
+    },
+    {
+      "name": "versions",
+      "status": "ok",
+      "detail": "版本一致性:CLI / daemon 同版,connector major.minor 兼容 v1.17.0"
+    },
+    {
+      "name": "easyeda",
+      "status": "ok",
+      "detail": "EasyEDA 宿主:V4 主线（推荐基线 4.1.60）"
+    },
+    {
+      "name": "project",
+      "status": "ok",
+      "detail": "New Project_2026-11-14_14-22-24（当前 (unknown)）"
+    }
+  ],
+  "checked": [
+    {
+      "port": 60832,
+      "status": "ok"
+    }
+  ]
+}
+✓ daemon    v1.17.0 运行在端口 60832
+✓ connector 1 个窗口已连接（连接器 v1.17.0）
+✓ versions  版本一致性:CLI / daemon 同版,connector major.minor 兼容 v1.17.0
+✓ easyeda   EasyEDA 宿主:V4 主线（推荐基线 4.1.60）
+✓ project   New Project_2026-11-14_14-22-24（当前 (unknown)）
+就绪：可以开始操作 EasyEDA。
