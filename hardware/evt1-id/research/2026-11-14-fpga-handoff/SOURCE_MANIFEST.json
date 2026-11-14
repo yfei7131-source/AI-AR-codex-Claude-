@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0-archive",
+  "date": "2026-11-14",
+  "source_archive": "2026-11-14 20_15_24.zip",
+  "source_archive_bytes": 65384,
+  "source_archive_sha256": "ae0d9cb1412b8e2d3cd0745d72779cecd4c0a87c42fc9abd16877ca2c9f6949a",
+  "source_file_count": 1,
+  "base_branch": "research/evt1-dual-ar-40g-20261114",
+  "base_commit": "48af5956948bd88d05ef285c7e231d8405aab920",
+  "archive_branch": "handoff/evt1-fpga-20261114",
+  "status": "ARCHIVED_ONLY_CLAIMS_NOT_VERIFIED",
+  "hardware_validation": "NOT RUN",
+  "rtl_synthesis": "NOT RUN",
+  "simulation_reproduction": "NOT RUN",
+  "manufacturing_release": false,
+  "files": [
+    {
+      "repository_path": "hardware/evt1-id/research/2026-11-14-fpga-handoff/2026-11-14 20_15_24.docx",
+      "source_name": "2026-11-14 20_15_24.docx",
+      "format": "docx",
+      "bytes": 65881,
+      "sha256": "ddf838d16eaf9629022ddfda793870dec904aab04f09cd1731cff612304ccfcc",
+      "byte_for_byte_source": true,
+      "parsed_paragraphs": 618,
+      "parsed_tables": 8,
+      "embedded_media_or_objects": 0
+    }
+  ],
+  "notes": [
+    "The supplied ZIP contains only one DOCX and no standalone RTL, C source, testbench, simulation executable or build evidence.",
+    "No code was compiled and no simulation result was reproduced during this archive sync.",
+    "Pass, verified and performance labels inside the DOCX remain source claims and are not accepted as repository verification.",
+    "JBD private registers, initialization sequence and FPC pinout remain BLOCKED_NDA_ICD.",
+    "Kimi R8 files and existing baseline files were not modified."
+  ]
+}
