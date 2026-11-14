@@ -1,0 +1,131 @@
+{
+  "schema_version": "1.0-research",
+  "date": "2026-11-14",
+  "status": "PLANNED_UNVERIFIED",
+  "baseline_reference": "EVT-1 MASS_BUDGET from the supplied research export; not present on main e4e85b0",
+  "mass_challenge_g": 40.0,
+  "mass_engineering_target_g": 39.5,
+  "mass_margin_g": 0.5,
+  "measured_total_g": null,
+  "measurement_boundary": "Bare eyewear excluding prescription insert, charging case, cable and packaging; boundary requires product confirmation",
+  "baseline_modules": [
+    {"id": "W01", "name": "Structure", "baseline_g": 12.0},
+    {"id": "W02", "name": "Optics", "baseline_g": 14.0},
+    {"id": "W03", "name": "Electronics and FPC", "baseline_g": 7.0},
+    {"id": "W04", "name": "Batteries", "baseline_g": 9.0},
+    {"id": "W05", "name": "Camera, acoustics and USB", "baseline_g": 6.0},
+    {"id": "W06", "name": "Shielding, thermal and fasteners", "baseline_g": 2.0}
+  ],
+  "modules": [
+    {
+      "id": "W01",
+      "name": "Frame, temples, hinges and nose support",
+      "baseline_g": 12.0,
+      "target_g": 9.8,
+      "calculated_component_sum_g": 9.8,
+      "delta_g": -2.2,
+      "measured_g": null,
+      "status": "UNVERIFIED",
+      "note": "Material and thin-wall assumptions require structural and manufacturing review"
+    },
+    {
+      "id": "W02",
+      "name": "Binocular MicroLED engines, waveguides, mounts and Rx interface",
+      "baseline_g": 14.0,
+      "target_g": 9.5,
+      "calculated_component_sum_g": 9.5,
+      "delta_g": -4.5,
+      "measured_g": null,
+      "status": "UNVERIFIED",
+      "note": "Largest reduction relies on unverified vendor mass for engines and waveguides"
+    },
+    {
+      "id": "W03",
+      "name": "Left main HDI, right audio HDI, bridge, FPC and USB board",
+      "baseline_g": 7.0,
+      "target_g": 5.4,
+      "calculated_component_sum_g": 5.4,
+      "delta_g": -1.6,
+      "measured_g": null,
+      "status": "UNVERIFIED",
+      "note": "Requires PCB stackup, area and FPC mechanical models"
+    },
+    {
+      "id": "W04",
+      "name": "Dual cells, PCM, NTC and power-path components",
+      "baseline_g": 9.0,
+      "target_g": 7.4,
+      "calculated_component_sum_g": 7.4,
+      "delta_g": -1.6,
+      "measured_g": null,
+      "status": "BLOCKED",
+      "note": "Mass allocation exists but dual-cell charging topology is unresolved"
+    },
+    {
+      "id": "W05",
+      "name": "Camera, privacy circuit, speakers, microphones, touch and USB-C",
+      "baseline_g": 6.0,
+      "target_g": 5.6,
+      "calculated_component_sum_g": 5.6,
+      "delta_g": -0.4,
+      "measured_g": null,
+      "status": "UNVERIFIED",
+      "note": "Acoustic and camera modules have no controlled drawings"
+    },
+    {
+      "id": "W06",
+      "name": "Shielding, graphite spreader, screws and adhesive",
+      "baseline_g": 2.0,
+      "target_g": 1.8,
+      "calculated_component_sum_g": 1.8,
+      "delta_g": -0.2,
+      "measured_g": null,
+      "status": "UNVERIFIED",
+      "note": "Depends on final PCB, antenna and thermal design"
+    }
+  ],
+  "components": [
+    {"id": "W01-FRONT", "module": "W01", "item": "Front frame", "qty": 1, "unit_g": 4.2, "total_g": 4.2, "status": "UNVERIFIED", "note": "AZ91D or alternative; CAD mass not supplied"},
+    {"id": "W01-TEMPLE", "module": "W01", "item": "Temple shells", "qty": 2, "unit_g": 1.8, "total_g": 3.6, "status": "UNVERIFIED", "note": "Thin-wall TR90/carbon-fibre concept; structural validation absent"},
+    {"id": "W01-HINGE", "module": "W01", "item": "Spring hinges", "qty": 2, "unit_g": 0.65, "total_g": 1.3, "status": "UNVERIFIED", "note": "Custom hinge and FPC feed-through not designed"},
+    {"id": "W01-NOSE", "module": "W01", "item": "Nose support assembly", "qty": 1, "unit_g": 0.7, "total_g": 0.7, "status": "UNVERIFIED", "note": "Comfort and load distribution not measured"},
+    {"id": "W02-ENGINES", "module": "W02", "item": "Binocular MicroLED engines", "qty": 2, "unit_g": 0.3, "total_g": 0.6, "status": "UNVERIFIED", "note": "Vendor mass claim requires controlled datasheet"},
+    {"id": "W02-WAVEGUIDES", "module": "W02", "item": "Binocular diffractive waveguides", "qty": 2, "unit_g": 3.8, "total_g": 7.6, "status": "UNVERIFIED", "note": "Mass depends on final index/thickness and outline"},
+    {"id": "W02-MOUNT", "module": "W02", "item": "Collimation and alignment mounts", "qty": 1, "unit_g": 0.7, "total_g": 0.7, "status": "UNVERIFIED", "note": "Active-alignment adhesive process not defined"},
+    {"id": "W02-RX-INSERT", "module": "W02", "item": "Magnetic Rx insert interface", "qty": 1, "unit_g": 0.6, "total_g": 0.6, "status": "UNVERIFIED", "note": "Rx insert itself is excluded from the 39.5 g bare-device target"},
+    {"id": "W03-MAIN", "module": "W03", "item": "Left main HDI PCB assembly", "qty": 1, "unit_g": 1.9, "total_g": 1.9, "status": "UNVERIFIED", "note": "No board outline or stackup release"},
+    {"id": "W03-AUDIO", "module": "W03", "item": "Right audio and IMU HDI PCB assembly", "qty": 1, "unit_g": 1.4, "total_g": 1.4, "status": "UNVERIFIED", "note": "Audio SoC and layout not selected"},
+    {"id": "W03-BRIDGE", "module": "W03", "item": "Nose-bridge display PCB", "qty": 1, "unit_g": 0.4, "total_g": 0.4, "status": "UNVERIFIED", "note": "FPGA architecture remains blocked"},
+    {"id": "W03-FRONT-FPC", "module": "W03", "item": "Front-frame flexible circuit", "qty": 1, "unit_g": 0.9, "total_g": 0.9, "status": "UNVERIFIED", "note": "Bend radius and fold life not tested"},
+    {"id": "W03-REAR-FPC-USB", "module": "W03", "item": "Battery FPC and USB-C board", "qty": 1, "unit_g": 0.8, "total_g": 0.8, "status": "UNVERIFIED", "note": "Tail geometry and water sealing not designed"},
+    {"id": "W04-CELLS", "module": "W04", "item": "Dual 135 mAh cells", "qty": 2, "unit_g": 3.3, "total_g": 6.6, "status": "UNVERIFIED", "note": "Capacity and mass require supplier quotation and sample"},
+    {"id": "W04-PROTECTION-ORING", "module": "W04", "item": "PCM, NTC and discharge ORing", "qty": 1, "unit_g": 0.8, "total_g": 0.8, "status": "BLOCKED", "note": "Charge topology cannot use one BQ24072 for two independent cells"},
+    {"id": "W05-CAMERA-PRIVACY", "module": "W05", "item": "Camera and privacy circuit", "qty": 1, "unit_g": 0.8, "total_g": 0.8, "status": "UNVERIFIED", "note": "Privacy fail-safe circuit not validated"},
+    {"id": "W05-SPEAKERS", "module": "W05", "item": "Open-fit micro speakers", "qty": 2, "unit_g": 1.8, "total_g": 3.6, "status": "UNVERIFIED", "note": "Acoustic performance and leakage not measured"},
+    {"id": "W05-MICS", "module": "W05", "item": "MEMS microphones", "qty": 2, "unit_g": 0.15, "total_g": 0.3, "status": "UNVERIFIED", "note": "Port and wind-noise design not complete"},
+    {"id": "W05-TOUCH-BUTTON-LED", "module": "W05", "item": "Touch strip, buttons and status LED", "qty": 1, "unit_g": 0.4, "total_g": 0.4, "status": "UNVERIFIED", "note": "No selected touch controller or EMC plan"},
+    {"id": "W05-USB-C", "module": "W05", "item": "Right-tail USB-C receptacle", "qty": 1, "unit_g": 0.5, "total_g": 0.5, "status": "UNVERIFIED", "note": "Waterproof and insertion-life requirements not validated"},
+    {"id": "W06-SHIELD", "module": "W06", "item": "Thin shield cans", "qty": 1, "unit_g": 0.7, "total_g": 0.7, "status": "UNVERIFIED", "note": "Shielding effectiveness and mass not simulated"},
+    {"id": "W06-GRAPHITE", "module": "W06", "item": "Graphite heat spreader", "qty": 1, "unit_g": 0.4, "total_g": 0.4, "status": "UNVERIFIED", "note": "Thermal path and adhesive mass not modelled"},
+    {"id": "W06-FASTENERS-ADHESIVE", "module": "W06", "item": "Screws, adhesive and seals", "qty": 1, "unit_g": 0.7, "total_g": 0.7, "status": "UNVERIFIED", "note": "Serviceability and IP sealing not designed"}
+  ],
+  "arithmetic_check": {
+    "component_count": 23,
+    "module_count": 6,
+    "baseline_total_g": 50.0,
+    "target_total_g": 39.5,
+    "sum_module_targets_g": 39.5,
+    "sum_component_allocations_g": 39.5,
+    "challenge_margin_to_40g": 0.5,
+    "difference_from_baseline_g": -10.5,
+    "status": "VERIFIED_CALC",
+    "note": "Arithmetic only; no physical mass, tolerance stack, adhesive mass or supplier variation is verified"
+  },
+  "blockers": [
+    "No measured or CAD-derived mass for any module",
+    "Optical engine and waveguide mass are supplier claims only",
+    "0.5 g margin is approximately 1.25 percent of the 40 g ceiling and is smaller than typical supplier and assembly variation",
+    "Dual-cell charging and structural architecture remain unresolved",
+    "No tolerance stack or wearer-load analysis is available"
+  ]
+}
