@@ -20,3 +20,19 @@ zy_pcb `selfcheck` 仅为辅助，**不是原生 DRC**。
 注：此前名为 `native_after_s3/` 的目录其输入 PCB 哈希为 S3 之前的板（`6dbc5dc8…`），已更名为 `native_r6_s2_stackup_pre_s3/`，避免误读。
 
 **S4 后发现（未改，列为下一项整改）**：U1 右列 ↔ J4 走廊被 R3 遗留 0.25 mm 网格阶梯走线占满——F.Cu 有 /VBAT_ADC x=140.25（y 70–93）、/MIC_WS x=135.5、/U0TXD x=137 三道竖墙；B.Cu 有 /MIC_SCK、/MIC_WS 长阶梯斜线 (134.75,75.5)→(145.75,99.25)。显示 9 项在此条件下自动布线最好结果仍为 ~233 mm/18 过孔且不全通，判定不可接受；需先拆除重布这些遗留线（独立步骤、原生复核）再布显示总线。
+
+---
+
+# R7 增补（2026-11-14，分支 hardware/evt0-r7-usb-20261114，NOT FOR FAB）
+
+本机无 KiCad/kicad-cli，原生 ERC/DRC/重铺/parity 全程 **NOT RUN**，未以自定义自检冒充原生验证。
+
+| 步骤 | 改动 | 原生 ERC / DRC / parity / 未连接 | 证据 |
+|---|---|---|---|
+| R7-S1 | USBLC6 U2 通道对调消除手性交叉（commit `dffcf2c`）：原理图 4 label 文本互换；PCB U2.1/6→/USB_DM、U2.3/4→/USB_DP（net id 不变）；netlist.csv 与 ELECTRICAL_REVIEW 同步。数据手册 ST DS4260 核对：1/6=I/O1、3/4=I/O2 内部短接，双向对称，对调电气等价 | NOT RUN（`evidence/native_r7_s1/`）· 离线自检 49 · 违规 0 · 悬空 0 · U2↔netlist parity OK | `evidence/selfcheck_r7_s1.json`、`evidence/r7_baseline_snapshot/` |
+| R7-S2 | U2.2 GND 整改**阻断，PCB 未写入**：(124.5,118.5) 过孔干跑 8 项违规（U2.5 0.175<0.2、TP10.1 0.060、/CHG_PGOOD_N 短路 −0.046）；x123–126/y117–121 网格穷举零可用位，与 PGOOD/TP10 几何死锁 | — | `evidence/r7_s2_gnd_blocked/change.json`（ok=false） |
+| R7-S3 | CC2 过孔移位跳过（仅 DP 布线时有意义，DP 阻断） | — | `USB_R7_ADDENDUM.md` |
+| R7-S4 | U2.5 VBUS + B.Cu 阶梯线整改**阻断**（电源路径评审事项，无原生 DRC 不做） | — | `USB_R7_ADDENDUM.md` |
+| R7-S5 | USB DP/DM 布线**阻断**：GND 链尾段 (124.25,120.75)→(124.5,119.638) 封死 DM→J1 B7/A7 全部绕行（<0.1 mm）；叠层 C1/90 Ω 为 2D 估算（89.9 Ω）未获板厂确认，按红线不强行布线。**USB 8→0 未达成，总未连接维持 49** | — | `USB_R7_ADDENDUM.md` |
+
+下一轮候选（需 KiCad 原生环境）：微调 /CHG_PGOOD_N 让出过孔位（原生 DRC+电源评审）· U2 器件级重排 · 板厂确认叠层/90 Ω 后按 `USB_R6_DESIGN.md` 第 3 节布线。
