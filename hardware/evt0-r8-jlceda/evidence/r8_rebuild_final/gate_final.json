@@ -1,0 +1,12 @@
+sch gate: FAIL
+  PASS   layout-lint    0 overlap, 0 pin-coincidence, 2 tight, 0 off-grid, 0 out-of-sheet, 0 no-bbox, 0 unchecked-pin, 0 unproven-pin, 0 nets-unproven, 0 invalid-geometry (zone-check=not-configured sheet-check=checked)
+  FAIL   clusters       84 个虚拟组:104 重叠 / 0 出图纸 / 0 过近
+  PASS   check          244 finding(s): 0 error/fatal, 244 warn/info
+  PASS   bridge-check   0 bridge(short), 0 orphan-stub, 0 orphan-flag, 0 orphan-tree (272 wire tree(s))
+  PASS   drc            0 fatal, 0 error, 0 warn, 0 info (total 0); native verdict PASS
+
+阻塞项:
+  • clusters: 104 处组间图元重叠
+
+告警(不阻塞): layout-lint: 2 条告警, check: 244 条告警
+sch gate: FAIL — clusters: 104 处组间图元重叠
