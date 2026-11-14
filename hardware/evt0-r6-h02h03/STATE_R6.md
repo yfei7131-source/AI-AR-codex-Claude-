@@ -26,3 +26,26 @@ S3b 修正 S3 遗留两处违规 · S4 音频 UART 桥 R33/R34 移至 J7（51→
 
 ## 工具（R6 新增）
 `r6_native.py`（原生检查）· `r6_render.py`（kicad-cli PDF→PNG 层图）· `r6_route.py`（网格搜索 + 精确几何平滑）· `r6_s3b_fix.py` · `r6_s4_uart_move.py` · `r6_s5_plane_cleanup.py`（禁止 via-in-pad）· `near.py`（区域铜查询）。
+
+---
+
+# R7 增补（2026-11-14，分支 hardware/evt0-r7-usb-20261114）
+
+**NOT FOR FAB.** R7 为 USB 专项，详见 `USB_R7_ADDENDUM.md`。本机无 KiCad/kicad-cli，原生 ERC/DRC/重铺/parity 全程 **NOT RUN**（`evidence/native_r7_*/`），未以自定义自检冒充原生验证。
+
+## 当前板（R7-S1 后）
+- PCB SHA-256：`13dc5652658756b473e7167dbb3d5a436e32ef6559a483904cb897ff6a461306`
+- SCH SHA-256：`3de738b3919f08e8f8a7d31f436883947c3454ab17f3abb35c95763c278f0761`
+- R6 原板快照：`evidence/r7_baseline_snapshot/`（PCB `3b2838c1…`、SCH `81d599e6…`）
+- 离线自检（`evidence/selfcheck_r7_final.json`）：**未连接 49**、违规 0、悬空 0；原生：**NOT RUN**
+
+## R7 结果
+- **S1 完成**（commit `dffcf2c`）：USBLC6 U2 通道对调（U2.1/6→/USB_DM 西列、U2.3/4→/USB_DP 东列），消除手性交叉；原理图 4 label、PCB 焊盘网、netlist.csv、ELECTRICAL_REVIEW 同步；gaps 49 不变、违规 0。
+- **S2 阻断**（`evidence/r7_s2_gnd_blocked/`，PCB 未写入）：设计文档提议的 U2.2 GND 过孔位 (124.5,118.5) 干跑报 8 项违规（对 U2.5 0.175<0.2、对 TP10.1 0.060、与 /CHG_PGOOD_N 短路 −0.046）；x 123–126/y 117–121 网格穷举零可用位——与 PGOOD/TP10 构成几何死锁，整改需移动充电区信号，无原生 DRC 环境不做。
+- **S3 跳过**（仅 DP 布线时有意义）；**S4 阻断**（电源路径评审事项）；**S5 阻断**：GND 链尾段封死 DM→J1 B7/A7 全部绕行（<0.1 mm），且叠层 C1/90 Ω 为 2D 估算未获板厂确认，按红线不强行布线。
+- **USB 8→0 本轮未达成，总未连接维持 49。**
+
+## 下一轮候选（需 KiCad 原生环境）
+① 微调 /CHG_PGOOD_N 局部段让出 (124.5,118.5) 过孔位（原生 DRC + 电源评审）；② U2 器件级重排；③ 板厂确认叠层与 90 Ω 后按 `USB_R6_DESIGN.md` 第 3 节布线。
+
+红线：DRU 未降、隐私联锁/电池保护/DNP 未动、充电路径未改、无制造放行。
