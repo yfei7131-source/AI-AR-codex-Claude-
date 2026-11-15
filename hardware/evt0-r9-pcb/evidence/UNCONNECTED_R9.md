@@ -1,7 +1,7 @@
 # R9 未连接清单（原生 DRC Connection Error 对象，按网络聚合）
 
-来源: r8_rebuild/drc_r9_22.txt
-未连接网络数: 15；涉及对象总数: 43
+来源: ../r8_rebuild/drc_r9_25.txt
+未连接网络数: 15；涉及对象总数: 41
 
 | 网络 | 未连接对象数 | 对象 |
 |---|---|---|
@@ -19,4 +19,4 @@
 | U0TXD | 5 | SMD Pad:R30_2, Track:e118, SMD Pad:U1_37, TH Pad:J6_3, SMD Pad:R33_1 |
 | USB_DM | 5 | SMD Pad:J1_B7, SMD Pad:J1_A7, SMD Pad:U2_1, SMD Pad:U2_6, SMD Pad:U1_13 |
 | USB_DP | 5 | SMD Pad:J1_A6, SMD Pad:J1_B6, SMD Pad:U2_3, SMD Pad:U2_4, SMD Pad:U1_14 |
-| VBUS | 4 | Track:e938, SMD Pad:TP1_1, SMD Pad:e23e38, SMD Pad:e23e37 |
+| VBUS | 2 | SMD Pad:e23e38, SMD Pad:e23e37 |
