@@ -1,0 +1,6 @@
+Commit: 27963cf (Initial V2.0 run before drain cycle & pipeline fix)
+Command: ./tb/dual_clock_rtl_event_sim
+Stderr : dual_clock_rtl_event_sim: tb/dual_clock_rtl_event_sim.c:520: main: Assertion `g_spram.mem[0][159] == 0xACDF' failed.
+Root Cause 1: send_qspi_packet_40mhz() only waited 400 clk_sys cycles after CS# deassertion, whereas expanding 318 RLE bytes
+              (1 byte/cycle = 318 cycles) + committing 160 words to SPRAM (160 cycles) required 478 clk_sys cycles.
+Root Cause 2: git bundle create was executed before/after amend out of order, leaving a 0-byte rtl_dual_clock_test_log.txt in commit 27963cf.

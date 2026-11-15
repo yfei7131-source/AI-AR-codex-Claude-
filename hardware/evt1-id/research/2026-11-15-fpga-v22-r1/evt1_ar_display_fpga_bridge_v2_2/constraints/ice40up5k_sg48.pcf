@@ -1,0 +1,25 @@
+# Lattice iCE40UP5K-SG48I / SG48ITR (48-pin QFN, 39 PIOs) Valid Physical Constraints
+# Bank 0 (VCCIO_0 = 3.3V, 17 PIOs): Direct 3.3V interface to Kimi R8 ESP32-S3-WROOM-1-N16R8 J4
+set_io clk_48m_in     35
+set_io rst_n          23
+set_io s3_cs_n        25
+set_io s3_sclk        26
+set_io s3_io[0]       27
+set_io s3_io[1]       28
+set_io s3_io[2]       31
+set_io s3_io[3]       32
+set_io bridge_crc_err 34
+set_io bridge_cdc_err 36
+set_io vsync_out      37
+# Bank 1 & Bank 2 (SPI_VCCIO1 = 1.8V, VCCIO_2 = 1.8V, 22 PIOs): Direct 1.8V interface to Dual JBD 0.13"
+set_io opt_sclk       2
+set_io opt_cs_l_n     3
+set_io opt_cs_r_n     4
+set_io opt_l_io[0]    6
+set_io opt_l_io[1]    9
+set_io opt_l_io[2]    10
+set_io opt_l_io[3]    11
+set_io opt_r_io[0]    12
+set_io opt_r_io[1]    13
+set_io opt_r_io[2]    18
+set_io opt_r_io[3]    19

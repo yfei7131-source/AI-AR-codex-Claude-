@@ -1,0 +1,7 @@
+=== OFFLINE C99 RTL MODEL SELF-CHECK REPORT (V2.2 INCREMENTAL FIXES VERIFIED) ===
+[NOTE] NATIVE IVERILOG / YOSYS / NEXTPNR-ICE40: BLOCKED_NO_LOCAL_EDA_BINARY (NOT_RUN)
+[PASS] Fix 1 (FW <-> RTL Mode Enum Alignment): Modes 0..3 match 1:1 (STEREO_INDEP_2BPP=3)
+[PASS] Fix 2 (OP_READ_STATUS 0x50 Bidirectional QSPI Readback): raw_status=0x2781, mode=3, stereo=1, good=8, bad=1
+[PASS] Fix 3 (Synchronous EBR FIFO Read Timing Alignment): 0-cycle skew between out_valid and ebr_dout
+[PASS] Fix 4 (Ping-Pong Double Buffering & VSYNC Atomic Swap): Back-Bank2[0]=0x1B1B -> swapped at VSYNC
+[PASS] Fix 5 (Independent Left/Right Stereo Mode 3): Left[40][0..3]=[0xF,0xA,0x5,0x0] != Right[40][0..3]=[0x0,0x5,0xA,0xF]

@@ -1,0 +1,5 @@
+Commit: Intermediate V2.0 run (after increasing drain wait to 1200 cycles)
+Command: ./tb/dual_clock_rtl_event_sim
+Stderr : dual_clock_rtl_event_sim: tb/dual_clock_rtl_event_sim.c:568: main: Assertion `g_scan.cap_r[40][635] == 0x2' failed.
+Root Cause: spram_framebuffer_ctrl.v registered scan_rdata <= mux_dout on posedge clk_sys even though SB_SPRAM256KA.DATAOUT
+            is already a synchronous registered output, creating a 2-cycle data latency vs 1-cycle scan_rvalid latency.
