@@ -1,0 +1,4232 @@
+{
+  "id": "req_2356",
+  "type": "response",
+  "version": "v1",
+  "windowId": "c3b89886-a7ad-432b-979f-ac6a2b895a0b",
+  "createdAt": "2026-11-15T05:52:52.0629563Z",
+  "ok": true,
+  "result": {
+    "passed": false,
+    "violations": [
+      {
+        "count": 28,
+        "list": [
+          {
+            "count": 1,
+            "list": [
+              {
+                "errorObjType": "Track to Track",
+                "errorType": "Clearance Error",
+                "explanation": {
+                  "errData": {
+                    "clearance": 0.40157,
+                    "errorType": "Safe Spacing",
+                    "globalIndex": "err0",
+                    "isInSameComponent": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "minDistance": 0,
+                    "name": "copperThickness1oz",
+                    "obj1": "3ad5f716d7c107c9",
+                    "obj1Suffix": "(CAM_PWDN): e459",
+                    "obj1Type": "Track",
+                    "obj2": "0399b1026ef25d5e",
+                    "obj2Suffix": "(GND): e987",
+                    "obj2Type": "Track",
+                    "position": {
+                      "x": 43.007258917647064,
+                      "y": 247.61437
+                    }
+                  },
+                  "param": {
+                    "minDistance": "0mil",
+                    "obj1": "Object 1",
+                    "obj2": "object 2",
+                    "shouldBe": "\u003e= 4mil",
+                    "type": "ClearanceError"
+                  },
+                  "str": "{obj1} to {obj2} distance is {minDistance}, should be {shouldBe}"
+                },
+                "globalIndex": "err0",
+                "layer": "Top Layer",
+                "obj1": {
+                  "suffix": "(CAM_PWDN): e459",
+                  "typeName": "Track"
+                },
+                "obj2": {
+                  "suffix": "(GND): e987",
+                  "typeName": "Track"
+                },
+                "objs": [
+                  "3ad5f716d7c107c9",
+                  "0399b1026ef25d5e"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Clearance Error|_|Track to Track",
+                "pos": {
+                  "x": 43.007258917647064,
+                  "y": 247.61437
+                },
+                "ruleName": "copperThickness1oz",
+                "ruleTypeName": "Safe Spacing",
+                "visible": true
+              }
+            ],
+            "name": "Track to Track",
+            "title": [
+              "Track",
+              "to",
+              "Track",
+              "(1)"
+            ],
+            "visible": true
+          },
+          {
+            "count": 1,
+            "list": [
+              {
+                "errorObjType": "SMD Pad to Track",
+                "errorType": "Clearance Error",
+                "explanation": {
+                  "errData": {
+                    "clearance": 0.59843,
+                    "errorType": "Safe Spacing",
+                    "globalIndex": "err1",
+                    "isInSameComponent": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "minDistance": 0,
+                    "name": "copperThickness1oz",
+                    "obj1": "7dde48800f0a89a2",
+                    "obj1Suffix": "(GND): e986",
+                    "obj1Type": "Track",
+                    "obj2": "0ab2a49a94a5ee76e37",
+                    "obj2Suffix": "(VBUS): e23e37",
+                    "obj2Type": "SMD Pad",
+                    "position": {
+                      "x": 52,
+                      "y": 27.09095
+                    }
+                  },
+                  "param": {
+                    "minDistance": "0mil",
+                    "obj1": "Object 1",
+                    "obj2": "object 2",
+                    "shouldBe": "\u003e= 6mil",
+                    "type": "ClearanceError"
+                  },
+                  "str": "{obj1} to {obj2} distance is {minDistance}, should be {shouldBe}"
+                },
+                "globalIndex": "err1",
+                "layer": "Top Layer",
+                "obj1": {
+                  "suffix": "(GND): e986",
+                  "typeName": "Track"
+                },
+                "obj2": {
+                  "suffix": "(VBUS): e23e37",
+                  "typeName": "SMD Pad"
+                },
+                "objs": [
+                  "7dde48800f0a89a2",
+                  "0ab2a49a94a5ee76e37"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Clearance Error|_|SMD Pad to Track",
+                "pos": {
+                  "x": 52,
+                  "y": 27.09095
+                },
+                "ruleName": "copperThickness1oz",
+                "ruleTypeName": "Safe Spacing",
+                "visible": true
+              }
+            ],
+            "name": "SMD Pad to Track",
+            "title": [
+              "SMD Pad",
+              "to",
+              "Track",
+              "(1)"
+            ],
+            "visible": true
+          },
+          {
+            "count": 11,
+            "list": [
+              {
+                "errorObjType": "Track to Via",
+                "errorType": "Clearance Error",
+                "explanation": {
+                  "errData": {
+                    "clearance": 0.59843,
+                    "errorType": "Safe Spacing",
+                    "globalIndex": "err2",
+                    "isInSameComponent": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "minDistance": 0,
+                    "name": "copperThickness1oz",
+                    "obj1": "3ad5f716d7c107c9",
+                    "obj1Suffix": "(CAM_PWDN): e459",
+                    "obj1Type": "Track",
+                    "obj2": "3d03bec0754c570a",
+                    "obj2Suffix": "(GND): e217",
+                    "obj2Type": "Via",
+                    "position": {
+                      "x": 43,
+                      "y": 247.61437
+                    }
+                  },
+                  "param": {
+                    "minDistance": "0mil",
+                    "obj1": "Object 1",
+                    "obj2": "object 2",
+                    "shouldBe": "\u003e= 6mil",
+                    "type": "ClearanceError"
+                  },
+                  "str": "{obj1} to {obj2} distance is {minDistance}, should be {shouldBe}"
+                },
+                "globalIndex": "err2",
+                "layer": "Top Layer",
+                "obj1": {
+                  "suffix": "(CAM_PWDN): e459",
+                  "typeName": "Track"
+                },
+                "obj2": {
+                  "suffix": "(GND): e217",
+                  "typeName": "Via"
+                },
+                "objs": [
+                  "3ad5f716d7c107c9",
+                  "3d03bec0754c570a"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Clearance Error|_|Track to Via",
+                "pos": {
+                  "x": 43,
+                  "y": 247.61437
+                },
+                "ruleName": "copperThickness1oz",
+                "ruleTypeName": "Safe Spacing",
+                "visible": true
+              },
+              {
+                "errorObjType": "Track to Via",
+                "errorType": "Clearance Error",
+                "explanation": {
+                  "errData": {
+                    "clearance": 0.59843,
+                    "errorType": "Safe Spacing",
+                    "globalIndex": "err4",
+                    "isInSameComponent": false,
+                    "layerIds": [
+                      2
+                    ],
+                    "minDistance": 0.05000000000001137,
+                    "name": "copperThickness1oz",
+                    "obj1": "105862de90732bd1",
+                    "obj1Suffix": "(CAM_VSYNC): e70",
+                    "obj1Type": "Track",
+                    "obj2": "77c9f3ba1c061c60",
+                    "obj2Suffix": "(GND): e218",
+                    "obj2Type": "Via",
+                    "position": {
+                      "x": 68.7,
+                      "y": 249.475
+                    }
+                  },
+                  "param": {
+                    "minDistance": "0.5mil",
+                    "obj1": "Object 1",
+                    "obj2": "object 2",
+                    "shouldBe": "\u003e= 6mil",
+                    "type": "ClearanceError"
+                  },
+                  "str": "{obj1} to {obj2} distance is {minDistance}, should be {shouldBe}"
+                },
+                "globalIndex": "err4",
+                "layer": "Bottom Layer",
+                "obj1": {
+                  "suffix": "(CAM_VSYNC): e70",
+                  "typeName": "Track"
+                },
+                "obj2": {
+                  "suffix": "(GND): e218",
+                  "typeName": "Via"
+                },
+                "objs": [
+                  "105862de90732bd1",
+                  "77c9f3ba1c061c60"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Clearance Error|_|Track to Via",
+                "pos": {
+                  "x": 68.7,
+                  "y": 249.475
+                },
+                "ruleName": "copperThickness1oz",
+                "ruleTypeName": "Safe Spacing",
+                "visible": true
+              },
+              {
+                "errorObjType": "Track to Via",
+                "errorType": "Clearance Error",
+                "explanation": {
+                  "errData": {
+                    "clearance": 0.59843,
+                    "errorType": "Safe Spacing",
+                    "globalIndex": "err6",
+                    "isInSameComponent": false,
+                    "layerIds": [
+                      2
+                    ],
+                    "minDistance": 0,
+                    "name": "copperThickness1oz",
+                    "obj1": "ded4e89427388978",
+                    "obj1Suffix": "(VBAT): e724",
+                    "obj1Type": "Track",
+                    "obj2": "f3a1fac46a3e525e",
+                    "obj2Suffix": "(GND): e220",
+                    "obj2Type": "Via",
+                    "position": {
+                      "x": 66.396415,
+                      "y": 42.6
+                    }
+                  },
+                  "param": {
+                    "minDistance": "0mil",
+                    "obj1": "Object 1",
+                    "obj2": "object 2",
+                    "shouldBe": "\u003e= 6mil",
+                    "type": "ClearanceError"
+                  },
+                  "str": "{obj1} to {obj2} distance is {minDistance}, should be {shouldBe}"
+                },
+                "globalIndex": "err6",
+                "layer": "Bottom Layer",
+                "obj1": {
+                  "suffix": "(VBAT): e724",
+                  "typeName": "Track"
+                },
+                "obj2": {
+                  "suffix": "(GND): e220",
+                  "typeName": "Via"
+                },
+                "objs": [
+                  "ded4e89427388978",
+                  "f3a1fac46a3e525e"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Clearance Error|_|Track to Via",
+                "pos": {
+                  "x": 66.396415,
+                  "y": 42.6
+                },
+                "ruleName": "copperThickness1oz",
+                "ruleTypeName": "Safe Spacing",
+                "visible": true
+              },
+              {
+                "errorObjType": "Track to Via",
+                "errorType": "Clearance Error",
+                "explanation": {
+                  "errData": {
+                    "clearance": 0.59843,
+                    "errorType": "Safe Spacing",
+                    "globalIndex": "err8",
+                    "isInSameComponent": false,
+                    "layerIds": [
+                      2
+                    ],
+                    "minDistance": 0,
+                    "name": "copperThickness1oz",
+                    "obj1": "081ae028e2ff35ad",
+                    "obj1Suffix": "(CHG_EN1): e85",
+                    "obj1Type": "Track",
+                    "obj2": "f3a1fac46a3e525e",
+                    "obj2Suffix": "(GND): e220",
+                    "obj2Type": "Via",
+                    "position": {
+                      "x": 68.9105,
+                      "y": 42.6
+                    }
+                  },
+                  "param": {
+                    "minDistance": "0mil",
+                    "obj1": "Object 1",
+                    "obj2": "object 2",
+                    "shouldBe": "\u003e= 6mil",
+                    "type": "ClearanceError"
+                  },
+                  "str": "{obj1} to {obj2} distance is {minDistance}, should be {shouldBe}"
+                },
+                "globalIndex": "err8",
+                "layer": "Bottom Layer",
+                "obj1": {
+                  "suffix": "(CHG_EN1): e85",
+                  "typeName": "Track"
+                },
+                "obj2": {
+                  "suffix": "(GND): e220",
+                  "typeName": "Via"
+                },
+                "objs": [
+                  "081ae028e2ff35ad",
+                  "f3a1fac46a3e525e"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Clearance Error|_|Track to Via",
+                "pos": {
+                  "x": 68.9105,
+                  "y": 42.6
+                },
+                "ruleName": "copperThickness1oz",
+                "ruleTypeName": "Safe Spacing",
+                "visible": true
+              },
+              {
+                "errorObjType": "Track to Via",
+                "errorType": "Clearance Error",
+                "explanation": {
+                  "errData": {
+                    "clearance": 0.59843,
+                    "errorType": "Safe Spacing",
+                    "globalIndex": "err10",
+                    "isInSameComponent": false,
+                    "layerIds": [
+                      2
+                    ],
+                    "minDistance": 0,
+                    "name": "copperThickness1oz",
+                    "obj1": "081ae028e2ff35ad",
+                    "obj1Suffix": "(CHG_EN1): e85",
+                    "obj1Type": "Track",
+                    "obj2": "3bdcce76bb0b6d8d",
+                    "obj2Suffix": "(GND): e221",
+                    "obj2Type": "Via",
+                    "position": {
+                      "x": 69.02000000000001,
+                      "y": 42.6
+                    }
+                  },
+                  "param": {
+                    "minDistance": "0mil",
+                    "obj1": "Object 1",
+                    "obj2": "object 2",
+                    "shouldBe": "\u003e= 6mil",
+                    "type": "ClearanceError"
+                  },
+                  "str": "{obj1} to {obj2} distance is {minDistance}, should be {shouldBe}"
+                },
+                "globalIndex": "err10",
+                "layer": "Bottom Layer",
+                "obj1": {
+                  "suffix": "(CHG_EN1): e85",
+                  "typeName": "Track"
+                },
+                "obj2": {
+                  "suffix": "(GND): e221",
+                  "typeName": "Via"
+                },
+                "objs": [
+                  "081ae028e2ff35ad",
+                  "3bdcce76bb0b6d8d"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Clearance Error|_|Track to Via",
+                "pos": {
+                  "x": 69.02000000000001,
+                  "y": 42.6
+                },
+                "ruleName": "copperThickness1oz",
+                "ruleTypeName": "Safe Spacing",
+                "visible": true
+              },
+              {
+                "errorObjType": "Track to Via",
+                "errorType": "Clearance Error",
+                "explanation": {
+                  "errData": {
+                    "clearance": 0.59843,
+                    "errorType": "Safe Spacing",
+                    "globalIndex": "err12",
+                    "isInSameComponent": false,
+                    "layerIds": [
+                      2
+                    ],
+                    "minDistance": 0,
+                    "name": "copperThickness1oz",
+                    "obj1": "ded4e89427388978",
+                    "obj1Suffix": "(VBAT): e724",
+                    "obj1Type": "Track",
+                    "obj2": "7aac27fbf0727bb5",
+                    "obj2Suffix": "(GND): e223",
+                    "obj2Type": "Via",
+                    "position": {
+                      "x": 66.396415,
+                      "y": 45
+                    }
+                  },
+                  "param": {
+                    "minDistance": "0mil",
+                    "obj1": "Object 1",
+                    "obj2": "object 2",
+                    "shouldBe": "\u003e= 6mil",
+                    "type": "ClearanceError"
+                  },
+                  "str": "{obj1} to {obj2} distance is {minDistance}, should be {shouldBe}"
+                },
+                "globalIndex": "err12",
+                "layer": "Bottom Layer",
+                "obj1": {
+                  "suffix": "(VBAT): e724",
+                  "typeName": "Track"
+                },
+                "obj2": {
+                  "suffix": "(GND): e223",
+                  "typeName": "Via"
+                },
+                "objs": [
+                  "ded4e89427388978",
+                  "7aac27fbf0727bb5"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Clearance Error|_|Track to Via",
+                "pos": {
+                  "x": 66.396415,
+                  "y": 45
+                },
+                "ruleName": "copperThickness1oz",
+                "ruleTypeName": "Safe Spacing",
+                "visible": true
+              },
+              {
+                "errorObjType": "Track to Via",
+                "errorType": "Clearance Error",
+                "explanation": {
+                  "errData": {
+                    "clearance": 0.59843,
+                    "errorType": "Safe Spacing",
+                    "globalIndex": "err14",
+                    "isInSameComponent": false,
+                    "layerIds": [
+                      2
+                    ],
+                    "minDistance": 0,
+                    "name": "copperThickness1oz",
+                    "obj1": "081ae028e2ff35ad",
+                    "obj1Suffix": "(CHG_EN1): e85",
+                    "obj1Type": "Track",
+                    "obj2": "7aac27fbf0727bb5",
+                    "obj2Suffix": "(GND): e223",
+                    "obj2Type": "Via",
+                    "position": {
+                      "x": 68.9105,
+                      "y": 45
+                    }
+                  },
+                  "param": {
+                    "minDistance": "0mil",
+                    "obj1": "Object 1",
+                    "obj2": "object 2",
+                    "shouldBe": "\u003e= 6mil",
+                    "type": "ClearanceError"
+                  },
+                  "str": "{obj1} to {obj2} distance is {minDistance}, should be {shouldBe}"
+                },
+                "globalIndex": "err14",
+                "layer": "Bottom Layer",
+                "obj1": {
+                  "suffix": "(CHG_EN1): e85",
+                  "typeName": "Track"
+                },
+                "obj2": {
+                  "suffix": "(GND): e223",
+                  "typeName": "Via"
+                },
+                "objs": [
+                  "081ae028e2ff35ad",
+                  "7aac27fbf0727bb5"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Clearance Error|_|Track to Via",
+                "pos": {
+                  "x": 68.9105,
+                  "y": 45
+                },
+                "ruleName": "copperThickness1oz",
+                "ruleTypeName": "Safe Spacing",
+                "visible": true
+              },
+              {
+                "errorObjType": "Track to Via",
+                "errorType": "Clearance Error",
+                "explanation": {
+                  "errData": {
+                    "clearance": 0.59843,
+                    "errorType": "Safe Spacing",
+                    "globalIndex": "err16",
+                    "isInSameComponent": false,
+                    "layerIds": [
+                      2
+                    ],
+                    "minDistance": 0,
+                    "name": "copperThickness1oz",
+                    "obj1": "081ae028e2ff35ad",
+                    "obj1Suffix": "(CHG_EN1): e85",
+                    "obj1Type": "Track",
+                    "obj2": "9e4a6ca56aef7e17",
+                    "obj2Suffix": "(GND): e224",
+                    "obj2Type": "Via",
+                    "position": {
+                      "x": 69.02000000000001,
+                      "y": 45
+                    }
+                  },
+                  "param": {
+                    "minDistance": "0mil",
+                    "obj1": "Object 1",
+                    "obj2": "object 2",
+                    "shouldBe": "\u003e= 6mil",
+                    "type": "ClearanceError"
+                  },
+                  "str": "{obj1} to {obj2} distance is {minDistance}, should be {shouldBe}"
+                },
+                "globalIndex": "err16",
+                "layer": "Bottom Layer",
+                "obj1": {
+                  "suffix": "(CHG_EN1): e85",
+                  "typeName": "Track"
+                },
+                "obj2": {
+                  "suffix": "(GND): e224",
+                  "typeName": "Via"
+                },
+                "objs": [
+                  "081ae028e2ff35ad",
+                  "9e4a6ca56aef7e17"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Clearance Error|_|Track to Via",
+                "pos": {
+                  "x": 69.02000000000001,
+                  "y": 45
+                },
+                "ruleName": "copperThickness1oz",
+                "ruleTypeName": "Safe Spacing",
+                "visible": true
+              },
+              {
+                "errorObjType": "Track to Via",
+                "errorType": "Clearance Error",
+                "explanation": {
+                  "errData": {
+                    "clearance": 0.59843,
+                    "errorType": "Safe Spacing",
+                    "globalIndex": "err18",
+                    "isInSameComponent": false,
+                    "layerIds": [
+                      2
+                    ],
+                    "minDistance": 0,
+                    "name": "copperThickness1oz",
+                    "obj1": "ded4e89427388978",
+                    "obj1Suffix": "(VBAT): e724",
+                    "obj1Type": "Track",
+                    "obj2": "8a57e590790db749",
+                    "obj2Suffix": "(GND): e226",
+                    "obj2Type": "Via",
+                    "position": {
+                      "x": 66.396415,
+                      "y": 47.4
+                    }
+                  },
+                  "param": {
+                    "minDistance": "0mil",
+                    "obj1": "Object 1",
+                    "obj2": "object 2",
+                    "shouldBe": "\u003e= 6mil",
+                    "type": "ClearanceError"
+                  },
+                  "str": "{obj1} to {obj2} distance is {minDistance}, should be {shouldBe}"
+                },
+                "globalIndex": "err18",
+                "layer": "Bottom Layer",
+                "obj1": {
+                  "suffix": "(VBAT): e724",
+                  "typeName": "Track"
+                },
+                "obj2": {
+                  "suffix": "(GND): e226",
+                  "typeName": "Via"
+                },
+                "objs": [
+                  "ded4e89427388978",
+                  "8a57e590790db749"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Clearance Error|_|Track to Via",
+                "pos": {
+                  "x": 66.396415,
+                  "y": 47.4
+                },
+                "ruleName": "copperThickness1oz",
+                "ruleTypeName": "Safe Spacing",
+                "visible": true
+              },
+              {
+                "errorObjType": "Track to Via",
+                "errorType": "Clearance Error",
+                "explanation": {
+                  "errData": {
+                    "clearance": 0.59843,
+                    "errorType": "Safe Spacing",
+                    "globalIndex": "err20",
+                    "isInSameComponent": false,
+                    "layerIds": [
+                      2
+                    ],
+                    "minDistance": 0,
+                    "name": "copperThickness1oz",
+                    "obj1": "081ae028e2ff35ad",
+                    "obj1Suffix": "(CHG_EN1): e85",
+                    "obj1Type": "Track",
+                    "obj2": "8a57e590790db749",
+                    "obj2Suffix": "(GND): e226",
+                    "obj2Type": "Via",
+                    "position": {
+                      "x": 68.9105,
+                      "y": 47.4
+                    }
+                  },
+                  "param": {
+                    "minDistance": "0mil",
+                    "obj1": "Object 1",
+                    "obj2": "object 2",
+                    "shouldBe": "\u003e= 6mil",
+                    "type": "ClearanceError"
+                  },
+                  "str": "{obj1} to {obj2} distance is {minDistance}, should be {shouldBe}"
+                },
+                "globalIndex": "err20",
+                "layer": "Bottom Layer",
+                "obj1": {
+                  "suffix": "(CHG_EN1): e85",
+                  "typeName": "Track"
+                },
+                "obj2": {
+                  "suffix": "(GND): e226",
+                  "typeName": "Via"
+                },
+                "objs": [
+                  "081ae028e2ff35ad",
+                  "8a57e590790db749"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Clearance Error|_|Track to Via",
+                "pos": {
+                  "x": 68.9105,
+                  "y": 47.4
+                },
+                "ruleName": "copperThickness1oz",
+                "ruleTypeName": "Safe Spacing",
+                "visible": true
+              },
+              {
+                "errorObjType": "Track to Via",
+                "errorType": "Clearance Error",
+                "explanation": {
+                  "errData": {
+                    "clearance": 0.59843,
+                    "errorType": "Safe Spacing",
+                    "globalIndex": "err22",
+                    "isInSameComponent": false,
+                    "layerIds": [
+                      2
+                    ],
+                    "minDistance": 0,
+                    "name": "copperThickness1oz",
+                    "obj1": "081ae028e2ff35ad",
+                    "obj1Suffix": "(CHG_EN1): e85",
+                    "obj1Type": "Track",
+                    "obj2": "a0ea72bfa7324bfc",
+                    "obj2Suffix": "(GND): e227",
+                    "obj2Type": "Via",
+                    "position": {
+                      "x": 69.02000000000001,
+                      "y": 47.4
+                    }
+                  },
+                  "param": {
+                    "minDistance": "0mil",
+                    "obj1": "Object 1",
+                    "obj2": "object 2",
+                    "shouldBe": "\u003e= 6mil",
+                    "type": "ClearanceError"
+                  },
+                  "str": "{obj1} to {obj2} distance is {minDistance}, should be {shouldBe}"
+                },
+                "globalIndex": "err22",
+                "layer": "Bottom Layer",
+                "obj1": {
+                  "suffix": "(CHG_EN1): e85",
+                  "typeName": "Track"
+                },
+                "obj2": {
+                  "suffix": "(GND): e227",
+                  "typeName": "Via"
+                },
+                "objs": [
+                  "081ae028e2ff35ad",
+                  "a0ea72bfa7324bfc"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Clearance Error|_|Track to Via",
+                "pos": {
+                  "x": 69.02000000000001,
+                  "y": 47.4
+                },
+                "ruleName": "copperThickness1oz",
+                "ruleTypeName": "Safe Spacing",
+                "visible": true
+              }
+            ],
+            "name": "Track to Via",
+            "title": [
+              "Track",
+              "to",
+              "Via",
+              "(11)"
+            ],
+            "visible": true
+          },
+          {
+            "count": 11,
+            "list": [
+              {
+                "errorObjType": "Hole to Track",
+                "errorType": "Clearance Error",
+                "explanation": {
+                  "errData": {
+                    "clearance": 0.6929000000000001,
+                    "errorType": "Safe Spacing",
+                    "globalIndex": "err3",
+                    "isInSameComponent": false,
+                    "layerIds": [
+                      1,
+                      12
+                    ],
+                    "minDistance": 0,
+                    "name": "copperThickness1oz",
+                    "obj1": "3ad5f716d7c107c9",
+                    "obj1Suffix": "(CAM_PWDN): e459",
+                    "obj1Type": "Track",
+                    "obj2": "3d03bec0754c570a",
+                    "obj2Suffix": "(GND): e217",
+                    "obj2Type": "Hole",
+                    "position": {
+                      "x": 43,
+                      "y": 247.61437
+                    }
+                  },
+                  "param": {
+                    "minDistance": "0mil",
+                    "obj1": "Object 1",
+                    "obj2": "object 2",
+                    "shouldBe": "\u003e= 6.9mil",
+                    "type": "ClearanceError"
+                  },
+                  "str": "{obj1} to {obj2} distance is {minDistance}, should be {shouldBe}"
+                },
+                "globalIndex": "err3",
+                "layer": "Top Layer",
+                "obj1": {
+                  "suffix": "(CAM_PWDN): e459",
+                  "typeName": "Track"
+                },
+                "obj2": {
+                  "suffix": "(GND): e217",
+                  "typeName": "Hole"
+                },
+                "objs": [
+                  "3ad5f716d7c107c9",
+                  "3d03bec0754c570a"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Clearance Error|_|Hole to Track",
+                "pos": {
+                  "x": 43,
+                  "y": 247.61437
+                },
+                "ruleName": "copperThickness1oz",
+                "ruleTypeName": "Safe Spacing",
+                "visible": true
+              },
+              {
+                "errorObjType": "Hole to Track",
+                "errorType": "Clearance Error",
+                "explanation": {
+                  "errData": {
+                    "clearance": 0.6929000000000001,
+                    "errorType": "Safe Spacing",
+                    "globalIndex": "err5",
+                    "isInSameComponent": false,
+                    "layerIds": [
+                      2,
+                      12
+                    ],
+                    "minDistance": 0.6500000000000057,
+                    "name": "copperThickness1oz",
+                    "obj1": "105862de90732bd1",
+                    "obj1Suffix": "(CAM_VSYNC): e70",
+                    "obj1Type": "Track",
+                    "obj2": "77c9f3ba1c061c60",
+                    "obj2Suffix": "(GND): e218",
+                    "obj2Type": "Hole",
+                    "position": {
+                      "x": 68.7,
+                      "y": 249.175
+                    }
+                  },
+                  "param": {
+                    "minDistance": "6.5mil",
+                    "obj1": "Object 1",
+                    "obj2": "object 2",
+                    "shouldBe": "\u003e= 6.9mil",
+                    "type": "ClearanceError"
+                  },
+                  "str": "{obj1} to {obj2} distance is {minDistance}, should be {shouldBe}"
+                },
+                "globalIndex": "err5",
+                "layer": "Bottom Layer",
+                "obj1": {
+                  "suffix": "(CAM_VSYNC): e70",
+                  "typeName": "Track"
+                },
+                "obj2": {
+                  "suffix": "(GND): e218",
+                  "typeName": "Hole"
+                },
+                "objs": [
+                  "105862de90732bd1",
+                  "77c9f3ba1c061c60"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Clearance Error|_|Hole to Track",
+                "pos": {
+                  "x": 68.7,
+                  "y": 249.175
+                },
+                "ruleName": "copperThickness1oz",
+                "ruleTypeName": "Safe Spacing",
+                "visible": true
+              },
+              {
+                "errorObjType": "Hole to Track",
+                "errorType": "Clearance Error",
+                "explanation": {
+                  "errData": {
+                    "clearance": 0.6929000000000001,
+                    "errorType": "Safe Spacing",
+                    "globalIndex": "err7",
+                    "isInSameComponent": false,
+                    "layerIds": [
+                      2,
+                      12
+                    ],
+                    "minDistance": 0.11066999999998928,
+                    "name": "copperThickness1oz",
+                    "obj1": "ded4e89427388978",
+                    "obj1Suffix": "(VBAT): e724",
+                    "obj1Type": "Track",
+                    "obj2": "f3a1fac46a3e525e",
+                    "obj2Suffix": "(GND): e220",
+                    "obj2Type": "Hole",
+                    "position": {
+                      "x": 66.696665,
+                      "y": 42.6
+                    }
+                  },
+                  "param": {
+                    "minDistance": "1.1mil",
+                    "obj1": "Object 1",
+                    "obj2": "object 2",
+                    "shouldBe": "\u003e= 6.9mil",
+                    "type": "ClearanceError"
+                  },
+                  "str": "{obj1} to {obj2} distance is {minDistance}, should be {shouldBe}"
+                },
+                "globalIndex": "err7",
+                "layer": "Bottom Layer",
+                "obj1": {
+                  "suffix": "(VBAT): e724",
+                  "typeName": "Track"
+                },
+                "obj2": {
+                  "suffix": "(GND): e220",
+                  "typeName": "Hole"
+                },
+                "objs": [
+                  "ded4e89427388978",
+                  "f3a1fac46a3e525e"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Clearance Error|_|Hole to Track",
+                "pos": {
+                  "x": 66.696665,
+                  "y": 42.6
+                },
+                "ruleName": "copperThickness1oz",
+                "ruleTypeName": "Safe Spacing",
+                "visible": true
+              },
+              {
+                "errorObjType": "Hole to Track",
+                "errorType": "Clearance Error",
+                "explanation": {
+                  "errData": {
+                    "clearance": 0.6929000000000001,
+                    "errorType": "Safe Spacing",
+                    "globalIndex": "err9",
+                    "isInSameComponent": false,
+                    "layerIds": [
+                      2,
+                      12
+                    ],
+                    "minDistance": 0.3195000000000192,
+                    "name": "copperThickness1oz",
+                    "obj1": "081ae028e2ff35ad",
+                    "obj1Suffix": "(CHG_EN1): e85",
+                    "obj1Type": "Track",
+                    "obj2": "f3a1fac46a3e525e",
+                    "obj2Suffix": "(GND): e220",
+                    "obj2Type": "Hole",
+                    "position": {
+                      "x": 68.61025000000001,
+                      "y": 42.6
+                    }
+                  },
+                  "param": {
+                    "minDistance": "3.2mil",
+                    "obj1": "Object 1",
+                    "obj2": "object 2",
+                    "shouldBe": "\u003e= 6.9mil",
+                    "type": "ClearanceError"
+                  },
+                  "str": "{obj1} to {obj2} distance is {minDistance}, should be {shouldBe}"
+                },
+                "globalIndex": "err9",
+                "layer": "Bottom Layer",
+                "obj1": {
+                  "suffix": "(CHG_EN1): e85",
+                  "typeName": "Track"
+                },
+                "obj2": {
+                  "suffix": "(GND): e220",
+                  "typeName": "Hole"
+                },
+                "objs": [
+                  "081ae028e2ff35ad",
+                  "f3a1fac46a3e525e"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Clearance Error|_|Hole to Track",
+                "pos": {
+                  "x": 68.61025000000001,
+                  "y": 42.6
+                },
+                "ruleName": "copperThickness1oz",
+                "ruleTypeName": "Safe Spacing",
+                "visible": true
+              },
+              {
+                "errorObjType": "Hole to Track",
+                "errorType": "Clearance Error",
+                "explanation": {
+                  "errData": {
+                    "clearance": 0.6929000000000001,
+                    "errorType": "Safe Spacing",
+                    "globalIndex": "err11",
+                    "isInSameComponent": false,
+                    "layerIds": [
+                      2,
+                      12
+                    ],
+                    "minDistance": 0,
+                    "name": "copperThickness1oz",
+                    "obj1": "081ae028e2ff35ad",
+                    "obj1Suffix": "(CHG_EN1): e85",
+                    "obj1Type": "Track",
+                    "obj2": "3bdcce76bb0b6d8d",
+                    "obj2Suffix": "(GND): e221",
+                    "obj2Type": "Hole",
+                    "position": {
+                      "x": 69.20975000000001,
+                      "y": 42.6
+                    }
+                  },
+                  "param": {
+                    "minDistance": "0mil",
+                    "obj1": "Object 1",
+                    "obj2": "object 2",
+                    "shouldBe": "\u003e= 6.9mil",
+                    "type": "ClearanceError"
+                  },
+                  "str": "{obj1} to {obj2} distance is {minDistance}, should be {shouldBe}"
+                },
+                "globalIndex": "err11",
+                "layer": "Bottom Layer",
+                "obj1": {
+                  "suffix": "(CHG_EN1): e85",
+                  "typeName": "Track"
+                },
+                "obj2": {
+                  "suffix": "(GND): e221",
+                  "typeName": "Hole"
+                },
+                "objs": [
+                  "081ae028e2ff35ad",
+                  "3bdcce76bb0b6d8d"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Clearance Error|_|Hole to Track",
+                "pos": {
+                  "x": 69.20975000000001,
+                  "y": 42.6
+                },
+                "ruleName": "copperThickness1oz",
+                "ruleTypeName": "Safe Spacing",
+                "visible": true
+              },
+              {
+                "errorObjType": "Hole to Track",
+                "errorType": "Clearance Error",
+                "explanation": {
+                  "errData": {
+                    "clearance": 0.6929000000000001,
+                    "errorType": "Safe Spacing",
+                    "globalIndex": "err13",
+                    "isInSameComponent": false,
+                    "layerIds": [
+                      2,
+                      12
+                    ],
+                    "minDistance": 0.11066999999998928,
+                    "name": "copperThickness1oz",
+                    "obj1": "ded4e89427388978",
+                    "obj1Suffix": "(VBAT): e724",
+                    "obj1Type": "Track",
+                    "obj2": "7aac27fbf0727bb5",
+                    "obj2Suffix": "(GND): e223",
+                    "obj2Type": "Hole",
+                    "position": {
+                      "x": 66.696665,
+                      "y": 45
+                    }
+                  },
+                  "param": {
+                    "minDistance": "1.1mil",
+                    "obj1": "Object 1",
+                    "obj2": "object 2",
+                    "shouldBe": "\u003e= 6.9mil",
+                    "type": "ClearanceError"
+                  },
+                  "str": "{obj1} to {obj2} distance is {minDistance}, should be {shouldBe}"
+                },
+                "globalIndex": "err13",
+                "layer": "Bottom Layer",
+                "obj1": {
+                  "suffix": "(VBAT): e724",
+                  "typeName": "Track"
+                },
+                "obj2": {
+                  "suffix": "(GND): e223",
+                  "typeName": "Hole"
+                },
+                "objs": [
+                  "ded4e89427388978",
+                  "7aac27fbf0727bb5"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Clearance Error|_|Hole to Track",
+                "pos": {
+                  "x": 66.696665,
+                  "y": 45
+                },
+                "ruleName": "copperThickness1oz",
+                "ruleTypeName": "Safe Spacing",
+                "visible": true
+              },
+              {
+                "errorObjType": "Hole to Track",
+                "errorType": "Clearance Error",
+                "explanation": {
+                  "errData": {
+                    "clearance": 0.6929000000000001,
+                    "errorType": "Safe Spacing",
+                    "globalIndex": "err15",
+                    "isInSameComponent": false,
+                    "layerIds": [
+                      2,
+                      12
+                    ],
+                    "minDistance": 0.3195000000000192,
+                    "name": "copperThickness1oz",
+                    "obj1": "081ae028e2ff35ad",
+                    "obj1Suffix": "(CHG_EN1): e85",
+                    "obj1Type": "Track",
+                    "obj2": "7aac27fbf0727bb5",
+                    "obj2Suffix": "(GND): e223",
+                    "obj2Type": "Hole",
+                    "position": {
+                      "x": 68.61025000000001,
+                      "y": 45
+                    }
+                  },
+                  "param": {
+                    "minDistance": "3.2mil",
+                    "obj1": "Object 1",
+                    "obj2": "object 2",
+                    "shouldBe": "\u003e= 6.9mil",
+                    "type": "ClearanceError"
+                  },
+                  "str": "{obj1} to {obj2} distance is {minDistance}, should be {shouldBe}"
+                },
+                "globalIndex": "err15",
+                "layer": "Bottom Layer",
+                "obj1": {
+                  "suffix": "(CHG_EN1): e85",
+                  "typeName": "Track"
+                },
+                "obj2": {
+                  "suffix": "(GND): e223",
+                  "typeName": "Hole"
+                },
+                "objs": [
+                  "081ae028e2ff35ad",
+                  "7aac27fbf0727bb5"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Clearance Error|_|Hole to Track",
+                "pos": {
+                  "x": 68.61025000000001,
+                  "y": 45
+                },
+                "ruleName": "copperThickness1oz",
+                "ruleTypeName": "Safe Spacing",
+                "visible": true
+              },
+              {
+                "errorObjType": "Hole to Track",
+                "errorType": "Clearance Error",
+                "explanation": {
+                  "errData": {
+                    "clearance": 0.6929000000000001,
+                    "errorType": "Safe Spacing",
+                    "globalIndex": "err17",
+                    "isInSameComponent": false,
+                    "layerIds": [
+                      2,
+                      12
+                    ],
+                    "minDistance": 0,
+                    "name": "copperThickness1oz",
+                    "obj1": "081ae028e2ff35ad",
+                    "obj1Suffix": "(CHG_EN1): e85",
+                    "obj1Type": "Track",
+                    "obj2": "9e4a6ca56aef7e17",
+                    "obj2Suffix": "(GND): e224",
+                    "obj2Type": "Hole",
+                    "position": {
+                      "x": 69.20975000000001,
+                      "y": 45
+                    }
+                  },
+                  "param": {
+                    "minDistance": "0mil",
+                    "obj1": "Object 1",
+                    "obj2": "object 2",
+                    "shouldBe": "\u003e= 6.9mil",
+                    "type": "ClearanceError"
+                  },
+                  "str": "{obj1} to {obj2} distance is {minDistance}, should be {shouldBe}"
+                },
+                "globalIndex": "err17",
+                "layer": "Bottom Layer",
+                "obj1": {
+                  "suffix": "(CHG_EN1): e85",
+                  "typeName": "Track"
+                },
+                "obj2": {
+                  "suffix": "(GND): e224",
+                  "typeName": "Hole"
+                },
+                "objs": [
+                  "081ae028e2ff35ad",
+                  "9e4a6ca56aef7e17"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Clearance Error|_|Hole to Track",
+                "pos": {
+                  "x": 69.20975000000001,
+                  "y": 45
+                },
+                "ruleName": "copperThickness1oz",
+                "ruleTypeName": "Safe Spacing",
+                "visible": true
+              },
+              {
+                "errorObjType": "Hole to Track",
+                "errorType": "Clearance Error",
+                "explanation": {
+                  "errData": {
+                    "clearance": 0.6929000000000001,
+                    "errorType": "Safe Spacing",
+                    "globalIndex": "err19",
+                    "isInSameComponent": false,
+                    "layerIds": [
+                      2,
+                      12
+                    ],
+                    "minDistance": 0.11066999999998928,
+                    "name": "copperThickness1oz",
+                    "obj1": "ded4e89427388978",
+                    "obj1Suffix": "(VBAT): e724",
+                    "obj1Type": "Track",
+                    "obj2": "8a57e590790db749",
+                    "obj2Suffix": "(GND): e226",
+                    "obj2Type": "Hole",
+                    "position": {
+                      "x": 66.696665,
+                      "y": 47.4
+                    }
+                  },
+                  "param": {
+                    "minDistance": "1.1mil",
+                    "obj1": "Object 1",
+                    "obj2": "object 2",
+                    "shouldBe": "\u003e= 6.9mil",
+                    "type": "ClearanceError"
+                  },
+                  "str": "{obj1} to {obj2} distance is {minDistance}, should be {shouldBe}"
+                },
+                "globalIndex": "err19",
+                "layer": "Bottom Layer",
+                "obj1": {
+                  "suffix": "(VBAT): e724",
+                  "typeName": "Track"
+                },
+                "obj2": {
+                  "suffix": "(GND): e226",
+                  "typeName": "Hole"
+                },
+                "objs": [
+                  "ded4e89427388978",
+                  "8a57e590790db749"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Clearance Error|_|Hole to Track",
+                "pos": {
+                  "x": 66.696665,
+                  "y": 47.4
+                },
+                "ruleName": "copperThickness1oz",
+                "ruleTypeName": "Safe Spacing",
+                "visible": true
+              },
+              {
+                "errorObjType": "Hole to Track",
+                "errorType": "Clearance Error",
+                "explanation": {
+                  "errData": {
+                    "clearance": 0.6929000000000001,
+                    "errorType": "Safe Spacing",
+                    "globalIndex": "err21",
+                    "isInSameComponent": false,
+                    "layerIds": [
+                      2,
+                      12
+                    ],
+                    "minDistance": 0.3195000000000192,
+                    "name": "copperThickness1oz",
+                    "obj1": "081ae028e2ff35ad",
+                    "obj1Suffix": "(CHG_EN1): e85",
+                    "obj1Type": "Track",
+                    "obj2": "8a57e590790db749",
+                    "obj2Suffix": "(GND): e226",
+                    "obj2Type": "Hole",
+                    "position": {
+                      "x": 68.61025000000001,
+                      "y": 47.4
+                    }
+                  },
+                  "param": {
+                    "minDistance": "3.2mil",
+                    "obj1": "Object 1",
+                    "obj2": "object 2",
+                    "shouldBe": "\u003e= 6.9mil",
+                    "type": "ClearanceError"
+                  },
+                  "str": "{obj1} to {obj2} distance is {minDistance}, should be {shouldBe}"
+                },
+                "globalIndex": "err21",
+                "layer": "Bottom Layer",
+                "obj1": {
+                  "suffix": "(CHG_EN1): e85",
+                  "typeName": "Track"
+                },
+                "obj2": {
+                  "suffix": "(GND): e226",
+                  "typeName": "Hole"
+                },
+                "objs": [
+                  "081ae028e2ff35ad",
+                  "8a57e590790db749"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Clearance Error|_|Hole to Track",
+                "pos": {
+                  "x": 68.61025000000001,
+                  "y": 47.4
+                },
+                "ruleName": "copperThickness1oz",
+                "ruleTypeName": "Safe Spacing",
+                "visible": true
+              },
+              {
+                "errorObjType": "Hole to Track",
+                "errorType": "Clearance Error",
+                "explanation": {
+                  "errData": {
+                    "clearance": 0.6929000000000001,
+                    "errorType": "Safe Spacing",
+                    "globalIndex": "err23",
+                    "isInSameComponent": false,
+                    "layerIds": [
+                      2,
+                      12
+                    ],
+                    "minDistance": 0,
+                    "name": "copperThickness1oz",
+                    "obj1": "081ae028e2ff35ad",
+                    "obj1Suffix": "(CHG_EN1): e85",
+                    "obj1Type": "Track",
+                    "obj2": "a0ea72bfa7324bfc",
+                    "obj2Suffix": "(GND): e227",
+                    "obj2Type": "Hole",
+                    "position": {
+                      "x": 69.20975000000001,
+                      "y": 47.4
+                    }
+                  },
+                  "param": {
+                    "minDistance": "0mil",
+                    "obj1": "Object 1",
+                    "obj2": "object 2",
+                    "shouldBe": "\u003e= 6.9mil",
+                    "type": "ClearanceError"
+                  },
+                  "str": "{obj1} to {obj2} distance is {minDistance}, should be {shouldBe}"
+                },
+                "globalIndex": "err23",
+                "layer": "Bottom Layer",
+                "obj1": {
+                  "suffix": "(CHG_EN1): e85",
+                  "typeName": "Track"
+                },
+                "obj2": {
+                  "suffix": "(GND): e227",
+                  "typeName": "Hole"
+                },
+                "objs": [
+                  "081ae028e2ff35ad",
+                  "a0ea72bfa7324bfc"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Clearance Error|_|Hole to Track",
+                "pos": {
+                  "x": 69.20975000000001,
+                  "y": 47.4
+                },
+                "ruleName": "copperThickness1oz",
+                "ruleTypeName": "Safe Spacing",
+                "visible": true
+              }
+            ],
+            "name": "Hole to Track",
+            "title": [
+              "Hole",
+              "to",
+              "Track",
+              "(11)"
+            ],
+            "visible": true
+          },
+          {
+            "count": 1,
+            "list": [
+              {
+                "errorObjType": "SMD Pad to Via",
+                "errorType": "Clearance Error",
+                "explanation": {
+                  "errData": {
+                    "clearance": 0.59843,
+                    "errorType": "Safe Spacing",
+                    "globalIndex": "err24",
+                    "isInSameComponent": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "minDistance": 0,
+                    "name": "copperThickness1oz",
+                    "obj1": "0ab2a49a94a5ee76e37",
+                    "obj1Suffix": "(VBUS): e23e37",
+                    "obj1Type": "SMD Pad",
+                    "obj2": "b1f496798b1eb254",
+                    "obj2Suffix": "(GND): e216",
+                    "obj2Type": "Via",
+                    "position": {
+                      "x": 53.2,
+                      "y": 27
+                    }
+                  },
+                  "param": {
+                    "minDistance": "0mil",
+                    "obj1": "Object 1",
+                    "obj2": "object 2",
+                    "shouldBe": "\u003e= 6mil",
+                    "type": "ClearanceError"
+                  },
+                  "str": "{obj1} to {obj2} distance is {minDistance}, should be {shouldBe}"
+                },
+                "globalIndex": "err24",
+                "layer": "Top Layer",
+                "obj1": {
+                  "suffix": "(VBUS): e23e37",
+                  "typeName": "SMD Pad"
+                },
+                "obj2": {
+                  "suffix": "(GND): e216",
+                  "typeName": "Via"
+                },
+                "objs": [
+                  "0ab2a49a94a5ee76e37",
+                  "b1f496798b1eb254"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Clearance Error|_|SMD Pad to Via",
+                "pos": {
+                  "x": 53.2,
+                  "y": 27
+                },
+                "ruleName": "copperThickness1oz",
+                "ruleTypeName": "Safe Spacing",
+                "visible": true
+              }
+            ],
+            "name": "SMD Pad to Via",
+            "title": [
+              "SMD Pad",
+              "to",
+              "Via",
+              "(1)"
+            ],
+            "visible": true
+          },
+          {
+            "count": 1,
+            "list": [
+              {
+                "errorObjType": "Hole to SMD Pad",
+                "errorType": "Clearance Error",
+                "explanation": {
+                  "errData": {
+                    "clearance": 0.6929000000000001,
+                    "errorType": "Safe Spacing",
+                    "globalIndex": "err25",
+                    "isInSameComponent": false,
+                    "layerIds": [
+                      1,
+                      12
+                    ],
+                    "minDistance": 0,
+                    "name": "copperThickness1oz",
+                    "obj1": "0ab2a49a94a5ee76e37",
+                    "obj1Suffix": "(VBUS): e23e37",
+                    "obj1Type": "SMD Pad",
+                    "obj2": "b1f496798b1eb254",
+                    "obj2Suffix": "(GND): e216",
+                    "obj2Type": "Hole",
+                    "position": {
+                      "x": 52.57176252937737,
+                      "y": 27.1819
+                    }
+                  },
+                  "param": {
+                    "minDistance": "0mil",
+                    "obj1": "Object 1",
+                    "obj2": "object 2",
+                    "shouldBe": "\u003e= 6.9mil",
+                    "type": "ClearanceError"
+                  },
+                  "str": "{obj1} to {obj2} distance is {minDistance}, should be {shouldBe}"
+                },
+                "globalIndex": "err25",
+                "layer": "Top Layer",
+                "obj1": {
+                  "suffix": "(VBUS): e23e37",
+                  "typeName": "SMD Pad"
+                },
+                "obj2": {
+                  "suffix": "(GND): e216",
+                  "typeName": "Hole"
+                },
+                "objs": [
+                  "0ab2a49a94a5ee76e37",
+                  "b1f496798b1eb254"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Clearance Error|_|Hole to SMD Pad",
+                "pos": {
+                  "x": 52.57176252937737,
+                  "y": 27.1819
+                },
+                "ruleName": "copperThickness1oz",
+                "ruleTypeName": "Safe Spacing",
+                "visible": true
+              }
+            ],
+            "name": "Hole to SMD Pad",
+            "title": [
+              "Hole",
+              "to",
+              "SMD Pad",
+              "(1)"
+            ],
+            "visible": true
+          },
+          {
+            "count": 1,
+            "list": [
+              {
+                "errorObjType": "Slot Region to Track",
+                "errorType": "Clearance Error",
+                "explanation": {
+                  "errData": {
+                    "clearance": 1.1811,
+                    "errorType": "Safe Spacing",
+                    "globalIndex": "err26",
+                    "isInSameComponent": false,
+                    "layerIds": [
+                      1,
+                      12
+                    ],
+                    "minDistance": 0.6627252683064027,
+                    "name": "copperThickness1oz",
+                    "obj1": "7dde48800f0a89a2",
+                    "obj1Suffix": "(GND): e986",
+                    "obj1Type": "Track",
+                    "obj2": "0ab2a49a94a5ee76e56",
+                    "obj2Suffix": ": e23e56",
+                    "obj2Type": "Slot Region",
+                    "position": {
+                      "x": 51.88361840655753,
+                      "y": 25.61541623628407
+                    }
+                  },
+                  "param": {
+                    "minDistance": "6.6mil",
+                    "obj1": "Object 1",
+                    "obj2": "object 2",
+                    "shouldBe": "\u003e= 11.8mil",
+                    "type": "ClearanceError"
+                  },
+                  "str": "{obj1} to {obj2} distance is {minDistance}, should be {shouldBe}"
+                },
+                "globalIndex": "err26",
+                "layer": "Top Layer",
+                "obj1": {
+                  "suffix": "(GND): e986",
+                  "typeName": "Track"
+                },
+                "obj2": {
+                  "suffix": ": e23e56",
+                  "typeName": "Slot Region"
+                },
+                "objs": [
+                  "7dde48800f0a89a2",
+                  "0ab2a49a94a5ee76e56"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Clearance Error|_|Slot Region to Track",
+                "pos": {
+                  "x": 51.88361840655753,
+                  "y": 25.61541623628407
+                },
+                "ruleName": "copperThickness1oz",
+                "ruleTypeName": "Safe Spacing",
+                "visible": true
+              }
+            ],
+            "name": "Slot Region to Track",
+            "title": [
+              "Slot Region",
+              "to",
+              "Track",
+              "(1)"
+            ],
+            "visible": true
+          },
+          {
+            "count": 1,
+            "list": [
+              {
+                "errorObjType": "Slot Region to Via",
+                "errorType": "Clearance Error",
+                "explanation": {
+                  "errData": {
+                    "clearance": 0.6,
+                    "errorType": "Safe Spacing",
+                    "globalIndex": "err27",
+                    "isInSameComponent": false,
+                    "layerIds": [
+                      1,
+                      12
+                    ],
+                    "minDistance": 0.2808825788310511,
+                    "name": "copperThickness1oz",
+                    "obj1": "b1f496798b1eb254",
+                    "obj1Suffix": "(GND): e216",
+                    "obj1Type": "Via",
+                    "obj2": "0ab2a49a94a5ee76e56",
+                    "obj2Suffix": ": e23e56",
+                    "obj2Type": "Slot Region",
+                    "position": {
+                      "x": 52.71353032968979,
+                      "y": 25.86525010729997
+                    }
+                  },
+                  "param": {
+                    "minDistance": "2.8mil",
+                    "obj1": "Object 1",
+                    "obj2": "object 2",
+                    "shouldBe": "\u003e= 6mil",
+                    "type": "ClearanceError"
+                  },
+                  "str": "{obj1} to {obj2} distance is {minDistance}, should be {shouldBe}"
+                },
+                "globalIndex": "err27",
+                "layer": "Top Layer",
+                "obj1": {
+                  "suffix": "(GND): e216",
+                  "typeName": "Via"
+                },
+                "obj2": {
+                  "suffix": ": e23e56",
+                  "typeName": "Slot Region"
+                },
+                "objs": [
+                  "b1f496798b1eb254",
+                  "0ab2a49a94a5ee76e56"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Clearance Error|_|Slot Region to Via",
+                "pos": {
+                  "x": 52.71353032968979,
+                  "y": 25.86525010729997
+                },
+                "ruleName": "copperThickness1oz",
+                "ruleTypeName": "Safe Spacing",
+                "visible": true
+              }
+            ],
+            "name": "Slot Region to Via",
+            "title": [
+              "Slot Region",
+              "to",
+              "Via",
+              "(1)"
+            ],
+            "visible": true
+          }
+        ],
+        "name": "Clearance Error",
+        "title": [
+          "Clearance Error",
+          "(28)"
+        ],
+        "visible": true
+      },
+      {
+        "count": 51,
+        "list": [
+          {
+            "count": 4,
+            "doNotTranslate": true,
+            "list": [
+              {
+                "errorObjType": "SMD Pad",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err28",
+                    "isFree": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "name": "Common",
+                    "net": "GND",
+                    "obj1": "4ccffd14158312bee25",
+                    "obj1Suffix": "(GND): U3_5",
+                    "obj1Type": "SMD Pad",
+                    "position": {
+                      "x": 67.0465,
+                      "y": 39.0945
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err28",
+                "isFree": false,
+                "net": "GND",
+                "obj1": {
+                  "suffix": "(GND): U3_5",
+                  "typeName": "SMD Pad"
+                },
+                "objs": [
+                  "4ccffd14158312bee25"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|GND",
+                "pos": {
+                  "x": 67.0465,
+                  "y": 39.0945
+                },
+                "ruleName": "Common",
+                "visible": true
+              },
+              {
+                "errorObjType": "Via",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err29",
+                    "isFree": false,
+                    "layerIds": [
+                      12
+                    ],
+                    "name": "Common",
+                    "net": "GND",
+                    "obj1": "f3a1fac46a3e525e",
+                    "obj1Suffix": "(GND): e220",
+                    "obj1Type": "Via",
+                    "position": {
+                      "x": 67.6,
+                      "y": 42.6
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err29",
+                "isFree": false,
+                "net": "GND",
+                "obj1": {
+                  "suffix": "(GND): e220",
+                  "typeName": "Via"
+                },
+                "objs": [
+                  "f3a1fac46a3e525e"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|GND",
+                "pos": {
+                  "x": 67.6,
+                  "y": 42.6
+                },
+                "ruleName": "Common",
+                "visible": true
+              },
+              {
+                "errorObjType": "SMD Pad",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err30",
+                    "isFree": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "name": "Common",
+                    "net": "GND",
+                    "obj1": "9c436b37f43528cbe54",
+                    "obj1Suffix": "(GND): J3_2",
+                    "obj1Type": "SMD Pad",
+                    "position": {
+                      "x": 68.67099999999999,
+                      "y": 243.749
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err30",
+                "isFree": false,
+                "net": "GND",
+                "obj1": {
+                  "suffix": "(GND): J3_2",
+                  "typeName": "SMD Pad"
+                },
+                "objs": [
+                  "9c436b37f43528cbe54"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|GND",
+                "pos": {
+                  "x": 68.67099999999999,
+                  "y": 243.749
+                },
+                "ruleName": "Common",
+                "visible": true
+              },
+              {
+                "errorObjType": "Via",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err31",
+                    "isFree": false,
+                    "layerIds": [
+                      12
+                    ],
+                    "name": "Common",
+                    "net": "GND",
+                    "obj1": "77c9f3ba1c061c60",
+                    "obj1Suffix": "(GND): e218",
+                    "obj1Type": "Via",
+                    "position": {
+                      "x": 68.7,
+                      "y": 248
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err31",
+                "isFree": false,
+                "net": "GND",
+                "obj1": {
+                  "suffix": "(GND): e218",
+                  "typeName": "Via"
+                },
+                "objs": [
+                  "77c9f3ba1c061c60"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|GND",
+                "pos": {
+                  "x": 68.7,
+                  "y": 248
+                },
+                "ruleName": "Common",
+                "visible": true
+              }
+            ],
+            "name": "GND",
+            "title": "GND (4)",
+            "visible": true
+          },
+          {
+            "count": 2,
+            "doNotTranslate": true,
+            "list": [
+              {
+                "errorObjType": "SMD Pad",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err32",
+                    "isFree": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "name": "Common",
+                    "net": "CAM_PWR_EN",
+                    "obj1": "6cff1019b03ce035e4",
+                    "obj1Suffix": "(CAM_PWR_EN): TP11_1",
+                    "obj1Type": "SMD Pad",
+                    "position": {
+                      "x": 91.5,
+                      "y": 97
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err32",
+                "isFree": false,
+                "net": "CAM_PWR_EN",
+                "obj1": {
+                  "suffix": "(CAM_PWR_EN): TP11_1",
+                  "typeName": "SMD Pad"
+                },
+                "objs": [
+                  "6cff1019b03ce035e4"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|CAM_PWR_EN",
+                "pos": {
+                  "x": 91.5,
+                  "y": 97
+                },
+                "ruleName": "Common",
+                "visible": true
+              },
+              {
+                "errorObjType": "SMD Pad",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err33",
+                    "isFree": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "name": "Common",
+                    "net": "CAM_PWR_EN",
+                    "obj1": "d4ad0694edff5a0ee68",
+                    "obj1Suffix": "(CAM_PWR_EN): U1_15",
+                    "obj1Type": "SMD Pad",
+                    "position": {
+                      "x": 128.00000000000003,
+                      "y": 114.9805
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err33",
+                "isFree": false,
+                "net": "CAM_PWR_EN",
+                "obj1": {
+                  "suffix": "(CAM_PWR_EN): U1_15",
+                  "typeName": "SMD Pad"
+                },
+                "objs": [
+                  "d4ad0694edff5a0ee68"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|CAM_PWR_EN",
+                "pos": {
+                  "x": 128.00000000000003,
+                  "y": 114.9805
+                },
+                "ruleName": "Common",
+                "visible": true
+              }
+            ],
+            "name": "CAM_PWR_EN",
+            "title": "CAM_PWR_EN (2)",
+            "visible": true
+          },
+          {
+            "count": 2,
+            "doNotTranslate": true,
+            "list": [
+              {
+                "errorObjType": "Track",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err34",
+                    "isFree": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "name": "Common",
+                    "net": "CAM_SIOC",
+                    "obj1": "8afc1f7ef3980404",
+                    "obj1Suffix": "(CAM_SIOC): e422",
+                    "obj1Type": "Track",
+                    "position": {
+                      "x": 66.38283,
+                      "y": 231.19441
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err34",
+                "isFree": false,
+                "net": "CAM_SIOC",
+                "obj1": {
+                  "suffix": "(CAM_SIOC): e422",
+                  "typeName": "Track"
+                },
+                "objs": [
+                  "8afc1f7ef3980404"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|CAM_SIOC",
+                "pos": {
+                  "x": 66.38283,
+                  "y": 231.19441
+                },
+                "ruleName": "Common",
+                "visible": true
+              },
+              {
+                "errorObjType": "Track",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err35",
+                    "isFree": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "name": "Common",
+                    "net": "CAM_SIOC",
+                    "obj1": "b76f3148f298a271",
+                    "obj1Suffix": "(CAM_SIOC): e67",
+                    "obj1Type": "Track",
+                    "position": {
+                      "x": 62.77,
+                      "y": 241.84
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err35",
+                "isFree": false,
+                "net": "CAM_SIOC",
+                "obj1": {
+                  "suffix": "(CAM_SIOC): e67",
+                  "typeName": "Track"
+                },
+                "objs": [
+                  "b76f3148f298a271"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|CAM_SIOC",
+                "pos": {
+                  "x": 62.77,
+                  "y": 241.84
+                },
+                "ruleName": "Common",
+                "visible": true
+              }
+            ],
+            "name": "CAM_SIOC",
+            "title": "CAM_SIOC (2)",
+            "visible": true
+          },
+          {
+            "count": 5,
+            "doNotTranslate": true,
+            "list": [
+              {
+                "errorObjType": "SMD Pad",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err36",
+                    "isFree": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "name": "Common",
+                    "net": "U0TXD",
+                    "obj1": "945b461277173985e12",
+                    "obj1Suffix": "(U0TXD): R30_2",
+                    "obj1Type": "SMD Pad",
+                    "position": {
+                      "x": 132.796,
+                      "y": 107.00000000000001
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err36",
+                "isFree": false,
+                "net": "U0TXD",
+                "obj1": {
+                  "suffix": "(U0TXD): R30_2",
+                  "typeName": "SMD Pad"
+                },
+                "objs": [
+                  "945b461277173985e12"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|U0TXD",
+                "pos": {
+                  "x": 132.796,
+                  "y": 107.00000000000001
+                },
+                "ruleName": "Common",
+                "visible": true
+              },
+              {
+                "errorObjType": "Track",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err37",
+                    "isFree": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "name": "Common",
+                    "net": "U0TXD",
+                    "obj1": "a997264a539c7c9f",
+                    "obj1Suffix": "(U0TXD): e118",
+                    "obj1Type": "Track",
+                    "position": {
+                      "x": 146.05,
+                      "y": 96.5
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err37",
+                "isFree": false,
+                "net": "U0TXD",
+                "obj1": {
+                  "suffix": "(U0TXD): e118",
+                  "typeName": "Track"
+                },
+                "objs": [
+                  "a997264a539c7c9f"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|U0TXD",
+                "pos": {
+                  "x": 146.05,
+                  "y": 96.5
+                },
+                "ruleName": "Common",
+                "visible": true
+              },
+              {
+                "errorObjType": "SMD Pad",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err38",
+                    "isFree": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "name": "Common",
+                    "net": "U0TXD",
+                    "obj1": "d4ad0694edff5a0ee90",
+                    "obj1Suffix": "(U0TXD): U1_37",
+                    "obj1Type": "SMD Pad",
+                    "position": {
+                      "x": 189.94899999999998,
+                      "y": 170.01950000000002
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err38",
+                "isFree": false,
+                "net": "U0TXD",
+                "obj1": {
+                  "suffix": "(U0TXD): U1_37",
+                  "typeName": "SMD Pad"
+                },
+                "objs": [
+                  "d4ad0694edff5a0ee90"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|U0TXD",
+                "pos": {
+                  "x": 189.94899999999998,
+                  "y": 170.01950000000002
+                },
+                "ruleName": "Common",
+                "visible": true
+              },
+              {
+                "errorObjType": "TH Pad",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err39",
+                    "isFree": false,
+                    "layerIds": [
+                      12
+                    ],
+                    "name": "Common",
+                    "net": "U0TXD",
+                    "obj1": "ef5af30733911596e28",
+                    "obj1Suffix": "(U0TXD): J6_3",
+                    "obj1Type": "TH Pad",
+                    "position": {
+                      "x": 215,
+                      "y": 145
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err39",
+                "isFree": false,
+                "net": "U0TXD",
+                "obj1": {
+                  "suffix": "(U0TXD): J6_3",
+                  "typeName": "TH Pad"
+                },
+                "objs": [
+                  "ef5af30733911596e28"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|U0TXD",
+                "pos": {
+                  "x": 215,
+                  "y": 145
+                },
+                "ruleName": "Common",
+                "visible": true
+              },
+              {
+                "errorObjType": "SMD Pad",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err40",
+                    "isFree": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "name": "Common",
+                    "net": "U0TXD",
+                    "obj1": "ec662494cef72462e13",
+                    "obj1Suffix": "(U0TXD): R33_1",
+                    "obj1Type": "SMD Pad",
+                    "position": {
+                      "x": 148.796,
+                      "y": 96.5
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err40",
+                "isFree": false,
+                "net": "U0TXD",
+                "obj1": {
+                  "suffix": "(U0TXD): R33_1",
+                  "typeName": "SMD Pad"
+                },
+                "objs": [
+                  "ec662494cef72462e13"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|U0TXD",
+                "pos": {
+                  "x": 148.796,
+                  "y": 96.5
+                },
+                "ruleName": "Common",
+                "visible": true
+              }
+            ],
+            "name": "U0TXD",
+            "title": "U0TXD (5)",
+            "visible": true
+          },
+          {
+            "count": 4,
+            "doNotTranslate": true,
+            "list": [
+              {
+                "errorObjType": "Track",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err41",
+                    "isFree": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "name": "Common",
+                    "net": "VBUS",
+                    "obj1": "915f1af224426f83",
+                    "obj1Suffix": "(VBUS): e938",
+                    "obj1Type": "Track",
+                    "position": {
+                      "x": 108.66985499999998,
+                      "y": 59.12997999999999
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err41",
+                "isFree": false,
+                "net": "VBUS",
+                "obj1": {
+                  "suffix": "(VBUS): e938",
+                  "typeName": "Track"
+                },
+                "objs": [
+                  "915f1af224426f83"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|VBUS",
+                "pos": {
+                  "x": 108.66985499999998,
+                  "y": 59.12997999999999
+                },
+                "ruleName": "Common",
+                "visible": true
+              },
+              {
+                "errorObjType": "SMD Pad",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err42",
+                    "isFree": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "name": "Common",
+                    "net": "VBUS",
+                    "obj1": "2b338da00152efbfe4",
+                    "obj1Suffix": "(VBUS): TP1_1",
+                    "obj1Type": "SMD Pad",
+                    "position": {
+                      "x": 123.5,
+                      "y": 64.5
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err42",
+                "isFree": false,
+                "net": "VBUS",
+                "obj1": {
+                  "suffix": "(VBUS): TP1_1",
+                  "typeName": "SMD Pad"
+                },
+                "objs": [
+                  "2b338da00152efbfe4"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|VBUS",
+                "pos": {
+                  "x": 123.5,
+                  "y": 64.5
+                },
+                "ruleName": "Common",
+                "visible": true
+              },
+              {
+                "errorObjType": "SMD Pad",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err43",
+                    "isFree": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "name": "Common",
+                    "net": "VBUS",
+                    "obj1": "0ab2a49a94a5ee76e38",
+                    "obj1Suffix": "(VBUS): e23e38",
+                    "obj1Type": "SMD Pad",
+                    "position": {
+                      "x": 32.55135,
+                      "y": 29.740250000000003
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err43",
+                "isFree": false,
+                "net": "VBUS",
+                "obj1": {
+                  "suffix": "(VBUS): e23e38",
+                  "typeName": "SMD Pad"
+                },
+                "objs": [
+                  "0ab2a49a94a5ee76e38"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|VBUS",
+                "pos": {
+                  "x": 32.55135,
+                  "y": 29.740250000000003
+                },
+                "ruleName": "Common",
+                "visible": true
+              },
+              {
+                "errorObjType": "SMD Pad",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err44",
+                    "isFree": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "name": "Common",
+                    "net": "VBUS",
+                    "obj1": "0ab2a49a94a5ee76e37",
+                    "obj1Suffix": "(VBUS): e23e37",
+                    "obj1Type": "SMD Pad",
+                    "position": {
+                      "x": 51.44945,
+                      "y": 29.7409
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err44",
+                "isFree": false,
+                "net": "VBUS",
+                "obj1": {
+                  "suffix": "(VBUS): e23e37",
+                  "typeName": "SMD Pad"
+                },
+                "objs": [
+                  "0ab2a49a94a5ee76e37"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|VBUS",
+                "pos": {
+                  "x": 51.44945,
+                  "y": 29.7409
+                },
+                "ruleName": "Common",
+                "visible": true
+              }
+            ],
+            "name": "VBUS",
+            "title": "VBUS (4)",
+            "visible": true
+          },
+          {
+            "count": 2,
+            "doNotTranslate": true,
+            "list": [
+              {
+                "errorObjType": "SMD Pad",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err45",
+                    "isFree": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "name": "Common",
+                    "net": "VSYS",
+                    "obj1": "829268d685ec52a7e15",
+                    "obj1Suffix": "(VSYS): C3_1",
+                    "obj1Type": "SMD Pad",
+                    "position": {
+                      "x": 68.744,
+                      "y": 61
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err45",
+                "isFree": false,
+                "net": "VSYS",
+                "obj1": {
+                  "suffix": "(VSYS): C3_1",
+                  "typeName": "SMD Pad"
+                },
+                "objs": [
+                  "829268d685ec52a7e15"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|VSYS",
+                "pos": {
+                  "x": 68.744,
+                  "y": 61
+                },
+                "ruleName": "Common",
+                "visible": true
+              },
+              {
+                "errorObjType": "SMD Pad",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err46",
+                    "isFree": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "name": "Common",
+                    "net": "VSYS",
+                    "obj1": "4ccffd14158312bee31",
+                    "obj1Suffix": "(VSYS): U3_11",
+                    "obj1Type": "SMD Pad",
+                    "position": {
+                      "x": 75.9055,
+                      "y": 45.9845
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err46",
+                "isFree": false,
+                "net": "VSYS",
+                "obj1": {
+                  "suffix": "(VSYS): U3_11",
+                  "typeName": "SMD Pad"
+                },
+                "objs": [
+                  "4ccffd14158312bee31"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|VSYS",
+                "pos": {
+                  "x": 75.9055,
+                  "y": 45.9845
+                },
+                "ruleName": "Common",
+                "visible": true
+              }
+            ],
+            "name": "VSYS",
+            "title": "VSYS (2)",
+            "visible": true
+          },
+          {
+            "count": 2,
+            "doNotTranslate": true,
+            "list": [
+              {
+                "errorObjType": "SMD Pad",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err47",
+                    "isFree": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "name": "Common",
+                    "net": "CHG_CE_N",
+                    "obj1": "4ccffd14158312bee24",
+                    "obj1Suffix": "(CHG_CE_N): U3_4",
+                    "obj1Type": "SMD Pad",
+                    "position": {
+                      "x": 64.0945,
+                      "y": 42.0475
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err47",
+                "isFree": false,
+                "net": "CHG_CE_N",
+                "obj1": {
+                  "suffix": "(CHG_CE_N): U3_4",
+                  "typeName": "SMD Pad"
+                },
+                "objs": [
+                  "4ccffd14158312bee24"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|CHG_CE_N",
+                "pos": {
+                  "x": 64.0945,
+                  "y": 42.0475
+                },
+                "ruleName": "Common",
+                "visible": true
+              },
+              {
+                "errorObjType": "Via",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err48",
+                    "isFree": false,
+                    "layerIds": [
+                      12
+                    ],
+                    "name": "Common",
+                    "net": "CHG_CE_N",
+                    "obj1": "af35cebc9929478c",
+                    "obj1Suffix": "(CHG_CE_N): e180",
+                    "obj1Type": "Via",
+                    "position": {
+                      "x": 65.86683000000001,
+                      "y": 77.0568
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err48",
+                "isFree": false,
+                "net": "CHG_CE_N",
+                "obj1": {
+                  "suffix": "(CHG_CE_N): e180",
+                  "typeName": "Via"
+                },
+                "objs": [
+                  "af35cebc9929478c"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|CHG_CE_N",
+                "pos": {
+                  "x": 65.86683000000001,
+                  "y": 77.0568
+                },
+                "ruleName": "Common",
+                "visible": true
+              }
+            ],
+            "name": "CHG_CE_N",
+            "title": "CHG_CE_N (2)",
+            "visible": true
+          },
+          {
+            "count": 2,
+            "doNotTranslate": true,
+            "list": [
+              {
+                "errorObjType": "SMD Pad",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err49",
+                    "isFree": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "name": "Common",
+                    "net": "CHG_ISET",
+                    "obj1": "4ccffd14158312bee36",
+                    "obj1Suffix": "(CHG_ISET): U3_16",
+                    "obj1Type": "SMD Pad",
+                    "position": {
+                      "x": 67.0465,
+                      "y": 50.9055
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err49",
+                "isFree": false,
+                "net": "CHG_ISET",
+                "obj1": {
+                  "suffix": "(CHG_ISET): U3_16",
+                  "typeName": "SMD Pad"
+                },
+                "objs": [
+                  "4ccffd14158312bee36"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|CHG_ISET",
+                "pos": {
+                  "x": 67.0465,
+                  "y": 50.9055
+                },
+                "ruleName": "Common",
+                "visible": true
+              },
+              {
+                "errorObjType": "SMD Pad",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err50",
+                    "isFree": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "name": "Common",
+                    "net": "CHG_ISET",
+                    "obj1": "edd438126c6ffc03e4",
+                    "obj1Suffix": "(CHG_ISET): TP8_1",
+                    "obj1Type": "SMD Pad",
+                    "position": {
+                      "x": 90,
+                      "y": 35
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err50",
+                "isFree": false,
+                "net": "CHG_ISET",
+                "obj1": {
+                  "suffix": "(CHG_ISET): TP8_1",
+                  "typeName": "SMD Pad"
+                },
+                "objs": [
+                  "edd438126c6ffc03e4"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|CHG_ISET",
+                "pos": {
+                  "x": 90,
+                  "y": 35
+                },
+                "ruleName": "Common",
+                "visible": true
+              }
+            ],
+            "name": "CHG_ISET",
+            "title": "CHG_ISET (2)",
+            "visible": true
+          },
+          {
+            "count": 3,
+            "doNotTranslate": true,
+            "list": [
+              {
+                "errorObjType": "SMD Pad",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err51",
+                    "isFree": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "name": "Common",
+                    "net": "CAM_DVDD",
+                    "obj1": "ab5eddd4707b2ce6e12",
+                    "obj1Suffix": "(CAM_DVDD): R16_2",
+                    "obj1Type": "SMD Pad",
+                    "position": {
+                      "x": 31.704,
+                      "y": 150
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err51",
+                "isFree": false,
+                "net": "CAM_DVDD",
+                "obj1": {
+                  "suffix": "(CAM_DVDD): R16_2",
+                  "typeName": "SMD Pad"
+                },
+                "objs": [
+                  "ab5eddd4707b2ce6e12"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|CAM_DVDD",
+                "pos": {
+                  "x": 31.704,
+                  "y": 150
+                },
+                "ruleName": "Common",
+                "visible": true
+              },
+              {
+                "errorObjType": "SMD Pad",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err52",
+                    "isFree": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "name": "Common",
+                    "net": "CAM_DVDD",
+                    "obj1": "f544f13483469c06e18",
+                    "obj1Suffix": "(CAM_DVDD): C16_1",
+                    "obj1Type": "SMD Pad",
+                    "position": {
+                      "x": 64.654,
+                      "y": 71.50000000000001
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err52",
+                "isFree": false,
+                "net": "CAM_DVDD",
+                "obj1": {
+                  "suffix": "(CAM_DVDD): C16_1",
+                  "typeName": "SMD Pad"
+                },
+                "objs": [
+                  "f544f13483469c06e18"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|CAM_DVDD",
+                "pos": {
+                  "x": 64.654,
+                  "y": 71.50000000000001
+                },
+                "ruleName": "Common",
+                "visible": true
+              },
+              {
+                "errorObjType": "SMD Pad",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err53",
+                    "isFree": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "name": "Common",
+                    "net": "CAM_DVDD",
+                    "obj1": "9c436b37f43528cbe46",
+                    "obj1Suffix": "(CAM_DVDD): J3_10",
+                    "obj1Type": "SMD Pad",
+                    "position": {
+                      "x": 52.923,
+                      "y": 243.749
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err53",
+                "isFree": false,
+                "net": "CAM_DVDD",
+                "obj1": {
+                  "suffix": "(CAM_DVDD): J3_10",
+                  "typeName": "SMD Pad"
+                },
+                "objs": [
+                  "9c436b37f43528cbe46"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|CAM_DVDD",
+                "pos": {
+                  "x": 52.923,
+                  "y": 243.749
+                },
+                "ruleName": "Common",
+                "visible": true
+              }
+            ],
+            "name": "CAM_DVDD",
+            "title": "CAM_DVDD (3)",
+            "visible": true
+          },
+          {
+            "count": 5,
+            "doNotTranslate": true,
+            "list": [
+              {
+                "errorObjType": "SMD Pad",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err54",
+                    "isFree": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "name": "Common",
+                    "net": "USB_DM",
+                    "obj1": "0ab2a49a94a5ee76e29",
+                    "obj1Suffix": "(USB_DM): J1_B7",
+                    "obj1Type": "SMD Pad",
+                    "position": {
+                      "x": 39.047,
+                      "y": 29.740500000000004
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err54",
+                "isFree": false,
+                "net": "USB_DM",
+                "obj1": {
+                  "suffix": "(USB_DM): J1_B7",
+                  "typeName": "SMD Pad"
+                },
+                "objs": [
+                  "0ab2a49a94a5ee76e29"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|USB_DM",
+                "pos": {
+                  "x": 39.047,
+                  "y": 29.740500000000004
+                },
+                "ruleName": "Common",
+                "visible": true
+              },
+              {
+                "errorObjType": "SMD Pad",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err55",
+                    "isFree": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "name": "Common",
+                    "net": "USB_DM",
+                    "obj1": "0ab2a49a94a5ee76e31",
+                    "obj1Suffix": "(USB_DM): J1_A7",
+                    "obj1Type": "SMD Pad",
+                    "position": {
+                      "x": 42.984,
+                      "y": 29.740500000000004
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err55",
+                "isFree": false,
+                "net": "USB_DM",
+                "obj1": {
+                  "suffix": "(USB_DM): J1_A7",
+                  "typeName": "SMD Pad"
+                },
+                "objs": [
+                  "0ab2a49a94a5ee76e31"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|USB_DM",
+                "pos": {
+                  "x": 42.984,
+                  "y": 29.740500000000004
+                },
+                "ruleName": "Common",
+                "visible": true
+              },
+              {
+                "errorObjType": "SMD Pad",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err56",
+                    "isFree": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "name": "Common",
+                    "net": "USB_DM",
+                    "obj1": "8da81c46b8803e0de7",
+                    "obj1Suffix": "(USB_DM): U2_1",
+                    "obj1Type": "SMD Pad",
+                    "position": {
+                      "x": 38.26,
+                      "y": 45.476
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err56",
+                "isFree": false,
+                "net": "USB_DM",
+                "obj1": {
+                  "suffix": "(USB_DM): U2_1",
+                  "typeName": "SMD Pad"
+                },
+                "objs": [
+                  "8da81c46b8803e0de7"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|USB_DM",
+                "pos": {
+                  "x": 38.26,
+                  "y": 45.476
+                },
+                "ruleName": "Common",
+                "visible": true
+              },
+              {
+                "errorObjType": "SMD Pad",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err57",
+                    "isFree": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "name": "Common",
+                    "net": "USB_DM",
+                    "obj1": "8da81c46b8803e0de12",
+                    "obj1Suffix": "(USB_DM): U2_6",
+                    "obj1Type": "SMD Pad",
+                    "position": {
+                      "x": 38.26,
+                      "y": 54.524
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err57",
+                "isFree": false,
+                "net": "USB_DM",
+                "obj1": {
+                  "suffix": "(USB_DM): U2_6",
+                  "typeName": "SMD Pad"
+                },
+                "objs": [
+                  "8da81c46b8803e0de12"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|USB_DM",
+                "pos": {
+                  "x": 38.26,
+                  "y": 54.524
+                },
+                "ruleName": "Common",
+                "visible": true
+              },
+              {
+                "errorObjType": "SMD Pad",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err58",
+                    "isFree": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "name": "Common",
+                    "net": "USB_DM",
+                    "obj1": "d4ad0694edff5a0ee66",
+                    "obj1Suffix": "(USB_DM): U1_13",
+                    "obj1Type": "SMD Pad",
+                    "position": {
+                      "x": 121.051,
+                      "y": 125.0195
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err58",
+                "isFree": false,
+                "net": "USB_DM",
+                "obj1": {
+                  "suffix": "(USB_DM): U1_13",
+                  "typeName": "SMD Pad"
+                },
+                "objs": [
+                  "d4ad0694edff5a0ee66"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|USB_DM",
+                "pos": {
+                  "x": 121.051,
+                  "y": 125.0195
+                },
+                "ruleName": "Common",
+                "visible": true
+              }
+            ],
+            "name": "USB_DM",
+            "title": "USB_DM (5)",
+            "visible": true
+          },
+          {
+            "count": 5,
+            "doNotTranslate": true,
+            "list": [
+              {
+                "errorObjType": "SMD Pad",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err59",
+                    "isFree": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "name": "Common",
+                    "net": "USB_DP",
+                    "obj1": "0ab2a49a94a5ee76e30",
+                    "obj1Suffix": "(USB_DP): J1_A6",
+                    "obj1Type": "SMD Pad",
+                    "position": {
+                      "x": 41.016,
+                      "y": 29.740500000000004
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err59",
+                "isFree": false,
+                "net": "USB_DP",
+                "obj1": {
+                  "suffix": "(USB_DP): J1_A6",
+                  "typeName": "SMD Pad"
+                },
+                "objs": [
+                  "0ab2a49a94a5ee76e30"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|USB_DP",
+                "pos": {
+                  "x": 41.016,
+                  "y": 29.740500000000004
+                },
+                "ruleName": "Common",
+                "visible": true
+              },
+              {
+                "errorObjType": "SMD Pad",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err60",
+                    "isFree": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "name": "Common",
+                    "net": "USB_DP",
+                    "obj1": "0ab2a49a94a5ee76e32",
+                    "obj1Suffix": "(USB_DP): J1_B6",
+                    "obj1Type": "SMD Pad",
+                    "position": {
+                      "x": 44.953,
+                      "y": 29.740500000000004
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err60",
+                "isFree": false,
+                "net": "USB_DP",
+                "obj1": {
+                  "suffix": "(USB_DP): J1_B6",
+                  "typeName": "SMD Pad"
+                },
+                "objs": [
+                  "0ab2a49a94a5ee76e32"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|USB_DP",
+                "pos": {
+                  "x": 44.953,
+                  "y": 29.740500000000004
+                },
+                "ruleName": "Common",
+                "visible": true
+              },
+              {
+                "errorObjType": "SMD Pad",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err61",
+                    "isFree": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "name": "Common",
+                    "net": "USB_DP",
+                    "obj1": "8da81c46b8803e0de9",
+                    "obj1Suffix": "(USB_DP): U2_3",
+                    "obj1Type": "SMD Pad",
+                    "position": {
+                      "x": 45.74,
+                      "y": 45.476
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err61",
+                "isFree": false,
+                "net": "USB_DP",
+                "obj1": {
+                  "suffix": "(USB_DP): U2_3",
+                  "typeName": "SMD Pad"
+                },
+                "objs": [
+                  "8da81c46b8803e0de9"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|USB_DP",
+                "pos": {
+                  "x": 45.74,
+                  "y": 45.476
+                },
+                "ruleName": "Common",
+                "visible": true
+              },
+              {
+                "errorObjType": "SMD Pad",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err62",
+                    "isFree": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "name": "Common",
+                    "net": "USB_DP",
+                    "obj1": "8da81c46b8803e0de10",
+                    "obj1Suffix": "(USB_DP): U2_4",
+                    "obj1Type": "SMD Pad",
+                    "position": {
+                      "x": 45.74,
+                      "y": 54.524
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err62",
+                "isFree": false,
+                "net": "USB_DP",
+                "obj1": {
+                  "suffix": "(USB_DP): U2_4",
+                  "typeName": "SMD Pad"
+                },
+                "objs": [
+                  "8da81c46b8803e0de10"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|USB_DP",
+                "pos": {
+                  "x": 45.74,
+                  "y": 54.524
+                },
+                "ruleName": "Common",
+                "visible": true
+              },
+              {
+                "errorObjType": "SMD Pad",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err63",
+                    "isFree": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "name": "Common",
+                    "net": "USB_DP",
+                    "obj1": "d4ad0694edff5a0ee67",
+                    "obj1Suffix": "(USB_DP): U1_14",
+                    "obj1Type": "SMD Pad",
+                    "position": {
+                      "x": 121.051,
+                      "y": 120.0195
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err63",
+                "isFree": false,
+                "net": "USB_DP",
+                "obj1": {
+                  "suffix": "(USB_DP): U1_14",
+                  "typeName": "SMD Pad"
+                },
+                "objs": [
+                  "d4ad0694edff5a0ee67"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|USB_DP",
+                "pos": {
+                  "x": 121.051,
+                  "y": 120.0195
+                },
+                "ruleName": "Common",
+                "visible": true
+              }
+            ],
+            "name": "USB_DP",
+            "title": "USB_DP (5)",
+            "visible": true
+          },
+          {
+            "count": 2,
+            "doNotTranslate": true,
+            "list": [
+              {
+                "errorObjType": "SMD Pad",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err64",
+                    "isFree": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "name": "Common",
+                    "net": "CAM_Y6",
+                    "obj1": "9c436b37f43528cbe36",
+                    "obj1Suffix": "(CAM_Y6): J3_18",
+                    "obj1Type": "SMD Pad",
+                    "position": {
+                      "x": 37.173,
+                      "y": 243.749
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err64",
+                "isFree": false,
+                "net": "CAM_Y6",
+                "obj1": {
+                  "suffix": "(CAM_Y6): J3_18",
+                  "typeName": "SMD Pad"
+                },
+                "objs": [
+                  "9c436b37f43528cbe36"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|CAM_Y6",
+                "pos": {
+                  "x": 37.173,
+                  "y": 243.749
+                },
+                "ruleName": "Common",
+                "visible": true
+              },
+              {
+                "errorObjType": "SMD Pad",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err65",
+                    "isFree": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "name": "Common",
+                    "net": "CAM_Y6",
+                    "obj1": "d4ad0694edff5a0ee73",
+                    "obj1Suffix": "(CAM_Y6): U1_20",
+                    "obj1Type": "SMD Pad",
+                    "position": {
+                      "x": 153.00000000000003,
+                      "y": 114.9805
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err65",
+                "isFree": false,
+                "net": "CAM_Y6",
+                "obj1": {
+                  "suffix": "(CAM_Y6): U1_20",
+                  "typeName": "SMD Pad"
+                },
+                "objs": [
+                  "d4ad0694edff5a0ee73"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|CAM_Y6",
+                "pos": {
+                  "x": 153.00000000000003,
+                  "y": 114.9805
+                },
+                "ruleName": "Common",
+                "visible": true
+              }
+            ],
+            "name": "CAM_Y6",
+            "title": "CAM_Y6 (2)",
+            "visible": true
+          },
+          {
+            "count": 2,
+            "doNotTranslate": true,
+            "list": [
+              {
+                "errorObjType": "TH Pad",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err66",
+                    "isFree": false,
+                    "layerIds": [
+                      12
+                    ],
+                    "name": "Common",
+                    "net": "MIC_SD",
+                    "obj1": "175ac27a62fa3166e17",
+                    "obj1Suffix": "(MIC_SD): J5_5",
+                    "obj1Type": "TH Pad",
+                    "position": {
+                      "x": 108,
+                      "y": 9.5
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err66",
+                "isFree": false,
+                "net": "MIC_SD",
+                "obj1": {
+                  "suffix": "(MIC_SD): J5_5",
+                  "typeName": "TH Pad"
+                },
+                "objs": [
+                  "175ac27a62fa3166e17"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|MIC_SD",
+                "pos": {
+                  "x": 108,
+                  "y": 9.5
+                },
+                "ruleName": "Common",
+                "visible": true
+              },
+              {
+                "errorObjType": "SMD Pad",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err67",
+                    "isFree": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "name": "Common",
+                    "net": "MIC_SD",
+                    "obj1": "d4ad0694edff5a0ee91",
+                    "obj1Suffix": "(MIC_SD): U1_38",
+                    "obj1Type": "SMD Pad",
+                    "position": {
+                      "x": 189.94899999999998,
+                      "y": 175.01950000000002
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err67",
+                "isFree": false,
+                "net": "MIC_SD",
+                "obj1": {
+                  "suffix": "(MIC_SD): U1_38",
+                  "typeName": "SMD Pad"
+                },
+                "objs": [
+                  "d4ad0694edff5a0ee91"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|MIC_SD",
+                "pos": {
+                  "x": 189.94899999999998,
+                  "y": 175.01950000000002
+                },
+                "ruleName": "Common",
+                "visible": true
+              }
+            ],
+            "name": "MIC_SD",
+            "title": "MIC_SD (2)",
+            "visible": true
+          },
+          {
+            "count": 2,
+            "doNotTranslate": true,
+            "list": [
+              {
+                "errorObjType": "TH Pad",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err68",
+                    "isFree": false,
+                    "layerIds": [
+                      12
+                    ],
+                    "name": "Common",
+                    "net": "MIC_WS",
+                    "obj1": "175ac27a62fa3166e18",
+                    "obj1Suffix": "(MIC_WS): J5_4",
+                    "obj1Type": "TH Pad",
+                    "position": {
+                      "x": 98,
+                      "y": 9.5
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err68",
+                "isFree": false,
+                "net": "MIC_WS",
+                "obj1": {
+                  "suffix": "(MIC_WS): J5_4",
+                  "typeName": "TH Pad"
+                },
+                "objs": [
+                  "175ac27a62fa3166e18"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|MIC_WS",
+                "pos": {
+                  "x": 98,
+                  "y": 9.5
+                },
+                "ruleName": "Common",
+                "visible": true
+              },
+              {
+                "errorObjType": "SMD Pad",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err69",
+                    "isFree": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "name": "Common",
+                    "net": "MIC_WS",
+                    "obj1": "d4ad0694edff5a0ee88",
+                    "obj1Suffix": "(MIC_WS): U1_35",
+                    "obj1Type": "SMD Pad",
+                    "position": {
+                      "x": 189.94899999999998,
+                      "y": 160.01950000000002
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err69",
+                "isFree": false,
+                "net": "MIC_WS",
+                "obj1": {
+                  "suffix": "(MIC_WS): U1_35",
+                  "typeName": "SMD Pad"
+                },
+                "objs": [
+                  "d4ad0694edff5a0ee88"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|MIC_WS",
+                "pos": {
+                  "x": 189.94899999999998,
+                  "y": 160.01950000000002
+                },
+                "ruleName": "Common",
+                "visible": true
+              }
+            ],
+            "name": "MIC_WS",
+            "title": "MIC_WS (2)",
+            "visible": true
+          },
+          {
+            "count": 2,
+            "doNotTranslate": true,
+            "list": [
+              {
+                "errorObjType": "TH Pad",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err70",
+                    "isFree": false,
+                    "layerIds": [
+                      12
+                    ],
+                    "name": "Common",
+                    "net": "MIC_SCK",
+                    "obj1": "175ac27a62fa3166e19",
+                    "obj1Suffix": "(MIC_SCK): J5_3",
+                    "obj1Type": "TH Pad",
+                    "position": {
+                      "x": 88,
+                      "y": 9.5
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err70",
+                "isFree": false,
+                "net": "MIC_SCK",
+                "obj1": {
+                  "suffix": "(MIC_SCK): J5_3",
+                  "typeName": "TH Pad"
+                },
+                "objs": [
+                  "175ac27a62fa3166e19"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|MIC_SCK",
+                "pos": {
+                  "x": 88,
+                  "y": 9.5
+                },
+                "ruleName": "Common",
+                "visible": true
+              },
+              {
+                "errorObjType": "SMD Pad",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err71",
+                    "isFree": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "name": "Common",
+                    "net": "MIC_SCK",
+                    "obj1": "d4ad0694edff5a0ee87",
+                    "obj1Suffix": "(MIC_SCK): U1_34",
+                    "obj1Type": "SMD Pad",
+                    "position": {
+                      "x": 189.94899999999998,
+                      "y": 155.01950000000002
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err71",
+                "isFree": false,
+                "net": "MIC_SCK",
+                "obj1": {
+                  "suffix": "(MIC_SCK): U1_34",
+                  "typeName": "SMD Pad"
+                },
+                "objs": [
+                  "d4ad0694edff5a0ee87"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|MIC_SCK",
+                "pos": {
+                  "x": 189.94899999999998,
+                  "y": 155.01950000000002
+                },
+                "ruleName": "Common",
+                "visible": true
+              }
+            ],
+            "name": "MIC_SCK",
+            "title": "MIC_SCK (2)",
+            "visible": true
+          },
+          {
+            "count": 2,
+            "doNotTranslate": true,
+            "list": [
+              {
+                "errorObjType": "SMD Pad",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err72",
+                    "isFree": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "name": "Common",
+                    "net": "CHG_ILIM",
+                    "obj1": "4ccffd14158312bee32",
+                    "obj1Suffix": "(CHG_ILIM): U3_12",
+                    "obj1Type": "SMD Pad",
+                    "position": {
+                      "x": 75.9055,
+                      "y": 47.9535
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err72",
+                "isFree": false,
+                "net": "CHG_ILIM",
+                "obj1": {
+                  "suffix": "(CHG_ILIM): U3_12",
+                  "typeName": "SMD Pad"
+                },
+                "objs": [
+                  "4ccffd14158312bee32"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|CHG_ILIM",
+                "pos": {
+                  "x": 75.9055,
+                  "y": 47.9535
+                },
+                "ruleName": "Common",
+                "visible": true
+              },
+              {
+                "errorObjType": "SMD Pad",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err73",
+                    "isFree": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "name": "Common",
+                    "net": "CHG_ILIM",
+                    "obj1": "c15c69d61544538be13",
+                    "obj1Suffix": "(CHG_ILIM): R4_1",
+                    "obj1Type": "SMD Pad",
+                    "position": {
+                      "x": 134.796,
+                      "y": 83
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err73",
+                "isFree": false,
+                "net": "CHG_ILIM",
+                "obj1": {
+                  "suffix": "(CHG_ILIM): R4_1",
+                  "typeName": "SMD Pad"
+                },
+                "objs": [
+                  "c15c69d61544538be13"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|CHG_ILIM",
+                "pos": {
+                  "x": 134.796,
+                  "y": 83
+                },
+                "ruleName": "Common",
+                "visible": true
+              }
+            ],
+            "name": "CHG_ILIM",
+            "title": "CHG_ILIM (2)",
+            "visible": true
+          },
+          {
+            "count": 2,
+            "doNotTranslate": true,
+            "list": [
+              {
+                "errorObjType": "SMD Pad",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err74",
+                    "isFree": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "name": "Common",
+                    "net": "CHG_TD",
+                    "obj1": "57c495476d5338f9e13",
+                    "obj1Suffix": "(CHG_TD): R6_1",
+                    "obj1Type": "SMD Pad",
+                    "position": {
+                      "x": 21.5,
+                      "y": 21.796
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err74",
+                "isFree": false,
+                "net": "CHG_TD",
+                "obj1": {
+                  "suffix": "(CHG_TD): R6_1",
+                  "typeName": "SMD Pad"
+                },
+                "objs": [
+                  "57c495476d5338f9e13"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|CHG_TD",
+                "pos": {
+                  "x": 21.5,
+                  "y": 21.796
+                },
+                "ruleName": "Common",
+                "visible": true
+              },
+              {
+                "errorObjType": "SMD Pad",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err75",
+                    "isFree": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "name": "Common",
+                    "net": "CHG_TD",
+                    "obj1": "4ccffd14158312bee35",
+                    "obj1Suffix": "(CHG_TD): U3_15",
+                    "obj1Type": "SMD Pad",
+                    "position": {
+                      "x": 69.0155,
+                      "y": 50.9055
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err75",
+                "isFree": false,
+                "net": "CHG_TD",
+                "obj1": {
+                  "suffix": "(CHG_TD): U3_15",
+                  "typeName": "SMD Pad"
+                },
+                "objs": [
+                  "4ccffd14158312bee35"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|CHG_TD",
+                "pos": {
+                  "x": 69.0155,
+                  "y": 50.9055
+                },
+                "ruleName": "Common",
+                "visible": true
+              }
+            ],
+            "name": "CHG_TD",
+            "title": "CHG_TD (2)",
+            "visible": true
+          },
+          {
+            "count": 3,
+            "doNotTranslate": true,
+            "list": [
+              {
+                "errorObjType": "SMD Pad",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err76",
+                    "isFree": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "name": "Common",
+                    "net": "CHG_PGOOD_N",
+                    "obj1": "e41d2bd01a765af9e4",
+                    "obj1Suffix": "(CHG_PGOOD_N): TP9_1",
+                    "obj1Type": "SMD Pad",
+                    "position": {
+                      "x": 104.5,
+                      "y": 72.5
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err76",
+                "isFree": false,
+                "net": "CHG_PGOOD_N",
+                "obj1": {
+                  "suffix": "(CHG_PGOOD_N): TP9_1",
+                  "typeName": "SMD Pad"
+                },
+                "objs": [
+                  "e41d2bd01a765af9e4"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|CHG_PGOOD_N",
+                "pos": {
+                  "x": 104.5,
+                  "y": 72.5
+                },
+                "ruleName": "Common",
+                "visible": true
+              },
+              {
+                "errorObjType": "SMD Pad",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err77",
+                    "isFree": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "name": "Common",
+                    "net": "CHG_PGOOD_N",
+                    "obj1": "1408fb1b14eacf0de12",
+                    "obj1Suffix": "(CHG_PGOOD_N): R28_2",
+                    "obj1Type": "SMD Pad",
+                    "position": {
+                      "x": 134,
+                      "y": 57.70400000000001
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err77",
+                "isFree": false,
+                "net": "CHG_PGOOD_N",
+                "obj1": {
+                  "suffix": "(CHG_PGOOD_N): R28_2",
+                  "typeName": "SMD Pad"
+                },
+                "objs": [
+                  "1408fb1b14eacf0de12"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|CHG_PGOOD_N",
+                "pos": {
+                  "x": 134,
+                  "y": 57.70400000000001
+                },
+                "ruleName": "Common",
+                "visible": true
+              },
+              {
+                "errorObjType": "SMD Pad",
+                "errorType": "Connection Error",
+                "explanation": {
+                  "errData": {
+                    "errorType": "No Connection",
+                    "globalIndex": "err78",
+                    "isFree": false,
+                    "layerIds": [
+                      1
+                    ],
+                    "name": "Common",
+                    "net": "CHG_PGOOD_N",
+                    "obj1": "4ccffd14158312bee27",
+                    "obj1Suffix": "(CHG_PGOOD_N): U3_7",
+                    "obj1Type": "SMD Pad",
+                    "position": {
+                      "x": 70.9835,
+                      "y": 39.0945
+                    }
+                  },
+                  "param": {
+                    "obj1": "Object 1",
+                    "type": "ConnectError"
+                  },
+                  "str": "{obj1} is disconnected from other objects of the same network"
+                },
+                "globalIndex": "err78",
+                "isFree": false,
+                "net": "CHG_PGOOD_N",
+                "obj1": {
+                  "suffix": "(CHG_PGOOD_N): U3_7",
+                  "typeName": "SMD Pad"
+                },
+                "objs": [
+                  "4ccffd14158312bee27"
+                ],
+                "parentId": "DRCTab|_|Errors|_|Connection Error|_|CHG_PGOOD_N",
+                "pos": {
+                  "x": 70.9835,
+                  "y": 39.0945
+                },
+                "ruleName": "Common",
+                "visible": true
+              }
+            ],
+            "name": "CHG_PGOOD_N",
+            "title": "CHG_PGOOD_N (3)",
+            "visible": true
+          }
+        ],
+        "name": "Connection Error",
+        "title": [
+          "Connection Error",
+          "(51)"
+        ],
+        "visible": true
+      }
+    ]
+  },
+  "context": {
+    "projectUuid": "6757096b0d67c0879a663e8d58216b175a02a33d4d00c1c0bdeda07b8c434b64",
+    "projectName": "ZY-AIAR-EVT0-R8-验证板",
+    "documentUuid": "6e4acfce1bdee052",
+    "documentType": "pcb",
+    "tabId": "6e4acfce1bdee052@6757096b0d67c0879a663e8d58216b175a02a33d4d00c1c0bdeda07b8c434b64",
+    "pageVisibility": "hidden"
+  },
+  "mutationContext": {
+    "projectUuid": "6757096b0d67c0879a663e8d58216b175a02a33d4d00c1c0bdeda07b8c434b64",
+    "projectName": "ZY-AIAR-EVT0-R8-验证板",
+    "documentUuid": "6e4acfce1bdee052",
+    "documentType": "pcb",
+    "tabId": "6e4acfce1bdee052@6757096b0d67c0879a663e8d58216b175a02a33d4d00c1c0bdeda07b8c434b64",
+    "pageVisibility": "hidden"
+  },
+  "mutationContextAvailable": true,
+  "seq": 2158,
+  "seqAbandoned": 4,
+  "abandonedIds": [
+    "req_1828",
+    "req_1861",
+    "req_1895",
+    "req_2275"
+  ]
+}
+pcb drc: native verdict failed; inspect the returned violations
