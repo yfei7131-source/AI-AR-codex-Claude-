@@ -45,9 +45,10 @@
 ## 7. 原生验证结果（终值）
 - DRC 进程（原生 `pcb drc`，证据 evidence/drc_r9_*.txt）：
   - 间距违规：263 → 201 → 191 → 171 → 28（r9_15）→ 9（r9_16）→ **0（r9_17）**
-  - 未连接对象：49（R8 基线）→ 47（r9_17，17 网）→ **43（r9_22，15 网）**，其中 USB_DP/USB_DM 占 10（阻断项）。
+  - 未连接对象：49（R8 基线）→ 47（r9_17，17 网）→ 43（r9_22）→ 41（r9_25）→ **40（r9_28，15 网）**，其中 USB_DP/USB_DM 占 10（阻断项）。
   - R9-S2（drc_r9_18→22）：VSYS 双断点经 via-hop（2 过孔+6 走线，绕开 CHG_EN1 L2 干线与 C3_2/GND L1 围栏，最小间距 6.3mil）清零；CAM_SIOC 51.2mil 同轴缺口 L1 桥接清零。中途两轮违规（drc_r9_19/20 共 8 项）全部拆除重布后收敛，证据 evidence/fix_vsys_camsioc/。
-- **终值：Clearance 全类 0（Track/Pad/Via/Hole/Slot 全部清零）；Connection Error 43 对象 / 15 网。**
+  - R9-S3（drc_r9_23→28）：VBUS 主岛↔TP1 岛 L1 桥接（94.6mil，w19.685 同宽）；U0TXD 主干 U1.37↔J6.3 贯通（4 过孔 6 走线，net-path PASS）；CHG_CE_N 尝试产生 7 项违规后完整拆除复原。证据 evidence/fix_vbus_u0txd/。
+- **终值：Clearance 全类 0（Track/Pad/Via/Hole/Slot 全部清零）；Connection Error 40 对象 / 15 网。**
 - 未连接清单：evidence/UNCONNECTED_R9.md（extract_unconnected.py 生成）。
 - 原理图↔PCB parity：274/274（269 精确 + 5 结构性）、0 错配，与 R8 基线一致（evidence/parity_r9.txt，IR：conn_r9_final.json，289 脚 0 漂移）。
 - 制造规则：全程未降低；当前 DRU 存档 evidence/rules_r9_final.json（最小过孔 0.5/0.3mm、孔到孔 0.3mm、铺铜间距 0.254mm）。
@@ -56,8 +57,9 @@
 ## 8. 制造风险与阻断清单
 - [阻断] USB 90Ω 差分：叠层/阻抗/回流未确认，10 对象未布线。
 - [阻断] 最终镜腿 PCB：60×80 EVT 板非产品外形，需独立结构/光学/配重审查（鼻梁、耳后、太阳穴配重 P0）。
-- [阻断] 13 网 33 对象未连通（USB 之外，见 UNCONNECTED_R9.md）：MIC_SCK/SD/WS（J5↔U1，布线器无路径）、CAM_DVDD（maze 死锁）、CHG_ILIM/CHG_TD/CHG_PGOOD_N/CHG_CE_N/CHG_ISET、U0TXD、CAM_PWR_EN/CAM_Y6 残段、VBUS 残段。需逐网手工穿线，本轮未强行放行。VSYS、CAM_SIOC 已于 R9-S2 连通。
-- [风险] 孤铜残段（U0TXD、VBUS、CHG_CE_N 过孔）待连网或清除，已在清单标注。
+- [阻断] 13 网 30 对象未连通（USB 之外，见 UNCONNECTED_R9.md），逐网根因见 evidence/fix_vbus_u0txd/README.md：CHG_PGOOD_N/CHG_CE_N/CHG_ISET/CHG_ILIM/CHG_TD（U3 周边 VBUS/VBAT/VBAT_ADC/GND 围栏互锁，多轮尝试无合法过孔位）、CAM_PWR_EN（U1_15 被 STRAP46/DISP_PWR_EN/CAM_2V8 合围）、U0TXD 两分接（VBAT_ADC 整板高墙等六重封锁，主干 U1.37↔J6.3 已通）、CAM_DVDD（0 铜，需独立电源走线轮次）、CAM_Y6、MIC_SCK/SD/WS（跨板长线，布线器无路径）。均不强行放行。
+- [阻断·封装] J1 VBUS TH 焊盘 A4B9/B4A9：钻孔 Ø1.417mm 覆盖 0.6×1.3mm 焊盘，有效焊环为零，走线穿洞无铜可接。需按数据手册修订封装焊环，列入下一轮。
+- [风险] 孤铜残段（U0TXD R33_1 侧、VBUS、CHG_CE_N 过孔）待连网或清除，已在清单标注。
 - [风险] J3_15 借道处 CAM_Y7/CAM_Y8 存在 32mil 长 6mil 颈缩段，已合规但建议下轮评估是否加宽回路。
 - [待办] 丝印压焊盘外观项（silk-over-pad WARN），不阻断电气。
 
