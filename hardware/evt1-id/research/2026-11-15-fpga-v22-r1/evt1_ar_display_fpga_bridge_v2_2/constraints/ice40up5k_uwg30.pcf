@@ -1,0 +1,25 @@
+# Lattice iCE40UP5K-UWG30ITR (30-ball WLCSP 2.11x2.54mm, 5x6 grid A1..F5)
+# Fixed V2.2: Eliminates invalid column-6 balls (B6/C6/D6); uses only valid cols 1..5, rows A..F.
+# Note: All 3 banks powered at 1.8V on UWG30 (with SN74AXC8T245 3.3V->1.8V translator on S3 QSPI).
+set_io clk_48m_in     B2
+set_io rst_n          C1
+set_io s3_cs_n        E1
+set_io s3_sclk        F1
+set_io s3_io[0]       F2
+set_io s3_io[1]       E2
+set_io s3_io[2]       D1
+set_io s3_io[3]       D2
+set_io opt_sclk       A4
+set_io opt_cs_l_n     B4
+set_io opt_cs_r_n     B5
+set_io opt_l_io[0]    A5
+set_io opt_l_io[1]    C5
+set_io opt_l_io[2]    C4
+set_io opt_l_io[3]    D4
+set_io opt_r_io[0]    D5
+set_io opt_r_io[1]    E5
+set_io opt_r_io[2]    F5
+set_io opt_r_io[3]    E4
+set_io bridge_crc_err A2
+set_io bridge_cdc_err A3
+set_io vsync_out      B3

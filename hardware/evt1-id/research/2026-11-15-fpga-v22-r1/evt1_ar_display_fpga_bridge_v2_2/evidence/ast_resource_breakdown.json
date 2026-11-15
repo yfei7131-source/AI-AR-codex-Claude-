@@ -1,0 +1,47 @@
+[
+  {
+    "file": "qspi_cdc_async_fifo.v",
+    "version": "V2.1",
+    "fifo_depth_bytes": 512,
+    "ptr_bits": 10,
+    "ebr_4k_blocks": 1,
+    "spram_256k_blocks": 0,
+    "native_eda_synth": "NOT_RUN (BLOCKED_NO_LOCAL_YOSYS)"
+  },
+  {
+    "file": "s3_qspi_slave_rx.v",
+    "version": "V2.1",
+    "stage_ram_words": 1024,
+    "rle_rate_bytes_per_clk": 2,
+    "ebr_4k_blocks": 4,
+    "spram_256k_blocks": 0,
+    "native_eda_synth": "NOT_RUN (BLOCKED_NO_LOCAL_YOSYS)"
+  },
+  {
+    "file": "spram_framebuffer_ctrl.v",
+    "version": "V2.1",
+    "per_bank_concurrent_rw": true,
+    "ebr_4k_blocks": 0,
+    "spram_256k_blocks": 4,
+    "native_eda_synth": "NOT_RUN (BLOCKED_NO_LOCAL_YOSYS)"
+  },
+  {
+    "file": "binocular_scanline_engine.v",
+    "version": "V2.1",
+    "modes_supported": [
+      "640x400_4BPP (160w/line)",
+      "640x400_2BPP_PP (80w/line)",
+      "640x480_2BPP (80w/line)"
+    ],
+    "ebr_4k_blocks": 1,
+    "spram_256k_blocks": 0,
+    "native_eda_synth": "NOT_RUN (BLOCKED_NO_LOCAL_YOSYS)"
+  },
+  {
+    "file": "jbd_dual_bridge_top.v",
+    "version": "V2.1",
+    "total_ebr_4k_blocks": 6,
+    "total_spram_256k_blocks": 4,
+    "native_eda_synth": "NOT_RUN (BLOCKED_NO_LOCAL_YOSYS)"
+  }
+]

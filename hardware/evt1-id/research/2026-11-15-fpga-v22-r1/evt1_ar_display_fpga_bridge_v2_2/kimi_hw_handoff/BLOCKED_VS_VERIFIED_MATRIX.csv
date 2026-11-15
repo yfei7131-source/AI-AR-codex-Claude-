@@ -1,0 +1,9 @@
+Item_ID,Technical_Item,V2_0_Status,V2_1_Code_Fix_Status,Native_Verification_Status,Evidence_File_or_Blocker
+FIX-01,C 仿真断言失败 (Line 520 排空不足 & Line 568 SPRAM 二次寄存偏差),FAILED (27963cf),FIXED_IN_V2_1,OFFLINE_C_SELFCHECK_PASS,evidence/original_failures_v2_0/ & evidence/rtl_dual_clock_test_log.txt
+FIX-02,Verilog Testbench (tb_jbd_dual_bridge.v) Test 2 CRC-16 错误 (0x9A0B -> 0x3FFC),FAILED_CRC,FIXED_IN_V2_1,BLOCKED_NO_LOCAL_IVERILOG,tb/tb_jbd_dual_bridge.v (True CRC-16-CCITT = 0x3FFC)
+FIX-03,2-bit 帧存寻址越界 (spram_y*160 溢出 65536) 与 expand_2bpp 未调用,BUG_IN_V2_0,FIXED_IN_V2_1 (80 words/line + 8-px unpack),BLOCKED_NO_LOCAL_IVERILOG,"rtl/binocular_scanline_engine.v (lines 116, 178-189)"
+FIX-04,16B CDC FIFO 在 RLE 展开时溢出 & Stage RAM (>1024W) 溢出无保护,BUG_IN_V2_0,FIXED_IN_V2_1 (512B EBR FIFO + 2B/cyc RLE + stage_overflow_err),BLOCKED_NO_LOCAL_IVERILOG,rtl/qspi_cdc_async_fifo.v & rtl/s3_qspi_slave_rx.v
+FIX-05,双缓冲 (MODE_640x400_2BPP_PP) 写入未路由至后台 Bank & 同 Bank 冲突,BUG_IN_V2_0,FIXED_IN_V2_1 (Back-bank 0x8000/0x0000 routing + per-bank ready),BLOCKED_NO_LOCAL_IVERILOG,rtl/s3_qspi_slave_rx.v & rtl/spram_framebuffer_ctrl.v
+GATE-EDA,真实 Icarus Verilog (iverilog/vvp)、Yosys 综合与 nextpnr-ice40/icetime 时序验证,NOT_RUN,MAKEFILE_READY,BLOCKED_NO_LOCAL_EDA_BINARY,本机容器无 iverilog/yosys/nextpnr 二进制，严禁以 C 模型或 AST 脚本冒充
+GATE-NDA,JBD Hummingbird Mini II 私有 SPI/QSPI 寄存器指令集与 FPC 尾线物理引脚定义,BLOCKED,DECOUPLED_VIA_CMD_LUT,BLOCKED_JBD_NDA_ICD,未获 JBD 官方受控 ICD，继续标记 BLOCKED
+GATE-R8,Kimi R8 (PR #11) 嘉立创 EDA 工程原生 DRC 清零,BLOCKED,UNTOUCHED,BLOCKED_KIMI_R8_DRC,严格保持零修改 Kimi R8 工程

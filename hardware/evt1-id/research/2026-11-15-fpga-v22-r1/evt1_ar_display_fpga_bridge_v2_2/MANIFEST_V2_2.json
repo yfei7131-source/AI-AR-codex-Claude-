@@ -1,0 +1,155 @@
+{
+  "package_version": "V2.2-r1",
+  "git_branch": "feat/evt1-ar-display-fpga-bridge-v2.2-20261114",
+  "git_head_commit_sha": "77befa01d597d515d23368b5c89d4084e567ed73",
+  "git_parent_commit_sha": "14d0a4ba58543d054f00af02cb872453c3e2accd",
+  "based_on_prs": [
+    "PR #15 (65a9c32)",
+    "PR #11 (f1eee75)"
+  ],
+  "native_eda_tools_status": {
+    "iverilog": "BLOCKED_NO_LOCAL_EDA_BINARY (exit 127)",
+    "vvp": "BLOCKED_NO_LOCAL_EDA_BINARY (exit 127)",
+    "yosys": "BLOCKED_NO_LOCAL_EDA_BINARY (exit 127)",
+    "nextpnr_ice40": "BLOCKED_NO_LOCAL_EDA_BINARY (exit 127)",
+    "icetime_sta": "BLOCKED_NO_LOCAL_EDA_BINARY (exit 127)",
+    "jbd_nda_protocol": "BLOCKED_JBD_NDA_ICD"
+  },
+  "files": [
+    {
+      "path": "Makefile",
+      "size_bytes": 1415,
+      "sha256": "ba993f9a1d00476e8bdefc503406a26bd135a9ba4ed3fa23779a48acd41cc189"
+    },
+    {
+      "path": "constraints/ice40up5k_sg48.pcf",
+      "size_bytes": 829,
+      "sha256": "b96a7eb32162bf41a6d53619d50c3247918bb01b4927b5da3eccd428eef0397b"
+    },
+    {
+      "path": "constraints/ice40up5k_uwg30.pcf",
+      "size_bytes": 821,
+      "sha256": "b159493ce1f8fc34cbaa42bdd44b4339316104867c79ba164c9c50489ba3f624"
+    },
+    {
+      "path": "dist/evt1-ar-display-fpga-bridge-v2_2.bundle",
+      "size_bytes": 49272,
+      "sha256": "195ffa9f7db9c43d971c7bdd05c640bf82d24cdf0ece6e2ebcbd3c6d7f6f9611"
+    },
+    {
+      "path": "docs/EVT1_40G_POWER_THERMAL_OPTIMIZATION.md",
+      "size_bytes": 4240,
+      "sha256": "d7636bb355c1f644a54ac1d08d6cd149a97040759b34fe6193946f27b9abfeb6"
+    },
+    {
+      "path": "evidence/EDA_AND_RTL_VERIFICATION_REPORT.txt",
+      "size_bytes": 707,
+      "sha256": "ee57ed8f1f947554f6a3e89aaf8731af1cbbd9dab2e43aaf3567b55c5661e7ae"
+    },
+    {
+      "path": "evidence/ast_resource_breakdown.json",
+      "size_bytes": 1201,
+      "sha256": "f0e727594781cc33d19a64be59ffa04b819e841a4b5aaae05c0daf914538f289"
+    },
+    {
+      "path": "evidence/rtl_dual_clock_test_log.txt",
+      "size_bytes": 703,
+      "sha256": "e34b6eb467ff6984733c5af404419842a3d9ba1930ba3d4a9dce3afb39a89447"
+    },
+    {
+      "path": "evidence/tb_jbd_dual_bridge.vcd",
+      "size_bytes": 1344,
+      "sha256": "25a070e72f195dbe0d2cfc3da7a4f366d858d85a7dfa361868f95f739cec1668"
+    },
+    {
+      "path": "evidence/original_failures_v2_0/failure_1_c_sim_line520_drain_timeout.log",
+      "size_bytes": 617,
+      "sha256": "a811d7639c4cf8011fb4bc203dde13aa0408d2fe64cd9c53b87e7062bb506b65"
+    },
+    {
+      "path": "evidence/original_failures_v2_0/failure_2_c_sim_line568_spram_pipeline_skew.log",
+      "size_bytes": 483,
+      "sha256": "c5b29e8546e2ada99b7e16d83ca25a91b6f2d075da9f796bd38d769a33b22bf5"
+    },
+    {
+      "path": "evidence/original_failures_v2_0/failure_3_rtl_and_tb_5_defects_audit.md",
+      "size_bytes": 2322,
+      "sha256": "f3f103b099db552868ac9ecf06ba6dc4ad2b40303cd568501c3f7e24ed920534"
+    },
+    {
+      "path": "firmware_driver/jbd_fpga_bridge_drv.c",
+      "size_bytes": 4734,
+      "sha256": "664f462e05edf157067677d0bb6e1fa8c344ffc6828ba0ce3f72b532fbd8740b"
+    },
+    {
+      "path": "firmware_driver/jbd_fpga_bridge_drv.h",
+      "size_bytes": 4533,
+      "sha256": "090e289be04e9c1d5afcec5b1ea6863cfadc88fa681bd092d508f37788f9bf27"
+    },
+    {
+      "path": "kimi_hw_handoff/BLOCKED_VS_VERIFIED_MATRIX.csv",
+      "size_bytes": 1805,
+      "sha256": "780409d3ac68e23434ebb48501faf19640e1fd7e4196db9c5068c0972c16b2e7"
+    },
+    {
+      "path": "kimi_hw_handoff/EVT1_INTERFACE_FREEZE_DRAFT.csv",
+      "size_bytes": 2709,
+      "sha256": "b3c9597ff23d7fe55f746023a97421dc8b76f44a472bac3c1974baa5817b5609"
+    },
+    {
+      "path": "kimi_hw_handoff/PINMAP_EVT1_BRIDGE.csv",
+      "size_bytes": 1812,
+      "sha256": "35e886a596ec5da5111f432fc405f86cd5ab543e1310f65e462df2b1a975d6d4"
+    },
+    {
+      "path": "kimi_hw_handoff/R8_VS_EVT1_CONFLICT_LIST.csv",
+      "size_bytes": 3160,
+      "sha256": "d8ab8f016c37e1483f78ec10539da4c2698fa37e6181060e1bf9bc1f8374a43c"
+    },
+    {
+      "path": "rtl/binocular_scanline_engine.v",
+      "size_bytes": 12922,
+      "sha256": "4fabc7a5556a72fea87085f65d458aee70dbe691a2c3efcc4ee564e21550aa99"
+    },
+    {
+      "path": "rtl/ebr_sdp_ram.v",
+      "size_bytes": 1146,
+      "sha256": "14ef5fee58025e06d57091f3595e70af7b68f67b8f421b4375747751fbbb20ad"
+    },
+    {
+      "path": "rtl/jbd_ar_bridge_pkg.vh",
+      "size_bytes": 1652,
+      "sha256": "321583f4b0f2cb854cb4d9fa2f55cca26f05e3f1aaed30181003b56cc86a5ce9"
+    },
+    {
+      "path": "rtl/jbd_dual_bridge_top.v",
+      "size_bytes": 5157,
+      "sha256": "4edc6360e6cd26814afe754beaaf3862110ce20fcde486ffd6399666c1c6fd1f"
+    },
+    {
+      "path": "rtl/qspi_cdc_async_fifo.v",
+      "size_bytes": 7659,
+      "sha256": "4747a219d99570d9269f37aeef8f3c35a2ecb53616989c54f2a15ef0ef129123"
+    },
+    {
+      "path": "rtl/s3_qspi_slave_rx.v",
+      "size_bytes": 20900,
+      "sha256": "5643deea2c2954b4997caa972b1d4c82e98c893db79e793c16a86a4225faf3cd"
+    },
+    {
+      "path": "rtl/spram_framebuffer_ctrl.v",
+      "size_bytes": 5829,
+      "sha256": "3bb27d9033fda12673de75d45be60a5da1790cb9dbfee6425f468db4bef6a020"
+    },
+    {
+      "path": "tb/dual_clock_rtl_event_sim.c",
+      "size_bytes": 35493,
+      "sha256": "c64a8b93aef92383b3acb661e79d17e4882d31fa5df8ae55c8d2058e1e9e9f59"
+    },
+    {
+      "path": "tb/tb_jbd_dual_bridge.v",
+      "size_bytes": 11986,
+      "sha256": "dd98ad775f1159e802e95480b243257d27654253eebe2211f51824bb0a725109"
+    }
+  ]
+}
