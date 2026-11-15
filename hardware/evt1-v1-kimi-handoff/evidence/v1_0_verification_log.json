@@ -1,0 +1,119 @@
+{
+  "verification_timestamp_utc": "2026-11-15T10:41:02Z",
+  "script_version": "V1.0-STRICT-NO-FAKE-PASS",
+  "overall_gate_status": "DESIGN_RULES_VERIFIED__HARDWARE_RELEASE_BLOCKED_BY_6_EXTERNAL_ITEMS",
+  "can_claim_ready_for_mass_production": false,
+  "can_claim_40g_physically_measured": false,
+  "can_claim_native_fpga_sta_or_pcb_drc_run_in_sandbox": false,
+  "summary_counts": {
+    "pico1_signals_verified_against_datasheet": 31,
+    "design_rule_errors": 0,
+    "negative_fault_injections_caught": "3/3",
+    "active_external_blockers": 6
+  },
+  "check_1_pico1_and_fpga_pinmap": {
+    "status": "VERIFIED_DATASHEET",
+    "signals_checked": 31,
+    "errors": []
+  },
+  "check_2_dual_battery_charging_and_protection": {
+    "status": "VERIFIED_DATASHEET_CALC",
+    "metrics": {
+      "left_ichg_typ_mA": 118.67,
+      "left_ichg_max_mA": 130.0,
+      "left_iin_limit_mA": 501.62,
+      "right_ichg_typ_mA": 120.48,
+      "right_ichg_max_mA": 132.53,
+      "lr_charge_imbalance_pct": 1.52
+    },
+    "errors": []
+  },
+  "check_3_camera_privacy_hardware_interlock": {
+    "status": "VERIFIED_DATASHEET_CALC",
+    "metrics": {
+      "nominal_led_current_mA": 2.985,
+      "nominal_ina185_vout_V": 0.896,
+      "valid_current_window_mA": [
+        1.2,
+        8.5
+      ],
+      "state_normal_cam_enabled": true,
+      "state_led_open_cam_enabled": false,
+      "state_led_short_cam_enabled": false
+    },
+    "errors": []
+  },
+  "check_4_display_bridge_memory_and_qspi_bandwidth": {
+    "status": "VERIFIED_ARCH_CALC__BLOCKED_SILICON_STA",
+    "metrics": {
+      "fpga_spram_bits": 1048576,
+      "fpga_ebr_bits": 122880,
+      "raw_vga_4bpp_single_eye_bits": 1228800,
+      "can_raw_4bpp_vga_fit_spram": false,
+      "mode_640x400_2bpp_pingpong_bits": 1024000,
+      "mode_640x400_2bpp_fits_spram": true,
+      "raw_4bpp_60hz_qspi_occupancy_pct": 92.16,
+      "engineered_2bpp_60hz_qspi_occupancy_pct": 38.4,
+      "per_eye_alignment_budget_deg": 0.02,
+      "worst_case_binocular_disparity_arcmin": 2.4
+    },
+    "errors": []
+  },
+  "check_5_hdi_pcb_geometry_and_38_85g_mass_budget": {
+    "status": "VERIFIED_CALC__BLOCKED_CAD_STEP_WEIGHING",
+    "metrics": {
+      "calculated_total_mass_g": 38.85,
+      "margin_to_40g_g": 1.15,
+      "cog_x_lateral_mm": 0.03,
+      "cog_y_fore_aft_mm": 32.86
+    },
+    "errors": []
+  },
+  "check_6_negative_fault_injection_self_test": {
+    "status": "PASS_CAUGHT_ALL_INJECTED_DEFECTS",
+    "tests": {
+      "inject_pico1_pin38_psram_collision": {
+        "caught": true,
+        "error_messages": [
+          "DISP_PWR_EN_BAD: Assigned to PICO-1 Pin 38 (GPIO33), which is FORBIDDEN (internally occupied by Octal PSRAM / NC on ESP32-S3-PICO-1-N8R8)!",
+          "DISP_PWR_EN_BAD: GPIO mismatch on PICO-1 Pin 38: table says 'GPIO45', datasheet Table 2-1 says 'GPIO33'"
+        ]
+      },
+      "inject_r8_single_charger_and_r35_high": {
+        "caught": true,
+        "error_messages": [
+          "CRITICAL: Single charger cannot independently CC/CV charge and terminate two separated Li-Po cells!",
+          "CRITICAL: Left and right cells must have independent BQ29700 PCMs and independent 10k NTCs!",
+          "BQ24072 /CE is pulled HIGH (charging disabled, repeats R8 R35 defect!)",
+          "System 3.3V regulator min VIN (3.725V) > 2.80V cell UVP cutoff (brownout risk!)"
+        ]
+      },
+      "inject_r8_parallel_privacy_led_bypass": {
+        "caught": true,
+        "error_messages": [
+          "Privacy LED topology is NOT series window-interlocked (vulnerable to open-LED bypass CONF-08!)",
+          "FAULT-SAFETY FAILURE: LED Open-Circuit still enables CAM_1V2!",
+          "FAULT-SAFETY FAILURE: LED Short-Circuit still enables CAM_1V2!"
+        ]
+      }
+    }
+  },
+  "check_7_sandbox_eda_binaries_and_external_blockers": {
+    "eda_binaries": {
+      "iverilog": "MISSING_BINARY (BLOCKED)",
+      "vvp": "MISSING_BINARY (BLOCKED)",
+      "yosys": "MISSING_BINARY (BLOCKED)",
+      "nextpnr-ice40": "MISSING_BINARY (BLOCKED)",
+      "icetime": "MISSING_BINARY (BLOCKED)",
+      "kicad-cli": "MISSING_BINARY (BLOCKED)"
+    },
+    "external_blockers_preventing_fab_release": [
+      "BLK-01: JBD 0.13\" MicroLED (Hummingbird Mini II) QSPI Register Map & FPC Pinout",
+      "BLK-02: Binocular Diffractive Waveguide 3D STEP & Active Alignment Tolerance Chain",
+      "BLK-03: Lattice iCE40UP5K Native Synthesis (Yosys), Place-and-Route (nextpnr-ice40) & STA (icetime)",
+      "BLK-04: 6-Layer Any-Layer HDI Impedance Coupon & Kimi EVT-0 R9 40 Unconnected Nets",
+      "BLK-05: Dual 135mAh Prismatic Li-Po Cell (480542) Samples & IEC 62133 / UN38.3 Certification",
+      "BLK-06: IEC 62368-1 Skin Contact Temperature Test & 2.4GHz Wi-Fi / Dual-BT Antenna Coexistence"
+    ]
+  }
+}
