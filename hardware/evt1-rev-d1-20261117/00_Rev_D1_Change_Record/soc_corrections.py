@@ -159,4 +159,3 @@ def apply_soc_corrections(net, bom):
             r['Domain_V']='0'
         elif r['Net'].startswith('NRF_DEC') or r['Net'] in ('NRF_DCC','NRF_DCCD'):
             r['Domain_V']='1.0'
-

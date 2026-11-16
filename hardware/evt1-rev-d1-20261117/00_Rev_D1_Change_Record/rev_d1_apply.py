@@ -21,7 +21,7 @@ def csvwrite(p, rows):
 
 def manifest(root):
     return {p.relative_to(root).as_posix():hashlib.sha256(p.read_bytes()).hexdigest()
-            for p in sorted(root.rglob('*')) if p.is_file() and '__pycache__' not in p.parts
+            for p in sorted(root.rglob('*'),key=lambda p:p.relative_to(root).as_posix()) if p.is_file() and '__pycache__' not in p.parts
             and p.name!='SHA256SUMS.txt'}
 
 def main():
@@ -89,7 +89,7 @@ def main():
             if f.is_file():
                 rel=f.relative_to(stage).as_posix()
                 if not rel.startswith('03_FPGA_RTL/') and rel not in preserved:
-                    f.write_bytes(f.read_bytes().replace(b'\r\n',b'\n'))
+                    f.write_bytes(f.read_bytes().replace(b'\r\n',b'\n').rstrip()+b'\n')
         hashes=manifest(stage)
         (stage/'SHA256SUMS.txt').write_bytes(''.join(f'{sha}  {rel}\n' for rel,sha in hashes.items()).encode('utf8'))
         output.mkdir(parents=True,exist_ok=True)
