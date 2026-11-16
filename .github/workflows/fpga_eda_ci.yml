@@ -1,0 +1,125 @@
+name: EVT-1 Rev C FPGA EDA
+
+on:
+  push:
+    branches:
+      - handoff/evt1-rev-c-source-20261116
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  fpga-eda:
+    name: RTL simulation, synthesis, PnR and STA
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install OSS CAD Suite
+        uses: YosysHQ/setup-oss-cad-suite@v3
+
+      - name: Verify toolchain
+        run: |
+          command -v iverilog
+          command -v vvp
+          command -v yosys
+          command -v nextpnr-ice40
+          command -v icetime
+          iverilog -V
+          yosys -V
+          nextpnr-ice40 --version
+
+      - name: Clean previous outputs
+        working-directory: hardware/evt1-rev-c-source-20261116/rtl
+        run: make clean
+
+      - name: Real Icarus Verilog simulation
+        id: sim
+        continue-on-error: true
+        working-directory: hardware/evt1-rev-c-source-20261116/rtl
+        run: make sim
+
+      - name: Real Yosys synthesis
+        id: synth
+        continue-on-error: true
+        working-directory: hardware/evt1-rev-c-source-20261116/rtl
+        run: make synth
+
+      - name: Real nextpnr-ice40 place and route
+        id: pnr
+        continue-on-error: true
+        working-directory: hardware/evt1-rev-c-source-20261116/rtl
+        run: |
+          make pnr
+          python3 - <<'PY'
+          import re
+          from pathlib import Path
+          log = Path("nextpnr_uwg30.log").read_text(encoding="utf-8")
+          frequencies = [float(value) for value in re.findall(r"Max frequency for clock.*?:\s*([0-9.]+) MHz", log)]
+          if not frequencies:
+              raise SystemExit("No nextpnr clock frequency results found")
+          if min(frequencies) < 48.0:
+              raise SystemExit(f"nextpnr timing constraint failed: {frequencies}")
+          print(f"nextpnr clock frequencies (MHz): {frequencies}; all meet 48 MHz")
+          PY
+
+      - name: Real icetime static timing analysis
+        id: sta
+        continue-on-error: true
+        working-directory: hardware/evt1-rev-c-source-20261116/rtl
+        run: |
+          test -s evt1_ar_display_fpga_bridge_rev_c.asc
+          icetime -d up5k -P uwg30 -p ice40up5k_uwg30_rev_c.pcf -c 48 -t -m -r evt1_ar_display_fpga_bridge_rev_c_sta.rpt evt1_ar_display_fpga_bridge_rev_c.asc
+          test -s evt1_ar_display_fpga_bridge_rev_c_sta.rpt
+          python3 - <<'PY'
+          import re
+          from pathlib import Path
+          report = Path("evt1_ar_display_fpga_bridge_rev_c_sta.rpt").read_text(encoding="utf-8")
+          frequencies = [float(value) for value in re.findall(r"Total path delay:.*?([0-9.]+) MHz", report)]
+          if not frequencies:
+              raise SystemExit("No icetime path frequency results found")
+          if min(frequencies) < 48.0:
+              raise SystemExit(f"icetime 48 MHz constraint failed: {frequencies}")
+          print(f"icetime path frequencies (MHz): {frequencies}; all meet 48 MHz")
+          PY
+
+      - name: Summarize real EDA results
+        if: always()
+        env:
+          SIM_RESULT: ${{ steps.sim.outcome }}
+          SYNTH_RESULT: ${{ steps.synth.outcome }}
+          PNR_RESULT: ${{ steps.pnr.outcome }}
+          STA_RESULT: ${{ steps.sta.outcome }}
+        run: |
+          echo "simulation=$SIM_RESULT"
+          echo "synthesis=$SYNTH_RESULT"
+          echo "pnr=$PNR_RESULT"
+          echo "sta=$STA_RESULT"
+          if [ "$SIM_RESULT" != "success" ] || [ "$SYNTH_RESULT" != "success" ] || [ "$PNR_RESULT" != "success" ] || [ "$STA_RESULT" != "success" ]; then
+            echo "One or more native EDA stages failed. See step logs and artifact."
+            exit 1
+          fi
+
+      - name: Cross-table and engineering verification
+        working-directory: hardware/evt1-rev-c-source-20261116
+        run: python3 verify_v1_0_engineering.py
+
+      - name: Upload EDA logs and reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: evt1-rev-c-eda-results
+          if-no-files-found: warn
+          path: |
+            hardware/evt1-rev-c-source-20261116/rtl/iverilog_sim.log
+            hardware/evt1-rev-c-source-20261116/rtl/yosys_synth.log
+            hardware/evt1-rev-c-source-20261116/rtl/nextpnr_uwg30.log
+            hardware/evt1-rev-c-source-20261116/rtl/*_sta.rpt
+            hardware/evt1-rev-c-source-20261116/rtl/*.json
+            hardware/evt1-rev-c-source-20261116/rtl/*.asc
+            hardware/evt1-rev-c-source-20261116/v1_0_verification_report.txt
+            hardware/evt1-rev-c-source-20261116/evidence/*.log
