@@ -1,101 +1,78 @@
 # 智元跃动 AI/AR 智能眼镜 V1.0 (EVT-1 Rev C) — 双目光机接口、电源时序、QSPI 协议、跨板 FPC 连接表及 JBD 阻断规范
 
 **文档编号**：`ZY-AIAR-V1.0-ICD-REV-C-20261116`  
-**适用硬件阶段**：EVT-1 Rev C（45 位号全量 BOM / 40 行完整 PINMAP / 5 总线 ICD 100% 交叉验证版）  
+**适用硬件阶段**：EVT-1 Rev C（继承 `a678be1` 并修复 `CDONE/AVDD` 上电时序占空比缺陷与 `24-Pin BTB` 3 线 I2S 直通映射）  
 **协作分工约束**：
 - **KIMI**：负责嘉立创 EDA 专业版（EasyEDA Pro）原理图绘制、封装核对与 6 层 Any-Layer HDI 刚柔结合板 PCB 设计。
 - **Codex**：负责 GitHub 分支 `handoff/evt1-rev-c-feasibility-20261115`（[PR #19](https://github.com/yfei7131-source/AI-AR-codex-Claude-/pull/19)）同步与云端 GitHub Actions 原生开源 EDA CI（`iverilog` / `vvp` / `yosys` / `nextpnr-ice40` / `icetime`）执行。
 
 ---
 
-## 1. 全系统三板三柔硬件架构与跨表一致性修正总览
+## 1. 基于 `a678be1` 的整机原理图深度电气核查与关键修正
 
-为实现 **34.75 g**（$\le 40.0\text{ g}$ 目标）整机质量预算与零信号溢出的真实可制造设计，本轮跨表一致性审查发现并修复了以下 4 项工程问题（已全部纳入 `verify_v1_0_engineering.py` 的 `CHK-07` 自动一致性门禁与第 17 项故障注入测试）：
-
-1. **修正 `J_CAM`（左前摄像头 BTB）与 `J_BTB_L` / `J_BRIDGE_IN`（主控$\leftrightarrow$鼻梁跨板 BTB）16-Pin 引脚数不足缺陷**：
-   - 原 `BM28B0.6-16DS/2-0.35V(53)`（16-Pin）无法容纳 8-bit DVP 摄像头的 19 路有效信号+地屏蔽（8 数据 + 4 同步/时钟 + 2 控制 + 2 SCCB + 3 门控电源 + 5 地 = **24 脚**），亦无法容纳跨鼻梁干线的 24 路信号（8 路 FPGA QSPI/配置/VSYNC + 2 路 I2C + 1 路隐私 LED 阳极 + 8 路右腿音频/IPC + 5 路电源/地 = **24 脚**）。
-   - 统一升级 `BOM-05 (J_CAM)`、`BOM-15 (J_BTB_L)`、`BOM-31 (J_BRIDGE_IN)` 为 [Hirose `BM28B0.6-24DS/2-0.35V(53)`](https://www.hirose.com/en/product/document?clcode=CL0673-5043-0-51&productname=BM28B0.6-16DS/2-0.35V(51)&series=BM28&documenttype=Catalog&lang=en&documentid=D49354_en)（**24-Pin**，`0.35 mm` pitch，尺寸 `1.50 × 5.50 × 0.60 mm`），沿镜腿/鼻梁长度方向顺置，完全满足 `0.25 mm` 板边净空与 `0.20 mm` 器件间距 DRC。
-2. **新增双目光机模拟偏置硬件上电时序门控 LDO `U6_OPT_AVDD` (`BOM-45`)**：
-   - 在鼻梁板背面 (`M-OPT-BRIDGE` `BOTTOM`, `X=2.10, Y=12.20 mm`) 新增 [TI `TLV75528PDQNR`](https://www.ti.com/lit/ds/symlink/tlv755p.pdf)（或按 `BLK-JBD-04` 贴装 `TLV75533PDQNR`，`X2SON-4` `1.0×1.0×0.40 mm`，带内部 $120\ \Omega$ 主动放电）。
-   - 其 `EN` 脚由 `U2_FPGA Ball D3 (CDONE / frame_vsync_1v8)` 经 RC 包络检测网络（$R_{\text{EN}}=100\text{ k}\Omega, C_{\text{EN}}=100\text{ nF}, \tau=10\text{ ms}$）驱动：保证上电及 FPGA 配置期间 `AVDD_OPT_BIAS = 0.00V`，仅在 `1V8_OPT_VDD` 稳定且 `CDONE=1` 后延时 $\ge 3.5\text{ ms}$ 才开启 `AVDD_OPT_BIAS`；断电时由内部 $120\ \Omega$ 快速泄放，从硬件底层杜绝 MicroLED 背板闩锁。
-3. **固化 `nRF5340-CMAA` 单主 I2S 数字混音拓扑，消除双主控 I2S 总线冲突**：
-   - 由右镜腿 [Nordic `nRF5340-CMAA-R7`](https://www.yic-electronics.com/blog/QFN-vs-WLCSP-vs-BGA-Differences,PCB-Design,and-BLE-Applications.html) 作为全系统唯一的 `1.8V` 功放 I2S Master 驱动左右声道 [ADI `MAX98357AEWL+T`](https://www.analog.com/media/en/technical-documentation/data-sheets/max98357a-max98357b.pdf)（`U10_AMP_L` / `U10_AMP_R`）；左镜腿 `ESP32-S3` 的本地提示音/TTS 经 `U8_PDM_LS` Bank 2 (`3.3V -> 1.8V`) 接入 `nRF5340` I2S RX 引脚进行数字混音，彻底消除 `U8_PDM_LS` 与 `nRF5340` 输出顶牛风险。
-4. **补齐 `PINMAP_V1_0_FROZEN.csv` 全部 40 行完整映射**：
-   - 100% 覆盖 `U1_HOST` 全部 **57 个引脚**（10 电源/RF + 14 禁用 + 33 外部 GPIO）、`U2_FPGA` 全部 **30 个焊球**（8 电源/地 + 1 专用配置 + 3 开漏未用 + 18 标准 CMOS PIO）、`4x SN74AXC8T245` 全部 **32 个通道**、以及 **6 颗 BTB 连接器（`J_DISP_L`、`J_DISP_R`、`J_CAM`、`J_BTB_L`、`J_BRIDGE_IN`、`J_BTB_R`）逐针信号表**。
+1. **修复 `U6_OPT_AVDD` 光机 `AVDD_OPT_BIAS` 上电时序电路（解决 `frame_vsync_1v8` `0.006%` 占空比均值关断缺陷）**：
+   - **原 `a678be1` 电气缺陷**：原方案将 `U6_OPT_AVDD` ([TI `TLV75528PDQNR`](https://www.ti.com/lit/ds/symlink/tlv755p.pdf)) 的 `EN` 脚通过无源 RC 滤波器接至 `U2_FPGA Ball D3 (CDONE / frame_vsync_1v8)`。但在进入用户模式后，`Ball D3` 为推挽输出 `frame_vsync_1v8`，每帧 `800,000` 个 `48 MHz` 周期（`16.667 ms`）中仅输出 `48` 个周期（`1.000 μs`）高脉冲，其余 `799,952` 个周期主动拉低至 `0.00V`，占空比仅 **`0.006%`**，RC 平均直流电压仅 **$1.80\text{ V} \times 0.00006 = 0.108\text{ mV} \ll V_{\text{IH(EN)}} (0.95\text{ V})$**，会导致 `U6_OPT_AVDD` 在启动后立即关断！
+   - **本轮硬件修正方案（`1V8_OPT_VDD` RC 充电 + `FPGA_CRESET_B` 肖特基钳位复位网络）**：
+     - 将 `R_SEQ = 100 kΩ` 上拉源改为常驻直流轨 `1V8_OPT_VDD` (`1.80 V`)，下接延迟电容 `C_SEQ = 220 nF` ($\tau = 22.0\text{ ms}$) 至 `GND`，并从 `OPT_AVDD_EN` 节点接一颗肖特基二极管 `D_SEQ` (`RB521S-30`, $V_F = 0.22\text{ V}$, 阳极接 `OPT_AVDD_EN`，阴极接 `FPGA_CRESET_B`)。
+     - **上电与复位锁死阶段 (`FPGA_CRESET_B = 0V`)**：`D_SEQ` 将 `OPT_AVDD_EN` 钳位在 $V_F = 0.22\text{ V} \le V_{\text{IL(EN)}} (0.40\text{ V})$，`U6_OPT_AVDD` 严格关断并通过内部 $120\ \Omega$ 电阻将 `AVDD_OPT_BIAS` 锁定在 `0.00 V`。
+     - **配置与延时开启阶段 (`FPGA_CRESET_B` 释放为 `1.80 V`)**：`D_SEQ` 反偏截止，`C_SEQ` 由 `0.22 V` 向 `1.80 V` 指数充电，到达 $V_{\text{IH(EN)}} = 0.95\text{ V}$ 的开启时间为：
+       $$t_{\text{EN}} = 22.0\text{ ms} \times \ln\left(\frac{1.80 - 0.22}{1.80 - 0.95}\right) = \mathbf{13.64\text{ ms}}$$
+       此时 FPGA 早已完成 `1.20 ms` CRAM 清零 + `2.60 ms` 40MHz SPI 配置（合计 `3.80 ms`），`CDONE=1` 且 `opt_cs_n` 已稳定输出高电平达 **`+9.84 ms`**！
+     - **稳态运行与掉电快放阶段**：运行期间 `FPGA_CRESET_B = 1.80 V` 为 100% 直流高电平，`OPT_AVDD_EN` 稳态保持 **`1.80 V` DC**；当系统复位 (`FPGA_CRESET_B = 0V`) 或 `1V8_OPT_VDD` 掉电时，`D_SEQ` 在 **$< 5\ \mu\text{s}$** 内快速泄放 `C_SEQ`，确保 `AVDD_OPT_BIAS` 先于 `1V8_OPT_VDD` 关断并触发 $120\ \Omega$ 主动放电。
+2. **修复 `J_BTB_L` / `J_BRIDGE_IN` (24-Pin) 与 `J_BTB_R` (16-Pin) 的跨板 3 线立体声 I2S 映射不一致**：
+   - **原 `a678be1` 缺陷**：`J_BTB_L` 仅用单个 `Pin 23 (S3_I2S_MUX_1V8)` 概括 I2S 总线，而右镜腿 `J_BTB_R` 却分配了 `Pins 10..13` 共 4 脚，导致跨板网表无法 1:1 对应。
+   - **本轮修正方案**：利用 [Hirose `BM28B0.6-24DS/2-0.35V(53)`](https://www.hirose.com/en/product/document?clcode=CL0673-5043-0-51&productname=BM28B0.6-16DS/2-0.35V(51)&series=BM28&documenttype=Catalog&lang=en&documentid=D49354_en) 自带的 **4 个 `3.0 A` 金属屏蔽接地固定脚 (`MP1..MP4`) + `Pin 5 (GND)`** 连接 `FPC_BRIDGE` 的 L2 完整地平面，将 `J_BTB_L` / `J_BRIDGE_IN` 的 **`Pins 22, 23, 24`** 明确分配给标准 3 线立体声 I2S 总线 **`I2S_BCLK_1V8` (`Pin 22`)、`I2S_LRCLK_1V8` (`Pin 23`)、`I2S_DOUT_1V8` (`Pin 24`)**，与右镜腿 `J_BTB_R` 的 **`Pins 10, 11, 12`** 实现 **100% 1:1 物理直通**！
+   - 左右声道功放 `U10_AMP_L` 与 `U10_AMP_R` ([ADI `MAX98357AEWL+T`](https://www.analog.com/media/en/technical-documentation/data-sheets/max98357a-max98357b.pdf)) 共用该 3 线 `1.8V` 立体声 I2S 总线：依据数据手册 Table 5 (p. 16)，`U10_AMP_L` 的 `Ball A2 (SD_MODE)` 直连 `1V8_SYS` 硬件固定提取左声道，而 `U10_AMP_R` 的 `Ball A2 (SD_MODE)` 经 $100\text{ k}\Omega$ 电阻接 `1V8_SYS` 硬件固定提取右声道；`U8_PDM_LS` Bank 2 (`Ch6..8`) 输出端串接 $1\text{ k}\Omega$ 隔离电阻，支持 `ESP32-S3` 混音输出或 `nRF5340-CMAA` 在休眠模式下直接接管驱动。
 
 ---
 
-## 2. 双目透明 AR 光机接口、电源时序、QSPI 协议与对称 FPC 方案
-
-### 2.1 鼻梁刚柔结合板 (`M-OPT-BRIDGE`) 对称双翼拓扑与 `J_DISP_L` / `J_DISP_R` 逐针定义
-
-- **几何对称性**：`M-OPT-BRIDGE` 尺寸 `4.20 × 22.00 × 0.50 mm`；中心 `Y = 9.50 mm` 放置 `U2_FPGA` ([`iCE40UP5K-UWG30ITR`](https://www.micro-semiconductor.com/datasheet/10-ICE40UP5K-MDP-EVN.pdf))，左翼 `Y = 4.20 mm` 放置 `J_DISP_L`，右翼 `Y = 14.80 mm` 放置 `J_DISP_R`。左右光机走线长度严格对称（均为 **`5.30 mm`**，等长差 $\Delta L = 0.00\text{ mm} \le 0.20\text{ mm}$），零 FPC 交叉跨越。
+## 2. 双目透明 AR 光机接口 (`J_DISP_L` / `J_DISP_R`) 与 QSPI 协议定义
 
 | BTB 引脚 (`BM28B0.6-10DS`) | 左光机 `J_DISP_L` (`Y=4.20mm`) | 右光机 `J_DISP_R` (`Y=14.80mm`) | 源端器件与引脚 | 电气特性与嘉立创 EDA 布线约束 |
 | :--- | :--- | :--- | :--- | :--- |
 | **Pin 1** | `1V8_OPT_VDD` | `1V8_OPT_VDD` | `U4_1V8` (`1V8_FPGA_IO`) | **第 1 顺位上电轨 (`1.80V`)**：每座就近放置 `4.7 μF (0402) + 100 nF (0201)` |
 | **Pin 2** | `GND` | `GND` | `L2/L5 GND` 平面 | 数字电源与时钟主回流地，紧邻 Pin 3 布置伴随接地微盲孔 |
-| **Pin 3** | `OPT_SCK_L` (`24.000 MHz`) | `OPT_SCK_R` (`24.000 MHz`) | `U2_FPGA Ball E3 (IOB_13B)` | 对称 T 型分支 + **靠近 FPGA 端各串接 1 颗 `22 Ω` (`0201`) 阻尼电阻** |
+| **Pin 3** | `OPT_SCK_L` (`24.000 MHz`) | `OPT_SCK_R` (`24.000 MHz`) | `U2_FPGA Ball E3 (IOB_13B)` | 对称 T 型分支（各 `5.30 mm`，$\Delta L = 0.00\text{ mm}$）+ **各串接 `22 Ω` 阻尼电阻** |
 | **Pin 4** | `OPT_CS_N_L` | `OPT_CS_N_R` | `U2_FPGA Ball C3 (IOB_10A)` | 对称 T 型分支 + **各串接 `22 Ω` 阻尼电阻** + `10 kΩ` 上拉至 `1V8_OPT_VDD` |
-| **Pin 5** | `opt_l_qdo[0]` | `opt_r_qdo[0]` | 左：`Ball A1` / 右：`Ball E5` | 左/右独立 4-bit QSPI 数据 D0，源端串接 `22 Ω`，`50 Ω` 阻抗控制 |
-| **Pin 6** | `opt_l_qdo[1]` | `opt_r_qdo[1]` | 左：`Ball A2` / 右：`Ball D5` | 左/右独立 4-bit QSPI 数据 D1，源端串接 `22 Ω`，`50 Ω` 阻抗控制 |
-| **Pin 7** | `opt_l_qdo[2]` | `opt_r_qdo[2]` | 左：`Ball A4` / 右：`Ball F5` | 左/右独立 4-bit QSPI 数据 D2，源端串接 `22 Ω`，`50 Ω` 阻抗控制 |
-| **Pin 8** | `opt_l_qdo[3]` | `opt_r_qdo[3]` | 左：`Ball E4` / 右：`Ball F4` | 左/右独立 4-bit QSPI 数据 D3，源端串接 `22 Ω`，`50 Ω` 阻抗控制 |
-| **Pin 9** | `AVDD_OPT_BIAS` | `AVDD_OPT_BIAS` | `U6_OPT_AVDD Pin 1 (OUT)` | **第 2 顺位延时上电轨（受 `BLK-JBD-04` 约束）**：由 `CDONE` RC 延时开启，断电 $120\ \Omega$ 主动放电 |
+| **Pin 5..8** | `opt_l_qdo[0..3]` | `opt_r_qdo[0..3]` | 左：`A1,A2,A4,E4` / 右：`E5,D5,F5,F4` | 左/右独立 4-bit QSPI 数据 D0..D3，源端串接 `22 Ω`，`50 Ω` 阻抗控制 |
+| **Pin 9** | `AVDD_OPT_BIAS` | `AVDD_OPT_BIAS` | `U6_OPT_AVDD Pin 1 (OUT)` | **第 2 顺位延时上电轨（`t_EN = 13.64 ms`）**：受 `BLK-JBD-04` 约束，断电 $120\ \Omega$ 主动放电 |
 | **Pin 10** | `GND_SHIELD` | `GND_SHIELD` | `GND` | 光机 FPC 电磁屏蔽层单点接地 |
-
-### 2.2 光机与 FPGA 四级硬件上电/断电时序链
-
-1. **T1 (`t = 0.0 ms`)**：`U4_1V2` (`TLV75512`) 输出 `1V2_FPGA_CORE (Ball C2)` 与经 `$100\ \Omega + 4.7\ \mu\text{F} + 100\text{ nF}$` 滤波的 `1V2_FPGA_PLL (Ball B2)` 最先建立（满足 [`FPGA-TN-02006-2.3` Checklist Item 1.4](https://0x04.net/~mwk/sbdocs/ice40/FPGA-TN-02006-2-3-iCE40-Hardware-Checklist.pdf)）。
-2. **T2 (`t = 0.8 ms`)**：`U4_1V8` (`TPS62840`) 输出 `1V8_FPGA_IO`（供 `Ball D2 SPI_VCCIO1`、`Balls A3/C4 VCCIO_0/2` 及光机 `1V8_OPT_VDD`），同时经 `$10\ \Omega + 4.7\ \mu\text{F}$` RC 网络延时为 `Ball D4 (VPP_2V5 = 1.80V)` 供电；此时 `OPT_CS_N` 被 `10 kΩ` 上拉电阻锁定为高电平，`CDONE = 0V` 使 `U6_OPT_AVDD` 保持关闭（`AVDD_OPT_BIAS = 0.00V`）。
-3. **T3 (`t = 5.0 ms`)**：`ESP32-S3` 在 `GPIO0 (QSPI_DIR1_EN) = 0` 下完成 Target SPI 比特流加载，`Ball D3 (CDONE)` 变高并输出 60Hz VSYNC，主控发送 49 个时钟后置 `QSPI_DIR1_EN = 1`。
-4. **T4 (`t = 8.5 ms`)**：`CDONE` 经 `$100\text{ k}\Omega + 100\text{ nF}$` RC 充电超过 `U6_OPT_AVDD` 开启阈值（$V_{\text{IH}} = 0.95\text{ V}$），`AVDD_OPT_BIAS` 平滑开启，随后由主控/FPGA 下发 JBD 初始化命令（`BLK-JBD-02`）并启动 60.000 Hz 双目刷新。
 
 ---
 
-## 3. 全板级 BTB 与柔性 FPC 互连逐针分配表（供 KIMI 直接连线）
+## 3. 全板级 BTB 与 T 型跨板 FPC 互连逐针分配表（供 KIMI 直接连线）
 
-### 3.1 `J_BTB_L` (`M-MAIN-L` TOP) $\leftrightarrow$ `FPC_BRIDGE` $\leftrightarrow$ `J_BRIDGE_IN` (`M-OPT-BRIDGE` BOTTOM) 24-Pin 逐针表
+### 3.1 `J_BTB_L` (`M-MAIN-L` TOP) $\leftrightarrow$ `J_BRIDGE_IN` (`M-OPT-BRIDGE` BOTTOM) $\leftrightarrow$ `J_BTB_R` (`M-AUD-R` TOP) 逐针映射表
 
-| Pin | 信号名 | 电压域 | 流向 | 功能说明与走线要求 | Pin | 信号名 | 电压域 | 流向 | 功能说明与走线要求 |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **1** | `VBUS_5V` | `5.0V` | `L -> R` | 右镜腿 `U3_R (BQ25170)` 充电输入（线宽 $\ge 0.25\text{ mm}$） | **13** | `host_qio[3]` | `1.8V` | `L -> B` | FPGA `Ball B1` (`U8_LS1` Bank 1 `Ch3`) |
-| **2** | `VSYS` | `3.5..4.4V` | `L -> B/R` | 供鼻梁 `U6_OPT_AVDD` 与右镜腿 `U10_AMP_R`（线宽 $\ge 0.25\text{ mm}$） | **14** | `frame_vsync_1v8` | `1.8V` | `B -> L` | FPGA `Ball D3 (CDONE/VSYNC)` $\rightarrow$ `U8_PDM_LS Ch1` & `U9_IMU FSYNC` |
-| **3** | `VBAT_R_RET` | `3.0..4.2V` | `R -> L` | 右电池经 `U3_R` 回传左板 `U4_OR (LM66200)` `VIN2` | **15** | `SYS_I2C_SCL_1V8` | `1.8V` | `L -> B` | 鼻梁 `U9_IMU (ICM-42688-P)` I2C 时钟 |
-| **4** | `1V8_SYS` | `1.80V` | `L -> B/R` | 供鼻梁 FPGA IO/`U4_1V2`/`Y1_OSC`/`U9_IMU` 及右板 `U11_BLE` | **16** | `SYS_I2C_SDA_1V8` | `1.8V` | `L <-> B` | 鼻梁 `U9_IMU (ICM-42688-P)` I2C 数据 |
-| **5** | `GND` | `0.0V` | `GND` | 电源与高速时钟主地屏蔽脚 | **17** | `PRIV_LED_ANODE` | `~1.9V` | `L -> B` | 左板 `R_SENSE (2.20Ω)` 输出至鼻梁隐私灯 `D3_PRIV` 阳极 |
-| **6** | `host_sck` | `1.8V` | `L -> B` | `40.000 MHz` QSPI 时钟 $\rightarrow$ FPGA `Ball D1`（两侧 Pin 5/7 包地） | **18** | `PDM_CLK_1V8` | `1.8V` | `L/R -> B` | `3.072 MHz` 数字麦克风时钟（供 `MK2_C` / `MK3_R`） |
-| **7** | `GND` | `0.0V` | `GND` | `host_sck` 专用伴随屏蔽地 | **19** | `PDM_D0_1V8` | `1.8V` | `B -> L/R` | 鼻梁麦克风 `MK2_C` 与左前麦克风 `MK1_L` 立体声 PDM 数据 0 |
-| **8** | `host_cs_n` | `1.8V` | `L -> B` | QSPI 片选 $\rightarrow$ FPGA `Ball C1 (SPI_SS_B)`（鼻梁接 `10k` 下拉） | **20** | `PDM_D1_1V8` | `1.8V` | `R -> L` | 右镜腿麦克风 `MK3_R` PDM 数据 1 |
-| **9** | `FPGA_CRESET_B` | `1.8V` | `L -> B` | FPGA 配置复位 $\rightarrow$ `Ball F3`（鼻梁接 `10k` 上拉） | **21** | `IPC_S3_TX_1V8` | `1.8V` | `L -> R` | `ESP32-S3 GPIO48` $\rightarrow$ `U8_LS1 Ch4` $\rightarrow$ `nRF5340 UART_RX` |
-| **10** | `host_qio[0]` | `1.8V` | `L -> B` | FPGA `Ball E1 (SPI_SI)`（`U8_LS1` Bank 2 `Ch8`） | **22** | `IPC_NRF_RX_1V8` | `1.8V` | `R -> L` | `nRF5340 UART_TX` $\rightarrow$ `U8_PDM_LS Ch2` $\rightarrow$ `ESP32-S3 GPIO47` |
-| **11** | `host_qio[1]` | `1.8V` | `L <-> B` | FPGA `Ball F1 (SPI_SO)`（`U8_LS1` Bank 1 `Ch1`，`DIR1` 受控） | **23** | `I2S_AMP_L_DOUT_1V8`| `1.8V` | `R <-> L` | `nRF5340` 混音后左声道 I2S/TDM 数据回传 `U10_AMP_L`（伴随 BCLK/LRCLK） |
-| **12** | `host_qio[2]` | `1.8V` | `L -> B` | FPGA `Ball F2`（`U8_LS1` Bank 1 `Ch2`） | **24** | `GND` | `0.0V` | `GND` | 音频与高速信号参考地 |
-
-### 3.2 `J_CAM` (`M-MAIN-L` TOP, `BM28B0.6-24DS`) 24-Pin 摄像头与防倒灌连接表
-
-| Pin | 信号名 | 连接目标 | Pin | 信号名 | 连接目标 |
+| `J_BTB_L` / `J_BRIDGE_IN` (24P) | 信号网络名 | 电压域 | 流向 | 对应 `J_BTB_R` (16P) 引脚 | 功能与跨板分支去向说明 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **1** | `CAM_AVDD_2V8` | `U6_CAM_AVDD`（受 `PRIV_WINDOW_OK` 门控 + $120\ \Omega$ 放电） | **13** | `CAM_HREF_1V8` | `U8_CAM_ISO2` Bank 1 `A3 -> B3` $\rightarrow$ `U1_HOST Pin 8 (GPIO3)` |
-| **2** | `AGND` | 模拟地单点汇接 `L2_GND1` | **14** | `CAM_DVDD_1V2` | `U6_CAM_DVDD`（受 `PRIV_WINDOW_OK` 门控 + $120\ \Omega$ 放电） |
-| **3** | `CAM_I2C_SCL_1V8` | `U8_LS3 (PCA9306)` 1.8V 侧（上拉至门控 `CAM_DOVDD_1V8`） | **15** | `CAM_DOVDD_1V8` | `U6_CAM_DOVDD`（受 `PRIV_WINDOW_OK` 门控 + 供 `U8_CAM_ISO1/2 VCCA`） |
-| **4** | `CAM_I2C_SDA_1V8` | `U8_LS3 (PCA9306)` 1.8V 侧（上拉至门控 `CAM_DOVDD_1V8`） | **16** | `CAM_D0_1V8` | `U8_CAM_ISO1` Bank 1 `A1 -> B1` $\rightarrow$ `U1_HOST Pin 9 (GPIO4)` |
-| **5** | `CAM_RESET_N_1V8` | `U8_CAM_ISO2` Bank 2 `A6 <- B6`（`10k` 下拉） | **17** | `CAM_D1_1V8` | `U8_CAM_ISO1` Bank 1 `A2 -> B2` $\rightarrow$ `U1_HOST Pin 10 (GPIO5)` |
-| **6** | `CAM_PWDN_1V8` | `U8_CAM_ISO2` Bank 2 `A7 <- B7`（`10k` 上拉） | **18** | `CAM_D2_1V8` | `U8_CAM_ISO1` Bank 1 `A3 -> B3` $\rightarrow$ `U1_HOST Pin 11 (GPIO6)` |
-| **7** | `GND` | `CAM_XCLK` 左屏蔽地 | **19** | `CAM_D3_1V8` | `U8_CAM_ISO1` Bank 1 `A4 -> B4` $\rightarrow$ `U1_HOST Pin 12 (GPIO7)` |
-| **8** | `CAM_XCLK_1V8` | `U8_CAM_ISO2` Bank 2 `A5 <- B5` $\leftarrow$ `U1_HOST Pin 52 (GPIO46, 20MHz)` | **20** | `CAM_D4_1V8` | `U8_CAM_ISO1` Bank 2 `A5 -> B5` $\rightarrow$ `U1_HOST Pin 13 (GPIO8)` |
-| **9** | `GND` | `CAM_XCLK` / `CAM_PCLK` 隔离地 | **21** | `CAM_D5_1V8` | `U8_CAM_ISO1` Bank 2 `A6 -> B6` $\rightarrow$ `U1_HOST Pin 43 (GPIO38)` |
-| **10** | `CAM_PCLK_1V8` | `U8_CAM_ISO2` Bank 1 `A1 -> B1` $\rightarrow$ `U1_HOST Pin 47 (GPIO41)` | **22** | `CAM_D6_1V8` | `U8_CAM_ISO1` Bank 2 `A7 -> B7` $\rightarrow$ `U1_HOST Pin 44 (GPIO39)` |
-| **11** | `GND` | `CAM_PCLK` 右屏蔽地 | **23** | `CAM_D7_1V8` | `U8_CAM_ISO1` Bank 2 `A8 -> B8` $\rightarrow$ `U1_HOST Pin 45 (GPIO40)` |
-| **12** | `CAM_VSYNC_1V8` | `U8_CAM_ISO2` Bank 1 `A2 -> B2` $\rightarrow$ `U1_HOST Pin 48 (GPIO42)` | **24** | `GND` | 数字返回地 |
+| **Pin 1** | `VBUS_5V` | `5.0V` | `L -> R` | **`J_BTB_R Pin 1`** | 左腿 USB-C/Pogo 5V 直通右腿充电芯片 `U3_R (BQ25170)` |
+| **Pin 2** | `VSYS` | `3.5..4.4V` | `L -> B/R` | **`J_BTB_R Pin 2`** | 系统主母线供鼻梁 `U6_OPT_AVDD` 与右腿功放 `U10_AMP_R` |
+| **Pin 3** | `VBAT_R_RET` | `3.0..4.2V` | `R -> L` | **`J_BTB_R Pin 3`** | 右电池经 `U3_R` 回传左板理想二极管 `U4_OR (LM66200) VIN2` |
+| **Pin 4** | `1V8_SYS` | `1.80V` | `L -> B/R` | **`J_BTB_R Pin 4`** | 供鼻梁 FPGA IO/`U4_1V2`/`Y1_OSC`/`U9_IMU`/`MK2_C` 及右板 `U11_BLE`/`MK3_R` |
+| **Pin 5 + MP1..4** | `GND` | `0.0V` | `GND` | **`J_BTB_R Pin 5 + MP1..4`** | `FPC_BRIDGE` L2 完整参考地平面 + 4 个 `3.0A` 金属屏蔽固定脚 |
+| **Pin 6** | `host_sck` | `1.8V` | `L -> B` | *(鼻梁终结)* | `U8_LS1 Bank 2 Ch5` $\rightarrow$ `U2_FPGA Ball D1 (SPI_SCK)` (`40.000 MHz`) |
+| **Pin 7** | `host_cs_n` | `1.8V` | `L -> B` | *(鼻梁终结)* | `U8_LS1 Bank 2 Ch6` $\rightarrow$ `U2_FPGA Ball C1 (SPI_SS_B)` (`10k` 下拉) |
+| **Pin 8** | `FPGA_CRESET_B` | `1.8V` | `L -> B` | *(鼻梁终结)* | `U8_LS1 Bank 2 Ch7` $\rightarrow$ `U2_FPGA Ball F3` 及 `D_SEQ` 阴极 (`10k` 上拉) |
+| **Pin 9..12** | `host_qio[0..3]` | `1.8V` | `L <-> B` | *(鼻梁终结)* | `U8_LS1` $\leftrightarrow$ `U2_FPGA Balls E1, F1(SPI_SO), F2, B1` |
+| **Pin 13** | `frame_vsync_1v8` | `1.8V` | `B -> L` | *(鼻梁终结)* | `U2_FPGA Ball D3 (CDONE/VSYNC)` $\rightarrow$ `U9_IMU FSYNC` & `U8_PDM_LS Ch1` |
+| **Pin 14..15** | `SYS_I2C_SCL/SDA_1V8` | `1.8V` | `L <-> B` | *(鼻梁终结)* | `U8_LS3 (PCA9306)` $\leftrightarrow$ `U9_IMU (ICM-42688-P)` |
+| **Pin 16** | `PRIV_LED_ANODE` | `~1.9V` | `L -> B` | *(鼻梁终结)* | `U5_LED2V8 -> R_SENSE (2.20Ω)` $\rightarrow$ 鼻梁隐私指示灯 `D3_PRIV` 阳极 |
+| **Pin 17** | `PDM_CLK_1V8` | `1.8V` | `L/R -> B/R` | **`J_BTB_R Pin 6`** | `3.072 MHz` PDM 麦克风时钟（同步驱动 `MK1_L`、`MK2_C`、`MK3_R`） |
+| **Pin 18** | `PDM_D0_1V8` | `1.8V` | `B -> L` | *(鼻梁终结)* | 鼻梁 `MK2_C (SELECT=1V8)` 与左腿 `MK1_L (SELECT=GND)` 复用数据线 0 |
+| **Pin 19** | `PDM_D1_1V8` | `1.8V` | `R -> L` | **`J_BTB_R Pin 7`** | 右镜腿 `MK3_R (SELECT=GND)` PDM 数据线 1 |
+| **Pin 20** | `IPC_S3_TX_1V8` | `1.8V` | `L -> R` | **`J_BTB_R Pin 8`** | `ESP32-S3 GPIO48` $\rightarrow$ `U8_LS1 Ch4` $\rightarrow$ `U11_BLE (nRF5340) UART_RX` |
+| **Pin 21** | `IPC_NRF_RX_1V8` | `1.8V` | `R -> L` | **`J_BTB_R Pin 9`** | `U11_BLE (nRF5340) UART_TX` $\rightarrow$ `U8_PDM_LS Ch2` $\rightarrow$ `ESP32-S3 GPIO47` |
+| **Pin 22** | `I2S_BCLK_1V8` | `1.8V` | `L/R -> L/R` | **`J_BTB_R Pin 10`** | 立体声 I2S 位时钟 (`1.536 MHz`)，连接 `U10_AMP_L`、`U10_AMP_R`、`U11_BLE` |
+| **Pin 23** | `I2S_LRCLK_1V8` | `1.8V` | `L/R -> L/R` | **`J_BTB_R Pin 11`** | 立体声 I2S 帧时钟 (`48.0 kHz`)，连接 `U10_AMP_L`、`U10_AMP_R`、`U11_BLE` |
+| **Pin 24** | `I2S_DOUT_1V8` | `1.8V` | `L/R -> L/R` | **`J_BTB_R Pin 12`** | 立体声 I2S 数据线（`U10_AMP_L` 取左声道，`U10_AMP_R` 取右声道） |
+| *(右腿尾端)* | `VBAT_R_CELL_P / NTC_TS_R / SPK_R_P / SPK_R_N` | `4.2V / Audio` | `R <-> BAT/SPK` | **`J_BTB_R Pins 13..16`** | 右后电池包 `BAT_R` 正极/NTC 与右扬声器差分输出 (`U10_AMP_R OUTP/OUTN`) |
 
 ---
 
 ## 4. JBD 原厂 NDA 资料缺失造成的 4 项阻断 (`BLK-JBD-01` ~ `BLK-JBD-04`)
 
-| 阻断编号 | 阻断项名称 | 缺失的具体 JBD 原厂资料 | 已完成的硬件防呆与解耦措施 | 解阻路径 |
-| :--- | :--- | :--- | :--- | :--- |
-| **`BLK-JBD-01`** | **光机 FPC 金手指线序与极性未签核** | `JBD013VGA-G` 原厂签章图纸中的 FPC 金手指 Pin 1..10（或面板 24-pin 原始接口）精确线序及正反面接触方向 | 鼻梁主板 `M-OPT-BRIDGE` 已冻结对称 10-Pin BTB (`J_DISP_L` / `J_DISP_R`) 标准接口，将线序映射隔离在独立的光机转接软板 (`FPC_OPT_L/R`) | 获取 JBD 签章图纸后定版 `FPC_OPT_L/R` 线序，**鼻梁刚柔主板无需改版** |
-| **`BLK-JBD-02`** | **上电初始化寄存器序列 (Init LUT) 缺失** | 面板解锁码、温度漂移补偿、峰值电流增益 DAC、睡眠唤醒及自检寄存器地址表 | FPGA 已支持主机 SPI/QSPI 命令扩展，且 `ESP32-S3` 预留初始化表存储空间 | 取得 JBD FAE 初始化 C 数组后写入 `ESP32-S3` 固件在 T4 阶段下发 |
-| **`BLK-JBD-03`** | **QSPI 行写命令格式与 2×2 像素合并模式未核实** | `0x32` 行写指令后的行地址位偏移、Dummy 时钟数及 `640×480` 至 `320×240` 像素合并命令码 | RTL 中 `CMD_HDR_NIBBLES = 12` 与 `hdr_nibble_q` 独立模块化封装 | 核对 JBD QSPI 时序图后更新 `hdr_nibble_q` 常量 |
-| **`BLK-JBD-04`** | **阴极/模拟偏置电压 (`AVDD_OPT_BIAS`) 与 3D STEP 缺失** | `AVDD` 精确电压值（`2.8V` / `3.3V`）、最大电流及光机+波导总成 3D STEP (`JBD013VGA_STEP.stp`) | 已在鼻梁板配置 `U6_OPT_AVDD` (`X2SON-4` 兼容 `TLV75528P`/`TLV75533P` 共封装) 与 `CDONE` RC 延时电路 | 根据原厂规格选贴 `2.8V` 或 `3.3V` LDO 料号，并导入 STEP 完成前框光机仓干涉检查 |
+- **`BLK-JBD-01`（FPC 金手指线序与极性未签核）**：鼻梁板已冻结对称 10-Pin `J_DISP_L/R`，线序差异隔离于独立光机转接 FPC，待原厂签章图纸确认后投板转接 FPC。
+- **`BLK-JBD-02`（上电初始化寄存器序列 LUT 缺失）**：待获取 JBD 面板解锁、温补与亮度 DAC 寄存器表后，在 $t > 13.64\text{ ms}$（`AVDD_OPT_BIAS` 稳定后）由主控下发。
+- **`BLK-JBD-03`（QSPI `0x32` 行写命令格式与 2×2 像素合并指令未核实）**：待获取原厂协议手册后核对 `CMD_HDR_NIBBLES = 12` 编码。
+- **`BLK-JBD-04`（`AVDD_OPT_BIAS` 精确电压值与 3D STEP 缺失）**：`U6_OPT_AVDD` 封装兼容 `2.8V` (`TLV75528P`) 与 `3.3V` (`TLV75533P`)，待原厂规格书与 `JBD013VGA_STEP.stp` 确认后选贴并完成光机仓干涉复核。

@@ -277,10 +277,23 @@ def check_lattice_uwg30_pinout_power_and_config_spec(cfg):
     if not tn.get("spi_so_boot_contention_isolated_via_u8_ls1_dir1", False):
         return "FAIL", "Ball F1 (SPI_SO) output contention during Target SPI configuration is not isolated!"
 
+    opt_seq = tn.get("optical_avdd_sequencer", {})
+    if opt_seq.get("enable_charging_source") != "1V8_OPT_VDD" or opt_seq.get("reset_clamp_diode_cathode") != "FPGA_CRESET_B":
+        return "FAIL", "Optical AVDD sequencer must charge from 1V8_OPT_VDD with Schottky clamp to FPGA_CRESET_B (driving RC from 0.006%-duty-cycle VSYNC/CDONE averages 0.108mV and shuts off AVDD)!"
+    vf = opt_seq.get("schottky_vf_v", 1.0)
+    vil = opt_seq.get("ldo_en_vil_v", 0.40)
+    vih = opt_seq.get("ldo_en_vih_v", 0.95)
+    tau_ms = (opt_seq.get("r_seq_ohm", 0.0) * opt_seq.get("c_seq_nf", 0.0)) / 1e6
+    t_en_ms = tau_ms * math.log((1.80 - vf) / (1.80 - vih)) if tau_ms > 0 else 0.0
+    t_cfg_ms = opt_seq.get("fpga_config_time_ms", 3.80)
+    if vf > vil or t_en_ms < (t_cfg_ms + 5.0):
+        return "FAIL", f"Optical AVDD sequencer timing invalid: Vf={vf:.2f}V (must <={vil:.2f}V), t_EN={t_en_ms:.2f}ms (must >={t_cfg_ms+5.0:.2f}ms)!"
+
     detail = (
         f"UWG30=18/18 legal CMOS PIO balls (FPGA-EB-02007 p.23; 0 power/GND/CRESET_B/RGB conflicts); "
-        f"FPGA-TN-02006-2.3 Power/Config Verified: Ball B2 VCCPLL=100R+4.7uF+100nF, Ball D4 VPP_2V5=1.8V (Target SPI CRAM, no HFOSC/LFOSC/RGB), "
-        f"Ball C1 SPI_SS_B=10k PD, Ball F3 CRESET_B=10k PU, Ball D3 CDONE=4.7k PU, Ball F1 SPI_SO isolated via U8_LS1 DIR1."
+        f"FPGA-TN-02006-2.3 & Optical Sequencer Verified: Ball B2 VCCPLL=100R+4.7uF+100nF, Ball D4 VPP_2V5=1.8V, "
+        f"Ball C1 SPI_SS_B=10k PD, Ball F3 CRESET_B=10k PU, Ball D3 CDONE=4.7k PU, Ball F1 SPI_SO isolated via U8_LS1 DIR1; "
+        f"U6_OPT_AVDD EN clamped at {vf:.2f}V when CRESET_B=0, enables at t_EN={t_en_ms:.2f}ms (+{t_en_ms-t_cfg_ms:.2f}ms after {t_cfg_ms:.2f}ms SPI config), steady-state=1.80V DC."
     )
     return "PASS", detail
 
@@ -584,14 +597,22 @@ def check_cross_table_bom_pinmap_icd_consistency(cfg):
         if req_ref not in pin_chips:
             return "FAIL", f"PINMAP_V1_0_FROZEN.csv missing connector/sequencer entry for {req_ref}!"
 
-    # 5. Verify ICD_INTERFACE_CONTROL_TABLE.csv references 24-Pin J_CAM and U6_OPT_AVDD optical sequencing
+    # 5. Verify 3-wire stereo I2S (I2S_BCLK_1V8, I2S_LRCLK_1V8, I2S_DOUT_1V8) is routed 1:1 on both J_BTB_L and J_BTB_R (no single-pin S3_I2S_MUX_1V8 truncation)
+    pin_text = " ".join(" ".join(r.values()) for r in pin_rows)
+    if "S3_I2S_MUX_1V8" in pin_text or "CDONE_RC_DELAYED" in pin_text:
+        return "FAIL", "PINMAP contains broken single-pin S3_I2S_MUX_1V8 truncation or broken 0.006%-duty-cycle CDONE_RC_DELAYED optical sequencer!"
+    for req_i2s in ("22:I2S_BCLK_1V8", "23:I2S_LRCLK_1V8", "24:I2S_DOUT_1V8", "10:I2S_BCLK_1V8", "11:I2S_LRCLK_1V8", "12:I2S_DOUT_1V8"):
+        if req_i2s not in pin_text:
+            return "FAIL", f"Missing 1:1 cross-board stereo I2S pin assignment {req_i2s} in PINMAP_V1_0_FROZEN.csv!"
+
+    # 6. Verify ICD_INTERFACE_CONTROL_TABLE.csv references 24-Pin J_CAM and U6_OPT_AVDD optical sequencing
     icd_text = " ".join(" ".join(r.values()) for r in icd_rows)
     if "24-Pin BTB J_CAM" not in icd_text or "U6_OPT_AVDD" not in icd_text or "BLK-JBD-01" not in icd_text:
         return "FAIL", "ICD_INTERFACE_CONTROL_TABLE.csv out of sync with BOM/PINMAP (missing 24-Pin J_CAM, U6_OPT_AVDD or BLK-JBD-01..04)!"
 
     return (
         "PASS",
-        "45/45 BOM RefDes <-> 40-row PINMAP (57/57 S3 pins, 30/30 UWG30 balls, 4x AXC8T245, 24P J_CAM/J_BTB_L/J_BRIDGE_IN, 16P J_BTB_R, 10P J_DISP_L/R, U6_OPT_AVDD) <-> 5-bus ICD 100% consistent."
+        f"45/45 BOM RefDes <-> {len(pin_rows)}-row PINMAP (57/57 S3 pins, 30/30 UWG30 balls, 4x AXC8T245, 24P J_CAM/J_BTB_L/J_BRIDGE_IN [Pins 22..24=3-wire I2S], 16P J_BTB_R [Pins 10..12=3-wire I2S], 10P J_DISP_L/R, U6_OPT_AVDD + all PMICs/Sensors/Amps/Mics) <-> 5-bus ICD 100% consistent."
     )
 
 def run_negative_fault_injection_suite(base_cfg):
@@ -689,9 +710,25 @@ def run_negative_fault_injection_suite(base_cfg):
         BOM_CSV_PATH.write_text(bom_orig, encoding="utf-8")
     results.append(("Reject 16-Pin J_CAM BTB Signal Overflow", s17 == "FAIL"))
 
+    # Mut 18: Drive U6_OPT_AVDD EN from 0.006%-duty-cycle CDONE/VSYNC pulse (averages 0.108mV DC -> shuts off AVDD in user mode)
+    c18 = copy.deepcopy(base_cfg["4_fpga_uwg30_pinout_and_rtl_timing"])
+    c18["lattice_tn02006_power_and_config_audit"]["optical_avdd_sequencer"]["enable_charging_source"] = "CDONE_VSYNC_PULSE"
+    s18, _ = check_lattice_uwg30_pinout_power_and_config_spec(c18)
+    results.append(("Reject 0.006%-Duty VSYNC Optical AVDD Sequencer", s18 == "FAIL"))
+
+    # Mut 19: Truncate 3-wire stereo I2S bus on J_BTB_L to single-pin S3_I2S_MUX_1V8
+    pinmap_path = SCRIPT_DIR / "PINMAP_V1_0_FROZEN.csv"
+    pin_orig = pinmap_path.read_text(encoding="utf-8")
+    try:
+        pinmap_path.write_text(pin_orig.replace("22:I2S_BCLK_1V8", "23:S3_I2S_MUX_1V8"), encoding="utf-8")
+        s19, _ = check_cross_table_bom_pinmap_icd_consistency(base_cfg)
+    finally:
+        pinmap_path.write_text(pin_orig, encoding="utf-8")
+    results.append(("Reject Single-Pin I2S Bus Truncation on J_BTB_L", s19 == "FAIL"))
+
     all_caught = all(ok for _, ok in results)
     summary = "; ".join(f"{name}={'CAUGHT' if ok else 'MISSED'}" for name, ok in results)
-    return ("PASS" if all_caught else "FAIL"), f"17/17 negative fault injections caught: {summary}"
+    return ("PASS" if all_caught else "FAIL"), f"19/19 negative fault injections caught: {summary}"
 
 
 def main():
@@ -718,7 +755,7 @@ def main():
         ("CHK-05 [45/45 BOM 3D Assembly, Symmetric Optical Wings, HDI Escape & Native CAD/STEP DRC]", check_complete_bom_hdi_escape_and_cad_drc(cfg["5_hdi_pcb_and_complete_bom_3d_placement"], cfg["2_dual_battery_catalog_and_power_tree"])),
         ("CHK-06 [Mass (34.75g), CoG, Runtime & Thermal Physical Verification]", check_analytical_mass_cog_thermal(cfg["6_power_thermal_mass_and_cog_budgets"], cfg["2_dual_battery_catalog_and_power_tree"])),
         ("CHK-07 [Cross-Table Consistency Audit: 45-RefDes BOM <-> 57-Pin S3/30-Ball FPGA/6-BTB PINMAP <-> ICD]", check_cross_table_bom_pinmap_icd_consistency(cfg)),
-        ("CHK-08 [Anti-Fake-PASS 17-Case Hardware Fault Injection Suite]", run_negative_fault_injection_suite(cfg)),
+        ("CHK-08 [Anti-Fake-PASS 19-Case Hardware Fault Injection Suite]", run_negative_fault_injection_suite(cfg)),
     ]
 
     EDA_LOG_PATH.write_text("\n".join(eda_logs) + "\n", encoding="utf-8")

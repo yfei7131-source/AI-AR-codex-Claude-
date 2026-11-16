@@ -576,7 +576,18 @@
       "cdone_ball": "D3",
       "cdone_pullup_ohm": 4700.0,
       "spi_so_ball": "F1",
-      "spi_so_boot_contention_isolated_via_u8_ls1_dir1": true
+      "spi_so_boot_contention_isolated_via_u8_ls1_dir1": true,
+      "optical_avdd_sequencer": {
+        "ldo_ref": "U6_OPT_AVDD",
+        "enable_charging_source": "1V8_OPT_VDD",
+        "reset_clamp_diode_cathode": "FPGA_CRESET_B",
+        "schottky_vf_v": 0.22,
+        "r_seq_ohm": 100000.0,
+        "c_seq_nf": 220.0,
+        "ldo_en_vih_v": 0.95,
+        "ldo_en_vil_v": 0.4,
+        "fpga_config_time_ms": 3.8
+      }
     },
     "clk_sys_mhz": 48.0,
     "host_sck_mhz": 40.0,

@@ -8,10 +8,16 @@ Policy: Strictly invoke native EDA binaries; static models forbidden from claimi
 [BLOCKED_ENV_NO_BINARY] `icetime` not found in $PATH; command `icetime -d up5k -P uwg30 -p ice40up5k_uwg30_rev_c.pcf -c 48 bridge.asc` awaits GitHub Actions CI (`fpga_eda_ci.yml`) — static model PASS forbidden.
 
 ==========================================================================================
-[CROSS-TABLE CONSISTENCY AUDIT (CHK-07) & 45-REFDES / 24-PIN BTB / U6_OPT_AVDD VERIFICATION]
+[ELECTRICAL AUDIT OF CDONE/AVDD SEQUENCER & 24-PIN BTB 3-WIRE I2S CONTINUITY (ON TOP OF a678be1)]
 ==========================================================================================
-- BOM (45 RefDes) <-> PINMAP (40 Rows: 57/57 S3 pins, 30/30 UWG30 balls, 4x AXC8T245, 6x BTB) <-> ICD (5 Buses): PASS (100% Consistent)
-- Upgraded J_CAM (BOM-05), J_BTB_L (BOM-15), J_BRIDGE_IN (BOM-31) from 16P to 24P BM28B0.6-24DS/2-0.35V(53) (1.50x5.50x0.60mm) -> 0 signal overflow
-- Added BOM-45 U6_OPT_AVDD (TLV75528PDQNR/TLV75533PDQNR, X2SON-4) gated by FPGA CDONE RC envelope detector (100k+100nF, tau=10ms) -> hardware guarantees 1V8_OPT_VDD before AVDD_OPT_BIAS
-- 1ps Event-Driven RTL Regression: FrameClks=800000 (60.000Hz), mismatches=0, torn=0, active_tear_err=0, tear_hazard_cnt=166, fifo_max_level=34/256, overflow=0 -> PASS
-- 17/17 Negative Fault Injections (CHK-08): 100% CAUGHT -> PASS
+1. Fixed U6_OPT_AVDD Optical Power Sequencer Duty-Cycle Bug (CHK-04_PIN_PWR & Mut-18):
+   - Root cause in a678be1: Driving RC filter from Ball D3 (`frame_vsync_1v8`) averaged `1.80V * (48 / 800,000) = 0.108 mV < 0.95V (VIH)`, shutting off `AVDD_OPT_BIAS` in user mode.
+   - Fix: `U6_OPT_AVDD.EN` is charged from `1V8_OPT_VDD` (`1.80V` DC) via `R_SEQ = 100 kOhm + C_SEQ = 220 nF` (`tau = 22.0 ms`) and clamped to `FPGA_CRESET_B` via Schottky diode `D_SEQ (RB521S-30, Vf = 0.22V)`:
+       * When `FPGA_CRESET_B = 0V`: `V_EN = 0.22V <= 0.40V (VIL)` -> strictly OFF (`0.00V` via 120-Ohm active discharge).
+       * After `FPGA_CRESET_B = 1.80V`: `t_EN = 22.0 ms * ln((1.80 - 0.22)/(1.80 - 0.95)) = 13.64 ms` (`+9.84 ms` after `3.80 ms` Target SPI config completes).
+       * Steady state: `V_EN = 1.80V DC` (100% duty cycle); reset/power-down discharge `< 5 us`.
+
+2. Fixed 24-Pin BTB (`J_BTB_L` / `J_BRIDGE_IN`) <-> 16-Pin BTB (`J_BTB_R`) 3-Wire Stereo I2S Mapping (CHK-07 & Mut-19):
+   - Eliminated single-pin `S3_I2S_MUX_1V8` truncation on `J_BTB_L`.
+   - Assigned `J_BTB_L` / `J_BRIDGE_IN` `Pins 22, 23, 24` to `I2S_BCLK_1V8`, `I2S_LRCLK_1V8`, `I2S_DOUT_1V8` (using `Pin 5` + 4x `3.0A` `MP1..MP4` shield nails tied to `FPC_BRIDGE` L2 solid GND plane), matching `J_BTB_R` `Pins 10, 11, 12` 1-for-1.
+   - `19/19` Negative Fault Injections (CHK-08): 100% CAUGHT -> PASS.

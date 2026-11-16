@@ -4,9 +4,9 @@
 
 ## 工程源文件完整性
 
-- 本次工程 ZIP 含 24 个文件：22 个完整工程树文件（含源 CI）、1 个 patch、1 个完整 Git bundle。
-- bundle 提交树 22 个文件与 ZIP 中对应文件全部一致，无内部源码缺失。
-- bundle 最新头为 `a678be1437b965ac83874138f28792202e0901a9`；指定提交 `dfcf8e113e1a67eb876eb6534ead04d4b3b382b5` 是其直接父提交。
+- 本次内层工程 ZIP 含 24 个条目：22 个完整工程树文件（含源 CI）、1 个 patch、1 个完整 Git bundle。
+- 21 个工程文件与 bundle 提交树逐字节一致，无内部源码缺失；源 CI 由仓库根工作流以适配路径保留。
+- bundle 最新头为 `bb876238fd25ac6be7c8f706b3d273b05d85a847`；指定提交即该头，其直接父提交为 `a678be1437b965ac83874138f28792202e0901a9`。
 - 已存在且不属于缺失：
   - `rtl/evt1_ar_display_fpga_bridge_rev_c.v`
   - `rtl/tb_evt1_ar_display_fpga_bridge_rev_c.v`
