@@ -48,9 +48,9 @@ jobs:
           python3 - <<'PY'
           import re
           from pathlib import Path
-          values=[float(v) for v in re.findall(r"Max frequency for clock.*?:\s*([0-9.]+) MHz",Path('nextpnr_uwg30.log').read_text())]
-          assert values and min(values)>=48,values
-          print('nextpnr48MHz gatesPASS:',values)
+          values={name:float(v) for name,v in re.findall(r"Max frequency for clock\s+'([^']+)'[^:]*:\s*([0-9.]+) MHz",Path('nextpnr_uwg30.log').read_text())}
+          assert values and min(values.values())>=48,values
+          print('nextpnr final post-route48MHz gatesPASS:',values)
           PY
       - name: Real icetime with 48MHz gate
         id: sta

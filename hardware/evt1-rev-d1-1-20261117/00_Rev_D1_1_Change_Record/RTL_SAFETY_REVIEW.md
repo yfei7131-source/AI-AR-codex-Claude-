@@ -38,3 +38,9 @@ Missing Icarus/vvp returns exit2 and prints BLOCKED_NATIVE_ICARUS. It never prin
 Hard CDONE during configuration, hard CRESET_B, CRAM loading, brownout and unpowered I/O are outside this user-mode RTL module. No `$force` of the RTL POR counter is presented as a device-configuration test. Those cases require the separate board/supervisor model and physical qualification.
 
 Neither user RTL nor a same-clock counter can prove shutdown of its own stopped clock. Independent watchdog timing, supply-supervisor thresholds, output leakage, diode/switch transients, rail ordering and JBD discharge/settling requirements remain distinct engineering gates. Deassertion recovery/removal, FPC ground shift and real shutdown waveforms also require device/board verification; a passing fabric STA does not cover every asynchronous or analog path.
+
+## Native routing regression and closure policy
+
+Run43951167658 passed the updated full regression and all11 safety cases, but its default route failed host_sck at46.81MHz. The critical path was the inherited FIFO Gray-pointer comparison/write-enable path:6.60ns logic plus14.76ns routing,not the shutdown path. The48MHz requirement remains unchanged.
+
+`route_rev_d1_1.py` searches fixed seeds0..7 in order and accepts only the first candidate with successful nextpnr exit,all final routed clock frequencies≥48MHz,and independently successful icetime≥48MHz. Each failed candidate log and timing report is retained; `route_search_results.json` records the ordered attempts and selectedseed. CI reads the last report perclock (final routing),rather than an earlier placement estimate. No clock,PCF or RTL function is relaxed. A failed bounded search remains FAIL.

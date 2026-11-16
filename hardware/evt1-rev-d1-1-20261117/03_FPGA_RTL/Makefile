@@ -29,7 +29,7 @@ synth:
 	yosys -l yosys_synth.log -p "synth_ice40 -top $(TOP) -json $(TOP).json" $(RTL_SRC)
 
 pnr: synth
-	nextpnr-ice40 --up5k --package uwg30 --pcf $(PCF) --json $(TOP).json --asc $(TOP).asc --freq 48 -l nextpnr_uwg30.log
+	python3 route_rev_d1_1.py --seeds 0 1 2 3 4 5 6 7 --frequency 48
 
 sta: pnr
 	icetime -d up5k -P uwg30 -p $(PCF) -c 48 -t -m -r $(TOP)_sta.rpt $(TOP).asc
