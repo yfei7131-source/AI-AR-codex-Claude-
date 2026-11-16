@@ -1,0 +1,11 @@
+[PASS] R1.2-01 Rev D1.1 BOM & PINMAP Scale: BOM=135, PINMAP=1067
+[PASS] R1.2-02 Rev D1.1 Power/AVDD/BTB MPNs: Checked 18 key MPNs; missing=[]
+[PASS] R1.2-03 Legacy Power ICs Excluded: Forbidden legacy parts in BOM=[]
+[PASS] R1.2-04 Rev D1.1 Mass Plan: MASS_PLAN_REV_D1_1.csv=[41.2408, 39.423]
+[PASS] R1.2-05 ECR-01 Rejected in R0.1 Integration Gates: Confirmed ECR-01 (delete FPGA) is REJECTED due to 0 DSI on ESP32-S3
+[PASS] R1.2-06 Deliverables Populated: Reconciliation rows=16, Risk rows=20
+[PASS] R1.2-07 Optical & Thermal Constraints Unified: 16px overscan, <=1.5W, <=40/43C thermal limits present in R1.2 architecture
+[PASS] R1.2-08 Native/Physical/NDA Blockers Preserved: BLK-D11-PHY, BLK-JBD-01, BLK-RevC-01 remain BLOCKED
+
+SUMMARY: PASS=8, FAIL=0
+NATIVE_EDA_SPICE_CAD_STATUS: BLOCKED (iverilog/yosys/nextpnr/icetime/ngspice/kicad-cli unavailable in sandbox; physical & JBD NDA gates OPEN; NOT FOR FAB)

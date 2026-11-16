@@ -1,0 +1,21 @@
+Risk_ID,Source_Track,Category,Severity,Current_Status,Description,Mitigation_And_Gate
+BLK-JBD-01,Rev_D1_1; R0_1(H-08/R-02),Optics_NDA,Critical,BLOCKED_NDA,JBD 官方 FPC 金手指/BTB 引脚定义与极性未签字确认；公开文档无 JBD013VGA-G 型号，J013G02VGA30E1N 仅作询价参考,获取 JBD NDA 签字手册核对 J_DISP_L/R 1:1 映射前严禁光机 FPC 投板
+BLK-JBD-02,Rev_D1_1,Optics_NDA,High,BLOCKED_NDA,JBD 上电初始化序列、温补与亮度 DAC 寄存器 LUT 未知,保留 OPT_CTRL RAW_ARM 通道，NDA 到位后由 ESP32 在 SCAN_EN=0 下发
+BLK-JBD-03,Rev_D1_1; R0_1,Optics_NDA,High,BLOCKED_NDA,48-bit QSPI 行写头格式、Dummy 时钟及 640x480->320x240 2x2 binning 指令待 NDA 确认,保持 RTL CMD_HDR_NIBBLES=12 参数化；NDA 后核对 hdr_nibble_q
+BLK-JBD-04,Rev_D1_1; R0_1,Optics_NDA,Critical,BLOCKED_NDA,AVDD_OPT_BIAS 电压、负载电容、浪涌电流及 JBD013VGA_STEP.stp 3D 模型缺失,暂不填死 LDO 电压；导入 STEP 后执行光机底座干涉检查
+BLK-JBD-05,Rev_D1_1; R0_1,Optics_Calib,High,BLOCKED_NDA,opt_sck/opt_cs_n 共享 T 分支且 iCE40 18 PIO 已满，无法单眼独立写寄存器（影响单眼电子校准/亮度微调）,NDA 确认是否支持协议片内寻址；否则评估复用 RGB0..2 开漏球 (C5/B5/A5)
+BLK-D11-PHY,Rev_D1_1,AVDD_Safety,Critical,BLOCKED_BENCH,无硬件复位/配置失败/停钟/掉电/OFF-ON 停钟/1.8V 掉电同屏示波器波形实测,EVT-1 首版必须执行 10 项 AVDD 故障同屏波形测试并闭环
+BLK-D11-JBD,Rev_D1_1,AVDD_Safety,Critical,BLOCKED_NDA,EN 拉低不等于 AVDD 安全泄放；AVDD 与 1.8V 相对掉电顺序及容值限值待 JBD NDA,NDA 到位后验证掉电泄放曲线并确认是否需增加主动泄放开关
+BLK-D11-CORNER,Rev_D1_1,AVDD_Safety,High,BLOCKED_NATIVE_SIM,9-IC 定时器/监督器/电平转换器在全温全压慢升慢降、窄跌落与最坏漏电下的 ngspice PVT 仿真未执行,在具备 ngspice 环境跑通全角 PVT 仿真并实测验证
+BLK-D11-OFF-HOLD,Rev_D1_1,AVDD_Safety,High,BLOCKED_NDA_BENCH,短 OFF 不保证 AVDD 已放空，最短关电保持时间缺失,依据监督器最大延迟与 JBD 放电时间确定最短 OFF-hold 固件门禁
+BLK-D11-CAD,Rev_D1_1,CAD_Layout,High,BLOCKED_CAD,9 颗 AVDD 安全器件与 7 个新热焊盘尚未在 EDA 中摆放布线与过 DRC/DFM,KIMI 在嘉立创 EDA Pro 完成布局布线与 6L Type-III DRC
+BLK-RevC-01,Rev_D1_1,FPGA_CI,High,BLOCKED_NATIVE_TOOL,本地沙箱缺 iverilog/vvp/yosys/nextpnr/icetime，RTL 安全测试台未在本机运行，且离线包未附带最新分支 CI 通过日志,在 GitHub CI 或本地 EDA 容器运行 make -C 03_FPGA_RTL sim synth pnr sta 并留存 fmax>=48MHz 证据
+BLK-RevC-02,Rev_D1_1,CAD_Mass,Critical,BLOCKED_CAD,缺 ID 壳体 EVT1_ID_TEMPLE_SHELL.stp，GRP3911040 (11mm) 与 GRP220550 (5.6mm) 选型未闭环，6L HDI Gerber DRC 未运行,导入 ID STEP 确定 Config A/B 并跑通 6L Type-III DRC
+BLK-RevC-03,Rev_D1_1,SoC_NDA,Medium,BLOCKED_ARCHIVED,BES2800BP 缺球图/ISP/SDK,已由 ESP32-S3-PICO-1 + nRF5340 替代，仅作 V2.0 备选
+BLK-RevC-04,Rev_D1_1,Audio_BT,Medium,BLOCKED_HW_LIMIT,ESP32-S3 + nRF5340 仅支持 BLE 5.4 LE Audio，不支持 Classic BT A2DP/HFP,若强制需要 Classic BT，需更换 ESP32-PICO-V3-02 或 ESP32-S31
+UNV-RevD-01,Rev_D1_1; R0_1,Mass_Budget,Critical,OPEN_UNMEASURED,现行质量估算 41.2408g (CSV) / 41.1978g (JSON) 超出 40g 目标；有条件减重方案 39.423g / 39.380g 依赖未实测结构件上限,严格执行结构件重量上限并称重完整双目样机；禁止使用 34.75g 或 37.0g
+R-OPT-01,R0_1 (R-01/R-03),Optics_Align,High,OPEN_MECH,双目 dipvergence <=3.4/6 arcmin 对结构极敏感（1um ≈ 0.56 arcmin），TR90 镜框形变易超差,采用 Ti/Mg 独立光学底座解耦 + 出厂 16px overscan 电子校准
+R-OPT-02,R0_1 (R-06/R-09),Thermal_Power,High,OPEN_BENCH,连续功耗 >1.5W 或散热不良将导致镜腿皮肤温度超 40°C 舒适线 / 43°C IEC 62368-1 硬限,限制连续功耗 <=1.5W，高热器件远离贴肤面，样机进行 IR 热像仪实测
+D1-BAT-01,Rev_D1_1,Battery_Power,High,OPEN_BENCH,独立保护板 PCM/NTC、低温充电、终止电流与负载切换瞬态尚未实测,完成电芯 PCM/NTC 选型与全工况充放电/UVLO 台架测试
+D1-RF-01,Rev_D1_1,RF_EMC,High,OPEN_BENCH,ESP32-S3 与 nRF5340 双天线布局匹配、S11 调试及 SAR/FCC/CE 认证未完成,严守 Y=0-4.2mm 净空区，样机执行 VNA S11 调谐
+D1-CAM-01,Rev_D1_1,Camera_Privacy,Medium,OPEN_BENCH,最终摄像头模组未冻结，PWDN 上电时序与隐私故障注入未实测,冻结 Sensor；若需 PWDN 延时则从 CAM_AVDD RC 派生
