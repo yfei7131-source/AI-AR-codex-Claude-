@@ -1,0 +1,238 @@
+{
+  "project": "ZY_AIAR_V1_0",
+  "handoff_version": "AI-HANDOFF-R02-20261117-01",
+  "derived_from": [
+    "SRC-R02",
+    "SRC-C1",
+    "SRC-C4",
+    "SRC-C5",
+    "SRC-C25"
+  ],
+  "source_bundle": "Claude研究输出.zip",
+  "is_live_repository_checked": false,
+  "is_hardware_implementation": false,
+  "target_mass_g": 40.0,
+  "preferred_internal_mass_budget_g": 39.5,
+  "product_must_have": [
+    "true_binocular_transparent_AR"
+  ],
+  "tasks": [
+    {
+      "id": "T00",
+      "title": "baseline audit",
+      "owner": "WorkBuddy+Codex",
+      "priority": "P0",
+      "depends_on": [],
+      "required_inputs": [
+        "latest git/engineering zip"
+      ],
+      "deliverables": [
+        "BASELINE_AUDIT.md",
+        "SOURCE_FILE_INDEX.csv"
+      ],
+      "acceptance_gate": "DOC_REVIEW",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "T01",
+      "title": "JBD interface evidence/EVK test plan",
+      "owner": "Claude",
+      "priority": "P0",
+      "depends_on": [
+        "T00"
+      ],
+      "required_inputs": [
+        "SRC-R02",
+        "JBD vendor response"
+      ],
+      "deliverables": [
+        "JBD_DATASHEET_GAP_MATRIX.csv",
+        "EVK_BENCH_PROCEDURE.md"
+      ],
+      "acceptance_gate": "VENDOR_GATE",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "T02",
+      "title": "optics/mechanics/mass/thermal budgeting",
+      "owner": "Gemini",
+      "priority": "P0",
+      "depends_on": [
+        "T00"
+      ],
+      "required_inputs": [
+        "cad/step if available",
+        "mass list"
+      ],
+      "deliverables": [
+        "MASS_BUDGET_RECONCILED.csv",
+        "ALIGNMENT_FIXTURE_PLAN.md"
+      ],
+      "acceptance_gate": "CAD_AND_MASS_REVIEW",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "T03",
+      "title": "firmware abstraction and RTL regression",
+      "owner": "Codex",
+      "priority": "P0",
+      "depends_on": [
+        "T00"
+      ],
+      "required_inputs": [
+        "Rev D1 source"
+      ],
+      "deliverables": [
+        "PR",
+        "CI logs"
+      ],
+      "acceptance_gate": "CI_PASS",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "T04",
+      "title": "EDA/J_DISP feasibility audit",
+      "owner": "KIMI",
+      "priority": "P0",
+      "depends_on": [
+        "T00"
+      ],
+      "required_inputs": [
+        "Rev D1 ECAD"
+      ],
+      "deliverables": [
+        "PIN_BUDGET.csv",
+        "NET_IMPACT.csv"
+      ],
+      "acceptance_gate": "DESIGN_REVIEW",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "T05",
+      "title": "single/dual eye EVK verification",
+      "owner": "Claude+Codex",
+      "priority": "P0",
+      "depends_on": [
+        "T01",
+        "T03"
+      ],
+      "required_inputs": [
+        "official JBD docs",
+        "EVK"
+      ],
+      "deliverables": [
+        "EVK logs",
+        "oscilloscope traces"
+      ],
+      "acceptance_gate": "BENCH_PASS",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "T06",
+      "title": "optical integration/fixture design",
+      "owner": "Gemini+KIMI",
+      "priority": "P1",
+      "depends_on": [
+        "T02"
+      ],
+      "required_inputs": [
+        "optical supplier drawing"
+      ],
+      "deliverables": [
+        "CAD",
+        "tolerance stack",
+        "test fixture"
+      ],
+      "acceptance_gate": "MECHANICAL_REVIEW",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "T07",
+      "title": "approved ECR ECAD implementation",
+      "owner": "Codex+KIMI",
+      "priority": "P0",
+      "depends_on": [
+        "T04"
+      ],
+      "required_inputs": [
+        "approval",
+        "native EDA"
+      ],
+      "deliverables": [
+        "schematic",
+        "PCB",
+        "BOM",
+        "ICD",
+        "ERC/DRC logs"
+      ],
+      "acceptance_gate": "ALL_STATIC_TESTS",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "T08",
+      "title": "EVT bench matrix",
+      "owner": "Hardware Lab",
+      "priority": "P0",
+      "depends_on": [
+        "T05",
+        "T06",
+        "T07"
+      ],
+      "required_inputs": [
+        "physical prototypes"
+      ],
+      "deliverables": [
+        "EVT_TEST_MATRIX results"
+      ],
+      "acceptance_gate": "BENCH_PASS",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "T09",
+      "title": "FPGA go/no-go architecture review",
+      "owner": "Claude+Codex",
+      "priority": "P1",
+      "depends_on": [
+        "T05",
+        "T08"
+      ],
+      "required_inputs": [
+        "G1-G6 data"
+      ],
+      "deliverables": [
+        "ADR and decision record"
+      ],
+      "acceptance_gate": "APPROVED",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "T10",
+      "title": "release bundle and remaining issues",
+      "owner": "WorkBuddy",
+      "priority": "P0",
+      "depends_on": [
+        "T07",
+        "T08",
+        "T09"
+      ],
+      "required_inputs": [
+        "merge approval"
+      ],
+      "deliverables": [
+        "native release ZIP",
+        "manifest",
+        "issue ledger"
+      ],
+      "acceptance_gate": "RELEASE_APPROVED",
+      "status": "NOT_STARTED"
+    }
+  ],
+  "gates": {
+    "FPGA_REMOVE": "G1-G6 ALL PASS + design approval",
+    "J_DISP_RELEASE": "official JBD pin/power/connector docs + EVK + approval",
+    "MASS_RELEASE": "complete as-built weigh-in <=40.0g",
+    "PCB_RELEASE": "KiCad/EDA ERC+DRC+netlist parity + board review"
+  },
+  "ecr_count": 10,
+  "blocker_count": 12
+}

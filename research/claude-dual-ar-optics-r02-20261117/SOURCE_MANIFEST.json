@@ -1,0 +1,120 @@
+{
+  "package": "Claude EVT-1 双目光学与高密度集成 R0.2",
+  "status": "RESEARCH & ENGINEERING HANDOFF / UNVERIFIED",
+  "repo": "https://github.com/yfei7131-source/AI-AR-codex-Claude-",
+  "base_ref": "hardware/evt1-rev-d1-1-20261117",
+  "base_sha": "97ee1f6733416099f842dca00389ab50f3568c96",
+  "target_path": "research/claude-dual-ar-optics-r02-20261117/",
+  "source_files": [
+    {
+      "path": "00_CONTEXT/AI_CANONICAL_CONTEXT.md",
+      "size_bytes": 4296,
+      "sha256": "d8f80ebd583bd99aa878653a5a69c22b9c304e12f33313065689c7fa7474fec9"
+    },
+    {
+      "path": "00_CONTEXT/SOURCE_AUDIT_AND_CONFLICTS.md",
+      "size_bytes": 4329,
+      "sha256": "13f5a1fdadb21d96d088751876182fd3d4a97b261250a862c6265a6134cc2021"
+    },
+    {
+      "path": "00_GITHUB_HANDOFF_README.md",
+      "size_bytes": 962,
+      "sha256": "f6b15897a77e9f52acb15d0e803ba4e8e9472a23b689423594972a39c264305b"
+    },
+    {
+      "path": "01_ENGINEERING/ARCHITECTURE_DECISIONS.md",
+      "size_bytes": 3274,
+      "sha256": "5e86c2ca5f8ba2336c8057630eab26cc210a2afef60937cf59070a904d677c79"
+    },
+    {
+      "path": "01_ENGINEERING/INTERFACE_DRAFT_DO_NOT_FABRICATE.md",
+      "size_bytes": 2329,
+      "sha256": "07217c84569b8b9da1aef4e970a730a20053d776f30c334413de34bdf3ce0bb1"
+    },
+    {
+      "path": "02_EXECUTION/BLOCKER_REGISTER.csv",
+      "size_bytes": 2196,
+      "sha256": "2b1f376c758280c6f0fc003b7120af6f7fcfb365c1358bc18d874e91efe33b2f"
+    },
+    {
+      "path": "02_EXECUTION/ECR_REGISTER.csv",
+      "size_bytes": 2749,
+      "sha256": "fe04d35dc6026ec0c8c8b255c3d82a12a2d54784cfa03df107222b17d3ace06a"
+    },
+    {
+      "path": "02_EXECUTION/EVT_TEST_MATRIX.csv",
+      "size_bytes": 2943,
+      "sha256": "3bc935505f59fb5503a5d8f5c41f603512553f0e2e304f3a6005d4680f6d4b96"
+    },
+    {
+      "path": "02_EXECUTION/G1_G6_FPGA_GATE.md",
+      "size_bytes": 1418,
+      "sha256": "c5474f931705ed1d77aac8eea8eeb677b3f0aa24b0e8dab3967b30f478646391"
+    },
+    {
+      "path": "02_EXECUTION/MASS_THERMAL_WORKSHEET.md",
+      "size_bytes": 1809,
+      "sha256": "fdf538dfde40693f6cd5c9ec53d51f2241a65b01b2881b33d221e8f61f01ff07"
+    },
+    {
+      "path": "02_EXECUTION/WORK_BREAKDOWN.md",
+      "size_bytes": 4814,
+      "sha256": "bc9c3b0f61ac170e2ace7ce4eb2bd28110ae2cc5cb313dda63816edda8d802f4"
+    },
+    {
+      "path": "03_AI_PROMPTS/CLAUDE_OPTICS_RESEARCH.txt",
+      "size_bytes": 661,
+      "sha256": "2bb215e60e07460e670fcd27a0f8a7e73ac4c8de23d919265e5245bbf1014aea"
+    },
+    {
+      "path": "03_AI_PROMPTS/CODEX_ELECTRICAL.txt",
+      "size_bytes": 748,
+      "sha256": "7b4f8662bcfa500da451556c4693595b06405b7035bc331f7cc27cc5733bfb56"
+    },
+    {
+      "path": "03_AI_PROMPTS/GEMINI_RESEARCH_MECHANICAL.txt",
+      "size_bytes": 730,
+      "sha256": "4e618ed472ce94d5da1faff362487c58ff903e9a28199c88f248fdb3b900c95f"
+    },
+    {
+      "path": "03_AI_PROMPTS/KIMI_ECAD.txt",
+      "size_bytes": 680,
+      "sha256": "73d1fb6bc45f22177cf335ce68d6163fcbd95559207da3e9a6649a590f0a5fa1"
+    },
+    {
+      "path": "03_AI_PROMPTS/MASTER_NEXT_TURN_PROMPT.txt",
+      "size_bytes": 1244,
+      "sha256": "de4572de0741dd7ed45e4efa599f9a85c6701765db57eb5d98f719537541ea3c"
+    },
+    {
+      "path": "03_AI_PROMPTS/WORKBUDDY_INTEGRATOR.txt",
+      "size_bytes": 791,
+      "sha256": "db644a2a96519eedc0fb9fda0bbe7ac4d16af8c529e829dae70731f7b3147ed8"
+    },
+    {
+      "path": "04_QUALITY/RELEASE_GATES.md",
+      "size_bytes": 1652,
+      "sha256": "d78cdfac489a95a423abe173517435a7b70993aa9341e9e31b22c4c9621670fe"
+    },
+    {
+      "path": "05_ORIGINAL_EXTRACTS/SRC_R02_CLAUDE_RESEARCH.txt",
+      "size_bytes": 34306,
+      "sha256": "38cb68e3eaf8becd5e4aed1f923b2c6455d841059f63cc8faeee2169e66c772d"
+    },
+    {
+      "path": "README_START_HERE.md",
+      "size_bytes": 2574,
+      "sha256": "584762c8bbe28b20d53b5828e322744c98a3a652500caa4e3b7cae07355363ab"
+    },
+    {
+      "path": "SOURCE_PROVENANCE.md",
+      "size_bytes": 1845,
+      "sha256": "00764d518f841e4250db502c6ab4df711a89e4ee193b0a5cb390d5f2e687e95a"
+    },
+    {
+      "path": "TASK_BOARD.json",
+      "size_bytes": 5375,
+      "sha256": "581553c7c1a52dc39476ff1dac57fd72d4eb1cfaba36cedc230ed5b879279fb3"
+    }
+  ]
+}

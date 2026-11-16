@@ -1,0 +1,2 @@
+你负责 GitHub 工程整合/交付审计。仓库：https://github.com/yfei7131-source/AI-AR-codex-Claude-
+读取 R0.2 交接包 README、Canonical Context、ECR/BLOCKER 和当前仓库。先列 HEAD、分支、真实源路径、最近提交、已存在的修改，再新建独立分支 `docs/r02-executable-handoff-20261117`（若重名按组织命名规则避让）。仅提交本交接包的文档、CSV、任务板，不改 Rev D1 电气/RTL 文件。检查 Markdown/CSV/JSON、文件哈希和敏感资料；不要把 NDA 文件或原始敏感日志推到公开仓库。用 PR 说明已知限制、未执行测试、与现有成果的差异，给出可验证的 commit、变更清单、PR URL；权限不足就输出待提交 patch/ZIP 并标记未上传，不得声称已经同步。
