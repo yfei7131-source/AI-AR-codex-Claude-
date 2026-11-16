@@ -1,0 +1,122 @@
+{
+  "schema_version": "1.0-archive",
+  "date": "2026-11-16",
+  "project": "EVT-1 Rev C feasibility source archive",
+  "status": "ARCHIVED_SOURCE_ONLY_NOT_FOR_FAB",
+  "declared_source_name": "EVT1_RevC_GitHub_同步交接包.zip",
+  "observed_source_archive": "ZY_AIAR_V1_0_KIMI_HANDOFF_PACKAGE.zip",
+  "source_archive_bytes": 348724,
+  "source_archive_sha256": "b26a09daa6caf762dfea9923f4c684c59831e27eecf8197db1726f116527566a",
+  "source_archive_note": "The declared attachment path was absent; the newly downloaded Rev C archive in Downloads was verified by its Rev C bundle and contents and used as the source.",
+  "source_file_count": 17,
+  "base_branch": "handoff/evt1-v1-arch-kimi-handoff-20261115",
+  "base_commit": "be429ea333e51126e7cf92553db56e69095f5927",
+  "archive_branch": "handoff/evt1-rev-c-source-20261116",
+  "bundle": {
+    "path": "handoff_evt1_rev_c.bundle",
+    "bytes": 233451,
+    "sha256": "06daaa4c1840d2d06511464cf7da7040900e3febea112b14432591f35b83575a",
+    "verified": true,
+    "head": "9a302e2c6ce01712b44a746b632b735e31890b57",
+    "parent": "44b860b0c87a798f6ff47552b5171ce9e3d37598",
+    "ref": "refs/heads/handoff/evt1-rev-c-feasibility-20261115",
+    "tree_file_count": 19,
+    "zip_files_matching_bundle": 15
+  },
+  "verification": {
+    "native_eda_toolchain": "BLOCKED_ENV_NO_BINARY",
+    "rtl_simulation": "NOT_RUN",
+    "synthesis": "NOT_RUN",
+    "pnr": "NOT_RUN",
+    "sta": "NOT_RUN",
+    "physical_validation": "UNVERIFIED",
+    "manufacturing_release": false
+  },
+  "files": [
+    {
+      "path": "0001-evt1-rev-c-feasibility.patch",
+      "bytes": 259054,
+      "sha256": "7b019f61c56909272ce8a815d08175e2fb1daadbeab88406e4ca7b7e9132ce06"
+    },
+    {
+      "path": "BLOCKED_ITEMS_CHECKLIST.csv",
+      "bytes": 3404,
+      "sha256": "6570a8d5ed0ba82d8be566ecceab514e4a2a0fa37807d5e68d0dc295de1a5309"
+    },
+    {
+      "path": "BOM_V1_0_FROZEN.csv",
+      "bytes": 17874,
+      "sha256": "e039ab60b8338e4596aa3af46476461ecd1593f966d90cf6b82f051dd77fe9e1"
+    },
+    {
+      "path": "eda_toolchain_execution.log",
+      "bytes": 1297,
+      "sha256": "30c9567f8b664aaec50d5ae36e9ea1f1bcc9eaf67bc7f864c7f550a660f33ea3"
+    },
+    {
+      "path": "evt1_ar_display_fpga_bridge_rev_c.v",
+      "bytes": 22286,
+      "sha256": "f9539bd9cf32ad24d3cd3d6d1857d28deacc433c785cab3506e26a107d053797"
+    },
+    {
+      "path": "handoff_evt1_rev_c.bundle",
+      "bytes": 233451,
+      "sha256": "06daaa4c1840d2d06511464cf7da7040900e3febea112b14432591f35b83575a"
+    },
+    {
+      "path": "ICD_INTERFACE_CONTROL_TABLE.csv",
+      "bytes": 3632,
+      "sha256": "31c0e31c10394b83fbb5a404199199110611d583538f2e45b0cfd027aa8bfca3"
+    },
+    {
+      "path": "ice40_spram_ebr_sim.v",
+      "bytes": 2369,
+      "sha256": "656c79d8a22c3cf315d718ec9b941489288e5da22185d6d2fd97e464ee91cc2e"
+    },
+    {
+      "path": "ice40up5k_uwg30_rev_c.pcf",
+      "bytes": 1989,
+      "sha256": "be395107dcd3ccb37030e6f0b00c2d35c7e46e9ad526d9d39f5d682605393b03"
+    },
+    {
+      "path": "KIMI_ENGINEERING_HANDOFF_V1_0.md",
+      "bytes": 7975,
+      "sha256": "ae55d45c561041b8019ae46cdbd0616adfe90ea243fdda7d9e16b6ba27b7570d"
+    },
+    {
+      "path": "Makefile",
+      "bytes": 1263,
+      "sha256": "d06969014094d753f75e536841bf8166317556dca9ea42f6c868bde131b354e2"
+    },
+    {
+      "path": "PINMAP_V1_0_FROZEN.csv",
+      "bytes": 7532,
+      "sha256": "5357c1a9165ba5f29b96dbe3857e1c02f101895bc55111ea4591277716b6682f"
+    },
+    {
+      "path": "SOC_ARCHITECTURE_COMPARISON.csv",
+      "bytes": 3342,
+      "sha256": "f0df4c77d8c6a91b9281a6290e9ddcf6a0bd2774d91b3950f9b51705c7d49abf"
+    },
+    {
+      "path": "SYSTEM_BUDGETS_V1_0.json",
+      "bytes": 31073,
+      "sha256": "f27cf0c76189f76843457bbed3a8a6f4f6c26fe285add1a50b1b9ccfba391c24"
+    },
+    {
+      "path": "tb_evt1_ar_display_fpga_bridge_rev_c.v",
+      "bytes": 9546,
+      "sha256": "dd136479c1e846941a2e88a76e6001598bf60672a0da1aea00d0dd7e4359d4eb"
+    },
+    {
+      "path": "v1_0_verification_report.txt",
+      "bytes": 5391,
+      "sha256": "d4d878b485548176ebcbc0466df4485cd2757b4de7d68b623abdda4ef4754f37"
+    },
+    {
+      "path": "verify_v1_0_engineering.py",
+      "bytes": 33957,
+      "sha256": "5e61d827bba3e07f332ec9542f76e9561ce7241ae6c177a562ff085237e98669"
+    }
+  ]
+}
