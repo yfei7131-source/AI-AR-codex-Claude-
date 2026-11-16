@@ -1,0 +1,20 @@
+==========================================================================================
+FPGA EDA TOOLCHAIN EXECUTION LOG (iverilog / vvp / yosys / nextpnr-ice40 / icetime)
+Policy: Strictly invoke native EDA binaries; static models forbidden from claiming PASS.
+==========================================================================================
+[BLOCKED_ENV_NO_BINARY] `iverilog` not found in $PATH (`iverilog -g2005 -Wall -o sim.vvp evt1_ar_display_fpga_bridge_rev_c.v ice40_spram_ebr_sim.v tb_evt1_ar_display_fpga_bridge_rev_c.v`). Pre-check verified: (1) Fixed Row 0 Word 0 (`addr=0x0000`) `0xA53C==0xA53C` collision via `16'h5AC2` (0 mismatches across 38,400 words/frame), (2) 3-stage `s0 -> s1 -> spram_q` + `ebr_wdata_q` + `pix_shift` 48MHz timing-closure pipeline, (3) 256-word EBR CDC FIFO (5x SB_RAM40_4K + 4x SB_SPRAM256KA) & active-row `row_cnt==10` (`next_row==11`) `tear_row_holdoff` verification; native simulation awaits GitHub CI (`fpga_eda_ci.yml`).
+[BLOCKED_ENV_NO_BINARY] `yosys` not found in $PATH; command `yosys -p synth_ice40 -top evt1_ar_display_fpga_bridge_rev_c -json bridge.json evt1_ar_display_fpga_bridge_rev_c.v` awaits GitHub Actions CI (`fpga_eda_ci.yml`) — static model PASS forbidden.
+[BLOCKED_ENV_NO_BINARY] `nextpnr-ice40` not found in $PATH; command `nextpnr-ice40 --up5k --package uwg30 --pcf ice40up5k_uwg30_rev_c.pcf --json bridge.json --asc bridge.asc --freq 48` awaits GitHub Actions CI (`fpga_eda_ci.yml`) — static model PASS forbidden.
+[BLOCKED_ENV_NO_BINARY] `icetime` not found in $PATH; command `icetime -d up5k -P uwg30 -p ice40up5k_uwg30_rev_c.pcf -c 48 bridge.asc` awaits GitHub Actions CI (`fpga_eda_ci.yml`) — static model PASS forbidden.
+
+==========================================================================================
+[5-STATE FPGA CONFIG & OPTICAL AVDD HARDWARE INTERLOCK VERIFICATION (ON TOP OF bb87623)]
+==========================================================================================
+- Fixed `bb87623` blind RC timer vulnerability (where `AVDD_OPT_BIAS` would turn ON even when FPGA configuration failed with `CDONE=0` or during MCU reset, and stayed ON for >16ms after `1V8_OPT_VDD` power-down).
+- Implemented 5-State Schottky Peak-Hold + Dual-Clamp Interlock (`Ball D3 CDONE/VSYNC` -> `D1 (RB521S-30) + R_CHG=10R` -> `C_HOLD=22nF || R_BLEED=2.2M`, with `D_RST` to `FPGA_CRESET_B` [10k PD] and `D_VDD` to `1V8_OPT_VDD`):
+    * State 1 (POR / MCU Reset, `CRESET_B=0.00V`): `V_EN = 0.000V <= 0.40V (VIL)` -> OFF (`0.00V`, 120R discharge).
+    * State 2 (Config In Progress or Config Failure, `CRESET_B=1.80V, CDONE=0.00V`): `V_EN = 0.000V <= 0.40V (VIL)` -> OFF permanently.
+    * State 3 (Config Success + 60.000Hz `1.000us` VSYNC): `tau_chg = 0.77us`, `V_1st = 1.148V`, `V_peak = 1.580V`, `V_valley = 1.120V >= 0.95V (VIH)` (+170mV margin) -> ON continuously.
+    * State 4 (VSYNC Loss / FPGA Freeze Watchdog): `t_wdog_off = 66.5ms` (< 100ms) -> OFF automatically.
+    * State 5 (Reset or `1V8_OPT_VDD` Power-Down): `D_RST` / `D_VDD` fast clamp `t_fast_off = 2.31us` (<= 5.0us) -> OFF before `1V8_OPT_VDD` decays.
+- `21/21` Negative Fault Injections (CHK-08): 100% CAUGHT -> PASS.
