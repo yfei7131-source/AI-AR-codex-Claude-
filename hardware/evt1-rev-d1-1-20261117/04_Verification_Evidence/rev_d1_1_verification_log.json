@@ -1,0 +1,134 @@
+{
+  "scope": "source structural/electrical computations only; NOT FOR FAB",
+  "checks": [
+    {
+      "id": "D1-01 unique physical terminals",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "id": "D1-02 BOM identifiers and references",
+      "status": "PASS",
+      "detail": "135 BOM owners / 1067 terminals"
+    },
+    {
+      "id": "D1-03 PINMAP exact terminal equivalence",
+      "status": "PASS",
+      "detail": "1067 PINMAP rows; no aggregate/stale terminals"
+    },
+    {
+      "id": "D1-04 physical package terminal coverage",
+      "status": "PASS",
+      "detail": "{'U10_AMP_L': 9, 'U10_AMP_R': 9, 'U3_L': 8, 'U3_R': 9, 'U4_BB': 15, 'U4_1V8': 8, 'U9_IMU': 14, 'U11_BLE': 95, 'U1_HOST': 57, 'U4_OR': 8, 'U8_LS1': 24, 'U8_CAM_ISO1': 24, 'U8_CAM_ISO2': 24, 'U8_PDM_LS': 24, 'U8_AUD_LS2': 16, 'U8_LS3': 8, 'U8_LS4': 8, 'U7_INA': 6, 'U7_WIN': 9, 'U10_SD_BUF': 6, 'U8_CAM_SCCB_EN': 5}"
+    },
+    {
+      "id": "D1-05 driver exclusivity and open-drain bias",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "id": "D1-06 explicit two-terminal capacitors",
+      "status": "PASS",
+      "detail": "70 explicit capacitors"
+    },
+    {
+      "id": "D1-07 ESP32 enable RC connected",
+      "status": "PASS",
+      "detail": "CHIP_PU 10k/1uF and fixture pads"
+    },
+    {
+      "id": "D1-08 FPGA source byte preservation",
+      "status": "PASS",
+      "detail": "Original PCF/simulation primitives/full display regression TB preserved; safety RTL diff reviewed separately"
+    },
+    {
+      "id": "D1-09 conditional mass arithmetic",
+      "status": "PASS",
+      "detail": "{\"status\": \"OPEN_UNMEASURED; conditional engineering estimate only\", \"current_analytical_estimate_g\": 41.1978, \"inherited_rev_d_estimate_g\": 40.9978, \"new_electronics_allowance_g\": 0.2, \"candidate_nominal_g\": 38.88, \"contingency_g\": 0.5, \"candidate_including_contingency_g\": 39.38, \"target_g\": 39.5, \"physical_mass_verified\": false, \"caps_g\": {\"front_frame_and_hinges\": 9.55, \"each_temple_shell\": 1.8, \"all_fpc_and_stiffeners\": 0.35, \"fasteners_adhesive_mesh\": 0.4}, \"shell_geometry_candidate\": {\"material\": \"PA12\", \"density_g_cm3\": 1.01, \"wall_mm\": 0.45, \"segments\": [{\"name\": \"electronics\", \"perimeter_mm\": 23.6, \"length_mm\": 48.0}, {\"name\": \"mid\", \"perimeter_mm\": 20.0, \"length_mm\": 45.0}, {\"name\": \"battery_paddle\", \"perimeter_mm\": 36.4, \"length_mm\": 46.0}], \"end_allowance_factor\": 1.05, \"rib_allowance_each_g\": 0.03, \"calculated_each_g\": 1.7992, \"qualification\": \"candidate thin-wall shell only; molding, stiffness, drop/hinge fatigue and skin-thermal validation required; no actual CAD geometry claimed\"}, \"basis\": \"Rev D ledger retained; capped PA12-shell/frame/FPC integration proposal; electronics +0.20g allowance. No credit for board shortening, battery substitution, reduced optics or removal of hidden counterweight.\", \"closure\": \"vendor module masses + native assembly CAD volume/materials + weighed complete binocular assembly; prescription lenses additional if outside scope\"}"
+    },
+    {
+      "id": "Inherited chk_net02_trunk",
+      "status": "PASS",
+      "detail": "J_BTB_L==J_BRIDGE_IN (32 contacts); all 18 J_BTB_R contacts carried by trunk; every multi-board net crosses the correct connectors"
+    },
+    {
+      "id": "Inherited chk_net03_ampacity",
+      "status": "PASS",
+      "detail": "all BTB nets within 1.25x derated contact rating; high-current: J_BTB_L:VBAT_R_RET 5.0A>=1.25A, J_BTB_L:GND 5.9A>=1.50A, J_BTB_L:VSYS 0.6A>=0.56A, J_BRIDGE_IN:VBAT_R_RET 5.0A>=1.25A, J_BRIDGE_IN:GND 5.9A>=1.50A, J_BRIDGE_IN:VSYS 0.6A>=0.56A, J_BTB_R:VBAT_R_RET 5.0A>=1.25A, J_BTB_R:GND 6.2A>=1.50A, J_DISP_L:AVDD_OPT_BIAS 5.3A>=0.38A, J_DISP_L:GND 5.6A>=1.50A, J_DISP_R:AVDD_OPT_BIAS 5.3A>=0.38A, J_DISP_R:GND 5.6A>=1.50A, J_CAM:GND 6.5A>=1.50A"
+    },
+    {
+      "id": "Inherited chk_net04_translators",
+      "status": "PASS",
+      "detail": "5 translators / 36 channels: every bank uniform, each output side uncontended, domains match VCCA/VCCB, OE defined, DIR control referenced to VCCA"
+    },
+    {
+      "id": "Inherited chk_net06_esp32",
+      "status": "PASS",
+      "detail": "33 GPIOs unique, no forbidden module pins; strap pins GPIO0/45/46 and ROM-TX GPIO43 have no external driver at reset (GPIO3 driver is VCCA-gated U8_CAM_ISO2)"
+    },
+    {
+      "id": "Inherited chk_net07_fpga",
+      "status": "PASS",
+      "detail": "18/18 PCF balls legal & unique; every PCF port is an RTL port; netlist ball->net matches PCF"
+    },
+    {
+      "id": "Inherited chk_seq02_fpga_rails",
+      "status": "PASS",
+      "detail": "VCC from U4_1V2(IN=VSYS); SPI_VCCIO1/VCCIO_0/VCCIO_2 from U4_1V8F with EN=1V2_FPGA_PLL (min 1.082 V vs VHI 1.0 V); VPP via 10R/4.7uF after SPI_VCCIO1; U8_LS1 VCCB tracks FPGA I/O rail (Ioff isolation)"
+    },
+    {
+      "id": "Inherited chk_priv01_window",
+      "status": "PASS",
+      "detail": "window [1.091, 2.182] V = [2.48, 4.96] mA; healthy LED 2.59..4.59 mA inside (margins 0.050 V / 0.162 V); EN >= 1.091 V >= VHI 1.0 V whenever window OK"
+    },
+    {
+      "id": "Inherited chk_priv02_request_and_sccb",
+      "status": "PASS",
+      "detail": "CAM_PWR_REQ ~3.05 V with XCLK running (charge tau ~66 us), < 0.3 V 23 ms after XCLK stops; SCCB behind U8_LS4 (VREF1=DOVDD); RESET_N RC-POR, PWDN pulled low; LED cathode to bridge GND"
+    },
+    {
+      "id": "Inherited chk_rtl01_static",
+      "status": "PASS",
+      "detail": "RTL/TB structurally consistent (balanced blocks, Rev C pipeline/macro/TB guards retained, Rev D OPT_CTRL/RAW/scan-gate/D3 present, TB R1..R4 counters wired into PASS gate)"
+    },
+    {
+      "id": "D1-11 audio clock and SD buffer ownership",
+      "status": "PASS",
+      "detail": "{'I2S_BCLK_1V8': 'U11_BLE', 'I2S_LRCLK_1V8': 'U11_BLE', 'I2S_AMP_DIN_1V8': 'U11_BLE', 'I2S_S3_DOUT_1V8': 'U8_PDM_LS', 'PDM_CLK_1V8': 'U8_PDM_LS', 'AMP_SD_REQ_1V8': 'U11_BLE', 'AMP_SD_MODE_1V8': 'U10_SD_BUF'}"
+    },
+    {
+      "id": "D1 source review power_corrections",
+      "status": "PASS",
+      "detail": "{'pin_tables': 5, 'explicit_power_caps': 26, 'status': 'PASS_STATIC_ONLY', 'physical_measurements': False}"
+    },
+    {
+      "id": "D1 source review audio_translator_corrections",
+      "status": "PASS",
+      "detail": "{'left_min_V': 1.7591, 'right_min_V': 0.995933, 'right_max_V': 1.119626, 'off_max_local_V': 0.00028, 'rail_tolerance_assumption_percent': 2, 'scope': 'source topology and DC high-level selection; OFF transients require bench validation'}"
+    },
+    {
+      "id": "D1 source review privacy_corrections",
+      "status": "PASS",
+      "detail": "{'status': 'PASS_STATIC_ONLY', 'ina_physical_pins': 6, 'comparator_physical_pins_with_ep': 9, 'nominal_window_v': [1.0910204081632653, 2.1820408163265306], 'nominal_local_discharge_tau_ms': 1.0, 'nominal_pullup_charge_tau_ms': 11.0, 'physical_fault_verification': False}"
+    },
+    {
+      "id": "D11 independent AVDD watchdog/qualification source topology",
+      "status": "PASS",
+      "detail": "{'status': 'PASS_SOURCE_TOPOLOGY_ONLY', 'new_ic_packages': 9, 'physical_safety_status': 'BLOCKED', 'removed_reset_injection_diode': True, 'new_thermal_pad_connections': 7}"
+    },
+    {
+      "id": "D1-10 migration fault injections",
+      "status": "PASS",
+      "detail": "{'duplicate physical pin': True, 'PINMAP net corruption': True, 'removed peripheral ground': True}"
+    }
+  ],
+  "tally": {
+    "PASS": 24
+  },
+  "open": [
+    "JBD NDA data",
+    "native schematic/PCB/DRC/STEP",
+    "physical charging/safety/RF/audio/thermal/optical verification",
+    "mass caps unmeasured"
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "status": "SOURCE_CIRCUIT_CANDIDATE_NOT_FOR_FAB",
+  "physical_safety_status": "BLOCKED",
+  "removed_hold_capacitor": true,
+  "watchdog": {
+    "part": "LTC6993IS6-2#TRPBF", "edge": "rising", "ref": "U_AVDD_WD",
+    "signal": "AVDD_D3_VSYS", "output": "AVDD_WD_Q", "supply": "VSYS",
+    "rset_ohm": 402000, "rset_tolerance_fraction": 0.01, "ndiv": 4096, "divcode": 4,
+    "nominal_s": 0.03293184, "full_temperature_device_error_fraction": 0.03,
+    "min_s": 0.031624445952, "max_s": 0.034258993152,
+    "source": "ADI LTC6993 Rev F pp4-5/Table1 p13; full-temperature +/-3%, not +/-2.3% 25C headline",
+    "trigger_width_s": 0.000001, "trigger_width_bound_status": "1us design; 5ns/50ns trigger/retrigger figures are typical at3.3V, board qualification BLOCKED",
+    "nominal_startup_s": 0.00402, "startup_status": "typical only; missing guaranteed maximum BLOCKED"
+  },
+  "mr_filter": {
+    "r_ohm": 10000, "c_f": 1e-8, "r_tolerance_fraction": 0.01, "c_tolerance_fraction": 0.05,
+    "vil_fraction": 0.25, "vih_fraction": 0.7,
+    "node": "AVDD_REQ_FILTER", "input": "AVDD_D3_VSYS",
+    "normal_low_pulse_s": 0.000001, "held_low_nominal_crossing_s": 0.0001386294361,
+    "status": "analytical RC only; includes no guaranteed supervisor propagation latency"
+  },
+  "qualification": {
+    "part": "SN74LVC1G175DCKR", "clock_edge": "rising", "clock": "AVDD_D3_VSYS",
+    "data_constant": true, "q_net": "AVDD_PULSE_QUAL", "clear_net": "AVDD_QUAL_CLR_N",
+    "clear_rc_net": "AVDD_QUAL_RC", "clear_rc_r_ohm": 10000, "clear_rc_c_f": 1e-7,
+    "clear_rc_effective_c_min_f": 5e-8, "clear_rc_effective_c_max_f": 1.1e-7,
+    "clear_rc_source": "AVDD_WD_Q", "clear_rc_hard_clamps": ["AVDD_WD_Q", "AVDD_PG_OK"],
+    "schmitt_part": "SN74LVC2G17DCKR", "pg_clean_net": "AVDD_PG_OK",
+    "guard_min_s_design_budget": 0.0001, "guard_max_s_design_budget": 0.003,
+    "guard_status": "budget, not a qualified PVT timing bound; capacitor/threshold/latency qualification BLOCKED",
+    "logic": "First CDONE-only rising edge occurs while CLR low; RC+Schmitt releases CLR later. A later completed1usLOW heartbeat rising edge clocks Q=1. PG/watchdog faults hard-clear CRC and Q; no combinational propagation race is used as the startup guard."
+  },
+  "supervisors": {
+    "io": {"ref":"U_AVDD_IO_PG","part":"TPS389018DSET","sense":"1V8_FPGA_IO","mr":"AVDD_CRESET_VSYS","output":"AVDD_PG_NODE","fall_v":1.73,"rise_v":1.740},
+    "sys": {"ref":"U_AVDD_SYS_PG","part":"TPS389025DSET","sense":"VSYS","mr":"AVDD_REQ_FILTER","output":"AVDD_PG_NODE","fall_v":2.40,"rise_v":2.414},
+    "direct_en": {"ref":"U_AVDD_SYS_CLAMP","part":"TPS389025DSET","sense":"VSYS","mr":"VSYS","output":"OPT_AVDD_EN","fall_v":2.40,"rise_v":2.414},
+    "threshold_tolerance_fraction": 0.01, "vpormax_v": 0.8,
+    "reset_low_max_v_at_400uA": 0.25, "reset_low_max_v_at_15uA_por": 0.2,
+    "sense_fall_nominal_s": 0.000018, "mr_nominal_s": 0.00000025, "release_nominal_s": 0.000025,
+    "response_max_status": "BLOCKED: source gives nominal, not guaranteed maximum at these rail/load conditions; arbitrary fast droop cannot be claimed safe"
+  },
+  "en": {
+    "series_r_ohm": 68000, "pulldown_r_ohm": 330000, "hold_capacitance_f": 0,
+    "ldo_vhi_v": 1.0, "ldo_vlo_v": 0.3,
+    "feed": "AVDD_WD_Q", "clamp_inputs": ["AVDD_PULSE_QUAL","AVDD_PG_OK"],
+    "open_drain_part": "74LVC2G07GS", "off_leakage_each_a": 0.000002,
+    "supervisor_off_leakage_a": 0.00000025, "ldo_en_leakage_budget_a": 0.000001,
+    "ldo_en_leakage_budget_status": "UNVERIFIED_BUDGET: TLV755P table quotes10nA typical; no full-temperature maximum here",
+    "clamped_low_max_v": 0.25, "logic_clamped_low_max_v": 0.1,
+    "watchdog_voh_drop_budget_v": 0.08,
+    "watchdog_voh_status": "source2.25V/1mA VOH>=2.17V; conservative light-load interpolation is a design budget, qualification BLOCKED",
+    "source": "Nexperia74LVC2G07 Rev13 Table7 IOZ2uA/channel and VOL.1V@100uA; TPS3890 p5 VOL.25V@.4mA; TLV755P SBVS320D p6 VHI1.0/VLO.3"
+  },
+  "remaining_blockers": [
+    "JBD AVDD voltage/current/capacitance and shutdown/ramp/rail-order limits unavailable under NDA",
+    "Supervisor response, watchdog startup, qualifier RC/PVT, logic and translator power-ramp behavior require bench qualification",
+    "No guaranteed arbitrary-fast brownout or transient deadline closure; do not convert nominal model results into physical PASS",
+    "LDO EN worst-case leakage and output active-discharge120ohm are not fully bounded here",
+    "Nine new IC packages plus peripherals require native schematic/PCB placement, ERC/DRC, RF/thermal/weight recheck"
+  ]
+}

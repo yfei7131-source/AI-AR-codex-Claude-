@@ -1,0 +1,136 @@
+name: EVT-1 Rev D1.1 AVDD safety and FPGA verification
+on:
+  push:
+    branches: ["hardware/evt1-rev-d1-1-20261117"]
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  fpga-native:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    defaults:
+      run:
+        working-directory: hardware/evt1-rev-d1-1-20261117/03_FPGA_RTL
+    steps:
+      - uses: actions/checkout@v4
+      - uses: YosysHQ/setup-oss-cad-suite@v3
+      - name: Verify real toolchain
+        run: |
+          command -v iverilog
+          command -v vvp
+          command -v yosys
+          command -v nextpnr-ice40
+          command -v icetime
+          iverilog -V
+          yosys -V
+          nextpnr-ice40 --version
+      - name: Clean previous generated EDA output
+        run: make clean
+      - name: Original complete display and RAW regression
+        id: sim
+        continue-on-error: true
+        run: make sim
+      - name: Reproduce baseline fault and test repaired safety RTL
+        id: safety
+        continue-on-error: true
+        run: make sim-safety
+      - name: Real Yosys synthesis
+        id: synth
+        continue-on-error: true
+        run: make synth
+      - name: Real nextpnr with 48MHz gates
+        id: pnr
+        continue-on-error: true
+        run: |
+          make pnr
+          python3 - <<'PY'
+          import re
+          from pathlib import Path
+          values=[float(v) for v in re.findall(r"Max frequency for clock.*?:\s*([0-9.]+) MHz",Path('nextpnr_uwg30.log').read_text())]
+          assert values and min(values)>=48,values
+          print('nextpnr48MHz gatesPASS:',values)
+          PY
+      - name: Real icetime with 48MHz gate
+        id: sta
+        continue-on-error: true
+        run: |
+          make sta
+          python3 - <<'PY'
+          import re
+          from pathlib import Path
+          values=[float(v) for v in re.findall(r"Total path delay:.*?([0-9.]+) MHz",Path('evt1_ar_display_fpga_bridge_rev_c_sta.rpt').read_text())]
+          assert values and min(values)>=48,values
+          print('icetime48MHz gatePASS:',values)
+          PY
+      - name: Enforce every native EDA stage
+        env:
+          SIM: ${{ steps.sim.outcome }}
+          SAFETY: ${{ steps.safety.outcome }}
+          SYNTH: ${{ steps.synth.outcome }}
+          PNR: ${{ steps.pnr.outcome }}
+          STA: ${{ steps.sta.outcome }}
+        run: |
+          python3 - <<'PY'
+          import os
+          results={k:os.environ[k] for k in ['SIM','SAFETY','SYNTH','PNR','STA']}
+          print(results)
+          assert all(v=='success' for v in results.values()),results
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: evt1-rev-d1-1-native-eda
+          if-no-files-found: error
+          path: |
+            hardware/evt1-rev-d1-1-20261117/03_FPGA_RTL/*.log
+            hardware/evt1-rev-d1-1-20261117/03_FPGA_RTL/*.rpt
+            hardware/evt1-rev-d1-1-20261117/03_FPGA_RTL/*.json
+            hardware/evt1-rev-d1-1-20261117/03_FPGA_RTL/*.asc
+  electrical-and-models:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: hardware/evt1-rev-d1-1-20261117
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install actual ngspice
+        run: sudo apt-get update && sudo apt-get install -y ngspice
+      - name: Independent clean-baseline reproduction
+        id: repro
+        continue-on-error: true
+        run: python3 05_Verification_Scripts/check_rev_d1_1_reproducibility.py
+      - name: Electrical topology and inherited interfaces
+        id: electrical
+        continue-on-error: true
+        run: python3 05_Verification_Scripts/verify_rev_d1_1_electrical.py
+      - name: Audio and isolation regression fault fixtures
+        id: audio
+        continue-on-error: true
+        run: python3 05_Verification_Scripts/verify_rev_d1_audio_translators.py
+      - name: AVDD failures, contract states and actual ngspice
+        id: models
+        continue-on-error: true
+        run: python3 05_Verification_Scripts/test_rev_d1_1_avdd_safety.py --require-ngspice
+      - name: Enforce tested file and model stages
+        env:
+          REPRO: ${{ steps.repro.outcome }}
+          ELECTRICAL: ${{ steps.electrical.outcome }}
+          AUDIO: ${{ steps.audio.outcome }}
+          MODELS: ${{ steps.models.outcome }}
+        run: |
+          python3 - <<'PY'
+          import os
+          results={k:os.environ[k] for k in ['REPRO','ELECTRICAL','AUDIO','MODELS']}
+          print(results)
+          assert all(v=='success' for v in results.values()),results
+          print('Physical, NDA and unbounded transient gates remain BLOCKED in reports; job success is not fabrication approval.')
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: evt1-rev-d1-1-electrical-models
+          if-no-files-found: error
+          path: hardware/evt1-rev-d1-1-20261117/04_Verification_Evidence/
