@@ -150,7 +150,7 @@
 +GND,0,M-MAIN-L,U6_CAM_AVDD,EP,Thermal pad,SINK,BOM-13,,"SBVS320D Table4-1: DQN thermal pad internally GND, PCB ground connection required"
 --- a/01_Architecture_and_Interfaces/ICD_FPGA_HOST_OPTICS_SPEC_REV_D1.md
 +++ b/01_Architecture_and_Interfaces/ICD_FPGA_HOST_OPTICS_SPEC_REV_D1_1.md
-@@ -1,17 +1,28 @@
+@@ -1,17 +1,30 @@
 -# EVT-1 Rev D1 接口控制 — NOT FOR FAB
 +# EVT-1 Rev D1.1 — AVDD 与 FPGA 接口控制
  
@@ -176,15 +176,17 @@
 +TLV755P 保证使能/禁止阈值使用 VHI=1.0V、VLO=0.3V。Gemini 的0.95/0.40V、理想0.22V肖特基与2.31µs快放不作为本版保证。AVDD 电压、负载、输出电容与允许掉电时间仍由 BLK-JBD-04 阻断。
  
 -连接器针位和跨板干线继承 Rev D；BM28 电源触点 5A，信号触点 0.3A。VBAT_R_RET/GND 不借信号触点承载峰值电流。跨铰链 FPC 需连续地、供电压降计算、动态弯折寿命和无过孔弯折区审查。实际铜宽和阻抗需由板厂叠层复核。
-+`A4 OPT_CTRL` 命令格式保持：bit0 SCAN_EN、bit1 OPT_PWR_REQ、bit2 RAW_ARM，bit3保留0。默认 SCAN_EN=0、OPT_PWR_REQ=1。Rev D1.1 在主机域 OFF 断言时立即禁止用户模式 D3 与光学输出；释放经运行的48MHz时钟同步。停钟期间 OFF→ON 不能直接恢复输出。
++`A4 OPT_CTRL` 命令格式保持：bit0 SCAN_EN、bit1 OPT_PWR_REQ、bit2 RAW_ARM，bit3保留0。默认 SCAN_EN=0、OPT_PWR_REQ=1。Rev D1.1 在主机域 OFF 断言时立即禁止用户模式 D3 与光学输出；释放经运行的48MHz时钟同步，并等待真实 VSYNC 脉冲完成。停钟期间 OFF→ON、或真实 VSYNC 失效时重复短 OFF→ON，均不能制造重新开通的 D3 边沿。默认首次启动电平保持兼容；硬件仍需独立心跳资格。
  
 -音频：nRF5340 为唯一 I2S 主机，ESP32 从机；PDM_CLK 仅由 ESP32 产生。MAX98357A WLP 球位已纠正，右 SD_MODE 经69.8k，左右增益接地。nRF 32MHz晶振、RF网络、去耦和SWD在电气表显式连接；原厂参考值与待选项见 SOC_SOURCE_REVIEW。
-+OFF 时输出钳为 SCK=0、CS_N=1、左右DATA=0，并清除扫描请求。关电可以截断正在执行的事务，这是故障终止，不是合法的 JBD 指令。恢复后需显式重新请求扫描。SCAN_EN 与 RAW_ARM 在同一控制字要求 OFF 时拒绝。
++因此完整回归测试的 R2 恢复断言从旧版“ON后200拍立即为高”改为等待实际心跳后恢复，其余像素、防撕裂和 RAW 检查保持。外部电路只能观察 D3 活动，不能独立证明帧内容、频率或任意损坏RTL的正确性；心跳伪造故障与安全认证不在本版闭环范围。
  
 -摄像隐私硬件联锁继承 Rev D：XCLK 活动→CAM_PWR_REQ→LED/电流窗口→相机 LDO。相机 I/O 供电隔离、SCCB 使能、RESET/PWDN 的新审查结论见 AUDIO_TRANSLATOR_SOURCE_REVIEW；最终传感器未知，禁止宣称隐私实测通过。
-+RAW 仍为不解释的下一事务镜像；RAW 数据中出现 A4 模式不会作为电源控制命令。需要先完成/中止 RAW，再发送主机控制；故障时使用独立复位路径。主机仍需在配置后补发原有≥49个SCK要求。
++OFF 时输出钳为 SCK=0、CS_N=1、左右DATA=0，并清除扫描请求。关电可以截断正在执行的事务，这是故障终止，不是合法的 JBD 指令。恢复后需显式重新请求扫描。SCAN_EN 与 RAW_ARM 在同一控制字要求 OFF 时拒绝。
  
 -BLK-JBD-01..05 全部保留：FPC针序、初始化、0x32命令、AVDD/STEP、单眼独立寄存器要求。任何传输模型通过均不替代这些资料。
++RAW 仍为不解释的下一事务镜像；RAW 数据中出现 A4 模式不会作为电源控制命令。需要先完成/中止 RAW，再发送主机控制；故障时使用独立复位路径。主机仍需在配置后补发原有≥49个SCK要求。
++
 +原 Rev D1 文档的“CDONE高后等待≥21ms即能断言AVDD建立”在本版退役。硬件资格可能要求后续真实心跳，且 JBD 建立时间仍未知。固件必须保持 SCAN_EN=0，按监督/定时器最大值与厂商资料确认电源稳定，执行受 NDA 控制的初始化，再打开扫描；不得猜测初始化表或保证的轨序。
 +
 +FPGA 帧缓冲、防撕裂、QSPI 命令、双目锁步、RAW格式与固定针序保持。所有原生工具通过只覆盖对应逻辑和布局时序，不能证明硬件掉电、电源安全或 JBD 光机合规。其余电源、音频、相机与无线接口继承 Rev D1，原有 BLOCKED 项继续有效。
@@ -225,11 +227,13 @@
  //         bit3 reserved (write 0)
  //   D3. One-shot RAW pass-through window for vendor init (BLK-JBD-02): after an accepted
  //       RAW_ARM, the NEXT host CS_N transaction is mirrored combinationally to BOTH eyes
-@@ -122,19 +132,20 @@
+@@ -121,20 +131,22 @@
+ 
      reg  [1:0] scan_en_sync   = 2'b00; // 2-FF synchronizers into clk_48m
      reg  [1:0] pwr_off_sync   = 2'b00;
++    reg        hb_rearm_q     = 1'b0;  // initial configured startup is unchanged; OFF arms heartbeat requalification
      reg        scan_line_en_q = 1'b0;  // enables at line start only, disables immediately
-+    wire       opt_pwr_inhibit = opt_pwr_off_h | pwr_off_sync[1];
++    wire       opt_pwr_inhibit = opt_pwr_off_h | pwr_off_sync[1] | hb_rearm_q;
  
      // RAW window is (re)evaluated only on host_cs_n rising edges (host_sck idle LOW and the
      // scan outputs idle because RAW_ARM requires SCAN_EN==0 beforehand).
@@ -248,11 +252,11 @@
 +    assign opt_cs_n      = opt_pwr_inhibit ? 1'b1 : (raw_window_q ? host_cs_n : ~opt_cs_q);
 +    assign opt_l_qdo     = opt_pwr_inhibit ? 4'h0 : (raw_window_q ? host_qio  : opt_l_q);
 +    assign opt_r_qdo     = opt_pwr_inhibit ? 4'h0 : (raw_window_q ? host_qio  : opt_r_q);
-+    assign cdone_vsync_n = ~(d3_low_q | opt_pwr_off_h | pwr_off_sync[1]);
++    assign cdone_vsync_n = ~(d3_low_q | opt_pwr_inhibit);
  
      // =========================================================================
      // Power-On Reset Generator (Synthesizable 4-bit counter + registered rst_n_q)
-@@ -253,9 +264,9 @@
+@@ -253,9 +265,9 @@
                      // Rev D OPT_CTRL: applied once per CS_N window (first data word only)
                      if (h_ctrl_ok_q) begin
                          h_ctrl_ok_q   <= 1'b0;
@@ -264,7 +268,7 @@
                              raw_req_tgl_h <= ~raw_req_tgl_h;
                      end
                  end
-@@ -518,10 +529,19 @@
+@@ -518,10 +530,30 @@
      // =========================================================================
      // Pure Datapath & Telemetry Pipeline Registers (No `rst_n_q` fanout load)
      // =========================================================================
@@ -278,6 +282,17 @@
 +            pwr_off_sync <= {pwr_off_sync[0], 1'b0};
 +    end
 +
++    // Rev D1.1 re-arm must not turn a host OFF->ON transition into a synthetic
++    // frame edge. Hold D3 LOW until the running frame generator has produced a
++    // genuine VSYNC pulse. d3_low_q keeps D3 LOW through that pulse's end.
++    // Stuck-LOW VSYNC cannot re-arm; stuck-HIGH VSYNC cannot release D3 HIGH.
++    always @(posedge clk_48m or posedge opt_pwr_off_h) begin
++        if (opt_pwr_off_h)
++            hb_rearm_q <= 1'b1;
++        else if ((!pwr_off_sync[1]) && vsync_pulse_q)
++            hb_rearm_q <= 1'b0;
++    end
++
      always @(posedge clk_48m) begin
 -        // 0. Rev D: optical-control synchronizers (quasi-static host_sck-domain bits)
 +        // 0. Rev D: scan control synchronizer (host_sck-domain bit)
@@ -286,7 +301,16 @@
  
          // 1. 3-Stage Pipelined Occupancy Watermark & Telemetry Counters
          wptr_bin_sync_q <= wptr_bin_dec;
-@@ -766,7 +786,9 @@
+@@ -734,7 +766,7 @@
+             d3_low_q <= vsync_pulse_q | pwr_off_sync[1];
+ 
+             // 8b. Rev D scan gating: enable only at a line boundary, disable immediately
+-            if (!scan_en_sync[1])
++            if ((!scan_en_sync[1]) || hb_rearm_q)
+                 scan_line_en_q <= 1'b0;
+             else if (col_last_q)
+                 scan_line_en_q <= 1'b1;
+@@ -766,7 +798,9 @@
  
              // 10. 24.000 MHz QSPI Master Serializer (2:1 mux between hdr_nibble_q & pix_shift[15:12])
              //     Rev D: gated by scan_line_en_q (OPT_CTRL.SCAN_EN, line-aligned)
@@ -319,6 +343,40 @@
  
  synth:
  	yosys -l yosys_synth.log -p "synth_ice40 -top $(TOP) -json $(TOP).json" $(RTL_SRC)
+--- a/03_FPGA_RTL/tb_evt1_ar_display_fpga_bridge_rev_c.v
++++ b/03_FPGA_RTL/tb_evt1_ar_display_fpga_bridge_rev_c.v
+@@ -373,10 +373,27 @@
+             @(posedge clk_48m);
+             if (cdone_vsync_n !== 1'b0) pwr_hold_err_cnt = pwr_hold_err_cnt + 1;
+         end
+-        qspi_ctrl_write(4'b0011);                 // power request restored
+-        repeat (200) @(posedge clk_48m);
+-        if (!(dut.row_cnt == 9'd0 && dut.col_cnt < 11'd60) && cdone_vsync_n !== 1'b1)
+-            pwr_hold_err_cnt = pwr_hold_err_cnt + 1;
++        // Rev D1.1: restoring a request must not create a synthetic D3 edge.
++        // The obsolete 200-clock release expectation is replaced with a bounded
++        // wait for an actual heartbeat and its completed LOW pulse. All pixel,
++        // RAW, FIFO, timing and anti-tearing checks outside R2 are unchanged.
++        begin : rev_d1_1_rearm_wait
++            integer rearm_wait_clks;
++            reg genuine_pulse_seen;
++            rearm_wait_clks = 0;
++            genuine_pulse_seen = 0;
++            qspi_ctrl_write(4'b0011);
++            while ((cdone_vsync_n !== 1'b1) && rearm_wait_clks < 1600000) begin
++                @(posedge clk_48m);
++                #0.1;
++                rearm_wait_clks = rearm_wait_clks + 1;
++                if (dut.vsync_pulse_q) genuine_pulse_seen = 1;
++                if ((!genuine_pulse_seen) && cdone_vsync_n !== 1'b0)
++                    pwr_hold_err_cnt = pwr_hold_err_cnt + 1;
++            end
++            if ((!genuine_pulse_seen) || cdone_vsync_n !== 1'b1 || dut.hb_rearm_q !== 1'b0)
++                pwr_hold_err_cnt = pwr_hold_err_cnt + 1;
++        end
+ 
+         // ===================== Rev D R3: RAW_ARM rejected while SCAN_EN=1 ===============
+         qspi_ctrl_write(4'b0111);                 // RAW_ARM with SCAN_EN=1 -> must be ignored
 --- a/02_BOM_PINMAP_ICD_Blocked/BOM_V1_0_FROZEN.csv
 +++ b/02_BOM_PINMAP_ICD_Blocked/BOM_V1_0_FROZEN.csv
 @@ -31,7 +31,7 @@
@@ -2432,13 +2490,14 @@
  BLK-RevC-02,BLOCKED,CAD_STEP_Shell_and_Gerber_DRC,3D STEP ID Temple Shell Interference (GRP3911040 11.0mm Drop-Tip vs GRP220550 5.6mm Slim-Straight & ESP32-S3-PICO-1 7.0mm W) + Native 6L HDI Gerber DRC,No vendor 3D STEP enclosure shell (`EVT1_ID_TEMPLE_SHELL.stp`) or GUI PCB CAD binary in sandbox VM; static bounding-box models are forbidden from claiming 3D zero-collision PASS,BLOCKED (NOT marked PASS): All 44 BOM RefDes (incl. RN_FPGA_CFG_PWR & symmetric J_DISP_L/J_DISP_R bridge wings) audited analytically; awaits native CAD STEP & Gerber DRC,KIMI imports ID STEP shell into EasyEDA Pro / KiCad 8 to select Config A (`GRP3911040` in >=12.8mm drop-tip) vs Config B (`GRP220550` in <=6.0mm slim straight temple) and runs 6L Type-III stacked-VIPPO DRC.
  BLK-RevC-03,BLOCKED,SoC_BES2800BP_NDA,"BES2800BP 363-ball BGA coordinate table, SDK, EVK, and missing internal Camera ISP",Official Bestechnic 2024/2026 PDFs are 3-page product briefs; full ballmap/SDK require NDA and chip has no internal CSI-2 ISP,BLOCKED: Removed from EVT-1 Rev C schematic freeze; replaced by open-datasheet ESP32-S3-PICO-1-N8R8 + nRF5340-CMAA,Sign Bestechnic NDA + pair with external ISP only for V2.0 evaluation.
  BLK-RevC-04,BLOCKED,Legacy_Classic_BT_Audio,Classic Bluetooth BR/EDR (A2DP / HFP 1.7) on ESP32-S3-PICO-1-N8R8,ESP32-S3 supports BLE 5.0 only (no BR/EDR hardware); nRF5340-CMAA provides BLE 5.4 LE Audio (CIS/BIS LC3) for modern phones,BLE 5.4 LE Audio + 3-Mic PDM + I2S Class-D supported via nRF5340-CMAA; legacy Classic BT A2DP/HFP requires dual-mode BT IC,"If legacy Classic BT A2DP/HFP is mandatory, substitute nRF5340-CMAA with ESP32-PICO-V3-02 or sample ESP32-S31."
-@@ -20,3 +20,7 @@
+@@ -20,3 +20,8 @@
  D1-PWR-01,OPEN,PWR,"Capacitor derating, inductor effective L/current, supply ramp, load transients, FPGA sequence and thermal verification.",,NOT_FOR_FAB,See source review and KIMI Rev D1 handoff; physical/native qualification required
  D1-AUD-01,OPEN,AUD,"nRF I2S routing/peripheral limits, real LE Audio phone support, clock timing and acoustic bring-up.",,NOT_FOR_FAB,See source review and KIMI Rev D1 handoff; physical/native qualification required
  D1-CAM-01,OPEN,CAM,Final camera sensor/RESET/PWDN and privacy fault tests; no final module or timing qualification.,,NOT_FOR_FAB,See source review and KIMI Rev D1 handoff; physical/native qualification required
 +BLK-D11-PHY,BLOCKED,AVDD_SAFETY,No physical reset/configfailure/VSYNC-loss/brownout/poweroff tests; model/RTL results cannot close benchgate.,Required physical/original-vendor data unavailable,NOT_FOR_FAB,See safety source review and KIMI Rev D1.1 update list
 +BLK-D11-JBD,BLOCKED,AVDD_SAFETY,"AVDD voltage,load,current,capacitance,absolute limits and relative rail-off timing require JBD NDA; EN-low does not prove safe rail discharge.",Required physical/original-vendor data unavailable,NOT_FOR_FAB,See safety source review and KIMI Rev D1.1 update list
 +BLK-D11-CORNER,BLOCKED,AVDD_SAFETY,"Timer/supervisor/translator/inputslew/outputleakage and rampbounds must be qualified acrossvoltage,temperature,process and actuallayout.",Required physical/original-vendor data unavailable,NOT_FOR_FAB,See safety source review and KIMI Rev D1.1 update list
++BLK-D11-OFF-HOLD,BLOCKED,AVDD_SAFETY,Sub-filter shortOFF doesnotprovephysicalAVDDshutdown/discharge. MinimumOFFhold needs supervisor maximumlatency andJBDrail/loadlimits; edgeactivity alone isnot frame/authenticity safetycertification.,Required physical/original-vendor data unavailable,NOT_FOR_FAB,See safety source review and KIMI Rev D1.1 update list
 +BLK-D11-CAD,BLOCKED,AVDD_SAFETY,New hardware interlock components not placed/routed; nativeERC/DRC/DFM andmechanical clearance unavailable.,Required physical/original-vendor data unavailable,NOT_FOR_FAB,See safety source review and KIMI Rev D1.1 update list
 --- a/01_Architecture_and_Interfaces/SYSTEM_BUDGETS_V1_0.json
 +++ b/01_Architecture_and_Interfaces/SYSTEM_BUDGETS_V1_0.json
@@ -2486,7 +2545,7 @@
 +    "baseline_pr21_commit": "ff7ccf93fb6ebce289e6a262adcea4e77c8d4928",
 +    "gemini_comparison_commit": "94b50cf66c149f0b5a613edd8e15f18cd2a0eb15",
 +    "d3_polarity": "unchanged: idleHIGH /1us LOW per60Hz frame; heldLOW forOPT_PWR_REQ=0",
-+    "logical_poweroff": "host-domain async assertion,48MHz synchronous release; outputclocks/CS/data idle wheninhibited",
++    "logical_poweroff": "host-domain async assertion,48MHz synchronous release plusgenuineVSYNC rearm; command-onlyOFF/ON cannotrestartD3afterOFF; outputclocks/CS/data idle wheninhibited",
 +    "heartbeat": "continues withSCAN_EN=0; external hardware must detect stuckHIGH and stuckLOW",
 +    "reset": "CRESET_B retainsactiveLOW; externaloutputclamps anddefaultpulldown replace Schottky discharge intoGPIO",
 +    "forbidden_claims": [

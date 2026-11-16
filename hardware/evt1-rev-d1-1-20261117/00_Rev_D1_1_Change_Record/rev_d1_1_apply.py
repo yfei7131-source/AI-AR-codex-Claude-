@@ -69,7 +69,7 @@ def main():
         # recursive comparison of the generated patch or verification outputs.
         pairs=[('02_BOM_PINMAP_ICD_Blocked/NETLIST_ELECTRICAL_CONNECTION_REV_D1.csv','02_BOM_PINMAP_ICD_Blocked/NETLIST_ELECTRICAL_CONNECTION_REV_D1_1.csv'),
           ('01_Architecture_and_Interfaces/ICD_FPGA_HOST_OPTICS_SPEC_REV_D1.md','01_Architecture_and_Interfaces/ICD_FPGA_HOST_OPTICS_SPEC_REV_D1_1.md')]
-        for rel in ['03_FPGA_RTL/evt1_ar_display_fpga_bridge_rev_c.v','03_FPGA_RTL/Makefile',
+        for rel in ['03_FPGA_RTL/evt1_ar_display_fpga_bridge_rev_c.v','03_FPGA_RTL/Makefile','03_FPGA_RTL/tb_evt1_ar_display_fpga_bridge_rev_c.v',
           '02_BOM_PINMAP_ICD_Blocked/BOM_V1_0_FROZEN.csv','02_BOM_PINMAP_ICD_Blocked/PINMAP_V1_0_FROZEN.csv',
           '02_BOM_PINMAP_ICD_Blocked/ICD_INTERFACE_CONTROL_TABLE.csv','02_BOM_PINMAP_ICD_Blocked/BLOCKED_ITEMS_CHECKLIST.csv',
           '01_Architecture_and_Interfaces/SYSTEM_BUDGETS_V1_0.json']:

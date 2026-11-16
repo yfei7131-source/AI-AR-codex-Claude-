@@ -373,10 +373,27 @@ module tb_evt1_ar_display_fpga_bridge_rev_c;
             @(posedge clk_48m);
             if (cdone_vsync_n !== 1'b0) pwr_hold_err_cnt = pwr_hold_err_cnt + 1;
         end
-        qspi_ctrl_write(4'b0011);                 // power request restored
-        repeat (200) @(posedge clk_48m);
-        if (!(dut.row_cnt == 9'd0 && dut.col_cnt < 11'd60) && cdone_vsync_n !== 1'b1)
-            pwr_hold_err_cnt = pwr_hold_err_cnt + 1;
+        // Rev D1.1: restoring a request must not create a synthetic D3 edge.
+        // The obsolete 200-clock release expectation is replaced with a bounded
+        // wait for an actual heartbeat and its completed LOW pulse. All pixel,
+        // RAW, FIFO, timing and anti-tearing checks outside R2 are unchanged.
+        begin : rev_d1_1_rearm_wait
+            integer rearm_wait_clks;
+            reg genuine_pulse_seen;
+            rearm_wait_clks = 0;
+            genuine_pulse_seen = 0;
+            qspi_ctrl_write(4'b0011);
+            while ((cdone_vsync_n !== 1'b1) && rearm_wait_clks < 1600000) begin
+                @(posedge clk_48m);
+                #0.1;
+                rearm_wait_clks = rearm_wait_clks + 1;
+                if (dut.vsync_pulse_q) genuine_pulse_seen = 1;
+                if ((!genuine_pulse_seen) && cdone_vsync_n !== 1'b0)
+                    pwr_hold_err_cnt = pwr_hold_err_cnt + 1;
+            end
+            if ((!genuine_pulse_seen) || cdone_vsync_n !== 1'b1 || dut.hb_rearm_q !== 1'b0)
+                pwr_hold_err_cnt = pwr_hold_err_cnt + 1;
+        end
 
         // ===================== Rev D R3: RAW_ARM rejected while SCAN_EN=1 ===============
         qspi_ctrl_write(4'b0111);                 // RAW_ARM with SCAN_EN=1 -> must be ignored

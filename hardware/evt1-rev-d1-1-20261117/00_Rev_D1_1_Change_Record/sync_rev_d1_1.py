@@ -27,7 +27,7 @@ def sync(stage,base,net,bom):
       'baseline_pr21_commit':'ff7ccf93fb6ebce289e6a262adcea4e77c8d4928',
       'gemini_comparison_commit':'94b50cf66c149f0b5a613edd8e15f18cd2a0eb15',
       'd3_polarity':'unchanged: idleHIGH /1us LOW per60Hz frame; heldLOW forOPT_PWR_REQ=0',
-      'logical_poweroff':'host-domain async assertion,48MHz synchronous release; outputclocks/CS/data idle wheninhibited',
+      'logical_poweroff':'host-domain async assertion,48MHz synchronous release plusgenuineVSYNC rearm; command-onlyOFF/ON cannotrestartD3afterOFF; outputclocks/CS/data idle wheninhibited',
       'heartbeat':'continues withSCAN_EN=0; external hardware must detect stuckHIGH and stuckLOW',
       'reset':'CRESET_B retainsactiveLOW; externaloutputclamps anddefaultpulldown replace Schottky discharge intoGPIO',
       'forbidden_claims':['CDONEaloneprovesuserclock','idealSchottky0.22Vguaranteed','ENoffequalsAVDDdischarged','NDArailofftimeguaranteed'],
@@ -70,6 +70,7 @@ def sync(stage,base,net,bom):
       ('BLK-D11-PHY','No physical reset/configfailure/VSYNC-loss/brownout/poweroff tests; model/RTL results cannot close benchgate.'),
       ('BLK-D11-JBD','AVDD voltage,load,current,capacitance,absolute limits and relative rail-off timing require JBD NDA; EN-low does not prove safe rail discharge.'),
       ('BLK-D11-CORNER','Timer/supervisor/translator/inputslew/outputleakage and rampbounds must be qualified acrossvoltage,temperature,process and actuallayout.'),
+      ('BLK-D11-OFF-HOLD','Sub-filter shortOFF doesnotprovephysicalAVDDshutdown/discharge. MinimumOFFhold needs supervisor maximumlatency andJBDrail/loadlimits; edgeactivity alone isnot frame/authenticity safetycertification.'),
       ('BLK-D11-CAD','New hardware interlock components not placed/routed; nativeERC/DRC/DFM andmechanical clearance unavailable.')]:
         blocked.append(dict(Blocker_ID=ident,Status_Tag='BLOCKED',Subsystem='AVDD_SAFETY',Item_Description=description,
           Root_Cause='Required physical/original-vendor data unavailable',Current_Engineering_State='NOT_FOR_FAB',Resolution_Path='See safety source review and KIMI Rev D1.1 update list'))

@@ -131,8 +131,9 @@ module evt1_ar_display_fpga_bridge_rev_c #(
 
     reg  [1:0] scan_en_sync   = 2'b00; // 2-FF synchronizers into clk_48m
     reg  [1:0] pwr_off_sync   = 2'b00;
+    reg        hb_rearm_q     = 1'b0;  // initial configured startup is unchanged; OFF arms heartbeat requalification
     reg        scan_line_en_q = 1'b0;  // enables at line start only, disables immediately
-    wire       opt_pwr_inhibit = opt_pwr_off_h | pwr_off_sync[1];
+    wire       opt_pwr_inhibit = opt_pwr_off_h | pwr_off_sync[1] | hb_rearm_q;
 
     // RAW window is (re)evaluated only on host_cs_n rising edges (host_sck idle LOW and the
     // scan outputs idle because RAW_ARM requires SCAN_EN==0 beforehand).
@@ -145,7 +146,7 @@ module evt1_ar_display_fpga_bridge_rev_c #(
     assign opt_cs_n      = opt_pwr_inhibit ? 1'b1 : (raw_window_q ? host_cs_n : ~opt_cs_q);
     assign opt_l_qdo     = opt_pwr_inhibit ? 4'h0 : (raw_window_q ? host_qio  : opt_l_q);
     assign opt_r_qdo     = opt_pwr_inhibit ? 4'h0 : (raw_window_q ? host_qio  : opt_r_q);
-    assign cdone_vsync_n = ~(d3_low_q | opt_pwr_off_h | pwr_off_sync[1]);
+    assign cdone_vsync_n = ~(d3_low_q | opt_pwr_inhibit);
 
     // =========================================================================
     // Power-On Reset Generator (Synthesizable 4-bit counter + registered rst_n_q)
@@ -539,6 +540,17 @@ module evt1_ar_display_fpga_bridge_rev_c #(
             pwr_off_sync <= {pwr_off_sync[0], 1'b0};
     end
 
+    // Rev D1.1 re-arm must not turn a host OFF->ON transition into a synthetic
+    // frame edge. Hold D3 LOW until the running frame generator has produced a
+    // genuine VSYNC pulse. d3_low_q keeps D3 LOW through that pulse's end.
+    // Stuck-LOW VSYNC cannot re-arm; stuck-HIGH VSYNC cannot release D3 HIGH.
+    always @(posedge clk_48m or posedge opt_pwr_off_h) begin
+        if (opt_pwr_off_h)
+            hb_rearm_q <= 1'b1;
+        else if ((!pwr_off_sync[1]) && vsync_pulse_q)
+            hb_rearm_q <= 1'b0;
+    end
+
     always @(posedge clk_48m) begin
         // 0. Rev D: scan control synchronizer (host_sck-domain bit)
         scan_en_sync <= {scan_en_sync[0], opt_scan_en_h};
@@ -754,7 +766,7 @@ module evt1_ar_display_fpga_bridge_rev_c #(
             d3_low_q <= vsync_pulse_q | pwr_off_sync[1];
 
             // 8b. Rev D scan gating: enable only at a line boundary, disable immediately
-            if (!scan_en_sync[1])
+            if ((!scan_en_sync[1]) || hb_rearm_q)
                 scan_line_en_q <= 1'b0;
             else if (col_last_q)
                 scan_line_en_q <= 1'b1;

@@ -1735,7 +1735,7 @@
     "baseline_pr21_commit": "ff7ccf93fb6ebce289e6a262adcea4e77c8d4928",
     "gemini_comparison_commit": "94b50cf66c149f0b5a613edd8e15f18cd2a0eb15",
     "d3_polarity": "unchanged: idleHIGH /1us LOW per60Hz frame; heldLOW forOPT_PWR_REQ=0",
-    "logical_poweroff": "host-domain async assertion,48MHz synchronous release; outputclocks/CS/data idle wheninhibited",
+    "logical_poweroff": "host-domain async assertion,48MHz synchronous release plusgenuineVSYNC rearm; command-onlyOFF/ON cannotrestartD3afterOFF; outputclocks/CS/data idle wheninhibited",
     "heartbeat": "continues withSCAN_EN=0; external hardware must detect stuckHIGH and stuckLOW",
     "reset": "CRESET_B retainsactiveLOW; externaloutputclamps anddefaultpulldown replace Schottky discharge intoGPIO",
     "forbidden_claims": [

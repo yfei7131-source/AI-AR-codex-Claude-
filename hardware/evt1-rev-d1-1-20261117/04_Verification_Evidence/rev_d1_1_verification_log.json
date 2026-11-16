@@ -37,9 +37,9 @@
       "detail": "CHIP_PU 10k/1uF and fixture pads"
     },
     {
-      "id": "D1-08 FPGA source byte preservation",
+      "id": "D1-08 PCF/model and original display-data assertions preserved",
       "status": "PASS",
-      "detail": "Original PCF/simulation primitives/full display regression TB preserved; safety RTL diff reviewed separately"
+      "detail": "PCF/model byte-identical; full pixel/anti-tear and RAW assertions unchanged; R2 ON timing intentionally waits genuine heartbeat"
     },
     {
       "id": "D1-09 conditional mass arithmetic",

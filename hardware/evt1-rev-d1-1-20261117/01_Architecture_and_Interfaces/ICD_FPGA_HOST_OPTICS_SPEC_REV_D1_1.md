@@ -17,7 +17,9 @@
 
 TLV755P 保证使能/禁止阈值使用 VHI=1.0V、VLO=0.3V。Gemini 的0.95/0.40V、理想0.22V肖特基与2.31µs快放不作为本版保证。AVDD 电压、负载、输出电容与允许掉电时间仍由 BLK-JBD-04 阻断。
 
-`A4 OPT_CTRL` 命令格式保持：bit0 SCAN_EN、bit1 OPT_PWR_REQ、bit2 RAW_ARM，bit3保留0。默认 SCAN_EN=0、OPT_PWR_REQ=1。Rev D1.1 在主机域 OFF 断言时立即禁止用户模式 D3 与光学输出；释放经运行的48MHz时钟同步。停钟期间 OFF→ON 不能直接恢复输出。
+`A4 OPT_CTRL` 命令格式保持：bit0 SCAN_EN、bit1 OPT_PWR_REQ、bit2 RAW_ARM，bit3保留0。默认 SCAN_EN=0、OPT_PWR_REQ=1。Rev D1.1 在主机域 OFF 断言时立即禁止用户模式 D3 与光学输出；释放经运行的48MHz时钟同步，并等待真实 VSYNC 脉冲完成。停钟期间 OFF→ON、或真实 VSYNC 失效时重复短 OFF→ON，均不能制造重新开通的 D3 边沿。默认首次启动电平保持兼容；硬件仍需独立心跳资格。
+
+因此完整回归测试的 R2 恢复断言从旧版“ON后200拍立即为高”改为等待实际心跳后恢复，其余像素、防撕裂和 RAW 检查保持。外部电路只能观察 D3 活动，不能独立证明帧内容、频率或任意损坏RTL的正确性；心跳伪造故障与安全认证不在本版闭环范围。
 
 OFF 时输出钳为 SCK=0、CS_N=1、左右DATA=0，并清除扫描请求。关电可以截断正在执行的事务，这是故障终止，不是合法的 JBD 指令。恢复后需显式重新请求扫描。SCAN_EN 与 RAW_ARM 在同一控制字要求 OFF 时拒绝。
 

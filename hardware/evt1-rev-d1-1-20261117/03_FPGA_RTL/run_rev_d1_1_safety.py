@@ -33,7 +33,7 @@ def main():
             print(compiled.stdout + compiled.stderr)
             raise SystemExit(compiled.returncode)
         run_cmd = ['vvp', str(executable)]
-        run = subprocess.run(run_cmd, capture_output=True, text=True, timeout=180)
+        run = subprocess.run(run_cmd, capture_output=True, text=True, timeout=300)
         (ROOT/(case+'.log')).write_text(run.stdout+run.stderr, encoding='utf8')
         print(run.stdout, end='')
         if run.returncode or marker not in run.stdout:

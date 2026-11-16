@@ -55,7 +55,12 @@ def main():
     ck('D1-06 explicit two-terminal capacitors',not badcap,str(badcap or f'{len(caps)} explicit capacitors'))
     boot=find('U1_HOST','CHIP_PU')
     ck('D1-07 ESP32 enable RC connected',len(boot)==1 and {r['RefDes'] for r in bynet[boot[0]['Net']]} >= {'U1_HOST','R_CHIP_PU','C_CHIP_PU','TP_ESP_EN'},'CHIP_PU 10k/1uF and fixture pads')
-    ck('D1-08 FPGA source byte preservation',all((ROOT/'03_FPGA_RTL'/p.name).read_bytes()==p.read_bytes() for p in (ROOT.parent/'evt1-rev-d1-20261117/03_FPGA_RTL').iterdir() if p.name in ['ice40up5k_uwg30_rev_c.pcf','ice40_spram_ebr_sim.v','tb_evt1_ar_display_fpga_bridge_rev_c.v']),'Original PCF/simulation primitives/full display regression TB preserved; safety RTL diff reviewed separately')
+    preserved=all((ROOT/'03_FPGA_RTL'/p.name).read_bytes()==p.read_bytes() for p in (ROOT.parent/'evt1-rev-d1-20261117/03_FPGA_RTL').iterdir() if p.name in ['ice40up5k_uwg30_rev_c.pcf','ice40_spram_ebr_sim.v'])
+    oldtb=(ROOT.parent/'evt1-rev-d1-20261117/03_FPGA_RTL/tb_evt1_ar_display_fpga_bridge_rev_c.v').read_text(encoding='utf8')
+    newtb=(ROOT/'03_FPGA_RTL/tb_evt1_ar_display_fpga_bridge_rev_c.v').read_text(encoding='utf8')
+    r2='// ===================== Rev D R2:';r3='// ===================== Rev D R3:'
+    same_data=oldtb.split(r2)[0]==newtb.split(r2)[0] and oldtb.split(r3)[1]==newtb.split(r3)[1]
+    ck('D1-08 PCF/model and original display-data assertions preserved',preserved and same_data,'PCF/model byte-identical; full pixel/anti-tear and RAW assertions unchanged; R2 ON timing intentionally waits genuine heartbeat')
     mass=cfg['8_rev_d1_mass_plan']
     ck('D1-09 conditional mass arithmetic',mass['candidate_including_contingency_g']<=39.5 and not mass['physical_mass_verified'],json.dumps(mass,ensure_ascii=False))
     # Reuse inherited checks after semantic normalization of physical pin aliases.

@@ -15,6 +15,7 @@ module tb_evt1_rev_d1_1_safety;
     integer cases_passed = 0;
     integer c0, c1, c2, k;
     reg guard_idle = 0;
+    reg guard_no_d3_rise = 0;
 
     always #10.416667 if (run_clk) clk_48m = ~clk_48m;
     always @(posedge clk_48m) cycles = cycles + 1;
@@ -36,6 +37,11 @@ module tb_evt1_rev_d1_1_safety;
             if (opt_sck !== 0 || opt_cs_n !== 1 || opt_l_qdo !== 0 || opt_r_qdo !== 0)
                 $fatal(1, "Optical bus left idle during shutdown/release");
         end
+    end
+
+    always @(posedge cdone_vsync_n) begin
+        if (guard_no_d3_rise)
+            $fatal(1, "Host OFF/ON fabricated D3 rising edge while heartbeat fault remains");
     end
 
     task nibble(input [3:0] n);
@@ -97,10 +103,54 @@ module tb_evt1_rev_d1_1_safety;
         $finish;
     end
 `else
+    task heartbeat_fault_rearm(input stuck_high);
+        integer n;
+        begin
+            ctrl(4'h0);
+            repeat (8) @(posedge clk_48m);
+            if (stuck_high) force dut.vsync_pulse_q = 1'b1;
+            else force dut.vsync_pulse_q = 1'b0;
+            #1;
+            guard_no_d3_rise = 1;
+            guard_idle = 1;
+            // These short valid control writes previously generated D3 edges
+            // even without frame pulses. Keep clk_48m running throughout.
+            for (n=0; n<20; n=n+1) begin
+                ctrl(4'h2);
+                #200;
+                if (cdone_vsync_n !== 0) $fatal(1, "Heartbeat fault escaped re-arm hold");
+                ctrl(4'h0);
+                #200;
+            end
+            ctrl(4'h2);
+            repeat (80) @(posedge clk_48m);
+            #1;
+            if (cdone_vsync_n !== 0) $fatal(1, "Faulty heartbeat re-armed after control write");
+            idle_check;
+            guard_no_d3_rise = 0;
+            // Clear the forced fault while OFF, so releasing a forced HIGH
+            // cannot itself masquerade as a newly completed real heartbeat.
+            ctrl(4'h0);
+            release dut.vsync_pulse_q;
+            wait (dut.vsync_pulse_q === 0);
+            repeat (8) @(posedge clk_48m);
+            ctrl(4'h2);
+            wait (dut.vsync_pulse_q === 1);
+            wait (cdone_vsync_n === 1);
+            #1;
+            if (dut.hb_rearm_q !== 0) $fatal(1, "Genuine heartbeat did not complete re-arm");
+            idle_check;
+            guard_idle = 0;
+            cases_passed = cases_passed + 1;
+            $display("SAFETY_CASE heartbeat_stuck_%0d_blocks_command_edges_until_real_pulse: PASS", stuck_high);
+        end
+    endtask
+
     task frozen_off_on(input clk_phase, input d3_phase);
         begin
             ctrl(4'h2);
             repeat (16) @(posedge clk_48m);
+            wait (dut.hb_rearm_q === 0);
             wait (cdone_vsync_n === d3_phase);
             freeze_clock(clk_phase);
             if (cdone_vsync_n !== d3_phase) $fatal(1, "D3 changed before clock freeze");
@@ -143,6 +193,8 @@ module tb_evt1_rev_d1_1_safety;
         frozen_off_on(1, 1);
         frozen_off_on(0, 0);
         frozen_off_on(1, 0);
+        heartbeat_fault_rearm(0);
+        heartbeat_fault_rearm(1);
 
         // A malformed power-off control word must not leave SCAN_EN or RAW_ARM
         // active. There is no claim that truncation preserves a panel command.
@@ -176,7 +228,9 @@ module tb_evt1_rev_d1_1_safety;
         // RAW remains opaque: an A4-shaped vendor payload is not a control
         // command. Check that retained feature, then inject a true internal
         // shutdown request during a second RAW transaction to test the clamp.
-        ctrl(4'h2); repeat (16) @(posedge clk_48m);
+        ctrl(4'h2);
+        wait (cdone_vsync_n === 1);
+        repeat (16) @(posedge clk_48m);
         ctrl(4'h6);
         if (dut.raw_window_q !== 1) $fatal(1, "Powered RAW arm regressed");
         ctrl(4'h0); // here its A4 pattern is vendor RAW data, intentionally opaque
@@ -205,7 +259,7 @@ module tb_evt1_rev_d1_1_safety;
         cases_passed = cases_passed + 1;
         $display("SAFETY_CASE RAW_internal_OFF_fault_abort: PASS");
 
-        if (cases_passed != 9) $fatal(1, "Missing safety cases: %0d", cases_passed);
+        if (cases_passed != 11) $fatal(1, "Missing safety cases: %0d", cases_passed);
         $display("REV_D1_1_SAFETY_TB_RESULT: PASS (%0d user-mode RTL cases; hard CDONE/reset/power states are outside this model)", cases_passed);
         $finish;
     end
