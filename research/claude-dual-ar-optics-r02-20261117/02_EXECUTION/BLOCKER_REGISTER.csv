@@ -1,0 +1,13 @@
+﻿id,owner,question,priority,closure_evidence,gate,status
+BLK-JBD-01,JBD,"Mini II exact SKU/hardware revision, FPC pinout, connector and power domains",P0,JBD original datasheet/FPC drawing,DISPLAY_IF_FREEZE,OPEN
+BLK-JBD-02,JBD,"Power rails, voltage tolerance, POR/reset/enable, power-up sequence, VCOM generation and AVDD status",P0,Original power design guide or written confirmation,POWER_DESIGN_FREEZE,OPEN
+BLK-JBD-03,JBD,"Frame SRAM/self refresh/partial refresh, grey levels, QSPI opcode/dummy/Sync/readback",P0,Original interface command guide + EVK proof,P2_P3_ARCHITECTURE_DECISION,OPEN
+BLK-JBD-04,JBD,"Projector optics/mechanical STEP including FPC route, display exit pupil and thermal interface",P0,STEP/FPC mounting drawing + tolerances,OPTICAL_MECH_FREEZE,OPEN
+BLK-JBD-05,JBD,"Light and power curve vs APL/brightness, optical safety requirements",P0,APL-current-brightness curve + OEM guidance,THERMAL_OPTICS_FREEZE,OPEN
+BLK-OPT-01,Waveguide vendor,"Nose side injection, geometry, waveguide mass, eye box/eye relief, AA tolerances, bonding drift",P0,Optical CAD/AA DFM/tolerance report,OPTICAL_MECH_FREEZE,OPEN
+BLK-FPC-01,FPC vendor,Actual rigid-flex stackup/allowed hinge bending and measured R~1.8-2.0mm cycles,P1,Bend fatigue report + DFM drawing,FPC_RELEASE,OPEN
+BLK-BAT-01,Battery vendor,"Real high-energy narrow cell dimensions, weight, ESR, pulsed current, protections, charger compatibility",P1,Sample spec + test certificate + measured mass,BATTERY_SELECTION,OPEN
+BLK-PWR-01,Power design,"Dual-battery local domain fault handling, ground returns, charge topology, load distribution",P1,schematic review + simulation + bench plan,PWR_ECR_06,OPEN
+BLK-PWR-02,Power design,Check iCE40 sequencing and 1V8 rail headroom before rerouting LDO input,P2,verified datasheets + actual rail/load tree,PWR_ECR_07,OPEN
+BLK-MEAS-01,Hardware EVT,"No physical projector, waveguide, board measurement logs included",P0,EVK/lab captures/camera alignment/scale/IR data,BENCH_VERIFIED,OPEN
+BLK-REPO-01,Integration,Current GitHub HEAD and actual native Rev D1 engineering assets not part of upload,P0,"source tree hash, baseline file index and CI outputs",CHANGE_IMPLEMENTATION,OPEN
