@@ -3,6 +3,21 @@
   "date": "2026-11-16",
   "project": "EVT-1 Rev C latest engineering archive",
   "status": "ARCHIVED_SOURCE_ONLY_NOT_FOR_FAB",
+  "outer_archive": "BLOCKED_ITEMS_CHECKLIST-gemini新输出.zip",
+  "outer_archive_bytes": 520106,
+  "outer_archive_sha256": "f5c540eee1d27c57bc914fee2e88a6e2629470cd2ab29e23c4197c6f171cc6f9",
+  "outer_delivery_validation": {
+    "zip_integrity": "PASS",
+    "nested_archive_sha256": "1f60591b06bd9973fb90805c45882031940b45fdaacaacba127b027f75778701",
+    "pr_files_compared": 23,
+    "raw_matches": 22,
+    "line_ending_only_matches": 1,
+    "content_differences": 0,
+    "duplicate_files_excluded": [
+      "ICD_INTERFACE_CONTROL_TABLE (1).csv"
+    ],
+    "conversation_export_excluded": true
+  },
   "source_archive": "ZY_AIAR_V1_0_KIMI_HANDOFF_PACKAGE.zip",
   "source_archive_bytes": 468858,
   "source_archive_sha256": "1f60591b06bd9973fb90805c45882031940b45fdaacaacba127b027f75778701",
@@ -152,5 +167,5 @@
     "physical_validation": "UNVERIFIED",
     "manufacturing_release": false
   },
-  "source_note": "Final direct engineering ZIP validated after the outer download was replaced during processing."
+  "source_note": "Outer delivery validated; duplicate ICD and Gemini conversation export are intentionally not versioned."
 }
