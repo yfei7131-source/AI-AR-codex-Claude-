@@ -1,0 +1,115 @@
+{
+  "archive_id": "ZY-AIAR-EVT1-SYSTEM-ARCH-R1.1-20261117",
+  "status": [
+    "ARCHITECTURE REVIEW",
+    "ARCHIVED_SOURCE_ONLY",
+    "R1.1_DOCUMENT_DID_NOT_READ_PR21_OR_PR22",
+    "SOME_STATUSES_MAY_BE_STALE",
+    "NOT_FINAL_FROZEN_DESIGN",
+    "NOT FOR FAB"
+  ],
+  "baseline": {
+    "repo": "https://github.com/yfei7131-source/AI-AR-codex-Claude-",
+    "pr": 21,
+    "branch": "hardware/evt1-rev-d1-20261117",
+    "commit": "ff7ccf93fb6ebce289e6a262adcea4e77c8d4928"
+  },
+  "source_packages": {
+    "outer_zip": {
+      "size": 417426,
+      "sha256": "253a014e956871574666d746e64c2df84069e0a234decc6d3fc06ba3cf4b4b7b",
+      "entries": 4,
+      "crc_test_bad_member": null
+    },
+    "inner_zip": {
+      "size": 392791,
+      "sha256": "d3f8b9f08b24f6c5dc6a5e7901a2d41305296c1967c6ba303a87678b20684db2",
+      "entries": 7,
+      "crc_test_bad_member": null
+    }
+  },
+  "git_bundle": {
+    "file": "handoff_evt1_rev_c.bundle",
+    "head": "94b50cf66c149f0b5a613edd8e15f18cd2a0eb15",
+    "ref": "refs/heads/handoff/evt1-rev-c-feasibility-20261115",
+    "verify": "complete history, bundle okay",
+    "hash_algorithm": "sha1"
+  },
+  "diff_patch": {
+    "file": "0001-evt1-rev-c-feasibility.patch",
+    "git_apply_stat": "12 files changed, 171 insertions(+), 111 deletions(-)"
+  },
+  "excluded_private_records": [
+    {
+      "source_member": "gemini-export-继续智元跃动AI_AR智能眼镜V1.0自主硬件研发。_GitHub：https___github.com_yfei7131-source_AI-AR-codex-Claude-_你担任首席硬件系统架构_2026-11-17 04_15_11.md",
+      "sha256": "aeabfb93b8d7170771c9aebbce6ab4a2fb9f39fe3070283caaaf60c5b39ee9bb",
+      "reason": "private Gemini conversation export; excluded from GitHub upload"
+    }
+  ],
+  "duplicate_source_csv_in_outer_zip": [
+    "DIFF_TABLE_R1_1_D1_R01_94B50CF.csv",
+    "SYSTEM_RISK_REGISTER_R1_1.csv"
+  ],
+  "files": [
+    {
+      "path": ".gitattributes",
+      "size": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    {
+      "path": "0001-evt1-rev-c-feasibility.patch",
+      "size": 101785,
+      "sha256": "a54c32efe53b4ccc80d5462e4d32a9039338424c5ad3b06c3bb5f1b776ff58b4"
+    },
+    {
+      "path": "ARCHIVE_STATUS.md",
+      "size": 3234,
+      "sha256": "730ae7bd86a8d24250c4d8be07d63a66e49545ace7d6c9ba948e61c2d0ae2080"
+    },
+    {
+      "path": "BLOCKED_ITEMS_CHECKLIST.csv",
+      "size": 5058,
+      "sha256": "874afc1d72872f8894948d9faef8301e74362323211a23a5a1084a581c816af6"
+    },
+    {
+      "path": "DIFF_TABLE_R1_1_D1_R01_94B50CF.csv",
+      "size": 2591,
+      "sha256": "3cf405f0153ad7bf69e7b0437b49debc11caf28f371fcf0428c628026d831563"
+    },
+    {
+      "path": "EVT1_SYSTEM_ARCH_R1_1.md",
+      "size": 6348,
+      "sha256": "8d813a92642d630f27039a56e0f1db59c55868da4b34b80f4d5735c58037a61c"
+    },
+    {
+      "path": "KIMI_DESIGN_CONSTRAINTS_R1_1.md",
+      "size": 2014,
+      "sha256": "8f6a04a1bd39864bf8f7131dd6dc1e231067b0c2c6a9a87446057dfc643080ab"
+    },
+    {
+      "path": "PRIVATE_RECORD_EXCLUSION.md",
+      "size": 788,
+      "sha256": "7b3f6846f4ae5569b77c338d35a7682ee486c52228ef739ace3647793a67ffc2"
+    },
+    {
+      "path": "SYSTEM_RISK_REGISTER_R1_1.csv",
+      "size": 2014,
+      "sha256": "58813a604b86fb387f996be85989f53d2704a840dacde0d0b0c2d2e3ffeb87f1"
+    },
+    {
+      "path": "handoff_evt1_rev_c.bundle",
+      "size": 351672,
+      "sha256": "794a8bda533decf638af727ec15bdb4227ad7591c85a30964a39bc756aa8b482"
+    },
+    {
+      "path": "source_packages/ZY_AIAR_EVT1_SYSTEM_ARCH_R1_1_PACKAGE.zip",
+      "size": 392791,
+      "sha256": "d3f8b9f08b24f6c5dc6a5e7901a2d41305296c1967c6ba303a87678b20684db2"
+    }
+  ],
+  "metadata_files": [
+    "SOURCE_MANIFEST.json",
+    "SHA256SUMS.txt"
+  ],
+  "archive_file_count": 11
+}
