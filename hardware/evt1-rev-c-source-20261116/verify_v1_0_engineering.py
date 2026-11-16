@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Zhiyuan Yuedong (智元跃动) AI/AR Smart Glasses V1.0 — EVT-1 Rev C (PR #19 P0 Remediation)
+Zhiyuan Yuedong (智元跃动) AI/AR Smart Glasses V1.0 — EVT-1 Rev C (PR #19 CI Timing & Sim Fixed)
 Engineering Verification Suite
 
 Policy:
@@ -285,11 +285,19 @@ def check_lattice_uwg30_pinout_power_and_config_spec(cfg):
     return "PASS", detail
 
 
-def verify_rtl_tb_makefile_and_run_iverilog(cfg, log_accumulator):
-    with open(RTL_PATH, "r", encoding="utf-8") as f:
-        rtl_src = f.read()
-    with open(TB_PATH, "r", encoding="utf-8") as f:
-        tb_src = f.read()
+def verify_rtl_tb_makefile_and_run_iverilog(cfg, log_accumulator, rtl_override=None, tb_override=None):
+    if rtl_override is None:
+        with open(RTL_PATH, "r", encoding="utf-8") as f:
+            rtl_src = f.read()
+    else:
+        rtl_src = rtl_override
+
+    if tb_override is None:
+        with open(TB_PATH, "r", encoding="utf-8") as f:
+            tb_src = f.read()
+    else:
+        tb_src = tb_override
+
     with open(MAKEFILE_PATH, "r", encoding="utf-8") as f:
         mk_src = f.read()
 
@@ -300,15 +308,25 @@ def verify_rtl_tb_makefile_and_run_iverilog(cfg, log_accumulator):
     if "pipefail" not in mk_src or r"\$(TOP)" in mk_src or 'grep -q "VERILOG_TB_RESULT: PASS"' not in mk_src:
         return "FAIL", "Makefile lacks `pipefail` or `VERILOG_TB_RESULT: PASS` exit check or contains escaped `\\$(TOP)`!"
 
-    # 2. Check TB timeout watchdog & strict Verilog-2005 compliance (no integer part-selects in code)
+    # 2. Check TB timeout watchdog & strict Verilog-2005 compliance
     if "SIM_TIMEOUT_CLKS" not in tb_code or "w_idx[15:0]" in tb_code or "r_idx[8:0]" in tb_code or "V_ACTIVE[8:0]" in rtl_code:
         return "FAIL", "RTL/TB missing SIM_TIMEOUT_CLKS watchdog or contains non-Verilog-2005 integer part-selects!"
 
-    # 3. Check that TB tests an active row with real prefetch (row_cnt == 9'd10 -> next_row == 11 < 240, NOT row_cnt == 9'd239!)
+    # 3. Check that TB fixes the Row 0, Word 0 (addr=0x0000) 0xA53C == 0xA53C collision (must not use ^ 16'h5AC3 ^ (~frame_salt))
+    if "16'h5AC3" in tb_code or "16'h5AC2" not in tb_code:
+        return "FAIL", "TB calc_right_word still uses 16'h5AC3 (~16'hA53C), causing 1 mismatch at row=0, addr=0x0000 (exp_l=0xA53C == exp_r=0xA53C)!"
+
+    # 4. Check that TB tests an active row with real prefetch (row_cnt == 9'd10 -> next_row == 11 < 240, NOT row_cnt == 9'd239!)
     if "dut.row_cnt == 9'd239" in tb_code or "row10_prefetch_seen" not in tb_code or "tear_row_holdoff" not in rtl_code:
         return "FAIL", "TB still tests row_cnt==239 (which has next_row==240 and prefetch_active==0) or lacks active-row tear_row_holdoff verification!"
 
-    # 4. Check 256-word EBR FIFO (3x SB_RAM40_4K + 2x EBR line buffers = 5x SB_RAM40_4K) & 4x SB_SPRAM256KA
+    # 5. Check 48MHz timing-closure pipeline registers (s0_addr_q -> s1_addr_q / s1_hit_a_q -> spram_addr_q, ebr_wdata_l_q, pix_shift_l)
+    required_pipe_regs = ["s0_addr_q", "s1_addr_q", "s1_hit_a_q", "spram_addr_q", "ebr_wdata_l_q", "pix_shift_l", "wptr_bin_sync_q", "fifo_level_q"]
+    missing_pipe = [r for r in required_pipe_regs if r not in rtl_code]
+    if missing_pipe or "spram_mux_addr" in rtl_code:
+        return "FAIL", f"RTL missing 48MHz timing-closure pipeline registers {missing_pipe} or retains unpipelined `spram_mux_addr` (~27MHz bottleneck)!"
+
+    # 6. Check 256-word EBR FIFO (3x SB_RAM40_4K + 2x EBR line buffers = 5x SB_RAM40_4K) & 4x SB_SPRAM256KA
     spram_insts = re.findall(r"SB_SPRAM256KA\s+(u_spram_\w+)", rtl_code)
     ebr_insts = re.findall(r"\)\s*(u_ebr_\w+|u_cdc_fifo_\w+)\s*\(", rtl_code)
     fifo_bits_m = re.search(r"parameter\s+integer\s+FIFO_ADDR_BITS\s*=\s*(\d+)", rtl_code)
@@ -320,15 +338,17 @@ def verify_rtl_tb_makefile_and_run_iverilog(cfg, log_accumulator):
             f"fifo_depth={fifo_depth} (exp 256)"
         )
 
-    # 5. Invoke native `iverilog` + `vvp` (Strict rule: NEVER return PASS from static check alone!)
+    # 7. Invoke native `iverilog` + `vvp` (Strict rule: NEVER return PASS from static check alone!)
     exe = shutil.which("iverilog")
     cmd_args = ["iverilog", "-g2005", "-Wall", "-o", "sim.vvp", str(RTL_PATH.name), str(SIM_MACRO_PATH.name), str(TB_PATH.name)]
     cmd_str = " ".join(cmd_args)
     if not exe:
         msg = (
             f"[BLOCKED_ENV_NO_BINARY] `iverilog` not found in $PATH (`{cmd_str}`). "
-            f"Pre-check verified 256-word EBR CDC FIFO (5x SB_RAM40_4K + 4x SB_SPRAM256KA), bounded pre-prefetch `tear_row_holdoff` (col_cnt 1400..1881 = max 482 clks = 101/256 words, 0 overflow, 0 mid-line tear), "
-            f"TB active-row `row_cnt==10` (`next_row==11` real prefetch) fork/join verification, Makefile pipefail, and TB 3.5M-cycle timeout watchdog; native simulation awaits GitHub CI (`fpga_eda_ci.yml`)."
+            f"Pre-check verified: (1) Fixed Row 0 Word 0 (`addr=0x0000`) `0xA53C==0xA53C` collision via `16'h5AC2` (0 mismatches across 38,400 words/frame), "
+            f"(2) 3-stage `s0 -> s1 -> spram_q` + `ebr_wdata_q` + `pix_shift` 48MHz timing-closure pipeline, "
+            f"(3) 256-word EBR CDC FIFO (5x SB_RAM40_4K + 4x SB_SPRAM256KA) & active-row `row_cnt==10` (`next_row==11`) `tear_row_holdoff` verification; "
+            f"native simulation awaits GitHub CI (`fpga_eda_ci.yml`)."
         )
         log_accumulator.append(msg)
         return "BLOCKED", msg
@@ -590,9 +610,21 @@ def run_negative_fault_injection_suite(base_cfg):
     s14, _ = check_complete_bom_hdi_escape_and_cad_drc(c14, base_cfg["2_dual_battery_catalog_and_power_tree"])
     results.append(("Reject RF Keepout Intrusion", s14 == "FAIL"))
 
+    # Mut 15: Revert TB calc_right_word to 16'h5AC3 (causing row=0, addr=0x0000 0xA53C==0xA53C mismatch)
+    tb_orig = TB_PATH.read_text(encoding="utf-8")
+    tb_mut15 = tb_orig.replace("16'h5AC2", "16'h5AC3")
+    s15, _ = verify_rtl_tb_makefile_and_run_iverilog(base_cfg["4_fpga_uwg30_pinout_and_rtl_timing"], [], tb_override=tb_mut15)
+    results.append(("Reject TB Row 0 Addr 0x0000 16'h5AC3 Pattern Collision", s15 == "FAIL"))
+
+    # Mut 16: Remove registered SPRAM pipeline stage `spram_addr_q` (causing 27.17MHz timing violation)
+    rtl_orig = RTL_PATH.read_text(encoding="utf-8")
+    rtl_mut16 = rtl_orig.replace("spram_addr_q", "spram_mux_addr")
+    s16, _ = verify_rtl_tb_makefile_and_run_iverilog(base_cfg["4_fpga_uwg30_pinout_and_rtl_timing"], [], rtl_override=rtl_mut16)
+    results.append(("Reject Unpipelined 27MHz SPRAM Address Path", s16 == "FAIL"))
+
     all_caught = all(ok for _, ok in results)
     summary = "; ".join(f"{name}={'CAUGHT' if ok else 'MISSED'}" for name, ok in results)
-    return ("PASS" if all_caught else "FAIL"), f"14/14 negative fault injections caught: {summary}"
+    return ("PASS" if all_caught else "FAIL"), f"16/16 negative fault injections caught: {summary}"
 
 
 def main():
@@ -612,21 +644,21 @@ def main():
         ("CHK-02 [Dual-Track Grepow Catalog Battery (GRP3911040/GRP220550), 0.5C Charge & DPPM Isolation]", check_catalog_battery_and_power_tree(cfg["2_dual_battery_catalog_and_power_tree"])),
         ("CHK-03 [10-State Privacy Interlock, POR Glitch & Dual-Chip Camera Anti-Backpowering]", check_privacy_interlock_and_backpower_nodal_model(cfg["3_camera_privacy_and_anti_backpower_model"])),
         ("CHK-04_PIN_PWR [Lattice iCE40UP5K-UWG30 18-PIO PCF, Config Pins & FPGA-TN-02006 Power Audit]", check_lattice_uwg30_pinout_power_and_config_spec(cfg["4_fpga_uwg30_pinout_and_rtl_timing"])),
-        ("CHK-04A [Icarus Verilog Simulation (iverilog + vvp) & Active-Row (Row 10->11) Tear-Guard Audit]", verify_rtl_tb_makefile_and_run_iverilog(cfg["4_fpga_uwg30_pinout_and_rtl_timing"], eda_logs)),
+        ("CHK-04A [Icarus Verilog Simulation (iverilog + vvp), Addr 0x0000 Fix & 48MHz Pipeline Audit]", verify_rtl_tb_makefile_and_run_iverilog(cfg["4_fpga_uwg30_pinout_and_rtl_timing"], eda_logs)),
         ("CHK-04B [Yosys FPGA Synthesis (synth_ice40)]", run_eda_tool_if_present("yosys", ["yosys", "-p", "synth_ice40 -top evt1_ar_display_fpga_bridge_rev_c -json bridge.json", str(RTL_PATH.name)], eda_logs)),
         ("CHK-04C [nextpnr-ice40 Place & Route (--up5k --package uwg30)]", run_eda_tool_if_present("nextpnr-ice40", ["nextpnr-ice40", "--up5k", "--package", "uwg30", "--pcf", str(PCF_PATH.name), "--json", "bridge.json", "--asc", "bridge.asc", "--freq", "48"], eda_logs)),
         ("CHK-04D [icetime Static Timing Analysis (-d up5k -c 48)]", run_eda_tool_if_present("icetime", ["icetime", "-d", "up5k", "-P", "uwg30", "-p", str(PCF_PATH.name), "-c", "48", "bridge.asc"], eda_logs)),
         ("CHK-05 [44/44 BOM 3D Assembly, Symmetric Optical Wings, HDI Escape & Native CAD/STEP DRC]", check_complete_bom_hdi_escape_and_cad_drc(cfg["5_hdi_pcb_and_complete_bom_3d_placement"], cfg["2_dual_battery_catalog_and_power_tree"])),
         ("CHK-06 [Mass (34.75g), CoG, Runtime & Thermal Physical Verification]", check_analytical_mass_cog_thermal(cfg["6_power_thermal_mass_and_cog_budgets"], cfg["2_dual_battery_catalog_and_power_tree"])),
-        ("CHK-07 [Anti-Fake-PASS 14-Case Hardware Fault Injection Suite]", run_negative_fault_injection_suite(cfg)),
+        ("CHK-07 [Anti-Fake-PASS 16-Case Hardware Fault Injection Suite]", run_negative_fault_injection_suite(cfg)),
     ]
 
     EDA_LOG_PATH.write_text("\n".join(eda_logs) + "\n", encoding="utf-8")
 
     lines = [
         "==========================================================================================",
-        "ZHIYUAN YUEDONG (智元跃动) AI/AR SMART GLASSES V1.0 — EVT-1 Rev C (PR #19 P0 FIXED) LOG",
-        "Policy: 256-Word EBR CDC FIFO + Active-Row Tear Holdoff + Zero Static-Model Fake PASS",
+        "ZHIYUAN YUEDONG (智元跃动) AI/AR SMART GLASSES V1.0 — EVT-1 Rev C (PR #19 CI FIXED) LOG",
+        "Policy: 256-Word EBR CDC FIFO + 3-Stage 48MHz Pipeline + Addr 0x0000 Fix + Zero Fake PASS",
         "==========================================================================================",
     ]
 

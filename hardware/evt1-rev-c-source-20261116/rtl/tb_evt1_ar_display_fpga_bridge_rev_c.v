@@ -3,24 +3,25 @@
 // Comprehensively Verifies All Rev C P0 Requirements (With Watchdog Timeout):
 //   1. Simulation Timeout Watchdog (`SIM_TIMEOUT_CLKS = 3,500,000` cycles) to
 //      prevent infinite hangs in `vvp` / CI pipelines.
-//   2. Continuous Full-Frame Burst Write (19,200 Left + 19,200 Right = 38,400
+//   2. Fixed Binocular Pattern Generator Collision at `row = 0, addr = 16'h0000`:
+//      - Previously, `calc_left_word(0, 0) = (0 * 16'h1F35) ^ 16'hA53C ^ 0 = 16'hA53C`
+//        and `calc_right_word(0, 0) = (0 * 16'h2D9B) ^ 16'h5AC3 ^ (~0) = 16'h5AC3 ^ 16'hFFFF
+//        = 16'hA53C` collided at `row = 0, w_idx = 0, addr = 16'h0000` because
+//        `16'h5AC3 == ~16'hA53C`, triggering `cap_l === cap_r` (`mismatches = 1`).
+//      - `calc_right_word` now uses `16'h5AC2` (even LSB), guaranteeing
+//        `calc_left_word[0] != calc_right_word[0]` across all 65,536 addresses and salts!
+//      - Added explicit `$display` diagnostic logging of row, word address, expected,
+//        and actual values on any mismatch.
+//   3. Continuous Full-Frame Burst Write (19,200 Left + 19,200 Right = 38,400
 //      16-bit words) across asynchronous 40.000 MHz host_sck -> 48.000 MHz
 //      clk_48m clock domains, spanning directly across HBLANK prefetch stalls
-//      (`col_cnt 1800..1881`) with ZERO dropped words (`fifo_overflow == 0`).
-//   3. Framebuffer Boundary & Bank-Crossing (`0x0000`, `0x3FFF -> 0x4000`,
+//      (`col_cnt 1800..1883`) with ZERO dropped words (`fifo_overflow == 0`).
+//   4. Framebuffer Boundary & Bank-Crossing (`0x0000`, `0x3FFF -> 0x4000`,
 //      `0x4AFF`, and out-of-bounds clip at `0x4B00` -> `boundary_err_cnt == 2`).
-//   4. Full-Frame Scanout Readback Verification (`240 rows x 80 words/row = 19,200`
+//   5. Full-Frame Scanout Readback Verification (`240 rows x 80 words/row = 19,200`
 //      words per eye) & Exact 60.000 Hz Frame Period (`800,000 clk_48m cycles`).
-//   5. True Active-Row Line-Prefetch & Anti-Tearing Verification on `row_cnt == 10`
-//      (where `next_row == 11 < 240` genuinely triggers `prefetch_active == 1` at
-//      `col_cnt = 1800..1881`, unlike `row_cnt == 239` which enters VBLANK!):
-//      - Launches a `0xA2` burst targeting Row 11 (`start_addr = 11*80 = 16'h0370`,
-//        80 words, `salt = 16'h55AA`) at `row_cnt == 10, col_cnt == 1700`.
-//      - Verifies `prefetch_active == 1` occurs on `row_cnt == 10`, `tear_hazard_cnt > 0`
-//        holds off overwriting Row 11 until `col_cnt == 1882`, `fifo_overflow_sticky == 0`,
-//        and Row 11 scans out on `row_cnt == 11` with 100% intact `16'h0F0F` words
-//        (ZERO mid-line tearing!), while the new `16'h55AA` words drain into SPRAM
-//        after `col_cnt == 1882`!
+//   6. True Active-Row Line-Prefetch & Anti-Tearing Verification on `row_cnt == 10`
+//      (`next_row == 11 < 240`, `start_addr = 16'h0370`, `col_cnt = 1700..1883`).
 // =============================================================================
 
 `timescale 1ns / 1ps
@@ -77,9 +78,11 @@ module tb_evt1_ar_display_fpga_bridge_rev_c;
         end
     endfunction
 
+    // Uses 16'h5AC2 (bit[0]=0) with ~frame_salt so calc_right_word[0] == ~calc_left_word[0]
+    // for all 65,536 addresses (fixing the row=0, addr=0x0000 0xA53C==0xA53C collision)
     function [15:0] calc_right_word(input [15:0] addr, input [15:0] frame_salt);
         begin
-            calc_right_word = ((addr * 16'h2D9B) ^ 16'h5AC3 ^ (~frame_salt));
+            calc_right_word = ((addr * 16'h2D9B) ^ 16'h5AC2 ^ (~frame_salt));
         end
     endfunction
 
@@ -187,8 +190,11 @@ module tb_evt1_ar_display_fpga_bridge_rev_c;
                 cap_hdr_r = {cap_hdr_r[43:0], opt_r_qdo};
             end
             exp_hdr = {8'h32, 7'd0, target_row, 24'h000000};
-            if (cap_hdr_l !== exp_hdr || cap_hdr_r !== exp_hdr)
+            if (cap_hdr_l !== exp_hdr || cap_hdr_r !== exp_hdr) begin
+                $display("[TB][HDR_MISMATCH] row=%0d exp_hdr=0x%012h cap_hdr_l=0x%012h cap_hdr_r=0x%012h",
+                         r_idx, exp_hdr, cap_hdr_l, cap_hdr_r);
                 mismatch_cnt = mismatch_cnt + 1;
+            end
 
             for (w_idx = 0; w_idx < 80; w_idx = w_idx + 1) begin
                 cap_l = 16'h0000;
@@ -201,8 +207,11 @@ module tb_evt1_ar_display_fpga_bridge_rev_c;
                 addr_chk = r_idx * 80 + w_idx;
                 exp_l    = calc_left_word(addr_chk, 16'h0000);
                 exp_r    = calc_right_word(addr_chk, 16'h0000);
-                if (cap_l !== exp_l || cap_r !== exp_r || cap_l === cap_r)
+                if (cap_l !== exp_l || cap_r !== exp_r || cap_l === cap_r) begin
+                    $display("[TB][DATA_MISMATCH] row=%0d w_idx=%0d addr=0x%04h exp_l=0x%04h actual_l=0x%04h exp_r=0x%04h actual_r=0x%04h",
+                             r_idx, w_idx, addr_chk, exp_l, cap_l, exp_r, cap_r);
                     mismatch_cnt = mismatch_cnt + 1;
+                end
             end
             wait (dut.opt_cs_n == 1'b1);
         end
@@ -234,22 +243,16 @@ module tb_evt1_ar_display_fpga_bridge_rev_c;
                 addr_chk = r_idx * 80 + w_idx;
                 exp_l    = calc_left_word(addr_chk, 16'h0F0F);
                 exp_r    = calc_right_word(addr_chk, 16'h0F0F);
-                if (cap_l !== exp_l || cap_r !== exp_r)
+                if (cap_l !== exp_l || cap_r !== exp_r) begin
+                    $display("[TB][TORN_MISMATCH] row=%0d w_idx=%0d addr=0x%04h exp_l=0x%04h actual_l=0x%04h exp_r=0x%04h actual_r=0x%04h",
+                             r_idx, w_idx, addr_chk, exp_l, cap_l, exp_r, cap_r);
                     torn_line_cnt = torn_line_cnt + 1;
+                end
             end
             wait (dut.opt_cs_n == 1'b1);
         end
 
         // 6. True Active-Row Line-Prefetch & Anti-Tearing Collision Test on `row_cnt == 10` (`next_row == 11`):
-        //    Unlike row_cnt==239 (which enters VBLANK with next_row==240 and prefetch_active==0),
-        //    row_cnt==10 has next_row==11 < 240 and triggers a REAL line prefetch at col_cnt=1800..1881!
-        //    At row_cnt==10, col_cnt==1700 (inside the col_cnt=1400..1881 tear-guard window), we launch
-        //    an 80-word 0xA2 burst targeting Row 11 (`start_addr = 11*80 = 16'h0370`, `salt = 16'h55AA`)
-        //    and verify in parallel:
-        //      (a) `row10_prefetch_seen == 1` (real prefetch of Row 11 occurred at col_cnt=1800..1881),
-        //      (b) `tear_hazard_cnt > 0` (`tear_row_holdoff` held off overwriting Row 11 until col_cnt==1882),
-        //      (c) Row 11 (`row_cnt == 11`) scans out 100% intact `16'h0F0F`-salted pixels (0 mid-line tear!),
-        //      (d) After `col_cnt == 1882`, all 80 new `16'h55AA`-salted words drain into `u_spram_l0` (`words_written_l == 38480`)!
         row10_prefetch_seen = 1'b0;
         wait (dut.row_cnt == 9'd10 && dut.col_cnt == 11'd1700);
         fork
@@ -268,8 +271,11 @@ module tb_evt1_ar_display_fpga_bridge_rev_c;
                     end
                     addr_chk = 16'h0370 + w_idx;
                     exp_l    = calc_left_word(addr_chk, 16'h0F0F); // Must still be intact 0x0F0F frame!
-                    if (cap_l !== exp_l)
+                    if (cap_l !== exp_l) begin
+                        $display("[TB][ACTIVE_TEAR_ERR] row=11 w_idx=%0d addr=0x%04h exp_l=0x%04h actual_l=0x%04h",
+                                 w_idx, addr_chk, exp_l, cap_l);
                         active_tear_err_cnt = active_tear_err_cnt + 1;
+                    end
                 end
             end
         join

@@ -1,45 +1,38 @@
-# Rev C P0 缺失文件与未提供资料清单
+# Rev C 最新工程缺失资料清单
 
-状态：`NOT_FOR_FAB`。本文件区分“源 ZIP 未携带、已由完整 bundle 恢复”和“外部资料仍缺失”。
+状态：`NOT_FOR_FAB`。本文件只记录未提供或尚未产生的资料，不虚构补齐。
 
-## 已从完整 bundle 恢复
+## 工程源文件完整性
 
-源 ZIP 只有 18 个文件；完整 bundle 的提交树为 20 个文件。以下 4 个 ZIP 未携带的文件已从 bundle HEAD `8697069…` 原样恢复，未自行编写：
+- 本次内层 ZIP 含 22 个文件：20 个完整工程树文件、1 个 patch、1 个完整 Git bundle。
+- bundle 提交树 20 个文件与 ZIP 中对应文件全部一致，无内部源码缺失。
+- 已存在且不属于缺失：
+  - `rtl/evt1_ar_display_fpga_bridge_rev_c.v`
+  - `rtl/tb_evt1_ar_display_fpga_bridge_rev_c.v`
+  - `rtl/Makefile`
+  - `rtl/ice40_spram_ebr_sim.v`
+  - `rtl/ice40up5k_uwg30_rev_c.pcf`
+  - `handoff_evt1_rev_c.bundle`
+  - `evidence/eda_toolchain_execution.log`
 
-1. `GITHUB_DRAFT_PR_INSTRUCTIONS.md`
-2. `build_handoff_package.py`
-3. `evidence/v1_0_verification_log.json`
-4. `evidence/v1_0_verification_report.txt`
+## 待 GitHub Actions 产生的原生结果
 
-恢复后，bundle 提交树的 20 个文件均已进入仓库；其中 `.github/workflows/fpga_eda_ci.yml` 位于仓库根目录，其余 19 个位于 `hardware/evt1-rev-c-source-20261116/`。
+本地没有 `iverilog`、`yosys`、`nextpnr-ice40`、`icetime`。以下结果只能以实际 CI 日志为准：
 
-## 已存在，不属于缺失
+- Icarus Verilog 编译与仿真日志
+- Yosys 综合日志与资源占用
+- nextpnr-ice40 PnR 日志、ASC 和频率
+- icetime STA 报告与 48 MHz 约束判定
 
-- `rtl/tb_evt1_ar_display_fpga_bridge_rev_c.v`（RTL testbench）
-- `rtl/Makefile`
-- `handoff_evt1_rev_c.bundle`（完整历史）
-- `evidence/eda_toolchain_execution.log`（EDA 执行日志）
-- RTL、SPRAM/EBR 模型、UWG30 PCF、BOM、PINMAP、ICD、验证脚本和验证报告
-
-## 等待 CI 产生的原生输出
-
-本地 EDA 日志仍记录 `iverilog`、`yosys`、`nextpnr-ice40`、`icetime` 未安装。GitHub Actions 已配置运行这些工具，但真实结果只能以 Actions 日志为准：
-
-- `iverilog_sim.log`
-- `yosys_synth.log`
-- `nextpnr_uwg30.log`
-- `evt1_ar_display_fpga_bridge_rev_c_sta.rpt`
-- 综合 JSON 与 PnR ASC
-
-在这些文件由 CI 实际生成并检查之前，不标记仿真、综合、PnR 或 STA 通过。
+在 CI 完成前不宣称任何一项通过。
 
 ## 仍缺失的外部资料
 
 - `EVT1_ID_TEMPLE_SHELL.stp`
 - `JBD013VGA_STEP.stp`
-- 原生 KiCad/EasyEDA 板文件、Gerber 和原生 CAD/DRC 结果
-- JBD QSPI 初始化序列和受控 FPC 物理引脚定义
-- 实物质量/重心、热、RF/SAR、电池脉冲压降和续航测试数据
-- 量产 DFM、装配、测试夹具和认证资料
+- 原生 KiCad/EasyEDA 板文件、Gerber 与原生 CAD/DRC 结果
+- JBD QSPI 初始化序列与受控 FPC 物理引脚定义
+- 实物质量/重心、热、RF/SAR、电池脉冲压降与续航测试数据
+- 量产 DFM、装配、测试夹具与认证资料
 
 以上内容没有在本次同步中虚构或补造。
