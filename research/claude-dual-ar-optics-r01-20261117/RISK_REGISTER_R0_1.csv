@@ -1,0 +1,16 @@
+id,description,likelihood,impact,trigger,mitigation,owner,phase
+R-01,JBD NDA资料(引脚/时序/寄存器/电源时序)延迟,High,High,签NDA后2周未获资料,立即签NDA并采购EVK;并行用EVK控制板逆向时序仅作参考,供应链+硬件,EVT
+R-02,"JBD013VGA-G"料号与公开资料不对应,Medium,High,原厂回复料号不同,书面确认料号/硅版本/手册版本,硬件,EVT
+R-03,双目dipvergence超6 arcmin,High,High,EVT样机测量超限,刚性光学底座+电子平移+16像素过扫描,光学+结构,EVT
+R-04,镜腿外张导致视轴漂移,Medium,High,外张测试漂移>2 arcmin,底座与外观框架解耦;铰链限位,结构,EVT
+R-05,单DSI主控需要FPGA拆分,Medium,Medium,Rev D1 SoC仅1路DSI,LIFCL-17流式拆分;必要时用QSPI≤60Hz,硬件,EVT
+R-06,QSPI带宽不足以支持>60Hz,High,Medium,需求要求≥75Hz,改走MIPI,硬件,EVT
+R-07,户外亮度不足,Low,Medium,入眼<1500 nits,与波导厂锁定≥500 nits/lm效率规格,光学,EVT
+R-08,面板温升致亮度/波长漂移,Medium,Medium,高温亮度衰减>10%,获取温漂曲线;启用片内温补;导热路径,热设计,DVT
+R-09,皮肤接触温度超过40℃,Medium,High,热测>40℃,持续功耗≤1.5W;热源分区,热设计,DVT
+R-10,整机重量超40g,Medium,High,DVT称重>40g,按3.3节逐项管控;处方镜片方案另计,结构,DVT
+R-11,FPC过铰链断裂,Medium,High,寿命测试失效,动态弯曲半径≥10倍厚度;PI加强,结构,DVT
+R-12,鼻托载荷舒适阈值缺乏依据,Medium,Medium,用户试戴不适,补充人因文献与试戴实验,人因,DVT
+R-13,衍射波导彩虹纹/前向漏光,Medium,Medium,用户可见eye glow,波导厂提供漏光规格;评估抗漏光设计,光学,DVT
+R-14,光机/波导成本超预算,Medium,High,报价超目标,多源询价;显示占Meta BOM 50.8%作参照,供应链,PVT
+R-15,AA UV胶固化收缩漂移,Medium,Medium,固化漂移>2 arcmin,预偏补偿;低收缩胶;二次固化,工艺,DVT
