@@ -1,0 +1,13 @@
+D1 directRC stalledHIGH; source fixed1.8V, no physicalGPIOmodel
+Vd3 d3 0 1.8
+Rseq d3 en 100k
+Cseq en 0 220n IC=0
+.tran 10u 250m 0 20u UIC
+.measure tran en_after_stall FIND v(en) AT=200m
+
+.control
+set noaskquit
+run
+quit
+.endc
+.end

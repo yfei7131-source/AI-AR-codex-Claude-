@@ -1,0 +1,20 @@
+{
+  "left_min_V": 1.7591,
+  "right_min_V": 0.995933,
+  "right_max_V": 1.119626,
+  "off_max_local_V": 0.00028,
+  "rail_tolerance_assumption_percent": 2,
+  "scope": "source topology, settled DC bounds and negative fixtures; NOT FOR FAB",
+  "result": "PASS",
+  "fault_injections_caught": [
+    "wrong_amp_bump",
+    "missing_translator_ground",
+    "missing_camera_EN_clamp",
+    "mic_on_delayed_rail",
+    "wrong_SD_resistor",
+    "missing_amp_cap_ground",
+    "wrong_camera_direction",
+    "SD_OFF_switch_not_grounded"
+  ],
+  "devices_with_physical_pin_coverage": 14
+}
