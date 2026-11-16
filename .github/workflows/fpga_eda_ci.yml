@@ -59,7 +59,10 @@ jobs:
         id: sta
         continue-on-error: true
         working-directory: hardware/evt1-rev-c-source-20261116/rtl
-        run: make sta
+        run: |
+          test -s evt1_ar_display_fpga_bridge_rev_c.asc
+          icetime -d up5k -P uwg30 -p ice40up5k_uwg30_rev_c.pcf -c 48 -t -m -r evt1_ar_display_fpga_bridge_rev_c_sta.rpt evt1_ar_display_fpga_bridge_rev_c.asc
+          test -s evt1_ar_display_fpga_bridge_rev_c_sta.rpt
 
       - name: Summarize real EDA results
         if: always()
