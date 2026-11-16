@@ -1,0 +1,53 @@
+name: EVT-1 Rev C FPGA EDA & Hardware Verification CI
+
+on:
+  push:
+    branches:
+      - "handoff/evt1-rev-c-feasibility-20261115"
+      - "handoff/**"
+  pull_request:
+    branches:
+      - "main"
+
+jobs:
+  fpga-eda-and-hw-verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install OSS CAD Suite (iverilog, yosys, nextpnr-ice40, icetime)
+        uses: YosysHQ/setup-oss-cad-suite@v3
+
+      - name: Run Icarus Verilog Simulation, Yosys Synthesis, nextpnr-ice40 P&R, and icetime STA
+        working-directory: hardware/evt1-v1-kimi-handoff/rtl
+        run: |
+          make clean
+          make all
+          echo "=== ICARUS VERILOG SIMULATION SUMMARY ==="
+          cat iverilog_sim.log
+          echo "=== YOSYS RESOURCE UTILIZATION ==="
+          grep -A 35 "Printing statistics" yosys_synth.log || tail -n 50 yosys_synth.log
+          echo "=== NEXTPNR-ICE40 UTILIZATION & FMAX ==="
+          grep -E "Info: Device utilisation|Info:.*:|Max frequency|critical path" -A 2 nextpnr_uwg30.log || tail -n 60 nextpnr_uwg30.log
+          echo "=== ICETIME STA CRITICAL PATH REPORT ==="
+          cat evt1_ar_display_fpga_bridge_rev_c_sta.rpt
+
+      - name: Run EVT-1 Rev C Full Hardware Engineering Verification Suite
+        working-directory: hardware/evt1-v1-kimi-handoff
+        run: |
+          python3 build_handoff_package.py
+          python3 verify_v1_0_engineering.py
+
+      - name: Upload FPGA EDA & Hardware Verification Logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: evt1-rev-c-eda-verification-logs
+          path: |
+            hardware/evt1-v1-kimi-handoff/rtl/*.log
+            hardware/evt1-v1-kimi-handoff/rtl/*.rpt
+            hardware/evt1-v1-kimi-handoff/rtl/*.json
+            hardware/evt1-v1-kimi-handoff/rtl/*.asc
+            hardware/evt1-v1-kimi-handoff/v1_0_verification_report.txt
+            hardware/evt1-v1-kimi-handoff/evidence/*.log
