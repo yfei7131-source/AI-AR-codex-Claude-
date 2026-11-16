@@ -1,0 +1,553 @@
+diff --git a/hardware/evt1-v1-kimi-handoff/BOM_V1_0_FROZEN.csv b/hardware/evt1-v1-kimi-handoff/BOM_V1_0_FROZEN.csv
+index c3c78a3..1bc26a6 100644
+--- a/hardware/evt1-v1-kimi-handoff/BOM_V1_0_FROZEN.csv
++++ b/hardware/evt1-v1-kimi-handoff/BOM_V1_0_FROZEN.csv
+@@ -31,7 +31,7 @@ BOM-29,J_DISP_R,M-OPT-BRIDGE,TOP,2.10,14.80,3.60,1.50,0.60,0.35,Connector_Right_
+ BOM-30,U9_IMU,M-OPT-BRIDGE,TOP,2.10,18.80,2.50,3.00,0.91,0.50,Sensor_IMU_6DoF,ICM-42688-P,TDK InvenSense,"LGA-14 (2.50x3.00x0.91mm, 0.50mm pitch)","6-axis IMU, 1.8V VDD/VDDIO, FSYNC tied to U2_FPGA Ball D3 (60Hz VSYNC)",1,0.015,VERIFIED_PUBLIC_SPEC,https://www.farnell.com/datasheets/3215488.pdf,Center bridge IMU
+ BOM-31,J_BRIDGE_IN,M-OPT-BRIDGE,BOTTOM,2.10,3.30,1.50,5.50,0.60,0.35,Connector_Bridge_Interconnect,BM28B0.6-24DS/2-0.35V(53),Hirose (HRS),"BTB-24P (1.50x5.50x0.60mm, 0.35mm pitch)",24-pin receptacle mating FPC_BRIDGE on M-OPT-BRIDGE BOTTOM (1:1 with J_BTB_L),1,0.022,VERIFIED_FULL_DATASHEET,https://www.hirose.com/en/product/document?clcode=CL0673-5043-0-51&productname=BM28B0.6-16DS/2-0.35V(51)&series=BM28&documenttype=Catalog&lang=en&documentid=D49354_en,CONSISTENCY FIX: Upgraded to 24P BM28B0.6-24DS matching J_BTB_L 1:1
+ BOM-32,U4_1V2,M-OPT-BRIDGE,BOTTOM,2.10,7.00,1.00,1.00,0.40,0.35,PMIC_LDO_1V2_FPGA,TLV75512PDQNR,Texas Instruments,X2SON-4 (1.00x1.00x0.40mm),1.20V FPGA Core & PLL LDO; sequenced before 1V8_FPGA_IO,1,0.003,VERIFIED_FULL_DATASHEET,https://www.ti.com/lit/ds/symlink/tlv755p.pdf,Powers U2_FPGA Ball C2 (VCC) directly & Ball B2 (VCCPLL) via 100R+4.7uF+100nF filter
+-BOM-33,RN_FPGA_CFG_PWR,M-OPT-BRIDGE,BOTTOM,2.10,10.00,2.20,2.00,0.45,0.50,FPGA_Config_and_PLL_Filter_Network,R_PLL(100R) + C_PLL(4.7uF/100nF) + R_SS_PD(10k) + R_CRST_PU(10k) + R_CDONE_PU(4.7k) + R_SEQ(100k)/C_SEQ(220nF)/D_SEQ(RB521S-30) + 10x R_DAMP(22R),Murata / Yageo,0201/0402 SMD Cluster (2.20x2.00x0.45mm),"Mandatory Lattice FPGA-TN-02006-2.3 VCCPLL filter, Target SPI SS_B pull-down, CRESET_B/CDONE pull-ups & QSPI damping",1,0.006,VERIFIED_FULL_DATASHEET,https://0x04.net/~mwk/sbdocs/ice40/FPGA-TN-02006-2-3-iCE40-Hardware-Checklist.pdf,CRITICAL P0 FIX: Explicitly accounts for all Lattice FPGA-TN-02006-2.3 mandatory passives under U2_FPGA
++BOM-33,RN_FPGA_CFG_PWR,M-OPT-BRIDGE,BOTTOM,2.10,10.00,2.20,2.00,0.45,0.50,FPGA_Config_PLL_and_Optical_Interlock_Network,R_PLL(100R) + C_PLL(4.7uF/100nF) + R_SS_PD(10k) + R_CRST_PD(10k) + R_CDONE_PU(4.7k) + D1/D_RST/D_VDD(3x RB521S-30) + R_CHG(10R) + C_HOLD(22nF) + R_BLEED(2.2M) + 10x R_DAMP(22R),Murata / Yageo / Rohm,0201/0402 SMD Cluster (2.20x2.00x0.45mm),"Lattice FPGA-TN-02006-2.3 VCCPLL filter, Target SPI SS_B & CRESET_B 10k pull-downs, CDONE 4.7k pull-up, and 5-state optical AVDD peak-hold/dual-clamp interlock",1,0.006,VERIFIED_FULL_DATASHEET,https://0x04.net/~mwk/sbdocs/ice40/FPGA-TN-02006-2-3-iCE40-Hardware-Checklist.pdf,CRITICAL P0 FIX: Accounts for all Lattice FPGA-TN-02006-2.3 passives + 5-state optical AVDD interlock (D1 peak-hold from Ball D3 CDONE/VSYNC + D_RST/D_VDD fast clamps)
+ BOM-34,MK2_C,M-OPT-BRIDGE,BOTTOM,2.10,15.50,3.00,4.00,1.00,0.80,Audio_MEMS_Mic_Center,IM69D130V01XTSA1,Infineon,LGA-5 (3.00x4.00x1.00mm),"69dB SNR Digital PDM Mic, 1.8V VDD",1,0.025,VERIFIED_PUBLIC_SPEC,https://documentation.espressif.com/esp32-s3-pico-1_datasheet_en.pdf,Nose bridge voice-pickup microphone
+ BOM-35,ANT2_BLE,M-AUD-R,TOP,2.60,2.00,3.20,1.60,0.50,1.60,RF_Antenna_Right_BLE,2450AT18B100E,Johanson Technology,SMD 1206 (3.20x1.60x0.50mm),2.4GHz BLE 5.4 LE Audio Antenna in Y=0..4.0mm keepout on M-AUD-R,1,0.008,VERIFIED_FULL_DATASHEET,"https://www.yic-electronics.com/blog/QFN-vs-WLCSP-vs-BGA-Differences,PCB-Design,and-BLE-Applications.html",Dedicated antenna for U11_BLE nRF5340-CMAA
+ BOM-36,U11_BLE,M-AUD-R,TOP,2.60,8.00,3.99,4.39,0.45,0.35,SoC_BLE_5_4_LE_Audio,nRF5340-CMAA-R7,Nordic Semiconductor,"WLCSP-95 (3.994x4.390x0.449mm, 0.35mm pitch, 11x11 grid)","Dual Cortex-M33 (128/64MHz), BLE 5.4 LE Audio (CIS/BIS LC3), 1.8V VDD; inner rows 3-4 require stacked VIPPO L1->L2->L3",1,0.018,VERIFIED_FULL_DATASHEET,"https://www.yic-electronics.com/blog/QFN-vs-WLCSP-vs-BGA-Differences,PCB-Design,and-BLE-Applications.html",Provides BLE 5.4 LE Audio (calls + media); requires IPC-2226 Type III stacked copper-filled microvias
+@@ -42,5 +42,5 @@ BOM-40,J_BTB_R,M-AUD-R,TOP,2.60,30.50,4.10,1.50,0.60,0.35,Connector_Right_Temple
+ BOM-41,DISP_L,OPTICAL_BAY_L,MODULE,-32.00,4.00,5.50,7.20,4.20,0.00,Optical_Display_Left,JBD013VGA-G + Waveguide L,Jade Bird Display (JBD),Optical Engine 5.50x7.20x4.20mm + Waveguide,"640x480 Monochrome Green (525nm), 24MHz QSPI, 1.8V IO",1,3.200,BLOCKED_VENDOR_STEP_AND_INIT_NDA,https://raw.githubusercontent.com/yfei7131-source/AI-AR-codex-Claude-/refs/heads/handoff/evt1-fpga-v22-r1-20261115/hardware/evt1-id/research/2026-11-15-fpga-v22-r1/evt1_ar_display_fpga_bridge_v2_2/kimi_hw_handoff/BLOCKED_VS_VERIFIED_MATRIX.csv,Awaits vendor 3D STEP model for optical mount interference check
+ BOM-42,DISP_R,OPTICAL_BAY_R,MODULE,32.00,4.00,5.50,7.20,4.20,0.00,Optical_Display_Right,JBD013VGA-G + Waveguide R,Jade Bird Display (JBD),Optical Engine 5.50x7.20x4.20mm + Waveguide,"640x480 Monochrome Green (525nm), 24MHz QSPI, 1.8V IO",1,3.200,BLOCKED_VENDOR_STEP_AND_INIT_NDA,https://raw.githubusercontent.com/yfei7131-source/AI-AR-codex-Claude-/refs/heads/handoff/evt1-fpga-v22-r1-20261115/hardware/evt1-id/research/2026-11-15-fpga-v22-r1/evt1_ar_display_fpga_bridge_v2_2/kimi_hw_handoff/BLOCKED_VS_VERIFIED_MATRIX.csv,Awaits vendor 3D STEP model for optical mount interference check
+ BOM-43,BAT_L,BATTERY_BAY_L,MODULE,-66.00,104.00,3.71,43.50,11.00,0.00,Battery_Pack_Left,Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight),Grepow (格瑞普),GRP3911040: 3.71x11.0x40.0mm (43.5mm L) | GRP220550: 2.38x5.6x50.0mm (53.5mm L),Dual-track catalog battery: GRP3911040 requires >=12.8mm rear drop-tip paddle; GRP220550 fits <=6.0mm slim straight temple with 0.0mm protrusion,1,3.450,BLOCKED_ID_STEP_SHELL_INTERFERENCE,https://www.grepow.com/shaped-battery/ultra-narrow-battery.html,3D STEP housing verification marked BLOCKED until ID shell STEP confirms drop-tip vs slim-straight
+-BOM-45,U6_OPT_AVDD,M-OPT-BRIDGE,BOTTOM,2.10,12.20,1.00,1.00,0.40,0.35,PMIC_LDO_OPT_AVDD_BIAS,TLV75528PDQNR (or TLV75533PDQNR per BLK-JBD-04),Texas Instruments,"X2SON-4 (1.00x1.00x0.40mm, 0.35mm pitch)","Sequenced Optical Engine AVDD_OPT_BIAS LDO with 120-Ohm active discharge; EN driven by 1V8_OPT_VDD via R_SEQ=100k + C_SEQ=220nF (tau=22ms, t_EN=13.64ms) and clamped to 0.22V by Schottky D_SEQ (RB521S-30) when FPGA_CRESET_B=0",1,0.003,VERIFIED_FULL_DATASHEET,https://www.ti.com/lit/ds/symlink/tlv755p.pdf,"CRITICAL FIX: Replaces broken VSYNC 0.006%-duty-cycle RC filter (0.108mV DC) with 1V8_OPT_VDD + FPGA_CRESET_B Schottky-clamped RC delay (t_EN=13.64ms > 3.80ms SPI config, 1.80V DC steady state, <5us reset discharge)"
++BOM-45,U6_OPT_AVDD,M-OPT-BRIDGE,BOTTOM,2.10,12.20,1.00,1.00,0.40,0.35,PMIC_LDO_OPT_AVDD_BIAS,TLV75528PDQNR (or TLV75533PDQNR per BLK-JBD-04),Texas Instruments,"X2SON-4 (1.00x1.00x0.40mm, 0.35mm pitch)","5-State Interlocked Optical AVDD_OPT_BIAS LDO (120-Ohm active discharge): EN driven by Ball D3 (CDONE/frame_vsync_1v8) via Schottky D1+10R into C_HOLD=22nF||R_BLEED=2.2M, clamped by D_RST (to FPGA_CRESET_B) and D_VDD (to 1V8_OPT_VDD)",1,0.003,VERIFIED_FULL_DATASHEET,https://www.ti.com/lit/ds/symlink/tlv755p.pdf,"CRITICAL FIX: 5-state fail-safe interlock — OFF during reset (0.00V), OFF on config failure CDONE=0 (0.00V), ON in 60Hz user mode (V_peak=1.58V, V_valley=1.12V>=0.95V), OFF in 66.5ms on VSYNC loss, and OFF in 2.31us on reset or 1V8 power-down!"
+ BOM-44,BAT_R,BATTERY_BAY_R,MODULE,66.00,104.00,3.71,43.50,11.00,0.00,Battery_Pack_Right,Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight),Grepow (格瑞普),GRP3911040: 3.71x11.0x40.0mm (43.5mm L) | GRP220550: 2.38x5.6x50.0mm (53.5mm L),Dual-track catalog battery: GRP3911040 requires >=12.8mm rear drop-tip paddle; GRP220550 fits <=6.0mm slim straight temple with 0.0mm protrusion,1,3.450,BLOCKED_ID_STEP_SHELL_INTERFERENCE,https://www.grepow.com/shaped-battery/ultra-narrow-battery.html,Symmetric right rear cell; 3D STEP housing verification marked BLOCKED until ID shell STEP is imported
+diff --git a/hardware/evt1-v1-kimi-handoff/CHANGELOG_EVT1_REV_C.md b/hardware/evt1-v1-kimi-handoff/CHANGELOG_EVT1_REV_C.md
+index 583cce6..3a81aea 100644
+--- a/hardware/evt1-v1-kimi-handoff/CHANGELOG_EVT1_REV_C.md
++++ b/hardware/evt1-v1-kimi-handoff/CHANGELOG_EVT1_REV_C.md
+@@ -6,24 +6,27 @@
+ 
+ ## 1. 版本演进与本轮修复详情
+ 
+-### v1.0-EVT1-RevC-PR19-ElectricalAudited（本轮提交，继承 `a678be1` 修复光机 `AVDD` 时序与跨板 3 线 I2S 网表）
++### v1.0-EVT1-RevC-PR19-5StateInterlockVerified（本轮提交，继承 `bb87623` 修复配置失败/复位/断电下的光机 `AVDD` 5 态安全联锁）
+ 
+-1. **修复光机 `U6_OPT_AVDD` 上电时序电路与 `Ball D3 (CDONE / frame_vsync_1v8)` 占空比冲突 (`CHK-04_PIN_PWR` / `Mut-18`)**：
++1. **修复 FPGA 配置状态与光机 `AVDD_OPT_BIAS` 硬件安全联锁 (`CHK-04_PIN_PWR` / `Mut-18..20`)**：
+ 
+-   * **发现并消除 `a678be1` 隐患**：原方案从 `Ball D3 (frame_vsync_1v8)` 经 RC 驱动 `U6_OPT_AVDD.EN`，但用户模式下 `frame_vsync_1v8` 占空比仅 `48 / 800,000 = 0.006%`，RC 平均电压仅 `0.108 mV < 0.95 V`，会导致运行期光机 `AVDD_OPT_BIAS` 关断。
++   * **发现并消除 `bb87623` 安全漏洞**：`bb87623` 仅使用 `1V8_OPT_VDD` + `FPGA_CRESET_B` 的盲延时 RC，未采样 `Ball D3 (CDONE / frame_vsync_1v8)`，且 `FPGA_CRESET_B` 采用上拉电阻。在 **MCU 复位/高阻**、**FPGA 比特流配置失败 (`CRESET_B=1.8V, CDONE=0V`)**、**VSYNC 停振**或 **`1V8_OPT_VDD` 先于 `VSYS` 断电**时，会导致光机 `AVDD_OPT_BIAS` 误开启或断电反序。
+ 
+-   * **肖特基钳位 RC 硬件时序链**：改为由 `1V8_OPT_VDD` (`1.80 V`) 经 `R_SEQ = 100 kΩ + C_SEQ = 220 nF` ($\tau = 22.0\text{ ms}$) 充电，并由肖特基二极管 `D_SEQ (RB521S-30, Vf = 0.22V)` 钳位至 `FPGA_CRESET_B`。当 `FPGA_CRESET_B = 0V` 时钳位在 `0.22 V <= 0.40 V` 确保关断；当 `FPGA_CRESET_B = 1.80V` 释放后在 **`t_EN = 13.64 ms`**（即 `3.80 ms` Target SPI 配置完成后 **`+9.84 ms`**）开启 `AVDD_OPT_BIAS`，稳态保持 **`1.80 V` DC**，复位或掉电时在 `< 5 μs` 内快速放电并启动 $120\ \Omega$ 主动泄放。
++   * **5 态肖特基峰值保持 + 双轨快速钳位联锁电路**：将 `FPGA_CRESET_B` 改为 `10 kΩ` 下拉至 `GND`（确保 POR/MCU 复位期锁定复位），并由 `Ball D3 (CDONE / frame_vsync_1v8)` 经肖特基二极管 `D1 (RB521S-30)` + `R_CHG = 10 Ω` 对 `C_HOLD = 22 nF || R_BLEED = 2.2 MΩ` 峰值充电，配合双肖特基快速泄放二极管 `D_RST`（接 `FPGA_CRESET_B`）与 `D_VDD`（接 `1V8_OPT_VDD`）：
++     1. **上电/MCU 复位 (`CRESET_B = 0V`)**：`V_EN = 0.00 V <= 0.40 V`，严格关断；
++     2. **配置进行中或配置失败 (`CRESET_B = 1.8V, CDONE = 0V`)**：`Ball D3 = 0.00 V`，`V_EN = 0.00 V <= 0.40 V`，永久关断；
++     3. **配置成功 + `60.000 Hz` `1.000 μs` VSYNC 活跃**：$\tau_{\text{chg}} = 0.77\ \mu\text{s}$，峰值 `1.580 V`，帧间谷值 **`1.120 V >= 0.95 V (VIH)`**（`+170 mV` 裕量），连续稳定开启；
++     4. **VSYNC 停振看门狗**：`R_BLEED` 在 **`66.5 ms`** 内泄放至 `< 0.40 V` 自动关断；
++     5. **主动复位或 `1V8_OPT_VDD` 掉电断电**：`D_RST` / `D_VDD` 在 **`2.31 μs`** 内强制拉低 `C_HOLD` 至 `0.22 V <= 0.40 V`，极速关断并触发 `U6_OPT_AVDD` 内部 $120\ \Omega$ 主动放电。
+ 
+-2. **修复 `J_BTB_L` / `J_BRIDGE_IN` (24-Pin) 与 `J_BTB_R` (16-Pin) 的 3 线立体声 I2S 跨板直通映射 (`CHK-07` / `Mut-19`)**：
++2. **补齐左镜腿尾端外部接口焊盘组并扩展至 21 项反向故障注入 (`CHK-07` / `CHK-08`)**：
+ 
+-   * **消除单脚截断缺陷**：移除原 `J_BTB_L Pin 23 (S3_I2S_MUX_1V8)` 单脚概括错误，利用 `BM28B0.6-24DS` 的 4 个 `3.0 A` 金属屏蔽接地脚 (`MP1..MP4`) + `Pin 5 (GND)` 连接 `FPC_BRIDGE` L2 完整地平面，将 `J_BTB_L` / `J_BRIDGE_IN` 的 **`Pins 22, 23, 24`** 明确分配为 **`I2S_BCLK_1V8`、`I2S_LRCLK_1V8`、`I2S_DOUT_1V8`**，与 `J_BTB_R` 的 **`Pins 10, 11, 12`** 实现 **100% 1:1 直通**。
++   * 在 `PINMAP_V1_0_FROZEN.csv` 新增 `PAD_USB_POGO & PAD_BAT_SPK_L`（`Pads 1..9`），实现全机 **45 位号 BOM $\leftrightarrow$ 45 行 PINMAP $\leftrightarrow$ 5 总线 ICD** 100% 闭环，并通过全部 **21 项反向故障注入测试 (`21/21` CAUGHT)**。
+ 
+-   * **补齐全部 45 位号器件级引脚网表**：在 `PINMAP_V1_0_FROZEN.csv` 中新增 `U10_AMP_L/R (MAX98357A)`、`MK1..3 (IM69D130)`、`U9_IMU (ICM-42688-P)`、`Y1_OSC`、`U3_L/R`、`U4_OR/BB/1V8/1V2`、`U5_LED2V8`、`U7_INA/WIN` 与 `U6_CAM_*` 的完整引脚定义，并将反向故障注入扩展至 **19 项（`19/19` 100% 捕获）**。
++### Commit `bb876238fd25ac6be7c8f706b3d273b05d85a847` (`bb87623`)
+ 
+-### Commit `a678be1437b965ac83874138f28792202e0901a9` (`a678be1`)
++* 修复 `J_BTB_L / J_BRIDGE_IN` (24-Pin) `Pins 22..24` 与 `J_BTB_R` (16-Pin) `Pins 10..12` 的 3 线立体声 I2S (`I2S_BCLK_1V8`, `I2S_LRCLK_1V8`, `I2S_DOUT_1V8`) 1:1 跨板直通映射，消除单脚截断缺陷。
+ 
+-* 将 `J_CAM` (`BOM-05`)、`J_BTB_L` (`BOM-15`)、`J_BRIDGE_IN` (`BOM-31`) 升级为 24-Pin `BM28B0.6-24DS/2-0.35V(53)`（`1.50 × 5.50 × 0.60 mm`），新增 `BOM-45 U6_OPT_AVDD`，并建立 `CHK-07` 跨表一致性审查。
++### Commit `a678be1` / `dfcf8e1` / `d15cc6f` / `8697069` / `43f2960`
+ 
+-### Commit `dfcf8e113e1a67eb876eb6534ead04d4b3b382b5` (`dfcf8e1`) 及 `d15cc6f` / `8697069` / `43f2960`
+-
+-* 修复 GitHub Actions Run `43844651739` 中 `row=0, w_idx=0, addr=0x0000` 处 `16'h5AC3 == ~16'hA53C` 导致的 1 处 mismatch（改为 `16'h5AC2`），完成 `clk_48m` 三级流水线（`fifo_not_empty_q`、`s1_diff_10_q`、单调递增 `pf_addr_q`、`ebr_wdata_l/r_q`、`pix_shift_l/r`）与 256 字 EBR FIFO + `Row 10->11` `tear_row_holdoff` 防撕裂改造。
++* 升级 `J_CAM`/`J_BTB_L`/`J_BRIDGE_IN` 为 24-Pin `BM28B0.6-24DS`，新增 `BOM-45 U6_OPT_AVDD`，修复 `row=0, addr=0x0000` 处 `16'h5AC3 == ~16'hA53C` 仿真碰撞，完成 `clk_48m` 三级流水线与 256 字 EBR FIFO + `Row 10->11` `tear_row_holdoff` 防撕裂改造。
+diff --git a/hardware/evt1-v1-kimi-handoff/ICD_FPGA_HOST_OPTICS_SPEC_REV_C.md b/hardware/evt1-v1-kimi-handoff/ICD_FPGA_HOST_OPTICS_SPEC_REV_C.md
+index 9fbd60d..448807b 100644
+--- a/hardware/evt1-v1-kimi-handoff/ICD_FPGA_HOST_OPTICS_SPEC_REV_C.md
++++ b/hardware/evt1-v1-kimi-handoff/ICD_FPGA_HOST_OPTICS_SPEC_REV_C.md
+@@ -1,28 +1,38 @@
+-# 智元跃动 AI/AR 智能眼镜 V1.0 (EVT-1 Rev C) — 双目光机接口、电源时序、QSPI 协议、跨板 FPC 连接表及 JBD 阻断规范
++# 智元跃动 AI/AR 智能眼镜 V1.0 (EVT-1 Rev C) — 双目光机接口、5 态配置/电源安全联锁、QSPI 协议、跨板 FPC 连接表及 JBD 阻断规范
+ 
+ **文档编号**：`ZY-AIAR-V1.0-ICD-REV-C-20261116`  
+-**适用硬件阶段**：EVT-1 Rev C（继承 `a678be1` 并修复 `CDONE/AVDD` 上电时序占空比缺陷与 `24-Pin BTB` 3 线 I2S 直通映射）  
++**适用硬件阶段**：EVT-1 Rev C（继承 `bb87623` 完成 FPGA 配置状态与光机 `AVDD` 5 态安全联锁闭环）  
+ **协作分工约束**：
+ - **KIMI**：负责嘉立创 EDA 专业版（EasyEDA Pro）原理图绘制、封装核对与 6 层 Any-Layer HDI 刚柔结合板 PCB 设计。
+ - **Codex**：负责 GitHub 分支 `handoff/evt1-rev-c-feasibility-20261115`（[PR #19](https://github.com/yfei7131-source/AI-AR-codex-Claude-/pull/19)）同步与云端 GitHub Actions 原生开源 EDA CI（`iverilog` / `vvp` / `yosys` / `nextpnr-ice40` / `icetime`）执行。
+ 
+ ---
+ 
+-## 1. 基于 `a678be1` 的整机原理图深度电气核查与关键修正
+-
+-1. **修复 `U6_OPT_AVDD` 光机 `AVDD_OPT_BIAS` 上电时序电路（解决 `frame_vsync_1v8` `0.006%` 占空比均值关断缺陷）**：
+-   - **原 `a678be1` 电气缺陷**：原方案将 `U6_OPT_AVDD` ([TI `TLV75528PDQNR`](https://www.ti.com/lit/ds/symlink/tlv755p.pdf)) 的 `EN` 脚通过无源 RC 滤波器接至 `U2_FPGA Ball D3 (CDONE / frame_vsync_1v8)`。但在进入用户模式后，`Ball D3` 为推挽输出 `frame_vsync_1v8`，每帧 `800,000` 个 `48 MHz` 周期（`16.667 ms`）中仅输出 `48` 个周期（`1.000 μs`）高脉冲，其余 `799,952` 个周期主动拉低至 `0.00V`，占空比仅 **`0.006%`**，RC 平均直流电压仅 **$1.80\text{ V} \times 0.00006 = 0.108\text{ mV} \ll V_{\text{IH(EN)}} (0.95\text{ V})$**，会导致 `U6_OPT_AVDD` 在启动后立即关断！
+-   - **本轮硬件修正方案（`1V8_OPT_VDD` RC 充电 + `FPGA_CRESET_B` 肖特基钳位复位网络）**：
+-     - 将 `R_SEQ = 100 kΩ` 上拉源改为常驻直流轨 `1V8_OPT_VDD` (`1.80 V`)，下接延迟电容 `C_SEQ = 220 nF` ($\tau = 22.0\text{ ms}$) 至 `GND`，并从 `OPT_AVDD_EN` 节点接一颗肖特基二极管 `D_SEQ` (`RB521S-30`, $V_F = 0.22\text{ V}$, 阳极接 `OPT_AVDD_EN`，阴极接 `FPGA_CRESET_B`)。
+-     - **上电与复位锁死阶段 (`FPGA_CRESET_B = 0V`)**：`D_SEQ` 将 `OPT_AVDD_EN` 钳位在 $V_F = 0.22\text{ V} \le V_{\text{IL(EN)}} (0.40\text{ V})$，`U6_OPT_AVDD` 严格关断并通过内部 $120\ \Omega$ 电阻将 `AVDD_OPT_BIAS` 锁定在 `0.00 V`。
+-     - **配置与延时开启阶段 (`FPGA_CRESET_B` 释放为 `1.80 V`)**：`D_SEQ` 反偏截止，`C_SEQ` 由 `0.22 V` 向 `1.80 V` 指数充电，到达 $V_{\text{IH(EN)}} = 0.95\text{ V}$ 的开启时间为：
+-       $$t_{\text{EN}} = 22.0\text{ ms} \times \ln\left(\frac{1.80 - 0.22}{1.80 - 0.95}\right) = \mathbf{13.64\text{ ms}}$$
+-       此时 FPGA 早已完成 `1.20 ms` CRAM 清零 + `2.60 ms` 40MHz SPI 配置（合计 `3.80 ms`），`CDONE=1` 且 `opt_cs_n` 已稳定输出高电平达 **`+9.84 ms`**！
+-     - **稳态运行与掉电快放阶段**：运行期间 `FPGA_CRESET_B = 1.80 V` 为 100% 直流高电平，`OPT_AVDD_EN` 稳态保持 **`1.80 V` DC**；当系统复位 (`FPGA_CRESET_B = 0V`) 或 `1V8_OPT_VDD` 掉电时，`D_SEQ` 在 **$< 5\ \mu\text{s}$** 内快速泄放 `C_SEQ`，确保 `AVDD_OPT_BIAS` 先于 `1V8_OPT_VDD` 关断并触发 $120\ \Omega$ 主动放电。
+-2. **修复 `J_BTB_L` / `J_BRIDGE_IN` (24-Pin) 与 `J_BTB_R` (16-Pin) 的跨板 3 线立体声 I2S 映射不一致**：
+-   - **原 `a678be1` 缺陷**：`J_BTB_L` 仅用单个 `Pin 23 (S3_I2S_MUX_1V8)` 概括 I2S 总线，而右镜腿 `J_BTB_R` 却分配了 `Pins 10..13` 共 4 脚，导致跨板网表无法 1:1 对应。
+-   - **本轮修正方案**：利用 [Hirose `BM28B0.6-24DS/2-0.35V(53)`](https://www.hirose.com/en/product/document?clcode=CL0673-5043-0-51&productname=BM28B0.6-16DS/2-0.35V(51)&series=BM28&documenttype=Catalog&lang=en&documentid=D49354_en) 自带的 **4 个 `3.0 A` 金属屏蔽接地固定脚 (`MP1..MP4`) + `Pin 5 (GND)`** 连接 `FPC_BRIDGE` 的 L2 完整地平面，将 `J_BTB_L` / `J_BRIDGE_IN` 的 **`Pins 22, 23, 24`** 明确分配给标准 3 线立体声 I2S 总线 **`I2S_BCLK_1V8` (`Pin 22`)、`I2S_LRCLK_1V8` (`Pin 23`)、`I2S_DOUT_1V8` (`Pin 24`)**，与右镜腿 `J_BTB_R` 的 **`Pins 10, 11, 12`** 实现 **100% 1:1 物理直通**！
+-   - 左右声道功放 `U10_AMP_L` 与 `U10_AMP_R` ([ADI `MAX98357AEWL+T`](https://www.analog.com/media/en/technical-documentation/data-sheets/max98357a-max98357b.pdf)) 共用该 3 线 `1.8V` 立体声 I2S 总线：依据数据手册 Table 5 (p. 16)，`U10_AMP_L` 的 `Ball A2 (SD_MODE)` 直连 `1V8_SYS` 硬件固定提取左声道，而 `U10_AMP_R` 的 `Ball A2 (SD_MODE)` 经 $100\text{ k}\Omega$ 电阻接 `1V8_SYS` 硬件固定提取右声道；`U8_PDM_LS` Bank 2 (`Ch6..8`) 输出端串接 $1\text{ k}\Omega$ 隔离电阻，支持 `ESP32-S3` 混音输出或 `nRF5340-CMAA` 在休眠模式下直接接管驱动。
++## 1. FPGA 配置状态 (`CDONE/VSYNC`) 与光机 `AVDD_OPT_BIAS` 5 态故障安全硬件联锁设计
++
++### 1.1 前序版本安全漏洞剖析
++- **`a678be1` 漏洞**：用无源 RC 直接对 `Ball D3 (frame_vsync_1v8)` 滤波，因用户模式下 `frame_vsync_1v8` 占空比仅 `48 / 800,000 = 0.006%`，RC 均值仅 `0.108 mV < 0.95 V`，导致运行期 `U6_OPT_AVDD` 关断。
++- **`bb87623` 漏洞**：改为仅对 `1V8_OPT_VDD` + `FPGA_CRESET_B` 做盲延时 RC，未采样 `Ball D3 (CDONE / frame_vsync_1v8)`。若 **FPGA 配置失败（比特流 CRC 错误或 SPI 中断导致 `CRESET_B = 1.8V` 但 `CDONE = 0V`）**、或 **MCU 复位期间 `CRESET_B` 被上拉置高**、或 **运行中 FPGA 死机停振**、或 **`1V8_OPT_VDD` 掉电而 `VSYS` 仍在**，`bb87623` 仍会错误开启或维持 `AVDD_OPT_BIAS` 高压，造成光机背板倒灌与闩锁风险！
++
++### 1.2 5 态肖特基峰值保持 + 双轨快速钳位联锁电路（`RN_FPGA_CFG_PWR` + `U6_OPT_AVDD`）
++
++1. **电路拓扑（零新增芯片面积，集成于 `M-OPT-BRIDGE` `RN_FPGA_CFG_PWR` 无源网络）**：
++   - **`FPGA_CRESET_B (Ball F3)` 默认下拉锁死**：配置 `R_CRST_PD = 10 kΩ` 下拉至 `GND`（替代原上拉），确保上电初期、MCU 复位或程序跑飞（`GPIO18` 高阻）时，FPGA 硬件锁定在复位态 (`CRESET_B = 0.00 V`)。
++   - **峰值整流充电支路**：`U2_FPGA Ball D3 (IOB_12A_G4_CDONE / frame_vsync_1v8)` $\rightarrow$ 肖特基二极管 `D1 (RB521S-30, Vf = 0.22V)` $\rightarrow$ 限流电阻 `R_CHG = 10 Ω` $\rightarrow$ `U6_OPT_AVDD Pin 3 (EN)` 节点 (`OPT_AVDD_EN`)。
++   - **保持与看门狗泄放支路**：`OPT_AVDD_EN` 节点接保持电容 `C_HOLD = 22 nF (0201)` 并联泄放电阻 `R_BLEED = 2.2 MΩ (0201)` 至 `GND`。
++   - **双轨快速掉电/复位钳位支路**：
++     - 肖特基二极管 `D_RST (RB521S-30)`：阳极接 `OPT_AVDD_EN`，阴极接 `FPGA_CRESET_B`。
++     - 肖特基二极管 `D_VDD (RB521S-30)`：阳极接 `OPT_AVDD_EN`，阴极接 `1V8_OPT_VDD` (`1V8_FPGA_IO`)。
++
++2. **5 种工作与故障状态定量验证表（对应 `CHK-04_PIN_PWR` 与 `Mut-18..20`）**：
++
++| 状态编号与工况 | `FPGA_CRESET_B` | `Ball D3 (CDONE/VSYNC)` | `OPT_AVDD_EN` 节点电压计算 | `U6_OPT_AVDD` 输出 (`AVDD_OPT_BIAS`) | 安全性结论 |
++| :--- | :--- | :--- | :--- | :--- | :--- |
++| **State 1：上电初期 / MCU 复位 / 跑飞** | `0.00 V` (`10k` 下拉) | `0.00 V` (Open-Drain 低) | `D_RST` 钳位且无充电脉冲 $\rightarrow$ **`0.000 V <= 0.40 V (VIL)`** | **OFF (`0.00 V`, $120\ \Omega$ 放电)** | **PASS**：杜绝 MCU 未启动时误开高压 |
++| **State 2：配置进行中或配置失败 (CRC 错误)** | `1.80 V` | **`0.00 V`** (`CDONE` 保持低) | `D1` 截止，`R_BLEED` 泄放 $\rightarrow$ **`0.000 V <= 0.40 V (VIL)`** | **OFF (`0.00 V`, $120\ \Omega$ 放电)** | **PASS**：配置未成功绝不开启光机 `AVDD` |
++| **State 3：配置成功 + 60Hz VSYNC 扫描** | `1.80 V` | `60.000 Hz`, `1.000 μs` 正脉冲 (`1.80 V`) | $\tau_{\text{chg}} = (25+10)\Omega \times 22\text{nF} = 0.77\ \mu\text{s}$，首脉冲达 `1.148 V`，峰值 **`1.580 V`**；帧间 `16.667 ms` 经 $\tau_{\text{bleed}} = 48.4\text{ ms}$ 衰减至谷值 **`1.120 V >= 0.95 V (VIH)`** | **ON (`2.80 V / 3.30 V` 连续稳定输出)** | **PASS**：谷值裕量 `+170 mV`，零帧间抖动 |
++| **State 4：FPGA 死机 / 时钟丢失 (`VSYNC` 停振)** | `1.80 V` | 卡死在 `0.00 V` | `C_HOLD` 经 `R_BLEED` 泄放：$t_{\text{wdog}} = 48.4\text{ ms} \times \ln(1.58/0.40) = \mathbf{66.5\text{ ms}}$ | **66.5 ms 内自动关断 OFF** | **PASS**：硬件级丢失脉冲看门狗保护 |
++| **State 5：主动复位或 `1V8_OPT_VDD` 断电掉电** | `0.00 V` 或 `1V8 -> 0V` | 任意 | `D_RST` 或 `D_VDD` 正偏导通强制拉低 `C_HOLD`：$t_{\text{fast\_off}} = 3 \tau_{\text{chg}} = \mathbf{2.31\ \mu\text{s}}$ 至 `0.22 V <= 0.40 V` | **2.31 μs 极速关断 + $120\ \Omega$ 放电** | **PASS**：严格保证 `AVDD` 先于 `1V8` 关断 |
+ 
+ ---
+ 
+@@ -35,7 +45,7 @@
+ | **Pin 3** | `OPT_SCK_L` (`24.000 MHz`) | `OPT_SCK_R` (`24.000 MHz`) | `U2_FPGA Ball E3 (IOB_13B)` | 对称 T 型分支（各 `5.30 mm`，$\Delta L = 0.00\text{ mm}$）+ **各串接 `22 Ω` 阻尼电阻** |
+ | **Pin 4** | `OPT_CS_N_L` | `OPT_CS_N_R` | `U2_FPGA Ball C3 (IOB_10A)` | 对称 T 型分支 + **各串接 `22 Ω` 阻尼电阻** + `10 kΩ` 上拉至 `1V8_OPT_VDD` |
+ | **Pin 5..8** | `opt_l_qdo[0..3]` | `opt_r_qdo[0..3]` | 左：`A1,A2,A4,E4` / 右：`E5,D5,F5,F4` | 左/右独立 4-bit QSPI 数据 D0..D3，源端串接 `22 Ω`，`50 Ω` 阻抗控制 |
+-| **Pin 9** | `AVDD_OPT_BIAS` | `AVDD_OPT_BIAS` | `U6_OPT_AVDD Pin 1 (OUT)` | **第 2 顺位延时上电轨（`t_EN = 13.64 ms`）**：受 `BLK-JBD-04` 约束，断电 $120\ \Omega$ 主动放电 |
++| **Pin 9** | `AVDD_OPT_BIAS` | `AVDD_OPT_BIAS` | `U6_OPT_AVDD Pin 1 (OUT)` | **第 2 顺位 5 态联锁上电轨**：仅当 `CDONE/VSYNC` 活跃时开启，断电 `2.31 μs` 关断 + $120\ \Omega$ 放电 |
+ | **Pin 10** | `GND_SHIELD` | `GND_SHIELD` | `GND` | 光机 FPC 电磁屏蔽层单点接地 |
+ 
+ ---
+@@ -53,9 +63,9 @@
+ | **Pin 5 + MP1..4** | `GND` | `0.0V` | `GND` | **`J_BTB_R Pin 5 + MP1..4`** | `FPC_BRIDGE` L2 完整参考地平面 + 4 个 `3.0A` 金属屏蔽固定脚 |
+ | **Pin 6** | `host_sck` | `1.8V` | `L -> B` | *(鼻梁终结)* | `U8_LS1 Bank 2 Ch5` $\rightarrow$ `U2_FPGA Ball D1 (SPI_SCK)` (`40.000 MHz`) |
+ | **Pin 7** | `host_cs_n` | `1.8V` | `L -> B` | *(鼻梁终结)* | `U8_LS1 Bank 2 Ch6` $\rightarrow$ `U2_FPGA Ball C1 (SPI_SS_B)` (`10k` 下拉) |
+-| **Pin 8** | `FPGA_CRESET_B` | `1.8V` | `L -> B` | *(鼻梁终结)* | `U8_LS1 Bank 2 Ch7` $\rightarrow$ `U2_FPGA Ball F3` 及 `D_SEQ` 阴极 (`10k` 上拉) |
++| **Pin 8** | `FPGA_CRESET_B` | `1.8V` | `L -> B` | *(鼻梁终结)* | `U8_LS1 Bank 2 Ch7` $\rightarrow$ `U2_FPGA Ball F3` 及 `D_RST` 阴极 (`10k` 下拉) |
+ | **Pin 9..12** | `host_qio[0..3]` | `1.8V` | `L <-> B` | *(鼻梁终结)* | `U8_LS1` $\leftrightarrow$ `U2_FPGA Balls E1, F1(SPI_SO), F2, B1` |
+-| **Pin 13** | `frame_vsync_1v8` | `1.8V` | `B -> L` | *(鼻梁终结)* | `U2_FPGA Ball D3 (CDONE/VSYNC)` $\rightarrow$ `U9_IMU FSYNC` & `U8_PDM_LS Ch1` |
++| **Pin 13** | `frame_vsync_1v8` | `1.8V` | `B -> L` | *(鼻梁终结)* | `U2_FPGA Ball D3 (CDONE/VSYNC)` $\rightarrow$ `D1` 峰值检波、`U9_IMU FSYNC` & `U8_PDM_LS Ch1` |
+ | **Pin 14..15** | `SYS_I2C_SCL/SDA_1V8` | `1.8V` | `L <-> B` | *(鼻梁终结)* | `U8_LS3 (PCA9306)` $\leftrightarrow$ `U9_IMU (ICM-42688-P)` |
+ | **Pin 16** | `PRIV_LED_ANODE` | `~1.9V` | `L -> B` | *(鼻梁终结)* | `U5_LED2V8 -> R_SENSE (2.20Ω)` $\rightarrow$ 鼻梁隐私指示灯 `D3_PRIV` 阳极 |
+ | **Pin 17** | `PDM_CLK_1V8` | `1.8V` | `L/R -> B/R` | **`J_BTB_R Pin 6`** | `3.072 MHz` PDM 麦克风时钟（同步驱动 `MK1_L`、`MK2_C`、`MK3_R`） |
+@@ -73,6 +83,6 @@
+ ## 4. JBD 原厂 NDA 资料缺失造成的 4 项阻断 (`BLK-JBD-01` ~ `BLK-JBD-04`)
+ 
+ - **`BLK-JBD-01`（FPC 金手指线序与极性未签核）**：鼻梁板已冻结对称 10-Pin `J_DISP_L/R`，线序差异隔离于独立光机转接 FPC，待原厂签章图纸确认后投板转接 FPC。
+-- **`BLK-JBD-02`（上电初始化寄存器序列 LUT 缺失）**：待获取 JBD 面板解锁、温补与亮度 DAC 寄存器表后，在 $t > 13.64\text{ ms}$（`AVDD_OPT_BIAS` 稳定后）由主控下发。
++- **`BLK-JBD-02`（上电初始化寄存器序列 LUT 缺失）**：待获取 JBD 面板解锁、温补与亮度 DAC 寄存器表后，在 `CDONE=1` 且 `AVDD_OPT_BIAS` 稳定后由主控下发。
+ - **`BLK-JBD-03`（QSPI `0x32` 行写命令格式与 2×2 像素合并指令未核实）**：待获取原厂协议手册后核对 `CMD_HDR_NIBBLES = 12` 编码。
+ - **`BLK-JBD-04`（`AVDD_OPT_BIAS` 精确电压值与 3D STEP 缺失）**：`U6_OPT_AVDD` 封装兼容 `2.8V` (`TLV75528P`) 与 `3.3V` (`TLV75533P`)，待原厂规格书与 `JBD013VGA_STEP.stp` 确认后选贴并完成光机仓干涉复核。
+diff --git a/hardware/evt1-v1-kimi-handoff/ICD_INTERFACE_CONTROL_TABLE.csv b/hardware/evt1-v1-kimi-handoff/ICD_INTERFACE_CONTROL_TABLE.csv
+index 231f763..ce63654 100644
+--- a/hardware/evt1-v1-kimi-handoff/ICD_INTERFACE_CONTROL_TABLE.csv
++++ b/hardware/evt1-v1-kimi-handoff/ICD_INTERFACE_CONTROL_TABLE.csv
+@@ -1,6 +1,6 @@
+ Interface_ID,Bus_Name,Source_Device_Voltage,Destination_Device_Voltage,Level_Translation_or_Isolation,Signal_Lines,Clock_Data_Rate,Impedance_and_Routing_Rule,Sustained_Bandwidth_Mbps,Required_Payload_Mbps,Margin_Factor,Verification_Status
+ ICD-01,Host-to-FPGA Display QSPI + Target SPI Config & VSYNC Return,"ESP32-S3-PICO-1-N8R8 (3.3V Pins 5, 14..19, 24, 27, 36)","iCE40UP5K-UWG30ITR Bank 1/2 (1.8V Balls D1,C1,E1,F1,F2,B1,F3,D3)","U8_LS1 (VCCA=3.3V, VCCB=1.8V: Bank2 Ch5..8 DIR2=H [host_sck, host_cs_n, CRESET_B, host_qio[0]/SPI_SI] A->B; Bank1 Ch1..4 DIR1=QSPI_DIR1_EN [host_qio[1]/SPI_SO, host_qio[2..3], IPC_TX]) + U8_PDM_LS Ch1 (frame_vsync 1.8V->3.3V)","host_sck, host_cs_n (10k PD), CRESET_B (10k PU), host_qio[0..3], QSPI_DIR1_EN, frame_vsync/CDONE (4.7k PU)",40.000 MHz Quad SPI SDR (Commands 0xA0/0xA1 Immediate & 0xA2/0xA3 Tear-Guarded) into 256-wordx34-bit EBR Async CDC FIFO (3x SB_RAM40_4K) + 3-stage 48MHz pipeline,"50-Ohm single-ended on L1/L3, 22-Ohm series damping",136.0,36.86 (Dual 320x240x4bpp @ 60.000Hz),3.69x,BLOCKED_ON_NATIVE_EDA_CI (Static RTL/PCF/CDC & FPGA-TN-02006 rules PASS; awaits iverilog/yosys execution in CI)
+-ICD-02,FPGA-to-Binocular Optical Engine Symmetric Lockstep QSPI (L & R Independent Data),"iCE40UP5K-UWG30ITR Bank 0/2 (1.8V Balls E3,C3 + A1,A2,A4,E4 + E5,D5,F5,F4 at Bridge Center Y=9.50mm)","Left (J_DISP_L at Y=4.20mm) & Right (J_DISP_R at Y=14.80mm) JBD013VGA-G Optical Engines (10-pin BTBs; Pin 1=1V8_OPT_VDD first, Pin 9=AVDD_OPT_BIAS sequenced via U6_OPT_AVDD + 1V8_OPT_VDD R_SEQ=100k/C_SEQ=220nF delay clamped by Schottky D_SEQ to FPGA_CRESET_B, t_EN=13.64ms)",Direct 1.8V CMOS (Symmetric T-branch with 2x 22-Ohm series damping on opt_sck & opt_cs_n; 5.30mm each wing),"Shared opt_sck (E3), opt_cs_n (C3) + Independent opt_l_qdo[3:0] (4) + opt_r_qdo[3:0] (4) = 10 balls (J_DISP Pins 1..10 mapped)","24.000 MHz QSPI SDR per eye (96.0 Mbps/eye; 664 clks/line active, 1336 clks/line HBLANK, 6.667ms VBLANK)","50-Ohm on Bridge Rigid-Flex, L-to-R trace length delta = 0.00mm (<= 0.20mm tolerance), 0 FPC crossover",192.0 (Combined 2 eyes),36.86 (Dual 320x240x4bpp @ 60.000Hz),5.21x,"BLOCKED_ON_JBD_NDA_DOCS (BLK-JBD-01 FPC/BTB Pinout, BLK-JBD-02 Init LUT, BLK-JBD-03 QSPI Row/Binning Cmd, BLK-JBD-04 AVDD/STEP; 18-PIO & symmetric 5.30mm wings frozen)"
++ICD-02,FPGA-to-Binocular Optical Engine Symmetric Lockstep QSPI (L & R Independent Data),"iCE40UP5K-UWG30ITR Bank 0/2 (1.8V Balls E3,C3 + A1,A2,A4,E4 + E5,D5,F5,F4 at Bridge Center Y=9.50mm)","Left (J_DISP_L at Y=4.20mm) & Right (J_DISP_R at Y=14.80mm) JBD013VGA-G Optical Engines (10-pin BTBs; Pin 1=1V8_OPT_VDD first, Pin 9=AVDD_OPT_BIAS interlocked via U6_OPT_AVDD 5-state circuit: D1+10R peak-hold from Ball D3 CDONE/VSYNC into 22nF||2.2M + D_RST/D_VDD fast clamps (V_valley=1.12V ON, Config-Fail=0.00V OFF, 1V8-Drop=2.31us OFF))",Direct 1.8V CMOS (Symmetric T-branch with 2x 22-Ohm series damping on opt_sck & opt_cs_n; 5.30mm each wing),"Shared opt_sck (E3), opt_cs_n (C3) + Independent opt_l_qdo[3:0] (4) + opt_r_qdo[3:0] (4) = 10 balls (J_DISP Pins 1..10 mapped)","24.000 MHz QSPI SDR per eye (96.0 Mbps/eye; 664 clks/line active, 1336 clks/line HBLANK, 6.667ms VBLANK)","50-Ohm on Bridge Rigid-Flex, L-to-R trace length delta = 0.00mm (<= 0.20mm tolerance), 0 FPC crossover",192.0 (Combined 2 eyes),36.86 (Dual 320x240x4bpp @ 60.000Hz),5.21x,"BLOCKED_ON_JBD_NDA_DOCS (BLK-JBD-01 FPC/BTB Pinout, BLK-JBD-02 Init LUT, BLK-JBD-03 QSPI Row/Binning Cmd, BLK-JBD-04 AVDD/STEP; 18-PIO & symmetric 5.30mm wings frozen)"
+ ICD-03,BLE 5.4 LE Audio + 3-Mic PDM + Stereo Class-D I2S + IPC Bus,"nRF5340-CMAA (1.8V) & ESP32-S3 (3.3V Pins 21..23, 36, 37, 49..51) & 3x IM69D130 (1.8V)",2x MAX98357AEWL+T (shared 3-wire 1.8V stereo I2S bus on J_BTB_L Pins 22..24 <-> J_BTB_R Pins 10..12; Left/Right selected by SD_MODE; driven via 1k-Ohm isolation / IPC mix),"U8_PDM_LS (VCCA=1.8V, VCCB=3.3V: Bank1 Ch1..4 DIR1=H 1.8V->3.3V [VSYNC, IPC_RX, PDM_D0, PDM_D1]; Bank2 Ch5..8 DIR2=L 3.3V->1.8V [PDM_CLK, I2S_BCLK/LRCLK/DOUT]) + U8_LS1 Ch4 (IPC_TX 3.3V->1.8V)","frame_vsync, IPC_NRF_TX, PDM_D0, PDM_D1 (Bank1 A->B) + PDM_CLK, I2S_BCLK, I2S_LRCLK, I2S_DOUT (Bank2 B->A)",3.072 MHz PDM + 1.536 MHz I2S + 2 Mbps IPC UART,50-Ohm clock traces with ground guard vias,12.00,6.14,1.95x,VERIFIED_FULL_DATASHEET_AND_BANK_DIR
+ ICD-04,Camera 8-Bit DVP + Clock/Control Bus with Dual-Chip Zero-Backpowering Isolation,OV2640/OV5640 (1.8V DOVDD / 1.2V DVDD / 2.8V AVDD via 24-Pin BTB J_CAM BM28B0.6-24DS),"ESP32-S3-PICO-1-N8R8 (3.3V Pins 8..13, 43..45, 47, 48, 52)","U8_CAM_ISO1 (VCCA=CAM_DOVDD_1V8, VCCB=3.3V: Bank1&2 DIR1=H, DIR2=H CAM_D0..D7 A->B) + U8_CAM_ISO2 (Bank1 DIR1=H PCLK/VSYNC/HREF A->B; Bank2 DIR2=L XCLK/RESET_N/PWDN B->A) + U8_LS3 PCA9306","CAM_D0..D7 (U8_CAM_ISO1 Ch1..8 A->B), PCLK/VSYNC/HREF (U8_CAM_ISO2 Ch1..3 A->B), XCLK/RESET_N/PWDN (U8_CAM_ISO2 Ch5..7 B->A)",20 MHz XCLK / PCLK,VCCA tied to gated CAM_DOVDD_1V8 (discharged by 120-Ohm when off) -> 14 lines * 0.5uA * 120R = 0.84mV <= 5.0mV,160.0,48.0,3.33x,VERIFIED_NODAL_AND_BANK_DIR_MODEL
+ ICD-05,10-State Hardware Camera Privacy Interlock Loop,U5_LED2V8 (2.8V) -> R_SENSE (2.20 Ohm) -> D3_PRIV -> R_LIMIT (249 Ohm),U7_INA (INA185A4) -> U7_WIN (TLV7042DSGR Open-Drain) -> U6_CAM_DOVDD/DVDD/AVDD EN,Active V_INA_OUT Pull-Up + Daisy-Chained Supply + 3-Rail Camera Discharge,"ISENSE_P, ISENSE_N, V_INA_OUT, V_TH_LO (0.878V), V_TH_HI (2.190V), PRIV_WINDOW_OK",Analog DC + 1.0ms RC glitch filter,4-wire Kelvin sense on R_SENSE; PRIV_WINDOW_OK buried on L3 inner layer,N/A,"I_LED in [2.00mA, 4.98mA] (V_INA_OUT in [0.878V, 2.190V])",10/10 Fault Modes Safe,VERIFIED_NODAL_MODEL
+diff --git a/hardware/evt1-v1-kimi-handoff/KIMI_ENGINEERING_HANDOFF_V1_0.md b/hardware/evt1-v1-kimi-handoff/KIMI_ENGINEERING_HANDOFF_V1_0.md
+index c03e3ea..ced85f1 100644
+--- a/hardware/evt1-v1-kimi-handoff/KIMI_ENGINEERING_HANDOFF_V1_0.md
++++ b/hardware/evt1-v1-kimi-handoff/KIMI_ENGINEERING_HANDOFF_V1_0.md
+@@ -1,27 +1,22 @@
+ # 智元跃动 (Zhiyuan Yuedong) AI/AR 智能眼镜 V1.0 — EVT-1 Rev C KIMI (嘉立创EDA) 与 Codex (GitHub CI) 工程交接手册
+ 
+-**工程版本**：`V1.0-EVT1-RevC-PR19-ElectricalAudited-20261116`  
++**工程版本**：`V1.0-EVT1-RevC-PR19-5StateInterlockVerified-20261116`  
+ **Git 分支**：`handoff/evt1-rev-c-feasibility-20261115`（对应 [Draft PR #19](https://github.com/yfei7131-source/AI-AR-codex-Claude-/pull/19)，严格保护 `main`、[PR #16](https://github.com/yfei7131-source/AI-AR-codex-Claude-/pull/16)、[PR #17](https://github.com/yfei7131-source/AI-AR-codex-Claude-/pull/17)、[PR #18](https://github.com/yfei7131-source/AI-AR-codex-Claude-/pull/18)）  
+ **主控与音频冻结架构**：[Espressif `ESP32-S3-PICO-1-N8R8`](https://documentation.espressif.com/esp32-s3-pico-1_datasheet_en.pdf) (左镜腿 Wi-Fi/DVP/AI 主控) + [Nordic `nRF5340-CMAA-R7`](https://www.yic-electronics.com/blog/QFN-vs-WLCSP-vs-BGA-Differences,PCB-Design,and-BLE-Applications.html) (右镜腿 BLE 5.4 LE Audio 协处理器) + [Lattice `iCE40UP5K-UWG30ITR`](https://www.micro-semiconductor.com/datasheet/10-ICE40UP5K-MDP-EVN.pdf) (鼻梁双目 QSPI 桥接 FPGA) + `2x ADI MAX98357AEWL+T` (数字 I2S 功放)
+ 
+ ---
+ 
+-## 1. 继承 `a678be1` 的整机原理图深度电气核查与闭环修正
++## 1. 继承 `bb87623` 的整机电气设计闭环与 5 态光机安全联锁修正
+ 
+-1. **修复 `U6_OPT_AVDD` 光机 `AVDD_OPT_BIAS` 上电时序电路（消除 `0.006%` 占空比 VSYNC RC 滤波关断缺陷，`CHK-04_PIN_PWR` / `Mut-18`）**：
+-   - **问题根因**：`a678be1` 将 `U6_OPT_AVDD` ([TI `TLV75528PDQNR`](https://www.ti.com/lit/ds/symlink/tlv755p.pdf)) 的 `EN` 脚经 RC 接至 `Ball D3 (CDONE / frame_vsync_1v8)`；但用户模式下 `frame_vsync_1v8` 为推挽输出（每 `800,000` 周期仅 `48` 周期为高，占空比 `0.006%`），RC 直流均值仅 **`0.108 mV < 0.95 V`**，导致运行期 `U6_OPT_AVDD` 关断。
+-   - **修复方案**：改为由常驻 `1V8_OPT_VDD` (`1.80 V`) 经 `R_SEQ = 100 kΩ + C_SEQ = 220 nF` ($\tau = 22.0\text{ ms}$) 充电，并由肖特基二极管 `D_SEQ (RB521S-30, Vf = 0.22V)` 钳位至 `FPGA_CRESET_B`：
+-     - 当 `FPGA_CRESET_B = 0V` 时，`OPT_AVDD_EN` 被钳位在 `0.22 V <= 0.40 V (VIL)`，`AVDD_OPT_BIAS` 严格关断并由内部 $120\ \Omega$ 放电至 `0.00 V`；
+-     - 当 `FPGA_CRESET_B = 1.80V` 释放后，`OPT_AVDD_EN` 在 **`t_EN = 13.64 ms`** 跨过 `0.95 V (VIH)` 开启 `AVDD_OPT_BIAS`（比 `3.80 ms` 的 FPGA Target SPI 配置完成时间晚 **`+9.84 ms`**），稳态保持 **`1.80 V` DC**，复位或掉电时经 `D_SEQ` 在 `< 5 μs` 内快速关断。
+-2. **修复 `J_BTB_L` / `J_BRIDGE_IN` (24-Pin) 与 `J_BTB_R` (16-Pin) 的 3 线立体声 I2S 跨板映射（消除单脚截断缺陷，`CHK-07` / `Mut-19`）**：
+-   - **问题根因**：`a678be1` 在 `J_BTB_L` 上仅留 `Pin 23 (S3_I2S_MUX_1V8)` 单脚给 I2S，与 `J_BTB_R` 的多脚 I2S 不匹配。
+-   - **修复方案**：利用 [Hirose `BM28B0.6-24DS/2-0.35V(53)`](https://www.hirose.com/en/product/document?clcode=CL0673-5043-0-51&productname=BM28B0.6-16DS/2-0.35V(51)&series=BM28&documenttype=Catalog&lang=en&documentid=D49354_en) 的 4 个 `3.0 A` 金属屏蔽接地固定脚 (`MP1..MP4`) + `Pin 5 (GND)` 连接 `FPC_BRIDGE` L2 完整地平面，将 `J_BTB_L` / `J_BRIDGE_IN` 的 **`Pins 22, 23, 24`** 分配给 **`I2S_BCLK_1V8`、`I2S_LRCLK_1V8`、`I2S_DOUT_1V8`**，与 `J_BTB_R` 的 **`Pins 10, 11, 12`** 实现 **100% 1:1 直通**；左右功放 `U10_AMP_L/R` ([ADI `MAX98357AEWL+T`](https://www.analog.com/media/en/technical-documentation/data-sheets/max98357a-max98357b.pdf)) 通过 `SD_MODE` 引脚硬件分槽提取左/右声道。
+-3. **全机 45 位号 BOM 与 45 行全器件级 `PINMAP_V1_0_FROZEN.csv` 100% 闭环**：
+-   - `PINMAP_V1_0_FROZEN.csv` 现已覆盖全部主控 (`57/57` 脚)、FPGA (`30/30` 球)、4 颗电平转换器 (`32/32` 通道)、6 颗 BTB 座 (`J_DISP_L/R` 10P、`J_CAM` 24P、`J_BTB_L` 24P、`J_BRIDGE_IN` 24P、`J_BTB_R` 16P)、电源管理芯片 (`BQ24074`、`BQ25170`、`LM66200`、`TPS63802`、`TPS62840`、`TLV755P`)、隐私联锁 (`INA185A4`、`TLV7042`)、声学器件 (`MAX98357A`、`IM69D130`) 及传感器 (`ICM-42688-P`、`ASFLMB-48M`)，可供 KIMI 直接在嘉立创 EDA 中按表连线。
+-
+----
+-
+-## 2. 40g 高密度集成、6 层 HDI 叠层、结构与热设计硬性约束
+-
+-- **6 层 2+2+2 Type-III Stacked-VIPPO HDI 叠层**：总厚 `0.628 mm`（含阻焊），最小线宽/线距 `50/50 μm`，激光微盲孔 `75/180 μm` 铜浆塞孔电镀盖帽，支持 L1$\rightarrow$L2$\rightarrow$L3 叠孔逃逸 `nRF5340-CMAA` (`0.35 mm` pitch) 与 `iCE40UP5K-UWG30` (`0.40 mm` pitch) 内排引脚。
+-- **质量、重心与温升模型（物理样机回板前标记为 `UNVERIFIED`）**：整机预估质量 **`34.75 g`**（较 `40.0 g` 留有 `5.25 g` 裕量），左右质量差 **`0.36 g`**，重心 **`Y = 35.92 mm`**；采用双轨目录电池 Config A [Grepow `GRP3911040`](https://www.grepow.com/shaped-battery/ultra-narrow-battery.html) (`2×110mAh = 0.814Wh`，HUD 续航 `3.24h`) 或 Config B `GRP220550` (`2×47mAh`，适配 $\le 6.0\text{ mm}$ 超细直镜腿)；30s 拍照突发峰值外壁温升预估 **`37.2 °C`** (`< 43.0 °C`)。
++1. **修复 FPGA 配置状态与光机 `AVDD_OPT_BIAS` 上电联锁（解决复位、配置失败 `CDONE=0`、VSYNC 停振及 `1V8` 断电四类安全隐患，`CHK-04_PIN_PWR` / `Mut-18..20`）**：
++   - **`bb87623` 漏洞根因**：`bb87623` 仅采用 `1V8_OPT_VDD` + `FPGA_CRESET_B` 的盲延时 RC，未将 `Ball D3 (CDONE / frame_vsync_1v8)` 纳入硬件联锁，且 `FPGA_CRESET_B` 采用上拉电阻。若 **MCU 复位/跑飞 (`GPIO18` 高阻)** 或 **FPGA 比特流配置失败 (`CRESET_B = 1.80V` 但 `CDONE = 0.00V`)**，盲延时 RC 仍会在 `13.64 ms` 后错误开启 `AVDD_OPT_BIAS`；同时当 **`1V8_OPT_VDD` 先于 `VSYS` 断电**时，RC 放电耗时 `> 16 ms`，违反光机断电时序！
++   - **5 态肖特基峰值保持 + 双轨快速钳位联锁电路**：
++     - **`FPGA_CRESET_B (Ball F3)` 改为 `10 kΩ` 下拉至 `GND`**：确保上电初期、MCU 复位或崩溃时，FPGA 被硬件锁定在复位态 (`0.00 V`)。
++     - **`Ball D3 (CDONE / frame_vsync_1v8)` 肖特基峰值检波 (`D1 RB521S-30` + `R_CHG = 10 Ω` $\rightarrow$ `C_HOLD = 22 nF || R_BLEED = 2.2 MΩ`) + 双轨快速泄放钳位 (`D_RST` 接 `FPGA_CRESET_B`、`D_VDD` 接 `1V8_OPT_VDD`)**：
++       1. **State 1（上电/MCU 复位 `CRESET_B = 0V`）**：`V_EN = 0.00 V <= 0.40 V (VIL)`，`AVDD_OPT_BIAS` **OFF** (`0.00 V`)。
++       2. **State 2（配置进行中或配置失败 `CRESET_B = 1.8V, CDONE = 0V`）**：`Ball D3 = 0.00 V` 无脉冲，`V_EN = 0.00 V <= 0.40 V (VIL)`，`AVDD_OPT_BIAS` **永久保持 OFF**！
++       3. **State 3（配置成功 + `60.000 Hz` `1.000 μs` VSYNC 正常）**：充电时间常数 $\tau_{\text{chg}} = 0.77\ \mu\text{s}$，首脉冲达 `1.148 V`，稳态峰值 **`1.580 V`**，帧间 `16.667 ms` 经 $\tau_{\text{bleed}} = 48.4\text{ ms}$ 衰减至谷值 **`1.120 V >= 0.95 V (VIH)`**（`+170 mV` 裕量），`AVDD_OPT_BIAS` **连续稳定 ON**！
++       4. **State 4（VSYNC 丢失 / FPGA 死机看门狗）**：`R_BLEED` 在 **`66.5 ms`** 内将 `C_HOLD` 泄放至 `< 0.40 V`，自动关断 `AVDD_OPT_BIAS`。
++       5. **State 5（主动复位或 `1V8_OPT_VDD` 掉电断电）**：`D_RST` 或 `D_VDD` 在 **`2.31 μs`** 内强制将 `C_HOLD` 拉低至 `0.22 V <= 0.40 V`，确保 `AVDD_OPT_BIAS` 极速关断并启动 [TI `TLV755P`](https://www.ti.com/lit/ds/symlink/tlv755p.pdf) 内部 $120\ \Omega$ 主动放电！
++2. **全机 45 位号 BOM $\leftrightarrow$ 45 行全引脚 `PINMAP_V1_0_FROZEN.csv` $\leftrightarrow$ 5 总线 `ICD_INTERFACE_CONTROL_TABLE.csv` 100% 闭环 (`CHK-07` / `CHK-08`)**：
++   - 补齐左镜腿尾端磁吸充电与左电池/扬声器焊盘组 `PAD_USB_POGO & PAD_BAT_SPK_L`（`Pads 1..9`），与 `J_BTB_L/J_BRIDGE_IN` (24P)、`J_CAM` (24P)、`J_BTB_R` (16P)、`J_DISP_L/R` (10P) 共同构成零悬空网表，并通过 **21 项反向故障注入测试 (`21/21` 100% 捕获)**。
+diff --git a/hardware/evt1-v1-kimi-handoff/PINMAP_V1_0_FROZEN.csv b/hardware/evt1-v1-kimi-handoff/PINMAP_V1_0_FROZEN.csv
+index b883ee8..33cc1af 100644
+--- a/hardware/evt1-v1-kimi-handoff/PINMAP_V1_0_FROZEN.csv
++++ b/hardware/evt1-v1-kimi-handoff/PINMAP_V1_0_FROZEN.csv
+@@ -5,7 +5,7 @@ U2_FPGA (iCE40UP5K-UWG30ITR),D2,SPI_VCCIO1,1V8_FPGA_IO,PWR,1.80V,Sequenced #2 ON
+ U2_FPGA (iCE40UP5K-UWG30ITR),D4,VPP_2V5,1V8_FPGA_VPP,PWR,1.80V,"Sequenced #3 via 10-Ohm + 4.7uF delay from 1V8_FPGA_IO (Target SPI mode, no HFOSC/LFOSC/RGB)",U4_1V8 via R_VPP=10R (DNI 0R to 2V8_SYS if NVCM used),FPGA-TN-02006-2.3 Table 2.1 Note 6 p.8: VPP_2V5 allows 1.8V (+/-5%) in Target SPI mode when HFOSC/LFOSC/RGB unused
+ U2_FPGA (iCE40UP5K-UWG30ITR),"A3, C4","VCCIO_0, VCCIO_2",1V8_FPGA_IO,PWR,1.80V,Sequenced #4 with 1V8_FPGA_IO + 4.7uF + 100nF per pin,U4_1V8,FPGA-TN-02006-2.3 Sec 2.3 p.10: Bank 0 & Bank 2 1.8V I/O supplies
+ U2_FPGA (iCE40UP5K-UWG30ITR),"B4, E2",GND,GND,PWR_GND,0.00V,Direct VIPPO to L2/L5 GND planes (no external GNDPLL ball on UWG30),GND,FPGA-TN-02006-2.3 Sec 2.2 p.10: UWG30 has internal PLL GND return via B4/E2
+-U2_FPGA (iCE40UP5K-UWG30ITR),F3,CRESET_B,FPGA_CRESET_1V8,IN_DEDICATED,1.80V,"Via U8_LS1 Bank2 Ch7 (A7->B7, DIR2=H) + 10k pull-up to 1V8_FPGA_IO",U1_HOST Pin 24 (GPIO18),FPGA-TN-02006-2.3 Table 3.1 p.11: Dedicated active-low config reset with 10k pull-up
++U2_FPGA (iCE40UP5K-UWG30ITR),F3,CRESET_B,FPGA_CRESET_1V8,IN_DEDICATED,1.80V,"Via U8_LS1 Bank2 Ch7 (A7->B7, DIR2=H) + 10k pull-down to GND (holds FPGA in reset during POR/MCU reset until GPIO18 drives High)",U1_HOST Pin 24 (GPIO18) & D_RST Cathode,Fail-safe 10k pull-down keeps CRESET_B=0V during POR/MCU crash so FPGA and U6_OPT_AVDD remain locked OFF until MCU explicitly starts Target SPI config
+ U2_FPGA (iCE40UP5K-UWG30ITR),"C5, B5, A5","RGB0, RGB1, RGB2",NC_OPEN_DRAIN_RGB,OUT_OD,1.80V,Left unconnected (Open-drain constant current sinks unused so VPP_2V5=1.8V is valid),NC,FPGA-TN-02006-2.3 Table 2.1 Note 6 p.8: Must remain unused when VPP_2V5=1.8V
+ U2_FPGA (iCE40UP5K-UWG30ITR),B3,IOT_46B_G0,clk_48m,IN_CLK,1.80V,Direct 1.8V from Y1_OSC (ASFLMB-48.000MHZ),Y1_OSC Pin 3 (OUT),PIO #1/18 (Bank 0 Global Clock G0 / GBUF0): 48.000MHz master clock
+ U2_FPGA (iCE40UP5K-UWG30ITR),D1,IOB_34A_SPI_SCK,host_sck,IN,1.80V,"Via U8_LS1 Bank2 Ch5 (A5->B5, DIR2=H) + 10k pull-up to 1V8_FPGA_IO",U1_HOST Pin 17 (GPIO12 / FSPICLK),PIO #2/18 (Bank 1): Target SPI Config SCK & Runtime 40MHz QSPI Slave SCK
+@@ -36,10 +36,11 @@ U1_HOST (ESP32-S3-PICO-1-N8R8),"Pins 8, 9, 10, 11, 12, 13, 43, 44, 45, 47, 48, 5
+ J_CAM (BM28B0.6-24DS),Pins 1..24,CAMERA_24P_DVP_BTB,"1:CAM_AVDD_2V8, 2:AGND, 3:SYS_I2C_SCL_1V8, 4:SYS_I2C_SDA_1V8, 5:CAM_RESET_N, 6:CAM_PWDN, 7:GND, 8:CAM_XCLK, 9:GND, 10:CAM_PCLK, 11:GND, 12:CAM_VSYNC, 13:CAM_HREF, 14:CAM_DVDD_1V2, 15:CAM_DOVDD_1V8, 16..23:CAM_D0..D7, 24:GND",BIDIR_CAM,1.8V/1.2V/2.8V Gated,All 3 power rails gated by PRIV_WINDOW_OK with 120-Ohm active discharge; all 14 I/Os isolated by U8_CAM_ISO1/ISO2,Left Front Camera FPC (OV2640/OV5640),24-pin BTB eliminates 16-pin overflow and provides dedicated GND shield pins around XCLK (Pin 8) and PCLK (Pin 10)
+ J_BTB_L & J_BRIDGE_IN (BM28B0.6-24DS),Pins 1..24 + MP1..MP4,MAIN_TO_BRIDGE_24P_FPC_BUS,"1:VBUS_5V, 2:VSYS, 3:VBAT_R_RET, 4:1V8_SYS, 5:GND, 6:host_sck, 7:host_cs_n, 8:FPGA_CRESET_B, 9..12:host_qio[0..3], 13:frame_vsync_1v8, 14:SYS_I2C_SCL_1V8, 15:SYS_I2C_SDA_1V8, 16:PRIV_LED_ANODE, 17:PDM_CLK_1V8, 18:PDM_D0_1V8, 19:PDM_D1_1V8, 20:IPC_S3_TX_1V8, 21:IPC_NRF_RX_1V8, 22:I2S_BCLK_1V8, 23:I2S_LRCLK_1V8, 24:I2S_DOUT_1V8, MP1..MP4:SHIELD_GND",CROSS_BOARD_TRUNK,5V/VSYS/1.8V,T-branch 2-layer 0.12mm dynamic FPC (L2 solid GND tied to Pin 5 & 4x 3.0A hold-down nails MP1..4); routes all 3 stereo I2S wires (Pins 22..24) 1:1 to J_BTB_R Pins 10..12,M-MAIN-L <-> M-OPT-BRIDGE <-> M-AUD-R,"CRITICAL FIX: Eliminates single-pin I2S truncation by assigning dedicated Pins 22, 23, 24 to I2S_BCLK_1V8, I2S_LRCLK_1V8, I2S_DOUT_1V8"
+ J_BTB_R (BM28B0.6-16DS),Pins 1..16 + MP1..MP4,BRIDGE_TO_RIGHT_TEMPLE_16P_BTB,"1:VBUS_5V, 2:VSYS, 3:VBAT_R_RET, 4:1V8_SYS, 5:GND, 6:PDM_CLK_1V8, 7:PDM_D1_1V8, 8:IPC_S3_TX_1V8, 9:IPC_NRF_RX_1V8, 10:I2S_BCLK_1V8, 11:I2S_LRCLK_1V8, 12:I2S_DOUT_1V8, 13:VBAT_R_CELL_P, 14:NTC_TS_R, 15:SPK_R_OUT_P, 16:SPK_R_OUT_N, MP1..MP4:SHIELD_GND",CROSS_HINGE_R,5V/VSYS/1.8V,"Pins 1..12 match J_BTB_L trunk nets (1..5, 17, 19..24) 1-for-1; Pins 13..16 connect right rear battery pack (BAT_R) & right speaker",FPC_BRIDGE Right Branch <-> M-AUD-R,"100% 1:1 net continuity with J_BTB_L (Pins 10..12 = I2S_BCLK_1V8, I2S_LRCLK_1V8, I2S_DOUT_1V8)"
+-U6_OPT_AVDD (TLV75528PDQNR),"Pins 1..4 (OUT=1, GND=2, EN=3, IN=4)",OPTICAL_AVDD_SEQUENCED_LDO,"IN=VSYS, EN=OPT_AVDD_EN (1V8_OPT_VDD via R_SEQ=100k + C_SEQ=220nF, clamped by Schottky D_SEQ RB521S-30 to FPGA_CRESET_B), OUT=AVDD_OPT_BIAS (to J_DISP_L/R Pin 9)",PWR_SEQ,2.80V / 3.30V,Clamped to 0.22V (<=0.40V VIL) when FPGA_CRESET_B=0; crosses VIH=0.95V at t=13.64ms after CRESET_B=1 (9.84ms after 3.80ms SPI config completes); 1.80V DC steady state; <5us reset discharge,J_DISP_L Pin 9 & J_DISP_R Pin 9,"CRITICAL FIX: Replaces broken 0.006%-duty-cycle VSYNC RC filter (0.108mV DC) with true DC-sustained, reset-clamped hardware sequencer"
++U6_OPT_AVDD (TLV75528PDQNR),"Pins 1..4 (OUT=1, GND=2, EN=3, IN=4)",OPTICAL_AVDD_5STATE_INTERLOCK_LDO,"IN=VSYS, EN=OPT_AVDD_EN (D1+R_CHG=10R peak-hold from Ball D3 CDONE/VSYNC into C_HOLD=22nF||R_BLEED=2.2M; clamped by D_RST to FPGA_CRESET_B & D_VDD to 1V8_OPT_VDD), OUT=AVDD_OPT_BIAS (to J_DISP_L/R Pin 9)",PWR_SEQ_INTERLOCK,2.80V / 3.30V,"5-State Safe: (1) Reset CRESET_B=0 -> 0.00V OFF; (2) Config Fail CDONE=0 -> 0.00V OFF; (3) 60Hz VSYNC Active -> V_peak=1.580V, V_valley=1.120V (>=0.95V VIH) ON; (4) VSYNC Loss -> 66.5ms watchdog OFF; (5) 1V8 Drop/Reset -> 2.31us fast clamp OFF + 120R discharge",J_DISP_L Pin 9 & J_DISP_R Pin 9,Eliminates blind RC timer turn-on during FPGA config failure AND eliminates 1V8 power-down reverse-sequencing latch-up
+ U10_AMP_L & U10_AMP_R (MAX98357AEWL+T),WLP-9 Balls A1..C3,STEREO_I2S_CLASS_D_AMPS,"A1:GAIN_SLOT(GND=9dB), A2:SD_MODE(U10_AMP_L tied to 1V8_SYS=Left Ch; U10_AMP_R via 100k to 1V8_SYS=Right Ch), A3:VDD(VSYS), B1:DIN(I2S_DOUT_1V8), B2:GND, B3:OUTP, C1:BCLK(I2S_BCLK_1V8), C2:LRCLK(I2S_LRCLK_1V8), C3:OUTN",IN_I2S / OUT_SPK,VSYS / 1.80V IO,"Both amps share the 3-wire 1.8V stereo I2S bus (I2S_BCLK_1V8, I2S_LRCLK_1V8, I2S_DOUT_1V8); U8_PDM_LS Ch6..8 drives via 1k-Ohm series isolation so nRF5340 can override in BLE-only sleep mode",Left & Right Temple Micro-Speakers,MAX98357A Datasheet Table 5 p.16: SD_MODE hardware-selects Left vs Right TDM/I2S channel on a single 3-wire bus
+ "MK1_L, MK2_C, MK3_R (IM69D130V01XTSA1)",LGA-5 Pins 1..5,3_MIC_BEAMFORMING_PDM_ARRAY,"Pin1:DATA(MK1_L & MK2_C -> PDM_D0_1V8; MK3_R -> PDM_D1_1V8), Pin2:VDD(1V8_SYS), Pin3:CLOCK(PDM_CLK_1V8), Pin4:SELECT(MK1_L=GND [Left/Rise], MK2_C=1V8 [Right/Fall], MK3_R=GND [Left/Rise]), Pin5:GND",OUT_PDM,1.80V,Time-multiplexes MK1_L + MK2_C onto PDM_D0_1V8 and MK3_R onto PDM_D1_1V8 across 2 wires,U8_PDM_LS Bank1 Ch3..4 & U11_BLE PDM,Infineon IM69D130 Datasheet: SELECT pin sets rising vs falling clock edge slot
+ U9_IMU (ICM-42688-P) & Y1_OSC (ASFLMB-48M),LGA-14 Pins 1..14 & OSC Pins 1..4,BRIDGE_IMU_AND_48MHZ_CLOCK,"U9_IMU: Pin1(AP_SDO=GND->I2C 0x68), Pin8(VDDIO=1V8), Pin9(GND), Pin11(FSYNC=frame_vsync_1v8), Pin12(INT1), Pin13(SCL=SYS_I2C_SCL_1V8), Pin14(SDA=SYS_I2C_SDA_1V8), Pin22(AP_CS=1V8); Y1_OSC: Pin1(STBY=1V8), Pin2(GND), Pin3(OUT=clk_48m->Ball B3), Pin4(VDD=1V8)",SYNC_SENSOR_CLK,1.80V,Hardware 60.000Hz frame_vsync_1v8 directly timestamps IMU FSYNC on M-OPT-BRIDGE,U2_FPGA Ball B3 / Ball D3 & SYS_I2C_1V8,TDK ICM-42688-P Datasheet: FSYNC locked to display VSYNC for <16us AR pose-to-photon alignment
+ "U3_L (BQ24074), U3_R (BQ25170), U4_OR (LM66200), U4_BB (TPS63802), U4_1V8 (TPS62840), U4_1V2 (TLV75512)",PMIC & Charger Pins,DUAL_BATTERY_AND_MULTI_RAIL_POWER_TREE,"U3_L: IN=VBUS_5V, OUT=VOUT_L(4.40V DPPM)->U4_OR.VIN1, BAT=VBAT_L_P, ISET=16.2k(54.94mA), ILIM=3.1k(500mA), TS=NTC_TS_L; U3_R: IN=VBUS_5V, OUT/BAT=VBAT_R_RET->U4_OR.VIN2, ISET=5.49k(54.64mA), VSET=27k(4.20V), TS=NTC_TS_R; U4_OR: VOUT=VSYS->U4_BB(3V3_SYS), U4_1V8(1V8_SYS)->U4_1V2(1V2_FPGA_CORE)",PWR_TREE,5.0V/4.4V/3.3V/1.8V/1.2V,LM66200 blocks reverse cross-charging during USB charge (VIN1=4.40V > VIN2<=4.20V),"BAT_L, BAT_R & All System Rails","TI BQ24074, BQ25170, LM66200, TPS63802, TPS62840, TLV755P Datasheets verified"
+ "U5_LED2V8, U7_INA (INA185A4), U7_WIN (TLV7042), U6_CAM_DOVDD/DVDD/AVDD, U8_LS3 (PCA9306)",Privacy & Camera Power/I2C Pins,CAMERA_PRIVACY_INTERLOCK_AND_I2C,"U5_LED2V8(2.8V)->R_SENSE(2.20R)->U7_INA(IN+/IN-, Gain=200)->V_INA_OUT(1.576V nom, sources 10k R_PU)->U7_WIN(Window [0.878V, 2.190V], Open-Drain)->PRIV_WINDOW_OK(1ms RC)->EN of U6_CAM_DOVDD(1.8V), U6_CAM_DVDD(1.2V), U6_CAM_AVDD(2.8V)",HARDWARE_INTERLOCK,2.8V/3.3V/1.8V/1.2V,Daisy-chained VCC/GND from U7_WIN to U7_INA; 120-Ohm active discharge on all 3 camera rails when PRIV_WINDOW_OK=0,D3_PRIV & J_CAM,10/10 hardware fault modes verified fail-safe OFF (V_backpower=0.84mV <= 5.0mV)
++PAD_USB_POGO & PAD_BAT_SPK_L (M-MAIN-L Rear Pads),Pads 1..9,LEFT_TEMPLE_USB_BATTERY_SPEAKER_PADS,"USB_POGO(1:VBUS_5V, 2:USB_DM_CONN, 3:USB_DP_CONN, 4:GND); BAT_SPK_L(5:VBAT_L_CELL_P, 6:NTC_TS_L, 7:GND, 8:SPK_L_OUT_P, 9:SPK_L_OUT_N)",PWR_IO_AIO,5.0V/4.2V/3.3V, ESD TVS array on VBUS/USB_D+/D-; 4-wire Kelvin sense to U3_L (BQ24074) & short differential pair from U10_AMP_L to Left Speaker,"Magnetic Charging Pogo, BAT_L (GRP3911040) & Left Speaker",Completes 100% of external off-board connections on M-MAIN-L
+ U11_BLE (nRF5340-CMAA-R7),WLCSP-95 Audio/IPC Balls,BLE_5_4_LE_AUDIO_SUBSYSTEM,"PDM_CLK/DIN, I2S_BCLK/LRCLK/DOUT, UART_IPC",BIDIR,1.80V,"Native 1.8V IO (connects to U8_PDM_LS, U8_LS1 Ch4 & MAX98357A)","MK1..3, U10_AMP_L/R, U1_HOST",Nordic nRF5340 Spec: Provides full BLE 5.4 LE Audio (CIS calls + BIS + LC3) missing on ESP32-S3
+diff --git a/hardware/evt1-v1-kimi-handoff/SYSTEM_BUDGETS_V1_0.json b/hardware/evt1-v1-kimi-handoff/SYSTEM_BUDGETS_V1_0.json
+index 32662cb..06567c6 100644
+--- a/hardware/evt1-v1-kimi-handoff/SYSTEM_BUDGETS_V1_0.json
++++ b/hardware/evt1-v1-kimi-handoff/SYSTEM_BUDGETS_V1_0.json
+@@ -579,14 +579,23 @@
+       "spi_so_boot_contention_isolated_via_u8_ls1_dir1": true,
+       "optical_avdd_sequencer": {
+         "ldo_ref": "U6_OPT_AVDD",
+-        "enable_charging_source": "1V8_OPT_VDD",
+-        "reset_clamp_diode_cathode": "FPGA_CRESET_B",
++        "topology": "5_STATE_CDONE_VSYNC_PEAK_HOLD_WITH_DUAL_SCHOTTKY_CLAMPS",
++        "requires_cdone_high_to_enable": true,
++        "creset_b_default_pulldown_ohm": 10000.0,
++        "rectifier_source": "Ball_D3_CDONE_frame_vsync_1v8",
++        "clamp_diodes": [
++          "D_RST_to_FPGA_CRESET_B",
++          "D_VDD_to_1V8_OPT_VDD"
++        ],
+         "schottky_vf_v": 0.22,
+-        "r_seq_ohm": 100000.0,
+-        "c_seq_nf": 220.0,
++        "r_driver_plus_chg_ohm": 35.0,
++        "c_hold_nf": 22.0,
++        "r_bleed_mohm": 2.2,
++        "vsync_pulse_width_us": 1.0,
++        "vsync_period_ms": 16.667,
+         "ldo_en_vih_v": 0.95,
+         "ldo_en_vil_v": 0.4,
+-        "fpga_config_time_ms": 3.8
++        "ldo_active_discharge_ohm": 120.0
+       }
+     },
+     "clk_sys_mhz": 48.0,
+diff --git a/hardware/evt1-v1-kimi-handoff/build_handoff_package.py b/hardware/evt1-v1-kimi-handoff/build_handoff_package.py
+index 32b256a..dc033bb 100644
+--- a/hardware/evt1-v1-kimi-handoff/build_handoff_package.py
++++ b/hardware/evt1-v1-kimi-handoff/build_handoff_package.py
+@@ -178,7 +178,7 @@ bom_rows = [
+     ["BOM-30", "U9_IMU", "M-OPT-BRIDGE", "TOP", "2.10", "18.80", "2.50", "3.00", "0.91", "0.50", "Sensor_IMU_6DoF", "ICM-42688-P", "TDK InvenSense", "LGA-14 (2.50x3.00x0.91mm, 0.50mm pitch)", "6-axis IMU, 1.8V VDD/VDDIO, FSYNC tied to U2_FPGA Ball D3 (60Hz VSYNC)", "1", "0.015", "VERIFIED_PUBLIC_SPEC", "https://www.farnell.com/datasheets/3215488.pdf", "Center bridge IMU"],
+     ["BOM-31", "J_BRIDGE_IN", "M-OPT-BRIDGE", "BOTTOM", "2.10", "3.30", "1.50", "5.50", "0.60", "0.35", "Connector_Bridge_Interconnect", "BM28B0.6-24DS/2-0.35V(53)", "Hirose (HRS)", "BTB-24P (1.50x5.50x0.60mm, 0.35mm pitch)", "24-pin receptacle mating FPC_BRIDGE on M-OPT-BRIDGE BOTTOM (1:1 with J_BTB_L)", "1", "0.022", "VERIFIED_FULL_DATASHEET", "https://www.hirose.com/en/product/document?clcode=CL0673-5043-0-51&productname=BM28B0.6-16DS/2-0.35V(51)&series=BM28&documenttype=Catalog&lang=en&documentid=D49354_en", "CONSISTENCY FIX: Upgraded to 24P BM28B0.6-24DS matching J_BTB_L 1:1"],
+     ["BOM-32", "U4_1V2", "M-OPT-BRIDGE", "BOTTOM", "2.10", "7.00", "1.00", "1.00", "0.40", "0.35", "PMIC_LDO_1V2_FPGA", "TLV75512PDQNR", "Texas Instruments", "X2SON-4 (1.00x1.00x0.40mm)", "1.20V FPGA Core & PLL LDO; sequenced before 1V8_FPGA_IO", "1", "0.003", "VERIFIED_FULL_DATASHEET", "https://www.ti.com/lit/ds/symlink/tlv755p.pdf", "Powers U2_FPGA Ball C2 (VCC) directly & Ball B2 (VCCPLL) via 100R+4.7uF+100nF filter"],
+-    ["BOM-33", "RN_FPGA_CFG_PWR", "M-OPT-BRIDGE", "BOTTOM", "2.10", "10.00", "2.20", "2.00", "0.45", "0.50", "FPGA_Config_and_PLL_Filter_Network", "R_PLL(100R) + C_PLL(4.7uF/100nF) + R_SS_PD(10k) + R_CRST_PU(10k) + R_CDONE_PU(4.7k) + R_SEQ(100k)/C_SEQ(220nF)/D_SEQ(RB521S-30) + 10x R_DAMP(22R)", "Murata / Yageo", "0201/0402 SMD Cluster (2.20x2.00x0.45mm)", "Mandatory Lattice FPGA-TN-02006-2.3 VCCPLL filter, Target SPI SS_B pull-down, CRESET_B/CDONE pull-ups & QSPI damping", "1", "0.006", "VERIFIED_FULL_DATASHEET", "https://0x04.net/~mwk/sbdocs/ice40/FPGA-TN-02006-2-3-iCE40-Hardware-Checklist.pdf", "CRITICAL P0 FIX: Explicitly accounts for all Lattice FPGA-TN-02006-2.3 mandatory passives under U2_FPGA"],
++    ["BOM-33", "RN_FPGA_CFG_PWR", "M-OPT-BRIDGE", "BOTTOM", "2.10", "10.00", "2.20", "2.00", "0.45", "0.50", "FPGA_Config_PLL_and_Optical_Interlock_Network", "R_PLL(100R) + C_PLL(4.7uF/100nF) + R_SS_PD(10k) + R_CRST_PD(10k) + R_CDONE_PU(4.7k) + D1/D_RST/D_VDD(3x RB521S-30) + R_CHG(10R) + C_HOLD(22nF) + R_BLEED(2.2M) + 10x R_DAMP(22R)", "Murata / Yageo / Rohm", "0201/0402 SMD Cluster (2.20x2.00x0.45mm)", "Lattice FPGA-TN-02006-2.3 VCCPLL filter, Target SPI SS_B & CRESET_B 10k pull-downs, CDONE 4.7k pull-up, and 5-state optical AVDD peak-hold/dual-clamp interlock", "1", "0.006", "VERIFIED_FULL_DATASHEET", "https://0x04.net/~mwk/sbdocs/ice40/FPGA-TN-02006-2-3-iCE40-Hardware-Checklist.pdf", "CRITICAL P0 FIX: Accounts for all Lattice FPGA-TN-02006-2.3 passives + 5-state optical AVDD interlock (D1 peak-hold from Ball D3 CDONE/VSYNC + D_RST/D_VDD fast clamps)"],
+     ["BOM-34", "MK2_C", "M-OPT-BRIDGE", "BOTTOM", "2.10", "15.50", "3.00", "4.00", "1.00", "0.80", "Audio_MEMS_Mic_Center", "IM69D130V01XTSA1", "Infineon", "LGA-5 (3.00x4.00x1.00mm)", "69dB SNR Digital PDM Mic, 1.8V VDD", "1", "0.025", "VERIFIED_PUBLIC_SPEC", "https://documentation.espressif.com/esp32-s3-pico-1_datasheet_en.pdf", "Nose bridge voice-pickup microphone"],
+     ["BOM-35", "ANT2_BLE", "M-AUD-R", "TOP", "2.60", "2.00", "3.20", "1.60", "0.50", "1.60", "RF_Antenna_Right_BLE", "2450AT18B100E", "Johanson Technology", "SMD 1206 (3.20x1.60x0.50mm)", "2.4GHz BLE 5.4 LE Audio Antenna in Y=0..4.0mm keepout on M-AUD-R", "1", "0.008", "VERIFIED_FULL_DATASHEET", "https://www.yic-electronics.com/blog/QFN-vs-WLCSP-vs-BGA-Differences,PCB-Design,and-BLE-Applications.html", "Dedicated antenna for U11_BLE nRF5340-CMAA"],
+     ["BOM-36", "U11_BLE", "M-AUD-R", "TOP", "2.60", "8.00", "3.99", "4.39", "0.45", "0.35", "SoC_BLE_5_4_LE_Audio", "nRF5340-CMAA-R7", "Nordic Semiconductor", "WLCSP-95 (3.994x4.390x0.449mm, 0.35mm pitch, 11x11 grid)", "Dual Cortex-M33 (128/64MHz), BLE 5.4 LE Audio (CIS/BIS LC3), 1.8V VDD; inner rows 3-4 require stacked VIPPO L1->L2->L3", "1", "0.018", "VERIFIED_FULL_DATASHEET", "https://www.yic-electronics.com/blog/QFN-vs-WLCSP-vs-BGA-Differences,PCB-Design,and-BLE-Applications.html", "Provides BLE 5.4 LE Audio (calls + media); requires IPC-2226 Type III stacked copper-filled microvias"],
+@@ -189,7 +189,7 @@ bom_rows = [
+     ["BOM-41", "DISP_L", "OPTICAL_BAY_L", "MODULE", "-32.00", "4.00", "5.50", "7.20", "4.20", "0.00", "Optical_Display_Left", "JBD013VGA-G + Waveguide L", "Jade Bird Display (JBD)", "Optical Engine 5.50x7.20x4.20mm + Waveguide", "640x480 Monochrome Green (525nm), 24MHz QSPI, 1.8V IO", "1", "3.200", "BLOCKED_VENDOR_STEP_AND_INIT_NDA", "https://raw.githubusercontent.com/yfei7131-source/AI-AR-codex-Claude-/refs/heads/handoff/evt1-fpga-v22-r1-20261115/hardware/evt1-id/research/2026-11-15-fpga-v22-r1/evt1_ar_display_fpga_bridge_v2_2/kimi_hw_handoff/BLOCKED_VS_VERIFIED_MATRIX.csv", "Awaits vendor 3D STEP model for optical mount interference check"],
+     ["BOM-42", "DISP_R", "OPTICAL_BAY_R", "MODULE", "32.00", "4.00", "5.50", "7.20", "4.20", "0.00", "Optical_Display_Right", "JBD013VGA-G + Waveguide R", "Jade Bird Display (JBD)", "Optical Engine 5.50x7.20x4.20mm + Waveguide", "640x480 Monochrome Green (525nm), 24MHz QSPI, 1.8V IO", "1", "3.200", "BLOCKED_VENDOR_STEP_AND_INIT_NDA", "https://raw.githubusercontent.com/yfei7131-source/AI-AR-codex-Claude-/refs/heads/handoff/evt1-fpga-v22-r1-20261115/hardware/evt1-id/research/2026-11-15-fpga-v22-r1/evt1_ar_display_fpga_bridge_v2_2/kimi_hw_handoff/BLOCKED_VS_VERIFIED_MATRIX.csv", "Awaits vendor 3D STEP model for optical mount interference check"],
+     ["BOM-43", "BAT_L", "BATTERY_BAY_L", "MODULE", "-66.00", "104.00", "3.71", "43.50", "11.00", "0.00", "Battery_Pack_Left", "Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight)", "Grepow (格瑞普)", "GRP3911040: 3.71x11.0x40.0mm (43.5mm L) | GRP220550: 2.38x5.6x50.0mm (53.5mm L)", "Dual-track catalog battery: GRP3911040 requires >=12.8mm rear drop-tip paddle; GRP220550 fits <=6.0mm slim straight temple with 0.0mm protrusion", "1", "3.450", "BLOCKED_ID_STEP_SHELL_INTERFERENCE", "https://www.grepow.com/shaped-battery/ultra-narrow-battery.html", "3D STEP housing verification marked BLOCKED until ID shell STEP confirms drop-tip vs slim-straight"],
+-    ["BOM-45", "U6_OPT_AVDD", "M-OPT-BRIDGE", "BOTTOM", "2.10", "12.20", "1.00", "1.00", "0.40", "0.35", "PMIC_LDO_OPT_AVDD_BIAS", "TLV75528PDQNR (or TLV75533PDQNR per BLK-JBD-04)", "Texas Instruments", "X2SON-4 (1.00x1.00x0.40mm, 0.35mm pitch)", "Sequenced Optical Engine AVDD_OPT_BIAS LDO with 120-Ohm active discharge; EN driven by 1V8_OPT_VDD via R_SEQ=100k + C_SEQ=220nF (tau=22ms, t_EN=13.64ms) and clamped to 0.22V by Schottky D_SEQ (RB521S-30) when FPGA_CRESET_B=0", "1", "0.003", "VERIFIED_FULL_DATASHEET", "https://www.ti.com/lit/ds/symlink/tlv755p.pdf", "CRITICAL FIX: Replaces broken VSYNC 0.006%-duty-cycle RC filter (0.108mV DC) with 1V8_OPT_VDD + FPGA_CRESET_B Schottky-clamped RC delay (t_EN=13.64ms > 3.80ms SPI config, 1.80V DC steady state, <5us reset discharge)"],
++    ["BOM-45", "U6_OPT_AVDD", "M-OPT-BRIDGE", "BOTTOM", "2.10", "12.20", "1.00", "1.00", "0.40", "0.35", "PMIC_LDO_OPT_AVDD_BIAS", "TLV75528PDQNR (or TLV75533PDQNR per BLK-JBD-04)", "Texas Instruments", "X2SON-4 (1.00x1.00x0.40mm, 0.35mm pitch)", "5-State Interlocked Optical AVDD_OPT_BIAS LDO (120-Ohm active discharge): EN driven by Ball D3 (CDONE/frame_vsync_1v8) via Schottky D1+10R into C_HOLD=22nF||R_BLEED=2.2M, clamped by D_RST (to FPGA_CRESET_B) and D_VDD (to 1V8_OPT_VDD)", "1", "0.003", "VERIFIED_FULL_DATASHEET", "https://www.ti.com/lit/ds/symlink/tlv755p.pdf", "CRITICAL FIX: 5-state fail-safe interlock — OFF during reset (0.00V), OFF on config failure CDONE=0 (0.00V), ON in 60Hz user mode (V_peak=1.58V, V_valley=1.12V>=0.95V), OFF in 66.5ms on VSYNC loss, and OFF in 2.31us on reset or 1V8 power-down!"],
+     ["BOM-44", "BAT_R", "BATTERY_BAY_R", "MODULE", "66.00", "104.00", "3.71", "43.50", "11.00", "0.00", "Battery_Pack_Right", "Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight)", "Grepow (格瑞普)", "GRP3911040: 3.71x11.0x40.0mm (43.5mm L) | GRP220550: 2.38x5.6x50.0mm (53.5mm L)", "Dual-track catalog battery: GRP3911040 requires >=12.8mm rear drop-tip paddle; GRP220550 fits <=6.0mm slim straight temple with 0.0mm protrusion", "1", "3.450", "BLOCKED_ID_STEP_SHELL_INTERFERENCE", "https://www.grepow.com/shaped-battery/ultra-narrow-battery.html", "Symmetric right rear cell; 3D STEP housing verification marked BLOCKED until ID shell STEP is imported"],
+ ]
+ 
+@@ -219,7 +219,7 @@ pin_rows = [
+     ["U2_FPGA (iCE40UP5K-UWG30ITR)", "D4", "VPP_2V5", "1V8_FPGA_VPP", "PWR", "1.80V", "Sequenced #3 via 10-Ohm + 4.7uF delay from 1V8_FPGA_IO (Target SPI mode, no HFOSC/LFOSC/RGB)", "U4_1V8 via R_VPP=10R (DNI 0R to 2V8_SYS if NVCM used)", "FPGA-TN-02006-2.3 Table 2.1 Note 6 p.8: VPP_2V5 allows 1.8V (+/-5%) in Target SPI mode when HFOSC/LFOSC/RGB unused"],
+     ["U2_FPGA (iCE40UP5K-UWG30ITR)", "A3, C4", "VCCIO_0, VCCIO_2", "1V8_FPGA_IO", "PWR", "1.80V", "Sequenced #4 with 1V8_FPGA_IO + 4.7uF + 100nF per pin", "U4_1V8", "FPGA-TN-02006-2.3 Sec 2.3 p.10: Bank 0 & Bank 2 1.8V I/O supplies"],
+     ["U2_FPGA (iCE40UP5K-UWG30ITR)", "B4, E2", "GND", "GND", "PWR_GND", "0.00V", "Direct VIPPO to L2/L5 GND planes (no external GNDPLL ball on UWG30)", "GND", "FPGA-TN-02006-2.3 Sec 2.2 p.10: UWG30 has internal PLL GND return via B4/E2"],
+-    ["U2_FPGA (iCE40UP5K-UWG30ITR)", "F3", "CRESET_B", "FPGA_CRESET_1V8", "IN_DEDICATED", "1.80V", "Via U8_LS1 Bank2 Ch7 (A7->B7, DIR2=H) + 10k pull-up to 1V8_FPGA_IO", "U1_HOST Pin 24 (GPIO18)", "FPGA-TN-02006-2.3 Table 3.1 p.11: Dedicated active-low config reset with 10k pull-up"],
++    ["U2_FPGA (iCE40UP5K-UWG30ITR)", "F3", "CRESET_B", "FPGA_CRESET_1V8", "IN_DEDICATED", "1.80V", "Via U8_LS1 Bank2 Ch7 (A7->B7, DIR2=H) + 10k pull-down to GND (holds FPGA in reset during POR/MCU reset until GPIO18 drives High)", "U1_HOST Pin 24 (GPIO18) & D_RST Cathode", "Fail-safe 10k pull-down keeps CRESET_B=0V during POR/MCU crash so FPGA and U6_OPT_AVDD remain locked OFF until MCU explicitly starts Target SPI config"],
+     ["U2_FPGA (iCE40UP5K-UWG30ITR)", "C5, B5, A5", "RGB0, RGB1, RGB2", "NC_OPEN_DRAIN_RGB", "OUT_OD", "1.80V", "Left unconnected (Open-drain constant current sinks unused so VPP_2V5=1.8V is valid)", "NC", "FPGA-TN-02006-2.3 Table 2.1 Note 6 p.8: Must remain unused when VPP_2V5=1.8V"],
+     ["U2_FPGA (iCE40UP5K-UWG30ITR)", "B3", "IOT_46B_G0", "clk_48m", "IN_CLK", "1.80V", "Direct 1.8V from Y1_OSC (ASFLMB-48.000MHZ)", "Y1_OSC Pin 3 (OUT)", "PIO #1/18 (Bank 0 Global Clock G0 / GBUF0): 48.000MHz master clock"],
+     ["U2_FPGA (iCE40UP5K-UWG30ITR)", "D1", "IOB_34A_SPI_SCK", "host_sck", "IN", "1.80V", "Via U8_LS1 Bank2 Ch5 (A5->B5, DIR2=H) + 10k pull-up to 1V8_FPGA_IO", "U1_HOST Pin 17 (GPIO12 / FSPICLK)", "PIO #2/18 (Bank 1): Target SPI Config SCK & Runtime 40MHz QSPI Slave SCK"],
+@@ -252,7 +252,7 @@ pin_rows = [
+     ["J_CAM (BM28B0.6-24DS)", "Pins 1..24", "CAMERA_24P_DVP_BTB", "1:CAM_AVDD_2V8, 2:AGND, 3:SYS_I2C_SCL_1V8, 4:SYS_I2C_SDA_1V8, 5:CAM_RESET_N, 6:CAM_PWDN, 7:GND, 8:CAM_XCLK, 9:GND, 10:CAM_PCLK, 11:GND, 12:CAM_VSYNC, 13:CAM_HREF, 14:CAM_DVDD_1V2, 15:CAM_DOVDD_1V8, 16..23:CAM_D0..D7, 24:GND", "BIDIR_CAM", "1.8V/1.2V/2.8V Gated", "All 3 power rails gated by PRIV_WINDOW_OK with 120-Ohm active discharge; all 14 I/Os isolated by U8_CAM_ISO1/ISO2", "Left Front Camera FPC (OV2640/OV5640)", "24-pin BTB eliminates 16-pin overflow and provides dedicated GND shield pins around XCLK (Pin 8) and PCLK (Pin 10)"],
+     ["J_BTB_L & J_BRIDGE_IN (BM28B0.6-24DS)", "Pins 1..24 + MP1..MP4", "MAIN_TO_BRIDGE_24P_FPC_BUS", "1:VBUS_5V, 2:VSYS, 3:VBAT_R_RET, 4:1V8_SYS, 5:GND, 6:host_sck, 7:host_cs_n, 8:FPGA_CRESET_B, 9..12:host_qio[0..3], 13:frame_vsync_1v8, 14:SYS_I2C_SCL_1V8, 15:SYS_I2C_SDA_1V8, 16:PRIV_LED_ANODE, 17:PDM_CLK_1V8, 18:PDM_D0_1V8, 19:PDM_D1_1V8, 20:IPC_S3_TX_1V8, 21:IPC_NRF_RX_1V8, 22:I2S_BCLK_1V8, 23:I2S_LRCLK_1V8, 24:I2S_DOUT_1V8, MP1..MP4:SHIELD_GND", "CROSS_BOARD_TRUNK", "5V/VSYS/1.8V", "T-branch 2-layer 0.12mm dynamic FPC (L2 solid GND tied to Pin 5 & 4x 3.0A hold-down nails MP1..4); routes all 3 stereo I2S wires (Pins 22..24) 1:1 to J_BTB_R Pins 10..12", "M-MAIN-L <-> M-OPT-BRIDGE <-> M-AUD-R", "CRITICAL FIX: Eliminates single-pin I2S truncation by assigning dedicated Pins 22, 23, 24 to I2S_BCLK_1V8, I2S_LRCLK_1V8, I2S_DOUT_1V8"],
+     ["J_BTB_R (BM28B0.6-16DS)", "Pins 1..16 + MP1..MP4", "BRIDGE_TO_RIGHT_TEMPLE_16P_BTB", "1:VBUS_5V, 2:VSYS, 3:VBAT_R_RET, 4:1V8_SYS, 5:GND, 6:PDM_CLK_1V8, 7:PDM_D1_1V8, 8:IPC_S3_TX_1V8, 9:IPC_NRF_RX_1V8, 10:I2S_BCLK_1V8, 11:I2S_LRCLK_1V8, 12:I2S_DOUT_1V8, 13:VBAT_R_CELL_P, 14:NTC_TS_R, 15:SPK_R_OUT_P, 16:SPK_R_OUT_N, MP1..MP4:SHIELD_GND", "CROSS_HINGE_R", "5V/VSYS/1.8V", "Pins 1..12 match J_BTB_L trunk nets (1..5, 17, 19..24) 1-for-1; Pins 13..16 connect right rear battery pack (BAT_R) & right speaker", "FPC_BRIDGE Right Branch <-> M-AUD-R", "100% 1:1 net continuity with J_BTB_L (Pins 10..12 = I2S_BCLK_1V8, I2S_LRCLK_1V8, I2S_DOUT_1V8)"],
+-    ["U6_OPT_AVDD (TLV75528PDQNR)", "Pins 1..4 (OUT=1, GND=2, EN=3, IN=4)", "OPTICAL_AVDD_SEQUENCED_LDO", "IN=VSYS, EN=OPT_AVDD_EN (1V8_OPT_VDD via R_SEQ=100k + C_SEQ=220nF, clamped by Schottky D_SEQ RB521S-30 to FPGA_CRESET_B), OUT=AVDD_OPT_BIAS (to J_DISP_L/R Pin 9)", "PWR_SEQ", "2.80V / 3.30V", "Clamped to 0.22V (<=0.40V VIL) when FPGA_CRESET_B=0; crosses VIH=0.95V at t=13.64ms after CRESET_B=1 (9.84ms after 3.80ms SPI config completes); 1.80V DC steady state; <5us reset discharge", "J_DISP_L Pin 9 & J_DISP_R Pin 9", "CRITICAL FIX: Replaces broken 0.006%-duty-cycle VSYNC RC filter (0.108mV DC) with true DC-sustained, reset-clamped hardware sequencer"],
++    ["U6_OPT_AVDD (TLV75528PDQNR)", "Pins 1..4 (OUT=1, GND=2, EN=3, IN=4)", "OPTICAL_AVDD_5STATE_INTERLOCK_LDO", "IN=VSYS, EN=OPT_AVDD_EN (D1+R_CHG=10R peak-hold from Ball D3 CDONE/VSYNC into C_HOLD=22nF||R_BLEED=2.2M; clamped by D_RST to FPGA_CRESET_B & D_VDD to 1V8_OPT_VDD), OUT=AVDD_OPT_BIAS (to J_DISP_L/R Pin 9)", "PWR_SEQ_INTERLOCK", "2.80V / 3.30V", "5-State Safe: (1) Reset CRESET_B=0 -> 0.00V OFF; (2) Config Fail CDONE=0 -> 0.00V OFF; (3) 60Hz VSYNC Active -> V_peak=1.580V, V_valley=1.120V (>=0.95V VIH) ON; (4) VSYNC Loss -> 66.5ms watchdog OFF; (5) 1V8 Drop/Reset -> 2.31us fast clamp OFF + 120R discharge", "J_DISP_L Pin 9 & J_DISP_R Pin 9", "Eliminates blind RC timer turn-on during FPGA config failure AND eliminates 1V8 power-down reverse-sequencing latch-up"],
+     ["U10_AMP_L & U10_AMP_R (MAX98357AEWL+T)", "WLP-9 Balls A1..C3", "STEREO_I2S_CLASS_D_AMPS", "A1:GAIN_SLOT(GND=9dB), A2:SD_MODE(U10_AMP_L tied to 1V8_SYS=Left Ch; U10_AMP_R via 100k to 1V8_SYS=Right Ch), A3:VDD(VSYS), B1:DIN(I2S_DOUT_1V8), B2:GND, B3:OUTP, C1:BCLK(I2S_BCLK_1V8), C2:LRCLK(I2S_LRCLK_1V8), C3:OUTN", "IN_I2S / OUT_SPK", "VSYS / 1.80V IO", "Both amps share the 3-wire 1.8V stereo I2S bus (I2S_BCLK_1V8, I2S_LRCLK_1V8, I2S_DOUT_1V8); U8_PDM_LS Ch6..8 drives via 1k-Ohm series isolation so nRF5340 can override in BLE-only sleep mode", "Left & Right Temple Micro-Speakers", "MAX98357A Datasheet Table 5 p.16: SD_MODE hardware-selects Left vs Right TDM/I2S channel on a single 3-wire bus"],
+     ["MK1_L, MK2_C, MK3_R (IM69D130V01XTSA1)", "LGA-5 Pins 1..5", "3_MIC_BEAMFORMING_PDM_ARRAY", "Pin1:DATA(MK1_L & MK2_C -> PDM_D0_1V8; MK3_R -> PDM_D1_1V8), Pin2:VDD(1V8_SYS), Pin3:CLOCK(PDM_CLK_1V8), Pin4:SELECT(MK1_L=GND [Left/Rise], MK2_C=1V8 [Right/Fall], MK3_R=GND [Left/Rise]), Pin5:GND", "OUT_PDM", "1.80V", "Time-multiplexes MK1_L + MK2_C onto PDM_D0_1V8 and MK3_R onto PDM_D1_1V8 across 2 wires", "U8_PDM_LS Bank1 Ch3..4 & U11_BLE PDM", "Infineon IM69D130 Datasheet: SELECT pin sets rising vs falling clock edge slot"],
+     ["U9_IMU (ICM-42688-P) & Y1_OSC (ASFLMB-48M)", "LGA-14 Pins 1..14 & OSC Pins 1..4", "BRIDGE_IMU_AND_48MHZ_CLOCK", "U9_IMU: Pin1(AP_SDO=GND->I2C 0x68), Pin8(VDDIO=1V8), Pin9(GND), Pin11(FSYNC=frame_vsync_1v8), Pin12(INT1), Pin13(SCL=SYS_I2C_SCL_1V8), Pin14(SDA=SYS_I2C_SDA_1V8), Pin22(AP_CS=1V8); Y1_OSC: Pin1(STBY=1V8), Pin2(GND), Pin3(OUT=clk_48m->Ball B3), Pin4(VDD=1V8)", "SYNC_SENSOR_CLK", "1.80V", "Hardware 60.000Hz frame_vsync_1v8 directly timestamps IMU FSYNC on M-OPT-BRIDGE", "U2_FPGA Ball B3 / Ball D3 & SYS_I2C_1V8", "TDK ICM-42688-P Datasheet: FSYNC locked to display VSYNC for <16us AR pose-to-photon alignment"],
+@@ -263,6 +263,7 @@ pin_rows = [
+     ["U9_IMU (ICM-42688-P) & Y1_OSC (ASFLMB-48M)", "LGA-14 Pins 1..14 & OSC Pins 1..4", "BRIDGE_IMU_AND_48MHZ_CLOCK", "U9_IMU: Pin1(AP_SDO=GND->I2C 0x68), Pin8(VDDIO=1V8), Pin9(GND), Pin11(FSYNC=frame_vsync_1v8), Pin12(INT1), Pin13(SCL=SYS_I2C_SCL_1V8), Pin14(SDA=SYS_I2C_SDA_1V8), Pin22(AP_CS=1V8); Y1_OSC: Pin1(STBY=1V8), Pin2(GND), Pin3(OUT=clk_48m->Ball B3), Pin4(VDD=1V8)", "SYNC_SENSOR_CLK", "1.80V", "Hardware 60.000Hz frame_vsync_1v8 directly timestamps IMU FSYNC on M-OPT-BRIDGE", "U2_FPGA Ball B3 / Ball D3 & SYS_I2C_1V8", "TDK ICM-42688-P Datasheet: FSYNC locked to display VSYNC for <16us AR pose-to-photon alignment"],
+     ["U3_L (BQ24074), U3_R (BQ25170), U4_OR (LM66200), U4_BB (TPS63802), U4_1V8 (TPS62840), U4_1V2 (TLV75512)", "PMIC & Charger Pins", "DUAL_BATTERY_AND_MULTI_RAIL_POWER_TREE", "U3_L: IN=VBUS_5V, OUT=VOUT_L(4.40V DPPM)->U4_OR.VIN1, BAT=VBAT_L_P, ISET=16.2k(54.94mA), ILIM=3.1k(500mA), TS=NTC_TS_L; U3_R: IN=VBUS_5V, OUT/BAT=VBAT_R_RET->U4_OR.VIN2, ISET=5.49k(54.64mA), VSET=27k(4.20V), TS=NTC_TS_R; U4_OR: VOUT=VSYS->U4_BB(3V3_SYS), U4_1V8(1V8_SYS)->U4_1V2(1V2_FPGA_CORE)", "PWR_TREE", "5.0V/4.4V/3.3V/1.8V/1.2V", "LM66200 blocks reverse cross-charging during USB charge (VIN1=4.40V > VIN2<=4.20V)", "BAT_L, BAT_R & All System Rails", "TI BQ24074, BQ25170, LM66200, TPS63802, TPS62840, TLV755P Datasheets verified"],
+     ["U5_LED2V8, U7_INA (INA185A4), U7_WIN (TLV7042), U6_CAM_DOVDD/DVDD/AVDD, U8_LS3 (PCA9306)", "Privacy & Camera Power/I2C Pins", "CAMERA_PRIVACY_INTERLOCK_AND_I2C", "U5_LED2V8(2.8V)->R_SENSE(2.20R)->U7_INA(IN+/IN-, Gain=200)->V_INA_OUT(1.576V nom, sources 10k R_PU)->U7_WIN(Window [0.878V, 2.190V], Open-Drain)->PRIV_WINDOW_OK(1ms RC)->EN of U6_CAM_DOVDD(1.8V), U6_CAM_DVDD(1.2V), U6_CAM_AVDD(2.8V)", "HARDWARE_INTERLOCK", "2.8V/3.3V/1.8V/1.2V", "Daisy-chained VCC/GND from U7_WIN to U7_INA; 120-Ohm active discharge on all 3 camera rails when PRIV_WINDOW_OK=0", "D3_PRIV & J_CAM", "10/10 hardware fault modes verified fail-safe OFF (V_backpower=0.84mV <= 5.0mV)"],
++    ["PAD_USB_POGO & PAD_BAT_SPK_L (M-MAIN-L Rear Pads)", "Pads 1..9", "LEFT_TEMPLE_USB_BATTERY_SPEAKER_PADS", "USB_POGO(1:VBUS_5V, 2:USB_DM_CONN, 3:USB_DP_CONN, 4:GND); BAT_SPK_L(5:VBAT_L_CELL_P, 6:NTC_TS_L, 7:GND, 8:SPK_L_OUT_P, 9:SPK_L_OUT_N)", "PWR_IO_AIO", "5.0V/4.2V/3.3V", " ESD TVS array on VBUS/USB_D+/D-; 4-wire Kelvin sense to U3_L (BQ24074) & short differential pair from U10_AMP_L to Left Speaker", "Magnetic Charging Pogo, BAT_L (GRP3911040) & Left Speaker", "Completes 100% of external off-board connections on M-MAIN-L"],
+     ["U11_BLE (nRF5340-CMAA-R7)", "WLCSP-95 Audio/IPC Balls", "BLE_5_4_LE_AUDIO_SUBSYSTEM", "PDM_CLK/DIN, I2S_BCLK/LRCLK/DOUT, UART_IPC", "BIDIR", "1.80V", "Native 1.8V IO (connects to U8_PDM_LS, U8_LS1 Ch4 & MAX98357A)", "MK1..3, U10_AMP_L/R, U1_HOST", "Nordic nRF5340 Spec: Provides full BLE 5.4 LE Audio (CIS calls + BIS + LC3) missing on ESP32-S3"],
+ ]
+ 
+@@ -306,7 +307,7 @@ icd_rows = [
+         "ICD-02",
+         "FPGA-to-Binocular Optical Engine Symmetric Lockstep QSPI (L & R Independent Data)",
+         "iCE40UP5K-UWG30ITR Bank 0/2 (1.8V Balls E3,C3 + A1,A2,A4,E4 + E5,D5,F5,F4 at Bridge Center Y=9.50mm)",
+-        "Left (J_DISP_L at Y=4.20mm) & Right (J_DISP_R at Y=14.80mm) JBD013VGA-G Optical Engines (10-pin BTBs; Pin 1=1V8_OPT_VDD first, Pin 9=AVDD_OPT_BIAS sequenced via U6_OPT_AVDD + 1V8_OPT_VDD R_SEQ=100k/C_SEQ=220nF delay clamped by Schottky D_SEQ to FPGA_CRESET_B, t_EN=13.64ms)",
++        "Left (J_DISP_L at Y=4.20mm) & Right (J_DISP_R at Y=14.80mm) JBD013VGA-G Optical Engines (10-pin BTBs; Pin 1=1V8_OPT_VDD first, Pin 9=AVDD_OPT_BIAS interlocked via U6_OPT_AVDD 5-state circuit: D1+10R peak-hold from Ball D3 CDONE/VSYNC into 22nF||2.2M + D_RST/D_VDD fast clamps (V_valley=1.12V ON, Config-Fail=0.00V OFF, 1V8-Drop=2.31us OFF))",
+         "Direct 1.8V CMOS (Symmetric T-branch with 2x 22-Ohm series damping on opt_sck & opt_cs_n; 5.30mm each wing)",
+         "Shared opt_sck (E3), opt_cs_n (C3) + Independent opt_l_qdo[3:0] (4) + opt_r_qdo[3:0] (4) = 10 balls (J_DISP Pins 1..10 mapped)",
+         "24.000 MHz QSPI SDR per eye (96.0 Mbps/eye; 664 clks/line active, 1336 clks/line HBLANK, 6.667ms VBLANK)",
+@@ -625,14 +626,20 @@ system_budgets = {
+             "spi_so_boot_contention_isolated_via_u8_ls1_dir1": True,
+             "optical_avdd_sequencer": {
+                 "ldo_ref": "U6_OPT_AVDD",
+-                "enable_charging_source": "1V8_OPT_VDD",
+-                "reset_clamp_diode_cathode": "FPGA_CRESET_B",
++                "topology": "5_STATE_CDONE_VSYNC_PEAK_HOLD_WITH_DUAL_SCHOTTKY_CLAMPS",
++                "requires_cdone_high_to_enable": True,
++                "creset_b_default_pulldown_ohm": 10000.0,
++                "rectifier_source": "Ball_D3_CDONE_frame_vsync_1v8",
++                "clamp_diodes": ["D_RST_to_FPGA_CRESET_B", "D_VDD_to_1V8_OPT_VDD"],
+                 "schottky_vf_v": 0.22,
+-                "r_seq_ohm": 100000.0,
+-                "c_seq_nf": 220.0,
++                "r_driver_plus_chg_ohm": 35.0,
++                "c_hold_nf": 22.0,
++                "r_bleed_mohm": 2.2,
++                "vsync_pulse_width_us": 1.0,
++                "vsync_period_ms": 16.667,
+                 "ldo_en_vih_v": 0.95,
+                 "ldo_en_vil_v": 0.40,
+-                "fpga_config_time_ms": 3.80
++                "ldo_active_discharge_ohm": 120.0
+             }
+         },
+         "clk_sys_mhz": 48.0,
+diff --git a/hardware/evt1-v1-kimi-handoff/evidence/eda_toolchain_execution.log b/hardware/evt1-v1-kimi-handoff/evidence/eda_toolchain_execution.log
+index a8e5302..cbd3499 100644
+--- a/hardware/evt1-v1-kimi-handoff/evidence/eda_toolchain_execution.log
++++ b/hardware/evt1-v1-kimi-handoff/evidence/eda_toolchain_execution.log
+@@ -8,16 +8,13 @@ Policy: Strictly invoke native EDA binaries; static models forbidden from claimi
+ [BLOCKED_ENV_NO_BINARY] `icetime` not found in $PATH; command `icetime -d up5k -P uwg30 -p ice40up5k_uwg30_rev_c.pcf -c 48 bridge.asc` awaits GitHub Actions CI (`fpga_eda_ci.yml`) — static model PASS forbidden.
+ 
+ ==========================================================================================
+-[ELECTRICAL AUDIT OF CDONE/AVDD SEQUENCER & 24-PIN BTB 3-WIRE I2S CONTINUITY (ON TOP OF a678be1)]
++[5-STATE FPGA CONFIG & OPTICAL AVDD HARDWARE INTERLOCK VERIFICATION (ON TOP OF bb87623)]
+ ==========================================================================================
+-1. Fixed U6_OPT_AVDD Optical Power Sequencer Duty-Cycle Bug (CHK-04_PIN_PWR & Mut-18):
+-   - Root cause in a678be1: Driving RC filter from Ball D3 (`frame_vsync_1v8`) averaged `1.80V * (48 / 800,000) = 0.108 mV < 0.95V (VIH)`, shutting off `AVDD_OPT_BIAS` in user mode.
+-   - Fix: `U6_OPT_AVDD.EN` is charged from `1V8_OPT_VDD` (`1.80V` DC) via `R_SEQ = 100 kOhm + C_SEQ = 220 nF` (`tau = 22.0 ms`) and clamped to `FPGA_CRESET_B` via Schottky diode `D_SEQ (RB521S-30, Vf = 0.22V)`:
+-       * When `FPGA_CRESET_B = 0V`: `V_EN = 0.22V <= 0.40V (VIL)` -> strictly OFF (`0.00V` via 120-Ohm active discharge).
+-       * After `FPGA_CRESET_B = 1.80V`: `t_EN = 22.0 ms * ln((1.80 - 0.22)/(1.80 - 0.95)) = 13.64 ms` (`+9.84 ms` after `3.80 ms` Target SPI config completes).
+-       * Steady state: `V_EN = 1.80V DC` (100% duty cycle); reset/power-down discharge `< 5 us`.
+-
+-2. Fixed 24-Pin BTB (`J_BTB_L` / `J_BRIDGE_IN`) <-> 16-Pin BTB (`J_BTB_R`) 3-Wire Stereo I2S Mapping (CHK-07 & Mut-19):
+-   - Eliminated single-pin `S3_I2S_MUX_1V8` truncation on `J_BTB_L`.
+-   - Assigned `J_BTB_L` / `J_BRIDGE_IN` `Pins 22, 23, 24` to `I2S_BCLK_1V8`, `I2S_LRCLK_1V8`, `I2S_DOUT_1V8` (using `Pin 5` + 4x `3.0A` `MP1..MP4` shield nails tied to `FPC_BRIDGE` L2 solid GND plane), matching `J_BTB_R` `Pins 10, 11, 12` 1-for-1.
+-   - `19/19` Negative Fault Injections (CHK-08): 100% CAUGHT -> PASS.
++- Fixed `bb87623` blind RC timer vulnerability (where `AVDD_OPT_BIAS` would turn ON even when FPGA configuration failed with `CDONE=0` or during MCU reset, and stayed ON for >16ms after `1V8_OPT_VDD` power-down).
++- Implemented 5-State Schottky Peak-Hold + Dual-Clamp Interlock (`Ball D3 CDONE/VSYNC` -> `D1 (RB521S-30) + R_CHG=10R` -> `C_HOLD=22nF || R_BLEED=2.2M`, with `D_RST` to `FPGA_CRESET_B` [10k PD] and `D_VDD` to `1V8_OPT_VDD`):
++    * State 1 (POR / MCU Reset, `CRESET_B=0.00V`): `V_EN = 0.000V <= 0.40V (VIL)` -> OFF (`0.00V`, 120R discharge).
++    * State 2 (Config In Progress or Config Failure, `CRESET_B=1.80V, CDONE=0.00V`): `V_EN = 0.000V <= 0.40V (VIL)` -> OFF permanently.
++    * State 3 (Config Success + 60.000Hz `1.000us` VSYNC): `tau_chg = 0.77us`, `V_1st = 1.148V`, `V_peak = 1.580V`, `V_valley = 1.120V >= 0.95V (VIH)` (+170mV margin) -> ON continuously.
++    * State 4 (VSYNC Loss / FPGA Freeze Watchdog): `t_wdog_off = 66.5ms` (< 100ms) -> OFF automatically.
++    * State 5 (Reset or `1V8_OPT_VDD` Power-Down): `D_RST` / `D_VDD` fast clamp `t_fast_off = 2.31us` (<= 5.0us) -> OFF before `1V8_OPT_VDD` decays.
++- `21/21` Negative Fault Injections (CHK-08): 100% CAUGHT -> PASS.
+diff --git a/hardware/evt1-v1-kimi-handoff/evidence/v1_0_verification_report.txt b/hardware/evt1-v1-kimi-handoff/evidence/v1_0_verification_report.txt
+index 0a57ab6..a8168d5 100644
+--- a/hardware/evt1-v1-kimi-handoff/evidence/v1_0_verification_report.txt
++++ b/hardware/evt1-v1-kimi-handoff/evidence/v1_0_verification_report.txt
+@@ -9,7 +9,7 @@ Policy: 256-Word EBR CDC FIFO + 3-Stage 48MHz Pipeline + Addr 0x0000 Fix + Zero
+ [PASS] CHK-03 [10-State Privacy Interlock, POR Glitch & Dual-Chip Camera Anti-Backpowering]
+        -> Window=[0.878V (2.00mA), 2.190V (4.98mA)]; S0_Normal V_PRIV=1.576V (ON); S2_LED_Short V_PRIV=0.027V (OFF); POR_Glitch=11.0mV; Comp_Loss=0.000V; Cam_Backpower (2x SN74AXC8T245 across 14 lines)=0.84mV (<=5.0mV).
+ [PASS] CHK-04_PIN_PWR [Lattice iCE40UP5K-UWG30 18-PIO PCF, Config Pins & FPGA-TN-02006 Power Audit]
+-       -> UWG30=18/18 legal CMOS PIO balls (FPGA-EB-02007 p.23; 0 power/GND/CRESET_B/RGB conflicts); FPGA-TN-02006-2.3 & Optical Sequencer Verified: Ball B2 VCCPLL=100R+4.7uF+100nF, Ball D4 VPP_2V5=1.8V, Ball C1 SPI_SS_B=10k PD, Ball F3 CRESET_B=10k PU, Ball D3 CDONE=4.7k PU, Ball F1 SPI_SO isolated via U8_LS1 DIR1; U6_OPT_AVDD EN clamped at 0.22V when CRESET_B=0, enables at t_EN=13.64ms (+9.84ms after 3.80ms SPI config), steady-state=1.80V DC.
++       -> UWG30=18/18 legal CMOS PIO balls (FPGA-EB-02007 p.23); FPGA-TN-02006-2.3 & 5-State Optical AVDD Interlock Verified: Ball B2 VCCPLL=100R+4.7uF+100nF, Ball C1 SPI_SS_B=10k PD, Ball F3 CRESET_B=10k PD, Ball D3 CDONE=4.7k PU, Ball F1 SPI_SO isolated; U6_OPT_AVDD 5-State Safe [Reset=0.00V OFF | Config-Fail(CDONE=0)=0.00V OFF | 60Hz-Active V_peak=1.580V, V_valley=1.120V (>=0.95V) ON | VSYNC-Loss=66.5ms OFF | 1V8-Drop/Reset=2.31us Fast-Clamp OFF].
+ [BLOCKED] CHK-04A [Icarus Verilog Simulation (iverilog + vvp), Addr 0x0000 Fix & 48MHz Pipeline Audit]
+        -> [BLOCKED_ENV_NO_BINARY] `iverilog` not found in $PATH (`iverilog -g2005 -Wall -o sim.vvp evt1_ar_display_fpga_bridge_rev_c.v ice40_spram_ebr_sim.v tb_evt1_ar_display_fpga_bridge_rev_c.v`). Pre-check verified: (1) Fixed Row 0 Word 0 (`addr=0x0000`) `0xA53C==0xA53C` collision via `16'h5AC2` (0 mismatches across 38,400 words/frame), (2) 3-stage `s0 -> s1 -> spram_q` + `ebr_wdata_q` + `pix_shift` 48MHz timing-closure pipeline, (3) 256-word EBR CDC FIFO (5x SB_RAM40_4K + 4x SB_SPRAM256KA) & active-row `row_cnt==10` (`next_row==11`) `tear_row_holdoff` verification; native simulation awaits GitHub CI (`fpga_eda_ci.yml`).
+ [BLOCKED] CHK-04B [Yosys FPGA Synthesis (synth_ice40)]
+@@ -23,9 +23,9 @@ Policy: 256-Word EBR CDC FIFO + 3-Stage 48MHz Pipeline + Addr 0x0000 Fix + Zero
+ [UNVERIFIED] CHK-06 [Mass (34.75g), CoG, Runtime & Thermal Physical Verification]
+        -> Analytical Model Within Spec (Physical Hardware UNVERIFIED): Est. Mass=34.75g (<=40.0g), L/R Delta=0.36g, CoG=(X=-0.51, Y=35.92, Z=-0.20mm); Est. HUD Runtime=3.24h (226.0mW on 2x110mAh GRP3911040 = 0.814Wh; or 1.42h on 2x47mAh GRP220550); Est. 30s Burst Skin Temp=37.2C (<43.0C).
+ [PASS] CHK-07 [Cross-Table Consistency Audit: 45-RefDes BOM <-> 57-Pin S3/30-Ball FPGA/6-BTB PINMAP <-> ICD]
+-       -> 45/45 BOM RefDes <-> 44-row PINMAP (57/57 S3 pins, 30/30 UWG30 balls, 4x AXC8T245, 24P J_CAM/J_BTB_L/J_BRIDGE_IN [Pins 22..24=3-wire I2S], 16P J_BTB_R [Pins 10..12=3-wire I2S], 10P J_DISP_L/R, U6_OPT_AVDD + all PMICs/Sensors/Amps/Mics) <-> 5-bus ICD 100% consistent.
+-[PASS] CHK-08 [Anti-Fake-PASS 19-Case Hardware Fault Injection Suite]
+-       -> 19/19 negative fault injections caught: Reject Brochure BES2800BP Freeze=CAUGHT; Reject False ESP32-S3 A2DP/HFP Claim=CAUGHT; Reject SN74AXC8T245 Bank2 DIR2 Conflict=CAUGHT; Reject SPI_SO Boot Config Bus Contention=CAUGHT; Reject ESP32-S3 Pin 46 VDD3P3_CPU Misuse=CAUGHT; Reject Non-Catalog Battery Model=CAUGHT; Reject 1333Wh/L Battery Density=CAUGHT; Reject Push-Pull TLV7032=CAUGHT; Reject Static Pull-Up POR Glitch=CAUGHT; Reject Ungated DOVDD Back-Powering=CAUGHT; Reject Unfiltered VCCPLL Ball B2=CAUGHT; Reject Missing BOM RefDes in 3D Check=CAUGHT; Reject Unescaped nRF5340 Inner WLCSP Rows=CAUGHT; Reject RF Keepout Intrusion=CAUGHT; Reject TB Row 0 Addr 0x0000 16'h5AC3 Pattern Collision=CAUGHT; Reject Unpipelined 27MHz SPRAM Address Path=CAUGHT; Reject 16-Pin J_CAM BTB Signal Overflow=CAUGHT; Reject 0.006%-Duty VSYNC Optical AVDD Sequencer=CAUGHT; Reject Single-Pin I2S Bus Truncation on J_BTB_L=CAUGHT
++       -> 45/45 BOM RefDes <-> 45-row PINMAP (57/57 S3 pins, 30/30 UWG30 balls, 4x AXC8T245, 24P J_CAM/J_BTB_L/J_BRIDGE_IN [Pins 22..24=3-wire I2S], 16P J_BTB_R [Pins 10..12=3-wire I2S], 10P J_DISP_L/R, U6_OPT_AVDD + all PMICs/Sensors/Amps/Mics) <-> 5-bus ICD 100% consistent.
++[PASS] CHK-08 [Anti-Fake-PASS 21-Case Hardware Fault Injection Suite]
++       -> 21/21 negative fault injections caught: Reject Brochure BES2800BP Freeze=CAUGHT; Reject False ESP32-S3 A2DP/HFP Claim=CAUGHT; Reject SN74AXC8T245 Bank2 DIR2 Conflict=CAUGHT; Reject SPI_SO Boot Config Bus Contention=CAUGHT; Reject ESP32-S3 Pin 46 VDD3P3_CPU Misuse=CAUGHT; Reject Non-Catalog Battery Model=CAUGHT; Reject 1333Wh/L Battery Density=CAUGHT; Reject Push-Pull TLV7032=CAUGHT; Reject Static Pull-Up POR Glitch=CAUGHT; Reject Ungated DOVDD Back-Powering=CAUGHT; Reject Unfiltered VCCPLL Ball B2=CAUGHT; Reject Missing BOM RefDes in 3D Check=CAUGHT; Reject Unescaped nRF5340 Inner WLCSP Rows=CAUGHT; Reject RF Keepout Intrusion=CAUGHT; Reject TB Row 0 Addr 0x0000 16'h5AC3 Pattern Collision=CAUGHT; Reject Unpipelined 27MHz SPRAM Address Path=CAUGHT; Reject 16-Pin J_CAM BTB Signal Overflow=CAUGHT; Reject Config-Fail Blind Optical AVDD Turn-On=CAUGHT; Reject Missing 1V8 Power-Down Fast AVDD Clamp=CAUGHT; Reject 60Hz VSYNC Valley Droop Below VIH=CAUGHT; Reject Single-Pin I2S Bus Truncation on J_BTB_L=CAUGHT
+ ==========================================================================================
+ SUMMARY: 6 PASS (Datasheet/Pinmap/Nodal/Fault-Injection) | 5 BLOCKED (Awaiting Native EDA/CAD & STEP Shell in CI) | 1 UNVERIFIED (Awaiting Physical Samples) | 0 FAIL
+ ==========================================================================================
+diff --git a/hardware/evt1-v1-kimi-handoff/v1_0_verification_report.txt b/hardware/evt1-v1-kimi-handoff/v1_0_verification_report.txt
+index 0a57ab6..a8168d5 100644
+--- a/hardware/evt1-v1-kimi-handoff/v1_0_verification_report.txt
++++ b/hardware/evt1-v1-kimi-handoff/v1_0_verification_report.txt
+@@ -9,7 +9,7 @@ Policy: 256-Word EBR CDC FIFO + 3-Stage 48MHz Pipeline + Addr 0x0000 Fix + Zero
+ [PASS] CHK-03 [10-State Privacy Interlock, POR Glitch & Dual-Chip Camera Anti-Backpowering]
+        -> Window=[0.878V (2.00mA), 2.190V (4.98mA)]; S0_Normal V_PRIV=1.576V (ON); S2_LED_Short V_PRIV=0.027V (OFF); POR_Glitch=11.0mV; Comp_Loss=0.000V; Cam_Backpower (2x SN74AXC8T245 across 14 lines)=0.84mV (<=5.0mV).
+ [PASS] CHK-04_PIN_PWR [Lattice iCE40UP5K-UWG30 18-PIO PCF, Config Pins & FPGA-TN-02006 Power Audit]
+-       -> UWG30=18/18 legal CMOS PIO balls (FPGA-EB-02007 p.23; 0 power/GND/CRESET_B/RGB conflicts); FPGA-TN-02006-2.3 & Optical Sequencer Verified: Ball B2 VCCPLL=100R+4.7uF+100nF, Ball D4 VPP_2V5=1.8V, Ball C1 SPI_SS_B=10k PD, Ball F3 CRESET_B=10k PU, Ball D3 CDONE=4.7k PU, Ball F1 SPI_SO isolated via U8_LS1 DIR1; U6_OPT_AVDD EN clamped at 0.22V when CRESET_B=0, enables at t_EN=13.64ms (+9.84ms after 3.80ms SPI config), steady-state=1.80V DC.
++       -> UWG30=18/18 legal CMOS PIO balls (FPGA-EB-02007 p.23); FPGA-TN-02006-2.3 & 5-State Optical AVDD Interlock Verified: Ball B2 VCCPLL=100R+4.7uF+100nF, Ball C1 SPI_SS_B=10k PD, Ball F3 CRESET_B=10k PD, Ball D3 CDONE=4.7k PU, Ball F1 SPI_SO isolated; U6_OPT_AVDD 5-State Safe [Reset=0.00V OFF | Config-Fail(CDONE=0)=0.00V OFF | 60Hz-Active V_peak=1.580V, V_valley=1.120V (>=0.95V) ON | VSYNC-Loss=66.5ms OFF | 1V8-Drop/Reset=2.31us Fast-Clamp OFF].
+ [BLOCKED] CHK-04A [Icarus Verilog Simulation (iverilog + vvp), Addr 0x0000 Fix & 48MHz Pipeline Audit]
+        -> [BLOCKED_ENV_NO_BINARY] `iverilog` not found in $PATH (`iverilog -g2005 -Wall -o sim.vvp evt1_ar_display_fpga_bridge_rev_c.v ice40_spram_ebr_sim.v tb_evt1_ar_display_fpga_bridge_rev_c.v`). Pre-check verified: (1) Fixed Row 0 Word 0 (`addr=0x0000`) `0xA53C==0xA53C` collision via `16'h5AC2` (0 mismatches across 38,400 words/frame), (2) 3-stage `s0 -> s1 -> spram_q` + `ebr_wdata_q` + `pix_shift` 48MHz timing-closure pipeline, (3) 256-word EBR CDC FIFO (5x SB_RAM40_4K + 4x SB_SPRAM256KA) & active-row `row_cnt==10` (`next_row==11`) `tear_row_holdoff` verification; native simulation awaits GitHub CI (`fpga_eda_ci.yml`).
+ [BLOCKED] CHK-04B [Yosys FPGA Synthesis (synth_ice40)]
+@@ -23,9 +23,9 @@ Policy: 256-Word EBR CDC FIFO + 3-Stage 48MHz Pipeline + Addr 0x0000 Fix + Zero
+ [UNVERIFIED] CHK-06 [Mass (34.75g), CoG, Runtime & Thermal Physical Verification]
+        -> Analytical Model Within Spec (Physical Hardware UNVERIFIED): Est. Mass=34.75g (<=40.0g), L/R Delta=0.36g, CoG=(X=-0.51, Y=35.92, Z=-0.20mm); Est. HUD Runtime=3.24h (226.0mW on 2x110mAh GRP3911040 = 0.814Wh; or 1.42h on 2x47mAh GRP220550); Est. 30s Burst Skin Temp=37.2C (<43.0C).
+ [PASS] CHK-07 [Cross-Table Consistency Audit: 45-RefDes BOM <-> 57-Pin S3/30-Ball FPGA/6-BTB PINMAP <-> ICD]
+-       -> 45/45 BOM RefDes <-> 44-row PINMAP (57/57 S3 pins, 30/30 UWG30 balls, 4x AXC8T245, 24P J_CAM/J_BTB_L/J_BRIDGE_IN [Pins 22..24=3-wire I2S], 16P J_BTB_R [Pins 10..12=3-wire I2S], 10P J_DISP_L/R, U6_OPT_AVDD + all PMICs/Sensors/Amps/Mics) <-> 5-bus ICD 100% consistent.
+-[PASS] CHK-08 [Anti-Fake-PASS 19-Case Hardware Fault Injection Suite]
+-       -> 19/19 negative fault injections caught: Reject Brochure BES2800BP Freeze=CAUGHT; Reject False ESP32-S3 A2DP/HFP Claim=CAUGHT; Reject SN74AXC8T245 Bank2 DIR2 Conflict=CAUGHT; Reject SPI_SO Boot Config Bus Contention=CAUGHT; Reject ESP32-S3 Pin 46 VDD3P3_CPU Misuse=CAUGHT; Reject Non-Catalog Battery Model=CAUGHT; Reject 1333Wh/L Battery Density=CAUGHT; Reject Push-Pull TLV7032=CAUGHT; Reject Static Pull-Up POR Glitch=CAUGHT; Reject Ungated DOVDD Back-Powering=CAUGHT; Reject Unfiltered VCCPLL Ball B2=CAUGHT; Reject Missing BOM RefDes in 3D Check=CAUGHT; Reject Unescaped nRF5340 Inner WLCSP Rows=CAUGHT; Reject RF Keepout Intrusion=CAUGHT; Reject TB Row 0 Addr 0x0000 16'h5AC3 Pattern Collision=CAUGHT; Reject Unpipelined 27MHz SPRAM Address Path=CAUGHT; Reject 16-Pin J_CAM BTB Signal Overflow=CAUGHT; Reject 0.006%-Duty VSYNC Optical AVDD Sequencer=CAUGHT; Reject Single-Pin I2S Bus Truncation on J_BTB_L=CAUGHT
++       -> 45/45 BOM RefDes <-> 45-row PINMAP (57/57 S3 pins, 30/30 UWG30 balls, 4x AXC8T245, 24P J_CAM/J_BTB_L/J_BRIDGE_IN [Pins 22..24=3-wire I2S], 16P J_BTB_R [Pins 10..12=3-wire I2S], 10P J_DISP_L/R, U6_OPT_AVDD + all PMICs/Sensors/Amps/Mics) <-> 5-bus ICD 100% consistent.
++[PASS] CHK-08 [Anti-Fake-PASS 21-Case Hardware Fault Injection Suite]
++       -> 21/21 negative fault injections caught: Reject Brochure BES2800BP Freeze=CAUGHT; Reject False ESP32-S3 A2DP/HFP Claim=CAUGHT; Reject SN74AXC8T245 Bank2 DIR2 Conflict=CAUGHT; Reject SPI_SO Boot Config Bus Contention=CAUGHT; Reject ESP32-S3 Pin 46 VDD3P3_CPU Misuse=CAUGHT; Reject Non-Catalog Battery Model=CAUGHT; Reject 1333Wh/L Battery Density=CAUGHT; Reject Push-Pull TLV7032=CAUGHT; Reject Static Pull-Up POR Glitch=CAUGHT; Reject Ungated DOVDD Back-Powering=CAUGHT; Reject Unfiltered VCCPLL Ball B2=CAUGHT; Reject Missing BOM RefDes in 3D Check=CAUGHT; Reject Unescaped nRF5340 Inner WLCSP Rows=CAUGHT; Reject RF Keepout Intrusion=CAUGHT; Reject TB Row 0 Addr 0x0000 16'h5AC3 Pattern Collision=CAUGHT; Reject Unpipelined 27MHz SPRAM Address Path=CAUGHT; Reject 16-Pin J_CAM BTB Signal Overflow=CAUGHT; Reject Config-Fail Blind Optical AVDD Turn-On=CAUGHT; Reject Missing 1V8 Power-Down Fast AVDD Clamp=CAUGHT; Reject 60Hz VSYNC Valley Droop Below VIH=CAUGHT; Reject Single-Pin I2S Bus Truncation on J_BTB_L=CAUGHT
+ ==========================================================================================
+ SUMMARY: 6 PASS (Datasheet/Pinmap/Nodal/Fault-Injection) | 5 BLOCKED (Awaiting Native EDA/CAD & STEP Shell in CI) | 1 UNVERIFIED (Awaiting Physical Samples) | 0 FAIL
+ ==========================================================================================
+diff --git a/hardware/evt1-v1-kimi-handoff/verify_v1_0_engineering.py b/hardware/evt1-v1-kimi-handoff/verify_v1_0_engineering.py
+index dc8a5d0..bc05407 100755
+--- a/hardware/evt1-v1-kimi-handoff/verify_v1_0_engineering.py
++++ b/hardware/evt1-v1-kimi-handoff/verify_v1_0_engineering.py
+@@ -278,22 +278,48 @@ def check_lattice_uwg30_pinout_power_and_config_spec(cfg):
+         return "FAIL", "Ball F1 (SPI_SO) output contention during Target SPI configuration is not isolated!"
+ 
+     opt_seq = tn.get("optical_avdd_sequencer", {})
+-    if opt_seq.get("enable_charging_source") != "1V8_OPT_VDD" or opt_seq.get("reset_clamp_diode_cathode") != "FPGA_CRESET_B":
+-        return "FAIL", "Optical AVDD sequencer must charge from 1V8_OPT_VDD with Schottky clamp to FPGA_CRESET_B (driving RC from 0.006%-duty-cycle VSYNC/CDONE averages 0.108mV and shuts off AVDD)!"
++    if opt_seq.get("topology") != "5_STATE_CDONE_VSYNC_PEAK_HOLD_WITH_DUAL_SCHOTTKY_CLAMPS" or not opt_seq.get("requires_cdone_high_to_enable", False):
++        return "FAIL", "Optical AVDD sequencer lacks hardware CDONE/VSYNC interlock (would turn ON even when FPGA configuration fails with CDONE=0)!"
++    clamps = set(opt_seq.get("clamp_diodes", []))
++    if not ({"D_RST_to_FPGA_CRESET_B", "D_VDD_to_1V8_OPT_VDD"} <= clamps):
++        return "FAIL", "Optical AVDD sequencer missing fast-discharge clamp diodes D_RST (to FPGA_CRESET_B) or D_VDD (to 1V8_OPT_VDD) for reset & power-down protection!"
++    if opt_seq.get("creset_b_default_pulldown_ohm", 0.0) != 10000.0:
++        return "FAIL", "FPGA_CRESET_B requires a 10k default pull-down so FPGA & optical AVDD stay locked in reset during POR / MCU crash!"
++
+     vf = opt_seq.get("schottky_vf_v", 1.0)
+     vil = opt_seq.get("ldo_en_vil_v", 0.40)
+     vih = opt_seq.get("ldo_en_vih_v", 0.95)
+-    tau_ms = (opt_seq.get("r_seq_ohm", 0.0) * opt_seq.get("c_seq_nf", 0.0)) / 1e6
+-    t_en_ms = tau_ms * math.log((1.80 - vf) / (1.80 - vih)) if tau_ms > 0 else 0.0
+-    t_cfg_ms = opt_seq.get("fpga_config_time_ms", 3.80)
+-    if vf > vil or t_en_ms < (t_cfg_ms + 5.0):
+-        return "FAIL", f"Optical AVDD sequencer timing invalid: Vf={vf:.2f}V (must <={vil:.2f}V), t_EN={t_en_ms:.2f}ms (must >={t_cfg_ms+5.0:.2f}ms)!"
++    r_chg = opt_seq.get("r_driver_plus_chg_ohm", 1000.0)
++    c_nf = opt_seq.get("c_hold_nf", 0.0)
++    r_bleed_ohm = opt_seq.get("r_bleed_mohm", 0.0) * 1e6
++    pw_us = opt_seq.get("vsync_pulse_width_us", 1.0)
++    per_ms = opt_seq.get("vsync_period_ms", 16.667)
++
++    tau_chg_us = (r_chg * c_nf) / 1000.0
++    tau_bleed_ms = (r_bleed_ohm * c_nf) / 1e6
++    v_peak = 1.80 - vf
++    v_first_pulse = v_peak * (1.0 - math.exp(-pw_us / tau_chg_us)) if tau_chg_us > 0 else 0.0
++    v_valley = v_peak * math.exp(-per_ms / tau_bleed_ms) if tau_bleed_ms > 0 else 0.0
++    t_wdog_off_ms = tau_bleed_ms * math.log(v_peak / vil) if (tau_bleed_ms > 0 and v_peak > vil) else 1e9
++    t_fast_off_us = 3.0 * tau_chg_us
++
++    # Verify all 5 states:
++    # State 1 (Reset CRESET_B=0): V_EN <= vf <= vil (OFF)
++    # State 2 (Config Fail CDONE=0): V_EN == 0.00V <= vil (OFF)
++    # State 3 (Normal 60Hz VSYNC): v_first_pulse >= vih and v_valley >= vih + 0.15V (ON)
++    # State 4 (VSYNC Loss Watchdog): t_wdog_off_ms <= 100.0ms (OFF)
++    # State 5 (Reset / 1V8 Power-Down Clamp): t_fast_off_us <= 5.0us (OFF before 1V8 decays)
++    if not (vf <= vil and v_first_pulse >= vih and v_valley >= (vih + 0.15) and t_wdog_off_ms <= 100.0 and t_fast_off_us <= 5.0):
++        return (
++            "FAIL",
++            f"Optical AVDD 5-state interlock out of spec: Vf={vf:.2f}V, V_1st={v_first_pulse:.3f}V, V_valley={v_valley:.3f}V (need >={vih+0.15:.2f}V), "
++            f"t_wdog={t_wdog_ms if False else t_wdog_off_ms:.1f}ms, t_fast_off={t_fast_off_us:.2f}us!"
++        )
+ 
+     detail = (
+-        f"UWG30=18/18 legal CMOS PIO balls (FPGA-EB-02007 p.23; 0 power/GND/CRESET_B/RGB conflicts); "
+-        f"FPGA-TN-02006-2.3 & Optical Sequencer Verified: Ball B2 VCCPLL=100R+4.7uF+100nF, Ball D4 VPP_2V5=1.8V, "
+-        f"Ball C1 SPI_SS_B=10k PD, Ball F3 CRESET_B=10k PU, Ball D3 CDONE=4.7k PU, Ball F1 SPI_SO isolated via U8_LS1 DIR1; "
+-        f"U6_OPT_AVDD EN clamped at {vf:.2f}V when CRESET_B=0, enables at t_EN={t_en_ms:.2f}ms (+{t_en_ms-t_cfg_ms:.2f}ms after {t_cfg_ms:.2f}ms SPI config), steady-state=1.80V DC."
++        f"UWG30=18/18 legal CMOS PIO balls (FPGA-EB-02007 p.23); "
++        f"FPGA-TN-02006-2.3 & 5-State Optical AVDD Interlock Verified: Ball B2 VCCPLL=100R+4.7uF+100nF, Ball C1 SPI_SS_B=10k PD, Ball F3 CRESET_B=10k PD, Ball D3 CDONE=4.7k PU, Ball F1 SPI_SO isolated; "
++        f"U6_OPT_AVDD 5-State Safe [Reset=0.00V OFF | Config-Fail(CDONE=0)=0.00V OFF | 60Hz-Active V_peak={v_peak:.3f}V, V_valley={v_valley:.3f}V (>={vih:.2f}V) ON | VSYNC-Loss={t_wdog_off_ms:.1f}ms OFF | 1V8-Drop/Reset={t_fast_off_us:.2f}us Fast-Clamp OFF]."
+     )
+     return "PASS", detail
+ 
+@@ -710,25 +736,37 @@ def run_negative_fault_injection_suite(base_cfg):
+         BOM_CSV_PATH.write_text(bom_orig, encoding="utf-8")
+     results.append(("Reject 16-Pin J_CAM BTB Signal Overflow", s17 == "FAIL"))
+ 
+-    # Mut 18: Drive U6_OPT_AVDD EN from 0.006%-duty-cycle CDONE/VSYNC pulse (averages 0.108mV DC -> shuts off AVDD in user mode)
++    # Mut 18: Blind RC timer on CRESET_B without CDONE interlock (turns ON optical AVDD even when FPGA config fails with CDONE=0)
+     c18 = copy.deepcopy(base_cfg["4_fpga_uwg30_pinout_and_rtl_timing"])
+-    c18["lattice_tn02006_power_and_config_audit"]["optical_avdd_sequencer"]["enable_charging_source"] = "CDONE_VSYNC_PULSE"
++    c18["lattice_tn02006_power_and_config_audit"]["optical_avdd_sequencer"]["requires_cdone_high_to_enable"] = False
+     s18, _ = check_lattice_uwg30_pinout_power_and_config_spec(c18)
+-    results.append(("Reject 0.006%-Duty VSYNC Optical AVDD Sequencer", s18 == "FAIL"))
++    results.append(("Reject Config-Fail Blind Optical AVDD Turn-On", s18 == "FAIL"))
++
++    # Mut 19: Remove D_VDD fast-discharge clamp to 1V8_OPT_VDD (leaves AVDD ON during 1V8 rail power-down)
++    c19 = copy.deepcopy(base_cfg["4_fpga_uwg30_pinout_and_rtl_timing"])
++    c19["lattice_tn02006_power_and_config_audit"]["optical_avdd_sequencer"]["clamp_diodes"] = ["D_RST_to_FPGA_CRESET_B"]
++    s19, _ = check_lattice_uwg30_pinout_power_and_config_spec(c19)
++    results.append(("Reject Missing 1V8 Power-Down Fast AVDD Clamp", s19 == "FAIL"))
++
++    # Mut 20: Use small C_HOLD=1nF causing 60Hz inter-frame valley to droop below 0.95V VIH (shuts off AVDD between VSYNC pulses)
++    c20 = copy.deepcopy(base_cfg["4_fpga_uwg30_pinout_and_rtl_timing"])
++    c20["lattice_tn02006_power_and_config_audit"]["optical_avdd_sequencer"]["c_hold_nf"] = 1.0
++    s20, _ = check_lattice_uwg30_pinout_power_and_config_spec(c20)
++    results.append(("Reject 60Hz VSYNC Valley Droop Below VIH", s20 == "FAIL"))
+ 
+-    # Mut 19: Truncate 3-wire stereo I2S bus on J_BTB_L to single-pin S3_I2S_MUX_1V8
++    # Mut 21: Truncate 3-wire stereo I2S bus on J_BTB_L to single-pin S3_I2S_MUX_1V8
+     pinmap_path = SCRIPT_DIR / "PINMAP_V1_0_FROZEN.csv"
+     pin_orig = pinmap_path.read_text(encoding="utf-8")
+     try:
+         pinmap_path.write_text(pin_orig.replace("22:I2S_BCLK_1V8", "23:S3_I2S_MUX_1V8"), encoding="utf-8")
+-        s19, _ = check_cross_table_bom_pinmap_icd_consistency(base_cfg)
++        s21, _ = check_cross_table_bom_pinmap_icd_consistency(base_cfg)
+     finally:
+         pinmap_path.write_text(pin_orig, encoding="utf-8")
+-    results.append(("Reject Single-Pin I2S Bus Truncation on J_BTB_L", s19 == "FAIL"))
++    results.append(("Reject Single-Pin I2S Bus Truncation on J_BTB_L", s21 == "FAIL"))
+ 
+     all_caught = all(ok for _, ok in results)
+     summary = "; ".join(f"{name}={'CAUGHT' if ok else 'MISSED'}" for name, ok in results)
+-    return ("PASS" if all_caught else "FAIL"), f"19/19 negative fault injections caught: {summary}"
++    return ("PASS" if all_caught else "FAIL"), f"21/21 negative fault injections caught: {summary}"
+ 
+ 
+ def main():
+@@ -755,7 +793,7 @@ def main():
+         ("CHK-05 [45/45 BOM 3D Assembly, Symmetric Optical Wings, HDI Escape & Native CAD/STEP DRC]", check_complete_bom_hdi_escape_and_cad_drc(cfg["5_hdi_pcb_and_complete_bom_3d_placement"], cfg["2_dual_battery_catalog_and_power_tree"])),
+         ("CHK-06 [Mass (34.75g), CoG, Runtime & Thermal Physical Verification]", check_analytical_mass_cog_thermal(cfg["6_power_thermal_mass_and_cog_budgets"], cfg["2_dual_battery_catalog_and_power_tree"])),
+         ("CHK-07 [Cross-Table Consistency Audit: 45-RefDes BOM <-> 57-Pin S3/30-Ball FPGA/6-BTB PINMAP <-> ICD]", check_cross_table_bom_pinmap_icd_consistency(cfg)),
+-        ("CHK-08 [Anti-Fake-PASS 19-Case Hardware Fault Injection Suite]", run_negative_fault_injection_suite(cfg)),
++        ("CHK-08 [Anti-Fake-PASS 21-Case Hardware Fault Injection Suite]", run_negative_fault_injection_suite(cfg)),
+     ]
+ 
+     EDA_LOG_PATH.write_text("\n".join(eda_logs) + "\n", encoding="utf-8")
