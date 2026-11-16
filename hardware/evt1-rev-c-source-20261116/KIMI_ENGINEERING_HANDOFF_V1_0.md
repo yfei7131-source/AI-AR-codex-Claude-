@@ -1,39 +1,28 @@
-# 智元跃动 (Zhiyuan Yuedong) AI/AR 智能眼镜 V1.0 — EVT-1 Rev C (PR #19 P0 深度整改版) Kimi 工程交接手册
+# 智元跃动 (Zhiyuan Yuedong) AI/AR 智能眼镜 V1.0 — EVT-1 Rev C KIMI (嘉立创EDA) 与 Codex (GitHub CI) 工程交接手册
 
-**工程版本**：`V1.0-EVT1-RevC-PR19-P0Fixed-20261116`  
-**Git 分支**：`handoff/evt1-rev-c-feasibility-20261115`（对应 PR #19 独立分支，保留 `main`、`PR #16`、`PR #17`、`PR #18` 原貌）  
-**主控与音频冻结架构**：`ESP32-S3-PICO-1-N8R8` (左镜腿 Wi-Fi/DVP/AI 主控) + `Nordic nRF5340-CMAA-R7` (右镜腿 BLE 5.4 LE Audio 协处理器) + `Lattice iCE40UP5K-UWG30ITR` (中梁双目 QSPI 桥接 FPGA) + `2x ADI MAX98357AEWL+T` (数字 I2S 功放)
+**工程版本**：`V1.0-EVT1-RevC-PR19-CrossTableVerified-20261116`  
+**Git 分支**：`handoff/evt1-rev-c-feasibility-20261115`（对应 [Draft PR #19](https://github.com/yfei7131-source/AI-AR-codex-Claude-/pull/19)，严格保护 `main`、[PR #16](https://github.com/yfei7131-source/AI-AR-codex-Claude-/pull/16)、[PR #17](https://github.com/yfei7131-source/AI-AR-codex-Claude-/pull/17)、[PR #18](https://github.com/yfei7131-source/AI-AR-codex-Claude-/pull/18)）  
+**主控与音频冻结架构**：[Espressif `ESP32-S3-PICO-1-N8R8`](https://documentation.espressif.com/esp32-s3-pico-1_datasheet_en.pdf) (左镜腿 Wi-Fi/DVP/AI 主控) + [Nordic `nRF5340-CMAA-R7`](https://www.yic-electronics.com/blog/QFN-vs-WLCSP-vs-BGA-Differences,PCB-Design,and-BLE-Applications.html) (右镜腿 BLE 5.4 LE Audio 协处理器与单主 I2S 混音器) + [Lattice `iCE40UP5K-UWG30ITR`](https://www.micro-semiconductor.com/datasheet/10-ICE40UP5K-MDP-EVN.pdf) (鼻梁双目 QSPI 桥接 FPGA) + `2x ADI MAX98357AEWL+T` (数字 I2S 功放)
 
 ---
 
-## 1. 本轮 P0 深度整改闭环（基于 `9a302e2`）
+## 1. 本轮跨表一致性审查与 40g 高密度硬件架构闭环
 
-### 1.1 修复防撕裂写入期间 FIFO 溢出问题与最坏时序验证 (`evt1_ar_display_fpga_bridge_rev_c.v`)
-- **原 `9a302e2` 缺陷根因**：
-  1. 原 `9a302e2` 在 `0xA2 / 0xA3` 防撕裂写入模式下，当主机写入地址命中当前扫描行或下一预取行 (`tear_row_collision == 1`) 时直接挂起 `spram_do_write` 达 **1~2 个完整水平扫描行（`2,000 ~ 4,000` 个 `clk_48m` 周期 = `41.67 ~ 83.33 μs`）**。在此期间主机 40 MHz QSPI 连续突发输入 `416 ~ 833` 个 16-bit 字，仅 `6.4 μs` 即令 64 字 FIFO 溢出 (`fifo_overflow_sticky = 1`)。
-  2. 原 `cdc_fifo_mem [0:63]` 写端口位于带异步复位的 `always @(posedge host_sck or posedge host_cs_n)` 块内且采用组合逻辑异步读，导致 `yosys synth_ice40` 无法映射为硬件 Block RAM。
-- **P0 整改方案**：
-  1. **256 深 × 32-bit 硬件 EBR 双时钟格雷码异步 FIFO（实例化 `2x SB_RAM40_4K`：`u_cdc_fifo_hi` + `u_cdc_fifo_lo`）**：
-     - 采用 Lattice [`SB_RAM40_4K`](https://www.farnell.com/datasheets/3215488.pdf) 原生双端口 Block RAM（深度由 64 字提升至 **256 字**，0 LUT 存储开销），配合前瞻读地址 `fifo_ebr_raddr = spram_do_write ? rptr_bin_next[7:0] : rptr_bin[7:0]` 实现零气泡每周期 1 字 (`48.00 Mwords/s`) 排空。
-  2. **非阻塞 SPRAM 写入仲裁 + EBR 乒乓双页行缓存 (`Page 0: 0..79`, `Page 1: 128..207`)**：
-     - 移除 `tear_row_collision` 对 `spram_do_write` 的行级阻塞（`spram_do_write = (!fifo_empty_c) && (!prefetch_active)`），使 FIFO 排空仅在每行 82 周期 (`1.7083 μs`) 的 HBLANK 行预取窗口暂停。在最坏 40 MHz 主机连续突发及任意活跃行相位碰撞下，FIFO 最大积压严格为 **19 / 256 字（`13.47x` 深度裕量，`fifo_overflow_sticky == 0`）**。
-     - 行缓存 `u_ebr_l` / `u_ebr_r` 内部划分为奇偶乒乓双页（偶行使用 `0..79`，奇行使用 `128..207`），确保 `next_row` 预取绝不覆盖正在扫描输出的 `cur_row`，并在 `ICD-01` 中规定主机以 `frame_vsync_1v8` / `VBLANK` (`6.667 ms` 窗口容纳 `3.840 ms` 双目满帧突发) 同步启动帧传输。
-  3. **拆分 `host_sck` 异步复位块与移除非 Verilog-2005 语法**：
-     - `always @(posedge host_sck or posedge host_cs_n)` 仅复位 4-bit `h_nib_cnt`，其余数据与格雷码指针全部置于纯同步 `always @(posedge host_sck)`，消除 `yosys` `proc_dff` 异步锁存器错误；清除 `V_ACTIVE[8:0]`、`w_idx[15:0]` 等非 IEEE 1364-2005 整数切片语法。
+1. **BOM (45 位号) $\leftrightarrow$ PINMAP (40 行全引脚) $\leftrightarrow$ ICD (5 大总线) 100% 一致性修正 (`CHK-07`)**：
+   - **修复 `J_CAM` 与 `J_BTB_L` / `J_BRIDGE_IN` 16-Pin 信号溢出**：将 `BOM-05 (J_CAM)`、`BOM-15 (J_BTB_L)`、`BOM-31 (J_BRIDGE_IN)` 由 16-Pin 升级为 **24-Pin [Hirose `BM28B0.6-24DS/2-0.35V(53)`](https://www.hirose.com/en/product/document?clcode=CL0673-5043-0-51&productname=BM28B0.6-16DS/2-0.35V(51)&series=BM28&documenttype=Catalog&lang=en&documentid=D49354_en)**（`1.50 × 5.50 × 0.60 mm`），完整承载摄像头 19 路信号+5 路屏蔽地及跨鼻梁 24 路干线信号，并在 `PINMAP_V1_0_FROZEN.csv` 与 `ICD_FPGA_HOST_OPTICS_SPEC_REV_C.md` 中给出逐针定义。
+   - **新增双目光机硬件上电时序门控 LDO `U6_OPT_AVDD` (`BOM-45`)**：在 `M-OPT-BRIDGE` 背面 (`X=2.10, Y=12.20 mm`) 配置 [TI `TLV75528PDQNR`](https://www.ti.com/lit/ds/symlink/tlv755p.pdf)（共封装兼容 `TLV75533PDQNR`），由 `U2_FPGA Ball D3 (CDONE)` 经 $100\text{ k}\Omega + 100\text{ nF}$ ($\tau = 10\text{ ms}$) RC 延时控制 `EN`，硬件确保 `1V8_OPT_VDD` 稳定且 FPGA 配置完成后延时 $\ge 3.5\text{ ms}$ 才开启 `AVDD_OPT_BIAS`（Pin 9），断电时通过内部 $120\ \Omega$ 主动放电避免面板闩锁。
+   - **补齐 `ESP32-S3-PICO-1` 全部 57 脚与单主 I2S 混音拓扑**：在 `PINMAP_V1_0_FROZEN.csv` 完整列出 `U1_HOST` 1..57 脚，明确由 `nRF5340-CMAA` 作为唯一 `1.8V` 功放 I2S Master 驱动 `U10_AMP_L/R`，接收 `ESP32-S3` 本地 TTS I2S 输入并数字混音，彻底杜绝双主控总线冲突。
+2. **保留并验证 FPGA 核心方案 (`evt1_ar_display_fpga_bridge_rev_c.v`)**：
+   - 保留 `3x SB_RAM40_4K`（256 字 × 34-bit）格雷码异步 FIFO、`4x SB_SPRAM256KA` 双目独立帧存、`2x SB_RAM40_4K` 乒乓行缓存、`60.000 Hz` (`800,000 clks`) 帧率、`row_cnt=10 -> next_row=11` 活跃行预取防撕裂保持 (`tear_row_holdoff`)，以及 `fifo_not_empty_q`、`s1_diff_10_q`、单调递增 `pf_addr_q` 等 `48.000 MHz` 关键路径优化。
 
-### 1.2 修复 `Makefile` 管道退出码丢失、增加测试台超时保护与 GitHub Actions CI
-- **`Makefile` 管道退出码修复**：加入 `SHELL := /bin/bash` 与 `.SHELLFLAGS := -eu -o pipefail -c`，并在 `vvp $(TOP)_sim.vvp | tee iverilog_sim.log` 后增加 `grep -q "VERILOG_TB_RESULT: PASS" iverilog_sim.log` 双重校验，杜绝 `tee` 吞掉 `vvp` 非零退出码。
-- **测试台看门狗超时与最坏碰撞测试 (`tb_evt1_ar_display_fpga_bridge_rev_c.v`)**：新增 `SIM_TIMEOUT_CLKS = 3,500,000` 周期超时保护，并加入活跃扫描行第 239 行 `col_cnt = 1780` 跨 HBLANK 预取边界的 `0xA2` 最坏碰撞突发测试。
-- **GitHub Actions 原生 EDA CI (`.github/workflows/fpga_eda_ci.yml`)**：自动安装 `YosysHQ/setup-oss-cad-suite@v3`，依次执行 `make all` (`iverilog`、`vvp`、`yosys`、`nextpnr-ice40`、`icetime`) 与 `verify_v1_0_engineering.py` 并归档全部日志。
+---
 
-### 1.3 对照 Lattice 官方规范 (`FPGA-TN-02006-2.3` & `FPGA-EB-02007`) 复核 UWG30 封装、配置与供电
-- **电源滤波与上电时序 ([`FPGA-TN-02006-2.3` pp. 8–10](https://0x04.net/~mwk/sbdocs/ice40/FPGA-TN-02006-2-3-iCE40-Hardware-Checklist.pdf))**：
-  - `Ball C2 (VCC 1.2V)` 与 `Ball B2 (VCCPLL 1.2V)` 最先上电；在 BOM 中新增 `RN_FPGA_CFG_PWR` (`BOM-33`)，为 `Ball B2 (VCCPLL)` 配置强制要求的 **$100\ \Omega$ 串联电阻 + $4.7\ \mu\text{F} + 100\text{ nF}$ 滤波网络**（Checklist Item 1.4）。
-  - `Ball D4 (VPP_2V5)`：依据 Table 2.1 Note 6（Target SPI 模式且不使用内部 `HFOSC`/`LFOSC`/`RGB` 恒流源时允许 $1.8\text{ V}\pm 5\%$），通过 $10\ \Omega + 4.7\ \mu\text{F}$ RC 延时在 `Ball D2 (SPI_VCCIO1 1.8V)` 之后上电，并预留至 `2V8_SYS` 的 $0\ \Omega$ DNI 跳线以兼容 NVCM 烧录。
-- **Target SPI 配置引脚与消除 `Ball F1 (SPI_SO)` 启动冲突 ([`FPGA-TN-02006-2.3` Table 3.1 pp. 11–13](https://0x04.net/~mwk/sbdocs/ice40/FPGA-TN-02006-2-3-iCE40-Hardware-Checklist.pdf))**：
-  - `Ball C1 (SPI_SS_B)` 配置 $10\text{ k}\Omega$ 下拉电阻至 `GND`（确保 `CRESET_B` 释放时采样 `SPI_SS_B = 0` 进入 Target SPI 模式）；`Ball F3 (CRESET_B)` 配置 $10\text{ k}\Omega$ 上拉至 `1V8_FPGA_IO`；`Ball D3 (CDONE)` 配置 $4.7\text{ k}\Omega$ 上拉至 `1V8_FPGA_IO`。
-  - **关键电气修正**：在 1-bit Target SPI 配置期间，`Ball F1 (SPI_SO)` 为 FPGA 主动输出，而 `Ball E1 (SPI_SI)`、`Ball D1 (SPI_SCK)`、`Ball C1 (SPI_SS_B)`、`Ball F3 (CRESET_B)` 为 FPGA 输入。将上述 4 路输入放入 `U8_LS1` **Bank 2 (`Ch5..Ch8`, `DIR2 = HIGH` 常驻 `A->B` `3.3V->1.8V`)**，而将 `Ball F1 (SPI_SO / host_qio[1])`、`host_qio[2..3]` 放入 `U8_LS1` **Bank 1 (`Ch1..Ch4`, `DIR1` 由 `ESP32-S3 GPIO0 / QSPI_DIR1_EN` 控制)**：启动配置期间置 `DIR1 = LOW` (`B->A`) 避免 `U8_LS1` 与 `Ball F1 (SPI_SO)` 输出对顶短路；待 `CDONE = 1` 且完成 49 个配置时钟后置 `DIR1 = HIGH` (`A->B`) 切换为 4-bit QSPI 显示传输。
+## 2. 面向 40g 目标的 6 层 HDI、主副板、FPC、结构与散热约束
 
-### 1.4 解决双目显示对称布线、双轨电池结构与全 BOM 44 位号装配
-- **鼻梁板 (`M-OPT-BRIDGE`) 对称双翼布局**：将 `U2_FPGA` 置于中点 (`Y = 9.50 mm`)，左光机连接器 `J_DISP_L` 置于左翼 (`Y = 4.20 mm`)、右光机连接器 `J_DISP_R` 置于右翼 (`Y = 14.80 mm`)，左右走线长度严格对称（均为 $5.30\text{ mm}$，$\Delta L_{\text{L-R}} = 0.00\text{ mm}$），彻底消除左右 FPC 交叉跨越。
-- **双轨标准目录电池方案**：同时提供 Config A（[Grepow `GRP3911040`](https://www.grepow.com/shaped-battery/ultra-narrow-battery.html) $4.20\text{ V}, 110\text{ mAh}, 3.71\times 11.0\times 40.0\text{ mm}$，适配 $\ge 12.8\text{ mm}$ 水滴形镜腿尾端，续航 $3.24\text{ h}$）与 Config B（[Grepow `GRP220550`](https://www.grepow.com/shaped-battery/ultra-narrow-battery.html) $4.35\text{ V}, 47\text{ mAh}, 2.38\times 5.6\times 50.0\text{ mm}$，适配 $\le 6.0\text{ mm}$ 等截面超细直镜腿，高度零突出）。
+| 预算与约束类别 | 工程设计参数 | 验证结果 / 约束门限 |
+| :--- | :--- | :--- |
+| **6 层 2+2+2 Type-III HDI 叠层** | `L1(30μm) - PP1(55μm) - L2_GND1(18μm) - PP2(68μm) - L3_SIG1(18μm) - CORE(220μm) - L4_PWR(18μm) - PP3(68μm) - L5_GND2(18μm) - PP4(55μm) - L6(30μm)`，总板厚 **`0.598 mm`**（含阻焊 `0.628 mm`） | 线宽/线距 `50/50 μm`；激光微盲孔 `75/180 μm` 铜浆塞孔叠孔 VIPPO（满足 `0.35 mm` pitch `nRF5340` 与 `0.40 mm` pitch `iCE40UP5K` 逃线） |
+| **三板尺寸与 3D Z 轴包络** | 左主控板 `M-MAIN-L`：`5.80(局部8.20) × 46.00 mm`，Z 堆叠 **`2.49 mm`** $\le 3.20\text{ mm}$<br>鼻梁板 `M-OPT-BRIDGE`：`4.20 × 22.00 mm`，Z 堆叠 **`2.41 mm`** $\le 2.80\text{ mm}$<br>右音频板 `M-AUD-R`：`5.20 × 34.00 mm`，Z 堆叠 **`1.63 mm`** $\le 3.00\text{ mm}$ | 全 45 位号器件含 BTB 插合 FPC+补强板附加高度 (`+0.32 mm`) 零超限、零重叠、RF 净空区零侵入 |
+| **动态转轴与桥接 FPC 约束** | `FPC_CAM_L` / `FPC_HINGE_R`：2 层 `0.12 mm` 压延铜聚酰亚胺，设计弯折半径 **`1.80 mm`** $\ge 1.50\text{ mm}$（IPC-2223 动态标准，弯折环长 `6.50 mm`）<br>`FPC_BRIDGE`：2 层 `0.12 mm`，设计弯折半径 **`2.00 mm`** | 动态弯折区仅走单层压延铜线并做泪滴补强，严禁在弯折区放置过孔或元器件 |
+| **整机质量、重心与双轨电池** | 整机预估总重 **`34.75 g`**（较 `40.0 g` 留有 **`5.25 g` 裕量**），左右质量差 **`0.36 g`**（$\le 0.80\text{ g}$），重心 **`Y = 35.92 mm`**（位于 `[35.0, 65.0] mm` 鼻托-耳廓舒适区间）<br>双轨目录电芯：Config A [Grepow `GRP3911040`](https://www.grepow.com/shaped-battery/ultra-narrow-battery.html) (`2×110mAh = 0.814Wh`，续航 `3.24h`) / Config B `GRP220550` (`2×47mAh`，适配 $\le 6.0\text{ mm}$ 超细直镜腿) | 实测质量/重心/放电曲线在首件回板前标记为 `UNVERIFIED`；壳体干涉标记为 `BLOCKED` (`BLK-RevC-02`) |
+| **热设计与皮肤接触温升预算** | `M-MAIN-L` `U1_HOST` 底部 `4×4 mm` 散热焊盘经阵列 VIPPO 导热至 L2/L5 铜箔 + `25 μm` 人工合成石墨片 (`k = 1500 W/m·K`) 沿镜腿内壁均热（等效热阻 $R_{\theta} = 24.5\ ^\circ\text{C/W}$） | 25°C 环温下 30s 拍照突发峰值功耗 `805 mW`（占空比 0.62）预估外壁温升至 **`37.2 °C`**（`< 43.0 °C` IEC 62368-1 限值） |

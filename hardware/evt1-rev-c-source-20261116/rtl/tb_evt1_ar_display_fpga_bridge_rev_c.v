@@ -109,6 +109,7 @@ module tb_evt1_ar_display_fpga_bridge_rev_c;
         reg [15:0] cur_a;
         reg [15:0] w_val;
         begin
+            #1.0; // 1.0 ns phase offset from clk_48m wait() edges for zero delta-cycle ambiguity
             host_cs_n = 1'b0;
             qspi_send_nibble(cmd[7:4]);
             qspi_send_nibble(cmd[3:0]);

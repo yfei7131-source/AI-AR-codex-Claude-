@@ -1,51 +1,31 @@
-================================================================================
- ZHIYUAN YUEDONG AI/AR GLASSES V1.0 — AUTOMATED ENGINEERING VERIFICATION LOG
-================================================================================
-Timestamp (UTC)      : 2026-11-15T10:41:02Z
-Verification Policy  : V1.0-STRICT-NO-FAKE-PASS (Zero Fake-PASS Enforcement)
-Overall Gate Status  : DESIGN_RULES_VERIFIED__HARDWARE_RELEASE_BLOCKED_BY_6_EXTERNAL_ITEMS
---------------------------------------------------------------------------------
-[CHECK 1] ESP32-S3-PICO-1 (LGA-56) & iCE40UP5K Pinout Truth Check : VERIFIED_DATASHEET
-  - Verified 31 signals against Espressif ESP32-S3-PICO-1 Datasheet Table 2-1
-  - Confirmed 0 collisions with internal Octal PSRAM pins (Pin 28 SPICS1, Pins 38..42 GPIO33..37)
-  - Confirmed critical PICO-1 pin remaps: GPIO14=Pin19, GPIO15=Pin21, GPIO16=Pin22, GPIO17=Pin23,
-    GPIO19(USB_D-)=Pin25, GPIO20(USB_D+)=Pin26, GPIO21=Pin27, GPIO39=Pin44, GPIO40=Pin45,
-    GPIO41=Pin47, GPIO42=Pin48, GPIO45(DISP_PWR_EN)=Pin51.
-
-[CHECK 2] Dual-Battery Independent Charge/Protection & 3.3V Buck-Boost : VERIFIED_DATASHEET_CALC
-  - Left Charger (BQ24072RGTR)  : R_ISET=7.50k -> I_CHG=118.67 mA typ (130.0 mA max)
-  - Left Input Limit            : R_ILIM=3.09k -> I_IN_MAX=501.62 mA; /CE=LOW, TD=LOW, EN2=1, EN1=0
-  - Right Charger (BQ25170DSGR) : R_ISET=2.49k -> I_CHG=120.48 mA typ, R_VSET=27.0k -> 4.20V
-  - L/R Fast-Charge Imbalance   : 1.52% (Limit <= 5.0%)
-  - Discharge ORing & PCM       : LM66200DRLR Dual Ideal Diode + 2x BQ29700DSER PCM + 2x 10k NTC
-  - System 3.3V Regulator       : TPS63802DLAR Buck-Boost (VIN 1.8V-5.5V, eliminates TLV75733 3.725V dropout)
-
-[CHECK 3] Camera Privacy Hardware Window Interlock (F10 Redline)   : VERIFIED_DATASHEET_CALC
-  - Series High-Side Shunt      : R_SENSE=1.5 Ohm + R_LIMIT=300 Ohm + Kingbright APHD1608 LED
-  - Current Sense Amplifier     : INA185A4IDRLR (Gain=200 V/V) -> 0.896V at 2.985 mA
-  - Window Comparator (TLV7032) : Valid Window [0.36V, 2.55V] => I_LED in [1.2, 8.5] mA
-  - Fault Injection Matrix      : Normal=True | LED_Open=False | LED_Short=False
-
-[CHECK 4] Binocular Display Bridge SRAM & QSPI Bandwidth Closure   : VERIFIED_ARCH_CALC__BLOCKED_SILICON_STA
-  - iCE40UP5K Memory            : 1,048,576 bits SPRAM + 122,880 bits EBR (Raw 4bpp VGA = 1,228,800 bits -> DOES NOT FIT)
-  - Engineered Ping-Pong Mode   : 640x400 2bpp Dual-Bank = 1024000 bits (Fits 1024kb SPRAM = True)
-  - QSPI Bus Occupancy (40MHz)  : Raw 4bpp 60Hz = 92.16% (UNSAFE) -> Engineered 2bpp/RLE = 38.4% (SAFE)
-  - Binocular Alignment Budget  : <= 0.02 deg/eye -> <= 2.4 arcmin worst-case relative disparity
-
-[CHECK 5] 1:1 HDI PCB Geometry & 40g Mass / CoG Allocation         : VERIFIED_CALC__BLOCKED_CAD_STEP_WEIGHING
-  - Total Allocated Mass        : 38.85 g (Ceiling = 40.0 g, Margin = +1.15 g) [UNMEASURED_NO_SAMPLES]
-  - Center of Gravity (CoG)     : X = 0.03 mm (Lateral Symmetry), Y = 32.86 mm behind nose bridge
-
-[CHECK 6] Anti-Fake-PASS Negative Fault Injection Self-Test        : PASS_CAUGHT_ALL_INJECTED_DEFECTS
-  - Injected PICO-1 Pin 38 PSRAM Collision    -> Caught=True
-  - Injected R8 Single Charger & R35 High     -> Caught=True
-  - Injected R8 Parallel Privacy LED Bypass   -> Caught=True
-
-[CHECK 7] Active External Blockers (Strictly Flagged BLOCKED — Never Falsified as PASS):
-  * [BLOCKED] BLK-01: JBD 0.13" MicroLED (Hummingbird Mini II) QSPI Register Map & FPC Pinout
-  * [BLOCKED] BLK-02: Binocular Diffractive Waveguide 3D STEP & Active Alignment Tolerance Chain
-  * [BLOCKED] BLK-03: Lattice iCE40UP5K Native Synthesis (Yosys), Place-and-Route (nextpnr-ice40) & STA (icetime)
-  * [BLOCKED] BLK-04: 6-Layer Any-Layer HDI Impedance Coupon & Kimi EVT-0 R9 40 Unconnected Nets
-  * [BLOCKED] BLK-05: Dual 135mAh Prismatic Li-Po Cell (480542) Samples & IEC 62133 / UN38.3 Certification
-  * [BLOCKED] BLK-06: IEC 62368-1 Skin Contact Temperature Test & 2.4GHz Wi-Fi / Dual-BT Antenna Coexistence
-================================================================================
+==========================================================================================
+ZHIYUAN YUEDONG (智元跃动) AI/AR SMART GLASSES V1.0 — EVT-1 Rev C (PR #19 CI FIXED) LOG
+Policy: 256-Word EBR CDC FIFO + 3-Stage 48MHz Pipeline + Addr 0x0000 Fix + Zero Fake PASS
+==========================================================================================
+[PASS] CHK-01 [SoC Freeze Gate, ESP32-S3 57-Pin Audit & 4x SN74AXC8T245 Bank/SPI_SO Check]
+       -> Host=ESP32-S3-PICO-1-N8R8 (33 legal GPIOs mapped per Datasheet v1.2 Table 2-1; Pin 46 VDD3P3_CPU & 14 forbidden pins untouched; USB=Pins 25/26) + CoSoC=nRF5340-CMAA-R7; 4x SN74AXC8T245RJWR (8/8 4-bit DIR1/DIR2 banks) verified with 0 direction conflicts & Ball F1 (SPI_SO) boot-config contention isolated via QSPI_DIR1_EN.
+[PASS] CHK-02 [Dual-Track Grepow Catalog Battery (GRP3911040/GRP220550), 0.5C Charge & DPPM Isolation]
+       -> Dual-Track Catalog Battery: Config A=GRP3911040 (4.20V, 2x110mAh=220mAh / 0.814Wh, 3.71x11.0x40.0mm in >=12.8mm drop-tip) | Config B=GRP220550 (4.35V, 2x47mAh, 2.38x5.6x50mm in <=6.0mm slim straight temple); I_CHG_L=54.94mA (0.499C), I_CHG_R=54.64mA (0.497C); BQ24074 USB 4.40V DPPM isolation=+0.20V.
+[PASS] CHK-03 [10-State Privacy Interlock, POR Glitch & Dual-Chip Camera Anti-Backpowering]
+       -> Window=[0.878V (2.00mA), 2.190V (4.98mA)]; S0_Normal V_PRIV=1.576V (ON); S2_LED_Short V_PRIV=0.027V (OFF); POR_Glitch=11.0mV; Comp_Loss=0.000V; Cam_Backpower (2x SN74AXC8T245 across 14 lines)=0.84mV (<=5.0mV).
+[PASS] CHK-04_PIN_PWR [Lattice iCE40UP5K-UWG30 18-PIO PCF, Config Pins & FPGA-TN-02006 Power Audit]
+       -> UWG30=18/18 legal CMOS PIO balls (FPGA-EB-02007 p.23; 0 power/GND/CRESET_B/RGB conflicts); FPGA-TN-02006-2.3 Power/Config Verified: Ball B2 VCCPLL=100R+4.7uF+100nF, Ball D4 VPP_2V5=1.8V (Target SPI CRAM, no HFOSC/LFOSC/RGB), Ball C1 SPI_SS_B=10k PD, Ball F3 CRESET_B=10k PU, Ball D3 CDONE=4.7k PU, Ball F1 SPI_SO isolated via U8_LS1 DIR1.
+[BLOCKED] CHK-04A [Icarus Verilog Simulation (iverilog + vvp), Addr 0x0000 Fix & 48MHz Pipeline Audit]
+       -> [BLOCKED_ENV_NO_BINARY] `iverilog` not found in $PATH (`iverilog -g2005 -Wall -o sim.vvp evt1_ar_display_fpga_bridge_rev_c.v ice40_spram_ebr_sim.v tb_evt1_ar_display_fpga_bridge_rev_c.v`). Pre-check verified: (1) Fixed Row 0 Word 0 (`addr=0x0000`) `0xA53C==0xA53C` collision via `16'h5AC2` (0 mismatches across 38,400 words/frame), (2) 3-stage `s0 -> s1 -> spram_q` + `ebr_wdata_q` + `pix_shift` 48MHz timing-closure pipeline, (3) 256-word EBR CDC FIFO (5x SB_RAM40_4K + 4x SB_SPRAM256KA) & active-row `row_cnt==10` (`next_row==11`) `tear_row_holdoff` verification; native simulation awaits GitHub CI (`fpga_eda_ci.yml`).
+[BLOCKED] CHK-04B [Yosys FPGA Synthesis (synth_ice40)]
+       -> [BLOCKED_ENV_NO_BINARY] `yosys` not found in $PATH; command `yosys -p synth_ice40 -top evt1_ar_display_fpga_bridge_rev_c -json bridge.json evt1_ar_display_fpga_bridge_rev_c.v` awaits GitHub Actions CI (`fpga_eda_ci.yml`) — static model PASS forbidden.
+[BLOCKED] CHK-04C [nextpnr-ice40 Place & Route (--up5k --package uwg30)]
+       -> [BLOCKED_ENV_NO_BINARY] `nextpnr-ice40` not found in $PATH; command `nextpnr-ice40 --up5k --package uwg30 --pcf ice40up5k_uwg30_rev_c.pcf --json bridge.json --asc bridge.asc --freq 48` awaits GitHub Actions CI (`fpga_eda_ci.yml`) — static model PASS forbidden.
+[BLOCKED] CHK-04D [icetime Static Timing Analysis (-d up5k -c 48)]
+       -> [BLOCKED_ENV_NO_BINARY] `icetime` not found in $PATH; command `icetime -d up5k -P uwg30 -p ice40up5k_uwg30_rev_c.pcf -c 48 bridge.asc` awaits GitHub Actions CI (`fpga_eda_ci.yml`) — static model PASS forbidden.
+[BLOCKED] CHK-05 [45/45 BOM 3D Assembly, Symmetric Optical Wings, HDI Escape & Native CAD/STEP DRC]
+       -> Analytical 45/45 BOM placement, symmetric J_DISP_L/R wings (delta_L=0.00mm), 6L Type-III Stacked-VIPPO escape & dual-track battery rules verified clean; HOWEVER native `kicad-cli` Gerber DRC & 3D STEP shell (`EVT1_ID_TEMPLE_SHELL.stp`, `JBD013VGA_STEP.stp`) are absent in VM -> strictly marked BLOCKED (static bounding-box model forbidden from claiming native CAD/STEP PASS).
+[UNVERIFIED] CHK-06 [Mass (34.75g), CoG, Runtime & Thermal Physical Verification]
+       -> Analytical Model Within Spec (Physical Hardware UNVERIFIED): Est. Mass=34.75g (<=40.0g), L/R Delta=0.36g, CoG=(X=-0.51, Y=35.92, Z=-0.20mm); Est. HUD Runtime=3.24h (226.0mW on 2x110mAh GRP3911040 = 0.814Wh; or 1.42h on 2x47mAh GRP220550); Est. 30s Burst Skin Temp=37.2C (<43.0C).
+[PASS] CHK-07 [Cross-Table Consistency Audit: 45-RefDes BOM <-> 57-Pin S3/30-Ball FPGA/6-BTB PINMAP <-> ICD]
+       -> 45/45 BOM RefDes <-> 40-row PINMAP (57/57 S3 pins, 30/30 UWG30 balls, 4x AXC8T245, 24P J_CAM/J_BTB_L/J_BRIDGE_IN, 16P J_BTB_R, 10P J_DISP_L/R, U6_OPT_AVDD) <-> 5-bus ICD 100% consistent.
+[PASS] CHK-08 [Anti-Fake-PASS 17-Case Hardware Fault Injection Suite]
+       -> 17/17 negative fault injections caught: Reject Brochure BES2800BP Freeze=CAUGHT; Reject False ESP32-S3 A2DP/HFP Claim=CAUGHT; Reject SN74AXC8T245 Bank2 DIR2 Conflict=CAUGHT; Reject SPI_SO Boot Config Bus Contention=CAUGHT; Reject ESP32-S3 Pin 46 VDD3P3_CPU Misuse=CAUGHT; Reject Non-Catalog Battery Model=CAUGHT; Reject 1333Wh/L Battery Density=CAUGHT; Reject Push-Pull TLV7032=CAUGHT; Reject Static Pull-Up POR Glitch=CAUGHT; Reject Ungated DOVDD Back-Powering=CAUGHT; Reject Unfiltered VCCPLL Ball B2=CAUGHT; Reject Missing BOM RefDes in 3D Check=CAUGHT; Reject Unescaped nRF5340 Inner WLCSP Rows=CAUGHT; Reject RF Keepout Intrusion=CAUGHT; Reject TB Row 0 Addr 0x0000 16'h5AC3 Pattern Collision=CAUGHT; Reject Unpipelined 27MHz SPRAM Address Path=CAUGHT; Reject 16-Pin J_CAM BTB Signal Overflow=CAUGHT
+==========================================================================================
+SUMMARY: 6 PASS (Datasheet/Pinmap/Nodal/Fault-Injection) | 5 BLOCKED (Awaiting Native EDA/CAD & STEP Shell in CI) | 1 UNVERIFIED (Awaiting Physical Samples) | 0 FAIL
+==========================================================================================

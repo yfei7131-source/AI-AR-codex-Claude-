@@ -321,7 +321,7 @@ def verify_rtl_tb_makefile_and_run_iverilog(cfg, log_accumulator, rtl_override=N
         return "FAIL", "TB still tests row_cnt==239 (which has next_row==240 and prefetch_active==0) or lacks active-row tear_row_holdoff verification!"
 
     # 5. Check 48MHz timing-closure pipeline registers (s0_addr_q -> s1_addr_q / s1_hit_a_q -> spram_addr_q, ebr_wdata_l_q, pix_shift_l)
-    required_pipe_regs = ["s0_addr_q", "s1_addr_q", "s1_hit_a_q", "spram_addr_q", "ebr_wdata_l_q", "pix_shift_l", "wptr_bin_sync_q", "fifo_level_q"]
+    required_pipe_regs = ["fifo_not_empty_q", "s0_addr_q", "s1_addr_q", "s1_diff_10_q", "s1_hit_a_q", "spram_addr_q", "ebr_wdata_l_q", "pix_shift_l", "wptr_bin_sync_q", "fifo_level_q", "h_cmd_ok_q", "h_in_bounds_q"]
     missing_pipe = [r for r in required_pipe_regs if r not in rtl_code]
     if missing_pipe or "spram_mux_addr" in rtl_code:
         return "FAIL", f"RTL missing 48MHz timing-closure pipeline registers {missing_pipe} or retains unpipelined `spram_mux_addr` (~27MHz bottleneck)!"
@@ -492,7 +492,7 @@ def check_complete_bom_hdi_escape_and_cad_drc(cfg, bat_cfg):
     if not (kicad_exe and step_shell_exists):
         return (
             "BLOCKED",
-            f"Analytical 44/44 BOM placement, symmetric J_DISP_L/R wings (delta_L={abs(dist_l-dist_r):.2f}mm), "
+            f"Analytical 45/45 BOM placement, symmetric J_DISP_L/R wings (delta_L={abs(dist_l-dist_r):.2f}mm), "
             f"6L Type-III Stacked-VIPPO escape & dual-track battery rules verified clean; "
             f"HOWEVER native `kicad-cli` Gerber DRC & 3D STEP shell (`EVT1_ID_TEMPLE_SHELL.stp`, `JBD013VGA_STEP.stp`) are absent in VM -> "
             f"strictly marked BLOCKED (static bounding-box model forbidden from claiming native CAD/STEP PASS)."
@@ -535,6 +535,64 @@ def check_analytical_mass_cog_thermal(pwr_cfg, bat_cfg):
     )
     return "UNVERIFIED", detail
 
+
+
+def check_cross_table_bom_pinmap_icd_consistency(cfg):
+    pinmap_path = SCRIPT_DIR / "PINMAP_V1_0_FROZEN.csv"
+    icd_path = SCRIPT_DIR / "ICD_INTERFACE_CONTROL_TABLE.csv"
+
+    with open(BOM_CSV_PATH, "r", encoding="utf-8") as f:
+        bom_rows = list(csv.DictReader(f))
+    with open(pinmap_path, "r", encoding="utf-8") as f:
+        pin_rows = list(csv.DictReader(f))
+    with open(icd_path, "r", encoding="utf-8") as f:
+        icd_rows = list(csv.DictReader(f))
+
+    bom_by_ref = {r["RefDes"].strip(): r for r in bom_rows}
+
+    # 1. Verify 45 BOM RefDes including U6_OPT_AVDD optical power-sequencing LDO
+    if len(bom_rows) != 45 or "U6_OPT_AVDD" not in bom_by_ref:
+        return "FAIL", f"Expected 45 BOM items including U6_OPT_AVDD optical AVDD sequencing LDO, got {len(bom_rows)}!"
+
+    # 2. Verify J_CAM, J_BTB_L, J_BRIDGE_IN are 24-pin BM28B0.6-24DS (fixing 16-pin DVP/trunk signal overflow)
+    for btb_24 in ("J_CAM", "J_BTB_L", "J_BRIDGE_IN"):
+        mpn = bom_by_ref.get(btb_24, {}).get("MPN", "")
+        if "24DS" not in mpn:
+            return "FAIL", f"{btb_24} uses {mpn} (< 24 pins), causing DVP/cross-bridge signal overflow!"
+
+    # 3. Verify all 57 pins of U1_HOST (ESP32-S3-PICO-1-N8R8) appear in PINMAP_V1_0_FROZEN.csv
+    s3_pins_in_csv = set()
+    for r in pin_rows:
+        if "U1_HOST" in r["Chip_Ref"]:
+            pin_id_no_parens = re.sub(r"\(.*?\)", "", r["Pin_ID"])
+            for m in re.finditer(r"(\d+)\.\.(\d+)|(\d+)", pin_id_no_parens):
+                if m.group(1) and m.group(2):
+                    for p in range(int(m.group(1)), int(m.group(2)) + 1):
+                        if 1 <= p <= 57:
+                            s3_pins_in_csv.add(p)
+                elif m.group(3):
+                    p = int(m.group(3))
+                    if 1 <= p <= 57:
+                        s3_pins_in_csv.add(p)
+    if s3_pins_in_csv != set(range(1, 58)):
+        missing_s3 = sorted(set(range(1, 58)) - s3_pins_in_csv)
+        return "FAIL", f"PINMAP_V1_0_FROZEN.csv missing U1_HOST pins: {missing_s3}"
+
+    # 4. Verify all 6 BTB connectors and U6_OPT_AVDD appear in PINMAP_V1_0_FROZEN.csv
+    pin_chips = " ".join(r["Chip_Ref"] for r in pin_rows)
+    for req_ref in ("J_DISP_L", "J_DISP_R", "J_CAM", "J_BTB_L", "J_BRIDGE_IN", "J_BTB_R", "U6_OPT_AVDD"):
+        if req_ref not in pin_chips:
+            return "FAIL", f"PINMAP_V1_0_FROZEN.csv missing connector/sequencer entry for {req_ref}!"
+
+    # 5. Verify ICD_INTERFACE_CONTROL_TABLE.csv references 24-Pin J_CAM and U6_OPT_AVDD optical sequencing
+    icd_text = " ".join(" ".join(r.values()) for r in icd_rows)
+    if "24-Pin BTB J_CAM" not in icd_text or "U6_OPT_AVDD" not in icd_text or "BLK-JBD-01" not in icd_text:
+        return "FAIL", "ICD_INTERFACE_CONTROL_TABLE.csv out of sync with BOM/PINMAP (missing 24-Pin J_CAM, U6_OPT_AVDD or BLK-JBD-01..04)!"
+
+    return (
+        "PASS",
+        "45/45 BOM RefDes <-> 40-row PINMAP (57/57 S3 pins, 30/30 UWG30 balls, 4x AXC8T245, 24P J_CAM/J_BTB_L/J_BRIDGE_IN, 16P J_BTB_R, 10P J_DISP_L/R, U6_OPT_AVDD) <-> 5-bus ICD 100% consistent."
+    )
 
 def run_negative_fault_injection_suite(base_cfg):
     results = []
@@ -622,9 +680,18 @@ def run_negative_fault_injection_suite(base_cfg):
     s16, _ = verify_rtl_tb_makefile_and_run_iverilog(base_cfg["4_fpga_uwg30_pinout_and_rtl_timing"], [], rtl_override=rtl_mut16)
     results.append(("Reject Unpipelined 27MHz SPRAM Address Path", s16 == "FAIL"))
 
+    # Mut 17: Downgrade J_CAM in BOM to 16-pin BM28B0.6-16DS (causing 19-signal DVP + 3-rail overflow)
+    bom_orig = BOM_CSV_PATH.read_text(encoding="utf-8")
+    try:
+        BOM_CSV_PATH.write_text(bom_orig.replace("BM28B0.6-24DS/2-0.35V(53)", "BM28B0.6-16DS/2-0.35V(53)", 1), encoding="utf-8")
+        s17, _ = check_cross_table_bom_pinmap_icd_consistency(base_cfg)
+    finally:
+        BOM_CSV_PATH.write_text(bom_orig, encoding="utf-8")
+    results.append(("Reject 16-Pin J_CAM BTB Signal Overflow", s17 == "FAIL"))
+
     all_caught = all(ok for _, ok in results)
     summary = "; ".join(f"{name}={'CAUGHT' if ok else 'MISSED'}" for name, ok in results)
-    return ("PASS" if all_caught else "FAIL"), f"16/16 negative fault injections caught: {summary}"
+    return ("PASS" if all_caught else "FAIL"), f"17/17 negative fault injections caught: {summary}"
 
 
 def main():
@@ -648,9 +715,10 @@ def main():
         ("CHK-04B [Yosys FPGA Synthesis (synth_ice40)]", run_eda_tool_if_present("yosys", ["yosys", "-p", "synth_ice40 -top evt1_ar_display_fpga_bridge_rev_c -json bridge.json", str(RTL_PATH.name)], eda_logs)),
         ("CHK-04C [nextpnr-ice40 Place & Route (--up5k --package uwg30)]", run_eda_tool_if_present("nextpnr-ice40", ["nextpnr-ice40", "--up5k", "--package", "uwg30", "--pcf", str(PCF_PATH.name), "--json", "bridge.json", "--asc", "bridge.asc", "--freq", "48"], eda_logs)),
         ("CHK-04D [icetime Static Timing Analysis (-d up5k -c 48)]", run_eda_tool_if_present("icetime", ["icetime", "-d", "up5k", "-P", "uwg30", "-p", str(PCF_PATH.name), "-c", "48", "bridge.asc"], eda_logs)),
-        ("CHK-05 [44/44 BOM 3D Assembly, Symmetric Optical Wings, HDI Escape & Native CAD/STEP DRC]", check_complete_bom_hdi_escape_and_cad_drc(cfg["5_hdi_pcb_and_complete_bom_3d_placement"], cfg["2_dual_battery_catalog_and_power_tree"])),
+        ("CHK-05 [45/45 BOM 3D Assembly, Symmetric Optical Wings, HDI Escape & Native CAD/STEP DRC]", check_complete_bom_hdi_escape_and_cad_drc(cfg["5_hdi_pcb_and_complete_bom_3d_placement"], cfg["2_dual_battery_catalog_and_power_tree"])),
         ("CHK-06 [Mass (34.75g), CoG, Runtime & Thermal Physical Verification]", check_analytical_mass_cog_thermal(cfg["6_power_thermal_mass_and_cog_budgets"], cfg["2_dual_battery_catalog_and_power_tree"])),
-        ("CHK-07 [Anti-Fake-PASS 16-Case Hardware Fault Injection Suite]", run_negative_fault_injection_suite(cfg)),
+        ("CHK-07 [Cross-Table Consistency Audit: 45-RefDes BOM <-> 57-Pin S3/30-Ball FPGA/6-BTB PINMAP <-> ICD]", check_cross_table_bom_pinmap_icd_consistency(cfg)),
+        ("CHK-08 [Anti-Fake-PASS 17-Case Hardware Fault Injection Suite]", run_negative_fault_injection_suite(cfg)),
     ]
 
     EDA_LOG_PATH.write_text("\n".join(eda_logs) + "\n", encoding="utf-8")

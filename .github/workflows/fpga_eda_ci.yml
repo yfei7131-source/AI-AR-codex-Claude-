@@ -53,7 +53,19 @@ jobs:
         id: pnr
         continue-on-error: true
         working-directory: hardware/evt1-rev-c-source-20261116/rtl
-        run: make pnr
+        run: |
+          make pnr
+          python3 - <<'PY'
+          import re
+          from pathlib import Path
+          log = Path("nextpnr_uwg30.log").read_text(encoding="utf-8")
+          frequencies = [float(value) for value in re.findall(r"Max frequency for clock.*?:\s*([0-9.]+) MHz", log)]
+          if not frequencies:
+              raise SystemExit("No nextpnr clock frequency results found")
+          if min(frequencies) < 48.0:
+              raise SystemExit(f"nextpnr timing constraint failed: {frequencies}")
+          print(f"nextpnr clock frequencies (MHz): {frequencies}; all meet 48 MHz")
+          PY
 
       - name: Real icetime static timing analysis
         id: sta
@@ -63,6 +75,17 @@ jobs:
           test -s evt1_ar_display_fpga_bridge_rev_c.asc
           icetime -d up5k -P uwg30 -p ice40up5k_uwg30_rev_c.pcf -c 48 -t -m -r evt1_ar_display_fpga_bridge_rev_c_sta.rpt evt1_ar_display_fpga_bridge_rev_c.asc
           test -s evt1_ar_display_fpga_bridge_rev_c_sta.rpt
+          python3 - <<'PY'
+          import re
+          from pathlib import Path
+          report = Path("evt1_ar_display_fpga_bridge_rev_c_sta.rpt").read_text(encoding="utf-8")
+          frequencies = [float(value) for value in re.findall(r"Total path delay:.*?([0-9.]+) MHz", report)]
+          if not frequencies:
+              raise SystemExit("No icetime path frequency results found")
+          if min(frequencies) < 48.0:
+              raise SystemExit(f"icetime 48 MHz constraint failed: {frequencies}")
+          print(f"icetime path frequencies (MHz): {frequencies}; all meet 48 MHz")
+          PY
 
       - name: Summarize real EDA results
         if: always()
@@ -81,6 +104,10 @@ jobs:
             exit 1
           fi
 
+      - name: Cross-table and engineering verification
+        working-directory: hardware/evt1-rev-c-source-20261116
+        run: python3 verify_v1_0_engineering.py
+
       - name: Upload EDA logs and reports
         if: always()
         uses: actions/upload-artifact@v4
@@ -94,3 +121,5 @@ jobs:
             hardware/evt1-rev-c-source-20261116/rtl/*_sta.rpt
             hardware/evt1-rev-c-source-20261116/rtl/*.json
             hardware/evt1-rev-c-source-20261116/rtl/*.asc
+            hardware/evt1-rev-c-source-20261116/v1_0_verification_report.txt
+            hardware/evt1-rev-c-source-20261116/evidence/*.log

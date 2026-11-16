@@ -3,54 +3,64 @@
   "date": "2026-11-16",
   "project": "EVT-1 Rev C latest engineering archive",
   "status": "ARCHIVED_SOURCE_ONLY_NOT_FOR_FAB",
-  "outer_archive": "BLOCKED_ITEMS_CHECKLIST.zip",
-  "outer_archive_bytes": 408777,
-  "outer_archive_sha256": "9d1cd89eb7d9c2bd8d5e816065659cbcc8df9ce7270dc4c371428c88444acbb5",
   "source_archive": "ZY_AIAR_V1_0_KIMI_HANDOFF_PACKAGE.zip",
-  "source_archive_bytes": 379025,
-  "source_archive_sha256": "420c6c6f523d71ba524bbcee3c326651a1e09b1eaf97a9dec083584297a0a0be",
+  "source_archive_bytes": 468858,
+  "source_archive_sha256": "1f60591b06bd9973fb90805c45882031940b45fdaacaacba127b027f75778701",
   "bundle": {
     "path": "handoff_evt1_rev_c.bundle",
-    "bytes": 273030,
-    "sha256": "10cd6fcc4fee3457b6acb4377770d134adfeaeb367878b6646169f7ddbde1e04",
+    "bytes": 317540,
+    "sha256": "795230ebd56ca424249d89b31ddab40519af75be1d7bd1cab58c7cc86916c3b2",
     "verified": true,
-    "head": "d15cc6f841282664be7dda37bb0111d83ad42e3d",
-    "parent": "8697069b189aab419433639e4ea8c70baef05182",
+    "complete_history": true,
+    "head": "a678be1437b965ac83874138f28792202e0901a9",
+    "parent": "dfcf8e113e1a67eb876eb6534ead04d4b3b382b5",
+    "requested_commit": "dfcf8e113e1a67eb876eb6534ead04d4b3b382b5",
+    "requested_commit_is_direct_parent": true,
     "ref": "refs/heads/handoff/evt1-rev-c-feasibility-20261115",
-    "tree_file_count": 20
+    "tree_file_count": 22
   },
   "source_counts": {
-    "zip_files": 22,
-    "bundle_tree_files": 20,
-    "tree_matches": 20,
+    "zip_files": 24,
+    "bundle_tree_files": 22,
+    "tree_matches": 22,
     "tree_mismatches": 0,
-    "archive_project_and_source_artifacts": 21
+    "archive_project_and_source_artifacts": 23
   },
   "files": [
     {
       "path": "0001-evt1-rev-c-feasibility.patch",
-      "bytes": 67522,
-      "sha256": "b8078ca79684e93f13eaaae5f1dca343020d63ceccc5199d5fc8f6cae97ed408"
+      "bytes": 159425,
+      "sha256": "e136e526f1c67a272482666a50604523419ee41af6a710588c0d63eafccffa7d"
+    },
+    {
+      "path": "handoff_evt1_rev_c.bundle",
+      "bytes": 317540,
+      "sha256": "795230ebd56ca424249d89b31ddab40519af75be1d7bd1cab58c7cc86916c3b2"
     },
     {
       "path": "BLOCKED_ITEMS_CHECKLIST.csv",
-      "bytes": 3468,
-      "sha256": "c975813b83d73ea2e147d18242d0b5101a021d9953357e89811f1a4e7e27e986"
+      "bytes": 5058,
+      "sha256": "874afc1d72872f8894948d9faef8301e74362323211a23a5a1084a581c816af6"
     },
     {
       "path": "BOM_V1_0_FROZEN.csv",
-      "bytes": 18905,
-      "sha256": "d0287c477cb0492a6964182631a9e329ab41fa3b19dab22908c113a32e13d720"
+      "bytes": 19724,
+      "sha256": "848711d83aed4755db265eeb970ebe86da31b95fe841e8d634b4a2f92896e43e"
     },
     {
       "path": "build_handoff_package.py",
-      "bytes": 74921,
-      "sha256": "f29ac1b8829efef3a3d387617ca47569492ccbec8920eeba854ccdd397f364db"
+      "bytes": 82612,
+      "sha256": "571ebeba3bda3adffc2d2ebaaecba69404f81df6054ef43ce79a44759834d56a"
+    },
+    {
+      "path": "CHANGELOG_EVT1_REV_C.md",
+      "bytes": 6615,
+      "sha256": "91aebe250f10b093991f0d46d8577d6b938d1c0a1193e80f87532177edd5eb4c"
     },
     {
       "path": "evidence/eda_toolchain_execution.log",
-      "bytes": 1707,
-      "sha256": "0c3829750d0965590bb7bce2ea742af70a98066c5b1d09516ce17543f4d9e6ed"
+      "bytes": 2685,
+      "sha256": "9ecd72b6dac9a305e1ce6aa524f2c065c0da3692bd465e3f5845d0b0305f6a2f"
     },
     {
       "path": "evidence/v1_0_verification_log.json",
@@ -59,38 +69,38 @@
     },
     {
       "path": "evidence/v1_0_verification_report.txt",
-      "bytes": 4046,
-      "sha256": "fbf154852b946515fe648e688d414650c6f12cb01a40ddead84638dfcc29bfff"
+      "bytes": 6051,
+      "sha256": "49c2a323a7b72497b5d96594316cfa17d53ca17c58ea63f1b6bd2d804b6d7fc6"
     },
     {
       "path": "GITHUB_DRAFT_PR_INSTRUCTIONS.md",
-      "bytes": 3478,
-      "sha256": "cb9ffe4be75290b15a80546c048cca15727ad5955f5724448eb6011eadf036e3"
+      "bytes": 2802,
+      "sha256": "cec56b49a7a4259a554444b988c82e716056e4e36f57579a7da1315a2a553fd9"
     },
     {
-      "path": "handoff_evt1_rev_c.bundle",
-      "bytes": 273030,
-      "sha256": "10cd6fcc4fee3457b6acb4377770d134adfeaeb367878b6646169f7ddbde1e04"
+      "path": "ICD_FPGA_HOST_OPTICS_SPEC_REV_C.md",
+      "bytes": 14980,
+      "sha256": "cc53fb1032d3084403f5af944ee9a5943996f90f9bac6f6c3ca7020a9e368184"
     },
     {
       "path": "ICD_INTERFACE_CONTROL_TABLE.csv",
-      "bytes": 3965,
-      "sha256": "98d8dc1a74c4b4d7f2a83cda47f74e616438bfbc6e0604dd7fd3a04687230053"
+      "bytes": 4297,
+      "sha256": "55fb845260279df4ecfd4e90c40106eecd20090d447a092714db759dfa93e2f4"
     },
     {
       "path": "KIMI_ENGINEERING_HANDOFF_V1_0.md",
-      "bytes": 7177,
-      "sha256": "78afecbe3da248d2dc1fc56c7aa10206bbc3209ace18cec3fc84becde8553aec"
+      "bytes": 5800,
+      "sha256": "0e824bb522000ac8b2be521548453b9aba909b76c1c1eb36ce8998fefb6ad919"
     },
     {
       "path": "PINMAP_V1_0_FROZEN.csv",
-      "bytes": 9641,
-      "sha256": "6b90dca8a2005b179814012089e4959b44fc1cd5bc3c8b95f6197a5a39869256"
+      "bytes": 13855,
+      "sha256": "168973203cdef21a7f78f3227cd72e4ddb980736f70a7c825ca3f0de9351c725"
     },
     {
       "path": "rtl/evt1_ar_display_fpga_bridge_rev_c.v",
-      "bytes": 30226,
-      "sha256": "3100c3dda4e14d62b168067e89f861dd77cd88610430a07829d15302aa3f485e"
+      "bytes": 30213,
+      "sha256": "65e734254af2f3d8735629759c0ce39ee9122bd6e394fae06c4d45197460bfed"
     },
     {
       "path": "rtl/ice40_spram_ebr_sim.v",
@@ -109,8 +119,8 @@
     },
     {
       "path": "rtl/tb_evt1_ar_display_fpga_bridge_rev_c.v",
-      "bytes": 14198,
-      "sha256": "394e7e4ca5231a159e3aaa8192d014bce3fc762c01ae5602e8c2098063a68534"
+      "bytes": 14296,
+      "sha256": "7fe13f6cf69777f046956784a777b03127d383b4e94e4d3dcb7e0a52b9d09ba0"
     },
     {
       "path": "SOC_ARCHITECTURE_COMPARISON.csv",
@@ -119,25 +129,28 @@
     },
     {
       "path": "SYSTEM_BUDGETS_V1_0.json",
-      "bytes": 32592,
-      "sha256": "e7b81d8ba6e2dfec6ef3d3ebbb04a76256706479ae5a0097bf315c5b0f18fff3"
+      "bytes": 32835,
+      "sha256": "b110f56d1113716575b7c96ce022df7f95cc999279d3a3fd158f06c22c3d408d"
     },
     {
       "path": "v1_0_verification_report.txt",
-      "bytes": 5697,
-      "sha256": "f6c960d4c192ad677ef47bfa794c4a4848711ba0407f72ee84b50fc8896cde67"
+      "bytes": 6051,
+      "sha256": "49c2a323a7b72497b5d96594316cfa17d53ca17c58ea63f1b6bd2d804b6d7fc6"
     },
     {
       "path": "verify_v1_0_engineering.py",
-      "bytes": 38324,
-      "sha256": "dcca064f0565fc2c02095886d5aa1d894e0de793b9d7e5704e0b146e27b8fffb"
+      "bytes": 42165,
+      "sha256": "07300c6950481f8d25e38aa42f84805768870e919c4682eea2415a63e3fdd3fb"
     }
   ],
   "verification": {
     "constraint_mhz": 48,
-    "native_ci": "PENDING_GITHUB_ACTIONS",
+    "native_ci": "SEE_LATEST_GITHUB_ACTIONS_RUN",
+    "pnr_sta_explicit_min_frequency_check": true,
+    "local_engineering_check": "6 PASS; 5 BLOCKED; 1 UNVERIFIED; 0 FAIL",
     "pcb_cad_drc": "BLOCKED",
     "physical_validation": "UNVERIFIED",
     "manufacturing_release": false
-  }
+  },
+  "source_note": "Final direct engineering ZIP validated after the outer download was replaced during processing."
 }

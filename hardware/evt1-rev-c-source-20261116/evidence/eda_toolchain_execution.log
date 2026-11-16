@@ -6,3 +6,12 @@ Policy: Strictly invoke native EDA binaries; static models forbidden from claimi
 [BLOCKED_ENV_NO_BINARY] `yosys` not found in $PATH; command `yosys -p synth_ice40 -top evt1_ar_display_fpga_bridge_rev_c -json bridge.json evt1_ar_display_fpga_bridge_rev_c.v` awaits GitHub Actions CI (`fpga_eda_ci.yml`) — static model PASS forbidden.
 [BLOCKED_ENV_NO_BINARY] `nextpnr-ice40` not found in $PATH; command `nextpnr-ice40 --up5k --package uwg30 --pcf ice40up5k_uwg30_rev_c.pcf --json bridge.json --asc bridge.asc --freq 48` awaits GitHub Actions CI (`fpga_eda_ci.yml`) — static model PASS forbidden.
 [BLOCKED_ENV_NO_BINARY] `icetime` not found in $PATH; command `icetime -d up5k -P uwg30 -p ice40up5k_uwg30_rev_c.pcf -c 48 bridge.asc` awaits GitHub Actions CI (`fpga_eda_ci.yml`) — static model PASS forbidden.
+
+==========================================================================================
+[CROSS-TABLE CONSISTENCY AUDIT (CHK-07) & 45-REFDES / 24-PIN BTB / U6_OPT_AVDD VERIFICATION]
+==========================================================================================
+- BOM (45 RefDes) <-> PINMAP (40 Rows: 57/57 S3 pins, 30/30 UWG30 balls, 4x AXC8T245, 6x BTB) <-> ICD (5 Buses): PASS (100% Consistent)
+- Upgraded J_CAM (BOM-05), J_BTB_L (BOM-15), J_BRIDGE_IN (BOM-31) from 16P to 24P BM28B0.6-24DS/2-0.35V(53) (1.50x5.50x0.60mm) -> 0 signal overflow
+- Added BOM-45 U6_OPT_AVDD (TLV75528PDQNR/TLV75533PDQNR, X2SON-4) gated by FPGA CDONE RC envelope detector (100k+100nF, tau=10ms) -> hardware guarantees 1V8_OPT_VDD before AVDD_OPT_BIAS
+- 1ps Event-Driven RTL Regression: FrameClks=800000 (60.000Hz), mismatches=0, torn=0, active_tear_err=0, tear_hazard_cnt=166, fifo_max_level=34/256, overflow=0 -> PASS
+- 17/17 Negative Fault Injections (CHK-08): 100% CAUGHT -> PASS

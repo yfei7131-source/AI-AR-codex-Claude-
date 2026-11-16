@@ -1,39 +1,35 @@
-# [Draft PR] 智元跃动 AI/AR 智能眼镜 V1.0 首席架构师工程修正与 Kimi 工程交接包
+# [Draft PR #19] 智元跃动 AI/AR 智能眼镜 V1.0 (EVT-1 Rev C) — Codex GitHub 同步与 CI 执行指南
 
-- **Target Repository**: `https://github.com/yfei7131-source/AI-AR-codex-Claude-`
-- **Base Branch**: `main` (严格不直接修改 `main`，零覆盖 Kimi `hardware/evt0-r9-pcb-20261115` 及 `hardware/evt0-r8-jlceda-20261114`)
-- **Head Branch**: `handoff/evt1-v1-arch-kimi-handoff-20261115`
-- **PR Status**: **Draft PR** (`DESIGN_RULES_VERIFIED__HARDWARE_RELEASE_BLOCKED_BY_6_EXTERNAL_ITEMS`)
+- **目标仓库**：`https://github.com/yfei7131-source/AI-AR-codex-Claude-`
+- **目标 PR**：[Draft PR #19](https://github.com/yfei7131-source/AI-AR-codex-Claude-/pull/19)
+- **独立分支**：`handoff/evt1-rev-c-feasibility-20261115`（严格基于 `d15cc6f` 演进，严禁覆盖 `main`、`PR #16`、`PR #17`、`PR #18`）
+- **协作分工**：**Codex** 负责执行本指南将 Git bundle 同步至远端并运行 GitHub Actions CI；**KIMI** 负责依据 `hardware/evt1-v1-kimi-handoff/` 下的冻结设计表在嘉立创 EDA 中完成原理图与 6 层 HDI PCB。
 
-## 1. 本次提交包含的工程交付物 (`hardware/evt1-v1-kimi-handoff/`)
+---
 
-| 文件路径 | 说明 | 验证状态 |
+## 1. 本次提交核心交付物清单 (`hardware/evt1-v1-kimi-handoff/`)
+
+| 文件路径 | 用途与面向对象 | 当前状态 |
 | :--- | :--- | :--- |
-| `hardware/evt1-v1-kimi-handoff/KIMI_ENGINEERING_HANDOFF_V1_0.md` | 首席硬件架构师工程修正与 Kimi 交接总册（含框图、电源树、HDI 规则、电路计算） | `VERIFIED_DOC` |
-| `hardware/evt1-v1-kimi-handoff/PINMAP_V1_0_FROZEN.csv` | 31 路冻结引脚表（修复 `ESP32-S3-PICO-1` LGA56 内部 Octal PSRAM 引脚冲突与 `iCE40UP5K-UWG30` 电平转换） | `VERIFIED_DATASHEET` |
-| `hardware/evt1-v1-kimi-handoff/BOM_V1_0_FROZEN.csv` | 冻结关键器件 BOM（含精确封装尺寸、功耗、质量及官方数据手册 URL） | `VERIFIED_DATASHEET` |
-| `hardware/evt1-v1-kimi-handoff/SOC_ARCHITECTURE_COMPARISON.csv` | 高通 AR1、恒玄 BES2800BP、乐鑫 ESP32-S3-PICO-1 / P4、炬芯 ATS3085S 架构对比表 | `VERIFIED_DATASHEET` |
-| `hardware/evt1-v1-kimi-handoff/ICD_INTERFACE_CONTROL_TABLE.csv` | 跨板接口控制表（QSPI、双目光学、DVP+隐私互锁、跨框 USB/电源/UART、PDM 麦克风、双电池） | `VERIFIED_DESIGN_CALC` |
-| `hardware/evt1-v1-kimi-handoff/SYSTEM_BUDGETS_V1_0.json` | 38.85g 质量与重心模型、1:1 HDI PCB 空间预算、全工况功耗与热保护预算 | `VERIFIED_CALC` |
-| `hardware/evt1-v1-kimi-handoff/BLOCKED_ITEMS_CHECKLIST.csv` | 6 项未获供应商 STEP/NDA/实测数据的诚实阻断清单（`BLK-01` ~ `BLK-06`） | `STRICT_BLOCKED_TRACKING` |
-| `hardware/evt1-v1-kimi-handoff/verify_v1_0_engineering.py` | 零虚假 PASS 自动化工程校验脚本（含正向数据手册核查 + 3 项反向故障注入自检） | `PASS_SELF_TEST` |
-| `hardware/evt1-v1-kimi-handoff/evidence/v1_0_verification_report.txt` | 真实脚本执行日志与阻断项输出 | `REAL_EXECUTION_LOG` |
+| `rtl/evt1_ar_display_fpga_bridge_rev_c.v` | 48MHz 关键路径深度流水线优化版 FPGA RTL（256字 `3x SB_RAM40_4K` FIFO + `4x SB_SPRAM256KA` + `2x SB_RAM40_4K` 行缓存 + `tear_row_holdoff` 防撕裂） | 1ps 事件驱动仿真 PASS；待 CI 原生综合/STA |
+| `rtl/tb_evt1_ar_display_fpga_bridge_rev_c.v` | 修复 `row=0, addr=0x0000` (`0xA53C==0xA53C`) 碰撞并加入 `1.0ns` 相位保护与 `Row 10->11` 活跃行防撕裂自检测试台 | 38,400 对像素 `mismatches=0` |
+| `rtl/ice40_spram_ebr_sim.v` & `rtl/ice40up5k_uwg30_rev_c.pcf` & `rtl/Makefile` | Lattice 原语行为模型、18-PIO UWG30 约束文件与带 `pipefail` 校验的 Makefile | 已验证语法与引脚合法性 |
+| `.github/workflows/fpga_eda_ci.yml` | Codex / GitHub Actions 自动运行 `iverilog`、`vvp`、`yosys`、`nextpnr-ice40`、`icetime` 与 `verify_v1_0_engineering.py` 的工作流 | 已配置完成 |
+| `ICD_FPGA_HOST_OPTICS_SPEC_REV_C.md` & `ICD_INTERFACE_CONTROL_TABLE.csv` | 主控 $\leftrightarrow$ FPGA $\leftrightarrow$ 双目光机完整接口控制定义及 JBD 4 项阻断 (`BLK-JBD-01..04`) 规范 | 已冻结可编辑版 |
+| `CHANGELOG_EVT1_REV_C.md` | 从 `6eaebe0` 至最新提交的完整工程变更记录 | 已生成 |
+| `BOM_V1_0_FROZEN.csv` & `PINMAP_V1_0_FROZEN.csv` & `BLOCKED_ITEMS_CHECKLIST.csv` | KIMI 嘉立创 EDA 44 位号 BOM、逐针映射表（含 `J_DISP_L/R` 1..10 脚）与诚实阻断清单 | 已冻结 |
 
-## 2. 一键推送至 GitHub 独立分支并创建 Draft PR 指令
+---
 
-由于当前沙箱容器禁用了外网访问（No Outbound Internet Access in VM Sandbox），本地已完成完整的 Git 独立分支 `handoff/evt1-v1-arch-kimi-handoff-20261115` 提交、Git Bundle 打包 (`evt1-v1-arch-kimi-handoff-20261115.bundle`) 及 Patch 导出。在联网开发机上只需运行以下 3 条命令即可直接推送到远端仓库并创建 Draft PR：
+## 2. Codex 一键同步至 GitHub PR #19 并触发真实 CI 命令
 
 ```bash
-# 1. 在本地克隆的 AI-AR-codex-Claude- 仓库中导入本分支 bundle
-git fetch evt1-v1-arch-kimi-handoff-20261115.bundle handoff/evt1-v1-arch-kimi-handoff-20261115:handoff/evt1-v1-arch-kimi-handoff-20261115
+# 1. 从本工程包中的 handoff_evt1_rev_c.bundle 拉取完整提交历史至本地分支
+git fetch ./handoff_evt1_rev_c.bundle handoff/evt1-rev-c-feasibility-20261115:handoff/evt1-rev-c-feasibility-20261115
 
-# 2. 推送独立分支至 GitHub 远端（不触碰 main 与 Kimi R9）
-git push -u origin handoff/evt1-v1-arch-kimi-handoff-20261115
+# 2. 推送至 GitHub origin 更新 Draft PR #19（不触碰 main 与其他分支）
+git push origin handoff/evt1-rev-c-feasibility-20261115
 
-# 3. 使用 GitHub CLI 创建 Draft PR
-gh pr create --draft \
-  --base main \
-  --head handoff/evt1-v1-arch-kimi-handoff-20261115 \
-  --title "[Draft] EVT-1 V1.0 Architecture & Kimi Handoff Package (PICO-1 Pin Fix, Dual-Cell Charger, Privacy Window Interlock, 6L HDI Rules)" \
-  --body-file hardware/evt1-v1-kimi-handoff/KIMI_ENGINEERING_HANDOFF_V1_0.md
+# 3. 观察并下载 GitHub Actions 原生 EDA CI 运行日志
+gh run watch
 ```

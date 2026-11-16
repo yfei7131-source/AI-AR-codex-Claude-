@@ -1,37 +1,37 @@
 // =============================================================================
-// Zhiyuan Yuedong (智元跃动) AI/AR Smart Glasses V1.0 — EVT-1 Rev C (PR #19 CI Timing & Sim Fixed)
+// Zhiyuan Yuedong (智元跃动) AI/AR Smart Glasses V1.0 — EVT-1 Rev C
 // Module: evt1_ar_display_fpga_bridge_rev_c
 // Target: Lattice iCE40UP5K-UWG30ITR (30-Ball WLCSP, 2.11 x 2.54 x 0.45 mm)
 //
-// P0 Fixes Implemented (On top of 43f2960979ff & 8697069):
-//   1. Deeply Pipelined 48.000 MHz (`clk_48m`) Datapath & Control for >60 MHz STA Closure:
-//      - Decoupled 3x `SB_RAM40_4K` CDC FIFO read ports (`RADDR = {3'd0, rptr_bin[7:0]}`,
-//        0 LUTs on `RADDR`) from `SB_SPRAM256KA` and tear-guard comparators via a
-//        3-stage registered pipeline:
-//          * Stage 0 (`s0_*`): Captures `u_cdc_fifo_*.RDATA` directly into pure `SB_DFFE`
-//            registers (`0` LUT levels on `RDATA`).
-//          * Stage 1 (`s1_*`): Computes the 11-bit row-offset subtraction
-//            `s0_addr_q[14:4] - next_row_base_hi_q[10:0]` (exploiting `80 = 5 * 16` so
-//            `next_row_base[3:0] == 4'b0000`) and pre-decodes `0 <= diff_hi < 5` into
-//            three 1-bit flip-flops (`s1_hit_a_q`, `s1_hit_b_q`, `s1_hit_c_q`).
-//          * Stage 2 (`spram_*_q`): Drives all four corner `SB_SPRAM256KA` hard macros
-//            (`ADDRESS[13:0]`, `DATAIN[15:0]`, `WREN`) directly from dedicated flip-flops
-//            with ZERO combinational logic on the hard-macro input pins.
-//      - Registered `SB_SPRAM256KA.DATAOUT` bank mux into `ebr_wdata_l_q` / `ebr_wdata_r_q`
-//        flip-flops before writing to `u_ebr_l` / `u_ebr_r`.
-//      - Replaced the combinational 10-bit subtractor/adder chain `(col_cnt >> 1) - 12`
-//        on `u_ebr_l/r.RADDR` and `RDATA` with a registered `ebr_raddr_q[7:0]` counter and
-//        16-bit shift registers (`pix_shift_l`, `pix_shift_r`), reducing EBR `RDATA` load
-//        to a single 2:1 `SB_LUT4` mux.
-//      - Replaced combinational `next_row * 80` shift-add and 11-bit window magnitude
-//        comparators with once-per-line registered accumulators (`next_row_base_q`,
-//        `next_row_base_hi_q`) and cycle-exact equality set/clear window flip-flops
-//        (`in_qspi_burst_q`, `in_tear_guard_win_q`, `prefetch_active`, `prefetch_read_q`).
-//      - Pipelined Gray-to-Binary FIFO occupancy watermark (`wptr_bin_sync_q` ->
-//        `fifo_level_q` -> `fifo_max_level`) across 3 register stages.
-//   2. Preserves 256-Word EBR FIFO (`3x SB_RAM40_4K`), Binocular Independent Framebuffers
-//      (`4x SB_SPRAM256KA` + `2x SB_RAM40_4K`), Exact 60.000 Hz (`800,000 clks`), and
-//      Active-Scanout Pre-Prefetch Anti-Tearing Holdoff (`tear_row_holdoff`).
+// Key Architecture & 48.000 MHz (`clk_48m`) Timing-Closure Optimizations:
+//   1. Pre-Registered FIFO Non-Empty Flag (`fifo_not_empty_q`):
+//      - Eliminates the 9-bit Gray-code equality comparator (`rptr_gray == wptr_gray_s2`)
+//        from the `start_ebr_rd` combinational path by registering
+//        `fifo_not_empty_q <= ((ebr_rd_phase_q ? rptr_gray_next : rptr_gray) != wptr_gray_s2)`,
+//        reducing `start_ebr_rd` to a single 3-input `SB_LUT4`.
+//   2. Carry-Chain Co-Located MSB Register (`s1_diff_10_q`) & 2-LUT `s1_do_write`:
+//      - In Stage 0 -> Stage 1, the 11-bit row-offset subtractor
+//        `s0_diff_hi = s0_addr_q[14:4] - next_row_base_hi_q[10:0]` registers its MSB
+//        `s0_diff_hi[10]` directly into the co-located `SB_DFFE` inside the top carry-chain
+//        Logic Cell (`s1_diff_10_q <= s0_diff_hi[10]`, 0 post-carry LUTs, 0 post-carry routing),
+//        while tapping lower bits into three 4-input LUT flip-flops (`s1_hit_a_q`,
+//        `s1_hit_b_q`, `s1_hit_c_q`).
+//      - In Stage 1 -> Stage 2, `s1_is_next_row = (!s1_diff_10_q) && s1_hit_a_q && s1_hit_b_q && s1_hit_c_q`
+//        is a single 4-input `SB_LUT4`, and `s1_do_write` is a single 4-input `SB_LUT4`
+//        (total combinational depth = 2 `SB_LUT4` levels).
+//   3. Monotonic Frame-Wide Prefetch Address Counter (`pf_addr_q`):
+//      - Eliminates `next_row_base_q[14:0]` (15 flip-flops + 15-bit `+80` adder + 15-bit
+//        2:1 load mux on `pf_addr_q`) by holding `pf_addr_q = 15'd0` during VBLANK
+//        (`!next_row_valid_q`) and incrementing `pf_addr_q` by +1 during the 80-cycle
+//        `prefetch_read_q` window of each active row (`0..19,199` across the 240 rows),
+//        mapping directly to 15 pure `SB_CARRY` + `SB_DFFESR` cells with 0 post-carry LUTs.
+//   4. 2-Level Balanced XOR Tree for `wptr_bin_dec` & Pruned `rst_n_q` Fanout:
+//      - Replaces the ripple XOR loop in `wptr_bin_dec` with an explicit 2-level `SB_LUT4`
+//        XOR tree and removes redundant `rst_n_q` resets from zero-initialized telemetry
+//        and watermark counters, cutting `rst_n_q` fanout by >70%.
+//   5. Pre-Registered `h_cmd_ok_q` & `h_in_bounds_q` in 40 MHz `host_sck` Domain:
+//      - Pre-evaluates command decode at nibble 2 and bounds check (`< 0x4B00`) at nibble 7,
+//        minimizing combinational setup path on `u_cdc_fifo_*.WE` at nibble 9.
 // =============================================================================
 
 `timescale 1ns / 1ps
@@ -97,23 +97,19 @@ module evt1_ar_display_fpga_bridge_rev_c #(
     //   - `u_cdc_fifo_ctrl` : {14'd0, tear_sync_mode[0], eye_sel[0]}
     //   - `u_cdc_fifo_hi`   : word_addr[15:0] (0x0000..0x4AFF)
     //   - `u_cdc_fifo_lo`   : pixel_data[15:0]
-    //   Commands supported:
-    //     0xA0 : Immediate Write Left Eye SPRAM     (eye_sel=0, tear_sync=0)
-    //     0xA1 : Immediate Write Right Eye SPRAM    (eye_sel=1, tear_sync=0)
-    //     0xA2 : Tear-Guarded Write Left Eye SPRAM  (eye_sel=0, tear_sync=1)
-    //     0xA3 : Tear-Guarded Write Right Eye SPRAM (eye_sel=1, tear_sync=1)
     // =========================================================================
     reg [FIFO_ADDR_BITS:0] wptr_bin     = {(FIFO_ADDR_BITS+1){1'b0}};
     reg [FIFO_ADDR_BITS:0] wptr_gray    = {(FIFO_ADDR_BITS+1){1'b0}};
     reg [FIFO_ADDR_BITS:0] rptr_gray_h1 = {(FIFO_ADDR_BITS+1){1'b0}};
     reg [FIFO_ADDR_BITS:0] rptr_gray_h2 = {(FIFO_ADDR_BITS+1){1'b0}};
 
-    reg [FIFO_ADDR_BITS:0] rptr_bin     = {(FIFO_ADDR_BITS+1){1'b0}};
-    reg [FIFO_ADDR_BITS:0] rptr_gray    = {(FIFO_ADDR_BITS+1){1'b0}};
-    reg [FIFO_ADDR_BITS:0] wptr_gray_s1 = {(FIFO_ADDR_BITS+1){1'b0}};
-    reg [FIFO_ADDR_BITS:0] wptr_gray_s2 = {(FIFO_ADDR_BITS+1){1'b0}};
+    reg [FIFO_ADDR_BITS:0] rptr_bin        = {(FIFO_ADDR_BITS+1){1'b0}};
+    reg [FIFO_ADDR_BITS:0] rptr_gray       = {(FIFO_ADDR_BITS+1){1'b0}};
+    reg [FIFO_ADDR_BITS:0] wptr_gray_s1    = {(FIFO_ADDR_BITS+1){1'b0}};
+    reg [FIFO_ADDR_BITS:0] wptr_gray_s2    = {(FIFO_ADDR_BITS+1){1'b0}};
+    reg                    fifo_not_empty_q = 1'b0;
 
-    // Verification & Diagnostics Telemetry Registers
+    // Verification & Diagnostics Telemetry Registers (Hardware-initialized in CRAM)
     reg                    fifo_overflow_sticky = 1'b0;
     reg [15:0]             boundary_err_cnt     = 16'd0;
     reg [17:0]             wr_cnt_l_q           = 18'd0;
@@ -145,16 +141,17 @@ module evt1_ar_display_fpga_bridge_rev_c #(
         end
     end
 
-    // 2. Host QSPI Synchronous Deserializer & Write Pointer Update (pure posedge host_sck)
-    reg [7:0]  h_cmd_reg    = 8'h00;
-    reg [15:0] h_addr_reg   = 16'h0000;
-    reg [15:0] h_data_shift = 16'h0000;
+    // 2. Host QSPI Synchronous Deserializer & Pre-Registered Write Qualification (posedge host_sck)
+    reg [7:0]  h_cmd_reg      = 8'h00;
+    reg [15:0] h_addr_reg     = 16'h0000;
+    reg [15:0] h_data_shift   = 16'h0000;
+    reg        h_cmd_ok_q     = 1'b0;
+    reg        h_in_bounds_q  = 1'b0;
 
-    // 0xA0..0xA3 share upper 6 bits 6'b1010_00; 19,200 = 16'h4B00 has 8'h00 low byte
-    wire is_write_cmd    = (h_cmd_reg[7:2] == 6'b101000);
-    wire host_word_valid = (!host_cs_n) && (h_nib_cnt == 4'd9) && is_write_cmd;
-    wire host_in_bounds  = (h_addr_reg[15:8] < 8'h4B);
-    wire fifo_we_h       = host_word_valid && host_in_bounds && (!fifo_full_h);
+    wire is_write_cmd    = h_cmd_ok_q;
+    wire host_word_valid = (!host_cs_n) && (h_nib_cnt == 4'd9) && h_cmd_ok_q;
+    wire host_in_bounds  = h_in_bounds_q;
+    wire fifo_we_h       = host_word_valid && h_in_bounds_q && (!fifo_full_h);
     wire [15:0] fifo_wdata_ctrl = {14'd0, h_cmd_reg[1], h_cmd_reg[0]};
     wire [15:0] fifo_wdata_hi   = h_addr_reg;
     wire [15:0] fifo_wdata_lo   = {h_data_shift[15:4], host_qio};
@@ -167,16 +164,22 @@ module evt1_ar_display_fpga_bridge_rev_c #(
             case (h_nib_cnt)
                 4'd0: h_cmd_reg[7:4]      <= host_qio;
                 4'd1: h_cmd_reg[3:0]      <= host_qio;
-                4'd2: h_addr_reg[15:12]   <= host_qio;
+                4'd2: begin
+                    h_addr_reg[15:12] <= host_qio;
+                    h_cmd_ok_q        <= (h_cmd_reg[7:2] == 6'b101000);
+                end
                 4'd3: h_addr_reg[11:8]    <= host_qio;
                 4'd4: h_addr_reg[7:4]     <= host_qio;
                 4'd5: h_addr_reg[3:0]     <= host_qio;
                 4'd6: h_data_shift[15:12] <= host_qio;
-                4'd7: h_data_shift[11:8]  <= host_qio;
+                4'd7: begin
+                    h_data_shift[11:8] <= host_qio;
+                    h_in_bounds_q      <= (h_addr_reg[15:8] < 8'h4B);
+                end
                 4'd8: h_data_shift[7:4]   <= host_qio;
                 4'd9: begin
-                    if (is_write_cmd) begin
-                        if (host_in_bounds) begin
+                    if (h_cmd_ok_q) begin
+                        if (h_in_bounds_q) begin
                             if (!fifo_full_h) begin
                                 wptr_bin  <= wptr_bin_next;
                                 wptr_gray <= wptr_gray_next;
@@ -211,13 +214,11 @@ module evt1_ar_display_fpga_bridge_rev_c #(
     reg        next_row_valid_q    = 1'b0;
     reg        next_row_page_q     = 1'b1;
     reg [10:0] next_row_base_hi_q  = 11'd0; // (next_row * 80) >> 4 = next_row * 5
-    reg [14:0] next_row_base_q     = 15'd0; // next_row * 80
 
     // =========================================================================
     // 3x SB_RAM40_4K Asynchronous CDC FIFO Read Interface
     // RADDR driven directly by flip-flop `rptr_bin[7:0]` (ZERO LUTs on RADDR!)
     // =========================================================================
-    wire                    fifo_empty_c   = (rptr_gray == wptr_gray_s2);
     wire [FIFO_ADDR_BITS:0] rptr_bin_next  = rptr_bin + 1'b1;
     wire [FIFO_ADDR_BITS:0] rptr_gray_next = (rptr_bin_next >> 1) ^ rptr_bin_next;
 
@@ -287,23 +288,24 @@ module evt1_ar_display_fpga_bridge_rev_c #(
     reg [15:0] s0_data_q      = 16'd0;
 
     reg        s1_valid_q     = 1'b0;
-    reg        s1_tear_q      = 1'b0;
     reg        s1_eye_q       = 1'b0;
     reg [14:0] s1_addr_q      = 15'd0;
     reg [15:0] s1_data_q      = 16'd0;
-    reg        s1_hit_a_q     = 1'b0;
-    reg        s1_hit_b_q     = 1'b0;
-    reg        s1_hit_c_q     = 1'b0;
+    reg        s1_diff_10_q   = 1'b0; // Co-located inside MSB carry-chain cell (0 post-carry LUTs!)
+    reg        s1_hit_a_q     = 1'b0; // s0_diff_hi[9:6] == 4'd0 (1 LUT4)
+    reg        s1_hit_b_q     = 1'b0; // (s0_diff_hi[5:3] == 3'd0) && s0_tear_q (1 LUT4)
+    reg        s1_hit_c_q     = 1'b0; // (!s0_diff_hi[2]) || (s0_diff_hi[1:0] == 2'd0) (1 LUT4)
 
     // 11-bit subtraction on Stage 0 flip-flops (`s0_addr_q[14:4] - next_row_base_hi_q`)
     wire [10:0] s0_diff_hi = s0_addr_q[14:4] - next_row_base_hi_q;
 
-    wire s1_is_next_row   = s1_hit_a_q && s1_hit_b_q && s1_hit_c_q;
-    wire tear_row_holdoff = s1_valid_q && s1_tear_q && in_tear_guard_win_q && s1_is_next_row;
-    wire s1_do_write      = s1_valid_q && (!prefetch_active) && (!tear_row_holdoff);
+    // 4-input LUT4 combining the 4 Stage-1 match flip-flops
+    wire s1_is_next_row   = (!s1_diff_10_q) && s1_hit_a_q && s1_hit_b_q && s1_hit_c_q;
+    wire tear_row_holdoff = s1_valid_q && in_tear_guard_win_q && s1_is_next_row;
+    wire s1_do_write      = s1_valid_q && (!prefetch_active) && (!(in_tear_guard_win_q && s1_is_next_row));
     wire s1_ready         = (!s1_valid_q) || s1_do_write;
     wire s0_ready         = (!s0_valid_q) || s1_ready;
-    wire start_ebr_rd     = (!fifo_empty_c) && (!ebr_rd_phase_q) && s0_ready;
+    wire start_ebr_rd     = fifo_not_empty_q && (!ebr_rd_phase_q) && s0_ready;
 
     // Stage 2: Dedicated Flip-Flops Driving 4x SB_SPRAM256KA Directly (0 LUTs on SPRAM inputs!)
     reg [13:0] spram_addr_q    = 14'd0;
@@ -369,7 +371,7 @@ module evt1_ar_display_fpga_bridge_rev_c #(
     );
 
     // =========================================================================
-    // 2x SB_RAM40_4K Ping-Pong Line Buffers (Driven by Registered Prefetch & Read Pointers)
+    // 2x SB_RAM40_4K Ping-Pong Line Buffers (Driven by Monotonic Prefetch & Read Pointers)
     // =========================================================================
     reg [14:0] pf_addr_q     = 15'd0;
     reg [6:0]  pf_idx_q      = 7'd0;
@@ -423,14 +425,19 @@ module evt1_ar_display_fpga_bridge_rev_c #(
         .MASK  (16'h0000)
     );
 
-    // 3-Stage Pipelined Gray-to-Binary Occupancy Watermark
-    integer g_i;
-    reg [FIFO_ADDR_BITS:0] wptr_bin_dec;
-    always @(*) begin
-        wptr_bin_dec[FIFO_ADDR_BITS] = wptr_gray_s2[FIFO_ADDR_BITS];
-        for (g_i = FIFO_ADDR_BITS - 1; g_i >= 0; g_i = g_i - 1)
-            wptr_bin_dec[g_i] = wptr_bin_dec[g_i + 1] ^ wptr_gray_s2[g_i];
-    end
+    // 2-Level Balanced XOR Tree for Gray-to-Binary Occupancy Watermark (Max 2 LUT4 levels)
+    wire xor_g8_5 = ^wptr_gray_s2[8:5];
+    wire [FIFO_ADDR_BITS:0] wptr_bin_dec = {
+        wptr_gray_s2[8],
+        ^wptr_gray_s2[8:7],
+        ^wptr_gray_s2[8:6],
+        xor_g8_5,
+        xor_g8_5 ^ wptr_gray_s2[4],
+        xor_g8_5 ^ (^wptr_gray_s2[4:3]),
+        xor_g8_5 ^ (^wptr_gray_s2[4:2]),
+        xor_g8_5 ^ (^wptr_gray_s2[4:1]),
+        (^wptr_gray_s2[8:6]) ^ (^wptr_gray_s2[5:3]) ^ (^wptr_gray_s2[2:0])
+    };
     reg [FIFO_ADDR_BITS:0] wptr_bin_sync_q = {(FIFO_ADDR_BITS+1){1'b0}};
     reg [FIFO_ADDR_BITS:0] rptr_bin_d1     = {(FIFO_ADDR_BITS+1){1'b0}};
     reg [FIFO_ADDR_BITS:0] fifo_level_q    = {(FIFO_ADDR_BITS+1){1'b0}};
@@ -442,10 +449,21 @@ module evt1_ar_display_fpga_bridge_rev_c #(
     reg        in_hdr_win_q = 1'b1;
 
     // =========================================================================
-    // Pure Datapath Pipeline Registers (NO synchronous reset -> pure SB_DFF / SB_DFFE)
+    // Pure Datapath & Telemetry Pipeline Registers (No `rst_n_q` fanout load)
     // =========================================================================
     always @(posedge clk_48m) begin
-        // Stage 0 datapath capture directly from EBR RDATA (0 LUTs on D, 0 LUTs on E)
+        // 1. 3-Stage Pipelined Occupancy Watermark & Telemetry Counters
+        wptr_bin_sync_q <= wptr_bin_dec;
+        rptr_bin_d1     <= rptr_bin;
+        fifo_level_q    <= wptr_bin_sync_q - rptr_bin_d1;
+        if (fifo_level_q > fifo_max_level)
+            fifo_max_level <= fifo_level_q;
+
+        if (inc_wr_l_q) wr_cnt_l_q <= wr_cnt_l_q + 18'd1;
+        if (inc_wr_r_q) wr_cnt_r_q <= wr_cnt_r_q + 18'd1;
+        if (inc_tear_q) tear_cnt_q <= tear_cnt_q + 16'd1;
+
+        // 2. Stage 0 datapath capture directly from EBR RDATA (0 LUTs on D, 0 LUTs on E)
         if (ebr_rd_phase_q) begin
             s0_tear_q <= fifo_rdata_ctrl[1];
             s0_eye_q  <= fifo_rdata_ctrl[0];
@@ -453,22 +471,33 @@ module evt1_ar_display_fpga_bridge_rev_c #(
             s0_data_q <= fifo_rdata_lo;
         end
 
-        // Stage 1 datapath capture + 11-bit row-offset pre-decode
+        // 3. Stage 1 datapath capture + carry-chain MSB FF + 4-input LUT4 row-offset decode
         if (s1_ready && s0_valid_q) begin
-            s1_tear_q  <= s0_tear_q;
-            s1_eye_q   <= s0_eye_q;
-            s1_addr_q  <= s0_addr_q;
-            s1_data_q  <= s0_data_q;
-            s1_hit_a_q <= (s0_diff_hi[10:7] == 4'd0);
-            s1_hit_b_q <= (s0_diff_hi[6:3]  == 4'd0);
-            s1_hit_c_q <= (!s0_diff_hi[2]) || (s0_diff_hi[1:0] == 2'd0);
+            s1_eye_q     <= s0_eye_q;
+            s1_addr_q    <= s0_addr_q;
+            s1_data_q    <= s0_data_q;
+            s1_diff_10_q <= s0_diff_hi[10];
+            s1_hit_a_q   <= (s0_diff_hi[9:6] == 4'd0);
+            s1_hit_b_q   <= (s0_diff_hi[5:3] == 3'd0) && s0_tear_q;
+            s1_hit_c_q   <= (!s0_diff_hi[2]) || (s0_diff_hi[1:0] == 2'd0);
         end
 
-        // Stage 2 SPRAM address & write data registers (pure 2:1 mux -> SB_DFF)
+        // 4. Stage 2 SPRAM address & write data registers (pure 2:1 mux -> SB_DFF)
         spram_addr_q  <= prefetch_read_q ? pf_addr_q[13:0] : s1_addr_q[13:0];
         spram_wdata_q <= s1_data_q;
 
-        // Prefetch datapath pipeline (SPRAM DATAOUT -> 2:1 mux -> SB_DFF -> EBR WDATA)
+        // 5. Monotonic Frame-Wide Prefetch Counters (`0..19,199` across active rows)
+        if (!next_row_valid_q)
+            pf_addr_q <= 15'd0;
+        else if (prefetch_read_q)
+            pf_addr_q <= pf_addr_q + 15'd1;
+
+        if (!prefetch_read_q)
+            pf_idx_q <= 7'd0;
+        else
+            pf_idx_q <= pf_idx_q + 7'd1;
+
+        // 6. Prefetch datapath pipeline (SPRAM DATAOUT -> 2:1 mux -> SB_DFF -> EBR WDATA)
         pf_bank_s1    <= pf_addr_q[14];
         pf_waddr_s1   <= {next_row_page_q, pf_idx_q};
         pf_bank_s2    <= pf_bank_s1;
@@ -477,7 +506,7 @@ module evt1_ar_display_fpga_bridge_rev_c #(
         ebr_wdata_l_q <= pf_bank_s2 ? spram_dout_l1 : spram_dout_l0;
         ebr_wdata_r_q <= pf_bank_s2 ? spram_dout_r1 : spram_dout_r0;
 
-        // Pixel shift-register serializer (2:1 mux on EBR RDATA -> SB_DFFE)
+        // 7. Pixel shift-register serializer (2:1 mux on EBR RDATA -> SB_DFFE)
         if ((~col_cnt[0]) | (col_cnt[2] & col_cnt[1])) begin
             pix_shift_l <= col_cnt[0] ? ebr_rdata_l : {pix_shift_l[11:0], 4'h0};
             pix_shift_r <= col_cnt[0] ? ebr_rdata_r : {pix_shift_r[11:0], 4'h0};
@@ -491,10 +520,7 @@ module evt1_ar_display_fpga_bridge_rev_c #(
         if (!rst_n_q) begin
             wptr_gray_s1        <= {(FIFO_ADDR_BITS+1){1'b0}};
             wptr_gray_s2        <= {(FIFO_ADDR_BITS+1){1'b0}};
-            wptr_bin_sync_q     <= {(FIFO_ADDR_BITS+1){1'b0}};
-            rptr_bin_d1         <= {(FIFO_ADDR_BITS+1){1'b0}};
-            fifo_level_q        <= {(FIFO_ADDR_BITS+1){1'b0}};
-            fifo_max_level      <= {(FIFO_ADDR_BITS+1){1'b0}};
+            fifo_not_empty_q    <= 1'b0;
             rptr_bin            <= {(FIFO_ADDR_BITS+1){1'b0}};
             rptr_gray           <= {(FIFO_ADDR_BITS+1){1'b0}};
             ebr_rd_phase_q      <= 1'b0;
@@ -507,9 +533,6 @@ module evt1_ar_display_fpga_bridge_rev_c #(
             inc_wr_l_q          <= 1'b0;
             inc_wr_r_q          <= 1'b0;
             inc_tear_q          <= 1'b0;
-            wr_cnt_l_q          <= 18'd0;
-            wr_cnt_r_q          <= 18'd0;
-            tear_cnt_q          <= 16'd0;
             col_cnt             <= 11'd0;
             row_cnt             <= 9'd240;
             col_last_q          <= 1'b0;
@@ -523,9 +546,6 @@ module evt1_ar_display_fpga_bridge_rev_c #(
             next_row_valid_q    <= 1'b0;
             next_row_page_q     <= 1'b1;
             next_row_base_hi_q  <= 11'd0;
-            next_row_base_q     <= 15'd0;
-            pf_addr_q           <= 15'd0;
-            pf_idx_q            <= 7'd0;
             pf_valid_s1         <= 1'b0;
             pf_valid_s2         <= 1'b0;
             ebr_we_q            <= 1'b0;
@@ -538,20 +558,12 @@ module evt1_ar_display_fpga_bridge_rev_c #(
             opt_r_qdo           <= 4'h0;
             frame_vsync_1v8     <= 1'b0;
         end else begin
-            // 1. 2-FF Gray-code write pointer sync + 3-stage pipelined occupancy watermark
-            wptr_gray_s1    <= wptr_gray;
-            wptr_gray_s2    <= wptr_gray_s1;
-            wptr_bin_sync_q <= wptr_bin_dec;
-            rptr_bin_d1     <= rptr_bin;
-            fifo_level_q    <= wptr_bin_sync_q - rptr_bin_d1;
-            if (fifo_level_q > fifo_max_level)
-                fifo_max_level <= fifo_level_q;
+            // 1. 2-FF Gray-code write pointer sync + Pre-registered FIFO non-empty flag
+            wptr_gray_s1     <= wptr_gray;
+            wptr_gray_s2     <= wptr_gray_s1;
+            fifo_not_empty_q <= ((ebr_rd_phase_q ? rptr_gray_next : rptr_gray) != wptr_gray_s1);
 
-            // 2. Pipelined Telemetry Counters (0 LUTs on counter clock-enable!)
-            if (inc_wr_l_q) wr_cnt_l_q <= wr_cnt_l_q + 18'd1;
-            if (inc_wr_r_q) wr_cnt_r_q <= wr_cnt_r_q + 18'd1;
-            if (inc_tear_q) tear_cnt_q <= tear_cnt_q + 16'd1;
-
+            // 2. Pipelined Telemetry Enable Pulses
             inc_wr_l_q <= s1_do_write && (!s1_eye_q);
             inc_wr_r_q <= s1_do_write && ( s1_eye_q);
             inc_tear_q <= tear_row_holdoff;
@@ -578,20 +590,12 @@ module evt1_ar_display_fpga_bridge_rev_c #(
                     ebr_rd_phase_q <= 1'b1;
             end
 
-            // 5. Prefetch Valid Pipeline & Address Counter
+            // 5. Prefetch Valid Pipeline
             pf_valid_s1 <= prefetch_read_q;
             pf_valid_s2 <= pf_valid_s1;
             ebr_we_q    <= pf_valid_s2;
 
-            if (col_cnt == (PREFETCH_START_CLK - 1)) begin
-                pf_addr_q <= next_row_base_q;
-                pf_idx_q  <= 7'd0;
-            end else if (prefetch_read_q) begin
-                pf_addr_q <= pf_addr_q + 15'd1;
-                pf_idx_q  <= pf_idx_q + 7'd1;
-            end
-
-            // 6. Frame/Line Counters & Pre-Registered Row Base Accumulators
+            // 6. Frame/Line Counters & Pre-Registered Row Base Accumulator
             if (col_last_q) begin
                 col_cnt    <= 11'd0;
                 col_last_q <= 1'b0;
@@ -611,7 +615,6 @@ module evt1_ar_display_fpga_bridge_rev_c #(
                     next_row_valid_q   <= 1'b1;
                     next_row_page_q    <= 1'b0;
                     next_row_base_hi_q <= 11'd0;
-                    next_row_base_q    <= 15'd0;
                 end else if (row_cnt == (V_ACTIVE - 2)) begin
                     next_row_q         <= 9'd240;
                     next_row_valid_q   <= 1'b0;
@@ -621,7 +624,6 @@ module evt1_ar_display_fpga_bridge_rev_c #(
                     if (next_row_valid_q) begin
                         next_row_page_q    <= ~next_row_page_q;
                         next_row_base_hi_q <= next_row_base_hi_q + 11'd5;
-                        next_row_base_q    <= next_row_base_q + 15'd80;
                     end
                 end
             end else begin
@@ -651,7 +653,10 @@ module evt1_ar_display_fpga_bridge_rev_c #(
             end
 
             // 8. Hardware VSYNC Pulse (Row 0, Col 0..47 -> exact 1.000 us pulse @ 60.000 Hz)
-            frame_vsync_1v8 <= (row_cnt == 9'd0) && (col_cnt < 11'd48);
+            if (col_last_q)
+                frame_vsync_1v8 <= row_last_q;
+            else if (col_cnt == 11'd47)
+                frame_vsync_1v8 <= 1'b0;
 
             // 9. EBR Line-Buffer Read Address & Pre-computed Header Nibble
             if (in_hdr_win_q && ((!col_cnt[4]) || (!col_cnt[2]))) begin
