@@ -33,11 +33,50 @@ jobs:
           yosys -V
           nextpnr-ice40 --version
 
-      - name: Run real simulation, synthesis, PnR and STA
+      - name: Clean previous outputs
         working-directory: hardware/evt1-rev-c-source-20261116/rtl
+        run: make clean
+
+      - name: Real Icarus Verilog simulation
+        id: sim
+        continue-on-error: true
+        working-directory: hardware/evt1-rev-c-source-20261116/rtl
+        run: make sim
+
+      - name: Real Yosys synthesis
+        id: synth
+        continue-on-error: true
+        working-directory: hardware/evt1-rev-c-source-20261116/rtl
+        run: make synth
+
+      - name: Real nextpnr-ice40 place and route
+        id: pnr
+        continue-on-error: true
+        working-directory: hardware/evt1-rev-c-source-20261116/rtl
+        run: make pnr
+
+      - name: Real icetime static timing analysis
+        id: sta
+        continue-on-error: true
+        working-directory: hardware/evt1-rev-c-source-20261116/rtl
+        run: make sta
+
+      - name: Summarize real EDA results
+        if: always()
+        env:
+          SIM_RESULT: ${{ steps.sim.outcome }}
+          SYNTH_RESULT: ${{ steps.synth.outcome }}
+          PNR_RESULT: ${{ steps.pnr.outcome }}
+          STA_RESULT: ${{ steps.sta.outcome }}
         run: |
-          make clean
-          make all
+          echo "simulation=$SIM_RESULT"
+          echo "synthesis=$SYNTH_RESULT"
+          echo "pnr=$PNR_RESULT"
+          echo "sta=$STA_RESULT"
+          if [ "$SIM_RESULT" != "success" ] || [ "$SYNTH_RESULT" != "success" ] || [ "$PNR_RESULT" != "success" ] || [ "$STA_RESULT" != "success" ]; then
+            echo "One or more native EDA stages failed. See step logs and artifact."
+            exit 1
+          fi
 
       - name: Upload EDA logs and reports
         if: always()
