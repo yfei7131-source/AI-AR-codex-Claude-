@@ -41,7 +41,9 @@ Gemini 的真实差异文件：`_archive_sync_20261117/pkg/delta/94b50cf_vs_bb87
 
 ## 4. 测试与BLOCKED范围
 
-`05_Verification_Scripts/test_rev_d1_1_avdd_safety.py`独立复现上述RC和有限脉冲缺陷；读取单独硬件合同测试D1.1事件级边沿超时及钳位边界。`--require-ngspice`实际执行五个小型SPICE瞬态电路，保存原始deck与日志。它使用明确写出的理想固定Vf整流/驱动源模型，旨在核对拓扑与旧方程；**不冒充原厂晶体管模型或光机瞬态验证**。
+`05_Verification_Scripts/test_rev_d1_1_avdd_safety.py`独立复现上述RC和有限脉冲缺陷；读取单独硬件合同测试D1.1事件级边沿超时及钳位边界。`--require-ngspice`执行六个小型SPICE瞬态电路（包含同一正脉冲案例的两种时间步长），保存原始deck与日志。它使用明确写出的理想固定Vf整流/驱动源模型，旨在核对拓扑与旧方程；**不冒充原厂晶体管模型或光机瞬态验证**。
+
+首次真实CI `43948463476` 中，ngspice45.2采用20µs最大步长对1µs脉冲/0.77µs充电网络计算，得到第一峰1.154482V、第一谷0.818709V、原稳态采样谷值0.955615V，与连续时间精确递推不一致，测试如实失败。修正用50ns/25ns两个最大步长及更严格误差控制，要求两次测量收敛在0.5mV内，且各自与五脉冲有限时间递推在1mV谷值误差内吻合；未将旧0.955615V纳入放宽后的通过窗口。只有重跑原生工具满足这些检查才能宣称数值模型收敛。
 
 本地初始未发现ngspice。官方[下载页](https://ngspice.sourceforge.io/download.html)所链接Windows47稳定包，两次下载返回HTML而非7z，未把它当有效工具执行。随后通过该官方页链接的[nightly工作流](https://github.com/gatk555/ngspice/actions/runs/43287024274)取得Windows二进制：MSVC版启动后因临时文件权限失败；MSYS/UCRT版因缺少运行时DLL失败。未将任一失败写成原生SPICE通过。Linux CI应安装真实ngspice并使用`--require-ngspice`；若缺失或执行失败则该阶段失败，物理安全状态继续BLOCKED。
 

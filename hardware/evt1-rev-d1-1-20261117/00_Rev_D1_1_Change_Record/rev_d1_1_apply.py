@@ -59,6 +59,7 @@ def main():
           '05_Verification_Scripts/verify_rev_d1_electrical.py','05_Verification_Scripts/check_rev_d1_reproducibility.py']
         for rel in obsolete:
             (stage/rel).unlink(missing_ok=True)
+        (stage/'.gitattributes').write_bytes(b'# Preserve source bytes; unified-diff empty context lines require a space.\n* -text\n*.patch -whitespace\n')
         # Keep original FPGA baseline files byte-exact. Authored changes use LF everywhere.
         inherited={'ice40up5k_uwg30_rev_c.pcf','ice40_spram_ebr_sim.v','tb_evt1_ar_display_fpga_bridge_rev_c.v'}
         for f in stage.rglob('*'):

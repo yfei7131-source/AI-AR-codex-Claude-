@@ -239,7 +239,23 @@ def spice_decks():
     d1='''\nRseq d3 en 100k\nCseq en 0 220n IC=0\n'''
     first_end=.010+1e-6
     first_valley=.010+16.667e-3-1e-6
-    fixed_valley=.010+10*16.667e-3-1e-6
+    #20us Tmax undersamples the1us chargepulse and discontinuousrectifier,
+    # producing a false low valley in ngspice45.2. Two boundedfine timesteps
+    # below independently check numerical convergence, not a relaxed limit.
+    fixed_valley=.010+5*16.667e-3-1e-6
+    ref=periodic_peak_hold()
+    a=math.exp(-1e-6/((1/(1/35+1/2.2e6))*22e-9))
+    b=math.exp(-(16.667e-3-1e-6)/(2.2e6*22e-9))
+    expected_5th=ref['steady_valley_v']+(ref['first_valley_v']-ref['steady_valley_v'])*(a*b)**4
+    def positive_deck(maxstep):
+        return ('Gemini positive1us60Hz pulse; timestepconvergence,idealVF.22V\n'
+          'Vd3 d3 0 PULSE(0 1.8 10m 1n 1n 1u 16.667m)'+rect+
+          '.options reltol=1e-7 vntol=1e-9 abstol=1e-13 trtol=1 method=gear maxord=2\n'+
+          f'.tran {maxstep} 95m 0 {maxstep} UIC\n.measure tran first_peak FIND v(en) AT={first_end:.12g}\n.measure tran first_valley FIND v(en) AT={first_valley:.12g}\n.measure tran steady_valley FIND v(en) AT={fixed_valley:.12g}\n'+ctl)
+    def positive_expectations():
+        return {'first_peak':lambda v:abs(v-ref['first_peak_v'])<.002,
+                'first_valley':lambda v:abs(v-ref['first_valley_v'])<.001,
+                'steady_valley':lambda v:abs(v-expected_5th)<.001}
     return {
       'd1_stall_high':('D1 directRC stalledHIGH; source fixed1.8V, no physicalGPIOmodel\nVd3 d3 0 1.8'+d1+
         '.tran 10u 250m 0 20u UIC\n.measure tran en_after_stall FIND v(en) AT=200m\n'+ctl,
@@ -247,9 +263,8 @@ def spice_decks():
       'd1_io_fall':('D1 conditional IOpull-down; no vendorclampmodel\nVd3 d3 0 PWL(0 1.8 50m 1.8 50.000001m 0 150m 0)\nRseq d3 en 104.7k\nCseq en 0 220n IC=1.8\n'
         '.tran 1u 100m 0 2u UIC\n.measure tran en_10us FIND v(en) AT=50.01m\n'+ctl,
         {'en_10us':lambda v:v>VHI}),
-      'gemini_positive_pulse':('Gemini positive1us60Hz pulse; idealVF.22V/Rdriver+charge35ohm\nVd3 d3 0 PULSE(0 1.8 10m 1n 1n 1u 16.667m)'+rect+
-        f'.tran 20u 200m 0 20u UIC\n.measure tran first_peak FIND v(en) AT={first_end:.12g}\n.measure tran first_valley FIND v(en) AT={first_valley:.12g}\n.measure tran steady_valley FIND v(en) AT={fixed_valley:.12g}\n'+ctl,
-        {'first_peak':lambda v:1.10<v<1.2,'first_valley':lambda v:v<VHI,'steady_valley':lambda v:1.0<v<1.03}),
+      'gemini_positive_pulse':(positive_deck('50n'),positive_expectations()),
+      'gemini_positive_pulse_refined':(positive_deck('25n'),positive_expectations()),
       'gemini_stall_high':('Gemini peakhold atD1 idleHIGH/stallHIGH; idealVF.22V\nVd3 d3 0 1.8'+rect+
         '.tran 10u 200m 0 20u UIC\n.measure tran en_stuck_high FIND v(en) AT=150m\n'+ctl,
         {'en_stuck_high':lambda v:v>VHI}),
@@ -284,7 +299,12 @@ def native_spice(binary):
             for key,test in predicates.items():assert key in measures and test(measures[key]),(name,key,measures)
             results.append({'case':name,'status':'PASS_CONDITIONAL_RC_SPICE','measurements':measures,
                             'deck_sha256':hashlib.sha256(p.read_bytes()).hexdigest()})
+    coarse=next(r['measurements'] for r in results if r['case']=='gemini_positive_pulse')
+    refined=next(r['measurements'] for r in results if r['case']=='gemini_positive_pulse_refined')
+    convergence={k:abs(coarse[k]-refined[k]) for k in ['first_peak','first_valley','steady_valley']}
+    assert max(convergence.values())<.0005,('Positivepulse timestep didnotconverge',convergence)
     return {'status':'PASS_NATIVE_RC_MODELS_ONLY','binary':str(binary),'cases':results,
+      'positivepulse_50ns_vs25ns_maxstep_differences_v':convergence,
       'assumptions':['Ideal fixed0.22Vrectifier,35ohm source/charge resistance reproduceGemini assumptions,notvendorlimits',
                      'DirectRCsourceboundary is prescribed; no FPGAIBIS,TLV755Porwatchdog/supervisor macromodel',
                      'No nativeSPICEresult here validates real AVDDvoltage,outputcapdischarge,MR/SENSEmaximumlatency or rampsequencing']}

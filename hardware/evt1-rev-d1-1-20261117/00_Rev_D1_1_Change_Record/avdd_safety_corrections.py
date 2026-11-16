@@ -86,7 +86,8 @@ def apply_avdd_safety_corrections(net, bom):
         if r['RefDes']=='R_CRST_PU':r['RefDes']='R_CRST_PD';r['Pin_Function']='10k reset pulldown';r['Role']='PULLDOWN' if r['Pin']=='1' else 'PASSIVE';r['Note']='D1.1 FPGA reset defaults LOW; no discharge diode injecting current into reset'
         if r['RefDes']=='R_CRST_PD' and r['Pin']=='2':r.update(Net='GND',Domain_V='0')
         if r['RefDes']=='U6_OPT_AVDD' and r['Pin']=='3':r.update(Domain_V='4.5',Note='D1.1 watchdog, completed-heartbeat qualifier and independent UVLO clamps. LDO output value remains JBD BLOCKED.')
-    by['BOM-33']['MPN']=by['BOM-33']['MPN'].replace('R_CRST_PU(10k)','R_CRST_PD(10k)').replace(' + R_SEQ(100k)/C_SEQ(220nF)/D_SEQ(RB521S-30)','')
+    by['BOM-33']['MPN']='R_PLL(100R)+C_PLL(4.7uF/100nF)+R_VPP(10R)+C_VPP(4.7uF)+R_SS_PD(10k)+R_CRST_PD(10k)+R_CDONE_PU(4.7k)+10xR_DAMP(22R)+2xR_OPTCS_PU(10k)'
+    by['BOM-33']['Key_Electrical_Specs']='FPGA PLL/config/VPP and optical-series damping only; former R_SEQ/C_SEQ/D_SEQ removed. AVDD watchdog/qualification/supervisor peripherals are explicit BOM-D11 components.'
     by['BOM-33']['Rev_D1_Change'] += '; D1.1 removes R_SEQ/C_SEQ/D_SEQ; explicit AVDD watchdog/qualifier BOM lines replace the old RC gate'
     by['BOM-45']['Key_Electrical_Specs']='TLV755P DQN candidate; EN driven only by D1.1 explicit watchdog/qualification/interlock; VHI1.0V/VLO0.3V; output voltage, off sequencing and fitted MPN remain BLK-JBD-04.'
     # SBVS320D Table4-1 requires the DQN central thermal pad grounded as well as pin2.
