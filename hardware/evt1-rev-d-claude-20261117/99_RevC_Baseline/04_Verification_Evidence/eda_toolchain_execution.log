@@ -1,0 +1,23 @@
+==========================================================================================
+FPGA EDA TOOLCHAIN EXECUTION LOG (iverilog / vvp / yosys / nextpnr-ice40 / icetime)
+Policy: Strictly invoke native EDA binaries; static models forbidden from claiming PASS.
+==========================================================================================
+[BLOCKED_ENV_NO_BINARY] `iverilog` not found in $PATH (`iverilog -g2005 -Wall -o sim.vvp evt1_ar_display_fpga_bridge_rev_c.v ice40_spram_ebr_sim.v tb_evt1_ar_display_fpga_bridge_rev_c.v`). Pre-check verified: (1) Fixed Row 0 Word 0 (`addr=0x0000`) `0xA53C==0xA53C` collision via `16'h5AC2` (0 mismatches across 38,400 words/frame), (2) 3-stage `s0 -> s1 -> spram_q` + `ebr_wdata_q` + `pix_shift` 48MHz timing-closure pipeline, (3) 256-word EBR CDC FIFO (5x SB_RAM40_4K + 4x SB_SPRAM256KA) & active-row `row_cnt==10` (`next_row==11`) `tear_row_holdoff` verification; native simulation awaits GitHub CI (`fpga_eda_ci.yml`).
+[BLOCKED_ENV_NO_BINARY] `yosys` not found in $PATH; command `yosys -p synth_ice40 -top evt1_ar_display_fpga_bridge_rev_c -json bridge.json evt1_ar_display_fpga_bridge_rev_c.v` awaits GitHub Actions CI (`fpga_eda_ci.yml`) — static model PASS forbidden.
+[BLOCKED_ENV_NO_BINARY] `nextpnr-ice40` not found in $PATH; command `nextpnr-ice40 --up5k --package uwg30 --pcf ice40up5k_uwg30_rev_c.pcf --json bridge.json --asc bridge.asc --freq 48` awaits GitHub Actions CI (`fpga_eda_ci.yml`) — static model PASS forbidden.
+[BLOCKED_ENV_NO_BINARY] `icetime` not found in $PATH; command `icetime -d up5k -P uwg30 -p ice40up5k_uwg30_rev_c.pcf -c 48 bridge.asc` awaits GitHub Actions CI (`fpga_eda_ci.yml`) — static model PASS forbidden.
+
+==========================================================================================
+[ELECTRICAL AUDIT OF CDONE/AVDD SEQUENCER & 24-PIN BTB 3-WIRE I2S CONTINUITY (ON TOP OF a678be1)]
+==========================================================================================
+1. Fixed U6_OPT_AVDD Optical Power Sequencer Duty-Cycle Bug (CHK-04_PIN_PWR & Mut-18):
+   - Root cause in a678be1: Driving RC filter from Ball D3 (`frame_vsync_1v8`) averaged `1.80V * (48 / 800,000) = 0.108 mV < 0.95V (VIH)`, shutting off `AVDD_OPT_BIAS` in user mode.
+   - Fix: `U6_OPT_AVDD.EN` is charged from `1V8_OPT_VDD` (`1.80V` DC) via `R_SEQ = 100 kOhm + C_SEQ = 220 nF` (`tau = 22.0 ms`) and clamped to `FPGA_CRESET_B` via Schottky diode `D_SEQ (RB521S-30, Vf = 0.22V)`:
+       * When `FPGA_CRESET_B = 0V`: `V_EN = 0.22V <= 0.40V (VIL)` -> strictly OFF (`0.00V` via 120-Ohm active discharge).
+       * After `FPGA_CRESET_B = 1.80V`: `t_EN = 22.0 ms * ln((1.80 - 0.22)/(1.80 - 0.95)) = 13.64 ms` (`+9.84 ms` after `3.80 ms` Target SPI config completes).
+       * Steady state: `V_EN = 1.80V DC` (100% duty cycle); reset/power-down discharge `< 5 us`.
+
+2. Fixed 24-Pin BTB (`J_BTB_L` / `J_BRIDGE_IN`) <-> 16-Pin BTB (`J_BTB_R`) 3-Wire Stereo I2S Mapping (CHK-07 & Mut-19):
+   - Eliminated single-pin `S3_I2S_MUX_1V8` truncation on `J_BTB_L`.
+   - Assigned `J_BTB_L` / `J_BRIDGE_IN` `Pins 22, 23, 24` to `I2S_BCLK_1V8`, `I2S_LRCLK_1V8`, `I2S_DOUT_1V8` (using `Pin 5` + 4x `3.0A` `MP1..MP4` shield nails tied to `FPC_BRIDGE` L2 solid GND plane), matching `J_BTB_R` `Pins 10, 11, 12` 1-for-1.
+   - `19/19` Negative Fault Injections (CHK-08): 100% CAUGHT -> PASS.

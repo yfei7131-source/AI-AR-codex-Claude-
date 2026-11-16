@@ -1,0 +1,282 @@
+{
+ "U8_LS1": {
+  "bom": "BOM-16",
+  "vcca": "3V3_SYS",
+  "vccb": "1V8_FPGA_IO",
+  "va": 3.3,
+  "vb": 1.8,
+  "oe": "GND",
+  "banks": {
+   "1": {
+    "dir": "CTRL:QSPI_DIR1_EN",
+    "ch": [
+     [
+      1,
+      "host_qio1_3v3",
+      "host_qio1"
+     ],
+     [
+      2,
+      "host_qio2_3v3",
+      "host_qio2"
+     ],
+     [
+      3,
+      "host_qio3_3v3",
+      "host_qio3"
+     ],
+     [
+      4,
+      "LS1_A4_TIE_100K_GND",
+      "LS1_B4_TIE_100K_GND"
+     ]
+    ]
+   },
+   "2": {
+    "dir": "H",
+    "ch": [
+     [
+      5,
+      "host_sck_3v3",
+      "host_sck"
+     ],
+     [
+      6,
+      "host_cs_n_3v3",
+      "host_cs_n"
+     ],
+     [
+      7,
+      "FPGA_CRESET_3V3",
+      "FPGA_CRESET_B"
+     ],
+     [
+      8,
+      "host_qio0_3v3",
+      "host_qio0"
+     ]
+    ]
+   }
+  }
+ },
+ "U8_PDM_LS": {
+  "bom": "BOM-19",
+  "vcca": "1V8_SYS",
+  "vccb": "3V3_SYS",
+  "va": 1.8,
+  "vb": 3.3,
+  "oe": "GND",
+  "banks": {
+   "1": {
+    "dir": "H",
+    "ch": [
+     [
+      1,
+      "FPGA_CDONE_VSYNC_N",
+      "VSYNC_CDONE_3V3"
+     ],
+     [
+      2,
+      "IPC_NRF_TX_1V8",
+      "IPC_NRF_TX_3V3"
+     ],
+     [
+      3,
+      "PDM_D0_1V8",
+      "PDM_D0_3V3"
+     ],
+     [
+      4,
+      "PDM_D1_1V8",
+      "PDM_D1_3V3"
+     ]
+    ]
+   },
+   "2": {
+    "dir": "L",
+    "ch": [
+     [
+      5,
+      "PDM_CLK_1V8",
+      "PDM_CLK_3V3"
+     ],
+     [
+      6,
+      "I2S_S3_DOUT_1V8",
+      "I2S_S3_DOUT_3V3"
+     ],
+     [
+      7,
+      "IPC_S3_TX_1V8",
+      "IPC_S3_TX_3V3"
+     ],
+     [
+      8,
+      "NC_PDMLS_A8",
+      "TIE_GND_PDMLS_B8"
+     ]
+    ]
+   }
+  }
+ },
+ "U8_AUD_LS2": {
+  "bom": "BOM-47",
+  "vcca": "1V8_SYS",
+  "vccb": "3V3_SYS",
+  "va": 1.8,
+  "vb": 3.3,
+  "oe": "GND",
+  "banks": {
+   "1": {
+    "dir": "H",
+    "ch": [
+     [
+      1,
+      "I2S_BCLK_1V8",
+      "I2S_BCLK_3V3"
+     ],
+     [
+      2,
+      "I2S_LRCLK_1V8",
+      "I2S_LRCLK_3V3"
+     ]
+    ]
+   },
+   "2": {
+    "dir": "H",
+    "ch": [
+     [
+      3,
+      "TIE_GND_AUD2_A3",
+      "NC_AUD2_B3"
+     ],
+     [
+      4,
+      "TIE_GND_AUD2_A4",
+      "NC_AUD2_B4"
+     ]
+    ]
+   }
+  }
+ },
+ "U8_CAM_ISO1": {
+  "bom": "BOM-17",
+  "vcca": "CAM_DOVDD_1V8",
+  "vccb": "3V3_SYS",
+  "va": 1.8,
+  "vb": 3.3,
+  "oe": "GND",
+  "banks": {
+   "1": {
+    "dir": "H",
+    "ch": [
+     [
+      1,
+      "CAM_D0_1V8",
+      "CAM_D0_3V3"
+     ],
+     [
+      2,
+      "CAM_D1_1V8",
+      "CAM_D1_3V3"
+     ],
+     [
+      3,
+      "CAM_D2_1V8",
+      "CAM_D2_3V3"
+     ],
+     [
+      4,
+      "CAM_D3_1V8",
+      "CAM_D3_3V3"
+     ]
+    ]
+   },
+   "2": {
+    "dir": "H",
+    "ch": [
+     [
+      5,
+      "CAM_D4_1V8",
+      "CAM_D4_3V3"
+     ],
+     [
+      6,
+      "CAM_D5_1V8",
+      "CAM_D5_3V3"
+     ],
+     [
+      7,
+      "CAM_D6_1V8",
+      "CAM_D6_3V3"
+     ],
+     [
+      8,
+      "CAM_D7_1V8",
+      "CAM_D7_3V3"
+     ]
+    ]
+   }
+  }
+ },
+ "U8_CAM_ISO2": {
+  "bom": "BOM-18",
+  "vcca": "CAM_DOVDD_1V8",
+  "vccb": "3V3_SYS",
+  "va": 1.8,
+  "vb": 3.3,
+  "oe": "GND",
+  "banks": {
+   "1": {
+    "dir": "H",
+    "ch": [
+     [
+      1,
+      "CAM_PCLK_1V8",
+      "CAM_PCLK_3V3"
+     ],
+     [
+      2,
+      "CAM_VSYNC_1V8",
+      "CAM_VSYNC_3V3"
+     ],
+     [
+      3,
+      "CAM_HREF_1V8",
+      "CAM_HREF_3V3"
+     ],
+     [
+      4,
+      "TIE_GND_ISO2_A4",
+      "NC_ISO2_B4"
+     ]
+    ]
+   },
+   "2": {
+    "dir": "L",
+    "ch": [
+     [
+      5,
+      "CAM_XCLK_1V8",
+      "CAM_XCLK_3V3"
+     ],
+     [
+      6,
+      "NC_ISO2_A6",
+      "TIE_GND_ISO2_B6"
+     ],
+     [
+      7,
+      "NC_ISO2_A7",
+      "TIE_GND_ISO2_B7"
+     ],
+     [
+      8,
+      "NC_ISO2_A8",
+      "TIE_GND_ISO2_B8"
+     ]
+    ]
+   }
+  }
+ }
+}

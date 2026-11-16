@@ -1,0 +1,44 @@
+====================================================================================================
+智元跃动 AI/AR Glasses V1.0 — EVT-1 Rev D verification (from Rev C bb87623)
+====================================================================================================
+[PASS] NET-00 BOM<->netlist reference integrity
+       -> 487 netlist rows; all BOM lines resolvable; 39 active/connector RefDes all present in netlist
+[PASS] NET-01 single driver per net / OD pull-ups / PDM slot sharing
+       -> every non-GND net has <=1 push-pull/power source; OD nets pulled up; PDM_D0 is slot-shared only
+[PASS] NET-02 cross-board trunk continuity (J_BTB_L=J_BRIDGE_IN, J_BTB_R subset)
+       -> J_BTB_L==J_BRIDGE_IN (32 contacts); all 18 J_BTB_R contacts carried by trunk; every multi-board net crosses the correct connectors
+[PASS] NET-03 BTB contact ampacity (Hirose BM28 0.3 A / 5 A, 1.25x)
+       -> all BTB nets within 1.25x derated contact rating; high-current: J_BTB_L:VBAT_R_RET 5.0A>=1.25A, J_BTB_L:GND 5.9A>=1.50A, J_BTB_L:VSYS 0.6A>=0.56A, J_BRIDGE_IN:VBAT_R_RET 5.0A>=1.25A, J_BRIDGE_IN:GND 5.9A>=1.50A, J_BRIDGE_IN:VSYS 0.6A>=0.56A, J_BTB_R:VBAT_R_RET 5.0A>=1.25A, J_BTB_R:GND 6.2A>=1.50A, J_DISP_L:AVDD_OPT_BIAS 5.3A>=0.38A, J_DISP_L:GND 5.6A>=1.50A, J_DISP_R:AVDD_OPT_BIAS 5.3A>=0.38A, J_DISP_R:GND 5.6A>=1.50A, J_CAM:GND 6.5A>=1.50A
+[PASS] NET-04 level-translator bank direction & domain consistency
+       -> 5 translators / 36 channels: every bank uniform, each output side uncontended, domains match VCCA/VCCB, OE defined, DIR control referenced to VCCA
+[PASS] NET-06 ESP32-S3 GPIO uniqueness & strap-pin safety
+       -> 33 GPIOs unique, no forbidden module pins; strap pins GPIO0/45/46 and ROM-TX GPIO43 have no external driver at reset (GPIO3 driver is VCCA-gated U8_CAM_ISO2)
+[PASS] NET-07 FPGA PCF <-> RTL ports <-> netlist balls
+       -> 18/18 PCF balls legal & unique; every PCF port is an RTL port; netlist ball->net matches PCF
+[PASS] SEQ-01 U6_OPT_AVDD CDONE-gated enable (TLV755P VHI/VLO)
+       -> AVDD ON requires CRESET_B=1 & CDONE=1 & OPT_PWR_REQ=1; EN during config <= 1.0 mV (<0.3 V); guaranteed ON 18.7 ms nom / <= 20.8 ms worst after CDONE; VSYNC 1 us pulse droop 118 uV (steady >= 1.800 V vs VHI 1.0 V); OPT_PWR_REQ=0 -> EN < 0.3 V within 46 ms; reset -> D_SEQ fast clamp
+[PASS] SEQ-02 iCE40UP rail order VCC/VCCPLL -> SPI_VCCIO1 -> VPP
+       -> VCC from U4_1V2(IN=VSYS); SPI_VCCIO1/VCCIO_0/VCCIO_2 from U4_1V8F with EN=1V2_FPGA_PLL (min 1.082 V vs VHI 1.0 V); VPP via 10R/4.7uF after SPI_VCCIO1; U8_LS1 VCCB tracks FPGA I/O rail (Ioff isolation)
+[PASS] AUD-01 MAX98357A SD_MODE channel-select margins
+       -> right amp SD_MODE 0.913..1.195 V (window 0.77..1.4 V, >= 80 mV margin incl. ±20% internal pulldown ASSUMPTION, VDD ±5%); left amp 1.71..1.89 V > 1.4 V; nRF low -> both shutdown
+[PASS] AUD-02 single I2S master / single PDM clock master
+       -> I2S BCLK/LRCLK/AMP_DIN/SD_MODE driven only by nRF5340; ESP32 audio enters nRF SDIN; PDM clock only from ESP32
+[PASS] AUD-03 I2S-slave and right-mic PDM loop timing budget
+       -> I2S slave loop 70 ns vs half-period 326 ns; right-mic PDM loop 120 ns vs 163 ns (delay figures are stated ASSUMPTIONS, confirm on EVT bring-up with a scope)
+[PASS] PRIV-01 privacy window vs camera LDO enable threshold
+       -> window [1.091, 2.182] V = [2.48, 4.96] mA; healthy LED 2.59..4.59 mA inside (margins 0.050 V / 0.162 V); EN >= 1.091 V >= VHI 1.0 V whenever window OK
+[PASS] PRIV-02 camera power request, SCCB isolation, LED return
+       -> CAM_PWR_REQ ~3.05 V with XCLK running (charge tau ~66 us), < 0.3 V 23 ms after XCLK stops; SCCB behind U8_LS4 (VREF1=DOVDD); RESET_N RC-POR, PWDN pulled low; LED cathode to bridge GND
+[OPEN] MASS-01 40 g ledger incl. Rev C omitted items
+       -> Rev C ledger 34.75 g + Rev D electronics 0.03 g + omitted items 6.22 g (2x temple shell 2.36 g PA12/0.6 mm, FPC/nose/fasteners/pogo 1.50 g) = 41.00 g (TR90 shells: 41.61 g) vs 40.0 g target; with mechanical caps: 39.13 g (+0.5 g reserve required) — NOT closed by current design; closes only if ID/mech meet the caps
+[PASS] RTL-01 RTL/TB/Makefile static structure
+       -> RTL/TB structurally consistent (balanced blocks, Rev C pipeline/macro/TB guards retained, Rev D OPT_CTRL/RAW/scan-gate/D3 present, TB R1..R4 counters wired into PASS gate)
+[PASS] RTL-02 OPT_CTRL/RAW protocol behavioural model
+       -> OPTCTRL_MODEL_RESULT: PASS []
+[BLOCKED] RTL-03 native iverilog/yosys/nextpnr/icetime
+       -> [BLOCKED_ENV_NO_BINARY] iverilog/vvp/yosys/nextpnr-ice40/icetime not in PATH; run `make -C 03_FPGA_RTL all` in CI
+[PASS] FLT-01 fault injection (16 Rev C defect classes)
+       -> 16/16 caught: F01 right-battery return on 0.3 A signal contact (Rev C)=CAUGHT; F02 second I2S master on BCLK (Rev C ESP32+nRF)=CAUGHT; F03 nRF5340 PDM clock on shared mic bus (Rev C)=CAUGHT; F04 right SD_MODE 100k (Rev C)=CAUGHT; F05 AVDD RC charged from 1V8 rail, CRESET-only clamp (Rev C)=CAUGHT; F06 non-datasheet EN thresholds 0.95/0.40 V (Rev C)=CAUGHT; F07 U4_1V2 fed from 1V8_SYS (Rev C order violation)=CAUGHT; F08 translator output on strap GPIO45 at reset=CAUGHT; F09 camera SCCB on always-on I2C (Rev C back-power)=CAUGHT; F10 J_BTB_R net absent from trunk=CAUGHT; F11 privacy window low edge below LDO VHI (Rev C divider)=CAUGHT; F12 D3 reverted to active-high VSYNC=CAUGHT; F13 Rev C TB pattern-collision regression=CAUGHT; F14 input placed in a B->A translator bank=CAUGHT; F15 privacy LED cathode without return (Rev C low-side R_LIMIT)=CAUGHT; F16 U8_LS1 VCCB on always-on rail (FPGA back-power)=CAUGHT
+====================================================================================================
+SUMMARY: 1 BLOCKED | 1 OPEN | 17 PASS
+NOTE: PASS = computed/structural check on delivered files. BLOCKED = native tool absent. OPEN = known non-closure. Nothing here is a physical measurement.
