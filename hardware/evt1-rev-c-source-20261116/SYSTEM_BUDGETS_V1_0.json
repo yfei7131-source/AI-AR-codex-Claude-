@@ -1,6 +1,6 @@
 {
-  "document_version": "V1.0-EVT1-RevC-P0Remediated-20261115",
-  "verification_policy": "STRICT_ZERO_UNVERIFIED_PASS (Missing EDA/CAD binaries & STEP shells marked BLOCKED; physical unmeasured items marked UNVERIFIED)",
+  "document_version": "V1.0-EVT1-RevC-PR19-P0Fixed-20261116",
+  "verification_policy": "STRICT_NO_STATIC_MODEL_SUBSTITUTE_FOR_NATIVE_TOOLS (Missing EDA/CAD binaries & STEP shells strictly marked BLOCKED; physical unmeasured items marked UNVERIFIED)",
   "1_soc_and_audio_architecture": {
     "frozen_primary_host_soc": "ESP32-S3-PICO-1-N8R8",
     "frozen_ble_audio_companion_soc": "nRF5340-CMAA-R7",
@@ -42,6 +42,10 @@
       54
     ],
     "assigned_external_pins": {
+      "QSPI_DIR1_EN": {
+        "pin": 5,
+        "gpio": "GPIO0"
+      },
       "SYS_I2C_SDA": {
         "pin": 6,
         "gpio": "GPIO1"
@@ -177,38 +181,39 @@
         "vccb_domain": "1V8_SYS (1.80V)",
         "oe_tie": "GND",
         "dir1_tie": "HIGH",
+        "dir1_boot_cfg_note": "Controlled by QSPI_DIR1_EN (GPIO0): driven LOW (B_TO_A) during 1-bit Target SPI boot config so Ball F1 (SPI_SO) output never collides; driven HIGH (A_TO_B) after CDONE+49 clks for 4-bit QSPI",
         "dir2_tie": "HIGH",
         "bank1_ch1_4": [
           {
             "ch": 1,
-            "sig": "host_qio[0]",
+            "sig": "host_qio[1]/SPI_SO",
             "dir": "A_TO_B"
           },
           {
             "ch": 2,
-            "sig": "host_qio[1]",
-            "dir": "A_TO_B"
-          },
-          {
-            "ch": 3,
             "sig": "host_qio[2]",
             "dir": "A_TO_B"
           },
           {
-            "ch": 4,
+            "ch": 3,
             "sig": "host_qio[3]",
+            "dir": "A_TO_B"
+          },
+          {
+            "ch": 4,
+            "sig": "IPC_S3_TO_NRF_TX",
             "dir": "A_TO_B"
           }
         ],
         "bank2_ch5_8": [
           {
             "ch": 5,
-            "sig": "host_sck",
+            "sig": "host_sck/SPI_SCK",
             "dir": "A_TO_B"
           },
           {
             "ch": 6,
-            "sig": "host_cs_n",
+            "sig": "host_cs_n/SPI_SS_B",
             "dir": "A_TO_B"
           },
           {
@@ -218,7 +223,7 @@
           },
           {
             "ch": 8,
-            "sig": "IPC_S3_TO_NRF_TX",
+            "sig": "host_qio[0]/SPI_SI",
             "dir": "A_TO_B"
           }
         ]
@@ -380,6 +385,7 @@
   },
   "2_dual_battery_catalog_and_power_tree": {
     "selected_catalog_cell_model": "Grepow GRP3911040 (Official Grepow Ultra-Narrow Catalog Model)",
+    "slim_straight_temple_alternative_model": "Grepow GRP220550 (2.38x5.60x50.0mm, 47mAh, 4.35V — fits <=6.0mm slim straight temple with 0.0mm protrusion)",
     "catalog_source_url": "https://www.grepow.com/shaped-battery/ultra-narrow-battery.html",
     "alternative_catalog_models": [
       {
@@ -551,10 +557,31 @@
         "E3"
       ]
     },
+    "lattice_tn02006_power_and_config_audit": {
+      "vcc_core_v": 1.2,
+      "vccpll_filter_r_ohm": 100.0,
+      "vccpll_filter_c_uf": 4.7,
+      "vpp_2v5_voltage_v": 1.8,
+      "vpp_2v5_mode": "TARGET_SPI_CRAM_MODE_NO_HFOSC_LFOSC_RGB (FPGA-TN-02006-2.3 Table 2.1 Note 6)",
+      "power_sequence_order": [
+        "1V2_FPGA_CORE_AND_VCCPLL",
+        "1V8_SPI_VCCIO1",
+        "1V8_VPP_2V5_RC_DELAYED",
+        "1V8_VCCIO_0_2"
+      ],
+      "spi_ss_b_ball": "C1",
+      "spi_ss_b_target_mode_pulldown_ohm": 10000.0,
+      "creset_b_ball": "F3",
+      "creset_b_pullup_ohm": 10000.0,
+      "cdone_ball": "D3",
+      "cdone_pullup_ohm": 4700.0,
+      "spi_so_ball": "F1",
+      "spi_so_boot_contention_isolated_via_u8_ls1_dir1": true
+    },
     "clk_sys_mhz": 48.0,
     "host_sck_mhz": 40.0,
     "qspi_opt_sck_mhz": 24.0,
-    "cdc_fifo_depth_words": 64,
+    "cdc_fifo_depth_words": 256,
     "clks_per_line": 2000,
     "active_width": 320,
     "active_height": 240,
@@ -903,7 +930,7 @@
           {
             "ref": "U8_LS1",
             "side": "BOTTOM",
-            "x_mm": 2.3,
+            "x_mm": 1.5,
             "y_mm": 6.8,
             "w_mm": 2.0,
             "l_mm": 4.0,
@@ -913,7 +940,7 @@
           {
             "ref": "U8_CAM_ISO1",
             "side": "BOTTOM",
-            "x_mm": 5.8,
+            "x_mm": 6.7,
             "y_mm": 6.8,
             "w_mm": 2.0,
             "l_mm": 4.0,
@@ -923,8 +950,8 @@
           {
             "ref": "U8_CAM_ISO2",
             "side": "BOTTOM",
-            "x_mm": 4.1,
-            "y_mm": 11.6,
+            "x_mm": 2.9,
+            "y_mm": 14.2,
             "w_mm": 2.0,
             "l_mm": 4.0,
             "h_mm": 0.55,
@@ -934,7 +961,7 @@
             "ref": "U8_PDM_LS",
             "side": "BOTTOM",
             "x_mm": 2.9,
-            "y_mm": 18.0,
+            "y_mm": 19.5,
             "w_mm": 2.0,
             "l_mm": 4.0,
             "h_mm": 0.55,
@@ -994,7 +1021,7 @@
       },
       "M-OPT-BRIDGE": {
         "length_y_mm": 22.0,
-        "cavity_max_z_mm": 2.5,
+        "cavity_max_z_mm": 2.8,
         "pcb_thickness_z_mm": 0.5,
         "width_zones": [
           {
@@ -1008,17 +1035,27 @@
             "ref": "D3_PRIV",
             "side": "TOP",
             "x_mm": 2.1,
-            "y_mm": 2.2,
+            "y_mm": 1.4,
             "w_mm": 0.8,
             "l_mm": 1.6,
             "h_mm": 0.6,
             "is_btb": false
           },
           {
+            "ref": "J_DISP_L",
+            "side": "TOP",
+            "x_mm": 2.1,
+            "y_mm": 4.2,
+            "w_mm": 3.6,
+            "l_mm": 1.5,
+            "h_mm": 0.6,
+            "is_btb": true
+          },
+          {
             "ref": "Y1_OSC",
             "side": "TOP",
             "x_mm": 2.1,
-            "y_mm": 5.5,
+            "y_mm": 6.6,
             "w_mm": 1.6,
             "l_mm": 2.0,
             "h_mm": 0.75,
@@ -1035,34 +1072,24 @@
             "is_btb": false
           },
           {
+            "ref": "J_DISP_R",
+            "side": "TOP",
+            "x_mm": 2.1,
+            "y_mm": 14.8,
+            "w_mm": 3.6,
+            "l_mm": 1.5,
+            "h_mm": 0.6,
+            "is_btb": true
+          },
+          {
             "ref": "U9_IMU",
             "side": "TOP",
             "x_mm": 2.1,
-            "y_mm": 14.0,
+            "y_mm": 18.8,
             "w_mm": 2.5,
             "l_mm": 3.0,
             "h_mm": 0.91,
             "is_btb": false
-          },
-          {
-            "ref": "J_DISP_L",
-            "side": "TOP",
-            "x_mm": 2.1,
-            "y_mm": 17.8,
-            "w_mm": 3.6,
-            "l_mm": 1.5,
-            "h_mm": 0.6,
-            "is_btb": true
-          },
-          {
-            "ref": "J_DISP_R",
-            "side": "TOP",
-            "x_mm": 2.1,
-            "y_mm": 20.2,
-            "w_mm": 3.6,
-            "l_mm": 1.5,
-            "h_mm": 0.6,
-            "is_btb": true
           },
           {
             "ref": "J_BRIDGE_IN",
@@ -1078,17 +1105,27 @@
             "ref": "U4_1V2",
             "side": "BOTTOM",
             "x_mm": 2.1,
-            "y_mm": 7.5,
+            "y_mm": 7.0,
             "w_mm": 1.0,
             "l_mm": 1.0,
             "h_mm": 0.4,
             "is_btb": false
           },
           {
+            "ref": "RN_FPGA_CFG_PWR",
+            "side": "BOTTOM",
+            "x_mm": 2.1,
+            "y_mm": 10.0,
+            "w_mm": 2.2,
+            "l_mm": 2.0,
+            "h_mm": 0.45,
+            "is_btb": false
+          },
+          {
             "ref": "MK2_C",
             "side": "BOTTOM",
             "x_mm": 2.1,
-            "y_mm": 14.0,
+            "y_mm": 15.5,
             "w_mm": 3.0,
             "l_mm": 4.0,
             "h_mm": 1.0,
@@ -1254,8 +1291,8 @@
         "z_mm": 0.0
       },
       {
-        "name": "Nose Bridge Rigid-Flex (M-OPT-BRIDGE + FPGA/IMU/OSC/BTBs)",
-        "mass_g": 0.98,
+        "name": "Nose Bridge Rigid-Flex (M-OPT-BRIDGE + FPGA/IMU/OSC/BTBs/Passives)",
+        "mass_g": 0.99,
         "x_mm": 0.0,
         "y_mm": 5.0,
         "z_mm": 2.0

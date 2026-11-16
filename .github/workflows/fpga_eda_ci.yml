@@ -1,0 +1,54 @@
+name: EVT-1 Rev C FPGA EDA
+
+on:
+  push:
+    branches:
+      - handoff/evt1-rev-c-source-20261116
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  fpga-eda:
+    name: RTL simulation, synthesis, PnR and STA
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install OSS CAD Suite
+        uses: YosysHQ/setup-oss-cad-suite@v3
+
+      - name: Verify toolchain
+        run: |
+          command -v iverilog
+          command -v vvp
+          command -v yosys
+          command -v nextpnr-ice40
+          command -v icetime
+          iverilog -V
+          yosys -V
+          nextpnr-ice40 --version
+
+      - name: Run real simulation, synthesis, PnR and STA
+        working-directory: hardware/evt1-rev-c-source-20261116/rtl
+        run: |
+          make clean
+          make all
+
+      - name: Upload EDA logs and reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: evt1-rev-c-eda-results
+          if-no-files-found: warn
+          path: |
+            hardware/evt1-rev-c-source-20261116/rtl/iverilog_sim.log
+            hardware/evt1-rev-c-source-20261116/rtl/yosys_synth.log
+            hardware/evt1-rev-c-source-20261116/rtl/nextpnr_uwg30.log
+            hardware/evt1-rev-c-source-20261116/rtl/*_sta.rpt
+            hardware/evt1-rev-c-source-20261116/rtl/*.json
+            hardware/evt1-rev-c-source-20261116/rtl/*.asc

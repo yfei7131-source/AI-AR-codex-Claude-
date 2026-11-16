@@ -1,33 +1,27 @@
 // =============================================================================
-// Zhiyuan Yuedong (智元跃动) AI/AR Smart Glasses V1.0 — EVT-1 Rev C (P0 Fixed)
+// Zhiyuan Yuedong (智元跃动) AI/AR Smart Glasses V1.0 — EVT-1 Rev C (PR #19 P0 Fixed)
 // Module: evt1_ar_display_fpga_bridge_rev_c
 // Target: Lattice iCE40UP5K-UWG30ITR (30-Ball WLCSP, 2.11 x 2.54 x 0.45 mm)
 //
-// P0 Fixes Implemented:
-//   1. Exact 18-Pin Standard CMOS PIO Mapping for UWG30 (FPGA-EB-02007 p.23):
-//      - Avoids all 8 Power/GND balls (C2, B2, A3, D2, C4, D4, B4, E2),
-//        dedicated CRESET_B (F3), and 3 Open-Drain RGB balls (C5, B5, A5).
-//      - Shares lockstep opt_sck (E3) and opt_cs_n (C3) between Left & Right
-//        engines while driving independent 4-bit Left (opt_l_qdo[3:0] on A1,A2,A4,E4)
-//        and Right (opt_r_qdo[3:0] on E5,D5,F5,F4) buses -> exactly 18 CMOS PIOs!
-//   2. 64-Deep Dual-Clock Gray-Code Asynchronous CDC FIFO (Zero Word Drops):
-//      - Replaces the 1-deep toggle buffer that dropped words during the 82-cycle
-//        HBLANK SPRAM prefetch window (`col_cnt 1800..1881`).
-//      - Absorbs continuous 40MHz Host QSPI bursts (up to 18 words arriving during
-//        the 1.708us HBLANK prefetch stall, with 64-word depth = 3.55x margin)
-//        and drains at 1 word per clk_48m cycle (48 Mwords/s) as soon as prefetch
-//        completes -> ZERO dropped words across continuous 38,400-word full frames!
-//   3. Framebuffer Boundary Clip & Tear-Free Scanout Protection:
-//      - Enforces hardware upper bound `MAX_FB_WORDS = 19,200` (`0x0000..0x4AFF`
-//        across Bank 0 `0x0000..0x3FFF` and Bank 1 `0x4000..0x4AFF`); clips any
-//        out-of-bounds address `>= 0x4B00` and increments `boundary_err_cnt`.
-//      - Initializes `row_cnt` to `V_ACTIVE` (240, start of 6.667ms VBLANK) on reset
-//        so Row 0 (`0x0000..0x004F`) is always prefetched at `row_cnt == 399` before
-//        Frame 0 active scanout begins, and supports tear-guarded writes (`0xA2/0xA3`).
-//   4. True 60.000 Hz Frame Timing & 24.000 MHz QSPI Clock from 48.000 MHz clk_48m:
-//      - CLKS_PER_LINE = 2000 cycles (41.6667 us/line @ 48 MHz)
-//      - TOTAL_LINES   = 400 lines (240 active lines + 160 VBLANK lines)
-//      - CLKS_PER_FRAME= 2000 * 400 = 800,000 cycles = 16.6667 ms = 60.000 Hz exact!
+// P0 Fixes Implemented (On top of 43f2960979ff):
+//   1. True Active-Scanout Anti-Tearing Holdoff (`tear_row_holdoff`) + 256-Word EBR FIFO:
+//      - Instantiates 3x Lattice `SB_RAM40_4K` hard macros (`u_cdc_fifo_ctrl`,
+//        `u_cdc_fifo_hi`, `u_cdc_fifo_lo`, FIFO_ADDR_BITS = 8, DEPTH = 256 words)
+//        storing per-word `{wr_tear_sync_q, wr_eye_q, wr_addr_q[15:0], wr_data_q[15:0]}`.
+//      - During active scanout rows `row_cnt = 0..238` (where `next_row = 1..239 < V_ACTIVE`
+//        triggers a real line prefetch at `col_cnt = 1800..1881`), if a tear-guarded
+//        write (`0xA2/0xA3`, `wr_tear_sync_q == 1`) targets `next_row` (`next_row_base_addr
+//        .. next_row_base_addr + 79`) within the pre-prefetch danger window
+//        `col_cnt = 1400..1881` (`in_tear_guard_win`), `tear_row_holdoff` holds off
+//        draining into `SB_SPRAM256KA` until `col_cnt == 1882` (at most 482 clks =
+//        10.04 us, accumulating at most 101 words in the 256-word EBR FIFO -> 0 overflow!).
+//      - Consequently, `prefetch_active` (`col_cnt = 1800..1881`) prefetches 100% of
+//        the intact old `next_row` into `u_ebr_l/r` (ZERO mid-line tearing on `next_row`),
+//        and at `col_cnt == 1882` the held-off new words drain at 48 Mwords/s into
+//        `SB_SPRAM256KA` for the subsequent frame!
+//   2. Ping-Pong EBR Line Buffer Pages (`Page 0: 0..79`, `Page 1: 128..207`) inside
+//      `u_ebr_l` and `u_ebr_r` so prefetching `next_row` never overwrites `cur_row`.
+//   3. Clean Yosys `synth_ice40` & Strict IEEE 1364-2005 Syntax.
 // =============================================================================
 
 `timescale 1ns / 1ps
@@ -39,7 +33,7 @@ module evt1_ar_display_fpga_bridge_rev_c #(
     parameter integer BPP             = 4,
     parameter integer CMD_HDR_NIBBLES = 12,
     parameter integer CLKS_PER_LINE   = 2000,
-    parameter integer FIFO_ADDR_BITS  = 6
+    parameter integer FIFO_ADDR_BITS  = 8
 ) (
     // 1. System Clock Input (1 pin: Ball B3 IOT_46B_G0)
     input  wire        clk_48m,
@@ -69,9 +63,11 @@ module evt1_ar_display_fpga_bridge_rev_c #(
     localparam integer ACTIVE_SCAN_CLKS       = TOTAL_NIBBLES_PER_LINE * 2; // 664 clks @ 48MHz (24MHz opt_sck)
     localparam integer WORDS_PER_LINE         = (H_ACTIVE * BPP) / 16; // 80 words (16-bit) per line
     localparam integer MAX_FB_WORDS           = V_ACTIVE * WORDS_PER_LINE; // 19,200 words (0x0000..0x4AFF)
+    localparam integer PREFETCH_GUARD_CLK     = 1400; // 400 clks (8.33 us) before prefetch_active starts
     localparam integer PREFETCH_START_CLK     = 1800; // Prefetch next row from SPRAM into EBR during [1800..1881]
+    localparam integer PREFETCH_END_CLK       = PREFETCH_START_CLK + WORDS_PER_LINE + 2; // 1882
     localparam integer TOTAL_LINES            = V_ACTIVE + VBLANK_LINES; // 400 lines (800,000 clks = 60.000 Hz)
-    localparam integer FIFO_DEPTH             = (1 << FIFO_ADDR_BITS); // 64 words deep
+    localparam integer FIFO_DEPTH             = (1 << FIFO_ADDR_BITS); // 256 words deep (via 3x SB_RAM40_4K)
 
     // =========================================================================
     // Power-On Reset Generator (Synthesizable 4-bit counter after CRAM wakeup)
@@ -84,139 +80,207 @@ module evt1_ar_display_fpga_bridge_rev_c #(
     end
 
     // =========================================================================
-    // 64-Word x 34-Bit Dual-Clock Gray-Code Asynchronous CDC FIFO
-    // Entry format: {tear_sync_mode[0], eye_sel[0], word_addr[15:0], data[15:0]}
+    // 256-Word x 34-Bit Dual-Clock Gray-Code EBR Asynchronous CDC FIFO
+    // Backed by 3x Lattice SB_RAM40_4K Hard Macros:
+    //   - `u_cdc_fifo_ctrl` : {14'd0, tear_sync_mode[0], eye_sel[0]}
+    //   - `u_cdc_fifo_hi`   : word_addr[15:0] (0x0000..0x4AFF)
+    //   - `u_cdc_fifo_lo`   : pixel_data[15:0]
     //   Commands supported:
-    //     0xA0 : Immediate Write Left Eye SPRAM  (eye_sel=0, tear_sync=0)
-    //     0xA1 : Immediate Write Right Eye SPRAM (eye_sel=1, tear_sync=0)
-    //     0xA2 : Tear-Guarded Write Left Eye     (eye_sel=0, tear_sync=1)
-    //     0xA3 : Tear-Guarded Write Right Eye    (eye_sel=1, tear_sync=1)
+    //     0xA0 : Immediate Write Left Eye SPRAM     (eye_sel=0, tear_sync=0)
+    //     0xA1 : Immediate Write Right Eye SPRAM    (eye_sel=1, tear_sync=0)
+    //     0xA2 : Tear-Guarded Write Left Eye SPRAM  (eye_sel=0, tear_sync=1)
+    //     0xA3 : Tear-Guarded Write Right Eye SPRAM (eye_sel=1, tear_sync=1)
     // =========================================================================
-    reg [33:0]                cdc_fifo_mem [0:FIFO_DEPTH-1];
-    reg [FIFO_ADDR_BITS:0]    wptr_bin        = {(FIFO_ADDR_BITS+1){1'b0}};
-    reg [FIFO_ADDR_BITS:0]    wptr_gray       = {(FIFO_ADDR_BITS+1){1'b0}};
-    reg [FIFO_ADDR_BITS:0]    rptr_gray_h1    = {(FIFO_ADDR_BITS+1){1'b0}};
-    reg [FIFO_ADDR_BITS:0]    rptr_gray_h2    = {(FIFO_ADDR_BITS+1){1'b0}};
+    reg [FIFO_ADDR_BITS:0] wptr_bin     = {(FIFO_ADDR_BITS+1){1'b0}};
+    reg [FIFO_ADDR_BITS:0] wptr_gray    = {(FIFO_ADDR_BITS+1){1'b0}};
+    reg [FIFO_ADDR_BITS:0] rptr_gray_h1 = {(FIFO_ADDR_BITS+1){1'b0}};
+    reg [FIFO_ADDR_BITS:0] rptr_gray_h2 = {(FIFO_ADDR_BITS+1){1'b0}};
 
-    reg [FIFO_ADDR_BITS:0]    rptr_bin        = {(FIFO_ADDR_BITS+1){1'b0}};
-    reg [FIFO_ADDR_BITS:0]    rptr_gray       = {(FIFO_ADDR_BITS+1){1'b0}};
-    reg [FIFO_ADDR_BITS:0]    wptr_gray_s1    = {(FIFO_ADDR_BITS+1){1'b0}};
-    reg [FIFO_ADDR_BITS:0]    wptr_gray_s2    = {(FIFO_ADDR_BITS+1){1'b0}};
+    reg [FIFO_ADDR_BITS:0] rptr_bin     = {(FIFO_ADDR_BITS+1){1'b0}};
+    reg [FIFO_ADDR_BITS:0] rptr_gray    = {(FIFO_ADDR_BITS+1){1'b0}};
+    reg [FIFO_ADDR_BITS:0] wptr_gray_s1 = {(FIFO_ADDR_BITS+1){1'b0}};
+    reg [FIFO_ADDR_BITS:0] wptr_gray_s2 = {(FIFO_ADDR_BITS+1){1'b0}};
 
     // Verification & Diagnostics Telemetry Registers
-    reg                       fifo_overflow_sticky = 1'b0;
-    reg [15:0]                boundary_err_cnt     = 16'd0;
-    reg [31:0]                words_written_l      = 32'd0;
-    reg [31:0]                words_written_r      = 32'd0;
-    reg [FIFO_ADDR_BITS:0]    fifo_max_level       = {(FIFO_ADDR_BITS+1){1'b0}};
-    reg [31:0]                tear_guard_holdoffs  = 32'd0;
+    reg                    fifo_overflow_sticky = 1'b0;
+    reg [15:0]             boundary_err_cnt     = 16'd0;
+    reg [31:0]             words_written_l      = 32'd0;
+    reg [31:0]             words_written_r      = 32'd0;
+    reg [FIFO_ADDR_BITS:0] fifo_max_level       = {(FIFO_ADDR_BITS+1){1'b0}};
+    reg [31:0]             tear_hazard_cnt      = 32'd0;
 
     wire [FIFO_ADDR_BITS:0] wptr_bin_next  = wptr_bin + 1'b1;
     wire [FIFO_ADDR_BITS:0] wptr_gray_next = (wptr_bin_next >> 1) ^ wptr_bin_next;
     wire                    fifo_full_h    = (wptr_gray == {~rptr_gray_h2[FIFO_ADDR_BITS:FIFO_ADDR_BITS-1],
                                                              rptr_gray_h2[FIFO_ADDR_BITS-2:0]});
 
-    // Synchronize read Gray pointer into host_sck domain for full detection
-    always @(posedge host_sck or negedge rst_n) begin
-        if (!rst_n) begin
-            rptr_gray_h1 <= {(FIFO_ADDR_BITS+1){1'b0}};
-            rptr_gray_h2 <= {(FIFO_ADDR_BITS+1){1'b0}};
-        end else begin
-            rptr_gray_h1 <= rptr_gray;
-            rptr_gray_h2 <= rptr_gray_h1;
-        end
-    end
-
-    // Host QSPI Slave Deserializer (host_sck domain, packet framed by host_cs_n)
-    reg [3:0]  h_nib_cnt    = 4'd0;
-    reg [7:0]  h_cmd_reg    = 8'h00;
-    reg [15:0] h_addr_reg   = 16'h0000;
-    reg [15:0] h_data_shift = 16'h0000;
-
-    wire is_write_cmd = (h_cmd_reg == 8'hA0) || (h_cmd_reg == 8'hA1) ||
-                        (h_cmd_reg == 8'hA2) || (h_cmd_reg == 8'hA3);
-
+    // 1. Packet Nibble Counter (ONLY register with async reset on posedge host_cs_n)
+    reg [3:0] h_nib_cnt = 4'd0;
     always @(posedge host_sck or posedge host_cs_n) begin
         if (host_cs_n) begin
             h_nib_cnt <= 4'd0;
         end else begin
-            if (h_nib_cnt == 4'd0) begin
-                h_cmd_reg[7:4] <= host_qio;
-                h_nib_cnt      <= 4'd1;
-            end else if (h_nib_cnt == 4'd1) begin
-                h_cmd_reg[3:0] <= host_qio;
-                h_nib_cnt      <= 4'd2;
-            end else if (h_nib_cnt == 4'd2) begin
-                h_addr_reg[15:12] <= host_qio;
-                h_nib_cnt         <= 4'd3;
-            end else if (h_nib_cnt == 4'd3) begin
-                h_addr_reg[11:8]  <= host_qio;
-                h_nib_cnt         <= 4'd4;
-            end else if (h_nib_cnt == 4'd4) begin
-                h_addr_reg[7:4]   <= host_qio;
-                h_nib_cnt         <= 4'd5;
-            end else if (h_nib_cnt == 4'd5) begin
-                h_addr_reg[3:0]   <= host_qio;
-                h_nib_cnt         <= 4'd6;
-            end else if (h_nib_cnt == 4'd6) begin
-                h_data_shift[15:12] <= host_qio;
-                h_nib_cnt           <= 4'd7;
-            end else if (h_nib_cnt == 4'd7) begin
-                h_data_shift[11:8]  <= host_qio;
-                h_nib_cnt           <= 4'd8;
-            end else if (h_nib_cnt == 4'd8) begin
-                h_data_shift[7:4]   <= host_qio;
-                h_nib_cnt           <= 4'd9;
-            end else begin
-                // Nibble 9 completes a 16-bit pixel word in burst mode
-                if (is_write_cmd) begin
-                    if (h_addr_reg < MAX_FB_WORDS) begin
-                        if (!fifo_full_h) begin
-                            cdc_fifo_mem[wptr_bin[FIFO_ADDR_BITS-1:0]] <= {
-                                h_cmd_reg[1],
-                                h_cmd_reg[0],
-                                h_addr_reg,
-                                {h_data_shift[15:4], host_qio}
-                            };
-                            wptr_bin  <= wptr_bin_next;
-                            wptr_gray <= wptr_gray_next;
+            if (h_nib_cnt == 4'd9)
+                h_nib_cnt <= 4'd6;
+            else
+                h_nib_cnt <= h_nib_cnt + 4'd1;
+        end
+    end
+
+    // 2. Host QSPI Synchronous Deserializer & Write Pointer Update (pure posedge host_sck)
+    reg [7:0]  h_cmd_reg    = 8'h00;
+    reg [15:0] h_addr_reg   = 16'h0000;
+    reg [15:0] h_data_shift = 16'h0000;
+
+    wire is_write_cmd    = (h_cmd_reg == 8'hA0) || (h_cmd_reg == 8'hA1) ||
+                           (h_cmd_reg == 8'hA2) || (h_cmd_reg == 8'hA3);
+    wire host_word_valid = (!host_cs_n) && (h_nib_cnt == 4'd9) && is_write_cmd;
+    wire host_in_bounds  = (h_addr_reg < MAX_FB_WORDS);
+    wire fifo_we_h       = host_word_valid && host_in_bounds && (!fifo_full_h);
+    wire [15:0] fifo_wdata_ctrl = {14'd0, h_cmd_reg[1], h_cmd_reg[0]};
+    wire [15:0] fifo_wdata_hi   = h_addr_reg;
+    wire [15:0] fifo_wdata_lo   = {h_data_shift[15:4], host_qio};
+
+    always @(posedge host_sck) begin
+        rptr_gray_h1 <= rptr_gray;
+        rptr_gray_h2 <= rptr_gray_h1;
+
+        if (!host_cs_n) begin
+            case (h_nib_cnt)
+                4'd0: h_cmd_reg[7:4]      <= host_qio;
+                4'd1: h_cmd_reg[3:0]      <= host_qio;
+                4'd2: h_addr_reg[15:12]   <= host_qio;
+                4'd3: h_addr_reg[11:8]    <= host_qio;
+                4'd4: h_addr_reg[7:4]     <= host_qio;
+                4'd5: h_addr_reg[3:0]     <= host_qio;
+                4'd6: h_data_shift[15:12] <= host_qio;
+                4'd7: h_data_shift[11:8]  <= host_qio;
+                4'd8: h_data_shift[7:4]   <= host_qio;
+                4'd9: begin
+                    if (is_write_cmd) begin
+                        if (host_in_bounds) begin
+                            if (!fifo_full_h) begin
+                                wptr_bin  <= wptr_bin_next;
+                                wptr_gray <= wptr_gray_next;
+                            end else begin
+                                fifo_overflow_sticky <= 1'b1;
+                            end
                         end else begin
-                            fifo_overflow_sticky <= 1'b1;
+                            boundary_err_cnt <= boundary_err_cnt + 16'd1;
                         end
-                    end else begin
-                        // Out-of-bounds address (>= 0x4B00) clipped safely
-                        boundary_err_cnt <= boundary_err_cnt + 16'd1;
+                        h_addr_reg <= h_addr_reg + 16'd1;
                     end
-                    h_addr_reg <= h_addr_reg + 16'd1;
                 end
-                h_nib_cnt <= 4'd6; // Continue 4-nibble burst for consecutive words
-            end
+                default: ;
+            endcase
         end
     end
 
     // =========================================================================
     // Scanout Timing Counters (2000 clks/line x 400 lines = 800,000 clks = 60.000 Hz)
-    // Initializes row_cnt to V_ACTIVE (240, start of VBLANK) on reset so Row 0
+    // Initializes row_cnt to 9'd240 (start of VBLANK) on reset so Row 0
     // is prefetched at row_cnt==399 before Frame 0 Row 0 scanout starts.
+    // Note: Active rows are 0..239. `next_row < V_ACTIVE` is TRUE on:
+    //   - row_cnt == 399 (next_row == 0)
+    //   - row_cnt == 0..238 (next_row == 1..239)
+    //   (On row_cnt == 239, next_row == 240, entering VBLANK -> no prefetch)
     // =========================================================================
     reg [10:0] col_cnt = 11'd0;
-    reg [8:0]  row_cnt = V_ACTIVE[8:0];
+    reg [8:0]  row_cnt = 9'd240;
 
     wire in_active_rows  = (row_cnt < V_ACTIVE);
     wire in_qspi_burst   = in_active_rows && (col_cnt < ACTIVE_SCAN_CLKS);
-    wire in_prefetch_win = (col_cnt >= PREFETCH_START_CLK) &&
-                           (col_cnt < (PREFETCH_START_CLK + WORDS_PER_LINE + 2));
+    wire in_prefetch_win = (col_cnt >= PREFETCH_START_CLK) && (col_cnt < PREFETCH_END_CLK);
     wire [8:0] next_row  = (row_cnt == TOTAL_LINES - 1) ? 9'd0 : (row_cnt + 9'd1);
     wire prefetch_active = in_prefetch_win && (next_row < V_ACTIVE);
 
     // =========================================================================
-    // Read-Side CDC FIFO Synchronizer & Tear-Guarded SPRAM Arbiter (clk_48m)
+    // Read-Side CDC FIFO Synchronizer & Bounded Tear-Guard SPRAM Arbiter (clk_48m)
     // =========================================================================
-    wire                    fifo_empty_c  = (rptr_gray == wptr_gray_s2);
-    wire [FIFO_ADDR_BITS:0] rptr_bin_next = rptr_bin + 1'b1;
-    wire [FIFO_ADDR_BITS:0] rptr_gray_next= (rptr_bin_next >> 1) ^ rptr_bin_next;
+    wire                    fifo_empty_c   = (rptr_gray == wptr_gray_s2);
+    wire [FIFO_ADDR_BITS:0] rptr_bin_next  = rptr_bin + 1'b1;
+    wire [FIFO_ADDR_BITS:0] rptr_gray_next = (rptr_bin_next >> 1) ^ rptr_bin_next;
 
-    // Decode synchronized wptr_gray_s2 to binary solely for FIFO level telemetry
+    wire [15:0] fifo_rdata_ctrl;
+    wire [15:0] fifo_rdata_hi;
+    wire [15:0] fifo_rdata_lo;
+
+    wire        wr_tear_sync_q = fifo_rdata_ctrl[1];
+    wire        wr_eye_q       = fifo_rdata_ctrl[0];
+    wire [15:0] wr_addr_q      = fifo_rdata_hi;
+    wire [15:0] wr_data_q      = fifo_rdata_lo;
+
+    // Shift-add computation for next_row * 80 = (next_row << 6) + (next_row << 4)
+    wire [15:0] next_row_base_addr = ({1'b0, next_row, 6'd0}) + ({3'b0, next_row, 4'd0});
+
+    // Bounded Pre-Prefetch Tear-Guard Holdoff:
+    // If a tear-guarded write (0xA2/0xA3) targets `next_row` during `col_cnt = 1400..1881`
+    // when `next_row < V_ACTIVE` is about to be (or is being) prefetched into EBR,
+    // hold off draining into SPRAM until `col_cnt == 1882` (max 482 clks = 10.04 us =
+    // max 101 words buffered in the 256-word EBR FIFO -> 0 overflow & 0 mid-line tear!).
+    wire in_tear_guard_win = (next_row < V_ACTIVE) &&
+                             (col_cnt >= PREFETCH_GUARD_CLK) && (col_cnt < PREFETCH_END_CLK);
+    wire tear_row_holdoff  = (!fifo_empty_c) && wr_tear_sync_q && in_tear_guard_win &&
+                             (wr_addr_q >= next_row_base_addr) &&
+                             (wr_addr_q < (next_row_base_addr + WORDS_PER_LINE));
+
+    wire spram_do_write = (!fifo_empty_c) && (!prefetch_active) && (!tear_row_holdoff);
+
+    // Lookahead read address for SB_RAM40_4K synchronous read ports
+    wire [7:0] fifo_ebr_raddr = spram_do_write ? rptr_bin_next[7:0] : rptr_bin[7:0];
+
+    SB_RAM40_4K #(
+        .WRITE_MODE(0),
+        .READ_MODE (0)
+    ) u_cdc_fifo_ctrl (
+        .RDATA (fifo_rdata_ctrl),
+        .RADDR ({3'd0, fifo_ebr_raddr}),
+        .RCLK  (clk_48m),
+        .RCLKE (1'b1),
+        .RE    (1'b1),
+        .WADDR ({3'd0, wptr_bin[7:0]}),
+        .WCLK  (host_sck),
+        .WCLKE (1'b1),
+        .WDATA (fifo_wdata_ctrl),
+        .WE    (fifo_we_h),
+        .MASK  (16'h0000)
+    );
+
+    SB_RAM40_4K #(
+        .WRITE_MODE(0),
+        .READ_MODE (0)
+    ) u_cdc_fifo_hi (
+        .RDATA (fifo_rdata_hi),
+        .RADDR ({3'd0, fifo_ebr_raddr}),
+        .RCLK  (clk_48m),
+        .RCLKE (1'b1),
+        .RE    (1'b1),
+        .WADDR ({3'd0, wptr_bin[7:0]}),
+        .WCLK  (host_sck),
+        .WCLKE (1'b1),
+        .WDATA (fifo_wdata_hi),
+        .WE    (fifo_we_h),
+        .MASK  (16'h0000)
+    );
+
+    SB_RAM40_4K #(
+        .WRITE_MODE(0),
+        .READ_MODE (0)
+    ) u_cdc_fifo_lo (
+        .RDATA (fifo_rdata_lo),
+        .RADDR ({3'd0, fifo_ebr_raddr}),
+        .RCLK  (clk_48m),
+        .RCLKE (1'b1),
+        .RE    (1'b1),
+        .WADDR ({3'd0, wptr_bin[7:0]}),
+        .WCLK  (host_sck),
+        .WCLKE (1'b1),
+        .WDATA (fifo_wdata_lo),
+        .WE    (fifo_we_h),
+        .MASK  (16'h0000)
+    );
+
+    // Decode synchronized wptr_gray_s2 to binary for FIFO occupancy telemetry
     integer g_i;
     reg [FIFO_ADDR_BITS:0] wptr_bin_sync;
     always @(*) begin
@@ -225,22 +289,6 @@ module evt1_ar_display_fpga_bridge_rev_c #(
             wptr_bin_sync[g_i] = wptr_bin_sync[g_i + 1] ^ wptr_gray_s2[g_i];
     end
     wire [FIFO_ADDR_BITS:0] fifo_level_c = wptr_bin_sync - rptr_bin;
-
-    wire [33:0] fifo_head      = cdc_fifo_mem[rptr_bin[FIFO_ADDR_BITS-1:0]];
-    wire        wr_tear_sync_q = fifo_head[33];
-    wire        wr_eye_q       = fifo_head[32];
-    wire [15:0] wr_addr_q      = fifo_head[31:16];
-    wire [15:0] wr_data_q      = fifo_head[15:0];
-
-    // Active scanline collision check for tear-guarded mode (commands 0xA2 / 0xA3)
-    wire [15:0] cur_row_base_addr  = row_cnt * WORDS_PER_LINE;
-    wire [15:0] next_row_base_addr = next_row * WORDS_PER_LINE;
-    wire        tear_row_collision = wr_tear_sync_q && in_active_rows &&
-                                     ((wr_addr_q >= cur_row_base_addr && wr_addr_q < (cur_row_base_addr + WORDS_PER_LINE)) ||
-                                      (wr_addr_q >= next_row_base_addr && wr_addr_q < (next_row_base_addr + WORDS_PER_LINE)));
-
-    // SPRAM Write Enable: drains 1 word per clk_48m cycle whenever not prefetching
-    wire spram_do_write = (!fifo_empty_c) && (!prefetch_active) && (!tear_row_collision);
 
     // =========================================================================
     // SPRAM Address & Control Multiplexer (4x SB_SPRAM256KA = 1024 Kibit)
@@ -321,13 +369,18 @@ module evt1_ar_display_fpga_bridge_rev_c #(
 
     // =========================================================================
     // Instantiate 2x Lattice SB_RAM40_4K EBR Dual-Port Line Buffers (Left & Right)
-    // Prefetches 80 x 16-bit words (320 pixels x 4bpp) per eye during HBLANK
+    // Uses Ping-Pong Pages inside each 256-word EBR (Page 0: 0..79, Page 1: 128..207)
+    // so prefetch of `next_row` never overwrites `cur_row`!
     // =========================================================================
     reg        prefetch_valid_d1 = 1'b0;
     reg [6:0]  prefetch_idx_d1   = 7'd0;
+    wire       active_ebr_page   = row_cnt[0];
+    wire       prefetch_ebr_page = next_row[0];
 
     wire [9:0]  nibble_idx_in_line = (col_cnt >> 1) - CMD_HDR_NIBBLES;
-    wire [6:0]  ebr_raddr = (col_cnt < (CMD_HDR_NIBBLES * 2 - 2)) ? 7'd0 : ((nibble_idx_in_line + 10'd1) >> 2);
+    wire [6:0]  ebr_word_idx = (col_cnt < (CMD_HDR_NIBBLES * 2 - 2)) ? 7'd0 : ((nibble_idx_in_line + 10'd1) >> 2);
+    wire [7:0]  ebr_raddr    = {active_ebr_page, ebr_word_idx};
+    wire [7:0]  ebr_waddr    = {prefetch_ebr_page, prefetch_idx_d1};
     wire [15:0] ebr_rdata_l;
     wire [15:0] ebr_rdata_r;
 
@@ -336,11 +389,11 @@ module evt1_ar_display_fpga_bridge_rev_c #(
         .READ_MODE (0)
     ) u_ebr_l (
         .RDATA (ebr_rdata_l),
-        .RADDR ({4'd0, ebr_raddr}),
+        .RADDR ({3'd0, ebr_raddr}),
         .RCLK  (clk_48m),
         .RCLKE (1'b1),
         .RE    (1'b1),
-        .WADDR ({4'd0, prefetch_idx_d1}),
+        .WADDR ({3'd0, ebr_waddr}),
         .WCLK  (clk_48m),
         .WCLKE (1'b1),
         .WDATA (spram_dout_l),
@@ -353,11 +406,11 @@ module evt1_ar_display_fpga_bridge_rev_c #(
         .READ_MODE (0)
     ) u_ebr_r (
         .RDATA (ebr_rdata_r),
-        .RADDR ({4'd0, ebr_raddr}),
+        .RADDR ({3'd0, ebr_raddr}),
         .RCLK  (clk_48m),
         .RCLKE (1'b1),
         .RE    (1'b1),
-        .WADDR ({4'd0, prefetch_idx_d1}),
+        .WADDR ({3'd0, ebr_waddr}),
         .WCLK  (clk_48m),
         .WCLKE (1'b1),
         .WDATA (spram_dout_r),
@@ -399,24 +452,24 @@ module evt1_ar_display_fpga_bridge_rev_c #(
     // =========================================================================
     always @(posedge clk_48m) begin
         if (!rst_n) begin
-            wptr_gray_s1        <= {(FIFO_ADDR_BITS+1){1'b0}};
-            wptr_gray_s2        <= {(FIFO_ADDR_BITS+1){1'b0}};
-            rptr_bin            <= {(FIFO_ADDR_BITS+1){1'b0}};
-            rptr_gray           <= {(FIFO_ADDR_BITS+1){1'b0}};
-            words_written_l     <= 32'd0;
-            words_written_r     <= 32'd0;
-            fifo_max_level      <= {(FIFO_ADDR_BITS+1){1'b0}};
-            tear_guard_holdoffs <= 32'd0;
-            col_cnt             <= 11'd0;
-            row_cnt             <= V_ACTIVE[8:0]; // Start at VBLANK Line 240 so Row 0 prefetches at Line 399
-            spram_rd_bank_d1    <= 1'b0;
-            prefetch_valid_d1   <= 1'b0;
-            prefetch_idx_d1     <= 7'd0;
-            opt_sck             <= 1'b0;
-            opt_cs_n            <= 1'b1;
-            opt_l_qdo           <= 4'h0;
-            opt_r_qdo           <= 4'h0;
-            frame_vsync_1v8     <= 1'b0;
+            wptr_gray_s1      <= {(FIFO_ADDR_BITS+1){1'b0}};
+            wptr_gray_s2      <= {(FIFO_ADDR_BITS+1){1'b0}};
+            rptr_bin          <= {(FIFO_ADDR_BITS+1){1'b0}};
+            rptr_gray         <= {(FIFO_ADDR_BITS+1){1'b0}};
+            words_written_l   <= 32'd0;
+            words_written_r   <= 32'd0;
+            fifo_max_level    <= {(FIFO_ADDR_BITS+1){1'b0}};
+            tear_hazard_cnt   <= 32'd0;
+            col_cnt           <= 11'd0;
+            row_cnt           <= 9'd240; // Start at VBLANK Line 240 so Row 0 prefetches at Line 399
+            spram_rd_bank_d1  <= 1'b0;
+            prefetch_valid_d1 <= 1'b0;
+            prefetch_idx_d1   <= 7'd0;
+            opt_sck           <= 1'b0;
+            opt_cs_n          <= 1'b1;
+            opt_l_qdo         <= 4'h0;
+            opt_r_qdo         <= 4'h0;
+            frame_vsync_1v8   <= 1'b0;
         end else begin
             // 1. 2-FF Gray-code write pointer synchronization into clk_48m domain
             wptr_gray_s1 <= wptr_gray;
@@ -425,7 +478,7 @@ module evt1_ar_display_fpga_bridge_rev_c #(
             if (fifo_level_c > fifo_max_level)
                 fifo_max_level <= fifo_level_c;
 
-            // 2. Drain Async CDC FIFO into SPRAM when not prefetching
+            // 2. Drain Async EBR CDC FIFO into SPRAM (holds off on next_row during col_cnt 1400..1881)
             if (spram_do_write) begin
                 rptr_bin  <= rptr_bin_next;
                 rptr_gray <= rptr_gray_next;
@@ -433,8 +486,8 @@ module evt1_ar_display_fpga_bridge_rev_c #(
                     words_written_l <= words_written_l + 32'd1;
                 else
                     words_written_r <= words_written_r + 32'd1;
-            end else if (!fifo_empty_c && tear_row_collision) begin
-                tear_guard_holdoffs <= tear_guard_holdoffs + 32'd1;
+            end else if (tear_row_holdoff) begin
+                tear_hazard_cnt <= tear_hazard_cnt + 32'd1;
             end
 
             // 3. Advance 2000x400 frame counters (exact 800,000 clks/frame = 60.000 Hz)

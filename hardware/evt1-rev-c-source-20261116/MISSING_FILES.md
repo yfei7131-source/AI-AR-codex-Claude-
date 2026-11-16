@@ -1,55 +1,45 @@
-# Rev C 缺失文件与未提供资料清单
+# Rev C P0 缺失文件与未提供资料清单
 
-状态：`NOT_FOR_FAB`。本文件只记录实际缺口，不从 Git bundle 补造、填充或推断缺失内容。
+状态：`NOT_FOR_FAB`。本文件区分“源 ZIP 未携带、已由完整 bundle 恢复”和“外部资料仍缺失”。
 
-## ZIP 缺失但 Git bundle 中存在
+## 已从完整 bundle 恢复
 
-Rev C ZIP 实际包含 17 个文件；bundle 提交树 `9a302e2c6ce01712b44a746b632b735e31890b57` 包含 19 个文件。按原路径比较，以下 4 个路径未包含在 ZIP 中：
+源 ZIP 只有 18 个文件；完整 bundle 的提交树为 20 个文件。以下 4 个 ZIP 未携带的文件已从 bundle HEAD `8697069…` 原样恢复，未自行编写：
 
-1. `hardware/evt1-v1-kimi-handoff/GITHUB_DRAFT_PR_INSTRUCTIONS.md`
-2. `hardware/evt1-v1-kimi-handoff/build_handoff_package.py`
-3. `hardware/evt1-v1-kimi-handoff/evidence/v1_0_verification_log.json`
-4. `hardware/evt1-v1-kimi-handoff/evidence/v1_0_verification_report.txt`
+1. `GITHUB_DRAFT_PR_INSTRUCTIONS.md`
+2. `build_handoff_package.py`
+3. `evidence/v1_0_verification_log.json`
+4. `evidence/v1_0_verification_report.txt`
 
-说明：
+恢复后，bundle 提交树的 20 个文件均已进入仓库；其中 `.github/workflows/fpga_eda_ci.yml` 位于仓库根目录，其余 19 个位于 `hardware/evt1-rev-c-source-20261116/`。
 
-- ZIP 中存在 `v1_0_verification_report.txt`，但其内容哈希为 `d4d878b4…`，对应 bundle 根目录版本；
-- bundle 的 `evidence/v1_0_verification_report.txt` 是另一份旧报告（`fbf15485…`），ZIP 未提供该路径；
-- 上述 4 个文件没有用 bundle 内容回填到归档目录，只在本清单中标记缺失。
+## 已存在，不属于缺失
 
-## ZIP 与 bundle 一致的部分
+- `rtl/tb_evt1_ar_display_fpga_bridge_rev_c.v`（RTL testbench）
+- `rtl/Makefile`
+- `handoff_evt1_rev_c.bundle`（完整历史）
+- `evidence/eda_toolchain_execution.log`（EDA 执行日志）
+- RTL、SPRAM/EBR 模型、UWG30 PCF、BOM、PINMAP、ICD、验证脚本和验证报告
 
-- ZIP 中 15 个工程文件与 bundle 提交树逐字节一致。
-- `0001-evt1-rev-c-feasibility.patch` 和 `handoff_evt1_rev_c.bundle` 是 ZIP 额外提供的来源材料，不属于 bundle 提交树中的普通工程文件。
-- 已存在，**不属于缺失文件**：
-  - `tb_evt1_ar_display_fpga_bridge_rev_c.v`（RTL 测试台）
-  - `Makefile`
-  - `handoff_evt1_rev_c.bundle`（完整 Git bundle）
-  - `eda_toolchain_execution.log`（EDA 执行日志）
+## 等待 CI 产生的原生输出
 
-## 原生工具输出缺失
+本地 EDA 日志仍记录 `iverilog`、`yosys`、`nextpnr-ice40`、`icetime` 未安装。GitHub Actions 已配置运行这些工具，但真实结果只能以 Actions 日志为准：
 
-`eda_toolchain_execution.log` 明确记录 `iverilog`、`vvp`、`yosys`、`nextpnr-ice40`、`icetime` 均未安装（exit 127）。因此以下原生输出不存在，不能伪造：
+- `iverilog_sim.log`
+- `yosys_synth.log`
+- `nextpnr_uwg30.log`
+- `evt1_ar_display_fpga_bridge_rev_c_sta.rpt`
+- 综合 JSON 与 PnR ASC
 
-- `*_sim.vvp`、`iverilog_sim.log`
-- `yosys_synth.log`、综合 JSON
-- `nextpnr_uwg30.log`、`.asc`
-- `*_sta.rpt` 与原生时序报告
+在这些文件由 CI 实际生成并检查之前，不标记仿真、综合、PnR 或 STA 通过。
 
-RTL 仿真、综合、PnR 与 STA 均未完成。
-
-## 外部依赖与实物资料缺失
-
-源报告明确以下内容未提供：
+## 仍缺失的外部资料
 
 - `EVT1_ID_TEMPLE_SHELL.stp`
 - `JBD013VGA_STEP.stp`
-- 原生 KiCad/EasyEDA 板文件、Gerber 与 3D DRC 结果
-- 物理样机的质量、重心、热、RF/SAR、电池脉冲压降与续航实测数据
-- 供应商 JBD QSPI 初始化序列和 FPC 物理引脚定义
-- 量产 DFM、Gerber、装配和测试夹具资料
+- 原生 KiCad/EasyEDA 板文件、Gerber 和原生 CAD/DRC 结果
+- JBD QSPI 初始化序列和受控 FPC 物理引脚定义
+- 实物质量/重心、热、RF/SAR、电池脉冲压降和续航测试数据
+- 量产 DFM、装配、测试夹具和认证资料
 
-## 元数据说明
-
-- 原 ZIP 没有 README 或正式文件清单；本归档新增 `SOURCE_MANIFEST.json`、`MISSING_FILES.md` 和 `ARCHIVE_STATUS.md` 作为校验记录，不改变 17 个原始文件的字节。
-- 原始 Git 仓库目录未提供，仅提供完整 bundle；bundle 已验证通过，HEAD 为 `9a302e2…`。
+以上内容没有在本次同步中虚构或补造。

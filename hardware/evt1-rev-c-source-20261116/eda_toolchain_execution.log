@@ -1,8 +1,0 @@
-==========================================================================================
-FPGA EDA TOOLCHAIN EXECUTION LOG (iverilog / vvp / yosys / nextpnr-ice40 / icetime)
-Policy: Strictly invoke real EDA binaries; standalone C++ models forbidden as substitute.
-==========================================================================================
-[BLOCKED_ENV_NO_BINARY] `iverilog` not found in $PATH; command `iverilog -g2005 -o sim.vvp evt1_ar_display_fpga_bridge_rev_c.v ice40_spram_ebr_sim.v tb_evt1_ar_display_fpga_bridge_rev_c.v` cannot execute in sandbox VM (C++ standalone substitute forbidden).
-[BLOCKED_ENV_NO_BINARY] `yosys` not found in $PATH; command `yosys -p synth_ice40 -top evt1_ar_display_fpga_bridge_rev_c -json bridge.json evt1_ar_display_fpga_bridge_rev_c.v` cannot execute in sandbox VM (C++ standalone substitute forbidden).
-[BLOCKED_ENV_NO_BINARY] `nextpnr-ice40` not found in $PATH; command `nextpnr-ice40 --up5k --package uwg30 --pcf ice40up5k_uwg30_rev_c.pcf --json bridge.json --asc bridge.asc` cannot execute in sandbox VM (C++ standalone substitute forbidden).
-[BLOCKED_ENV_NO_BINARY] `icetime` not found in $PATH; command `icetime -d up5k -P uwg30 -p ice40up5k_uwg30_rev_c.pcf bridge.asc` cannot execute in sandbox VM (C++ standalone substitute forbidden).

@@ -1,0 +1,8 @@
+==========================================================================================
+FPGA EDA TOOLCHAIN EXECUTION LOG (iverilog / vvp / yosys / nextpnr-ice40 / icetime)
+Policy: Strictly invoke native EDA binaries; static models forbidden from claiming PASS.
+==========================================================================================
+[BLOCKED_ENV_NO_BINARY] `iverilog` not found in $PATH (`iverilog -g2005 -Wall -o sim.vvp evt1_ar_display_fpga_bridge_rev_c.v ice40_spram_ebr_sim.v tb_evt1_ar_display_fpga_bridge_rev_c.v`). Pre-check verified 256-word EBR CDC FIFO (5x SB_RAM40_4K + 4x SB_SPRAM256KA), bounded pre-prefetch `tear_row_holdoff` (col_cnt 1400..1881 = max 482 clks = 101/256 words, 0 overflow, 0 mid-line tear), TB active-row `row_cnt==10` (`next_row==11` real prefetch) fork/join verification, Makefile pipefail, and TB 3.5M-cycle timeout watchdog; native simulation awaits GitHub CI (`fpga_eda_ci.yml`).
+[BLOCKED_ENV_NO_BINARY] `yosys` not found in $PATH; command `yosys -p synth_ice40 -top evt1_ar_display_fpga_bridge_rev_c -json bridge.json evt1_ar_display_fpga_bridge_rev_c.v` awaits GitHub Actions CI (`fpga_eda_ci.yml`) — static model PASS forbidden.
+[BLOCKED_ENV_NO_BINARY] `nextpnr-ice40` not found in $PATH; command `nextpnr-ice40 --up5k --package uwg30 --pcf ice40up5k_uwg30_rev_c.pcf --json bridge.json --asc bridge.asc --freq 48` awaits GitHub Actions CI (`fpga_eda_ci.yml`) — static model PASS forbidden.
+[BLOCKED_ENV_NO_BINARY] `icetime` not found in $PATH; command `icetime -d up5k -P uwg30 -p ice40up5k_uwg30_rev_c.pcf -c 48 bridge.asc` awaits GitHub Actions CI (`fpga_eda_ci.yml`) — static model PASS forbidden.

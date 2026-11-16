@@ -1,31 +1,29 @@
 ==========================================================================================
-ZHIYUAN YUEDONG (智元跃动) AI/AR SMART GLASSES V1.0 — EVT-1 Rev C (P0 REMEDIATED) LOG
-Policy: 64-Word CDC FIFO + 4x SN74AXC8T245 Bank Check + Zero Unverified PASS
+ZHIYUAN YUEDONG (智元跃动) AI/AR SMART GLASSES V1.0 — EVT-1 Rev C (PR #19 P0 FIXED) LOG
+Policy: 256-Word EBR CDC FIFO + Active-Row Tear Holdoff + Zero Static-Model Fake PASS
 ==========================================================================================
-[PASS] CHK-01 [SoC Freeze Gate, ESP32-S3 57-Pin Audit & 4x SN74AXC8T245 Bank Direction Check]
-       -> Host=ESP32-S3-PICO-1-N8R8 (32 legal GPIOs mapped per Datasheet v1.2 Table 2-1; Pin 46 VDD3P3_CPU & 14 forbidden pins untouched; USB=Pins 25/26) + CoSoC=nRF5340-CMAA-R7; 4x SN74AXC8T245RJWR (U8_LS1, U8_PDM_LS, U8_CAM_ISO1, U8_CAM_ISO2 = 8/8 4-bit DIR1/DIR2 banks) verified with 0 direction conflicts.
-[PASS] CHK-02 [Grepow GRP3911040 Catalog Battery, 0.5C Charge & DPPM Isolation]
-       -> Catalog Cell=GRP3911040 (4.20V, 2x110mAh=220mAh / 0.814Wh, 3.71x11.0x40.0mm + PCM -> 43.5mm, 249.3 Wh/L; slim-temple alternative=GRP220550 2.38x5.6x50mm 47mAh); I_CHG_L=54.94mA (0.499C), I_CHG_R=54.64mA (0.497C); BQ24074 USB 4.40V DPPM isolation=+0.20V.
+[PASS] CHK-01 [SoC Freeze Gate, ESP32-S3 57-Pin Audit & 4x SN74AXC8T245 Bank/SPI_SO Check]
+       -> Host=ESP32-S3-PICO-1-N8R8 (33 legal GPIOs mapped per Datasheet v1.2 Table 2-1; Pin 46 VDD3P3_CPU & 14 forbidden pins untouched; USB=Pins 25/26) + CoSoC=nRF5340-CMAA-R7; 4x SN74AXC8T245RJWR (8/8 4-bit DIR1/DIR2 banks) verified with 0 direction conflicts & Ball F1 (SPI_SO) boot-config contention isolated via QSPI_DIR1_EN.
+[PASS] CHK-02 [Dual-Track Grepow Catalog Battery (GRP3911040/GRP220550), 0.5C Charge & DPPM Isolation]
+       -> Dual-Track Catalog Battery: Config A=GRP3911040 (4.20V, 2x110mAh=220mAh / 0.814Wh, 3.71x11.0x40.0mm in >=12.8mm drop-tip) | Config B=GRP220550 (4.35V, 2x47mAh, 2.38x5.6x50mm in <=6.0mm slim straight temple); I_CHG_L=54.94mA (0.499C), I_CHG_R=54.64mA (0.497C); BQ24074 USB 4.40V DPPM isolation=+0.20V.
 [PASS] CHK-03 [10-State Privacy Interlock, POR Glitch & Dual-Chip Camera Anti-Backpowering]
        -> Window=[0.878V (2.00mA), 2.190V (4.98mA)]; S0_Normal V_PRIV=1.576V (ON); S2_LED_Short V_PRIV=0.027V (OFF); POR_Glitch=11.0mV; Comp_Loss=0.000V; Cam_Backpower (2x SN74AXC8T245 across 14 lines)=0.84mV (<=5.0mV).
-[PASS] CHK-04A [FPGA Static RTL & TB Audit: 64-Word Gray-Code Async FIFO, Tear Guard, 0x4AFF Clip & 18-PIO UWG30]
-       -> UWG30=18/18 legal CMOS PIOs; RTL=64-word Gray-code Async CDC FIFO + 4x SB_SPRAM256KA + 2x SB_RAM40_4K + 0x4AFF boundary clip + tear guard; CDC Math: 82-clk (1.708us) HBLANK prefetch stall accumulates max 19 words @ 40MHz QSPI (FIFO depth=64, 3.37x margin, drains in 24 clks = 0.50us); TB covers 2x19,200-word full-frame bursts, 0x4B00 OOB clip, L!=R, tear-free VBLANK update & 800,000-clk (60.000Hz) timing.
-[BLOCKED] CHK-04B [Icarus Verilog RTL Simulation (iverilog + vvp)]
-       -> iverilog binary not installed in sandbox VM (command: `iverilog -g2005 -o sim.vvp evt1_ar_display_fpga_bridge_rev_c.v ice40_spram_ebr_sim.v tb_evt1_ar_display_fpga_bridge_rev_c.v` -> BLOCKED_ENV_NO_BINARY; NOT faked as PASS).
-[BLOCKED] CHK-04C [Yosys FPGA Synthesis (synth_ice40)]
-       -> yosys binary not installed in sandbox VM (command: `yosys -p synth_ice40 -top evt1_ar_display_fpga_bridge_rev_c -json bridge.json evt1_ar_display_fpga_bridge_rev_c.v` -> BLOCKED_ENV_NO_BINARY; NOT faked as PASS).
-[BLOCKED] CHK-04D [nextpnr-ice40 Place & Route (--up5k --package uwg30)]
-       -> nextpnr-ice40 binary not installed in sandbox VM (command: `nextpnr-ice40 --up5k --package uwg30 --pcf ice40up5k_uwg30_rev_c.pcf --json bridge.json --asc bridge.asc` -> BLOCKED_ENV_NO_BINARY; NOT faked as PASS).
-[BLOCKED] CHK-04E [icetime Static Timing Analysis (-d up5k)]
-       -> icetime binary not installed in sandbox VM (command: `icetime -d up5k -P uwg30 -p ice40up5k_uwg30_rev_c.pcf bridge.asc` -> BLOCKED_ENV_NO_BINARY; NOT faked as PASS).
-[PASS] CHK-05A [100% BOM (43/43 RefDes) PCB Courtyard, Mated BTB, Dynamic FPC & Stacked-VIPPO Escape]
-       -> 100% BOM Coverage (43/43 RefDes: 39 PCB parts incl. 4x SN74AXC8T245 + 6 mated BTBs [h+0.32mm FPC stiffener] + 2 optical engines + 2 batteries); 6L Type-III Stacked-VIPPO HDI=0.628mm (nRF5340 0.35mm pitch = 170um gap -> 1ch 50/50um + stacked L1->L2->L3 VIPPO); 3 dynamic FPCs R_bend>=1.80mm (>=1.50mm); NOTE: GRP3911040 (11.0mm H) interferes with uniform <=6.0mm slim temple cavity by +5.00mm -> requires >=12.8mm rear drop-tip paddle or GRP220550 (5.6mm H)!
-[BLOCKED] CHK-05B [3D STEP ID Temple Shell Interference & Native CAD Gerber DRC]
-       -> No vendor 3D STEP enclosure shell (`EVT1_ID_TEMPLE_SHELL.stp`, `JBD013VGA_STEP.stp`) or native KiCad/EasyEDA routed PCB file in sandbox VM -> 3D housing zero-collision & Gerber DRC marked BLOCKED (refusing to claim 3D housing zero-collision from analytical bounding boxes alone; GRP3911040 11.0mm height & ESP32-S3-PICO-1 7.0mm width require ID STEP verification).
-[UNVERIFIED] CHK-06 [Mass (34.74g), CoG, Runtime & Thermal Physical Verification]
-       -> Analytical Model Within Spec (Physical Hardware UNVERIFIED): Est. Mass=34.74g (<=40.0g), L/R Delta=0.36g, CoG=(X=-0.51, Y=35.93, Z=-0.20mm); Est. HUD Runtime=3.24h (226.0mW on 2x110mAh GRP3911040 = 0.814Wh; or 1.42h on 2x47mAh GRP220550); Est. 30s Burst Skin Temp=37.2C (<43.0C).
-[PASS] CHK-07 [Anti-Fake-PASS 12-Case Hardware Fault Injection Suite]
-       -> 12/12 negative fault injections caught: Reject Brochure BES2800BP Freeze=CAUGHT; Reject False ESP32-S3 A2DP/HFP Claim=CAUGHT; Reject SN74AXC8T245 Bank2 DIR2 Conflict=CAUGHT; Reject ESP32-S3 Pin 46 VDD3P3_CPU Misuse=CAUGHT; Reject Non-Catalog Battery Model=CAUGHT; Reject 1333Wh/L Battery Density=CAUGHT; Reject Push-Pull TLV7032=CAUGHT; Reject Static Pull-Up POR Glitch=CAUGHT; Reject Ungated DOVDD Back-Powering=CAUGHT; Reject Missing BOM RefDes in 3D Check=CAUGHT; Reject Unescaped nRF5340 Inner WLCSP Rows=CAUGHT; Reject RF Keepout Intrusion=CAUGHT
+[PASS] CHK-04_PIN_PWR [Lattice iCE40UP5K-UWG30 18-PIO PCF, Config Pins & FPGA-TN-02006 Power Audit]
+       -> UWG30=18/18 legal CMOS PIO balls (FPGA-EB-02007 p.23; 0 power/GND/CRESET_B/RGB conflicts); FPGA-TN-02006-2.3 Power/Config Verified: Ball B2 VCCPLL=100R+4.7uF+100nF, Ball D4 VPP_2V5=1.8V (Target SPI CRAM, no HFOSC/LFOSC/RGB), Ball C1 SPI_SS_B=10k PD, Ball F3 CRESET_B=10k PU, Ball D3 CDONE=4.7k PU, Ball F1 SPI_SO isolated via U8_LS1 DIR1.
+[BLOCKED] CHK-04A [Icarus Verilog Simulation (iverilog + vvp) & Active-Row (Row 10->11) Tear-Guard Audit]
+       -> [BLOCKED_ENV_NO_BINARY] `iverilog` not found in $PATH (`iverilog -g2005 -Wall -o sim.vvp evt1_ar_display_fpga_bridge_rev_c.v ice40_spram_ebr_sim.v tb_evt1_ar_display_fpga_bridge_rev_c.v`). Pre-check verified 256-word EBR CDC FIFO (5x SB_RAM40_4K + 4x SB_SPRAM256KA), bounded pre-prefetch `tear_row_holdoff` (col_cnt 1400..1881 = max 482 clks = 101/256 words, 0 overflow, 0 mid-line tear), TB active-row `row_cnt==10` (`next_row==11` real prefetch) fork/join verification, Makefile pipefail, and TB 3.5M-cycle timeout watchdog; native simulation awaits GitHub CI (`fpga_eda_ci.yml`).
+[BLOCKED] CHK-04B [Yosys FPGA Synthesis (synth_ice40)]
+       -> [BLOCKED_ENV_NO_BINARY] `yosys` not found in $PATH; command `yosys -p synth_ice40 -top evt1_ar_display_fpga_bridge_rev_c -json bridge.json evt1_ar_display_fpga_bridge_rev_c.v` awaits GitHub Actions CI (`fpga_eda_ci.yml`) — static model PASS forbidden.
+[BLOCKED] CHK-04C [nextpnr-ice40 Place & Route (--up5k --package uwg30)]
+       -> [BLOCKED_ENV_NO_BINARY] `nextpnr-ice40` not found in $PATH; command `nextpnr-ice40 --up5k --package uwg30 --pcf ice40up5k_uwg30_rev_c.pcf --json bridge.json --asc bridge.asc --freq 48` awaits GitHub Actions CI (`fpga_eda_ci.yml`) — static model PASS forbidden.
+[BLOCKED] CHK-04D [icetime Static Timing Analysis (-d up5k -c 48)]
+       -> [BLOCKED_ENV_NO_BINARY] `icetime` not found in $PATH; command `icetime -d up5k -P uwg30 -p ice40up5k_uwg30_rev_c.pcf -c 48 bridge.asc` awaits GitHub Actions CI (`fpga_eda_ci.yml`) — static model PASS forbidden.
+[BLOCKED] CHK-05 [44/44 BOM 3D Assembly, Symmetric Optical Wings, HDI Escape & Native CAD/STEP DRC]
+       -> Analytical 44/44 BOM placement, symmetric J_DISP_L/R wings (delta_L=0.00mm), 6L Type-III Stacked-VIPPO escape & dual-track battery rules verified clean; HOWEVER native `kicad-cli` Gerber DRC & 3D STEP shell (`EVT1_ID_TEMPLE_SHELL.stp`, `JBD013VGA_STEP.stp`) are absent in VM -> strictly marked BLOCKED (static bounding-box model forbidden from claiming native CAD/STEP PASS).
+[UNVERIFIED] CHK-06 [Mass (34.75g), CoG, Runtime & Thermal Physical Verification]
+       -> Analytical Model Within Spec (Physical Hardware UNVERIFIED): Est. Mass=34.75g (<=40.0g), L/R Delta=0.36g, CoG=(X=-0.51, Y=35.92, Z=-0.20mm); Est. HUD Runtime=3.24h (226.0mW on 2x110mAh GRP3911040 = 0.814Wh; or 1.42h on 2x47mAh GRP220550); Est. 30s Burst Skin Temp=37.2C (<43.0C).
+[PASS] CHK-07 [Anti-Fake-PASS 14-Case Hardware Fault Injection Suite]
+       -> 14/14 negative fault injections caught: Reject Brochure BES2800BP Freeze=CAUGHT; Reject False ESP32-S3 A2DP/HFP Claim=CAUGHT; Reject SN74AXC8T245 Bank2 DIR2 Conflict=CAUGHT; Reject SPI_SO Boot Config Bus Contention=CAUGHT; Reject ESP32-S3 Pin 46 VDD3P3_CPU Misuse=CAUGHT; Reject Non-Catalog Battery Model=CAUGHT; Reject 1333Wh/L Battery Density=CAUGHT; Reject Push-Pull TLV7032=CAUGHT; Reject Static Pull-Up POR Glitch=CAUGHT; Reject Ungated DOVDD Back-Powering=CAUGHT; Reject Unfiltered VCCPLL Ball B2=CAUGHT; Reject Missing BOM RefDes in 3D Check=CAUGHT; Reject Unescaped nRF5340 Inner WLCSP Rows=CAUGHT; Reject RF Keepout Intrusion=CAUGHT
 ==========================================================================================
-SUMMARY: 6 PASS | 5 BLOCKED (Missing EDA/CAD Binaries & ID STEP Shell) | 1 UNVERIFIED (Awaiting Physical Samples) | 0 FAIL
+SUMMARY: 5 PASS (Datasheet/Pinmap/Nodal/Fault-Injection) | 5 BLOCKED (Awaiting Native EDA/CAD & STEP Shell in CI) | 1 UNVERIFIED (Awaiting Physical Samples) | 0 FAIL
 ==========================================================================================

@@ -1,19 +1,26 @@
 // =============================================================================
 // Self-Checking Verilog-2005 Testbench: tb_evt1_ar_display_fpga_bridge_rev_c
-// Comprehensively Verifies All 5 Rev C P0 Requirements:
-//   1. Continuous Full-Frame Burst Write (19,200 Left + 19,200 Right = 38,400
+// Comprehensively Verifies All Rev C P0 Requirements (With Watchdog Timeout):
+//   1. Simulation Timeout Watchdog (`SIM_TIMEOUT_CLKS = 3,500,000` cycles) to
+//      prevent infinite hangs in `vvp` / CI pipelines.
+//   2. Continuous Full-Frame Burst Write (19,200 Left + 19,200 Right = 38,400
 //      16-bit words) across asynchronous 40.000 MHz host_sck -> 48.000 MHz
 //      clk_48m clock domains, spanning directly across HBLANK prefetch stalls
 //      (`col_cnt 1800..1881`) with ZERO dropped words (`fifo_overflow == 0`).
-//   2. Distinct Left-Eye (`L_pat(a) = ((a * 0x1F35) ^ 0xA53C)`) and Right-Eye
-//      (`R_pat(a) = ((a * 0x2D9B) ^ 0x5AC3)`) images across all 240 rows.
 //   3. Framebuffer Boundary & Bank-Crossing (`0x0000`, `0x3FFF -> 0x4000`,
-//      `0x4AFF`, and out-of-bounds clip at `0x4B00..0x4B01` -> `boundary_err_cnt == 2`).
+//      `0x4AFF`, and out-of-bounds clip at `0x4B00` -> `boundary_err_cnt == 2`).
 //   4. Full-Frame Scanout Readback Verification (`240 rows x 80 words/row = 19,200`
-//      words per eye) on rising edges of 24.000 MHz `opt_sck`, plus 12-nibble
-//      row header verification.
-//   5. Exact 60.000 Hz Frame Period (`800,000 clk_48m cycles = 16.6667 ms`) &
-//      Tear-Free VBLANK Frame Update between Frame 0 and Frame 1 (`0 torn lines`).
+//      words per eye) & Exact 60.000 Hz Frame Period (`800,000 clk_48m cycles`).
+//   5. True Active-Row Line-Prefetch & Anti-Tearing Verification on `row_cnt == 10`
+//      (where `next_row == 11 < 240` genuinely triggers `prefetch_active == 1` at
+//      `col_cnt = 1800..1881`, unlike `row_cnt == 239` which enters VBLANK!):
+//      - Launches a `0xA2` burst targeting Row 11 (`start_addr = 11*80 = 16'h0370`,
+//        80 words, `salt = 16'h55AA`) at `row_cnt == 10, col_cnt == 1700`.
+//      - Verifies `prefetch_active == 1` occurs on `row_cnt == 10`, `tear_hazard_cnt > 0`
+//        holds off overwriting Row 11 until `col_cnt == 1882`, `fifo_overflow_sticky == 0`,
+//        and Row 11 scans out on `row_cnt == 11` with 100% intact `16'h0F0F` words
+//        (ZERO mid-line tearing!), while the new `16'h55AA` words drain into SPRAM
+//        after `col_cnt == 1882`!
 // =============================================================================
 
 `timescale 1ns / 1ps
@@ -45,6 +52,24 @@ module tb_evt1_ar_display_fpga_bridge_rev_c;
         .opt_r_qdo      (opt_r_qdo),
         .frame_vsync_1v8(frame_vsync_1v8)
     );
+
+    // =========================================================================
+    // Watchdog Timeout Protection (Prevents infinite hangs in CI / vvp)
+    // =========================================================================
+    localparam integer SIM_TIMEOUT_CLKS = 3500000;
+    initial begin
+        repeat (SIM_TIMEOUT_CLKS) @(posedge clk_48m);
+        $display("VERILOG_TB_RESULT: FAIL (WATCHDOG TIMEOUT after %0d clk_48m cycles at row_cnt=%0d, col_cnt=%0d)",
+                 SIM_TIMEOUT_CLKS, dut.row_cnt, dut.col_cnt);
+        $fatal(1, "Simulation watchdog timeout exceeded!");
+    end
+
+    // Track whether `prefetch_active` genuinely pulsed on `row_cnt == 10`
+    reg row10_prefetch_seen = 1'b0;
+    always @(posedge clk_48m) begin
+        if (dut.row_cnt == 9'd10 && dut.prefetch_active == 1'b1)
+            row10_prefetch_seen <= 1'b1;
+    end
 
     function [15:0] calc_left_word(input [15:0] addr, input [15:0] frame_salt);
         begin
@@ -90,7 +115,7 @@ module tb_evt1_ar_display_fpga_bridge_rev_c;
             qspi_send_nibble(start_addr[3:0]);
 
             for (w_idx = 0; w_idx < num_words; w_idx = w_idx + 1) begin
-                cur_a = start_addr + w_idx[15:0];
+                cur_a = start_addr + w_idx;
                 if (!is_right_eye)
                     w_val = calc_left_word(cur_a, frame_salt);
                 else
@@ -112,23 +137,25 @@ module tb_evt1_ar_display_fpga_bridge_rev_c;
     integer    r_idx, w_idx, nib_i;
     integer    mismatch_cnt;
     integer    torn_line_cnt;
+    integer    active_tear_err_cnt;
     integer    vsync_c0, vsync_c1, frame_clks;
     reg [15:0] cap_l, cap_r, exp_l, exp_r;
     reg [47:0] cap_hdr_l, cap_hdr_r, exp_hdr;
     reg [15:0] addr_chk;
+    reg [8:0]  target_row;
 
     integer clk_counter = 0;
     always @(posedge clk_48m) clk_counter <= clk_counter + 1;
 
     initial begin
-        mismatch_cnt  = 0;
-        torn_line_cnt = 0;
+        mismatch_cnt        = 0;
+        torn_line_cnt       = 0;
+        active_tear_err_cnt = 0;
 
         // 1. Wait for internal POR release (16 cycles of clk_48m; starts at row_cnt=240 VBLANK)
         repeat (24) @(posedge clk_48m);
 
         // 2. Continuous Full-Frame Burst Write (19,200 Left words + 19,200 Right words + 2 out-of-bounds words)
-        //    Note: 19,202 words = 1.92 ms per eye; spans across multiple 2000-cycle lines and HBLANK windows!
         $display("[TB] Starting Continuous Full-Frame Burst #1 (19,200 L + 19,200 R + 2 boundary words)...");
         qspi_burst_write_frame(8'hA0, 16'h0000, 19201, 1'b0, 16'h0000); // Includes 0x4B00 OOB test #1
         qspi_burst_write_frame(8'hA1, 16'h0000, 19201, 1'b1, 16'h0000); // Includes 0x4B00 OOB test #2
@@ -150,7 +177,8 @@ module tb_evt1_ar_display_fpga_bridge_rev_c;
         vsync_c0 = clk_counter;
 
         for (r_idx = 0; r_idx < 240; r_idx = r_idx + 1) begin
-            wait (dut.opt_cs_n == 1'b0 && dut.row_cnt == r_idx[8:0]);
+            target_row = r_idx;
+            wait (dut.opt_cs_n == 1'b0 && dut.row_cnt == target_row);
             cap_hdr_l = 48'd0;
             cap_hdr_r = 48'd0;
             for (nib_i = 0; nib_i < 12; nib_i = nib_i + 1) begin
@@ -158,7 +186,7 @@ module tb_evt1_ar_display_fpga_bridge_rev_c;
                 cap_hdr_l = {cap_hdr_l[43:0], opt_l_qdo};
                 cap_hdr_r = {cap_hdr_r[43:0], opt_r_qdo};
             end
-            exp_hdr = {8'h32, 7'd0, r_idx[8:0], 24'h000000};
+            exp_hdr = {8'h32, 7'd0, target_row, 24'h000000};
             if (cap_hdr_l !== exp_hdr || cap_hdr_r !== exp_hdr)
                 mismatch_cnt = mismatch_cnt + 1;
 
@@ -191,7 +219,8 @@ module tb_evt1_ar_display_fpga_bridge_rev_c;
         $display("[TB] Measured Frame Period = %0d clk_48m cycles (Expected 800,000 for 60.000 Hz)", frame_clks);
 
         for (r_idx = 0; r_idx < 240; r_idx = r_idx + 1) begin
-            wait (dut.opt_cs_n == 1'b0 && dut.row_cnt == r_idx[8:0]);
+            target_row = r_idx;
+            wait (dut.opt_cs_n == 1'b0 && dut.row_cnt == target_row);
             for (nib_i = 0; nib_i < 12; nib_i = nib_i + 1)
                 @(posedge opt_sck);
             for (w_idx = 0; w_idx < 80; w_idx = w_idx + 1) begin
@@ -211,12 +240,52 @@ module tb_evt1_ar_display_fpga_bridge_rev_c;
             wait (dut.opt_cs_n == 1'b1);
         end
 
-        if (mismatch_cnt != 0 || torn_line_cnt != 0 || frame_clks != 800000) begin
-            $display("VERILOG_TB_RESULT: FAIL (mismatches=%0d, torn=%0d, frame_clks=%0d)",
-                     mismatch_cnt, torn_line_cnt, frame_clks);
+        // 6. True Active-Row Line-Prefetch & Anti-Tearing Collision Test on `row_cnt == 10` (`next_row == 11`):
+        //    Unlike row_cnt==239 (which enters VBLANK with next_row==240 and prefetch_active==0),
+        //    row_cnt==10 has next_row==11 < 240 and triggers a REAL line prefetch at col_cnt=1800..1881!
+        //    At row_cnt==10, col_cnt==1700 (inside the col_cnt=1400..1881 tear-guard window), we launch
+        //    an 80-word 0xA2 burst targeting Row 11 (`start_addr = 11*80 = 16'h0370`, `salt = 16'h55AA`)
+        //    and verify in parallel:
+        //      (a) `row10_prefetch_seen == 1` (real prefetch of Row 11 occurred at col_cnt=1800..1881),
+        //      (b) `tear_hazard_cnt > 0` (`tear_row_holdoff` held off overwriting Row 11 until col_cnt==1882),
+        //      (c) Row 11 (`row_cnt == 11`) scans out 100% intact `16'h0F0F`-salted pixels (0 mid-line tear!),
+        //      (d) After `col_cnt == 1882`, all 80 new `16'h55AA`-salted words drain into `u_spram_l0` (`words_written_l == 38480`)!
+        row10_prefetch_seen = 1'b0;
+        wait (dut.row_cnt == 9'd10 && dut.col_cnt == 11'd1700);
+        fork
+            begin
+                qspi_burst_write_frame(8'hA2, 16'h0370, 80, 1'b0, 16'h55AA);
+            end
+            begin
+                wait (dut.opt_cs_n == 1'b0 && dut.row_cnt == 9'd11);
+                for (nib_i = 0; nib_i < 12; nib_i = nib_i + 1)
+                    @(posedge opt_sck);
+                for (w_idx = 0; w_idx < 80; w_idx = w_idx + 1) begin
+                    cap_l = 16'h0000;
+                    for (nib_i = 0; nib_i < 4; nib_i = nib_i + 1) begin
+                        @(posedge opt_sck);
+                        cap_l = {cap_l[11:0], opt_l_qdo};
+                    end
+                    addr_chk = 16'h0370 + w_idx;
+                    exp_l    = calc_left_word(addr_chk, 16'h0F0F); // Must still be intact 0x0F0F frame!
+                    if (cap_l !== exp_l)
+                        active_tear_err_cnt = active_tear_err_cnt + 1;
+                end
+            end
+        join
+
+        repeat (120) @(posedge clk_48m);
+        $display("[TB] Active Row 10->11 Tear-Guard Verification: row10_prefetch_seen=%0b, tear_hazard_cnt=%0d, active_tear_err_cnt=%0d, words_written_l=%0d, fifo_max_level=%0d/256, overflow=%0b",
+                 row10_prefetch_seen, dut.tear_hazard_cnt, active_tear_err_cnt, dut.words_written_l, dut.fifo_max_level, dut.fifo_overflow_sticky);
+
+        if (mismatch_cnt != 0 || torn_line_cnt != 0 || active_tear_err_cnt != 0 ||
+            !row10_prefetch_seen || dut.tear_hazard_cnt == 0 ||
+            dut.words_written_l !== 32'd38480 || frame_clks != 800000 || dut.fifo_overflow_sticky !== 1'b0) begin
+            $display("VERILOG_TB_RESULT: FAIL (mismatches=%0d, torn=%0d, active_tear_err=%0d, prefetch_seen=%0b, tear_haz=%0d, wr_l=%0d, frame_clks=%0d, overflow=%0b)",
+                     mismatch_cnt, torn_line_cnt, active_tear_err_cnt, row10_prefetch_seen, dut.tear_hazard_cnt, dut.words_written_l, frame_clks, dut.fifo_overflow_sticky);
             $fatal(1, "Verification failed!");
         end else begin
-            $display("VERILOG_TB_RESULT: PASS (38,400/38,400 words/frame verified, 0 drops, 0 torn pixels, 800,000 clks = 60.000 Hz)");
+            $display("VERILOG_TB_RESULT: PASS (38,400/38,400 words/frame + Row 10->11 active prefetch tear-guard verified, 0 drops, 0 overflow, 0 torn pixels, 800,000 clks = 60.000 Hz)");
             $finish;
         end
     end
