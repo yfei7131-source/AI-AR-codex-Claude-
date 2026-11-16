@@ -1,0 +1,36 @@
+{
+  "status": "NOT_FOR_FAB_CANDIDATE_CONFIGURATION_NOT_FIRMWARE_EXECUTION",
+  "source": "TI SLUSE99C Tables8-12..8-20; SLUSDJ8A Table7-1 and section7.3",
+  "pack_profile": "ConfigA110mAh candidate only; vendor voltage/current/NTC approval required before charging",
+  "bq25180_i2c_address_7bit": "0x6A",
+  "startup_sequence": [
+    {"register": "0x04", "value": "0xA0", "meaning": "CHG_DIS=1, ICHG_CODE32; charging disabled during setup"},
+    {"register": "0x03", "value": "0x46", "meaning": "4.20V candidate regulation"},
+    {"register": "0x05", "value": "0x2C", "meaning": "retain default10% termination and100C junction thermal regulation; not a skin temperature guarantee"},
+    {"register": "0x07", "value": "0x84", "meaning": "TS enabled,6h safety timer,160s register-reset watchdog retained"},
+    {"register": "0x0A", "value": "0x40", "meaning": "4.5V SYS when input present; normal power path; no pass-through"},
+    {"register": "0x0B", "value": "0xC0", "meaning": "TS_HOT=11 nominal45C; TS_COLD=00 nominal0C; based on approved10kNTC R/T curve"},
+    {"operation": "read_back_and_check", "meaning": "verify configuration, TS status, pack approval and no fault; any mismatch keeps charging disabled"},
+    {"register": "0x04", "value": "0x20", "meaning": "enable50mA only after the pack approval gate and readback pass"}
+  ],
+  "watchdog_policy": {
+    "watchdog_seconds": 160,
+    "maximum_status_poll_interval_seconds": 60,
+    "note": "Any host I2C transaction resets the watchdog. On reset/reconnect reapply and read back configuration; do not silently disable safety features.",
+    "default_state_blocker": "POR/watchdog default10mA and hot60C occur before host config. Pack safety review must accept this or add independent validated cutoff; cannot claim45C hardware cutoff."
+  },
+  "bq25170": {
+    "iset_resistor_ohm": 5490,
+    "iset_resistor_tolerance_fraction": 0.01,
+    "charge_current_ma_typ": 54.6448087431694,
+    "charge_current_ma_min_from_ki_and_r": 48.69339392955689,
+    "charge_current_ma_max_from_ki_and_r": 60.71645415907711,
+    "vset_resistor_ohm": 27000,
+    "voltage_v_nominal": 4.2,
+    "ts_contract": "cell-mounted103AT-compatible10kNTC; defaultnominal0..45C; qualify exact curve",
+    "usb_mode": "Q_CHG_ISO_R disconnects right cell from OR input; Q_CHG_MUTE_R holds right amplifier shutdown. Valid5V cable behavior is design intent, not a measured result.",
+    "remaining_gate": "weak or slowly collapsing VBUS, fault transients, isolation leakage and actual termination must be measured"
+  },
+  "configB47mAh": "BLOCKED: current and safety-time profile must be separately approved and changed in both hardwareRISET and left register configuration; no capacity-based charge-rate assumption",
+  "physical_validation": false
+}

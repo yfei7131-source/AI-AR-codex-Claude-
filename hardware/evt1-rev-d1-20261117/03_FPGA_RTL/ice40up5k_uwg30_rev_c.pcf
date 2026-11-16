@@ -1,0 +1,47 @@
+# =============================================================================
+# Lattice iCE40UP5K-UWG30ITR (30-Ball WLCSP, 2.11 x 2.54 mm) Pin Constraints
+# EVT-1 Rev D pinout (ball map inherited from Rev C; D3 = IOB_12a_G4_CDONE confirmed on public Fomu UWG30 schematic)
+#
+# UWG30 Complete 30-Ball Accounting:
+#   - 8 Power/GND Balls (DO NOT ASSIGN IN PCF):
+#       C2 (VCC 1.2V), B2 (VCCPLL 1.2V), A3 (VCCIO_0 1.8V), D2 (SPI_VCCIO1 1.8V),
+#       C4 (VCCIO_2 1.8V), D4 (VPP_2V5 1.8V), B4 (GND), E2 (GND)
+#   - 1 Dedicated Config Reset Ball (DO NOT ASSIGN IN PCF):
+#       F3 (CRESET_B)
+#   - 3 Open-Drain RGB Constant-Current Balls (UNUSED / NOT ASSIGNED):
+#       C5 (RGB0), B5 (RGB1), A5 (RGB2)
+#   - 18 Standard Push-Pull CMOS User I/O Balls (100% Mapped Below):
+#       Bank 0 (4 balls): A1, A2, B3 (G0), A4
+#       Bank 1 (6 balls): B1, F2 (G3), F1 (SO), E1 (SI), D1 (SCK), C1 (SS_B)
+#       Bank 2 (8 balls): E5, D5, F5 (G6), E4, C3, F4 (G5), D3 (IOB_12A/CDONE), E3
+# =============================================================================
+
+# 1. System 48.000 MHz Clock Input (Bank 0 Global Clock G0 — 1 ball)
+set_io clk_48m            B3
+
+# 2. Host Quad-SPI Slave Interface (Bank 1 — 6 balls)
+set_io host_sck           D1
+set_io host_cs_n          C1
+set_io host_qio[0]        E1
+set_io host_qio[1]        F1
+set_io host_qio[2]        F2
+set_io host_qio[3]        B1
+
+# 3. Shared Lockstep Binocular Optical QSPI Clock & CS_N (Bank 2 — 2 balls)
+set_io opt_sck            E3
+set_io opt_cs_n           C3
+
+# 4. Left Optical Engine Independent 4-bit QSPI Data (Bank 0 & Bank 2 — 4 balls)
+set_io opt_l_qdo[0]       A1
+set_io opt_l_qdo[1]       A2
+set_io opt_l_qdo[2]       A4
+set_io opt_l_qdo[3]       E4
+
+# 5. Right Optical Engine Independent 4-bit QSPI Data (Bank 2 — 4 balls)
+set_io opt_r_qdo[0]       E5
+set_io opt_r_qdo[1]       D5
+set_io opt_r_qdo[2]       F5
+set_io opt_r_qdo[3]       F4
+
+# 6. Rev D: active-low CDONE/frame-sync (idle HIGH, 1 us LOW pulse) gates U6_OPT_AVDD via RC (Bank 2 IOB_12A_G4_CDONE)
+set_io cdone_vsync_n      D3
