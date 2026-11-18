@@ -1,0 +1,164 @@
+{
+  "board": "M-OPT-BRIDGE",
+  "pcbUuid": "9ce45f14cb79dc9d",
+  "projectUuid": "cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+  "scope": "PARTIAL_UNROUTED_CANDIDATE_NOT_FOR_FAB",
+  "startedAt": "2026-11-18T16:00:53.460255+00:00",
+  "planSha256": "1b6be4903cab872569b998ff318f7afaf9977d4a90edd91067aa2015650ba202",
+  "placements": [
+    {
+      "ref": "U2",
+      "sourceRef": "U2_FPGA",
+      "stage": "immediate",
+      "primitiveId": "b6a84c4c3d4d92c1",
+      "uniqueId": "",
+      "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+      "expectedCenterMm": {
+        "x": 2.1,
+        "y": 9.5
+      },
+      "observedCenterMil": {
+        "x": 82.67716535433071,
+        "y": 374.01574803149606
+      },
+      "anchorMil": {
+        "x": 91.4929153543307,
+        "y": 368.62624803149606
+      },
+      "rotation": 0,
+      "layer": 1,
+      "bboxMil": {
+        "maxX": 137.79991535433072,
+        "maxY": 431.6182480314961,
+        "minX": 27.554415354330697,
+        "minY": 316.4132480314961
+      },
+      "padCount": 30,
+      "connectedPadNetCount": 27,
+      "ncAndLocalNcPadsRemainNetless": 3,
+      "manufacturerId": "ICE40UP5K-UWG30ITR",
+      "verificationErrors": [
+        "manufacturerId 'ICE40UP5K-UWG30ITR' != 'iCE40UP5K-UWG30ITR'"
+      ],
+      "verified": false,
+      "placementReceipt": {
+        "assignedNets": 27,
+        "bindingVerified": true,
+        "designator": "U2",
+        "padCount": 30,
+        "primitiveId": "b6a84c4c3d4d92c1",
+        "uniqueId": "",
+        "unmatchedPads": []
+      }
+    }
+  ],
+  "offlineFailedPlacements": [
+    {
+      "ref": "U14",
+      "sourceRef": "U_AVDD_WD",
+      "status": "BLOCKED_NO_LEGAL_CANDIDATE_IN_SEARCH",
+      "reason": "Fixed anchor conflict or bounded 0.20 mm full-bbox search found no legal position."
+    },
+    {
+      "ref": "U10",
+      "sourceRef": "U_AVDD_QUAL",
+      "status": "BLOCKED_NO_LEGAL_CANDIDATE_IN_SEARCH",
+      "reason": "Fixed anchor conflict or bounded 0.20 mm full-bbox search found no legal position."
+    }
+  ],
+  "requiredButNotPlaced": [
+    "J_BRIDGE_IN",
+    "J_DISP_L",
+    "J_DISP_R",
+    "R_DAMP_SCK_L",
+    "R_DAMP_CS_L",
+    "R_OPTCS_PU_L",
+    "R_DAMP_LD0",
+    "R_DAMP_LD1",
+    "R_DAMP_LD2",
+    "R_DAMP_LD3",
+    "R_DAMP_SCK_R",
+    "R_DAMP_CS_R",
+    "R_OPTCS_PU_R",
+    "R_DAMP_RD0",
+    "R_DAMP_RD1",
+    "R_DAMP_RD2",
+    "R_DAMP_RD3",
+    "R_PLL",
+    "R_VPP",
+    "R_CDONE_PU",
+    "R_CRST_PD",
+    "R_SS_PD",
+    "D3_PRIV",
+    "U6_OPT_AVDD",
+    "C_LDO_1V2F_IN",
+    "C_LDO_1V2F_OUT",
+    "C_LDO_1V8F_IN",
+    "C_LDO_1V8F_OUT",
+    "C_LDO_OPT_IN",
+    "C_LDO_OPT_OUT",
+    "C_IMU_VDD1",
+    "C_IMU_VDD2",
+    "C_IMU_VDDIO",
+    "C_MK2_C",
+    "U_AVDD_CLEAR_OD",
+    "U_AVDD_SCHMITT",
+    "U_AVDD_EN_OD",
+    "R_AVDD_WD_SET",
+    "R_AVDD_WD_DIV_H",
+    "R_AVDD_WD_DIV_L",
+    "R_AVDD_D3_PD",
+    "R_AVDD_CRST_PD",
+    "R_AVDD_PG_PU",
+    "R_AVDD_REQ_FILTER",
+    "R_AVDD_QUAL_PU",
+    "R_AVDD_EN_FEED",
+    "R_AVDD_EN_PD",
+    "C_AVDD_REQ_FILTER",
+    "C_AVDD_QUAL",
+    "C_AVDD_U_AVDD_LS_V",
+    "C_AVDD_U_AVDD_WD_V",
+    "C_AVDD_U_AVDD_IO_PG_V",
+    "C_AVDD_U_AVDD_SYS_PG_V",
+    "C_AVDD_U_AVDD_SYS_CLAMP_V",
+    "C_AVDD_U_AVDD_CLEAR_OD_V",
+    "C_AVDD_U_AVDD_SCHMITT_V",
+    "C_AVDD_U_AVDD_QUAL_V",
+    "C_AVDD_U_AVDD_EN_OD_V",
+    "C_AVDD_LS_A",
+    "TP_AVDD_SAFE",
+    "C_FPGA_PLL_BULK",
+    "C_FPGA_PLL_HF",
+    "C_FPGA_VPP_BULK",
+    "C_FPGA_VPP_HF",
+    "C_FPGA_CORE_BULK",
+    "C_FPGA_CORE_HF",
+    "C_FPGA_IO_BULK",
+    "C_FPGA_IO_HF0",
+    "C_FPGA_IO_HF1",
+    "C_FPGA_IO_HF2",
+    "C_FPGA_OSC_HF"
+  ],
+  "routing": {
+    "tracksViasPoursAuthored": false,
+    "status": "UNROUTED"
+  },
+  "status": "FAILED_OR_PARTIAL_READBACK_REQUIRED",
+  "beforeDump": "layout\\M-OPT-BRIDGE-01-before-dump.json",
+  "error": "U2: immediate verification failed: [\"manufacturerId 'ICE40UP5K-UWG30ITR' != 'iCE40UP5K-UWG30ITR'\"]",
+  "failureReadback": [
+    {
+      "ref": "U2",
+      "primitiveId": "b6a84c4c3d4d92c1",
+      "center": {
+        "x": 82.67716535433071,
+        "y": 374.01574803149606
+      },
+      "layer": 1,
+      "rotation": 0,
+      "uniqueId": "",
+      "padCount": 30
+    }
+  ],
+  "finishedAt": "2026-11-18T16:01:00.894321+00:00"
+}

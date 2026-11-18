@@ -1,0 +1,78 @@
+$ C:\Users\Admin（无密码）\.local\bin\easyeda.exe debug exec --timeout 60 --code // Read-only identity/hash preflight for the explicitly authorized connector update.
+// This does not edit EasyEDA design objects, permissions, or IndexedDB records.
+const expectedUuid = '4dae27407c1d43be98e8e210d45fe587';
+const sha = async bytes => Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', bytes)), v => v.toString(16).padStart(2, '0')).join('');
+const candidates = [];
+for (const entry of await indexedDB.databases()) {
+  if (!entry.name || !/^User_.+_v6$/.test(entry.name)) continue;
+  const db = await new Promise((resolve, reject) => {
+    const request = indexedDB.open(entry.name);
+    request.onupgradeneeded = () => { request.transaction.abort(); reject(new Error('Refusing database creation/upgrade')); };
+    request.onsuccess = () => resolve(request.result);
+    request.onerror = () => reject(request.error);
+  });
+  try {
+    if (!db.objectStoreNames.contains('extensionsIndex') || !db.objectStoreNames.contains('extensionsObjectStorage')) continue;
+    const tx = db.transaction(['extensionsIndex', 'extensionsObjectStorage'], 'readonly');
+    const get = (store, key) => new Promise((resolve, reject) => {
+      const request = tx.objectStore(store).get(key);
+      request.onsuccess = () => resolve(request.result);
+      request.onerror = () => reject(request.error);
+    });
+    const [index, record] = await Promise.all([get('extensionsIndex', expectedUuid), get('extensionsObjectStorage', `${expectedUuid}|dist/index.js`)]);
+    if (!index || !record?.source || index.config?.uuid !== expectedUuid) continue;
+    candidates.push({
+      team: entry.name.slice(5, -3),
+      uuid: expectedUuid,
+      version: index.config.version,
+      enabled: index.isEnable,
+      allowExternalInteractions: index.isAllowExternalInteractions,
+      installedBundleSha256: await sha(await record.source.arrayBuffer()),
+      installedBundleBytes: record.source.size,
+    });
+  } finally { db.close(); }
+}
+return { candidates };
+ --project cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662
+{
+  "id": "req_887",
+  "type": "response",
+  "version": "v1",
+  "windowId": "05e9143d-7956-4f1a-91a7-e59dbe47a43d",
+  "createdAt": "2026-11-18T15:43:44.9584674Z",
+  "ok": true,
+  "result": {
+    "value": {
+      "candidates": [
+        {
+          "allowExternalInteractions": true,
+          "enabled": true,
+          "installedBundleBytes": 1031114,
+          "installedBundleSha256": "e90a545aa578c321664cf53390e21eb94c131489ceac5d6f14f55440bcae2bcd",
+          "team": "223cd8504d6b4128b0080fb4fd138ae9",
+          "uuid": "4dae27407c1d43be98e8e210d45fe587",
+          "version": "1.17.0"
+        }
+      ]
+    }
+  },
+  "context": {
+    "projectUuid": "cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+    "projectName": "ZY_AIAR_EVT1_KIMI_20261118",
+    "documentUuid": "4d7420b4f42714c8",
+    "documentType": "schematic",
+    "tabId": "4d7420b4f42714c8@cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+    "pageVisibility": "hidden"
+  },
+  "mutationContext": {
+    "projectUuid": "cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+    "projectName": "ZY_AIAR_EVT1_KIMI_20261118",
+    "documentUuid": "4d7420b4f42714c8",
+    "documentType": "schematic",
+    "tabId": "4d7420b4f42714c8@cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+    "pageVisibility": "hidden"
+  },
+  "mutationContextAvailable": true,
+  "seq": 642,
+  "seqAbandoned": 0
+}

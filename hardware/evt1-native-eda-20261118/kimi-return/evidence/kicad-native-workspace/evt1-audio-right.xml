@@ -1,0 +1,3278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\Admin（无密码）\Desktop\产品设计\AI眼镜\evt1-native-eda\hardware\evt1-native-eda-20261118\kicad\evt1-audio-right\evt1-audio-right.kicad_sch</source>
+    <date>2026-11-18T23:11:39</date>
+    <tool>Eeschema 10.0.8</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Right temple | nRF5340, audio and independent charger</title>
+        <company>Zhiyuan Yuedong AI/AR V1.0</company>
+        <rev>D1.1-EDA</rev>
+        <date>2026-11-18</date>
+        <source>evt1-audio-right.kicad_sch</source>
+        <comment number="1" value="NOT FOR FAB - native conversion from Rev D1.1 / PR #25"/>
+        <comment number="2" value="Vendor-blocked interfaces and missing footprints require closure"/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/Harness and board interfaces/" tstamps="/e636dd77-0fd2-5c34-a9bc-33de02582f7d/">
+      <title_block>
+        <title>M-AUD-R | Harness and board interfaces</title>
+        <company>Zhiyuan Yuedong AI/AR V1.0</company>
+        <rev>D1.1-EDA</rev>
+        <date>2026-11-18</date>
+        <source>01-harness-and-board-interfaces-1.kicad_sch</source>
+        <comment number="1" value="NOT FOR FAB - native conversion from Rev D1.1 / PR #25"/>
+        <comment number="2" value="Vendor-blocked interfaces and missing footprints require closure"/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/Right audio and microphone/" tstamps="/48237c55-df5c-5c28-bb92-d32df654fd02/">
+      <title_block>
+        <title>M-AUD-R | Right audio and microphone</title>
+        <company>Zhiyuan Yuedong AI/AR V1.0</company>
+        <rev>D1.1-EDA</rev>
+        <date>2026-11-18</date>
+        <source>02-right-audio-and-microphone-1.kicad_sch</source>
+        <comment number="1" value="NOT FOR FAB - native conversion from Rev D1.1 / PR #25"/>
+        <comment number="2" value="Vendor-blocked interfaces and missing footprints require closure"/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/Right protected battery and independent charging/" tstamps="/d39c7529-7c56-55db-8ce2-bf6fae1c6a2c/">
+      <title_block>
+        <title>M-AUD-R | Right protected battery and independent charging</title>
+        <company>Zhiyuan Yuedong AI/AR V1.0</company>
+        <rev>D1.1-EDA</rev>
+        <date>2026-11-18</date>
+        <source>03-right-protected-battery-and-independent-charging-1.kicad_sch</source>
+        <comment number="1" value="NOT FOR FAB - native conversion from Rev D1.1 / PR #25"/>
+        <comment number="2" value="Vendor-blocked interfaces and missing footprints require closure"/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/Supply origins/" tstamps="/15acf594-64b2-5d1a-b5dd-e3fa038ae82d/">
+      <title_block>
+        <title>M-AUD-R | Supply origins</title>
+        <company>Zhiyuan Yuedong AI/AR V1.0</company>
+        <rev>D1.1-EDA</rev>
+        <date>2026-11-18</date>
+        <source>04-supply-origins-1.kicad_sch</source>
+        <comment number="1" value="NOT FOR FAB - native conversion from Rev D1.1 / PR #25"/>
+        <comment number="2" value="Vendor-blocked interfaces and missing footprints require closure"/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="6" name="/nRF5340, reference clock, RF and SWD/" tstamps="/2175a78d-ce58-5a3e-8c49-9385ab1a2192/">
+      <title_block>
+        <title>M-AUD-R | nRF5340, reference clock, RF and SWD</title>
+        <company>Zhiyuan Yuedong AI/AR V1.0</company>
+        <rev>D1.1-EDA</rev>
+        <date>2026-11-18</date>
+        <source>05-nrf5340-reference-clock-rf-and-swd-1.kicad_sch</source>
+        <comment number="1" value="NOT FOR FAB - native conversion from Rev D1.1 / PR #25"/>
+        <comment number="2" value="Vendor-blocked interfaces and missing footprints require closure"/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="J1">
+      <value>J_BTB_R | BM28B0.6-16DS/2-0.35V(53)</value>
+      <datasheet>https://www.hirose.com/en/product/document?clcode=CL0673-5043-0-51&amp;productname=BM28B0.6-16DS/2-0.35V(51)&amp;series=BM28&amp;documenttype=Catalog&amp;lang=en&amp;documentid=D49354_en</datasheet>
+      <fields>
+        <field name="EVT1 Source Ref">J_BTB_R</field>
+        <field name="BOM Line">BOM-40</field>
+        <field name="MPN">BM28B0.6-16DS/2-0.35V(53)</field>
+        <field name="Manufacturer">Hirose (HRS)</field>
+        <field name="Footprint Status">BLOCKED</field>
+        <field name="Design Notes"/>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.hirose.com/en/product/document?clcode=CL0673-5043-0-51&amp;productname=BM28B0.6-16DS/2-0.35V(51)&amp;series=BM28&amp;documenttype=Catalog&amp;lang=en&amp;documentid=D49354_en</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="J1_J_BTB_R" description="BM28B0.6-16DS/2-0.35V(53)"/>
+      <property name="EVT1 Source Ref" value="J_BTB_R"/>
+      <property name="BOM Line" value="BOM-40"/>
+      <property name="MPN" value="BM28B0.6-16DS/2-0.35V(53)"/>
+      <property name="Manufacturer" value="Hirose (HRS)"/>
+      <property name="Footprint Status" value="BLOCKED"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="Harness and board interfaces"/>
+      <property name="Sheetfile" value="01-harness-and-board-interfaces-1.kicad_sch"/>
+      <sheetpath names="/Harness and board interfaces/" tstamps="/e636dd77-0fd2-5c34-a9bc-33de02582f7d/"/>
+      <tstamps>3950105c-926f-5a78-8c87-b05958602f3a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="P1"/>
+            <pin num="P2"/>
+            <pin num="P3"/>
+            <pin num="P4"/>
+            <pin num="P5"/>
+            <pin num="P6"/>
+            <pin num="P7"/>
+            <pin num="P8"/>
+            <pin num="P9"/>
+            <pin num="P10"/>
+            <pin num="P11"/>
+            <pin num="P12"/>
+            <pin num="P13"/>
+            <pin num="P14"/>
+            <pin num="P15"/>
+            <pin num="P16"/>
+            <pin num="PWR1"/>
+            <pin num="PWR2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C1">
+      <value>C_AMP_SD_BUF | 100nF X7R 6.3V 0201</value>
+      <footprint>Capacitor_SMD:C_0201_0603Metric</footprint>
+      <fields>
+        <field name="EVT1 Source Ref">C_AMP_SD_BUF</field>
+        <field name="BOM Line">BOM-D1-AT03</field>
+        <field name="MPN">0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification</field>
+        <field name="Manufacturer">TBD</field>
+        <field name="Footprint Status">PASS</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Capacitor_SMD:C_0201_0603Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="C1_C_AMP_SD_BUF" description="0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification"/>
+      <property name="EVT1 Source Ref" value="C_AMP_SD_BUF"/>
+      <property name="BOM Line" value="BOM-D1-AT03"/>
+      <property name="MPN" value="0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification"/>
+      <property name="Manufacturer" value="TBD"/>
+      <property name="Footprint Status" value="PASS"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="Right audio and microphone"/>
+      <property name="Sheetfile" value="02-right-audio-and-microphone-1.kicad_sch"/>
+      <sheetpath names="/Right audio and microphone/" tstamps="/48237c55-df5c-5c28-bb92-d32df654fd02/"/>
+      <tstamps>f3e264d7-bb49-5220-929e-e3c9d6128e05</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C4">
+      <value>C_MK3_R | 100nF X7R 6.3V 0201</value>
+      <footprint>Capacitor_SMD:C_0201_0603Metric</footprint>
+      <fields>
+        <field name="EVT1 Source Ref">C_MK3_R</field>
+        <field name="BOM Line">BOM-D1-AT03</field>
+        <field name="MPN">0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification</field>
+        <field name="Manufacturer">TBD</field>
+        <field name="Footprint Status">PASS</field>
+        <field name="Design Notes">Infineon IM69D130 Table4/Figure10: close to pin2</field>
+        <field name="Footprint">Capacitor_SMD:C_0201_0603Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="C4_C_MK3_R" description="0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification"/>
+      <property name="EVT1 Source Ref" value="C_MK3_R"/>
+      <property name="BOM Line" value="BOM-D1-AT03"/>
+      <property name="MPN" value="0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification"/>
+      <property name="Manufacturer" value="TBD"/>
+      <property name="Footprint Status" value="PASS"/>
+      <property name="Design Notes" value="Infineon IM69D130 Table4/Figure10: close to pin2"/>
+      <property name="Sheetname" value="Right audio and microphone"/>
+      <property name="Sheetfile" value="02-right-audio-and-microphone-1.kicad_sch"/>
+      <sheetpath names="/Right audio and microphone/" tstamps="/48237c55-df5c-5c28-bb92-d32df654fd02/"/>
+      <tstamps>09ca1cdf-7f94-5dec-a3e7-18bd1899146f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C5">
+      <value>C_U10_AMP_R_BULK | 10uF X5R 10V 0402</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="EVT1 Source Ref">C_U10_AMP_R_BULK</field>
+        <field name="BOM Line">BOM-D1-AT03</field>
+        <field name="MPN">0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification</field>
+        <field name="Manufacturer">TBD</field>
+        <field name="Footprint Status">PASS</field>
+        <field name="Design Notes">check effective capacitance at actual DC bias and local pulse load</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="C5_C_U10_AMP_R_BULK" description="0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification"/>
+      <property name="EVT1 Source Ref" value="C_U10_AMP_R_BULK"/>
+      <property name="BOM Line" value="BOM-D1-AT03"/>
+      <property name="MPN" value="0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification"/>
+      <property name="Manufacturer" value="TBD"/>
+      <property name="Footprint Status" value="PASS"/>
+      <property name="Design Notes" value="check effective capacitance at actual DC bias and local pulse load"/>
+      <property name="Sheetname" value="Right audio and microphone"/>
+      <property name="Sheetfile" value="02-right-audio-and-microphone-1.kicad_sch"/>
+      <sheetpath names="/Right audio and microphone/" tstamps="/48237c55-df5c-5c28-bb92-d32df654fd02/"/>
+      <tstamps>9f207ddc-4775-5f46-acb6-3b68c8a20d10</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C6">
+      <value>C_U10_AMP_R_HF | 100nF X7R 10V 0201</value>
+      <footprint>Capacitor_SMD:C_0201_0603Metric</footprint>
+      <fields>
+        <field name="EVT1 Source Ref">C_U10_AMP_R_HF</field>
+        <field name="BOM Line">BOM-D1-AT03</field>
+        <field name="MPN">0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification</field>
+        <field name="Manufacturer">TBD</field>
+        <field name="Footprint Status">PASS</field>
+        <field name="Design Notes">ADI supply input p33: directly at A2/C2</field>
+        <field name="Footprint">Capacitor_SMD:C_0201_0603Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="C6_C_U10_AMP_R_HF" description="0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification"/>
+      <property name="EVT1 Source Ref" value="C_U10_AMP_R_HF"/>
+      <property name="BOM Line" value="BOM-D1-AT03"/>
+      <property name="MPN" value="0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification"/>
+      <property name="Manufacturer" value="TBD"/>
+      <property name="Footprint Status" value="PASS"/>
+      <property name="Design Notes" value="ADI supply input p33: directly at A2/C2"/>
+      <property name="Sheetname" value="Right audio and microphone"/>
+      <property name="Sheetfile" value="02-right-audio-and-microphone-1.kicad_sch"/>
+      <sheetpath names="/Right audio and microphone/" tstamps="/48237c55-df5c-5c28-bb92-d32df654fd02/"/>
+      <tstamps>62651c4c-e35d-5c07-bd49-0f3e8d27a519</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="MK3">
+      <value>MK3_R | IM69D130V01XTSA1</value>
+      <datasheet>https://www.infineon.com/assets/row/public/documents/30/49/infineon-im69d130-datasheet-en.pdf</datasheet>
+      <fields>
+        <field name="EVT1 Source Ref">MK3_R</field>
+        <field name="BOM Line">BOM-39</field>
+        <field name="MPN">IM69D130V01XTSA1</field>
+        <field name="Manufacturer">Infineon</field>
+        <field name="Footprint Status">BLOCKED</field>
+        <field name="Design Notes">tDV &lt;= 100 ns, tDD 40..80 ns, tHZ 5..30 ns | 100 nF at VDD | SELECT=GND</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.infineon.com/assets/row/public/documents/30/49/infineon-im69d130-datasheet-en.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="MK3_MK3_R" description="IM69D130V01XTSA1"/>
+      <property name="EVT1 Source Ref" value="MK3_R"/>
+      <property name="BOM Line" value="BOM-39"/>
+      <property name="MPN" value="IM69D130V01XTSA1"/>
+      <property name="Manufacturer" value="Infineon"/>
+      <property name="Footprint Status" value="BLOCKED"/>
+      <property name="Design Notes" value="tDV &lt;= 100 ns, tDD 40..80 ns, tHZ 5..30 ns | 100 nF at VDD | SELECT=GND"/>
+      <property name="Sheetname" value="Right audio and microphone"/>
+      <property name="Sheetfile" value="02-right-audio-and-microphone-1.kicad_sch"/>
+      <sheetpath names="/Right audio and microphone/" tstamps="/48237c55-df5c-5c28-bb92-d32df654fd02/"/>
+      <tstamps>7de1e142-2116-50e2-9c5b-5b11a122dbd6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1">
+      <value>R_AMP_REQ_PD | 47k 1%</value>
+      <fields>
+        <field name="EVT1 Source Ref">R_AMP_REQ_PD</field>
+        <field name="BOM Line">BOM-D1-AT03</field>
+        <field name="MPN">0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification</field>
+        <field name="Manufacturer">TBD</field>
+        <field name="Footprint Status">BLOCKED</field>
+        <field name="Design Notes">defined reset OFF; &lt;=2uA input leakage creates&lt;=95mV</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="R1_R_AMP_REQ_PD" description="0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification"/>
+      <property name="EVT1 Source Ref" value="R_AMP_REQ_PD"/>
+      <property name="BOM Line" value="BOM-D1-AT03"/>
+      <property name="MPN" value="0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification"/>
+      <property name="Manufacturer" value="TBD"/>
+      <property name="Footprint Status" value="BLOCKED"/>
+      <property name="Design Notes" value="defined reset OFF; &lt;=2uA input leakage creates&lt;=95mV"/>
+      <property name="Sheetname" value="Right audio and microphone"/>
+      <property name="Sheetfile" value="02-right-audio-and-microphone-1.kicad_sch"/>
+      <sheetpath names="/Right audio and microphone/" tstamps="/48237c55-df5c-5c28-bb92-d32df654fd02/"/>
+      <tstamps>c2371bf6-1347-5dbc-82e5-39639e4e158a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R2">
+      <value>R_IDLE_I2S_AMP_DIN_1V8 | 100k 1%</value>
+      <fields>
+        <field name="EVT1 Source Ref">R_IDLE_I2S_AMP_DIN_1V8</field>
+        <field name="BOM Line">BOM-D1-AT03</field>
+        <field name="MPN">0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification</field>
+        <field name="Manufacturer">TBD</field>
+        <field name="Footprint Status">BLOCKED</field>
+        <field name="Design Notes">defined I2S idle while nRF pins are inputs; master remains nRF only</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="R2_R_IDLE_I2S_AMP_DIN_1V8" description="0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification"/>
+      <property name="EVT1 Source Ref" value="R_IDLE_I2S_AMP_DIN_1V8"/>
+      <property name="BOM Line" value="BOM-D1-AT03"/>
+      <property name="MPN" value="0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification"/>
+      <property name="Manufacturer" value="TBD"/>
+      <property name="Footprint Status" value="BLOCKED"/>
+      <property name="Design Notes" value="defined I2S idle while nRF pins are inputs; master remains nRF only"/>
+      <property name="Sheetname" value="Right audio and microphone"/>
+      <property name="Sheetfile" value="02-right-audio-and-microphone-1.kicad_sch"/>
+      <sheetpath names="/Right audio and microphone/" tstamps="/48237c55-df5c-5c28-bb92-d32df654fd02/"/>
+      <tstamps>2adbab59-0e5f-5de1-8d32-6a7fc5a44925</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R3">
+      <value>R_IDLE_I2S_BCLK_1V8 | 100k 1%</value>
+      <fields>
+        <field name="EVT1 Source Ref">R_IDLE_I2S_BCLK_1V8</field>
+        <field name="BOM Line">BOM-D1-AT03</field>
+        <field name="MPN">0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification</field>
+        <field name="Manufacturer">TBD</field>
+        <field name="Footprint Status">BLOCKED</field>
+        <field name="Design Notes">defined I2S idle while nRF pins are inputs; master remains nRF only</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="R3_R_IDLE_I2S_BCLK_1V8" description="0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification"/>
+      <property name="EVT1 Source Ref" value="R_IDLE_I2S_BCLK_1V8"/>
+      <property name="BOM Line" value="BOM-D1-AT03"/>
+      <property name="MPN" value="0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification"/>
+      <property name="Manufacturer" value="TBD"/>
+      <property name="Footprint Status" value="BLOCKED"/>
+      <property name="Design Notes" value="defined I2S idle while nRF pins are inputs; master remains nRF only"/>
+      <property name="Sheetname" value="Right audio and microphone"/>
+      <property name="Sheetfile" value="02-right-audio-and-microphone-1.kicad_sch"/>
+      <sheetpath names="/Right audio and microphone/" tstamps="/48237c55-df5c-5c28-bb92-d32df654fd02/"/>
+      <tstamps>55675999-1bad-5f49-9ef0-2c05fc64eb5c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R4">
+      <value>R_IDLE_I2S_LRCLK_1V8 | 100k 1%</value>
+      <fields>
+        <field name="EVT1 Source Ref">R_IDLE_I2S_LRCLK_1V8</field>
+        <field name="BOM Line">BOM-D1-AT03</field>
+        <field name="MPN">0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification</field>
+        <field name="Manufacturer">TBD</field>
+        <field name="Footprint Status">BLOCKED</field>
+        <field name="Design Notes">defined I2S idle while nRF pins are inputs; master remains nRF only</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="R4_R_IDLE_I2S_LRCLK_1V8" description="0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification"/>
+      <property name="EVT1 Source Ref" value="R_IDLE_I2S_LRCLK_1V8"/>
+      <property name="BOM Line" value="BOM-D1-AT03"/>
+      <property name="MPN" value="0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification"/>
+      <property name="Manufacturer" value="TBD"/>
+      <property name="Footprint Status" value="BLOCKED"/>
+      <property name="Design Notes" value="defined I2S idle while nRF pins are inputs; master remains nRF only"/>
+      <property name="Sheetname" value="Right audio and microphone"/>
+      <property name="Sheetfile" value="02-right-audio-and-microphone-1.kicad_sch"/>
+      <sheetpath names="/Right audio and microphone/" tstamps="/48237c55-df5c-5c28-bb92-d32df654fd02/"/>
+      <tstamps>f150d81b-f226-5e48-9b52-880714db4873</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R5">
+      <value>R_IPC_PU | 100k pull-up to 1V8_SYS (UART idle when ESP32 side off)</value>
+      <fields>
+        <field name="EVT1 Source Ref">R_IPC_PU</field>
+        <field name="BOM Line">BOM-53</field>
+        <field name="MPN">R_SDR 69.8k 1% + R_IPC_PU 100k + R_ISET_R 5.49k 1% + R_VSET_R 27k 1%</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="Footprint Status">BLOCKED</field>
+        <field name="Design Notes">Explicit return expanded from inherited Rev D function text</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="R5_R_IPC_PU" description="R_SDR 69.8k 1% + R_IPC_PU 100k + R_ISET_R 5.49k 1% + R_VSET_R 27k 1%"/>
+      <property name="EVT1 Source Ref" value="R_IPC_PU"/>
+      <property name="BOM Line" value="BOM-53"/>
+      <property name="MPN" value="R_SDR 69.8k 1% + R_IPC_PU 100k + R_ISET_R 5.49k 1% + R_VSET_R 27k 1%"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="Footprint Status" value="BLOCKED"/>
+      <property name="Design Notes" value="Explicit return expanded from inherited Rev D function text"/>
+      <property name="Sheetname" value="Right audio and microphone"/>
+      <property name="Sheetfile" value="02-right-audio-and-microphone-1.kicad_sch"/>
+      <sheetpath names="/Right audio and microphone/" tstamps="/48237c55-df5c-5c28-bb92-d32df654fd02/"/>
+      <tstamps>5f727ee2-1e47-5438-a442-fcf9e44fdaad</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R9">
+      <value>R_SDR | 69.8k 1%</value>
+      <fields>
+        <field name="EVT1 Source Ref">R_SDR</field>
+        <field name="BOM Line">BOM-53</field>
+        <field name="MPN">R_SDR 69.8k 1% + R_IPC_PU 100k + R_ISET_R 5.49k 1% + R_VSET_R 27k 1%</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="Footprint Status">BLOCKED</field>
+        <field name="Design Notes"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="R9_R_SDR" description="R_SDR 69.8k 1% + R_IPC_PU 100k + R_ISET_R 5.49k 1% + R_VSET_R 27k 1%"/>
+      <property name="EVT1 Source Ref" value="R_SDR"/>
+      <property name="BOM Line" value="BOM-53"/>
+      <property name="MPN" value="R_SDR 69.8k 1% + R_IPC_PU 100k + R_ISET_R 5.49k 1% + R_VSET_R 27k 1%"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="Footprint Status" value="BLOCKED"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="Right audio and microphone"/>
+      <property name="Sheetfile" value="02-right-audio-and-microphone-1.kicad_sch"/>
+      <sheetpath names="/Right audio and microphone/" tstamps="/48237c55-df5c-5c28-bb92-d32df654fd02/"/>
+      <tstamps>d2f81b62-a14f-5e5f-96ad-46c48c2da9c6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SPK1">
+      <value>SPK_R | MPN_TBD (8 ohm micro-speaker)</value>
+      <fields>
+        <field name="EVT1 Source Ref">SPK_R</field>
+        <field name="BOM Line">BOM-52</field>
+        <field name="MPN">MPN_TBD (8 ohm micro-speaker)</field>
+        <field name="Manufacturer">TBD</field>
+        <field name="Footprint Status">External assembly boundary; no PCB footprint</field>
+        <field name="Design Notes"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="SPK1_SPK_R" description="MPN_TBD (8 ohm micro-speaker)"/>
+      <property name="EVT1 Source Ref" value="SPK_R"/>
+      <property name="BOM Line" value="BOM-52"/>
+      <property name="MPN" value="MPN_TBD (8 ohm micro-speaker)"/>
+      <property name="Manufacturer" value="TBD"/>
+      <property name="Footprint Status" value="External assembly boundary; no PCB footprint"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="Right audio and microphone"/>
+      <property name="Sheetfile" value="02-right-audio-and-microphone-1.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/Right audio and microphone/" tstamps="/48237c55-df5c-5c28-bb92-d32df654fd02/"/>
+      <tstamps>b92b0739-ddbd-59b6-9704-fbc84d5c9215</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="+"/>
+            <pin num="-"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP4">
+      <value>TP_SPK_R_N | SPK_LEAD_PAD</value>
+      <fields>
+        <field name="EVT1 Source Ref">TP_SPK_R_N</field>
+        <field name="BOM Line">BOM-CAD-TP_SPK_R_N</field>
+        <field name="MPN">PCB copper pad</field>
+        <field name="Manufacturer"/>
+        <field name="Footprint Status">BLOCKED</field>
+        <field name="Design Notes">On-board speaker lead termination per BOM-52. Floating class-D BTL; never tie to ground.</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="TP4_TP_SPK_R_N" description="PCB copper pad"/>
+      <property name="EVT1 Source Ref" value="TP_SPK_R_N"/>
+      <property name="BOM Line" value="BOM-CAD-TP_SPK_R_N"/>
+      <property name="MPN" value="PCB copper pad"/>
+      <property name="Manufacturer" value=""/>
+      <property name="Footprint Status" value="BLOCKED"/>
+      <property name="Design Notes" value="On-board speaker lead termination per BOM-52. Floating class-D BTL; never tie to ground."/>
+      <property name="Sheetname" value="Right audio and microphone"/>
+      <property name="Sheetfile" value="02-right-audio-and-microphone-1.kicad_sch"/>
+      <sheetpath names="/Right audio and microphone/" tstamps="/48237c55-df5c-5c28-bb92-d32df654fd02/"/>
+      <tstamps>7077b416-45ef-5b30-b7ca-ee83746e233f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP5">
+      <value>TP_SPK_R_P | SPK_LEAD_PAD</value>
+      <fields>
+        <field name="EVT1 Source Ref">TP_SPK_R_P</field>
+        <field name="BOM Line">BOM-CAD-TP_SPK_R_P</field>
+        <field name="MPN">PCB copper pad</field>
+        <field name="Manufacturer"/>
+        <field name="Footprint Status">BLOCKED</field>
+        <field name="Design Notes">On-board speaker lead termination per BOM-52. Floating class-D BTL; never tie to ground.</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="TP5_TP_SPK_R_P" description="PCB copper pad"/>
+      <property name="EVT1 Source Ref" value="TP_SPK_R_P"/>
+      <property name="BOM Line" value="BOM-CAD-TP_SPK_R_P"/>
+      <property name="MPN" value="PCB copper pad"/>
+      <property name="Manufacturer" value=""/>
+      <property name="Footprint Status" value="BLOCKED"/>
+      <property name="Design Notes" value="On-board speaker lead termination per BOM-52. Floating class-D BTL; never tie to ground."/>
+      <property name="Sheetname" value="Right audio and microphone"/>
+      <property name="Sheetfile" value="02-right-audio-and-microphone-1.kicad_sch"/>
+      <sheetpath names="/Right audio and microphone/" tstamps="/48237c55-df5c-5c28-bb92-d32df654fd02/"/>
+      <tstamps>37b08c19-b5c4-5f90-add7-0de99712f9ea</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U1">
+      <value>U10_SD_BUF | SN74LVC1G3157DSFR</value>
+      <datasheet>https://www.ti.com/lit/ds/symlink/sn74lvc1g3157.pdf</datasheet>
+      <fields>
+        <field name="EVT1 Source Ref">U10_SD_BUF</field>
+        <field name="BOM Line">BOM-D1-AT02</field>
+        <field name="MPN">SN74LVC1G3157DSFR</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="Footprint Status">BLOCKED</field>
+        <field name="Design Notes">SN74LVC1G3157DSFR SPDT; S=0 connects A toGND; S=1 connects A to1V8_SYS; conservative140ohm full-range bound</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74lvc1g3157.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="U1_U10_SD_BUF" description="SN74LVC1G3157DSFR"/>
+      <property name="EVT1 Source Ref" value="U10_SD_BUF"/>
+      <property name="BOM Line" value="BOM-D1-AT02"/>
+      <property name="MPN" value="SN74LVC1G3157DSFR"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="Footprint Status" value="BLOCKED"/>
+      <property name="Design Notes" value="SN74LVC1G3157DSFR SPDT; S=0 connects A toGND; S=1 connects A to1V8_SYS; conservative140ohm full-range bound"/>
+      <property name="Sheetname" value="Right audio and microphone"/>
+      <property name="Sheetfile" value="02-right-audio-and-microphone-1.kicad_sch"/>
+      <sheetpath names="/Right audio and microphone/" tstamps="/48237c55-df5c-5c28-bb92-d32df654fd02/"/>
+      <tstamps>5737b4bb-c3d8-5403-8b43-ed30e7daced2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U10">
+      <value>U10_AMP_R | MAX98357AEWL+T</value>
+      <datasheet>https://www.analog.com/media/en/technical-documentation/data-sheets/max98357a-max98357b.pdf</datasheet>
+      <fields>
+        <field name="EVT1 Source Ref">U10_AMP_R</field>
+        <field name="BOM Line">BOM-38</field>
+        <field name="MPN">MAX98357AEWL+T</field>
+        <field name="Manufacturer">Analog Devices</field>
+        <field name="Footprint Status">BLOCKED</field>
+        <field name="Design Notes">69.8k RSMALL -&gt; RIGHT (B1 0.825 V max .. B2 1.245 V min) | 10 uF + 0.1 uF at bump | tied to adjacent C2 GND bump (12 dB, no via; ADI AN6643)</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.analog.com/media/en/technical-documentation/data-sheets/max98357a-max98357b.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="U10_U10_AMP_R" description="MAX98357AEWL+T"/>
+      <property name="EVT1 Source Ref" value="U10_AMP_R"/>
+      <property name="BOM Line" value="BOM-38"/>
+      <property name="MPN" value="MAX98357AEWL+T"/>
+      <property name="Manufacturer" value="Analog Devices"/>
+      <property name="Footprint Status" value="BLOCKED"/>
+      <property name="Design Notes" value="69.8k RSMALL -&gt; RIGHT (B1 0.825 V max .. B2 1.245 V min) | 10 uF + 0.1 uF at bump | tied to adjacent C2 GND bump (12 dB, no via; ADI AN6643)"/>
+      <property name="Sheetname" value="Right audio and microphone"/>
+      <property name="Sheetfile" value="02-right-audio-and-microphone-1.kicad_sch"/>
+      <sheetpath names="/Right audio and microphone/" tstamps="/48237c55-df5c-5c28-bb92-d32df654fd02/"/>
+      <tstamps>1d12b6cc-eaf2-518e-9e01-c05d4373fec6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="A1"/>
+            <pin num="A2"/>
+            <pin num="A3"/>
+            <pin num="B1"/>
+            <pin num="B2"/>
+            <pin num="B3"/>
+            <pin num="C1"/>
+            <pin num="C2"/>
+            <pin num="C3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="BAT1">
+      <value>BAT_R | Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47m...</value>
+      <datasheet>https://www.grepow.com/shaped-battery/ultra-narrow-battery.html</datasheet>
+      <fields>
+        <field name="EVT1 Source Ref">BAT_R</field>
+        <field name="BOM Line">BOM-44</field>
+        <field name="MPN">Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight)</field>
+        <field name="Manufacturer">Grepow (格瑞普)</field>
+        <field name="Footprint Status">External assembly boundary; no PCB footprint</field>
+        <field name="Design Notes">103AT-compatible R/T curve required; curve and exact pack pin order OPEN | Required external protected-pack contract; raw cell connection PROHIBITED</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.grepow.com/shaped-battery/ultra-narrow-battery.html</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="BAT1_BAT_R" description="Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight)"/>
+      <property name="EVT1 Source Ref" value="BAT_R"/>
+      <property name="BOM Line" value="BOM-44"/>
+      <property name="MPN" value="Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight)"/>
+      <property name="Manufacturer" value="Grepow (格瑞普)"/>
+      <property name="Footprint Status" value="External assembly boundary; no PCB footprint"/>
+      <property name="Design Notes" value="103AT-compatible R/T curve required; curve and exact pack pin order OPEN | Required external protected-pack contract; raw cell connection PROHIBITED"/>
+      <property name="Sheetname" value="Right protected battery and independent charging"/>
+      <property name="Sheetfile" value="03-right-protected-battery-and-independent-charging-1.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_board"/>
+      <sheetpath names="/Right protected battery and independent charging/" tstamps="/d39c7529-7c56-55db-8ce2-bf6fae1c6a2c/"/>
+      <tstamps>fe4a8518-3ad0-5d56-9f9f-c1067463434f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="NTC"/>
+            <pin num="NTC_RETURN"/>
+            <pin num="P+"/>
+            <pin num="P-"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C2">
+      <value>C_CHG_R_IN | 1uF 25V X7R; effective &gt;=1uF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="EVT1 Source Ref">C_CHG_R_IN</field>
+        <field name="BOM Line">BOM-D1-PWR-C_CHG_R_IN</field>
+        <field name="MPN">1uF 25V X7R; effective &gt;=1uF</field>
+        <field name="Manufacturer">TBD</field>
+        <field name="Footprint Status">PASS</field>
+        <field name="Design Notes">place at corresponding IC pins; DC-bias curve approval OPEN</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="C2_C_CHG_R_IN" description="1uF 25V X7R; effective &gt;=1uF"/>
+      <property name="EVT1 Source Ref" value="C_CHG_R_IN"/>
+      <property name="BOM Line" value="BOM-D1-PWR-C_CHG_R_IN"/>
+      <property name="MPN" value="1uF 25V X7R; effective &gt;=1uF"/>
+      <property name="Manufacturer" value="TBD"/>
+      <property name="Footprint Status" value="PASS"/>
+      <property name="Design Notes" value="place at corresponding IC pins; DC-bias curve approval OPEN"/>
+      <property name="Sheetname" value="Right protected battery and independent charging"/>
+      <property name="Sheetfile" value="03-right-protected-battery-and-independent-charging-1.kicad_sch"/>
+      <sheetpath names="/Right protected battery and independent charging/" tstamps="/d39c7529-7c56-55db-8ce2-bf6fae1c6a2c/"/>
+      <tstamps>6b09329a-7565-5858-abbc-89b90a283869</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C3">
+      <value>C_CHG_R_OUT | 1uF 10V X7R; effective &gt;=1uF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <fields>
+        <field name="EVT1 Source Ref">C_CHG_R_OUT</field>
+        <field name="BOM Line">BOM-D1-PWR-C_CHG_R_OUT</field>
+        <field name="MPN">1uF 10V X7R; effective &gt;=1uF</field>
+        <field name="Manufacturer">TBD</field>
+        <field name="Footprint Status">PASS</field>
+        <field name="Design Notes">place at corresponding IC pins; DC-bias curve approval OPEN</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="C3_C_CHG_R_OUT" description="1uF 10V X7R; effective &gt;=1uF"/>
+      <property name="EVT1 Source Ref" value="C_CHG_R_OUT"/>
+      <property name="BOM Line" value="BOM-D1-PWR-C_CHG_R_OUT"/>
+      <property name="MPN" value="1uF 10V X7R; effective &gt;=1uF"/>
+      <property name="Manufacturer" value="TBD"/>
+      <property name="Footprint Status" value="PASS"/>
+      <property name="Design Notes" value="place at corresponding IC pins; DC-bias curve approval OPEN"/>
+      <property name="Sheetname" value="Right protected battery and independent charging"/>
+      <property name="Sheetfile" value="03-right-protected-battery-and-independent-charging-1.kicad_sch"/>
+      <sheetpath names="/Right protected battery and independent charging/" tstamps="/d39c7529-7c56-55db-8ce2-bf6fae1c6a2c/"/>
+      <tstamps>e869797d-4ecc-5537-a6b4-3f1383aec007</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q1">
+      <value>Q_CHG_MUTE_R | 2N7002</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/2N7002.pdf</datasheet>
+      <fields>
+        <field name="EVT1 Source Ref">Q_CHG_MUTE_R</field>
+        <field name="BOM Line">BOM-D1-PWR-Q_CHG_MUTE_R</field>
+        <field name="MPN">2N7002</field>
+        <field name="Manufacturer">TBD</field>
+        <field name="Footprint Status">PASS</field>
+        <field name="Design Notes">VBUS present forces right MAX98357A shutdown; 69.8k limits nRF GPIO current</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/2N7002.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="Q1_Q_CHG_MUTE_R" description="2N7002"/>
+      <property name="EVT1 Source Ref" value="Q_CHG_MUTE_R"/>
+      <property name="BOM Line" value="BOM-D1-PWR-Q_CHG_MUTE_R"/>
+      <property name="MPN" value="2N7002"/>
+      <property name="Manufacturer" value="TBD"/>
+      <property name="Footprint Status" value="PASS"/>
+      <property name="Design Notes" value="VBUS present forces right MAX98357A shutdown; 69.8k limits nRF GPIO current"/>
+      <property name="Sheetname" value="Right protected battery and independent charging"/>
+      <property name="Sheetfile" value="03-right-protected-battery-and-independent-charging-1.kicad_sch"/>
+      <sheetpath names="/Right protected battery and independent charging/" tstamps="/d39c7529-7c56-55db-8ce2-bf6fae1c6a2c/"/>
+      <tstamps>82bb0c90-6c3f-5202-b297-62b0bb91aa8a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R6">
+      <value>R_ISET_R | 5.49k 1%</value>
+      <fields>
+        <field name="EVT1 Source Ref">R_ISET_R</field>
+        <field name="BOM Line">BOM-53</field>
+        <field name="MPN">R_SDR 69.8k 1% + R_IPC_PU 100k + R_ISET_R 5.49k 1% + R_VSET_R 27k 1%</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="Footprint Status">BLOCKED</field>
+        <field name="Design Notes"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="R6_R_ISET_R" description="R_SDR 69.8k 1% + R_IPC_PU 100k + R_ISET_R 5.49k 1% + R_VSET_R 27k 1%"/>
+      <property name="EVT1 Source Ref" value="R_ISET_R"/>
+      <property name="BOM Line" value="BOM-53"/>
+      <property name="MPN" value="R_SDR 69.8k 1% + R_IPC_PU 100k + R_ISET_R 5.49k 1% + R_VSET_R 27k 1%"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="Footprint Status" value="BLOCKED"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="Right protected battery and independent charging"/>
+      <property name="Sheetfile" value="03-right-protected-battery-and-independent-charging-1.kicad_sch"/>
+      <sheetpath names="/Right protected battery and independent charging/" tstamps="/d39c7529-7c56-55db-8ce2-bf6fae1c6a2c/"/>
+      <tstamps>6a76477e-0917-520b-9a6f-267137291ca5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R7">
+      <value>R_MUTE_GATE | 100 ohm 1%</value>
+      <footprint>Resistor_SMD:R_0201_0603Metric</footprint>
+      <fields>
+        <field name="EVT1 Source Ref">R_MUTE_GATE</field>
+        <field name="BOM Line">BOM-D1-PWR-R_MUTE_GATE</field>
+        <field name="MPN">100 ohm 1%</field>
+        <field name="Manufacturer">TBD</field>
+        <field name="Footprint Status">PASS</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Resistor_SMD:R_0201_0603Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="R7_R_MUTE_GATE" description="100 ohm 1%"/>
+      <property name="EVT1 Source Ref" value="R_MUTE_GATE"/>
+      <property name="BOM Line" value="BOM-D1-PWR-R_MUTE_GATE"/>
+      <property name="MPN" value="100 ohm 1%"/>
+      <property name="Manufacturer" value="TBD"/>
+      <property name="Footprint Status" value="PASS"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="Right protected battery and independent charging"/>
+      <property name="Sheetfile" value="03-right-protected-battery-and-independent-charging-1.kicad_sch"/>
+      <sheetpath names="/Right protected battery and independent charging/" tstamps="/d39c7529-7c56-55db-8ce2-bf6fae1c6a2c/"/>
+      <tstamps>186fc670-0eb5-5565-b4a1-a6369b9f069d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R8">
+      <value>R_MUTE_PD | 100k 1%</value>
+      <footprint>Resistor_SMD:R_0201_0603Metric</footprint>
+      <fields>
+        <field name="EVT1 Source Ref">R_MUTE_PD</field>
+        <field name="BOM Line">BOM-D1-PWR-R_MUTE_PD</field>
+        <field name="MPN">100k 1%</field>
+        <field name="Manufacturer">TBD</field>
+        <field name="Footprint Status">PASS</field>
+        <field name="Design Notes"/>
+        <field name="Footprint">Resistor_SMD:R_0201_0603Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="R8_R_MUTE_PD" description="100k 1%"/>
+      <property name="EVT1 Source Ref" value="R_MUTE_PD"/>
+      <property name="BOM Line" value="BOM-D1-PWR-R_MUTE_PD"/>
+      <property name="MPN" value="100k 1%"/>
+      <property name="Manufacturer" value="TBD"/>
+      <property name="Footprint Status" value="PASS"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="Right protected battery and independent charging"/>
+      <property name="Sheetfile" value="03-right-protected-battery-and-independent-charging-1.kicad_sch"/>
+      <sheetpath names="/Right protected battery and independent charging/" tstamps="/d39c7529-7c56-55db-8ce2-bf6fae1c6a2c/"/>
+      <tstamps>068aac19-d1f5-52a6-8218-7010c905b179</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R10">
+      <value>R_VSET_R | 27k 1%</value>
+      <fields>
+        <field name="EVT1 Source Ref">R_VSET_R</field>
+        <field name="BOM Line">BOM-53</field>
+        <field name="MPN">R_SDR 69.8k 1% + R_IPC_PU 100k + R_ISET_R 5.49k 1% + R_VSET_R 27k 1%</field>
+        <field name="Manufacturer">Yageo</field>
+        <field name="Footprint Status">BLOCKED</field>
+        <field name="Design Notes"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="R10_R_VSET_R" description="R_SDR 69.8k 1% + R_IPC_PU 100k + R_ISET_R 5.49k 1% + R_VSET_R 27k 1%"/>
+      <property name="EVT1 Source Ref" value="R_VSET_R"/>
+      <property name="BOM Line" value="BOM-53"/>
+      <property name="MPN" value="R_SDR 69.8k 1% + R_IPC_PU 100k + R_ISET_R 5.49k 1% + R_VSET_R 27k 1%"/>
+      <property name="Manufacturer" value="Yageo"/>
+      <property name="Footprint Status" value="BLOCKED"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="Right protected battery and independent charging"/>
+      <property name="Sheetfile" value="03-right-protected-battery-and-independent-charging-1.kicad_sch"/>
+      <sheetpath names="/Right protected battery and independent charging/" tstamps="/d39c7529-7c56-55db-8ce2-bf6fae1c6a2c/"/>
+      <tstamps>1b271885-b166-5998-8f55-83f9031a9e83</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP1">
+      <value>TP_BAT_R_N | solder pad BAT_R-</value>
+      <datasheet>https://www.grepow.com/shaped-battery/ultra-narrow-battery.html</datasheet>
+      <fields>
+        <field name="EVT1 Source Ref">TP_BAT_R_N</field>
+        <field name="BOM Line">BOM-44</field>
+        <field name="MPN">Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight)</field>
+        <field name="Manufacturer">Grepow (格瑞普)</field>
+        <field name="Footprint Status">BLOCKED</field>
+        <field name="Design Notes"/>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.grepow.com/shaped-battery/ultra-narrow-battery.html</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="TP1_TP_BAT_R_N" description="Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight)"/>
+      <property name="EVT1 Source Ref" value="TP_BAT_R_N"/>
+      <property name="BOM Line" value="BOM-44"/>
+      <property name="MPN" value="Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight)"/>
+      <property name="Manufacturer" value="Grepow (格瑞普)"/>
+      <property name="Footprint Status" value="BLOCKED"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="Right protected battery and independent charging"/>
+      <property name="Sheetfile" value="03-right-protected-battery-and-independent-charging-1.kicad_sch"/>
+      <sheetpath names="/Right protected battery and independent charging/" tstamps="/d39c7529-7c56-55db-8ce2-bf6fae1c6a2c/"/>
+      <tstamps>2cbcfd63-7009-50cd-9c2f-a4af049deb00</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP2">
+      <value>TP_BAT_R_P | solder pad BAT_R+ (Rev D: off-connector)</value>
+      <datasheet>https://www.grepow.com/shaped-battery/ultra-narrow-battery.html</datasheet>
+      <fields>
+        <field name="EVT1 Source Ref">TP_BAT_R_P</field>
+        <field name="BOM Line">BOM-44</field>
+        <field name="MPN">Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight)</field>
+        <field name="Manufacturer">Grepow (格瑞普)</field>
+        <field name="Footprint Status">BLOCKED</field>
+        <field name="Design Notes"/>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.grepow.com/shaped-battery/ultra-narrow-battery.html</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="TP2_TP_BAT_R_P" description="Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight)"/>
+      <property name="EVT1 Source Ref" value="TP_BAT_R_P"/>
+      <property name="BOM Line" value="BOM-44"/>
+      <property name="MPN" value="Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight)"/>
+      <property name="Manufacturer" value="Grepow (格瑞普)"/>
+      <property name="Footprint Status" value="BLOCKED"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="Right protected battery and independent charging"/>
+      <property name="Sheetfile" value="03-right-protected-battery-and-independent-charging-1.kicad_sch"/>
+      <sheetpath names="/Right protected battery and independent charging/" tstamps="/d39c7529-7c56-55db-8ce2-bf6fae1c6a2c/"/>
+      <tstamps>efa25535-891a-559f-9162-88f00e5c16b2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP3">
+      <value>TP_NTC_R | solder pad NTC</value>
+      <datasheet>https://www.grepow.com/shaped-battery/ultra-narrow-battery.html</datasheet>
+      <fields>
+        <field name="EVT1 Source Ref">TP_NTC_R</field>
+        <field name="BOM Line">BOM-44</field>
+        <field name="MPN">Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight)</field>
+        <field name="Manufacturer">Grepow (格瑞普)</field>
+        <field name="Footprint Status">BLOCKED</field>
+        <field name="Design Notes"/>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.grepow.com/shaped-battery/ultra-narrow-battery.html</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="TP3_TP_NTC_R" description="Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight)"/>
+      <property name="EVT1 Source Ref" value="TP_NTC_R"/>
+      <property name="BOM Line" value="BOM-44"/>
+      <property name="MPN" value="Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight)"/>
+      <property name="Manufacturer" value="Grepow (格瑞普)"/>
+      <property name="Footprint Status" value="BLOCKED"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="Right protected battery and independent charging"/>
+      <property name="Sheetfile" value="03-right-protected-battery-and-independent-charging-1.kicad_sch"/>
+      <sheetpath names="/Right protected battery and independent charging/" tstamps="/d39c7529-7c56-55db-8ce2-bf6fae1c6a2c/"/>
+      <tstamps>3fda267b-a387-5f5c-b504-5dfec0b617fb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U3">
+      <value>U3_R | BQ25170DSGR</value>
+      <footprint>Package_SON:Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm</footprint>
+      <datasheet>https://www.mouser.lt/datasheet/2/405/1/bq25170-2303674.pdf</datasheet>
+      <fields>
+        <field name="EVT1 Source Ref">U3_R</field>
+        <field name="BOM Line">BOM-37</field>
+        <field name="MPN">BQ25170DSGR</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="Footprint Status">PASS</field>
+        <field name="Design Notes">R_ISET_R 5.49k -&gt; 54.6 mA (KISET 300 AOhm, range 375R..30k) | open-drain, unused | R_VSET_R 27k 1% -&gt; 4.20 V (Table 7-1) | battery node</field>
+        <field name="Footprint">Package_SON:Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm</field>
+        <field name="Datasheet">https://www.mouser.lt/datasheet/2/405/1/bq25170-2303674.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="U3_U3_R" description="BQ25170DSGR"/>
+      <property name="EVT1 Source Ref" value="U3_R"/>
+      <property name="BOM Line" value="BOM-37"/>
+      <property name="MPN" value="BQ25170DSGR"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="Footprint Status" value="PASS"/>
+      <property name="Design Notes" value="R_ISET_R 5.49k -&gt; 54.6 mA (KISET 300 AOhm, range 375R..30k) | open-drain, unused | R_VSET_R 27k 1% -&gt; 4.20 V (Table 7-1) | battery node"/>
+      <property name="Sheetname" value="Right protected battery and independent charging"/>
+      <property name="Sheetfile" value="03-right-protected-battery-and-independent-charging-1.kicad_sch"/>
+      <sheetpath names="/Right protected battery and independent charging/" tstamps="/d39c7529-7c56-55db-8ce2-bf6fae1c6a2c/"/>
+      <tstamps>2623ee80-803a-58a9-9fbd-81a32e6627e4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="ANT2">
+      <value>ANT2_BLE | 2450AT18B100E</value>
+      <datasheet>URL_TBD (Johanson 2450AT18B100E; Rev C linked a blog post)</datasheet>
+      <fields>
+        <field name="EVT1 Source Ref">ANT2_BLE</field>
+        <field name="BOM Line">BOM-35</field>
+        <field name="MPN">2450AT18B100E</field>
+        <field name="Manufacturer">Johanson Technology</field>
+        <field name="Footprint Status">BLOCKED</field>
+        <field name="Design Notes"/>
+        <field name="Footprint"/>
+        <field name="Datasheet">URL_TBD (Johanson 2450AT18B100E; Rev C linked a blog post)</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="ANT2_ANT2_BLE" description="2450AT18B100E"/>
+      <property name="EVT1 Source Ref" value="ANT2_BLE"/>
+      <property name="BOM Line" value="BOM-35"/>
+      <property name="MPN" value="2450AT18B100E"/>
+      <property name="Manufacturer" value="Johanson Technology"/>
+      <property name="Footprint Status" value="BLOCKED"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="nRF5340, reference clock, RF and SWD"/>
+      <property name="Sheetfile" value="05-nrf5340-reference-clock-rf-and-swd-1.kicad_sch"/>
+      <sheetpath names="/nRF5340, reference clock, RF and SWD/" tstamps="/2175a78d-ce58-5a3e-8c49-9385ab1a2192/"/>
+      <tstamps>f17e9631-16aa-5ac9-8d35-a90d6a366ccf</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="FEED"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C7">
+      <value>NRF_C1 | 0.7 pF NP0 +/-0.05 pF</value>
+      <fields>
+        <field name="EVT1 Source Ref">NRF_C1</field>
+        <field name="BOM Line">BOM-56</field>
+        <field name="MPN">Nordic CMAA config3 reference passives; exact procurement MPNs pending</field>
+        <field name="Manufacturer">Murata / Yageo</field>
+        <field name="Footprint Status">BLOCKED</field>
+        <field name="Design Notes">Nordic CMAA reference config3; package per source BOM</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="C7_NRF_C1" description="Nordic CMAA config3 reference passives; exact procurement MPNs pending"/>
+      <property name="EVT1 Source Ref" value="NRF_C1"/>
+      <property name="BOM Line" value="BOM-56"/>
+      <property name="MPN" value="Nordic CMAA config3 reference passives; exact procurement MPNs pending"/>
+      <property name="Manufacturer" value="Murata / Yageo"/>
+      <property name="Footprint Status" value="BLOCKED"/>
+      <property name="Design Notes" value="Nordic CMAA reference config3; package per source BOM"/>
+      <property name="Sheetname" value="nRF5340, reference clock, RF and SWD"/>
+      <property name="Sheetfile" value="05-nrf5340-reference-clock-rf-and-swd-1.kicad_sch"/>
+      <sheetpath names="/nRF5340, reference clock, RF and SWD/" tstamps="/2175a78d-ce58-5a3e-8c49-9385ab1a2192/"/>
+      <tstamps>0cec265a-2739-555b-8aa0-0a8bbeb9404e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C8">
+      <value>NRF_C2 | 1.0 uF X7S +/-10%</value>
+      <fields>
+        <field name="EVT1 Source Ref">NRF_C2</field>
+        <field name="BOM Line">BOM-56</field>
+        <field name="MPN">Nordic CMAA config3 reference passives; exact procurement MPNs pending</field>
+        <field name="Manufacturer">Murata / Yageo</field>
+        <field name="Footprint Status">BLOCKED</field>
+        <field name="Design Notes">Nordic CMAA reference config3; package per source BOM</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="C8_NRF_C2" description="Nordic CMAA config3 reference passives; exact procurement MPNs pending"/>
+      <property name="EVT1 Source Ref" value="NRF_C2"/>
+      <property name="BOM Line" value="BOM-56"/>
+      <property name="MPN" value="Nordic CMAA config3 reference passives; exact procurement MPNs pending"/>
+      <property name="Manufacturer" value="Murata / Yageo"/>
+      <property name="Footprint Status" value="BLOCKED"/>
+      <property name="Design Notes" value="Nordic CMAA reference config3; package per source BOM"/>
+      <property name="Sheetname" value="nRF5340, reference clock, RF and SWD"/>
+      <property name="Sheetfile" value="05-nrf5340-reference-clock-rf-and-swd-1.kicad_sch"/>
+      <sheetpath names="/nRF5340, reference clock, RF and SWD/" tstamps="/2175a78d-ce58-5a3e-8c49-9385ab1a2192/"/>
+      <tstamps>725f5bcb-1783-53c8-8f80-731e8a1da1c7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C9">
+      <value>NRF_C3 | 1.0 uF X7S +/-10%</value>
+      <fields>
+        <field name="EVT1 Source Ref">NRF_C3</field>
+        <field name="BOM Line">BOM-56</field>
+        <field name="MPN">Nordic CMAA config3 reference passives; exact procurement MPNs pending</field>
+        <field name="Manufacturer">Murata / Yageo</field>
+        <field name="Footprint Status">BLOCKED</field>
+        <field name="Design Notes">Nordic CMAA reference config3; package per source BOM</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="C9_NRF_C3" description="Nordic CMAA config3 reference passives; exact procurement MPNs pending"/>
+      <property name="EVT1 Source Ref" value="NRF_C3"/>
+      <property name="BOM Line" value="BOM-56"/>
+      <property name="MPN" value="Nordic CMAA config3 reference passives; exact procurement MPNs pending"/>
+      <property name="Manufacturer" value="Murata / Yageo"/>
+      <property name="Footprint Status" value="BLOCKED"/>
+      <property name="Design Notes" value="Nordic CMAA reference config3; package per source BOM"/>
+      <property name="Sheetname" value="nRF5340, reference clock, RF and SWD"/>
+      <property name="Sheetfile" value="05-nrf5340-reference-clock-rf-and-swd-1.kicad_sch"/>
+      <sheetpath names="/nRF5340, reference clock, RF and SWD/" tstamps="/2175a78d-ce58-5a3e-8c49-9385ab1a2192/"/>
+      <tstamps>1bc077c4-0ea6-556f-90b6-4d63117efe34</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C10">
+      <value>NRF_C4 | 2.2 nF X7R +/-10%</value>
+      <fields>
+        <field name="EVT1 Source Ref">NRF_C4</field>
+        <field name="BOM Line">BOM-56</field>
+        <field name="MPN">Nordic CMAA config3 reference passives; exact procurement MPNs pending</field>
+        <field name="Manufacturer">Murata / Yageo</field>
+        <field name="Footprint Status">BLOCKED</field>
+        <field name="Design Notes">Nordic CMAA reference config3; package per source BOM</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="C10_NRF_C4" description="Nordic CMAA config3 reference passives; exact procurement MPNs pending"/>
+      <property name="EVT1 Source Ref" value="NRF_C4"/>
+      <property name="BOM Line" value="BOM-56"/>
+      <property name="MPN" value="Nordic CMAA config3 reference passives; exact procurement MPNs pending"/>
+      <property name="Manufacturer" value="Murata / Yageo"/>
+      <property name="Footprint Status" value="BLOCKED"/>
+      <property name="Design Notes" value="Nordic CMAA reference config3; package per source BOM"/>
+      <property name="Sheetname" value="nRF5340, reference clock, RF and SWD"/>
+      <property name="Sheetfile" value="05-nrf5340-reference-clock-rf-and-swd-1.kicad_sch"/>
+      <sheetpath names="/nRF5340, reference clock, RF and SWD/" tstamps="/2175a78d-ce58-5a3e-8c49-9385ab1a2192/"/>
+      <tstamps>d2f7897e-de72-5dc9-9763-a210e13da7fe</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C11">
+      <value>NRF_C5 | 1.0 uF X7S +/-10%</value>
+      <fields>
+        <field name="EVT1 Source Ref">NRF_C5</field>
+        <field name="BOM Line">BOM-56</field>
+        <field name="MPN">Nordic CMAA config3 reference passives; exact procurement MPNs pending</field>
+        <field name="Manufacturer">Murata / Yageo</field>
+        <field name="Footprint Status">BLOCKED</field>
+        <field name="Design Notes">Nordic CMAA reference config3; package per source BOM</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="C11_NRF_C5" description="Nordic CMAA config3 reference passives; exact procurement MPNs pending"/>
+      <property name="EVT1 Source Ref" value="NRF_C5"/>
+      <property name="BOM Line" value="BOM-56"/>
+      <property name="MPN" value="Nordic CMAA config3 reference passives; exact procurement MPNs pending"/>
+      <property name="Manufacturer" value="Murata / Yageo"/>
+      <property name="Footprint Status" value="BLOCKED"/>
+      <property name="Design Notes" value="Nordic CMAA reference config3; package per source BOM"/>
+      <property name="Sheetname" value="nRF5340, reference clock, RF and SWD"/>
+      <property name="Sheetfile" value="05-nrf5340-reference-clock-rf-and-swd-1.kicad_sch"/>
+      <sheetpath names="/nRF5340, reference clock, RF and SWD/" tstamps="/2175a78d-ce58-5a3e-8c49-9385ab1a2192/"/>
+      <tstamps>c05eed91-02f1-531d-bc76-7757116c5bd6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C12">
+      <value>NRF_C6 | 100 nF X7S +/-10%</value>
+      <fields>
+        <field name="EVT1 Source Ref">NRF_C6</field>
+        <field name="BOM Line">BOM-56</field>
+        <field name="MPN">Nordic CMAA config3 reference passives; exact procurement MPNs pending</field>
+        <field name="Manufacturer">Murata / Yageo</field>
+        <field name="Footprint Status">BLOCKED</field>
+        <field name="Design Notes">Nordic CMAA reference config3; package per source BOM</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="C12_NRF_C6" description="Nordic CMAA config3 reference passives; exact procurement MPNs pending"/>
+      <property name="EVT1 Source Ref" value="NRF_C6"/>
+      <property name="BOM Line" value="BOM-56"/>
+      <property name="MPN" value="Nordic CMAA config3 reference passives; exact procurement MPNs pending"/>
+      <property name="Manufacturer" value="Murata / Yageo"/>
+      <property name="Footprint Status" value="BLOCKED"/>
+      <property name="Design Notes" value="Nordic CMAA reference config3; package per source BOM"/>
+      <property name="Sheetname" value="nRF5340, reference clock, RF and SWD"/>
+      <property name="Sheetfile" value="05-nrf5340-reference-clock-rf-and-swd-1.kicad_sch"/>
+      <sheetpath names="/nRF5340, reference clock, RF and SWD/" tstamps="/2175a78d-ce58-5a3e-8c49-9385ab1a2192/"/>
+      <tstamps>cbdca598-e6ad-5cf3-ace4-9e8fb41d24f0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C13">
+      <value>NRF_C7 | 1.0 uF X7S +/-10%</value>
+      <fields>
+        <field name="EVT1 Source Ref">NRF_C7</field>
+        <field name="BOM Line">BOM-56</field>
+        <field name="MPN">Nordic CMAA config3 reference passives; exact procurement MPNs pending</field>
+        <field name="Manufacturer">Murata / Yageo</field>
+        <field name="Footprint Status">BLOCKED</field>
+        <field name="Design Notes">Nordic CMAA reference config3; package per source BOM</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="C13_NRF_C7" description="Nordic CMAA config3 reference passives; exact procurement MPNs pending"/>
+      <property name="EVT1 Source Ref" value="NRF_C7"/>
+      <property name="BOM Line" value="BOM-56"/>
+      <property name="MPN" value="Nordic CMAA config3 reference passives; exact procurement MPNs pending"/>
+      <property name="Manufacturer" value="Murata / Yageo"/>
+      <property name="Footprint Status" value="BLOCKED"/>
+      <property name="Design Notes" value="Nordic CMAA reference config3; package per source BOM"/>
+      <property name="Sheetname" value="nRF5340, reference clock, RF and SWD"/>
+      <property name="Sheetfile" value="05-nrf5340-reference-clock-rf-and-swd-1.kicad_sch"/>
+      <sheetpath names="/nRF5340, reference clock, RF and SWD/" tstamps="/2175a78d-ce58-5a3e-8c49-9385ab1a2192/"/>
+      <tstamps>7a68ad32-13c8-5236-9215-aa49d7bd05d3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C14">
+      <value>NRF_C8 | 100 nF X7S +/-10%</value>
+      <fields>
+        <field name="EVT1 Source Ref">NRF_C8</field>
+        <field name="BOM Line">BOM-56</field>
+        <field name="MPN">Nordic CMAA config3 reference passives; exact procurement MPNs pending</field>
+        <field name="Manufacturer">Murata / Yageo</field>
+        <field name="Footprint Status">BLOCKED</field>
+        <field name="Design Notes">Nordic CMAA reference config3; package per source BOM</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="C14_NRF_C8" description="Nordic CMAA config3 reference passives; exact procurement MPNs pending"/>
+      <property name="EVT1 Source Ref" value="NRF_C8"/>
+      <property name="BOM Line" value="BOM-56"/>
+      <property name="MPN" value="Nordic CMAA config3 reference passives; exact procurement MPNs pending"/>
+      <property name="Manufacturer" value="Murata / Yageo"/>
+      <property name="Footprint Status" value="BLOCKED"/>
+      <property name="Design Notes" value="Nordic CMAA reference config3; package per source BOM"/>
+      <property name="Sheetname" value="nRF5340, reference clock, RF and SWD"/>
+      <property name="Sheetfile" value="05-nrf5340-reference-clock-rf-and-swd-1.kicad_sch"/>
+      <sheetpath names="/nRF5340, reference clock, RF and SWD/" tstamps="/2175a78d-ce58-5a3e-8c49-9385ab1a2192/"/>
+      <tstamps>511acca5-6e4f-52ec-a152-aa33c708e46d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C15">
+      <value>NRF_C9 | 100 nF X7S +/-10%</value>
+      <fields>
+        <field name="EVT1 Source Ref">NRF_C9</field>
+        <field name="BOM Line">BOM-56</field>
+        <field name="MPN">Nordic CMAA config3 reference passives; exact procurement MPNs pending</field>
+        <field name="Manufacturer">Murata / Yageo</field>
+        <field name="Footprint Status">BLOCKED</field>
+        <field name="Design Notes">Nordic CMAA reference config3; package per source BOM</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="C15_NRF_C9" description="Nordic CMAA config3 reference passives; exact procurement MPNs pending"/>
+      <property name="EVT1 Source Ref" value="NRF_C9"/>
+      <property name="BOM Line" value="BOM-56"/>
+      <property name="MPN" value="Nordic CMAA config3 reference passives; exact procurement MPNs pending"/>
+      <property name="Manufacturer" value="Murata / Yageo"/>
+      <property name="Footprint Status" value="BLOCKED"/>
+      <property name="Design Notes" value="Nordic CMAA reference config3; package per source BOM"/>
+      <property name="Sheetname" value="nRF5340, reference clock, RF and SWD"/>
+      <property name="Sheetfile" value="05-nrf5340-reference-clock-rf-and-swd-1.kicad_sch"/>
+      <sheetpath names="/nRF5340, reference clock, RF and SWD/" tstamps="/2175a78d-ce58-5a3e-8c49-9385ab1a2192/"/>
+      <tstamps>0cf18c67-da9d-5eee-a663-7da80395e3cc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C16">
+      <value>NRF_C10 | 1.0 uF X7S +/-10%</value>
+      <fields>
+        <field name="EVT1 Source Ref">NRF_C10</field>
+        <field name="BOM Line">BOM-56</field>
+        <field name="MPN">Nordic CMAA config3 reference passives; exact procurement MPNs pending</field>
+        <field name="Manufacturer">Murata / Yageo</field>
+        <field name="Footprint Status">BLOCKED</field>
+        <field name="Design Notes">Nordic CMAA reference config3; package per source BOM</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="C16_NRF_C10" description="Nordic CMAA config3 reference passives; exact procurement MPNs pending"/>
+      <property name="EVT1 Source Ref" value="NRF_C10"/>
+      <property name="BOM Line" value="BOM-56"/>
+      <property name="MPN" value="Nordic CMAA config3 reference passives; exact procurement MPNs pending"/>
+      <property name="Manufacturer" value="Murata / Yageo"/>
+      <property name="Footprint Status" value="BLOCKED"/>
+      <property name="Design Notes" value="Nordic CMAA reference config3; package per source BOM"/>
+      <property name="Sheetname" value="nRF5340, reference clock, RF and SWD"/>
+      <property name="Sheetfile" value="05-nrf5340-reference-clock-rf-and-swd-1.kicad_sch"/>
+      <sheetpath names="/nRF5340, reference clock, RF and SWD/" tstamps="/2175a78d-ce58-5a3e-8c49-9385ab1a2192/"/>
+      <tstamps>17fb4efa-d78e-5315-9b42-02c2ee9f89f5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C17">
+      <value>NRF_C11 | 100 nF X7S +/-10%</value>
+      <fields>
+        <field name="EVT1 Source Ref">NRF_C11</field>
+        <field name="BOM Line">BOM-56</field>
+        <field name="MPN">Nordic CMAA config3 reference passives; exact procurement MPNs pending</field>
+        <field name="Manufacturer">Murata / Yageo</field>
+        <field name="Footprint Status">BLOCKED</field>
+        <field name="Design Notes">Nordic CMAA reference config3; package per source BOM</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="C17_NRF_C11" description="Nordic CMAA config3 reference passives; exact procurement MPNs pending"/>
+      <property name="EVT1 Source Ref" value="NRF_C11"/>
+      <property name="BOM Line" value="BOM-56"/>
+      <property name="MPN" value="Nordic CMAA config3 reference passives; exact procurement MPNs pending"/>
+      <property name="Manufacturer" value="Murata / Yageo"/>
+      <property name="Footprint Status" value="BLOCKED"/>
+      <property name="Design Notes" value="Nordic CMAA reference config3; package per source BOM"/>
+      <property name="Sheetname" value="nRF5340, reference clock, RF and SWD"/>
+      <property name="Sheetfile" value="05-nrf5340-reference-clock-rf-and-swd-1.kicad_sch"/>
+      <sheetpath names="/nRF5340, reference clock, RF and SWD/" tstamps="/2175a78d-ce58-5a3e-8c49-9385ab1a2192/"/>
+      <tstamps>bf32635d-05dd-5be3-8ce7-8bbcb8dbbecb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C18">
+      <value>NRF_C12 | 100 nF X7S +/-10%</value>
+      <fields>
+        <field name="EVT1 Source Ref">NRF_C12</field>
+        <field name="BOM Line">BOM-56</field>
+        <field name="MPN">Nordic CMAA config3 reference passives; exact procurement MPNs pending</field>
+        <field name="Manufacturer">Murata / Yageo</field>
+        <field name="Footprint Status">BLOCKED</field>
+        <field name="Design Notes">Nordic CMAA reference config3; package per source BOM</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="C18_NRF_C12" description="Nordic CMAA config3 reference passives; exact procurement MPNs pending"/>
+      <property name="EVT1 Source Ref" value="NRF_C12"/>
+      <property name="BOM Line" value="BOM-56"/>
+      <property name="MPN" value="Nordic CMAA config3 reference passives; exact procurement MPNs pending"/>
+      <property name="Manufacturer" value="Murata / Yageo"/>
+      <property name="Footprint Status" value="BLOCKED"/>
+      <property name="Design Notes" value="Nordic CMAA reference config3; package per source BOM"/>
+      <property name="Sheetname" value="nRF5340, reference clock, RF and SWD"/>
+      <property name="Sheetfile" value="05-nrf5340-reference-clock-rf-and-swd-1.kicad_sch"/>
+      <sheetpath names="/nRF5340, reference clock, RF and SWD/" tstamps="/2175a78d-ce58-5a3e-8c49-9385ab1a2192/"/>
+      <tstamps>1cdde233-0e5e-5bb6-aeda-6fe21812f560</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C19">
+      <value>NRF_C13 | 100 nF X7S +/-10%</value>
+      <fields>
+        <field name="EVT1 Source Ref">NRF_C13</field>
+        <field name="BOM Line">BOM-56</field>
+        <field name="MPN">Nordic CMAA config3 reference passives; exact procurement MPNs pending</field>
+        <field name="Manufacturer">Murata / Yageo</field>
+        <field name="Footprint Status">BLOCKED</field>
+        <field name="Design Notes">Nordic CMAA reference config3; package per source BOM</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="C19_NRF_C13" description="Nordic CMAA config3 reference passives; exact procurement MPNs pending"/>
+      <property name="EVT1 Source Ref" value="NRF_C13"/>
+      <property name="BOM Line" value="BOM-56"/>
+      <property name="MPN" value="Nordic CMAA config3 reference passives; exact procurement MPNs pending"/>
+      <property name="Manufacturer" value="Murata / Yageo"/>
+      <property name="Footprint Status" value="BLOCKED"/>
+      <property name="Design Notes" value="Nordic CMAA reference config3; package per source BOM"/>
+      <property name="Sheetname" value="nRF5340, reference clock, RF and SWD"/>
+      <property name="Sheetfile" value="05-nrf5340-reference-clock-rf-and-swd-1.kicad_sch"/>
+      <sheetpath names="/nRF5340, reference clock, RF and SWD/" tstamps="/2175a78d-ce58-5a3e-8c49-9385ab1a2192/"/>
+      <tstamps>5f889253-3b29-5e17-9e7c-79fbc7eafbb6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C20">
+      <value>NRF_C14 | 1.0 uF X7S +/-10%</value>
+      <fields>
+        <field name="EVT1 Source Ref">NRF_C14</field>
+        <field name="BOM Line">BOM-56</field>
+        <field name="MPN">Nordic CMAA config3 reference passives; exact procurement MPNs pending</field>
+        <field name="Manufacturer">Murata / Yageo</field>
+        <field name="Footprint Status">BLOCKED</field>
+        <field name="Design Notes">Nordic CMAA reference config3; package per source BOM</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="C20_NRF_C14" description="Nordic CMAA config3 reference passives; exact procurement MPNs pending"/>
+      <property name="EVT1 Source Ref" value="NRF_C14"/>
+      <property name="BOM Line" value="BOM-56"/>
+      <property name="MPN" value="Nordic CMAA config3 reference passives; exact procurement MPNs pending"/>
+      <property name="Manufacturer" value="Murata / Yageo"/>
+      <property name="Footprint Status" value="BLOCKED"/>
+      <property name="Design Notes" value="Nordic CMAA reference config3; package per source BOM"/>
+      <property name="Sheetname" value="nRF5340, reference clock, RF and SWD"/>
+      <property name="Sheetfile" value="05-nrf5340-reference-clock-rf-and-swd-1.kicad_sch"/>
+      <sheetpath names="/nRF5340, reference clock, RF and SWD/" tstamps="/2175a78d-ce58-5a3e-8c49-9385ab1a2192/"/>
+      <tstamps>a202f4a2-c943-54e5-87c6-a43029d34ea0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C21">
+      <value>NRF_CT19 | DNP antenna tuning shunt</value>
+      <fields>
+        <field name="EVT1 Source Ref">NRF_CT19</field>
+        <field name="BOM Line">BOM-56</field>
+        <field name="MPN">Nordic CMAA config3 reference passives; exact procurement MPNs pending</field>
+        <field name="Manufacturer">Murata / Yageo</field>
+        <field name="Footprint Status">BLOCKED</field>
+        <field name="Design Notes">Nordic C19 DNP; antenna qualification/VNA pending</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="C21_NRF_CT19" description="Nordic CMAA config3 reference passives; exact procurement MPNs pending"/>
+      <property name="EVT1 Source Ref" value="NRF_CT19"/>
+      <property name="BOM Line" value="BOM-56"/>
+      <property name="MPN" value="Nordic CMAA config3 reference passives; exact procurement MPNs pending"/>
+      <property name="Manufacturer" value="Murata / Yageo"/>
+      <property name="Footprint Status" value="BLOCKED"/>
+      <property name="Design Notes" value="Nordic C19 DNP; antenna qualification/VNA pending"/>
+      <property name="Sheetname" value="nRF5340, reference clock, RF and SWD"/>
+      <property name="Sheetfile" value="05-nrf5340-reference-clock-rf-and-swd-1.kicad_sch"/>
+      <property name="dnp"/>
+      <sheetpath names="/nRF5340, reference clock, RF and SWD/" tstamps="/2175a78d-ce58-5a3e-8c49-9385ab1a2192/"/>
+      <tstamps>e810dfcb-ba59-5ec2-af4e-71eaad19523e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L1">
+      <value>NRF_L1 | 2.2 nH +/-5%</value>
+      <footprint>Inductor_SMD:L_0201_0603Metric</footprint>
+      <fields>
+        <field name="EVT1 Source Ref">NRF_L1</field>
+        <field name="BOM Line">BOM-56</field>
+        <field name="MPN">Nordic CMAA config3 reference passives; exact procurement MPNs pending</field>
+        <field name="Manufacturer">Murata / Yageo</field>
+        <field name="Footprint Status">PASS</field>
+        <field name="Design Notes">L1/L2=0201; L3/L4=0603 per Nordic config3; procurement/derating open</field>
+        <field name="Footprint">Inductor_SMD:L_0201_0603Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="L1_NRF_L1" description="Nordic CMAA config3 reference passives; exact procurement MPNs pending"/>
+      <property name="EVT1 Source Ref" value="NRF_L1"/>
+      <property name="BOM Line" value="BOM-56"/>
+      <property name="MPN" value="Nordic CMAA config3 reference passives; exact procurement MPNs pending"/>
+      <property name="Manufacturer" value="Murata / Yageo"/>
+      <property name="Footprint Status" value="PASS"/>
+      <property name="Design Notes" value="L1/L2=0201; L3/L4=0603 per Nordic config3; procurement/derating open"/>
+      <property name="Sheetname" value="nRF5340, reference clock, RF and SWD"/>
+      <property name="Sheetfile" value="05-nrf5340-reference-clock-rf-and-swd-1.kicad_sch"/>
+      <sheetpath names="/nRF5340, reference clock, RF and SWD/" tstamps="/2175a78d-ce58-5a3e-8c49-9385ab1a2192/"/>
+      <tstamps>49f2cb54-8e83-5d39-99e7-5e7d16a94d69</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L2">
+      <value>NRF_L2 | 2.2 nH +/-5%</value>
+      <footprint>Inductor_SMD:L_0201_0603Metric</footprint>
+      <fields>
+        <field name="EVT1 Source Ref">NRF_L2</field>
+        <field name="BOM Line">BOM-56</field>
+        <field name="MPN">Nordic CMAA config3 reference passives; exact procurement MPNs pending</field>
+        <field name="Manufacturer">Murata / Yageo</field>
+        <field name="Footprint Status">PASS</field>
+        <field name="Design Notes">L1/L2=0201; L3/L4=0603 per Nordic config3; procurement/derating open</field>
+        <field name="Footprint">Inductor_SMD:L_0201_0603Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="L2_NRF_L2" description="Nordic CMAA config3 reference passives; exact procurement MPNs pending"/>
+      <property name="EVT1 Source Ref" value="NRF_L2"/>
+      <property name="BOM Line" value="BOM-56"/>
+      <property name="MPN" value="Nordic CMAA config3 reference passives; exact procurement MPNs pending"/>
+      <property name="Manufacturer" value="Murata / Yageo"/>
+      <property name="Footprint Status" value="PASS"/>
+      <property name="Design Notes" value="L1/L2=0201; L3/L4=0603 per Nordic config3; procurement/derating open"/>
+      <property name="Sheetname" value="nRF5340, reference clock, RF and SWD"/>
+      <property name="Sheetfile" value="05-nrf5340-reference-clock-rf-and-swd-1.kicad_sch"/>
+      <sheetpath names="/nRF5340, reference clock, RF and SWD/" tstamps="/2175a78d-ce58-5a3e-8c49-9385ab1a2192/"/>
+      <tstamps>5291ab4d-9f18-592c-9e85-370c0fbc626f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L3">
+      <value>NRF_L3 | 10 uH &gt;=50 mA +/-20%</value>
+      <footprint>Inductor_SMD:L_0603_1608Metric</footprint>
+      <fields>
+        <field name="EVT1 Source Ref">NRF_L3</field>
+        <field name="BOM Line">BOM-56</field>
+        <field name="MPN">Nordic CMAA config3 reference passives; exact procurement MPNs pending</field>
+        <field name="Manufacturer">Murata / Yageo</field>
+        <field name="Footprint Status">PASS</field>
+        <field name="Design Notes">L1/L2=0201; L3/L4=0603 per Nordic config3; procurement/derating open</field>
+        <field name="Footprint">Inductor_SMD:L_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="L3_NRF_L3" description="Nordic CMAA config3 reference passives; exact procurement MPNs pending"/>
+      <property name="EVT1 Source Ref" value="NRF_L3"/>
+      <property name="BOM Line" value="BOM-56"/>
+      <property name="MPN" value="Nordic CMAA config3 reference passives; exact procurement MPNs pending"/>
+      <property name="Manufacturer" value="Murata / Yageo"/>
+      <property name="Footprint Status" value="PASS"/>
+      <property name="Design Notes" value="L1/L2=0201; L3/L4=0603 per Nordic config3; procurement/derating open"/>
+      <property name="Sheetname" value="nRF5340, reference clock, RF and SWD"/>
+      <property name="Sheetfile" value="05-nrf5340-reference-clock-rf-and-swd-1.kicad_sch"/>
+      <sheetpath names="/nRF5340, reference clock, RF and SWD/" tstamps="/2175a78d-ce58-5a3e-8c49-9385ab1a2192/"/>
+      <tstamps>70b3c525-be26-5b69-93d5-385cc9d90be1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L4">
+      <value>NRF_L4 | 10 uH &gt;=50 mA +/-20%</value>
+      <footprint>Inductor_SMD:L_0603_1608Metric</footprint>
+      <fields>
+        <field name="EVT1 Source Ref">NRF_L4</field>
+        <field name="BOM Line">BOM-56</field>
+        <field name="MPN">Nordic CMAA config3 reference passives; exact procurement MPNs pending</field>
+        <field name="Manufacturer">Murata / Yageo</field>
+        <field name="Footprint Status">PASS</field>
+        <field name="Design Notes">L1/L2=0201; L3/L4=0603 per Nordic config3; procurement/derating open</field>
+        <field name="Footprint">Inductor_SMD:L_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="L4_NRF_L4" description="Nordic CMAA config3 reference passives; exact procurement MPNs pending"/>
+      <property name="EVT1 Source Ref" value="NRF_L4"/>
+      <property name="BOM Line" value="BOM-56"/>
+      <property name="MPN" value="Nordic CMAA config3 reference passives; exact procurement MPNs pending"/>
+      <property name="Manufacturer" value="Murata / Yageo"/>
+      <property name="Footprint Status" value="PASS"/>
+      <property name="Design Notes" value="L1/L2=0201; L3/L4=0603 per Nordic config3; procurement/derating open"/>
+      <property name="Sheetname" value="nRF5340, reference clock, RF and SWD"/>
+      <property name="Sheetfile" value="05-nrf5340-reference-clock-rf-and-swd-1.kicad_sch"/>
+      <sheetpath names="/nRF5340, reference clock, RF and SWD/" tstamps="/2175a78d-ce58-5a3e-8c49-9385ab1a2192/"/>
+      <tstamps>2f983e28-87a4-5332-ba7f-439e752eac42</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP6">
+      <value>TP_SWD_R | 5x 0.6 mm pads (SWDIO, SWDCLK, nRESET, VTREF, GND) fo...</value>
+      <fields>
+        <field name="EVT1 Source Ref">TP_SWD_R</field>
+        <field name="BOM Line">BOM-57</field>
+        <field name="MPN">5x 0.6 mm pads (SWDIO, SWDCLK, nRESET, VTREF, GND) for pogo fixture</field>
+        <field name="Manufacturer">PCB</field>
+        <field name="Footprint Status">BLOCKED</field>
+        <field name="Design Notes"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="TP6_TP_SWD_R" description="5x 0.6 mm pads (SWDIO, SWDCLK, nRESET, VTREF, GND) for pogo fixture"/>
+      <property name="EVT1 Source Ref" value="TP_SWD_R"/>
+      <property name="BOM Line" value="BOM-57"/>
+      <property name="MPN" value="5x 0.6 mm pads (SWDIO, SWDCLK, nRESET, VTREF, GND) for pogo fixture"/>
+      <property name="Manufacturer" value="PCB"/>
+      <property name="Footprint Status" value="BLOCKED"/>
+      <property name="Design Notes" value=""/>
+      <property name="Sheetname" value="nRF5340, reference clock, RF and SWD"/>
+      <property name="Sheetfile" value="05-nrf5340-reference-clock-rf-and-swd-1.kicad_sch"/>
+      <sheetpath names="/nRF5340, reference clock, RF and SWD/" tstamps="/2175a78d-ce58-5a3e-8c49-9385ab1a2192/"/>
+      <tstamps>4a29c2d9-83c2-54ff-bda9-b315969d8ba1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U11">
+      <value>U11_BLE | nRF5340-CMAA-R7</value>
+      <datasheet>https://docs.nordicsemi.com/bundle/ps_nrf5340/page/chapters/pin.html</datasheet>
+      <fields>
+        <field name="EVT1 Source Ref">U11_BLE</field>
+        <field name="BOM Line">BOM-36</field>
+        <field name="MPN">nRF5340-CMAA-R7</field>
+        <field name="Manufacturer">Nordic Semiconductor</field>
+        <field name="Footprint Status">BLOCKED</field>
+        <field name="Design Notes">normal-voltage supply; local decoupling per Nordic config3 | USB/VREGH unused; Nordic CMAA config3 | Nordic CMAA config3; DECR and DECRF intentionally share a decoupling node | USB unused: grounded as Nordic CMAA config3 | Tied VDD in normal-voltage mode; VREGH disabled automatically | Unused GPIO; disable input and pulls; LFRC calibrated; NFC disabled for G11/H12 | nRESET has internal pull-up | I2S SDOUT; PSEL assignment; GPIO input disconnected when unused | I2S SDIN; PSEL assignment; GPIO input disconnected when unused | amplifier enable/select control; PSEL assignment; GPIO input disconnected when unused; local U10_SD_BUF SPDT selects GND or 1V8_SYS | UARTE TXD; PSEL assignment; GPIO input disconnected when unused | I2S LRCK; PSEL assignment; GPIO input disconnected when unused | I2S SCK; PSEL assignment; GPIO input disconnected when unused | UARTE RXD; enable pull-up; PSEL assignment; GPIO input disconnected when unused</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://docs.nordicsemi.com/bundle/ps_nrf5340/page/chapters/pin.html</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="U11_U11_BLE" description="nRF5340-CMAA-R7"/>
+      <property name="EVT1 Source Ref" value="U11_BLE"/>
+      <property name="BOM Line" value="BOM-36"/>
+      <property name="MPN" value="nRF5340-CMAA-R7"/>
+      <property name="Manufacturer" value="Nordic Semiconductor"/>
+      <property name="Footprint Status" value="BLOCKED"/>
+      <property name="Design Notes" value="normal-voltage supply; local decoupling per Nordic config3 | USB/VREGH unused; Nordic CMAA config3 | Nordic CMAA config3; DECR and DECRF intentionally share a decoupling node | USB unused: grounded as Nordic CMAA config3 | Tied VDD in normal-voltage mode; VREGH disabled automatically | Unused GPIO; disable input and pulls; LFRC calibrated; NFC disabled for G11/H12 | nRESET has internal pull-up | I2S SDOUT; PSEL assignment; GPIO input disconnected when unused | I2S SDIN; PSEL assignment; GPIO input disconnected when unused | amplifier enable/select control; PSEL assignment; GPIO input disconnected when unused; local U10_SD_BUF SPDT selects GND or 1V8_SYS | UARTE TXD; PSEL assignment; GPIO input disconnected when unused | I2S LRCK; PSEL assignment; GPIO input disconnected when unused | I2S SCK; PSEL assignment; GPIO input disconnected when unused | UARTE RXD; enable pull-up; PSEL assignment; GPIO input disconnected when unused"/>
+      <property name="Sheetname" value="nRF5340, reference clock, RF and SWD"/>
+      <property name="Sheetfile" value="05-nrf5340-reference-clock-rf-and-swd-1.kicad_sch"/>
+      <sheetpath names="/nRF5340, reference clock, RF and SWD/" tstamps="/2175a78d-ce58-5a3e-8c49-9385ab1a2192/"/>
+      <tstamps>5416fa02-7d2e-539a-9d91-5b7635136720</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="A1"/>
+            <pin num="A2"/>
+            <pin num="A3"/>
+            <pin num="A5"/>
+            <pin num="A7"/>
+            <pin num="A9"/>
+            <pin num="A11"/>
+            <pin num="A12"/>
+            <pin num="B1"/>
+            <pin num="B2"/>
+            <pin num="B4"/>
+            <pin num="B5"/>
+            <pin num="B6"/>
+            <pin num="B7"/>
+            <pin num="B8"/>
+            <pin num="B9"/>
+            <pin num="B10"/>
+            <pin num="B11"/>
+            <pin num="B12"/>
+            <pin num="C2"/>
+            <pin num="C4"/>
+            <pin num="C5"/>
+            <pin num="C6"/>
+            <pin num="C7"/>
+            <pin num="C8"/>
+            <pin num="C9"/>
+            <pin num="C10"/>
+            <pin num="C11"/>
+            <pin num="D1"/>
+            <pin num="D2"/>
+            <pin num="D10"/>
+            <pin num="D11"/>
+            <pin num="D12"/>
+            <pin num="E2"/>
+            <pin num="E3"/>
+            <pin num="E4"/>
+            <pin num="E5"/>
+            <pin num="E6"/>
+            <pin num="E7"/>
+            <pin num="E8"/>
+            <pin num="E10"/>
+            <pin num="E11"/>
+            <pin num="F1"/>
+            <pin num="F2"/>
+            <pin num="F3"/>
+            <pin num="F5"/>
+            <pin num="F6"/>
+            <pin num="F7"/>
+            <pin num="F8"/>
+            <pin num="F10"/>
+            <pin num="F11"/>
+            <pin num="F12"/>
+            <pin num="G2"/>
+            <pin num="G3"/>
+            <pin num="G5"/>
+            <pin num="G6"/>
+            <pin num="G7"/>
+            <pin num="G8"/>
+            <pin num="G10"/>
+            <pin num="G11"/>
+            <pin num="H1"/>
+            <pin num="H2"/>
+            <pin num="H3"/>
+            <pin num="H10"/>
+            <pin num="H11"/>
+            <pin num="H12"/>
+            <pin num="J2"/>
+            <pin num="J3"/>
+            <pin num="J4"/>
+            <pin num="J5"/>
+            <pin num="J6"/>
+            <pin num="J7"/>
+            <pin num="J8"/>
+            <pin num="J9"/>
+            <pin num="J10"/>
+            <pin num="J11"/>
+            <pin num="K1"/>
+            <pin num="K2"/>
+            <pin num="K3"/>
+            <pin num="K4"/>
+            <pin num="K5"/>
+            <pin num="K6"/>
+            <pin num="K7"/>
+            <pin num="K8"/>
+            <pin num="K9"/>
+            <pin num="K10"/>
+            <pin num="K11"/>
+            <pin num="K12"/>
+            <pin num="L1"/>
+            <pin num="L3"/>
+            <pin num="L5"/>
+            <pin num="L7"/>
+            <pin num="L9"/>
+            <pin num="L11"/>
+            <pin num="L12"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Y2">
+      <value>Y2_BLE | FA-128 32 MHz 8 pF +/-10 ppm initial +/-10 ppm temper...</value>
+      <fields>
+        <field name="EVT1 Source Ref">Y2_BLE</field>
+        <field name="BOM Line">BOM-55</field>
+        <field name="MPN">FA-128 32 MHz 8 pF +/-10 ppm initial +/-10 ppm temperature; candidate Q22FA12800025 (ordering suffix/vendor controlled spec pending)</field>
+        <field name="Manufacturer">Epson</field>
+        <field name="Footprint Status">BLOCKED</field>
+        <field name="Design Notes">Epson FA-128 pinout; internal nRF HFXO caps selected in firmware before HFXO start</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="EVT1" part="Y2_Y2_BLE" description="FA-128 32 MHz 8 pF +/-10 ppm initial +/-10 ppm temperature; candidate Q22FA12800025 (ordering suffix/vendor controlled spec pending)"/>
+      <property name="EVT1 Source Ref" value="Y2_BLE"/>
+      <property name="BOM Line" value="BOM-55"/>
+      <property name="MPN" value="FA-128 32 MHz 8 pF +/-10 ppm initial +/-10 ppm temperature; candidate Q22FA12800025 (ordering suffix/vendor controlled spec pending)"/>
+      <property name="Manufacturer" value="Epson"/>
+      <property name="Footprint Status" value="BLOCKED"/>
+      <property name="Design Notes" value="Epson FA-128 pinout; internal nRF HFXO caps selected in firmware before HFXO start"/>
+      <property name="Sheetname" value="nRF5340, reference clock, RF and SWD"/>
+      <property name="Sheetfile" value="05-nrf5340-reference-clock-rf-and-swd-1.kicad_sch"/>
+      <sheetpath names="/nRF5340, reference clock, RF and SWD/" tstamps="/2175a78d-ce58-5a3e-8c49-9385ab1a2192/"/>
+      <tstamps>8bb5c983-44e9-59e3-85f3-983059d3cea2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="EVT1" part="ANT2_ANT2_BLE">
+      <description>2450AT18B100E</description>
+      <docs>URL_TBD (Johanson 2450AT18B100E; Rev C linked a blog post)</docs>
+      <fields>
+        <field name="Reference">ANT</field>
+        <field name="Value">ANT2_ANT2_BLE</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">URL_TBD (Johanson 2450AT18B100E; Rev C linked a blog post)</field>
+        <field name="Description">2450AT18B100E</field>
+      </fields>
+      <pins>
+        <pin num="FEED" name="feed_terminal" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="BAT1_BAT_R">
+      <description>Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight)</description>
+      <docs>https://www.grepow.com/shaped-battery/ultra-narrow-battery.html</docs>
+      <fields>
+        <field name="Reference">BAT</field>
+        <field name="Value">BAT1_BAT_R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.grepow.com/shaped-battery/ultra-narrow-battery.html</field>
+        <field name="Description">Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight)</field>
+      </fields>
+      <pins>
+        <pin num="NTC" name="10k_NTC_at_cell" type="passive"/>
+        <pin num="NTC_RETURN" name="NTC_return" type="passive"/>
+        <pin num="P+" name="protected_pack_positive" type="passive"/>
+        <pin num="P-" name="protected_pack_negative" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="C10_NRF_C4">
+      <description>Nordic CMAA config3 reference passives; exact procurement MPNs pending</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C10_NRF_C4</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Nordic CMAA config3 reference passives; exact procurement MPNs pending</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="C11_NRF_C5">
+      <description>Nordic CMAA config3 reference passives; exact procurement MPNs pending</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C11_NRF_C5</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Nordic CMAA config3 reference passives; exact procurement MPNs pending</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="C12_NRF_C6">
+      <description>Nordic CMAA config3 reference passives; exact procurement MPNs pending</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C12_NRF_C6</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Nordic CMAA config3 reference passives; exact procurement MPNs pending</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="C13_NRF_C7">
+      <description>Nordic CMAA config3 reference passives; exact procurement MPNs pending</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C13_NRF_C7</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Nordic CMAA config3 reference passives; exact procurement MPNs pending</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="C14_NRF_C8">
+      <description>Nordic CMAA config3 reference passives; exact procurement MPNs pending</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C14_NRF_C8</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Nordic CMAA config3 reference passives; exact procurement MPNs pending</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="C15_NRF_C9">
+      <description>Nordic CMAA config3 reference passives; exact procurement MPNs pending</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C15_NRF_C9</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Nordic CMAA config3 reference passives; exact procurement MPNs pending</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="C16_NRF_C10">
+      <description>Nordic CMAA config3 reference passives; exact procurement MPNs pending</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C16_NRF_C10</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Nordic CMAA config3 reference passives; exact procurement MPNs pending</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="C17_NRF_C11">
+      <description>Nordic CMAA config3 reference passives; exact procurement MPNs pending</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C17_NRF_C11</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Nordic CMAA config3 reference passives; exact procurement MPNs pending</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="C18_NRF_C12">
+      <description>Nordic CMAA config3 reference passives; exact procurement MPNs pending</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C18_NRF_C12</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Nordic CMAA config3 reference passives; exact procurement MPNs pending</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="C19_NRF_C13">
+      <description>Nordic CMAA config3 reference passives; exact procurement MPNs pending</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C19_NRF_C13</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Nordic CMAA config3 reference passives; exact procurement MPNs pending</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="C1_C_AMP_SD_BUF">
+      <description>0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C1_C_AMP_SD_BUF</field>
+        <field name="Footprint">Capacitor_SMD:C_0201_0603Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="C20_NRF_C14">
+      <description>Nordic CMAA config3 reference passives; exact procurement MPNs pending</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C20_NRF_C14</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Nordic CMAA config3 reference passives; exact procurement MPNs pending</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="C21_NRF_CT19">
+      <description>Nordic CMAA config3 reference passives; exact procurement MPNs pending</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C21_NRF_CT19</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Nordic CMAA config3 reference passives; exact procurement MPNs pending</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="C2_C_CHG_R_IN">
+      <description>1uF 25V X7R; effective &gt;=1uF</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C2_C_CHG_R_IN</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">1uF 25V X7R; effective &gt;=1uF</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="C3_C_CHG_R_OUT">
+      <description>1uF 10V X7R; effective &gt;=1uF</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C3_C_CHG_R_OUT</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">1uF 10V X7R; effective &gt;=1uF</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="C4_C_MK3_R">
+      <description>0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C4_C_MK3_R</field>
+        <field name="Footprint">Capacitor_SMD:C_0201_0603Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="C5_C_U10_AMP_R_BULK">
+      <description>0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C5_C_U10_AMP_R_BULK</field>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="C6_C_U10_AMP_R_HF">
+      <description>0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C6_C_U10_AMP_R_HF</field>
+        <field name="Footprint">Capacitor_SMD:C_0201_0603Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="C7_NRF_C1">
+      <description>Nordic CMAA config3 reference passives; exact procurement MPNs pending</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C7_NRF_C1</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Nordic CMAA config3 reference passives; exact procurement MPNs pending</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="C8_NRF_C2">
+      <description>Nordic CMAA config3 reference passives; exact procurement MPNs pending</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C8_NRF_C2</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Nordic CMAA config3 reference passives; exact procurement MPNs pending</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="C9_NRF_C3">
+      <description>Nordic CMAA config3 reference passives; exact procurement MPNs pending</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C9_NRF_C3</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Nordic CMAA config3 reference passives; exact procurement MPNs pending</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="J1_J_BTB_R">
+      <description>BM28B0.6-16DS/2-0.35V(53)</description>
+      <docs>https://www.hirose.com/en/product/document?clcode=CL0673-5043-0-51&amp;productname=BM28B0.6-16DS/2-0.35V(51)&amp;series=BM28&amp;documenttype=Catalog&amp;lang=en&amp;documentid=D49354_en</docs>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">J1_J_BTB_R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.hirose.com/en/product/document?clcode=CL0673-5043-0-51&amp;productname=BM28B0.6-16DS/2-0.35V(51)&amp;series=BM28&amp;documenttype=Catalog&amp;lang=en&amp;documentid=D49354_en</field>
+        <field name="Description">BM28B0.6-16DS/2-0.35V(53)</field>
+      </fields>
+      <pins>
+        <pin num="P1" name="SIGNAL_0.3A" type="passive"/>
+        <pin num="P2" name="SIGNAL_0.3A" type="passive"/>
+        <pin num="P3" name="SIGNAL_0.3A" type="passive"/>
+        <pin num="P4" name="SIGNAL_0.3A" type="passive"/>
+        <pin num="P5" name="SIGNAL_0.3A" type="passive"/>
+        <pin num="P6" name="SIGNAL_0.3A" type="passive"/>
+        <pin num="P7" name="SIGNAL_0.3A" type="passive"/>
+        <pin num="P8" name="SIGNAL_0.3A" type="passive"/>
+        <pin num="P9" name="SIGNAL_0.3A" type="passive"/>
+        <pin num="P10" name="SIGNAL_0.3A" type="passive"/>
+        <pin num="P11" name="SIGNAL_0.3A" type="passive"/>
+        <pin num="P12" name="SIGNAL_0.3A" type="passive"/>
+        <pin num="P13" name="SIGNAL_0.3A" type="passive"/>
+        <pin num="P14" name="SIGNAL_0.3A" type="passive"/>
+        <pin num="P15" name="SIGNAL_0.3A" type="passive"/>
+        <pin num="P16" name="SIGNAL_0.3A" type="passive"/>
+        <pin num="PWR1" name="POWER_5A" type="passive"/>
+        <pin num="PWR2" name="POWER_5A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="L1_NRF_L1">
+      <description>Nordic CMAA config3 reference passives; exact procurement MPNs pending</description>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L1_NRF_L1</field>
+        <field name="Footprint">Inductor_SMD:L_0201_0603Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Nordic CMAA config3 reference passives; exact procurement MPNs pending</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="L2_NRF_L2">
+      <description>Nordic CMAA config3 reference passives; exact procurement MPNs pending</description>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L2_NRF_L2</field>
+        <field name="Footprint">Inductor_SMD:L_0201_0603Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Nordic CMAA config3 reference passives; exact procurement MPNs pending</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="L3_NRF_L3">
+      <description>Nordic CMAA config3 reference passives; exact procurement MPNs pending</description>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L3_NRF_L3</field>
+        <field name="Footprint">Inductor_SMD:L_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Nordic CMAA config3 reference passives; exact procurement MPNs pending</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="L4_NRF_L4">
+      <description>Nordic CMAA config3 reference passives; exact procurement MPNs pending</description>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L4_NRF_L4</field>
+        <field name="Footprint">Inductor_SMD:L_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Nordic CMAA config3 reference passives; exact procurement MPNs pending</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="MK3_MK3_R">
+      <description>IM69D130V01XTSA1</description>
+      <docs>https://www.infineon.com/assets/row/public/documents/30/49/infineon-im69d130-datasheet-en.pdf</docs>
+      <fields>
+        <field name="Reference">MK</field>
+        <field name="Value">MK3_MK3_R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.infineon.com/assets/row/public/documents/30/49/infineon-im69d130-datasheet-en.pdf</field>
+        <field name="Description">IM69D130V01XTSA1</field>
+      </fields>
+      <pins>
+        <pin num="1" name="DATA" type="output"/>
+        <pin num="2" name="VDD" type="power_in"/>
+        <pin num="3" name="CLOCK" type="input"/>
+        <pin num="4" name="SELECT" type="passive"/>
+        <pin num="5" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="Q1_Q_CHG_MUTE_R">
+      <description>2N7002</description>
+      <docs>https://assets.nexperia.com/documents/data-sheet/2N7002.pdf</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q1_Q_CHG_MUTE_R</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/2N7002.pdf</field>
+        <field name="Description">2N7002</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="passive"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="R10_R_VSET_R">
+      <description>R_SDR 69.8k 1% + R_IPC_PU 100k + R_ISET_R 5.49k 1% + R_VSET_R 27k 1%</description>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R10_R_VSET_R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">R_SDR 69.8k 1% + R_IPC_PU 100k + R_ISET_R 5.49k 1% + R_VSET_R 27k 1%</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="R1_R_AMP_REQ_PD">
+      <description>0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification</description>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R1_R_AMP_REQ_PD</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="R2_R_IDLE_I2S_AMP_DIN_1V8">
+      <description>0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification</description>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R2_R_IDLE_I2S_AMP_DIN_1V8</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="R3_R_IDLE_I2S_BCLK_1V8">
+      <description>0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification</description>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R3_R_IDLE_I2S_BCLK_1V8</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="R4_R_IDLE_I2S_LRCLK_1V8">
+      <description>0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification</description>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R4_R_IDLE_I2S_LRCLK_1V8</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="R5_R_IPC_PU">
+      <description>R_SDR 69.8k 1% + R_IPC_PU 100k + R_ISET_R 5.49k 1% + R_VSET_R 27k 1%</description>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R5_R_IPC_PU</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">R_SDR 69.8k 1% + R_IPC_PU 100k + R_ISET_R 5.49k 1% + R_VSET_R 27k 1%</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="R6_R_ISET_R">
+      <description>R_SDR 69.8k 1% + R_IPC_PU 100k + R_ISET_R 5.49k 1% + R_VSET_R 27k 1%</description>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R6_R_ISET_R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">R_SDR 69.8k 1% + R_IPC_PU 100k + R_ISET_R 5.49k 1% + R_VSET_R 27k 1%</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="R7_R_MUTE_GATE">
+      <description>100 ohm 1%</description>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R7_R_MUTE_GATE</field>
+        <field name="Footprint">Resistor_SMD:R_0201_0603Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">100 ohm 1%</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="R8_R_MUTE_PD">
+      <description>100k 1%</description>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R8_R_MUTE_PD</field>
+        <field name="Footprint">Resistor_SMD:R_0201_0603Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">100k 1%</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="R9_R_SDR">
+      <description>R_SDR 69.8k 1% + R_IPC_PU 100k + R_ISET_R 5.49k 1% + R_VSET_R 27k 1%</description>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R9_R_SDR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">R_SDR 69.8k 1% + R_IPC_PU 100k + R_ISET_R 5.49k 1% + R_VSET_R 27k 1%</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="SPK1_SPK_R">
+      <description>MPN_TBD (8 ohm micro-speaker)</description>
+      <fields>
+        <field name="Reference">SPK</field>
+        <field name="Value">SPK1_SPK_R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">MPN_TBD (8 ohm micro-speaker)</field>
+      </fields>
+      <pins>
+        <pin num="+" name="speaker_+_(solder_pad)" type="passive"/>
+        <pin num="-" name="speaker_-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="TP1_TP_BAT_R_N">
+      <description>Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight)</description>
+      <docs>https://www.grepow.com/shaped-battery/ultra-narrow-battery.html</docs>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TP1_TP_BAT_R_N</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.grepow.com/shaped-battery/ultra-narrow-battery.html</field>
+        <field name="Description">Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="TP2_TP_BAT_R_P">
+      <description>Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight)</description>
+      <docs>https://www.grepow.com/shaped-battery/ultra-narrow-battery.html</docs>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TP2_TP_BAT_R_P</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.grepow.com/shaped-battery/ultra-narrow-battery.html</field>
+        <field name="Description">Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="TP3_TP_NTC_R">
+      <description>Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight)</description>
+      <docs>https://www.grepow.com/shaped-battery/ultra-narrow-battery.html</docs>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TP3_TP_NTC_R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.grepow.com/shaped-battery/ultra-narrow-battery.html</field>
+        <field name="Description">Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="TP4_TP_SPK_R_N">
+      <description>PCB copper pad</description>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TP4_TP_SPK_R_N</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">PCB copper pad</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="TP5_TP_SPK_R_P">
+      <description>PCB copper pad</description>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TP5_TP_SPK_R_P</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">PCB copper pad</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="TP6_TP_SWD_R">
+      <description>5x 0.6 mm pads (SWDIO, SWDCLK, nRESET, VTREF, GND) for pogo fixture</description>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TP6_TP_SWD_R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">5x 0.6 mm pads (SWDIO, SWDCLK, nRESET, VTREF, GND) for pogo fixture</field>
+      </fields>
+      <pins>
+        <pin num="1" name="SWDIO" type="passive"/>
+        <pin num="2" name="SWDCLK" type="passive"/>
+        <pin num="3" name="nRESET" type="passive"/>
+        <pin num="4" name="VTREF" type="passive"/>
+        <pin num="5" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="U10_U10_AMP_R">
+      <description>MAX98357AEWL+T</description>
+      <docs>https://www.analog.com/media/en/technical-documentation/data-sheets/max98357a-max98357b.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">U10_U10_AMP_R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.analog.com/media/en/technical-documentation/data-sheets/max98357a-max98357b.pdf</field>
+        <field name="Description">MAX98357AEWL+T</field>
+      </fields>
+      <pins>
+        <pin num="A1" name="SD_MODE" type="input"/>
+        <pin num="A2" name="VDD" type="power_in"/>
+        <pin num="A3" name="OUTP" type="output"/>
+        <pin num="B1" name="DIN" type="input"/>
+        <pin num="B2" name="GAIN_SLOT" type="passive"/>
+        <pin num="B3" name="OUTN" type="output"/>
+        <pin num="C1" name="BCLK" type="input"/>
+        <pin num="C2" name="GND" type="power_in"/>
+        <pin num="C3" name="LRCLK" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="U11_U11_BLE">
+      <description>nRF5340-CMAA-R7</description>
+      <docs>https://docs.nordicsemi.com/bundle/ps_nrf5340/page/chapters/pin.html</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">U11_U11_BLE</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://docs.nordicsemi.com/bundle/ps_nrf5340/page/chapters/pin.html</field>
+        <field name="Description">nRF5340-CMAA-R7</field>
+      </fields>
+      <pins>
+        <pin num="A1" name="XC1" type="passive"/>
+        <pin num="A2" name="XC2" type="passive"/>
+        <pin num="A3" name="VDD" type="power_in"/>
+        <pin num="A5" name="VSS" type="power_in"/>
+        <pin num="A7" name="DECD" type="passive"/>
+        <pin num="A9" name="DCCD" type="passive"/>
+        <pin num="A11" name="D-" type="no_connect"/>
+        <pin num="A12" name="D+" type="no_connect"/>
+        <pin num="B1" name="DECRF" type="passive"/>
+        <pin num="B2" name="VSS" type="power_in"/>
+        <pin num="B4" name="DECR" type="passive"/>
+        <pin num="B5" name="DECN" type="passive"/>
+        <pin num="B6" name="DCC" type="passive"/>
+        <pin num="B7" name="VDD" type="power_in"/>
+        <pin num="B8" name="DECA" type="passive"/>
+        <pin num="B9" name="VSS" type="power_in"/>
+        <pin num="B10" name="VDD" type="power_in"/>
+        <pin num="B11" name="VBUS" type="passive"/>
+        <pin num="B12" name="VDDH" type="power_in"/>
+        <pin num="C2" name="VSS" type="power_in"/>
+        <pin num="C4" name="P0.30" type="no_connect"/>
+        <pin num="C5" name="P0.31" type="no_connect"/>
+        <pin num="C6" name="P1.11" type="no_connect"/>
+        <pin num="C7" name="P1.12" type="no_connect"/>
+        <pin num="C8" name="P1.13" type="no_connect"/>
+        <pin num="C9" name="P1.14" type="no_connect"/>
+        <pin num="C10" name="P1.15" type="no_connect"/>
+        <pin num="C11" name="DECUSB" type="no_connect"/>
+        <pin num="D1" name="ANT" type="passive"/>
+        <pin num="D2" name="VDD" type="power_in"/>
+        <pin num="D10" name="P1.00" type="no_connect"/>
+        <pin num="D11" name="DCCH" type="no_connect"/>
+        <pin num="D12" name="VSS" type="power_in"/>
+        <pin num="E2" name="P0.29" type="no_connect"/>
+        <pin num="E3" name="P0.28" type="no_connect"/>
+        <pin num="E4" name="P1.10" type="no_connect"/>
+        <pin num="E5" name="VSS" type="power_in"/>
+        <pin num="E6" name="VSS" type="power_in"/>
+        <pin num="E7" name="VSS" type="power_in"/>
+        <pin num="E8" name="VSS" type="power_in"/>
+        <pin num="E10" name="P1.01" type="no_connect"/>
+        <pin num="E11" name="VDD" type="power_in"/>
+        <pin num="F1" name="SWDIO" type="bidirectional"/>
+        <pin num="F2" name="SWDCLK" type="input"/>
+        <pin num="F3" name="P1.08" type="no_connect"/>
+        <pin num="F5" name="VSS" type="power_in"/>
+        <pin num="F6" name="VSS" type="power_in"/>
+        <pin num="F7" name="VSS" type="power_in"/>
+        <pin num="F8" name="VSS" type="power_in"/>
+        <pin num="F10" name="P0.05" type="no_connect"/>
+        <pin num="F11" name="P0.00/XL1" type="no_connect"/>
+        <pin num="F12" name="P0.01/XL2" type="no_connect"/>
+        <pin num="G2" name="nRESET" type="input"/>
+        <pin num="G3" name="P1.07" type="no_connect"/>
+        <pin num="G5" name="AVSS" type="power_in"/>
+        <pin num="G6" name="VSS" type="power_in"/>
+        <pin num="G7" name="VSS" type="power_in"/>
+        <pin num="G8" name="VSS" type="power_in"/>
+        <pin num="G10" name="P0.04" type="no_connect"/>
+        <pin num="G11" name="P0.02/NFC1" type="no_connect"/>
+        <pin num="H1" name="P0.27" type="no_connect"/>
+        <pin num="H2" name="P1.09" type="no_connect"/>
+        <pin num="H3" name="P0.23" type="no_connect"/>
+        <pin num="H10" name="P0.06" type="no_connect"/>
+        <pin num="H11" name="VDD" type="power_in"/>
+        <pin num="H12" name="P0.03/NFC2" type="no_connect"/>
+        <pin num="J2" name="P0.26" type="no_connect"/>
+        <pin num="J3" name="P1.06" type="no_connect"/>
+        <pin num="J4" name="P0.21" type="output"/>
+        <pin num="J5" name="P0.19" type="input"/>
+        <pin num="J6" name="P0.12" type="no_connect"/>
+        <pin num="J7" name="P0.11" type="no_connect"/>
+        <pin num="J8" name="P0.10" type="no_connect"/>
+        <pin num="J9" name="P0.09" type="no_connect"/>
+        <pin num="J10" name="P0.07" type="no_connect"/>
+        <pin num="J11" name="P1.02" type="no_connect"/>
+        <pin num="K1" name="VDD" type="power_in"/>
+        <pin num="K2" name="P0.24" type="output"/>
+        <pin num="K3" name="P1.04" type="output"/>
+        <pin num="K4" name="P0.22" type="output"/>
+        <pin num="K5" name="P0.20" type="output"/>
+        <pin num="K6" name="AVSS" type="power_in"/>
+        <pin num="K7" name="P0.18" type="no_connect"/>
+        <pin num="K8" name="P0.16" type="no_connect"/>
+        <pin num="K9" name="P0.14" type="no_connect"/>
+        <pin num="K10" name="P0.13" type="no_connect"/>
+        <pin num="K11" name="AVSS" type="power_in"/>
+        <pin num="K12" name="P1.03" type="no_connect"/>
+        <pin num="L1" name="P0.25" type="no_connect"/>
+        <pin num="L3" name="P1.05" type="input"/>
+        <pin num="L5" name="VDD" type="power_in"/>
+        <pin num="L7" name="P0.17" type="no_connect"/>
+        <pin num="L9" name="P0.15" type="no_connect"/>
+        <pin num="L11" name="VDD" type="power_in"/>
+        <pin num="L12" name="P0.08" type="no_connect"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="U1_U10_SD_BUF">
+      <description>SN74LVC1G3157DSFR</description>
+      <docs>https://www.ti.com/lit/ds/symlink/sn74lvc1g3157.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">U1_U10_SD_BUF</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74lvc1g3157.pdf</field>
+        <field name="Description">SN74LVC1G3157DSFR</field>
+      </fields>
+      <pins>
+        <pin num="1" name="B2" type="passive"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="B1" type="passive"/>
+        <pin num="4" name="A" type="output"/>
+        <pin num="5" name="VCC" type="power_in"/>
+        <pin num="6" name="S" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="U3_U3_R">
+      <description>BQ25170DSGR</description>
+      <docs>https://www.mouser.lt/datasheet/2/405/1/bq25170-2303674.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">U3_U3_R</field>
+        <field name="Footprint">Package_SON:Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm</field>
+        <field name="Datasheet">https://www.mouser.lt/datasheet/2/405/1/bq25170-2303674.pdf</field>
+        <field name="Description">BQ25170DSGR</field>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="power_in"/>
+        <pin num="2" name="ISET" type="passive"/>
+        <pin num="3" name="TS" type="input"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="STAT" type="no_connect"/>
+        <pin num="6" name="/PG" type="no_connect"/>
+        <pin num="7" name="VSET" type="passive"/>
+        <pin num="8" name="OUT" type="power_out"/>
+        <pin num="9" name="EP_GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="EVT1" part="Y2_Y2_BLE">
+      <description>FA-128 32 MHz 8 pF +/-10 ppm initial +/-10 ppm temperature; candidate Q22FA12800025 (ordering suffix/vendor controlled spec pending)</description>
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">Y2_Y2_BLE</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">FA-128 32 MHz 8 pF +/-10 ppm initial +/-10 ppm temperature; candidate Q22FA12800025 (ordering suffix/vendor controlled spec pending)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="32_MHz_crystal_terminal" type="passive"/>
+        <pin num="2" name="metal_case_GND" type="passive"/>
+        <pin num="3" name="32_MHz_crystal_terminal" type="passive"/>
+        <pin num="4" name="metal_case_GND" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="EVT1">
+      <uri>${KIPRJMOD}/evt1.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="1V8_SYS" class="Default">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C14" pin="1" pintype="passive"/>
+      <node ref="C15" pin="1" pintype="passive"/>
+      <node ref="C16" pin="1" pintype="passive"/>
+      <node ref="C17" pin="1" pintype="passive"/>
+      <node ref="C18" pin="1" pintype="passive"/>
+      <node ref="C19" pin="1" pintype="passive"/>
+      <node ref="C20" pin="1" pintype="passive"/>
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="J1" pin="P3" pinfunction="SIGNAL_0.3A_P3" pintype="passive"/>
+      <node ref="J1" pin="P4" pinfunction="SIGNAL_0.3A_P4" pintype="passive"/>
+      <node ref="MK3" pin="2" pinfunction="VDD_2" pintype="power_in"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="TP6" pin="4" pinfunction="VTREF_4" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="B2_1" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="VCC_5" pintype="power_in"/>
+      <node ref="U11" pin="A3" pinfunction="VDD_A3" pintype="power_in"/>
+      <node ref="U11" pin="B10" pinfunction="VDD_B10" pintype="power_in"/>
+      <node ref="U11" pin="B12" pinfunction="VDDH_B12" pintype="power_in"/>
+      <node ref="U11" pin="B7" pinfunction="VDD_B7" pintype="power_in"/>
+      <node ref="U11" pin="D2" pinfunction="VDD_D2" pintype="power_in"/>
+      <node ref="U11" pin="E11" pinfunction="VDD_E11" pintype="power_in"/>
+      <node ref="U11" pin="H11" pinfunction="VDD_H11" pintype="power_in"/>
+      <node ref="U11" pin="K1" pinfunction="VDD_K1" pintype="power_in"/>
+      <node ref="U11" pin="L11" pinfunction="VDD_L11" pintype="power_in"/>
+      <node ref="U11" pin="L5" pinfunction="VDD_L5" pintype="power_in"/>
+    </net>
+    <net code="2" name="AMP_R_SD_MODE" class="Default">
+      <node ref="Q1" pin="3" pinfunction="D_3" pintype="passive"/>
+      <node ref="R9" pin="2" pintype="passive"/>
+      <node ref="U10" pin="A1" pinfunction="SD_MODE_A1" pintype="input"/>
+    </net>
+    <net code="3" name="AMP_SD_MODE_1V8" class="Default">
+      <node ref="J1" pin="P15" pinfunction="SIGNAL_0.3A_P15" pintype="passive"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="A_4" pintype="output"/>
+    </net>
+    <net code="4" name="AMP_SD_REQ_1V8" class="Default">
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="S_6" pintype="input"/>
+      <node ref="U11" pin="K2" pinfunction="P0.24_K2" pintype="output"/>
+    </net>
+    <net code="5" name="BLE_ANT_FEED" class="Default">
+      <node ref="ANT2" pin="FEED" pinfunction="feed_terminal_FEED" pintype="passive"/>
+      <node ref="C21" pin="1" pintype="passive"/>
+      <node ref="L2" pin="1" pintype="passive"/>
+    </net>
+    <net code="6" name="BLE_NRESET" class="Default">
+      <node ref="TP6" pin="3" pinfunction="nRESET_3" pintype="passive"/>
+      <node ref="U11" pin="G2" pinfunction="nRESET_G2" pintype="input"/>
+    </net>
+    <net code="7" name="BLE_RF_ANT" class="Default">
+      <node ref="L1" pin="2" pintype="passive"/>
+      <node ref="U11" pin="D1" pinfunction="ANT_D1" pintype="passive"/>
+    </net>
+    <net code="8" name="BLE_RF_MID" class="Default">
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="L1" pin="1" pintype="passive"/>
+      <node ref="L2" pin="2" pintype="passive"/>
+    </net>
+    <net code="9" name="BLE_SWDCLK" class="Default">
+      <node ref="TP6" pin="2" pinfunction="SWDCLK_2" pintype="passive"/>
+      <node ref="U11" pin="F2" pinfunction="SWDCLK_F2" pintype="input"/>
+    </net>
+    <net code="10" name="BLE_SWDIO" class="Default">
+      <node ref="TP6" pin="1" pinfunction="SWDIO_1" pintype="passive"/>
+      <node ref="U11" pin="F1" pinfunction="SWDIO_F1" pintype="bidirectional"/>
+    </net>
+    <net code="11" name="BLE_XC1" class="Default">
+      <node ref="U11" pin="A1" pinfunction="XC1_A1" pintype="passive"/>
+      <node ref="Y2" pin="1" pinfunction="32_MHz_crystal_terminal_1" pintype="passive"/>
+    </net>
+    <net code="12" name="BLE_XC2" class="Default">
+      <node ref="U11" pin="A2" pinfunction="XC2_A2" pintype="passive"/>
+      <node ref="Y2" pin="3" pinfunction="32_MHz_crystal_terminal_3" pintype="passive"/>
+    </net>
+    <net code="13" name="CHG_MUTE_GATE" class="Default">
+      <node ref="Q1" pin="1" pinfunction="G_1" pintype="passive"/>
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+    </net>
+    <net code="14" name="CHG_R_ISET" class="Default">
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="U3" pin="2" pinfunction="ISET_2" pintype="passive"/>
+    </net>
+    <net code="15" name="CHG_R_VSET" class="Default">
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="U3" pin="7" pinfunction="VSET_7" pintype="passive"/>
+    </net>
+    <net code="16" name="GND" class="Default">
+      <node ref="BAT1" pin="NTC_RETURN" pinfunction="NTC_return_NTC_RETURN" pintype="passive"/>
+      <node ref="BAT1" pin="P-" pinfunction="protected_pack_negative_P-" pintype="passive"/>
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="C13" pin="2" pintype="passive"/>
+      <node ref="C14" pin="2" pintype="passive"/>
+      <node ref="C15" pin="2" pintype="passive"/>
+      <node ref="C16" pin="2" pintype="passive"/>
+      <node ref="C17" pin="2" pintype="passive"/>
+      <node ref="C18" pin="2" pintype="passive"/>
+      <node ref="C19" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C20" pin="2" pintype="passive"/>
+      <node ref="C21" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="J1" pin="P10" pinfunction="SIGNAL_0.3A_P10" pintype="passive"/>
+      <node ref="J1" pin="P16" pinfunction="SIGNAL_0.3A_P16" pintype="passive"/>
+      <node ref="J1" pin="P2" pinfunction="SIGNAL_0.3A_P2" pintype="passive"/>
+      <node ref="J1" pin="P6" pinfunction="SIGNAL_0.3A_P6" pintype="passive"/>
+      <node ref="J1" pin="PWR2" pinfunction="POWER_5A_PWR2" pintype="passive"/>
+      <node ref="MK3" pin="4" pinfunction="SELECT_4" pintype="passive"/>
+      <node ref="MK3" pin="5" pinfunction="GND_5" pintype="power_in"/>
+      <node ref="Q1" pin="2" pinfunction="S_2" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="TP1" pin="1" pintype="passive"/>
+      <node ref="TP6" pin="5" pinfunction="GND_5" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="U1" pin="3" pinfunction="B1_3" pintype="passive"/>
+      <node ref="U10" pin="B2" pinfunction="GAIN_SLOT_B2" pintype="passive"/>
+      <node ref="U10" pin="C2" pinfunction="GND_C2" pintype="power_in"/>
+      <node ref="U11" pin="A5" pinfunction="VSS_A5" pintype="power_in"/>
+      <node ref="U11" pin="B11" pinfunction="VBUS_B11" pintype="passive"/>
+      <node ref="U11" pin="B2" pinfunction="VSS_B2" pintype="power_in"/>
+      <node ref="U11" pin="B9" pinfunction="VSS_B9" pintype="power_in"/>
+      <node ref="U11" pin="C2" pinfunction="VSS_C2" pintype="power_in"/>
+      <node ref="U11" pin="D12" pinfunction="VSS_D12" pintype="power_in"/>
+      <node ref="U11" pin="E5" pinfunction="VSS_E5" pintype="power_in"/>
+      <node ref="U11" pin="E6" pinfunction="VSS_E6" pintype="power_in"/>
+      <node ref="U11" pin="E7" pinfunction="VSS_E7" pintype="power_in"/>
+      <node ref="U11" pin="E8" pinfunction="VSS_E8" pintype="power_in"/>
+      <node ref="U11" pin="F5" pinfunction="VSS_F5" pintype="power_in"/>
+      <node ref="U11" pin="F6" pinfunction="VSS_F6" pintype="power_in"/>
+      <node ref="U11" pin="F7" pinfunction="VSS_F7" pintype="power_in"/>
+      <node ref="U11" pin="F8" pinfunction="VSS_F8" pintype="power_in"/>
+      <node ref="U11" pin="G5" pinfunction="AVSS_G5" pintype="power_in"/>
+      <node ref="U11" pin="G6" pinfunction="VSS_G6" pintype="power_in"/>
+      <node ref="U11" pin="G7" pinfunction="VSS_G7" pintype="power_in"/>
+      <node ref="U11" pin="G8" pinfunction="VSS_G8" pintype="power_in"/>
+      <node ref="U11" pin="K11" pinfunction="AVSS_K11" pintype="power_in"/>
+      <node ref="U11" pin="K6" pinfunction="AVSS_K6" pintype="power_in"/>
+      <node ref="U3" pin="4" pinfunction="GND_4" pintype="power_in"/>
+      <node ref="U3" pin="9" pinfunction="EP_GND_9" pintype="power_in"/>
+      <node ref="Y2" pin="2" pinfunction="metal_case_GND_2" pintype="passive"/>
+      <node ref="Y2" pin="4" pinfunction="metal_case_GND_4" pintype="passive"/>
+    </net>
+    <net code="17" name="I2S_AMP_DIN_1V8" class="Default">
+      <node ref="J1" pin="P13" pinfunction="SIGNAL_0.3A_P13" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="U10" pin="B1" pinfunction="DIN_B1" pintype="input"/>
+      <node ref="U11" pin="J4" pinfunction="P0.21_J4" pintype="output"/>
+    </net>
+    <net code="18" name="I2S_BCLK_1V8" class="Default">
+      <node ref="J1" pin="P11" pinfunction="SIGNAL_0.3A_P11" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="U10" pin="C1" pinfunction="BCLK_C1" pintype="input"/>
+      <node ref="U11" pin="K5" pinfunction="P0.20_K5" pintype="output"/>
+    </net>
+    <net code="19" name="I2S_LRCLK_1V8" class="Default">
+      <node ref="J1" pin="P12" pinfunction="SIGNAL_0.3A_P12" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="U10" pin="C3" pinfunction="LRCLK_C3" pintype="input"/>
+      <node ref="U11" pin="K4" pinfunction="P0.22_K4" pintype="output"/>
+    </net>
+    <net code="20" name="I2S_S3_DOUT_1V8" class="Default">
+      <node ref="J1" pin="P14" pinfunction="SIGNAL_0.3A_P14" pintype="passive"/>
+      <node ref="U11" pin="J5" pinfunction="P0.19_J5" pintype="input"/>
+    </net>
+    <net code="21" name="IPC_NRF_TX_1V8" class="Default">
+      <node ref="J1" pin="P9" pinfunction="SIGNAL_0.3A_P9" pintype="passive"/>
+      <node ref="U11" pin="K3" pinfunction="P1.04_K3" pintype="output"/>
+    </net>
+    <net code="22" name="IPC_S3_TX_1V8" class="Default">
+      <node ref="J1" pin="P8" pinfunction="SIGNAL_0.3A_P8" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="U11" pin="L3" pinfunction="P1.05_L3" pintype="input"/>
+    </net>
+    <net code="23" name="NRF_DCC" class="Default">
+      <node ref="L3" pin="2" pintype="passive"/>
+      <node ref="U11" pin="B6" pinfunction="DCC_B6" pintype="passive"/>
+    </net>
+    <net code="24" name="NRF_DCCD" class="Default">
+      <node ref="L4" pin="2" pintype="passive"/>
+      <node ref="U11" pin="A9" pinfunction="DCCD_A9" pintype="passive"/>
+    </net>
+    <net code="25" name="NRF_DECA" class="Default">
+      <node ref="C13" pin="1" pintype="passive"/>
+      <node ref="U11" pin="B8" pinfunction="DECA_B8" pintype="passive"/>
+    </net>
+    <net code="26" name="NRF_DECD" class="Default">
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="L4" pin="1" pintype="passive"/>
+      <node ref="U11" pin="A7" pinfunction="DECD_A7" pintype="passive"/>
+    </net>
+    <net code="27" name="NRF_DECN" class="Default">
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="U11" pin="B5" pinfunction="DECN_B5" pintype="passive"/>
+    </net>
+    <net code="28" name="NRF_DECR_RF" class="Default">
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="L3" pin="1" pintype="passive"/>
+      <node ref="U11" pin="B1" pinfunction="DECRF_B1" pintype="passive"/>
+      <node ref="U11" pin="B4" pinfunction="DECR_B4" pintype="passive"/>
+    </net>
+    <net code="29" name="NTC_TS_R" class="Default">
+      <node ref="BAT1" pin="NTC" pinfunction="10k_NTC_at_cell_NTC" pintype="passive"/>
+      <node ref="TP3" pin="1" pintype="passive"/>
+      <node ref="U3" pin="3" pinfunction="TS_3" pintype="input"/>
+    </net>
+    <net code="30" name="PDM_CLK_1V8" class="Default">
+      <node ref="J1" pin="P5" pinfunction="SIGNAL_0.3A_P5" pintype="passive"/>
+      <node ref="MK3" pin="3" pinfunction="CLOCK_3" pintype="input"/>
+    </net>
+    <net code="31" name="PDM_D1_1V8" class="Default">
+      <node ref="J1" pin="P7" pinfunction="SIGNAL_0.3A_P7" pintype="passive"/>
+      <node ref="MK3" pin="1" pinfunction="DATA_1" pintype="output"/>
+    </net>
+    <net code="32" name="SPK_R_N" class="Default">
+      <node ref="SPK1" pin="-" pinfunction="speaker_-_-" pintype="passive"/>
+      <node ref="TP4" pin="1" pintype="passive"/>
+      <node ref="U10" pin="B3" pinfunction="OUTN_B3" pintype="output"/>
+    </net>
+    <net code="33" name="SPK_R_P" class="Default">
+      <node ref="SPK1" pin="+" pinfunction="speaker_+_(solder_pad)_+" pintype="passive"/>
+      <node ref="TP5" pin="1" pintype="passive"/>
+      <node ref="U10" pin="A3" pinfunction="OUTP_A3" pintype="output"/>
+    </net>
+    <net code="34" name="VBAT_R_RET" class="Default">
+      <node ref="BAT1" pin="P+" pinfunction="protected_pack_positive_P+" pintype="passive"/>
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="J1" pin="PWR1" pinfunction="POWER_5A_PWR1" pintype="passive"/>
+      <node ref="TP2" pin="1" pintype="passive"/>
+      <node ref="U10" pin="A2" pinfunction="VDD_A2" pintype="power_in"/>
+      <node ref="U3" pin="8" pinfunction="OUT_8" pintype="power_out"/>
+    </net>
+    <net code="35" name="VBUS_5V" class="Default">
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="J1" pin="P1" pinfunction="SIGNAL_0.3A_P1" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="U3" pin="1" pinfunction="IN_1" pintype="power_in"/>
+    </net>
+    <net code="36" name="unconnected-(U3-/PG-Pad6)" class="Default">
+      <node ref="U3" pin="6" pinfunction="/PG_6" pintype="no_connect"/>
+    </net>
+    <net code="37" name="unconnected-(U3-STAT-Pad5)" class="Default">
+      <node ref="U3" pin="5" pinfunction="STAT_5" pintype="no_connect"/>
+    </net>
+    <net code="38" name="unconnected-(U11-D+-PadA12)" class="Default">
+      <node ref="U11" pin="A12" pinfunction="D+_A12" pintype="no_connect"/>
+    </net>
+    <net code="39" name="unconnected-(U11-D--PadA11)" class="Default">
+      <node ref="U11" pin="A11" pinfunction="D-_A11" pintype="no_connect"/>
+    </net>
+    <net code="40" name="unconnected-(U11-DCCH-PadD11)" class="Default">
+      <node ref="U11" pin="D11" pinfunction="DCCH_D11" pintype="no_connect"/>
+    </net>
+    <net code="41" name="unconnected-(U11-DECUSB-PadC11)" class="Default">
+      <node ref="U11" pin="C11" pinfunction="DECUSB_C11" pintype="no_connect"/>
+    </net>
+    <net code="42" name="unconnected-(U11-P0.00/XL1-PadF11)" class="Default">
+      <node ref="U11" pin="F11" pinfunction="P0.00/XL1_F11" pintype="no_connect"/>
+    </net>
+    <net code="43" name="unconnected-(U11-P0.01/XL2-PadF12)" class="Default">
+      <node ref="U11" pin="F12" pinfunction="P0.01/XL2_F12" pintype="no_connect"/>
+    </net>
+    <net code="44" name="unconnected-(U11-P0.02/NFC1-PadG11)" class="Default">
+      <node ref="U11" pin="G11" pinfunction="P0.02/NFC1_G11" pintype="no_connect"/>
+    </net>
+    <net code="45" name="unconnected-(U11-P0.03/NFC2-PadH12)" class="Default">
+      <node ref="U11" pin="H12" pinfunction="P0.03/NFC2_H12" pintype="no_connect"/>
+    </net>
+    <net code="46" name="unconnected-(U11-P0.04-PadG10)" class="Default">
+      <node ref="U11" pin="G10" pinfunction="P0.04_G10" pintype="no_connect"/>
+    </net>
+    <net code="47" name="unconnected-(U11-P0.05-PadF10)" class="Default">
+      <node ref="U11" pin="F10" pinfunction="P0.05_F10" pintype="no_connect"/>
+    </net>
+    <net code="48" name="unconnected-(U11-P0.06-PadH10)" class="Default">
+      <node ref="U11" pin="H10" pinfunction="P0.06_H10" pintype="no_connect"/>
+    </net>
+    <net code="49" name="unconnected-(U11-P0.07-PadJ10)" class="Default">
+      <node ref="U11" pin="J10" pinfunction="P0.07_J10" pintype="no_connect"/>
+    </net>
+    <net code="50" name="unconnected-(U11-P0.08-PadL12)" class="Default">
+      <node ref="U11" pin="L12" pinfunction="P0.08_L12" pintype="no_connect"/>
+    </net>
+    <net code="51" name="unconnected-(U11-P0.09-PadJ9)" class="Default">
+      <node ref="U11" pin="J9" pinfunction="P0.09_J9" pintype="no_connect"/>
+    </net>
+    <net code="52" name="unconnected-(U11-P0.10-PadJ8)" class="Default">
+      <node ref="U11" pin="J8" pinfunction="P0.10_J8" pintype="no_connect"/>
+    </net>
+    <net code="53" name="unconnected-(U11-P0.11-PadJ7)" class="Default">
+      <node ref="U11" pin="J7" pinfunction="P0.11_J7" pintype="no_connect"/>
+    </net>
+    <net code="54" name="unconnected-(U11-P0.12-PadJ6)" class="Default">
+      <node ref="U11" pin="J6" pinfunction="P0.12_J6" pintype="no_connect"/>
+    </net>
+    <net code="55" name="unconnected-(U11-P0.13-PadK10)" class="Default">
+      <node ref="U11" pin="K10" pinfunction="P0.13_K10" pintype="no_connect"/>
+    </net>
+    <net code="56" name="unconnected-(U11-P0.14-PadK9)" class="Default">
+      <node ref="U11" pin="K9" pinfunction="P0.14_K9" pintype="no_connect"/>
+    </net>
+    <net code="57" name="unconnected-(U11-P0.15-PadL9)" class="Default">
+      <node ref="U11" pin="L9" pinfunction="P0.15_L9" pintype="no_connect"/>
+    </net>
+    <net code="58" name="unconnected-(U11-P0.16-PadK8)" class="Default">
+      <node ref="U11" pin="K8" pinfunction="P0.16_K8" pintype="no_connect"/>
+    </net>
+    <net code="59" name="unconnected-(U11-P0.17-PadL7)" class="Default">
+      <node ref="U11" pin="L7" pinfunction="P0.17_L7" pintype="no_connect"/>
+    </net>
+    <net code="60" name="unconnected-(U11-P0.18-PadK7)" class="Default">
+      <node ref="U11" pin="K7" pinfunction="P0.18_K7" pintype="no_connect"/>
+    </net>
+    <net code="61" name="unconnected-(U11-P0.23-PadH3)" class="Default">
+      <node ref="U11" pin="H3" pinfunction="P0.23_H3" pintype="no_connect"/>
+    </net>
+    <net code="62" name="unconnected-(U11-P0.25-PadL1)" class="Default">
+      <node ref="U11" pin="L1" pinfunction="P0.25_L1" pintype="no_connect"/>
+    </net>
+    <net code="63" name="unconnected-(U11-P0.26-PadJ2)" class="Default">
+      <node ref="U11" pin="J2" pinfunction="P0.26_J2" pintype="no_connect"/>
+    </net>
+    <net code="64" name="unconnected-(U11-P0.27-PadH1)" class="Default">
+      <node ref="U11" pin="H1" pinfunction="P0.27_H1" pintype="no_connect"/>
+    </net>
+    <net code="65" name="unconnected-(U11-P0.28-PadE3)" class="Default">
+      <node ref="U11" pin="E3" pinfunction="P0.28_E3" pintype="no_connect"/>
+    </net>
+    <net code="66" name="unconnected-(U11-P0.29-PadE2)" class="Default">
+      <node ref="U11" pin="E2" pinfunction="P0.29_E2" pintype="no_connect"/>
+    </net>
+    <net code="67" name="unconnected-(U11-P0.30-PadC4)" class="Default">
+      <node ref="U11" pin="C4" pinfunction="P0.30_C4" pintype="no_connect"/>
+    </net>
+    <net code="68" name="unconnected-(U11-P0.31-PadC5)" class="Default">
+      <node ref="U11" pin="C5" pinfunction="P0.31_C5" pintype="no_connect"/>
+    </net>
+    <net code="69" name="unconnected-(U11-P1.00-PadD10)" class="Default">
+      <node ref="U11" pin="D10" pinfunction="P1.00_D10" pintype="no_connect"/>
+    </net>
+    <net code="70" name="unconnected-(U11-P1.01-PadE10)" class="Default">
+      <node ref="U11" pin="E10" pinfunction="P1.01_E10" pintype="no_connect"/>
+    </net>
+    <net code="71" name="unconnected-(U11-P1.02-PadJ11)" class="Default">
+      <node ref="U11" pin="J11" pinfunction="P1.02_J11" pintype="no_connect"/>
+    </net>
+    <net code="72" name="unconnected-(U11-P1.03-PadK12)" class="Default">
+      <node ref="U11" pin="K12" pinfunction="P1.03_K12" pintype="no_connect"/>
+    </net>
+    <net code="73" name="unconnected-(U11-P1.06-PadJ3)" class="Default">
+      <node ref="U11" pin="J3" pinfunction="P1.06_J3" pintype="no_connect"/>
+    </net>
+    <net code="74" name="unconnected-(U11-P1.07-PadG3)" class="Default">
+      <node ref="U11" pin="G3" pinfunction="P1.07_G3" pintype="no_connect"/>
+    </net>
+    <net code="75" name="unconnected-(U11-P1.08-PadF3)" class="Default">
+      <node ref="U11" pin="F3" pinfunction="P1.08_F3" pintype="no_connect"/>
+    </net>
+    <net code="76" name="unconnected-(U11-P1.09-PadH2)" class="Default">
+      <node ref="U11" pin="H2" pinfunction="P1.09_H2" pintype="no_connect"/>
+    </net>
+    <net code="77" name="unconnected-(U11-P1.10-PadE4)" class="Default">
+      <node ref="U11" pin="E4" pinfunction="P1.10_E4" pintype="no_connect"/>
+    </net>
+    <net code="78" name="unconnected-(U11-P1.11-PadC6)" class="Default">
+      <node ref="U11" pin="C6" pinfunction="P1.11_C6" pintype="no_connect"/>
+    </net>
+    <net code="79" name="unconnected-(U11-P1.12-PadC7)" class="Default">
+      <node ref="U11" pin="C7" pinfunction="P1.12_C7" pintype="no_connect"/>
+    </net>
+    <net code="80" name="unconnected-(U11-P1.13-PadC8)" class="Default">
+      <node ref="U11" pin="C8" pinfunction="P1.13_C8" pintype="no_connect"/>
+    </net>
+    <net code="81" name="unconnected-(U11-P1.14-PadC9)" class="Default">
+      <node ref="U11" pin="C9" pinfunction="P1.14_C9" pintype="no_connect"/>
+    </net>
+    <net code="82" name="unconnected-(U11-P1.15-PadC10)" class="Default">
+      <node ref="U11" pin="C10" pinfunction="P1.15_C10" pintype="no_connect"/>
+    </net>
+  </nets>
+</export>

@@ -1,0 +1,128 @@
+{
+  "board": "M-AUD-R",
+  "pcbUuid": "1db01a36f669a47a",
+  "projectUuid": "cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+  "scope": "PARTIAL_UNROUTED_CANDIDATE_NOT_FOR_FAB",
+  "startedAt": "2026-11-18T16:01:00.895323+00:00",
+  "planSha256": "1b6be4903cab872569b998ff318f7afaf9977d4a90edd91067aa2015650ba202",
+  "placements": [
+    {
+      "ref": "MK3",
+      "sourceRef": "MK3_R",
+      "stage": "immediate",
+      "primitiveId": "0157613fc1d3c051",
+      "uniqueId": "",
+      "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+      "expectedCenterMm": {
+        "x": 2.6,
+        "y": 24.5
+      },
+      "observedCenterMil": {
+        "x": 102.36220472440948,
+        "y": 964.5669291338583
+      },
+      "anchorMil": {
+        "x": 90.39645472440947,
+        "y": 969.6814291338583
+      },
+      "rotation": 0,
+      "layer": 1,
+      "bboxMil": {
+        "maxX": 179.37195472440948,
+        "maxY": 1048.3064291338583,
+        "minX": 25.352454724409476,
+        "minY": 880.8274291338582
+      },
+      "padCount": 8,
+      "connectedPadNetCount": 5,
+      "ncAndLocalNcPadsRemainNetless": 0,
+      "manufacturerId": "IM69D130V01XTSA1",
+      "verificationErrors": [
+        "physical pad-number set/count mismatch"
+      ],
+      "verified": false,
+      "placementReceipt": {
+        "assignedNets": 8,
+        "bindingVerified": true,
+        "designator": "MK3",
+        "padCount": 8,
+        "primitiveId": "0157613fc1d3c051",
+        "uniqueId": "",
+        "unmatchedPads": []
+      }
+    }
+  ],
+  "offlineFailedPlacements": [],
+  "requiredButNotPlaced": [
+    "J_BTB_R",
+    "TP_BAT_R_P",
+    "TP_BAT_R_N",
+    "TP_NTC_R",
+    "SPK_R",
+    "R_IPC_PU",
+    "R_ISET_R",
+    "R_VSET_R",
+    "ANT2_BLE",
+    "R_SDR",
+    "Q_CHG_MUTE_R",
+    "R_MUTE_GATE",
+    "R_MUTE_PD",
+    "C_CHG_R_IN",
+    "C_CHG_R_OUT",
+    "BAT_R",
+    "U11_BLE",
+    "NRF_C1",
+    "NRF_C2",
+    "NRF_C3",
+    "NRF_C4",
+    "NRF_C5",
+    "NRF_C6",
+    "NRF_C7",
+    "NRF_C8",
+    "NRF_C9",
+    "NRF_C10",
+    "NRF_C11",
+    "NRF_C12",
+    "NRF_C13",
+    "NRF_C14",
+    "NRF_L1",
+    "NRF_L2",
+    "NRF_L3",
+    "NRF_L4",
+    "NRF_CT19",
+    "Y2_BLE",
+    "TP_SWD_R",
+    "C_MK3_R",
+    "R_AMP_REQ_PD",
+    "C_AMP_SD_BUF",
+    "C_U10_AMP_R_HF",
+    "C_U10_AMP_R_BULK",
+    "R_IDLE_I2S_BCLK_1V8",
+    "R_IDLE_I2S_LRCLK_1V8",
+    "R_IDLE_I2S_AMP_DIN_1V8",
+    "TP_SPK_R_P",
+    "TP_SPK_R_N"
+  ],
+  "routing": {
+    "tracksViasPoursAuthored": false,
+    "status": "UNROUTED"
+  },
+  "status": "FAILED_OR_PARTIAL_READBACK_REQUIRED",
+  "beforeDump": "layout\\M-AUD-R-01-before-dump.json",
+  "error": "MK3: immediate verification failed: ['physical pad-number set/count mismatch']",
+  "failureReadback": [
+    {
+      "ref": "MK3",
+      "primitiveId": "0157613fc1d3c051",
+      "center": {
+        "x": 102.36220472440948,
+        "y": 964.5669291338583
+      },
+      "layer": 1,
+      "rotation": 0,
+      "uniqueId": "",
+      "padCount": 8
+    }
+  ],
+  "finishedAt": "2026-11-18T16:01:06.598592+00:00"
+}

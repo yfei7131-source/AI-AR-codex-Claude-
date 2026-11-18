@@ -1,0 +1,50 @@
+$ C:\Users\Admin（无密码）\.local\bin\easyeda.exe pcb modify --id 1412a27bbaf807a6 --center --x 161.41732283464566 --y 354.33070866141736 --project cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662 --doc 8fbc3cae65886fe5
+{
+  "id": "req_926",
+  "type": "response",
+  "version": "v1",
+  "windowId": "259b1d05-24b1-4f23-acb8-5a09746f811e",
+  "createdAt": "2026-11-18T16:00:51.5286566Z",
+  "ok": true,
+  "result": {
+    "applied": [
+      "x",
+      "y"
+    ],
+    "component": {
+      "addIntoBom": true,
+      "designator": "U1",
+      "layer": 1,
+      "locked": false,
+      "manufacturerId": "ESP32-S3-PICO-1-N8R8",
+      "name": "={Manufacturer Part}",
+      "primitiveId": "1412a27bbaf807a6",
+      "rotation": 180,
+      "supplierId": "C7545129",
+      "uniqueId": "",
+      "x": 152.61632283464564,
+      "y": 354.33070866141736
+    },
+    "verified": true
+  },
+  "context": {
+    "projectUuid": "cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+    "projectName": "ZY_AIAR_EVT1_KIMI_20261118",
+    "documentUuid": "8fbc3cae65886fe5",
+    "documentType": "pcb",
+    "tabId": "8fbc3cae65886fe5@cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+    "pageVisibility": "hidden"
+  },
+  "mutationContext": {
+    "projectUuid": "cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+    "projectName": "ZY_AIAR_EVT1_KIMI_20261118",
+    "documentUuid": "8fbc3cae65886fe5",
+    "documentType": "pcb",
+    "tabId": "8fbc3cae65886fe5@cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+    "pageVisibility": "hidden"
+  },
+  "mutationContextAvailable": true,
+  "seq": 26,
+  "seqAbandoned": 0
+}
+⚠ staleRisk: PCB was mutated by pcb.add_component since the last reload — pcb.components.list (and DRC) may read stale engine state; authoritative workflows should save, run `easyeda doc reload`, then read back; if refresh fails, treat the data as unavailable

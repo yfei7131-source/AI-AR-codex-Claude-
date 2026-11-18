@@ -1,0 +1,44 @@
+{
+  "native_review": "BLOCKED",
+  "kicad_version": "10.0.8",
+  "projects": {
+    "evt1-main-left": {
+      "schematic_erc": {
+        "status": "BLOCKED",
+        "reason": "native input missing",
+        "input": "evt1-main-left.kicad_sch"
+      },
+      "pcb_drc_and_parity": {
+        "status": "BLOCKED",
+        "reason": "native input missing",
+        "input": "evt1-main-left.kicad_pcb"
+      }
+    },
+    "evt1-optical-bridge": {
+      "schematic_erc": {
+        "status": "BLOCKED",
+        "reason": "native input missing",
+        "input": "evt1-optical-bridge.kicad_sch"
+      },
+      "pcb_drc_and_parity": {
+        "status": "BLOCKED",
+        "reason": "native input missing",
+        "input": "evt1-optical-bridge.kicad_pcb"
+      }
+    },
+    "evt1-audio-right": {
+      "schematic_erc": {
+        "status": "BLOCKED",
+        "reason": "native input missing",
+        "input": "evt1-audio-right.kicad_sch"
+      },
+      "pcb_drc_and_parity": {
+        "status": "BLOCKED",
+        "reason": "native input missing",
+        "input": "evt1-audio-right.kicad_pcb"
+      }
+    }
+  },
+  "manufacturing": "BLOCKED",
+  "remaining_review": "Compare constraints, footprints and interface/DFM evidence against the handoff."
+}

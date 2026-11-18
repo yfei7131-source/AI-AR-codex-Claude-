@@ -1,0 +1,78 @@
+$ C:\Users\Admin（无密码）\.local\bin\easyeda.exe pcb region create --doc 1db01a36f669a47a --points [[0, 0], [0, 157.48031496062993], [204.7244094488189, 157.48031496062993], [204.7244094488189, 0]] --layer 17 --rule no-wires --rule no-pours --locked --project cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662
+{
+  "id": "req_467",
+  "type": "response",
+  "version": "v1",
+  "windowId": "05e9143d-7956-4f1a-91a7-e59dbe47a43d",
+  "createdAt": "2026-11-18T15:00:01.9126966Z",
+  "ok": true,
+  "result": {
+    "degraded": {
+      "consecutiveFailures": 1,
+      "degraded": true,
+      "degradedActions": [
+        "pcb.region.create"
+      ],
+      "fakeFailures": 0,
+      "fakeSuccesses": 5,
+      "recentFailureRate": 0.25,
+      "recentSamples": 20,
+      "verifiedSamples": 5
+    },
+    "differences": [
+      "geometry"
+    ],
+    "layer": 17,
+    "lineWidth": 0.2,
+    "locked": true,
+    "partial": true,
+    "primitiveId": "ab8d8efc8b624a3b",
+    "regionName": null,
+    "ruleType": [
+      5,
+      7
+    ],
+    "ruleTypeNames": [
+      "no-wires",
+      "no-pours"
+    ],
+    "source": [
+      0,
+      0,
+      "L",
+      0,
+      157.4803,
+      204.7244,
+      157.4803,
+      204.7244,
+      0,
+      0,
+      0
+    ],
+    "verified": false
+  },
+  "context": {
+    "projectUuid": "cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+    "projectName": "ZY_AIAR_EVT1_KIMI_20261118",
+    "documentUuid": "1db01a36f669a47a",
+    "documentType": "pcb",
+    "tabId": "1db01a36f669a47a@cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+    "pageVisibility": "hidden"
+  },
+  "mutationContext": {
+    "projectUuid": "cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+    "projectName": "ZY_AIAR_EVT1_KIMI_20261118",
+    "documentUuid": "1db01a36f669a47a",
+    "documentType": "pcb",
+    "tabId": "1db01a36f669a47a@cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+    "pageVisibility": "hidden"
+  },
+  "mutationContextAvailable": true,
+  "warnings": [
+    "connector looks DEGRADED under load (recent EFFECT failure rate 25%, 1 consecutive failures) — this call returned ok but the connector's own re-read proves part of it did NOT land (假成功): treat it as a failed write, re-read and re-apply the missing part. Worst road(s): pcb.region.create"
+  ],
+  "seq": 340,
+  "seqAbandoned": 0
+}
+⚠ connector looks DEGRADED under load (recent EFFECT failure rate 25%, 1 consecutive failures) — this call returned ok but the connector's own re-read proves part of it did NOT land (假成功): treat it as a failed write, re-read and re-apply the missing part. Worst road(s): pcb.region.create
+pcb.region.create: write not fully verified; inspect returned IDs and fresh state before retrying

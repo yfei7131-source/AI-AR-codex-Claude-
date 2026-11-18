@@ -1,0 +1,48 @@
+⚠ Board was created as "Board3"; the host refused to rename it to "evt1-audio-right" but the readback still lists "Board3" — rename it later or delete it with board.delete.
+{
+  "id": "req_10",
+  "type": "response",
+  "version": "v1",
+  "windowId": "05e9143d-7956-4f1a-91a7-e59dbe47a43d",
+  "createdAt": "2026-11-18T14:17:29.3557444Z",
+  "ok": true,
+  "result": {
+    "boardName": "Board3",
+    "notApplied": [
+      "name"
+    ],
+    "partial": true,
+    "pcbName": "PCB3",
+    "pcbUuid": "1db01a36f669a47a",
+    "projectUuid": "cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+    "requestedName": "evt1-audio-right",
+    "schematicName": "Schematic3",
+    "schematicPageUuid": "388fb7a3b1e5f2d6",
+    "schematicPages": [
+      {
+        "name": "P1",
+        "uuid": "388fb7a3b1e5f2d6"
+      }
+    ],
+    "schematicUuid": "b0f8d12e18ff89ec",
+    "verified": true
+  },
+  "context": {
+    "projectUuid": "cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+    "projectName": "ZY_AIAR_EVT1_KIMI_20261118",
+    "pageVisibility": "hidden"
+  },
+  "mutationContext": {
+    "projectUuid": "cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+    "projectName": "ZY_AIAR_EVT1_KIMI_20261118",
+    "pageVisibility": "hidden"
+  },
+  "mutationContextAvailable": false,
+  "mutationContextError": "handler-boundary documentUuid unavailable",
+  "warnings": [
+    "Board was created as \"Board3\"; the host refused to rename it to \"evt1-audio-right\" but the readback still lists \"Board3\" — rename it later or delete it with board.delete."
+  ],
+  "seq": 8,
+  "seqAbandoned": 0
+}
+board.new: write not fully verified; inspect returned IDs and fresh state before retrying

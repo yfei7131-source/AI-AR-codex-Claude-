@@ -1,0 +1,129 @@
+$ C:\Users\Admin（无密码）\.local\bin\easyeda.exe pcb check --strict --json --project cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662 --doc 1db01a36f669a47a
+{
+  "passed": false,
+  "summary": {
+    "danglingEnds": 0,
+    "acuteAngles": 0,
+    "nonOrthogonal": 0,
+    "trackOverPad": 0,
+    "clearance": 0,
+    "silkscreenFlipped": 1,
+    "overlappingVias": 0,
+    "singleLayerVias": 0,
+    "widthMismatches": 0,
+    "duplicateSegments": 0,
+    "parallelCoupling": 0,
+    "antennaKeepout": 0,
+    "netlessPours": 0,
+    "viaCrossesPlane": 2,
+    "floatingIslands": 0,
+    "powerNotPoured": 1,
+    "netlessViaInPad": 0,
+    "widthUnderSpec": 0,
+    "silkOverPad": 0,
+    "silkOffBoard": 0,
+    "decapTooFar": 0,
+    "viaInPad": 0,
+    "copperNearEdge": 0,
+    "fiducialMissing": 0,
+    "zoneViolation": 0,
+    "internalOnEdge": 0,
+    "connectorPlugClearance": 0,
+    "connectorMatingBlocked": 0,
+    "connectorOpeningInward": 0,
+    "errors": 0,
+    "warnings": 1,
+    "total": 4
+  },
+  "trackCount": 0,
+  "viaCount": 0,
+  "padCount": 32,
+  "findings": [
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "U1",
+      "primitives": [
+        "ff27e2a0069798b9e23"
+      ],
+      "message": "designator 'U1' is rotated 180° (upside-down (上下颠倒)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 63.19,
+        "y": 636.34
+      }
+    },
+    {
+      "type": "via-crosses-plane",
+      "level": "INFO",
+      "layer": 15,
+      "message": "inner PLANE Inner1 has no net-bound pour visible — plane net unknown; NOTE (#110): after `doc reload` PLANE-layer pours are invisible to pcb.pour.list, so this may be a false positive — treat `pcb drc` Connection=0 as the arbiter before adding any pour; if the plane is genuinely empty, pour the net while the layer is still SIGNAL, then flip to PLANE and pour-rebuild (`pcb power-planes` does this)"
+    },
+    {
+      "type": "via-crosses-plane",
+      "level": "INFO",
+      "layer": 17,
+      "message": "inner PLANE Inner3 has no net-bound pour visible — plane net unknown; NOTE (#110): after `doc reload` PLANE-layer pours are invisible to pcb.pour.list, so this may be a false positive — treat `pcb drc` Connection=0 as the arbiter before adding any pour; if the plane is genuinely empty, pour the net while the layer is still SIGNAL, then flip to PLANE and pour-rebuild (`pcb power-planes` does this)"
+    },
+    {
+      "type": "power-not-poured",
+      "level": "INFO",
+      "net": "GND",
+      "message": "power net GND (11 pads) has no VISIBLE pour — but the board carries 2 inner PLANE layer(s) with unknown net: PLANE-layer pours are invisible to pcb.pour.list after a doc reload (#110), so this is most likely that pour; treat `pcb drc` Connection=0 as the arbiter — do NOT re-run `pcb power-planes` just to clear this finding (#117)"
+    }
+  ],
+  "limitations": [
+    "pad MK3.5: POLYGON pad geometry is not supported by pcb net-path",
+    "4 pad(s) have captured source shapes unsupported by exact pad-contact inspection"
+  ],
+  "incomplete": true,
+  "coverage": {
+    "complete": false,
+    "componentsInventoryKnown": true,
+    "padsInventoryKnown": true,
+    "componentCount": 4,
+    "totalPads": 32,
+    "knownGeometryPads": 28,
+    "unsupportedGeometryPads": 4,
+    "unknownGeometryPads": 0,
+    "legacyGeometryPads": 0,
+    "unverifiedPads": [
+      {
+        "componentPrimitiveId": "0157613fc1d3c051",
+        "designator": "MK3",
+        "primitiveId": "0157613fc1d3c051e14",
+        "padNumber": "5",
+        "status": "unsupported",
+        "reason": "POLYGON pad geometry is not supported by pcb net-path"
+      },
+      {
+        "componentPrimitiveId": "0157613fc1d3c051",
+        "designator": "MK3",
+        "primitiveId": "0157613fc1d3c051e15",
+        "padNumber": "5",
+        "status": "unsupported",
+        "reason": "POLYGON pad geometry is not supported by pcb net-path"
+      },
+      {
+        "componentPrimitiveId": "0157613fc1d3c051",
+        "designator": "MK3",
+        "primitiveId": "0157613fc1d3c051e16",
+        "padNumber": "5",
+        "status": "unsupported",
+        "reason": "POLYGON pad geometry is not supported by pcb net-path"
+      },
+      {
+        "componentPrimitiveId": "0157613fc1d3c051",
+        "designator": "MK3",
+        "primitiveId": "0157613fc1d3c051e17",
+        "padNumber": "5",
+        "status": "unsupported",
+        "reason": "POLYGON pad geometry is not supported by pcb net-path"
+      }
+    ],
+    "limitations": [
+      "4 pad(s) have captured source shapes unsupported by exact pad-contact inspection"
+    ]
+  }
+}
+pcb check: 1 issue(s) (--strict)

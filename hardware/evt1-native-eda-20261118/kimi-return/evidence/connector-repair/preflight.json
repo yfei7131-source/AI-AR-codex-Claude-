@@ -1,0 +1,76 @@
+{
+  "scope": "same-version connector repair only; no design geometry via debug",
+  "projectUuid": "cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+  "windowBefore": {
+    "windowId": "05e9143d-7956-4f1a-91a7-e59dbe47a43d",
+    "connectorVersion": "1.17.0",
+    "easyedaVersion": "4.1.97",
+    "capabilities": [
+      "schematic.v1",
+      "pcb.v1"
+    ],
+    "host": {
+      "kind": "electron",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) JLCEDAPro/4.1.97.04b092ac Chrome/146.0.7680.188 Electron/41.2.1-jlc-sa-win-x64.6 Safari/537.36"
+    },
+    "context": {
+      "projectUuid": "cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+      "projectName": "ZY_AIAR_EVT1_KIMI_20261118",
+      "documentUuid": "4d7420b4f42714c8",
+      "documentType": "schematic",
+      "tabId": "4d7420b4f42714c8@cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+      "pageVisibility": "hidden"
+    },
+    "connectedAt": "2026-11-18T14:06:46.0503578Z",
+    "lastSeen": "2026-11-18T15:43:27.6869526Z",
+    "connectorVersionOk": true
+  },
+  "savedDocuments": [
+    {
+      "uuid": "8fbc3cae65886fe5",
+      "saved": true
+    },
+    {
+      "uuid": "9ce45f14cb79dc9d",
+      "saved": true
+    },
+    {
+      "uuid": "1db01a36f669a47a",
+      "saved": true
+    },
+    {
+      "uuid": "271a28697816c22b",
+      "saved": true
+    },
+    {
+      "uuid": "dff3a8fe270050d6",
+      "saved": true
+    },
+    {
+      "uuid": "43a42f20d31f8062",
+      "saved": true
+    },
+    {
+      "uuid": "388fb7a3b1e5f2d6",
+      "saved": true
+    },
+    {
+      "uuid": "4d7420b4f42714c8",
+      "saved": true
+    }
+  ],
+  "identity": {
+    "allowExternalInteractions": true,
+    "enabled": true,
+    "installedBundleBytes": 1031114,
+    "installedBundleSha256": "e90a545aa578c321664cf53390e21eb94c131489ceac5d6f14f55440bcae2bcd",
+    "team": "223cd8504d6b4128b0080fb4fd138ae9",
+    "uuid": "4dae27407c1d43be98e8e210d45fe587",
+    "version": "1.17.0"
+  },
+  "newBundleSha256": "e70baa0f1270182361e7d4de2496232dfc55355f60ea0d10a78f7474ffdbd5be",
+  "newBundleBytes": 1031324,
+  "sourceVersion": "1.17.0",
+  "sourceCommit": "f1ed9d27253ae3688dc9efec7092e0255fa6376a",
+  "sourceDiff": "diff --git a/extension/src/actions.test.ts b/extension/src/actions.test.ts\nindex 7377671..3f7b456 100644\n--- a/extension/src/actions.test.ts\n+++ b/extension/src/actions.test.ts\n@@ -1336,6 +1336,33 @@ test('library opener keeps the generic path and does not invoke fallback when it\n \tassert.equal(fallbacks, 0);\n });\n \n+test('project symbol tries its positively-read concrete library before the specific fallback', async (t) => {\n+\tconst opens: string[] = [];\n+\tlet current: any;\n+\tlet fallbacks = 0;\n+\t(globalThis as any).eda = {\n+\t\tlib_Symbol: {\n+\t\t\tget: async () => ({ uuid: 'SYM', libraryUuid: 'CONCRETE' }),\n+\t\t\topenInEditor: async () => { fallbacks++; },\n+\t\t},\n+\t\tlib_LibrariesList: { getPersonalLibraryUuid: async () => undefined },\n+\t\tdmt_SelectControl: { getCurrentDocumentInfo: async () => current },\n+\t\tdmt_EditorControl: {\n+\t\t\topenLibraryDocument: async (library: string) => {\n+\t\t\t\topens.push(library);\n+\t\t\t\tif (library !== 'CONCRETE') return undefined;\n+\t\t\t\tcurrent = { uuid: 'SYM', documentType: 2, parentLibraryUuid: 'CONCRETE', tabId: 'SYM@CONCRETE' };\n+\t\t\t\treturn 'SYM@CONCRETE';\n+\t\t\t},\n+\t\t\tactivateDocument: async () => true,\n+\t\t},\n+\t};\n+\tt.after(() => { delete (globalThis as any).eda; });\n+\tassert.equal(await activateLibraryDocument('SYM', 'project', '2' as any, 2 as any, 'symbol'), 'SYM@CONCRETE');\n+\tassert.deepEqual(opens, ['project', 'CONCRETE']);\n+\tassert.equal(fallbacks, 0);\n+});\n+\n test('library footprint fallback selects the footprint API and retains project rejection when both fail', async (t) => {\n \tlet current: any;\n \tlet opens = 0;\ndiff --git a/extension/src/actions.ts b/extension/src/actions.ts\nindex 8ea6f7f..6847e7c 100644\n--- a/extension/src/actions.ts\n+++ b/extension/src/actions.ts\n@@ -5984,6 +5984,13 @@ export async function activateLibraryDocument(\n \tcatch { /* opening without a split id is supported */ }\n \n \tlet tabId = await eda.dmt_EditorControl.openLibraryDocument(libraryUuid, libraryType, uuid, splitScreenId);\n+\tif (!tabId && label === 'symbol' && recordLibrary && recordLibrary !== libraryUuid) {\n+\t\t// A project symbol's record can name the concrete library required by the\n+\t\t// generic editor opener rather than the \"project\" lookup alias. Only use\n+\t\t// that identity after the asset lookup positively returned it. The focus\n+\t\t// check below still proves the exact asset and both accepted library names.\n+\t\ttabId = await eda.dmt_EditorControl.openLibraryDocument(recordLibrary, libraryType, uuid, splitScreenId);\n+\t}\n \tif (!tabId) {\n \t\t// Desktop local libraries can be read/created by alias, while the generic\n \t\t// editor opener returns undefined. The asset-specific opener supports them.\n"
+}
