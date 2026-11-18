@@ -1,0 +1,822 @@
+$ C:\Users\Admin（无密码）\.local\bin\easyeda.exe pcb check --strict --json --project cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662 --doc 8fbc3cae65886fe5
+{
+  "passed": false,
+  "summary": {
+    "danglingEnds": 0,
+    "acuteAngles": 0,
+    "nonOrthogonal": 0,
+    "trackOverPad": 0,
+    "clearance": 0,
+    "silkscreenFlipped": 13,
+    "overlappingVias": 0,
+    "singleLayerVias": 0,
+    "widthMismatches": 0,
+    "duplicateSegments": 0,
+    "parallelCoupling": 0,
+    "antennaKeepout": 0,
+    "netlessPours": 0,
+    "viaCrossesPlane": 2,
+    "floatingIslands": 0,
+    "powerNotPoured": 4,
+    "netlessViaInPad": 0,
+    "widthUnderSpec": 0,
+    "silkOverPad": 12,
+    "silkOffBoard": 2,
+    "decapTooFar": 0,
+    "viaInPad": 9,
+    "copperNearEdge": 0,
+    "fiducialMissing": 1,
+    "zoneViolation": 0,
+    "internalOnEdge": 0,
+    "connectorPlugClearance": 0,
+    "connectorMatingBlocked": 0,
+    "connectorOpeningInward": 0,
+    "errors": 0,
+    "warnings": 39,
+    "total": 43
+  },
+  "trackCount": 0,
+  "viaCount": 9,
+  "padCount": 278,
+  "findings": [
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "U1",
+      "primitives": [
+        "1412a27bbaf807a6e194"
+      ],
+      "message": "designator 'U1' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 9.07,
+        "y": 198.18
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "MK1",
+      "primitives": [
+        "08da4ea71a40c02ce28"
+      ],
+      "message": "designator 'MK1' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 25.43,
+        "y": 1375.75
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "U18",
+      "primitives": [
+        "fecdbb8532dcf1d6e58"
+      ],
+      "message": "designator 'U18' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 135.62,
+        "y": 138.19
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "U21",
+      "primitives": [
+        "36b69f2de5ae8b5ee58"
+      ],
+      "message": "designator 'U21' is rotated 180° (upside-down (上下颠倒)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 22.44,
+        "y": 699.03
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "U8",
+      "primitives": [
+        "06a525da8fa887e7e46"
+      ],
+      "message": "designator 'U8' is rotated 180° (upside-down (上下颠倒)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 52.57,
+        "y": 1657.3
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "U15",
+      "primitives": [
+        "6ad4486387742873e58"
+      ],
+      "message": "designator 'U15' is rotated 180° (upside-down (上下颠倒)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 22.44,
+        "y": 1029.34
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "U16",
+      "primitives": [
+        "abb017b2418bbf1de58"
+      ],
+      "message": "designator 'U16' is rotated 180° (upside-down (上下颠倒)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 22.44,
+        "y": 490.37
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "U3",
+      "primitives": [
+        "791fd8d973700d79e2"
+      ],
+      "message": "designator 'U3' is rotated 180° (upside-down (上下颠倒)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 75.79,
+        "y": 959.32
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "U11",
+      "primitives": [
+        "1dfeee4ef5d16c20e22"
+      ],
+      "message": "designator 'U11' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 97.13,
+        "y": 1191.33
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "U9",
+      "primitives": [
+        "5fcdde9483147e30e26"
+      ],
+      "message": "designator 'U9' is rotated 180° (upside-down (上下颠倒)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 62.6,
+        "y": 1166.26
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "Q1",
+      "primitives": [
+        "9d8b5acb3c044cb2e22"
+      ],
+      "message": "designator 'Q1' is rotated 180° (upside-down (上下颠倒)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 46.45,
+        "y": 1444.31
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "U17",
+      "primitives": [
+        "65d4325202f8a741e18"
+      ],
+      "message": "designator 'U17' is rotated 180° (upside-down (上下颠倒)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 90.25,
+        "y": 877.56
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "U14",
+      "primitives": [
+        "11a94a27e86815efe26"
+      ],
+      "message": "designator 'U14' is rotated 180° (upside-down (上下颠倒)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 105.47,
+        "y": 1328.34
+      }
+    },
+    {
+      "type": "silk-over-pad",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "U18",
+      "primitives": [
+        "fecdbb8532dcf1d6e58"
+      ],
+      "message": "silk text Designator \"U18\" overlaps pad U18.19 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+      "at": {
+        "x": 112.8,
+        "y": 206.3
+      }
+    },
+    {
+      "type": "silk-over-pad",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "U21",
+      "primitives": [
+        "36b69f2de5ae8b5ee58"
+      ],
+      "message": "silk text Designator \"U21\" overlaps pad U21.19 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+      "at": {
+        "x": 90.6,
+        "y": 721.8
+      }
+    },
+    {
+      "type": "silk-over-pad",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "U8",
+      "primitives": [
+        "06a525da8fa887e7e46"
+      ],
+      "message": "silk text Designator \"U8\" overlaps pad U8.11 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+      "at": {
+        "x": 106.3,
+        "y": 1675.4
+      }
+    },
+    {
+      "type": "silk-over-pad",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "U15",
+      "primitives": [
+        "6ad4486387742873e58"
+      ],
+      "message": "silk text Designator \"U15\" overlaps pad U15.19 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+      "at": {
+        "x": 90.6,
+        "y": 1052.2
+      }
+    },
+    {
+      "type": "silk-over-pad",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "U16",
+      "primitives": [
+        "abb017b2418bbf1de58"
+      ],
+      "message": "silk text Designator \"U16\" overlaps pad U16.19 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+      "at": {
+        "x": 90.6,
+        "y": 513.2
+      }
+    },
+    {
+      "type": "silk-over-pad",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "U17",
+      "primitives": [
+        "791fd8d973700d79e2"
+      ],
+      "message": "silk text Designator \"U3\" overlaps pad U17.3 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+      "at": {
+        "x": 118,
+        "y": 905.5
+      }
+    },
+    {
+      "type": "silk-over-pad",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "U19",
+      "primitives": [
+        "5269dd9042185c3de24"
+      ],
+      "message": "silk text Designator \"U19\" overlaps pad U19.8 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+      "at": {
+        "x": 42.3,
+        "y": 616
+      }
+    },
+    {
+      "type": "silk-over-pad",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "U20",
+      "primitives": [
+        "7ceecca05861f1cce24"
+      ],
+      "message": "silk text Designator \"U20\" overlaps pad U20.8 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+      "at": {
+        "x": 18.7,
+        "y": 931
+      }
+    },
+    {
+      "type": "silk-over-pad",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "U5",
+      "primitives": [
+        "1dfeee4ef5d16c20e22"
+      ],
+      "message": "silk text Designator \"U11\" overlaps pad U5.3 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+      "at": {
+        "x": 85.1,
+        "y": 1246.9
+      }
+    },
+    {
+      "type": "silk-over-pad",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "U6",
+      "primitives": [
+        "1f70116c5d25cb64e22"
+      ],
+      "message": "silk text Designator \"U13\" overlaps pad U6.3 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+      "at": {
+        "x": 167.7,
+        "y": 1286.2
+      }
+    },
+    {
+      "type": "silk-over-pad",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "U4",
+      "primitives": [
+        "c95e43d3a9d47bbce24"
+      ],
+      "message": "silk text Designator \"U4\" overlaps pad U4.6 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+      "at": {
+        "x": 80.7,
+        "y": 1120.7
+      }
+    },
+    {
+      "type": "silk-over-pad",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "U15",
+      "primitives": [
+        "5fcdde9483147e30e26"
+      ],
+      "message": "silk text Designator \"U9\" overlaps pad U15.2 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+      "at": {
+        "x": 59.1,
+        "y": 1131.1
+      }
+    },
+    {
+      "type": "via-in-pad",
+      "level": "WARN",
+      "net": "GND",
+      "designator": "U1",
+      "primitives": [
+        "1412a27bbaf807a6e184"
+      ],
+      "message": "via sits ON pad U1.57 (net GND) — solder wicks down the barrel; offset the via and enter with a short stub (dog-bone) [规范 §2.3 禁止过孔打在焊盘上 — pcb-design-rules.md]",
+      "at": {
+        "x": 161.42,
+        "y": 402.51
+      }
+    },
+    {
+      "type": "via-in-pad",
+      "level": "WARN",
+      "net": "GND",
+      "designator": "U1",
+      "primitives": [
+        "1412a27bbaf807a6e185"
+      ],
+      "message": "via sits ON pad U1.57 (net GND) — solder wicks down the barrel; offset the via and enter with a short stub (dog-bone) [规范 §2.3 禁止过孔打在焊盘上 — pcb-design-rules.md]",
+      "at": {
+        "x": 122.05,
+        "y": 402.51
+      }
+    },
+    {
+      "type": "via-in-pad",
+      "level": "WARN",
+      "net": "GND",
+      "designator": "U1",
+      "primitives": [
+        "1412a27bbaf807a6e186"
+      ],
+      "message": "via sits ON pad U1.57 (net GND) — solder wicks down the barrel; offset the via and enter with a short stub (dog-bone) [规范 §2.3 禁止过孔打在焊盘上 — pcb-design-rules.md]",
+      "at": {
+        "x": 161.41,
+        "y": 323.78
+      }
+    },
+    {
+      "type": "via-in-pad",
+      "level": "WARN",
+      "net": "GND",
+      "designator": "U1",
+      "primitives": [
+        "1412a27bbaf807a6e187"
+      ],
+      "message": "via sits ON pad U1.57 (net GND) — solder wicks down the barrel; offset the via and enter with a short stub (dog-bone) [规范 §2.3 禁止过孔打在焊盘上 — pcb-design-rules.md]",
+      "at": {
+        "x": 122.05,
+        "y": 323.78
+      }
+    },
+    {
+      "type": "via-in-pad",
+      "level": "WARN",
+      "net": "GND",
+      "designator": "U1",
+      "primitives": [
+        "1412a27bbaf807a6e188"
+      ],
+      "message": "via sits ON pad U1.57 (net GND) — solder wicks down the barrel; offset the via and enter with a short stub (dog-bone) [规范 §2.3 禁止过孔打在焊盘上 — pcb-design-rules.md]",
+      "at": {
+        "x": 200.79,
+        "y": 402.51
+      }
+    },
+    {
+      "type": "via-in-pad",
+      "level": "WARN",
+      "net": "GND",
+      "designator": "U1",
+      "primitives": [
+        "1412a27bbaf807a6e189"
+      ],
+      "message": "via sits ON pad U1.57 (net GND) — solder wicks down the barrel; offset the via and enter with a short stub (dog-bone) [规范 §2.3 禁止过孔打在焊盘上 — pcb-design-rules.md]",
+      "at": {
+        "x": 200.79,
+        "y": 323.77
+      }
+    },
+    {
+      "type": "via-in-pad",
+      "level": "WARN",
+      "net": "GND",
+      "designator": "U1",
+      "primitives": [
+        "1412a27bbaf807a6e190"
+      ],
+      "message": "via sits ON pad U1.57 (net GND) — solder wicks down the barrel; offset the via and enter with a short stub (dog-bone) [规范 §2.3 禁止过孔打在焊盘上 — pcb-design-rules.md]",
+      "at": {
+        "x": 161.42,
+        "y": 363.14
+      }
+    },
+    {
+      "type": "via-in-pad",
+      "level": "WARN",
+      "net": "GND",
+      "designator": "U1",
+      "primitives": [
+        "1412a27bbaf807a6e191"
+      ],
+      "message": "via sits ON pad U1.57 (net GND) — solder wicks down the barrel; offset the via and enter with a short stub (dog-bone) [规范 §2.3 禁止过孔打在焊盘上 — pcb-design-rules.md]",
+      "at": {
+        "x": 200.77,
+        "y": 363.16
+      }
+    },
+    {
+      "type": "via-in-pad",
+      "level": "WARN",
+      "net": "GND",
+      "designator": "U1",
+      "primitives": [
+        "1412a27bbaf807a6e192"
+      ],
+      "message": "via sits ON pad U1.57 (net GND) — solder wicks down the barrel; offset the via and enter with a short stub (dog-bone) [规范 §2.3 禁止过孔打在焊盘上 — pcb-design-rules.md]",
+      "at": {
+        "x": 122.05,
+        "y": 363.14
+      }
+    },
+    {
+      "type": "fiducial-missing",
+      "level": "INFO",
+      "message": "board has 125 top-layer pads (SMT-scale) but only 1 fiducial(s) (FID*/MARK*) — SMT wants ≥3 non-collinear 1mm marks (JLC panel rails add their own; local marks needed for fine-pitch) [规范 §9 Mark点设计 — pcb-design-rules.md]"
+    },
+    {
+      "type": "silk-off-board",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "U1",
+      "primitives": [
+        "1412a27bbaf807a6e194"
+      ],
+      "message": "silkscreen text 'U1' extends outside the board outline (text -36..9 × 198..239 mil, board 0..323 × 0..1811) — it will not be printed; move it with `pcb silk-set --ids 1412a27bbaf807a6e194 --x … --y …`",
+      "at": {
+        "x": 9.07,
+        "y": 198.18
+      }
+    },
+    {
+      "type": "silk-off-board",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "MK1",
+      "primitives": [
+        "08da4ea71a40c02ce28"
+      ],
+      "message": "silkscreen text 'MK1' extends outside the board outline (text -20..25 × 1376..1448 mil, board 0..323 × 0..1811) — it will not be printed; move it with `pcb silk-set --ids 08da4ea71a40c02ce28 --x … --y …`",
+      "at": {
+        "x": 25.43,
+        "y": 1375.75
+      }
+    },
+    {
+      "type": "via-crosses-plane",
+      "level": "INFO",
+      "layer": 15,
+      "message": "inner PLANE Inner1 has no net-bound pour visible — plane net unknown; NOTE (#110): after `doc reload` PLANE-layer pours are invisible to pcb.pour.list, so this may be a false positive — treat `pcb drc` Connection=0 as the arbiter before adding any pour; if the plane is genuinely empty, pour the net while the layer is still SIGNAL, then flip to PLANE and pour-rebuild (`pcb power-planes` does this)"
+    },
+    {
+      "type": "via-crosses-plane",
+      "level": "INFO",
+      "layer": 17,
+      "message": "inner PLANE Inner3 has no net-bound pour visible — plane net unknown; NOTE (#110): after `doc reload` PLANE-layer pours are invisible to pcb.pour.list, so this may be a false positive — treat `pcb drc` Connection=0 as the arbiter before adding any pour; if the plane is genuinely empty, pour the net while the layer is still SIGNAL, then flip to PLANE and pour-rebuild (`pcb power-planes` does this)"
+    },
+    {
+      "type": "power-not-poured",
+      "level": "WARN",
+      "net": "CAM_DOVDD_1V8",
+      "message": "power net CAM_DOVDD_1V8 (8 pads) has no copper pour/plane — power should be poured, not carried by thin tracks: `pcb pour-fit --net CAM_DOVDD_1V8` (2-layer) or `pcb power-planes` (4-layer) [规范 §5.2 铺铜策略 — pcb-design-rules.md]"
+    },
+    {
+      "type": "power-not-poured",
+      "level": "WARN",
+      "net": "CAM_DOVDD_OK_3V3",
+      "message": "power net CAM_DOVDD_OK_3V3 (2 pads) has no copper pour/plane — power should be poured, not carried by thin tracks: `pcb pour-fit --net CAM_DOVDD_OK_3V3` (2-layer) or `pcb power-planes` (4-layer) [规范 §5.2 铺铜策略 — pcb-design-rules.md]"
+    },
+    {
+      "type": "power-not-poured",
+      "level": "INFO",
+      "net": "GND",
+      "message": "power net GND (56 pads) has no VISIBLE pour — but the board carries 2 inner PLANE layer(s) with unknown net: PLANE-layer pours are invisible to pcb.pour.list after a doc reload (#110), so this is most likely that pour; treat `pcb drc` Connection=0 as the arbiter — do NOT re-run `pcb power-planes` just to clear this finding (#117)"
+    },
+    {
+      "type": "power-not-poured",
+      "level": "WARN",
+      "net": "VSYS",
+      "message": "power net VSYS (8 pads) has no copper pour/plane — power should be poured, not carried by thin tracks: `pcb pour-fit --net VSYS` (2-layer) or `pcb power-planes` (4-layer) [规范 §5.2 铺铜策略 — pcb-design-rules.md]"
+    }
+  ],
+  "limitations": [
+    "pad MK1.5: POLYGON pad geometry is not supported by pcb net-path",
+    "pad U5.3: POLYGON pad geometry is not supported by pcb net-path",
+    "pad U5.2: POLYGON pad geometry is not supported by pcb net-path",
+    "pad U5.1: POLYGON pad geometry is not supported by pcb net-path",
+    "pad U5.4: POLYGON pad geometry is not supported by pcb net-path",
+    "pad U11.3: POLYGON pad geometry is not supported by pcb net-path",
+    "pad U11.2: POLYGON pad geometry is not supported by pcb net-path",
+    "pad U11.1: POLYGON pad geometry is not supported by pcb net-path",
+    "pad U11.4: POLYGON pad geometry is not supported by pcb net-path",
+    "pad U13.3: POLYGON pad geometry is not supported by pcb net-path",
+    "pad U13.2: POLYGON pad geometry is not supported by pcb net-path",
+    "pad U13.1: POLYGON pad geometry is not supported by pcb net-path",
+    "pad U13.4: POLYGON pad geometry is not supported by pcb net-path",
+    "pad U6.3: POLYGON pad geometry is not supported by pcb net-path",
+    "pad U6.2: POLYGON pad geometry is not supported by pcb net-path",
+    "pad U6.1: POLYGON pad geometry is not supported by pcb net-path",
+    "pad U6.4: POLYGON pad geometry is not supported by pcb net-path",
+    "pad U17.1: POLYGON pad geometry is not supported by pcb net-path",
+    "pad U17.4: POLYGON pad geometry is not supported by pcb net-path",
+    "pad U17.5: POLYGON pad geometry is not supported by pcb net-path",
+    "pad U17.2: POLYGON pad geometry is not supported by pcb net-path",
+    "24 pad(s) have captured source shapes unsupported by exact pad-contact inspection"
+  ],
+  "incomplete": true,
+  "coverage": {
+    "complete": false,
+    "componentsInventoryKnown": true,
+    "padsInventoryKnown": true,
+    "componentCount": 21,
+    "totalPads": 278,
+    "knownGeometryPads": 254,
+    "unsupportedGeometryPads": 24,
+    "unknownGeometryPads": 0,
+    "legacyGeometryPads": 0,
+    "unverifiedPads": [
+      {
+        "componentPrimitiveId": "08da4ea71a40c02c",
+        "designator": "MK1",
+        "primitiveId": "08da4ea71a40c02ce14",
+        "padNumber": "5",
+        "status": "unsupported",
+        "reason": "POLYGON pad geometry is not supported by pcb net-path"
+      },
+      {
+        "componentPrimitiveId": "08da4ea71a40c02c",
+        "designator": "MK1",
+        "primitiveId": "08da4ea71a40c02ce15",
+        "padNumber": "5",
+        "status": "unsupported",
+        "reason": "POLYGON pad geometry is not supported by pcb net-path"
+      },
+      {
+        "componentPrimitiveId": "08da4ea71a40c02c",
+        "designator": "MK1",
+        "primitiveId": "08da4ea71a40c02ce16",
+        "padNumber": "5",
+        "status": "unsupported",
+        "reason": "POLYGON pad geometry is not supported by pcb net-path"
+      },
+      {
+        "componentPrimitiveId": "08da4ea71a40c02c",
+        "designator": "MK1",
+        "primitiveId": "08da4ea71a40c02ce17",
+        "padNumber": "5",
+        "status": "unsupported",
+        "reason": "POLYGON pad geometry is not supported by pcb net-path"
+      },
+      {
+        "componentPrimitiveId": "a63aff154b9f8bec",
+        "designator": "U5",
+        "primitiveId": "a63aff154b9f8bece11",
+        "padNumber": "3",
+        "status": "unsupported",
+        "reason": "POLYGON pad geometry is not supported by pcb net-path"
+      },
+      {
+        "componentPrimitiveId": "a63aff154b9f8bec",
+        "designator": "U5",
+        "primitiveId": "a63aff154b9f8bece12",
+        "padNumber": "2",
+        "status": "unsupported",
+        "reason": "POLYGON pad geometry is not supported by pcb net-path"
+      },
+      {
+        "componentPrimitiveId": "a63aff154b9f8bec",
+        "designator": "U5",
+        "primitiveId": "a63aff154b9f8bece13",
+        "padNumber": "1",
+        "status": "unsupported",
+        "reason": "POLYGON pad geometry is not supported by pcb net-path"
+      },
+      {
+        "componentPrimitiveId": "a63aff154b9f8bec",
+        "designator": "U5",
+        "primitiveId": "a63aff154b9f8bece14",
+        "padNumber": "4",
+        "status": "unsupported",
+        "reason": "POLYGON pad geometry is not supported by pcb net-path"
+      },
+      {
+        "componentPrimitiveId": "1dfeee4ef5d16c20",
+        "designator": "U11",
+        "primitiveId": "1dfeee4ef5d16c20e11",
+        "padNumber": "3",
+        "status": "unsupported",
+        "reason": "POLYGON pad geometry is not supported by pcb net-path"
+      },
+      {
+        "componentPrimitiveId": "1dfeee4ef5d16c20",
+        "designator": "U11",
+        "primitiveId": "1dfeee4ef5d16c20e12",
+        "padNumber": "2",
+        "status": "unsupported",
+        "reason": "POLYGON pad geometry is not supported by pcb net-path"
+      },
+      {
+        "componentPrimitiveId": "1dfeee4ef5d16c20",
+        "designator": "U11",
+        "primitiveId": "1dfeee4ef5d16c20e13",
+        "padNumber": "1",
+        "status": "unsupported",
+        "reason": "POLYGON pad geometry is not supported by pcb net-path"
+      },
+      {
+        "componentPrimitiveId": "1dfeee4ef5d16c20",
+        "designator": "U11",
+        "primitiveId": "1dfeee4ef5d16c20e14",
+        "padNumber": "4",
+        "status": "unsupported",
+        "reason": "POLYGON pad geometry is not supported by pcb net-path"
+      },
+      {
+        "componentPrimitiveId": "1f70116c5d25cb64",
+        "designator": "U13",
+        "primitiveId": "1f70116c5d25cb64e11",
+        "padNumber": "3",
+        "status": "unsupported",
+        "reason": "POLYGON pad geometry is not supported by pcb net-path"
+      },
+      {
+        "componentPrimitiveId": "1f70116c5d25cb64",
+        "designator": "U13",
+        "primitiveId": "1f70116c5d25cb64e12",
+        "padNumber": "2",
+        "status": "unsupported",
+        "reason": "POLYGON pad geometry is not supported by pcb net-path"
+      },
+      {
+        "componentPrimitiveId": "1f70116c5d25cb64",
+        "designator": "U13",
+        "primitiveId": "1f70116c5d25cb64e13",
+        "padNumber": "1",
+        "status": "unsupported",
+        "reason": "POLYGON pad geometry is not supported by pcb net-path"
+      },
+      {
+        "componentPrimitiveId": "1f70116c5d25cb64",
+        "designator": "U13",
+        "primitiveId": "1f70116c5d25cb64e14",
+        "padNumber": "4",
+        "status": "unsupported",
+        "reason": "POLYGON pad geometry is not supported by pcb net-path"
+      },
+      {
+        "componentPrimitiveId": "8f152691acb5e542",
+        "designator": "U6",
+        "primitiveId": "8f152691acb5e542e11",
+        "padNumber": "3",
+        "status": "unsupported",
+        "reason": "POLYGON pad geometry is not supported by pcb net-path"
+      },
+      {
+        "componentPrimitiveId": "8f152691acb5e542",
+        "designator": "U6",
+        "primitiveId": "8f152691acb5e542e12",
+        "padNumber": "2",
+        "status": "unsupported",
+        "reason": "POLYGON pad geometry is not supported by pcb net-path"
+      },
+      {
+        "componentPrimitiveId": "8f152691acb5e542",
+        "designator": "U6",
+        "primitiveId": "8f152691acb5e542e13",
+        "padNumber": "1",
+        "status": "unsupported",
+        "reason": "POLYGON pad geometry is not supported by pcb net-path"
+      },
+      {
+        "componentPrimitiveId": "8f152691acb5e542",
+        "designator": "U6",
+        "primitiveId": "8f152691acb5e542e14",
+        "padNumber": "4",
+        "status": "unsupported",
+        "reason": "POLYGON pad geometry is not supported by pcb net-path"
+      },
+      {
+        "componentPrimitiveId": "65d4325202f8a741",
+        "designator": "U17",
+        "primitiveId": "65d4325202f8a741e10",
+        "padNumber": "1",
+        "status": "unsupported",
+        "reason": "POLYGON pad geometry is not supported by pcb net-path"
+      },
+      {
+        "componentPrimitiveId": "65d4325202f8a741",
+        "designator": "U17",
+        "primitiveId": "65d4325202f8a741e11",
+        "padNumber": "4",
+        "status": "unsupported",
+        "reason": "POLYGON pad geometry is not supported by pcb net-path"
+      },
+      {
+        "componentPrimitiveId": "65d4325202f8a741",
+        "designator": "U17",
+        "primitiveId": "65d4325202f8a741e12",
+        "padNumber": "5",
+        "status": "unsupported",
+        "reason": "POLYGON pad geometry is not supported by pcb net-path"
+      },
+      {
+        "componentPrimitiveId": "65d4325202f8a741",
+        "designator": "U17",
+        "primitiveId": "65d4325202f8a741e13",
+        "padNumber": "2",
+        "status": "unsupported",
+        "reason": "POLYGON pad geometry is not supported by pcb net-path"
+      }
+    ],
+    "limitations": [
+      "24 pad(s) have captured source shapes unsupported by exact pad-contact inspection"
+    ]
+  }
+}
+pcb check: 39 issue(s) (--strict)

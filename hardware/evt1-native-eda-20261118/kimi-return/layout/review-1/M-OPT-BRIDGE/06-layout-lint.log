@@ -1,0 +1,330 @@
+$ C:\Users\Admin（无密码）\.local\bin\easyeda.exe pcb layout-lint --json --min-gap 7.874015748031496 --project cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662 --doc 9ce45f14cb79dc9d
+{
+  "report": {
+    "ok": false,
+    "incomplete": true,
+    "coverage": {
+      "complete": false,
+      "componentsInventoryKnown": true,
+      "padsInventoryKnown": true,
+      "componentCount": 10,
+      "totalPads": 92,
+      "knownGeometryPads": 80,
+      "unsupportedGeometryPads": 12,
+      "unknownGeometryPads": 0,
+      "legacyGeometryPads": 0,
+      "unverifiedPads": [
+        {
+          "componentPrimitiveId": "be23c51e45e6cd5a",
+          "designator": "MK2",
+          "primitiveId": "be23c51e45e6cd5ae14",
+          "padNumber": "5",
+          "status": "unsupported",
+          "reason": "POLYGON pad geometry is not supported by pcb net-path"
+        },
+        {
+          "componentPrimitiveId": "be23c51e45e6cd5a",
+          "designator": "MK2",
+          "primitiveId": "be23c51e45e6cd5ae15",
+          "padNumber": "5",
+          "status": "unsupported",
+          "reason": "POLYGON pad geometry is not supported by pcb net-path"
+        },
+        {
+          "componentPrimitiveId": "be23c51e45e6cd5a",
+          "designator": "MK2",
+          "primitiveId": "be23c51e45e6cd5ae16",
+          "padNumber": "5",
+          "status": "unsupported",
+          "reason": "POLYGON pad geometry is not supported by pcb net-path"
+        },
+        {
+          "componentPrimitiveId": "be23c51e45e6cd5a",
+          "designator": "MK2",
+          "primitiveId": "be23c51e45e6cd5ae17",
+          "padNumber": "5",
+          "status": "unsupported",
+          "reason": "POLYGON pad geometry is not supported by pcb net-path"
+        },
+        {
+          "componentPrimitiveId": "cad0300e1c3fb6b4",
+          "designator": "U4",
+          "primitiveId": "cad0300e1c3fb6b4e11",
+          "padNumber": "3",
+          "status": "unsupported",
+          "reason": "POLYGON pad geometry is not supported by pcb net-path"
+        },
+        {
+          "componentPrimitiveId": "cad0300e1c3fb6b4",
+          "designator": "U4",
+          "primitiveId": "cad0300e1c3fb6b4e12",
+          "padNumber": "2",
+          "status": "unsupported",
+          "reason": "POLYGON pad geometry is not supported by pcb net-path"
+        },
+        {
+          "componentPrimitiveId": "cad0300e1c3fb6b4",
+          "designator": "U4",
+          "primitiveId": "cad0300e1c3fb6b4e13",
+          "padNumber": "1",
+          "status": "unsupported",
+          "reason": "POLYGON pad geometry is not supported by pcb net-path"
+        },
+        {
+          "componentPrimitiveId": "cad0300e1c3fb6b4",
+          "designator": "U4",
+          "primitiveId": "cad0300e1c3fb6b4e14",
+          "padNumber": "4",
+          "status": "unsupported",
+          "reason": "POLYGON pad geometry is not supported by pcb net-path"
+        },
+        {
+          "componentPrimitiveId": "5f5102619810ed4d",
+          "designator": "U1",
+          "primitiveId": "5f5102619810ed4de11",
+          "padNumber": "3",
+          "status": "unsupported",
+          "reason": "POLYGON pad geometry is not supported by pcb net-path"
+        },
+        {
+          "componentPrimitiveId": "5f5102619810ed4d",
+          "designator": "U1",
+          "primitiveId": "5f5102619810ed4de12",
+          "padNumber": "2",
+          "status": "unsupported",
+          "reason": "POLYGON pad geometry is not supported by pcb net-path"
+        },
+        {
+          "componentPrimitiveId": "5f5102619810ed4d",
+          "designator": "U1",
+          "primitiveId": "5f5102619810ed4de13",
+          "padNumber": "1",
+          "status": "unsupported",
+          "reason": "POLYGON pad geometry is not supported by pcb net-path"
+        },
+        {
+          "componentPrimitiveId": "5f5102619810ed4d",
+          "designator": "U1",
+          "primitiveId": "5f5102619810ed4de14",
+          "padNumber": "4",
+          "status": "unsupported",
+          "reason": "POLYGON pad geometry is not supported by pcb net-path"
+        }
+      ],
+      "limitations": [
+        "12 pad(s) have captured source shapes unsupported by exact pad-contact inspection"
+      ]
+    },
+    "score": 28,
+    "verdict": "incomplete",
+    "componentCount": 10,
+    "minGapMil": 7.874015748031496,
+    "overlaps": null,
+    "outsideOutline": null,
+    "tightSpacing": null,
+    "silk": [
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 3,
+        "designator": "U7",
+        "primitives": [
+          "b6a84c4c3d4d92c1e72"
+        ],
+        "message": "silk text Designator \"U2\" overlaps pad U7.2 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 65.1,
+          "y": 479.8
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "MK2",
+        "primitives": [
+          "cad0300e1c3fb6b4e22"
+        ],
+        "message": "silk text Designator \"U4\" overlaps pad MK2.5 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 49.2,
+          "y": 659.1
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 3,
+        "designator": "U2",
+        "primitives": [
+          "1152d412de1e0771e20"
+        ],
+        "message": "silk text Designator \"U13\" overlaps pad U2.D1 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 60,
+          "y": 360.8
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "U4",
+        "primitives": [
+          "d1aacd828ef8e75ee20"
+        ],
+        "message": "silk text Designator \"U12\" overlaps pad U4.3 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 53.6,
+          "y": 745.3
+        }
+      },
+      {
+        "type": "silk-off-board",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "U1",
+        "primitives": [
+          "5f5102619810ed4de22"
+        ],
+        "message": "silkscreen text 'U1' extends outside the board outline (text 123..168 × 703..744 mil, board -2..167 × -2..868) — it will not be printed; move it with `pcb silk-set --ids 5f5102619810ed4de22 --x … --y …`",
+        "at": {
+          "x": 123.34,
+          "y": 703.14
+        }
+      },
+      {
+        "type": "silk-off-board",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "Y1",
+        "primitives": [
+          "6aeaf22afa429c01e24"
+        ],
+        "message": "silkscreen text 'Y1' extends outside the board outline (text 169..214 × 304..348 mil, board -2..167 × -2..868) — it will not be printed; move it with `pcb silk-set --ids 6aeaf22afa429c01e24 --x … --y …`",
+        "at": {
+          "x": 168.82,
+          "y": 304.21
+        }
+      }
+    ],
+    "sides": {
+      "bottom": 5,
+      "top": 5
+    },
+    "signalNets": 7,
+    "ratsnestLenMil": 2901.19,
+    "crossingCount": 18,
+    "crossings": [
+      {
+        "netA": "1V2_FPGA_CORE",
+        "netB": "1V8_SYS",
+        "x": 42.71,
+        "y": 578.7
+      },
+      {
+        "netA": "1V2_FPGA_PLL",
+        "netB": "1V8_FPGA_IO",
+        "x": 76.84,
+        "y": 463.43
+      },
+      {
+        "netA": "1V2_FPGA_PLL",
+        "netB": "1V8_FPGA_IO",
+        "x": 78.41,
+        "y": 561.17
+      },
+      {
+        "netA": "1V2_FPGA_PLL",
+        "netB": "1V8_SYS",
+        "x": 80.66,
+        "y": 701.75
+      },
+      {
+        "netA": "1V2_FPGA_PLL",
+        "netB": "1V8_SYS",
+        "x": 80.1,
+        "y": 666.72
+      },
+      {
+        "netA": "1V2_FPGA_PLL",
+        "netB": "1V8_SYS",
+        "x": 78.69,
+        "y": 578.7
+      },
+      {
+        "netA": "1V8_FPGA_IO",
+        "netB": "1V8_SYS",
+        "x": 104.36,
+        "y": 705.27
+      },
+      {
+        "netA": "1V8_FPGA_IO",
+        "netB": "1V8_SYS",
+        "x": 81.56,
+        "y": 578.7
+      },
+      {
+        "netA": "1V8_FPGA_IO",
+        "netB": "1V8_SYS",
+        "x": 90.54,
+        "y": 628.57
+      },
+      {
+        "netA": "1V8_FPGA_IO",
+        "netB": "FPGA_CDONE_VSYNC_N",
+        "x": 96.86,
+        "y": 326.33
+      },
+      {
+        "netA": "1V8_FPGA_IO",
+        "netB": "FPGA_CDONE_VSYNC_N",
+        "x": 96.43,
+        "y": 398.11
+      },
+      {
+        "netA": "1V8_FPGA_IO",
+        "netB": "FPGA_CDONE_VSYNC_N",
+        "x": 93.46,
+        "y": 348.2
+      },
+      {
+        "netA": "1V8_FPGA_IO",
+        "netB": "FPGA_CRESET_B",
+        "x": 93.76,
+        "y": 317.21
+      },
+      {
+        "netA": "1V8_FPGA_IO",
+        "netB": "clk_48m",
+        "x": 99.36,
+        "y": 392.23
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "FPGA_CDONE_VSYNC_N",
+        "x": 137.65,
+        "y": 710.21
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "FPGA_CDONE_VSYNC_N",
+        "x": 138.31,
+        "y": 715.21
+      },
+      {
+        "netA": "FPGA_CDONE_VSYNC_N",
+        "netB": "FPGA_CRESET_B",
+        "x": 120.91,
+        "y": 171.74
+      },
+      {
+        "netA": "FPGA_CDONE_VSYNC_N",
+        "netB": "clk_48m",
+        "x": 95.65,
+        "y": 392.22
+      }
+    ],
+    "summary": "score 28/100 (incomplete): 10 comps [bottom 5 / top 5], 0 short, 0 overlap, 0 off-board, 0 tight; 7 signal nets, ratsnest 2901mil, 18 crossings; geometry inspection incomplete"
+  }
+}

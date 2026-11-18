@@ -1,0 +1,23 @@
+{
+  "rfRegions": [
+    "main/L2: region exists or may exist; CLI geometry verification failed; inspect fresh readback",
+    "main/L15: region exists or may exist; CLI geometry verification failed; inspect fresh readback",
+    "main/L16: region exists or may exist; CLI geometry verification failed; inspect fresh readback",
+    "main/L17: region exists or may exist; CLI geometry verification failed; inspect fresh readback",
+    "main/L18: region exists or may exist; CLI geometry verification failed; inspect fresh readback",
+    "right/L1: region exists or may exist; CLI geometry verification failed; inspect fresh readback",
+    "right/L2: region exists or may exist; CLI geometry verification failed; inspect fresh readback",
+    "right/L15: region exists or may exist; CLI geometry verification failed; inspect fresh readback",
+    "right/L16: region exists or may exist; CLI geometry verification failed; inspect fresh readback",
+    "right/L17: region exists or may exist; CLI geometry verification failed; inspect fresh readback",
+    "right/L18: region exists or may exist; CLI geometry verification failed; inspect fresh readback"
+  ],
+  "scope": "Explicit save/reload and basic rules do not qualify dielectric stack, impedance, via layer spans, VIPPO or courtyard.",
+  "blocked": [
+    "Supplier-accepted 6-layer 2+2+2 VIPPO stack and bridge 0.50 mm dielectric cross-section",
+    "Microvia/buried-via layer spans and copper fill/cap",
+    "0.20 mm courtyard native device2device rule",
+    "0.25 mm copper-to-board-edge matrix rule",
+    "Supplier-derived RF and USB impedance geometry"
+  ]
+}

@@ -1,0 +1,34 @@
+$ C:\Users\Admin（无密码）\.local\bin\easyeda.exe pcb region list --doc 1db01a36f669a47a --project cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662
+{
+  "id": "req_449",
+  "type": "response",
+  "version": "v1",
+  "windowId": "05e9143d-7956-4f1a-91a7-e59dbe47a43d",
+  "createdAt": "2026-11-18T15:00:00.5809543Z",
+  "ok": true,
+  "result": {
+    "count": 0,
+    "regions": []
+  },
+  "context": {
+    "projectUuid": "cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+    "projectName": "ZY_AIAR_EVT1_KIMI_20261118",
+    "documentUuid": "1db01a36f669a47a",
+    "documentType": "pcb",
+    "tabId": "1db01a36f669a47a@cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+    "pageVisibility": "hidden"
+  },
+  "mutationContext": {
+    "projectUuid": "cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+    "projectName": "ZY_AIAR_EVT1_KIMI_20261118",
+    "documentUuid": "1db01a36f669a47a",
+    "documentType": "pcb",
+    "tabId": "1db01a36f669a47a@cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+    "pageVisibility": "hidden"
+  },
+  "mutationContextAvailable": true,
+  "staleRisk": "PCB was mutated by pcb.stackup.set since the last reload — pcb.region.list (and DRC) may read stale engine state; authoritative workflows should save, run `easyeda doc reload`, then read back; if refresh fails, treat the data as unavailable",
+  "seq": 331,
+  "seqAbandoned": 0
+}
+⚠ staleRisk: PCB was mutated by pcb.stackup.set since the last reload — pcb.region.list (and DRC) may read stale engine state; authoritative workflows should save, run `easyeda doc reload`, then read back; if refresh fails, treat the data as unavailable

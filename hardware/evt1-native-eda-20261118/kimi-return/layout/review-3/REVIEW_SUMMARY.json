@@ -1,0 +1,1209 @@
+{
+  "round": 3,
+  "scope": "PARTIAL_UNROUTED_CANDIDATE_NOT_FOR_FAB",
+  "createdAt": "2026-11-18T16:44:19.628232+00:00",
+  "sourceProjectUuid": "cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+  "boards": {
+    "M-MAIN-L": {
+      "pcbUuid": "8fbc3cae65886fe5",
+      "schematicUuid": "dff3a8fe270050d6",
+      "candidateComponentCount": 21,
+      "nonemptyUniqueIdCount": 21,
+      "schematicBindingStatus": "BLOCKED: no controlled schematic; nonempty unique IDs do not prove schematic binding",
+      "nativeDrc": {
+        "passed": false,
+        "total": 229,
+        "counts": {
+          "Clearance Error": 19,
+          "Clearance Error in the same footprint": 4,
+          "Connection Error": 205,
+          "Netlist Error": 1
+        },
+        "clearanceByObjectType": {
+          "Plane Zone to Slot Region": 1,
+          "Plane Zone to Via": 9,
+          "Hole to Plane Zone": 9,
+          "SMD Pad to Slot Region": 4
+        },
+        "binding": {
+          "boardName": "evt1-main-left",
+          "hint": "Netlist Error is often a stale Board binding — verify the schematic UUID matches the open schematic; if not, run `easyeda board rebind --schematic <uuid> --pcb <uuid>`.",
+          "pcbName": "PCB1",
+          "pcbUuid": "8fbc3cae65886fe5",
+          "schematicName": "Schematic1",
+          "schematicUuid": "92b8b2f086cd15e6"
+        },
+        "rawLog": "layout\\review-3\\M-MAIN-L\\04-native-drc-strict.log"
+      },
+      "pcbCheck": {
+        "passed": false,
+        "summary": {
+          "danglingEnds": 0,
+          "acuteAngles": 0,
+          "nonOrthogonal": 0,
+          "trackOverPad": 0,
+          "clearance": 0,
+          "silkscreenFlipped": 13,
+          "overlappingVias": 0,
+          "singleLayerVias": 0,
+          "widthMismatches": 0,
+          "duplicateSegments": 0,
+          "parallelCoupling": 0,
+          "antennaKeepout": 0,
+          "netlessPours": 0,
+          "viaCrossesPlane": 2,
+          "floatingIslands": 0,
+          "powerNotPoured": 4,
+          "netlessViaInPad": 0,
+          "widthUnderSpec": 0,
+          "silkOverPad": 13,
+          "silkOffBoard": 2,
+          "decapTooFar": 0,
+          "viaInPad": 9,
+          "copperNearEdge": 0,
+          "fiducialMissing": 1,
+          "zoneViolation": 0,
+          "internalOnEdge": 0,
+          "connectorPlugClearance": 0,
+          "connectorMatingBlocked": 0,
+          "connectorOpeningInward": 0,
+          "errors": 0,
+          "warnings": 40,
+          "total": 44
+        },
+        "incomplete": true,
+        "coverage": {
+          "complete": false,
+          "componentsInventoryKnown": true,
+          "padsInventoryKnown": true,
+          "componentCount": 21,
+          "totalPads": 278,
+          "knownGeometryPads": 254,
+          "unsupportedGeometryPads": 24,
+          "unknownGeometryPads": 0,
+          "legacyGeometryPads": 0,
+          "unverifiedPads": [
+            {
+              "componentPrimitiveId": "08da4ea71a40c02c",
+              "designator": "MK1",
+              "primitiveId": "08da4ea71a40c02ce14",
+              "padNumber": "5",
+              "status": "unsupported",
+              "reason": "POLYGON pad geometry is not supported by pcb net-path"
+            },
+            {
+              "componentPrimitiveId": "08da4ea71a40c02c",
+              "designator": "MK1",
+              "primitiveId": "08da4ea71a40c02ce15",
+              "padNumber": "5",
+              "status": "unsupported",
+              "reason": "POLYGON pad geometry is not supported by pcb net-path"
+            },
+            {
+              "componentPrimitiveId": "08da4ea71a40c02c",
+              "designator": "MK1",
+              "primitiveId": "08da4ea71a40c02ce16",
+              "padNumber": "5",
+              "status": "unsupported",
+              "reason": "POLYGON pad geometry is not supported by pcb net-path"
+            },
+            {
+              "componentPrimitiveId": "08da4ea71a40c02c",
+              "designator": "MK1",
+              "primitiveId": "08da4ea71a40c02ce17",
+              "padNumber": "5",
+              "status": "unsupported",
+              "reason": "POLYGON pad geometry is not supported by pcb net-path"
+            },
+            {
+              "componentPrimitiveId": "a63aff154b9f8bec",
+              "designator": "U5",
+              "primitiveId": "a63aff154b9f8bece11",
+              "padNumber": "3",
+              "status": "unsupported",
+              "reason": "POLYGON pad geometry is not supported by pcb net-path"
+            },
+            {
+              "componentPrimitiveId": "a63aff154b9f8bec",
+              "designator": "U5",
+              "primitiveId": "a63aff154b9f8bece12",
+              "padNumber": "2",
+              "status": "unsupported",
+              "reason": "POLYGON pad geometry is not supported by pcb net-path"
+            },
+            {
+              "componentPrimitiveId": "a63aff154b9f8bec",
+              "designator": "U5",
+              "primitiveId": "a63aff154b9f8bece13",
+              "padNumber": "1",
+              "status": "unsupported",
+              "reason": "POLYGON pad geometry is not supported by pcb net-path"
+            },
+            {
+              "componentPrimitiveId": "a63aff154b9f8bec",
+              "designator": "U5",
+              "primitiveId": "a63aff154b9f8bece14",
+              "padNumber": "4",
+              "status": "unsupported",
+              "reason": "POLYGON pad geometry is not supported by pcb net-path"
+            },
+            {
+              "componentPrimitiveId": "1dfeee4ef5d16c20",
+              "designator": "U11",
+              "primitiveId": "1dfeee4ef5d16c20e11",
+              "padNumber": "3",
+              "status": "unsupported",
+              "reason": "POLYGON pad geometry is not supported by pcb net-path"
+            },
+            {
+              "componentPrimitiveId": "1dfeee4ef5d16c20",
+              "designator": "U11",
+              "primitiveId": "1dfeee4ef5d16c20e12",
+              "padNumber": "2",
+              "status": "unsupported",
+              "reason": "POLYGON pad geometry is not supported by pcb net-path"
+            },
+            {
+              "componentPrimitiveId": "1dfeee4ef5d16c20",
+              "designator": "U11",
+              "primitiveId": "1dfeee4ef5d16c20e13",
+              "padNumber": "1",
+              "status": "unsupported",
+              "reason": "POLYGON pad geometry is not supported by pcb net-path"
+            },
+            {
+              "componentPrimitiveId": "1dfeee4ef5d16c20",
+              "designator": "U11",
+              "primitiveId": "1dfeee4ef5d16c20e14",
+              "padNumber": "4",
+              "status": "unsupported",
+              "reason": "POLYGON pad geometry is not supported by pcb net-path"
+            },
+            {
+              "componentPrimitiveId": "1f70116c5d25cb64",
+              "designator": "U13",
+              "primitiveId": "1f70116c5d25cb64e11",
+              "padNumber": "3",
+              "status": "unsupported",
+              "reason": "POLYGON pad geometry is not supported by pcb net-path"
+            },
+            {
+              "componentPrimitiveId": "1f70116c5d25cb64",
+              "designator": "U13",
+              "primitiveId": "1f70116c5d25cb64e12",
+              "padNumber": "2",
+              "status": "unsupported",
+              "reason": "POLYGON pad geometry is not supported by pcb net-path"
+            },
+            {
+              "componentPrimitiveId": "1f70116c5d25cb64",
+              "designator": "U13",
+              "primitiveId": "1f70116c5d25cb64e13",
+              "padNumber": "1",
+              "status": "unsupported",
+              "reason": "POLYGON pad geometry is not supported by pcb net-path"
+            },
+            {
+              "componentPrimitiveId": "1f70116c5d25cb64",
+              "designator": "U13",
+              "primitiveId": "1f70116c5d25cb64e14",
+              "padNumber": "4",
+              "status": "unsupported",
+              "reason": "POLYGON pad geometry is not supported by pcb net-path"
+            },
+            {
+              "componentPrimitiveId": "8f152691acb5e542",
+              "designator": "U6",
+              "primitiveId": "8f152691acb5e542e11",
+              "padNumber": "3",
+              "status": "unsupported",
+              "reason": "POLYGON pad geometry is not supported by pcb net-path"
+            },
+            {
+              "componentPrimitiveId": "8f152691acb5e542",
+              "designator": "U6",
+              "primitiveId": "8f152691acb5e542e12",
+              "padNumber": "2",
+              "status": "unsupported",
+              "reason": "POLYGON pad geometry is not supported by pcb net-path"
+            },
+            {
+              "componentPrimitiveId": "8f152691acb5e542",
+              "designator": "U6",
+              "primitiveId": "8f152691acb5e542e13",
+              "padNumber": "1",
+              "status": "unsupported",
+              "reason": "POLYGON pad geometry is not supported by pcb net-path"
+            },
+            {
+              "componentPrimitiveId": "8f152691acb5e542",
+              "designator": "U6",
+              "primitiveId": "8f152691acb5e542e14",
+              "padNumber": "4",
+              "status": "unsupported",
+              "reason": "POLYGON pad geometry is not supported by pcb net-path"
+            },
+            {
+              "componentPrimitiveId": "65d4325202f8a741",
+              "designator": "U17",
+              "primitiveId": "65d4325202f8a741e10",
+              "padNumber": "1",
+              "status": "unsupported",
+              "reason": "POLYGON pad geometry is not supported by pcb net-path"
+            },
+            {
+              "componentPrimitiveId": "65d4325202f8a741",
+              "designator": "U17",
+              "primitiveId": "65d4325202f8a741e11",
+              "padNumber": "4",
+              "status": "unsupported",
+              "reason": "POLYGON pad geometry is not supported by pcb net-path"
+            },
+            {
+              "componentPrimitiveId": "65d4325202f8a741",
+              "designator": "U17",
+              "primitiveId": "65d4325202f8a741e12",
+              "padNumber": "5",
+              "status": "unsupported",
+              "reason": "POLYGON pad geometry is not supported by pcb net-path"
+            },
+            {
+              "componentPrimitiveId": "65d4325202f8a741",
+              "designator": "U17",
+              "primitiveId": "65d4325202f8a741e13",
+              "padNumber": "2",
+              "status": "unsupported",
+              "reason": "POLYGON pad geometry is not supported by pcb net-path"
+            }
+          ],
+          "limitations": [
+            "24 pad(s) have captured source shapes unsupported by exact pad-contact inspection"
+          ]
+        },
+        "limitations": [
+          "pad MK1.5: POLYGON pad geometry is not supported by pcb net-path",
+          "pad U5.3: POLYGON pad geometry is not supported by pcb net-path",
+          "pad U5.2: POLYGON pad geometry is not supported by pcb net-path",
+          "pad U5.1: POLYGON pad geometry is not supported by pcb net-path",
+          "pad U5.4: POLYGON pad geometry is not supported by pcb net-path",
+          "pad U11.3: POLYGON pad geometry is not supported by pcb net-path",
+          "pad U11.2: POLYGON pad geometry is not supported by pcb net-path",
+          "pad U11.1: POLYGON pad geometry is not supported by pcb net-path",
+          "pad U11.4: POLYGON pad geometry is not supported by pcb net-path",
+          "pad U13.3: POLYGON pad geometry is not supported by pcb net-path",
+          "pad U13.2: POLYGON pad geometry is not supported by pcb net-path",
+          "pad U13.1: POLYGON pad geometry is not supported by pcb net-path",
+          "pad U13.4: POLYGON pad geometry is not supported by pcb net-path",
+          "pad U6.3: POLYGON pad geometry is not supported by pcb net-path",
+          "pad U6.2: POLYGON pad geometry is not supported by pcb net-path",
+          "pad U6.1: POLYGON pad geometry is not supported by pcb net-path",
+          "pad U6.4: POLYGON pad geometry is not supported by pcb net-path",
+          "pad U17.1: POLYGON pad geometry is not supported by pcb net-path",
+          "pad U17.4: POLYGON pad geometry is not supported by pcb net-path",
+          "pad U17.5: POLYGON pad geometry is not supported by pcb net-path",
+          "pad U17.2: POLYGON pad geometry is not supported by pcb net-path",
+          "24 pad(s) have captured source shapes unsupported by exact pad-contact inspection"
+        ],
+        "rawLog": "layout\\review-3\\M-MAIN-L\\05-check-strict-json.log"
+      },
+      "layoutLint": {
+        "ok": false,
+        "incomplete": true,
+        "summary": "score 0/100 (incomplete): 21 comps [bottom 10 / top 11], 0 short, 0 overlap, 0 off-board, 0 tight; 49 signal nets, ratsnest 23293mil, 287 crossings; geometry inspection incomplete",
+        "rawLog": "layout\\review-3\\M-MAIN-L\\06-layout-lint.log"
+      },
+      "nativeErcOnUnrebuiltSheet": {
+        "passed": true,
+        "summary": {
+          "fatal": 0,
+          "error": 0,
+          "warn": 0,
+          "info": 0,
+          "unknown": 0,
+          "total": 0
+        },
+        "status": "EMPTY_SHEET_ONLY_NOT_CONTROLLED_ERC_PASS",
+        "rawLog": "layout\\review-3\\M-MAIN-L\\11-native-erc-strict-json.log"
+      },
+      "outlineMm": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          45.999999439999996
+        ],
+        [
+          5.800001099999999,
+          45.999999439999996
+        ],
+        [
+          5.800001099999999,
+          13.99999994
+        ],
+        [
+          8.199998840000001,
+          13.99999994
+        ],
+        [
+          8.199998840000001,
+          4.19999922
+        ],
+        [
+          5.800001099999999,
+          4.19999922
+        ],
+        [
+          5.800001099999999,
+          0.0
+        ]
+      ],
+      "rules": {
+        "clearanceMil": 5.98,
+        "clearanceTrackTrackMil": 1.97,
+        "trackWidthMil": 1.97,
+        "powerWidthMil": 20,
+        "trackWidthMinMil": 1.97,
+        "viaDrillMil": 7.87,
+        "viaDiameterMil": 15.75,
+        "copperToEdgeMil": 10,
+        "source": "live"
+      },
+      "copperLayers": 6,
+      "authoredRoutingCopperCounts": {
+        "lines": 0,
+        "arcs": 0,
+        "pours": 0,
+        "poured": 0,
+        "fills": 0
+      },
+      "embeddedFootprintViaCount": 9,
+      "requiredButNotPlaced": [
+        "J_BTB_L",
+        "J_CAM",
+        "J_CHG",
+        "U12_ESD_USB",
+        "TP_BAT_L_P",
+        "TP_BAT_L_N",
+        "SPK_L",
+        "R_CRST_A_PD",
+        "R_DIR1_PU",
+        "R_LS1_A4",
+        "R_LS1_B4",
+        "R_I2C_SCL_3V3",
+        "R_I2C_SDA_3V3",
+        "R_I2C_SCL_1V8",
+        "R_I2C_SDA_1V8",
+        "R_SCCB_SCL",
+        "R_SCCB_SDA",
+        "R_SENSE",
+        "R_LIMIT",
+        "R_PRIV_PU",
+        "R_XREQ",
+        "D_XREQ",
+        "C_XREQ",
+        "R_XREQ_BLEED",
+        "R_CAMRST",
+        "R_CAMPWDN",
+        "TP_NTC_L",
+        "R_LS3_EN",
+        "R_LS4_EN",
+        "L1_BB",
+        "R_BB_FB1",
+        "R_BB_FB2",
+        "L2_1V8",
+        "R_VSET_1V8",
+        "ANT1",
+        "R_CHIP_PU",
+        "C_CHIP_PU",
+        "TP_ESP_EN",
+        "TP_ESP_BOOT",
+        "R_ISO_GATE",
+        "R_ISO_PD",
+        "C_CHG_L_IN",
+        "C_CHG_L_SYS",
+        "C_CHG_L_BAT",
+        "C_OR_IN1",
+        "C_OR_IN2",
+        "C_OR_OUT",
+        "C_BB_IN",
+        "C_BB_OUT",
+        "C_BK_IN",
+        "C_BK_OUT",
+        "C_LDO_LED_IN",
+        "C_LDO_LED_OUT",
+        "C_LDO_DOVDD_IN",
+        "C_LDO_DOVDD_OUT",
+        "C_LDO_DVDD_IN",
+        "C_LDO_DVDD_OUT",
+        "C_LDO_AVDD_IN",
+        "C_LDO_AVDD_OUT",
+        "BAT_L",
+        "C_ESP_BULK",
+        "C_ESP_VDD_SPI",
+        "R_ESP_BOOT",
+        "R_ESP_STRAP45",
+        "R_ESP_STRAP46",
+        "R_ESP_STRAP3",
+        "R_ESP_RF",
+        "C_ESP_RF_IN",
+        "C_ESP_RF_OUT",
+        "C_U8_LS1_A",
+        "C_U8_LS1_B",
+        "C_U8_PDM_LS_A",
+        "C_U8_PDM_LS_B",
+        "C_U8_CAM_ISO1_A",
+        "C_U8_CAM_ISO1_B",
+        "C_U8_CAM_ISO2_A",
+        "C_U8_CAM_ISO2_B",
+        "C_U8_AUD_LS2_A",
+        "C_U8_AUD_LS2_B",
+        "C_MK1_L",
+        "R_CAM_DOVDD_OK_PD",
+        "R_CAM_DOVDD_BLEED",
+        "C_CAM_SCCB_EN",
+        "R_LS3_VREF_BLEED",
+        "C_U10_AMP_L_HF",
+        "C_U10_AMP_L_BULK",
+        "U7_INA",
+        "R_WIN_TOP",
+        "R_WIN_MID",
+        "R_WIN_BOT",
+        "R_PRIV_RC",
+        "C_PRIV_RC",
+        "C_INA_SUPPLY",
+        "C_WIN_SUPPLY",
+        "C_CAMRST",
+        "TP_SPK_L_P",
+        "TP_SPK_L_N"
+      ],
+      "offlineFailedPlacements": [],
+      "candidateGeometryStatus": "PASS_WITHIN_LIMITED_SCOPE",
+      "reserveIntersections": [],
+      "minimumObservedSameSideBboxGapMm": 0.20322286000000034,
+      "clockPadDistances": [],
+      "auxiliaryActualSvg": "layout\\review-3\\M-MAIN-L\\actual-both.svg",
+      "officialStageSnapshot": {
+        "imageValid": false,
+        "rawLog": "layout\\review-3\\M-MAIN-L\\08-stage-snapshot.log",
+        "status": "UNAVAILABLE_OR_HIDDEN_TAB; SVG is auxiliary readback rendering, not official canvas screenshot"
+      },
+      "mechanicalQualification": "BLOCKED",
+      "rfQualification": "UNVERIFIED",
+      "stackupAndImpedance": "BLOCKED",
+      "manufacturing": "BLOCKED"
+    },
+    "M-OPT-BRIDGE": {
+      "pcbUuid": "9ce45f14cb79dc9d",
+      "schematicUuid": "43a42f20d31f8062",
+      "candidateComponentCount": 10,
+      "nonemptyUniqueIdCount": 10,
+      "schematicBindingStatus": "BLOCKED: no controlled schematic; nonempty unique IDs do not prove schematic binding",
+      "nativeDrc": {
+        "passed": false,
+        "total": 66,
+        "counts": {
+          "Clearance Error": 2,
+          "Clearance Error in the same footprint": 4,
+          "Connection Error": 59,
+          "Netlist Error": 1
+        },
+        "clearanceByObjectType": {
+          "Plane Zone to Slot Region": 2,
+          "SMD Pad to Slot Region": 4
+        },
+        "binding": {
+          "boardName": "evt1-optical-bridge",
+          "hint": "Netlist Error is often a stale Board binding — verify the schematic UUID matches the open schematic; if not, run `easyeda board rebind --schematic <uuid> --pcb <uuid>`.",
+          "pcbName": "PCB2",
+          "pcbUuid": "9ce45f14cb79dc9d",
+          "schematicName": "Schematic2",
+          "schematicUuid": "a79c8ff7c2d45dc5"
+        },
+        "rawLog": "layout\\review-3\\M-OPT-BRIDGE\\04-native-drc-strict.log"
+      },
+      "pcbCheck": {
+        "passed": false,
+        "summary": {
+          "danglingEnds": 0,
+          "acuteAngles": 0,
+          "nonOrthogonal": 0,
+          "trackOverPad": 0,
+          "clearance": 0,
+          "silkscreenFlipped": 6,
+          "overlappingVias": 0,
+          "singleLayerVias": 0,
+          "widthMismatches": 0,
+          "duplicateSegments": 0,
+          "parallelCoupling": 0,
+          "antennaKeepout": 0,
+          "netlessPours": 0,
+          "viaCrossesPlane": 2,
+          "floatingIslands": 0,
+          "powerNotPoured": 4,
+          "netlessViaInPad": 0,
+          "widthUnderSpec": 0,
+          "silkOverPad": 4,
+          "silkOffBoard": 2,
+          "decapTooFar": 0,
+          "viaInPad": 0,
+          "copperNearEdge": 0,
+          "fiducialMissing": 1,
+          "zoneViolation": 0,
+          "internalOnEdge": 0,
+          "connectorPlugClearance": 0,
+          "connectorMatingBlocked": 0,
+          "connectorOpeningInward": 0,
+          "errors": 0,
+          "warnings": 15,
+          "total": 19
+        },
+        "incomplete": true,
+        "coverage": {
+          "complete": false,
+          "componentsInventoryKnown": true,
+          "padsInventoryKnown": true,
+          "componentCount": 10,
+          "totalPads": 92,
+          "knownGeometryPads": 80,
+          "unsupportedGeometryPads": 12,
+          "unknownGeometryPads": 0,
+          "legacyGeometryPads": 0,
+          "unverifiedPads": [
+            {
+              "componentPrimitiveId": "be23c51e45e6cd5a",
+              "designator": "MK2",
+              "primitiveId": "be23c51e45e6cd5ae14",
+              "padNumber": "5",
+              "status": "unsupported",
+              "reason": "POLYGON pad geometry is not supported by pcb net-path"
+            },
+            {
+              "componentPrimitiveId": "be23c51e45e6cd5a",
+              "designator": "MK2",
+              "primitiveId": "be23c51e45e6cd5ae15",
+              "padNumber": "5",
+              "status": "unsupported",
+              "reason": "POLYGON pad geometry is not supported by pcb net-path"
+            },
+            {
+              "componentPrimitiveId": "be23c51e45e6cd5a",
+              "designator": "MK2",
+              "primitiveId": "be23c51e45e6cd5ae16",
+              "padNumber": "5",
+              "status": "unsupported",
+              "reason": "POLYGON pad geometry is not supported by pcb net-path"
+            },
+            {
+              "componentPrimitiveId": "be23c51e45e6cd5a",
+              "designator": "MK2",
+              "primitiveId": "be23c51e45e6cd5ae17",
+              "padNumber": "5",
+              "status": "unsupported",
+              "reason": "POLYGON pad geometry is not supported by pcb net-path"
+            },
+            {
+              "componentPrimitiveId": "cad0300e1c3fb6b4",
+              "designator": "U4",
+              "primitiveId": "cad0300e1c3fb6b4e11",
+              "padNumber": "3",
+              "status": "unsupported",
+              "reason": "POLYGON pad geometry is not supported by pcb net-path"
+            },
+            {
+              "componentPrimitiveId": "cad0300e1c3fb6b4",
+              "designator": "U4",
+              "primitiveId": "cad0300e1c3fb6b4e12",
+              "padNumber": "2",
+              "status": "unsupported",
+              "reason": "POLYGON pad geometry is not supported by pcb net-path"
+            },
+            {
+              "componentPrimitiveId": "cad0300e1c3fb6b4",
+              "designator": "U4",
+              "primitiveId": "cad0300e1c3fb6b4e13",
+              "padNumber": "1",
+              "status": "unsupported",
+              "reason": "POLYGON pad geometry is not supported by pcb net-path"
+            },
+            {
+              "componentPrimitiveId": "cad0300e1c3fb6b4",
+              "designator": "U4",
+              "primitiveId": "cad0300e1c3fb6b4e14",
+              "padNumber": "4",
+              "status": "unsupported",
+              "reason": "POLYGON pad geometry is not supported by pcb net-path"
+            },
+            {
+              "componentPrimitiveId": "5f5102619810ed4d",
+              "designator": "U1",
+              "primitiveId": "5f5102619810ed4de11",
+              "padNumber": "3",
+              "status": "unsupported",
+              "reason": "POLYGON pad geometry is not supported by pcb net-path"
+            },
+            {
+              "componentPrimitiveId": "5f5102619810ed4d",
+              "designator": "U1",
+              "primitiveId": "5f5102619810ed4de12",
+              "padNumber": "2",
+              "status": "unsupported",
+              "reason": "POLYGON pad geometry is not supported by pcb net-path"
+            },
+            {
+              "componentPrimitiveId": "5f5102619810ed4d",
+              "designator": "U1",
+              "primitiveId": "5f5102619810ed4de13",
+              "padNumber": "1",
+              "status": "unsupported",
+              "reason": "POLYGON pad geometry is not supported by pcb net-path"
+            },
+            {
+              "componentPrimitiveId": "5f5102619810ed4d",
+              "designator": "U1",
+              "primitiveId": "5f5102619810ed4de14",
+              "padNumber": "4",
+              "status": "unsupported",
+              "reason": "POLYGON pad geometry is not supported by pcb net-path"
+            }
+          ],
+          "limitations": [
+            "12 pad(s) have captured source shapes unsupported by exact pad-contact inspection"
+          ]
+        },
+        "limitations": [
+          "pad MK2.5: POLYGON pad geometry is not supported by pcb net-path",
+          "pad U4.3: POLYGON pad geometry is not supported by pcb net-path",
+          "pad U4.2: POLYGON pad geometry is not supported by pcb net-path",
+          "pad U4.1: POLYGON pad geometry is not supported by pcb net-path",
+          "pad U4.4: POLYGON pad geometry is not supported by pcb net-path",
+          "pad U1.3: POLYGON pad geometry is not supported by pcb net-path",
+          "pad U1.2: POLYGON pad geometry is not supported by pcb net-path",
+          "pad U1.1: POLYGON pad geometry is not supported by pcb net-path",
+          "pad U1.4: POLYGON pad geometry is not supported by pcb net-path",
+          "12 pad(s) have captured source shapes unsupported by exact pad-contact inspection"
+        ],
+        "rawLog": "layout\\review-3\\M-OPT-BRIDGE\\05-check-strict-json.log"
+      },
+      "layoutLint": {
+        "ok": false,
+        "incomplete": true,
+        "summary": "score 44/100 (incomplete): 10 comps [bottom 6 / top 4], 0 short, 0 overlap, 0 off-board, 0 tight; 6 signal nets, ratsnest 2587mil, 14 crossings; geometry inspection incomplete",
+        "rawLog": "layout\\review-3\\M-OPT-BRIDGE\\06-layout-lint.log"
+      },
+      "nativeErcOnUnrebuiltSheet": {
+        "passed": true,
+        "summary": {
+          "fatal": 0,
+          "error": 0,
+          "warn": 0,
+          "info": 0,
+          "unknown": 0,
+          "total": 0
+        },
+        "status": "EMPTY_SHEET_ONLY_NOT_CONTROLLED_ERC_PASS",
+        "rawLog": "layout\\review-3\\M-OPT-BRIDGE\\11-native-erc-strict-json.log"
+      },
+      "outlineMm": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          21.99999918
+        ],
+        [
+          4.19999922,
+          21.99999918
+        ],
+        [
+          4.19999922,
+          0.0
+        ]
+      ],
+      "rules": {
+        "clearanceMil": 5.98,
+        "clearanceTrackTrackMil": 1.97,
+        "trackWidthMil": 1.97,
+        "powerWidthMil": 20,
+        "trackWidthMinMil": 1.97,
+        "viaDrillMil": 7.87,
+        "viaDiameterMil": 15.75,
+        "copperToEdgeMil": 10,
+        "source": "live"
+      },
+      "copperLayers": 6,
+      "authoredRoutingCopperCounts": {
+        "lines": 0,
+        "arcs": 0,
+        "pours": 0,
+        "poured": 0,
+        "fills": 0
+      },
+      "embeddedFootprintViaCount": 0,
+      "requiredButNotPlaced": [
+        "J_BRIDGE_IN",
+        "J_DISP_L",
+        "J_DISP_R",
+        "R_DAMP_SCK_L",
+        "R_DAMP_CS_L",
+        "R_OPTCS_PU_L",
+        "R_DAMP_LD0",
+        "R_DAMP_LD1",
+        "R_DAMP_LD2",
+        "R_DAMP_LD3",
+        "R_DAMP_SCK_R",
+        "R_DAMP_CS_R",
+        "R_OPTCS_PU_R",
+        "R_DAMP_RD0",
+        "R_DAMP_RD1",
+        "R_DAMP_RD2",
+        "R_DAMP_RD3",
+        "R_PLL",
+        "R_VPP",
+        "R_CDONE_PU",
+        "R_CRST_PD",
+        "R_SS_PD",
+        "D3_PRIV",
+        "U6_OPT_AVDD",
+        "C_LDO_1V2F_IN",
+        "C_LDO_1V2F_OUT",
+        "C_LDO_1V8F_IN",
+        "C_LDO_1V8F_OUT",
+        "C_LDO_OPT_IN",
+        "C_LDO_OPT_OUT",
+        "C_IMU_VDD1",
+        "C_IMU_VDD2",
+        "C_IMU_VDDIO",
+        "C_MK2_C",
+        "U_AVDD_CLEAR_OD",
+        "U_AVDD_SCHMITT",
+        "U_AVDD_EN_OD",
+        "R_AVDD_WD_SET",
+        "R_AVDD_WD_DIV_H",
+        "R_AVDD_WD_DIV_L",
+        "R_AVDD_D3_PD",
+        "R_AVDD_CRST_PD",
+        "R_AVDD_PG_PU",
+        "R_AVDD_REQ_FILTER",
+        "R_AVDD_QUAL_PU",
+        "R_AVDD_EN_FEED",
+        "R_AVDD_EN_PD",
+        "C_AVDD_REQ_FILTER",
+        "C_AVDD_QUAL",
+        "C_AVDD_U_AVDD_LS_V",
+        "C_AVDD_U_AVDD_WD_V",
+        "C_AVDD_U_AVDD_IO_PG_V",
+        "C_AVDD_U_AVDD_SYS_PG_V",
+        "C_AVDD_U_AVDD_SYS_CLAMP_V",
+        "C_AVDD_U_AVDD_CLEAR_OD_V",
+        "C_AVDD_U_AVDD_SCHMITT_V",
+        "C_AVDD_U_AVDD_QUAL_V",
+        "C_AVDD_U_AVDD_EN_OD_V",
+        "C_AVDD_LS_A",
+        "TP_AVDD_SAFE",
+        "C_FPGA_PLL_BULK",
+        "C_FPGA_PLL_HF",
+        "C_FPGA_VPP_BULK",
+        "C_FPGA_VPP_HF",
+        "C_FPGA_CORE_BULK",
+        "C_FPGA_CORE_HF",
+        "C_FPGA_IO_BULK",
+        "C_FPGA_IO_HF0",
+        "C_FPGA_IO_HF1",
+        "C_FPGA_IO_HF2",
+        "C_FPGA_OSC_HF"
+      ],
+      "offlineFailedPlacements": [
+        {
+          "ref": "U14",
+          "sourceRef": "U_AVDD_WD",
+          "status": "BLOCKED_NO_LEGAL_CANDIDATE_IN_SEARCH",
+          "reason": "Fixed anchor conflict or bounded 0.20 mm full-bbox search found no legal position."
+        },
+        {
+          "ref": "U10",
+          "sourceRef": "U_AVDD_QUAL",
+          "status": "BLOCKED_NO_LEGAL_CANDIDATE_IN_SEARCH",
+          "reason": "Fixed anchor conflict or bounded 0.20 mm full-bbox search found no legal position."
+        }
+      ],
+      "candidateGeometryStatus": "FAIL",
+      "reserveIntersections": [
+        {
+          "component": "U8",
+          "reservation": "J_BRIDGE_IN",
+          "layer": "BOTTOM"
+        }
+      ],
+      "minimumObservedSameSideBboxGapMm": 0.23268432000000416,
+      "clockPadDistances": [
+        {
+          "a": "U2.B3",
+          "b": "Y1.3",
+          "centerDistanceMm": 0.0
+        }
+      ],
+      "auxiliaryActualSvg": "layout\\review-3\\M-OPT-BRIDGE\\actual-both.svg",
+      "officialStageSnapshot": {
+        "imageValid": true,
+        "rawLog": "layout\\review-3\\M-OPT-BRIDGE\\08-stage-snapshot.log",
+        "status": "UNAVAILABLE_OR_HIDDEN_TAB; SVG is auxiliary readback rendering, not official canvas screenshot"
+      },
+      "mechanicalQualification": "BLOCKED",
+      "rfQualification": "UNVERIFIED",
+      "stackupAndImpedance": "BLOCKED",
+      "manufacturing": "BLOCKED"
+    },
+    "M-AUD-R": {
+      "pcbUuid": "1db01a36f669a47a",
+      "schematicUuid": "388fb7a3b1e5f2d6",
+      "candidateComponentCount": 4,
+      "nonemptyUniqueIdCount": 4,
+      "schematicBindingStatus": "BLOCKED: no controlled schematic; nonempty unique IDs do not prove schematic binding",
+      "nativeDrc": {
+        "passed": false,
+        "total": 25,
+        "counts": {
+          "Clearance Error": 2,
+          "Clearance Error in the same footprint": 4,
+          "Connection Error": 18,
+          "Netlist Error": 1
+        },
+        "clearanceByObjectType": {
+          "Plane Zone to Slot Region": 2,
+          "SMD Pad to Slot Region": 4
+        },
+        "binding": {
+          "boardName": "evt1-audio-right",
+          "hint": "Netlist Error is often a stale Board binding — verify the schematic UUID matches the open schematic; if not, run `easyeda board rebind --schematic <uuid> --pcb <uuid>`.",
+          "pcbName": "PCB3",
+          "pcbUuid": "1db01a36f669a47a",
+          "schematicName": "Schematic3",
+          "schematicUuid": "b0f8d12e18ff89ec"
+        },
+        "rawLog": "layout\\review-3\\M-AUD-R\\04-native-drc-strict.log"
+      },
+      "pcbCheck": {
+        "passed": false,
+        "summary": {
+          "danglingEnds": 0,
+          "acuteAngles": 0,
+          "nonOrthogonal": 0,
+          "trackOverPad": 0,
+          "clearance": 0,
+          "silkscreenFlipped": 1,
+          "overlappingVias": 0,
+          "singleLayerVias": 0,
+          "widthMismatches": 0,
+          "duplicateSegments": 0,
+          "parallelCoupling": 0,
+          "antennaKeepout": 0,
+          "netlessPours": 0,
+          "viaCrossesPlane": 2,
+          "floatingIslands": 0,
+          "powerNotPoured": 1,
+          "netlessViaInPad": 0,
+          "widthUnderSpec": 0,
+          "silkOverPad": 0,
+          "silkOffBoard": 0,
+          "decapTooFar": 0,
+          "viaInPad": 0,
+          "copperNearEdge": 0,
+          "fiducialMissing": 0,
+          "zoneViolation": 0,
+          "internalOnEdge": 0,
+          "connectorPlugClearance": 0,
+          "connectorMatingBlocked": 0,
+          "connectorOpeningInward": 0,
+          "errors": 0,
+          "warnings": 1,
+          "total": 4
+        },
+        "incomplete": true,
+        "coverage": {
+          "complete": false,
+          "componentsInventoryKnown": true,
+          "padsInventoryKnown": true,
+          "componentCount": 4,
+          "totalPads": 32,
+          "knownGeometryPads": 28,
+          "unsupportedGeometryPads": 4,
+          "unknownGeometryPads": 0,
+          "legacyGeometryPads": 0,
+          "unverifiedPads": [
+            {
+              "componentPrimitiveId": "0157613fc1d3c051",
+              "designator": "MK3",
+              "primitiveId": "0157613fc1d3c051e14",
+              "padNumber": "5",
+              "status": "unsupported",
+              "reason": "POLYGON pad geometry is not supported by pcb net-path"
+            },
+            {
+              "componentPrimitiveId": "0157613fc1d3c051",
+              "designator": "MK3",
+              "primitiveId": "0157613fc1d3c051e15",
+              "padNumber": "5",
+              "status": "unsupported",
+              "reason": "POLYGON pad geometry is not supported by pcb net-path"
+            },
+            {
+              "componentPrimitiveId": "0157613fc1d3c051",
+              "designator": "MK3",
+              "primitiveId": "0157613fc1d3c051e16",
+              "padNumber": "5",
+              "status": "unsupported",
+              "reason": "POLYGON pad geometry is not supported by pcb net-path"
+            },
+            {
+              "componentPrimitiveId": "0157613fc1d3c051",
+              "designator": "MK3",
+              "primitiveId": "0157613fc1d3c051e17",
+              "padNumber": "5",
+              "status": "unsupported",
+              "reason": "POLYGON pad geometry is not supported by pcb net-path"
+            }
+          ],
+          "limitations": [
+            "4 pad(s) have captured source shapes unsupported by exact pad-contact inspection"
+          ]
+        },
+        "limitations": [
+          "pad MK3.5: POLYGON pad geometry is not supported by pcb net-path",
+          "4 pad(s) have captured source shapes unsupported by exact pad-contact inspection"
+        ],
+        "rawLog": "layout\\review-3\\M-AUD-R\\05-check-strict-json.log"
+      },
+      "layoutLint": {
+        "ok": false,
+        "incomplete": true,
+        "summary": "score 96/100 (incomplete): 4 comps [bottom 1 / top 3], 0 short, 0 overlap, 0 off-board, 0 tight; 2 signal nets, ratsnest 505mil, 1 crossings; geometry inspection incomplete",
+        "rawLog": "layout\\review-3\\M-AUD-R\\06-layout-lint.log"
+      },
+      "nativeErcOnUnrebuiltSheet": {
+        "passed": true,
+        "summary": {
+          "fatal": 0,
+          "error": 0,
+          "warn": 0,
+          "info": 0,
+          "unknown": 0,
+          "total": 0
+        },
+        "status": "EMPTY_SHEET_ONLY_NOT_CONTROLLED_ERC_PASS",
+        "rawLog": "layout\\review-3\\M-AUD-R\\11-native-erc-strict-json.log"
+      },
+      "outlineMm": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          34.00000058
+        ],
+        [
+          5.19999976,
+          34.00000058
+        ],
+        [
+          5.19999976,
+          0.0
+        ]
+      ],
+      "rules": {
+        "clearanceMil": 5.98,
+        "clearanceTrackTrackMil": 1.97,
+        "trackWidthMil": 1.97,
+        "powerWidthMil": 20,
+        "trackWidthMinMil": 1.97,
+        "viaDrillMil": 7.87,
+        "viaDiameterMil": 15.75,
+        "copperToEdgeMil": 10,
+        "source": "live"
+      },
+      "copperLayers": 6,
+      "authoredRoutingCopperCounts": {
+        "lines": 0,
+        "arcs": 0,
+        "pours": 0,
+        "poured": 0,
+        "fills": 0
+      },
+      "embeddedFootprintViaCount": 0,
+      "requiredButNotPlaced": [
+        "J_BTB_R",
+        "TP_BAT_R_P",
+        "TP_BAT_R_N",
+        "TP_NTC_R",
+        "SPK_R",
+        "R_IPC_PU",
+        "R_ISET_R",
+        "R_VSET_R",
+        "ANT2_BLE",
+        "R_SDR",
+        "Q_CHG_MUTE_R",
+        "R_MUTE_GATE",
+        "R_MUTE_PD",
+        "C_CHG_R_IN",
+        "C_CHG_R_OUT",
+        "BAT_R",
+        "U11_BLE",
+        "NRF_C1",
+        "NRF_C2",
+        "NRF_C3",
+        "NRF_C4",
+        "NRF_C5",
+        "NRF_C6",
+        "NRF_C7",
+        "NRF_C8",
+        "NRF_C9",
+        "NRF_C10",
+        "NRF_C11",
+        "NRF_C12",
+        "NRF_C13",
+        "NRF_C14",
+        "NRF_L1",
+        "NRF_L2",
+        "NRF_L3",
+        "NRF_L4",
+        "NRF_CT19",
+        "Y2_BLE",
+        "TP_SWD_R",
+        "C_MK3_R",
+        "R_AMP_REQ_PD",
+        "C_AMP_SD_BUF",
+        "C_U10_AMP_R_HF",
+        "C_U10_AMP_R_BULK",
+        "R_IDLE_I2S_BCLK_1V8",
+        "R_IDLE_I2S_LRCLK_1V8",
+        "R_IDLE_I2S_AMP_DIN_1V8",
+        "TP_SPK_R_P",
+        "TP_SPK_R_N"
+      ],
+      "offlineFailedPlacements": [],
+      "candidateGeometryStatus": "PASS_WITHIN_LIMITED_SCOPE",
+      "reserveIntersections": [],
+      "minimumObservedSameSideBboxGapMm": 2.4918771600000014,
+      "clockPadDistances": [],
+      "auxiliaryActualSvg": "layout\\review-3\\M-AUD-R\\actual-both.svg",
+      "officialStageSnapshot": {
+        "imageValid": true,
+        "rawLog": "layout\\review-3\\M-AUD-R\\08-stage-snapshot.log",
+        "status": "UNAVAILABLE_OR_HIDDEN_TAB; SVG is auxiliary readback rendering, not official canvas screenshot"
+      },
+      "mechanicalQualification": "BLOCKED",
+      "rfQualification": "UNVERIFIED",
+      "stackupAndImpedance": "BLOCKED",
+      "manufacturing": "BLOCKED"
+    }
+  },
+  "overall": "BLOCKED",
+  "candidateTotal": 35,
+  "sourceInputAudit": {
+    "baseline": "cec8deab978c0a6e04bb2293291dd4b5f13ac43a",
+    "sourceTerminals": 1094,
+    "cadTerminals": 1075,
+    "bomRows": 150,
+    "footprintStatusCounts": {
+      "BLOCKED": 140,
+      "PASS": 114
+    },
+    "evidence": "evidence/kicad-source-audit.json"
+  },
+  "controlledKicadErc": {
+    "toolVersion": "10.0.8",
+    "scope": "Actual controlled KiCad schematics, not EasyEDA empty sheets",
+    "boards": [
+      {
+        "board": "M-MAIN-L",
+        "project": "evt1-main-left",
+        "terminal_count": 524,
+        "declared_no_connect_count": 24,
+        "command_exit_codes": {
+          "export": 0,
+          "erc": 0,
+          "pdf": 0
+        },
+        "parity_details": {
+          "missing_terminals": [],
+          "unexpected_terminals": [],
+          "net_mismatches": [],
+          "symbol_metadata_mismatches": []
+        },
+        "terminal_parity": "PASS",
+        "erc_counts": {
+          "error": 0,
+          "warning": 0,
+          "exclusion": 0
+        },
+        "erc": "PASS"
+      },
+      {
+        "board": "M-OPT-BRIDGE",
+        "project": "evt1-optical-bridge",
+        "terminal_count": 315,
+        "declared_no_connect_count": 21,
+        "command_exit_codes": {
+          "export": 0,
+          "erc": 0,
+          "pdf": 0
+        },
+        "parity_details": {
+          "missing_terminals": [],
+          "unexpected_terminals": [],
+          "net_mismatches": [],
+          "symbol_metadata_mismatches": []
+        },
+        "terminal_parity": "PASS",
+        "erc_counts": {
+          "error": 0,
+          "warning": 0,
+          "exclusion": 0
+        },
+        "erc": "PASS"
+      },
+      {
+        "board": "M-AUD-R",
+        "project": "evt1-audio-right",
+        "terminal_count": 236,
+        "declared_no_connect_count": 47,
+        "command_exit_codes": {
+          "export": 0,
+          "erc": 0,
+          "pdf": 0
+        },
+        "parity_details": {
+          "missing_terminals": [],
+          "unexpected_terminals": [],
+          "net_mismatches": [],
+          "symbol_metadata_mismatches": []
+        },
+        "terminal_parity": "PASS",
+        "erc_counts": {
+          "error": 0,
+          "warning": 0,
+          "exclusion": 0
+        },
+        "erc": "PASS"
+      }
+    ]
+  },
+  "padAudit": {
+    "exactSystemDeviceTypes": 26,
+    "passed": 26,
+    "failed": 0,
+    "scope": "Pin-number/pad-number sets only; supplier land pattern, mask/paste, stock and assembly remain UNVERIFIED"
+  },
+  "nativeProject": "native/native-project-inspection.json",
+  "codexReview": {
+    "evidence": "evidence/codex-review/KIMI_NATIVE_REVIEW.json",
+    "nativeReview": "BLOCKED",
+    "manufacturing": "BLOCKED",
+    "commandTranscript": "evidence/codex-review/review-command.log"
+  },
+  "fabricationStatus": "BLOCKED"
+}

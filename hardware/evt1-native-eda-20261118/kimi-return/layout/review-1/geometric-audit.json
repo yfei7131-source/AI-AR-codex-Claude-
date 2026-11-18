@@ -1,0 +1,1048 @@
+{
+  "round": 1,
+  "scope": "Actual native rendered-bbox candidate geometry only; not supplier courtyard, land-pattern, installed STEP, SI/RF/thermal or fabrication qualification.",
+  "requiredBboxGapMm": 0.2,
+  "boards": {
+    "M-MAIN-L": {
+      "freshDump": "layout\\review-1\\M-MAIN-L\\fresh-board.json",
+      "candidateComponents": 21,
+      "offlineFailedPlacements": [],
+      "requiredButNotPlaced": [
+        "J_BTB_L",
+        "J_CAM",
+        "J_CHG",
+        "U12_ESD_USB",
+        "TP_BAT_L_P",
+        "TP_BAT_L_N",
+        "SPK_L",
+        "R_CRST_A_PD",
+        "R_DIR1_PU",
+        "R_LS1_A4",
+        "R_LS1_B4",
+        "R_I2C_SCL_3V3",
+        "R_I2C_SDA_3V3",
+        "R_I2C_SCL_1V8",
+        "R_I2C_SDA_1V8",
+        "R_SCCB_SCL",
+        "R_SCCB_SDA",
+        "R_SENSE",
+        "R_LIMIT",
+        "R_PRIV_PU",
+        "R_XREQ",
+        "D_XREQ",
+        "C_XREQ",
+        "R_XREQ_BLEED",
+        "R_CAMRST",
+        "R_CAMPWDN",
+        "TP_NTC_L",
+        "R_LS3_EN",
+        "R_LS4_EN",
+        "L1_BB",
+        "R_BB_FB1",
+        "R_BB_FB2",
+        "L2_1V8",
+        "R_VSET_1V8",
+        "ANT1",
+        "R_CHIP_PU",
+        "C_CHIP_PU",
+        "TP_ESP_EN",
+        "TP_ESP_BOOT",
+        "R_ISO_GATE",
+        "R_ISO_PD",
+        "C_CHG_L_IN",
+        "C_CHG_L_SYS",
+        "C_CHG_L_BAT",
+        "C_OR_IN1",
+        "C_OR_IN2",
+        "C_OR_OUT",
+        "C_BB_IN",
+        "C_BB_OUT",
+        "C_BK_IN",
+        "C_BK_OUT",
+        "C_LDO_LED_IN",
+        "C_LDO_LED_OUT",
+        "C_LDO_DOVDD_IN",
+        "C_LDO_DOVDD_OUT",
+        "C_LDO_DVDD_IN",
+        "C_LDO_DVDD_OUT",
+        "C_LDO_AVDD_IN",
+        "C_LDO_AVDD_OUT",
+        "BAT_L",
+        "C_ESP_BULK",
+        "C_ESP_VDD_SPI",
+        "R_ESP_BOOT",
+        "R_ESP_STRAP45",
+        "R_ESP_STRAP46",
+        "R_ESP_STRAP3",
+        "R_ESP_RF",
+        "C_ESP_RF_IN",
+        "C_ESP_RF_OUT",
+        "C_U8_LS1_A",
+        "C_U8_LS1_B",
+        "C_U8_PDM_LS_A",
+        "C_U8_PDM_LS_B",
+        "C_U8_CAM_ISO1_A",
+        "C_U8_CAM_ISO1_B",
+        "C_U8_CAM_ISO2_A",
+        "C_U8_CAM_ISO2_B",
+        "C_U8_AUD_LS2_A",
+        "C_U8_AUD_LS2_B",
+        "C_MK1_L",
+        "R_CAM_DOVDD_OK_PD",
+        "R_CAM_DOVDD_BLEED",
+        "C_CAM_SCCB_EN",
+        "R_LS3_VREF_BLEED",
+        "C_U10_AMP_L_HF",
+        "C_U10_AMP_L_BULK",
+        "U7_INA",
+        "R_WIN_TOP",
+        "R_WIN_MID",
+        "R_WIN_BOT",
+        "R_PRIV_RC",
+        "C_PRIV_RC",
+        "C_INA_SUPPLY",
+        "C_WIN_SUPPLY",
+        "C_CAMRST",
+        "TP_SPK_L_P",
+        "TP_SPK_L_N"
+      ],
+      "offBoardRefs": [],
+      "bboxPairsBelow0_20Mm": [],
+      "reserveIntersectionsWithin0_20Mm": [],
+      "minimumObservedSameSideBboxGapMm": 0.25386284000000003,
+      "outlinePolygonMm": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          45.999999439999996
+        ],
+        [
+          5.800001099999999,
+          45.999999439999996
+        ],
+        [
+          5.800001099999999,
+          13.99999994
+        ],
+        [
+          8.199998840000001,
+          13.99999994
+        ],
+        [
+          8.199998840000001,
+          4.19999922
+        ],
+        [
+          5.800001099999999,
+          4.19999922
+        ],
+        [
+          5.800001099999999,
+          0.0
+        ]
+      ],
+      "outlineComparisonToleranceMm": 1.2700000000000001e-06,
+      "outlineToleranceBasis": "Half of 0.0001 mil native coordinate serialization quantum; geometry comparison only, not a manufacturing-rule relaxation.",
+      "outlineDeviationsFromMilRoundTrip": [
+        {
+          "vertex": 1,
+          "axis": "y",
+          "actualMm": 45.999999439999996,
+          "plannedMm": 46,
+          "absoluteDeviationMm": 5.600000037020436e-07
+        },
+        {
+          "vertex": 2,
+          "axis": "x",
+          "actualMm": 5.800001099999999,
+          "plannedMm": 5.8,
+          "absoluteDeviationMm": 1.0999999995320309e-06
+        },
+        {
+          "vertex": 2,
+          "axis": "y",
+          "actualMm": 45.999999439999996,
+          "plannedMm": 46,
+          "absoluteDeviationMm": 5.600000037020436e-07
+        },
+        {
+          "vertex": 3,
+          "axis": "x",
+          "actualMm": 5.800001099999999,
+          "plannedMm": 5.8,
+          "absoluteDeviationMm": 1.0999999995320309e-06
+        },
+        {
+          "vertex": 3,
+          "axis": "y",
+          "actualMm": 13.99999994,
+          "plannedMm": 14,
+          "absoluteDeviationMm": 5.999999963535174e-08
+        },
+        {
+          "vertex": 4,
+          "axis": "x",
+          "actualMm": 8.199998840000001,
+          "plannedMm": 8.2,
+          "absoluteDeviationMm": 1.1599999982792042e-06
+        },
+        {
+          "vertex": 4,
+          "axis": "y",
+          "actualMm": 13.99999994,
+          "plannedMm": 14,
+          "absoluteDeviationMm": 5.999999963535174e-08
+        },
+        {
+          "vertex": 5,
+          "axis": "x",
+          "actualMm": 8.199998840000001,
+          "plannedMm": 8.2,
+          "absoluteDeviationMm": 1.1599999982792042e-06
+        },
+        {
+          "vertex": 5,
+          "axis": "y",
+          "actualMm": 4.19999922,
+          "plannedMm": 4.2,
+          "absoluteDeviationMm": 7.800000005886432e-07
+        },
+        {
+          "vertex": 6,
+          "axis": "x",
+          "actualMm": 5.800001099999999,
+          "plannedMm": 5.8,
+          "absoluteDeviationMm": 1.0999999995320309e-06
+        },
+        {
+          "vertex": 6,
+          "axis": "y",
+          "actualMm": 4.19999922,
+          "plannedMm": 4.2,
+          "absoluteDeviationMm": 7.800000005886432e-07
+        },
+        {
+          "vertex": 7,
+          "axis": "x",
+          "actualMm": 5.800001099999999,
+          "plannedMm": 5.8,
+          "absoluteDeviationMm": 1.0999999995320309e-06
+        }
+      ],
+      "copperCounts": {
+        "lines": 0,
+        "arcs": 0,
+        "vias": 9,
+        "pours": 0,
+        "poured": 0,
+        "fills": 0
+      },
+      "authoredRoutingCopperCounts": {
+        "lines": 0,
+        "arcs": 0,
+        "pours": 0,
+        "poured": 0,
+        "fills": 0
+      },
+      "embeddedFootprintVias": [
+        {
+          "primitiveId": "1412a27bbaf807a6e184",
+          "net": "GND",
+          "diameterMil": 24,
+          "holeDiameterMil": 12,
+          "owner": "U1"
+        },
+        {
+          "primitiveId": "1412a27bbaf807a6e185",
+          "net": "GND",
+          "diameterMil": 24,
+          "holeDiameterMil": 12,
+          "owner": "U1"
+        },
+        {
+          "primitiveId": "1412a27bbaf807a6e186",
+          "net": "GND",
+          "diameterMil": 24,
+          "holeDiameterMil": 12,
+          "owner": "U1"
+        },
+        {
+          "primitiveId": "1412a27bbaf807a6e187",
+          "net": "GND",
+          "diameterMil": 24,
+          "holeDiameterMil": 12,
+          "owner": "U1"
+        },
+        {
+          "primitiveId": "1412a27bbaf807a6e188",
+          "net": "GND",
+          "diameterMil": 24,
+          "holeDiameterMil": 12,
+          "owner": "U1"
+        },
+        {
+          "primitiveId": "1412a27bbaf807a6e189",
+          "net": "GND",
+          "diameterMil": 24,
+          "holeDiameterMil": 12,
+          "owner": "U1"
+        },
+        {
+          "primitiveId": "1412a27bbaf807a6e190",
+          "net": "GND",
+          "diameterMil": 24,
+          "holeDiameterMil": 12,
+          "owner": "U1"
+        },
+        {
+          "primitiveId": "1412a27bbaf807a6e191",
+          "net": "GND",
+          "diameterMil": 24,
+          "holeDiameterMil": 12,
+          "owner": "U1"
+        },
+        {
+          "primitiveId": "1412a27bbaf807a6e192",
+          "net": "GND",
+          "diameterMil": 24,
+          "holeDiameterMil": 12,
+          "owner": "U1"
+        }
+      ],
+      "unownedVias": [],
+      "routingScope": "No script-authored tracks, arcs, standalone vias, pours, poured polygons or fills. Embedded footprint vias and rule regions remain physical/native objects and are not deleted or waived.",
+      "copperAvailability": {
+        "fills": "available",
+        "poured": "available",
+        "pours": "available",
+        "regions": "available",
+        "routing": "available",
+        "vias": "available"
+      },
+      "copperLayerCountObserved": 6,
+      "scalarRulesObserved": {
+        "clearanceMil": 5.98,
+        "clearanceTrackTrackMil": 1.97,
+        "trackWidthMil": 1.97,
+        "powerWidthMil": 20,
+        "trackWidthMinMil": 1.97,
+        "viaDrillMil": 7.87,
+        "viaDiameterMil": 15.75,
+        "copperToEdgeMil": 10,
+        "source": "live"
+      },
+      "regions": [
+        {
+          "primitiveId": "7ab3cf7edf1f52de",
+          "layer": 1,
+          "geometryAvailable": true,
+          "ruleTypeNames": [
+            "no-wires",
+            "no-pours"
+          ],
+          "bbox": {
+            "maxX": 228.44650000000001,
+            "maxY": 165.4543,
+            "minX": -0.1,
+            "minY": -0.1
+          },
+          "source": [
+            0,
+            0,
+            "L",
+            0,
+            165.3543,
+            228.3465,
+            165.3543,
+            228.3465,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "primitiveId": "e73901470129d179",
+          "layer": 2,
+          "geometryAvailable": true,
+          "ruleTypeNames": [
+            "no-wires",
+            "no-pours"
+          ],
+          "bbox": {
+            "maxX": 228.44650000000001,
+            "maxY": 165.4543,
+            "minX": -0.1,
+            "minY": -0.1
+          },
+          "source": [
+            0,
+            0,
+            "L",
+            0,
+            165.3543,
+            228.3465,
+            165.3543,
+            228.3465,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "primitiveId": "ca886d9112e22a52",
+          "layer": 15,
+          "geometryAvailable": true,
+          "ruleTypeNames": [
+            "no-wires",
+            "no-pours"
+          ],
+          "bbox": {
+            "maxX": 228.44650000000001,
+            "maxY": 165.4543,
+            "minX": -0.1,
+            "minY": -0.1
+          },
+          "source": [
+            0,
+            0,
+            "L",
+            0,
+            165.3543,
+            228.3465,
+            165.3543,
+            228.3465,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "primitiveId": "3dd4f5506124669e",
+          "layer": 16,
+          "geometryAvailable": true,
+          "ruleTypeNames": [
+            "no-wires",
+            "no-pours"
+          ],
+          "bbox": {
+            "maxX": 228.44650000000001,
+            "maxY": 165.4543,
+            "minX": -0.1,
+            "minY": -0.1
+          },
+          "source": [
+            0,
+            0,
+            "L",
+            0,
+            165.3543,
+            228.3465,
+            165.3543,
+            228.3465,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "primitiveId": "92d000ff71622923",
+          "layer": 17,
+          "geometryAvailable": true,
+          "ruleTypeNames": [
+            "no-wires",
+            "no-pours"
+          ],
+          "bbox": {
+            "maxX": 228.44650000000001,
+            "maxY": 165.4543,
+            "minX": -0.1,
+            "minY": -0.1
+          },
+          "source": [
+            0,
+            0,
+            "L",
+            0,
+            165.3543,
+            228.3465,
+            165.3543,
+            228.3465,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "primitiveId": "fc7a32eeffbc0c73",
+          "layer": 18,
+          "geometryAvailable": true,
+          "ruleTypeNames": [
+            "no-wires",
+            "no-pours"
+          ],
+          "bbox": {
+            "maxX": 228.44650000000001,
+            "maxY": 165.4543,
+            "minX": -0.1,
+            "minY": -0.1
+          },
+          "source": [
+            0,
+            0,
+            "L",
+            0,
+            165.3543,
+            228.3465,
+            165.3543,
+            228.3465,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "dumpPartial": null,
+      "failures": [],
+      "candidateGeometryStatus": "PASS_WITHIN_LIMITED_SCOPE",
+      "rfStatus": "UNVERIFIED: candidate components avoid reserved RF envelope, but antenna/feed/matching are missing and region rules are not a complete antenna qualification.",
+      "mechanicalStatus": "BLOCKED: connectors/FPC/optics/battery/shell/acoustic parts and mated STEP are incomplete.",
+      "stackupStatus": "BLOCKED: six copper layers observed; dielectric, via spans, VIPPO, impedance and bridge 0.50 mm stack are not proven."
+    },
+    "M-OPT-BRIDGE": {
+      "freshDump": "layout\\review-1\\M-OPT-BRIDGE\\fresh-board.json",
+      "candidateComponents": 10,
+      "offlineFailedPlacements": [
+        {
+          "ref": "U14",
+          "sourceRef": "U_AVDD_WD",
+          "status": "BLOCKED_NO_LEGAL_CANDIDATE_IN_SEARCH",
+          "reason": "Fixed anchor conflict or bounded 0.20 mm full-bbox search found no legal position."
+        },
+        {
+          "ref": "U10",
+          "sourceRef": "U_AVDD_QUAL",
+          "status": "BLOCKED_NO_LEGAL_CANDIDATE_IN_SEARCH",
+          "reason": "Fixed anchor conflict or bounded 0.20 mm full-bbox search found no legal position."
+        }
+      ],
+      "requiredButNotPlaced": [
+        "J_BRIDGE_IN",
+        "J_DISP_L",
+        "J_DISP_R",
+        "R_DAMP_SCK_L",
+        "R_DAMP_CS_L",
+        "R_OPTCS_PU_L",
+        "R_DAMP_LD0",
+        "R_DAMP_LD1",
+        "R_DAMP_LD2",
+        "R_DAMP_LD3",
+        "R_DAMP_SCK_R",
+        "R_DAMP_CS_R",
+        "R_OPTCS_PU_R",
+        "R_DAMP_RD0",
+        "R_DAMP_RD1",
+        "R_DAMP_RD2",
+        "R_DAMP_RD3",
+        "R_PLL",
+        "R_VPP",
+        "R_CDONE_PU",
+        "R_CRST_PD",
+        "R_SS_PD",
+        "D3_PRIV",
+        "U6_OPT_AVDD",
+        "C_LDO_1V2F_IN",
+        "C_LDO_1V2F_OUT",
+        "C_LDO_1V8F_IN",
+        "C_LDO_1V8F_OUT",
+        "C_LDO_OPT_IN",
+        "C_LDO_OPT_OUT",
+        "C_IMU_VDD1",
+        "C_IMU_VDD2",
+        "C_IMU_VDDIO",
+        "C_MK2_C",
+        "U_AVDD_CLEAR_OD",
+        "U_AVDD_SCHMITT",
+        "U_AVDD_EN_OD",
+        "R_AVDD_WD_SET",
+        "R_AVDD_WD_DIV_H",
+        "R_AVDD_WD_DIV_L",
+        "R_AVDD_D3_PD",
+        "R_AVDD_CRST_PD",
+        "R_AVDD_PG_PU",
+        "R_AVDD_REQ_FILTER",
+        "R_AVDD_QUAL_PU",
+        "R_AVDD_EN_FEED",
+        "R_AVDD_EN_PD",
+        "C_AVDD_REQ_FILTER",
+        "C_AVDD_QUAL",
+        "C_AVDD_U_AVDD_LS_V",
+        "C_AVDD_U_AVDD_WD_V",
+        "C_AVDD_U_AVDD_IO_PG_V",
+        "C_AVDD_U_AVDD_SYS_PG_V",
+        "C_AVDD_U_AVDD_SYS_CLAMP_V",
+        "C_AVDD_U_AVDD_CLEAR_OD_V",
+        "C_AVDD_U_AVDD_SCHMITT_V",
+        "C_AVDD_U_AVDD_QUAL_V",
+        "C_AVDD_U_AVDD_EN_OD_V",
+        "C_AVDD_LS_A",
+        "TP_AVDD_SAFE",
+        "C_FPGA_PLL_BULK",
+        "C_FPGA_PLL_HF",
+        "C_FPGA_VPP_BULK",
+        "C_FPGA_VPP_HF",
+        "C_FPGA_CORE_BULK",
+        "C_FPGA_CORE_HF",
+        "C_FPGA_IO_BULK",
+        "C_FPGA_IO_HF0",
+        "C_FPGA_IO_HF1",
+        "C_FPGA_IO_HF2",
+        "C_FPGA_OSC_HF"
+      ],
+      "offBoardRefs": [],
+      "bboxPairsBelow0_20Mm": [],
+      "reserveIntersectionsWithin0_20Mm": [
+        {
+          "component": "Y1",
+          "reservation": "Y1_CLOCK_SEARCH_RESERVE",
+          "layer": "BOTTOM"
+        }
+      ],
+      "minimumObservedSameSideBboxGapMm": 0.23268432000000416,
+      "outlinePolygonMm": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          21.99999918
+        ],
+        [
+          4.19999922,
+          21.99999918
+        ],
+        [
+          4.19999922,
+          0.0
+        ]
+      ],
+      "outlineComparisonToleranceMm": 1.2700000000000001e-06,
+      "outlineToleranceBasis": "Half of 0.0001 mil native coordinate serialization quantum; geometry comparison only, not a manufacturing-rule relaxation.",
+      "outlineDeviationsFromMilRoundTrip": [
+        {
+          "vertex": 1,
+          "axis": "y",
+          "actualMm": 21.99999918,
+          "plannedMm": 22,
+          "absoluteDeviationMm": 8.200000003455443e-07
+        },
+        {
+          "vertex": 2,
+          "axis": "x",
+          "actualMm": 4.19999922,
+          "plannedMm": 4.2,
+          "absoluteDeviationMm": 7.800000005886432e-07
+        },
+        {
+          "vertex": 2,
+          "axis": "y",
+          "actualMm": 21.99999918,
+          "plannedMm": 22,
+          "absoluteDeviationMm": 8.200000003455443e-07
+        },
+        {
+          "vertex": 3,
+          "axis": "x",
+          "actualMm": 4.19999922,
+          "plannedMm": 4.2,
+          "absoluteDeviationMm": 7.800000005886432e-07
+        }
+      ],
+      "copperCounts": {
+        "lines": 0,
+        "arcs": 0,
+        "vias": 0,
+        "pours": 0,
+        "poured": 0,
+        "fills": 0
+      },
+      "authoredRoutingCopperCounts": {
+        "lines": 0,
+        "arcs": 0,
+        "pours": 0,
+        "poured": 0,
+        "fills": 0
+      },
+      "embeddedFootprintVias": [],
+      "unownedVias": [],
+      "routingScope": "No script-authored tracks, arcs, standalone vias, pours, poured polygons or fills. Embedded footprint vias and rule regions remain physical/native objects and are not deleted or waived.",
+      "copperAvailability": {
+        "fills": "available",
+        "poured": "available",
+        "pours": "available",
+        "regions": "available",
+        "routing": "available",
+        "vias": "available"
+      },
+      "copperLayerCountObserved": 6,
+      "scalarRulesObserved": {
+        "clearanceMil": 5.98,
+        "clearanceTrackTrackMil": 1.97,
+        "trackWidthMil": 1.97,
+        "powerWidthMil": 20,
+        "trackWidthMinMil": 1.97,
+        "viaDrillMil": 7.87,
+        "viaDiameterMil": 15.75,
+        "copperToEdgeMil": 10,
+        "source": "live"
+      },
+      "regions": [],
+      "dumpPartial": null,
+      "failures": [
+        {
+          "kind": "candidate-reservation-intersection",
+          "pairs": [
+            {
+              "component": "Y1",
+              "reservation": "Y1_CLOCK_SEARCH_RESERVE",
+              "layer": "BOTTOM"
+            }
+          ]
+        }
+      ],
+      "candidateGeometryStatus": "FAIL",
+      "rfStatus": "UNVERIFIED: candidate components avoid reserved RF envelope, but antenna/feed/matching are missing and region rules are not a complete antenna qualification.",
+      "mechanicalStatus": "BLOCKED: connectors/FPC/optics/battery/shell/acoustic parts and mated STEP are incomplete.",
+      "stackupStatus": "BLOCKED: six copper layers observed; dielectric, via spans, VIPPO, impedance and bridge 0.50 mm stack are not proven."
+    },
+    "M-AUD-R": {
+      "freshDump": "layout\\review-1\\M-AUD-R\\fresh-board.json",
+      "candidateComponents": 4,
+      "offlineFailedPlacements": [],
+      "requiredButNotPlaced": [
+        "J_BTB_R",
+        "TP_BAT_R_P",
+        "TP_BAT_R_N",
+        "TP_NTC_R",
+        "SPK_R",
+        "R_IPC_PU",
+        "R_ISET_R",
+        "R_VSET_R",
+        "ANT2_BLE",
+        "R_SDR",
+        "Q_CHG_MUTE_R",
+        "R_MUTE_GATE",
+        "R_MUTE_PD",
+        "C_CHG_R_IN",
+        "C_CHG_R_OUT",
+        "BAT_R",
+        "U11_BLE",
+        "NRF_C1",
+        "NRF_C2",
+        "NRF_C3",
+        "NRF_C4",
+        "NRF_C5",
+        "NRF_C6",
+        "NRF_C7",
+        "NRF_C8",
+        "NRF_C9",
+        "NRF_C10",
+        "NRF_C11",
+        "NRF_C12",
+        "NRF_C13",
+        "NRF_C14",
+        "NRF_L1",
+        "NRF_L2",
+        "NRF_L3",
+        "NRF_L4",
+        "NRF_CT19",
+        "Y2_BLE",
+        "TP_SWD_R",
+        "C_MK3_R",
+        "R_AMP_REQ_PD",
+        "C_AMP_SD_BUF",
+        "C_U10_AMP_R_HF",
+        "C_U10_AMP_R_BULK",
+        "R_IDLE_I2S_BCLK_1V8",
+        "R_IDLE_I2S_LRCLK_1V8",
+        "R_IDLE_I2S_AMP_DIN_1V8",
+        "TP_SPK_R_P",
+        "TP_SPK_R_N"
+      ],
+      "offBoardRefs": [],
+      "bboxPairsBelow0_20Mm": [],
+      "reserveIntersectionsWithin0_20Mm": [],
+      "minimumObservedSameSideBboxGapMm": 2.4918771600000014,
+      "outlinePolygonMm": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          34.00000058
+        ],
+        [
+          5.19999976,
+          34.00000058
+        ],
+        [
+          5.19999976,
+          0.0
+        ]
+      ],
+      "outlineComparisonToleranceMm": 1.2700000000000001e-06,
+      "outlineToleranceBasis": "Half of 0.0001 mil native coordinate serialization quantum; geometry comparison only, not a manufacturing-rule relaxation.",
+      "outlineDeviationsFromMilRoundTrip": [
+        {
+          "vertex": 1,
+          "axis": "y",
+          "actualMm": 34.00000058,
+          "plannedMm": 34,
+          "absoluteDeviationMm": 5.799999982514237e-07
+        },
+        {
+          "vertex": 2,
+          "axis": "x",
+          "actualMm": 5.19999976,
+          "plannedMm": 5.2,
+          "absoluteDeviationMm": 2.400000003177638e-07
+        },
+        {
+          "vertex": 2,
+          "axis": "y",
+          "actualMm": 34.00000058,
+          "plannedMm": 34,
+          "absoluteDeviationMm": 5.799999982514237e-07
+        },
+        {
+          "vertex": 3,
+          "axis": "x",
+          "actualMm": 5.19999976,
+          "plannedMm": 5.2,
+          "absoluteDeviationMm": 2.400000003177638e-07
+        }
+      ],
+      "copperCounts": {
+        "lines": 0,
+        "arcs": 0,
+        "vias": 0,
+        "pours": 0,
+        "poured": 0,
+        "fills": 0
+      },
+      "authoredRoutingCopperCounts": {
+        "lines": 0,
+        "arcs": 0,
+        "pours": 0,
+        "poured": 0,
+        "fills": 0
+      },
+      "embeddedFootprintVias": [],
+      "unownedVias": [],
+      "routingScope": "No script-authored tracks, arcs, standalone vias, pours, poured polygons or fills. Embedded footprint vias and rule regions remain physical/native objects and are not deleted or waived.",
+      "copperAvailability": {
+        "fills": "available",
+        "poured": "available",
+        "pours": "available",
+        "regions": "available",
+        "routing": "available",
+        "vias": "available"
+      },
+      "copperLayerCountObserved": 6,
+      "scalarRulesObserved": {
+        "clearanceMil": 5.98,
+        "clearanceTrackTrackMil": 1.97,
+        "trackWidthMil": 1.97,
+        "powerWidthMil": 20,
+        "trackWidthMinMil": 1.97,
+        "viaDrillMil": 7.87,
+        "viaDiameterMil": 15.75,
+        "copperToEdgeMil": 10,
+        "source": "live"
+      },
+      "regions": [
+        {
+          "primitiveId": "0ed0208c5b49aab8",
+          "layer": 1,
+          "geometryAvailable": true,
+          "ruleTypeNames": [
+            "no-wires",
+            "no-pours"
+          ],
+          "bbox": {
+            "maxX": 204.8244,
+            "maxY": 157.5803,
+            "minX": -0.1,
+            "minY": -0.1
+          },
+          "source": [
+            0,
+            0,
+            "L",
+            0,
+            157.4803,
+            204.7244,
+            157.4803,
+            204.7244,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "primitiveId": "5ef38e2701ad0f2d",
+          "layer": 2,
+          "geometryAvailable": true,
+          "ruleTypeNames": [
+            "no-wires",
+            "no-pours"
+          ],
+          "bbox": {
+            "maxX": 204.8244,
+            "maxY": 157.5803,
+            "minX": -0.1,
+            "minY": -0.1
+          },
+          "source": [
+            0,
+            0,
+            "L",
+            0,
+            157.4803,
+            204.7244,
+            157.4803,
+            204.7244,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "primitiveId": "21844ee18d578951",
+          "layer": 15,
+          "geometryAvailable": true,
+          "ruleTypeNames": [
+            "no-wires",
+            "no-pours"
+          ],
+          "bbox": {
+            "maxX": 204.8244,
+            "maxY": 157.5803,
+            "minX": -0.1,
+            "minY": -0.1
+          },
+          "source": [
+            0,
+            0,
+            "L",
+            0,
+            157.4803,
+            204.7244,
+            157.4803,
+            204.7244,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "primitiveId": "522c33b65ad90f7f",
+          "layer": 16,
+          "geometryAvailable": true,
+          "ruleTypeNames": [
+            "no-wires",
+            "no-pours"
+          ],
+          "bbox": {
+            "maxX": 204.8244,
+            "maxY": 157.5803,
+            "minX": -0.1,
+            "minY": -0.1
+          },
+          "source": [
+            0,
+            0,
+            "L",
+            0,
+            157.4803,
+            204.7244,
+            157.4803,
+            204.7244,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "primitiveId": "ab8d8efc8b624a3b",
+          "layer": 17,
+          "geometryAvailable": true,
+          "ruleTypeNames": [
+            "no-wires",
+            "no-pours"
+          ],
+          "bbox": {
+            "maxX": 204.8244,
+            "maxY": 157.5803,
+            "minX": -0.1,
+            "minY": -0.1
+          },
+          "source": [
+            0,
+            0,
+            "L",
+            0,
+            157.4803,
+            204.7244,
+            157.4803,
+            204.7244,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "primitiveId": "e9890aca4b22d5a2",
+          "layer": 18,
+          "geometryAvailable": true,
+          "ruleTypeNames": [
+            "no-wires",
+            "no-pours"
+          ],
+          "bbox": {
+            "maxX": 204.8244,
+            "maxY": 157.5803,
+            "minX": -0.1,
+            "minY": -0.1
+          },
+          "source": [
+            0,
+            0,
+            "L",
+            0,
+            157.4803,
+            204.7244,
+            157.4803,
+            204.7244,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "dumpPartial": null,
+      "failures": [],
+      "candidateGeometryStatus": "PASS_WITHIN_LIMITED_SCOPE",
+      "rfStatus": "UNVERIFIED: candidate components avoid reserved RF envelope, but antenna/feed/matching are missing and region rules are not a complete antenna qualification.",
+      "mechanicalStatus": "BLOCKED: connectors/FPC/optics/battery/shell/acoustic parts and mated STEP are incomplete.",
+      "stackupStatus": "BLOCKED: six copper layers observed; dielectric, via spans, VIPPO, impedance and bridge 0.50 mm stack are not proven."
+    }
+  },
+  "aggregateFailureCount": 1,
+  "aggregateCandidateGeometryStatus": "FAIL",
+  "fabricationStatus": "BLOCKED"
+}

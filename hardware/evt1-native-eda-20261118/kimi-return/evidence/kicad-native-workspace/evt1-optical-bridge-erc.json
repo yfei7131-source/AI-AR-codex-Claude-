@@ -1,0 +1,67 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-18T23:11:38",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.8",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/b05aebd1-fb91-5f4b-aed3-cb35e84893b2",
+            "violations": []
+        },
+        {
+            "path": "/Bridge sensors, microphone and privacy LED/",
+            "uuid_path": "/b05aebd1-fb91-5f4b-aed3-cb35e84893b2/44d21164-ff27-5ef6-888c-d9cc65f6cbce",
+            "violations": []
+        },
+        {
+            "path": "/FPGA, configuration and rail sequence/",
+            "uuid_path": "/b05aebd1-fb91-5f4b-aed3-cb35e84893b2/009871a9-b3cf-5d5b-9726-ba5c35dd7bf4",
+            "violations": []
+        },
+        {
+            "path": "/Harness and board interfaces/",
+            "uuid_path": "/b05aebd1-fb91-5f4b-aed3-cb35e84893b2/93692557-4bbf-5bea-89c8-af9c2f60099f",
+            "violations": []
+        },
+        {
+            "path": "/Independent optical-link termination/",
+            "uuid_path": "/b05aebd1-fb91-5f4b-aed3-cb35e84893b2/c5a1f6c3-e854-5e80-8db0-a96d49cd2641",
+            "violations": []
+        },
+        {
+            "path": "/Optical power supervisor and AVDD qualification/",
+            "uuid_path": "/b05aebd1-fb91-5f4b-aed3-cb35e84893b2/249bd8ff-30db-5316-9f2f-e8e8c651bf3b",
+            "violations": []
+        },
+        {
+            "path": "/Supply origins/",
+            "uuid_path": "/b05aebd1-fb91-5f4b-aed3-cb35e84893b2/dffa816f-e4c2-5d6b-bab4-75800a291fc4",
+            "violations": []
+        }
+    ],
+    "source": "evt1-optical-bridge.kicad_sch"
+}

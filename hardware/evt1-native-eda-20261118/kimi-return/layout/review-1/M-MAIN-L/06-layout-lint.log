@@ -1,0 +1,1934 @@
+$ C:\Users\Admin（无密码）\.local\bin\easyeda.exe pcb layout-lint --json --min-gap 7.874015748031496 --project cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662 --doc 8fbc3cae65886fe5
+{
+  "report": {
+    "ok": false,
+    "incomplete": true,
+    "coverage": {
+      "complete": false,
+      "componentsInventoryKnown": true,
+      "padsInventoryKnown": true,
+      "componentCount": 21,
+      "totalPads": 278,
+      "knownGeometryPads": 254,
+      "unsupportedGeometryPads": 24,
+      "unknownGeometryPads": 0,
+      "legacyGeometryPads": 0,
+      "unverifiedPads": [
+        {
+          "componentPrimitiveId": "08da4ea71a40c02c",
+          "designator": "MK1",
+          "primitiveId": "08da4ea71a40c02ce14",
+          "padNumber": "5",
+          "status": "unsupported",
+          "reason": "POLYGON pad geometry is not supported by pcb net-path"
+        },
+        {
+          "componentPrimitiveId": "08da4ea71a40c02c",
+          "designator": "MK1",
+          "primitiveId": "08da4ea71a40c02ce15",
+          "padNumber": "5",
+          "status": "unsupported",
+          "reason": "POLYGON pad geometry is not supported by pcb net-path"
+        },
+        {
+          "componentPrimitiveId": "08da4ea71a40c02c",
+          "designator": "MK1",
+          "primitiveId": "08da4ea71a40c02ce16",
+          "padNumber": "5",
+          "status": "unsupported",
+          "reason": "POLYGON pad geometry is not supported by pcb net-path"
+        },
+        {
+          "componentPrimitiveId": "08da4ea71a40c02c",
+          "designator": "MK1",
+          "primitiveId": "08da4ea71a40c02ce17",
+          "padNumber": "5",
+          "status": "unsupported",
+          "reason": "POLYGON pad geometry is not supported by pcb net-path"
+        },
+        {
+          "componentPrimitiveId": "a63aff154b9f8bec",
+          "designator": "U5",
+          "primitiveId": "a63aff154b9f8bece11",
+          "padNumber": "3",
+          "status": "unsupported",
+          "reason": "POLYGON pad geometry is not supported by pcb net-path"
+        },
+        {
+          "componentPrimitiveId": "a63aff154b9f8bec",
+          "designator": "U5",
+          "primitiveId": "a63aff154b9f8bece12",
+          "padNumber": "2",
+          "status": "unsupported",
+          "reason": "POLYGON pad geometry is not supported by pcb net-path"
+        },
+        {
+          "componentPrimitiveId": "a63aff154b9f8bec",
+          "designator": "U5",
+          "primitiveId": "a63aff154b9f8bece13",
+          "padNumber": "1",
+          "status": "unsupported",
+          "reason": "POLYGON pad geometry is not supported by pcb net-path"
+        },
+        {
+          "componentPrimitiveId": "a63aff154b9f8bec",
+          "designator": "U5",
+          "primitiveId": "a63aff154b9f8bece14",
+          "padNumber": "4",
+          "status": "unsupported",
+          "reason": "POLYGON pad geometry is not supported by pcb net-path"
+        },
+        {
+          "componentPrimitiveId": "1dfeee4ef5d16c20",
+          "designator": "U11",
+          "primitiveId": "1dfeee4ef5d16c20e11",
+          "padNumber": "3",
+          "status": "unsupported",
+          "reason": "POLYGON pad geometry is not supported by pcb net-path"
+        },
+        {
+          "componentPrimitiveId": "1dfeee4ef5d16c20",
+          "designator": "U11",
+          "primitiveId": "1dfeee4ef5d16c20e12",
+          "padNumber": "2",
+          "status": "unsupported",
+          "reason": "POLYGON pad geometry is not supported by pcb net-path"
+        },
+        {
+          "componentPrimitiveId": "1dfeee4ef5d16c20",
+          "designator": "U11",
+          "primitiveId": "1dfeee4ef5d16c20e13",
+          "padNumber": "1",
+          "status": "unsupported",
+          "reason": "POLYGON pad geometry is not supported by pcb net-path"
+        },
+        {
+          "componentPrimitiveId": "1dfeee4ef5d16c20",
+          "designator": "U11",
+          "primitiveId": "1dfeee4ef5d16c20e14",
+          "padNumber": "4",
+          "status": "unsupported",
+          "reason": "POLYGON pad geometry is not supported by pcb net-path"
+        },
+        {
+          "componentPrimitiveId": "1f70116c5d25cb64",
+          "designator": "U13",
+          "primitiveId": "1f70116c5d25cb64e11",
+          "padNumber": "3",
+          "status": "unsupported",
+          "reason": "POLYGON pad geometry is not supported by pcb net-path"
+        },
+        {
+          "componentPrimitiveId": "1f70116c5d25cb64",
+          "designator": "U13",
+          "primitiveId": "1f70116c5d25cb64e12",
+          "padNumber": "2",
+          "status": "unsupported",
+          "reason": "POLYGON pad geometry is not supported by pcb net-path"
+        },
+        {
+          "componentPrimitiveId": "1f70116c5d25cb64",
+          "designator": "U13",
+          "primitiveId": "1f70116c5d25cb64e13",
+          "padNumber": "1",
+          "status": "unsupported",
+          "reason": "POLYGON pad geometry is not supported by pcb net-path"
+        },
+        {
+          "componentPrimitiveId": "1f70116c5d25cb64",
+          "designator": "U13",
+          "primitiveId": "1f70116c5d25cb64e14",
+          "padNumber": "4",
+          "status": "unsupported",
+          "reason": "POLYGON pad geometry is not supported by pcb net-path"
+        },
+        {
+          "componentPrimitiveId": "8f152691acb5e542",
+          "designator": "U6",
+          "primitiveId": "8f152691acb5e542e11",
+          "padNumber": "3",
+          "status": "unsupported",
+          "reason": "POLYGON pad geometry is not supported by pcb net-path"
+        },
+        {
+          "componentPrimitiveId": "8f152691acb5e542",
+          "designator": "U6",
+          "primitiveId": "8f152691acb5e542e12",
+          "padNumber": "2",
+          "status": "unsupported",
+          "reason": "POLYGON pad geometry is not supported by pcb net-path"
+        },
+        {
+          "componentPrimitiveId": "8f152691acb5e542",
+          "designator": "U6",
+          "primitiveId": "8f152691acb5e542e13",
+          "padNumber": "1",
+          "status": "unsupported",
+          "reason": "POLYGON pad geometry is not supported by pcb net-path"
+        },
+        {
+          "componentPrimitiveId": "8f152691acb5e542",
+          "designator": "U6",
+          "primitiveId": "8f152691acb5e542e14",
+          "padNumber": "4",
+          "status": "unsupported",
+          "reason": "POLYGON pad geometry is not supported by pcb net-path"
+        },
+        {
+          "componentPrimitiveId": "65d4325202f8a741",
+          "designator": "U17",
+          "primitiveId": "65d4325202f8a741e10",
+          "padNumber": "1",
+          "status": "unsupported",
+          "reason": "POLYGON pad geometry is not supported by pcb net-path"
+        },
+        {
+          "componentPrimitiveId": "65d4325202f8a741",
+          "designator": "U17",
+          "primitiveId": "65d4325202f8a741e11",
+          "padNumber": "4",
+          "status": "unsupported",
+          "reason": "POLYGON pad geometry is not supported by pcb net-path"
+        },
+        {
+          "componentPrimitiveId": "65d4325202f8a741",
+          "designator": "U17",
+          "primitiveId": "65d4325202f8a741e12",
+          "padNumber": "5",
+          "status": "unsupported",
+          "reason": "POLYGON pad geometry is not supported by pcb net-path"
+        },
+        {
+          "componentPrimitiveId": "65d4325202f8a741",
+          "designator": "U17",
+          "primitiveId": "65d4325202f8a741e13",
+          "padNumber": "2",
+          "status": "unsupported",
+          "reason": "POLYGON pad geometry is not supported by pcb net-path"
+        }
+      ],
+      "limitations": [
+        "24 pad(s) have captured source shapes unsupported by exact pad-contact inspection"
+      ]
+    },
+    "score": 0,
+    "verdict": "incomplete",
+    "componentCount": 21,
+    "minGapMil": 7.874015748031496,
+    "overlaps": null,
+    "outsideOutline": null,
+    "tightSpacing": null,
+    "silk": [
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "U18",
+        "primitives": [
+          "fecdbb8532dcf1d6e58"
+        ],
+        "message": "silk text Designator \"U18\" overlaps pad U18.19 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 112.8,
+          "y": 244.1
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "U21",
+        "primitives": [
+          "36b69f2de5ae8b5ee58"
+        ],
+        "message": "silk text Designator \"U21\" overlaps pad U21.19 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 90.6,
+          "y": 721.8
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "U8",
+        "primitives": [
+          "06a525da8fa887e7e46"
+        ],
+        "message": "silk text Designator \"U8\" overlaps pad U8.11 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 106.3,
+          "y": 1675.4
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "U15",
+        "primitives": [
+          "6ad4486387742873e58"
+        ],
+        "message": "silk text Designator \"U15\" overlaps pad U15.19 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 301.8,
+          "y": 252
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "U16",
+        "primitives": [
+          "abb017b2418bbf1de58"
+        ],
+        "message": "silk text Designator \"U16\" overlaps pad U16.19 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 90.6,
+          "y": 513.2
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 3,
+        "designator": "U19",
+        "primitives": [
+          "5269dd9042185c3de24"
+        ],
+        "message": "silk text Designator \"U19\" overlaps pad U19.8 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 42.3,
+          "y": 616
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 3,
+        "designator": "U20",
+        "primitives": [
+          "7ceecca05861f1cce24"
+        ],
+        "message": "silk text Designator \"U20\" overlaps pad U20.8 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 18.7,
+          "y": 931
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 3,
+        "designator": "U5",
+        "primitives": [
+          "1dfeee4ef5d16c20e22"
+        ],
+        "message": "silk text Designator \"U11\" overlaps pad U5.3 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 85.1,
+          "y": 1246.9
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 3,
+        "designator": "U6",
+        "primitives": [
+          "1f70116c5d25cb64e22"
+        ],
+        "message": "silk text Designator \"U13\" overlaps pad U6.3 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 167.7,
+          "y": 1286.2
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 3,
+        "designator": "U4",
+        "primitives": [
+          "c95e43d3a9d47bbce24"
+        ],
+        "message": "silk text Designator \"U4\" overlaps pad U4.6 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 80.7,
+          "y": 1120.7
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "U9",
+        "primitives": [
+          "5fcdde9483147e30e26"
+        ],
+        "message": "silk text Designator \"U9\" overlaps pad U9.7 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 105.9,
+          "y": 1175.2
+        }
+      },
+      {
+        "type": "silk-off-board",
+        "level": "WARN",
+        "layer": 3,
+        "designator": "MK1",
+        "primitives": [
+          "08da4ea71a40c02ce28"
+        ],
+        "message": "silkscreen text 'MK1' extends outside the board outline (text -20..25 × 1376..1448 mil, board -2..325 × -2..1813) — it will not be printed; move it with `pcb silk-set --ids 08da4ea71a40c02ce28 --x … --y …`",
+        "at": {
+          "x": 25.43,
+          "y": 1375.75
+        }
+      },
+      {
+        "type": "silk-off-board",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "U15",
+        "primitives": [
+          "6ad4486387742873e58"
+        ],
+        "message": "silkscreen text 'U15' extends outside the board outline (text 325..370 × 184..254 mil, board -2..325 × -2..1813) — it will not be printed; move it with `pcb silk-set --ids 6ad4486387742873e58 --x … --y …`",
+        "at": {
+          "x": 324.59,
+          "y": 183.86
+        }
+      }
+    ],
+    "sides": {
+      "bottom": 10,
+      "top": 11
+    },
+    "signalNets": 49,
+    "ratsnestLenMil": 20283.32,
+    "crossingCount": 253,
+    "crossings": [
+      {
+        "netA": "1V8_SYS",
+        "netB": "3V3_SYS",
+        "x": 116.6,
+        "y": 1704.38
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "3V3_SYS",
+        "x": 41.47,
+        "y": 755.08
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "I2S_BCLK_3V3",
+        "x": 81.61,
+        "y": 1464.98
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "I2S_LRCLK_3V3",
+        "x": 79.11,
+        "y": 1443.62
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "LS3_VREF2_EN",
+        "x": 52.97,
+        "y": 616
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "LS4_VREF2_EN",
+        "x": 42.5,
+        "y": 929.42
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "PDM_CLK_1V8",
+        "x": 64.68,
+        "y": 1320.42
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "PDM_D0_1V8",
+        "x": 63.67,
+        "y": 1311.75
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "VBAT_R_ISOLATED",
+        "x": 78.84,
+        "y": 1441.34
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "BB_L1",
+        "x": 139.3,
+        "y": 928.4
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "CAM_D5_3V3",
+        "x": 89.54,
+        "y": 234.99
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "CAM_D6_3V3",
+        "x": 91.16,
+        "y": 231.99
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "CAM_D7_3V3",
+        "x": 93.8,
+        "y": 227.09
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "CAM_HREF_3V3",
+        "x": 124.29,
+        "y": 498.15
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "CAM_PCLK_3V3",
+        "x": 75.59,
+        "y": 507.2
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "CAM_VSYNC_3V3",
+        "x": 91.78,
+        "y": 504.19
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "CAM_XCLK_3V3",
+        "x": 141.16,
+        "y": 495.01
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "FPGA_CRESET_3V3",
+        "x": 41.4,
+        "y": 324.47
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "I2S_BCLK_1V8",
+        "x": 163.48,
+        "y": 1537.79
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "I2S_BCLK_1V8",
+        "x": 164.48,
+        "y": 1307.69
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "I2S_BCLK_1V8",
+        "x": 165.66,
+        "y": 1037.5
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "I2S_BCLK_3V3",
+        "x": 143.11,
+        "y": 494.65
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "I2S_BCLK_3V3",
+        "x": 94.44,
+        "y": 1262.53
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "I2S_BCLK_3V3",
+        "x": 119.88,
+        "y": 861.04
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "I2S_LRCLK_1V8",
+        "x": 152.68,
+        "y": 1292.63
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "I2S_LRCLK_1V8",
+        "x": 142.56,
+        "y": 881.2
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "I2S_LRCLK_1V8",
+        "x": 159.09,
+        "y": 1553.38
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "I2S_LRCLK_1V8",
+        "x": 144.23,
+        "y": 948.79
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "I2S_LRCLK_3V3",
+        "x": 110.22,
+        "y": 847.99
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "I2S_LRCLK_3V3",
+        "x": 88.22,
+        "y": 1269.1
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "I2S_LRCLK_3V3",
+        "x": 128.54,
+        "y": 497.36
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "I2S_S3_DOUT_3V3",
+        "x": 149.49,
+        "y": 493.46
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "IPC_NRF_TX_3V3",
+        "x": 39.6,
+        "y": 445.14
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "IPC_NRF_TX_3V3",
+        "x": 51.85,
+        "y": 511.61
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "IPC_S3_TX_3V3",
+        "x": 36.69,
+        "y": 391.78
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "IPC_S3_TX_3V3",
+        "x": 82.55,
+        "y": 505.91
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "PDM_CLK_1V8",
+        "x": 115.94,
+        "y": 855.72
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "PDM_CLK_3V3",
+        "x": 155.36,
+        "y": 492.37
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "PDM_D0_1V8",
+        "x": 89.58,
+        "y": 820.1
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "PDM_D0_3V3",
+        "x": 159.79,
+        "y": 491.55
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "PDM_D1_3V3",
+        "x": 144.12,
+        "y": 494.46
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "PRIV_WINDOW_OK",
+        "x": 209.24,
+        "y": 1375.14
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "PRIV_WINDOW_OK_F",
+        "x": 205.59,
+        "y": 1202.82
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "QSPI_DIR1_EN",
+        "x": 94.77,
+        "y": 225.28
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "SYS_I2C_SCL_1V8",
+        "x": 90.6,
+        "y": 821.48
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "SYS_I2C_SCL_3V3",
+        "x": 171.87,
+        "y": 489.31
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "SYS_I2C_SCL_3V3",
+        "x": 57.82,
+        "y": 777.18
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "SYS_I2C_SDA_1V8",
+        "x": 107.53,
+        "y": 844.35
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "SYS_I2C_SDA_3V3",
+        "x": 70.3,
+        "y": 794.05
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "SYS_I2C_SDA_3V3",
+        "x": 174.2,
+        "y": 488.87
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "VBAT_R_ISOLATED",
+        "x": 113.71,
+        "y": 1242.89
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "VSYNC_CDONE_3V3",
+        "x": 66.77,
+        "y": 508.84
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "V_INA_OUT",
+        "x": 203.31,
+        "y": 1396.2
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "host_cs_n_3v3",
+        "x": 51,
+        "y": 306.63
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "host_qio0_3v3",
+        "x": 39.73,
+        "y": 327.58
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "host_qio1_3v3",
+        "x": 70.37,
+        "y": 270.62
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "host_qio2_3v3",
+        "x": 65.28,
+        "y": 280.08
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "host_qio3_3v3",
+        "x": 68.81,
+        "y": 273.52
+      },
+      {
+        "netA": "3V3_SYS",
+        "netB": "host_sck_3v3",
+        "x": 54.93,
+        "y": 299.32
+      },
+      {
+        "netA": "BB_L1",
+        "netB": "I2S_LRCLK_1V8",
+        "x": 143.72,
+        "y": 928.4
+      },
+      {
+        "netA": "BB_L2",
+        "netB": "I2S_LRCLK_1V8",
+        "x": 142.95,
+        "y": 896.9
+      },
+      {
+        "netA": "CAM_D0_3V3",
+        "netB": "CAM_D5_3V3",
+        "x": 293.78,
+        "y": 311.98
+      },
+      {
+        "netA": "CAM_D0_3V3",
+        "netB": "CAM_D6_3V3",
+        "x": 292.27,
+        "y": 326.23
+      },
+      {
+        "netA": "CAM_D0_3V3",
+        "netB": "CAM_D7_3V3",
+        "x": 290.79,
+        "y": 340.18
+      },
+      {
+        "netA": "CAM_D1_3V3",
+        "netB": "CAM_D5_3V3",
+        "x": 295.39,
+        "y": 312.58
+      },
+      {
+        "netA": "CAM_D1_3V3",
+        "netB": "CAM_D6_3V3",
+        "x": 293.86,
+        "y": 326.98
+      },
+      {
+        "netA": "CAM_D1_3V3",
+        "netB": "CAM_D7_3V3",
+        "x": 292.37,
+        "y": 341.09
+      },
+      {
+        "netA": "CAM_D2_3V3",
+        "netB": "CAM_D5_3V3",
+        "x": 296.99,
+        "y": 313.19
+      },
+      {
+        "netA": "CAM_D2_3V3",
+        "netB": "CAM_D6_3V3",
+        "x": 295.45,
+        "y": 327.72
+      },
+      {
+        "netA": "CAM_D2_3V3",
+        "netB": "CAM_D7_3V3",
+        "x": 293.94,
+        "y": 341.99
+      },
+      {
+        "netA": "CAM_D3_3V3",
+        "netB": "CAM_D5_3V3",
+        "x": 298.59,
+        "y": 313.79
+      },
+      {
+        "netA": "CAM_D3_3V3",
+        "netB": "CAM_D6_3V3",
+        "x": 297.04,
+        "y": 328.47
+      },
+      {
+        "netA": "CAM_D3_3V3",
+        "netB": "CAM_D7_3V3",
+        "x": 295.51,
+        "y": 342.89
+      },
+      {
+        "netA": "CAM_D4_3V3",
+        "netB": "CAM_D5_3V3",
+        "x": 300.19,
+        "y": 314.39
+      },
+      {
+        "netA": "CAM_D4_3V3",
+        "netB": "CAM_D6_3V3",
+        "x": 298.62,
+        "y": 329.21
+      },
+      {
+        "netA": "CAM_D4_3V3",
+        "netB": "CAM_D7_3V3",
+        "x": 297.08,
+        "y": 343.79
+      },
+      {
+        "netA": "CAM_D5_3V3",
+        "netB": "CAM_D6_3V3",
+        "x": 130.55,
+        "y": 250.45
+      },
+      {
+        "netA": "CAM_D5_3V3",
+        "netB": "CAM_D7_3V3",
+        "x": 142.03,
+        "y": 254.77
+      },
+      {
+        "netA": "CAM_D5_3V3",
+        "netB": "CAM_PCLK_3V3",
+        "x": 110.24,
+        "y": 242.79
+      },
+      {
+        "netA": "CAM_D5_3V3",
+        "netB": "CAM_VSYNC_3V3",
+        "x": 125.3,
+        "y": 248.47
+      },
+      {
+        "netA": "CAM_D5_3V3",
+        "netB": "CAM_XCLK_3V3",
+        "x": 182.76,
+        "y": 270.13
+      },
+      {
+        "netA": "CAM_D5_3V3",
+        "netB": "I2S_BCLK_3V3",
+        "x": 157.93,
+        "y": 260.77
+      },
+      {
+        "netA": "CAM_D5_3V3",
+        "netB": "I2S_S3_DOUT_3V3",
+        "x": 145.33,
+        "y": 256.02
+      },
+      {
+        "netA": "CAM_D5_3V3",
+        "netB": "PDM_CLK_3V3",
+        "x": 172.67,
+        "y": 266.33
+      },
+      {
+        "netA": "CAM_D5_3V3",
+        "netB": "QSPI_DIR1_EN",
+        "x": 224.15,
+        "y": 285.73
+      },
+      {
+        "netA": "CAM_D6_3V3",
+        "netB": "CAM_D7_3V3",
+        "x": 152,
+        "y": 260.5
+      },
+      {
+        "netA": "CAM_D6_3V3",
+        "netB": "CAM_PCLK_3V3",
+        "x": 110.47,
+        "y": 241.04
+      },
+      {
+        "netA": "CAM_D6_3V3",
+        "netB": "CAM_VSYNC_3V3",
+        "x": 125.35,
+        "y": 248.01
+      },
+      {
+        "netA": "CAM_D6_3V3",
+        "netB": "CAM_XCLK_3V3",
+        "x": 181.95,
+        "y": 274.54
+      },
+      {
+        "netA": "CAM_D6_3V3",
+        "netB": "I2S_BCLK_3V3",
+        "x": 157.77,
+        "y": 263.21
+      },
+      {
+        "netA": "CAM_D6_3V3",
+        "netB": "I2S_S3_DOUT_3V3",
+        "x": 145.35,
+        "y": 257.39
+      },
+      {
+        "netA": "CAM_D6_3V3",
+        "netB": "PDM_CLK_3V3",
+        "x": 172.38,
+        "y": 270.05
+      },
+      {
+        "netA": "CAM_D7_3V3",
+        "netB": "CAM_PCLK_3V3",
+        "x": 111,
+        "y": 236.97
+      },
+      {
+        "netA": "CAM_D7_3V3",
+        "netB": "CAM_VSYNC_3V3",
+        "x": 125.7,
+        "y": 245.4
+      },
+      {
+        "netA": "CAM_D7_3V3",
+        "netB": "CAM_XCLK_3V3",
+        "x": 181.42,
+        "y": 277.39
+      },
+      {
+        "netA": "CAM_D7_3V3",
+        "netB": "I2S_BCLK_3V3",
+        "x": 157.74,
+        "y": 263.79
+      },
+      {
+        "netA": "CAM_D7_3V3",
+        "netB": "I2S_S3_DOUT_3V3",
+        "x": 145.34,
+        "y": 256.68
+      },
+      {
+        "netA": "CAM_D7_3V3",
+        "netB": "PDM_CLK_3V3",
+        "x": 172.23,
+        "y": 272.11
+      },
+      {
+        "netA": "CAM_D7_3V3",
+        "netB": "SYS_I2C_SDA_3V3",
+        "x": 283.17,
+        "y": 335.8
+      },
+      {
+        "netA": "CAM_HREF_3V3",
+        "netB": "CAM_XCLK_3V3",
+        "x": 143.57,
+        "y": 482.02
+      },
+      {
+        "netA": "CAM_HREF_3V3",
+        "netB": "I2S_BCLK_3V3",
+        "x": 143.93,
+        "y": 481.72
+      },
+      {
+        "netA": "CAM_HREF_3V3",
+        "netB": "I2S_LRCLK_3V3",
+        "x": 128.69,
+        "y": 494.47
+      },
+      {
+        "netA": "CAM_HREF_3V3",
+        "netB": "I2S_S3_DOUT_3V3",
+        "x": 149.21,
+        "y": 477.3
+      },
+      {
+        "netA": "CAM_HREF_3V3",
+        "netB": "PDM_CLK_3V3",
+        "x": 157.02,
+        "y": 470.77
+      },
+      {
+        "netA": "CAM_HREF_3V3",
+        "netB": "SYS_I2C_SCL_3V3",
+        "x": 248.12,
+        "y": 394.55
+      },
+      {
+        "netA": "CAM_HREF_3V3",
+        "netB": "SYS_I2C_SDA_3V3",
+        "x": 231.36,
+        "y": 408.58
+      },
+      {
+        "netA": "CAM_HREF_3V3",
+        "netB": "host_cs_n_3v3",
+        "x": 197.31,
+        "y": 437.07
+      },
+      {
+        "netA": "CAM_HREF_3V3",
+        "netB": "host_qio0_3v3",
+        "x": 186.57,
+        "y": 446.05
+      },
+      {
+        "netA": "CAM_HREF_3V3",
+        "netB": "host_qio1_3v3",
+        "x": 182.89,
+        "y": 449.13
+      },
+      {
+        "netA": "CAM_HREF_3V3",
+        "netB": "host_qio2_3v3",
+        "x": 173.06,
+        "y": 457.35
+      },
+      {
+        "netA": "CAM_HREF_3V3",
+        "netB": "host_qio3_3v3",
+        "x": 230.45,
+        "y": 409.34
+      },
+      {
+        "netA": "CAM_HREF_3V3",
+        "netB": "host_sck_3v3",
+        "x": 186.06,
+        "y": 446.48
+      },
+      {
+        "netA": "CAM_PCLK_3V3",
+        "netB": "FPGA_CRESET_3V3",
+        "x": 86.14,
+        "y": 426.68
+      },
+      {
+        "netA": "CAM_PCLK_3V3",
+        "netB": "IPC_S3_TX_3V3",
+        "x": 77.43,
+        "y": 493.15
+      },
+      {
+        "netA": "CAM_PCLK_3V3",
+        "netB": "QSPI_DIR1_EN",
+        "x": 111.51,
+        "y": 233.11
+      },
+      {
+        "netA": "CAM_PCLK_3V3",
+        "netB": "host_cs_n_3v3",
+        "x": 96.55,
+        "y": 347.24
+      },
+      {
+        "netA": "CAM_PCLK_3V3",
+        "netB": "host_qio0_3v3",
+        "x": 93.45,
+        "y": 370.92
+      },
+      {
+        "netA": "CAM_PCLK_3V3",
+        "netB": "host_qio1_3v3",
+        "x": 100.36,
+        "y": 318.2
+      },
+      {
+        "netA": "CAM_PCLK_3V3",
+        "netB": "host_qio2_3v3",
+        "x": 98.25,
+        "y": 334.3
+      },
+      {
+        "netA": "CAM_PCLK_3V3",
+        "netB": "host_qio3_3v3",
+        "x": 102.5,
+        "y": 301.83
+      },
+      {
+        "netA": "CAM_PCLK_3V3",
+        "netB": "host_sck_3v3",
+        "x": 96.69,
+        "y": 346.18
+      },
+      {
+        "netA": "CAM_VSYNC_3V3",
+        "netB": "FPGA_CRESET_3V3",
+        "x": 98.3,
+        "y": 454.46
+      },
+      {
+        "netA": "CAM_VSYNC_3V3",
+        "netB": "QSPI_DIR1_EN",
+        "x": 126.4,
+        "y": 240.06
+      },
+      {
+        "netA": "CAM_VSYNC_3V3",
+        "netB": "host_cs_n_3v3",
+        "x": 110.7,
+        "y": 359.85
+      },
+      {
+        "netA": "CAM_VSYNC_3V3",
+        "netB": "host_qio0_3v3",
+        "x": 107.74,
+        "y": 382.45
+      },
+      {
+        "netA": "CAM_VSYNC_3V3",
+        "netB": "host_qio1_3v3",
+        "x": 113.44,
+        "y": 338.95
+      },
+      {
+        "netA": "CAM_VSYNC_3V3",
+        "netB": "host_qio2_3v3",
+        "x": 111.24,
+        "y": 355.68
+      },
+      {
+        "netA": "CAM_VSYNC_3V3",
+        "netB": "host_qio3_3v3",
+        "x": 116.73,
+        "y": 313.79
+      },
+      {
+        "netA": "CAM_VSYNC_3V3",
+        "netB": "host_sck_3v3",
+        "x": 110.46,
+        "y": 361.64
+      },
+      {
+        "netA": "CAM_XCLK_3V3",
+        "netB": "I2S_BCLK_3V3",
+        "x": 144.08,
+        "y": 479.23
+      },
+      {
+        "netA": "CAM_XCLK_3V3",
+        "netB": "I2S_S3_DOUT_3V3",
+        "x": 148.8,
+        "y": 453.75
+      },
+      {
+        "netA": "CAM_XCLK_3V3",
+        "netB": "PDM_CLK_3V3",
+        "x": 165.04,
+        "y": 365.92
+      },
+      {
+        "netA": "CAM_XCLK_3V3",
+        "netB": "QSPI_DIR1_EN",
+        "x": 183.4,
+        "y": 266.69
+      },
+      {
+        "netA": "CAM_XCLK_3V3",
+        "netB": "host_cs_n_3v3",
+        "x": 158.31,
+        "y": 402.3
+      },
+      {
+        "netA": "CAM_XCLK_3V3",
+        "netB": "host_qio0_3v3",
+        "x": 154.94,
+        "y": 420.53
+      },
+      {
+        "netA": "CAM_XCLK_3V3",
+        "netB": "host_qio1_3v3",
+        "x": 157.19,
+        "y": 408.37
+      },
+      {
+        "netA": "CAM_XCLK_3V3",
+        "netB": "host_qio2_3v3",
+        "x": 153.95,
+        "y": 425.91
+      },
+      {
+        "netA": "CAM_XCLK_3V3",
+        "netB": "host_qio3_3v3",
+        "x": 166.89,
+        "y": 355.94
+      },
+      {
+        "netA": "CAM_XCLK_3V3",
+        "netB": "host_sck_3v3",
+        "x": 156.32,
+        "y": 413.1
+      },
+      {
+        "netA": "FPGA_CRESET_3V3",
+        "netB": "host_qio0_3v3",
+        "x": 44.42,
+        "y": 331.37
+      },
+      {
+        "netA": "I2S_BCLK_1V8",
+        "netB": "IPC_S3_TX_3V3",
+        "x": 167.06,
+        "y": 716.21
+      },
+      {
+        "netA": "I2S_BCLK_1V8",
+        "netB": "PRIV_WINDOW_OK",
+        "x": 164.24,
+        "y": 1363.29
+      },
+      {
+        "netA": "I2S_BCLK_1V8",
+        "netB": "PRIV_WINDOW_OK_F",
+        "x": 164.59,
+        "y": 1281.47
+      },
+      {
+        "netA": "I2S_BCLK_1V8",
+        "netB": "PRIV_WINDOW_OK_F",
+        "x": 164.83,
+        "y": 1227.11
+      },
+      {
+        "netA": "I2S_BCLK_1V8",
+        "netB": "V_INA_OUT",
+        "x": 164.09,
+        "y": 1396.2
+      },
+      {
+        "netA": "I2S_BCLK_3V3",
+        "netB": "I2S_S3_DOUT_3V3",
+        "x": 148.13,
+        "y": 415.45
+      },
+      {
+        "netA": "I2S_BCLK_3V3",
+        "netB": "IPC_S3_TX_3V3",
+        "x": 134.24,
+        "y": 634.54
+      },
+      {
+        "netA": "I2S_BCLK_3V3",
+        "netB": "LS4_VREF2_EN",
+        "x": 116.29,
+        "y": 917.78
+      },
+      {
+        "netA": "I2S_BCLK_3V3",
+        "netB": "PDM_D0_3V3",
+        "x": 137.12,
+        "y": 589.15
+      },
+      {
+        "netA": "I2S_BCLK_3V3",
+        "netB": "PDM_D1_3V3",
+        "x": 141.25,
+        "y": 524
+      },
+      {
+        "netA": "I2S_BCLK_3V3",
+        "netB": "QSPI_DIR1_EN",
+        "x": 158.3,
+        "y": 254.96
+      },
+      {
+        "netA": "I2S_BCLK_3V3",
+        "netB": "SYS_I2C_SCL_3V3",
+        "x": 141.02,
+        "y": 527.64
+      },
+      {
+        "netA": "I2S_BCLK_3V3",
+        "netB": "SYS_I2C_SDA_1V8",
+        "x": 115.39,
+        "y": 932.04
+      },
+      {
+        "netA": "I2S_BCLK_3V3",
+        "netB": "SYS_I2C_SDA_3V3",
+        "x": 140.47,
+        "y": 536.25
+      },
+      {
+        "netA": "I2S_BCLK_3V3",
+        "netB": "VBAT_R_ISOLATED",
+        "x": 85.51,
+        "y": 1403.37
+      },
+      {
+        "netA": "I2S_BCLK_3V3",
+        "netB": "VOUT_L_PPATH",
+        "x": 109.35,
+        "y": 1027.3
+      },
+      {
+        "netA": "I2S_BCLK_3V3",
+        "netB": "host_cs_n_3v3",
+        "x": 149.46,
+        "y": 394.41
+      },
+      {
+        "netA": "I2S_BCLK_3V3",
+        "netB": "host_qio0_3v3",
+        "x": 148.15,
+        "y": 415.05
+      },
+      {
+        "netA": "I2S_BCLK_3V3",
+        "netB": "host_qio1_3v3",
+        "x": 149.36,
+        "y": 395.94
+      },
+      {
+        "netA": "I2S_BCLK_3V3",
+        "netB": "host_qio2_3v3",
+        "x": 148.07,
+        "y": 416.25
+      },
+      {
+        "netA": "I2S_BCLK_3V3",
+        "netB": "host_qio3_3v3",
+        "x": 152.66,
+        "y": 343.98
+      },
+      {
+        "netA": "I2S_BCLK_3V3",
+        "netB": "host_sck_3v3",
+        "x": 148.81,
+        "y": 404.67
+      },
+      {
+        "netA": "I2S_LRCLK_1V8",
+        "netB": "IPC_S3_TX_3V3",
+        "x": 136.65,
+        "y": 640.54
+      },
+      {
+        "netA": "I2S_LRCLK_1V8",
+        "netB": "PDM_CLK_3V3",
+        "x": 138.44,
+        "y": 713.44
+      },
+      {
+        "netA": "I2S_LRCLK_1V8",
+        "netB": "PRIV_WINDOW_OK",
+        "x": 154.35,
+        "y": 1360.68
+      },
+      {
+        "netA": "I2S_LRCLK_1V8",
+        "netB": "PRIV_WINDOW_OK_F",
+        "x": 151.93,
+        "y": 1262.19
+      },
+      {
+        "netA": "I2S_LRCLK_1V8",
+        "netB": "PRIV_WINDOW_OK_F",
+        "x": 151.27,
+        "y": 1235.19
+      },
+      {
+        "netA": "I2S_LRCLK_1V8",
+        "netB": "V_INA_OUT",
+        "x": 155.22,
+        "y": 1396.2
+      },
+      {
+        "netA": "I2S_LRCLK_3V3",
+        "netB": "IPC_S3_TX_3V3",
+        "x": 122.85,
+        "y": 606.2
+      },
+      {
+        "netA": "I2S_LRCLK_3V3",
+        "netB": "LS4_VREF2_EN",
+        "x": 106.5,
+        "y": 919.33
+      },
+      {
+        "netA": "I2S_LRCLK_3V3",
+        "netB": "PDM_CLK_1V8",
+        "x": 104.31,
+        "y": 961.19
+      },
+      {
+        "netA": "I2S_LRCLK_3V3",
+        "netB": "PDM_D0_3V3",
+        "x": 119.86,
+        "y": 663.42
+      },
+      {
+        "netA": "I2S_LRCLK_3V3",
+        "netB": "SYS_I2C_SCL_1V8",
+        "x": 103.62,
+        "y": 974.39
+      },
+      {
+        "netA": "I2S_LRCLK_3V3",
+        "netB": "SYS_I2C_SCL_3V3",
+        "x": 125.98,
+        "y": 546.32
+      },
+      {
+        "netA": "I2S_LRCLK_3V3",
+        "netB": "SYS_I2C_SDA_1V8",
+        "x": 109.35,
+        "y": 864.65
+      },
+      {
+        "netA": "I2S_LRCLK_3V3",
+        "netB": "SYS_I2C_SDA_3V3",
+        "x": 125.4,
+        "y": 557.42
+      },
+      {
+        "netA": "I2S_LRCLK_3V3",
+        "netB": "VBAT_R_ISOLATED",
+        "x": 79.39,
+        "y": 1438.22
+      },
+      {
+        "netA": "I2S_S3_DOUT_3V3",
+        "netB": "IPC_S3_TX_3V3",
+        "x": 152.78,
+        "y": 680.68
+      },
+      {
+        "netA": "I2S_S3_DOUT_3V3",
+        "netB": "PDM_CLK_3V3",
+        "x": 150.57,
+        "y": 554.95
+      },
+      {
+        "netA": "I2S_S3_DOUT_3V3",
+        "netB": "PDM_D0_3V3",
+        "x": 150.19,
+        "y": 532.9
+      },
+      {
+        "netA": "I2S_S3_DOUT_3V3",
+        "netB": "QSPI_DIR1_EN",
+        "x": 145.2,
+        "y": 248.85
+      },
+      {
+        "netA": "I2S_S3_DOUT_3V3",
+        "netB": "SYS_I2C_SCL_3V3",
+        "x": 149.9,
+        "y": 516.6
+      },
+      {
+        "netA": "I2S_S3_DOUT_3V3",
+        "netB": "SYS_I2C_SDA_3V3",
+        "x": 150.01,
+        "y": 522.85
+      },
+      {
+        "netA": "I2S_S3_DOUT_3V3",
+        "netB": "host_cs_n_3v3",
+        "x": 147.73,
+        "y": 392.87
+      },
+      {
+        "netA": "I2S_S3_DOUT_3V3",
+        "netB": "host_qio0_3v3",
+        "x": 148.12,
+        "y": 415.02
+      },
+      {
+        "netA": "I2S_S3_DOUT_3V3",
+        "netB": "host_qio1_3v3",
+        "x": 147.74,
+        "y": 393.37
+      },
+      {
+        "netA": "I2S_S3_DOUT_3V3",
+        "netB": "host_qio2_3v3",
+        "x": 148.14,
+        "y": 416.36
+      },
+      {
+        "netA": "I2S_S3_DOUT_3V3",
+        "netB": "host_qio3_3v3",
+        "x": 146.78,
+        "y": 339.04
+      },
+      {
+        "netA": "I2S_S3_DOUT_3V3",
+        "netB": "host_sck_3v3",
+        "x": 147.92,
+        "y": 403.68
+      },
+      {
+        "netA": "IPC_NRF_TX_3V3",
+        "netB": "IPC_S3_TX_3V3",
+        "x": 23.88,
+        "y": 359.89
+      },
+      {
+        "netA": "IPC_NRF_TX_3V3",
+        "netB": "SYS_I2C_SCL_1V8",
+        "x": 74.85,
+        "y": 636.37
+      },
+      {
+        "netA": "IPC_NRF_TX_3V3",
+        "netB": "SYS_I2C_SCL_3V3",
+        "x": 70.87,
+        "y": 614.79
+      },
+      {
+        "netA": "IPC_NRF_TX_3V3",
+        "netB": "SYS_I2C_SDA_3V3",
+        "x": 80.05,
+        "y": 664.56
+      },
+      {
+        "netA": "IPC_NRF_TX_3V3",
+        "netB": "VSYNC_CDONE_3V3",
+        "x": 70.74,
+        "y": 614.05
+      },
+      {
+        "netA": "IPC_S3_TX_3V3",
+        "netB": "PDM_CLK_3V3",
+        "x": 142.84,
+        "y": 655.95
+      },
+      {
+        "netA": "IPC_S3_TX_3V3",
+        "netB": "PDM_D0_3V3",
+        "x": 129.38,
+        "y": 622.45
+      },
+      {
+        "netA": "IPC_S3_TX_3V3",
+        "netB": "PDM_D1_3V3",
+        "x": 131.22,
+        "y": 627.03
+      },
+      {
+        "netA": "IPC_S3_TX_3V3",
+        "netB": "SYS_I2C_SCL_3V3",
+        "x": 107.84,
+        "y": 568.85
+      },
+      {
+        "netA": "IPC_S3_TX_3V3",
+        "netB": "SYS_I2C_SDA_3V3",
+        "x": 111.24,
+        "y": 577.31
+      },
+      {
+        "netA": "LS4_VREF2_EN",
+        "netB": "PDM_CLK_1V8",
+        "x": 108.97,
+        "y": 918.94
+      },
+      {
+        "netA": "LS4_VREF2_EN",
+        "netB": "PDM_D0_1V8",
+        "x": 84.17,
+        "y": 922.85
+      },
+      {
+        "netA": "LS4_VREF2_EN",
+        "netB": "SYS_I2C_SCL_1V8",
+        "x": 99.03,
+        "y": 920.51
+      },
+      {
+        "netA": "LS4_VREF2_EN",
+        "netB": "SYS_I2C_SCL_3V3",
+        "x": 46.47,
+        "y": 928.8
+      },
+      {
+        "netA": "LS4_VREF2_EN",
+        "netB": "SYS_I2C_SDA_1V8",
+        "x": 114.14,
+        "y": 918.12
+      },
+      {
+        "netA": "LS4_VREF2_EN",
+        "netB": "SYS_I2C_SDA_3V3",
+        "x": 60.33,
+        "y": 926.61
+      },
+      {
+        "netA": "PDM_CLK_1V8",
+        "netB": "PDM_D0_1V8",
+        "x": 61.86,
+        "y": 1345.98
+      },
+      {
+        "netA": "PDM_CLK_1V8",
+        "netB": "SYS_I2C_SCL_1V8",
+        "x": 103.28,
+        "y": 970.47
+      },
+      {
+        "netA": "PDM_CLK_1V8",
+        "netB": "SYS_I2C_SDA_1V8",
+        "x": 111.86,
+        "y": 892.7
+      },
+      {
+        "netA": "PDM_CLK_3V3",
+        "netB": "PDM_D0_3V3",
+        "x": 153.28,
+        "y": 519.57
+      },
+      {
+        "netA": "PDM_CLK_3V3",
+        "netB": "QSPI_DIR1_EN",
+        "x": 173.01,
+        "y": 261.84
+      },
+      {
+        "netA": "PDM_CLK_3V3",
+        "netB": "SYS_I2C_SCL_3V3",
+        "x": 153.89,
+        "y": 511.64
+      },
+      {
+        "netA": "PDM_CLK_3V3",
+        "netB": "SYS_I2C_SDA_3V3",
+        "x": 153.39,
+        "y": 518.1
+      },
+      {
+        "netA": "PDM_CLK_3V3",
+        "netB": "host_cs_n_3v3",
+        "x": 162.01,
+        "y": 405.6
+      },
+      {
+        "netA": "PDM_CLK_3V3",
+        "netB": "host_qio0_3v3",
+        "x": 160.52,
+        "y": 425.03
+      },
+      {
+        "netA": "PDM_CLK_3V3",
+        "netB": "host_qio1_3v3",
+        "x": 161.3,
+        "y": 414.88
+      },
+      {
+        "netA": "PDM_CLK_3V3",
+        "netB": "host_qio2_3v3",
+        "x": 159.72,
+        "y": 435.41
+      },
+      {
+        "netA": "PDM_CLK_3V3",
+        "netB": "host_qio3_3v3",
+        "x": 165.87,
+        "y": 355.08
+      },
+      {
+        "netA": "PDM_CLK_3V3",
+        "netB": "host_sck_3v3",
+        "x": 161.03,
+        "y": 418.39
+      },
+      {
+        "netA": "PDM_D0_1V8",
+        "netB": "SYS_I2C_SCL_1V8",
+        "x": 89.93,
+        "y": 813.54
+      },
+      {
+        "netA": "PDM_D0_3V3",
+        "netB": "PDM_D1_3V3",
+        "x": 133.31,
+        "y": 605.52
+      },
+      {
+        "netA": "PDM_D0_3V3",
+        "netB": "SYS_I2C_SCL_3V3",
+        "x": 155.62,
+        "y": 509.49
+      },
+      {
+        "netA": "PDM_D0_3V3",
+        "netB": "SYS_I2C_SDA_3V3",
+        "x": 153.73,
+        "y": 517.62
+      },
+      {
+        "netA": "PDM_D1_3V3",
+        "netB": "SYS_I2C_SCL_3V3",
+        "x": 140.87,
+        "y": 527.81
+      },
+      {
+        "netA": "PDM_D1_3V3",
+        "netB": "SYS_I2C_SDA_3V3",
+        "x": 139.99,
+        "y": 536.93
+      },
+      {
+        "netA": "SYS_I2C_SCL_1V8",
+        "netB": "SYS_I2C_SCL_3V3",
+        "x": 72.81,
+        "y": 612.39
+      },
+      {
+        "netA": "SYS_I2C_SCL_1V8",
+        "netB": "SYS_I2C_SDA_3V3",
+        "x": 78.73,
+        "y": 682
+      },
+      {
+        "netA": "SYS_I2C_SCL_3V3",
+        "netB": "SYS_I2C_SDA_1V8",
+        "x": 85.36,
+        "y": 596.79
+      },
+      {
+        "netA": "SYS_I2C_SCL_3V3",
+        "netB": "SYS_I2C_SDA_3V3",
+        "x": 189.4,
+        "y": 467.52
+      },
+      {
+        "netA": "SYS_I2C_SCL_3V3",
+        "netB": "VSYNC_CDONE_3V3",
+        "x": 70.77,
+        "y": 614.92
+      },
+      {
+        "netA": "SYS_I2C_SCL_3V3",
+        "netB": "host_cs_n_3v3",
+        "x": 206.97,
+        "y": 445.68
+      },
+      {
+        "netA": "SYS_I2C_SCL_3V3",
+        "netB": "host_qio0_3v3",
+        "x": 198.77,
+        "y": 455.88
+      },
+      {
+        "netA": "SYS_I2C_SCL_3V3",
+        "netB": "host_qio1_3v3",
+        "x": 192.25,
+        "y": 463.98
+      },
+      {
+        "netA": "SYS_I2C_SCL_3V3",
+        "netB": "host_qio2_3v3",
+        "x": 183.61,
+        "y": 474.71
+      },
+      {
+        "netA": "SYS_I2C_SCL_3V3",
+        "netB": "host_qio3_3v3",
+        "x": 233.89,
+        "y": 412.24
+      },
+      {
+        "netA": "SYS_I2C_SCL_3V3",
+        "netB": "host_sck_3v3",
+        "x": 196.71,
+        "y": 458.44
+      },
+      {
+        "netA": "SYS_I2C_SDA_1V8",
+        "netB": "SYS_I2C_SDA_3V3",
+        "x": 86.71,
+        "y": 611.78
+      },
+      {
+        "netA": "SYS_I2C_SDA_3V3",
+        "netB": "host_cs_n_3v3",
+        "x": 205.73,
+        "y": 444.58
+      },
+      {
+        "netA": "SYS_I2C_SDA_3V3",
+        "netB": "host_qio0_3v3",
+        "x": 198.08,
+        "y": 455.33
+      },
+      {
+        "netA": "SYS_I2C_SDA_3V3",
+        "netB": "host_qio1_3v3",
+        "x": 192.09,
+        "y": 463.74
+      },
+      {
+        "netA": "SYS_I2C_SDA_3V3",
+        "netB": "host_qio2_3v3",
+        "x": 183.92,
+        "y": 475.21
+      },
+      {
+        "netA": "SYS_I2C_SDA_3V3",
+        "netB": "host_qio3_3v3",
+        "x": 230.68,
+        "y": 409.54
+      },
+      {
+        "netA": "SYS_I2C_SDA_3V3",
+        "netB": "host_sck_3v3",
+        "x": 196.24,
+        "y": 457.91
+      },
+      {
+        "netA": "VBAT_R_ISOLATED",
+        "netB": "VOUT_L_PPATH",
+        "x": 122.78,
+        "y": 1191.23
+      },
+      {
+        "netA": "host_cs_n_3v3",
+        "netB": "host_qio1_3v3",
+        "x": 147.03,
+        "y": 392.24
+      },
+      {
+        "netA": "host_cs_n_3v3",
+        "netB": "host_qio2_3v3",
+        "x": 117.44,
+        "y": 365.86
+      },
+      {
+        "netA": "host_cs_n_3v3",
+        "netB": "host_sck_3v3",
+        "x": 101.83,
+        "y": 351.94
+      },
+      {
+        "netA": "host_qio0_3v3",
+        "netB": "host_qio1_3v3",
+        "x": 175.11,
+        "y": 436.8
+      },
+      {
+        "netA": "host_qio0_3v3",
+        "netB": "host_qio2_3v3",
+        "x": 146.56,
+        "y": 413.77
+      },
+      {
+        "netA": "host_qio0_3v3",
+        "netB": "host_sck_3v3",
+        "x": 183.37,
+        "y": 443.46
+      },
+      {
+        "netA": "host_qio1_3v3",
+        "netB": "host_qio3_3v3",
+        "x": 76.01,
+        "y": 279.57
+      },
+      {
+        "netA": "host_qio1_3v3",
+        "netB": "host_sck_3v3",
+        "x": 169.5,
+        "y": 427.9
+      },
+      {
+        "netA": "host_qio2_3v3",
+        "netB": "host_qio3_3v3",
+        "x": 53.44,
+        "y": 260.6
+      },
+      {
+        "netA": "host_qio2_3v3",
+        "netB": "host_sck_3v3",
+        "x": 124.33,
+        "y": 377.21
+      }
+    ],
+    "summary": "score 0/100 (incomplete): 21 comps [bottom 10 / top 11], 0 short, 0 overlap, 0 off-board, 0 tight; 49 signal nets, ratsnest 20283mil, 253 crossings; geometry inspection incomplete"
+  }
+}

@@ -1,0 +1,889 @@
+{
+  "board": "M-MAIN-L",
+  "pcbUuid": "8fbc3cae65886fe5",
+  "projectUuid": "cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+  "scope": "PARTIAL_UNROUTED_CANDIDATE_NOT_FOR_FAB",
+  "startedAt": "2026-11-18T16:03:36.194782+00:00",
+  "planSha256": "1b6be4903cab872569b998ff318f7afaf9977d4a90edd91067aa2015650ba202",
+  "placements": [
+    {
+      "ref": "U1",
+      "sourceRef": "U1_HOST",
+      "stage": "saved-reloaded",
+      "primitiveId": "1412a27bbaf807a6",
+      "uniqueId": "",
+      "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+      "expectedCenterMm": {
+        "x": 4.1,
+        "y": 9.0
+      },
+      "observedCenterMil": {
+        "x": 161.41729999999998,
+        "y": 354.3307
+      },
+      "anchorMil": {
+        "x": 152.6163,
+        "y": 354.3307
+      },
+      "rotation": 180,
+      "layer": 1,
+      "bboxMil": {
+        "maxX": 317.5643,
+        "maxY": 501.6767,
+        "minX": 5.270299999999981,
+        "minY": 206.9847
+      },
+      "physicalPadPrimitiveCount": 57,
+      "distinctPadNumberCount": 57,
+      "intentionallyRepeatedPadNumbers": [],
+      "connectedLogicalPadCount": 43,
+      "ncAndLocalNcLogicalPadsRemainNetless": 14,
+      "manufacturerId": "ESP32-S3-PICO-1-N8R8",
+      "verificationErrors": [],
+      "verified": true
+    },
+    {
+      "ref": "MK1",
+      "sourceRef": "MK1_L",
+      "stage": "saved-reloaded",
+      "primitiveId": "08da4ea71a40c02c",
+      "uniqueId": "",
+      "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+      "expectedCenterMm": {
+        "x": 2.9,
+        "y": 36.9
+      },
+      "observedCenterMil": {
+        "x": 114.17320000000001,
+        "y": 1452.7559499999998
+      },
+      "anchorMil": {
+        "x": 109.0587,
+        "y": 1440.7902
+      },
+      "rotation": 90,
+      "layer": 1,
+      "bboxMil": {
+        "maxX": 197.9127,
+        "maxY": 1529.7657,
+        "minX": 30.4337,
+        "minY": 1375.7461999999998
+      },
+      "physicalPadPrimitiveCount": 8,
+      "distinctPadNumberCount": 5,
+      "intentionallyRepeatedPadNumbers": [
+        "5"
+      ],
+      "connectedLogicalPadCount": 5,
+      "ncAndLocalNcLogicalPadsRemainNetless": 0,
+      "manufacturerId": "IM69D130V01XTSA1",
+      "verificationErrors": [],
+      "verified": true
+    },
+    {
+      "ref": "U10",
+      "sourceRef": "U10_AMP_L",
+      "stage": "saved-reloaded",
+      "primitiveId": "57efe79271ceb587",
+      "uniqueId": "",
+      "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+      "expectedCenterMm": {
+        "x": 4.0,
+        "y": 15.2
+      },
+      "observedCenterMil": {
+        "x": 157.48029999999997,
+        "y": 598.4252
+      },
+      "anchorMil": {
+        "x": 151.7618,
+        "y": 598.4242
+      },
+      "rotation": 0,
+      "layer": 1,
+      "bboxMil": {
+        "maxX": 195.68079999999998,
+        "maxY": 628.9382,
+        "minX": 119.27979999999998,
+        "minY": 567.9122
+      },
+      "physicalPadPrimitiveCount": 9,
+      "distinctPadNumberCount": 9,
+      "intentionallyRepeatedPadNumbers": [],
+      "connectedLogicalPadCount": 9,
+      "ncAndLocalNcLogicalPadsRemainNetless": 0,
+      "manufacturerId": "MAX98357AEWL+T",
+      "verificationErrors": [],
+      "verified": true
+    },
+    {
+      "ref": "U18",
+      "sourceRef": "U8_LS1",
+      "stage": "saved-reloaded",
+      "primitiveId": "fecdbb8532dcf1d6",
+      "uniqueId": "",
+      "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+      "expectedCenterMm": {
+        "x": 1.7,
+        "y": 6.8
+      },
+      "observedCenterMil": {
+        "x": 66.9291,
+        "y": 267.7165
+      },
+      "anchorMil": {
+        "x": 73.3141,
+        "y": 267.7165
+      },
+      "rotation": 90,
+      "layer": 2,
+      "bboxMil": {
+        "maxX": 130.61710000000002,
+        "maxY": 359.4515,
+        "minX": 3.2410999999999923,
+        "minY": 175.9815
+      },
+      "physicalPadPrimitiveCount": 24,
+      "distinctPadNumberCount": 24,
+      "intentionallyRepeatedPadNumbers": [],
+      "connectedLogicalPadCount": 24,
+      "ncAndLocalNcLogicalPadsRemainNetless": 0,
+      "manufacturerId": "SN74AXC8T245RJWR",
+      "verificationErrors": [],
+      "verified": true
+    },
+    {
+      "ref": "U21",
+      "sourceRef": "U8_PDM_LS",
+      "stage": "saved-reloaded",
+      "primitiveId": "36b69f2de5ae8b5e",
+      "uniqueId": "",
+      "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+      "expectedCenterMm": {
+        "x": 2.9,
+        "y": 19.5
+      },
+      "observedCenterMil": {
+        "x": 114.17320000000001,
+        "y": 767.7165
+      },
+      "anchorMil": {
+        "x": 114.17320000000001,
+        "y": 761.3315
+      },
+      "rotation": 0,
+      "layer": 2,
+      "bboxMil": {
+        "maxX": 205.90820000000002,
+        "maxY": 831.4045,
+        "minX": 22.438199999999995,
+        "minY": 704.0285
+      },
+      "physicalPadPrimitiveCount": 24,
+      "distinctPadNumberCount": 24,
+      "intentionallyRepeatedPadNumbers": [],
+      "connectedLogicalPadCount": 23,
+      "ncAndLocalNcLogicalPadsRemainNetless": 1,
+      "manufacturerId": "SN74AXC8T245RJWR",
+      "verificationErrors": [],
+      "verified": true
+    },
+    {
+      "ref": "U8",
+      "sourceRef": "U8_AUD_LS2",
+      "stage": "saved-reloaded",
+      "primitiveId": "06a525da8fa887e7",
+      "uniqueId": "",
+      "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+      "expectedCenterMm": {
+        "x": 2.9,
+        "y": 43.6
+      },
+      "observedCenterMil": {
+        "x": 114.17320000000001,
+        "y": 1716.5354499999999
+      },
+      "anchorMil": {
+        "x": 114.17320000000001,
+        "y": 1708.1742
+      },
+      "rotation": 0,
+      "layer": 2,
+      "bboxMil": {
+        "maxX": 175.77370000000002,
+        "maxY": 1770.7672,
+        "minX": 52.57269999999999,
+        "minY": 1662.3037
+      },
+      "physicalPadPrimitiveCount": 16,
+      "distinctPadNumberCount": 16,
+      "intentionallyRepeatedPadNumbers": [],
+      "connectedLogicalPadCount": 14,
+      "ncAndLocalNcLogicalPadsRemainNetless": 2,
+      "manufacturerId": "SN74AXC4T245RSVR",
+      "verificationErrors": [],
+      "verified": true
+    },
+    {
+      "ref": "U15",
+      "sourceRef": "U8_CAM_ISO1",
+      "stage": "saved-reloaded",
+      "primitiveId": "6ad4486387742873",
+      "uniqueId": "",
+      "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+      "expectedCenterMm": {
+        "x": 6.5,
+        "y": 7.0
+      },
+      "observedCenterMil": {
+        "x": 255.90550000000002,
+        "y": 275.5906
+      },
+      "anchorMil": {
+        "x": 262.2905,
+        "y": 275.5906
+      },
+      "rotation": 90,
+      "layer": 2,
+      "bboxMil": {
+        "maxX": 319.5935,
+        "maxY": 367.3256,
+        "minX": 192.2175,
+        "minY": 183.85559999999998
+      },
+      "physicalPadPrimitiveCount": 24,
+      "distinctPadNumberCount": 24,
+      "intentionallyRepeatedPadNumbers": [],
+      "connectedLogicalPadCount": 24,
+      "ncAndLocalNcLogicalPadsRemainNetless": 0,
+      "manufacturerId": "SN74AXC8T245RJWR",
+      "verificationErrors": [],
+      "verified": true
+    },
+    {
+      "ref": "U16",
+      "sourceRef": "U8_CAM_ISO2",
+      "stage": "saved-reloaded",
+      "primitiveId": "abb017b2418bbf1d",
+      "uniqueId": "",
+      "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+      "expectedCenterMm": {
+        "x": 2.9,
+        "y": 14.2
+      },
+      "observedCenterMil": {
+        "x": 114.17320000000001,
+        "y": 559.0551
+      },
+      "anchorMil": {
+        "x": 114.17320000000001,
+        "y": 552.6701
+      },
+      "rotation": 0,
+      "layer": 2,
+      "bboxMil": {
+        "maxX": 205.90820000000002,
+        "maxY": 622.7431,
+        "minX": 22.438199999999995,
+        "minY": 495.36710000000005
+      },
+      "physicalPadPrimitiveCount": 24,
+      "distinctPadNumberCount": 24,
+      "intentionallyRepeatedPadNumbers": [],
+      "connectedLogicalPadCount": 21,
+      "ncAndLocalNcLogicalPadsRemainNetless": 3,
+      "manufacturerId": "SN74AXC8T245RJWR",
+      "verificationErrors": [],
+      "verified": true
+    },
+    {
+      "ref": "U3",
+      "sourceRef": "U3_L",
+      "stage": "saved-reloaded",
+      "primitiveId": "791fd8d973700d79",
+      "uniqueId": "",
+      "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+      "expectedCenterMm": {
+        "x": 2.9,
+        "y": 25.5
+      },
+      "observedCenterMil": {
+        "x": 114.17320000000001,
+        "y": 1003.9369999999999
+      },
+      "anchorMil": {
+        "x": 114.1712,
+        "y": 997.987
+      },
+      "rotation": 0,
+      "layer": 2,
+      "bboxMil": {
+        "maxX": 152.5592,
+        "maxY": 1034.495,
+        "minX": 75.78720000000001,
+        "minY": 973.3789999999999
+      },
+      "physicalPadPrimitiveCount": 8,
+      "distinctPadNumberCount": 8,
+      "intentionallyRepeatedPadNumbers": [],
+      "connectedLogicalPadCount": 7,
+      "ncAndLocalNcLogicalPadsRemainNetless": 1,
+      "manufacturerId": "BQ25180YBGR",
+      "verificationErrors": [],
+      "verified": true
+    },
+    {
+      "ref": "U19",
+      "sourceRef": "U8_LS3",
+      "stage": "saved-reloaded",
+      "primitiveId": "5269dd9042185c3d",
+      "uniqueId": "",
+      "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+      "expectedCenterMm": {
+        "x": 1.6,
+        "y": 15.0
+      },
+      "observedCenterMil": {
+        "x": 62.99209999999999,
+        "y": 590.5512000000001
+      },
+      "anchorMil": {
+        "x": 62.9891,
+        "y": 597.1162
+      },
+      "rotation": 0,
+      "layer": 1,
+      "bboxMil": {
+        "maxX": 97.44109999999999,
+        "maxY": 626.4492,
+        "minX": 28.543100000000003,
+        "minY": 554.6532000000001
+      },
+      "physicalPadPrimitiveCount": 8,
+      "distinctPadNumberCount": 8,
+      "intentionallyRepeatedPadNumbers": [],
+      "connectedLogicalPadCount": 8,
+      "ncAndLocalNcLogicalPadsRemainNetless": 0,
+      "manufacturerId": "PCA9306DQER",
+      "verificationErrors": [],
+      "verified": true
+    },
+    {
+      "ref": "U20",
+      "sourceRef": "U8_LS4",
+      "stage": "saved-reloaded",
+      "primitiveId": "7ceecca05861f1cc",
+      "uniqueId": "",
+      "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+      "expectedCenterMm": {
+        "x": 1.0,
+        "y": 23.0
+      },
+      "observedCenterMil": {
+        "x": 39.370099999999994,
+        "y": 905.5118000000001
+      },
+      "anchorMil": {
+        "x": 39.3671,
+        "y": 912.0768
+      },
+      "rotation": 0,
+      "layer": 1,
+      "bboxMil": {
+        "maxX": 73.81909999999999,
+        "maxY": 941.4098000000001,
+        "minX": 4.921100000000003,
+        "minY": 869.6138000000001
+      },
+      "physicalPadPrimitiveCount": 8,
+      "distinctPadNumberCount": 8,
+      "intentionallyRepeatedPadNumbers": [],
+      "connectedLogicalPadCount": 8,
+      "ncAndLocalNcLogicalPadsRemainNetless": 0,
+      "manufacturerId": "PCA9306DQER",
+      "verificationErrors": [],
+      "verified": true
+    },
+    {
+      "ref": "U5",
+      "sourceRef": "U5_LED2V8",
+      "stage": "saved-reloaded",
+      "primitiveId": "a63aff154b9f8bec",
+      "uniqueId": "",
+      "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+      "expectedCenterMm": {
+        "x": 1.6,
+        "y": 32.0
+      },
+      "observedCenterMil": {
+        "x": 62.9921,
+        "y": 1259.8424999999997
+      },
+      "anchorMil": {
+        "x": 68.1251,
+        "y": 1259.646
+      },
+      "rotation": 0,
+      "layer": 1,
+      "bboxMil": {
+        "maxX": 92.1391,
+        "maxY": 1283.6929999999998,
+        "minX": 33.8451,
+        "minY": 1235.992
+      },
+      "physicalPadPrimitiveCount": 5,
+      "distinctPadNumberCount": 5,
+      "intentionallyRepeatedPadNumbers": [],
+      "connectedLogicalPadCount": 5,
+      "ncAndLocalNcLogicalPadsRemainNetless": 0,
+      "manufacturerId": "TLV75528PDQNR",
+      "verificationErrors": [],
+      "verified": true
+    },
+    {
+      "ref": "U11",
+      "sourceRef": "U6_CAM_DOVDD",
+      "stage": "saved-reloaded",
+      "primitiveId": "1dfeee4ef5d16c20",
+      "uniqueId": "",
+      "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+      "expectedCenterMm": {
+        "x": 3.2,
+        "y": 31.0
+      },
+      "observedCenterMil": {
+        "x": 125.9843,
+        "y": 1220.4723999999999
+      },
+      "anchorMil": {
+        "x": 126.1808,
+        "y": 1225.6054
+      },
+      "rotation": 90,
+      "layer": 1,
+      "bboxMil": {
+        "maxX": 149.8348,
+        "maxY": 1249.6193999999998,
+        "minX": 102.13380000000001,
+        "minY": 1191.3254
+      },
+      "physicalPadPrimitiveCount": 5,
+      "distinctPadNumberCount": 5,
+      "intentionallyRepeatedPadNumbers": [],
+      "connectedLogicalPadCount": 5,
+      "ncAndLocalNcLogicalPadsRemainNetless": 0,
+      "manufacturerId": "TLV75518PDQNR",
+      "verificationErrors": [],
+      "verified": true
+    },
+    {
+      "ref": "U13",
+      "sourceRef": "U6_CAM_DVDD",
+      "stage": "saved-reloaded",
+      "primitiveId": "1f70116c5d25cb64",
+      "uniqueId": "",
+      "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+      "expectedCenterMm": {
+        "x": 4.8,
+        "y": 30.8
+      },
+      "observedCenterMil": {
+        "x": 188.9764,
+        "y": 1212.5984000000003
+      },
+      "anchorMil": {
+        "x": 194.1094,
+        "y": 1212.4019
+      },
+      "rotation": 0,
+      "layer": 1,
+      "bboxMil": {
+        "maxX": 218.1234,
+        "maxY": 1236.4489,
+        "minX": 159.8294,
+        "minY": 1188.7479000000003
+      },
+      "physicalPadPrimitiveCount": 5,
+      "distinctPadNumberCount": 5,
+      "intentionallyRepeatedPadNumbers": [],
+      "connectedLogicalPadCount": 5,
+      "ncAndLocalNcLogicalPadsRemainNetless": 0,
+      "manufacturerId": "TLV75512PDQNR",
+      "verificationErrors": [],
+      "verified": true
+    },
+    {
+      "ref": "U6",
+      "sourceRef": "U6_CAM_AVDD",
+      "stage": "saved-reloaded",
+      "primitiveId": "8f152691acb5e542",
+      "uniqueId": "",
+      "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+      "expectedCenterMm": {
+        "x": 3.7,
+        "y": 33.0
+      },
+      "observedCenterMil": {
+        "x": 145.6693,
+        "y": 1299.2125999999998
+      },
+      "anchorMil": {
+        "x": 150.8023,
+        "y": 1299.0161
+      },
+      "rotation": 0,
+      "layer": 1,
+      "bboxMil": {
+        "maxX": 174.81629999999998,
+        "maxY": 1323.0630999999998,
+        "minX": 116.5223,
+        "minY": 1275.3621
+      },
+      "physicalPadPrimitiveCount": 5,
+      "distinctPadNumberCount": 5,
+      "intentionallyRepeatedPadNumbers": [],
+      "connectedLogicalPadCount": 5,
+      "ncAndLocalNcLogicalPadsRemainNetless": 0,
+      "manufacturerId": "TLV75528PDQNR",
+      "verificationErrors": [],
+      "verified": true
+    },
+    {
+      "ref": "U2",
+      "sourceRef": "U4_BB",
+      "stage": "saved-reloaded",
+      "primitiveId": "e50c38c416843bfe",
+      "uniqueId": "",
+      "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+      "expectedCenterMm": {
+        "x": 3.2,
+        "y": 23.2
+      },
+      "observedCenterMil": {
+        "x": 125.98425,
+        "y": 913.3858
+      },
+      "anchorMil": {
+        "x": 134.834,
+        "y": 912.6508
+      },
+      "rotation": 0,
+      "layer": 1,
+      "bboxMil": {
+        "maxX": 164.3825,
+        "maxY": 960.3918,
+        "minX": 87.586,
+        "minY": 866.3797999999999
+      },
+      "physicalPadPrimitiveCount": 15,
+      "distinctPadNumberCount": 15,
+      "intentionallyRepeatedPadNumbers": [],
+      "connectedLogicalPadCount": 14,
+      "ncAndLocalNcLogicalPadsRemainNetless": 1,
+      "manufacturerId": "TPS63805YFFR",
+      "verificationErrors": [],
+      "verified": true
+    },
+    {
+      "ref": "U4",
+      "sourceRef": "U4_1V8",
+      "stage": "saved-reloaded",
+      "primitiveId": "c95e43d3a9d47bbc",
+      "uniqueId": "",
+      "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+      "expectedCenterMm": {
+        "x": 1.8,
+        "y": 27.5
+      },
+      "observedCenterMil": {
+        "x": 70.8661,
+        "y": 1082.6771999999999
+      },
+      "anchorMil": {
+        "x": 70.8661,
+        "y": 1094.0737
+      },
+      "rotation": 0,
+      "layer": 1,
+      "bboxMil": {
+        "maxX": 119.17410000000001,
+        "maxY": 1131.4806999999998,
+        "minX": 22.558100000000003,
+        "minY": 1033.8736999999999
+      },
+      "physicalPadPrimitiveCount": 8,
+      "distinctPadNumberCount": 8,
+      "intentionallyRepeatedPadNumbers": [],
+      "connectedLogicalPadCount": 8,
+      "ncAndLocalNcLogicalPadsRemainNetless": 0,
+      "manufacturerId": "TPS62840DLCR",
+      "verificationErrors": [],
+      "verified": true
+    },
+    {
+      "ref": "U9",
+      "sourceRef": "U4_OR",
+      "stage": "saved-reloaded",
+      "primitiveId": "5fcdde9483147e30",
+      "uniqueId": "",
+      "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+      "expectedCenterMm": {
+        "x": 2.9,
+        "y": 30.5
+      },
+      "observedCenterMil": {
+        "x": 114.17320000000001,
+        "y": 1200.7874
+      },
+      "anchorMil": {
+        "x": 115.7447,
+        "y": 1200.3939
+      },
+      "rotation": 0,
+      "layer": 2,
+      "bboxMil": {
+        "maxX": 165.74470000000002,
+        "maxY": 1239.7668999999999,
+        "minX": 62.60169999999999,
+        "minY": 1161.8079
+      },
+      "physicalPadPrimitiveCount": 8,
+      "distinctPadNumberCount": 8,
+      "intentionallyRepeatedPadNumbers": [],
+      "connectedLogicalPadCount": 7,
+      "ncAndLocalNcLogicalPadsRemainNetless": 1,
+      "manufacturerId": "LM66200DRLR",
+      "verificationErrors": [],
+      "verified": true
+    },
+    {
+      "ref": "Q1",
+      "sourceRef": "Q_CHG_ISO_R",
+      "stage": "saved-reloaded",
+      "primitiveId": "9d8b5acb3c044cb2",
+      "uniqueId": "",
+      "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+      "expectedCenterMm": {
+        "x": 2.75,
+        "y": 38.25
+      },
+      "observedCenterMil": {
+        "x": 108.26769999999999,
+        "y": 1505.9055
+      },
+      "anchorMil": {
+        "x": 108.26769999999999,
+        "y": 1505.9055
+      },
+      "rotation": 0,
+      "layer": 2,
+      "bboxMil": {
+        "maxX": 170.0807,
+        "maxY": 1568.4055,
+        "minX": 46.45469999999999,
+        "minY": 1443.4055
+      },
+      "physicalPadPrimitiveCount": 3,
+      "distinctPadNumberCount": 3,
+      "intentionallyRepeatedPadNumbers": [],
+      "connectedLogicalPadCount": 3,
+      "ncAndLocalNcLogicalPadsRemainNetless": 0,
+      "manufacturerId": "PMV65XP",
+      "verificationErrors": [],
+      "verified": true
+    },
+    {
+      "ref": "U17",
+      "sourceRef": "U8_CAM_SCCB_EN",
+      "stage": "saved-reloaded",
+      "primitiveId": "65d4325202f8a741",
+      "uniqueId": "",
+      "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+      "expectedCenterMm": {
+        "x": 2.9,
+        "y": 23.0
+      },
+      "observedCenterMil": {
+        "x": 114.17325,
+        "y": 905.5117999999999
+      },
+      "anchorMil": {
+        "x": 118.6025,
+        "y": 905.5128
+      },
+      "rotation": 0,
+      "layer": 2,
+      "bboxMil": {
+        "maxX": 138.0935,
+        "maxY": 928.4647999999999,
+        "minX": 90.253,
+        "minY": 882.5587999999999
+      },
+      "physicalPadPrimitiveCount": 5,
+      "distinctPadNumberCount": 5,
+      "intentionallyRepeatedPadNumbers": [],
+      "connectedLogicalPadCount": 4,
+      "ncAndLocalNcLogicalPadsRemainNetless": 1,
+      "manufacturerId": "SN74LVC1G07DPWR",
+      "verificationErrors": [],
+      "verified": true
+    },
+    {
+      "ref": "U14",
+      "sourceRef": "U7_WIN",
+      "stage": "saved-reloaded",
+      "primitiveId": "11a94a27e86815ef",
+      "uniqueId": "",
+      "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+      "expectedCenterMm": {
+        "x": 4.3,
+        "y": 35.1
+      },
+      "observedCenterMil": {
+        "x": 169.2913,
+        "y": 1381.8898
+      },
+      "anchorMil": {
+        "x": 176.9633,
+        "y": 1386.3428
+      },
+      "rotation": 0,
+      "layer": 2,
+      "bboxMil": {
+        "maxX": 224.6193,
+        "maxY": 1430.4368,
+        "minX": 113.96329999999999,
+        "minY": 1333.3428
+      },
+      "physicalPadPrimitiveCount": 9,
+      "distinctPadNumberCount": 9,
+      "intentionallyRepeatedPadNumbers": [],
+      "connectedLogicalPadCount": 9,
+      "ncAndLocalNcLogicalPadsRemainNetless": 0,
+      "manufacturerId": "TLV7042DSGR",
+      "verificationErrors": [],
+      "verified": true
+    }
+  ],
+  "offlineFailedPlacements": [],
+  "requiredButNotPlaced": [
+    "J_BTB_L",
+    "J_CAM",
+    "J_CHG",
+    "U12_ESD_USB",
+    "TP_BAT_L_P",
+    "TP_BAT_L_N",
+    "SPK_L",
+    "R_CRST_A_PD",
+    "R_DIR1_PU",
+    "R_LS1_A4",
+    "R_LS1_B4",
+    "R_I2C_SCL_3V3",
+    "R_I2C_SDA_3V3",
+    "R_I2C_SCL_1V8",
+    "R_I2C_SDA_1V8",
+    "R_SCCB_SCL",
+    "R_SCCB_SDA",
+    "R_SENSE",
+    "R_LIMIT",
+    "R_PRIV_PU",
+    "R_XREQ",
+    "D_XREQ",
+    "C_XREQ",
+    "R_XREQ_BLEED",
+    "R_CAMRST",
+    "R_CAMPWDN",
+    "TP_NTC_L",
+    "R_LS3_EN",
+    "R_LS4_EN",
+    "L1_BB",
+    "R_BB_FB1",
+    "R_BB_FB2",
+    "L2_1V8",
+    "R_VSET_1V8",
+    "ANT1",
+    "R_CHIP_PU",
+    "C_CHIP_PU",
+    "TP_ESP_EN",
+    "TP_ESP_BOOT",
+    "R_ISO_GATE",
+    "R_ISO_PD",
+    "C_CHG_L_IN",
+    "C_CHG_L_SYS",
+    "C_CHG_L_BAT",
+    "C_OR_IN1",
+    "C_OR_IN2",
+    "C_OR_OUT",
+    "C_BB_IN",
+    "C_BB_OUT",
+    "C_BK_IN",
+    "C_BK_OUT",
+    "C_LDO_LED_IN",
+    "C_LDO_LED_OUT",
+    "C_LDO_DOVDD_IN",
+    "C_LDO_DOVDD_OUT",
+    "C_LDO_DVDD_IN",
+    "C_LDO_DVDD_OUT",
+    "C_LDO_AVDD_IN",
+    "C_LDO_AVDD_OUT",
+    "BAT_L",
+    "C_ESP_BULK",
+    "C_ESP_VDD_SPI",
+    "R_ESP_BOOT",
+    "R_ESP_STRAP45",
+    "R_ESP_STRAP46",
+    "R_ESP_STRAP3",
+    "R_ESP_RF",
+    "C_ESP_RF_IN",
+    "C_ESP_RF_OUT",
+    "C_U8_LS1_A",
+    "C_U8_LS1_B",
+    "C_U8_PDM_LS_A",
+    "C_U8_PDM_LS_B",
+    "C_U8_CAM_ISO1_A",
+    "C_U8_CAM_ISO1_B",
+    "C_U8_CAM_ISO2_A",
+    "C_U8_CAM_ISO2_B",
+    "C_U8_AUD_LS2_A",
+    "C_U8_AUD_LS2_B",
+    "C_MK1_L",
+    "R_CAM_DOVDD_OK_PD",
+    "R_CAM_DOVDD_BLEED",
+    "C_CAM_SCCB_EN",
+    "R_LS3_VREF_BLEED",
+    "C_U10_AMP_L_HF",
+    "C_U10_AMP_L_BULK",
+    "U7_INA",
+    "R_WIN_TOP",
+    "R_WIN_MID",
+    "R_WIN_BOT",
+    "R_PRIV_RC",
+    "C_PRIV_RC",
+    "C_INA_SUPPLY",
+    "C_WIN_SUPPLY",
+    "C_CAMRST",
+    "TP_SPK_L_P",
+    "TP_SPK_L_N"
+  ],
+  "routing": {
+    "tracksViasPoursAuthored": false,
+    "status": "UNROUTED"
+  },
+  "status": "PARTIAL_CANDIDATE_LIVE_VERIFIED_UNROUTED",
+  "beforeDump": "layout\\M-MAIN-L-01-before-dump-retry-02.json",
+  "resumePrecondition": {
+    "freshExistingCount": 2,
+    "freshExistingRefs": [
+      "MK1",
+      "U1"
+    ],
+    "unexpectedRefs": [],
+    "policy": "Reuse only plan refs with exact distinct pads, nets, MPN, layer, rotation and empty uniqueId; center is the only recoverable difference."
+  },
+  "finishedAt": "2026-11-18T16:04:33.374591+00:00",
+  "saved": true,
+  "reloaded": true,
+  "afterDump": "layout\\M-MAIN-L-93-after-reload-dump.json",
+  "savedReloadedVerified": true,
+  "candidateComponentCount": 21
+}

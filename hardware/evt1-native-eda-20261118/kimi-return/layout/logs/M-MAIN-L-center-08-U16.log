@@ -1,0 +1,50 @@
+$ C:\Users\Admin（无密码）\.local\bin\easyeda.exe pcb modify --id abb017b2418bbf1d --center --x 114.1732283464567 --y 559.0551181102362 --project cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662 --doc 8fbc3cae65886fe5
+{
+  "id": "req_1132",
+  "type": "response",
+  "version": "v1",
+  "windowId": "259b1d05-24b1-4f23-acb8-5a09746f811e",
+  "createdAt": "2026-11-18T16:03:55.3592446Z",
+  "ok": true,
+  "result": {
+    "applied": [
+      "x",
+      "y"
+    ],
+    "component": {
+      "addIntoBom": true,
+      "designator": "U16",
+      "layer": 2,
+      "locked": false,
+      "manufacturerId": "SN74AXC8T245RJWR",
+      "name": "={Manufacturer Part}",
+      "primitiveId": "abb017b2418bbf1d",
+      "rotation": 0,
+      "supplierId": "C2859949",
+      "uniqueId": "",
+      "x": 114.17322834645671,
+      "y": 552.6701181102362
+    },
+    "verified": true
+  },
+  "context": {
+    "projectUuid": "cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+    "projectName": "ZY_AIAR_EVT1_KIMI_20261118",
+    "documentUuid": "8fbc3cae65886fe5",
+    "documentType": "pcb",
+    "tabId": "8fbc3cae65886fe5@cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+    "pageVisibility": "hidden"
+  },
+  "mutationContext": {
+    "projectUuid": "cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+    "projectName": "ZY_AIAR_EVT1_KIMI_20261118",
+    "documentUuid": "8fbc3cae65886fe5",
+    "documentType": "pcb",
+    "tabId": "8fbc3cae65886fe5@cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+    "pageVisibility": "hidden"
+  },
+  "mutationContextAvailable": true,
+  "seq": 142,
+  "seqAbandoned": 0
+}
+⚠ staleRisk: PCB was mutated by pcb.add_component since the last reload — pcb.components.list (and DRC) may read stale engine state; authoritative workflows should save, run `easyeda doc reload`, then read back; if refresh fails, treat the data as unavailable

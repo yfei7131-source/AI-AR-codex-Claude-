@@ -1,0 +1,228 @@
+{
+  "availability": {
+    "components.json": "available",
+    "drc.json": "available",
+    "nets.json": "available",
+    "pours.json": "available",
+    "snapshot.png": "unknown",
+    "tracks.json": "available",
+    "vias.json": "available"
+  },
+  "blank": false,
+  "capture": {
+    "windowId": "259b1d05-24b1-4f23-acb8-5a09746f811e",
+    "projectUuid": "cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+    "projectName": "ZY_AIAR_EVT1_KIMI_20261118",
+    "documentUuid": "9ce45f14cb79dc9d",
+    "documentType": "pcb",
+    "tabId": "9ce45f14cb79dc9d@cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+    "startedAt": "2026-11-18T16:27:20.9077347Z",
+    "completedAt": "2026-11-18T16:27:24.3825948Z",
+    "consistency": "sequential-response-boundaries",
+    "identityVerified": false,
+    "missing": [
+      "pcb.snapshot: context missing"
+    ],
+    "requests": [
+      {
+        "action": "pcb.snapshot",
+        "requestId": "req_2376",
+        "windowId": "259b1d05-24b1-4f23-acb8-5a09746f811e",
+        "startedAt": "2026-11-18T16:27:20.9077347Z",
+        "completedAt": "2026-11-18T16:27:20.9895104Z",
+        "responseCreatedAt": "2026-11-18T16:27:20.9834557Z",
+        "resultSha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "sequence": {
+          "Known": true,
+          "Seq": 912,
+          "SeqAbandoned": 0,
+          "Unordered": false,
+          "AbandonedIDs": null
+        },
+        "status": "unknown",
+        "error": "pcb.snapshot failed: The EasyEDA tab is hidden, so the canvas is not repainted and a capture would be stale (nothing was captured). Bring the EasyEDA window to the front and retry, or render from fresh readback (no tracks/pours): `easyeda pcb dump --include-copper --out board.json \u0026\u0026 easyeda pcb layout render --actual --board board.json --out board.svg`. Schematic pages export in the background with `easyeda sch export-image`."
+      },
+      {
+        "action": "pcb.components.list",
+        "requestId": "req_2377",
+        "windowId": "259b1d05-24b1-4f23-acb8-5a09746f811e",
+        "startedAt": "2026-11-18T16:27:20.9895104Z",
+        "completedAt": "2026-11-18T16:27:21.1861321Z",
+        "responseCreatedAt": "2026-11-18T16:27:21.1800448Z",
+        "resultSha256": "d22d10ceedcadfdcf270873598ae92e4d7b3889f963569f87e331b724e444bf6",
+        "context": {
+          "projectUuid": "cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+          "projectName": "ZY_AIAR_EVT1_KIMI_20261118",
+          "documentUuid": "9ce45f14cb79dc9d",
+          "documentType": "pcb",
+          "tabId": "9ce45f14cb79dc9d@cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662"
+        },
+        "sequence": {
+          "Known": true,
+          "Seq": 913,
+          "SeqAbandoned": 0,
+          "Unordered": false,
+          "AbandonedIDs": null
+        },
+        "status": "available"
+      },
+      {
+        "action": "pcb.line.list",
+        "requestId": "req_2378",
+        "windowId": "259b1d05-24b1-4f23-acb8-5a09746f811e",
+        "startedAt": "2026-11-18T16:27:21.2013629Z",
+        "completedAt": "2026-11-18T16:27:21.2502331Z",
+        "responseCreatedAt": "2026-11-18T16:27:21.2497268Z",
+        "resultSha256": "3e1cbb7e2283b7c0baef63908866616c731413c4f78e606b35342f216a671364",
+        "context": {
+          "projectUuid": "cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+          "projectName": "ZY_AIAR_EVT1_KIMI_20261118",
+          "documentUuid": "9ce45f14cb79dc9d",
+          "documentType": "pcb",
+          "tabId": "9ce45f14cb79dc9d@cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662"
+        },
+        "sequence": {
+          "Known": true,
+          "Seq": 914,
+          "SeqAbandoned": 0,
+          "Unordered": false,
+          "AbandonedIDs": null
+        },
+        "status": "available"
+      },
+      {
+        "action": "pcb.via.list",
+        "requestId": "req_2379",
+        "windowId": "259b1d05-24b1-4f23-acb8-5a09746f811e",
+        "startedAt": "2026-11-18T16:27:21.2523584Z",
+        "completedAt": "2026-11-18T16:27:21.3053334Z",
+        "responseCreatedAt": "2026-11-18T16:27:21.3033362Z",
+        "resultSha256": "3ebdd5ba8869fde231f904ec153c60513572e2fa13fe0b2f9349ca0b8ae8aece",
+        "context": {
+          "projectUuid": "cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+          "projectName": "ZY_AIAR_EVT1_KIMI_20261118",
+          "documentUuid": "9ce45f14cb79dc9d",
+          "documentType": "pcb",
+          "tabId": "9ce45f14cb79dc9d@cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662"
+        },
+        "sequence": {
+          "Known": true,
+          "Seq": 915,
+          "SeqAbandoned": 0,
+          "Unordered": false,
+          "AbandonedIDs": null
+        },
+        "status": "available"
+      },
+      {
+        "action": "pcb.pour.list",
+        "requestId": "req_2380",
+        "windowId": "259b1d05-24b1-4f23-acb8-5a09746f811e",
+        "startedAt": "2026-11-18T16:27:21.3075427Z",
+        "completedAt": "2026-11-18T16:27:21.3590187Z",
+        "responseCreatedAt": "2026-11-18T16:27:21.3585128Z",
+        "resultSha256": "450c1cb71382370ba8aaffcab65e3f244b157175ee7fdae5ee286b048694be4d",
+        "context": {
+          "projectUuid": "cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+          "projectName": "ZY_AIAR_EVT1_KIMI_20261118",
+          "documentUuid": "9ce45f14cb79dc9d",
+          "documentType": "pcb",
+          "tabId": "9ce45f14cb79dc9d@cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662"
+        },
+        "sequence": {
+          "Known": true,
+          "Seq": 916,
+          "SeqAbandoned": 0,
+          "Unordered": false,
+          "AbandonedIDs": null
+        },
+        "status": "available"
+      },
+      {
+        "action": "pcb.nets.list",
+        "requestId": "req_2381",
+        "windowId": "259b1d05-24b1-4f23-acb8-5a09746f811e",
+        "startedAt": "2026-11-18T16:27:21.3606834Z",
+        "completedAt": "2026-11-18T16:27:21.4119651Z",
+        "responseCreatedAt": "2026-11-18T16:27:21.410895Z",
+        "resultSha256": "686cbe3e8f2323444eba0d1f6b44b092d767e901771eb8e5901d9ec564a07d8b",
+        "context": {
+          "projectUuid": "cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+          "projectName": "ZY_AIAR_EVT1_KIMI_20261118",
+          "documentUuid": "9ce45f14cb79dc9d",
+          "documentType": "pcb",
+          "tabId": "9ce45f14cb79dc9d@cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662"
+        },
+        "sequence": {
+          "Known": true,
+          "Seq": 917,
+          "SeqAbandoned": 0,
+          "Unordered": false,
+          "AbandonedIDs": null
+        },
+        "status": "available"
+      },
+      {
+        "action": "pcb.drc.check",
+        "requestId": "req_2382",
+        "windowId": "259b1d05-24b1-4f23-acb8-5a09746f811e",
+        "startedAt": "2026-11-18T16:27:21.4136066Z",
+        "completedAt": "2026-11-18T16:27:24.3825948Z",
+        "responseCreatedAt": "2026-11-18T16:27:24.3766439Z",
+        "resultSha256": "80ed55387b74e9ebaabb82fe40bc35880ce7b89285b79ed401cfb5ebab7a6a96",
+        "context": {
+          "projectUuid": "cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+          "projectName": "ZY_AIAR_EVT1_KIMI_20261118",
+          "documentUuid": "9ce45f14cb79dc9d",
+          "documentType": "pcb",
+          "tabId": "9ce45f14cb79dc9d@cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662"
+        },
+        "sequence": {
+          "Known": true,
+          "Seq": 918,
+          "SeqAbandoned": 0,
+          "Unordered": false,
+          "AbandonedIDs": null
+        },
+        "status": "available"
+      }
+    ]
+  },
+  "captureKind": null,
+  "dataFiles": [
+    "components.json",
+    "tracks.json",
+    "vias.json",
+    "pours.json",
+    "nets.json",
+    "drc.json"
+  ],
+  "dir": "C:\\Users\\Admin（无密码）\\Desktop\\产品设计\\AI眼镜\\evt1-native-eda\\hardware\\evt1-native-eda-20261118\\kimi-return\\layout\\review-2\\M-OPT-BRIDGE\\stage\\EVT1-PARTIAL-REVIEW-2",
+  "drcPassKnown": true,
+  "drcPassed": false,
+  "fileHashes": {
+    "components.json": "2a16880a12e338a7e9c585e97d807c332eaea01d4ed45f77f7023cd348f87d9d",
+    "drc.json": "ab1383c5829b0f4ef3e563c9c90e7ecd2eaeac91a65544a7f382468f16c601fe",
+    "nets.json": "cf6db33e4803c4e4caf99477fe6c0db377ab45b65a34e545d5313579a74cd768",
+    "pours.json": "a83d614fa38eae9421abdddb355a6e01d76b7f98a16578d245b8283e476200dc",
+    "tracks.json": "e91ffe188d8665a6318c3cdf3608813e8b35d17ce2ea438b908f972fb39e5adb",
+    "vias.json": "5980bdf09bfbb007516b642d70d5a500013989248b3a5a1c8131182d45e54846"
+  },
+  "fitApi": null,
+  "fitMode": null,
+  "frameColors": 0,
+  "frameContent": 0,
+  "imageError": "pcb.snapshot failed: The EasyEDA tab is hidden, so the canvas is not repainted and a capture would be stale (nothing was captured). Bring the EasyEDA window to the front and retry, or render from fresh readback (no tracks/pours): `easyeda pcb dump --include-copper --out board.json \u0026\u0026 easyeda pcb layout render --actual --board board.json --out board.svg`. Schematic pages export in the background with `easyeda sch export-image`.",
+  "imageValid": false,
+  "objectLevelExport": null,
+  "partial": [
+    "pcb.snapshot failed: The EasyEDA tab is hidden, so the canvas is not repainted and a capture would be stale (nothing was captured). Bring the EasyEDA window to the front and retry, or render from fresh readback (no tracks/pours): `easyeda pcb dump --include-copper --out board.json \u0026\u0026 easyeda pcb layout render --actual --board board.json --out board.svg`. Schematic pages export in the background with `easyeda sch export-image`.",
+    "capture provenance: pcb.snapshot: context missing"
+  ],
+  "sameImageAsPrevious": false,
+  "sha256": "",
+  "sha256Source": "unavailable",
+  "snapshot": "",
+  "stage": "EVT1-PARTIAL-REVIEW-2",
+  "stale": false
+}

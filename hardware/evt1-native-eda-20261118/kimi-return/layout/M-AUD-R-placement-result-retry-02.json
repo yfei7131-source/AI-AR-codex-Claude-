@@ -1,0 +1,227 @@
+{
+  "board": "M-AUD-R",
+  "pcbUuid": "1db01a36f669a47a",
+  "projectUuid": "cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+  "scope": "PARTIAL_UNROUTED_CANDIDATE_NOT_FOR_FAB",
+  "startedAt": "2026-11-18T16:05:02.925637+00:00",
+  "planSha256": "1b6be4903cab872569b998ff318f7afaf9977d4a90edd91067aa2015650ba202",
+  "placements": [
+    {
+      "ref": "MK3",
+      "sourceRef": "MK3_R",
+      "stage": "saved-reloaded",
+      "primitiveId": "0157613fc1d3c051",
+      "uniqueId": "",
+      "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+      "expectedCenterMm": {
+        "x": 2.6,
+        "y": 24.5
+      },
+      "observedCenterMil": {
+        "x": 102.36224999999999,
+        "y": 964.5669
+      },
+      "anchorMil": {
+        "x": 90.3965,
+        "y": 969.6814
+      },
+      "rotation": 0,
+      "layer": 1,
+      "bboxMil": {
+        "maxX": 179.37199999999996,
+        "maxY": 1048.3064,
+        "minX": 25.352500000000006,
+        "minY": 880.8274
+      },
+      "physicalPadPrimitiveCount": 8,
+      "distinctPadNumberCount": 5,
+      "intentionallyRepeatedPadNumbers": [
+        "5"
+      ],
+      "connectedLogicalPadCount": 5,
+      "ncAndLocalNcLogicalPadsRemainNetless": 0,
+      "manufacturerId": "IM69D130V01XTSA1",
+      "verificationErrors": [],
+      "verified": true
+    },
+    {
+      "ref": "U10",
+      "sourceRef": "U10_AMP_R",
+      "stage": "saved-reloaded",
+      "primitiveId": "b36d0a4cd92840f7",
+      "uniqueId": "",
+      "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+      "expectedCenterMm": {
+        "x": 2.6,
+        "y": 19.0
+      },
+      "observedCenterMil": {
+        "x": 102.3622,
+        "y": 748.0315
+      },
+      "anchorMil": {
+        "x": 96.6437,
+        "y": 748.0305
+      },
+      "rotation": 0,
+      "layer": 1,
+      "bboxMil": {
+        "maxX": 140.5627,
+        "maxY": 778.5445,
+        "minX": 64.1617,
+        "minY": 717.5185
+      },
+      "physicalPadPrimitiveCount": 9,
+      "distinctPadNumberCount": 9,
+      "intentionallyRepeatedPadNumbers": [],
+      "connectedLogicalPadCount": 9,
+      "ncAndLocalNcLogicalPadsRemainNetless": 0,
+      "manufacturerId": "MAX98357AEWL+T",
+      "verificationErrors": [],
+      "verified": true
+    },
+    {
+      "ref": "U3",
+      "sourceRef": "U3_R",
+      "stage": "saved-reloaded",
+      "primitiveId": "246b67861feab431",
+      "uniqueId": "",
+      "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+      "expectedCenterMm": {
+        "x": 2.6,
+        "y": 14.5
+      },
+      "observedCenterMil": {
+        "x": 102.3622,
+        "y": 570.8661
+      },
+      "anchorMil": {
+        "x": 110.0342,
+        "y": 566.4131
+      },
+      "rotation": 0,
+      "layer": 1,
+      "bboxMil": {
+        "maxX": 157.6902,
+        "maxY": 619.4131,
+        "minX": 47.034200000000006,
+        "minY": 522.3190999999999
+      },
+      "physicalPadPrimitiveCount": 9,
+      "distinctPadNumberCount": 9,
+      "intentionallyRepeatedPadNumbers": [],
+      "connectedLogicalPadCount": 7,
+      "ncAndLocalNcLogicalPadsRemainNetless": 2,
+      "manufacturerId": "BQ25170DSGR",
+      "verificationErrors": [],
+      "verified": true
+    },
+    {
+      "ref": "U1",
+      "sourceRef": "U10_SD_BUF",
+      "stage": "saved-reloaded",
+      "primitiveId": "ff27e2a0069798b9",
+      "uniqueId": "",
+      "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+      "expectedCenterMm": {
+        "x": 2.6,
+        "y": 17.0
+      },
+      "observedCenterMil": {
+        "x": 102.36220000000002,
+        "y": 669.2913
+      },
+      "anchorMil": {
+        "x": 108.5832,
+        "y": 669.2743
+      },
+      "rotation": 0,
+      "layer": 2,
+      "bboxMil": {
+        "maxX": 141.53920000000002,
+        "maxY": 697.2443,
+        "minX": 63.18520000000001,
+        "minY": 641.3383
+      },
+      "physicalPadPrimitiveCount": 6,
+      "distinctPadNumberCount": 6,
+      "intentionallyRepeatedPadNumbers": [],
+      "connectedLogicalPadCount": 6,
+      "ncAndLocalNcLogicalPadsRemainNetless": 0,
+      "manufacturerId": "SN74LVC1G3157DSFR",
+      "verificationErrors": [],
+      "verified": true
+    }
+  ],
+  "offlineFailedPlacements": [],
+  "requiredButNotPlaced": [
+    "J_BTB_R",
+    "TP_BAT_R_P",
+    "TP_BAT_R_N",
+    "TP_NTC_R",
+    "SPK_R",
+    "R_IPC_PU",
+    "R_ISET_R",
+    "R_VSET_R",
+    "ANT2_BLE",
+    "R_SDR",
+    "Q_CHG_MUTE_R",
+    "R_MUTE_GATE",
+    "R_MUTE_PD",
+    "C_CHG_R_IN",
+    "C_CHG_R_OUT",
+    "BAT_R",
+    "U11_BLE",
+    "NRF_C1",
+    "NRF_C2",
+    "NRF_C3",
+    "NRF_C4",
+    "NRF_C5",
+    "NRF_C6",
+    "NRF_C7",
+    "NRF_C8",
+    "NRF_C9",
+    "NRF_C10",
+    "NRF_C11",
+    "NRF_C12",
+    "NRF_C13",
+    "NRF_C14",
+    "NRF_L1",
+    "NRF_L2",
+    "NRF_L3",
+    "NRF_L4",
+    "NRF_CT19",
+    "Y2_BLE",
+    "TP_SWD_R",
+    "C_MK3_R",
+    "R_AMP_REQ_PD",
+    "C_AMP_SD_BUF",
+    "C_U10_AMP_R_HF",
+    "C_U10_AMP_R_BULK",
+    "R_IDLE_I2S_BCLK_1V8",
+    "R_IDLE_I2S_LRCLK_1V8",
+    "R_IDLE_I2S_AMP_DIN_1V8",
+    "TP_SPK_R_P",
+    "TP_SPK_R_N"
+  ],
+  "routing": {
+    "tracksViasPoursAuthored": false,
+    "status": "UNROUTED"
+  },
+  "status": "PARTIAL_CANDIDATE_LIVE_VERIFIED_UNROUTED",
+  "beforeDump": "layout\\M-AUD-R-01-before-dump-retry-02.json",
+  "resumePrecondition": {
+    "freshExistingCount": 1,
+    "freshExistingRefs": [
+      "MK3"
+    ],
+    "unexpectedRefs": [],
+    "policy": "Reuse only plan refs with exact distinct pads, nets, MPN, layer, rotation and empty uniqueId; center is the only recoverable difference."
+  },
+  "finishedAt": "2026-11-18T16:05:22.441829+00:00",
+  "saved": true,
+  "reloaded": true,
+  "afterDump": "layout\\M-AUD-R-93-after-reload-dump.json",
+  "savedReloadedVerified": true,
+  "candidateComponentCount": 4
+}
