@@ -41,9 +41,9 @@ def run_native(cli: str, source: Path, destination: Path, *, pcb: bool) -> dict:
     except (ValueError, OSError) as exc:
         return {"status": "FAIL", "reason": f"unreadable KiCad report: {exc}", "exit": result.returncode}
     if pcb:
-        issues = {key: len(report[key]) for key in ("violations", "unconnected_items",
-                                                    "schematic_parity") if key in report}
-        has_report_data = "violations" in report and "unconnected_items" in report
+        required = ("violations", "unconnected_items", "schematic_parity")
+        issues = {key: len(report[key]) for key in required if isinstance(report.get(key), list)}
+        has_report_data = len(issues) == len(required)
     else:
         sheets = report.get("sheets", [])
         issues = {"violations": sum(len(sheet["violations"]) for sheet in sheets)}

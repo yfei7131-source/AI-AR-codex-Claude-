@@ -117,7 +117,7 @@
 (property "MPN" "1k 1%" (at 76.2 41.91 0) (effects (font (size 0.9 0.9)) (hide yes)))
 (property "Manufacturer" "TBD" (at 76.2 41.91 0) (effects (font (size 0.9 0.9)) (hide yes)))
 (property "Footprint Status" "PASS" (at 76.2 41.91 0) (effects (font (size 0.9 0.9)) (hide yes)))
-(property "Design Notes" "" (at 76.2 41.91 0) (effects (font (size 0.9 0.9)) (hide yes)))
+(property "Design Notes" "Analog node in 3V3_SYS domain. High is derived from V_INA_OUT through R_PRIV_PU/R_PRIV_RC." (at 76.2 41.91 0) (effects (font (size 0.9 0.9)) (hide yes)))
 (pin "1" (uuid "81118e35-1594-570b-9885-fa12c119a5ae"))
 (pin "2" (uuid "25c8d5b6-ce0e-52ac-82c7-802b0137e362"))
 (instances (project "evt1-main-left" (path "/54ab8c1e-7cc6-5b2d-acf0-e21bed8fe763/2cb79b69-59f5-5be7-8b69-f0bc54854b3d" (reference "R28") (unit 1)))))

@@ -1,0 +1,63 @@
+(footprint "Abracon_ASADV_2016-4Pin_2.0x1.6mm"
+  (version 20241229)
+  (generator "pcbnew")
+  (layer "F.Cu")
+  (descr "Abracon ASADV 2016 4-pin oscillator, manufacturer's recommended copper lands, mechanical drawing p.5: https://abracon.com/datasheets/ASADV.pdf")
+  (tags "Abracon ASADV 2016 oscillator")
+  (property "Reference" "REF**"
+    (at 0 -1.75 0)
+    (layer "F.SilkS")
+    (effects (font (size 0.8 0.8) (thickness 0.12)))
+  )
+  (property "Value" "Abracon_ASADV_2016-4Pin_2.0x1.6mm"
+    (at 0 1.75 0)
+    (layer "F.Fab")
+    (effects (font (size 0.8 0.8) (thickness 0.12)))
+  )
+  (attr smd)
+  (fp_circle
+    (center -1.3 0.66)
+    (end -1.25 0.66)
+    (stroke (width 0.08) (type solid))
+    (fill solid)
+    (layer "F.SilkS")
+  )
+  (fp_rect
+    (start -1.4 -1.15)
+    (end 1.4 1.15)
+    (stroke (width 0.05) (type solid))
+    (fill none)
+    (layer "F.CrtYd")
+  )
+  (fp_poly
+    (pts (xy -1 -0.8) (xy 1 -0.8) (xy 1 0.8) (xy -0.7 0.8) (xy -1 0.5))
+    (stroke (width 0.1) (type solid))
+    (fill none)
+    (layer "F.Fab")
+  )
+  (fp_text user "${REFERENCE}"
+    (at 0 0 0)
+    (layer "F.Fab")
+    (effects (font (size 0.45 0.45) (thickness 0.08)))
+  )
+  (pad "1" smd rect
+    (at -0.64 0.49)
+    (size 0.88 0.78)
+    (layers "F.Cu" "F.Paste" "F.Mask")
+  )
+  (pad "2" smd rect
+    (at 0.64 0.49)
+    (size 0.88 0.78)
+    (layers "F.Cu" "F.Paste" "F.Mask")
+  )
+  (pad "3" smd rect
+    (at 0.64 -0.49)
+    (size 0.88 0.78)
+    (layers "F.Cu" "F.Paste" "F.Mask")
+  )
+  (pad "4" smd rect
+    (at -0.64 -0.49)
+    (size 0.88 0.78)
+    (layers "F.Cu" "F.Paste" "F.Mask")
+  )
+)

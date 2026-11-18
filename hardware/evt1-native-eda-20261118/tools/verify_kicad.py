@@ -24,10 +24,10 @@ def load_nodes(xml_file):
         ref = comp.attrib['ref']
         source = comp.findtext('./fields/field[@name="EVT1 Source Ref"]')
         fp = comp.findtext('./footprint') or ''
-        role = comp.find('./property[@name="exclude_from_board"]') is not None
+        pcb_use = 'EXTERNAL' if comp.find('./property[@name="exclude_from_board"]') is not None else 'BOARD'
         if ref in components:
             raise ValueError(f'Duplicate KiCad reference: {ref}')
-        components[ref] = (source, fp, role)
+        components[ref] = (source, fp, pcb_use)
     nodes = {}
     for net in root.findall('./nets/net'):
         physical_nodes = [n for n in net.findall('node') if not n.attrib['ref'].startswith('#FLG')]
@@ -55,17 +55,25 @@ def parity(manifest, actual, components):
     for r in {r['CAD_Reference']: r for r in manifest}.values():
         cad = r['CAD_Reference']
         found = components.get(cad)
-        if found is None or found[:2] != (r['Source_RefDes'], r['Footprint']):
-            props.append({'ref': cad, 'source': r['Source_RefDes'], 'footprint': r['Footprint'], 'kicad': found})
+        expected_props = (r['Source_RefDes'], r['Footprint'], r['PCB_Use'])
+        if found != expected_props:
+            props.append({'ref': cad, 'expected': expected_props, 'kicad': found})
     return {'missing_terminals': missing, 'unexpected_terminals': extra, 'net_mismatches': nets, 'symbol_metadata_mismatches': props}
 
 
 def audit_manifest(terminal_map):
     source, _ = input_tables()
-    expected = {(r['Board'],r['RefDes'],r['Pin']): (r['Net'], local_net(r)) for r in source if r['Board'] in BOARD_PROJECTS}
-    compiled = {(r['Board'],r['Source_RefDes'],r['Pin']): (r['Source_Net'], r['CAD_Net']) for r in terminal_map}
+    footprint_rows = read_csv(PACKAGE / 'FOOTPRINT_MAP.csv')
+    footprints = {(r['Board'], r['RefDes']): r['Footprint'] for r in footprint_rows}
+    source_parts = {(r['Board'], r['RefDes']) for r in source}
+    if len(footprints) != len(footprint_rows) or footprints.keys() != source_parts:
+        raise ValueError('The footprint map must contain one entry for each effective electrical source reference')
+    expected = {(r['Board'], r['RefDes'], r['Pin']): (r['Net'], local_net(r), footprints[r['Board'], r['RefDes']])
+                for r in source if r['Board'] in BOARD_PROJECTS}
+    compiled = {(r['Board'], r['Source_RefDes'], r['Pin']): (r['Source_Net'], r['CAD_Net'], r['Footprint'])
+                for r in terminal_map}
     if len(compiled) != len(terminal_map) or compiled != expected:
-        raise ValueError('Native terminal map does not match the effective electrical tables')
+        raise ValueError('Native terminal map does not match the effective electrical tables and footprint map')
 
 
 def main():
@@ -82,7 +90,7 @@ def main():
     output.mkdir(exist_ok=True, parents=True)
     version = subprocess.check_output([exe, 'version'], text=True, encoding='utf-8').strip()
     result = {'kicad': version, 'board_results': [], 'fabrication_status': 'BLOCKED',
-              'scope': 'Default native KiCad ERC and schematic/netlist byte identity at the terminal level. Vendor and PCB qualification remain BLOCKED.'}
+              'scope': 'Default native KiCad ERC and schematic netlist terminal parity. Vendor and PCB qualification remain BLOCKED.'}
     terminals = read_csv(PACKAGE / 'kicad/CAD_TERMINALS.csv')
     audit_manifest(terminals)
     failed = False
@@ -96,6 +104,8 @@ def main():
         }
         if args.pdf:
             commands['pdf'] = [exe, 'sch', 'export', 'pdf', '--output', str(output/f'{project}.pdf'), str(root)]
+        for artifact in (xml, erc):
+            artifact.unlink(missing_ok=True)
         exit_codes = {kind: run(cmd, output/f'{project}-{kind}.log') for kind, cmd in commands.items()}
         manifest = [r for r in terminals if r['Board'] == board]
         board_result = {'board':board, 'project':project, 'terminal_count':len(manifest),

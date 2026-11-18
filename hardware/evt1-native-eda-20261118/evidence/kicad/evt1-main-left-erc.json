@@ -1,0 +1,72 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-18T21:49:30",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/54ab8c1e-7cc6-5b2d-acf0-e21bed8fe763",
+            "violations": []
+        },
+        {
+            "path": "/Audio and digital translation/",
+            "uuid_path": "/54ab8c1e-7cc6-5b2d-acf0-e21bed8fe763/3f894f73-b568-5925-9654-66a7a46fec5d",
+            "violations": []
+        },
+        {
+            "path": "/Battery, charger and DC conversion/",
+            "uuid_path": "/54ab8c1e-7cc6-5b2d-acf0-e21bed8fe763/abff9169-903c-5f40-956c-3423bfde29b8",
+            "violations": []
+        },
+        {
+            "path": "/Camera rails and privacy interlock (1/2)/",
+            "uuid_path": "/54ab8c1e-7cc6-5b2d-acf0-e21bed8fe763/06ae928a-88bc-5a1e-b19f-3c850e76c8fe",
+            "violations": []
+        },
+        {
+            "path": "/Camera rails and privacy interlock (2/2)/",
+            "uuid_path": "/54ab8c1e-7cc6-5b2d-acf0-e21bed8fe763/2cb79b69-59f5-5be7-8b69-f0bc54854b3d",
+            "violations": []
+        },
+        {
+            "path": "/ESP32-S3, USB and host interfaces/",
+            "uuid_path": "/54ab8c1e-7cc6-5b2d-acf0-e21bed8fe763/eb5fcba0-938d-58d1-9d05-3630a124322a",
+            "violations": []
+        },
+        {
+            "path": "/Harness and board interfaces/",
+            "uuid_path": "/54ab8c1e-7cc6-5b2d-acf0-e21bed8fe763/3ff0ce23-5d5d-50ec-a848-0e6ee89dfe86",
+            "violations": []
+        },
+        {
+            "path": "/Supply origins/",
+            "uuid_path": "/54ab8c1e-7cc6-5b2d-acf0-e21bed8fe763/579dd9c8-8579-537e-a2b5-8395d339c88e",
+            "violations": []
+        }
+    ],
+    "source": "evt1-main-left.kicad_sch"
+}

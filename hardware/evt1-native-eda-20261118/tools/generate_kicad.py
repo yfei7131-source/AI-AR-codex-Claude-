@@ -319,7 +319,7 @@ def component(cad, ref, rows, bom, footprint):
         notes = 'BLOCKED JBD_FPC and AVDD. Connector is bridge-side only. ' + notes
     if ref == 'J_CAM':
         notes = 'BLOCKED sensor-specific pinout, power sequence and PWDN polarity. ' + notes
-    if ref in {'J_CAM','J_DISP_L','J_DISP_R','U6_OPT_AVDD'}:
+    if ref not in EXTERNAL and (part.startswith('MPN_TBD') or ref in {'J_CAM', 'J_DISP_L', 'J_DISP_R'}):
         value = 'BLOCKED | ' + value
     metadata = {'Footprint': footprint.get('Footprint', ''), 'Datasheet': bom['Datasheet_URL'],
                 'EVT1 Source Ref': ref, 'BOM Line': rows[0]['BOM_Line'], 'MPN': part,
@@ -416,6 +416,7 @@ def write_board(board, rows, bom, footprints, output):
             records.append({'Board': board, 'CAD_Reference': cad, 'Source_RefDes': ref, 'Pin': row['Pin'],
                             'Source_Net': row['Net'], 'CAD_Net': local_net(row), 'Local_State': state,
                             'Role': row['Role'], 'Pin_Function': row['Pin_Function'], 'BOM_Line': row['BOM_Line'],
+                            'PCB_Use': 'BOARD' if s.native else 'EXTERNAL',
                             'Footprint': s.metadata['Footprint'], 'Footprint_Status': s.metadata['Footprint Status']})
     for i, (net, origin) in enumerate(POWER_INHERITED[board].items(), 1):
         if not any(local_net(r) == net for r in rows):
@@ -477,8 +478,8 @@ def write_board(board, rows, bom, footprints, output):
     fp_entries = []
     for lib in footprint_libs:
         uri = f'${{KICAD10_FOOTPRINT_DIR}}/{lib}.pretty'
-        if (PACKAGE/f'{lib}.pretty').is_dir():
-            uri = f'${{KIPRJMOD}}/../../{lib}.pretty'
+        if (PACKAGE/'footprints'/f'{lib}.pretty').is_dir():
+            uri = f'${{KIPRJMOD}}/../../footprints/{lib}.pretty'
         fp_entries.append(f'  (lib (name {quoted(lib)}) (type "KiCad") (uri {quoted(uri)}) (options "") (descr ""))')
     save(directory/'fp-lib-table', '(fp_lib_table\n  (version 7)\n'+'\n'.join(fp_entries)+'\n)\n')
     slib = '\n'.join(s.library() for s in lib_parts)

@@ -11,11 +11,14 @@ import re
 
 ROOT = Path(__file__).resolve().parents[1]
 FIELDS = ("Board", "RefDes", "MPN", "Footprint", "Status", "Pin_Identifiers", "Source", "Notes")
+REVIEWED = "EVT1_Reviewed"
 SON = "Package_SON:"
 SOT = "Package_TO_SOT_SMD:"
 DSG = SON + "Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm"
 SUPERVISOR = SON + "WSON-6_1.5x1.5mm_P0.5mm"
 PARTS = {
+    "ASADV-48.000MHZ-LC-T": (REVIEWED + ":Abracon_ASADV_2016-4Pin_2.0x1.6mm",
+                            "Abracon ASADV p.5 recommended copper lands: 0.88 x 0.78 mm, 1.28 x 0.98 mm center spacing, pin 1 at bottom left in top view."),
     "PCA9306DQER": (SON + "X2SON-8_1.4x1mm_P0.35mm", "TI DQE0008A. Standard land variant. Check stencil and DQE pin-1 elongation."),
     "TLV75512PDQNR": (SON + "Texas_X2SON-4_1x1mm_P0.65mm", "TI DQN0004A. Numbered ground pad 5."),
     "TLV75518PDQNR": (SON + "Texas_X2SON-4_1x1mm_P0.65mm", "TI DQN0004A. Numbered ground pad 5."),
@@ -107,7 +110,8 @@ def decide(board, ref, terminals, part):
 
 def library_pads(libraries, footprint):
     library, name = footprint.split(":")
-    path = libraries / f"{library}.pretty" / f"{name}.kicad_mod"
+    root = ROOT / "footprints" if library == REVIEWED else libraries
+    path = root / f"{library}.pretty" / f"{name}.kicad_mod"
     source = path.read_text(encoding="utf-8")
     return {pin for pin, item in COPPER_PAD.findall(source) if pin and
             re.search(r'\(layers[^\r\n]*"(?:F|B|\*)\.Cu"', item)}

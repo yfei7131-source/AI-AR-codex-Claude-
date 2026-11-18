@@ -37,15 +37,22 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
-      - name: Reproduce audited BOM, NETLIST and PINMAP
-        run: python3 "$EVT1_PACKAGE/Inputs/build_effective_inputs.py" --check
+      - name: Reproduce audited electrical and PCB inputs
+        run: |
+          python3 "$EVT1_PACKAGE/Inputs/build_effective_inputs.py" --check
+          python3 "$EVT1_PACKAGE/tools/build_pcb_constraints.py" --check
+          python3 "$EVT1_PACKAGE/tools/generate_kicad.py"
+          git diff --exit-code -- "$EVT1_PACKAGE/kicad"
+          test -z "$(git ls-files --others --exclude-standard -- "$EVT1_PACKAGE/kicad")"
       - name: KiCad CLI version, electrical rules and native netlist parity
         run: |
           mkdir -p "$PWD/ci-kicad-evidence"
           docker run --rm --user "$(id -u):$(id -g)" -e HOME=/tmp \
             -v "$PWD:/work" -w /work --entrypoint /bin/bash \
             kicad/kicad:10.0@sha256:3f4a01786dfbe803a65f345c3342b765db9add913f5e9448f8356793714ddc34 \
-            -ec "kicad-cli version && python3 '$EVT1_PACKAGE/tools/verify_kicad.py' --kicad-cli kicad-cli --output /work/ci-kicad-evidence"
+            -ec "kicad-cli version
+                 python3 '$EVT1_PACKAGE/tools/build_footprint_map.py' --libraries /usr/share/kicad/footprints --check
+                 python3 '$EVT1_PACKAGE/tools/verify_kicad.py' --kicad-cli kicad-cli --output /work/ci-kicad-evidence --pdf"
       - name: Preserve raw KiCad reports and exported nets
         if: always()
         uses: actions/upload-artifact@v4
