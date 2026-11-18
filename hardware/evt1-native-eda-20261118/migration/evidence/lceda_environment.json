@@ -1,0 +1,55 @@
+{
+  "installed_version_registry": {
+    "DisplayName": "嘉立创EDA(专业版) 4.1.97",
+    "InstallLocation": "D:\\lceda-pro\\"
+  },
+  "doctor": {
+    "ok": true,
+    "value": {
+      "endpoint": "JLCEDAPro129ac119",
+      "connected": true,
+      "bridgeVersion": "4.1.97.04b092ac",
+      "versionMatch": true,
+      "resultChannel": true
+    },
+    "durationMs": 35
+  },
+  "gui_block_dialog": {
+    "title": "窗口无法显示 / Window Not Visible",
+    "message": "检测到后台服务运行在不可见的桌面上，新窗口无法在当前桌面显示。 The background service is running on a non-interactive desktop, so new windows cannot be shown on your current desktop.",
+    "suggested_by_app": "请先完全退出后台服务，再从桌面图标重新启动 / Fully exit the background service first, then restart it from the desktop icon: lceda-pro stop"
+  },
+  "existing_user_window_not_touched": "ZY_AIAR_EVT1_KIMI_ARCHIVE_CHECK_20261119 | 嘉立创EDA(专业版) - V4.1.97 (session 19f67e21, origin user, started 2026-11-18 19:03 local)",
+  "cli_sessions_created_for_this_task": [
+    {
+      "sessionId": "19ea3907-eddb-4598-8ed5-f6809dad49be",
+      "headless": true
+    },
+    {
+      "sessionId": "78506d71-01af-41bf-83a3-440a067abc78",
+      "headless": false
+    }
+  ],
+  "offline_client_teams": [
+    "C:\\Users\\Admin（无密码）\\Documents\\LCEDA-Pro\\projects",
+    "C:\\Users\\Admin（无密码）\\Documents\\LCEDA-Pro\\example-projects"
+  ],
+  "kicad_cli_on_this_machine": "not installed (kicad / kicad-cli not on PATH); KiCad-side ERC/netlist could not be re-run locally",
+  "official_documentation": [
+    {
+      "topic": "专业版导入 KiCad",
+      "url": "https://prodocs.lceda.cn/cn/import-export/import-kicad/index.html",
+      "quote": "嘉立创EDA专业版支持导入 KiCad 5.1 和 KiCad 5.9 版本的格式文件；推荐使用嘉立创EDA文件迁移助手进行格式转换；工程压缩请使用 KiCad 自带打包功能"
+    },
+    {
+      "topic": "格式转换助手支持格式",
+      "url": "https://prodocs.lceda.cn/cn/import-export/easyeda-pro-format-converter/",
+      "quote": "KICad: .zip .lib .mod .kicad_mod .kicad_wks .kicad_sym .pro .kicad_pro .sch .kicad_sch .kicad_pcb"
+    },
+    {
+      "topic": "导入 API",
+      "url": "https://prodocs.lceda.cn/cn/api/reference/pro-api.sys_filemanager.importprojectbyprojectfile.html",
+      "quote": "importProjectByProjectFile(projectFile, fileType?: 'KiCad' | ..., props?, saveTo?) — BETA"
+    }
+  ]
+}
