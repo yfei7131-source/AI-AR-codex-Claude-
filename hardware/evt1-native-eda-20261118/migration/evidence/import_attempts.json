@@ -1,0 +1,140 @@
+{
+  "client": "嘉立创EDA(专业版) 4.1.97 / bridge 4.1.97.04b092ac / pro-api 0.3.69",
+  "method": "lceda-pro CLI open + invoke, eda.sys_FileManager.importProjectByProjectFile(file, 'KiCad', ...)",
+  "source_zip": "evt1-audio-right.zip (49056 bytes, 10 entries, KiCad 10 generated schematics)",
+  "results": {
+    "01_headless_independent_offline_path": {
+      "ok": true,
+      "value": {
+        "ok": true,
+        "elapsedMs": 746,
+        "log": [
+          "eda object: object",
+          "sys_FileManager: object",
+          "file bytes: 49056"
+        ]
+      },
+      "logs": [],
+      "durationMs": 752
+    },
+    "02_04_no_saveto_shared_codefile": {
+      "ok": true,
+      "value": {
+        "steps": [],
+        "fileSize": 49056,
+        "noSaveTo": {
+          "type": "undefined",
+          "value": null
+        },
+        "projectsAfter": []
+      },
+      "logs": [],
+      "durationMs": 1077
+    },
+    "03_headless_garbage_vs_kicad": {
+      "ok": true,
+      "value": {
+        "console": [],
+        "tests": [
+          {
+            "label": "garbage-zip",
+            "started": "2026-11-18T21:04:18.746Z",
+            "elapsedMs": 7,
+            "returnType": "undefined",
+            "value": null,
+            "projectsAfter": []
+          },
+          {
+            "label": "kicad-zip-no-saveto",
+            "started": "2026-11-18T21:04:18.753Z",
+            "elapsedMs": 829,
+            "returnType": "undefined",
+            "value": null,
+            "projectsAfter": []
+          }
+        ],
+        "note": "window object is undefined in this command space",
+        "consoleCount": 0
+      },
+      "logs": [],
+      "durationMs": 840
+    },
+    "05_full_editor_extension_offline_path": {
+      "ok": true,
+      "value": {
+        "ok": true,
+        "elapsedMs": 1086,
+        "log": [
+          "eda object: object",
+          "sys_FileManager: object",
+          "file bytes: 49056"
+        ]
+      },
+      "logs": [],
+      "durationMs": 1094
+    },
+    "06_full_editor_new_project_local_team": {
+      "ok": true,
+      "value": {
+        "steps": [],
+        "newProject": {
+          "elapsedMs": 1149,
+          "type": "undefined",
+          "value": null
+        },
+        "projectsAfter": [],
+        "currentProject": "undefined"
+      },
+      "logs": [],
+      "durationMs": 1173
+    }
+  },
+  "state_probes": {
+    "headless_state": {
+      "ok": true,
+      "value": {
+        "readyState": "notLoaded",
+        "allProjects": []
+      },
+      "logs": [],
+      "durationMs": 3
+    },
+    "full_editor_workspace": {
+      "ok": true,
+      "value": {
+        "currentWorkspace": {
+          "itemType": "Workspace",
+          "uuid": "Personal",
+          "name": "Personal"
+        },
+        "allWorkspaces": [
+          {
+            "itemType": "Workspace",
+            "uuid": "Personal",
+            "name": "Personal"
+          }
+        ],
+        "currentTeam": "undefined",
+        "allTeams": [
+          {
+            "itemType": "Team",
+            "name": "C:\\Users\\Admin（无密码）\\Documents\\LCEDA-Pro\\projects",
+            "uuid": "C:\\Users\\Admin（无密码）\\Documents\\LCEDA-Pro\\projects",
+            "identity": 0
+          },
+          {
+            "itemType": "Team",
+            "name": "C:\\Users\\Admin（无密码）\\Documents\\LCEDA-Pro\\example-projects",
+            "uuid": "C:\\Users\\Admin（无密码）\\Documents\\LCEDA-Pro\\example-projects",
+            "identity": 0
+          }
+        ],
+        "readyState": "notLoaded"
+      },
+      "logs": [],
+      "durationMs": 6
+    }
+  },
+  "log_file_note": "02 and 04 used the same generated code file and wrote the same output filename, so the stored JSON is the later full-editor run; the earlier headless run printed the same shape (fileSize 49056, noSaveTo type undefined, projectsAfter []). 01/03/05/06 are stored separately.",
+  "observation": "All import calls returned undefined, produced no project and wrote no .epro/.epro2/.eprj* file. Garbage ZIP behaved identically, so these logs do not prove KiCad content incompatibility; they prove the import channel produced no output in this environment."
+}
