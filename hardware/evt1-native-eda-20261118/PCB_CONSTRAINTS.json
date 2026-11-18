@@ -1,0 +1,401 @@
+{
+  "baseline": {
+    "pull_request": 25,
+    "system_budget_file": "hardware/evt1-rev-d1-1-20261117/01_Architecture_and_Interfaces/SYSTEM_BUDGETS_V1_0.json"
+  },
+  "design_label": "NOT FOR FAB",
+  "status": "BLOCKED",
+  "mechanical_envelope_status": "UNVERIFIED",
+  "assembly_mass_target_g": 40,
+  "stackup": {
+    "status": "BLOCKED",
+    "type": "6-Layer 2+2+2 Laser Microvia HDI with Stacked Copper-Filled VIPPO (IPC-2226 Type III)",
+    "layers": [
+      {
+        "layer": "L1_TOP",
+        "thickness_mm": 0.03
+      },
+      {
+        "layer": "PP1",
+        "thickness_mm": 0.055
+      },
+      {
+        "layer": "L2_GND1",
+        "thickness_mm": 0.018
+      },
+      {
+        "layer": "PP2",
+        "thickness_mm": 0.068
+      },
+      {
+        "layer": "L3_SIG1",
+        "thickness_mm": 0.018
+      },
+      {
+        "layer": "CORE",
+        "thickness_mm": 0.22
+      },
+      {
+        "layer": "L4_PWR",
+        "thickness_mm": 0.018
+      },
+      {
+        "layer": "PP3",
+        "thickness_mm": 0.068
+      },
+      {
+        "layer": "L5_GND2",
+        "thickness_mm": 0.018
+      },
+      {
+        "layer": "PP4",
+        "thickness_mm": 0.055
+      },
+      {
+        "layer": "L6_BOT",
+        "thickness_mm": 0.03
+      },
+      {
+        "layer": "SM",
+        "thickness_mm": 0.03
+      }
+    ],
+    "nominal_sum_mm": 0.628,
+    "requires": "Separate vendor-approved stack documentation per PCB. Supplier copper/mask datum and impedance model are open, including the thinner bridge."
+  },
+  "do_not_relax": {
+    "minimum_trace_um": 50.0,
+    "minimum_clearance_um": 50.0,
+    "minimum_edge_clearance_mm": 0.25,
+    "minimum_courtyard_gap_mm": 0.2,
+    "microvia_nominal_drill_um": 75.0,
+    "microvia_nominal_land_um": 180.0,
+    "microvia_nominal_annular_ring_um": 52.5,
+    "buried_via_nominal_drill_um": 200.0,
+    "buried_via_nominal_land_um": 400.0,
+    "buried_via_nominal_annular_ring_um": 100.0,
+    "btb_fpc_stiffener_mated_allowance_mm": 0.32
+  },
+  "boards": {
+    "M-MAIN-L": {
+      "status": "UNVERIFIED",
+      "functions": [
+        "ESP32-S3 host, Wi-Fi, both-cell ORing and system conversion, left charger, left speaker and microphone",
+        "Camera rail isolation, current-window privacy sensing, DVP translation, USB/charge ingress"
+      ],
+      "length_y_mm": 46.0,
+      "width_zones": [
+        {
+          "y_start_mm": 0.0,
+          "y_end_mm": 4.2,
+          "width_x_mm": 5.8
+        },
+        {
+          "y_start_mm": 4.2,
+          "y_end_mm": 14.0,
+          "width_x_mm": 8.2
+        },
+        {
+          "y_start_mm": 14.0,
+          "y_end_mm": 46.0,
+          "width_x_mm": 5.8
+        }
+      ],
+      "cavity_max_z_mm": 3.2,
+      "pcb_thickness_z_mm": 0.63,
+      "area_envelope_mm2": 290.32
+    },
+    "M-OPT-BRIDGE": {
+      "status": "UNVERIFIED",
+      "functions": [
+        "iCE40UP5K rendering/transport, local power sequencing and independent AVDD inhibit",
+        "Two optical branches, center IMU and microphone, physical camera privacy indicator"
+      ],
+      "length_y_mm": 22.0,
+      "width_zones": [
+        {
+          "y_start_mm": 0.0,
+          "y_end_mm": 22.0,
+          "width_x_mm": 4.2
+        }
+      ],
+      "cavity_max_z_mm": 2.8,
+      "pcb_thickness_z_mm": 0.5,
+      "area_envelope_mm2": 92.4
+    },
+    "M-AUD-R": {
+      "status": "UNVERIFIED",
+      "functions": [
+        "nRF5340 LE Audio, antenna and reference clock, right charger, right speaker and microphone",
+        "Right protected pack, BTL outputs and SWD access"
+      ],
+      "length_y_mm": 34.0,
+      "width_zones": [
+        {
+          "y_start_mm": 0.0,
+          "y_end_mm": 34.0,
+          "width_x_mm": 5.2
+        }
+      ],
+      "cavity_max_z_mm": 3.0,
+      "pcb_thickness_z_mm": 0.63,
+      "area_envelope_mm2": 176.8
+    }
+  },
+  "fpc_dynamic_zones": [
+    {
+      "fpc_id": "FPC_CAM_L",
+      "layers": 2,
+      "thickness_mm": 0.12,
+      "min_bend_radius_mm": 1.5,
+      "designed_bend_radius_mm": 1.8,
+      "loop_length_mm": 6.5
+    },
+    {
+      "fpc_id": "FPC_BRIDGE",
+      "layers": 2,
+      "thickness_mm": 0.12,
+      "min_bend_radius_mm": 1.5,
+      "designed_bend_radius_mm": 2.0,
+      "loop_length_mm": 12.0
+    },
+    {
+      "fpc_id": "FPC_HINGE_R",
+      "layers": 2,
+      "thickness_mm": 0.12,
+      "min_bend_radius_mm": 1.5,
+      "designed_bend_radius_mm": 1.8,
+      "loop_length_mm": 6.5
+    }
+  ],
+  "fpc_dynamic_zone_rule": "Keep pads, vias, components and stiffener transitions outside active bending. Verify neutral axis, adhesive stack, cycle load and assembly radii with the FPC vendor.",
+  "rf_keepout_candidates": [
+    {
+      "board": "M-MAIN-L",
+      "y_start_mm": 0.0,
+      "y_end_mm": 4.2,
+      "allowed_refs": [
+        "ANT1"
+      ]
+    },
+    {
+      "board": "M-AUD-R",
+      "y_start_mm": 0.0,
+      "y_end_mm": 4.0,
+      "allowed_refs": [
+        "ANT2_BLE"
+      ]
+    }
+  ],
+  "rf_status": "UNVERIFIED",
+  "escape_candidates": [
+    {
+      "ref": "U2_FPGA (iCE40UP5K-UWG30ITR)",
+      "status": "UNVERIFIED",
+      "nominal_pitch_um": 400.0,
+      "nominal_land_diameter_um": 200.0,
+      "nominal_trace_gap_residual_um": 50.0,
+      "minimum_trace_width_um": 50.0,
+      "minimum_trace_clearance_um": 50.0,
+      "requires_stacked_l1_l3_vippo": true
+    },
+    {
+      "ref": "U11_BLE (nRF5340-CMAA-R7)",
+      "status": "UNVERIFIED",
+      "nominal_pitch_um": 350.0,
+      "nominal_land_diameter_um": 180.0,
+      "nominal_trace_gap_residual_um": 20.0,
+      "minimum_trace_width_um": 50.0,
+      "minimum_trace_clearance_um": 50.0,
+      "requires_stacked_l1_l3_vippo": true
+    },
+    {
+      "ref": "U10_AMP (MAX98357AEWL+T)",
+      "status": "UNVERIFIED",
+      "nominal_pitch_um": 400.0,
+      "nominal_land_diameter_um": 200.0,
+      "nominal_trace_gap_residual_um": 50.0,
+      "minimum_trace_width_um": 50.0,
+      "minimum_trace_clearance_um": 50.0,
+      "requires_stacked_l1_l3_vippo": false
+    },
+    {
+      "ref": "U8_LS (SN74AXC8T245RJWR)",
+      "status": "UNVERIFIED",
+      "nominal_pitch_um": 400.0,
+      "nominal_land_diameter_um": 200.0,
+      "nominal_trace_gap_residual_um": 50.0,
+      "minimum_trace_width_um": 50.0,
+      "minimum_trace_clearance_um": 50.0,
+      "requires_stacked_l1_l3_vippo": false
+    },
+    {
+      "ref": "U1_HOST (ESP32-S3-PICO-1-N8R8)",
+      "status": "UNVERIFIED",
+      "nominal_pitch_um": 400.0,
+      "nominal_land_diameter_um": 200.0,
+      "nominal_trace_gap_residual_um": 50.0,
+      "minimum_trace_width_um": 50.0,
+      "minimum_trace_clearance_um": 50.0,
+      "requires_stacked_l1_l3_vippo": false
+    }
+  ],
+  "mated_contact_checks": {
+    "status": "UNVERIFIED",
+    "rating_a": {
+      "signal": 0.3,
+      "power": 5.0
+    },
+    "peak_design_a": {
+      "VBAT_R_RET": 1.0,
+      "GND": 1.2,
+      "VSYS_bridge": 0.45
+    },
+    "derating_factor": 1.25,
+    "current_assignment": {
+      "PWR1": "VBAT_R_RET",
+      "PWR2": "GND",
+      "P2/P3 (left and bridge)": "VSYS"
+    },
+    "vsys_equal_share_per_contact_a": 0.28125,
+    "vsys_equal_share_a_below_contact_rating": 0.01875,
+    "vsys_max_actual_per_contact_at_design_factor_a": 0.24,
+    "requires": "Verify mirrored contact numbering, current sharing, FPC copper/round-trip drop and connector temperature. The right-side P2 ground signal contact must not carry the main return on its own."
+  },
+  "optical_interface": {
+    "status": "BLOCKED",
+    "architecture": "Binocular transparent AR",
+    "vendor_contract": [
+      "BLK-JBD-01",
+      "BLK-JBD-02",
+      "BLK-JBD-03",
+      "BLK-JBD-04",
+      "BLK-JBD-05"
+    ]
+  },
+  "placement_and_route": [
+    {
+      "board": "M-MAIN-L",
+      "group": "ESP_RF",
+      "refs": [
+        "U1_HOST",
+        "ANT1",
+        "R_ESP_RF",
+        "C_ESP_RF_IN",
+        "C_ESP_RF_OUT"
+      ],
+      "status": "UNVERIFIED",
+      "constraint": "Keep feed short and controlled to the vendor impedance with a continuous reference up to the antenna launch. Preserve the DNP matching option and the antenna-specific no-copper region."
+    },
+    {
+      "board": "M-MAIN-L",
+      "group": "POWER_ENTRY",
+      "refs": [
+        "J_CHG",
+        "U12_ESD_USB",
+        "U3_L",
+        "U4_OR",
+        "U4_BB",
+        "U4_1V8"
+      ],
+      "status": "UNVERIFIED",
+      "constraint": "Put TVS at the exposed interface. Preserve a paired USB return through the connector. Place input and output bypass at the converters and minimize the switching hot loops. Keep the switch node away from camera and RF traces."
+    },
+    {
+      "board": "M-MAIN-L",
+      "group": "CAM_PRIVACY",
+      "refs": [
+        "R_SENSE",
+        "U7_INA",
+        "U7_WIN",
+        "J_CAM"
+      ],
+      "status": "UNVERIFIED",
+      "constraint": "Route separate Kelvin sense traces from the R_SENSE terminations. Keep the privacy sense nodes away from switching copper. Preserve camera rail discharge and isolation paths. Freeze the sensor power-up contract before module enable."
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "group": "FPGA_ESCAPE",
+      "refs": [
+        "U2_FPGA",
+        "Y1_OSC",
+        "C_FPGA_OSC_HF"
+      ],
+      "status": "UNVERIFIED",
+      "constraint": "Place every explicit bypass at the named supply ball with a short ground return. Prove access to the internal balls using supplier-accepted copper-filled and capped stacked VIPPO. Keep the 48 MHz oscillator close to U2_FPGA.B3."
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "group": "OPTICAL_TRANSPORT",
+      "refs": [
+        "J_DISP_L",
+        "J_DISP_R"
+      ],
+      "status": "BLOCKED",
+      "constraint": "Reserve two independent optical branch regions. Keep source damping adjacent to the FPGA and route each SCK/CS/DQ branch over a continuous reference. Geometry, loading and allowable skew are pending the optical interface contract."
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "group": "AVDD_INHIBIT",
+      "refs": [
+        "U_AVDD_IO_PG",
+        "U_AVDD_SYS_PG",
+        "U_AVDD_SYS_CLAMP",
+        "U_AVDD_WD",
+        "U_AVDD_QUAL",
+        "U_AVDD_EN_OD",
+        "TP_AVDD_SAFE"
+      ],
+      "status": "UNVERIFIED",
+      "constraint": "Keep the independent clamp path short to the candidate LDO enable. Place the qualification RC and all rail bypass locally. Reserve probe clearance and short test return. Confirm loading of watchdog, PG and EN with the actual fixture."
+    },
+    {
+      "board": "M-AUD-R",
+      "group": "BLE_RF",
+      "refs": [
+        "U11_BLE",
+        "ANT2_BLE",
+        "Y2_BLE",
+        "NRF_L1",
+        "NRF_L2",
+        "NRF_L3",
+        "NRF_L4",
+        "NRF_CT19"
+      ],
+      "status": "UNVERIFIED",
+      "constraint": "Copy Nordic CMAA configuration 3 RF/DC-DC topology with reference geometry and actual footprints. Keep crystal tracks and return quiet. Maintain antenna feed/keepout and the RF tuning pad. Preserve SWD access."
+    },
+    {
+      "board": "M-MAIN-L",
+      "group": "AUDIO_LEFT",
+      "refs": [
+        "U10_AMP_L",
+        "SPK_L",
+        "MK1_L"
+      ],
+      "status": "UNVERIFIED",
+      "constraint": "Route the amplifier outputs as BTL to the speaker. Keep class-D switching copper away from the PDM microphone and RF. Board drawing must include the microphone port and acoustic gasket."
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "group": "CENTER_ACOUSTIC_MECH",
+      "refs": [
+        "MK2_C",
+        "U9_IMU"
+      ],
+      "status": "UNVERIFIED",
+      "constraint": "Reserve the center microphone acoustic opening and gasket. Keep the IMU away from the hinge flex/stress field and use the physical package orientation in the system axes."
+    },
+    {
+      "board": "M-AUD-R",
+      "group": "AUDIO_RIGHT",
+      "refs": [
+        "U10_AMP_R",
+        "SPK_R",
+        "MK3_R"
+      ],
+      "status": "UNVERIFIED",
+      "constraint": "Route the amplifier outputs as BTL to the speaker. Keep class-D switching copper away from the PDM microphone, crystal and RF. Board drawing must include the microphone port and acoustic gasket."
+    }
+  ]
+}

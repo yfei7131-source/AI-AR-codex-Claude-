@@ -1,0 +1,55 @@
+name: EVT-1 native schematic and FPGA validation
+on:
+  push:
+    branches: [hardware/evt1-native-eda-20261118]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  EVT1_PACKAGE: hardware/evt1-native-eda-20261118
+
+jobs:
+  fpga:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: YosysHQ/setup-oss-cad-suite@v3
+      - name: Software wire encoding against inherited RTL
+        run: python3 "$EVT1_PACKAGE/host/check_bridge.py"
+      - name: Native display, shutdown, synthesis, routing and independent STA
+        run: make -C hardware/evt1-rev-d1-1-20261117/03_FPGA_RTL all
+      - name: Preserve actual tool outputs
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: evt1-native-fpga
+          path: |
+            hardware/evt1-rev-d1-1-20261117/03_FPGA_RTL/*.log
+            hardware/evt1-rev-d1-1-20261117/03_FPGA_RTL/*.rpt
+            hardware/evt1-rev-d1-1-20261117/03_FPGA_RTL/*.json
+            hardware/evt1-rev-d1-1-20261117/03_FPGA_RTL/*.asc
+
+  native-erc:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reproduce audited BOM, NETLIST and PINMAP
+        run: python3 "$EVT1_PACKAGE/Inputs/build_effective_inputs.py" --check
+      - name: KiCad CLI version, electrical rules and native netlist parity
+        run: |
+          mkdir -p "$PWD/ci-kicad-evidence"
+          docker run --rm --user "$(id -u):$(id -g)" -e HOME=/tmp \
+            -v "$PWD:/work" -w /work --entrypoint /bin/bash \
+            kicad/kicad:10.0@sha256:3f4a01786dfbe803a65f345c3342b765db9add913f5e9448f8356793714ddc34 \
+            -ec "kicad-cli version && python3 '$EVT1_PACKAGE/tools/verify_kicad.py' --kicad-cli kicad-cli --output /work/ci-kicad-evidence"
+      - name: Preserve raw KiCad reports and exported nets
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: evt1-native-erc
+          if-no-files-found: error
+          path: ci-kicad-evidence/

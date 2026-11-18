@@ -1,0 +1,12 @@
+Board,Net,KiCad_Flag,Electrical_Source
+M-MAIN-L,1V8_FPGA_IO,#FLG01,"J_BTB_L.P6, source U4_1V8F on the bridge"
+M-MAIN-L,VBAT_R_RET,#FLG02,"J_BTB_L.PWR1, protected right pack"
+M-MAIN-L,VBAT_R_ISOLATED,#FLG03,Q_CHG_ISO_R conducts from protected right pack when enabled
+M-OPT-BRIDGE,GND,#FLG01,"J_BRIDGE_IN.PWR2, system return"
+M-OPT-BRIDGE,VSYS,#FLG02,"J_BRIDGE_IN.P2/P3, source LM66200 on left main board"
+M-OPT-BRIDGE,1V8_SYS,#FLG03,"J_BRIDGE_IN.P4/P5, source TPS62840 on left main board"
+M-OPT-BRIDGE,1V2_FPGA_PLL,#FLG04,R_PLL supplies filtered core rail
+M-OPT-BRIDGE,1V8_FPGA_VPP,#FLG05,R_VPP supplies D4 from the inherited 1V8 FPGA IO rail; not NVCM programming voltage
+M-AUD-R,GND,#FLG01,"J_BTB_R.PWR2, system return"
+M-AUD-R,VBUS_5V,#FLG02,"J_BTB_R.P1, charging interface on left main board"
+M-AUD-R,1V8_SYS,#FLG03,"J_BTB_R.P4, source TPS62840 on left main board"
