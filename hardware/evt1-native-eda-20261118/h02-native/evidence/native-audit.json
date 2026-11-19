@@ -1,0 +1,5549 @@
+{
+  "status": "FAIL",
+  "acceptance": "BLOCKED",
+  "scope": "Decoded official native manufacturing net-group membership, page labels and BOM diagnostics. PCB routing and manufacture retain their separate gate.",
+  "project_id": "92f9eacd1a5a6bac5e406c46fb3afc76d474aa86ce9418d44d4075bc5d168496",
+  "source_coherence": "PASS",
+  "controlled_sha256": {
+    "Inputs/effective_bom.csv": "82315c93c38ceb48f4bc57e89d8d814d33f382e2a79b2bf67307b197ca898d75",
+    "Inputs/effective_netlist.csv": "1bf6e08f7a07c56c7f3e2e711a2b84a613c27165dc326bfb31dc6be0bf58b1a0",
+    "Inputs/effective_pinmap.csv": "bcccbb2245a9411ef56b84bb0222fc15ae622c2f8f680a8db05e9c62c81dc219",
+    "kicad/CAD_TERMINALS.csv": "514c3ff1239173bf23966c53b339f6ff07f022ae6f78f58b52d94d1f1aff6f06",
+    "FOOTPRINT_MAP.csv": "f53e43492bd0c93e2e9c381a1d6ad028d9bda1a6e9fb5ea4daaaffe2fa9e290b"
+  },
+  "page_terminal_labels": {
+    "named_terminal_parity": "BLOCKED",
+    "board_counts": {
+      "M-MAIN-L": {
+        "expected": 524,
+        "observed": 524
+      },
+      "M-OPT-BRIDGE": {
+        "expected": 315,
+        "observed": 113
+      },
+      "M-AUD-R": {
+        "expected": 236,
+        "observed": 236
+      }
+    },
+    "marker_files": 16,
+    "unverified_nc_markers": 0,
+    "expected_nc_markers": 92,
+    "missing_exports": [
+      "bom/30968987fbc1647d.csv",
+      "bom/8fa31840ba825b92.csv",
+      "bom/bbbca101b360e299.csv",
+      "bom/9e364700c984f124.csv",
+      "bom/07dc7dde94c1bf76.csv",
+      "bom/e98944c2045546cf.csv",
+      "bom/2ef9ed7773e0c42f.csv",
+      "bom/3fdc6001a068d82e.csv",
+      "bom/e99e682aca69cae1.csv",
+      "bom/35d0bca337813128.csv",
+      "bom/3e7683d1ed324ce9.csv",
+      "bom/89cd87358a17e3c2.csv",
+      "bom/2d94cb183ed4ccdc.csv",
+      "bom/4d38590959875927.csv",
+      "bom/a7f2cc2b0cf16956.csv",
+      "bom/ed9e9866a1b746ac.csv",
+      "sch/b1ec1f299f13f9eb.json",
+      "sch/35df718b650fe548.json",
+      "sch/d643a0611d67a31a.json",
+      "sch/2abf127033234e68.json",
+      "sch/e00fbca5c08cc114.json"
+    ],
+    "missing_terminals": [
+      [
+        "M-OPT-BRIDGE",
+        "C1",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C1",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C10",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C10",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C11",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C11",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C12",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C12",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C2",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C2",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C3",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C3",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C31",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C31",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C32",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C32",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C4",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C4",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C5",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C5",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C6",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C6",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C7",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C7",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C8",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C8",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C9",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C9",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J1",
+        "P1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J1",
+        "P10"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J1",
+        "P11"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J1",
+        "P12"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J1",
+        "P13"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J1",
+        "P14"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J1",
+        "P15"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J1",
+        "P16"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J1",
+        "P17"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J1",
+        "P18"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J1",
+        "P19"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J1",
+        "P2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J1",
+        "P20"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J1",
+        "P21"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J1",
+        "P22"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J1",
+        "P23"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J1",
+        "P24"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J1",
+        "P25"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J1",
+        "P26"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J1",
+        "P27"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J1",
+        "P28"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J1",
+        "P29"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J1",
+        "P3"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J1",
+        "P30"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J1",
+        "P4"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J1",
+        "P5"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J1",
+        "P6"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J1",
+        "P7"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J1",
+        "P8"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J1",
+        "P9"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J1",
+        "PWR1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J1",
+        "PWR2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J2",
+        "P1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J2",
+        "P10"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J2",
+        "P2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J2",
+        "P3"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J2",
+        "P4"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J2",
+        "P5"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J2",
+        "P6"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J2",
+        "P7"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J2",
+        "P8"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J2",
+        "P9"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J2",
+        "PWR1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J2",
+        "PWR2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J3",
+        "P1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J3",
+        "P10"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J3",
+        "P2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J3",
+        "P3"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J3",
+        "P4"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J3",
+        "P5"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J3",
+        "P6"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J3",
+        "P7"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J3",
+        "P8"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J3",
+        "P9"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J3",
+        "PWR1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J3",
+        "PWR2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R1",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R1",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R10",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R10",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R13",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R13",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R14",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R14",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R15",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R15",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R16",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R16",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R17",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R17",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R18",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R18",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R19",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R19",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R2",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R2",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R20",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R20",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R21",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R21",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R22",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R22",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R23",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R23",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R24",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R24",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R25",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R25",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R26",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R26",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R3",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R3",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R4",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R4",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R5",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R5",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R6",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R6",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R7",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R7",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R8",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R8",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R9",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R9",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "TP1",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "TP1",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "TP1",
+        "3"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "TP1",
+        "4"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "TP1",
+        "5"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "TP1",
+        "6"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "TP1",
+        "7"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "TP1",
+        "8"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "TP1",
+        "9"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U10",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U10",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U10",
+        "3"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U10",
+        "4"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U10",
+        "5"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U10",
+        "6"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U11",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U11",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U11",
+        "3"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U11",
+        "4"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U11",
+        "5"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U11",
+        "6"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U12",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U12",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U12",
+        "3"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U12",
+        "4"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U12",
+        "5"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U12",
+        "6"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U13",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U13",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U13",
+        "3"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U13",
+        "4"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U13",
+        "5"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U13",
+        "6"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U14",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U14",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U14",
+        "3"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U14",
+        "4"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U14",
+        "5"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U14",
+        "6"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U3",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U3",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U3",
+        "3"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U3",
+        "4"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U3",
+        "5"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U3",
+        "6"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U5",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U5",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U5",
+        "3"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U5",
+        "4"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U5",
+        "5"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U5",
+        "6"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U6",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U6",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U6",
+        "3"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U6",
+        "4"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U6",
+        "5"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U7",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U7",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U7",
+        "3"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U7",
+        "4"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U7",
+        "5"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U7",
+        "6"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U8",
+        "1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U8",
+        "2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U8",
+        "3"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U8",
+        "4"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U8",
+        "5"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U8",
+        "6"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U8",
+        "7"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U8",
+        "8"
+      ]
+    ],
+    "unexpected_terminals": [],
+    "net_or_nc_mismatches": [],
+    "schematic_footprints": {
+      "status": "BLOCKED",
+      "missing": [
+        [
+          "M-AUD-R",
+          "C1"
+        ],
+        [
+          "M-AUD-R",
+          "C2"
+        ],
+        [
+          "M-AUD-R",
+          "C3"
+        ],
+        [
+          "M-AUD-R",
+          "C4"
+        ],
+        [
+          "M-AUD-R",
+          "C5"
+        ],
+        [
+          "M-AUD-R",
+          "C6"
+        ],
+        [
+          "M-AUD-R",
+          "L1"
+        ],
+        [
+          "M-AUD-R",
+          "L2"
+        ],
+        [
+          "M-AUD-R",
+          "L3"
+        ],
+        [
+          "M-AUD-R",
+          "L4"
+        ],
+        [
+          "M-AUD-R",
+          "Q1"
+        ],
+        [
+          "M-AUD-R",
+          "R7"
+        ],
+        [
+          "M-AUD-R",
+          "R8"
+        ],
+        [
+          "M-AUD-R",
+          "U3"
+        ],
+        [
+          "M-MAIN-L",
+          "C1"
+        ],
+        [
+          "M-MAIN-L",
+          "C15"
+        ],
+        [
+          "M-MAIN-L",
+          "C16"
+        ],
+        [
+          "M-MAIN-L",
+          "C17"
+        ],
+        [
+          "M-MAIN-L",
+          "C18"
+        ],
+        [
+          "M-MAIN-L",
+          "C19"
+        ],
+        [
+          "M-MAIN-L",
+          "C2"
+        ],
+        [
+          "M-MAIN-L",
+          "C20"
+        ],
+        [
+          "M-MAIN-L",
+          "C21"
+        ],
+        [
+          "M-MAIN-L",
+          "C22"
+        ],
+        [
+          "M-MAIN-L",
+          "C23"
+        ],
+        [
+          "M-MAIN-L",
+          "C24"
+        ],
+        [
+          "M-MAIN-L",
+          "C25"
+        ],
+        [
+          "M-MAIN-L",
+          "C26"
+        ],
+        [
+          "M-MAIN-L",
+          "C27"
+        ],
+        [
+          "M-MAIN-L",
+          "C28"
+        ],
+        [
+          "M-MAIN-L",
+          "C29"
+        ],
+        [
+          "M-MAIN-L",
+          "C3"
+        ],
+        [
+          "M-MAIN-L",
+          "C30"
+        ],
+        [
+          "M-MAIN-L",
+          "C31"
+        ],
+        [
+          "M-MAIN-L",
+          "C32"
+        ],
+        [
+          "M-MAIN-L",
+          "C33"
+        ],
+        [
+          "M-MAIN-L",
+          "C34"
+        ],
+        [
+          "M-MAIN-L",
+          "C35"
+        ],
+        [
+          "M-MAIN-L",
+          "C36"
+        ],
+        [
+          "M-MAIN-L",
+          "C37"
+        ],
+        [
+          "M-MAIN-L",
+          "C38"
+        ],
+        [
+          "M-MAIN-L",
+          "C39"
+        ],
+        [
+          "M-MAIN-L",
+          "C4"
+        ],
+        [
+          "M-MAIN-L",
+          "C40"
+        ],
+        [
+          "M-MAIN-L",
+          "C41"
+        ],
+        [
+          "M-MAIN-L",
+          "C5"
+        ],
+        [
+          "M-MAIN-L",
+          "C7"
+        ],
+        [
+          "M-MAIN-L",
+          "C8"
+        ],
+        [
+          "M-MAIN-L",
+          "C9"
+        ],
+        [
+          "M-MAIN-L",
+          "L2"
+        ],
+        [
+          "M-MAIN-L",
+          "Q1"
+        ],
+        [
+          "M-MAIN-L",
+          "R19"
+        ],
+        [
+          "M-MAIN-L",
+          "R20"
+        ],
+        [
+          "M-MAIN-L",
+          "R28"
+        ],
+        [
+          "M-MAIN-L",
+          "R33"
+        ],
+        [
+          "M-MAIN-L",
+          "R34"
+        ],
+        [
+          "M-MAIN-L",
+          "R35"
+        ],
+        [
+          "M-MAIN-L",
+          "U11"
+        ],
+        [
+          "M-MAIN-L",
+          "U13"
+        ],
+        [
+          "M-MAIN-L",
+          "U14"
+        ],
+        [
+          "M-MAIN-L",
+          "U17"
+        ],
+        [
+          "M-MAIN-L",
+          "U19"
+        ],
+        [
+          "M-MAIN-L",
+          "U20"
+        ],
+        [
+          "M-MAIN-L",
+          "U5"
+        ],
+        [
+          "M-MAIN-L",
+          "U6"
+        ],
+        [
+          "M-MAIN-L",
+          "U7"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C1"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C10"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C11"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C12"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C13"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C14"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C15"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C16"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C17"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C18"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C19"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C2"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C20"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C21"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C22"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C23"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C27"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C28"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C29"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C3"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C30"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C31"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C33"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C4"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C5"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C6"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C7"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C8"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C9"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "R1"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "R10"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "R2"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "R3"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "R4"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "R5"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "R6"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "R7"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "R8"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "R9"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "U1"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "U10"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "U11"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "U12"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "U13"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "U14"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "U4"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "U7"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "U8"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "Y1"
+        ]
+      ],
+      "mismatches": []
+    },
+    "schematic_pcb_flags": {
+      "status": "BLOCKED",
+      "missing_flags": [
+        [
+          "M-OPT-BRIDGE",
+          "C1"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C10"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C11"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C12"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C2"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C3"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C31"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C32"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C4"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C5"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C6"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C7"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C8"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C9"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "J1"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "J2"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "J3"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "R1"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "R10"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "R13"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "R14"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "R15"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "R16"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "R17"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "R18"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "R19"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "R2"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "R20"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "R21"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "R22"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "R23"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "R24"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "R25"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "R26"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "R3"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "R4"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "R5"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "R6"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "R7"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "R8"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "R9"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "TP1"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "U10"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "U11"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "U12"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "U13"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "U14"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "U3"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "U5"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "U6"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "U7"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "U8"
+        ]
+      ],
+      "mismatches": []
+    }
+  },
+  "board_document_registry": {
+    "status": "PASS",
+    "boards": {
+      "M-MAIN-L": {
+        "status": "PASS",
+        "schematic_scope": "PASS",
+        "schematic_uuid": "c04afd3a85971cef",
+        "pcb_uuid": "8fbc3cae65886fe5",
+        "declared_pages": [
+          "2d94cb183ed4ccdc",
+          "2ef9ed7773e0c42f",
+          "35d0bca337813128",
+          "3e7683d1ed324ce9",
+          "3fdc6001a068d82e",
+          "4d38590959875927",
+          "89cd87358a17e3c2",
+          "e99e682aca69cae1"
+        ],
+        "native_parent_pages": [
+          "2d94cb183ed4ccdc",
+          "2ef9ed7773e0c42f",
+          "35d0bca337813128",
+          "3e7683d1ed324ce9",
+          "3fdc6001a068d82e",
+          "4d38590959875927",
+          "89cd87358a17e3c2",
+          "e99e682aca69cae1"
+        ],
+        "pages_outside_bound_schematic": [],
+        "undeclared_native_pages": []
+      },
+      "M-OPT-BRIDGE": {
+        "status": "PASS",
+        "schematic_scope": "PASS",
+        "schematic_uuid": "73f2bfaeffaf2767",
+        "pcb_uuid": "9ce45f14cb79dc9d",
+        "declared_pages": [
+          "2abf127033234e68",
+          "35df718b650fe548",
+          "a7f2cc2b0cf16956",
+          "b1ec1f299f13f9eb",
+          "d643a0611d67a31a",
+          "e00fbca5c08cc114",
+          "ed9e9866a1b746ac"
+        ],
+        "native_parent_pages": [
+          "2abf127033234e68",
+          "35df718b650fe548",
+          "a7f2cc2b0cf16956",
+          "b1ec1f299f13f9eb",
+          "d643a0611d67a31a",
+          "e00fbca5c08cc114",
+          "ed9e9866a1b746ac"
+        ],
+        "pages_outside_bound_schematic": [],
+        "undeclared_native_pages": []
+      },
+      "M-AUD-R": {
+        "status": "PASS",
+        "schematic_scope": "PASS",
+        "schematic_uuid": "4e4521c87aee3006",
+        "pcb_uuid": "1db01a36f669a47a",
+        "declared_pages": [
+          "07dc7dde94c1bf76",
+          "30968987fbc1647d",
+          "8fa31840ba825b92",
+          "9e364700c984f124",
+          "bbbca101b360e299",
+          "e98944c2045546cf"
+        ],
+        "native_parent_pages": [
+          "07dc7dde94c1bf76",
+          "30968987fbc1647d",
+          "8fa31840ba825b92",
+          "9e364700c984f124",
+          "bbbca101b360e299",
+          "e98944c2045546cf"
+        ],
+        "pages_outside_bound_schematic": [],
+        "undeclared_native_pages": []
+      }
+    },
+    "extra_boards": [],
+    "undeclared_pages": [],
+    "shared_board_documents": [],
+    "pcb_document_inventory": {
+      "status": "PASS",
+      "missing_bound_pcbs": [],
+      "extra_unbound_pcbs": [],
+      "native_pcb_count": 3
+    }
+  },
+  "board_native_membership": {
+    "M-MAIN-L": {
+      "status": "PASS",
+      "physical_partition_status": "PASS",
+      "compiled_names_status": "PASS",
+      "equivalent_renamed_groups": [],
+      "expected_net_groups": 110,
+      "observed_net_groups": 110,
+      "expected_connected_board_pins": 494,
+      "observed_unique_members": 494,
+      "net_differences": [],
+      "duplicate_members": [],
+      "native_export_sha256": "10db35cbe5a4d79f2a667932895daa4720ffd69c42ae38dc450e863ed50e06ea",
+      "all_schematic_membership_including_external": {
+        "status": "PASS",
+        "physical_partition_status": "PASS",
+        "compiled_names_status": "PASS",
+        "equivalent_renamed_groups": [],
+        "expected_net_groups": 110,
+        "observed_net_groups": 110,
+        "expected_connected_board_pins": 500,
+        "observed_unique_members": 500,
+        "net_differences": [],
+        "duplicate_members": []
+      },
+      "native_component_count": 118,
+      "native_pcb_projection_flags": {
+        "status": "PASS",
+        "missing": [],
+        "incorrect": [],
+        "extra_refs": []
+      }
+    },
+    "M-OPT-BRIDGE": {
+      "status": "PASS",
+      "physical_partition_status": "PASS",
+      "compiled_names_status": "PASS",
+      "equivalent_renamed_groups": [],
+      "expected_net_groups": 56,
+      "observed_net_groups": 56,
+      "expected_connected_board_pins": 294,
+      "observed_unique_members": 294,
+      "net_differences": [],
+      "duplicate_members": [],
+      "native_export_sha256": "e84913bf583ab3d8d3c81a4a3dd096078dbf8dce8423838ecbaad4a672061074",
+      "all_schematic_membership_including_external": {
+        "status": "PASS",
+        "physical_partition_status": "PASS",
+        "compiled_names_status": "PASS",
+        "equivalent_renamed_groups": [],
+        "expected_net_groups": 56,
+        "observed_net_groups": 56,
+        "expected_connected_board_pins": 294,
+        "observed_unique_members": 294,
+        "net_differences": [],
+        "duplicate_members": []
+      },
+      "native_component_count": 83,
+      "native_pcb_projection_flags": {
+        "status": "PASS",
+        "missing": [],
+        "incorrect": [],
+        "extra_refs": []
+      }
+    },
+    "M-AUD-R": {
+      "status": "PASS",
+      "physical_partition_status": "PASS",
+      "compiled_names_status": "PASS",
+      "equivalent_renamed_groups": [],
+      "expected_net_groups": 35,
+      "observed_net_groups": 35,
+      "expected_connected_board_pins": 183,
+      "observed_unique_members": 183,
+      "net_differences": [],
+      "duplicate_members": [],
+      "native_export_sha256": "5f8ea35cff3ac372c052e4739d2cd83cbd79888536fb8472b810343272521750",
+      "all_schematic_membership_including_external": {
+        "status": "PASS",
+        "physical_partition_status": "PASS",
+        "compiled_names_status": "PASS",
+        "equivalent_renamed_groups": [],
+        "expected_net_groups": 35,
+        "observed_net_groups": 35,
+        "expected_connected_board_pins": 189,
+        "observed_unique_members": 189,
+        "net_differences": [],
+        "duplicate_members": []
+      },
+      "native_component_count": 52,
+      "native_pcb_projection_flags": {
+        "status": "PASS",
+        "missing": [],
+        "incorrect": [],
+        "extra_refs": []
+      }
+    }
+  },
+  "native_exact_identity_and_selection": {
+    "exact_identity_field_status": "BLOCKED",
+    "procurement_selection_status": "BLOCKED",
+    "exact_candidate_fields_present": 40,
+    "exact_candidate_fields_expected": 52,
+    "exact_candidates_missing": [
+      [
+        "M-OPT-BRIDGE",
+        "J1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J3"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U10"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U11"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U12"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U13"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U14"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U3"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U5"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U7"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U8"
+      ]
+    ],
+    "exact_candidate_fields_by_ref": [
+      {
+        "component": [
+          "M-AUD-R",
+          "ANT2"
+        ],
+        "expected": "2450AT18B100E",
+        "observed": "2450AT18B100E",
+        "match": true
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "J1"
+        ],
+        "expected": "BM28B0.6-16DS/2-0.35V(53)",
+        "observed": "BM28B0.6-16DS/2-0.35V(53)",
+        "match": true
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "MK3"
+        ],
+        "expected": "IM69D130V01XTSA1",
+        "observed": "IM69D130V01XTSA1",
+        "match": true
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "U1"
+        ],
+        "expected": "SN74LVC1G3157DSFR",
+        "observed": "SN74LVC1G3157DSFR",
+        "match": true
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "U10"
+        ],
+        "expected": "MAX98357AEWL+T",
+        "observed": "MAX98357AEWL+T",
+        "match": true
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "U11"
+        ],
+        "expected": "nRF5340-CMAA-R7",
+        "observed": "nRF5340-CMAA-R7",
+        "match": true
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "U3"
+        ],
+        "expected": "BQ25170DSGR",
+        "observed": "BQ25170DSGR",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "ANT1"
+        ],
+        "expected": "2450AT18B100E",
+        "observed": "2450AT18B100E",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "J1"
+        ],
+        "expected": "BM28B0.6-30DS/2-0.35V(53)",
+        "observed": "BM28B0.6-30DS/2-0.35V(53)",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "J2"
+        ],
+        "expected": "BM28B0.6-24DS/2-0.35V(53)",
+        "observed": "BM28B0.6-24DS/2-0.35V(53)",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "L2"
+        ],
+        "expected": "DFE21CCN2R2MELL",
+        "observed": "DFE21CCN2R2MELL",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "MK1"
+        ],
+        "expected": "IM69D130V01XTSA1",
+        "observed": "IM69D130V01XTSA1",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "Q1"
+        ],
+        "expected": "PMV65XP",
+        "observed": "PMV65XP",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "U1"
+        ],
+        "expected": "ESP32-S3-PICO-1-N8R8",
+        "observed": "ESP32-S3-PICO-1-N8R8",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "U10"
+        ],
+        "expected": "MAX98357AEWL+T",
+        "observed": "MAX98357AEWL+T",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "U11"
+        ],
+        "expected": "TLV75518PDQNR",
+        "observed": "TLV75518PDQNR",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "U13"
+        ],
+        "expected": "TLV75512PDQNR",
+        "observed": "TLV75512PDQNR",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "U14"
+        ],
+        "expected": "TLV7042DSGR",
+        "observed": "TLV7042DSGR",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "U15"
+        ],
+        "expected": "SN74AXC8T245RJWR",
+        "observed": "SN74AXC8T245RJWR",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "U16"
+        ],
+        "expected": "SN74AXC8T245RJWR",
+        "observed": "SN74AXC8T245RJWR",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "U17"
+        ],
+        "expected": "SN74LVC1G07DPWR",
+        "observed": "SN74LVC1G07DPWR",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "U18"
+        ],
+        "expected": "SN74AXC8T245RJWR",
+        "observed": "SN74AXC8T245RJWR",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "U19"
+        ],
+        "expected": "PCA9306DQER",
+        "observed": "PCA9306DQER",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "U2"
+        ],
+        "expected": "TPS63805YFFR",
+        "observed": "TPS63805YFFR",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "U20"
+        ],
+        "expected": "PCA9306DQER",
+        "observed": "PCA9306DQER",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "U21"
+        ],
+        "expected": "SN74AXC8T245RJWR",
+        "observed": "SN74AXC8T245RJWR",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "U3"
+        ],
+        "expected": "BQ25180YBGR",
+        "observed": "BQ25180YBGR",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "U4"
+        ],
+        "expected": "TPS62840DLCR",
+        "observed": "TPS62840DLCR",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "U5"
+        ],
+        "expected": "TLV75528PDQNR",
+        "observed": "TLV75528PDQNR",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "U6"
+        ],
+        "expected": "TLV75528PDQNR",
+        "observed": "TLV75528PDQNR",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "U7"
+        ],
+        "expected": "INA185A4IDRLR",
+        "observed": "INA185A4IDRLR",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "U8"
+        ],
+        "expected": "SN74AXC4T245RSVR",
+        "observed": "SN74AXC4T245RSVR",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "U9"
+        ],
+        "expected": "LM66200DRLR",
+        "observed": "LM66200DRLR",
+        "match": true
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "D3"
+        ],
+        "expected": "APHD1608LCGCK",
+        "observed": "APHD1608LCGCK",
+        "match": true
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "J1"
+        ],
+        "expected": "BM28B0.6-30DS/2-0.35V(53)",
+        "observed": null,
+        "match": false
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "J2"
+        ],
+        "expected": "BM28B0.6-10DS/2-0.35V(53)",
+        "observed": null,
+        "match": false
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "J3"
+        ],
+        "expected": "BM28B0.6-10DS/2-0.35V(53)",
+        "observed": null,
+        "match": false
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "MK2"
+        ],
+        "expected": "IM69D130V01XTSA1",
+        "observed": "IM69D130V01XTSA1",
+        "match": true
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "U1"
+        ],
+        "expected": "TLV75518PDQNR",
+        "observed": "TLV75518PDQNR",
+        "match": true
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "U10"
+        ],
+        "expected": "SN74LVC1G175DCKR",
+        "observed": null,
+        "match": false
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "U11"
+        ],
+        "expected": "SN74LVC2G17DCKR",
+        "observed": null,
+        "match": false
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "U12"
+        ],
+        "expected": "TPS389025DSET",
+        "observed": null,
+        "match": false
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "U13"
+        ],
+        "expected": "TPS389025DSET",
+        "observed": null,
+        "match": false
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "U14"
+        ],
+        "expected": "LTC6993IS6-2#TRPBF",
+        "observed": null,
+        "match": false
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "U2"
+        ],
+        "expected": "iCE40UP5K-UWG30ITR",
+        "observed": "iCE40UP5K-UWG30ITR",
+        "match": true
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "U3"
+        ],
+        "expected": "74LVC2G07GS",
+        "observed": null,
+        "match": false
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "U4"
+        ],
+        "expected": "TLV75512PDQNR",
+        "observed": "TLV75512PDQNR",
+        "match": true
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "U5"
+        ],
+        "expected": "74LVC2G07GS",
+        "observed": null,
+        "match": false
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "U7"
+        ],
+        "expected": "TPS389018DSET",
+        "observed": null,
+        "match": false
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "U8"
+        ],
+        "expected": "SN74LVC2T45DCUR",
+        "observed": null,
+        "match": false
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "U9"
+        ],
+        "expected": "ICM-42688-P",
+        "observed": "ICM-42688-P",
+        "match": true
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "Y1"
+        ],
+        "expected": "ASADV-48.000MHZ-LC-T",
+        "observed": "ASADV-48.000MHZ-LC-T",
+        "match": true
+      }
+    ],
+    "exact_field_mismatches": [],
+    "unselected_or_unqualified_source_parts": [
+      {
+        "component": [
+          "M-AUD-R",
+          "C1"
+        ],
+        "source_reference": "C_AMP_SD_BUF",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C10"
+        ],
+        "source_reference": "NRF_C4",
+        "owner": "BOM-56",
+        "selection_status": "SOURCE_VERIFIED_D1 values/topology; mass estimate + MPN/layout/RF qualification pending"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C11"
+        ],
+        "source_reference": "NRF_C5",
+        "owner": "BOM-56",
+        "selection_status": "SOURCE_VERIFIED_D1 values/topology; mass estimate + MPN/layout/RF qualification pending"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C12"
+        ],
+        "source_reference": "NRF_C6",
+        "owner": "BOM-56",
+        "selection_status": "SOURCE_VERIFIED_D1 values/topology; mass estimate + MPN/layout/RF qualification pending"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C13"
+        ],
+        "source_reference": "NRF_C7",
+        "owner": "BOM-56",
+        "selection_status": "SOURCE_VERIFIED_D1 values/topology; mass estimate + MPN/layout/RF qualification pending"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C14"
+        ],
+        "source_reference": "NRF_C8",
+        "owner": "BOM-56",
+        "selection_status": "SOURCE_VERIFIED_D1 values/topology; mass estimate + MPN/layout/RF qualification pending"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C15"
+        ],
+        "source_reference": "NRF_C9",
+        "owner": "BOM-56",
+        "selection_status": "SOURCE_VERIFIED_D1 values/topology; mass estimate + MPN/layout/RF qualification pending"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C16"
+        ],
+        "source_reference": "NRF_C10",
+        "owner": "BOM-56",
+        "selection_status": "SOURCE_VERIFIED_D1 values/topology; mass estimate + MPN/layout/RF qualification pending"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C17"
+        ],
+        "source_reference": "NRF_C11",
+        "owner": "BOM-56",
+        "selection_status": "SOURCE_VERIFIED_D1 values/topology; mass estimate + MPN/layout/RF qualification pending"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C18"
+        ],
+        "source_reference": "NRF_C12",
+        "owner": "BOM-56",
+        "selection_status": "SOURCE_VERIFIED_D1 values/topology; mass estimate + MPN/layout/RF qualification pending"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C19"
+        ],
+        "source_reference": "NRF_C13",
+        "owner": "BOM-56",
+        "selection_status": "SOURCE_VERIFIED_D1 values/topology; mass estimate + MPN/layout/RF qualification pending"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C2"
+        ],
+        "source_reference": "C_CHG_R_IN",
+        "owner": "BOM-D1-PWR-C_CHG_R_IN",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C20"
+        ],
+        "source_reference": "NRF_C14",
+        "owner": "BOM-56",
+        "selection_status": "SOURCE_VERIFIED_D1 values/topology; mass estimate + MPN/layout/RF qualification pending"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C21"
+        ],
+        "source_reference": "NRF_CT19",
+        "owner": "BOM-56",
+        "selection_status": "SOURCE_VERIFIED_D1 values/topology; mass estimate + MPN/layout/RF qualification pending"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C3"
+        ],
+        "source_reference": "C_CHG_R_OUT",
+        "owner": "BOM-D1-PWR-C_CHG_R_OUT",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C4"
+        ],
+        "source_reference": "C_MK3_R",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C5"
+        ],
+        "source_reference": "C_U10_AMP_R_BULK",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C6"
+        ],
+        "source_reference": "C_U10_AMP_R_HF",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C7"
+        ],
+        "source_reference": "NRF_C1",
+        "owner": "BOM-56",
+        "selection_status": "SOURCE_VERIFIED_D1 values/topology; mass estimate + MPN/layout/RF qualification pending"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C8"
+        ],
+        "source_reference": "NRF_C2",
+        "owner": "BOM-56",
+        "selection_status": "SOURCE_VERIFIED_D1 values/topology; mass estimate + MPN/layout/RF qualification pending"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C9"
+        ],
+        "source_reference": "NRF_C3",
+        "owner": "BOM-56",
+        "selection_status": "SOURCE_VERIFIED_D1 values/topology; mass estimate + MPN/layout/RF qualification pending"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "J1"
+        ],
+        "source_reference": "J_BTB_R",
+        "owner": "BOM-40",
+        "selection_status": "BLOCKED — source dimensions corrected; placement and mated/FPC envelope open"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "L1"
+        ],
+        "source_reference": "NRF_L1",
+        "owner": "BOM-56",
+        "selection_status": "SOURCE_VERIFIED_D1 values/topology; mass estimate + MPN/layout/RF qualification pending"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "L2"
+        ],
+        "source_reference": "NRF_L2",
+        "owner": "BOM-56",
+        "selection_status": "SOURCE_VERIFIED_D1 values/topology; mass estimate + MPN/layout/RF qualification pending"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "L3"
+        ],
+        "source_reference": "NRF_L3",
+        "owner": "BOM-56",
+        "selection_status": "SOURCE_VERIFIED_D1 values/topology; mass estimate + MPN/layout/RF qualification pending"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "L4"
+        ],
+        "source_reference": "NRF_L4",
+        "owner": "BOM-56",
+        "selection_status": "SOURCE_VERIFIED_D1 values/topology; mass estimate + MPN/layout/RF qualification pending"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "Q1"
+        ],
+        "source_reference": "Q_CHG_MUTE_R",
+        "owner": "BOM-D1-PWR-Q_CHG_MUTE_R",
+        "selection_status": "PINMAP_VERIFIED_CIRCUIT_UNMEASURED; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "R1"
+        ],
+        "source_reference": "R_AMP_REQ_PD",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "R10"
+        ],
+        "source_reference": "R_VSET_R",
+        "owner": "BOM-53",
+        "selection_status": "DESIGN_CALC_THIS_REV"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "R2"
+        ],
+        "source_reference": "R_IDLE_I2S_AMP_DIN_1V8",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "R3"
+        ],
+        "source_reference": "R_IDLE_I2S_BCLK_1V8",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "R4"
+        ],
+        "source_reference": "R_IDLE_I2S_LRCLK_1V8",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "R5"
+        ],
+        "source_reference": "R_IPC_PU",
+        "owner": "BOM-53",
+        "selection_status": "DESIGN_CALC_THIS_REV"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "R6"
+        ],
+        "source_reference": "R_ISET_R",
+        "owner": "BOM-53",
+        "selection_status": "DESIGN_CALC_THIS_REV"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "R7"
+        ],
+        "source_reference": "R_MUTE_GATE",
+        "owner": "BOM-D1-PWR-R_MUTE_GATE",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "R8"
+        ],
+        "source_reference": "R_MUTE_PD",
+        "owner": "BOM-D1-PWR-R_MUTE_PD",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "R9"
+        ],
+        "source_reference": "R_SDR",
+        "owner": "BOM-53",
+        "selection_status": "DESIGN_CALC_THIS_REV"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "Y2"
+        ],
+        "source_reference": "Y2_BLE",
+        "owner": "BOM-55",
+        "selection_status": "SELECTED_CANDIDATE_D1 (Epson catalog and FA-128 drawing); exact controlled order code/load trim open"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C1"
+        ],
+        "source_reference": "C_BB_IN",
+        "owner": "BOM-D1-PWR-C_BB_IN",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C10"
+        ],
+        "source_reference": "C_CHIP_PU",
+        "owner": "BOM-24",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C11"
+        ],
+        "source_reference": "C_ESP_BULK",
+        "owner": "BOM-SOC-01",
+        "selection_status": "SOURCE_VERIFIED_D1; physical layout/MPN qualification open"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C12"
+        ],
+        "source_reference": "C_ESP_RF_IN",
+        "owner": "BOM-SOC-01",
+        "selection_status": "SOURCE_VERIFIED_D1; physical layout/MPN qualification open"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C13"
+        ],
+        "source_reference": "C_ESP_RF_OUT",
+        "owner": "BOM-SOC-01",
+        "selection_status": "SOURCE_VERIFIED_D1; physical layout/MPN qualification open"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C14"
+        ],
+        "source_reference": "C_ESP_VDD_SPI",
+        "owner": "BOM-SOC-01",
+        "selection_status": "SOURCE_VERIFIED_D1; physical layout/MPN qualification open"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C15"
+        ],
+        "source_reference": "C_INA_SUPPLY",
+        "owner": "BOM-D1-PRIV-C_INA_SUPPLY",
+        "selection_status": "EXPLICIT_VALUE_D1; MPN/bias/layout qualification OPEN; mass estimate"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C16"
+        ],
+        "source_reference": "C_LDO_AVDD_IN",
+        "owner": "BOM-D1-PWR-C_LDO_AVDD_IN",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C17"
+        ],
+        "source_reference": "C_LDO_AVDD_OUT",
+        "owner": "BOM-D1-PWR-C_LDO_AVDD_OUT",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C18"
+        ],
+        "source_reference": "C_LDO_DOVDD_IN",
+        "owner": "BOM-D1-PWR-C_LDO_DOVDD_IN",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C19"
+        ],
+        "source_reference": "C_LDO_DOVDD_OUT",
+        "owner": "BOM-D1-PWR-C_LDO_DOVDD_OUT",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C2"
+        ],
+        "source_reference": "C_BB_OUT",
+        "owner": "BOM-D1-PWR-C_BB_OUT",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C20"
+        ],
+        "source_reference": "C_LDO_DVDD_IN",
+        "owner": "BOM-D1-PWR-C_LDO_DVDD_IN",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C21"
+        ],
+        "source_reference": "C_LDO_DVDD_OUT",
+        "owner": "BOM-D1-PWR-C_LDO_DVDD_OUT",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C22"
+        ],
+        "source_reference": "C_LDO_LED_IN",
+        "owner": "BOM-D1-PWR-C_LDO_LED_IN",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C23"
+        ],
+        "source_reference": "C_LDO_LED_OUT",
+        "owner": "BOM-D1-PWR-C_LDO_LED_OUT",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C24"
+        ],
+        "source_reference": "C_MK1_L",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C25"
+        ],
+        "source_reference": "C_OR_IN1",
+        "owner": "BOM-D1-PWR-C_OR_IN1",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C26"
+        ],
+        "source_reference": "C_OR_IN2",
+        "owner": "BOM-D1-PWR-C_OR_IN2",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C27"
+        ],
+        "source_reference": "C_OR_OUT",
+        "owner": "BOM-D1-PWR-C_OR_OUT",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C28"
+        ],
+        "source_reference": "C_PRIV_RC",
+        "owner": "BOM-D1-PRIV-C_PRIV_RC",
+        "selection_status": "EXPLICIT_VALUE_D1; MPN/bias/layout qualification OPEN; mass estimate"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C29"
+        ],
+        "source_reference": "C_U8_AUD_LS2_A",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C3"
+        ],
+        "source_reference": "C_BK_IN",
+        "owner": "BOM-D1-PWR-C_BK_IN",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C30"
+        ],
+        "source_reference": "C_U8_AUD_LS2_B",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C31"
+        ],
+        "source_reference": "C_U8_CAM_ISO1_A",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C32"
+        ],
+        "source_reference": "C_U8_CAM_ISO1_B",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C33"
+        ],
+        "source_reference": "C_U8_CAM_ISO2_A",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C34"
+        ],
+        "source_reference": "C_U8_CAM_ISO2_B",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C35"
+        ],
+        "source_reference": "C_U8_LS1_A",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C36"
+        ],
+        "source_reference": "C_U8_LS1_B",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C37"
+        ],
+        "source_reference": "C_U8_PDM_LS_A",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C38"
+        ],
+        "source_reference": "C_U8_PDM_LS_B",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C39"
+        ],
+        "source_reference": "C_U10_AMP_L_BULK",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C4"
+        ],
+        "source_reference": "C_BK_OUT",
+        "owner": "BOM-D1-PWR-C_BK_OUT",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C40"
+        ],
+        "source_reference": "C_U10_AMP_L_HF",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C41"
+        ],
+        "source_reference": "C_WIN_SUPPLY",
+        "owner": "BOM-D1-PRIV-C_WIN_SUPPLY",
+        "selection_status": "EXPLICIT_VALUE_D1; MPN/bias/layout qualification OPEN; mass estimate"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C42"
+        ],
+        "source_reference": "C_XREQ",
+        "owner": "BOM-49",
+        "selection_status": "DESIGN_CALC_THIS_REV"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C5"
+        ],
+        "source_reference": "C_CAM_SCCB_EN",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C6"
+        ],
+        "source_reference": "C_CAMRST",
+        "owner": "BOM-49",
+        "selection_status": "DESIGN_CALC_THIS_REV"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C7"
+        ],
+        "source_reference": "C_CHG_L_BAT",
+        "owner": "BOM-D1-PWR-C_CHG_L_BAT",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C8"
+        ],
+        "source_reference": "C_CHG_L_IN",
+        "owner": "BOM-D1-PWR-C_CHG_L_IN",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C9"
+        ],
+        "source_reference": "C_CHG_L_SYS",
+        "owner": "BOM-D1-PWR-C_CHG_L_SYS",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "D1"
+        ],
+        "source_reference": "D_XREQ",
+        "owner": "BOM-49",
+        "selection_status": "DESIGN_CALC_THIS_REV"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "J1"
+        ],
+        "source_reference": "J_BTB_L",
+        "owner": "BOM-15",
+        "selection_status": "BLOCKED — source dimensions corrected; placement and mated/FPC envelope open"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "J3"
+        ],
+        "source_reference": "J_CHG",
+        "owner": "BOM-50",
+        "selection_status": "BLOCKED — dock source boundary, boot/reset draw, data modes and connector mechanics open"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "L1"
+        ],
+        "source_reference": "L1_BB",
+        "owner": "BOM-07",
+        "selection_status": "OPEN_INDUCTOR_LOAD_QUALIFICATION"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "Q1"
+        ],
+        "source_reference": "Q_CHG_ISO_R",
+        "owner": "BOM-D1-PWR-Q_CHG_ISO_R",
+        "selection_status": "PINMAP_VERIFIED_CIRCUIT_UNMEASURED; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R1"
+        ],
+        "source_reference": "R_BB_FB1",
+        "owner": "BOM-24",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R10"
+        ],
+        "source_reference": "R_ESP_BOOT",
+        "owner": "BOM-SOC-01",
+        "selection_status": "SOURCE_VERIFIED_D1; physical layout/MPN qualification open"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R11"
+        ],
+        "source_reference": "R_ESP_RF",
+        "owner": "BOM-SOC-01",
+        "selection_status": "SOURCE_VERIFIED_D1; physical layout/MPN qualification open"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R12"
+        ],
+        "source_reference": "R_ESP_STRAP3",
+        "owner": "BOM-SOC-01",
+        "selection_status": "SOURCE_VERIFIED_D1; physical layout/MPN qualification open"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R13"
+        ],
+        "source_reference": "R_ESP_STRAP45",
+        "owner": "BOM-SOC-01",
+        "selection_status": "SOURCE_VERIFIED_D1; physical layout/MPN qualification open"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R14"
+        ],
+        "source_reference": "R_ESP_STRAP46",
+        "owner": "BOM-SOC-01",
+        "selection_status": "SOURCE_VERIFIED_D1; physical layout/MPN qualification open"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R15"
+        ],
+        "source_reference": "R_I2C_SCL_1V8",
+        "owner": "BOM-24",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R16"
+        ],
+        "source_reference": "R_I2C_SCL_3V3",
+        "owner": "BOM-24",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R17"
+        ],
+        "source_reference": "R_I2C_SDA_1V8",
+        "owner": "BOM-24",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R18"
+        ],
+        "source_reference": "R_I2C_SDA_3V3",
+        "owner": "BOM-24",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R19"
+        ],
+        "source_reference": "R_ISO_GATE",
+        "owner": "BOM-D1-PWR-R_ISO_GATE",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R2"
+        ],
+        "source_reference": "R_BB_FB2",
+        "owner": "BOM-24",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R20"
+        ],
+        "source_reference": "R_ISO_PD",
+        "owner": "BOM-D1-PWR-R_ISO_PD",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R21"
+        ],
+        "source_reference": "R_LIMIT",
+        "owner": "BOM-24",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R22"
+        ],
+        "source_reference": "R_LS1_A4",
+        "owner": "BOM-24",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R23"
+        ],
+        "source_reference": "R_LS1_B4",
+        "owner": "BOM-24",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R24"
+        ],
+        "source_reference": "R_LS3_EN",
+        "owner": "BOM-24",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R25"
+        ],
+        "source_reference": "R_LS3_VREF_BLEED",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R26"
+        ],
+        "source_reference": "R_LS4_EN",
+        "owner": "BOM-49",
+        "selection_status": "DESIGN_CALC_THIS_REV"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R27"
+        ],
+        "source_reference": "R_PRIV_PU",
+        "owner": "BOM-24",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R28"
+        ],
+        "source_reference": "R_PRIV_RC",
+        "owner": "BOM-D1-PRIV-R_PRIV_RC",
+        "selection_status": "EXPLICIT_VALUE_D1; MPN/bias/layout qualification OPEN; mass estimate"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R29"
+        ],
+        "source_reference": "R_SCCB_SCL",
+        "owner": "BOM-49",
+        "selection_status": "DESIGN_CALC_THIS_REV"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R3"
+        ],
+        "source_reference": "R_CAM_DOVDD_BLEED",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R30"
+        ],
+        "source_reference": "R_SCCB_SDA",
+        "owner": "BOM-49",
+        "selection_status": "DESIGN_CALC_THIS_REV"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R31"
+        ],
+        "source_reference": "R_SENSE",
+        "owner": "BOM-24",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R32"
+        ],
+        "source_reference": "R_VSET_1V8",
+        "owner": "BOM-24",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R33"
+        ],
+        "source_reference": "R_WIN_BOT",
+        "owner": "BOM-D1-PRIV-R_WIN_BOT",
+        "selection_status": "EXPLICIT_VALUE_D1; MPN/bias/layout qualification OPEN; mass estimate"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R34"
+        ],
+        "source_reference": "R_WIN_MID",
+        "owner": "BOM-D1-PRIV-R_WIN_MID",
+        "selection_status": "EXPLICIT_VALUE_D1; MPN/bias/layout qualification OPEN; mass estimate"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R35"
+        ],
+        "source_reference": "R_WIN_TOP",
+        "owner": "BOM-D1-PRIV-R_WIN_TOP",
+        "selection_status": "EXPLICIT_VALUE_D1; MPN/bias/layout qualification OPEN; mass estimate"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R36"
+        ],
+        "source_reference": "R_XREQ",
+        "owner": "BOM-49",
+        "selection_status": "DESIGN_CALC_THIS_REV"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R37"
+        ],
+        "source_reference": "R_XREQ_BLEED",
+        "owner": "BOM-49",
+        "selection_status": "DESIGN_CALC_THIS_REV"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R4"
+        ],
+        "source_reference": "R_CAM_DOVDD_OK_PD",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R5"
+        ],
+        "source_reference": "R_CAMPWDN",
+        "owner": "BOM-49",
+        "selection_status": "DESIGN_CALC_THIS_REV"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R6"
+        ],
+        "source_reference": "R_CAMRST",
+        "owner": "BOM-49",
+        "selection_status": "DESIGN_CALC_THIS_REV"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R7"
+        ],
+        "source_reference": "R_CHIP_PU",
+        "owner": "BOM-24",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R8"
+        ],
+        "source_reference": "R_CRST_A_PD",
+        "owner": "BOM-24",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R9"
+        ],
+        "source_reference": "R_DIR1_PU",
+        "owner": "BOM-24",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "U12"
+        ],
+        "source_reference": "U12_ESD_USB",
+        "owner": "BOM-51",
+        "selection_status": "BLOCKED — logical TVS position only; exact topology, ground return and MPN open"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C1"
+        ],
+        "source_reference": "C_AVDD_LS_A",
+        "owner": "BOM-D11-C_AVDD_LS_A",
+        "selection_status": "SOURCE_CHECKED_CANDIDATE; full PVT/transient/layout/physical qualification BLOCKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C10"
+        ],
+        "source_reference": "C_AVDD_U_AVDD_SYS_CLAMP_V",
+        "owner": "BOM-D11-C_AVDD_U_AVDD_SYS_CLAMP_V",
+        "selection_status": "SOURCE_CHECKED_CANDIDATE; full PVT/transient/layout/physical qualification BLOCKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C11"
+        ],
+        "source_reference": "C_AVDD_U_AVDD_SYS_PG_V",
+        "owner": "BOM-D11-C_AVDD_U_AVDD_SYS_PG_V",
+        "selection_status": "SOURCE_CHECKED_CANDIDATE; full PVT/transient/layout/physical qualification BLOCKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C12"
+        ],
+        "source_reference": "C_AVDD_U_AVDD_WD_V",
+        "owner": "BOM-D11-C_AVDD_U_AVDD_WD_V",
+        "selection_status": "SOURCE_CHECKED_CANDIDATE; full PVT/transient/layout/physical qualification BLOCKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C13"
+        ],
+        "source_reference": "C_FPGA_CORE_BULK",
+        "owner": "BOM-CAD-05",
+        "selection_status": "UNVERIFIED — value/connection reviewed; exact MPN, DC bias and fit open"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C14"
+        ],
+        "source_reference": "C_FPGA_CORE_HF",
+        "owner": "BOM-CAD-06",
+        "selection_status": "UNVERIFIED — value/connection reviewed; exact MPN, DC bias and fit open"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C15"
+        ],
+        "source_reference": "C_FPGA_IO_BULK",
+        "owner": "BOM-CAD-07",
+        "selection_status": "UNVERIFIED — value/connection reviewed; exact MPN, DC bias and fit open"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C16"
+        ],
+        "source_reference": "C_FPGA_IO_HF0",
+        "owner": "BOM-CAD-08",
+        "selection_status": "UNVERIFIED — value/connection reviewed; exact MPN, DC bias and fit open"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C17"
+        ],
+        "source_reference": "C_FPGA_IO_HF1",
+        "owner": "BOM-CAD-09",
+        "selection_status": "UNVERIFIED — value/connection reviewed; exact MPN, DC bias and fit open"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C18"
+        ],
+        "source_reference": "C_FPGA_IO_HF2",
+        "owner": "BOM-CAD-10",
+        "selection_status": "UNVERIFIED — value/connection reviewed; exact MPN, DC bias and fit open"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C19"
+        ],
+        "source_reference": "C_FPGA_OSC_HF",
+        "owner": "BOM-CAD-11",
+        "selection_status": "UNVERIFIED — value/connection reviewed; exact MPN, DC bias and fit open"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C2"
+        ],
+        "source_reference": "C_AVDD_QUAL",
+        "owner": "BOM-D11-C_AVDD_QUAL",
+        "selection_status": "SOURCE_CHECKED_CANDIDATE; full PVT/transient/layout/physical qualification BLOCKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C20"
+        ],
+        "source_reference": "C_FPGA_PLL_BULK",
+        "owner": "BOM-CAD-01",
+        "selection_status": "UNVERIFIED — value/connection reviewed; exact MPN, DC bias and fit open"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C21"
+        ],
+        "source_reference": "C_FPGA_PLL_HF",
+        "owner": "BOM-CAD-02",
+        "selection_status": "UNVERIFIED — value/connection reviewed; exact MPN, DC bias and fit open"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C22"
+        ],
+        "source_reference": "C_FPGA_VPP_BULK",
+        "owner": "BOM-CAD-03",
+        "selection_status": "UNVERIFIED — value/connection reviewed; exact MPN, DC bias and fit open"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C23"
+        ],
+        "source_reference": "C_FPGA_VPP_HF",
+        "owner": "BOM-CAD-04",
+        "selection_status": "UNVERIFIED — value/connection reviewed; exact MPN, DC bias and fit open"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C24"
+        ],
+        "source_reference": "C_IMU_VDD1",
+        "owner": "BOM-SOC-02",
+        "selection_status": "SOURCE_VERIFIED_D1; physical layout/MPN qualification open"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C25"
+        ],
+        "source_reference": "C_IMU_VDD2",
+        "owner": "BOM-SOC-02",
+        "selection_status": "SOURCE_VERIFIED_D1; physical layout/MPN qualification open"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C26"
+        ],
+        "source_reference": "C_IMU_VDDIO",
+        "owner": "BOM-SOC-02",
+        "selection_status": "SOURCE_VERIFIED_D1; physical layout/MPN qualification open"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C27"
+        ],
+        "source_reference": "C_LDO_1V2F_IN",
+        "owner": "BOM-D1-PWR-C_LDO_1V2F_IN",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C28"
+        ],
+        "source_reference": "C_LDO_1V2F_OUT",
+        "owner": "BOM-D1-PWR-C_LDO_1V2F_OUT",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C29"
+        ],
+        "source_reference": "C_LDO_1V8F_IN",
+        "owner": "BOM-D1-PWR-C_LDO_1V8F_IN",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C3"
+        ],
+        "source_reference": "C_AVDD_REQ_FILTER",
+        "owner": "BOM-D11-C_AVDD_REQ_FILTER",
+        "selection_status": "SOURCE_CHECKED_CANDIDATE; full PVT/transient/layout/physical qualification BLOCKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C30"
+        ],
+        "source_reference": "C_LDO_1V8F_OUT",
+        "owner": "BOM-D1-PWR-C_LDO_1V8F_OUT",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C31"
+        ],
+        "source_reference": "C_LDO_OPT_IN",
+        "owner": "BOM-D1-PWR-C_LDO_OPT_IN",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C32"
+        ],
+        "source_reference": "C_LDO_OPT_OUT",
+        "owner": "BOM-D1-PWR-C_LDO_OPT_OUT",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C33"
+        ],
+        "source_reference": "C_MK2_C",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C4"
+        ],
+        "source_reference": "C_AVDD_U_AVDD_CLEAR_OD_V",
+        "owner": "BOM-D11-C_AVDD_U_AVDD_CLEAR_OD_V",
+        "selection_status": "SOURCE_CHECKED_CANDIDATE; full PVT/transient/layout/physical qualification BLOCKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C5"
+        ],
+        "source_reference": "C_AVDD_U_AVDD_EN_OD_V",
+        "owner": "BOM-D11-C_AVDD_U_AVDD_EN_OD_V",
+        "selection_status": "SOURCE_CHECKED_CANDIDATE; full PVT/transient/layout/physical qualification BLOCKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C6"
+        ],
+        "source_reference": "C_AVDD_U_AVDD_IO_PG_V",
+        "owner": "BOM-D11-C_AVDD_U_AVDD_IO_PG_V",
+        "selection_status": "SOURCE_CHECKED_CANDIDATE; full PVT/transient/layout/physical qualification BLOCKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C7"
+        ],
+        "source_reference": "C_AVDD_U_AVDD_LS_V",
+        "owner": "BOM-D11-C_AVDD_U_AVDD_LS_V",
+        "selection_status": "SOURCE_CHECKED_CANDIDATE; full PVT/transient/layout/physical qualification BLOCKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C8"
+        ],
+        "source_reference": "C_AVDD_U_AVDD_QUAL_V",
+        "owner": "BOM-D11-C_AVDD_U_AVDD_QUAL_V",
+        "selection_status": "SOURCE_CHECKED_CANDIDATE; full PVT/transient/layout/physical qualification BLOCKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C9"
+        ],
+        "source_reference": "C_AVDD_U_AVDD_SCHMITT_V",
+        "owner": "BOM-D11-C_AVDD_U_AVDD_SCHMITT_V",
+        "selection_status": "SOURCE_CHECKED_CANDIDATE; full PVT/transient/layout/physical qualification BLOCKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "D3"
+        ],
+        "source_reference": "D3_PRIV",
+        "owner": "BOM-25",
+        "selection_status": "BLOCKED — lower-Vf candidate; guarantee current window and visible indication in mounted assembly"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "J1"
+        ],
+        "source_reference": "J_BRIDGE_IN",
+        "owner": "BOM-31",
+        "selection_status": "BLOCKED — source dimensions corrected; placement and mated/FPC envelope open"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "J2"
+        ],
+        "source_reference": "J_DISP_L",
+        "owner": "BOM-26",
+        "selection_status": "BLOCKED — DNP by default; placement, mated envelope and JBD FPC assignment open"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "J3"
+        ],
+        "source_reference": "J_DISP_R",
+        "owner": "BOM-29",
+        "selection_status": "BLOCKED — DNP by default; placement, mated envelope and JBD FPC assignment open"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R1"
+        ],
+        "source_reference": "R_AVDD_CRST_PD",
+        "owner": "BOM-D11-R_AVDD_CRST_PD",
+        "selection_status": "SOURCE_CHECKED_CANDIDATE; full PVT/transient/layout/physical qualification BLOCKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R10"
+        ],
+        "source_reference": "R_AVDD_WD_SET",
+        "owner": "BOM-D11-R_AVDD_WD_SET",
+        "selection_status": "SOURCE_CHECKED_CANDIDATE; full PVT/transient/layout/physical qualification BLOCKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R11"
+        ],
+        "source_reference": "R_CDONE_PU",
+        "owner": "BOM-33",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R12"
+        ],
+        "source_reference": "R_CRST_PD",
+        "owner": "BOM-33",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R13"
+        ],
+        "source_reference": "R_DAMP_CS_L",
+        "owner": "BOM-33",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R14"
+        ],
+        "source_reference": "R_DAMP_CS_R",
+        "owner": "BOM-33",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R15"
+        ],
+        "source_reference": "R_DAMP_LD0",
+        "owner": "BOM-33",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R16"
+        ],
+        "source_reference": "R_DAMP_LD1",
+        "owner": "BOM-33",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R17"
+        ],
+        "source_reference": "R_DAMP_LD2",
+        "owner": "BOM-33",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R18"
+        ],
+        "source_reference": "R_DAMP_LD3",
+        "owner": "BOM-33",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R19"
+        ],
+        "source_reference": "R_DAMP_RD0",
+        "owner": "BOM-33",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R2"
+        ],
+        "source_reference": "R_AVDD_D3_PD",
+        "owner": "BOM-D11-R_AVDD_D3_PD",
+        "selection_status": "SOURCE_CHECKED_CANDIDATE; full PVT/transient/layout/physical qualification BLOCKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R20"
+        ],
+        "source_reference": "R_DAMP_RD1",
+        "owner": "BOM-33",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R21"
+        ],
+        "source_reference": "R_DAMP_RD2",
+        "owner": "BOM-33",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R22"
+        ],
+        "source_reference": "R_DAMP_RD3",
+        "owner": "BOM-33",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R23"
+        ],
+        "source_reference": "R_DAMP_SCK_L",
+        "owner": "BOM-33",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R24"
+        ],
+        "source_reference": "R_DAMP_SCK_R",
+        "owner": "BOM-33",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R25"
+        ],
+        "source_reference": "R_OPTCS_PU_L",
+        "owner": "BOM-33",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R26"
+        ],
+        "source_reference": "R_OPTCS_PU_R",
+        "owner": "BOM-33",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R27"
+        ],
+        "source_reference": "R_PLL",
+        "owner": "BOM-33",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R28"
+        ],
+        "source_reference": "R_SS_PD",
+        "owner": "BOM-33",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R29"
+        ],
+        "source_reference": "R_VPP",
+        "owner": "BOM-33",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R3"
+        ],
+        "source_reference": "R_AVDD_EN_FEED",
+        "owner": "BOM-D11-R_AVDD_EN_FEED",
+        "selection_status": "SOURCE_CHECKED_CANDIDATE; full PVT/transient/layout/physical qualification BLOCKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R4"
+        ],
+        "source_reference": "R_AVDD_EN_PD",
+        "owner": "BOM-D11-R_AVDD_EN_PD",
+        "selection_status": "SOURCE_CHECKED_CANDIDATE; full PVT/transient/layout/physical qualification BLOCKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R5"
+        ],
+        "source_reference": "R_AVDD_PG_PU",
+        "owner": "BOM-D11-R_AVDD_PG_PU",
+        "selection_status": "SOURCE_CHECKED_CANDIDATE; full PVT/transient/layout/physical qualification BLOCKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R6"
+        ],
+        "source_reference": "R_AVDD_QUAL_PU",
+        "owner": "BOM-D11-R_AVDD_QUAL_PU",
+        "selection_status": "SOURCE_CHECKED_CANDIDATE; full PVT/transient/layout/physical qualification BLOCKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R7"
+        ],
+        "source_reference": "R_AVDD_REQ_FILTER",
+        "owner": "BOM-D11-R_AVDD_REQ_FILTER",
+        "selection_status": "SOURCE_CHECKED_CANDIDATE; full PVT/transient/layout/physical qualification BLOCKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R8"
+        ],
+        "source_reference": "R_AVDD_WD_DIV_H",
+        "owner": "BOM-D11-R_AVDD_WD_DIV_H",
+        "selection_status": "SOURCE_CHECKED_CANDIDATE; full PVT/transient/layout/physical qualification BLOCKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R9"
+        ],
+        "source_reference": "R_AVDD_WD_DIV_L",
+        "owner": "BOM-D11-R_AVDD_WD_DIV_L",
+        "selection_status": "SOURCE_CHECKED_CANDIDATE; full PVT/transient/layout/physical qualification BLOCKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "U1"
+        ],
+        "source_reference": "U4_1V8F",
+        "owner": "BOM-46",
+        "selection_status": "BLOCKED — FPGA rail-order guarantee and hardware qualification required"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "U6"
+        ],
+        "source_reference": "U6_OPT_AVDD",
+        "owner": "BOM-45",
+        "selection_status": "BLOCKED — DNP by default; BLK-JBD-04, no regulator voltage assigned"
+      }
+    ],
+    "stray_catalog_fields": [],
+    "pcb_features_without_order_codes": [
+      [
+        "M-AUD-R",
+        "TP1"
+      ],
+      [
+        "M-AUD-R",
+        "TP2"
+      ],
+      [
+        "M-AUD-R",
+        "TP3"
+      ],
+      [
+        "M-AUD-R",
+        "TP4"
+      ],
+      [
+        "M-AUD-R",
+        "TP5"
+      ],
+      [
+        "M-AUD-R",
+        "TP6"
+      ],
+      [
+        "M-MAIN-L",
+        "TP1"
+      ],
+      [
+        "M-MAIN-L",
+        "TP2"
+      ],
+      [
+        "M-MAIN-L",
+        "TP3"
+      ],
+      [
+        "M-MAIN-L",
+        "TP4"
+      ],
+      [
+        "M-MAIN-L",
+        "TP5"
+      ],
+      [
+        "M-MAIN-L",
+        "TP6"
+      ],
+      [
+        "M-MAIN-L",
+        "TP7"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "TP1"
+      ]
+    ],
+    "missing_native_footprint_uuid": [
+      [
+        "M-AUD-R",
+        "C1"
+      ],
+      [
+        "M-AUD-R",
+        "C2"
+      ],
+      [
+        "M-AUD-R",
+        "C3"
+      ],
+      [
+        "M-AUD-R",
+        "C4"
+      ],
+      [
+        "M-AUD-R",
+        "C5"
+      ],
+      [
+        "M-AUD-R",
+        "C6"
+      ],
+      [
+        "M-AUD-R",
+        "L1"
+      ],
+      [
+        "M-AUD-R",
+        "L2"
+      ],
+      [
+        "M-AUD-R",
+        "L3"
+      ],
+      [
+        "M-AUD-R",
+        "L4"
+      ],
+      [
+        "M-AUD-R",
+        "Q1"
+      ],
+      [
+        "M-AUD-R",
+        "R7"
+      ],
+      [
+        "M-AUD-R",
+        "R8"
+      ],
+      [
+        "M-AUD-R",
+        "U3"
+      ],
+      [
+        "M-MAIN-L",
+        "C1"
+      ],
+      [
+        "M-MAIN-L",
+        "C15"
+      ],
+      [
+        "M-MAIN-L",
+        "C16"
+      ],
+      [
+        "M-MAIN-L",
+        "C17"
+      ],
+      [
+        "M-MAIN-L",
+        "C18"
+      ],
+      [
+        "M-MAIN-L",
+        "C19"
+      ],
+      [
+        "M-MAIN-L",
+        "C2"
+      ],
+      [
+        "M-MAIN-L",
+        "C20"
+      ],
+      [
+        "M-MAIN-L",
+        "C21"
+      ],
+      [
+        "M-MAIN-L",
+        "C22"
+      ],
+      [
+        "M-MAIN-L",
+        "C23"
+      ],
+      [
+        "M-MAIN-L",
+        "C24"
+      ],
+      [
+        "M-MAIN-L",
+        "C25"
+      ],
+      [
+        "M-MAIN-L",
+        "C26"
+      ],
+      [
+        "M-MAIN-L",
+        "C27"
+      ],
+      [
+        "M-MAIN-L",
+        "C28"
+      ],
+      [
+        "M-MAIN-L",
+        "C29"
+      ],
+      [
+        "M-MAIN-L",
+        "C3"
+      ],
+      [
+        "M-MAIN-L",
+        "C30"
+      ],
+      [
+        "M-MAIN-L",
+        "C31"
+      ],
+      [
+        "M-MAIN-L",
+        "C32"
+      ],
+      [
+        "M-MAIN-L",
+        "C33"
+      ],
+      [
+        "M-MAIN-L",
+        "C34"
+      ],
+      [
+        "M-MAIN-L",
+        "C35"
+      ],
+      [
+        "M-MAIN-L",
+        "C36"
+      ],
+      [
+        "M-MAIN-L",
+        "C37"
+      ],
+      [
+        "M-MAIN-L",
+        "C38"
+      ],
+      [
+        "M-MAIN-L",
+        "C39"
+      ],
+      [
+        "M-MAIN-L",
+        "C4"
+      ],
+      [
+        "M-MAIN-L",
+        "C40"
+      ],
+      [
+        "M-MAIN-L",
+        "C41"
+      ],
+      [
+        "M-MAIN-L",
+        "C5"
+      ],
+      [
+        "M-MAIN-L",
+        "C7"
+      ],
+      [
+        "M-MAIN-L",
+        "C8"
+      ],
+      [
+        "M-MAIN-L",
+        "C9"
+      ],
+      [
+        "M-MAIN-L",
+        "L2"
+      ],
+      [
+        "M-MAIN-L",
+        "Q1"
+      ],
+      [
+        "M-MAIN-L",
+        "R19"
+      ],
+      [
+        "M-MAIN-L",
+        "R20"
+      ],
+      [
+        "M-MAIN-L",
+        "R28"
+      ],
+      [
+        "M-MAIN-L",
+        "R33"
+      ],
+      [
+        "M-MAIN-L",
+        "R34"
+      ],
+      [
+        "M-MAIN-L",
+        "R35"
+      ],
+      [
+        "M-MAIN-L",
+        "U11"
+      ],
+      [
+        "M-MAIN-L",
+        "U13"
+      ],
+      [
+        "M-MAIN-L",
+        "U14"
+      ],
+      [
+        "M-MAIN-L",
+        "U17"
+      ],
+      [
+        "M-MAIN-L",
+        "U19"
+      ],
+      [
+        "M-MAIN-L",
+        "U20"
+      ],
+      [
+        "M-MAIN-L",
+        "U5"
+      ],
+      [
+        "M-MAIN-L",
+        "U6"
+      ],
+      [
+        "M-MAIN-L",
+        "U7"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C10"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C11"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C12"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C13"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C14"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C15"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C16"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C17"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C18"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C19"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C20"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C21"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C22"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C23"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C27"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C28"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C29"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C3"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C30"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C31"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C33"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C4"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C5"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C6"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C7"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C8"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C9"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R10"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R3"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R4"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R5"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R6"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R7"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R8"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R9"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U10"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U11"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U12"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U13"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U14"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U4"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U7"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U8"
+      ]
+    ],
+    "legacy_literal_coverage": {
+      "present": 40,
+      "expected": 233,
+      "scope": "Field-text replication includes generic values and cluster descriptions."
+    }
+  },
+  "board_native_bom": {
+    "M-MAIN-L": {
+      "status": "BLOCKED",
+      "reason": "No raw native board BOM export and receipt pair."
+    },
+    "M-OPT-BRIDGE": {
+      "status": "BLOCKED",
+      "reason": "No raw native board BOM export and receipt pair."
+    },
+    "M-AUD-R": {
+      "status": "BLOCKED",
+      "reason": "No raw native board BOM export and receipt pair."
+    }
+  },
+  "page_bom_export_coverage": {
+    "status": "BLOCKED",
+    "missing": [
+      "bom/30968987fbc1647d.csv",
+      "bom/8fa31840ba825b92.csv",
+      "bom/bbbca101b360e299.csv",
+      "bom/9e364700c984f124.csv",
+      "bom/07dc7dde94c1bf76.csv",
+      "bom/e98944c2045546cf.csv",
+      "bom/2ef9ed7773e0c42f.csv",
+      "bom/3fdc6001a068d82e.csv",
+      "bom/e99e682aca69cae1.csv",
+      "bom/35d0bca337813128.csv",
+      "bom/3e7683d1ed324ce9.csv",
+      "bom/89cd87358a17e3c2.csv",
+      "bom/2d94cb183ed4ccdc.csv",
+      "bom/4d38590959875927.csv",
+      "bom/a7f2cc2b0cf16956.csv",
+      "bom/ed9e9866a1b746ac.csv"
+    ],
+    "scope": "Availability and parse of native BOM CSV. Separate from the exact identity and procurement checks."
+  },
+  "source_footprint_blockers": [
+    [
+      "M-AUD-R",
+      "ANT2"
+    ],
+    [
+      "M-AUD-R",
+      "C10"
+    ],
+    [
+      "M-AUD-R",
+      "C11"
+    ],
+    [
+      "M-AUD-R",
+      "C12"
+    ],
+    [
+      "M-AUD-R",
+      "C13"
+    ],
+    [
+      "M-AUD-R",
+      "C14"
+    ],
+    [
+      "M-AUD-R",
+      "C15"
+    ],
+    [
+      "M-AUD-R",
+      "C16"
+    ],
+    [
+      "M-AUD-R",
+      "C17"
+    ],
+    [
+      "M-AUD-R",
+      "C18"
+    ],
+    [
+      "M-AUD-R",
+      "C19"
+    ],
+    [
+      "M-AUD-R",
+      "C20"
+    ],
+    [
+      "M-AUD-R",
+      "C21"
+    ],
+    [
+      "M-AUD-R",
+      "C7"
+    ],
+    [
+      "M-AUD-R",
+      "C8"
+    ],
+    [
+      "M-AUD-R",
+      "C9"
+    ],
+    [
+      "M-AUD-R",
+      "J1"
+    ],
+    [
+      "M-AUD-R",
+      "MK3"
+    ],
+    [
+      "M-AUD-R",
+      "R1"
+    ],
+    [
+      "M-AUD-R",
+      "R10"
+    ],
+    [
+      "M-AUD-R",
+      "R2"
+    ],
+    [
+      "M-AUD-R",
+      "R3"
+    ],
+    [
+      "M-AUD-R",
+      "R4"
+    ],
+    [
+      "M-AUD-R",
+      "R5"
+    ],
+    [
+      "M-AUD-R",
+      "R6"
+    ],
+    [
+      "M-AUD-R",
+      "R9"
+    ],
+    [
+      "M-AUD-R",
+      "TP1"
+    ],
+    [
+      "M-AUD-R",
+      "TP2"
+    ],
+    [
+      "M-AUD-R",
+      "TP3"
+    ],
+    [
+      "M-AUD-R",
+      "TP4"
+    ],
+    [
+      "M-AUD-R",
+      "TP5"
+    ],
+    [
+      "M-AUD-R",
+      "TP6"
+    ],
+    [
+      "M-AUD-R",
+      "U1"
+    ],
+    [
+      "M-AUD-R",
+      "U10"
+    ],
+    [
+      "M-AUD-R",
+      "U11"
+    ],
+    [
+      "M-AUD-R",
+      "Y2"
+    ],
+    [
+      "M-MAIN-L",
+      "ANT1"
+    ],
+    [
+      "M-MAIN-L",
+      "C10"
+    ],
+    [
+      "M-MAIN-L",
+      "C11"
+    ],
+    [
+      "M-MAIN-L",
+      "C12"
+    ],
+    [
+      "M-MAIN-L",
+      "C13"
+    ],
+    [
+      "M-MAIN-L",
+      "C14"
+    ],
+    [
+      "M-MAIN-L",
+      "C42"
+    ],
+    [
+      "M-MAIN-L",
+      "C6"
+    ],
+    [
+      "M-MAIN-L",
+      "D1"
+    ],
+    [
+      "M-MAIN-L",
+      "J1"
+    ],
+    [
+      "M-MAIN-L",
+      "J2"
+    ],
+    [
+      "M-MAIN-L",
+      "J3"
+    ],
+    [
+      "M-MAIN-L",
+      "L1"
+    ],
+    [
+      "M-MAIN-L",
+      "MK1"
+    ],
+    [
+      "M-MAIN-L",
+      "R1"
+    ],
+    [
+      "M-MAIN-L",
+      "R10"
+    ],
+    [
+      "M-MAIN-L",
+      "R11"
+    ],
+    [
+      "M-MAIN-L",
+      "R12"
+    ],
+    [
+      "M-MAIN-L",
+      "R13"
+    ],
+    [
+      "M-MAIN-L",
+      "R14"
+    ],
+    [
+      "M-MAIN-L",
+      "R15"
+    ],
+    [
+      "M-MAIN-L",
+      "R16"
+    ],
+    [
+      "M-MAIN-L",
+      "R17"
+    ],
+    [
+      "M-MAIN-L",
+      "R18"
+    ],
+    [
+      "M-MAIN-L",
+      "R2"
+    ],
+    [
+      "M-MAIN-L",
+      "R21"
+    ],
+    [
+      "M-MAIN-L",
+      "R22"
+    ],
+    [
+      "M-MAIN-L",
+      "R23"
+    ],
+    [
+      "M-MAIN-L",
+      "R24"
+    ],
+    [
+      "M-MAIN-L",
+      "R25"
+    ],
+    [
+      "M-MAIN-L",
+      "R26"
+    ],
+    [
+      "M-MAIN-L",
+      "R27"
+    ],
+    [
+      "M-MAIN-L",
+      "R29"
+    ],
+    [
+      "M-MAIN-L",
+      "R3"
+    ],
+    [
+      "M-MAIN-L",
+      "R30"
+    ],
+    [
+      "M-MAIN-L",
+      "R31"
+    ],
+    [
+      "M-MAIN-L",
+      "R32"
+    ],
+    [
+      "M-MAIN-L",
+      "R36"
+    ],
+    [
+      "M-MAIN-L",
+      "R37"
+    ],
+    [
+      "M-MAIN-L",
+      "R4"
+    ],
+    [
+      "M-MAIN-L",
+      "R5"
+    ],
+    [
+      "M-MAIN-L",
+      "R6"
+    ],
+    [
+      "M-MAIN-L",
+      "R7"
+    ],
+    [
+      "M-MAIN-L",
+      "R8"
+    ],
+    [
+      "M-MAIN-L",
+      "R9"
+    ],
+    [
+      "M-MAIN-L",
+      "TP1"
+    ],
+    [
+      "M-MAIN-L",
+      "TP2"
+    ],
+    [
+      "M-MAIN-L",
+      "TP3"
+    ],
+    [
+      "M-MAIN-L",
+      "TP4"
+    ],
+    [
+      "M-MAIN-L",
+      "TP5"
+    ],
+    [
+      "M-MAIN-L",
+      "TP6"
+    ],
+    [
+      "M-MAIN-L",
+      "TP7"
+    ],
+    [
+      "M-MAIN-L",
+      "U1"
+    ],
+    [
+      "M-MAIN-L",
+      "U10"
+    ],
+    [
+      "M-MAIN-L",
+      "U12"
+    ],
+    [
+      "M-MAIN-L",
+      "U15"
+    ],
+    [
+      "M-MAIN-L",
+      "U16"
+    ],
+    [
+      "M-MAIN-L",
+      "U18"
+    ],
+    [
+      "M-MAIN-L",
+      "U2"
+    ],
+    [
+      "M-MAIN-L",
+      "U21"
+    ],
+    [
+      "M-MAIN-L",
+      "U3"
+    ],
+    [
+      "M-MAIN-L",
+      "U4"
+    ],
+    [
+      "M-MAIN-L",
+      "U8"
+    ],
+    [
+      "M-MAIN-L",
+      "U9"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "C24"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "C25"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "C26"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "C32"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "D3"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "J1"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "J2"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "J3"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "MK2"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "R11"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "R12"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "R13"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "R14"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "R15"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "R16"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "R17"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "R18"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "R19"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "R20"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "R21"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "R22"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "R23"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "R24"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "R25"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "R26"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "R27"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "R28"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "R29"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "TP1"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "U2"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "U3"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "U5"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "U6"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "U9"
+    ]
+  ],
+  "strict_erc": {
+    "status": "FAIL",
+    "reported_calls": 17,
+    "failed_calls": 17,
+    "missing_or_unusable_reports": [
+      "2abf127033234e68",
+      "35df718b650fe548",
+      "b1ec1f299f13f9eb",
+      "d643a0611d67a31a"
+    ],
+    "reported_findings_by_rule": {
+      "FLAGTONET": 57,
+      "MISSFOOTPRINT": 1502,
+      "ONLYSYMBOL": 104,
+      "PORTTONET": 57
+    },
+    "count_scope": "Per-call findings may overlap between root and child checks.",
+    "reports": {
+      "07dc7dde94c1bf76": {
+        "passed": false,
+        "reported": {
+          "fatal": 57,
+          "error": 0,
+          "warn": 6,
+          "info": 0,
+          "unknown": 0,
+          "total": 63
+        },
+        "sha256": "0f1b21af4ddf9c154159d4da079f1329c6675a8e06f0665d6e082284ab374d66"
+      },
+      "2d94cb183ed4ccdc": {
+        "passed": false,
+        "reported": {
+          "fatal": 125,
+          "error": 0,
+          "warn": 6,
+          "info": 0,
+          "unknown": 0,
+          "total": 131
+        },
+        "sha256": "3984dcdc028f193cf2b2fb1504a5ee1a51d093bdf4f943b54c004d5b7c80e8cf"
+      },
+      "2ef9ed7773e0c42f": {
+        "passed": false,
+        "reported": {
+          "fatal": 125,
+          "error": 0,
+          "warn": 6,
+          "info": 0,
+          "unknown": 0,
+          "total": 131
+        },
+        "sha256": "a794133aeaca361ce729adf79a59cb207ed273b277a8b8ecc55a94f7750259ec"
+      },
+      "30968987fbc1647d": {
+        "passed": false,
+        "reported": {
+          "fatal": 57,
+          "error": 0,
+          "warn": 6,
+          "info": 0,
+          "unknown": 0,
+          "total": 63
+        },
+        "sha256": "c4b2119768741161e29cecb7e4ad2bb1bd459e8edcd78cf372bf57026b2db29b"
+      },
+      "35d0bca337813128": {
+        "passed": false,
+        "reported": {
+          "fatal": 125,
+          "error": 0,
+          "warn": 6,
+          "info": 0,
+          "unknown": 0,
+          "total": 131
+        },
+        "sha256": "0b2bdf7c7b9bda792b421e4743f4be2ad09fe75fb4eeddb92e94e30984cd0e4e"
+      },
+      "3e7683d1ed324ce9": {
+        "passed": false,
+        "reported": {
+          "fatal": 125,
+          "error": 0,
+          "warn": 6,
+          "info": 0,
+          "unknown": 0,
+          "total": 131
+        },
+        "sha256": "2e45eaaf99778857f5ab02cffe677bb895f55d9490a530182ba5b413f05213f8"
+      },
+      "3fdc6001a068d82e": {
+        "passed": false,
+        "reported": {
+          "fatal": 125,
+          "error": 0,
+          "warn": 6,
+          "info": 0,
+          "unknown": 0,
+          "total": 131
+        },
+        "sha256": "7af9bc867543e1b65770a3cd874fa3df1ab105ce43954fafe2f1159e156dc0ea"
+      },
+      "4d38590959875927": {
+        "passed": false,
+        "reported": {
+          "fatal": 125,
+          "error": 0,
+          "warn": 6,
+          "info": 0,
+          "unknown": 0,
+          "total": 131
+        },
+        "sha256": "ead36bef9cfe1b4e309db4e5d84098e09749194e52ac58a4323fda6fbcb49757"
+      },
+      "89cd87358a17e3c2": {
+        "passed": false,
+        "reported": {
+          "fatal": 125,
+          "error": 0,
+          "warn": 6,
+          "info": 0,
+          "unknown": 0,
+          "total": 131
+        },
+        "sha256": "edeae61f3601210b2b504ce06d14c5a2bb0e9dad92499de7c8cd3194165a1ded"
+      },
+      "8fa31840ba825b92": {
+        "passed": false,
+        "reported": {
+          "fatal": 57,
+          "error": 0,
+          "warn": 6,
+          "info": 0,
+          "unknown": 0,
+          "total": 63
+        },
+        "sha256": "687a0c09ca5d401c00bec6b06fa870f70a717f13e6b730203ff55623067951e1"
+      },
+      "9e364700c984f124": {
+        "passed": false,
+        "reported": {
+          "fatal": 57,
+          "error": 0,
+          "warn": 6,
+          "info": 0,
+          "unknown": 0,
+          "total": 63
+        },
+        "sha256": "dbc94ce530c5a5f784f864f930602b82d60eac76a845e5711dc41b78f5832990"
+      },
+      "a7f2cc2b0cf16956": {
+        "passed": false,
+        "reported": {
+          "fatal": 88,
+          "error": 0,
+          "warn": 10,
+          "info": 0,
+          "unknown": 0,
+          "total": 98
+        },
+        "sha256": "d01f3be62f329db09bcf5b70d84e5ed46e2b4772d4853e74ed3065631fbc4aa3"
+      },
+      "bbbca101b360e299": {
+        "passed": false,
+        "reported": {
+          "fatal": 57,
+          "error": 0,
+          "warn": 6,
+          "info": 0,
+          "unknown": 0,
+          "total": 63
+        },
+        "sha256": "a51be2e454dcefbeacd29241cbdd7b310abe89a7cf6208a7652b8195d013e611"
+      },
+      "e00fbca5c08cc114": {
+        "passed": false,
+        "reported": {
+          "fatal": 88,
+          "error": 0,
+          "warn": 10,
+          "info": 0,
+          "unknown": 0,
+          "total": 98
+        },
+        "sha256": "33a8c87f9bd3ce14b430e73971ba5fc9b52fa4d4e3e2430d9e7effecf1012013"
+      },
+      "e98944c2045546cf": {
+        "passed": false,
+        "reported": {
+          "fatal": 57,
+          "error": 0,
+          "warn": 6,
+          "info": 0,
+          "unknown": 0,
+          "total": 63
+        },
+        "sha256": "92a4bbcce037a87e4c5a9261f6ecd3048e8a1e7290aee82b0d3bc81b5f9f5f1f"
+      },
+      "e99e682aca69cae1": {
+        "passed": false,
+        "reported": {
+          "fatal": 125,
+          "error": 0,
+          "warn": 6,
+          "info": 0,
+          "unknown": 0,
+          "total": 131
+        },
+        "sha256": "2d4e66afb5447905117d3c44bd83de9b5e476c0ebd5fc0d3b18b193ede33609a"
+      },
+      "ed9e9866a1b746ac": {
+        "passed": false,
+        "reported": {
+          "fatal": 88,
+          "error": 0,
+          "warn": 10,
+          "info": 0,
+          "unknown": 0,
+          "total": 98
+        },
+        "sha256": "6624253b7cf7c323f015b2ee0baa3d4b17f938ca0e4a0f88ba53dbfc0e6a612f"
+      }
+    }
+  },
+  "strict_erc_missing_raw_project_page_context": [
+    "07dc7dde94c1bf76",
+    "2d94cb183ed4ccdc",
+    "2ef9ed7773e0c42f",
+    "30968987fbc1647d",
+    "35d0bca337813128",
+    "3e7683d1ed324ce9",
+    "3fdc6001a068d82e",
+    "4d38590959875927",
+    "89cd87358a17e3c2",
+    "8fa31840ba825b92",
+    "9e364700c984f124",
+    "a7f2cc2b0cf16956",
+    "bbbca101b360e299",
+    "e00fbca5c08cc114",
+    "e98944c2045546cf",
+    "e99e682aca69cae1",
+    "ed9e9866a1b746ac"
+  ],
+  "persistence_and_archive": {
+    "status": "PASS",
+    "scope": "Host export after save/reload; source identity, catalog fields and donor geometry/rules retained.",
+    "project_id": "92f9eacd1a5a6bac5e406c46fb3afc76d474aa86ce9418d44d4075bc5d168496",
+    "persisted_sha256": "760cf179ecc0ea545f59ecbafb4466b11bf2677369d2d0eadffb2630ae342a0c",
+    "candidate_sha256": "8a6d35c0f5b54ed6fb6397dfc7dee84bd972ec6fd2ba772cf52967e4dc4b4c42",
+    "board_count": 3,
+    "page_count": 21,
+    "pcb_count": 3,
+    "archived_terminal_identifiers_verified": 1075,
+    "archived_explicit_nc_verified": 92,
+    "catalog_fields_verified": 52,
+    "non_catalog_fields_empty": 201,
+    "asadv_native_footprint_uuid": "f2382a3a65e883d1",
+    "manufacturing": "BLOCKED",
+    "live_page_capture": {
+      "status": "BLOCKED",
+      "error": "sch/b1ec1f299f13f9eb.json: exit 1; communication_failure=True. See raw capture.",
+      "manufacturing": "BLOCKED"
+    }
+  }
+}

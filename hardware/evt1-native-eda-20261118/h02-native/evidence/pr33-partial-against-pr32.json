@@ -1,0 +1,4916 @@
+{
+  "status": "FAIL",
+  "acceptance": "BLOCKED",
+  "scope": "Decoded official native manufacturing net-group membership, page labels and BOM diagnostics. PCB routing and manufacture retain their separate gate.",
+  "project_id": "1f475f192d4be7445a42ac79ebc824fcc4a803375837a9318c923e3aa35fe737",
+  "source_coherence": "PASS",
+  "controlled_sha256": {
+    "Inputs/effective_bom.csv": "82315c93c38ceb48f4bc57e89d8d814d33f382e2a79b2bf67307b197ca898d75",
+    "Inputs/effective_netlist.csv": "1bf6e08f7a07c56c7f3e2e711a2b84a613c27165dc326bfb31dc6be0bf58b1a0",
+    "Inputs/effective_pinmap.csv": "bcccbb2245a9411ef56b84bb0222fc15ae622c2f8f680a8db05e9c62c81dc219",
+    "kicad/CAD_TERMINALS.csv": "514c3ff1239173bf23966c53b339f6ff07f022ae6f78f58b52d94d1f1aff6f06",
+    "FOOTPRINT_MAP.csv": "f53e43492bd0c93e2e9c381a1d6ad028d9bda1a6e9fb5ea4daaaffe2fa9e290b"
+  },
+  "page_terminal_labels": {
+    "named_terminal_parity": "PASS",
+    "board_counts": {
+      "M-MAIN-L": {
+        "expected": 524,
+        "observed": 524
+      },
+      "M-OPT-BRIDGE": {
+        "expected": 315,
+        "observed": 315
+      },
+      "M-AUD-R": {
+        "expected": 236,
+        "observed": 236
+      }
+    },
+    "marker_files": 21,
+    "unverified_nc_markers": 0,
+    "expected_nc_markers": 92,
+    "missing_exports": [
+      "bom/d643a0611d67a31a.csv"
+    ],
+    "missing_terminals": [],
+    "unexpected_terminals": [],
+    "net_or_nc_mismatches": [],
+    "schematic_footprints": {
+      "status": "BLOCKED",
+      "missing": [
+        [
+          "M-AUD-R",
+          "C1"
+        ],
+        [
+          "M-AUD-R",
+          "C2"
+        ],
+        [
+          "M-AUD-R",
+          "C3"
+        ],
+        [
+          "M-AUD-R",
+          "C4"
+        ],
+        [
+          "M-AUD-R",
+          "C5"
+        ],
+        [
+          "M-AUD-R",
+          "C6"
+        ],
+        [
+          "M-AUD-R",
+          "L1"
+        ],
+        [
+          "M-AUD-R",
+          "L2"
+        ],
+        [
+          "M-AUD-R",
+          "L3"
+        ],
+        [
+          "M-AUD-R",
+          "L4"
+        ],
+        [
+          "M-AUD-R",
+          "Q1"
+        ],
+        [
+          "M-AUD-R",
+          "R7"
+        ],
+        [
+          "M-AUD-R",
+          "R8"
+        ],
+        [
+          "M-AUD-R",
+          "U3"
+        ],
+        [
+          "M-MAIN-L",
+          "C1"
+        ],
+        [
+          "M-MAIN-L",
+          "C15"
+        ],
+        [
+          "M-MAIN-L",
+          "C16"
+        ],
+        [
+          "M-MAIN-L",
+          "C17"
+        ],
+        [
+          "M-MAIN-L",
+          "C18"
+        ],
+        [
+          "M-MAIN-L",
+          "C19"
+        ],
+        [
+          "M-MAIN-L",
+          "C2"
+        ],
+        [
+          "M-MAIN-L",
+          "C20"
+        ],
+        [
+          "M-MAIN-L",
+          "C21"
+        ],
+        [
+          "M-MAIN-L",
+          "C22"
+        ],
+        [
+          "M-MAIN-L",
+          "C23"
+        ],
+        [
+          "M-MAIN-L",
+          "C24"
+        ],
+        [
+          "M-MAIN-L",
+          "C25"
+        ],
+        [
+          "M-MAIN-L",
+          "C26"
+        ],
+        [
+          "M-MAIN-L",
+          "C27"
+        ],
+        [
+          "M-MAIN-L",
+          "C28"
+        ],
+        [
+          "M-MAIN-L",
+          "C29"
+        ],
+        [
+          "M-MAIN-L",
+          "C3"
+        ],
+        [
+          "M-MAIN-L",
+          "C30"
+        ],
+        [
+          "M-MAIN-L",
+          "C31"
+        ],
+        [
+          "M-MAIN-L",
+          "C32"
+        ],
+        [
+          "M-MAIN-L",
+          "C33"
+        ],
+        [
+          "M-MAIN-L",
+          "C34"
+        ],
+        [
+          "M-MAIN-L",
+          "C35"
+        ],
+        [
+          "M-MAIN-L",
+          "C36"
+        ],
+        [
+          "M-MAIN-L",
+          "C37"
+        ],
+        [
+          "M-MAIN-L",
+          "C38"
+        ],
+        [
+          "M-MAIN-L",
+          "C39"
+        ],
+        [
+          "M-MAIN-L",
+          "C4"
+        ],
+        [
+          "M-MAIN-L",
+          "C40"
+        ],
+        [
+          "M-MAIN-L",
+          "C41"
+        ],
+        [
+          "M-MAIN-L",
+          "C5"
+        ],
+        [
+          "M-MAIN-L",
+          "C7"
+        ],
+        [
+          "M-MAIN-L",
+          "C8"
+        ],
+        [
+          "M-MAIN-L",
+          "C9"
+        ],
+        [
+          "M-MAIN-L",
+          "L2"
+        ],
+        [
+          "M-MAIN-L",
+          "Q1"
+        ],
+        [
+          "M-MAIN-L",
+          "R19"
+        ],
+        [
+          "M-MAIN-L",
+          "R20"
+        ],
+        [
+          "M-MAIN-L",
+          "R28"
+        ],
+        [
+          "M-MAIN-L",
+          "R33"
+        ],
+        [
+          "M-MAIN-L",
+          "R34"
+        ],
+        [
+          "M-MAIN-L",
+          "R35"
+        ],
+        [
+          "M-MAIN-L",
+          "U11"
+        ],
+        [
+          "M-MAIN-L",
+          "U13"
+        ],
+        [
+          "M-MAIN-L",
+          "U14"
+        ],
+        [
+          "M-MAIN-L",
+          "U17"
+        ],
+        [
+          "M-MAIN-L",
+          "U19"
+        ],
+        [
+          "M-MAIN-L",
+          "U20"
+        ],
+        [
+          "M-MAIN-L",
+          "U5"
+        ],
+        [
+          "M-MAIN-L",
+          "U6"
+        ],
+        [
+          "M-MAIN-L",
+          "U7"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C1"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C10"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C11"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C12"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C13"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C14"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C15"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C16"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C17"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C18"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C19"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C2"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C20"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C21"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C22"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C23"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C27"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C28"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C29"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C3"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C30"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C31"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C33"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C4"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C5"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C6"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C7"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C8"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "C9"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "R1"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "R10"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "R2"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "R3"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "R4"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "R5"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "R6"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "R7"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "R8"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "R9"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "U1"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "U10"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "U11"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "U12"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "U13"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "U14"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "U4"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "U7"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "U8"
+        ],
+        [
+          "M-OPT-BRIDGE",
+          "Y1"
+        ]
+      ],
+      "mismatches": []
+    },
+    "schematic_pcb_flags": {
+      "status": "PASS",
+      "missing_flags": [],
+      "mismatches": []
+    }
+  },
+  "board_document_registry": {
+    "status": "FAIL",
+    "boards": {
+      "M-MAIN-L": {
+        "status": "FAIL",
+        "schematic_scope": "FAIL",
+        "schematic_uuid": "c04afd3a85971cef",
+        "pcb_uuid": null,
+        "declared_pages": [
+          "2d94cb183ed4ccdc",
+          "2ef9ed7773e0c42f",
+          "35d0bca337813128",
+          "3e7683d1ed324ce9",
+          "3fdc6001a068d82e",
+          "4d38590959875927",
+          "89cd87358a17e3c2",
+          "e99e682aca69cae1"
+        ],
+        "native_parent_pages": [
+          "4d38590959875927"
+        ],
+        "pages_outside_bound_schematic": [
+          "2d94cb183ed4ccdc",
+          "2ef9ed7773e0c42f",
+          "35d0bca337813128",
+          "3e7683d1ed324ce9",
+          "3fdc6001a068d82e",
+          "89cd87358a17e3c2",
+          "e99e682aca69cae1"
+        ],
+        "undeclared_native_pages": []
+      },
+      "M-OPT-BRIDGE": {
+        "status": "FAIL",
+        "schematic_scope": "FAIL",
+        "schematic_uuid": "73f2bfaeffaf2767",
+        "pcb_uuid": null,
+        "declared_pages": [
+          "2abf127033234e68",
+          "35df718b650fe548",
+          "a7f2cc2b0cf16956",
+          "b1ec1f299f13f9eb",
+          "d643a0611d67a31a",
+          "e00fbca5c08cc114",
+          "ed9e9866a1b746ac"
+        ],
+        "native_parent_pages": [
+          "e00fbca5c08cc114"
+        ],
+        "pages_outside_bound_schematic": [
+          "2abf127033234e68",
+          "35df718b650fe548",
+          "a7f2cc2b0cf16956",
+          "b1ec1f299f13f9eb",
+          "d643a0611d67a31a",
+          "ed9e9866a1b746ac"
+        ],
+        "undeclared_native_pages": []
+      },
+      "M-AUD-R": {
+        "status": "FAIL",
+        "schematic_scope": "FAIL",
+        "schematic_uuid": "4e4521c87aee3006",
+        "pcb_uuid": null,
+        "declared_pages": [
+          "07dc7dde94c1bf76",
+          "30968987fbc1647d",
+          "8fa31840ba825b92",
+          "9e364700c984f124",
+          "bbbca101b360e299",
+          "e98944c2045546cf"
+        ],
+        "native_parent_pages": [
+          "e98944c2045546cf"
+        ],
+        "pages_outside_bound_schematic": [
+          "07dc7dde94c1bf76",
+          "30968987fbc1647d",
+          "8fa31840ba825b92",
+          "9e364700c984f124",
+          "bbbca101b360e299"
+        ],
+        "undeclared_native_pages": []
+      }
+    },
+    "extra_boards": [
+      "06-supply-origins-1_1"
+    ],
+    "undeclared_pages": [],
+    "shared_board_documents": [],
+    "pcb_document_inventory": {
+      "status": "BLOCKED",
+      "reason": "Independent native PCB-document registry missing."
+    }
+  },
+  "board_native_membership": {
+    "M-MAIN-L": {
+      "status": "BLOCKED",
+      "expected_net_groups": 110,
+      "expected_connected_board_pins": 494,
+      "reason": "No official native board Protel2 net group export and receipt pair."
+    },
+    "M-OPT-BRIDGE": {
+      "status": "BLOCKED",
+      "expected_net_groups": 56,
+      "expected_connected_board_pins": 294,
+      "reason": "No official native board Protel2 net group export and receipt pair."
+    },
+    "M-AUD-R": {
+      "status": "BLOCKED",
+      "expected_net_groups": 35,
+      "expected_connected_board_pins": 183,
+      "reason": "No official native board Protel2 net group export and receipt pair."
+    }
+  },
+  "native_exact_identity_and_selection": {
+    "exact_identity_field_status": "FAIL",
+    "procurement_selection_status": "BLOCKED",
+    "exact_candidate_fields_present": 41,
+    "exact_candidate_fields_expected": 52,
+    "exact_candidates_missing": [
+      [
+        "M-OPT-BRIDGE",
+        "D3"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "J3"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "MK2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U4"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U9"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "Y1"
+      ]
+    ],
+    "exact_candidate_fields_by_ref": [
+      {
+        "component": [
+          "M-AUD-R",
+          "ANT2"
+        ],
+        "expected": "2450AT18B100E",
+        "observed": "2450AT18B100E",
+        "match": true
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "J1"
+        ],
+        "expected": "BM28B0.6-16DS/2-0.35V(53)",
+        "observed": "BM28B0.6-16DS/2-0.35V(53)",
+        "match": true
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "MK3"
+        ],
+        "expected": "IM69D130V01XTSA1",
+        "observed": "IM69D130V01XTSA1",
+        "match": true
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "U1"
+        ],
+        "expected": "SN74LVC1G3157DSFR",
+        "observed": "SN74LVC1G3157DSFR",
+        "match": true
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "U10"
+        ],
+        "expected": "MAX98357AEWL+T",
+        "observed": "MAX98357AEWL+T",
+        "match": true
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "U11"
+        ],
+        "expected": "nRF5340-CMAA-R7",
+        "observed": "nRF5340-CMAA-R7",
+        "match": true
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "U3"
+        ],
+        "expected": "BQ25170DSGR",
+        "observed": "BQ25170DSGR",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "ANT1"
+        ],
+        "expected": "2450AT18B100E",
+        "observed": "2450AT18B100E",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "J1"
+        ],
+        "expected": "BM28B0.6-30DS/2-0.35V(53)",
+        "observed": "BM28B0.6-30DS/2-0.35V(53)",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "J2"
+        ],
+        "expected": "BM28B0.6-24DS/2-0.35V(53)",
+        "observed": "BM28B0.6-24DS/2-0.35V(53)",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "L2"
+        ],
+        "expected": "DFE21CCN2R2MELL",
+        "observed": "DFE161212U-2R2M",
+        "match": false
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "MK1"
+        ],
+        "expected": "IM69D130V01XTSA1",
+        "observed": "IM69D130V01XTSA1",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "Q1"
+        ],
+        "expected": "PMV65XP",
+        "observed": "PMV65XP",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "U1"
+        ],
+        "expected": "ESP32-S3-PICO-1-N8R8",
+        "observed": "ESP32-S3-PICO-1-N8R8",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "U10"
+        ],
+        "expected": "MAX98357AEWL+T",
+        "observed": "MAX98357AEWL+T",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "U11"
+        ],
+        "expected": "TLV75518PDQNR",
+        "observed": "TLV75518PDQNR",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "U13"
+        ],
+        "expected": "TLV75512PDQNR",
+        "observed": "TLV75512PDQNR",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "U14"
+        ],
+        "expected": "TLV7042DSGR",
+        "observed": "TLV7042DSGR",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "U15"
+        ],
+        "expected": "SN74AXC8T245RJWR",
+        "observed": "SN74AXC8T245RJWR",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "U16"
+        ],
+        "expected": "SN74AXC8T245RJWR",
+        "observed": "SN74AXC8T245RJWR",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "U17"
+        ],
+        "expected": "SN74LVC1G07DPWR",
+        "observed": "SN74LVC1G07DPWR",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "U18"
+        ],
+        "expected": "SN74AXC8T245RJWR",
+        "observed": "SN74AXC8T245RJWR",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "U19"
+        ],
+        "expected": "PCA9306DQER",
+        "observed": "PCA9306DQER",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "U2"
+        ],
+        "expected": "TPS63805YFFR",
+        "observed": "TPS63805YFFR",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "U20"
+        ],
+        "expected": "PCA9306DQER",
+        "observed": "PCA9306DQER",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "U21"
+        ],
+        "expected": "SN74AXC8T245RJWR",
+        "observed": "SN74AXC8T245RJWR",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "U3"
+        ],
+        "expected": "BQ25180YBGR",
+        "observed": "BQ25180YBGR",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "U4"
+        ],
+        "expected": "TPS62840DLCR",
+        "observed": "TPS62840DLCR",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "U5"
+        ],
+        "expected": "TLV75528PDQNR",
+        "observed": "TLV75528PDQNR",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "U6"
+        ],
+        "expected": "TLV75528PDQNR",
+        "observed": "TLV75528PDQNR",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "U7"
+        ],
+        "expected": "INA185A4IDRLR",
+        "observed": "INA185A4IDRLR",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "U8"
+        ],
+        "expected": "SN74AXC4T245RSVR",
+        "observed": "SN74AXC4T245RSVR",
+        "match": true
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "U9"
+        ],
+        "expected": "LM66200DRLR",
+        "observed": "LM66200DRLR",
+        "match": true
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "D3"
+        ],
+        "expected": "APHD1608LCGCK",
+        "observed": null,
+        "match": false
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "J1"
+        ],
+        "expected": "BM28B0.6-30DS/2-0.35V(53)",
+        "observed": null,
+        "match": false
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "J2"
+        ],
+        "expected": "BM28B0.6-10DS/2-0.35V(53)",
+        "observed": null,
+        "match": false
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "J3"
+        ],
+        "expected": "BM28B0.6-10DS/2-0.35V(53)",
+        "observed": null,
+        "match": false
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "MK2"
+        ],
+        "expected": "IM69D130V01XTSA1",
+        "observed": null,
+        "match": false
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "U1"
+        ],
+        "expected": "TLV75518PDQNR",
+        "observed": null,
+        "match": false
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "U10"
+        ],
+        "expected": "SN74LVC1G175DCKR",
+        "observed": "SN74LVC1G175DCKR",
+        "match": true
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "U11"
+        ],
+        "expected": "SN74LVC2G17DCKR",
+        "observed": "SN74LVC2G17DCKR",
+        "match": true
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "U12"
+        ],
+        "expected": "TPS389025DSET",
+        "observed": "TPS389025DSET",
+        "match": true
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "U13"
+        ],
+        "expected": "TPS389025DSET",
+        "observed": "TPS389025DSET",
+        "match": true
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "U14"
+        ],
+        "expected": "LTC6993IS6-2#TRPBF",
+        "observed": "LTC6993IS6-2#TRPBF",
+        "match": true
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "U2"
+        ],
+        "expected": "iCE40UP5K-UWG30ITR",
+        "observed": null,
+        "match": false
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "U3"
+        ],
+        "expected": "74LVC2G07GS",
+        "observed": "74LVC2G07GS",
+        "match": true
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "U4"
+        ],
+        "expected": "TLV75512PDQNR",
+        "observed": null,
+        "match": false
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "U5"
+        ],
+        "expected": "74LVC2G07GS",
+        "observed": "74LVC2G07GS",
+        "match": true
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "U7"
+        ],
+        "expected": "TPS389018DSET",
+        "observed": "TPS389018DSET",
+        "match": true
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "U8"
+        ],
+        "expected": "SN74LVC2T45DCUR",
+        "observed": "SN74LVC2T45DCUR",
+        "match": true
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "U9"
+        ],
+        "expected": "ICM-42688-P",
+        "observed": null,
+        "match": false
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "Y1"
+        ],
+        "expected": "ASADV-48.000MHZ-LC-T",
+        "observed": null,
+        "match": false
+      }
+    ],
+    "exact_field_mismatches": [
+      {
+        "component": [
+          "M-MAIN-L",
+          "L2"
+        ],
+        "expected": "DFE21CCN2R2MELL",
+        "observed": "DFE161212U-2R2M",
+        "match": false
+      }
+    ],
+    "unselected_or_unqualified_source_parts": [
+      {
+        "component": [
+          "M-AUD-R",
+          "C1"
+        ],
+        "source_reference": "C_AMP_SD_BUF",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C10"
+        ],
+        "source_reference": "NRF_C4",
+        "owner": "BOM-56",
+        "selection_status": "SOURCE_VERIFIED_D1 values/topology; mass estimate + MPN/layout/RF qualification pending"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C11"
+        ],
+        "source_reference": "NRF_C5",
+        "owner": "BOM-56",
+        "selection_status": "SOURCE_VERIFIED_D1 values/topology; mass estimate + MPN/layout/RF qualification pending"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C12"
+        ],
+        "source_reference": "NRF_C6",
+        "owner": "BOM-56",
+        "selection_status": "SOURCE_VERIFIED_D1 values/topology; mass estimate + MPN/layout/RF qualification pending"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C13"
+        ],
+        "source_reference": "NRF_C7",
+        "owner": "BOM-56",
+        "selection_status": "SOURCE_VERIFIED_D1 values/topology; mass estimate + MPN/layout/RF qualification pending"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C14"
+        ],
+        "source_reference": "NRF_C8",
+        "owner": "BOM-56",
+        "selection_status": "SOURCE_VERIFIED_D1 values/topology; mass estimate + MPN/layout/RF qualification pending"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C15"
+        ],
+        "source_reference": "NRF_C9",
+        "owner": "BOM-56",
+        "selection_status": "SOURCE_VERIFIED_D1 values/topology; mass estimate + MPN/layout/RF qualification pending"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C16"
+        ],
+        "source_reference": "NRF_C10",
+        "owner": "BOM-56",
+        "selection_status": "SOURCE_VERIFIED_D1 values/topology; mass estimate + MPN/layout/RF qualification pending"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C17"
+        ],
+        "source_reference": "NRF_C11",
+        "owner": "BOM-56",
+        "selection_status": "SOURCE_VERIFIED_D1 values/topology; mass estimate + MPN/layout/RF qualification pending"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C18"
+        ],
+        "source_reference": "NRF_C12",
+        "owner": "BOM-56",
+        "selection_status": "SOURCE_VERIFIED_D1 values/topology; mass estimate + MPN/layout/RF qualification pending"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C19"
+        ],
+        "source_reference": "NRF_C13",
+        "owner": "BOM-56",
+        "selection_status": "SOURCE_VERIFIED_D1 values/topology; mass estimate + MPN/layout/RF qualification pending"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C2"
+        ],
+        "source_reference": "C_CHG_R_IN",
+        "owner": "BOM-D1-PWR-C_CHG_R_IN",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C20"
+        ],
+        "source_reference": "NRF_C14",
+        "owner": "BOM-56",
+        "selection_status": "SOURCE_VERIFIED_D1 values/topology; mass estimate + MPN/layout/RF qualification pending"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C21"
+        ],
+        "source_reference": "NRF_CT19",
+        "owner": "BOM-56",
+        "selection_status": "SOURCE_VERIFIED_D1 values/topology; mass estimate + MPN/layout/RF qualification pending"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C3"
+        ],
+        "source_reference": "C_CHG_R_OUT",
+        "owner": "BOM-D1-PWR-C_CHG_R_OUT",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C4"
+        ],
+        "source_reference": "C_MK3_R",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C5"
+        ],
+        "source_reference": "C_U10_AMP_R_BULK",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C6"
+        ],
+        "source_reference": "C_U10_AMP_R_HF",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C7"
+        ],
+        "source_reference": "NRF_C1",
+        "owner": "BOM-56",
+        "selection_status": "SOURCE_VERIFIED_D1 values/topology; mass estimate + MPN/layout/RF qualification pending"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C8"
+        ],
+        "source_reference": "NRF_C2",
+        "owner": "BOM-56",
+        "selection_status": "SOURCE_VERIFIED_D1 values/topology; mass estimate + MPN/layout/RF qualification pending"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C9"
+        ],
+        "source_reference": "NRF_C3",
+        "owner": "BOM-56",
+        "selection_status": "SOURCE_VERIFIED_D1 values/topology; mass estimate + MPN/layout/RF qualification pending"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "J1"
+        ],
+        "source_reference": "J_BTB_R",
+        "owner": "BOM-40",
+        "selection_status": "BLOCKED — source dimensions corrected; placement and mated/FPC envelope open"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "L1"
+        ],
+        "source_reference": "NRF_L1",
+        "owner": "BOM-56",
+        "selection_status": "SOURCE_VERIFIED_D1 values/topology; mass estimate + MPN/layout/RF qualification pending"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "L2"
+        ],
+        "source_reference": "NRF_L2",
+        "owner": "BOM-56",
+        "selection_status": "SOURCE_VERIFIED_D1 values/topology; mass estimate + MPN/layout/RF qualification pending"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "L3"
+        ],
+        "source_reference": "NRF_L3",
+        "owner": "BOM-56",
+        "selection_status": "SOURCE_VERIFIED_D1 values/topology; mass estimate + MPN/layout/RF qualification pending"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "L4"
+        ],
+        "source_reference": "NRF_L4",
+        "owner": "BOM-56",
+        "selection_status": "SOURCE_VERIFIED_D1 values/topology; mass estimate + MPN/layout/RF qualification pending"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "Q1"
+        ],
+        "source_reference": "Q_CHG_MUTE_R",
+        "owner": "BOM-D1-PWR-Q_CHG_MUTE_R",
+        "selection_status": "PINMAP_VERIFIED_CIRCUIT_UNMEASURED; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "R1"
+        ],
+        "source_reference": "R_AMP_REQ_PD",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "R10"
+        ],
+        "source_reference": "R_VSET_R",
+        "owner": "BOM-53",
+        "selection_status": "DESIGN_CALC_THIS_REV"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "R2"
+        ],
+        "source_reference": "R_IDLE_I2S_AMP_DIN_1V8",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "R3"
+        ],
+        "source_reference": "R_IDLE_I2S_BCLK_1V8",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "R4"
+        ],
+        "source_reference": "R_IDLE_I2S_LRCLK_1V8",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "R5"
+        ],
+        "source_reference": "R_IPC_PU",
+        "owner": "BOM-53",
+        "selection_status": "DESIGN_CALC_THIS_REV"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "R6"
+        ],
+        "source_reference": "R_ISET_R",
+        "owner": "BOM-53",
+        "selection_status": "DESIGN_CALC_THIS_REV"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "R7"
+        ],
+        "source_reference": "R_MUTE_GATE",
+        "owner": "BOM-D1-PWR-R_MUTE_GATE",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "R8"
+        ],
+        "source_reference": "R_MUTE_PD",
+        "owner": "BOM-D1-PWR-R_MUTE_PD",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "R9"
+        ],
+        "source_reference": "R_SDR",
+        "owner": "BOM-53",
+        "selection_status": "DESIGN_CALC_THIS_REV"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "Y2"
+        ],
+        "source_reference": "Y2_BLE",
+        "owner": "BOM-55",
+        "selection_status": "SELECTED_CANDIDATE_D1 (Epson catalog and FA-128 drawing); exact controlled order code/load trim open"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C1"
+        ],
+        "source_reference": "C_BB_IN",
+        "owner": "BOM-D1-PWR-C_BB_IN",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C10"
+        ],
+        "source_reference": "C_CHIP_PU",
+        "owner": "BOM-24",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C11"
+        ],
+        "source_reference": "C_ESP_BULK",
+        "owner": "BOM-SOC-01",
+        "selection_status": "SOURCE_VERIFIED_D1; physical layout/MPN qualification open"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C12"
+        ],
+        "source_reference": "C_ESP_RF_IN",
+        "owner": "BOM-SOC-01",
+        "selection_status": "SOURCE_VERIFIED_D1; physical layout/MPN qualification open"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C13"
+        ],
+        "source_reference": "C_ESP_RF_OUT",
+        "owner": "BOM-SOC-01",
+        "selection_status": "SOURCE_VERIFIED_D1; physical layout/MPN qualification open"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C14"
+        ],
+        "source_reference": "C_ESP_VDD_SPI",
+        "owner": "BOM-SOC-01",
+        "selection_status": "SOURCE_VERIFIED_D1; physical layout/MPN qualification open"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C15"
+        ],
+        "source_reference": "C_INA_SUPPLY",
+        "owner": "BOM-D1-PRIV-C_INA_SUPPLY",
+        "selection_status": "EXPLICIT_VALUE_D1; MPN/bias/layout qualification OPEN; mass estimate"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C16"
+        ],
+        "source_reference": "C_LDO_AVDD_IN",
+        "owner": "BOM-D1-PWR-C_LDO_AVDD_IN",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C17"
+        ],
+        "source_reference": "C_LDO_AVDD_OUT",
+        "owner": "BOM-D1-PWR-C_LDO_AVDD_OUT",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C18"
+        ],
+        "source_reference": "C_LDO_DOVDD_IN",
+        "owner": "BOM-D1-PWR-C_LDO_DOVDD_IN",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C19"
+        ],
+        "source_reference": "C_LDO_DOVDD_OUT",
+        "owner": "BOM-D1-PWR-C_LDO_DOVDD_OUT",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C2"
+        ],
+        "source_reference": "C_BB_OUT",
+        "owner": "BOM-D1-PWR-C_BB_OUT",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C20"
+        ],
+        "source_reference": "C_LDO_DVDD_IN",
+        "owner": "BOM-D1-PWR-C_LDO_DVDD_IN",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C21"
+        ],
+        "source_reference": "C_LDO_DVDD_OUT",
+        "owner": "BOM-D1-PWR-C_LDO_DVDD_OUT",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C22"
+        ],
+        "source_reference": "C_LDO_LED_IN",
+        "owner": "BOM-D1-PWR-C_LDO_LED_IN",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C23"
+        ],
+        "source_reference": "C_LDO_LED_OUT",
+        "owner": "BOM-D1-PWR-C_LDO_LED_OUT",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C24"
+        ],
+        "source_reference": "C_MK1_L",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C25"
+        ],
+        "source_reference": "C_OR_IN1",
+        "owner": "BOM-D1-PWR-C_OR_IN1",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C26"
+        ],
+        "source_reference": "C_OR_IN2",
+        "owner": "BOM-D1-PWR-C_OR_IN2",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C27"
+        ],
+        "source_reference": "C_OR_OUT",
+        "owner": "BOM-D1-PWR-C_OR_OUT",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C28"
+        ],
+        "source_reference": "C_PRIV_RC",
+        "owner": "BOM-D1-PRIV-C_PRIV_RC",
+        "selection_status": "EXPLICIT_VALUE_D1; MPN/bias/layout qualification OPEN; mass estimate"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C29"
+        ],
+        "source_reference": "C_U8_AUD_LS2_A",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C3"
+        ],
+        "source_reference": "C_BK_IN",
+        "owner": "BOM-D1-PWR-C_BK_IN",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C30"
+        ],
+        "source_reference": "C_U8_AUD_LS2_B",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C31"
+        ],
+        "source_reference": "C_U8_CAM_ISO1_A",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C32"
+        ],
+        "source_reference": "C_U8_CAM_ISO1_B",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C33"
+        ],
+        "source_reference": "C_U8_CAM_ISO2_A",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C34"
+        ],
+        "source_reference": "C_U8_CAM_ISO2_B",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C35"
+        ],
+        "source_reference": "C_U8_LS1_A",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C36"
+        ],
+        "source_reference": "C_U8_LS1_B",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C37"
+        ],
+        "source_reference": "C_U8_PDM_LS_A",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C38"
+        ],
+        "source_reference": "C_U8_PDM_LS_B",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C39"
+        ],
+        "source_reference": "C_U10_AMP_L_BULK",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C4"
+        ],
+        "source_reference": "C_BK_OUT",
+        "owner": "BOM-D1-PWR-C_BK_OUT",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C40"
+        ],
+        "source_reference": "C_U10_AMP_L_HF",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C41"
+        ],
+        "source_reference": "C_WIN_SUPPLY",
+        "owner": "BOM-D1-PRIV-C_WIN_SUPPLY",
+        "selection_status": "EXPLICIT_VALUE_D1; MPN/bias/layout qualification OPEN; mass estimate"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C42"
+        ],
+        "source_reference": "C_XREQ",
+        "owner": "BOM-49",
+        "selection_status": "DESIGN_CALC_THIS_REV"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C5"
+        ],
+        "source_reference": "C_CAM_SCCB_EN",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C6"
+        ],
+        "source_reference": "C_CAMRST",
+        "owner": "BOM-49",
+        "selection_status": "DESIGN_CALC_THIS_REV"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C7"
+        ],
+        "source_reference": "C_CHG_L_BAT",
+        "owner": "BOM-D1-PWR-C_CHG_L_BAT",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C8"
+        ],
+        "source_reference": "C_CHG_L_IN",
+        "owner": "BOM-D1-PWR-C_CHG_L_IN",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C9"
+        ],
+        "source_reference": "C_CHG_L_SYS",
+        "owner": "BOM-D1-PWR-C_CHG_L_SYS",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "D1"
+        ],
+        "source_reference": "D_XREQ",
+        "owner": "BOM-49",
+        "selection_status": "DESIGN_CALC_THIS_REV"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "J1"
+        ],
+        "source_reference": "J_BTB_L",
+        "owner": "BOM-15",
+        "selection_status": "BLOCKED — source dimensions corrected; placement and mated/FPC envelope open"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "J3"
+        ],
+        "source_reference": "J_CHG",
+        "owner": "BOM-50",
+        "selection_status": "BLOCKED — dock source boundary, boot/reset draw, data modes and connector mechanics open"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "L1"
+        ],
+        "source_reference": "L1_BB",
+        "owner": "BOM-07",
+        "selection_status": "OPEN_INDUCTOR_LOAD_QUALIFICATION"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "Q1"
+        ],
+        "source_reference": "Q_CHG_ISO_R",
+        "owner": "BOM-D1-PWR-Q_CHG_ISO_R",
+        "selection_status": "PINMAP_VERIFIED_CIRCUIT_UNMEASURED; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R1"
+        ],
+        "source_reference": "R_BB_FB1",
+        "owner": "BOM-24",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R10"
+        ],
+        "source_reference": "R_ESP_BOOT",
+        "owner": "BOM-SOC-01",
+        "selection_status": "SOURCE_VERIFIED_D1; physical layout/MPN qualification open"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R11"
+        ],
+        "source_reference": "R_ESP_RF",
+        "owner": "BOM-SOC-01",
+        "selection_status": "SOURCE_VERIFIED_D1; physical layout/MPN qualification open"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R12"
+        ],
+        "source_reference": "R_ESP_STRAP3",
+        "owner": "BOM-SOC-01",
+        "selection_status": "SOURCE_VERIFIED_D1; physical layout/MPN qualification open"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R13"
+        ],
+        "source_reference": "R_ESP_STRAP45",
+        "owner": "BOM-SOC-01",
+        "selection_status": "SOURCE_VERIFIED_D1; physical layout/MPN qualification open"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R14"
+        ],
+        "source_reference": "R_ESP_STRAP46",
+        "owner": "BOM-SOC-01",
+        "selection_status": "SOURCE_VERIFIED_D1; physical layout/MPN qualification open"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R15"
+        ],
+        "source_reference": "R_I2C_SCL_1V8",
+        "owner": "BOM-24",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R16"
+        ],
+        "source_reference": "R_I2C_SCL_3V3",
+        "owner": "BOM-24",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R17"
+        ],
+        "source_reference": "R_I2C_SDA_1V8",
+        "owner": "BOM-24",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R18"
+        ],
+        "source_reference": "R_I2C_SDA_3V3",
+        "owner": "BOM-24",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R19"
+        ],
+        "source_reference": "R_ISO_GATE",
+        "owner": "BOM-D1-PWR-R_ISO_GATE",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R2"
+        ],
+        "source_reference": "R_BB_FB2",
+        "owner": "BOM-24",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R20"
+        ],
+        "source_reference": "R_ISO_PD",
+        "owner": "BOM-D1-PWR-R_ISO_PD",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R21"
+        ],
+        "source_reference": "R_LIMIT",
+        "owner": "BOM-24",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R22"
+        ],
+        "source_reference": "R_LS1_A4",
+        "owner": "BOM-24",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R23"
+        ],
+        "source_reference": "R_LS1_B4",
+        "owner": "BOM-24",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R24"
+        ],
+        "source_reference": "R_LS3_EN",
+        "owner": "BOM-24",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R25"
+        ],
+        "source_reference": "R_LS3_VREF_BLEED",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R26"
+        ],
+        "source_reference": "R_LS4_EN",
+        "owner": "BOM-49",
+        "selection_status": "DESIGN_CALC_THIS_REV"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R27"
+        ],
+        "source_reference": "R_PRIV_PU",
+        "owner": "BOM-24",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R28"
+        ],
+        "source_reference": "R_PRIV_RC",
+        "owner": "BOM-D1-PRIV-R_PRIV_RC",
+        "selection_status": "EXPLICIT_VALUE_D1; MPN/bias/layout qualification OPEN; mass estimate"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R29"
+        ],
+        "source_reference": "R_SCCB_SCL",
+        "owner": "BOM-49",
+        "selection_status": "DESIGN_CALC_THIS_REV"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R3"
+        ],
+        "source_reference": "R_CAM_DOVDD_BLEED",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R30"
+        ],
+        "source_reference": "R_SCCB_SDA",
+        "owner": "BOM-49",
+        "selection_status": "DESIGN_CALC_THIS_REV"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R31"
+        ],
+        "source_reference": "R_SENSE",
+        "owner": "BOM-24",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R32"
+        ],
+        "source_reference": "R_VSET_1V8",
+        "owner": "BOM-24",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R33"
+        ],
+        "source_reference": "R_WIN_BOT",
+        "owner": "BOM-D1-PRIV-R_WIN_BOT",
+        "selection_status": "EXPLICIT_VALUE_D1; MPN/bias/layout qualification OPEN; mass estimate"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R34"
+        ],
+        "source_reference": "R_WIN_MID",
+        "owner": "BOM-D1-PRIV-R_WIN_MID",
+        "selection_status": "EXPLICIT_VALUE_D1; MPN/bias/layout qualification OPEN; mass estimate"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R35"
+        ],
+        "source_reference": "R_WIN_TOP",
+        "owner": "BOM-D1-PRIV-R_WIN_TOP",
+        "selection_status": "EXPLICIT_VALUE_D1; MPN/bias/layout qualification OPEN; mass estimate"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R36"
+        ],
+        "source_reference": "R_XREQ",
+        "owner": "BOM-49",
+        "selection_status": "DESIGN_CALC_THIS_REV"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R37"
+        ],
+        "source_reference": "R_XREQ_BLEED",
+        "owner": "BOM-49",
+        "selection_status": "DESIGN_CALC_THIS_REV"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R4"
+        ],
+        "source_reference": "R_CAM_DOVDD_OK_PD",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R5"
+        ],
+        "source_reference": "R_CAMPWDN",
+        "owner": "BOM-49",
+        "selection_status": "DESIGN_CALC_THIS_REV"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R6"
+        ],
+        "source_reference": "R_CAMRST",
+        "owner": "BOM-49",
+        "selection_status": "DESIGN_CALC_THIS_REV"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R7"
+        ],
+        "source_reference": "R_CHIP_PU",
+        "owner": "BOM-24",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R8"
+        ],
+        "source_reference": "R_CRST_A_PD",
+        "owner": "BOM-24",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R9"
+        ],
+        "source_reference": "R_DIR1_PU",
+        "owner": "BOM-24",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "U12"
+        ],
+        "source_reference": "U12_ESD_USB",
+        "owner": "BOM-51",
+        "selection_status": "BLOCKED — logical TVS position only; exact topology, ground return and MPN open"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C1"
+        ],
+        "source_reference": "C_AVDD_LS_A",
+        "owner": "BOM-D11-C_AVDD_LS_A",
+        "selection_status": "SOURCE_CHECKED_CANDIDATE; full PVT/transient/layout/physical qualification BLOCKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C10"
+        ],
+        "source_reference": "C_AVDD_U_AVDD_SYS_CLAMP_V",
+        "owner": "BOM-D11-C_AVDD_U_AVDD_SYS_CLAMP_V",
+        "selection_status": "SOURCE_CHECKED_CANDIDATE; full PVT/transient/layout/physical qualification BLOCKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C11"
+        ],
+        "source_reference": "C_AVDD_U_AVDD_SYS_PG_V",
+        "owner": "BOM-D11-C_AVDD_U_AVDD_SYS_PG_V",
+        "selection_status": "SOURCE_CHECKED_CANDIDATE; full PVT/transient/layout/physical qualification BLOCKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C12"
+        ],
+        "source_reference": "C_AVDD_U_AVDD_WD_V",
+        "owner": "BOM-D11-C_AVDD_U_AVDD_WD_V",
+        "selection_status": "SOURCE_CHECKED_CANDIDATE; full PVT/transient/layout/physical qualification BLOCKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C13"
+        ],
+        "source_reference": "C_FPGA_CORE_BULK",
+        "owner": "BOM-CAD-05",
+        "selection_status": "UNVERIFIED — value/connection reviewed; exact MPN, DC bias and fit open"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C14"
+        ],
+        "source_reference": "C_FPGA_CORE_HF",
+        "owner": "BOM-CAD-06",
+        "selection_status": "UNVERIFIED — value/connection reviewed; exact MPN, DC bias and fit open"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C15"
+        ],
+        "source_reference": "C_FPGA_IO_BULK",
+        "owner": "BOM-CAD-07",
+        "selection_status": "UNVERIFIED — value/connection reviewed; exact MPN, DC bias and fit open"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C16"
+        ],
+        "source_reference": "C_FPGA_IO_HF0",
+        "owner": "BOM-CAD-08",
+        "selection_status": "UNVERIFIED — value/connection reviewed; exact MPN, DC bias and fit open"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C17"
+        ],
+        "source_reference": "C_FPGA_IO_HF1",
+        "owner": "BOM-CAD-09",
+        "selection_status": "UNVERIFIED — value/connection reviewed; exact MPN, DC bias and fit open"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C18"
+        ],
+        "source_reference": "C_FPGA_IO_HF2",
+        "owner": "BOM-CAD-10",
+        "selection_status": "UNVERIFIED — value/connection reviewed; exact MPN, DC bias and fit open"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C19"
+        ],
+        "source_reference": "C_FPGA_OSC_HF",
+        "owner": "BOM-CAD-11",
+        "selection_status": "UNVERIFIED — value/connection reviewed; exact MPN, DC bias and fit open"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C2"
+        ],
+        "source_reference": "C_AVDD_QUAL",
+        "owner": "BOM-D11-C_AVDD_QUAL",
+        "selection_status": "SOURCE_CHECKED_CANDIDATE; full PVT/transient/layout/physical qualification BLOCKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C20"
+        ],
+        "source_reference": "C_FPGA_PLL_BULK",
+        "owner": "BOM-CAD-01",
+        "selection_status": "UNVERIFIED — value/connection reviewed; exact MPN, DC bias and fit open"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C21"
+        ],
+        "source_reference": "C_FPGA_PLL_HF",
+        "owner": "BOM-CAD-02",
+        "selection_status": "UNVERIFIED — value/connection reviewed; exact MPN, DC bias and fit open"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C22"
+        ],
+        "source_reference": "C_FPGA_VPP_BULK",
+        "owner": "BOM-CAD-03",
+        "selection_status": "UNVERIFIED — value/connection reviewed; exact MPN, DC bias and fit open"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C23"
+        ],
+        "source_reference": "C_FPGA_VPP_HF",
+        "owner": "BOM-CAD-04",
+        "selection_status": "UNVERIFIED — value/connection reviewed; exact MPN, DC bias and fit open"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C24"
+        ],
+        "source_reference": "C_IMU_VDD1",
+        "owner": "BOM-SOC-02",
+        "selection_status": "SOURCE_VERIFIED_D1; physical layout/MPN qualification open"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C25"
+        ],
+        "source_reference": "C_IMU_VDD2",
+        "owner": "BOM-SOC-02",
+        "selection_status": "SOURCE_VERIFIED_D1; physical layout/MPN qualification open"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C26"
+        ],
+        "source_reference": "C_IMU_VDDIO",
+        "owner": "BOM-SOC-02",
+        "selection_status": "SOURCE_VERIFIED_D1; physical layout/MPN qualification open"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C27"
+        ],
+        "source_reference": "C_LDO_1V2F_IN",
+        "owner": "BOM-D1-PWR-C_LDO_1V2F_IN",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C28"
+        ],
+        "source_reference": "C_LDO_1V2F_OUT",
+        "owner": "BOM-D1-PWR-C_LDO_1V2F_OUT",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C29"
+        ],
+        "source_reference": "C_LDO_1V8F_IN",
+        "owner": "BOM-D1-PWR-C_LDO_1V8F_IN",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C3"
+        ],
+        "source_reference": "C_AVDD_REQ_FILTER",
+        "owner": "BOM-D11-C_AVDD_REQ_FILTER",
+        "selection_status": "SOURCE_CHECKED_CANDIDATE; full PVT/transient/layout/physical qualification BLOCKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C30"
+        ],
+        "source_reference": "C_LDO_1V8F_OUT",
+        "owner": "BOM-D1-PWR-C_LDO_1V8F_OUT",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C31"
+        ],
+        "source_reference": "C_LDO_OPT_IN",
+        "owner": "BOM-D1-PWR-C_LDO_OPT_IN",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C32"
+        ],
+        "source_reference": "C_LDO_OPT_OUT",
+        "owner": "BOM-D1-PWR-C_LDO_OPT_OUT",
+        "selection_status": "SELECTED_VALUE_MPN_OPEN; mass estimated, layout not verified"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C33"
+        ],
+        "source_reference": "C_MK2_C",
+        "owner": "BOM-D1-AT03",
+        "selection_status": "DESIGN_ESTIMATE_D1; cluster allowance, not measured"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C4"
+        ],
+        "source_reference": "C_AVDD_U_AVDD_CLEAR_OD_V",
+        "owner": "BOM-D11-C_AVDD_U_AVDD_CLEAR_OD_V",
+        "selection_status": "SOURCE_CHECKED_CANDIDATE; full PVT/transient/layout/physical qualification BLOCKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C5"
+        ],
+        "source_reference": "C_AVDD_U_AVDD_EN_OD_V",
+        "owner": "BOM-D11-C_AVDD_U_AVDD_EN_OD_V",
+        "selection_status": "SOURCE_CHECKED_CANDIDATE; full PVT/transient/layout/physical qualification BLOCKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C6"
+        ],
+        "source_reference": "C_AVDD_U_AVDD_IO_PG_V",
+        "owner": "BOM-D11-C_AVDD_U_AVDD_IO_PG_V",
+        "selection_status": "SOURCE_CHECKED_CANDIDATE; full PVT/transient/layout/physical qualification BLOCKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C7"
+        ],
+        "source_reference": "C_AVDD_U_AVDD_LS_V",
+        "owner": "BOM-D11-C_AVDD_U_AVDD_LS_V",
+        "selection_status": "SOURCE_CHECKED_CANDIDATE; full PVT/transient/layout/physical qualification BLOCKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C8"
+        ],
+        "source_reference": "C_AVDD_U_AVDD_QUAL_V",
+        "owner": "BOM-D11-C_AVDD_U_AVDD_QUAL_V",
+        "selection_status": "SOURCE_CHECKED_CANDIDATE; full PVT/transient/layout/physical qualification BLOCKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C9"
+        ],
+        "source_reference": "C_AVDD_U_AVDD_SCHMITT_V",
+        "owner": "BOM-D11-C_AVDD_U_AVDD_SCHMITT_V",
+        "selection_status": "SOURCE_CHECKED_CANDIDATE; full PVT/transient/layout/physical qualification BLOCKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "D3"
+        ],
+        "source_reference": "D3_PRIV",
+        "owner": "BOM-25",
+        "selection_status": "BLOCKED — lower-Vf candidate; guarantee current window and visible indication in mounted assembly"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "J1"
+        ],
+        "source_reference": "J_BRIDGE_IN",
+        "owner": "BOM-31",
+        "selection_status": "BLOCKED — source dimensions corrected; placement and mated/FPC envelope open"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "J2"
+        ],
+        "source_reference": "J_DISP_L",
+        "owner": "BOM-26",
+        "selection_status": "BLOCKED — DNP by default; placement, mated envelope and JBD FPC assignment open"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "J3"
+        ],
+        "source_reference": "J_DISP_R",
+        "owner": "BOM-29",
+        "selection_status": "BLOCKED — DNP by default; placement, mated envelope and JBD FPC assignment open"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R1"
+        ],
+        "source_reference": "R_AVDD_CRST_PD",
+        "owner": "BOM-D11-R_AVDD_CRST_PD",
+        "selection_status": "SOURCE_CHECKED_CANDIDATE; full PVT/transient/layout/physical qualification BLOCKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R10"
+        ],
+        "source_reference": "R_AVDD_WD_SET",
+        "owner": "BOM-D11-R_AVDD_WD_SET",
+        "selection_status": "SOURCE_CHECKED_CANDIDATE; full PVT/transient/layout/physical qualification BLOCKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R11"
+        ],
+        "source_reference": "R_CDONE_PU",
+        "owner": "BOM-33",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R12"
+        ],
+        "source_reference": "R_CRST_PD",
+        "owner": "BOM-33",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R13"
+        ],
+        "source_reference": "R_DAMP_CS_L",
+        "owner": "BOM-33",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R14"
+        ],
+        "source_reference": "R_DAMP_CS_R",
+        "owner": "BOM-33",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R15"
+        ],
+        "source_reference": "R_DAMP_LD0",
+        "owner": "BOM-33",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R16"
+        ],
+        "source_reference": "R_DAMP_LD1",
+        "owner": "BOM-33",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R17"
+        ],
+        "source_reference": "R_DAMP_LD2",
+        "owner": "BOM-33",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R18"
+        ],
+        "source_reference": "R_DAMP_LD3",
+        "owner": "BOM-33",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R19"
+        ],
+        "source_reference": "R_DAMP_RD0",
+        "owner": "BOM-33",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R2"
+        ],
+        "source_reference": "R_AVDD_D3_PD",
+        "owner": "BOM-D11-R_AVDD_D3_PD",
+        "selection_status": "SOURCE_CHECKED_CANDIDATE; full PVT/transient/layout/physical qualification BLOCKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R20"
+        ],
+        "source_reference": "R_DAMP_RD1",
+        "owner": "BOM-33",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R21"
+        ],
+        "source_reference": "R_DAMP_RD2",
+        "owner": "BOM-33",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R22"
+        ],
+        "source_reference": "R_DAMP_RD3",
+        "owner": "BOM-33",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R23"
+        ],
+        "source_reference": "R_DAMP_SCK_L",
+        "owner": "BOM-33",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R24"
+        ],
+        "source_reference": "R_DAMP_SCK_R",
+        "owner": "BOM-33",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R25"
+        ],
+        "source_reference": "R_OPTCS_PU_L",
+        "owner": "BOM-33",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R26"
+        ],
+        "source_reference": "R_OPTCS_PU_R",
+        "owner": "BOM-33",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R27"
+        ],
+        "source_reference": "R_PLL",
+        "owner": "BOM-33",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R28"
+        ],
+        "source_reference": "R_SS_PD",
+        "owner": "BOM-33",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R29"
+        ],
+        "source_reference": "R_VPP",
+        "owner": "BOM-33",
+        "selection_status": "INHERITED_REV_C_CLAIM_NOT_RECHECKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R3"
+        ],
+        "source_reference": "R_AVDD_EN_FEED",
+        "owner": "BOM-D11-R_AVDD_EN_FEED",
+        "selection_status": "SOURCE_CHECKED_CANDIDATE; full PVT/transient/layout/physical qualification BLOCKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R4"
+        ],
+        "source_reference": "R_AVDD_EN_PD",
+        "owner": "BOM-D11-R_AVDD_EN_PD",
+        "selection_status": "SOURCE_CHECKED_CANDIDATE; full PVT/transient/layout/physical qualification BLOCKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R5"
+        ],
+        "source_reference": "R_AVDD_PG_PU",
+        "owner": "BOM-D11-R_AVDD_PG_PU",
+        "selection_status": "SOURCE_CHECKED_CANDIDATE; full PVT/transient/layout/physical qualification BLOCKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R6"
+        ],
+        "source_reference": "R_AVDD_QUAL_PU",
+        "owner": "BOM-D11-R_AVDD_QUAL_PU",
+        "selection_status": "SOURCE_CHECKED_CANDIDATE; full PVT/transient/layout/physical qualification BLOCKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R7"
+        ],
+        "source_reference": "R_AVDD_REQ_FILTER",
+        "owner": "BOM-D11-R_AVDD_REQ_FILTER",
+        "selection_status": "SOURCE_CHECKED_CANDIDATE; full PVT/transient/layout/physical qualification BLOCKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R8"
+        ],
+        "source_reference": "R_AVDD_WD_DIV_H",
+        "owner": "BOM-D11-R_AVDD_WD_DIV_H",
+        "selection_status": "SOURCE_CHECKED_CANDIDATE; full PVT/transient/layout/physical qualification BLOCKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R9"
+        ],
+        "source_reference": "R_AVDD_WD_DIV_L",
+        "owner": "BOM-D11-R_AVDD_WD_DIV_L",
+        "selection_status": "SOURCE_CHECKED_CANDIDATE; full PVT/transient/layout/physical qualification BLOCKED"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "U1"
+        ],
+        "source_reference": "U4_1V8F",
+        "owner": "BOM-46",
+        "selection_status": "BLOCKED — FPGA rail-order guarantee and hardware qualification required"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "U6"
+        ],
+        "source_reference": "U6_OPT_AVDD",
+        "owner": "BOM-45",
+        "selection_status": "BLOCKED — DNP by default; BLK-JBD-04, no regulator voltage assigned"
+      }
+    ],
+    "stray_catalog_fields": [
+      {
+        "component": [
+          "M-AUD-R",
+          "C1"
+        ],
+        "observed": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C10"
+        ],
+        "observed": "Nordic CMAA config3 reference passives; exact procurement MPNs pending",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C11"
+        ],
+        "observed": "Nordic CMAA config3 reference passives; exact procurement MPNs pending",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C12"
+        ],
+        "observed": "Nordic CMAA config3 reference passives; exact procurement MPNs pending",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C13"
+        ],
+        "observed": "Nordic CMAA config3 reference passives; exact procurement MPNs pending",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C14"
+        ],
+        "observed": "Nordic CMAA config3 reference passives; exact procurement MPNs pending",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C15"
+        ],
+        "observed": "Nordic CMAA config3 reference passives; exact procurement MPNs pending",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C16"
+        ],
+        "observed": "Nordic CMAA config3 reference passives; exact procurement MPNs pending",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C17"
+        ],
+        "observed": "Nordic CMAA config3 reference passives; exact procurement MPNs pending",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C18"
+        ],
+        "observed": "Nordic CMAA config3 reference passives; exact procurement MPNs pending",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C19"
+        ],
+        "observed": "Nordic CMAA config3 reference passives; exact procurement MPNs pending",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C2"
+        ],
+        "observed": "1uF 25V X7R; effective >=1uF",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C20"
+        ],
+        "observed": "Nordic CMAA config3 reference passives; exact procurement MPNs pending",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C21"
+        ],
+        "observed": "Nordic CMAA config3 reference passives; exact procurement MPNs pending",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C3"
+        ],
+        "observed": "1uF 10V X7R; effective >=1uF",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C4"
+        ],
+        "observed": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C5"
+        ],
+        "observed": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C6"
+        ],
+        "observed": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C7"
+        ],
+        "observed": "Nordic CMAA config3 reference passives; exact procurement MPNs pending",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C8"
+        ],
+        "observed": "Nordic CMAA config3 reference passives; exact procurement MPNs pending",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "C9"
+        ],
+        "observed": "Nordic CMAA config3 reference passives; exact procurement MPNs pending",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "L1"
+        ],
+        "observed": "Nordic CMAA config3 reference passives; exact procurement MPNs pending",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "L2"
+        ],
+        "observed": "Nordic CMAA config3 reference passives; exact procurement MPNs pending",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "L3"
+        ],
+        "observed": "Nordic CMAA config3 reference passives; exact procurement MPNs pending",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "L4"
+        ],
+        "observed": "Nordic CMAA config3 reference passives; exact procurement MPNs pending",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "Q1"
+        ],
+        "observed": "2N7002",
+        "classification": "ORDERING_BLOCKED"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "R1"
+        ],
+        "observed": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "R10"
+        ],
+        "observed": "R_SDR 69.8k 1% + R_IPC_PU 100k + R_ISET_R 5.49k 1% + R_VSET_R 27k 1%",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "R2"
+        ],
+        "observed": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "R3"
+        ],
+        "observed": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "R4"
+        ],
+        "observed": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "R5"
+        ],
+        "observed": "R_SDR 69.8k 1% + R_IPC_PU 100k + R_ISET_R 5.49k 1% + R_VSET_R 27k 1%",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "R6"
+        ],
+        "observed": "R_SDR 69.8k 1% + R_IPC_PU 100k + R_ISET_R 5.49k 1% + R_VSET_R 27k 1%",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "R7"
+        ],
+        "observed": "100 ohm 1%",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "R8"
+        ],
+        "observed": "100k 1%",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "R9"
+        ],
+        "observed": "R_SDR 69.8k 1% + R_IPC_PU 100k + R_ISET_R 5.49k 1% + R_VSET_R 27k 1%",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-AUD-R",
+          "Y2"
+        ],
+        "observed": "FA-128 32 MHz 8 pF +/-10 ppm initial +/-10 ppm temperature; candidate Q22FA12800025 (ordering suffix/vendor controlled spec pending)",
+        "classification": "ORDERING_BLOCKED"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C1"
+        ],
+        "observed": "10uF 10V X5R; effective >=4uF",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C11"
+        ],
+        "observed": "22uF bulk +1uF VDD_SPI +10k GPIO0 pull-up +3x100k strap pull-down +0RRFseries +2DNPshunts",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C12"
+        ],
+        "observed": "22uF bulk +1uF VDD_SPI +10k GPIO0 pull-up +3x100k strap pull-down +0RRFseries +2DNPshunts",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C13"
+        ],
+        "observed": "22uF bulk +1uF VDD_SPI +10k GPIO0 pull-up +3x100k strap pull-down +0RRFseries +2DNPshunts",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C14"
+        ],
+        "observed": "22uF bulk +1uF VDD_SPI +10k GPIO0 pull-up +3x100k strap pull-down +0RRFseries +2DNPshunts",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C15"
+        ],
+        "observed": "100nF 10V X7R at U7_INA VS/GND",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C16"
+        ],
+        "observed": "1uF 10V X7R; effective >=1uF",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C17"
+        ],
+        "observed": "1uF 10V X7R; effective >=1uF",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C18"
+        ],
+        "observed": "1uF 10V X7R; effective >=1uF",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C19"
+        ],
+        "observed": "1uF 10V X7R; effective >=1uF",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C2"
+        ],
+        "observed": "22uF 10V X5R; effective >=7uF",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C20"
+        ],
+        "observed": "1uF 10V X7R; effective >=1uF",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C21"
+        ],
+        "observed": "1uF 10V X7R; effective >=1uF",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C22"
+        ],
+        "observed": "1uF 10V X7R; effective >=1uF",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C23"
+        ],
+        "observed": "1uF 10V X7R; effective >=1uF",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C24"
+        ],
+        "observed": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C25"
+        ],
+        "observed": "1uF 10V X7R",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C26"
+        ],
+        "observed": "1uF 10V X7R",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C27"
+        ],
+        "observed": "1uF 10V X7R",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C28"
+        ],
+        "observed": "1uF 10V X7R; local discharge tau1ms; pullup charge tau11ms including10k",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C29"
+        ],
+        "observed": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C3"
+        ],
+        "observed": "4.7uF 10V X5R; effective >=1uF",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C30"
+        ],
+        "observed": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C31"
+        ],
+        "observed": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C32"
+        ],
+        "observed": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C33"
+        ],
+        "observed": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C34"
+        ],
+        "observed": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C35"
+        ],
+        "observed": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C36"
+        ],
+        "observed": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C37"
+        ],
+        "observed": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C38"
+        ],
+        "observed": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C39"
+        ],
+        "observed": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C4"
+        ],
+        "observed": "10uF 6.3V X5R; effective 3..40uF",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C40"
+        ],
+        "observed": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C41"
+        ],
+        "observed": "100nF 10V X7R at U7_WIN VCC/VEE",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C42"
+        ],
+        "observed": "R_XREQ 330R + D_XREQ RB521S-30 + C_XREQ 100nF + R_XREQ_BLEED 100k + R_CAMRST 10k/100nF + R_CAMPWDN 10k + 2x R_SCCB 4.7k + R_LS4_EN 200k",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C5"
+        ],
+        "observed": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C6"
+        ],
+        "observed": "R_XREQ 330R + D_XREQ RB521S-30 + C_XREQ 100nF + R_XREQ_BLEED 100k + R_CAMRST 10k/100nF + R_CAMPWDN 10k + 2x R_SCCB 4.7k + R_LS4_EN 200k",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C7"
+        ],
+        "observed": "1uF 10V X7R; effective >=1uF",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C8"
+        ],
+        "observed": "1uF 25V X7R; effective >=1uF",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "C9"
+        ],
+        "observed": "10uF 25V X5R; effective >1uF",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "D1"
+        ],
+        "observed": "R_XREQ 330R + D_XREQ RB521S-30 + C_XREQ 100nF + R_XREQ_BLEED 100k + R_CAMRST 10k/100nF + R_CAMPWDN 10k + 2x R_SCCB 4.7k + R_LS4_EN 200k",
+        "classification": "ORDERING_BLOCKED"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R10"
+        ],
+        "observed": "22uF bulk +1uF VDD_SPI +10k GPIO0 pull-up +3x100k strap pull-down +0RRFseries +2DNPshunts",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R11"
+        ],
+        "observed": "22uF bulk +1uF VDD_SPI +10k GPIO0 pull-up +3x100k strap pull-down +0RRFseries +2DNPshunts",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R12"
+        ],
+        "observed": "22uF bulk +1uF VDD_SPI +10k GPIO0 pull-up +3x100k strap pull-down +0RRFseries +2DNPshunts",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R13"
+        ],
+        "observed": "22uF bulk +1uF VDD_SPI +10k GPIO0 pull-up +3x100k strap pull-down +0RRFseries +2DNPshunts",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R14"
+        ],
+        "observed": "22uF bulk +1uF VDD_SPI +10k GPIO0 pull-up +3x100k strap pull-down +0RRFseries +2DNPshunts",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R19"
+        ],
+        "observed": "100 ohm 1%",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R20"
+        ],
+        "observed": "100k 1%",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R25"
+        ],
+        "observed": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R26"
+        ],
+        "observed": "R_XREQ 330R + D_XREQ RB521S-30 + C_XREQ 100nF + R_XREQ_BLEED 100k + R_CAMRST 10k/100nF + R_CAMPWDN 10k + 2x R_SCCB 4.7k + R_LS4_EN 200k",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R28"
+        ],
+        "observed": "1k 1%",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R29"
+        ],
+        "observed": "R_XREQ 330R + D_XREQ RB521S-30 + C_XREQ 100nF + R_XREQ_BLEED 100k + R_CAMRST 10k/100nF + R_CAMPWDN 10k + 2x R_SCCB 4.7k + R_LS4_EN 200k",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R3"
+        ],
+        "observed": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R30"
+        ],
+        "observed": "R_XREQ 330R + D_XREQ RB521S-30 + C_XREQ 100nF + R_XREQ_BLEED 100k + R_CAMRST 10k/100nF + R_CAMPWDN 10k + 2x R_SCCB 4.7k + R_LS4_EN 200k",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R33"
+        ],
+        "observed": "32.4k 1%",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R34"
+        ],
+        "observed": "32.4k 1%",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R35"
+        ],
+        "observed": "33.2k 1%",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R36"
+        ],
+        "observed": "R_XREQ 330R + D_XREQ RB521S-30 + C_XREQ 100nF + R_XREQ_BLEED 100k + R_CAMRST 10k/100nF + R_CAMPWDN 10k + 2x R_SCCB 4.7k + R_LS4_EN 200k",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R37"
+        ],
+        "observed": "R_XREQ 330R + D_XREQ RB521S-30 + C_XREQ 100nF + R_XREQ_BLEED 100k + R_CAMRST 10k/100nF + R_CAMPWDN 10k + 2x R_SCCB 4.7k + R_LS4_EN 200k",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R4"
+        ],
+        "observed": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R5"
+        ],
+        "observed": "R_XREQ 330R + D_XREQ RB521S-30 + C_XREQ 100nF + R_XREQ_BLEED 100k + R_CAMRST 10k/100nF + R_CAMPWDN 10k + 2x R_SCCB 4.7k + R_LS4_EN 200k",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-MAIN-L",
+          "R6"
+        ],
+        "observed": "R_XREQ 330R + D_XREQ RB521S-30 + C_XREQ 100nF + R_XREQ_BLEED 100k + R_CAMRST 10k/100nF + R_CAMPWDN 10k + 2x R_SCCB 4.7k + R_LS4_EN 200k",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C1"
+        ],
+        "observed": "100nF X7R 6.3V",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C11"
+        ],
+        "observed": "100nF X7R 10V",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C12"
+        ],
+        "observed": "100nF X7R 10V",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C2"
+        ],
+        "observed": "100nF X7R10V; effective50..110nF qualification OPEN",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C3"
+        ],
+        "observed": "10nF C0G 5%",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C31"
+        ],
+        "observed": "1uF 10V X7R; effective >=1uF",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C32"
+        ],
+        "observed": "1uF 10V X7R; effective >=1uF",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C4"
+        ],
+        "observed": "100nF X7R 10V",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C5"
+        ],
+        "observed": "100nF X7R 10V",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C6"
+        ],
+        "observed": "100nF X7R 10V",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C7"
+        ],
+        "observed": "100nF X7R 10V",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C8"
+        ],
+        "observed": "100nF X7R 10V",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "C9"
+        ],
+        "observed": "100nF X7R 10V",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R10"
+        ],
+        "observed": "402k1%",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R3"
+        ],
+        "observed": "68k1%",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R4"
+        ],
+        "observed": "330k1%",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R5"
+        ],
+        "observed": "10k1%",
+        "classification": "PASSIVE_DESCRIPTOR"
+      },
+      {
+        "component": [
+          "M-OPT-BRIDGE",
+          "R6"
+        ],
+        "observed": "10k1%",
+        "classification": "PASSIVE_DESCRIPTOR"
+      }
+    ],
+    "pcb_features_without_order_codes": [
+      [
+        "M-AUD-R",
+        "TP1"
+      ],
+      [
+        "M-AUD-R",
+        "TP2"
+      ],
+      [
+        "M-AUD-R",
+        "TP3"
+      ],
+      [
+        "M-AUD-R",
+        "TP4"
+      ],
+      [
+        "M-AUD-R",
+        "TP5"
+      ],
+      [
+        "M-AUD-R",
+        "TP6"
+      ],
+      [
+        "M-MAIN-L",
+        "TP1"
+      ],
+      [
+        "M-MAIN-L",
+        "TP2"
+      ],
+      [
+        "M-MAIN-L",
+        "TP3"
+      ],
+      [
+        "M-MAIN-L",
+        "TP4"
+      ],
+      [
+        "M-MAIN-L",
+        "TP5"
+      ],
+      [
+        "M-MAIN-L",
+        "TP6"
+      ],
+      [
+        "M-MAIN-L",
+        "TP7"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "TP1"
+      ]
+    ],
+    "missing_native_footprint_uuid": [
+      [
+        "M-AUD-R",
+        "C1"
+      ],
+      [
+        "M-AUD-R",
+        "C2"
+      ],
+      [
+        "M-AUD-R",
+        "C3"
+      ],
+      [
+        "M-AUD-R",
+        "C4"
+      ],
+      [
+        "M-AUD-R",
+        "C5"
+      ],
+      [
+        "M-AUD-R",
+        "C6"
+      ],
+      [
+        "M-AUD-R",
+        "L1"
+      ],
+      [
+        "M-AUD-R",
+        "L2"
+      ],
+      [
+        "M-AUD-R",
+        "L3"
+      ],
+      [
+        "M-AUD-R",
+        "L4"
+      ],
+      [
+        "M-AUD-R",
+        "Q1"
+      ],
+      [
+        "M-AUD-R",
+        "R7"
+      ],
+      [
+        "M-AUD-R",
+        "R8"
+      ],
+      [
+        "M-AUD-R",
+        "U3"
+      ],
+      [
+        "M-MAIN-L",
+        "C1"
+      ],
+      [
+        "M-MAIN-L",
+        "C15"
+      ],
+      [
+        "M-MAIN-L",
+        "C16"
+      ],
+      [
+        "M-MAIN-L",
+        "C17"
+      ],
+      [
+        "M-MAIN-L",
+        "C18"
+      ],
+      [
+        "M-MAIN-L",
+        "C19"
+      ],
+      [
+        "M-MAIN-L",
+        "C2"
+      ],
+      [
+        "M-MAIN-L",
+        "C20"
+      ],
+      [
+        "M-MAIN-L",
+        "C21"
+      ],
+      [
+        "M-MAIN-L",
+        "C22"
+      ],
+      [
+        "M-MAIN-L",
+        "C23"
+      ],
+      [
+        "M-MAIN-L",
+        "C24"
+      ],
+      [
+        "M-MAIN-L",
+        "C25"
+      ],
+      [
+        "M-MAIN-L",
+        "C26"
+      ],
+      [
+        "M-MAIN-L",
+        "C27"
+      ],
+      [
+        "M-MAIN-L",
+        "C28"
+      ],
+      [
+        "M-MAIN-L",
+        "C29"
+      ],
+      [
+        "M-MAIN-L",
+        "C3"
+      ],
+      [
+        "M-MAIN-L",
+        "C30"
+      ],
+      [
+        "M-MAIN-L",
+        "C31"
+      ],
+      [
+        "M-MAIN-L",
+        "C32"
+      ],
+      [
+        "M-MAIN-L",
+        "C33"
+      ],
+      [
+        "M-MAIN-L",
+        "C34"
+      ],
+      [
+        "M-MAIN-L",
+        "C35"
+      ],
+      [
+        "M-MAIN-L",
+        "C36"
+      ],
+      [
+        "M-MAIN-L",
+        "C37"
+      ],
+      [
+        "M-MAIN-L",
+        "C38"
+      ],
+      [
+        "M-MAIN-L",
+        "C39"
+      ],
+      [
+        "M-MAIN-L",
+        "C4"
+      ],
+      [
+        "M-MAIN-L",
+        "C40"
+      ],
+      [
+        "M-MAIN-L",
+        "C41"
+      ],
+      [
+        "M-MAIN-L",
+        "C5"
+      ],
+      [
+        "M-MAIN-L",
+        "C7"
+      ],
+      [
+        "M-MAIN-L",
+        "C8"
+      ],
+      [
+        "M-MAIN-L",
+        "C9"
+      ],
+      [
+        "M-MAIN-L",
+        "L2"
+      ],
+      [
+        "M-MAIN-L",
+        "Q1"
+      ],
+      [
+        "M-MAIN-L",
+        "R19"
+      ],
+      [
+        "M-MAIN-L",
+        "R20"
+      ],
+      [
+        "M-MAIN-L",
+        "R28"
+      ],
+      [
+        "M-MAIN-L",
+        "R33"
+      ],
+      [
+        "M-MAIN-L",
+        "R34"
+      ],
+      [
+        "M-MAIN-L",
+        "R35"
+      ],
+      [
+        "M-MAIN-L",
+        "U11"
+      ],
+      [
+        "M-MAIN-L",
+        "U13"
+      ],
+      [
+        "M-MAIN-L",
+        "U14"
+      ],
+      [
+        "M-MAIN-L",
+        "U17"
+      ],
+      [
+        "M-MAIN-L",
+        "U19"
+      ],
+      [
+        "M-MAIN-L",
+        "U20"
+      ],
+      [
+        "M-MAIN-L",
+        "U5"
+      ],
+      [
+        "M-MAIN-L",
+        "U6"
+      ],
+      [
+        "M-MAIN-L",
+        "U7"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C10"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C11"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C12"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C13"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C14"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C15"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C16"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C17"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C18"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C19"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C20"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C21"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C22"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C23"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C27"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C28"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C29"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C3"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C30"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C31"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C33"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C4"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C5"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C6"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C7"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C8"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "C9"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R10"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R2"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R3"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R4"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R5"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R6"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R7"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R8"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "R9"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U1"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U10"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U11"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U12"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U13"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U14"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U4"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U7"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "U8"
+      ],
+      [
+        "M-OPT-BRIDGE",
+        "Y1"
+      ]
+    ],
+    "legacy_literal_coverage": {
+      "present": 172,
+      "expected": 233,
+      "scope": "Field-text replication includes generic values and cluster descriptions."
+    }
+  },
+  "board_native_bom": {
+    "M-MAIN-L": {
+      "status": "BLOCKED",
+      "reason": "No raw native board BOM export and receipt pair."
+    },
+    "M-OPT-BRIDGE": {
+      "status": "BLOCKED",
+      "reason": "No raw native board BOM export and receipt pair."
+    },
+    "M-AUD-R": {
+      "status": "BLOCKED",
+      "reason": "No raw native board BOM export and receipt pair."
+    }
+  },
+  "page_bom_export_coverage": {
+    "status": "BLOCKED",
+    "missing": [
+      "bom/d643a0611d67a31a.csv"
+    ],
+    "scope": "Availability and parse of native BOM CSV. Separate from the exact identity and procurement checks."
+  },
+  "source_footprint_blockers": [
+    [
+      "M-AUD-R",
+      "ANT2"
+    ],
+    [
+      "M-AUD-R",
+      "C10"
+    ],
+    [
+      "M-AUD-R",
+      "C11"
+    ],
+    [
+      "M-AUD-R",
+      "C12"
+    ],
+    [
+      "M-AUD-R",
+      "C13"
+    ],
+    [
+      "M-AUD-R",
+      "C14"
+    ],
+    [
+      "M-AUD-R",
+      "C15"
+    ],
+    [
+      "M-AUD-R",
+      "C16"
+    ],
+    [
+      "M-AUD-R",
+      "C17"
+    ],
+    [
+      "M-AUD-R",
+      "C18"
+    ],
+    [
+      "M-AUD-R",
+      "C19"
+    ],
+    [
+      "M-AUD-R",
+      "C20"
+    ],
+    [
+      "M-AUD-R",
+      "C21"
+    ],
+    [
+      "M-AUD-R",
+      "C7"
+    ],
+    [
+      "M-AUD-R",
+      "C8"
+    ],
+    [
+      "M-AUD-R",
+      "C9"
+    ],
+    [
+      "M-AUD-R",
+      "J1"
+    ],
+    [
+      "M-AUD-R",
+      "MK3"
+    ],
+    [
+      "M-AUD-R",
+      "R1"
+    ],
+    [
+      "M-AUD-R",
+      "R10"
+    ],
+    [
+      "M-AUD-R",
+      "R2"
+    ],
+    [
+      "M-AUD-R",
+      "R3"
+    ],
+    [
+      "M-AUD-R",
+      "R4"
+    ],
+    [
+      "M-AUD-R",
+      "R5"
+    ],
+    [
+      "M-AUD-R",
+      "R6"
+    ],
+    [
+      "M-AUD-R",
+      "R9"
+    ],
+    [
+      "M-AUD-R",
+      "TP1"
+    ],
+    [
+      "M-AUD-R",
+      "TP2"
+    ],
+    [
+      "M-AUD-R",
+      "TP3"
+    ],
+    [
+      "M-AUD-R",
+      "TP4"
+    ],
+    [
+      "M-AUD-R",
+      "TP5"
+    ],
+    [
+      "M-AUD-R",
+      "TP6"
+    ],
+    [
+      "M-AUD-R",
+      "U1"
+    ],
+    [
+      "M-AUD-R",
+      "U10"
+    ],
+    [
+      "M-AUD-R",
+      "U11"
+    ],
+    [
+      "M-AUD-R",
+      "Y2"
+    ],
+    [
+      "M-MAIN-L",
+      "ANT1"
+    ],
+    [
+      "M-MAIN-L",
+      "C10"
+    ],
+    [
+      "M-MAIN-L",
+      "C11"
+    ],
+    [
+      "M-MAIN-L",
+      "C12"
+    ],
+    [
+      "M-MAIN-L",
+      "C13"
+    ],
+    [
+      "M-MAIN-L",
+      "C14"
+    ],
+    [
+      "M-MAIN-L",
+      "C42"
+    ],
+    [
+      "M-MAIN-L",
+      "C6"
+    ],
+    [
+      "M-MAIN-L",
+      "D1"
+    ],
+    [
+      "M-MAIN-L",
+      "J1"
+    ],
+    [
+      "M-MAIN-L",
+      "J2"
+    ],
+    [
+      "M-MAIN-L",
+      "J3"
+    ],
+    [
+      "M-MAIN-L",
+      "L1"
+    ],
+    [
+      "M-MAIN-L",
+      "MK1"
+    ],
+    [
+      "M-MAIN-L",
+      "R1"
+    ],
+    [
+      "M-MAIN-L",
+      "R10"
+    ],
+    [
+      "M-MAIN-L",
+      "R11"
+    ],
+    [
+      "M-MAIN-L",
+      "R12"
+    ],
+    [
+      "M-MAIN-L",
+      "R13"
+    ],
+    [
+      "M-MAIN-L",
+      "R14"
+    ],
+    [
+      "M-MAIN-L",
+      "R15"
+    ],
+    [
+      "M-MAIN-L",
+      "R16"
+    ],
+    [
+      "M-MAIN-L",
+      "R17"
+    ],
+    [
+      "M-MAIN-L",
+      "R18"
+    ],
+    [
+      "M-MAIN-L",
+      "R2"
+    ],
+    [
+      "M-MAIN-L",
+      "R21"
+    ],
+    [
+      "M-MAIN-L",
+      "R22"
+    ],
+    [
+      "M-MAIN-L",
+      "R23"
+    ],
+    [
+      "M-MAIN-L",
+      "R24"
+    ],
+    [
+      "M-MAIN-L",
+      "R25"
+    ],
+    [
+      "M-MAIN-L",
+      "R26"
+    ],
+    [
+      "M-MAIN-L",
+      "R27"
+    ],
+    [
+      "M-MAIN-L",
+      "R29"
+    ],
+    [
+      "M-MAIN-L",
+      "R3"
+    ],
+    [
+      "M-MAIN-L",
+      "R30"
+    ],
+    [
+      "M-MAIN-L",
+      "R31"
+    ],
+    [
+      "M-MAIN-L",
+      "R32"
+    ],
+    [
+      "M-MAIN-L",
+      "R36"
+    ],
+    [
+      "M-MAIN-L",
+      "R37"
+    ],
+    [
+      "M-MAIN-L",
+      "R4"
+    ],
+    [
+      "M-MAIN-L",
+      "R5"
+    ],
+    [
+      "M-MAIN-L",
+      "R6"
+    ],
+    [
+      "M-MAIN-L",
+      "R7"
+    ],
+    [
+      "M-MAIN-L",
+      "R8"
+    ],
+    [
+      "M-MAIN-L",
+      "R9"
+    ],
+    [
+      "M-MAIN-L",
+      "TP1"
+    ],
+    [
+      "M-MAIN-L",
+      "TP2"
+    ],
+    [
+      "M-MAIN-L",
+      "TP3"
+    ],
+    [
+      "M-MAIN-L",
+      "TP4"
+    ],
+    [
+      "M-MAIN-L",
+      "TP5"
+    ],
+    [
+      "M-MAIN-L",
+      "TP6"
+    ],
+    [
+      "M-MAIN-L",
+      "TP7"
+    ],
+    [
+      "M-MAIN-L",
+      "U1"
+    ],
+    [
+      "M-MAIN-L",
+      "U10"
+    ],
+    [
+      "M-MAIN-L",
+      "U12"
+    ],
+    [
+      "M-MAIN-L",
+      "U15"
+    ],
+    [
+      "M-MAIN-L",
+      "U16"
+    ],
+    [
+      "M-MAIN-L",
+      "U18"
+    ],
+    [
+      "M-MAIN-L",
+      "U2"
+    ],
+    [
+      "M-MAIN-L",
+      "U21"
+    ],
+    [
+      "M-MAIN-L",
+      "U3"
+    ],
+    [
+      "M-MAIN-L",
+      "U4"
+    ],
+    [
+      "M-MAIN-L",
+      "U8"
+    ],
+    [
+      "M-MAIN-L",
+      "U9"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "C24"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "C25"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "C26"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "C32"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "D3"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "J1"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "J2"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "J3"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "MK2"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "R11"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "R12"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "R13"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "R14"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "R15"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "R16"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "R17"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "R18"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "R19"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "R20"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "R21"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "R22"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "R23"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "R24"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "R25"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "R26"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "R27"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "R28"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "R29"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "TP1"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "U2"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "U3"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "U5"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "U6"
+    ],
+    [
+      "M-OPT-BRIDGE",
+      "U9"
+    ]
+  ],
+  "strict_erc": {
+    "status": "BLOCKED",
+    "reason": "strict native reports unavailable"
+  },
+  "strict_erc_missing_raw_project_page_context": [],
+  "persistence_and_archive": {
+    "status": "BLOCKED",
+    "reason": "No coherent save → reload → full native capture and restored archive proof.",
+    "reported_capture_model": "Latest valid available native readback per page; not a simultaneous final capture and not save/reload-qualified."
+  }
+}

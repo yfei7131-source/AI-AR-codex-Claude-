@@ -1,0 +1,97 @@
+{
+  "archive_transform": "PASS",
+  "editor_acceptance": "UNVERIFIED",
+  "manufacturing": "BLOCKED",
+  "source_sha256": "7159641f583aafde819e82feef8b55bfc363b458e6306859b7c72971363c5128",
+  "output_sha256": "8a6d35c0f5b54ed6fb6397dfc7dee84bd972ec6fd2ba772cf52967e4dc4b4c42",
+  "renames": [
+    {
+      "board": "M-MAIN-L",
+      "page": "2d94cb183ed4ccdc",
+      "primitive": "ie22",
+      "designator": "#FLG01",
+      "prior": "EVT1_#FLG01_SUPPLY_ORIGIN",
+      "new": "1V8_FPGA_IO"
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "2d94cb183ed4ccdc",
+      "primitive": "ie34",
+      "designator": "#FLG02",
+      "prior": "EVT1_#FLG02_SUPPLY_ORIGIN",
+      "new": "VBAT_R_RET"
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "2d94cb183ed4ccdc",
+      "primitive": "ie46",
+      "designator": "#FLG03",
+      "prior": "EVT1_#FLG03_SUPPLY_ORIGIN",
+      "new": "VBAT_R_ISOLATED"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "page": "2abf127033234e68",
+      "primitive": "ie22",
+      "designator": "#FLG01",
+      "prior": "EVT1_#FLG01_SUPPLY_ORIGIN",
+      "new": "GND"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "page": "2abf127033234e68",
+      "primitive": "ie34",
+      "designator": "#FLG02",
+      "prior": "EVT1_#FLG02_SUPPLY_ORIGIN",
+      "new": "VSYS"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "page": "2abf127033234e68",
+      "primitive": "ie46",
+      "designator": "#FLG03",
+      "prior": "EVT1_#FLG03_SUPPLY_ORIGIN",
+      "new": "1V8_SYS"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "page": "2abf127033234e68",
+      "primitive": "ie58",
+      "designator": "#FLG04",
+      "prior": "EVT1_#FLG04_SUPPLY_ORIGIN",
+      "new": "1V2_FPGA_PLL"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "page": "2abf127033234e68",
+      "primitive": "ie70",
+      "designator": "#FLG05",
+      "prior": "EVT1_#FLG05_SUPPLY_ORIGIN",
+      "new": "1V8_FPGA_VPP"
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "9e364700c984f124",
+      "primitive": "ie22",
+      "designator": "#FLG01",
+      "prior": "EVT1_#FLG01_SUPPLY_ORIGIN",
+      "new": "GND"
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "9e364700c984f124",
+      "primitive": "ie34",
+      "designator": "#FLG02",
+      "prior": "EVT1_#FLG02_SUPPLY_ORIGIN",
+      "new": "VBUS_5V"
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "9e364700c984f124",
+      "primitive": "ie46",
+      "designator": "#FLG03",
+      "prior": "EVT1_#FLG03_SUPPLY_ORIGIN",
+      "new": "1V8_SYS"
+    }
+  ]
+}

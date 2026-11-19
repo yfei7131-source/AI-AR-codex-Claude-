@@ -1,0 +1,1392 @@
+{
+  "offline_archive_check": "PASS",
+  "native_import_and_field_readback": "UNVERIFIED",
+  "assembly_release": "BLOCKED",
+  "original_sha256": "e16006b91037999a493f8184fa8bc1474c46238990098dfa6cd670a460a8b62d",
+  "candidate_a_sha256": "3c0629e03bc8eb7ac7735fa9c35c0d69b64bd4907495ff720e1d97e7d6f98ede",
+  "candidate_b_sha256": "7159641f583aafde819e82feef8b55bfc363b458e6306859b7c72971363c5128",
+  "guarded_component_count": 253,
+  "catalog_target_count": 52,
+  "catalog_write_counts": {
+    "CLEAR": 131,
+    "SET": 11
+  },
+  "other_documents_and_zip_members_unchanged": true,
+  "changed_documents": [
+    [
+      "DEVICE",
+      "db4214c8d667cb47"
+    ],
+    [
+      "SCH_PAGE",
+      "8fa31840ba825b92"
+    ],
+    [
+      "SCH_PAGE",
+      "ed9e9866a1b746ac"
+    ],
+    [
+      "SCH_PAGE",
+      "07dc7dde94c1bf76"
+    ],
+    [
+      "SCH_PAGE",
+      "bbbca101b360e299"
+    ],
+    [
+      "SCH_PAGE",
+      "35d0bca337813128"
+    ],
+    [
+      "SCH_PAGE",
+      "3e7683d1ed324ce9"
+    ],
+    [
+      "SCH_PAGE",
+      "a7f2cc2b0cf16956"
+    ],
+    [
+      "SCH_PAGE",
+      "e99e682aca69cae1"
+    ],
+    [
+      "SCH_PAGE",
+      "2ef9ed7773e0c42f"
+    ],
+    [
+      "SCH_PAGE",
+      "b1ec1f299f13f9eb"
+    ],
+    [
+      "SCH_PAGE",
+      "d643a0611d67a31a"
+    ],
+    [
+      "SCH_PAGE",
+      "3fdc6001a068d82e"
+    ]
+  ],
+  "asadv_association": {
+    "device": "db4214c8d667cb47",
+    "donor_device": "fa9efc4fc8fa9870",
+    "asset": "f2382a3a65e883d1",
+    "reference": "Y1_OSC",
+    "control_source": "EVT1_Reviewed:Abracon_ASADV_2016-4Pin_2.0x1.6mm",
+    "pad_center_and_size_mm": {
+      "1": [
+        -0.64,
+        -0.49,
+        0.88,
+        0.78
+      ],
+      "2": [
+        0.64,
+        -0.49,
+        0.88,
+        0.78
+      ],
+      "3": [
+        0.64,
+        0.49,
+        0.88,
+        0.78
+      ],
+      "4": [
+        -0.64,
+        0.49,
+        0.88,
+        0.78
+      ]
+    },
+    "native_load_and_transfer": "UNVERIFIED"
+  },
+  "source_dnp_not_transferred": [
+    "NRF_CT19",
+    "C_ESP_RF_IN",
+    "C_ESP_RF_OUT",
+    "J_DISP_L",
+    "J_DISP_R",
+    "U6_OPT_AVDD"
+  ],
+  "dnp_gate": "BLOCKED: native assembly population semantics and variant readback not verified",
+  "catalog_edits": [
+    {
+      "board": "M-AUD-R",
+      "page": "8fa31840ba825b92",
+      "ref": "C_AMP_SD_BUF",
+      "cad_reference": "C1",
+      "action": "CLEAR",
+      "from": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+      "to": ""
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "07dc7dde94c1bf76",
+      "ref": "NRF_C4",
+      "cad_reference": "C10",
+      "action": "CLEAR",
+      "from": "Nordic CMAA config3 reference passives; exact procurement MPNs pending",
+      "to": ""
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "07dc7dde94c1bf76",
+      "ref": "NRF_C5",
+      "cad_reference": "C11",
+      "action": "CLEAR",
+      "from": "Nordic CMAA config3 reference passives; exact procurement MPNs pending",
+      "to": ""
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "07dc7dde94c1bf76",
+      "ref": "NRF_C6",
+      "cad_reference": "C12",
+      "action": "CLEAR",
+      "from": "Nordic CMAA config3 reference passives; exact procurement MPNs pending",
+      "to": ""
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "07dc7dde94c1bf76",
+      "ref": "NRF_C7",
+      "cad_reference": "C13",
+      "action": "CLEAR",
+      "from": "Nordic CMAA config3 reference passives; exact procurement MPNs pending",
+      "to": ""
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "07dc7dde94c1bf76",
+      "ref": "NRF_C8",
+      "cad_reference": "C14",
+      "action": "CLEAR",
+      "from": "Nordic CMAA config3 reference passives; exact procurement MPNs pending",
+      "to": ""
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "07dc7dde94c1bf76",
+      "ref": "NRF_C9",
+      "cad_reference": "C15",
+      "action": "CLEAR",
+      "from": "Nordic CMAA config3 reference passives; exact procurement MPNs pending",
+      "to": ""
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "07dc7dde94c1bf76",
+      "ref": "NRF_C10",
+      "cad_reference": "C16",
+      "action": "CLEAR",
+      "from": "Nordic CMAA config3 reference passives; exact procurement MPNs pending",
+      "to": ""
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "07dc7dde94c1bf76",
+      "ref": "NRF_C11",
+      "cad_reference": "C17",
+      "action": "CLEAR",
+      "from": "Nordic CMAA config3 reference passives; exact procurement MPNs pending",
+      "to": ""
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "07dc7dde94c1bf76",
+      "ref": "NRF_C12",
+      "cad_reference": "C18",
+      "action": "CLEAR",
+      "from": "Nordic CMAA config3 reference passives; exact procurement MPNs pending",
+      "to": ""
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "07dc7dde94c1bf76",
+      "ref": "NRF_C13",
+      "cad_reference": "C19",
+      "action": "CLEAR",
+      "from": "Nordic CMAA config3 reference passives; exact procurement MPNs pending",
+      "to": ""
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "bbbca101b360e299",
+      "ref": "C_CHG_R_IN",
+      "cad_reference": "C2",
+      "action": "CLEAR",
+      "from": "1uF 25V X7R; effective >=1uF",
+      "to": ""
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "07dc7dde94c1bf76",
+      "ref": "NRF_C14",
+      "cad_reference": "C20",
+      "action": "CLEAR",
+      "from": "Nordic CMAA config3 reference passives; exact procurement MPNs pending",
+      "to": ""
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "07dc7dde94c1bf76",
+      "ref": "NRF_CT19",
+      "cad_reference": "C21",
+      "action": "CLEAR",
+      "from": "Nordic CMAA config3 reference passives; exact procurement MPNs pending",
+      "to": ""
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "bbbca101b360e299",
+      "ref": "C_CHG_R_OUT",
+      "cad_reference": "C3",
+      "action": "CLEAR",
+      "from": "1uF 10V X7R; effective >=1uF",
+      "to": ""
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "8fa31840ba825b92",
+      "ref": "C_MK3_R",
+      "cad_reference": "C4",
+      "action": "CLEAR",
+      "from": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+      "to": ""
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "8fa31840ba825b92",
+      "ref": "C_U10_AMP_R_BULK",
+      "cad_reference": "C5",
+      "action": "CLEAR",
+      "from": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+      "to": ""
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "8fa31840ba825b92",
+      "ref": "C_U10_AMP_R_HF",
+      "cad_reference": "C6",
+      "action": "CLEAR",
+      "from": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+      "to": ""
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "07dc7dde94c1bf76",
+      "ref": "NRF_C1",
+      "cad_reference": "C7",
+      "action": "CLEAR",
+      "from": "Nordic CMAA config3 reference passives; exact procurement MPNs pending",
+      "to": ""
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "07dc7dde94c1bf76",
+      "ref": "NRF_C2",
+      "cad_reference": "C8",
+      "action": "CLEAR",
+      "from": "Nordic CMAA config3 reference passives; exact procurement MPNs pending",
+      "to": ""
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "07dc7dde94c1bf76",
+      "ref": "NRF_C3",
+      "cad_reference": "C9",
+      "action": "CLEAR",
+      "from": "Nordic CMAA config3 reference passives; exact procurement MPNs pending",
+      "to": ""
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "07dc7dde94c1bf76",
+      "ref": "NRF_L1",
+      "cad_reference": "L1",
+      "action": "CLEAR",
+      "from": "Nordic CMAA config3 reference passives; exact procurement MPNs pending",
+      "to": ""
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "07dc7dde94c1bf76",
+      "ref": "NRF_L2",
+      "cad_reference": "L2",
+      "action": "CLEAR",
+      "from": "Nordic CMAA config3 reference passives; exact procurement MPNs pending",
+      "to": ""
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "07dc7dde94c1bf76",
+      "ref": "NRF_L3",
+      "cad_reference": "L3",
+      "action": "CLEAR",
+      "from": "Nordic CMAA config3 reference passives; exact procurement MPNs pending",
+      "to": ""
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "07dc7dde94c1bf76",
+      "ref": "NRF_L4",
+      "cad_reference": "L4",
+      "action": "CLEAR",
+      "from": "Nordic CMAA config3 reference passives; exact procurement MPNs pending",
+      "to": ""
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "bbbca101b360e299",
+      "ref": "Q_CHG_MUTE_R",
+      "cad_reference": "Q1",
+      "action": "CLEAR",
+      "from": "2N7002",
+      "to": ""
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "8fa31840ba825b92",
+      "ref": "R_AMP_REQ_PD",
+      "cad_reference": "R1",
+      "action": "CLEAR",
+      "from": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+      "to": ""
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "bbbca101b360e299",
+      "ref": "R_VSET_R",
+      "cad_reference": "R10",
+      "action": "CLEAR",
+      "from": "R_SDR 69.8k 1% + R_IPC_PU 100k + R_ISET_R 5.49k 1% + R_VSET_R 27k 1%",
+      "to": ""
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "8fa31840ba825b92",
+      "ref": "R_IDLE_I2S_AMP_DIN_1V8",
+      "cad_reference": "R2",
+      "action": "CLEAR",
+      "from": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+      "to": ""
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "8fa31840ba825b92",
+      "ref": "R_IDLE_I2S_BCLK_1V8",
+      "cad_reference": "R3",
+      "action": "CLEAR",
+      "from": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+      "to": ""
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "8fa31840ba825b92",
+      "ref": "R_IDLE_I2S_LRCLK_1V8",
+      "cad_reference": "R4",
+      "action": "CLEAR",
+      "from": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+      "to": ""
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "8fa31840ba825b92",
+      "ref": "R_IPC_PU",
+      "cad_reference": "R5",
+      "action": "CLEAR",
+      "from": "R_SDR 69.8k 1% + R_IPC_PU 100k + R_ISET_R 5.49k 1% + R_VSET_R 27k 1%",
+      "to": ""
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "bbbca101b360e299",
+      "ref": "R_ISET_R",
+      "cad_reference": "R6",
+      "action": "CLEAR",
+      "from": "R_SDR 69.8k 1% + R_IPC_PU 100k + R_ISET_R 5.49k 1% + R_VSET_R 27k 1%",
+      "to": ""
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "bbbca101b360e299",
+      "ref": "R_MUTE_GATE",
+      "cad_reference": "R7",
+      "action": "CLEAR",
+      "from": "100 ohm 1%",
+      "to": ""
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "bbbca101b360e299",
+      "ref": "R_MUTE_PD",
+      "cad_reference": "R8",
+      "action": "CLEAR",
+      "from": "100k 1%",
+      "to": ""
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "8fa31840ba825b92",
+      "ref": "R_SDR",
+      "cad_reference": "R9",
+      "action": "CLEAR",
+      "from": "R_SDR 69.8k 1% + R_IPC_PU 100k + R_ISET_R 5.49k 1% + R_VSET_R 27k 1%",
+      "to": ""
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "bbbca101b360e299",
+      "ref": "TP_BAT_R_N",
+      "cad_reference": "TP1",
+      "action": "CLEAR",
+      "from": "Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight)",
+      "to": ""
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "bbbca101b360e299",
+      "ref": "TP_BAT_R_P",
+      "cad_reference": "TP2",
+      "action": "CLEAR",
+      "from": "Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight)",
+      "to": ""
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "bbbca101b360e299",
+      "ref": "TP_NTC_R",
+      "cad_reference": "TP3",
+      "action": "CLEAR",
+      "from": "Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight)",
+      "to": ""
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "8fa31840ba825b92",
+      "ref": "TP_SPK_R_N",
+      "cad_reference": "TP4",
+      "action": "CLEAR",
+      "from": "PCB copper pad",
+      "to": ""
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "8fa31840ba825b92",
+      "ref": "TP_SPK_R_P",
+      "cad_reference": "TP5",
+      "action": "CLEAR",
+      "from": "PCB copper pad",
+      "to": ""
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "07dc7dde94c1bf76",
+      "ref": "TP_SWD_R",
+      "cad_reference": "TP6",
+      "action": "CLEAR",
+      "from": "5x 0.6 mm pads (SWDIO, SWDCLK, nRESET, VTREF, GND) for pogo fixture",
+      "to": ""
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "07dc7dde94c1bf76",
+      "ref": "Y2_BLE",
+      "cad_reference": "Y2",
+      "action": "CLEAR",
+      "from": "FA-128 32 MHz 8 pF +/-10 ppm initial +/-10 ppm temperature; candidate Q22FA12800025 (ordering suffix/vendor controlled spec pending)",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "3fdc6001a068d82e",
+      "ref": "C_BB_IN",
+      "cad_reference": "C1",
+      "action": "CLEAR",
+      "from": "10uF 10V X5R; effective >=4uF",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "3e7683d1ed324ce9",
+      "ref": "C_ESP_BULK",
+      "cad_reference": "C11",
+      "action": "CLEAR",
+      "from": "22uF bulk +1uF VDD_SPI +10k GPIO0 pull-up +3x100k strap pull-down +0RRFseries +2DNPshunts",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "3e7683d1ed324ce9",
+      "ref": "C_ESP_RF_IN",
+      "cad_reference": "C12",
+      "action": "CLEAR",
+      "from": "22uF bulk +1uF VDD_SPI +10k GPIO0 pull-up +3x100k strap pull-down +0RRFseries +2DNPshunts",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "3e7683d1ed324ce9",
+      "ref": "C_ESP_RF_OUT",
+      "cad_reference": "C13",
+      "action": "CLEAR",
+      "from": "22uF bulk +1uF VDD_SPI +10k GPIO0 pull-up +3x100k strap pull-down +0RRFseries +2DNPshunts",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "3e7683d1ed324ce9",
+      "ref": "C_ESP_VDD_SPI",
+      "cad_reference": "C14",
+      "action": "CLEAR",
+      "from": "22uF bulk +1uF VDD_SPI +10k GPIO0 pull-up +3x100k strap pull-down +0RRFseries +2DNPshunts",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "e99e682aca69cae1",
+      "ref": "C_INA_SUPPLY",
+      "cad_reference": "C15",
+      "action": "CLEAR",
+      "from": "100nF 10V X7R at U7_INA VS/GND",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "e99e682aca69cae1",
+      "ref": "C_LDO_AVDD_IN",
+      "cad_reference": "C16",
+      "action": "CLEAR",
+      "from": "1uF 10V X7R; effective >=1uF",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "e99e682aca69cae1",
+      "ref": "C_LDO_AVDD_OUT",
+      "cad_reference": "C17",
+      "action": "CLEAR",
+      "from": "1uF 10V X7R; effective >=1uF",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "e99e682aca69cae1",
+      "ref": "C_LDO_DOVDD_IN",
+      "cad_reference": "C18",
+      "action": "CLEAR",
+      "from": "1uF 10V X7R; effective >=1uF",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "e99e682aca69cae1",
+      "ref": "C_LDO_DOVDD_OUT",
+      "cad_reference": "C19",
+      "action": "CLEAR",
+      "from": "1uF 10V X7R; effective >=1uF",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "3fdc6001a068d82e",
+      "ref": "C_BB_OUT",
+      "cad_reference": "C2",
+      "action": "CLEAR",
+      "from": "22uF 10V X5R; effective >=7uF",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "e99e682aca69cae1",
+      "ref": "C_LDO_DVDD_IN",
+      "cad_reference": "C20",
+      "action": "CLEAR",
+      "from": "1uF 10V X7R; effective >=1uF",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "e99e682aca69cae1",
+      "ref": "C_LDO_DVDD_OUT",
+      "cad_reference": "C21",
+      "action": "CLEAR",
+      "from": "1uF 10V X7R; effective >=1uF",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "e99e682aca69cae1",
+      "ref": "C_LDO_LED_IN",
+      "cad_reference": "C22",
+      "action": "CLEAR",
+      "from": "1uF 10V X7R; effective >=1uF",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "e99e682aca69cae1",
+      "ref": "C_LDO_LED_OUT",
+      "cad_reference": "C23",
+      "action": "CLEAR",
+      "from": "1uF 10V X7R; effective >=1uF",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "2ef9ed7773e0c42f",
+      "ref": "C_MK1_L",
+      "cad_reference": "C24",
+      "action": "CLEAR",
+      "from": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "3fdc6001a068d82e",
+      "ref": "C_OR_IN1",
+      "cad_reference": "C25",
+      "action": "CLEAR",
+      "from": "1uF 10V X7R",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "3fdc6001a068d82e",
+      "ref": "C_OR_IN2",
+      "cad_reference": "C26",
+      "action": "CLEAR",
+      "from": "1uF 10V X7R",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "3fdc6001a068d82e",
+      "ref": "C_OR_OUT",
+      "cad_reference": "C27",
+      "action": "CLEAR",
+      "from": "1uF 10V X7R",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "e99e682aca69cae1",
+      "ref": "C_PRIV_RC",
+      "cad_reference": "C28",
+      "action": "CLEAR",
+      "from": "1uF 10V X7R; local discharge tau1ms; pullup charge tau11ms including10k",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "2ef9ed7773e0c42f",
+      "ref": "C_U8_AUD_LS2_A",
+      "cad_reference": "C29",
+      "action": "CLEAR",
+      "from": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "3fdc6001a068d82e",
+      "ref": "C_BK_IN",
+      "cad_reference": "C3",
+      "action": "CLEAR",
+      "from": "4.7uF 10V X5R; effective >=1uF",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "2ef9ed7773e0c42f",
+      "ref": "C_U8_AUD_LS2_B",
+      "cad_reference": "C30",
+      "action": "CLEAR",
+      "from": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "e99e682aca69cae1",
+      "ref": "C_U8_CAM_ISO1_A",
+      "cad_reference": "C31",
+      "action": "CLEAR",
+      "from": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "e99e682aca69cae1",
+      "ref": "C_U8_CAM_ISO1_B",
+      "cad_reference": "C32",
+      "action": "CLEAR",
+      "from": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "e99e682aca69cae1",
+      "ref": "C_U8_CAM_ISO2_A",
+      "cad_reference": "C33",
+      "action": "CLEAR",
+      "from": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "e99e682aca69cae1",
+      "ref": "C_U8_CAM_ISO2_B",
+      "cad_reference": "C34",
+      "action": "CLEAR",
+      "from": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "3e7683d1ed324ce9",
+      "ref": "C_U8_LS1_A",
+      "cad_reference": "C35",
+      "action": "CLEAR",
+      "from": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "3e7683d1ed324ce9",
+      "ref": "C_U8_LS1_B",
+      "cad_reference": "C36",
+      "action": "CLEAR",
+      "from": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "2ef9ed7773e0c42f",
+      "ref": "C_U8_PDM_LS_A",
+      "cad_reference": "C37",
+      "action": "CLEAR",
+      "from": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "2ef9ed7773e0c42f",
+      "ref": "C_U8_PDM_LS_B",
+      "cad_reference": "C38",
+      "action": "CLEAR",
+      "from": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "2ef9ed7773e0c42f",
+      "ref": "C_U10_AMP_L_BULK",
+      "cad_reference": "C39",
+      "action": "CLEAR",
+      "from": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "3fdc6001a068d82e",
+      "ref": "C_BK_OUT",
+      "cad_reference": "C4",
+      "action": "CLEAR",
+      "from": "10uF 6.3V X5R; effective 3..40uF",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "2ef9ed7773e0c42f",
+      "ref": "C_U10_AMP_L_HF",
+      "cad_reference": "C40",
+      "action": "CLEAR",
+      "from": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "e99e682aca69cae1",
+      "ref": "C_WIN_SUPPLY",
+      "cad_reference": "C41",
+      "action": "CLEAR",
+      "from": "100nF 10V X7R at U7_WIN VCC/VEE",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "e99e682aca69cae1",
+      "ref": "C_XREQ",
+      "cad_reference": "C42",
+      "action": "CLEAR",
+      "from": "R_XREQ 330R + D_XREQ RB521S-30 + C_XREQ 100nF + R_XREQ_BLEED 100k + R_CAMRST 10k/100nF + R_CAMPWDN 10k + 2x R_SCCB 4.7k + R_LS4_EN 200k",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "e99e682aca69cae1",
+      "ref": "C_CAM_SCCB_EN",
+      "cad_reference": "C5",
+      "action": "CLEAR",
+      "from": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "e99e682aca69cae1",
+      "ref": "C_CAMRST",
+      "cad_reference": "C6",
+      "action": "CLEAR",
+      "from": "R_XREQ 330R + D_XREQ RB521S-30 + C_XREQ 100nF + R_XREQ_BLEED 100k + R_CAMRST 10k/100nF + R_CAMPWDN 10k + 2x R_SCCB 4.7k + R_LS4_EN 200k",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "3fdc6001a068d82e",
+      "ref": "C_CHG_L_BAT",
+      "cad_reference": "C7",
+      "action": "CLEAR",
+      "from": "1uF 10V X7R; effective >=1uF",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "3fdc6001a068d82e",
+      "ref": "C_CHG_L_IN",
+      "cad_reference": "C8",
+      "action": "CLEAR",
+      "from": "1uF 25V X7R; effective >=1uF",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "3fdc6001a068d82e",
+      "ref": "C_CHG_L_SYS",
+      "cad_reference": "C9",
+      "action": "CLEAR",
+      "from": "10uF 25V X5R; effective >1uF",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "e99e682aca69cae1",
+      "ref": "D_XREQ",
+      "cad_reference": "D1",
+      "action": "CLEAR",
+      "from": "R_XREQ 330R + D_XREQ RB521S-30 + C_XREQ 100nF + R_XREQ_BLEED 100k + R_CAMRST 10k/100nF + R_CAMPWDN 10k + 2x R_SCCB 4.7k + R_LS4_EN 200k",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "3fdc6001a068d82e",
+      "ref": "L2_1V8",
+      "cad_reference": "L2",
+      "action": "SET",
+      "from": "DFE161212U-2R2M",
+      "to": "DFE21CCN2R2MELL"
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "3e7683d1ed324ce9",
+      "ref": "R_ESP_BOOT",
+      "cad_reference": "R10",
+      "action": "CLEAR",
+      "from": "22uF bulk +1uF VDD_SPI +10k GPIO0 pull-up +3x100k strap pull-down +0RRFseries +2DNPshunts",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "3e7683d1ed324ce9",
+      "ref": "R_ESP_RF",
+      "cad_reference": "R11",
+      "action": "CLEAR",
+      "from": "22uF bulk +1uF VDD_SPI +10k GPIO0 pull-up +3x100k strap pull-down +0RRFseries +2DNPshunts",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "3e7683d1ed324ce9",
+      "ref": "R_ESP_STRAP3",
+      "cad_reference": "R12",
+      "action": "CLEAR",
+      "from": "22uF bulk +1uF VDD_SPI +10k GPIO0 pull-up +3x100k strap pull-down +0RRFseries +2DNPshunts",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "3e7683d1ed324ce9",
+      "ref": "R_ESP_STRAP45",
+      "cad_reference": "R13",
+      "action": "CLEAR",
+      "from": "22uF bulk +1uF VDD_SPI +10k GPIO0 pull-up +3x100k strap pull-down +0RRFseries +2DNPshunts",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "3e7683d1ed324ce9",
+      "ref": "R_ESP_STRAP46",
+      "cad_reference": "R14",
+      "action": "CLEAR",
+      "from": "22uF bulk +1uF VDD_SPI +10k GPIO0 pull-up +3x100k strap pull-down +0RRFseries +2DNPshunts",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "3fdc6001a068d82e",
+      "ref": "R_ISO_GATE",
+      "cad_reference": "R19",
+      "action": "CLEAR",
+      "from": "100 ohm 1%",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "3fdc6001a068d82e",
+      "ref": "R_ISO_PD",
+      "cad_reference": "R20",
+      "action": "CLEAR",
+      "from": "100k 1%",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "3e7683d1ed324ce9",
+      "ref": "R_LS3_VREF_BLEED",
+      "cad_reference": "R25",
+      "action": "CLEAR",
+      "from": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "3e7683d1ed324ce9",
+      "ref": "R_LS4_EN",
+      "cad_reference": "R26",
+      "action": "CLEAR",
+      "from": "R_XREQ 330R + D_XREQ RB521S-30 + C_XREQ 100nF + R_XREQ_BLEED 100k + R_CAMRST 10k/100nF + R_CAMPWDN 10k + 2x R_SCCB 4.7k + R_LS4_EN 200k",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "35d0bca337813128",
+      "ref": "R_PRIV_RC",
+      "cad_reference": "R28",
+      "action": "CLEAR",
+      "from": "1k 1%",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "35d0bca337813128",
+      "ref": "R_SCCB_SCL",
+      "cad_reference": "R29",
+      "action": "CLEAR",
+      "from": "R_XREQ 330R + D_XREQ RB521S-30 + C_XREQ 100nF + R_XREQ_BLEED 100k + R_CAMRST 10k/100nF + R_CAMPWDN 10k + 2x R_SCCB 4.7k + R_LS4_EN 200k",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "e99e682aca69cae1",
+      "ref": "R_CAM_DOVDD_BLEED",
+      "cad_reference": "R3",
+      "action": "CLEAR",
+      "from": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "35d0bca337813128",
+      "ref": "R_SCCB_SDA",
+      "cad_reference": "R30",
+      "action": "CLEAR",
+      "from": "R_XREQ 330R + D_XREQ RB521S-30 + C_XREQ 100nF + R_XREQ_BLEED 100k + R_CAMRST 10k/100nF + R_CAMPWDN 10k + 2x R_SCCB 4.7k + R_LS4_EN 200k",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "35d0bca337813128",
+      "ref": "R_WIN_BOT",
+      "cad_reference": "R33",
+      "action": "CLEAR",
+      "from": "32.4k 1%",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "35d0bca337813128",
+      "ref": "R_WIN_MID",
+      "cad_reference": "R34",
+      "action": "CLEAR",
+      "from": "32.4k 1%",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "35d0bca337813128",
+      "ref": "R_WIN_TOP",
+      "cad_reference": "R35",
+      "action": "CLEAR",
+      "from": "33.2k 1%",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "35d0bca337813128",
+      "ref": "R_XREQ",
+      "cad_reference": "R36",
+      "action": "CLEAR",
+      "from": "R_XREQ 330R + D_XREQ RB521S-30 + C_XREQ 100nF + R_XREQ_BLEED 100k + R_CAMRST 10k/100nF + R_CAMPWDN 10k + 2x R_SCCB 4.7k + R_LS4_EN 200k",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "35d0bca337813128",
+      "ref": "R_XREQ_BLEED",
+      "cad_reference": "R37",
+      "action": "CLEAR",
+      "from": "R_XREQ 330R + D_XREQ RB521S-30 + C_XREQ 100nF + R_XREQ_BLEED 100k + R_CAMRST 10k/100nF + R_CAMPWDN 10k + 2x R_SCCB 4.7k + R_LS4_EN 200k",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "e99e682aca69cae1",
+      "ref": "R_CAM_DOVDD_OK_PD",
+      "cad_reference": "R4",
+      "action": "CLEAR",
+      "from": "0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "e99e682aca69cae1",
+      "ref": "R_CAMPWDN",
+      "cad_reference": "R5",
+      "action": "CLEAR",
+      "from": "R_XREQ 330R + D_XREQ RB521S-30 + C_XREQ 100nF + R_XREQ_BLEED 100k + R_CAMRST 10k/100nF + R_CAMPWDN 10k + 2x R_SCCB 4.7k + R_LS4_EN 200k",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "e99e682aca69cae1",
+      "ref": "R_CAMRST",
+      "cad_reference": "R6",
+      "action": "CLEAR",
+      "from": "R_XREQ 330R + D_XREQ RB521S-30 + C_XREQ 100nF + R_XREQ_BLEED 100k + R_CAMRST 10k/100nF + R_CAMPWDN 10k + 2x R_SCCB 4.7k + R_LS4_EN 200k",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "3fdc6001a068d82e",
+      "ref": "TP_BAT_L_N",
+      "cad_reference": "TP1",
+      "action": "CLEAR",
+      "from": "Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight)",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "3fdc6001a068d82e",
+      "ref": "TP_BAT_L_P",
+      "cad_reference": "TP2",
+      "action": "CLEAR",
+      "from": "Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight)",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "3e7683d1ed324ce9",
+      "ref": "TP_ESP_BOOT",
+      "cad_reference": "TP3",
+      "action": "CLEAR",
+      "from": "TP_ESP_EN (CHIP_PU) + TP_ESP_BOOT (GPIO0) pads",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "3e7683d1ed324ce9",
+      "ref": "TP_ESP_EN",
+      "cad_reference": "TP4",
+      "action": "CLEAR",
+      "from": "TP_ESP_EN (CHIP_PU) + TP_ESP_BOOT (GPIO0) pads",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "3fdc6001a068d82e",
+      "ref": "TP_NTC_L",
+      "cad_reference": "TP5",
+      "action": "CLEAR",
+      "from": "Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight)",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "2ef9ed7773e0c42f",
+      "ref": "TP_SPK_L_N",
+      "cad_reference": "TP6",
+      "action": "CLEAR",
+      "from": "PCB copper pad",
+      "to": ""
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "2ef9ed7773e0c42f",
+      "ref": "TP_SPK_L_P",
+      "cad_reference": "TP7",
+      "action": "CLEAR",
+      "from": "PCB copper pad",
+      "to": ""
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "page": "d643a0611d67a31a",
+      "ref": "C_AVDD_LS_A",
+      "cad_reference": "C1",
+      "action": "CLEAR",
+      "from": "100nF X7R 6.3V",
+      "to": ""
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "page": "d643a0611d67a31a",
+      "ref": "C_AVDD_U_AVDD_SYS_PG_V",
+      "cad_reference": "C11",
+      "action": "CLEAR",
+      "from": "100nF X7R 10V",
+      "to": ""
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "page": "d643a0611d67a31a",
+      "ref": "C_AVDD_U_AVDD_WD_V",
+      "cad_reference": "C12",
+      "action": "CLEAR",
+      "from": "100nF X7R 10V",
+      "to": ""
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "page": "d643a0611d67a31a",
+      "ref": "C_AVDD_QUAL",
+      "cad_reference": "C2",
+      "action": "CLEAR",
+      "from": "100nF X7R10V; effective50..110nF qualification OPEN",
+      "to": ""
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "page": "d643a0611d67a31a",
+      "ref": "C_AVDD_REQ_FILTER",
+      "cad_reference": "C3",
+      "action": "CLEAR",
+      "from": "10nF C0G 5%",
+      "to": ""
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "page": "d643a0611d67a31a",
+      "ref": "C_LDO_OPT_IN",
+      "cad_reference": "C31",
+      "action": "CLEAR",
+      "from": "1uF 10V X7R; effective >=1uF",
+      "to": ""
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "page": "d643a0611d67a31a",
+      "ref": "C_LDO_OPT_OUT",
+      "cad_reference": "C32",
+      "action": "CLEAR",
+      "from": "1uF 10V X7R; effective >=1uF",
+      "to": ""
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "page": "d643a0611d67a31a",
+      "ref": "C_AVDD_U_AVDD_CLEAR_OD_V",
+      "cad_reference": "C4",
+      "action": "CLEAR",
+      "from": "100nF X7R 10V",
+      "to": ""
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "page": "d643a0611d67a31a",
+      "ref": "C_AVDD_U_AVDD_EN_OD_V",
+      "cad_reference": "C5",
+      "action": "CLEAR",
+      "from": "100nF X7R 10V",
+      "to": ""
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "page": "d643a0611d67a31a",
+      "ref": "C_AVDD_U_AVDD_IO_PG_V",
+      "cad_reference": "C6",
+      "action": "CLEAR",
+      "from": "100nF X7R 10V",
+      "to": ""
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "page": "d643a0611d67a31a",
+      "ref": "C_AVDD_U_AVDD_LS_V",
+      "cad_reference": "C7",
+      "action": "CLEAR",
+      "from": "100nF X7R 10V",
+      "to": ""
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "page": "d643a0611d67a31a",
+      "ref": "C_AVDD_U_AVDD_QUAL_V",
+      "cad_reference": "C8",
+      "action": "CLEAR",
+      "from": "100nF X7R 10V",
+      "to": ""
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "page": "d643a0611d67a31a",
+      "ref": "C_AVDD_U_AVDD_SCHMITT_V",
+      "cad_reference": "C9",
+      "action": "CLEAR",
+      "from": "100nF X7R 10V",
+      "to": ""
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "page": "a7f2cc2b0cf16956",
+      "ref": "D3_PRIV",
+      "cad_reference": "D3",
+      "action": "SET",
+      "from": null,
+      "to": "APHD1608LCGCK"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "page": "b1ec1f299f13f9eb",
+      "ref": "J_BRIDGE_IN",
+      "cad_reference": "J1",
+      "action": "SET",
+      "from": null,
+      "to": "BM28B0.6-30DS/2-0.35V(53)"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "page": "b1ec1f299f13f9eb",
+      "ref": "J_DISP_L",
+      "cad_reference": "J2",
+      "action": "SET",
+      "from": null,
+      "to": "BM28B0.6-10DS/2-0.35V(53)"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "page": "b1ec1f299f13f9eb",
+      "ref": "J_DISP_R",
+      "cad_reference": "J3",
+      "action": "SET",
+      "from": null,
+      "to": "BM28B0.6-10DS/2-0.35V(53)"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "page": "a7f2cc2b0cf16956",
+      "ref": "MK2_C",
+      "cad_reference": "MK2",
+      "action": "SET",
+      "from": null,
+      "to": "IM69D130V01XTSA1"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "page": "d643a0611d67a31a",
+      "ref": "R_AVDD_WD_SET",
+      "cad_reference": "R10",
+      "action": "CLEAR",
+      "from": "402k1%",
+      "to": ""
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "page": "d643a0611d67a31a",
+      "ref": "R_AVDD_EN_FEED",
+      "cad_reference": "R3",
+      "action": "CLEAR",
+      "from": "68k1%",
+      "to": ""
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "page": "d643a0611d67a31a",
+      "ref": "R_AVDD_EN_PD",
+      "cad_reference": "R4",
+      "action": "CLEAR",
+      "from": "330k1%",
+      "to": ""
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "page": "d643a0611d67a31a",
+      "ref": "R_AVDD_PG_PU",
+      "cad_reference": "R5",
+      "action": "CLEAR",
+      "from": "10k1%",
+      "to": ""
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "page": "d643a0611d67a31a",
+      "ref": "R_AVDD_QUAL_PU",
+      "cad_reference": "R6",
+      "action": "CLEAR",
+      "from": "10k1%",
+      "to": ""
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "page": "ed9e9866a1b746ac",
+      "ref": "U4_1V8F",
+      "cad_reference": "U1",
+      "action": "SET",
+      "from": null,
+      "to": "TLV75518PDQNR"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "page": "ed9e9866a1b746ac",
+      "ref": "U2_FPGA",
+      "cad_reference": "U2",
+      "action": "SET",
+      "from": null,
+      "to": "iCE40UP5K-UWG30ITR"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "page": "ed9e9866a1b746ac",
+      "ref": "U4_1V2",
+      "cad_reference": "U4",
+      "action": "SET",
+      "from": null,
+      "to": "TLV75512PDQNR"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "page": "a7f2cc2b0cf16956",
+      "ref": "U9_IMU",
+      "cad_reference": "U9",
+      "action": "SET",
+      "from": null,
+      "to": "ICM-42688-P"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "page": "ed9e9866a1b746ac",
+      "ref": "Y1_OSC",
+      "cad_reference": "Y1",
+      "action": "SET",
+      "from": null,
+      "to": "ASADV-48.000MHZ-LC-T"
+    }
+  ]
+}

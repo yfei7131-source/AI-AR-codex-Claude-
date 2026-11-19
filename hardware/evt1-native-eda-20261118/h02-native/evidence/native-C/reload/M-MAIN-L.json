@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "windowId": "906f0cf0-54c2-42a1-b4d9-ddfd519aee3e",
+  "target": "4d38590959875927",
+  "documentType": "schematic",
+  "saved": true,
+  "closed": true,
+  "reloaded": "4d38590959875927",
+  "activeRestored": "4d38590959875927",
+  "startedAt": "2026-11-19T15:53:52.0652115Z",
+  "completedAt": "2026-11-19T15:53:55.429881Z",
+  "timeSource": "cli-host-observation",
+  "targetContext": {
+    "projectUuid": "92f9eacd1a5a6bac5e406c46fb3afc76d474aa86ce9418d44d4075bc5d168496",
+    "projectName": "EVT1-H02-CODEX-20261119-C",
+    "documentUuid": "4d38590959875927",
+    "documentType": "schematic",
+    "tabId": "4d38590959875927@92f9eacd1a5a6bac5e406c46fb3afc76d474aa86ce9418d44d4075bc5d168496"
+  },
+  "finalContext": {
+    "projectUuid": "92f9eacd1a5a6bac5e406c46fb3afc76d474aa86ce9418d44d4075bc5d168496",
+    "projectName": "EVT1-H02-CODEX-20261119-C",
+    "documentUuid": "4d38590959875927",
+    "documentType": "schematic",
+    "tabId": "4d38590959875927@92f9eacd1a5a6bac5e406c46fb3afc76d474aa86ce9418d44d4075bc5d168496"
+  },
+  "readiness": {
+    "ready": true,
+    "scope": "component-inventory-readiness",
+    "active": {
+      "projectUuid": "92f9eacd1a5a6bac5e406c46fb3afc76d474aa86ce9418d44d4075bc5d168496",
+      "projectName": "EVT1-H02-CODEX-20261119-C",
+      "documentUuid": "4d38590959875927",
+      "documentType": "schematic",
+      "tabId": "4d38590959875927@92f9eacd1a5a6bac5e406c46fb3afc76d474aa86ce9418d44d4075bc5d168496"
+    },
+    "componentCount": 8,
+    "componentSha256": "caba5072c8b17888c4196575627c66d85c23e5fdbfa4de901cf8361d6fb404a8",
+    "samples": 2,
+    "stableSamples": 2,
+    "requestIds": [
+      "req_1401",
+      "req_1402",
+      "req_1403",
+      "req_1404",
+      "req_1405"
+    ],
+    "observedAt": "2026-11-19T15:53:55.429881Z"
+  },
+  "steps": [
+    {
+      "stage": "inspect",
+      "action": "document.current",
+      "startedAt": "2026-11-19T15:53:52.0652115Z",
+      "completedAt": "2026-11-19T15:53:52.1773834Z",
+      "requestId": "req_1396",
+      "responseCreatedAt": "2026-11-19T15:53:52.1759195Z",
+      "context": {
+        "projectUuid": "92f9eacd1a5a6bac5e406c46fb3afc76d474aa86ce9418d44d4075bc5d168496",
+        "projectName": "EVT1-H02-CODEX-20261119-C",
+        "documentUuid": "4d38590959875927",
+        "documentType": "schematic",
+        "tabId": "4d38590959875927@92f9eacd1a5a6bac5e406c46fb3afc76d474aa86ce9418d44d4075bc5d168496"
+      },
+      "ok": true
+    },
+    {
+      "stage": "save",
+      "action": "schematic.save",
+      "startedAt": "2026-11-19T15:53:52.1773834Z",
+      "completedAt": "2026-11-19T15:53:52.208729Z",
+      "requestId": "req_1397",
+      "responseCreatedAt": "2026-11-19T15:53:52.2050988Z",
+      "context": {
+        "projectUuid": "92f9eacd1a5a6bac5e406c46fb3afc76d474aa86ce9418d44d4075bc5d168496",
+        "projectName": "EVT1-H02-CODEX-20261119-C",
+        "documentUuid": "4d38590959875927",
+        "documentType": "schematic",
+        "tabId": "4d38590959875927@92f9eacd1a5a6bac5e406c46fb3afc76d474aa86ce9418d44d4075bc5d168496"
+      },
+      "ok": true
+    },
+    {
+      "stage": "close",
+      "action": "document.close",
+      "startedAt": "2026-11-19T15:53:52.208729Z",
+      "completedAt": "2026-11-19T15:53:52.5425079Z",
+      "requestId": "req_1398",
+      "responseCreatedAt": "2026-11-19T15:53:52.5398905Z",
+      "context": {
+        "projectUuid": "92f9eacd1a5a6bac5e406c46fb3afc76d474aa86ce9418d44d4075bc5d168496",
+        "projectName": "EVT1-H02-CODEX-20261119-C"
+      },
+      "ok": true
+    },
+    {
+      "stage": "close-settle",
+      "action": "document.current",
+      "startedAt": "2026-11-19T15:53:52.5425079Z",
+      "completedAt": "2026-11-19T15:53:52.5677481Z",
+      "requestId": "req_1399",
+      "responseCreatedAt": "2026-11-19T15:53:52.5648609Z",
+      "ok": false,
+      "error": "document.current failed: No active document."
+    },
+    {
+      "stage": "reopen",
+      "action": "document.open",
+      "startedAt": "2026-11-19T15:53:52.5677481Z",
+      "completedAt": "2026-11-19T15:53:54.7789337Z",
+      "requestId": "req_1400",
+      "responseCreatedAt": "2026-11-19T15:53:54.778118Z",
+      "context": {
+        "projectUuid": "92f9eacd1a5a6bac5e406c46fb3afc76d474aa86ce9418d44d4075bc5d168496",
+        "projectName": "EVT1-H02-CODEX-20261119-C",
+        "documentUuid": "4d38590959875927",
+        "documentType": "schematic",
+        "tabId": "4d38590959875927@92f9eacd1a5a6bac5e406c46fb3afc76d474aa86ce9418d44d4075bc5d168496"
+      },
+      "ok": true
+    },
+    {
+      "stage": "ready",
+      "startedAt": "2026-11-19T15:53:54.7789337Z",
+      "completedAt": "2026-11-19T15:53:55.429881Z",
+      "context": {
+        "projectUuid": "92f9eacd1a5a6bac5e406c46fb3afc76d474aa86ce9418d44d4075bc5d168496",
+        "projectName": "EVT1-H02-CODEX-20261119-C",
+        "documentUuid": "4d38590959875927",
+        "documentType": "schematic",
+        "tabId": "4d38590959875927@92f9eacd1a5a6bac5e406c46fb3afc76d474aa86ce9418d44d4075bc5d168496"
+      },
+      "ok": true
+    }
+  ]
+}
