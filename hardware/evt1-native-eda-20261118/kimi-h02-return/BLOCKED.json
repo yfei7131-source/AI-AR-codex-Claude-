@@ -1,0 +1,827 @@
+{
+  "status": "BLOCKED_H02_NOT_CLOSED",
+  "communication": {
+    "status": "BLOCKED_TWO_ATTEMPTS_FAILED",
+    "projectUuid": "1f475f192d4be7445a42ac79ebc824fcc4a803375837a9318c923e3aa35fe737",
+    "pageUuid": "bbbca101b360e299",
+    "operation": "read-only full sch list preflight",
+    "attemptCount": 2,
+    "retryCount": 1,
+    "attempts": [
+      {
+        "response": "field-repair/batch-20261119-221345/preflight/bbbca101b360e299.stdout.json",
+        "id": "req_1302",
+        "createdAt": "2026-11-19T14:19:13.5858401Z"
+      },
+      {
+        "response": "field-repair/recovery-bbb-list.stdout.json",
+        "id": "req_1309",
+        "createdAt": "2026-11-19T14:30:21.0425735Z"
+      }
+    ],
+    "error": {
+      "code": "DISPATCH_FAILED",
+      "message": "connector did not respond",
+      "detail": "context deadline exceeded"
+    },
+    "healthAndConnectorLogs": [
+      "field-repair/recovery-bbb-health.json",
+      "field-repair/recovery-bbb-connector-logs.json"
+    ],
+    "actionTaken": "Stopped all EDA-dependent work. No board binding, ERC, reload, final capture or final archive export was attempted after this block.",
+    "newWriteOnFailedPageInLastRun": false
+  },
+  "hierarchy": {
+    "status": "BLOCKED",
+    "projectUuid": "1f475f192d4be7445a42ac79ebc824fcc4a803375837a9318c923e3aa35fe737",
+    "expectedHierarchy": {
+      "M-MAIN-L": 8,
+      "M-OPT-BRIDGE": 7,
+      "M-AUD-R": 6
+    },
+    "observedHierarchy": {
+      "M-MAIN-L": {
+        "expectedPages": 8,
+        "correctlyParentedPages": 1,
+        "pages": [
+          {
+            "pageUuid": "2ef9ed7773e0c42f",
+            "expectedParent": "c04afd3a85971cef",
+            "observedParent": "781b0c39fb23a086",
+            "correct": false
+          },
+          {
+            "pageUuid": "3fdc6001a068d82e",
+            "expectedParent": "c04afd3a85971cef",
+            "observedParent": "940af6262e155680",
+            "correct": false
+          },
+          {
+            "pageUuid": "e99e682aca69cae1",
+            "expectedParent": "c04afd3a85971cef",
+            "observedParent": "8c564cbaeefecb7a",
+            "correct": false
+          },
+          {
+            "pageUuid": "35d0bca337813128",
+            "expectedParent": "c04afd3a85971cef",
+            "observedParent": "a27357ea1b21e67b",
+            "correct": false
+          },
+          {
+            "pageUuid": "3e7683d1ed324ce9",
+            "expectedParent": "c04afd3a85971cef",
+            "observedParent": "1a9c373f83df62d2",
+            "correct": false
+          },
+          {
+            "pageUuid": "89cd87358a17e3c2",
+            "expectedParent": "c04afd3a85971cef",
+            "observedParent": "b23d8f79fd795918",
+            "correct": false
+          },
+          {
+            "pageUuid": "2d94cb183ed4ccdc",
+            "expectedParent": "c04afd3a85971cef",
+            "observedParent": "12e1627d8c3a39a2",
+            "correct": false
+          },
+          {
+            "pageUuid": "4d38590959875927",
+            "expectedParent": "c04afd3a85971cef",
+            "observedParent": "c04afd3a85971cef",
+            "correct": true
+          }
+        ]
+      },
+      "M-OPT-BRIDGE": {
+        "expectedPages": 7,
+        "correctlyParentedPages": 1,
+        "pages": [
+          {
+            "pageUuid": "a7f2cc2b0cf16956",
+            "expectedParent": "73f2bfaeffaf2767",
+            "observedParent": "3c921f851d75583b",
+            "correct": false
+          },
+          {
+            "pageUuid": "ed9e9866a1b746ac",
+            "expectedParent": "73f2bfaeffaf2767",
+            "observedParent": "32205a0a5d36fc26",
+            "correct": false
+          },
+          {
+            "pageUuid": "b1ec1f299f13f9eb",
+            "expectedParent": "73f2bfaeffaf2767",
+            "observedParent": "6408d40886fc226c",
+            "correct": false
+          },
+          {
+            "pageUuid": "35df718b650fe548",
+            "expectedParent": "73f2bfaeffaf2767",
+            "observedParent": "0193577e93df82f1",
+            "correct": false
+          },
+          {
+            "pageUuid": "d643a0611d67a31a",
+            "expectedParent": "73f2bfaeffaf2767",
+            "observedParent": "781290c134c3aae4",
+            "correct": false
+          },
+          {
+            "pageUuid": "2abf127033234e68",
+            "expectedParent": "73f2bfaeffaf2767",
+            "observedParent": "4b5dbf8f2df2f525",
+            "correct": false
+          },
+          {
+            "pageUuid": "e00fbca5c08cc114",
+            "expectedParent": "73f2bfaeffaf2767",
+            "observedParent": "73f2bfaeffaf2767",
+            "correct": true
+          }
+        ]
+      },
+      "M-AUD-R": {
+        "expectedPages": 6,
+        "correctlyParentedPages": 1,
+        "pages": [
+          {
+            "pageUuid": "30968987fbc1647d",
+            "expectedParent": "4e4521c87aee3006",
+            "observedParent": "240b9c508235f5e1",
+            "correct": false
+          },
+          {
+            "pageUuid": "8fa31840ba825b92",
+            "expectedParent": "4e4521c87aee3006",
+            "observedParent": "b2a9af641cf2bf63",
+            "correct": false
+          },
+          {
+            "pageUuid": "bbbca101b360e299",
+            "expectedParent": "4e4521c87aee3006",
+            "observedParent": "3c810a1544706db5",
+            "correct": false
+          },
+          {
+            "pageUuid": "9e364700c984f124",
+            "expectedParent": "4e4521c87aee3006",
+            "observedParent": "be9c99ebf69a3a82",
+            "correct": false
+          },
+          {
+            "pageUuid": "07dc7dde94c1bf76",
+            "expectedParent": "4e4521c87aee3006",
+            "observedParent": "960958cbc05028ba",
+            "correct": false
+          },
+          {
+            "pageUuid": "e98944c2045546cf",
+            "expectedParent": "4e4521c87aee3006",
+            "observedParent": "4e4521c87aee3006",
+            "correct": true
+          }
+        ]
+      }
+    },
+    "typedPageActions": [
+      {
+        "name": "schematic.page.open",
+        "description": "Open or activate a schematic page by uuid.",
+        "inputs": [
+          "schematicPageUuid"
+        ]
+      },
+      {
+        "name": "schematic.page.create",
+        "description": "Create a new schematic page under a schematic document.",
+        "inputs": [
+          "schematicUuid"
+        ]
+      },
+      {
+        "name": "schematic.page.rename",
+        "description": "Rename a schematic page. Verifies the new name landed in the page list (issue #55 platform-async cache); returns verified=false + warning if it hasn't synced yet.",
+        "inputs": [
+          "pageUuid",
+          "name"
+        ]
+      },
+      {
+        "name": "schematic.page.delete",
+        "description": "Delete a schematic page (no undo).",
+        "inputs": [
+          "pageUuid"
+        ]
+      },
+      {
+        "name": "schematic.page.clear",
+        "description": "Clear the ACTIVE schematic page: delete every page-level primitive — components, net flags/ports/labels (all are components), wires, buses, and graphics (arcs/circles/rectangles/polygons/text) — optionally preserving the sheet/title block (图框). schematic.component.delete only removes components and silently leaves wires/buses/graphics behind, so the page looks clean in components.list while residual primitives remain; use this for a true page reset (generate → detect → clear → retry). No undo — dryRun reports counts without deleting.",
+        "inputs": [
+          "preserveSheet optional (default true)",
+          "dryRun optional (default false)",
+          "preserveParts optional (default false; requires preserveSheet:true and preservePartIds)",
+          "preservePartIds optional (complete exact original part primitive ID array; required with preserveParts; fresh identity/attribute set checked before and after clearing drawing content)",
+          "expectedPagePrimitives optional (JSON string from a fresh components.list pagePrimitives; compare exact native state before first delete; ordinary guarded clear rejects orphan attributes/embedded objects)",
+          "requireCompleteInventory optional (dry-run empty-page verification includes independent attributes/objects)"
+        ]
+      }
+    ],
+    "typedMoveOrCopyActionAvailable": false,
+    "officialSdkFunctionsObserved": [
+      "eda.dmt_Schematic.copySchematicPage(schematicPageUuid, schematicUuid?)",
+      "eda.dmt_Schematic.createSchematicPage(...)",
+      "eda.dmt_Schematic.deleteSchematicPage(...)",
+      "eda.dmt_Schematic.reorderSchematicPages(...)"
+    ],
+    "copyDeleteUsed": false,
+    "archiveSourceEdited": false,
+    "controlledBatDesignatorsRenamed": false,
+    "allPagesConnectivity": {
+      "command": [
+        "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+        "sch",
+        "connectivity",
+        "--all-pages",
+        "--project",
+        "1f475f192d4be7445a42ac79ebc824fcc4a803375837a9318c923e3aa35fe737"
+      ],
+      "timeoutSeconds": 120,
+      "timedOut": true,
+      "harnessExitCode": 1,
+      "cliExitCode": null,
+      "cliResponseCaptured": false,
+      "retryCount": 0,
+      "exception": "subprocess.TimeoutExpired: sch connectivity --all-pages timed out after 120 seconds",
+      "designMutation": false
+    },
+    "blockingReason": "No guarded typed move/copy action is exposed for existing pages. Copy+delete can change page/primitive identity and was not used. The project-level all-pages read timed out; controlled BAT1 names were not renamed to bypass board isolation.",
+    "resolutionRequired": "Provide a guarded native page-move operation preserving page/component/pin identity; then save/reload and repeat 1,075-terminal and 92-NC comparison plus board-scoped connectivity."
+  },
+  "remainingMpnFromLatestAvailableLists": [
+    {
+      "board": "M-MAIN-L",
+      "cadReference": "C10",
+      "pageUuid": "3e7683d1ed324ce9",
+      "primitiveId": "ie441",
+      "expectedLength": 286,
+      "observed": "",
+      "source": "field-repair\\batch-20261119-214834"
+    },
+    {
+      "board": "M-MAIN-L",
+      "cadReference": "R1",
+      "pageUuid": "3fdc6001a068d82e",
+      "primitiveId": "ie560",
+      "expectedLength": 286,
+      "observed": null,
+      "source": "field-repair\\batch-20261119-214834"
+    },
+    {
+      "board": "M-MAIN-L",
+      "cadReference": "R15",
+      "pageUuid": "3e7683d1ed324ce9",
+      "primitiveId": "ie786",
+      "expectedLength": 286,
+      "observed": null,
+      "source": "field-repair\\batch-20261119-214834"
+    },
+    {
+      "board": "M-MAIN-L",
+      "cadReference": "R16",
+      "pageUuid": "3e7683d1ed324ce9",
+      "primitiveId": "ie809",
+      "expectedLength": 286,
+      "observed": null,
+      "source": "field-repair\\batch-20261119-214834"
+    },
+    {
+      "board": "M-MAIN-L",
+      "cadReference": "R17",
+      "pageUuid": "3e7683d1ed324ce9",
+      "primitiveId": "ie832",
+      "expectedLength": 286,
+      "observed": null,
+      "source": "field-repair\\batch-20261119-214834"
+    },
+    {
+      "board": "M-MAIN-L",
+      "cadReference": "R18",
+      "pageUuid": "3e7683d1ed324ce9",
+      "primitiveId": "ie855",
+      "expectedLength": 286,
+      "observed": null,
+      "source": "field-repair\\batch-20261119-214834"
+    },
+    {
+      "board": "M-MAIN-L",
+      "cadReference": "R2",
+      "pageUuid": "3fdc6001a068d82e",
+      "primitiveId": "ie583",
+      "expectedLength": 286,
+      "observed": null,
+      "source": "field-repair\\batch-20261119-214834"
+    },
+    {
+      "board": "M-MAIN-L",
+      "cadReference": "R21",
+      "pageUuid": "e99e682aca69cae1",
+      "primitiveId": "ie1022",
+      "expectedLength": 286,
+      "observed": null,
+      "source": "field-repair\\batch-20261119-214834"
+    },
+    {
+      "board": "M-MAIN-L",
+      "cadReference": "R22",
+      "pageUuid": "3e7683d1ed324ce9",
+      "primitiveId": "ie878",
+      "expectedLength": 286,
+      "observed": null,
+      "source": "field-repair\\batch-20261119-214834"
+    },
+    {
+      "board": "M-MAIN-L",
+      "cadReference": "R23",
+      "pageUuid": "3e7683d1ed324ce9",
+      "primitiveId": "ie901",
+      "expectedLength": 286,
+      "observed": null,
+      "source": "field-repair\\batch-20261119-214834"
+    },
+    {
+      "board": "M-MAIN-L",
+      "cadReference": "R24",
+      "pageUuid": "3e7683d1ed324ce9",
+      "primitiveId": "ie924",
+      "expectedLength": 286,
+      "observed": null,
+      "source": "field-repair\\batch-20261119-214834"
+    },
+    {
+      "board": "M-MAIN-L",
+      "cadReference": "R27",
+      "pageUuid": "e99e682aca69cae1",
+      "primitiveId": "ie1045",
+      "expectedLength": 286,
+      "observed": null,
+      "source": "field-repair\\batch-20261119-214834"
+    },
+    {
+      "board": "M-MAIN-L",
+      "cadReference": "R31",
+      "pageUuid": "35d0bca337813128",
+      "primitiveId": "ie91",
+      "expectedLength": 286,
+      "observed": null,
+      "source": "field-repair\\batch-20261119-214834"
+    },
+    {
+      "board": "M-MAIN-L",
+      "cadReference": "R32",
+      "pageUuid": "3fdc6001a068d82e",
+      "primitiveId": "ie652",
+      "expectedLength": 286,
+      "observed": null,
+      "source": "field-repair\\batch-20261119-214834"
+    },
+    {
+      "board": "M-MAIN-L",
+      "cadReference": "R7",
+      "pageUuid": "3e7683d1ed324ce9",
+      "primitiveId": "ie602",
+      "expectedLength": 286,
+      "observed": null,
+      "source": "field-repair\\batch-20261119-214834"
+    },
+    {
+      "board": "M-MAIN-L",
+      "cadReference": "R8",
+      "pageUuid": "3e7683d1ed324ce9",
+      "primitiveId": "ie625",
+      "expectedLength": 286,
+      "observed": null,
+      "source": "field-repair\\batch-20261119-214834"
+    },
+    {
+      "board": "M-MAIN-L",
+      "cadReference": "R9",
+      "pageUuid": "3e7683d1ed324ce9",
+      "primitiveId": "ie648",
+      "expectedLength": 286,
+      "observed": null,
+      "source": "field-repair\\batch-20261119-214834"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "C10",
+      "pageUuid": "d643a0611d67a31a",
+      "primitiveId": "ie662",
+      "expectedLength": 13,
+      "observed": null,
+      "source": "field-repair/recovery-d643"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "C24",
+      "pageUuid": "a7f2cc2b0cf16956",
+      "primitiveId": "ie108",
+      "expectedLength": 65,
+      "observed": null,
+      "source": "working-before"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "C25",
+      "pageUuid": "a7f2cc2b0cf16956",
+      "primitiveId": "ie131",
+      "expectedLength": 65,
+      "observed": null,
+      "source": "working-before"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "C26",
+      "pageUuid": "a7f2cc2b0cf16956",
+      "primitiveId": "ie154",
+      "expectedLength": 65,
+      "observed": null,
+      "source": "working-before"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "C27",
+      "pageUuid": "ed9e9866a1b746ac",
+      "primitiveId": "ie499",
+      "expectedLength": 28,
+      "observed": null,
+      "source": "working-before"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "C28",
+      "pageUuid": "ed9e9866a1b746ac",
+      "primitiveId": "ie522",
+      "expectedLength": 28,
+      "observed": null,
+      "source": "working-before"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "C29",
+      "pageUuid": "ed9e9866a1b746ac",
+      "primitiveId": "ie545",
+      "expectedLength": 28,
+      "observed": null,
+      "source": "working-before"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "C30",
+      "pageUuid": "ed9e9866a1b746ac",
+      "primitiveId": "ie568",
+      "expectedLength": 28,
+      "observed": null,
+      "source": "working-before"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "C33",
+      "pageUuid": "a7f2cc2b0cf16956",
+      "primitiveId": "ie177",
+      "expectedLength": 82,
+      "observed": null,
+      "source": "working-before"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "D3",
+      "pageUuid": "a7f2cc2b0cf16956",
+      "primitiveId": "ie200",
+      "expectedLength": 30,
+      "observed": null,
+      "source": "working-before"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "J1",
+      "pageUuid": "b1ec1f299f13f9eb",
+      "primitiveId": "ie22",
+      "expectedLength": 25,
+      "observed": null,
+      "source": "working-before"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "J2",
+      "pageUuid": "b1ec1f299f13f9eb",
+      "primitiveId": "ie125",
+      "expectedLength": 25,
+      "observed": null,
+      "source": "working-before"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "J3",
+      "pageUuid": "b1ec1f299f13f9eb",
+      "primitiveId": "ie188",
+      "expectedLength": 25,
+      "observed": null,
+      "source": "working-before"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "MK2",
+      "pageUuid": "a7f2cc2b0cf16956",
+      "primitiveId": "ie73",
+      "expectedLength": 16,
+      "observed": null,
+      "source": "working-before"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "R1",
+      "pageUuid": "d643a0611d67a31a",
+      "primitiveId": "ie777",
+      "expectedLength": 6,
+      "observed": null,
+      "source": "field-repair/recovery-d643"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "R11",
+      "pageUuid": "ed9e9866a1b746ac",
+      "primitiveId": "ie591",
+      "expectedLength": 100,
+      "observed": null,
+      "source": "working-before"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "R12",
+      "pageUuid": "ed9e9866a1b746ac",
+      "primitiveId": "ie614",
+      "expectedLength": 100,
+      "observed": null,
+      "source": "working-before"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "R13",
+      "pageUuid": "35df718b650fe548",
+      "primitiveId": "ie22",
+      "expectedLength": 100,
+      "observed": null,
+      "source": "working-before"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "R14",
+      "pageUuid": "35df718b650fe548",
+      "primitiveId": "ie45",
+      "expectedLength": 100,
+      "observed": null,
+      "source": "working-before"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "R15",
+      "pageUuid": "35df718b650fe548",
+      "primitiveId": "ie68",
+      "expectedLength": 100,
+      "observed": null,
+      "source": "working-before"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "R16",
+      "pageUuid": "35df718b650fe548",
+      "primitiveId": "ie91",
+      "expectedLength": 100,
+      "observed": null,
+      "source": "working-before"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "R17",
+      "pageUuid": "35df718b650fe548",
+      "primitiveId": "ie114",
+      "expectedLength": 100,
+      "observed": null,
+      "source": "working-before"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "R18",
+      "pageUuid": "35df718b650fe548",
+      "primitiveId": "ie137",
+      "expectedLength": 100,
+      "observed": null,
+      "source": "working-before"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "R19",
+      "pageUuid": "35df718b650fe548",
+      "primitiveId": "ie160",
+      "expectedLength": 100,
+      "observed": null,
+      "source": "working-before"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "R2",
+      "pageUuid": "d643a0611d67a31a",
+      "primitiveId": "ie800",
+      "expectedLength": 6,
+      "observed": null,
+      "source": "field-repair/recovery-d643"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "R20",
+      "pageUuid": "35df718b650fe548",
+      "primitiveId": "ie183",
+      "expectedLength": 100,
+      "observed": null,
+      "source": "working-before"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "R21",
+      "pageUuid": "35df718b650fe548",
+      "primitiveId": "ie206",
+      "expectedLength": 100,
+      "observed": null,
+      "source": "working-before"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "R22",
+      "pageUuid": "35df718b650fe548",
+      "primitiveId": "ie229",
+      "expectedLength": 100,
+      "observed": null,
+      "source": "working-before"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "R23",
+      "pageUuid": "35df718b650fe548",
+      "primitiveId": "ie252",
+      "expectedLength": 100,
+      "observed": null,
+      "source": "working-before"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "R24",
+      "pageUuid": "35df718b650fe548",
+      "primitiveId": "ie275",
+      "expectedLength": 100,
+      "observed": null,
+      "source": "working-before"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "R25",
+      "pageUuid": "35df718b650fe548",
+      "primitiveId": "ie298",
+      "expectedLength": 100,
+      "observed": null,
+      "source": "working-before"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "R26",
+      "pageUuid": "35df718b650fe548",
+      "primitiveId": "ie321",
+      "expectedLength": 100,
+      "observed": null,
+      "source": "working-before"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "R27",
+      "pageUuid": "ed9e9866a1b746ac",
+      "primitiveId": "ie637",
+      "expectedLength": 100,
+      "observed": null,
+      "source": "working-before"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "R28",
+      "pageUuid": "ed9e9866a1b746ac",
+      "primitiveId": "ie660",
+      "expectedLength": 100,
+      "observed": null,
+      "source": "working-before"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "R29",
+      "pageUuid": "ed9e9866a1b746ac",
+      "primitiveId": "ie683",
+      "expectedLength": 100,
+      "observed": null,
+      "source": "working-before"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "R7",
+      "pageUuid": "d643a0611d67a31a",
+      "primitiveId": "ie915",
+      "expectedLength": 5,
+      "observed": null,
+      "source": "field-repair/recovery-d643"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "R8",
+      "pageUuid": "d643a0611d67a31a",
+      "primitiveId": "ie938",
+      "expectedLength": 7,
+      "observed": null,
+      "source": "field-repair/recovery-d643"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "R9",
+      "pageUuid": "d643a0611d67a31a",
+      "primitiveId": "ie961",
+      "expectedLength": 6,
+      "observed": null,
+      "source": "field-repair/recovery-d643"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "U1",
+      "pageUuid": "ed9e9866a1b746ac",
+      "primitiveId": "ie145",
+      "expectedLength": 13,
+      "observed": null,
+      "source": "working-before"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "U2",
+      "pageUuid": "ed9e9866a1b746ac",
+      "primitiveId": "ie22",
+      "expectedLength": 18,
+      "observed": null,
+      "source": "working-before"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "U4",
+      "pageUuid": "ed9e9866a1b746ac",
+      "primitiveId": "ie180",
+      "expectedLength": 13,
+      "observed": null,
+      "source": "working-before"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "U9",
+      "pageUuid": "a7f2cc2b0cf16956",
+      "primitiveId": "ie22",
+      "expectedLength": 11,
+      "observed": null,
+      "source": "working-before"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "Y1",
+      "pageUuid": "ed9e9866a1b746ac",
+      "primitiveId": "ie215",
+      "expectedLength": 20,
+      "observed": null,
+      "source": "working-before"
+    }
+  ],
+  "footprints": {
+    "status": "BLOCKED",
+    "initiallyMissing": 114,
+    "finalCountUnavailable": true,
+    "reason": "No final full BOM capture or native footprint rebind/pad qualification was possible after the communication stop."
+  },
+  "strictErc": {
+    "status": "BLOCKED",
+    "reason": "No new native strict ERC was run before the communication stop."
+  },
+  "boardBinding": {
+    "status": "BLOCKED",
+    "reason": "No SCH/PCB binding mutation was attempted after the communication stop."
+  },
+  "finalPersistenceAndArchive": {
+    "status": "BLOCKED",
+    "modifiedArchiveExported": false,
+    "saveReloadAllModifiedPages": false
+  },
+  "formalPcb": {
+    "status": "OUT_OF_SCOPE_NOT_RUN",
+    "layoutRoutingDrc": false
+  }
+}
