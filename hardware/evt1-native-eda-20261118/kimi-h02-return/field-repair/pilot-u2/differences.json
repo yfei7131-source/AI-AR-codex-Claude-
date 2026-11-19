@@ -1,0 +1,37 @@
+{
+  "connectivity": [
+    {
+      "path": "$.components[22].device.deviceUuid",
+      "baseline": "061cc4430c47aefb",
+      "working": "82d4e6675fc84e21b92ae8f7c0ab14b0"
+    },
+    {
+      "path": "$.components[22].device.libraryUuid",
+      "baseline": "1f475f192d4be7445a42ac79ebc824fcc4a803375837a9318c923e3aa35fe737",
+      "working": "0819f05c4eef4c71ace90d822a990e87"
+    }
+  ],
+  "terminalSemantics": [],
+  "list": [
+    {
+      "path": "$.components[1].device.libraryUuid",
+      "baseline": "1f475f192d4be7445a42ac79ebc824fcc4a803375837a9318c923e3aa35fe737",
+      "working": "0819f05c4eef4c71ace90d822a990e87"
+    },
+    {
+      "path": "$.components[1].device.uuid",
+      "baseline": "061cc4430c47aefb",
+      "working": "82d4e6675fc84e21b92ae8f7c0ab14b0"
+    },
+    {
+      "path": "$.components[1].deviceIdentityCompatibilityError",
+      "baseline": "unsupported typed device identity: complete 32-hex library device identity is unavailable",
+      "working": "unsupported typed device identity: complete typed native-device-source proof is required; update the connector and read again"
+    },
+    {
+      "path": "$.components[1].deviceResolution.via",
+      "baseline": "project-name",
+      "working": "mpn"
+    }
+  ]
+}

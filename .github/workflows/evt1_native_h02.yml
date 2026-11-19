@@ -1,0 +1,65 @@
+name: EVT-1 native H02 evidence replay
+
+on:
+  push:
+    branches: [hardware/evt1-h02-native-20261119]
+
+permissions:
+  contents: read
+
+env:
+  EVT1: hardware/evt1-native-eda-20261118
+
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify frozen H02 source, archive and capture checksums
+        working-directory: hardware/evt1-native-eda-20261118/h02-native
+        run: sha256sum -c SHA256SUMS.txt
+      - name: Run board netlist and catalog tests
+        run: |
+          h02="$EVT1/h02-native"
+          python3 "$h02/build_catalog_plan.py" --check
+          python3 -m unittest discover -s "$h02" -p 'test_*.py' -v
+          python3 "$EVT1/Inputs/build_effective_inputs.py" --check
+          python3 "$EVT1/tools/build_pcb_constraints.py" --check
+      - name: Reproduce the native candidate document stream
+        run: |
+          h02="$EVT1/h02-native"
+          stage="$RUNNER_TEMP/h02"
+          mkdir "$stage"
+          python3 "$h02/prepare_hierarchy.py" --source "$h02/native/KIMI-current-before.epro2" \
+            --pcb-archive "$EVT1/kimi-return/native/ZY_AIAR_EVT1_KIMI_20261118.epro2" --output "$stage/a.epro2" > "$stage/hierarchy.json"
+          python3 "$h02/repair_native_fields.py" --original "$h02/native/KIMI-current-before.epro2" \
+            --input "$stage/a.epro2" --output "$stage/b.epro2" --report "$stage/catalog.json"
+          python3 "$h02/repair_native_power_names.py" "$stage/b.epro2" "$stage/c.epro2" --report "$stage/power.json"
+          python3 - "$stage/c.epro2" "$h02/native/CODEX-H02-import-candidate.epro2" <<'PY'
+          import sys
+          from zipfile import ZipFile
+          with ZipFile(sys.argv[1]) as a, ZipFile(sys.argv[2]) as b:
+              assert a.testzip() is b.testzip() is None
+              assert a.namelist() == b.namelist()
+              for item in a.namelist():
+                  assert a.read(item) == b.read(item), item
+          PY
+      - name: Replay original editor evidence and preserve the real acceptance failure
+        run: |
+          h02="$EVT1/h02-native"
+          stage="$RUNNER_TEMP/h02"
+          python3 "$h02/verify_persisted_archive.py" --candidate "$h02/native/CODEX-H02-import-candidate.epro2" \
+            --persisted "$h02/native/ZY_AIAR_EVT1_H02_NATIVE_NOT_FOR_FAB.epro2" --capture "$h02/evidence/native-C" \
+            --output "$stage/archive-audit.json"
+          diff -u "$h02/evidence/native-C/archive-verification.json" "$stage/archive-audit.json"
+          verdict=0
+          python3 "$h02/verify_h02.py" --schematic "$h02/evidence/native-C" --output "$stage/native-audit.json" || verdict=$?
+          test "$verdict" -eq 1
+          diff -u "$h02/evidence/native-audit.json" "$stage/native-audit.json"
+      - name: Preserve replay outputs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: evt1-h02-native-replay
+          path: ${{ runner.temp }}/h02/

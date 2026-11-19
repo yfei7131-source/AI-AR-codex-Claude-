@@ -1,0 +1,56 @@
+[
+  {
+    "label": "preflight/07dc7dde94c1bf76",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "sch",
+      "list",
+      "--page",
+      "07dc7dde94c1bf76",
+      "--stay",
+      "--include-pins",
+      "--include-bbox",
+      "--include-wires",
+      "--include-device-identity",
+      "--project",
+      "1f475f192d4be7445a42ac79ebc824fcc4a803375837a9318c923e3aa35fe737"
+    ],
+    "exitCode": 0,
+    "timedOut": false
+  },
+  {
+    "label": "modify/M-AUD-R-ANT2",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "sch",
+      "modify",
+      "--doc",
+      "07dc7dde94c1bf76",
+      "--id",
+      "ie740",
+      "--patch-file",
+      "C:\\Users\\Admin（无密码）\\Desktop\\产品设计\\AI眼镜\\evt1-h02-native-20261119\\hardware\\evt1-native-eda-20261118\\kimi-h02-return\\field-repair\\batch-20261119-210909\\patches\\M-AUD-R-ANT2.json",
+      "--project",
+      "1f475f192d4be7445a42ac79ebc824fcc4a803375837a9318c923e3aa35fe737"
+    ],
+    "exitCode": 0,
+    "timedOut": false
+  },
+  {
+    "label": "library/M-AUD-R-ANT2",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "lib",
+      "device",
+      "get",
+      "--library",
+      "",
+      "--uuid",
+      "b5fa7526034ee2bb",
+      "--project",
+      "1f475f192d4be7445a42ac79ebc824fcc4a803375837a9318c923e3aa35fe737"
+    ],
+    "exitCode": 1,
+    "timedOut": false
+  }
+]

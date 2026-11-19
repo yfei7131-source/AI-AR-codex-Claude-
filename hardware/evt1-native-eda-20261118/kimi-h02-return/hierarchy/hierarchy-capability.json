@@ -1,0 +1,228 @@
+{
+  "status": "BLOCKED",
+  "projectUuid": "1f475f192d4be7445a42ac79ebc824fcc4a803375837a9318c923e3aa35fe737",
+  "expectedHierarchy": {
+    "M-MAIN-L": 8,
+    "M-OPT-BRIDGE": 7,
+    "M-AUD-R": 6
+  },
+  "observedHierarchy": {
+    "M-MAIN-L": {
+      "expectedPages": 8,
+      "correctlyParentedPages": 1,
+      "pages": [
+        {
+          "pageUuid": "2ef9ed7773e0c42f",
+          "expectedParent": "c04afd3a85971cef",
+          "observedParent": "781b0c39fb23a086",
+          "correct": false
+        },
+        {
+          "pageUuid": "3fdc6001a068d82e",
+          "expectedParent": "c04afd3a85971cef",
+          "observedParent": "940af6262e155680",
+          "correct": false
+        },
+        {
+          "pageUuid": "e99e682aca69cae1",
+          "expectedParent": "c04afd3a85971cef",
+          "observedParent": "8c564cbaeefecb7a",
+          "correct": false
+        },
+        {
+          "pageUuid": "35d0bca337813128",
+          "expectedParent": "c04afd3a85971cef",
+          "observedParent": "a27357ea1b21e67b",
+          "correct": false
+        },
+        {
+          "pageUuid": "3e7683d1ed324ce9",
+          "expectedParent": "c04afd3a85971cef",
+          "observedParent": "1a9c373f83df62d2",
+          "correct": false
+        },
+        {
+          "pageUuid": "89cd87358a17e3c2",
+          "expectedParent": "c04afd3a85971cef",
+          "observedParent": "b23d8f79fd795918",
+          "correct": false
+        },
+        {
+          "pageUuid": "2d94cb183ed4ccdc",
+          "expectedParent": "c04afd3a85971cef",
+          "observedParent": "12e1627d8c3a39a2",
+          "correct": false
+        },
+        {
+          "pageUuid": "4d38590959875927",
+          "expectedParent": "c04afd3a85971cef",
+          "observedParent": "c04afd3a85971cef",
+          "correct": true
+        }
+      ]
+    },
+    "M-OPT-BRIDGE": {
+      "expectedPages": 7,
+      "correctlyParentedPages": 1,
+      "pages": [
+        {
+          "pageUuid": "a7f2cc2b0cf16956",
+          "expectedParent": "73f2bfaeffaf2767",
+          "observedParent": "3c921f851d75583b",
+          "correct": false
+        },
+        {
+          "pageUuid": "ed9e9866a1b746ac",
+          "expectedParent": "73f2bfaeffaf2767",
+          "observedParent": "32205a0a5d36fc26",
+          "correct": false
+        },
+        {
+          "pageUuid": "b1ec1f299f13f9eb",
+          "expectedParent": "73f2bfaeffaf2767",
+          "observedParent": "6408d40886fc226c",
+          "correct": false
+        },
+        {
+          "pageUuid": "35df718b650fe548",
+          "expectedParent": "73f2bfaeffaf2767",
+          "observedParent": "0193577e93df82f1",
+          "correct": false
+        },
+        {
+          "pageUuid": "d643a0611d67a31a",
+          "expectedParent": "73f2bfaeffaf2767",
+          "observedParent": "781290c134c3aae4",
+          "correct": false
+        },
+        {
+          "pageUuid": "2abf127033234e68",
+          "expectedParent": "73f2bfaeffaf2767",
+          "observedParent": "4b5dbf8f2df2f525",
+          "correct": false
+        },
+        {
+          "pageUuid": "e00fbca5c08cc114",
+          "expectedParent": "73f2bfaeffaf2767",
+          "observedParent": "73f2bfaeffaf2767",
+          "correct": true
+        }
+      ]
+    },
+    "M-AUD-R": {
+      "expectedPages": 6,
+      "correctlyParentedPages": 1,
+      "pages": [
+        {
+          "pageUuid": "30968987fbc1647d",
+          "expectedParent": "4e4521c87aee3006",
+          "observedParent": "240b9c508235f5e1",
+          "correct": false
+        },
+        {
+          "pageUuid": "8fa31840ba825b92",
+          "expectedParent": "4e4521c87aee3006",
+          "observedParent": "b2a9af641cf2bf63",
+          "correct": false
+        },
+        {
+          "pageUuid": "bbbca101b360e299",
+          "expectedParent": "4e4521c87aee3006",
+          "observedParent": "3c810a1544706db5",
+          "correct": false
+        },
+        {
+          "pageUuid": "9e364700c984f124",
+          "expectedParent": "4e4521c87aee3006",
+          "observedParent": "be9c99ebf69a3a82",
+          "correct": false
+        },
+        {
+          "pageUuid": "07dc7dde94c1bf76",
+          "expectedParent": "4e4521c87aee3006",
+          "observedParent": "960958cbc05028ba",
+          "correct": false
+        },
+        {
+          "pageUuid": "e98944c2045546cf",
+          "expectedParent": "4e4521c87aee3006",
+          "observedParent": "4e4521c87aee3006",
+          "correct": true
+        }
+      ]
+    }
+  },
+  "typedPageActions": [
+    {
+      "name": "schematic.page.open",
+      "description": "Open or activate a schematic page by uuid.",
+      "inputs": [
+        "schematicPageUuid"
+      ]
+    },
+    {
+      "name": "schematic.page.create",
+      "description": "Create a new schematic page under a schematic document.",
+      "inputs": [
+        "schematicUuid"
+      ]
+    },
+    {
+      "name": "schematic.page.rename",
+      "description": "Rename a schematic page. Verifies the new name landed in the page list (issue #55 platform-async cache); returns verified=false + warning if it hasn't synced yet.",
+      "inputs": [
+        "pageUuid",
+        "name"
+      ]
+    },
+    {
+      "name": "schematic.page.delete",
+      "description": "Delete a schematic page (no undo).",
+      "inputs": [
+        "pageUuid"
+      ]
+    },
+    {
+      "name": "schematic.page.clear",
+      "description": "Clear the ACTIVE schematic page: delete every page-level primitive — components, net flags/ports/labels (all are components), wires, buses, and graphics (arcs/circles/rectangles/polygons/text) — optionally preserving the sheet/title block (图框). schematic.component.delete only removes components and silently leaves wires/buses/graphics behind, so the page looks clean in components.list while residual primitives remain; use this for a true page reset (generate → detect → clear → retry). No undo — dryRun reports counts without deleting.",
+      "inputs": [
+        "preserveSheet optional (default true)",
+        "dryRun optional (default false)",
+        "preserveParts optional (default false; requires preserveSheet:true and preservePartIds)",
+        "preservePartIds optional (complete exact original part primitive ID array; required with preserveParts; fresh identity/attribute set checked before and after clearing drawing content)",
+        "expectedPagePrimitives optional (JSON string from a fresh components.list pagePrimitives; compare exact native state before first delete; ordinary guarded clear rejects orphan attributes/embedded objects)",
+        "requireCompleteInventory optional (dry-run empty-page verification includes independent attributes/objects)"
+      ]
+    }
+  ],
+  "typedMoveOrCopyActionAvailable": false,
+  "officialSdkFunctionsObserved": [
+    "eda.dmt_Schematic.copySchematicPage(schematicPageUuid, schematicUuid?)",
+    "eda.dmt_Schematic.createSchematicPage(...)",
+    "eda.dmt_Schematic.deleteSchematicPage(...)",
+    "eda.dmt_Schematic.reorderSchematicPages(...)"
+  ],
+  "copyDeleteUsed": false,
+  "archiveSourceEdited": false,
+  "controlledBatDesignatorsRenamed": false,
+  "allPagesConnectivity": {
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "sch",
+      "connectivity",
+      "--all-pages",
+      "--project",
+      "1f475f192d4be7445a42ac79ebc824fcc4a803375837a9318c923e3aa35fe737"
+    ],
+    "timeoutSeconds": 120,
+    "timedOut": true,
+    "harnessExitCode": 1,
+    "cliExitCode": null,
+    "cliResponseCaptured": false,
+    "retryCount": 0,
+    "exception": "subprocess.TimeoutExpired: sch connectivity --all-pages timed out after 120 seconds",
+    "designMutation": false
+  },
+  "blockingReason": "No guarded typed move/copy action is exposed for existing pages. Copy+delete can change page/primitive identity and was not used. The project-level all-pages read timed out; controlled BAT1 names were not renamed to bypass board isolation.",
+  "resolutionRequired": "Provide a guarded native page-move operation preserving page/component/pin identity; then save/reload and repeat 1,075-terminal and 92-NC comparison plus board-scoped connectivity."
+}
