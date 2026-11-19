@@ -1,0 +1,38 @@
+name: EVT-1 EasyEDA readback replay
+
+on:
+  push:
+    branches: [hardware/evt1-h01-h05-closure-20261119]
+
+permissions:
+  contents: read
+
+env:
+  PACKAGE: hardware/evt1-native-eda-20261118
+
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify archived native input bytes
+        working-directory: hardware/evt1-native-eda-20261118/closure/evidence/jlc-import
+        run: sha256sum -c SHA256SUMS.txt
+      - name: Run the verifier regression tests
+        run: python3 -m unittest discover -s "$PACKAGE/closure" -p test_verify_eda_return.py -v
+      - name: Replay three-board readback without relabeling failures
+        run: |
+          result=0
+          python3 "$PACKAGE/closure/verify_eda_return.py" \
+            --schematic "$PACKAGE/closure/evidence/jlc-import" \
+            --pcb "$PACKAGE/kimi-return/native/restored-readback" \
+            --output "$RUNNER_TEMP/eda-readback.json" || result=$?
+          test "$result" -eq 1
+          diff -u "$PACKAGE/closure/evidence/readback-report.json" "$RUNNER_TEMP/eda-readback.json"
+      - name: Retain the replay report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: evt1-eda-readback-report
+          path: ${{ runner.temp }}/eda-readback.json
