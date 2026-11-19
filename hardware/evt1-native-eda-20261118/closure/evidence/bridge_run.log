@@ -1,0 +1,9 @@
+PASS: geometry evidence reproduced. PR #30 placement FAIL; closure BLOCKED.
+{"kind": "reservedSpace", "ref": "U8", "reserve": "J_BRIDGE_IN", "layer": 2, "gapMm": 0.0}
+U8: 0 fixed-neighbor anchors with PR #30 reservations, 0 with additional D3 nominal body
+U10: 54 fixed-neighbor anchors with PR #30 reservations, 0 with additional D3 nominal body
+U14: 0 fixed-neighbor anchors with PR #30 reservations, 0 with additional D3 nominal body
+J_DISP_L: original envelope FAIL, projected FAIL, projected conflict refs ['U13', 'D3_PRIV_NOMINAL_BODY']
+J_DISP_R: original envelope FAIL, projected FAIL, projected conflict refs ['U7']
+J_BRIDGE_IN: original envelope FAIL, projected FAIL, projected conflict refs ['U8', 'Y1']
+strict geometry exit: 1

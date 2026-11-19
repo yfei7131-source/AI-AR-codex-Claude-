@@ -265,10 +265,17 @@ module evt1_ar_display_fpga_bridge_rev_c #(
                     // Rev D OPT_CTRL: applied once per CS_N window (first data word only)
                     if (h_ctrl_ok_q) begin
                         h_ctrl_ok_q   <= 1'b0;
-                        opt_scan_en_h <= host_qio[0] && host_qio[1];
-                        opt_pwr_off_h <= ~host_qio[1];
-                        if (host_qio[1] && host_qio[2] && (!host_qio[0]) && (!opt_scan_en_h))
-                            raw_req_tgl_h <= ~raw_req_tgl_h;
+                        // ICD: flag bit3 is reserved and must be zero. Consume
+                        // the first word even when malformed, so extra data in
+                        // this CS window cannot retry or bypass the rejection.
+                        // RAW remains opaque because h_ctrl_ok_q is suppressed
+                        // at header decode while raw_window_q is active.
+                        if (!host_qio[3]) begin
+                            opt_scan_en_h <= host_qio[0] && host_qio[1];
+                            opt_pwr_off_h <= ~host_qio[1];
+                            if (host_qio[1] && host_qio[2] && (!host_qio[0]) && (!opt_scan_en_h))
+                                raw_req_tgl_h <= ~raw_req_tgl_h;
+                        end
                     end
                 end
                 default: ;
