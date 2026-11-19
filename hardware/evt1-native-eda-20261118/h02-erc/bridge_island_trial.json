@@ -1,0 +1,638 @@
+{
+  "baseline": "PR #34 source tree; uses independently verified PR #30/32 PCB geometry",
+  "trial_status": "CONDITIONAL_FIT",
+  "h03_placement": "BLOCKED",
+  "fabrication": "BLOCKED",
+  "label": "NOT FOR FAB",
+  "scope": "Simultaneous AABB and copper-edge grid fit for three AVDD ICs and original fixed objects. Remote connectors use conditional flat envelopes. Full AVDD group, local bypasses, all copper routing and mated installation are unverified.",
+  "source_sha256": {
+    "kimi-return/native/restored-readback/M-OPT-BRIDGE.json": "e643a3314b85d53f187330e06d7da58470c28246b72fc46ad3f62a85dcb362cb",
+    "kimi-return/layout/review-3/M-OPT-BRIDGE/fresh-board.json": "b6b255fcb5395d8eaa37fa734e13a5368132c952d88399c0e3937bf64ac47f9b",
+    "kimi-return/layout/candidate-placement-plan.json": "1b6be4903cab872569b998ff318f7afaf9977d4a90edd91067aa2015650ba202",
+    "kimi-return/layout/review-1/M-OPT-BRIDGE/fresh-board.json": "46b5002b2d1a8755f768a0636212f94ce5d0ffd9d41439a8c23ff7e76edd0de3",
+    "kimi-return/layout/review-2/M-OPT-BRIDGE/fresh-board.json": "6afe2be139360e5603bf5a8b05f431e5f3ec2b4a4982c070c155a497c383f2f6",
+    "kimi-return/evidence/pad-audit/audit-board-after.json": "2cda78d7c1891d08b9d7e54d4098756249e121f4c06c44aeb725b70e11ef09d3",
+    "PCB_CONSTRAINTS.json": "2564eccb6c18703594c771a69b634e49804e56d6961fad99165e04028c970a4a",
+    "closure/evidence/bridge_placement.json": "3abdf78584ab83613551c55576c62462042889057b217ac34829ed2d2459da68",
+    "closure/bridge_connector_bodies.json": "e66393b748b72c241921784367dc94c132f78f19eaf2226ae63a547b4bd8ce92",
+    "Inputs/effective_pinmap.csv": "bcccbb2245a9411ef56b84bb0222fc15ae622c2f8f680a8db05e9c62c81dc219"
+  },
+  "bridge_outline_mm": [
+    0.0,
+    0.0,
+    4.199999,
+    21.999999
+  ],
+  "manufacturer_reference": "https://www.hirose.com/en/product/series/BM28/documents?path=%2Fapi%2Fv1%2Fseries%2FBM28%2Fdocuments%2Fproduct_series_catalog%2Fcontent%3Flang%3DEN",
+  "min_copper_edge_mm": 0.254,
+  "min_same_side_aabb_gap_mm": 0.2,
+  "unchanged_manufacturing_rules": {
+    "minimum_trace_um": 50.0,
+    "minimum_clearance_um": 50.0,
+    "minimum_edge_clearance_mm": 0.25,
+    "minimum_courtyard_gap_mm": 0.2,
+    "microvia_nominal_drill_um": 75.0,
+    "microvia_nominal_land_um": 180.0,
+    "microvia_nominal_annular_ring_um": 52.5,
+    "buried_via_nominal_drill_um": 200.0,
+    "buried_via_nominal_land_um": 400.0,
+    "buried_via_nominal_annular_ring_um": 100.0,
+    "btb_fpc_stiffener_mated_allowance_mm": 0.32
+  },
+  "fixed_native": [
+    {
+      "ref": "MK2",
+      "sourceRef": null,
+      "side": "BOTTOM",
+      "rotationDegrees": 0,
+      "nativeOrientationObserved": true,
+      "anchorMm": [
+        1.79607,
+        15.370091
+      ],
+      "bodyBoxMm": [
+        0.143952,
+        13.373016,
+        4.056047,
+        17.626983
+      ],
+      "copperBoxMm": [
+        0.57023,
+        13.77569,
+        3.02133,
+        17.160105
+      ],
+      "minCopperEdgeMm": 0.57023,
+      "minSameSideAabbGapMm": 0.232684,
+      "minReservationGapMm": 0.673016
+    },
+    {
+      "ref": "U1",
+      "sourceRef": null,
+      "side": "BOTTOM",
+      "rotationDegrees": 90,
+      "nativeOrientationObserved": true,
+      "anchorMm": [
+        2.395009,
+        18.730379
+      ],
+      "bodyBoxMm": [
+        1.794198,
+        17.859667,
+        3.005803,
+        19.340335
+      ],
+      "copperBoxMm": [
+        1.96006,
+        18.120347,
+        2.829908,
+        19.340335
+      ],
+      "minCopperEdgeMm": 1.370091,
+      "minSameSideAabbGapMm": 0.232684,
+      "minReservationGapMm": 5.159667
+    },
+    {
+      "ref": "U12",
+      "sourceRef": null,
+      "side": "BOTTOM",
+      "rotationDegrees": 0,
+      "nativeOrientationObserved": true,
+      "anchorMm": [
+        2.290247,
+        20.612826
+      ],
+      "bodyBoxMm": [
+        0.753166,
+        19.597969,
+        3.446836,
+        21.602029
+      ],
+      "copperBoxMm": [
+        1.27889,
+        19.97202,
+        3.30073,
+        21.25218
+      ],
+      "minCopperEdgeMm": 0.747819,
+      "minSameSideAabbGapMm": 0.257635,
+      "minReservationGapMm": 6.897969
+    },
+    {
+      "ref": "U13",
+      "sourceRef": "U_AVDD_SYS_PG",
+      "side": "TOP",
+      "rotationDegrees": 0,
+      "nativeOrientationObserved": true,
+      "anchorMm": [
+        2.290247,
+        6.787172
+      ],
+      "bodyBoxMm": [
+        0.753166,
+        5.797969,
+        3.446836,
+        7.802029
+      ],
+      "copperBoxMm": [
+        1.27889,
+        6.1468,
+        3.30073,
+        7.42696
+      ],
+      "minCopperEdgeMm": 0.899269,
+      "minSameSideAabbGapMm": 0.234866,
+      "minReservationGapMm": 0.431259
+    },
+    {
+      "ref": "U2",
+      "sourceRef": null,
+      "side": "TOP",
+      "rotationDegrees": 0,
+      "nativeOrientationObserved": true,
+      "anchorMm": [
+        2.32392,
+        9.363105
+      ],
+      "bodyBoxMm": [
+        0.699882,
+        8.036895,
+        3.500117,
+        10.963102
+      ],
+      "copperBoxMm": [
+        1.42367,
+        8.26389,
+        3.22453,
+        10.46353
+      ],
+      "minCopperEdgeMm": 0.975469,
+      "minSameSideAabbGapMm": 0.234866,
+      "minReservationGapMm": 2.666895
+    },
+    {
+      "ref": "U4",
+      "sourceRef": null,
+      "side": "BOTTOM",
+      "rotationDegrees": 0,
+      "nativeOrientationObserved": true,
+      "anchorMm": [
+        0.930379,
+        18.604992
+      ],
+      "bodyBoxMm": [
+        0.059667,
+        17.994198,
+        1.540335,
+        19.205804
+      ],
+      "copperBoxMm": [
+        0.320347,
+        18.170093,
+        1.540335,
+        19.039942
+      ],
+      "minCopperEdgeMm": 0.320347,
+      "minSameSideAabbGapMm": 0.253863,
+      "minReservationGapMm": 5.294534
+    },
+    {
+      "ref": "U7",
+      "sourceRef": null,
+      "side": "TOP",
+      "rotationDegrees": 0,
+      "nativeOrientationObserved": true,
+      "anchorMm": [
+        2.290247,
+        12.187174
+      ],
+      "bodyBoxMm": [
+        0.753166,
+        11.197971,
+        3.446836,
+        13.202031
+      ],
+      "copperBoxMm": [
+        1.27889,
+        11.54684,
+        3.30073,
+        12.827
+      ],
+      "minCopperEdgeMm": 0.899269,
+      "minSameSideAabbGapMm": 0.234869,
+      "minReservationGapMm": 0.431258
+    },
+    {
+      "ref": "U9",
+      "sourceRef": null,
+      "side": "TOP",
+      "rotationDegrees": 0,
+      "nativeOrientationObserved": true,
+      "anchorMm": [
+        2.301397,
+        18.8
+      ],
+      "bodyBoxMm": [
+        0.246334,
+        17.39759,
+        3.953667,
+        20.202411
+      ],
+      "copperBoxMm": [
+        0.70104,
+        17.4498,
+        3.90144,
+        20.14982
+      ],
+      "minCopperEdgeMm": 0.298559,
+      "minSameSideAabbGapMm": 4.195559,
+      "minReservationGapMm": 1.42759
+    },
+    {
+      "ref": "Y1",
+      "sourceRef": null,
+      "side": "BOTTOM",
+      "rotationDegrees": 90,
+      "nativeOrientationObserved": true,
+      "anchorMm": [
+        1.835307,
+        9.321919
+      ],
+      "bodyBoxMm": [
+        0.489308,
+        7.72192,
+        2.911331,
+        10.667919
+      ],
+      "copperBoxMm": [
+        0.95631,
+        8.2423,
+        2.71399,
+        10.4013
+      ],
+      "minCopperEdgeMm": 0.95631,
+      "minSameSideAabbGapMm": 2.705097,
+      "minReservationGapMm": 1.032081
+    }
+  ],
+  "privacyLedProjection": {
+    "mpn": "APHD1608LCGCK",
+    "source": "https://www.kingbrightusa.com/images/catalog/SPEC/APHD1608LCGCK.pdf",
+    "reference": "V.4B p. 1",
+    "longAxis": "Y",
+    "originalNominalBodyMm": [
+      1.7,
+      0.6,
+      2.5,
+      2.2
+    ],
+    "nominalCopperBoxMm": [
+      1.7,
+      0.3,
+      2.5,
+      2.5
+    ],
+    "guardMm": [
+      1.6,
+      0.2,
+      2.6,
+      2.6
+    ],
+    "minProjectedNominalCopperEdgeMm": 0.3,
+    "lightGuideAndMountedAssembly": "BLOCKED"
+  },
+  "reserves_on_rigid_bridge": [
+    {
+      "ref": "D3_PRIV_BODY_AND_LAND_GUARD",
+      "side": "TOP",
+      "boxMm": [
+        1.6,
+        0.2,
+        2.6,
+        2.6
+      ]
+    },
+    {
+      "ref": "J_DISP_L_EDGE_LAUNCH",
+      "side": "TOP",
+      "boxMm": [
+        0,
+        3.03,
+        0.7,
+        5.37
+      ]
+    },
+    {
+      "ref": "J_DISP_R_EDGE_LAUNCH",
+      "side": "TOP",
+      "boxMm": [
+        3.5,
+        13.63,
+        4.2,
+        15.97
+      ]
+    },
+    {
+      "ref": "U6_OPT_AVDD",
+      "side": "BOTTOM",
+      "boxMm": [
+        1.6,
+        11.7,
+        2.6,
+        12.7
+      ]
+    },
+    {
+      "ref": "Y1_CLOCK_SEARCH_RESERVE",
+      "side": "BOTTOM",
+      "boxMm": [
+        0.627,
+        8.288988,
+        3.573,
+        10.711012
+      ]
+    },
+    {
+      "ref": "J_BRIDGE_IN_EDGE_LAUNCH",
+      "side": "BOTTOM",
+      "boxMm": [
+        0,
+        0,
+        4.2,
+        1.3
+      ]
+    }
+  ],
+  "remote_connector_islands": [
+    {
+      "ref": "J_DISP_L",
+      "supportMm": [
+        -5.7,
+        1.45,
+        -2.5,
+        6.95
+      ],
+      "connectorCenterMm": [
+        -4.1,
+        4.2
+      ],
+      "longAxis": "Y",
+      "receptacleMpn": "BM28B0.6-10DS/2-0.35V(53)",
+      "receptacleSource": "https://www.hirose.com/en/product/p/CL0673-5044-0-53",
+      "receptacleBodyMm": [
+        -4.95,
+        2.025,
+        -3.25,
+        6.375
+      ],
+      "catalogPlugInsulationMinEMm": 4.55,
+      "catalogMatedHeightMm": 0.6,
+      "boardSideContactCount": 12,
+      "connectorPlanningGuardMm": [
+        -5.1,
+        1.9,
+        -3.1,
+        6.5
+      ],
+      "minGuardToSupportEdgeMm": 0.45,
+      "flatGapToBridgeMm": 2.5,
+      "flatFlexTransitionMm": [
+        -2.5,
+        3.03,
+        0.7,
+        5.37
+      ],
+      "mountedAssembly": "BLOCKED"
+    },
+    {
+      "ref": "J_DISP_R",
+      "supportMm": [
+        6.7,
+        12.05,
+        9.9,
+        17.55
+      ],
+      "connectorCenterMm": [
+        8.3,
+        14.8
+      ],
+      "longAxis": "Y",
+      "receptacleMpn": "BM28B0.6-10DS/2-0.35V(53)",
+      "receptacleSource": "https://www.hirose.com/en/product/p/CL0673-5044-0-53",
+      "receptacleBodyMm": [
+        7.45,
+        12.625,
+        9.15,
+        16.975
+      ],
+      "catalogPlugInsulationMinEMm": 4.55,
+      "catalogMatedHeightMm": 0.6,
+      "boardSideContactCount": 12,
+      "connectorPlanningGuardMm": [
+        7.3,
+        12.5,
+        9.3,
+        17.1
+      ],
+      "minGuardToSupportEdgeMm": 0.45,
+      "flatGapToBridgeMm": 2.500001,
+      "flatFlexTransitionMm": [
+        3.5,
+        13.63,
+        6.7,
+        15.97
+      ],
+      "mountedAssembly": "BLOCKED"
+    },
+    {
+      "ref": "J_BRIDGE_IN",
+      "supportMm": [
+        0.5,
+        -11.5,
+        3.7,
+        -2.5
+      ],
+      "connectorCenterMm": [
+        2.1,
+        -7.0
+      ],
+      "longAxis": "Y",
+      "receptacleMpn": "BM28B0.6-30DS/2-0.35V(53)",
+      "receptacleSource": "https://www.hirose.com/en/product/p/CL0673-5021-0-53",
+      "receptacleBodyMm": [
+        1.25,
+        -10.925,
+        2.95,
+        -3.075
+      ],
+      "catalogPlugInsulationMinEMm": 8.05,
+      "catalogMatedHeightMm": 0.6,
+      "boardSideContactCount": 32,
+      "connectorPlanningGuardMm": [
+        1.1,
+        -11.05,
+        3.1,
+        -2.95
+      ],
+      "minGuardToSupportEdgeMm": 0.45,
+      "flatGapToBridgeMm": 2.5,
+      "flatFlexTransitionMm": [
+        0,
+        -2.5,
+        4.2,
+        1.3
+      ],
+      "mountedAssembly": "BLOCKED"
+    }
+  ],
+  "flat_union_extent_mm": [
+    -5.7,
+    -11.5,
+    9.9,
+    21.999999
+  ],
+  "search_grid_mm": 0.1,
+  "cases": {
+    "SN74LVC2T45DCUR_U13_fixed": {
+      "coPlacement": "FAIL",
+      "independentClearPoses": {
+        "U8": 722,
+        "U10": 1720,
+        "U14": 551
+      }
+    },
+    "SN74LVC2T45DCUR_U13_repacked": {
+      "U13SearchDomain": "Original side and rotation. Anchor Y from 4.0 to 9.5 mm.",
+      "coPlacement": "FAIL",
+      "independentClearPoses": {
+        "U8": 921,
+        "U10": 2069,
+        "U14": 551,
+        "U13": 172
+      }
+    },
+    "SN74LVC2T45YZPR_U13_fixed": {
+      "source": "https://www.ti.com/lit/ds/symlink/sn74lvc2t45.pdf",
+      "drawing": "4223082/A YZP0008 max body and 8 x 0.23 mm example land on 0.50 mm pitch",
+      "maxBodyMm": [
+        0.918,
+        1.918,
+        0.5
+      ],
+      "landBoundingSpanMm": [
+        0.73,
+        1.73
+      ],
+      "DCUtoYZPPins": {
+        "1": "A1",
+        "2": "B1",
+        "3": "C1",
+        "4": "D1",
+        "5": "D2",
+        "6": "C2",
+        "7": "B2",
+        "8": "A2"
+      },
+      "anchorMeaning": "U8 package center; remaining coordinates use the captured native footprint origins",
+      "coPlacement": "PASS",
+      "independentClearPoses": {
+        "U8": 3576,
+        "U10": 1720,
+        "U14": 551
+      },
+      "candidateGroup": [
+        {
+          "ref": "U8",
+          "sourceRef": "U_AVDD_LS",
+          "side": "BOTTOM",
+          "rotationDegrees": 90,
+          "nativeOrientationObserved": false,
+          "anchorMm": [
+            2.1,
+            7.0
+          ],
+          "bodyBoxMm": [
+            1.141,
+            6.541,
+            3.059,
+            7.459
+          ],
+          "copperBoxMm": [
+            1.235,
+            6.635,
+            2.965,
+            7.365
+          ],
+          "minCopperEdgeMm": 1.234999,
+          "minSameSideAabbGapMm": 0.240978,
+          "minReservationGapMm": 0.829988
+        },
+        {
+          "ref": "U10",
+          "sourceRef": "U_AVDD_QUAL",
+          "side": "TOP",
+          "rotationDegrees": 0,
+          "nativeOrientationObserved": true,
+          "anchorMm": [
+            2.2,
+            4.3
+          ],
+          "bodyBoxMm": [
+            0.950041,
+            2.807019,
+            3.973999,
+            5.499998
+          ],
+          "copperBoxMm": [
+            0.95032,
+            3.44021,
+            3.44968,
+            5.15979
+          ],
+          "minCopperEdgeMm": 0.750319,
+          "minSameSideAabbGapMm": 0.297971,
+          "minReservationGapMm": 0.207019
+        },
+        {
+          "ref": "U14",
+          "sourceRef": "U_AVDD_WD",
+          "side": "BOTTOM",
+          "rotationDegrees": 90,
+          "nativeOrientationObserved": false,
+          "anchorMm": [
+            1.9,
+            4.7
+          ],
+          "bodyBoxMm": [
+            0.29759,
+            2.800029,
+            3.86864,
+            6.300022
+          ],
+          "copperBoxMm": [
+            0.68461,
+            3.10107,
+            3.11539,
+            6.29893
+          ],
+          "minCopperEdgeMm": 0.68461,
+          "minSameSideAabbGapMm": 0.240978,
+          "minReservationGapMm": 1.500029
+        }
+      ],
+      "centreDistanceProxiesMm": {
+        "U2_to_U8": 2.5,
+        "U8_to_U10": 2.8694,
+        "U8_to_U14": 2.45
+      }
+    }
+  },
+  "releaseBlockers": [
+    "ID model, lens placement and shell/hinge clearance for all three support islands and service access.",
+    "Qualified alternate flex/stiffener and termination on the central bridge. Existing optical y corridors only retained locally at the shifted launches.",
+    "Approved YZPR substitution, native A1/pad and actual copper/mask/paste validation, solder and inspection approvals, installed fit, AVDD electrical and power-off behavior.",
+    "Native footprints, mating and assembly access tolerances; microphone port and privacy light guide fit; JBD vendor pin/sequence/AVDD.",
+    "Placement of other AVDD safety/RC parts, local bypass loops, verified manufacturer courtyard and full native design, route and DRC.",
+    "Supplier-approved 0.50 mm bridge/6L/VIPPO/50 μm process, SI/PI, trunk contact/current/IR/thermal, 40 g mass budget and all hardware validation."
+  ]
+}
