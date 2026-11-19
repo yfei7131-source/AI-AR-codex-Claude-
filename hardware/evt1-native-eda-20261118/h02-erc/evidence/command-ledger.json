@@ -1,0 +1,391 @@
+[
+  {
+    "path": "project-info.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "project",
+      "info"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "lceda-boards.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "board",
+      "list"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "lceda-pages.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "sch",
+      "pages"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "lceda-pcbs.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "pcb",
+      "docs"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "save/M-MAIN-L.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "--doc",
+      "4d38590959875927",
+      "sch",
+      "save"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "reload/M-MAIN-L.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "doc",
+      "reload",
+      "4d38590959875927",
+      "--json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "root/M-MAIN-L.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "doc",
+      "switch",
+      "4d38590959875927",
+      "--json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "board-netlists/M-MAIN-L.response.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "sch",
+      "netlist",
+      "--type",
+      "Protel2"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "erc/4d38590959875927.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "sch",
+      "drc",
+      "--json",
+      "--strict"
+    ],
+    "exit_code": 1
+  },
+  {
+    "path": "save/M-OPT-BRIDGE.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "--doc",
+      "e00fbca5c08cc114",
+      "sch",
+      "save"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "reload/M-OPT-BRIDGE.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "doc",
+      "reload",
+      "e00fbca5c08cc114",
+      "--json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "root/M-OPT-BRIDGE.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "doc",
+      "switch",
+      "e00fbca5c08cc114",
+      "--json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "board-netlists/M-OPT-BRIDGE.response.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "sch",
+      "netlist",
+      "--type",
+      "Protel2"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "erc/e00fbca5c08cc114.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "sch",
+      "drc",
+      "--json",
+      "--strict"
+    ],
+    "exit_code": 1
+  },
+  {
+    "path": "save/M-AUD-R.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "--doc",
+      "e98944c2045546cf",
+      "sch",
+      "save"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "reload/M-AUD-R.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "doc",
+      "reload",
+      "e98944c2045546cf",
+      "--json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "root/M-AUD-R.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "doc",
+      "switch",
+      "e98944c2045546cf",
+      "--json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "board-netlists/M-AUD-R.response.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "sch",
+      "netlist",
+      "--type",
+      "Protel2"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "erc/e98944c2045546cf.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "sch",
+      "drc",
+      "--json",
+      "--strict"
+    ],
+    "exit_code": 1
+  },
+  {
+    "path": "archive-response.json",
+    "command": [
+      "easyeda",
+      "--window",
+      "ad7886bd-8f55-4d42-a75b-202899d32fab",
+      "project",
+      "export",
+      "--project-uuid",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "--out",
+      "<WORKSPACE>\\_evt1_h02_erc_sync\\ZY_AIAR_EVT1_H02_ERC_L2_D3_NOT_FOR_FAB.epro2"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "pins/9e364700c984f124.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "sch",
+      "list",
+      "--page",
+      "9e364700c984f124",
+      "--stay",
+      "--include-pins"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "pins/3fdc6001a068d82e.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "sch",
+      "list",
+      "--page",
+      "3fdc6001a068d82e",
+      "--stay",
+      "--include-pins"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "pins/2d94cb183ed4ccdc.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "sch",
+      "list",
+      "--page",
+      "2d94cb183ed4ccdc",
+      "--stay",
+      "--include-pins"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "pins/a7f2cc2b0cf16956.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "sch",
+      "list",
+      "--page",
+      "a7f2cc2b0cf16956",
+      "--stay",
+      "--include-pins"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "pins/b1ec1f299f13f9eb.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "sch",
+      "list",
+      "--page",
+      "b1ec1f299f13f9eb",
+      "--stay",
+      "--include-pins"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "pins/35df718b650fe548.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "sch",
+      "list",
+      "--page",
+      "35df718b650fe548",
+      "--stay",
+      "--include-pins"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "pins/d643a0611d67a31a.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "sch",
+      "list",
+      "--page",
+      "d643a0611d67a31a",
+      "--stay",
+      "--include-pins"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "pins/2abf127033234e68.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "sch",
+      "list",
+      "--page",
+      "2abf127033234e68",
+      "--stay",
+      "--include-pins"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "pins/e00fbca5c08cc114.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "sch",
+      "list",
+      "--page",
+      "e00fbca5c08cc114",
+      "--stay",
+      "--include-pins"
+    ],
+    "exit_code": 0
+  }
+]

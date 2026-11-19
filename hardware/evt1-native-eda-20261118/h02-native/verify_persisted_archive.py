@@ -93,7 +93,9 @@ def verify(persisted, candidate, evidence):
     expected_uuid = json.loads((evidence / "board_pages.json").read_bytes())["project_id"]
     exported_sha = digest(persisted.path)
     receipt = json.loads((evidence / "archive-response.json").read_bytes())
-    if receipt.get("ok") is not True or receipt["result"].get("uuid") != expected_uuid or receipt["result"].get("artifactSha256") != exported_sha:
+    result = receipt["result"]
+    reported_hashes = {result[key] for key in ("artifactSha256", "sha256") if key in result}
+    if receipt.get("ok") is not True or result.get("uuid") != expected_uuid or reported_hashes != {exported_sha}:
         raise ValueError("native project archive does not match host export receipt")
     for board, root in {"M-MAIN-L": "4d38590959875927", "M-OPT-BRIDGE": "e00fbca5c08cc114",
                         "M-AUD-R": "e98944c2045546cf"}.items():

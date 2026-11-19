@@ -22,8 +22,9 @@ class Capture:
         self.ledger = []
         self.retries_left = retries
 
-    def run(self, path, args, *, allow_rule_failure=False, mutates=False):
-        command = [self.cli, "--project", self.project, *args]
+    def run(self, path, args, *, allow_rule_failure=False, mutates=False, window=None):
+        route = ["--project", self.project] if window is None else ["--window", window]
+        command = [self.cli, *route, *args]
         target = self.folder / path
         target.parent.mkdir(parents=True, exist_ok=True)
         attempt = 1

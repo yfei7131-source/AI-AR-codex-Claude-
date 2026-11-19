@@ -1,0 +1,624 @@
+{
+  "id": "req_2061",
+  "type": "response",
+  "version": "v1",
+  "windowId": "ad7886bd-8f55-4d42-a75b-202899d32fab",
+  "createdAt": "2026-11-19T21:08:35.8381389Z",
+  "ok": true,
+  "result": {
+    "components": [
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "component": {
+          "libraryUuid": "",
+          "name": "default420x297",
+          "uuid": "3b05ac1a29246ae6"
+        },
+        "componentType": "sheet",
+        "designator": "",
+        "device": {
+          "libraryUuid": "",
+          "name": "default420x297",
+          "uuid": "3b05ac1a29246ae6"
+        },
+        "footprint": {
+          "uuid": ""
+        },
+        "mirror": false,
+        "name": "default420x297",
+        "net": "",
+        "netlistAvailable": true,
+        "otherProperty": {
+          "Comment1": "",
+          "Comment2": "",
+          "Comment3": "",
+          "Comment4": "",
+          "Comp": "",
+          "Date": "",
+          "Description": "",
+          "File": "06-supply-origins-1_1",
+          "Id": "/",
+          "Origin Footprint": "",
+          "Rev": "",
+          "Sheet": "/",
+          "Size": "\"A3\"",
+          "Title": "",
+          "Type": ""
+        },
+        "pins": [],
+        "pinsAvailable": true,
+        "primitiveId": "ie0",
+        "rotation": 0,
+        "subPartName": "default420x297.1",
+        "symbol": {
+          "libraryUuid": "",
+          "name": "default420x297",
+          "uuid": "412ca47752bc0af4"
+        },
+        "x": 0,
+        "y": 0
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "component": {
+          "libraryUuid": "",
+          "name": "EVT1_#FLG01_SUPPLY_ORIGIN",
+          "uuid": "21fb81cbeb928c62"
+        },
+        "componentType": "netflag",
+        "designator": "#FLG01",
+        "device": {
+          "libraryUuid": "",
+          "name": "GND",
+          "uuid": "21fb81cbeb928c62"
+        },
+        "footprint": {
+          "uuid": ""
+        },
+        "mirror": false,
+        "name": "GND",
+        "net": "GND",
+        "netlistAvailable": true,
+        "otherProperty": {
+          "Description": "",
+          "Design Notes": "J_BRIDGE_IN.PWR2, system return",
+          "Origin Footprint": "",
+          "Relevance": "[]",
+          "UserDocLink": "",
+          "Value": "PWR_FLAG"
+        },
+        "pins": [
+          {
+            "net": null,
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "~",
+            "pinNumber": "1",
+            "primitiveId": "ie22-ie1",
+            "rotation": 180,
+            "x": 280,
+            "y": -165
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "ie22",
+        "rotation": 0,
+        "subPartName": "1",
+        "symbol": {
+          "libraryUuid": "",
+          "name": "EVT1_#FLG01_SUPPLY_ORIGIN",
+          "uuid": "8cad7f1b09d7857c"
+        },
+        "x": 300,
+        "y": -165
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "component": {
+          "libraryUuid": "",
+          "name": "GND",
+          "uuid": "a5ffa8e3714d10fd"
+        },
+        "componentType": "netport",
+        "designator": "?",
+        "device": {
+          "libraryUuid": "",
+          "name": "GND",
+          "uuid": "a5ffa8e3714d10fd"
+        },
+        "footprint": {
+          "uuid": ""
+        },
+        "mirror": false,
+        "name": "GND",
+        "net": "GND",
+        "netlistAvailable": true,
+        "otherProperty": {
+          "Description": "",
+          "Relevance": "[]"
+        },
+        "pins": [
+          {
+            "net": null,
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "",
+            "pinNumber": "1",
+            "primitiveId": "ie30-ie1",
+            "rotation": 0,
+            "x": 270,
+            "y": -164.99999999999997
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "ie30",
+        "rotation": 180,
+        "subPartName": "1",
+        "symbol": {
+          "libraryUuid": "",
+          "name": "g_passive",
+          "uuid": "1be07761567207c6"
+        },
+        "x": 270,
+        "y": -165
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "component": {
+          "libraryUuid": "",
+          "name": "VSYS",
+          "uuid": "213c62987b091ba8"
+        },
+        "componentType": "netport",
+        "designator": "?",
+        "device": {
+          "libraryUuid": "",
+          "name": "VSYS",
+          "uuid": "213c62987b091ba8"
+        },
+        "footprint": {
+          "uuid": ""
+        },
+        "mirror": false,
+        "name": "VSYS",
+        "net": "VSYS",
+        "netlistAvailable": true,
+        "otherProperty": {
+          "Description": "",
+          "Relevance": "[]"
+        },
+        "pins": [
+          {
+            "net": null,
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "",
+            "pinNumber": "1",
+            "primitiveId": "ie42-ie1",
+            "rotation": 0,
+            "x": 790,
+            "y": -165.00000000000003
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "ie42",
+        "rotation": 180,
+        "subPartName": "1",
+        "symbol": {
+          "libraryUuid": "",
+          "name": "g_passive",
+          "uuid": "1be07761567207c6"
+        },
+        "x": 790,
+        "y": -165
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "component": {
+          "libraryUuid": "",
+          "name": "1V8_SYS",
+          "uuid": "ff39f53402a3f08a"
+        },
+        "componentType": "netport",
+        "designator": "?",
+        "device": {
+          "libraryUuid": "",
+          "name": "1V8_SYS",
+          "uuid": "ff39f53402a3f08a"
+        },
+        "footprint": {
+          "uuid": ""
+        },
+        "mirror": false,
+        "name": "1V8_SYS",
+        "net": "1V8_SYS",
+        "netlistAvailable": true,
+        "otherProperty": {
+          "Description": "",
+          "Relevance": "[]"
+        },
+        "pins": [
+          {
+            "net": null,
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "",
+            "pinNumber": "1",
+            "primitiveId": "ie54-ie1",
+            "rotation": 0,
+            "x": 1310,
+            "y": -165
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "ie54",
+        "rotation": 180,
+        "subPartName": "1",
+        "symbol": {
+          "libraryUuid": "",
+          "name": "g_passive",
+          "uuid": "1be07761567207c6"
+        },
+        "x": 1310,
+        "y": -165
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "component": {
+          "libraryUuid": "",
+          "name": "1V2_FPGA_PLL",
+          "uuid": "0eb92285465a9836"
+        },
+        "componentType": "netport",
+        "designator": "?",
+        "device": {
+          "libraryUuid": "",
+          "name": "1V2_FPGA_PLL",
+          "uuid": "0eb92285465a9836"
+        },
+        "footprint": {
+          "uuid": ""
+        },
+        "mirror": false,
+        "name": "1V2_FPGA_PLL",
+        "net": "1V2_FPGA_PLL",
+        "netlistAvailable": true,
+        "otherProperty": {
+          "Description": "",
+          "Relevance": "[]"
+        },
+        "pins": [
+          {
+            "net": null,
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "",
+            "pinNumber": "1",
+            "primitiveId": "ie66-ie1",
+            "rotation": 0,
+            "x": 270,
+            "y": -224.99999999999997
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "ie66",
+        "rotation": 180,
+        "subPartName": "1",
+        "symbol": {
+          "libraryUuid": "",
+          "name": "g_passive",
+          "uuid": "1be07761567207c6"
+        },
+        "x": 270,
+        "y": -225
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "component": {
+          "libraryUuid": "",
+          "name": "1V8_FPGA_VPP",
+          "uuid": "ec53005392620774"
+        },
+        "componentType": "netport",
+        "designator": "?",
+        "device": {
+          "libraryUuid": "",
+          "name": "1V8_FPGA_VPP",
+          "uuid": "ec53005392620774"
+        },
+        "footprint": {
+          "uuid": ""
+        },
+        "mirror": false,
+        "name": "1V8_FPGA_VPP",
+        "net": "1V8_FPGA_VPP",
+        "netlistAvailable": true,
+        "otherProperty": {
+          "Description": "",
+          "Relevance": "[]"
+        },
+        "pins": [
+          {
+            "net": null,
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "",
+            "pinNumber": "1",
+            "primitiveId": "ie78-ie1",
+            "rotation": 0,
+            "x": 790,
+            "y": -225.00000000000003
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "ie78",
+        "rotation": 180,
+        "subPartName": "1",
+        "symbol": {
+          "libraryUuid": "",
+          "name": "g_passive",
+          "uuid": "1be07761567207c6"
+        },
+        "x": 790,
+        "y": -225
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "component": {
+          "libraryUuid": "",
+          "name": "EVT1_#FLG02_SUPPLY_ORIGIN",
+          "uuid": "57607ad343ffb34e"
+        },
+        "componentType": "netflag",
+        "designator": "#FLG02",
+        "device": {
+          "libraryUuid": "",
+          "name": "VSYS",
+          "uuid": "57607ad343ffb34e"
+        },
+        "footprint": {
+          "uuid": ""
+        },
+        "mirror": false,
+        "name": "VSYS",
+        "net": "VSYS",
+        "netlistAvailable": true,
+        "otherProperty": {
+          "Description": "",
+          "Design Notes": "J_BRIDGE_IN.P2/P3, source LM66200 on left main board",
+          "Origin Footprint": "",
+          "Relevance": "[]",
+          "UserDocLink": "",
+          "Value": "PWR_FLAG"
+        },
+        "pins": [
+          {
+            "net": null,
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "~",
+            "pinNumber": "1",
+            "primitiveId": "ie34-ie1",
+            "rotation": 180,
+            "x": 800,
+            "y": -165
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "ie34",
+        "rotation": 0,
+        "subPartName": "1",
+        "symbol": {
+          "libraryUuid": "",
+          "name": "EVT1_#FLG02_SUPPLY_ORIGIN",
+          "uuid": "1dee02666abcd64e"
+        },
+        "x": 820,
+        "y": -165
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "component": {
+          "libraryUuid": "",
+          "name": "EVT1_#FLG03_SUPPLY_ORIGIN",
+          "uuid": "17339ecfcb941cd3"
+        },
+        "componentType": "netflag",
+        "designator": "#FLG03",
+        "device": {
+          "libraryUuid": "",
+          "name": "1V8_SYS",
+          "uuid": "17339ecfcb941cd3"
+        },
+        "footprint": {
+          "uuid": ""
+        },
+        "mirror": false,
+        "name": "1V8_SYS",
+        "net": "1V8_SYS",
+        "netlistAvailable": true,
+        "otherProperty": {
+          "Description": "",
+          "Design Notes": "J_BRIDGE_IN.P4/P5, source TPS62840 on left main board",
+          "Origin Footprint": "",
+          "Relevance": "[]",
+          "UserDocLink": "",
+          "Value": "PWR_FLAG"
+        },
+        "pins": [
+          {
+            "net": null,
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "~",
+            "pinNumber": "1",
+            "primitiveId": "ie46-ie1",
+            "rotation": 180,
+            "x": 1320,
+            "y": -165
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "ie46",
+        "rotation": 0,
+        "subPartName": "1",
+        "symbol": {
+          "libraryUuid": "",
+          "name": "EVT1_#FLG03_SUPPLY_ORIGIN",
+          "uuid": "17b3e0c894cacaa8"
+        },
+        "x": 1340,
+        "y": -165
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "component": {
+          "libraryUuid": "",
+          "name": "EVT1_#FLG04_SUPPLY_ORIGIN",
+          "uuid": "c3c56be0bf47c3da"
+        },
+        "componentType": "netflag",
+        "designator": "#FLG04",
+        "device": {
+          "libraryUuid": "",
+          "name": "1V2_FPGA_PLL",
+          "uuid": "c3c56be0bf47c3da"
+        },
+        "footprint": {
+          "uuid": ""
+        },
+        "mirror": false,
+        "name": "1V2_FPGA_PLL",
+        "net": "1V2_FPGA_PLL",
+        "netlistAvailable": true,
+        "otherProperty": {
+          "Description": "",
+          "Design Notes": "R_PLL supplies filtered core rail",
+          "Origin Footprint": "",
+          "Relevance": "[]",
+          "UserDocLink": "",
+          "Value": "PWR_FLAG"
+        },
+        "pins": [
+          {
+            "net": null,
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "~",
+            "pinNumber": "1",
+            "primitiveId": "ie58-ie1",
+            "rotation": 180,
+            "x": 280,
+            "y": -225
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "ie58",
+        "rotation": 0,
+        "subPartName": "1",
+        "symbol": {
+          "libraryUuid": "",
+          "name": "EVT1_#FLG04_SUPPLY_ORIGIN",
+          "uuid": "3cb4b2e2242d4efb"
+        },
+        "x": 300,
+        "y": -225
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "component": {
+          "libraryUuid": "",
+          "name": "EVT1_#FLG05_SUPPLY_ORIGIN",
+          "uuid": "c9911aa293d980ad"
+        },
+        "componentType": "netflag",
+        "designator": "#FLG05",
+        "device": {
+          "libraryUuid": "",
+          "name": "1V8_FPGA_VPP",
+          "uuid": "c9911aa293d980ad"
+        },
+        "footprint": {
+          "uuid": ""
+        },
+        "mirror": false,
+        "name": "1V8_FPGA_VPP",
+        "net": "1V8_FPGA_VPP",
+        "netlistAvailable": true,
+        "otherProperty": {
+          "Description": "",
+          "Design Notes": "R_VPP supplies D4 from the inherited 1V8 FPGA IO rail; not NVCM programming voltage",
+          "Origin Footprint": "",
+          "Relevance": "[]",
+          "UserDocLink": "",
+          "Value": "PWR_FLAG"
+        },
+        "pins": [
+          {
+            "net": null,
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "~",
+            "pinNumber": "1",
+            "primitiveId": "ie70-ie1",
+            "rotation": 180,
+            "x": 800,
+            "y": -225
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "ie70",
+        "rotation": 0,
+        "subPartName": "1",
+        "symbol": {
+          "libraryUuid": "",
+          "name": "EVT1_#FLG05_SUPPLY_ORIGIN",
+          "uuid": "fbef564ec678373f"
+        },
+        "x": 820,
+        "y": -225
+      }
+    ],
+    "count": 11,
+    "pinNetsAvailable": true,
+    "wires": []
+  },
+  "context": {
+    "projectUuid": "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+    "projectName": "EVT1-H02-ERC-20261120-B",
+    "documentUuid": "2abf127033234e68",
+    "documentType": "schematic",
+    "tabId": "2abf127033234e68@f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+    "pageVisibility": "hidden"
+  },
+  "mutationContext": {
+    "projectUuid": "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+    "projectName": "EVT1-H02-ERC-20261120-B",
+    "documentUuid": "2abf127033234e68",
+    "documentType": "schematic",
+    "tabId": "2abf127033234e68@f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+    "pageVisibility": "hidden"
+  },
+  "mutationContextAvailable": true,
+  "seq": 1889,
+  "seqAbandoned": 6,
+  "abandonedIds": [
+    "req_1302",
+    "req_1309",
+    "req_1376",
+    "req_1377",
+    "req_1378",
+    "req_1746"
+  ]
+}

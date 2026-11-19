@@ -1,0 +1,47 @@
+EVT-1 bridge offline verification
+Python 3.14.6
+
+$ python -B tools/build_pcb_constraints.py --check
+PASS: PCB partition and constraint manifest reproduced from PR #25; H03 placement/DRC BLOCKED.
+Exit 0 (expected 0)
+
+$ python -B closure/check_bridge_placement.py --check
+PASS: geometry evidence reproduced. PR #30 placement FAIL; closure BLOCKED.
+{"kind": "reservedSpace", "ref": "U8", "reserve": "J_BRIDGE_IN", "layer": 2, "gapMm": 0.0}
+U8: 0 fixed-neighbor anchors with PR #30 reservations, 0 with additional D3 nominal body
+U10: 54 fixed-neighbor anchors with PR #30 reservations, 0 with additional D3 nominal body
+U14: 0 fixed-neighbor anchors with PR #30 reservations, 0 with additional D3 nominal body
+J_DISP_L: original envelope FAIL, projected FAIL, projected conflict refs ['U13', 'D3_PRIV_NOMINAL_BODY']
+J_DISP_R: original envelope FAIL, projected FAIL, projected conflict refs ['U7']
+J_BRIDGE_IN: original envelope FAIL, projected FAIL, projected conflict refs ['U8', 'Y1']
+Exit 0 (expected 0)
+
+$ python -B closure/check_bridge_placement.py --check --strict
+PASS: geometry evidence reproduced. PR #30 placement FAIL; closure BLOCKED.
+{"kind": "reservedSpace", "ref": "U8", "reserve": "J_BRIDGE_IN", "layer": 2, "gapMm": 0.0}
+U8: 0 fixed-neighbor anchors with PR #30 reservations, 0 with additional D3 nominal body
+U10: 54 fixed-neighbor anchors with PR #30 reservations, 0 with additional D3 nominal body
+U14: 0 fixed-neighbor anchors with PR #30 reservations, 0 with additional D3 nominal body
+J_DISP_L: original envelope FAIL, projected FAIL, projected conflict refs ['U13', 'D3_PRIV_NOMINAL_BODY']
+J_DISP_R: original envelope FAIL, projected FAIL, projected conflict refs ['U7']
+J_BRIDGE_IN: original envelope FAIL, projected FAIL, projected conflict refs ['U8', 'Y1']
+Exit 1 (expected 1)
+
+$ python -B -m unittest discover -s closure -p test_bridge_placement.py -v
+test_connector_manufacturer_bounds (test_bridge_placement.BridgePlacementTest.test_connector_manufacturer_bounds) ... ok
+test_copper_and_placement_margins_are_distinct (test_bridge_placement.BridgePlacementTest.test_copper_and_placement_margins_are_distinct) ... ok
+test_original_and_privacy_occupied_search (test_bridge_placement.BridgePlacementTest.test_original_and_privacy_occupied_search) ... ok
+test_strict_status_and_native_collision (test_bridge_placement.BridgePlacementTest.test_strict_status_and_native_collision) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 1.650s
+
+OK
+Exit 0 (expected 0)
+
+$ python -B h02-erc/bridge_island_trial.py --check
+CONDITIONAL_FIT: bounded connector-island fit trial. H03 and fabrication BLOCKED.
+SN74LVC2T45DCUR_U13_fixed: FAIL {'U8': 722, 'U10': 1720, 'U14': 551}
+SN74LVC2T45DCUR_U13_repacked: FAIL {'U8': 921, 'U10': 2069, 'U14': 551, 'U13': 172}
+SN74LVC2T45YZPR_U13_fixed: PASS {'U8': 3576, 'U10': 1720, 'U14': 551}
+Exit 0 (expected 0)
