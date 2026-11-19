@@ -256,19 +256,29 @@
  
      // =========================================================================
      // Power-On Reset Generator (Synthesizable 4-bit counter + registered rst_n_q)
-@@ -253,9 +265,9 @@
+@@ -253,10 +265,17 @@
                      // Rev D OPT_CTRL: applied once per CS_N window (first data word only)
                      if (h_ctrl_ok_q) begin
                          h_ctrl_ok_q   <= 1'b0;
 -                        opt_scan_en_h <= host_qio[0];
-+                        opt_scan_en_h <= host_qio[0] && host_qio[1];
-                         opt_pwr_off_h <= ~host_qio[1];
+-                        opt_pwr_off_h <= ~host_qio[1];
 -                        if (host_qio[2] && (!host_qio[0]) && (!opt_scan_en_h))
-+                        if (host_qio[1] && host_qio[2] && (!host_qio[0]) && (!opt_scan_en_h))
-                             raw_req_tgl_h <= ~raw_req_tgl_h;
+-                            raw_req_tgl_h <= ~raw_req_tgl_h;
++                        // ICD: flag bit3 is reserved and must be zero. Consume
++                        // the first word even when malformed, so extra data in
++                        // this CS window cannot retry or bypass the rejection.
++                        // RAW remains opaque because h_ctrl_ok_q is suppressed
++                        // at header decode while raw_window_q is active.
++                        if (!host_qio[3]) begin
++                            opt_scan_en_h <= host_qio[0] && host_qio[1];
++                            opt_pwr_off_h <= ~host_qio[1];
++                            if (host_qio[1] && host_qio[2] && (!host_qio[0]) && (!opt_scan_en_h))
++                                raw_req_tgl_h <= ~raw_req_tgl_h;
++                        end
                      end
                  end
-@@ -518,10 +530,30 @@
+                 default: ;
+@@ -518,10 +537,30 @@
      // =========================================================================
      // Pure Datapath & Telemetry Pipeline Registers (No `rst_n_q` fanout load)
      // =========================================================================
@@ -301,7 +311,7 @@
  
          // 1. 3-Stage Pipelined Occupancy Watermark & Telemetry Counters
          wptr_bin_sync_q <= wptr_bin_dec;
-@@ -734,7 +766,7 @@
+@@ -734,7 +773,7 @@
              d3_low_q <= vsync_pulse_q | pwr_off_sync[1];
  
              // 8b. Rev D scan gating: enable only at a line boundary, disable immediately
@@ -310,7 +320,7 @@
                  scan_line_en_q <= 1'b0;
              else if (col_last_q)
                  scan_line_en_q <= 1'b1;
-@@ -766,7 +798,9 @@
+@@ -766,7 +805,9 @@
  
              // 10. 24.000 MHz QSPI Master Serializer (2:1 mux between hdr_nibble_q & pix_shift[15:12])
              //     Rev D: gated by scan_line_en_q (OPT_CTRL.SCAN_EN, line-aligned)
@@ -323,15 +333,15 @@
                      opt_sck_q <= 1'b0;
 --- a/03_FPGA_RTL/Makefile
 +++ b/03_FPGA_RTL/Makefile
-@@ -13,20 +13,23 @@
+@@ -13,20 +13,26 @@
  TB_SRC   = tb_evt1_ar_display_fpga_bridge_rev_c.v
  PCF      = ice40up5k_uwg30_rev_c.pcf
  
 -.PHONY: all sim synth pnr sta clean
-+.PHONY: all sim sim-safety synth pnr sta clean
++.PHONY: all sim sim-safety sim-framing synth pnr sta clean
  
 -all: sim synth pnr sta
-+all: sim sim-safety synth pnr sta
++all: sim sim-safety sim-framing synth pnr sta
  
  sim:
  	iverilog -g2005 -Wall -o $(TOP)_sim.vvp $(RTL_SRC) $(SIM_MOD) $(TB_SRC)
@@ -340,6 +350,9 @@
  
 +sim-safety:
 +	python3 run_rev_d1_1_safety.py
++
++sim-framing:
++	python3 run_host_framing.py
 +
  synth:
  	yosys -l yosys_synth.log -p "synth_ice40 -top $(TOP) -json $(TOP).json" $(RTL_SRC)

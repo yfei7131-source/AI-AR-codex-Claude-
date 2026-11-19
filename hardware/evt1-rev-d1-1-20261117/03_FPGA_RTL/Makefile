@@ -13,9 +13,9 @@ SIM_MOD  = ice40_spram_ebr_sim.v
 TB_SRC   = tb_evt1_ar_display_fpga_bridge_rev_c.v
 PCF      = ice40up5k_uwg30_rev_c.pcf
 
-.PHONY: all sim sim-safety synth pnr sta clean
+.PHONY: all sim sim-safety sim-framing synth pnr sta clean
 
-all: sim sim-safety synth pnr sta
+all: sim sim-safety sim-framing synth pnr sta
 
 sim:
 	iverilog -g2005 -Wall -o $(TOP)_sim.vvp $(RTL_SRC) $(SIM_MOD) $(TB_SRC)
@@ -24,6 +24,9 @@ sim:
 
 sim-safety:
 	python3 run_rev_d1_1_safety.py
+
+sim-framing:
+	python3 run_host_framing.py
 
 synth:
 	yosys -l yosys_synth.log -p "synth_ice40 -top $(TOP) -json $(TOP).json" $(RTL_SRC)

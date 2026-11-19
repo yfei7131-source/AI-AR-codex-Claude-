@@ -17,6 +17,8 @@ SOT = "Package_TO_SOT_SMD:"
 DSG = SON + "Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm"
 SUPERVISOR = SON + "WSON-6_1.5x1.5mm_P0.5mm"
 PARTS = {
+    "DFE21CCN2R2MELL": (REVIEWED + ":Murata_DFE21CCN_2012_2.0x1.2mm",
+                        "Murata JETE243A-0052D-01 section 12.1; 0.8 x 1.4 mm lands on 1.6 mm centers. Apply under-coil copper/via keepout and verify Enclosure Z, paste and TH limits separately."),
     "ASADV-48.000MHZ-LC-T": (REVIEWED + ":Abracon_ASADV_2016-4Pin_2.0x1.6mm",
                             "Abracon ASADV p.5 recommended copper lands: 0.88 x 0.78 mm, 1.28 x 0.98 mm center spacing, pin 1 at bottom left in top view."),
     "PCA9306DQER": (SON + "X2SON-8_1.4x1mm_P0.35mm", "TI DQE0008A. Standard land variant. Check stencil and DQE pin-1 elongation."),

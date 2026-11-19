@@ -81,7 +81,7 @@ I2S_AMP_DIN_1V8,1.8,M-AUD-R,J_BTB_R,P13,SIGNAL_0.3A,CONTACT,BOM-40,,
 I2S_S3_DOUT_1V8,1.8,M-AUD-R,J_BTB_R,P14,SIGNAL_0.3A,CONTACT,BOM-40,,
 AMP_SD_MODE_1V8,1.8,M-AUD-R,J_BTB_R,P15,SIGNAL_0.3A,CONTACT,BOM-40,,
 GND,0,M-AUD-R,J_BTB_R,P16,SIGNAL_0.3A,CONTACT,BOM-40,1.2,
-AVDD_OPT_BIAS,BLOCKED_VENDOR,M-OPT-BRIDGE,J_DISP_L,PWR1,POWER_5A,CONTACT,BOM-26,,"Board-side candidate only. JBD voltage, load, capacitance and sequencing remain BLK-JBD-04."
+AVDD_OPT_BIAS,BLOCKED_VENDOR,M-OPT-BRIDGE,J_DISP_L,PWR1,POWER_5A (DNP),CONTACT,BOM-26,,"Board-side candidate only. JBD voltage, load, capacitance and sequencing remain BLK-JBD-04. Default engineering assembly DNP. Optical variant BLOCKED."
 GND,0,M-OPT-BRIDGE,J_DISP_L,PWR2,POWER_5A,CONTACT,BOM-26,1.2,
 1V8_FPGA_IO,1.8,M-OPT-BRIDGE,J_DISP_L,P1,SIGNAL_0.3A,CONTACT,BOM-26,0.15,
 GND,0,M-OPT-BRIDGE,J_DISP_L,P2,SIGNAL_0.3A,CONTACT,BOM-26,1.2,
@@ -93,7 +93,7 @@ opt_l_qdo2_PANEL,1.8,M-OPT-BRIDGE,J_DISP_L,P7,SIGNAL_0.3A,CONTACT,BOM-26,,
 opt_l_qdo3_PANEL,1.8,M-OPT-BRIDGE,J_DISP_L,P8,SIGNAL_0.3A,CONTACT,BOM-26,,
 AVDD_OPT_BIAS,BLOCKED_VENDOR,M-OPT-BRIDGE,J_DISP_L,P9,SIGNAL_0.3A,CONTACT,BOM-26,,"Board-side candidate only. JBD voltage, load, capacitance and sequencing remain BLK-JBD-04."
 GND,0,M-OPT-BRIDGE,J_DISP_L,P10,SIGNAL_0.3A,CONTACT,BOM-26,1.2,
-AVDD_OPT_BIAS,BLOCKED_VENDOR,M-OPT-BRIDGE,J_DISP_R,PWR1,POWER_5A,CONTACT,BOM-29,,"Board-side candidate only. JBD voltage, load, capacitance and sequencing remain BLK-JBD-04."
+AVDD_OPT_BIAS,BLOCKED_VENDOR,M-OPT-BRIDGE,J_DISP_R,PWR1,POWER_5A (DNP),CONTACT,BOM-29,,"Board-side candidate only. JBD voltage, load, capacitance and sequencing remain BLK-JBD-04. Default engineering assembly DNP. Optical variant BLOCKED."
 GND,0,M-OPT-BRIDGE,J_DISP_R,PWR2,POWER_5A,CONTACT,BOM-29,1.2,
 1V8_FPGA_IO,1.8,M-OPT-BRIDGE,J_DISP_R,P1,SIGNAL_0.3A,CONTACT,BOM-29,0.15,
 GND,0,M-OPT-BRIDGE,J_DISP_R,P2,SIGNAL_0.3A,CONTACT,BOM-29,1.2,
@@ -338,9 +338,9 @@ GND,0,M-OPT-BRIDGE,R_SS_PD,2,,PASSIVE,BOM-33,,
 clk_48m,1.8,M-OPT-BRIDGE,Y1_OSC,3,OUT,DRV,BOM-27,,
 1V8_FPGA_IO,1.8,M-OPT-BRIDGE,Y1_OSC,4,VDD,SINK,BOM-27,,
 1V8_FPGA_IO,1.8,M-OPT-BRIDGE,Y1_OSC,1,TRISTATE,RCV,BOM-27,,
-PRIV_LED_ANODE,2.8,M-OPT-BRIDGE,D3_PRIV,A,anode,SINK,BOM-25,,
-GND,0,M-OPT-BRIDGE,D3_PRIV,K,cathode -> bridge GND (Rev D),SINK,BOM-25,,
-VBUS_5V,5.0,M-MAIN-L,J_CHG,1,VBUS,SRC,BOM-50,,Combined default charger/system demand and pre-enumeration input current are not limited by this port. Source contract BLOCKED.
+PRIV_LED_ANODE,2.8,M-OPT-BRIDGE,D3_PRIV,A,anode,SINK,BOM-25,,"APHD1608LCGCK green AlGaInP candidate; current window, visibility and lens alignment BLOCKED pending qualification."
+GND,0,M-OPT-BRIDGE,D3_PRIV,K,cathode -> bridge GND (Rev D),SINK,BOM-25,,"APHD1608LCGCK green AlGaInP candidate; current window, visibility and lens alignment BLOCKED pending qualification."
+VBUS_5V,5.0,M-MAIN-L,J_CHG,1,VBUS,SRC,BOM-50,,"BLOCKED: 498mA left input-limit upper characteristic at VIN=5V plus 60.72mA right charge-current corner already exceeds 500mA before right input overhead/inrush. No consumer USB source approval, no independent source selection/current gate."
 GND,0,M-MAIN-L,J_CHG,4,GND,SRC,BOM-50,,
 USB_DM,3.3,M-MAIN-L,J_CHG,2,D-,BIDIR,BOM-50,,
 USB_DP,3.3,M-MAIN-L,J_CHG,3,D+,BIDIR,BOM-50,,
@@ -422,7 +422,7 @@ VBUS_5V,5.0,M-MAIN-L,U3_L,A2,IN,SINK,BOM-20,0.5,1 uF (25 V) at pin
 SYS_I2C_SCL_1V8,1.8,M-MAIN-L,U3_L,B1,SCL,BIDIR_OD,BOM-20,,7-bit addr 0x6A
 VOUT_L_PPATH,4.5,M-MAIN-L,U3_L,B2,SYS,SRC,BOM-20,1.2,SYS_REG default 4.5 V (> VBAT_R max 4.2 V) keeps LM66200 priority; 10 uF
 SYS_I2C_SDA_1V8,1.8,M-MAIN-L,U3_L,C1,SDA,BIDIR_OD,BOM-20,,
-VBAT_L,4.2,M-MAIN-L,U3_L,C2,BAT,BIDIR,BOM-20,1.0,1 uF
+VBAT_L,4.2,M-MAIN-L,U3_L,C2,BAT,BIDIR,BOM-20,1.0,1uF at BAT. U3_L battery-only rising POR is 3.08/3.21/3.46V min/typ/max; running UVLO is separate.
 NTC_TS_L,0.4,M-MAIN-L,U3_L,D1,TS/MR,RCV,BOM-20,,10k NTC in pack (38 uA bias); TS must not float (charge suspends)
 GND,0,M-MAIN-L,U3_L,D2,GND,SINK,BOM-20,,
 NTC_TS_L,0.4,M-MAIN-L,TP_NTC_L,1,solder pad NTC (left pack),PASSIVE,BOM-43,,
@@ -494,9 +494,9 @@ VSYS,4.4,M-OPT-BRIDGE,U4_1V2,3,EN,RCV,BOM-32,,"EN is tied to VSYS. 4.4 V is the 
 VSYS,4.4,M-OPT-BRIDGE,U4_1V2,4,IN,SINK,BOM-32,,
 1V8_FPGA_IO,1.8,M-OPT-BRIDGE,U4_1V8F,1,OUT,SRC,BOM-46,,EN from VCCPLL (>=1.082 V > VHI 1.0 V)
 GND,0,M-OPT-BRIDGE,U4_1V8F,2,GND,SINK,BOM-46,,
-1V2_FPGA_PLL,1.2,M-OPT-BRIDGE,U4_1V8F,3,EN,RCV,BOM-46,,EN senses 1V2_FPGA_PLL. Ramp and threshold margins remain unverified.
+1V2_FPGA_PLL,1.2,M-OPT-BRIDGE,U4_1V8F,3,EN,RCV,BOM-46,,BLOCKED: TLV755P EN has only 0.3V low and 1.0V high guarantees. Direct PLL sensing does not establish the 0.5V minimum before SPI VCCIO1 is applied.
 VSYS,4.4,M-OPT-BRIDGE,U4_1V8F,4,IN,SINK,BOM-46,,
-AVDD_OPT_BIAS,BLOCKED_VENDOR,M-OPT-BRIDGE,U6_OPT_AVDD,1,OUT,SRC,BOM-45,,"Board-side candidate only. JBD voltage, load, capacitance and sequencing remain BLK-JBD-04."
+AVDD_OPT_BIAS,BLOCKED_VENDOR,M-OPT-BRIDGE,U6_OPT_AVDD,1,OUT (DNP),SRC,BOM-45,,"Board-side candidate only. JBD voltage, load, capacitance and sequencing remain BLK-JBD-04. Default engineering assembly DNP. Optical variant BLOCKED."
 GND,0,M-OPT-BRIDGE,U6_OPT_AVDD,2,GND,SINK,BOM-45,,Output requirement and fitted regulator are BLK-JBD-04.
 OPT_AVDD_EN,4.5,M-OPT-BRIDGE,U6_OPT_AVDD,3,EN,RCV,BOM-45,,"D1.1 watchdog, completed-heartbeat qualifier and independent UVLO clamps. LDO output value remains JBD BLOCKED."
 VSYS,4.4,M-OPT-BRIDGE,U6_OPT_AVDD,4,IN,SINK,BOM-45,,Output requirement and fitted regulator are BLK-JBD-04.
@@ -545,8 +545,8 @@ BK_VSET,0,M-MAIN-L,U4_1V8,5,VSET,PASSIVE,BOM-08,,SLVSEC6D Table 1: TPS62840DLC 1
 GND,0,M-MAIN-L,U4_1V8,6,STOP,TIE,BOM-08,,
 BK_SW,4.4,M-MAIN-L,U4_1V8,7,SW,PASSIVE,BOM-08,,
 1V8_SYS,1.8,M-MAIN-L,U4_1V8,8,VOS,RCV,BOM-08,,sense at COUT 10 uF
-BK_SW,4.4,M-MAIN-L,L2_1V8,1,2.2 uH,PASSIVE,BOM-09,,
-1V8_SYS,1.8,M-MAIN-L,L2_1V8,2,"2.2 uH (output node, 1V8_SYS source)",SRC,BOM-09,0.4,buck output delivered through L2
+BK_SW,4.4,M-MAIN-L,L2_1V8,1,2.2 uH,PASSIVE,BOM-09,,Candidate Murata DFE21CCN2R2MELL. Vendor 2012 land geometry; effective L across current/temperature and assembly clearance open.
+1V8_SYS,1.8,M-MAIN-L,L2_1V8,2,"2.2 uH (output node, 1V8_SYS source)",SRC,BOM-09,0.4,Candidate Murata DFE21CCN2R2MELL. Vendor 2012 land geometry; effective L across current/temperature and assembly clearance open.
 BK_VSET,0,M-MAIN-L,R_VSET_1V8,1,0 ohm (1.8V VSET strap),PASSIVE,BOM-24,,
 GND,0,M-MAIN-L,R_VSET_1V8,2,0 ohm (1.8V VSET strap),PASSIVE,BOM-24,,
 ESP_RF_ANT,0,M-MAIN-L,U1_HOST,1,LNA_IN,PASSIVE,BOM-02,,RF matching is inside the SiP; RN_ESP_RF = antenna tuning pi only

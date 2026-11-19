@@ -1,7 +1,7 @@
 name: EVT-1 native schematic and FPGA validation
 on:
   push:
-    branches: [hardware/evt1-native-eda-20261118]
+    branches: [hardware/evt1-native-eda-20261118, hardware/evt1-h03-h05-20261119]
   workflow_dispatch:
 
 permissions:
@@ -16,9 +16,14 @@ jobs:
     timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: YosysHQ/setup-oss-cad-suite@v3
       - name: Software wire encoding against inherited RTL
         run: python3 "$EVT1_PACKAGE/host/check_bridge.py"
+      - name: Reproduce malformed host control and test recovery
+        if: github.ref_name == 'hardware/evt1-h03-h05-20261119'
+        run: make -C hardware/evt1-rev-d1-1-20261117/03_FPGA_RTL sim-framing
       - name: Native display, shutdown, synthesis, routing and independent STA
         run: make -C hardware/evt1-rev-d1-1-20261117/03_FPGA_RTL all
       - name: Preserve actual tool outputs
@@ -44,6 +49,19 @@ jobs:
           python3 "$EVT1_PACKAGE/tools/generate_kicad.py"
           git diff --exit-code -- "$EVT1_PACKAGE/kicad"
           test -z "$(git ls-files --others --exclude-standard -- "$EVT1_PACKAGE/kicad")"
+      - name: Replay archived bridge placement and supplier envelope assessment
+        if: github.ref_name == 'hardware/evt1-h03-h05-20261119'
+        run: |
+          python3 -m unittest discover -s "$EVT1_PACKAGE/closure" -p test_bridge_placement.py -v
+          python3 "$EVT1_PACKAGE/closure/check_bridge_placement.py" --check
+          verdict=0
+          python3 "$EVT1_PACKAGE/closure/check_bridge_placement.py" --check --strict || verdict=$?
+          test "$verdict" -eq 1
+      - name: Verify effective electrical bounds and bench probe coverage
+        if: github.ref_name == 'hardware/evt1-h03-h05-20261119'
+        run: |
+          python3 "$EVT1_PACKAGE/closure/check_electrical_inputs.py" > "$RUNNER_TEMP/electrical_inputs.json"
+          diff --strip-trailing-cr -u "$EVT1_PACKAGE/closure/evidence/electrical_inputs.json" "$RUNNER_TEMP/electrical_inputs.json"
       - name: KiCad CLI version, electrical rules and native netlist parity
         run: |
           mkdir -p "$PWD/ci-kicad-evidence"

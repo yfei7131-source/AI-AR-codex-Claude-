@@ -15,7 +15,29 @@ LATTICE_CHECKLIST = "https://www.latticesemi.com/api/document/download?id=47779"
 ABRACON_ASADV = "https://abracon.com/datasheets/ASADV.pdf"
 OSCILLATOR = "ASADV-48.000MHZ-LC-T"
 SPEAKER_ZONES = {"L": ("M-MAIN-L", "4.4"), "R": ("M-AUD-R", "4.2")}
-UNRESOLVED_INTERFACES = {"CAM1", "J_CAM", "J_CHG", "U12_ESD_USB", "J_DISP_L", "J_DISP_R"}
+UNRESOLVED_INTERFACES = {
+    "CAM1", "D3_PRIV", "J_CAM", "J_CHG", "U12_ESD_USB", "J_DISP_L", "J_DISP_R", "U4_1V8F", "U6_OPT_AVDD",
+}
+OPTICAL_DNP_PINS = {"U6_OPT_AVDD": "1", "J_DISP_L": "PWR1", "J_DISP_R": "PWR1"}
+BM28_RECEPTACLES = (
+    ("BOM-15", "5021", "30+2", "1.70", "7.85"),
+    ("BOM-31", "5021", "30+2", "1.70", "7.85"),
+    ("BOM-26", "5044", "10+2", "4.35", "1.70"),
+    ("BOM-29", "5044", "10+2", "4.35", "1.70"),
+    ("BOM-40", "5067", "16+2", "5.40", "1.70"),
+)
+MURATA_L2 = "https://search.murata.co.jp/Ceramy/image/img/P02/JETE243A-0052.pdf"
+PRIVACY_LED = "https://www.kingbrightusa.com/images/catalog/SPEC/APHD1608LCGCK.pdf"
+LEFT_BATTERY_POR = "U3_L battery-only rising POR is 3.08/3.21/3.46V min/typ/max; running UVLO is separate."
+FPGA_SEQUENCE_BLOCK = (
+    "BLOCKED: TLV755P EN has only 0.3V low and 1.0V high guarantees. Direct PLL sensing "
+    "does not establish the 0.5V minimum before SPI VCCIO1 is applied."
+)
+DOCK_SOURCE_BLOCK = (
+    "BLOCKED: 498mA left input-limit upper characteristic at VIN=5V plus 60.72mA "
+    "right charge-current corner already exceeds 500mA before right input overhead/inrush. "
+    "No consumer USB source approval, no independent source selection/current gate."
+)
 DQN = {"U4_1V2", "U4_1V8F", "U5_LED2V8", "U6_CAM_AVDD", "U6_CAM_DOVDD",
        "U6_CAM_DVDD", "U6_OPT_AVDD"}
 DSG = {"U3_R", "U7_WIN"}
@@ -45,7 +67,7 @@ POWER_TREE = (
      "Pack/NTC spec must accept reset and watchdog profile", "BLOCKED"),
     ("M-MAIN-L", "U3_L", "C2", "VBAT_L", "B2", "VOUT_L_PPATH",
      "Battery-derived when adapter absent or in supplement", "U3_L power-path FET",
-     "Confirm battery-switch drop, hold-up and boot state", "UNVERIFIED"),
+     LEFT_BATTERY_POR + " Confirm pack sag and cold start without the right OR input.", "BLOCKED"),
     ("M-AUD-R", "U3_R", "1", "VBUS_5V", "8", "VBAT_R_RET",
      "4.20V candidate; 54.64mA nominal", "27k VSET; 5.49k ISET; TS",
      "Protected pack/NTC vendor approval, termination and current with right amplifier muted", "BLOCKED"),
@@ -72,16 +94,16 @@ POWER_TREE = (
      "Lattice FPGA-TN-02006. Verify voltage and ramp at B2 and qualify LDO enable sourcing", "UNVERIFIED"),
     ("M-OPT-BRIDGE", "U4_1V8F", "4", "VSYS", "1", "1V8_FPGA_IO",
      "1.80V", "EN senses 1V2_FPGA_PLL",
-     "Verify slow-ramp threshold, no GPIO backfeed and clock under load", "UNVERIFIED"),
+     FPGA_SEQUENCE_BLOCK + " Qualify a guaranteed sequence and verify ramp/partial-power recovery.", "BLOCKED"),
     ("M-OPT-BRIDGE", "R_VPP", "1", "1V8_FPGA_IO", "2", "1V8_FPGA_VPP",
      "1.80V source via 10R; Slave SPI conditional", "Passive local filter",
      "Verify VPP at D4 within device limits and retain no oscillator/RGB IP requirement", "UNVERIFIED"),
     ("M-OPT-BRIDGE", "U6_OPT_AVDD", "4", "VSYS", "1", "AVDD_OPT_BIAS",
-     "", "OPT_AVDD_EN from Rev D1.1 hardware interlock",
-     "JBD rail, load and order requirements plus measured disconnect/discharge required (BLK-JBD-04)", "BLOCKED"),
+     "", "Population held DNP; Rev D1.1 OPT_AVDD_EN remains available for no-panel measurement",
+     "Populate only after JBD rail/load/order and measured discharge/backfeed close; both panel connectors DNP as well", "BLOCKED"),
     ("M-MAIN-L", "U5_LED2V8", "4", "3V3_SYS", "1", "LED_2V8",
      "2.80V", "CAM_PWR_REQ",
-     "Actual LED current, luminance, faults, supply variation and ADC telemetry require bench", "UNVERIFIED"),
+     "APHD1608LCGCK candidate. Verify the full current and luminance window, supply ramps and fault latching.", "BLOCKED"),
     ("M-MAIN-L", "U6_CAM_DOVDD", "4", "3V3_SYS", "1", "CAM_DOVDD_1V8",
      "1.80V candidate", "PRIV_WINDOW_OK_F",
      "Camera module, vendor power sequencing and partial-power IO are open", "BLOCKED"),
@@ -134,7 +156,9 @@ def apply_overlay(netlist, bom_fields, bom):
             assert row["Net"] == "GND", row
             row.update(Pin="5" if ref in DQN else "9", Pin_Function="EP_GND")
         if ref == "U4_1V8F" and row["Pin"] == "3":
-            row.update(Domain_V="1.2", Note="EN senses 1V2_FPGA_PLL. Ramp and threshold margins remain unverified.")
+            row.update(Domain_V="1.2", Note=FPGA_SEQUENCE_BLOCK)
+        if ref == "U3_L" and row["Pin"] == "C2":
+            row.update(Note="1uF at BAT. " + LEFT_BATTERY_POR)
         if ref == "U4_1V2" and row["Pin"] == "3":
             row.update(Domain_V="4.4", Note="EN is tied to VSYS. 4.4 V is the nominal input contract, not a rail limit.")
         if ref == "U6_OPT_AVDD" and row["Pin"] in {"2", "4"}:
@@ -144,7 +168,21 @@ def apply_overlay(netlist, bom_fields, bom):
         if row["Net"] == "PRIV_WINDOW_OK_F":
             row.update(Domain_V="3.3", Note="Analog node in 3V3_SYS domain. High is derived from V_INA_OUT through R_PRIV_PU/R_PRIV_RC.")
         if ref == "J_CHG" and row["Net"] == "VBUS_5V":
-            row.update(I_Peak_A="", Note="Combined default charger/system demand and pre-enumeration input current are not limited by this port. Source contract BLOCKED.")
+            row.update(I_Peak_A="", Note=DOCK_SOURCE_BLOCK)
+        if ref in OPTICAL_DNP_PINS and row["Pin"] == OPTICAL_DNP_PINS[ref]:
+            row.update(
+                Pin_Function=row["Pin_Function"] + " (DNP)",
+                Note=row["Note"] + " Default engineering assembly DNP. Optical variant BLOCKED.",
+            )
+        if ref == "L2_1V8":
+            row["Note"] = (
+                "Candidate Murata DFE21CCN2R2MELL. Vendor 2012 land geometry; "
+                "effective L across current/temperature and assembly clearance open."
+            )
+        if ref == "D3_PRIV":
+            row["Note"] = (
+                "APHD1608LCGCK green AlGaInP candidate; current window, visibility and lens alignment BLOCKED pending qualification."
+            )
         if ref == "Y1_OSC":
             row["Pin_Function"] = {"1": "TRISTATE", "3": "OUT", "4": "VDD"}[row["Pin"]]
         if ref in {"R_PLL", "R_VPP"} and row["Pin"] == "2":
@@ -174,11 +212,53 @@ def apply_overlay(netlist, bom_fields, bom):
         MPN="R_PLL(100R)+R_VPP(10R)+R_SS_PD(10k)+R_CRST_PD(10k)+R_CDONE_PU(4.7k)+10xR_DAMP(22R)+2xR_OPTCS_PU(10k)",
         Key_Electrical_Specs="FPGA configuration and damping passives. All bypass capacitors are separate explicit BOM-CAD entries.",
     )
-    by_part["BOM-45"]["Verification_Status"] = "BLOCKED — BLK-JBD-04; regulator selection and voltage unassigned"
-    by_part["BOM-50"]["Verification_Status"] = "BLOCKED — dock source limit, USB data/power modes and connector mechanics open"
+    by_part["BOM-09"].update(
+        MPN="DFE21CCN2R2MELL", Manufacturer="Murata", Body_Width_X_mm="1.20",
+        Body_Length_Y_mm="2.00", Body_Height_Z_mm="0.80", Unit_Mass_g="0.013",
+        Side="TBD", Center_X_mm="", Center_Y_mm="", Pad_Pitch_mm="1.60",
+        Package_Footprint="2012 (0805); Murata DFE21CCN §12.1 land pattern, 0.80×1.40 mm at 1.60 mm pitch",
+        Key_Electrical_Specs=(
+            "2.2uH ±20%; 138mOhm max DCR; Isat 2.10A min at 30% delta L, "
+            "Itemp 1.80A min at +40C rise; 0.013g vendor typical. "
+            "TPS62840 effective L=1.51–2.90uH across DC bias/current and temperature required."
+        ),
+        Verification_Status="UNVERIFIED — candidate source checked; exact lands/layout and L at load/thermal/pulse check open",
+        Datasheet_URL=MURATA_L2,
+        Rev_D1_Change="Replaces undocumented DFE161212U-2R2M; clear inherited placement for larger envelope.",
+    )
+    by_part["BOM-20"]["Key_Electrical_Specs"] += " " + LEFT_BATTERY_POR
+    by_part["BOM-06"]["Rev_C_Engineering_Notes"] = "3.30V from qualified VSYS. PMIC regulation range does not define battery-only system POR."
+    by_part["BOM-25"].update(
+        MPN="APHD1608LCGCK", Body_Height_Z_mm="0.65", Unit_Mass_g="",
+        Package_Footprint="1608 (0603) 1.60×0.80×0.65mm dome SMT; Kingbright V.4B",
+        Key_Electrical_Specs=(
+            "Green 570nm AlGaInP. Vf min/typ/max=1.5/1.9/2.1V at 2mA, 25C; "
+            "datasheet Vf tolerance ±0.1V. Intensity min/typ=2/8mcd at 2mA. "
+            "A from trunk P19 after sense and current-limit resistors, K to bridge GND."
+        ),
+        Verification_Status="BLOCKED — lower-Vf candidate; guarantee current window and visible indication in mounted assembly",
+        Datasheet_URL=PRIVACY_LED,
+        Rev_D1_Change="Replace high-Vf green APHD1608LZGCK and dissimilar red THT alternate. Retain window and isolation topology.",
+    )
+    by_part["BOM-46"]["Verification_Status"] = "BLOCKED — FPGA rail-order guarantee and hardware qualification required"
+    by_part["BOM-45"]["Verification_Status"] = "BLOCKED — DNP by default; BLK-JBD-04, no regulator voltage assigned"
+    by_part["BOM-50"].update(
+        Key_Electrical_Specs="Board-side dock candidate only. " + DOCK_SOURCE_BLOCK,
+        Verification_Status="BLOCKED — dock source boundary, boot/reset draw, data modes and connector mechanics open",
+    )
     by_part["BOM-51"]["Verification_Status"] = "BLOCKED — logical TVS position only; exact topology, ground return and MPN open"
+    for item_id, drawing_id, contacts, width, length in BM28_RECEPTACLES:
+        by_part[item_id].update(
+            Center_X_mm="", Center_Y_mm="", Body_Width_X_mm=width, Body_Length_Y_mm=length,
+            Body_Height_Z_mm="0.60",
+            Package_Footprint=f"BM28 {contacts} receptacle, body X/Y={width}/{length}mm as oriented; 0.60mm nominal mated stack",
+            Datasheet_URL=f"https://www.hirose.com/en/product/p/CL0673-{drawing_id}-0-53",
+            Verification_Status="BLOCKED — source dimensions corrected; placement and mated/FPC envelope open",
+        )
     for item_id in {"BOM-26", "BOM-29"}:
-        by_part[item_id]["Verification_Status"] = "BLOCKED — board-side connector candidate; no JBD FPC assignment"
+        by_part[item_id]["Verification_Status"] = (
+            "BLOCKED — DNP by default; placement, mated envelope and JBD FPC assignment open"
+        )
 
     for index, (ref, net, voltage, capacitance, near) in enumerate(CAPACITORS, start=1):
         bom_id = f"BOM-CAD-{index:02d}"
@@ -241,6 +321,10 @@ def validate(netlist, bom):
     for row in netlist:
         if row["Net"] == "AVDD_OPT_BIAS":
             assert row["Domain_V"] == AVDD_BLOCK and row["I_Peak_A"] == "", row
+    for ref, pin in OPTICAL_DNP_PINS.items():
+        row = terminals[BRIDGE, ref, pin]
+        assert row["Net"] == "AVDD_OPT_BIAS" and row["Pin_Function"].endswith(" (DNP)"), row
+        assert any(r["Item_ID"] == row["BOM_Line"] and r["Verification_Status"].startswith("BLOCKED — DNP") for r in bom)
     for eye, (board, _) in SPEAKER_ZONES.items():
         for phase in ("P", "N"):
             net = f"SPK_{eye}_{phase}"
