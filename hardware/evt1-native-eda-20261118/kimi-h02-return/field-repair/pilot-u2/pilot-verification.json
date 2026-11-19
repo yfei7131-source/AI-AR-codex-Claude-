@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "checks": {
+    "saveTrue": true,
+    "connectivityAndPlacementUnchanged": true,
+    "onlyMpnAndAuditedDeviceResolutionChanged": true,
+    "uniqueIdPreserved": true,
+    "symbolAssociationPreserved": true,
+    "resolvedDeviceIdentityExact": true,
+    "libraryMpnExact": true,
+    "priorNativePadAuditMatches": true,
+    "singleU2BomRow": true,
+    "nativeBomMpnMatches": true,
+    "nativeBomFootprintStillEmpty": true
+  },
+  "observedResolvedDevice": {
+    "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+    "name": "EVT1_U2_U4_BB",
+    "uuid": "82d4e6675fc84e21b92ae8f7c0ab14b0"
+  },
+  "supplierFieldsObservedAsEmptyStrings": true,
+  "footprintStatus": "BLOCKED",
+  "landPatternQualification": "UNVERIFIED",
+  "scope": "MPN_ONLY: native manufacturerId, exact audited device resolution, saved fresh readback. No reload claim, no footprint-field restoration, no land-pattern approval."
+}
