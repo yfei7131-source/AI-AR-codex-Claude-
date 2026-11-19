@@ -1,5 +1,7 @@
 import json
 import shutil
+import subprocess
+import sys
 import tempfile
 import unittest
 from pathlib import Path
@@ -69,6 +71,16 @@ class EasyEDAEvidenceTests(unittest.TestCase):
                 with self.subTest(encoding=encoding):
                     path.write_bytes(sample.encode(encoding))
                     self.assertEqual(checker.read_native_bom(path)[0]["Manufacturer Part"], "假设料号")
+
+    def test_cli_preserves_fail_and_emits_platform_independent_json(self):
+        with tempfile.TemporaryDirectory() as temp:
+            path = Path(temp) / "report.json"
+            result = subprocess.run([sys.executable, checker.__file__, "--schematic", str(CAPTURE), "--pcb",
+                                     str(checker.PACKAGE / "kimi-return/native/restored-readback"),
+                                     "--output", str(path)], capture_output=True)
+            self.assertEqual(result.returncode, 1, result.stderr.decode(errors="replace"))
+            self.assertEqual(json.loads(path.read_bytes())["status"], "FAIL")
+            self.assertNotIn(b"\r\n", path.read_bytes())
 
 
 if __name__ == "__main__":

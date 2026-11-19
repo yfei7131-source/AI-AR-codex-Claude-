@@ -339,7 +339,7 @@ def main():
     except (KeyError, TypeError, ValueError, OSError) as error:
         report = {"status": "FAIL", "error": str(error), "manufacturing": "BLOCKED"}
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    args.output.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
     print(f"{report['status']}: {args.output}")
     return EXIT_CODES[report["status"]]
 
