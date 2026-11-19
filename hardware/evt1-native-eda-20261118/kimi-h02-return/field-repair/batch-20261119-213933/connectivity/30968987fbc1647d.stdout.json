@@ -1,0 +1,330 @@
+{
+  "schemaVersion": "1.4",
+  "projectId": "1f475f192d4be7445a42ac79ebc824fcc4a803375837a9318c923e3aa35fe737",
+  "documentId": "30968987fbc1647d",
+  "components": [
+    {
+      "id": "cmp-J1",
+      "uniqueId": "51bfc0e5166a1c40",
+      "ref": "J1",
+      "device": {
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "deviceUuid": "841747ab3deb41719bcfbea99a3a1069",
+        "name": "EVT1_J1_J_BTB_R"
+      },
+      "footprintRef": {
+        "uuid": ""
+      },
+      "pins": [
+        {
+          "number": "P1",
+          "name": "SIGNAL_0.3A",
+          "x": 220,
+          "y": -170
+        },
+        {
+          "number": "P10",
+          "name": "SIGNAL_0.3A",
+          "x": 380,
+          "y": -170
+        },
+        {
+          "number": "P11",
+          "name": "SIGNAL_0.3A",
+          "x": 380,
+          "y": -180
+        },
+        {
+          "number": "P12",
+          "name": "SIGNAL_0.3A",
+          "x": 380,
+          "y": -190
+        },
+        {
+          "number": "P13",
+          "name": "SIGNAL_0.3A",
+          "x": 380,
+          "y": -200
+        },
+        {
+          "number": "P14",
+          "name": "SIGNAL_0.3A",
+          "x": 380,
+          "y": -210
+        },
+        {
+          "number": "P15",
+          "name": "SIGNAL_0.3A",
+          "x": 380,
+          "y": -220
+        },
+        {
+          "number": "P16",
+          "name": "SIGNAL_0.3A",
+          "x": 380,
+          "y": -230
+        },
+        {
+          "number": "P2",
+          "name": "SIGNAL_0.3A",
+          "x": 220,
+          "y": -180
+        },
+        {
+          "number": "P3",
+          "name": "SIGNAL_0.3A",
+          "x": 220,
+          "y": -190
+        },
+        {
+          "number": "P4",
+          "name": "SIGNAL_0.3A",
+          "x": 220,
+          "y": -200
+        },
+        {
+          "number": "P5",
+          "name": "SIGNAL_0.3A",
+          "x": 220,
+          "y": -210
+        },
+        {
+          "number": "P6",
+          "name": "SIGNAL_0.3A",
+          "x": 220,
+          "y": -220
+        },
+        {
+          "number": "P7",
+          "name": "SIGNAL_0.3A",
+          "x": 220,
+          "y": -230
+        },
+        {
+          "number": "P8",
+          "name": "SIGNAL_0.3A",
+          "x": 220,
+          "y": -240
+        },
+        {
+          "number": "P9",
+          "name": "SIGNAL_0.3A",
+          "x": 220,
+          "y": -250
+        },
+        {
+          "number": "PWR1",
+          "name": "POWER_5A",
+          "x": 380,
+          "y": -240
+        },
+        {
+          "number": "PWR2",
+          "name": "POWER_5A",
+          "x": 380,
+          "y": -250
+        }
+      ],
+      "placement": {
+        "x": 300,
+        "y": -170,
+        "bbox": {
+          "minX": 229.5,
+          "minY": -260.5,
+          "maxX": 370.5,
+          "maxY": -159.5
+        }
+      }
+    }
+  ],
+  "nets": [
+    {
+      "id": "net-23f76a5ee09a7219b9f032e7060e144cdd52d425933ddf929ea65139ac3356a3",
+      "name": "I2S_LRCLK_1V8",
+      "scope": "local",
+      "role": "signal"
+    },
+    {
+      "id": "net-265325bec2b200d009c7da94397a5a26537b01207bf92a3289c11dd9a57a4d35",
+      "name": "I2S_AMP_DIN_1V8",
+      "scope": "local",
+      "role": "signal"
+    },
+    {
+      "id": "net-6d3e900bbd3236a99553de210d0dbb71b2b2908a6befc5ee47cbc592299b42bd",
+      "name": "VBUS_5V",
+      "scope": "global",
+      "role": "power"
+    },
+    {
+      "id": "net-764b4306cf9794c9816d7030fb40c20fe41304cffc7315da79bbee528f002b39",
+      "name": "AMP_SD_MODE_1V8",
+      "scope": "local",
+      "role": "signal"
+    },
+    {
+      "id": "net-a94a5db1df7a49572b5976c88903d23121406ce157790d9c2ebaa3ae40d106f9",
+      "name": "PDM_CLK_1V8",
+      "scope": "local",
+      "role": "signal"
+    },
+    {
+      "id": "net-bcc1f72a79c0445bfae9cb2dd53a186435a6559a23704454bb1024964aab80ec",
+      "name": "IPC_S3_TX_1V8",
+      "scope": "local",
+      "role": "signal"
+    },
+    {
+      "id": "net-c5faacb68ad4c4c475a8b9fa642e3de2cc6e70437639fe5131b177f3827c6f59",
+      "name": "PDM_D1_1V8",
+      "scope": "local",
+      "role": "signal"
+    },
+    {
+      "id": "net-ccdd8d41edbac58e6d53310d1fccffd0f92fee7ae510446f885743c5226f1b30",
+      "name": "GND",
+      "scope": "global",
+      "role": "ground"
+    },
+    {
+      "id": "net-ced0353c664234b0165795f85d481b36d0b9ac6d9d486b31437d1d752bf593b7",
+      "name": "IPC_NRF_TX_1V8",
+      "scope": "local",
+      "role": "signal"
+    },
+    {
+      "id": "net-d43eba2528a27112040ca04e53fe495473a8ba3dbd492bf78d646a38a1141f47",
+      "name": "I2S_S3_DOUT_1V8",
+      "scope": "local",
+      "role": "signal"
+    },
+    {
+      "id": "net-df8f137ec6eac3c16254980e906bba48a5bb717e7deb30f6f4ba51ff9dc0e091",
+      "name": "VBAT_R_RET",
+      "scope": "global",
+      "role": "power"
+    },
+    {
+      "id": "net-eb8cc6dafc8641b1cd488c84e9747b947d5990b791077bd87e1174058215f529",
+      "name": "1V8_SYS",
+      "scope": "local",
+      "role": "signal"
+    },
+    {
+      "id": "net-f2e1ed989794fa5a031b25ab0f3bff754d9f2881453300be89a6048760c3f62a",
+      "name": "I2S_BCLK_1V8",
+      "scope": "local",
+      "role": "signal"
+    }
+  ],
+  "connections": [
+    {
+      "componentId": "cmp-J1",
+      "pinNumber": "P1",
+      "netId": "net-6d3e900bbd3236a99553de210d0dbb71b2b2908a6befc5ee47cbc592299b42bd",
+      "kind": "netlist"
+    },
+    {
+      "componentId": "cmp-J1",
+      "pinNumber": "P10",
+      "netId": "net-ccdd8d41edbac58e6d53310d1fccffd0f92fee7ae510446f885743c5226f1b30",
+      "kind": "netlist"
+    },
+    {
+      "componentId": "cmp-J1",
+      "pinNumber": "P11",
+      "netId": "net-f2e1ed989794fa5a031b25ab0f3bff754d9f2881453300be89a6048760c3f62a",
+      "kind": "netlist"
+    },
+    {
+      "componentId": "cmp-J1",
+      "pinNumber": "P12",
+      "netId": "net-23f76a5ee09a7219b9f032e7060e144cdd52d425933ddf929ea65139ac3356a3",
+      "kind": "netlist"
+    },
+    {
+      "componentId": "cmp-J1",
+      "pinNumber": "P13",
+      "netId": "net-265325bec2b200d009c7da94397a5a26537b01207bf92a3289c11dd9a57a4d35",
+      "kind": "netlist"
+    },
+    {
+      "componentId": "cmp-J1",
+      "pinNumber": "P14",
+      "netId": "net-d43eba2528a27112040ca04e53fe495473a8ba3dbd492bf78d646a38a1141f47",
+      "kind": "netlist"
+    },
+    {
+      "componentId": "cmp-J1",
+      "pinNumber": "P15",
+      "netId": "net-764b4306cf9794c9816d7030fb40c20fe41304cffc7315da79bbee528f002b39",
+      "kind": "netlist"
+    },
+    {
+      "componentId": "cmp-J1",
+      "pinNumber": "P16",
+      "netId": "net-ccdd8d41edbac58e6d53310d1fccffd0f92fee7ae510446f885743c5226f1b30",
+      "kind": "netlist"
+    },
+    {
+      "componentId": "cmp-J1",
+      "pinNumber": "P2",
+      "netId": "net-ccdd8d41edbac58e6d53310d1fccffd0f92fee7ae510446f885743c5226f1b30",
+      "kind": "netlist"
+    },
+    {
+      "componentId": "cmp-J1",
+      "pinNumber": "P3",
+      "netId": "net-eb8cc6dafc8641b1cd488c84e9747b947d5990b791077bd87e1174058215f529",
+      "kind": "netlist"
+    },
+    {
+      "componentId": "cmp-J1",
+      "pinNumber": "P4",
+      "netId": "net-eb8cc6dafc8641b1cd488c84e9747b947d5990b791077bd87e1174058215f529",
+      "kind": "netlist"
+    },
+    {
+      "componentId": "cmp-J1",
+      "pinNumber": "P5",
+      "netId": "net-a94a5db1df7a49572b5976c88903d23121406ce157790d9c2ebaa3ae40d106f9",
+      "kind": "netlist"
+    },
+    {
+      "componentId": "cmp-J1",
+      "pinNumber": "P6",
+      "netId": "net-ccdd8d41edbac58e6d53310d1fccffd0f92fee7ae510446f885743c5226f1b30",
+      "kind": "netlist"
+    },
+    {
+      "componentId": "cmp-J1",
+      "pinNumber": "P7",
+      "netId": "net-c5faacb68ad4c4c475a8b9fa642e3de2cc6e70437639fe5131b177f3827c6f59",
+      "kind": "netlist"
+    },
+    {
+      "componentId": "cmp-J1",
+      "pinNumber": "P8",
+      "netId": "net-bcc1f72a79c0445bfae9cb2dd53a186435a6559a23704454bb1024964aab80ec",
+      "kind": "netlist"
+    },
+    {
+      "componentId": "cmp-J1",
+      "pinNumber": "P9",
+      "netId": "net-ced0353c664234b0165795f85d481b36d0b9ac6d9d486b31437d1d752bf593b7",
+      "kind": "netlist"
+    },
+    {
+      "componentId": "cmp-J1",
+      "pinNumber": "PWR1",
+      "netId": "net-df8f137ec6eac3c16254980e906bba48a5bb717e7deb30f6f4ba51ff9dc0e091",
+      "kind": "netlist"
+    },
+    {
+      "componentId": "cmp-J1",
+      "pinNumber": "PWR2",
+      "netId": "net-ccdd8d41edbac58e6d53310d1fccffd0f92fee7ae510446f885743c5226f1b30",
+      "kind": "netlist"
+    }
+  ]
+}

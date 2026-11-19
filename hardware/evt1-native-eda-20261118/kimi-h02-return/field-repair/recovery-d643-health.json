@@ -1,0 +1,299 @@
+{
+  "status": "found",
+  "host": "127.0.0.1",
+  "ports": "60832-60841",
+  "found": {
+    "port": 60832,
+    "service": "easyeda-agent",
+    "raw": {
+      "pid": 19960,
+      "service": "easyeda-agent",
+      "version": "v1.17.0",
+      "status": "ok",
+      "port": 60832,
+      "windows": [
+        {
+          "windowId": "906f0cf0-54c2-42a1-b4d9-ddfd519aee3e",
+          "connectorVersion": "1.17.0",
+          "easyedaVersion": "4.1.97",
+          "capabilities": [
+            "schematic.v1",
+            "pcb.v1"
+          ],
+          "host": {
+            "kind": "electron",
+            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) JLCEDAPro/4.1.97.04b092ac Chrome/146.0.7680.188 Electron/41.2.1-jlc-sa-win-x64.6 Safari/537.36"
+          },
+          "context": {
+            "projectUuid": "1f475f192d4be7445a42ac79ebc824fcc4a803375837a9318c923e3aa35fe737",
+            "projectName": "EVT1-AR-YF-001-H02-KIMI-20261119",
+            "documentUuid": "d643a0611d67a31a",
+            "documentType": "schematic",
+            "tabId": "d643a0611d67a31a@1f475f192d4be7445a42ac79ebc824fcc4a803375837a9318c923e3aa35fe737",
+            "pageVisibility": "hidden"
+          },
+          "connectedAt": "2026-11-19T12:28:53.9458572Z",
+          "lastSeen": "2026-11-19T14:05:06.7016597Z",
+          "connectorVersionOk": true
+        }
+      ],
+      "writeHealth": {
+        "906f0cf0-54c2-42a1-b4d9-ddfd519aee3e": {
+          "samples": 20,
+          "failures": 1,
+          "failureRate": 0.05,
+          "consecutiveFailures": 1,
+          "degraded": false,
+          "verified": 0,
+          "lastFailureAction": "schematic.components.list",
+          "lastFailureAt": "2026-11-19T13:59:10Z",
+          "actions": {
+            "schematic.components.list": {
+              "samples": 3,
+              "failures": 1,
+              "failureRate": 0.3333,
+              "consecutiveFailures": 1,
+              "verified": 0,
+              "degraded": false
+            }
+          }
+        }
+      },
+      "autosave": [
+        {
+          "windowId": "906f0cf0-54c2-42a1-b4d9-ddfd519aee3e",
+          "action": "schematic.save",
+          "context": {
+            "projectUuid": "1f475f192d4be7445a42ac79ebc824fcc4a803375837a9318c923e3aa35fe737",
+            "projectName": "EVT1-AR-YF-001-H02-KIMI-20261119",
+            "documentUuid": "07dc7dde94c1bf76",
+            "documentType": "schematic",
+            "tabId": "07dc7dde94c1bf76@1f475f192d4be7445a42ac79ebc824fcc4a803375837a9318c923e3aa35fe737",
+            "pageVisibility": "visible"
+          },
+          "state": "saved",
+          "saved": true,
+          "updatedAt": "2026-11-19T13:48:55.4763613Z"
+        },
+        {
+          "windowId": "906f0cf0-54c2-42a1-b4d9-ddfd519aee3e",
+          "action": "schematic.save",
+          "context": {
+            "projectUuid": "1f475f192d4be7445a42ac79ebc824fcc4a803375837a9318c923e3aa35fe737",
+            "projectName": "EVT1-AR-YF-001-H02-KIMI-20261119",
+            "documentUuid": "2ef9ed7773e0c42f",
+            "documentType": "schematic",
+            "tabId": "2ef9ed7773e0c42f@1f475f192d4be7445a42ac79ebc824fcc4a803375837a9318c923e3aa35fe737",
+            "pageVisibility": "visible"
+          },
+          "state": "saved",
+          "saved": true,
+          "updatedAt": "2026-11-19T13:55:01.3084536Z"
+        },
+        {
+          "windowId": "906f0cf0-54c2-42a1-b4d9-ddfd519aee3e",
+          "action": "schematic.save",
+          "context": {
+            "projectUuid": "1f475f192d4be7445a42ac79ebc824fcc4a803375837a9318c923e3aa35fe737",
+            "projectName": "EVT1-AR-YF-001-H02-KIMI-20261119",
+            "documentUuid": "30968987fbc1647d",
+            "documentType": "schematic",
+            "tabId": "30968987fbc1647d@1f475f192d4be7445a42ac79ebc824fcc4a803375837a9318c923e3aa35fe737",
+            "pageVisibility": "visible"
+          },
+          "state": "saved",
+          "saved": true,
+          "updatedAt": "2026-11-19T13:50:55.7483065Z"
+        },
+        {
+          "windowId": "906f0cf0-54c2-42a1-b4d9-ddfd519aee3e",
+          "action": "schematic.save",
+          "context": {
+            "projectUuid": "1f475f192d4be7445a42ac79ebc824fcc4a803375837a9318c923e3aa35fe737",
+            "projectName": "EVT1-AR-YF-001-H02-KIMI-20261119",
+            "documentUuid": "35d0bca337813128",
+            "documentType": "schematic",
+            "tabId": "35d0bca337813128@1f475f192d4be7445a42ac79ebc824fcc4a803375837a9318c923e3aa35fe737",
+            "pageVisibility": "visible"
+          },
+          "state": "saved",
+          "saved": true,
+          "updatedAt": "2026-11-19T13:55:48.0047451Z"
+        },
+        {
+          "windowId": "906f0cf0-54c2-42a1-b4d9-ddfd519aee3e",
+          "action": "schematic.save",
+          "context": {
+            "projectUuid": "1f475f192d4be7445a42ac79ebc824fcc4a803375837a9318c923e3aa35fe737",
+            "projectName": "EVT1-AR-YF-001-H02-KIMI-20261119",
+            "documentUuid": "3e7683d1ed324ce9",
+            "documentType": "schematic",
+            "tabId": "3e7683d1ed324ce9@1f475f192d4be7445a42ac79ebc824fcc4a803375837a9318c923e3aa35fe737",
+            "pageVisibility": "visible"
+          },
+          "state": "saved",
+          "saved": true,
+          "updatedAt": "2026-11-19T13:51:25.3894691Z"
+        },
+        {
+          "windowId": "906f0cf0-54c2-42a1-b4d9-ddfd519aee3e",
+          "action": "schematic.save",
+          "context": {
+            "projectUuid": "1f475f192d4be7445a42ac79ebc824fcc4a803375837a9318c923e3aa35fe737",
+            "projectName": "EVT1-AR-YF-001-H02-KIMI-20261119",
+            "documentUuid": "3fdc6001a068d82e",
+            "documentType": "schematic",
+            "tabId": "3fdc6001a068d82e@1f475f192d4be7445a42ac79ebc824fcc4a803375837a9318c923e3aa35fe737",
+            "pageVisibility": "visible"
+          },
+          "state": "saved",
+          "saved": true,
+          "updatedAt": "2026-11-19T13:52:32.8306989Z"
+        },
+        {
+          "windowId": "906f0cf0-54c2-42a1-b4d9-ddfd519aee3e",
+          "action": "schematic.save",
+          "context": {
+            "projectUuid": "1f475f192d4be7445a42ac79ebc824fcc4a803375837a9318c923e3aa35fe737",
+            "projectName": "EVT1-AR-YF-001-H02-KIMI-20261119",
+            "documentUuid": "89cd87358a17e3c2",
+            "documentType": "schematic",
+            "tabId": "89cd87358a17e3c2@1f475f192d4be7445a42ac79ebc824fcc4a803375837a9318c923e3aa35fe737",
+            "pageVisibility": "visible"
+          },
+          "state": "saved",
+          "saved": true,
+          "updatedAt": "2026-11-19T13:55:31.6622922Z"
+        },
+        {
+          "windowId": "906f0cf0-54c2-42a1-b4d9-ddfd519aee3e",
+          "action": "schematic.save",
+          "context": {
+            "projectUuid": "1f475f192d4be7445a42ac79ebc824fcc4a803375837a9318c923e3aa35fe737",
+            "projectName": "EVT1-AR-YF-001-H02-KIMI-20261119",
+            "documentUuid": "8fa31840ba825b92",
+            "documentType": "schematic",
+            "tabId": "8fa31840ba825b92@1f475f192d4be7445a42ac79ebc824fcc4a803375837a9318c923e3aa35fe737",
+            "pageVisibility": "visible"
+          },
+          "state": "saved",
+          "saved": true,
+          "updatedAt": "2026-11-19T13:50:23.3182772Z"
+        },
+        {
+          "windowId": "906f0cf0-54c2-42a1-b4d9-ddfd519aee3e",
+          "action": "schematic.save",
+          "context": {
+            "projectUuid": "1f475f192d4be7445a42ac79ebc824fcc4a803375837a9318c923e3aa35fe737",
+            "projectName": "EVT1-AR-YF-001-H02-KIMI-20261119",
+            "documentUuid": "bbbca101b360e299",
+            "documentType": "schematic",
+            "tabId": "bbbca101b360e299@1f475f192d4be7445a42ac79ebc824fcc4a803375837a9318c923e3aa35fe737",
+            "pageVisibility": "visible"
+          },
+          "state": "saved",
+          "saved": true,
+          "updatedAt": "2026-11-19T13:49:45.0660523Z"
+        },
+        {
+          "windowId": "906f0cf0-54c2-42a1-b4d9-ddfd519aee3e",
+          "action": "schematic.save",
+          "context": {
+            "projectUuid": "1f475f192d4be7445a42ac79ebc824fcc4a803375837a9318c923e3aa35fe737",
+            "projectName": "EVT1-AR-YF-001-H02-KIMI-20261119",
+            "documentUuid": "d643a0611d67a31a",
+            "documentType": "schematic",
+            "tabId": "d643a0611d67a31a@1f475f192d4be7445a42ac79ebc824fcc4a803375837a9318c923e3aa35fe737",
+            "pageVisibility": "hidden"
+          },
+          "state": "saved",
+          "saved": true,
+          "updatedAt": "2026-11-19T13:57:10.9093621Z"
+        },
+        {
+          "windowId": "906f0cf0-54c2-42a1-b4d9-ddfd519aee3e",
+          "action": "schematic.save",
+          "context": {
+            "projectUuid": "1f475f192d4be7445a42ac79ebc824fcc4a803375837a9318c923e3aa35fe737",
+            "projectName": "EVT1-AR-YF-001-H02-KIMI-20261119",
+            "documentUuid": "e99e682aca69cae1",
+            "documentType": "schematic",
+            "tabId": "e99e682aca69cae1@1f475f192d4be7445a42ac79ebc824fcc4a803375837a9318c923e3aa35fe737",
+            "pageVisibility": "visible"
+          },
+          "state": "saved",
+          "saved": true,
+          "updatedAt": "2026-11-19T13:53:42.6676696Z"
+        }
+      ]
+    }
+  },
+  "versionGate": {
+    "cli": "v1.17.0",
+    "daemon": "v1.17.0",
+    "connectors": [
+      "1.17.0"
+    ],
+    "verdict": "ok",
+    "findings": [
+      {
+        "component": "daemon",
+        "version": "v1.17.0",
+        "severity": "ok",
+        "reason": "与 CLI 同版 v1.17.0"
+      },
+      {
+        "component": "connector",
+        "version": "1.17.0",
+        "severity": "ok",
+        "reason": "与 CLI 同版 v1.17.0"
+      }
+    ]
+  },
+  "hostCompatibility": {
+    "baseline": "4.0.0",
+    "recommended": "4.1.60",
+    "verdict": "ok",
+    "findings": [
+      {
+        "windowId": "906f0cf0-54c2-42a1-b4d9-ddfd519aee3e",
+        "version": "4.1.97",
+        "severity": "ok",
+        "reason": "EasyEDA Pro 4.1.97 满足 V4 主线基线"
+      }
+    ]
+  },
+  "checks": [
+    {
+      "name": "daemon",
+      "status": "ok",
+      "detail": "v1.17.0 运行在端口 60832"
+    },
+    {
+      "name": "connector",
+      "status": "ok",
+      "detail": "1 个窗口已连接（连接器 v1.17.0）"
+    },
+    {
+      "name": "versions",
+      "status": "ok",
+      "detail": "版本一致性:CLI / daemon 同版,connector major.minor 兼容 v1.17.0"
+    },
+    {
+      "name": "easyeda",
+      "status": "ok",
+      "detail": "EasyEDA 宿主:V4 主线（推荐基线 4.1.60）"
+    },
+    {
+      "name": "project",
+      "status": "ok",
+      "detail": "EVT1-AR-YF-001-H02-KIMI-20261119（当前 schematic），标签页在后台（操作照常；仅 PCB 画布截图需切到前台）"
+    }
+  ],
+  "checked": [
+    {
+      "port": 60832,
+      "status": "ok"
+    }
+  ]
+}
