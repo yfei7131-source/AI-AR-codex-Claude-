@@ -117,12 +117,12 @@ def verify(root_dir: Path, out_path: Path):
         "status": "VERIFIED_H03_3BOARD_ZERO_CLEARANCE_AND_LIVE_ROUTING",
         "manufacturing": "BLOCKED",
         "baseline_22x4_2_preserved": {
-            "archive": str(PR40_TRACK_A.relative_to(PACKAGE.parent).as_posix()),
+            "archive": str(PR40_TRACK_A.resolve().relative_to(PACKAGE.parent.resolve()).as_posix()),
             "sha256": ta_sha,
             "unchanged_vs_pr40": True,
         },
         "h03_3board_mecr01_archive": {
-            "path": str(arc_path.relative_to(PACKAGE.parent).as_posix()),
+            "path": str(arc_path.resolve().relative_to(PACKAGE.parent.resolve()).as_posix()),
             "sha256": arc_sha,
             "total_placed_components_3boards": sum(v["placed_components"] for v in boards_report.values()),
             "total_physical_pads_3boards": sum(v["physical_pads"] for v in boards_report.values()),
