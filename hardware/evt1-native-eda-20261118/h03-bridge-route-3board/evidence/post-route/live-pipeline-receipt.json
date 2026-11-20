@@ -1,0 +1,93 @@
+{
+  "status": "CAPTURED_LIVE_EASYEDA_4_1_97",
+  "manufacturing": "BLOCKED",
+  "project_uuid": "3d3b055f34d0c8ed03f1641a7d80e64ee9655c88777048cb91307ebdbda1122d",
+  "commits": {
+    "PCB1": {
+      "vias": 19,
+      "tracks": 11,
+      "gnd_pads_stitched": 12
+    },
+    "PCB2": {
+      "tracks": 317,
+      "vias": 28,
+      "failures": 0
+    },
+    "PCB3": {
+      "vias": 12,
+      "tracks": 12,
+      "gnd_pads_stitched": 12
+    }
+  },
+  "pre_route_drc": {
+    "PCB1": {
+      "total": 469,
+      "clearance": 0,
+      "connection": 468,
+      "netlist": 1,
+      "by_rule": {
+        "Connection Error (SMD Pad)": 467,
+        "Connection Error (Plane Zone)": 1,
+        "Netlist Error (Netlist Error)": 1
+      }
+    },
+    "PCB2": {
+      "total": 309,
+      "clearance": 0,
+      "connection": 308,
+      "netlist": 1,
+      "by_rule": {
+        "Connection Error (SMD Pad)": 306,
+        "Connection Error (Plane Zone)": 2,
+        "Netlist Error (Netlist Error)": 1
+      }
+    },
+    "PCB3": {
+      "total": 197,
+      "clearance": 0,
+      "connection": 196,
+      "netlist": 1,
+      "by_rule": {
+        "Connection Error (SMD Pad)": 194,
+        "Connection Error (Plane Zone)": 2,
+        "Netlist Error (Netlist Error)": 1
+      }
+    }
+  },
+  "post_route_drc": {
+    "PCB1": {
+      "total": 465,
+      "clearance": 0,
+      "connection": 464,
+      "netlist": 1,
+      "by_rule": {
+        "Connection Error (SMD Pad)": 459,
+        "Connection Error (Via)": 5,
+        "Netlist Error (Netlist Error)": 1
+      }
+    },
+    "PCB2": {
+      "total": 271,
+      "clearance": 0,
+      "connection": 270,
+      "netlist": 1,
+      "by_rule": {
+        "Connection Error (SMD Pad)": 262,
+        "Connection Error (Via)": 6,
+        "Connection Error (Track)": 2,
+        "Netlist Error (Netlist Error)": 1
+      }
+    },
+    "PCB3": {
+      "total": 191,
+      "clearance": 0,
+      "connection": 190,
+      "netlist": 1,
+      "by_rule": {
+        "Connection Error (SMD Pad)": 186,
+        "Connection Error (Via)": 4,
+        "Netlist Error (Netlist Error)": 1
+      }
+    }
+  }
+}

@@ -7,6 +7,7 @@ on:
       - hardware/evt1-h02-h03-native-20261120
       - hardware/evt1-h02-reve-h03-bridge-20261120
       - hardware/evt1-h02-fp-h03-pcb-20261120
+      - hardware/evt1-h03-bridge-route-3board-20261120
   workflow_dispatch:
 
 permissions:
@@ -14,7 +15,7 @@ permissions:
 
 env:
   EVT1_PACKAGE: hardware/evt1-native-eda-20261118
-  EVT1_H03_CHECKS: ${{ github.ref_name == 'hardware/evt1-h03-h05-20261119' || github.ref_name == 'hardware/evt1-h02-h03-native-20261120' || github.ref_name == 'hardware/evt1-h02-reve-h03-bridge-20261120' || github.ref_name == 'hardware/evt1-h02-fp-h03-pcb-20261120' }}
+  EVT1_H03_CHECKS: ${{ github.ref_name == 'hardware/evt1-h03-h05-20261119' || github.ref_name == 'hardware/evt1-h02-h03-native-20261120' || github.ref_name == 'hardware/evt1-h02-reve-h03-bridge-20261120' || github.ref_name == 'hardware/evt1-h02-fp-h03-pcb-20261120' || github.ref_name == 'hardware/evt1-h03-bridge-route-3board-20261120' }}
 
 jobs:
   fpga:
@@ -95,6 +96,16 @@ jobs:
             --capture "$EVT1_PACKAGE/h02-reve-h03-bridge/evidence" \
             --archive "$EVT1_PACKAGE/h02-reve-h03-bridge/native/ZY_AIAR_EVT1_H02_REVE_H03_BRIDGE_NOT_FOR_FAB.epro2" \
             --out "$RUNNER_TEMP/reve-h03.json"
+          python3 -B hardware/evt1-rev-d1-1-20261117/05_Verification_Scripts/test_rev_d1_1_avdd_safety.py
+          python3 -m unittest discover -s "$EVT1_PACKAGE/h02-native" -p "test_*.py" -v
+      - name: Verify H03 3-board layout and bridge live routing
+        if: github.ref_name == 'hardware/evt1-h03-bridge-route-3board-20261120'
+        run: |
+          round="$EVT1_PACKAGE/h03-bridge-route-3board"
+          python3 -B "$round/verify_h03_3board.py" --root "$round" --out "$RUNNER_TEMP/h03-3board.json"
+          python3 -B "$EVT1_PACKAGE/h02-fp-h03-pcb/verify_h02_fp_h03_pcb.py" \
+            --root "$EVT1_PACKAGE/h02-fp-h03-pcb" \
+            --out "$RUNNER_TEMP/h02-fp-h03-pcb.json"
           python3 -B hardware/evt1-rev-d1-1-20261117/05_Verification_Scripts/test_rev_d1_1_avdd_safety.py
           python3 -m unittest discover -s "$EVT1_PACKAGE/h02-native" -p "test_*.py" -v
       - name: KiCad CLI version, electrical rules and native netlist parity
