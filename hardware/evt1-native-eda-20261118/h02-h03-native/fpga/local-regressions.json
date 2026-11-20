@@ -1,0 +1,59 @@
+{
+  "source_commit": "ccc535842fca777bf1b84611556983db03af40d7",
+  "rtl_sha256": "787baaf3f297b85879265d82cfbd9d11b2790078e98d7102b7543e839a37ef47",
+  "pr25_witness_sha256": "c7f6cbc1f387fb3120ab1a7184eec53adb433512329a798869a2cd61645c4276",
+  "local_icarus_package_sha256": "fd4d7d7cb60cda1eb437f5476673503d92964cf47ce6c11b460eb3bd05c43582",
+  "test_results": [
+    {
+      "suite": "display-raw",
+      "exit": 0,
+      "result": "PASS",
+      "log": "display-raw.log.txt",
+      "seconds": 31.51
+    },
+    {
+      "suite": "shutdown-safety",
+      "exit": 0,
+      "result": "PASS",
+      "log": "shutdown-safety.log.txt",
+      "seconds": 70.24
+    },
+    {
+      "suite": "host-framing",
+      "exit": 0,
+      "result": "PASS",
+      "log": "host-framing.log.txt",
+      "seconds": 3.7
+    },
+    {
+      "suite": "host-wire",
+      "exit": 0,
+      "result": "PASS",
+      "log": "host-wire.log.txt",
+      "seconds": 0.27
+    },
+    {
+      "suite": "avdd-analytical-event-models",
+      "exit": 0,
+      "result": "PASS_MODEL_ONLY",
+      "log": "avdd-models.log.txt",
+      "seconds": 0.16
+    }
+  ],
+  "board_and_optics_qualification": "BLOCKED",
+  "native_ngspice": {
+    "result": "BLOCKED",
+    "log": "ngspice-local-blocker.log.txt",
+    "setup_failures": [
+      "Windows console binary could not open temporary file",
+      "Alternate MinGW build exited STATUS_DLL_NOT_FOUND (0xC0000135)"
+    ]
+  },
+  "ancestor_pr32_native_artifact": {
+    "source_commit": "7572be31793d976aaabf0313bc13596d188e9580",
+    "artifact": "evt1-native-fpga/route_search_results.json",
+    "artifact_file_sha256": "8392cadff06ce0e4fa742a943a14c3ec7c2cc0a1fb7be5c2dc2420fe5a51fdc4",
+    "run": "https://github.com/yfei7131-source/AI-AR-codex-Claude-/actions/runs/44526978167",
+    "file": "pr32-route-search.json"
+  }
+}

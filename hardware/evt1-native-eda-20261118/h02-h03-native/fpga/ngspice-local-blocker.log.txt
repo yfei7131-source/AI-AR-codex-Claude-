@@ -1,0 +1,31 @@
+Windows console build
+$ python -B 05_Verification_Scripts/test_rev_d1_1_avdd_safety.py --require-ngspice --ngspice <NGSPICE>
+Traceback (most recent call last):
+  File "<SCRATCH>\hardware\evt1-rev-d1-1-20261117\05_Verification_Scripts\test_rev_d1_1_avdd_safety.py", line 346, in <module>
+    if __name__=='__main__':raise SystemExit(main())
+                                             ~~~~^^
+  File "<SCRATCH>\hardware\evt1-rev-d1-1-20261117\05_Verification_Scripts\test_rev_d1_1_avdd_safety.py", line 334, in main
+    result['native_spice']=native_spice(binary)
+                           ~~~~~~~~~~~~^^^^^^^^
+  File "<SCRATCH>\hardware\evt1-rev-d1-1-20261117\05_Verification_Scripts\test_rev_d1_1_avdd_safety.py", line 298, in native_spice
+    assert run.returncode==0,(name,run.returncode,run.stdout,run.stderr,raw[-1200:])
+           ^^^^^^^^^^^^^^^^^
+AssertionError: ('d1_stall_high', 1, '', 'Error: Could not open a temporary file to save and use optional arguments.\n', '\nError: Could not open a temporary file to save and use optional arguments.\n')
+
+Exit 1
+
+Alternate isolated MinGW build
+$ python -B 05_Verification_Scripts/test_rev_d1_1_avdd_safety.py --require-ngspice --ngspice <NGSPICE>
+Traceback (most recent call last):
+  File "<SCRATCH>\hardware\evt1-rev-d1-1-20261117\05_Verification_Scripts\test_rev_d1_1_avdd_safety.py", line 346, in <module>
+    if __name__=='__main__':raise SystemExit(main())
+                                             ~~~~^^
+  File "<SCRATCH>\hardware\evt1-rev-d1-1-20261117\05_Verification_Scripts\test_rev_d1_1_avdd_safety.py", line 334, in main
+    result['native_spice']=native_spice(binary)
+                           ~~~~~~~~~~~~^^^^^^^^
+  File "<SCRATCH>\hardware\evt1-rev-d1-1-20261117\05_Verification_Scripts\test_rev_d1_1_avdd_safety.py", line 298, in native_spice
+    assert run.returncode==0,(name,run.returncode,run.stdout,run.stderr,raw[-1200:])
+           ^^^^^^^^^^^^^^^^^
+AssertionError: ('d1_stall_high', 3221225781, '', '', '\n')
+
+Exit 1

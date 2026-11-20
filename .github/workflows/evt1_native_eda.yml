@@ -1,7 +1,10 @@
 name: EVT-1 native schematic and FPGA validation
 on:
   push:
-    branches: [hardware/evt1-native-eda-20261118, hardware/evt1-h03-h05-20261119]
+    branches:
+      - hardware/evt1-native-eda-20261118
+      - hardware/evt1-h03-h05-20261119
+      - hardware/evt1-h02-h03-native-20261120
   workflow_dispatch:
 
 permissions:
