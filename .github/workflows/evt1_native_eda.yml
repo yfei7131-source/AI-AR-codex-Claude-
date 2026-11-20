@@ -5,6 +5,7 @@ on:
       - hardware/evt1-native-eda-20261118
       - hardware/evt1-h03-h05-20261119
       - hardware/evt1-h02-h03-native-20261120
+      - hardware/evt1-h02-reve-h03-bridge-20261120
   workflow_dispatch:
 
 permissions:
@@ -12,7 +13,7 @@ permissions:
 
 env:
   EVT1_PACKAGE: hardware/evt1-native-eda-20261118
-  EVT1_H03_CHECKS: ${{ github.ref_name == 'hardware/evt1-h03-h05-20261119' || github.ref_name == 'hardware/evt1-h02-h03-native-20261120' }}
+  EVT1_H03_CHECKS: ${{ github.ref_name == 'hardware/evt1-h03-h05-20261119' || github.ref_name == 'hardware/evt1-h02-h03-native-20261120' || github.ref_name == 'hardware/evt1-h02-reve-h03-bridge-20261120' }}
 
 jobs:
   fpga:
@@ -76,6 +77,14 @@ jobs:
           diff -u "$round/evidence/verification.json" "$RUNNER_TEMP/h02-h03.json"
           python3 -B "$round/footprints/audit_candidates.py" --check
           python3 -B "$round/bridge_preflight.py" --dump "$bridge/bridge-persisted.dump.json" --archive "$archive" --drc "$bridge/pcb-drc-after.json" --before-dump "$bridge/bridge-before.dump.json" --before-drc "$bridge/pcb-drc-before.json" --require-keepouts --check "$round/bridge_preflight_after.json"
+      - name: Verify the H02 Rev E and H03 native bridge round
+        if: github.ref_name == 'hardware/evt1-h02-reve-h03-bridge-20261120'
+        run: |
+          round="$EVT1_PACKAGE/h02-reve-h03-bridge"
+          archive="$round/native/ZY_AIAR_EVT1_H02_REVE_H03_BRIDGE_NOT_FOR_FAB.epro2"
+          python3 -B "$round/verify_reve_h03.py" --capture "$round/evidence" --archive "$archive" --out "$RUNNER_TEMP/reve-h03.json"
+          python3 -B hardware/evt1-rev-d1-1-20261117/05_Verification_Scripts/test_rev_d1_1_avdd_safety.py
+          python3 -m unittest discover -s "$EVT1_PACKAGE/h02-native" -p "test_*.py" -v
       - name: KiCad CLI version, electrical rules and native netlist parity
         run: |
           mkdir -p "$PWD/ci-kicad-evidence"

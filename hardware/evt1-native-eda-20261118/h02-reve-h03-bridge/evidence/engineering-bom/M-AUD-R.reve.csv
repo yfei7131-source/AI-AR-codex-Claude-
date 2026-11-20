@@ -1,0 +1,59 @@
+Board,Designator,SourceRef,Value,MPN,Footprint,FootprintUuid,AddIntoBOM,ConvertToPCB,UniqueId
+M-AUD-R,#FLG01,,PWR_FLAG,,,,yes,yes,
+M-AUD-R,#FLG02,,PWR_FLAG,,,,yes,yes,
+M-AUD-R,#FLG03,,PWR_FLAG,,,,yes,yes,
+M-AUD-R,ANT2,ANT2_BLE,"ANT2_BLE | 2450AT18B100E (Z=1.50mm BOM fix, ECO-10)",2450AT18B100E,,,yes,yes,8d88eafcc5a7cade
+M-AUD-R,BAT1,BAT_R,BAT_R | Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47m...,Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight),,,yes,no,209f0e49c54e94d7
+M-AUD-R,C1,C_AMP_SD_BUF,C_AMP_SD_BUF | 100nF X7R 6.3V 0201,0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification,IPC_0201_0603Metric,c8ff4d2e2103fd0c,yes,yes,b4693cfd16d534cd
+M-AUD-R,C10,NRF_C4,NRF_C4 | 2.2 nF X7R +/-10%,Nordic CMAA config3 reference passives; exact procurement MPNs pending,,,yes,yes,3e75135af30e0f04
+M-AUD-R,C11,NRF_C5,NRF_C5 | 1.0 uF X7S +/-10%,Nordic CMAA config3 reference passives; exact procurement MPNs pending,,,yes,yes,20764de07767b3a1
+M-AUD-R,C12,NRF_C6,NRF_C6 | 100 nF X7S +/-10%,Nordic CMAA config3 reference passives; exact procurement MPNs pending,,,yes,yes,26a39bcafcc8ce7c
+M-AUD-R,C13,NRF_C7,NRF_C7 | 1.0 uF X7S +/-10%,Nordic CMAA config3 reference passives; exact procurement MPNs pending,,,yes,yes,e7ba3aba9f9889c8
+M-AUD-R,C14,NRF_C8,NRF_C8 | 100 nF X7S +/-10%,Nordic CMAA config3 reference passives; exact procurement MPNs pending,,,yes,yes,00361082df9d4549
+M-AUD-R,C15,NRF_C9,NRF_C9 | 100 nF X7S +/-10%,Nordic CMAA config3 reference passives; exact procurement MPNs pending,,,yes,yes,86bb77bda672094d
+M-AUD-R,C16,NRF_C10,NRF_C10 | 1.0 uF X7S +/-10%,Nordic CMAA config3 reference passives; exact procurement MPNs pending,,,yes,yes,c8e923f96b539988
+M-AUD-R,C17,NRF_C11,NRF_C11 | 100 nF X7S +/-10%,Nordic CMAA config3 reference passives; exact procurement MPNs pending,,,yes,yes,48700c84863a802e
+M-AUD-R,C18,NRF_C12,NRF_C12 | 100 nF X7S +/-10%,Nordic CMAA config3 reference passives; exact procurement MPNs pending,,,yes,yes,d9d0285421fe3ef0
+M-AUD-R,C19,NRF_C13,NRF_C13 | 100 nF X7S +/-10%,Nordic CMAA config3 reference passives; exact procurement MPNs pending,,,yes,yes,9b75bd895f0e39d2
+M-AUD-R,C2,C_CHG_R_IN,C_CHG_R_IN | 1uF 25V X7R; effective >=1uF,1uF 25V X7R; effective >=1uF,IPC_0402_1005Metric,7b91d3d0e9057999,yes,yes,a2c5d49bc5dde298
+M-AUD-R,C20,NRF_C14,NRF_C14 | 1.0 uF X7S +/-10%,Nordic CMAA config3 reference passives; exact procurement MPNs pending,,,yes,yes,97d7532320e593d5
+M-AUD-R,C21,NRF_CT19,NRF_CT19 | DNP antenna tuning shunt,Nordic CMAA config3 reference passives; exact procurement MPNs pending,,,yes,yes,0259cc883dd91c7a
+M-AUD-R,C22,C_LFXO1,C_LFXO1 | 12pF 50V C0G 0201 (ECO-08),GRM0335C1H120JA01D,IPC_0201_0603Metric,c8ff4d2e2103fd0c,yes,yes,b90a5683457e9e8f
+M-AUD-R,C23,C_LFXO2,C_LFXO2 | 12pF 50V C0G 0201 (ECO-08),GRM0335C1H120JA01D,IPC_0201_0603Metric,c8ff4d2e2103fd0c,yes,yes,d265c5230be6b38a
+M-AUD-R,C3,C_CHG_R_OUT,C_CHG_R_OUT | 1uF 10V X7R; effective >=1uF,1uF 10V X7R; effective >=1uF,IPC_0402_1005Metric,7b91d3d0e9057999,yes,yes,cc82bf2c2e22e605
+M-AUD-R,C4,C_MK3_R,C_MK3_R | 100nF X7R 6.3V 0201,0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification,IPC_0201_0603Metric,c8ff4d2e2103fd0c,yes,yes,3a68d3ddabf48558
+M-AUD-R,C5,C_U10_AMP_R_BULK,C_U10_AMP_R_BULK | 10uF X5R 10V 0402,0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification,IPC_0402_1005Metric,7b91d3d0e9057999,yes,yes,ddba3c46cf8b8e66
+M-AUD-R,C6,C_U10_AMP_R_HF,C_U10_AMP_R_HF | 100nF X7R 10V 0201,0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification,IPC_0201_0603Metric,c8ff4d2e2103fd0c,yes,yes,ab4a8fe24fad9fe4
+M-AUD-R,C7,NRF_C1,NRF_C1 | 0.7 pF NP0 +/-0.05 pF,Nordic CMAA config3 reference passives; exact procurement MPNs pending,,,yes,yes,48d2dd422533522c
+M-AUD-R,C8,NRF_C2,NRF_C2 | 1.0 uF X7S +/-10%,Nordic CMAA config3 reference passives; exact procurement MPNs pending,,,yes,yes,80f3708378e3d903
+M-AUD-R,C9,NRF_C3,NRF_C3 | 1.0 uF X7S +/-10%,Nordic CMAA config3 reference passives; exact procurement MPNs pending,,,yes,yes,7ddfd2f632a8b17d
+M-AUD-R,J1,J_BTB_R,J_BTB_R | BM28B0.6-16DS/2-0.35V(53),BM28B0.6-16DS/2-0.35V(53),,,yes,yes,51bfc0e5166a1c40
+M-AUD-R,L1,NRF_L1,NRF_L1 | 2.2 nH +/-5%,Nordic CMAA config3 reference passives; exact procurement MPNs pending,IPC_0201_0603Metric,c8ff4d2e2103fd0c,yes,yes,d450ceac7adb81c3
+M-AUD-R,L2,NRF_L2,NRF_L2 | 2.2 nH +/-5%,Nordic CMAA config3 reference passives; exact procurement MPNs pending,IPC_0201_0603Metric,c8ff4d2e2103fd0c,yes,yes,3f6ee2b1a34b017f
+M-AUD-R,L3,NRF_L3,NRF_L3 | 10 uH >=50 mA +/-20%,Nordic CMAA config3 reference passives; exact procurement MPNs pending,IPC_0603_1608Metric,652c2675b49497e7,yes,yes,510f7e7047da8839
+M-AUD-R,L4,NRF_L4,NRF_L4 | 10 uH >=50 mA +/-20%,Nordic CMAA config3 reference passives; exact procurement MPNs pending,IPC_0603_1608Metric,652c2675b49497e7,yes,yes,fd5a5c0f77d1aabb
+M-AUD-R,MK3,MK3_R,MK3_R | IM69D130V01XTSA1,IM69D130V01XTSA1,MIC-SMD_5P-L4.0-W3.0-P0.70-TR_IM69D130V01,46f530bc0d70e19b,yes,yes,fb705c0b1c749660
+M-AUD-R,Q1,Q_CHG_MUTE_R,Q_CHG_MUTE_R | 2N7002,2N7002,Nexperia_SOT23_TO-236AB,fbc45fe4a72991b0,yes,yes,f76c01de5337d462
+M-AUD-R,R1,R_AMP_REQ_PD,R_AMP_REQ_PD | 47k 1%,0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification,,,yes,yes,353b166cc2dee846
+M-AUD-R,R10,R_VSET_R,R_VSET_R | 27k 1%,R_SDR 69.8k 1% + R_IPC_PU 100k + R_ISET_R 5.49k 1% + R_VSET_R 27k 1%,,,yes,yes,41bc0941336b1513
+M-AUD-R,R2,R_IDLE_I2S_AMP_DIN_1V8,R_IDLE_I2S_AMP_DIN_1V8 | 100k 1%,0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification,,,yes,yes,6f63fc6711cfa315
+M-AUD-R,R3,R_IDLE_I2S_BCLK_1V8,R_IDLE_I2S_BCLK_1V8 | 100k 1%,0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification,,,yes,yes,fe89d0632cfce75f
+M-AUD-R,R4,R_IDLE_I2S_LRCLK_1V8,R_IDLE_I2S_LRCLK_1V8 | 100k 1%,0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification,,,yes,yes,fdc86a4b576d9e98
+M-AUD-R,R5,R_IPC_PU,R_IPC_PU | 100k pull-up to 1V8_SYS (UART idle when ESP32 side off),R_SDR 69.8k 1% + R_IPC_PU 100k + R_ISET_R 5.49k 1% + R_VSET_R 27k 1%,,,yes,yes,9cdd622c9eeecfe7
+M-AUD-R,R6,R_ISET_R,R_ISET_R | 5.49k 1%,R_SDR 69.8k 1% + R_IPC_PU 100k + R_ISET_R 5.49k 1% + R_VSET_R 27k 1%,,,yes,yes,e06ccd13940482ac
+M-AUD-R,R7,R_MUTE_GATE,R_MUTE_GATE | 100 ohm 1%,100 ohm 1%,IPC_0201_0603Metric,c8ff4d2e2103fd0c,yes,yes,ba2c6d155e7fd301
+M-AUD-R,R8,R_MUTE_PD,R_MUTE_PD | 100k 1%,100k 1%,IPC_0201_0603Metric,c8ff4d2e2103fd0c,yes,yes,86d447fa2a9c8586
+M-AUD-R,R9,R_SDR,R_SDR | 69.8k 1%,R_SDR 69.8k 1% + R_IPC_PU 100k + R_ISET_R 5.49k 1% + R_VSET_R 27k 1%,,,yes,yes,1e1ffada38203b9e
+M-AUD-R,SPK1,SPK_R,SPK_R | MPN_TBD (8 ohm micro-speaker),MPN_TBD (8 ohm micro-speaker),,,yes,no,d2e4bc6839561c23
+M-AUD-R,TP1,TP_BAT_R_N,TP_BAT_R_N | solder pad BAT_R-,Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight),,,yes,yes,4726d92b84fba278
+M-AUD-R,TP2,TP_BAT_R_P,TP_BAT_R_P | solder pad BAT_R+ (Rev D: off-connector),Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight),,,yes,yes,21ffbae72f4f4154
+M-AUD-R,TP3,TP_NTC_R,TP_NTC_R | solder pad NTC,Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight),,,yes,yes,8df4c48c9acaaf69
+M-AUD-R,TP4,TP_SPK_R_N,TP_SPK_R_N | SPK_LEAD_PAD,PCB copper pad,,,yes,yes,6410be24ff53b3b6
+M-AUD-R,TP5,TP_SPK_R_P,TP_SPK_R_P | SPK_LEAD_PAD,PCB copper pad,,,yes,yes,f7ec211fb22f3ea3
+M-AUD-R,TP6,TP_SWD_R,"TP_SWD_R | 5x 0.6 mm pads (SWDIO, SWDCLK, nRESET, VTREF, GND) fo...","5x 0.6 mm pads (SWDIO, SWDCLK, nRESET, VTREF, GND) for pogo fixture",,,yes,yes,84aa4de12bc2747c
+M-AUD-R,U1,U10_SD_BUF,U10_SD_BUF | SN74LVC1G3157DSFR,SN74LVC1G3157DSFR,X2SON-6_L1.0-W1.0-P0.35-TL,78d0180c50130bc7,yes,yes,1bdc0ab44f99f92d
+M-AUD-R,U10,U10_AMP_R,U10_AMP_R | MAX98357AEWL+T,MAX98357AEWL+T,WLP-9_L1.4-W1.3-P0.40-R3-C3-BR,91d3f643d1a9585b,yes,yes,c69de7c088414df5
+M-AUD-R,U11,U11_BLE,U11_BLE | nRF5340-CMAA-R7,nRF5340-CMAA-R7,,,yes,yes,2fd166bdb6936536
+M-AUD-R,U3,U3_R,U3_R | BQ25170DSGR,BQ25170DSGR,WSON-8_L2.0-W2.0-P0.50-TL-EP,500cb0da72c86ae0,yes,yes,66797bcd97f4f6c2
+M-AUD-R,Y2,Y2_BLE,Y2_BLE | FA-128 32 MHz 8 pF +/-10 ppm initial +/-10 ppm temper...,FA-128 32 MHz 8 pF +/-10 ppm initial +/-10 ppm temperature; candidate Q22FA12800025 (ordering suffix/vendor controlled spec pending),,,yes,yes,54aa28710a128dff
+M-AUD-R,Y3,Y_LFXO,Y_LFXO | FC1610AN 32.768kHz 9pF (ECO-08),FC1610AN-32.768000kHz-9pF,Epson_FC1610AN_1.6x1.0mm,195347458c154100,yes,yes,bb3f50b0f2a20495

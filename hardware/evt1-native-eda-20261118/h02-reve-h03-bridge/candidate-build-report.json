@@ -1,0 +1,1025 @@
+{
+  "status": "CANDIDATE_BUILT",
+  "manufacturing": "BLOCKED",
+  "baselinePath": "h02-h03-rd\\native\\ZY_AIAR_EVT1_H02_H03_RD_NOT_FOR_FAB.epro2",
+  "baselineSha256": "d68190e5bcf36bfc3308ff194d792d4c5526577aab8bf601722e1c2d8e713727",
+  "candidateSha256": "ccc87fcf2709b7888a6562b1a9dded734e5287b2a5be8283e47cddadc34fa67f",
+  "revEEcosImplemented": [
+    "ECO-03",
+    "ECO-07",
+    "ECO-08",
+    "ECO-09",
+    "ECO-14",
+    "ECO-02-LED_3V3_PRIV-RENAME"
+  ],
+  "newFootprintsCreated": {
+    "TI_DRY0006A_USON-6_1.45x1.0mm": "87c9dded4d2d2e2c",
+    "TI_DRV0006A_WSON-6_2.0x2.0mm": "b3c9b037fbe52c0d",
+    "Epson_FC1610AN_1.6x1.0mm": "195347458c154100",
+    "IPC_0201_0603Metric": "c8ff4d2e2103fd0c",
+    "IPC_0402_1005Metric": "7b91d3d0e9057999",
+    "IPC_0603_1608Metric": "652c2675b49497e7"
+  },
+  "additionalFootprintBindingsCount": 114,
+  "additionalFootprintBindingsByBoard": {
+    "M-MAIN-L": 54,
+    "M-OPT-BRIDGE": 44,
+    "M-AUD-R": 16
+  },
+  "pcb2ExistingUniqueIdsLinked": 10,
+  "pcb2NewComponentsPlaced": 7,
+  "pcb2TotalComponentsPlaced": 17,
+  "pcb2Placements": [
+    {
+      "ref": "D3",
+      "sourceRef": "D3_PRIV",
+      "side": "TOP",
+      "x_mm": 2.1,
+      "y_mm": 1.5,
+      "rot": 90,
+      "uniqueId": "81689f1d3303caec",
+      "footprint": "34c183bc51cfb609"
+    },
+    {
+      "ref": "U3",
+      "sourceRef": "U_AVDD_CLEAR_OD",
+      "side": "TOP",
+      "x_mm": 0.9,
+      "y_mm": 1.1,
+      "rot": 0,
+      "uniqueId": "66797bcd97f4f6c2",
+      "footprint": "78d0180c50130bc7"
+    },
+    {
+      "ref": "U5",
+      "sourceRef": "U_AVDD_EN_OD",
+      "side": "TOP",
+      "x_mm": 3.3,
+      "y_mm": 1.1,
+      "rot": 0,
+      "uniqueId": "adf583383e4d69d4",
+      "footprint": "78d0180c50130bc7"
+    },
+    {
+      "ref": "U10",
+      "sourceRef": "U_AVDD_QUAL",
+      "side": "BOT",
+      "x_mm": 2.1,
+      "y_mm": 12.02,
+      "rot": 0,
+      "uniqueId": "c69de7c088414df5",
+      "footprint": "3d1b0ff681b359af"
+    },
+    {
+      "ref": "U15",
+      "sourceRef": "U_FPGA_SEQ",
+      "side": "BOT",
+      "x_mm": 1.3,
+      "y_mm": 5.45,
+      "rot": 0,
+      "uniqueId": "635848892ecc77ee",
+      "footprint": "87c9dded4d2d2e2c"
+    },
+    {
+      "ref": "R30",
+      "sourceRef": "R_FPGA_SEQ_H",
+      "side": "BOT",
+      "x_mm": 3.05,
+      "y_mm": 5.0,
+      "rot": 0,
+      "uniqueId": "155d665eb4ae4c58",
+      "footprint": "c8ff4d2e2103fd0c"
+    },
+    {
+      "ref": "R31",
+      "sourceRef": "R_FPGA_SEQ_L",
+      "side": "BOT",
+      "x_mm": 3.05,
+      "y_mm": 5.75,
+      "rot": 0,
+      "uniqueId": "8a3e21afbfeff0a6",
+      "footprint": "c8ff4d2e2103fd0c"
+    }
+  ],
+  "mk2AcousticRepair": {
+    "slotDiameterMm": 0.8,
+    "gndRingInnerRadiusMil": 22.5,
+    "padToSlotClearanceMil": 6.752,
+    "innerPlaneAntipadRadiusMil": 28.0,
+    "slotToPlaneClearanceMil": 12.252
+  },
+  "additionalFootprintBindings": [
+    {
+      "board": "M-MAIN-L",
+      "ref": "U1",
+      "sourceRef": "U1_HOST",
+      "mpn": "ESP32-S3-PICO-1-N8R8",
+      "footprint": "QFN-56_L7.0-W7.0-P0.40-TL-EP4.0",
+      "origin": "OEM-embedded-audited"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "U18",
+      "sourceRef": "U8_LS1",
+      "mpn": "SN74AXC8T245RJWR",
+      "footprint": "UQFN-24_L4.0-W2.0-P0.40-BL",
+      "origin": "OEM-embedded-audited"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "U15",
+      "sourceRef": "U8_CAM_ISO1",
+      "mpn": "SN74AXC8T245RJWR",
+      "footprint": "UQFN-24_L4.0-W2.0-P0.40-BL",
+      "origin": "OEM-embedded-audited"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "U16",
+      "sourceRef": "U8_CAM_ISO2",
+      "mpn": "SN74AXC8T245RJWR",
+      "footprint": "UQFN-24_L4.0-W2.0-P0.40-BL",
+      "origin": "OEM-embedded-audited"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "U21",
+      "sourceRef": "U8_PDM_LS",
+      "mpn": "SN74AXC8T245RJWR",
+      "footprint": "UQFN-24_L4.0-W2.0-P0.40-BL",
+      "origin": "OEM-embedded-audited"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "U8",
+      "sourceRef": "U8_AUD_LS2",
+      "mpn": "SN74AXC4T245RSVR",
+      "footprint": "UQFN-16_L2.6-W1.8-P0.40-BL",
+      "origin": "OEM-embedded-audited"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "U10",
+      "sourceRef": "U10_AMP_L",
+      "mpn": "MAX98357AEWL+T",
+      "footprint": "WLP-9_L1.4-W1.3-P0.40-R3-C3-BR",
+      "origin": "OEM-embedded-audited"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "MK1",
+      "sourceRef": "MK1_L",
+      "mpn": "IM69D130V01XTSA1",
+      "footprint": "MIC-SMD_5P-L4.0-W3.0-P0.70-TR_IM69D130V01",
+      "origin": "OEM-embedded-audited"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "U2",
+      "sourceRef": "U4_BB",
+      "mpn": "TPS63805YFFR",
+      "footprint": "DSBGA-15_L2.3-W1.3-R5-C3-P0.40-TL",
+      "origin": "OEM-embedded-audited"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "U3",
+      "sourceRef": "U3_L",
+      "mpn": "BQ25180YBGR",
+      "footprint": "DSBGA-8_L1.6-W0.9-R2-C4-P0.40-BL",
+      "origin": "OEM-embedded-audited"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "U4",
+      "sourceRef": "U4_1V8",
+      "mpn": "TPS62840DLCR",
+      "footprint": "VSON-8_L2.0-W1.5-P0.50-BL",
+      "origin": "OEM-embedded-audited"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "U2",
+      "sourceRef": "U2_FPGA",
+      "mpn": "iCE40UP5K-UWG30ITR",
+      "footprint": "WLCSP-30_L2.5-W2.1-R6-C5-P0.40-TL",
+      "origin": "OEM-embedded-audited"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "U9",
+      "sourceRef": "U9_IMU",
+      "mpn": "ICM-42688-P",
+      "footprint": "LGA-14_L3.0-W2.5-P0.50-TL",
+      "origin": "OEM-embedded-audited"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "MK2",
+      "sourceRef": "MK2_C",
+      "mpn": "IM69D130V01XTSA1",
+      "footprint": "MIC-SMD_5P-L4.0-W3.0-P0.70-TR_IM69D130V01",
+      "origin": "OEM-embedded-audited"
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "U10",
+      "sourceRef": "U10_AMP_R",
+      "mpn": "MAX98357AEWL+T",
+      "footprint": "WLP-9_L1.4-W1.3-P0.40-R3-C3-BR",
+      "origin": "OEM-embedded-audited"
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "U1",
+      "sourceRef": "U10_SD_BUF",
+      "mpn": "SN74LVC1G3157DSFR",
+      "footprint": "X2SON-6_L1.0-W1.0-P0.35-TL",
+      "origin": "OEM-embedded-audited"
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "MK3",
+      "sourceRef": "MK3_R",
+      "mpn": "IM69D130V01XTSA1",
+      "footprint": "MIC-SMD_5P-L4.0-W3.0-P0.70-TR_IM69D130V01",
+      "origin": "OEM-embedded-audited"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "U3",
+      "sourceRef": "U_AVDD_CLEAR_OD",
+      "mpn": "74LVC2G07GS",
+      "footprint": "X2SON-6_L1.0-W1.0-P0.35-TL",
+      "origin": "Nexperia-SOT1202-XSON6"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "U5",
+      "sourceRef": "U_AVDD_EN_OD",
+      "mpn": "74LVC2G07GS",
+      "footprint": "X2SON-6_L1.0-W1.0-P0.35-TL",
+      "origin": "Nexperia-SOT1202-XSON6"
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "Q1",
+      "sourceRef": "Q_CHG_MUTE_R",
+      "mpn": "2N7002",
+      "footprint": "Nexperia_SOT23_TO-236AB",
+      "origin": "Nexperia-SOT23"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "R21",
+      "sourceRef": "R_LIMIT",
+      "mpn": "RC0402FR-07150RL (150R 1% 0402 100mW, ECO-02)",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "ECO-02-0402-100mW"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "R31",
+      "sourceRef": "R_SENSE",
+      "mpn": "1.10R 0.1% 0402 Kelvin (ECO-02)",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "ECO-02-0402-Kelvin"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "C27",
+      "sourceRef": "C_OR_OUT",
+      "mpn": "22uF 10V X5R 0603 (ECO-01 bulk; >=30uF effective VSYS)",
+      "footprint": "IPC_0603_1608Metric",
+      "origin": "ECO-01-0603-22uF"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "R28",
+      "sourceRef": "R_PRIV_RC",
+      "mpn": "",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "R33",
+      "sourceRef": "R_WIN_BOT",
+      "mpn": "",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "R34",
+      "sourceRef": "R_WIN_MID",
+      "mpn": "",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "R35",
+      "sourceRef": "R_WIN_TOP",
+      "mpn": "",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "C35",
+      "sourceRef": "C_U8_LS1_A",
+      "mpn": "",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "C36",
+      "sourceRef": "C_U8_LS1_B",
+      "mpn": "",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "C5",
+      "sourceRef": "C_CAM_SCCB_EN",
+      "mpn": "",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "C15",
+      "sourceRef": "C_INA_SUPPLY",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "C16",
+      "sourceRef": "C_LDO_AVDD_IN",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "C17",
+      "sourceRef": "C_LDO_AVDD_OUT",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "C18",
+      "sourceRef": "C_LDO_DOVDD_IN",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "C19",
+      "sourceRef": "C_LDO_DOVDD_OUT",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "C20",
+      "sourceRef": "C_LDO_DVDD_IN",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "C21",
+      "sourceRef": "C_LDO_DVDD_OUT",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "C22",
+      "sourceRef": "C_LDO_LED_IN",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "C23",
+      "sourceRef": "C_LDO_LED_OUT",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "C28",
+      "sourceRef": "C_PRIV_RC",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "C31",
+      "sourceRef": "C_U8_CAM_ISO1_A",
+      "mpn": "",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "C32",
+      "sourceRef": "C_U8_CAM_ISO1_B",
+      "mpn": "",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "C33",
+      "sourceRef": "C_U8_CAM_ISO2_A",
+      "mpn": "",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "C34",
+      "sourceRef": "C_U8_CAM_ISO2_B",
+      "mpn": "",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "C41",
+      "sourceRef": "C_WIN_SUPPLY",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "C24",
+      "sourceRef": "C_MK1_L",
+      "mpn": "",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "C29",
+      "sourceRef": "C_U8_AUD_LS2_A",
+      "mpn": "",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "C30",
+      "sourceRef": "C_U8_AUD_LS2_B",
+      "mpn": "",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "C37",
+      "sourceRef": "C_U8_PDM_LS_A",
+      "mpn": "",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "C38",
+      "sourceRef": "C_U8_PDM_LS_B",
+      "mpn": "",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "C39",
+      "sourceRef": "C_U10_AMP_L_BULK",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "C40",
+      "sourceRef": "C_U10_AMP_L_HF",
+      "mpn": "",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "C1",
+      "sourceRef": "C_BB_IN",
+      "mpn": "",
+      "footprint": "IPC_0603_1608Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "C2",
+      "sourceRef": "C_BB_OUT",
+      "mpn": "",
+      "footprint": "IPC_0603_1608Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "C3",
+      "sourceRef": "C_BK_IN",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "C4",
+      "sourceRef": "C_BK_OUT",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "C7",
+      "sourceRef": "C_CHG_L_BAT",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "C8",
+      "sourceRef": "C_CHG_L_IN",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "C9",
+      "sourceRef": "C_CHG_L_SYS",
+      "mpn": "",
+      "footprint": "IPC_0603_1608Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "C25",
+      "sourceRef": "C_OR_IN1",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "C26",
+      "sourceRef": "C_OR_IN2",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "R19",
+      "sourceRef": "R_ISO_GATE",
+      "mpn": "",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "R20",
+      "sourceRef": "R_ISO_PD",
+      "mpn": "",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "C13",
+      "sourceRef": "C_FPGA_CORE_BULK",
+      "mpn": "",
+      "footprint": "IPC_0603_1608Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "C14",
+      "sourceRef": "C_FPGA_CORE_HF",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "C15",
+      "sourceRef": "C_FPGA_IO_BULK",
+      "mpn": "",
+      "footprint": "IPC_0603_1608Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "C16",
+      "sourceRef": "C_FPGA_IO_HF0",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "C17",
+      "sourceRef": "C_FPGA_IO_HF1",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "C18",
+      "sourceRef": "C_FPGA_IO_HF2",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "C19",
+      "sourceRef": "C_FPGA_OSC_HF",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "C20",
+      "sourceRef": "C_FPGA_PLL_BULK",
+      "mpn": "",
+      "footprint": "IPC_0603_1608Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "C21",
+      "sourceRef": "C_FPGA_PLL_HF",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "C22",
+      "sourceRef": "C_FPGA_VPP_BULK",
+      "mpn": "",
+      "footprint": "IPC_0603_1608Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "C23",
+      "sourceRef": "C_FPGA_VPP_HF",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "C27",
+      "sourceRef": "C_LDO_1V2F_IN",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "C28",
+      "sourceRef": "C_LDO_1V2F_OUT",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "C29",
+      "sourceRef": "C_LDO_1V8F_IN",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "C30",
+      "sourceRef": "C_LDO_1V8F_OUT",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "C33",
+      "sourceRef": "C_MK2_C",
+      "mpn": "",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "C1",
+      "sourceRef": "C_AVDD_LS_A",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "C2",
+      "sourceRef": "C_AVDD_QUAL",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "C3",
+      "sourceRef": "C_AVDD_REQ_FILTER",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "C4",
+      "sourceRef": "C_AVDD_U_AVDD_CLEAR_OD_V",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "C5",
+      "sourceRef": "C_AVDD_U_AVDD_EN_OD_V",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "C6",
+      "sourceRef": "C_AVDD_U_AVDD_IO_PG_V",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "C7",
+      "sourceRef": "C_AVDD_U_AVDD_LS_V",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "C8",
+      "sourceRef": "C_AVDD_U_AVDD_QUAL_V",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "C9",
+      "sourceRef": "C_AVDD_U_AVDD_SCHMITT_V",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "C10",
+      "sourceRef": "C_AVDD_U_AVDD_SYS_CLAMP_V",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "C11",
+      "sourceRef": "C_AVDD_U_AVDD_SYS_PG_V",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "C12",
+      "sourceRef": "C_AVDD_U_AVDD_WD_V",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "C31",
+      "sourceRef": "C_LDO_OPT_IN",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "R1",
+      "sourceRef": "R_AVDD_CRST_PD",
+      "mpn": "",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "R2",
+      "sourceRef": "R_AVDD_D3_PD",
+      "mpn": "",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "R3",
+      "sourceRef": "R_AVDD_EN_FEED",
+      "mpn": "",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "R4",
+      "sourceRef": "R_AVDD_EN_PD",
+      "mpn": "",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "R5",
+      "sourceRef": "R_AVDD_PG_PU",
+      "mpn": "",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "R6",
+      "sourceRef": "R_AVDD_QUAL_PU",
+      "mpn": "",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "R7",
+      "sourceRef": "R_AVDD_REQ_FILTER",
+      "mpn": "",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "R8",
+      "sourceRef": "R_AVDD_WD_DIV_H",
+      "mpn": "",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "R9",
+      "sourceRef": "R_AVDD_WD_DIV_L",
+      "mpn": "",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "R10",
+      "sourceRef": "R_AVDD_WD_SET",
+      "mpn": "",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "C1",
+      "sourceRef": "C_AMP_SD_BUF",
+      "mpn": "",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "C4",
+      "sourceRef": "C_MK3_R",
+      "mpn": "",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "C5",
+      "sourceRef": "C_U10_AMP_R_BULK",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "C6",
+      "sourceRef": "C_U10_AMP_R_HF",
+      "mpn": "",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "L1",
+      "sourceRef": "NRF_L1",
+      "mpn": "",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "L2",
+      "sourceRef": "NRF_L2",
+      "mpn": "",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "L3",
+      "sourceRef": "NRF_L3",
+      "mpn": "",
+      "footprint": "IPC_0603_1608Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "L4",
+      "sourceRef": "NRF_L4",
+      "mpn": "",
+      "footprint": "IPC_0603_1608Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "C2",
+      "sourceRef": "C_CHG_R_IN",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "C3",
+      "sourceRef": "C_CHG_R_OUT",
+      "mpn": "",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "R7",
+      "sourceRef": "R_MUTE_GATE",
+      "mpn": "",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "R8",
+      "sourceRef": "R_MUTE_PD",
+      "mpn": "",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-PACKAGE_CLASS_ONLY"
+    }
+  ]
+}
