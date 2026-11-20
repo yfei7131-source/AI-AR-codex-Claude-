@@ -1,0 +1,752 @@
+{
+  "document": "EVT-1 V1.0 Independent Chief System Architecture Review",
+  "baseline_pr": "PR #35 (hardware/evt1-h02-erc-20261120)",
+  "baseline_commit": "ccc535842fca777bf1b84611556983db03af40d7",
+  "status": "ARCHITECTURE_REVIEW_CONDITIONAL_NOT_FOR_FAB",
+  "bridge_integration": {
+    "pr35_baseline_overflow_audit": {
+      "usable_both_sides_mm2": 158.7,
+      "pr35_14_placed_cell_mm2": 110.14,
+      "pr35_69_omitted_plus_launches_mm2": 127.83,
+      "pr35_total_required_mm2": 237.97,
+      "pr35_packing_ratio_pct": 150.0,
+      "verdict": "FAIL_MATHEMATICAL_OVERFLOW"
+    },
+    "option_a_strict_22x4_2_with_3_flex_islands": {
+      "status": "CONDITIONAL_PASS",
+      "results": {
+        "TOP": {
+          "requested": 40,
+          "placed_count": 40,
+          "failed": [],
+          "body_fill_pct": 49.26,
+          "min_gap_mm": 0.2,
+          "min_edge_mm": 0.254,
+          "keepout_clashes": 0,
+          "key_ics": [
+            {
+              "ref": "D3_PRIV",
+              "center_mm": [
+                2.1,
+                1.45
+              ],
+              "box_mm": [
+                1.7,
+                0.35,
+                2.5,
+                2.55
+              ],
+              "rot_deg": 0
+            },
+            {
+              "ref": "U2_FPGA",
+              "center_mm": [
+                2.1,
+                9.5
+              ],
+              "box_mm": [
+                1.0,
+                8.2,
+                3.2,
+                10.8
+              ],
+              "rot_deg": 0
+            },
+            {
+              "ref": "U9_IMU",
+              "center_mm": [
+                2.1,
+                19.2
+              ],
+              "box_mm": [
+                0.825,
+                17.675,
+                3.375,
+                20.725
+              ],
+              "rot_deg": 0
+            },
+            {
+              "ref": "U_AVDD_IO_PG",
+              "center_mm": [
+                1.029,
+                12.429
+              ],
+              "box_mm": [
+                0.254,
+                11.654,
+                1.804,
+                13.204
+              ],
+              "rot_deg": 0
+            },
+            {
+              "ref": "U_AVDD_SYS_PG",
+              "center_mm": [
+                1.029,
+                6.429
+              ],
+              "box_mm": [
+                0.254,
+                5.654,
+                1.804,
+                7.204
+              ],
+              "rot_deg": 0
+            },
+            {
+              "ref": "U_AVDD_QUAL",
+              "center_mm": [
+                2.804,
+                4.979
+              ],
+              "box_mm": [
+                2.054,
+                4.454,
+                3.554,
+                5.504
+              ],
+              "rot_deg": 0
+            },
+            {
+              "ref": "U_FPGA_SEQ",
+              "center_mm": [
+                2.579,
+                11.804
+              ],
+              "box_mm": [
+                2.054,
+                11.054,
+                3.104,
+                12.554
+              ],
+              "rot_deg": 90
+            },
+            {
+              "ref": "U_AVDD_SCHMITT",
+              "center_mm": [
+                1.259,
+                4.829
+              ],
+              "box_mm": [
+                0.734,
+                4.304,
+                1.784,
+                5.354
+              ],
+              "rot_deg": 0
+            },
+            {
+              "ref": "U_AVDD_CLEAR_OD",
+              "center_mm": [
+                2.579,
+                3.629
+              ],
+              "box_mm": [
+                2.054,
+                3.104,
+                3.104,
+                4.154
+              ],
+              "rot_deg": 0
+            },
+            {
+              "ref": "U_AVDD_EN_OD",
+              "center_mm": [
+                2.579,
+                13.529
+              ],
+              "box_mm": [
+                2.054,
+                13.004,
+                3.104,
+                14.054
+              ],
+              "rot_deg": 0
+            }
+          ]
+        },
+        "BOTTOM": {
+          "requested": 43,
+          "placed_count": 43,
+          "failed": [],
+          "body_fill_pct": 48.76,
+          "min_gap_mm": 0.2,
+          "min_edge_mm": 0.254,
+          "keepout_clashes": 0,
+          "key_ics": [
+            {
+              "ref": "Y1_OSC",
+              "center_mm": [
+                2.1,
+                9.5
+              ],
+              "box_mm": [
+                1.275,
+                8.475,
+                2.925,
+                10.525
+              ],
+              "rot_deg": 0
+            },
+            {
+              "ref": "MK2_C",
+              "center_mm": [
+                2.1,
+                16.5
+              ],
+              "box_mm": [
+                0.825,
+                14.675,
+                3.375,
+                18.325
+              ],
+              "rot_deg": 0
+            },
+            {
+              "ref": "U_AVDD_WD",
+              "center_mm": [
+                1.279,
+                4.479
+              ],
+              "box_mm": [
+                0.254,
+                2.954,
+                2.304,
+                6.004
+              ],
+              "rot_deg": 0
+            },
+            {
+              "ref": "U_AVDD_SYS_CLAMP",
+              "center_mm": [
+                1.029,
+                19.479
+              ],
+              "box_mm": [
+                0.254,
+                18.704,
+                1.804,
+                20.254
+              ],
+              "rot_deg": 0
+            },
+            {
+              "ref": "U_AVDD_LS",
+              "center_mm": [
+                1.229,
+                7.029
+              ],
+              "box_mm": [
+                0.254,
+                6.554,
+                2.204,
+                7.504
+              ],
+              "rot_deg": 90
+            },
+            {
+              "ref": "U4_1V2",
+              "center_mm": [
+                0.779,
+                11.429
+              ],
+              "box_mm": [
+                0.254,
+                10.904,
+                1.304,
+                11.954
+              ],
+              "rot_deg": 0
+            },
+            {
+              "ref": "U4_1V8F",
+              "center_mm": [
+                2.099,
+                11.429
+              ],
+              "box_mm": [
+                1.574,
+                10.904,
+                2.624,
+                11.954
+              ],
+              "rot_deg": 0
+            },
+            {
+              "ref": "U6_OPT_AVDD",
+              "center_mm": [
+                0.779,
+                12.929
+              ],
+              "box_mm": [
+                0.254,
+                12.404,
+                1.304,
+                13.454
+              ],
+              "rot_deg": 0
+            }
+          ]
+        }
+      }
+    },
+    "option_b_25x4_6_onboard_20p_with_2_opt_wings": {
+      "status": "CONDITIONAL_PASS",
+      "results": {
+        "TOP": {
+          "requested": 40,
+          "placed_count": 40,
+          "failed": [],
+          "body_fill_pct": 39.0,
+          "min_gap_mm": 0.2,
+          "min_edge_mm": 0.254,
+          "keepout_clashes": 0,
+          "key_ics": [
+            {
+              "ref": "D3_PRIV",
+              "center_mm": [
+                2.3,
+                1.45
+              ],
+              "box_mm": [
+                1.9,
+                0.35,
+                2.7,
+                2.55
+              ],
+              "rot_deg": 0
+            },
+            {
+              "ref": "U2_FPGA",
+              "center_mm": [
+                2.3,
+                9.5
+              ],
+              "box_mm": [
+                1.2,
+                8.2,
+                3.4,
+                10.8
+              ],
+              "rot_deg": 0
+            },
+            {
+              "ref": "U9_IMU",
+              "center_mm": [
+                2.3,
+                19.2
+              ],
+              "box_mm": [
+                1.025,
+                17.675,
+                3.575,
+                20.725
+              ],
+              "rot_deg": 0
+            },
+            {
+              "ref": "U_AVDD_IO_PG",
+              "center_mm": [
+                1.029,
+                12.429
+              ],
+              "box_mm": [
+                0.254,
+                11.654,
+                1.804,
+                13.204
+              ],
+              "rot_deg": 0
+            },
+            {
+              "ref": "U_AVDD_SYS_PG",
+              "center_mm": [
+                1.029,
+                6.429
+              ],
+              "box_mm": [
+                0.254,
+                5.654,
+                1.804,
+                7.204
+              ],
+              "rot_deg": 0
+            },
+            {
+              "ref": "U_AVDD_QUAL",
+              "center_mm": [
+                2.804,
+                4.979
+              ],
+              "box_mm": [
+                2.054,
+                4.454,
+                3.554,
+                5.504
+              ],
+              "rot_deg": 0
+            },
+            {
+              "ref": "U_FPGA_SEQ",
+              "center_mm": [
+                2.579,
+                11.804
+              ],
+              "box_mm": [
+                2.054,
+                11.054,
+                3.104,
+                12.554
+              ],
+              "rot_deg": 90
+            },
+            {
+              "ref": "U_AVDD_SCHMITT",
+              "center_mm": [
+                1.259,
+                4.829
+              ],
+              "box_mm": [
+                0.734,
+                4.304,
+                1.784,
+                5.354
+              ],
+              "rot_deg": 0
+            },
+            {
+              "ref": "U_AVDD_CLEAR_OD",
+              "center_mm": [
+                2.579,
+                3.629
+              ],
+              "box_mm": [
+                2.054,
+                3.104,
+                3.104,
+                4.154
+              ],
+              "rot_deg": 0
+            },
+            {
+              "ref": "U_AVDD_EN_OD",
+              "center_mm": [
+                2.579,
+                13.529
+              ],
+              "box_mm": [
+                2.054,
+                13.004,
+                3.104,
+                14.054
+              ],
+              "rot_deg": 0
+            }
+          ]
+        },
+        "BOTTOM": {
+          "requested": 44,
+          "placed_count": 44,
+          "failed": [],
+          "body_fill_pct": 50.86,
+          "min_gap_mm": 0.2,
+          "min_edge_mm": 0.254,
+          "keepout_clashes": 0,
+          "key_ics": [
+            {
+              "ref": "Y1_OSC",
+              "center_mm": [
+                2.3,
+                9.5
+              ],
+              "box_mm": [
+                1.475,
+                8.475,
+                3.125,
+                10.525
+              ],
+              "rot_deg": 0
+            },
+            {
+              "ref": "MK2_C",
+              "center_mm": [
+                2.3,
+                16.5
+              ],
+              "box_mm": [
+                1.025,
+                14.675,
+                3.575,
+                18.325
+              ],
+              "rot_deg": 0
+            },
+            {
+              "ref": "J_BRIDGE_IN_20P",
+              "center_mm": [
+                2.3,
+                3.55
+              ],
+              "box_mm": [
+                1.325,
+                0.4,
+                3.275,
+                6.7
+              ],
+              "rot_deg": 0
+            },
+            {
+              "ref": "U_AVDD_WD",
+              "center_mm": [
+                1.779,
+                11.779
+              ],
+              "box_mm": [
+                0.254,
+                10.754,
+                3.304,
+                12.804
+              ],
+              "rot_deg": 90
+            },
+            {
+              "ref": "U_AVDD_SYS_CLAMP",
+              "center_mm": [
+                1.029,
+                19.479
+              ],
+              "box_mm": [
+                0.254,
+                18.704,
+                1.804,
+                20.254
+              ],
+              "rot_deg": 0
+            },
+            {
+              "ref": "U_AVDD_LS",
+              "center_mm": [
+                1.229,
+                7.479
+              ],
+              "box_mm": [
+                0.254,
+                7.004,
+                2.204,
+                7.954
+              ],
+              "rot_deg": 90
+            },
+            {
+              "ref": "U4_1V2",
+              "center_mm": [
+                0.779,
+                13.529
+              ],
+              "box_mm": [
+                0.254,
+                13.004,
+                1.304,
+                14.054
+              ],
+              "rot_deg": 0
+            },
+            {
+              "ref": "U4_1V8F",
+              "center_mm": [
+                2.099,
+                13.529
+              ],
+              "box_mm": [
+                1.574,
+                13.004,
+                2.624,
+                14.054
+              ],
+              "rot_deg": 0
+            },
+            {
+              "ref": "U6_OPT_AVDD",
+              "center_mm": [
+                3.419,
+                13.529
+              ],
+              "box_mm": [
+                2.894,
+                13.004,
+                3.944,
+                14.054
+              ],
+              "rot_deg": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "privacy_interlock": {
+    "baseline_2v8_defect": {
+      "window_v": [
+        1.091,
+        2.182
+      ],
+      "cold_-10C_100mV_gnd_ma": 1.483,
+      "cold_v_ina_v": 0.6526,
+      "hot_+60C_ma": 6.111,
+      "hot_v_ina_v": 2.689,
+      "verdict": "FAIL_BOTH_COLD_AND_HOT"
+    },
+    "proposed_3v3_switched_solution": {
+      "switch_mpn": "TPS22916CYFPR",
+      "r_limit_ohm": 200.0,
+      "r_sense_ohm": 1.4,
+      "divider_kohm": [
+        12.1,
+        56.2,
+        34.8
+      ],
+      "all_6_corners_pass": true,
+      "corners": [
+        {
+          "case": "cold_-10C_50mV_gnd",
+          "expect": "ALLOW",
+          "i_led_ma": 4.237,
+          "v_ina_v": 1.1624,
+          "vth_l_range_v": [
+            1.0772,
+            1.1061
+          ],
+          "vth_h_range_v": [
+            2.8477,
+            2.8611
+          ],
+          "pass": true
+        },
+        {
+          "case": "cold_-10C_25C_max_0mV_gnd",
+          "expect": "ALLOW",
+          "i_led_ma": 5.071,
+          "v_ina_v": 1.3933,
+          "vth_l_range_v": [
+            1.0772,
+            1.1061
+          ],
+          "vth_h_range_v": [
+            2.8477,
+            2.8611
+          ],
+          "pass": true
+        },
+        {
+          "case": "nominal_25C",
+          "expect": "ALLOW",
+          "i_led_ma": 6.835,
+          "v_ina_v": 1.9138,
+          "vth_l_range_v": [
+            1.0992,
+            1.1287
+          ],
+          "vth_h_range_v": [
+            2.9058,
+            2.9195
+          ],
+          "pass": true
+        },
+        {
+          "case": "hot_+60C_0mV_gnd",
+          "expect": "ALLOW",
+          "i_led_ma": 10.185,
+          "v_ina_v": 2.8942,
+          "vth_l_range_v": [
+            1.1211,
+            1.1512
+          ],
+          "vth_h_range_v": [
+            2.9639,
+            2.9779
+          ],
+          "pass": true
+        },
+        {
+          "case": "attack_short_led",
+          "expect": "BLOCK",
+          "i_led_ma": 15.37,
+          "v_ina_v": 3.184,
+          "vth_l_range_v": [
+            1.0772,
+            1.1061
+          ],
+          "vth_h_range_v": [
+            2.8477,
+            2.8611
+          ],
+          "pass": true
+        },
+        {
+          "case": "attack_open_led",
+          "expect": "BLOCK",
+          "i_led_ma": 0.0,
+          "v_ina_v": 0.011,
+          "vth_l_range_v": [
+            1.1211,
+            1.1512
+          ],
+          "vth_h_range_v": [
+            2.9639,
+            2.9779
+          ],
+          "pass": true
+        }
+      ]
+    }
+  },
+  "power_fpga_thermal_mass": {
+    "fpga_1v2_to_1v8_sequencing_tps3895adryr": {
+      "r_top_kohm": 49.9,
+      "r_bot_kohm": 56.2,
+      "v_it_nom_v": 0.944,
+      "v_it_min_v": 0.9258,
+      "v_it_max_v": 0.9624,
+      "strictly_above_lattice_0_50v": true,
+      "strictly_below_1v2_min_1_14v": true,
+      "pass": true
+    },
+    "dual_battery_switchover_droop": {
+      "baseline_6uF_eff_0_8A_18us_droop_v": 2.4,
+      "proposed_30uF_eff_0_8A_18us_droop_v": 0.48,
+      "lm66200_hysteresis_mv": 0,
+      "recommended_mux": "TPS2116DRLR (Priority Mode with PR1 divider hysteresis)"
+    },
+    "dual_charger_usb_sdp": {
+      "bq25180_por_max_ma": 498.0,
+      "bq25170_5k49_1pct_max_ma": 60.72,
+      "combined_static_max_ma": 558.72,
+      "exceeds_500ma_usb_sdp": true,
+      "mitigation": "TPS2553DRVR front-end current limiter (R_ILIM=56.2k -> ~450 mA typ) + BQ25180 4.5 V VINDPM"
+    },
+    "thermal_skin_audit_43C_limit": {
+      "s3_845mw_uniform_25C_ambient_C": 45.7,
+      "s3_845mw_left_hotspot_25C_ambient_C": 50.35,
+      "s3_845mw_uniform_35C_ambient_C": 55.7,
+      "exceeds_43C_limit": true
+    },
+    "mass_budget_delta": {
+      "inherited_conditional_mass_g": 39.423,
+      "deltas_g": {
+        "bridge_ic_and_passive_shrink": -0.015,
+        "bridge_j_bridge_in_30p_to_20p": -0.007,
+        "bridge_add_tps3895adryr": 0.002,
+        "main_add_tps2553drvr_and_bulk_caps": 0.018,
+        "main_replace_tlv75528_with_tps22916": -0.002,
+        "right_add_fc1610an_32k_xtal_and_caps": 0.004,
+        "mics_3x_im69d130_to_im69d127v11": -0.018
+      },
+      "net_delta_g": -0.018,
+      "updated_conditional_mass_g": 39.405,
+      "preserves_40g_target": true,
+      "note": "CONDITIONAL analytical delta only; physical mass remains UNVERIFIED until weighed."
+    }
+  },
+  "all_analytical_design_checks_pass": true
+}
