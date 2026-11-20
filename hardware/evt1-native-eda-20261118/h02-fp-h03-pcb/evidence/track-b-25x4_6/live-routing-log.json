@@ -1,0 +1,219 @@
+{
+  "layers_used": {
+    "TOP": 1,
+    "L3_Inner2": 16,
+    "L4_Inner4": 18,
+    "BOT": 2
+  },
+  "tracks_created": 185,
+  "vias_created": 45,
+  "gnd_plane_vias": 29,
+  "nets": [
+    {
+      "net": "GND (L2/L5 plane stitch)",
+      "pads": 79,
+      "stitched_pads": 29,
+      "tracks": 29,
+      "vias": 29
+    },
+    {
+      "net": "FPGA_1V2_SENSE",
+      "pads": 3,
+      "mst_edges": 2,
+      "edges_routed": 0,
+      "width_mil": 3.0,
+      "tracks": 0,
+      "vias": 0
+    },
+    {
+      "net": "FPGA_1V8_EN",
+      "pads": 2,
+      "mst_edges": 1,
+      "edges_routed": 0,
+      "width_mil": 3.0,
+      "tracks": 0,
+      "vias": 0
+    },
+    {
+      "net": "clk_48m",
+      "pads": 2,
+      "mst_edges": 1,
+      "edges_routed": 0,
+      "width_mil": 3.0,
+      "tracks": 0,
+      "vias": 0
+    },
+    {
+      "net": "PRIV_LED_ANODE",
+      "pads": 2,
+      "mst_edges": 1,
+      "edges_routed": 1,
+      "width_mil": 4.0,
+      "tracks": 12,
+      "vias": 2
+    },
+    {
+      "net": "AVDD_WD_SET",
+      "pads": 2,
+      "mst_edges": 1,
+      "edges_routed": 0,
+      "width_mil": 3.0,
+      "tracks": 0,
+      "vias": 0
+    },
+    {
+      "net": "AVDD_WD_DIV",
+      "pads": 3,
+      "mst_edges": 2,
+      "edges_routed": 2,
+      "width_mil": 3.0,
+      "tracks": 12,
+      "vias": 3
+    },
+    {
+      "net": "AVDD_CRESET_VSYS",
+      "pads": 3,
+      "mst_edges": 2,
+      "edges_routed": 0,
+      "width_mil": 3.0,
+      "tracks": 0,
+      "vias": 0
+    },
+    {
+      "net": "AVDD_PULSE_QUAL",
+      "pads": 3,
+      "mst_edges": 2,
+      "edges_routed": 0,
+      "width_mil": 3.0,
+      "tracks": 0,
+      "vias": 0
+    },
+    {
+      "net": "AVDD_PG_OK",
+      "pads": 3,
+      "mst_edges": 2,
+      "edges_routed": 0,
+      "width_mil": 3.0,
+      "tracks": 0,
+      "vias": 0
+    },
+    {
+      "net": "AVDD_QUAL_CLR_N",
+      "pads": 3,
+      "mst_edges": 2,
+      "edges_routed": 1,
+      "width_mil": 3.0,
+      "tracks": 12,
+      "vias": 1
+    },
+    {
+      "net": "AVDD_REQ_FILTER",
+      "pads": 3,
+      "mst_edges": 2,
+      "edges_routed": 0,
+      "width_mil": 3.0,
+      "tracks": 0,
+      "vias": 0
+    },
+    {
+      "net": "AVDD_QUAL_RC",
+      "pads": 5,
+      "mst_edges": 4,
+      "edges_routed": 0,
+      "width_mil": 3.0,
+      "tracks": 0,
+      "vias": 0
+    },
+    {
+      "net": "AVDD_D3_VSYS",
+      "pads": 5,
+      "mst_edges": 4,
+      "edges_routed": 1,
+      "width_mil": 3.0,
+      "tracks": 3,
+      "vias": 0
+    },
+    {
+      "net": "AVDD_WD_Q",
+      "pads": 5,
+      "mst_edges": 4,
+      "edges_routed": 0,
+      "width_mil": 3.0,
+      "tracks": 0,
+      "vias": 0
+    },
+    {
+      "net": "AVDD_PG_NODE",
+      "pads": 5,
+      "mst_edges": 4,
+      "edges_routed": 2,
+      "width_mil": 3.0,
+      "tracks": 18,
+      "vias": 2
+    },
+    {
+      "net": "OPT_AVDD_EN",
+      "pads": 7,
+      "mst_edges": 6,
+      "edges_routed": 0,
+      "width_mil": 3.0,
+      "tracks": 0,
+      "vias": 0
+    },
+    {
+      "net": "AVDD_OPT_BIAS",
+      "pads": 7,
+      "mst_edges": 6,
+      "edges_routed": 2,
+      "width_mil": 4.0,
+      "tracks": 22,
+      "vias": 0
+    },
+    {
+      "net": "1V2_FPGA_PLL",
+      "pads": 5,
+      "mst_edges": 4,
+      "edges_routed": 0,
+      "width_mil": 4.0,
+      "tracks": 0,
+      "vias": 0
+    },
+    {
+      "net": "1V8_FPGA_VPP",
+      "pads": 4,
+      "mst_edges": 3,
+      "edges_routed": 0,
+      "width_mil": 4.0,
+      "tracks": 0,
+      "vias": 0
+    },
+    {
+      "net": "1V2_FPGA_CORE",
+      "pads": 6,
+      "mst_edges": 5,
+      "edges_routed": 0,
+      "width_mil": 4.0,
+      "tracks": 0,
+      "vias": 0
+    },
+    {
+      "net": "1V8_FPGA_IO",
+      "pads": 23,
+      "mst_edges": 22,
+      "edges_routed": 3,
+      "width_mil": 4.0,
+      "tracks": 17,
+      "vias": 2
+    },
+    {
+      "net": "VSYS",
+      "pads": 35,
+      "mst_edges": 34,
+      "edges_routed": 14,
+      "width_mil": 4.0,
+      "tracks": 60,
+      "vias": 6
+    }
+  ],
+  "cli_failures": 0
+}

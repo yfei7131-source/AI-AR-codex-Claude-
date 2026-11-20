@@ -1,0 +1,767 @@
+{
+  "status": "TRACK_A_CANDIDATE_BUILT",
+  "manufacturing": "BLOCKED",
+  "baselineSha256": "f9d885f5217c9bdcb29118dd71d460f8e78ca4a2c943f018d6c13ffff156be73",
+  "candidateSha256": "f2eb1f324788b52bc023c25f3e3dc73340c1da76103485406e486e15b0fdad29",
+  "pcb2OutlinePreservedMm": [
+    22.0,
+    4.2
+  ],
+  "newFootprintsCreated": [
+    "Hirose_BM28B0.6-30DS_2-0.35V",
+    "Hirose_BM28B0.6-16DS_2-0.35V",
+    "Nordic_nRF5340-CMAA_WLCSP95",
+    "ROHM_SOD-523_RB521S-30",
+    "Epson_FA-128_2016_4Pin",
+    "Johanson_2450AT18B100E_1206",
+    "EVT1_TP1_0.8mm",
+    "EVT1_TP5_SWD_0.6mm",
+    "EVT1_TP9_AVDD_0.6mm"
+  ],
+  "newlyBoundCount": 103,
+  "newlyBoundByBoard": {
+    "M-MAIN-L": 45,
+    "M-OPT-BRIDGE": 25,
+    "M-AUD-R": 33
+  },
+  "intentionallyBlockedRemaining": [
+    "M-AUD-R:BAT1",
+    "M-AUD-R:SPK1",
+    "M-MAIN-L:BAT1",
+    "M-MAIN-L:J2",
+    "M-MAIN-L:J3",
+    "M-MAIN-L:SPK1",
+    "M-OPT-BRIDGE:J2",
+    "M-OPT-BRIDGE:J3",
+    "M-OPT-BRIDGE:U6"
+  ],
+  "attributeHygiene": {
+    "pwr_flags_cleaned": 11,
+    "dnp_bom_no": 3,
+    "offboard_pcb_no": 4,
+    "nda_dnp_cleaned": 3
+  },
+  "boundItems": [
+    {
+      "board": "M-MAIN-L",
+      "ref": "R29",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "R30",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "R36",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "R37",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "R1",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "R2",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "R3",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "R4",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "R5",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "R9",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "TP4",
+      "footprint": "EVT1_TP1_0.8mm",
+      "origin": "EVT1-TP1-pad",
+      "pins": 1
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "TP5",
+      "footprint": "EVT1_TP1_0.8mm",
+      "origin": "EVT1-TP1-pad",
+      "pins": 1
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "R6",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "R10",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "TP1",
+      "footprint": "EVT1_TP1_0.8mm",
+      "origin": "EVT1-TP1-pad",
+      "pins": 1
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "TP2",
+      "footprint": "EVT1_TP1_0.8mm",
+      "origin": "EVT1-TP1-pad",
+      "pins": 1
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "TP3",
+      "footprint": "EVT1_TP1_0.8mm",
+      "origin": "EVT1-TP1-pad",
+      "pins": 1
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "R11",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "R12",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "R27",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "R28",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "R29",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "U11",
+      "footprint": "Nordic_nRF5340-CMAA_WLCSP95",
+      "origin": "Nordic-WLCSP95",
+      "pins": 95
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "TP6",
+      "footprint": "EVT1_TP5_SWD_0.6mm",
+      "origin": "EVT1-TP5-SWD",
+      "pins": 5
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "Y2",
+      "footprint": "Epson_FA-128_2016_4Pin",
+      "origin": "Epson-FA128",
+      "pins": 4
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "C7",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "C8",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-0402-cap",
+      "pins": 2
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "C9",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-0402-cap",
+      "pins": 2
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "C10",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "C11",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-0402-cap",
+      "pins": 2
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "C12",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "C13",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-0402-cap",
+      "pins": 2
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "C14",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "C15",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "C16",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-0402-cap",
+      "pins": 2
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "C17",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "C18",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "C19",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "C20",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-0402-cap",
+      "pins": 2
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "C21",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "ANT2",
+      "footprint": "Johanson_2450AT18B100E_1206",
+      "origin": "Johanson-1206",
+      "pins": 1
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "C6",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "C42",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "D1",
+      "footprint": "ROHM_SOD-523_RB521S-30",
+      "origin": "ROHM-SOD523",
+      "pins": 2
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "R3",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "R4",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "R5",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "R6",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "R27",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-AUD-R",
+      "ref": "J1",
+      "footprint": "Hirose_BM28B0.6-16DS_2-0.35V",
+      "origin": "Hirose-BM28-16+2P",
+      "pins": 18
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "C24",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-0402-cap",
+      "pins": 2
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "C25",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-0402-cap",
+      "pins": 2
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "C26",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "TP6",
+      "footprint": "EVT1_TP1_0.8mm",
+      "origin": "EVT1-TP1-pad",
+      "pins": 1
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "TP7",
+      "footprint": "EVT1_TP1_0.8mm",
+      "origin": "EVT1-TP1-pad",
+      "pins": 1
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "C10",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-0402-cap",
+      "pins": 2
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "C11",
+      "footprint": "IPC_0603_1608Metric",
+      "origin": "IPC-7351B-0603-bulk",
+      "pins": 2
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "C12",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "C13",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "C14",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-0402-cap",
+      "pins": 2
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "R7",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "R8",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "R9",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "R11",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "R12",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "R13",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "R14",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "R15",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "R16",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "R17",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "R18",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "R22",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "R23",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "R24",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "R25",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "R26",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "ANT1",
+      "footprint": "Johanson_2450AT18B100E_1206",
+      "origin": "Johanson-1206",
+      "pins": 1
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "TP3",
+      "footprint": "EVT1_TP1_0.8mm",
+      "origin": "EVT1-TP1-pad",
+      "pins": 1
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "TP4",
+      "footprint": "EVT1_TP1_0.8mm",
+      "origin": "EVT1-TP1-pad",
+      "pins": 1
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "J1",
+      "footprint": "Hirose_BM28B0.6-30DS_2-0.35V",
+      "origin": "Hirose-BM28-30+2P",
+      "pins": 32
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "R13",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "R14",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "R15",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "R16",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "R17",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "R18",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "R19",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "R20",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "R21",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "R22",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "R23",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "R24",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "R25",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "R26",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "R1",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "R2",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "R32",
+      "footprint": "IPC_0201_0603Metric",
+      "origin": "IPC-7351B-0201",
+      "pins": 2
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "TP1",
+      "footprint": "EVT1_TP1_0.8mm",
+      "origin": "EVT1-TP1-pad",
+      "pins": 1
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "TP2",
+      "footprint": "EVT1_TP1_0.8mm",
+      "origin": "EVT1-TP1-pad",
+      "pins": 1
+    },
+    {
+      "board": "M-MAIN-L",
+      "ref": "TP5",
+      "footprint": "EVT1_TP1_0.8mm",
+      "origin": "EVT1-TP1-pad",
+      "pins": 1
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "TP1",
+      "footprint": "EVT1_TP9_AVDD_0.6mm",
+      "origin": "EVT1-TP9-array",
+      "pins": 9
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "C32",
+      "footprint": "IPC_0402_1005Metric",
+      "origin": "IPC-7351B-0402-cap",
+      "pins": 2
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "ref": "J1",
+      "footprint": "Hirose_BM28B0.6-30DS_2-0.35V",
+      "origin": "Hirose-BM28-30+2P",
+      "pins": 32
+    }
+  ]
+}
