@@ -1,0 +1,160 @@
+{
+  "status": "VERIFIED_H02_FP_CONVERGENCE_AND_MECR01_25x4_6_TRIAL",
+  "manufacturing": "BLOCKED",
+  "track_a_22x4_2_baseline": {
+    "archive_sha256": "8483c0594bd5e20aee3f91cb0b851d84a2036bf7f211ebb92c0d05a35309db8e",
+    "board_outline_mm": [
+      22.0,
+      4.2
+    ],
+    "pcb2_placed": 17,
+    "pcb2_clearance_errors": 0,
+    "rev_e_net_groups_total": 207,
+    "net_parity_vs_pr39": {
+      "M-MAIN-L": {
+        "net_groups": 112,
+        "status": "PASS_EXACT_PR39_PARITY"
+      },
+      "M-OPT-BRIDGE": {
+        "net_groups": 58,
+        "status": "PASS_EXACT_PR39_PARITY"
+      },
+      "M-AUD-R": {
+        "net_groups": 37,
+        "status": "PASS_EXACT_PR39_PARITY"
+      }
+    },
+    "rev_e_eco_checks": {
+      "ECO-03_FPGA_1V2_SENSE_AND_1V8_EN": true,
+      "ECO-07_USB_ILIM_61K9": true,
+      "ECO-08_NRF_32K_XTAL": true,
+      "ECO-09_NO_FLOATING_CMOS": true,
+      "ECO-14_USB_ESD_GND": true,
+      "ECO-02_LED_3V3_PRIV": true
+    },
+    "strict_erc_progression": {
+      "pr36_total": 268,
+      "pr38_total": 246,
+      "pr39_total": 130,
+      "track_a_total": 27,
+      "cleared_this_round": 103,
+      "boards": {
+        "M-MAIN-L": {
+          "pr39_before": 56,
+          "track_a_after": 11,
+          "cleared_this_round": 45,
+          "diagnostics_after": {
+            "ONLYSYMBOL": 7,
+            "MISSFOOTPRINT": 4
+          },
+          "remaining_missfootprint_refs": [
+            "BAT1",
+            "J2",
+            "J3",
+            "SPK1"
+          ]
+        },
+        "M-OPT-BRIDGE": {
+          "pr39_before": 34,
+          "track_a_after": 9,
+          "cleared_this_round": 25,
+          "diagnostics_after": {
+            "ONLYSYMBOL": 6,
+            "MISSFOOTPRINT": 3
+          },
+          "remaining_missfootprint_refs": [
+            "J2",
+            "J3",
+            "U6"
+          ]
+        },
+        "M-AUD-R": {
+          "pr39_before": 40,
+          "track_a_after": 7,
+          "cleared_this_round": 33,
+          "diagnostics_after": {
+            "ONLYSYMBOL": 5,
+            "MISSFOOTPRINT": 2
+          },
+          "remaining_missfootprint_refs": [
+            "BAT1",
+            "SPK1"
+          ]
+        }
+      }
+    },
+    "clean_engineering_bom": {
+      "M-MAIN-L": {
+        "total_parts_excl_pwr_flags": 122,
+        "bom_yes": 120,
+        "pcb_yes": 120,
+        "footprint_bound": 118
+      },
+      "M-OPT-BRIDGE": {
+        "total_parts_excl_pwr_flags": 86,
+        "bom_yes": 83,
+        "pcb_yes": 86,
+        "footprint_bound": 83
+      },
+      "M-AUD-R": {
+        "total_parts_excl_pwr_flags": 55,
+        "bom_yes": 54,
+        "pcb_yes": 53,
+        "footprint_bound": 53
+      }
+    }
+  },
+  "track_b_25x4_6_mecr01_trial": {
+    "archive_sha256": "e04512d5be2f827995075834a0a64ed0f54154b43e6fcba99b4ef8f8b2f60be7",
+    "board_outline_mm": [
+      25.0,
+      4.6
+    ],
+    "placed_components": 86,
+    "physical_pads": 328,
+    "unique_ids_matched": "86/86",
+    "live_routing": {
+      "nets_attempted": 23,
+      "nets_with_real_copper": 9,
+      "tracks_created": 185,
+      "vias_created": 45,
+      "gnd_plane_vias": 29,
+      "layers_used": {
+        "TOP": 1,
+        "L3_Inner2": 16,
+        "L4_Inner4": 18,
+        "BOT": 2
+      },
+      "airwires_reduced": 42
+    },
+    "drc_pre_route": {
+      "total": 309,
+      "netlist_errors": 1,
+      "mk2_slot_errors": 0,
+      "clearance_or_short_errors": 0,
+      "connection_airwire_errors": 308,
+      "by_rule": {
+        "Connection Error (SMD Pad)": 306,
+        "Connection Error (Plane Zone)": 2,
+        "Netlist Error (Netlist Error)": 1
+      }
+    },
+    "drc_post_route": {
+      "total": 338,
+      "netlist_errors": 1,
+      "mk2_slot_errors": 0,
+      "clearance_or_short_errors": 71,
+      "connection_airwire_errors": 266,
+      "by_rule": {
+        "Clearance Error (SMD Pad to Track)": 1,
+        "Clearance Error (SMD Pad to Via)": 3,
+        "Clearance Error (Hole to Plane Zone)": 32,
+        "Clearance Error (Plane Zone to Via)": 32,
+        "Clearance Error (Hole to SMD Pad)": 3,
+        "Connection Error (SMD Pad)": 251,
+        "Connection Error (Via)": 15,
+        "Netlist Error (Netlist Error)": 1
+      }
+    }
+  }
+}

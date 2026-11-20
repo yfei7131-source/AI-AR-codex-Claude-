@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "windowId": "bb506d69-fce2-4589-9a42-17c2ef571136",
+  "target": "4d38590959875927",
+  "documentType": "schematic",
+  "saved": true,
+  "closed": true,
+  "reloaded": "4d38590959875927",
+  "activeRestored": "4d38590959875927",
+  "startedAt": "2026-11-20T14:51:13.9826736Z",
+  "completedAt": "2026-11-20T14:51:17.1968379Z",
+  "timeSource": "cli-host-observation",
+  "targetContext": {
+    "projectUuid": "576ccce42fd1310e3cc2c3bbb14ccbae9eb92ba3990cbe17a1f01ede05b1f274",
+    "projectName": "EVT1-H02-FP-CONV-22x4_2-LIVE-20261120",
+    "documentUuid": "4d38590959875927",
+    "documentType": "schematic",
+    "tabId": "4d38590959875927@576ccce42fd1310e3cc2c3bbb14ccbae9eb92ba3990cbe17a1f01ede05b1f274"
+  },
+  "finalContext": {
+    "projectUuid": "576ccce42fd1310e3cc2c3bbb14ccbae9eb92ba3990cbe17a1f01ede05b1f274",
+    "projectName": "EVT1-H02-FP-CONV-22x4_2-LIVE-20261120",
+    "documentUuid": "4d38590959875927",
+    "documentType": "schematic",
+    "tabId": "4d38590959875927@576ccce42fd1310e3cc2c3bbb14ccbae9eb92ba3990cbe17a1f01ede05b1f274"
+  },
+  "readiness": {
+    "ready": true,
+    "scope": "component-inventory-readiness",
+    "active": {
+      "projectUuid": "576ccce42fd1310e3cc2c3bbb14ccbae9eb92ba3990cbe17a1f01ede05b1f274",
+      "projectName": "EVT1-H02-FP-CONV-22x4_2-LIVE-20261120",
+      "documentUuid": "4d38590959875927",
+      "documentType": "schematic",
+      "tabId": "4d38590959875927@576ccce42fd1310e3cc2c3bbb14ccbae9eb92ba3990cbe17a1f01ede05b1f274"
+    },
+    "componentCount": 8,
+    "componentSha256": "caba5072c8b17888c4196575627c66d85c23e5fdbfa4de901cf8361d6fb404a8",
+    "samples": 2,
+    "stableSamples": 2,
+    "requestIds": [
+      "req_4008",
+      "req_4009",
+      "req_4010",
+      "req_4011",
+      "req_4012"
+    ],
+    "observedAt": "2026-11-20T14:51:17.1968379Z"
+  },
+  "steps": [
+    {
+      "stage": "inspect",
+      "action": "document.current",
+      "startedAt": "2026-11-20T14:51:13.9826736Z",
+      "completedAt": "2026-11-20T14:51:14.0359199Z",
+      "requestId": "req_4003",
+      "responseCreatedAt": "2026-11-20T14:51:14.0348397Z",
+      "context": {
+        "projectUuid": "576ccce42fd1310e3cc2c3bbb14ccbae9eb92ba3990cbe17a1f01ede05b1f274",
+        "projectName": "EVT1-H02-FP-CONV-22x4_2-LIVE-20261120",
+        "documentUuid": "4d38590959875927",
+        "documentType": "schematic",
+        "tabId": "4d38590959875927@576ccce42fd1310e3cc2c3bbb14ccbae9eb92ba3990cbe17a1f01ede05b1f274"
+      },
+      "ok": true
+    },
+    {
+      "stage": "save",
+      "action": "schematic.save",
+      "startedAt": "2026-11-20T14:51:14.0359199Z",
+      "completedAt": "2026-11-20T14:51:14.0821645Z",
+      "requestId": "req_4004",
+      "responseCreatedAt": "2026-11-20T14:51:14.0806576Z",
+      "context": {
+        "projectUuid": "576ccce42fd1310e3cc2c3bbb14ccbae9eb92ba3990cbe17a1f01ede05b1f274",
+        "projectName": "EVT1-H02-FP-CONV-22x4_2-LIVE-20261120",
+        "documentUuid": "4d38590959875927",
+        "documentType": "schematic",
+        "tabId": "4d38590959875927@576ccce42fd1310e3cc2c3bbb14ccbae9eb92ba3990cbe17a1f01ede05b1f274"
+      },
+      "ok": true
+    },
+    {
+      "stage": "close",
+      "action": "document.close",
+      "startedAt": "2026-11-20T14:51:14.0821645Z",
+      "completedAt": "2026-11-20T14:51:14.6025203Z",
+      "requestId": "req_4005",
+      "responseCreatedAt": "2026-11-20T14:51:14.6015208Z",
+      "context": {
+        "projectUuid": "576ccce42fd1310e3cc2c3bbb14ccbae9eb92ba3990cbe17a1f01ede05b1f274",
+        "projectName": "EVT1-H02-FP-CONV-22x4_2-LIVE-20261120"
+      },
+      "ok": true
+    },
+    {
+      "stage": "close-settle",
+      "action": "document.current",
+      "startedAt": "2026-11-20T14:51:14.6025203Z",
+      "completedAt": "2026-11-20T14:51:14.6354468Z",
+      "requestId": "req_4006",
+      "responseCreatedAt": "2026-11-20T14:51:14.634787Z",
+      "ok": false,
+      "error": "document.current failed: No active document."
+    },
+    {
+      "stage": "reopen",
+      "action": "document.open",
+      "startedAt": "2026-11-20T14:51:14.6354468Z",
+      "completedAt": "2026-11-20T14:51:16.5962508Z",
+      "requestId": "req_4007",
+      "responseCreatedAt": "2026-11-20T14:51:16.5955191Z",
+      "context": {
+        "projectUuid": "576ccce42fd1310e3cc2c3bbb14ccbae9eb92ba3990cbe17a1f01ede05b1f274",
+        "projectName": "EVT1-H02-FP-CONV-22x4_2-LIVE-20261120",
+        "documentUuid": "4d38590959875927",
+        "documentType": "schematic",
+        "tabId": "4d38590959875927@576ccce42fd1310e3cc2c3bbb14ccbae9eb92ba3990cbe17a1f01ede05b1f274"
+      },
+      "ok": true
+    },
+    {
+      "stage": "ready",
+      "startedAt": "2026-11-20T14:51:16.5962508Z",
+      "completedAt": "2026-11-20T14:51:17.1968379Z",
+      "context": {
+        "projectUuid": "576ccce42fd1310e3cc2c3bbb14ccbae9eb92ba3990cbe17a1f01ede05b1f274",
+        "projectName": "EVT1-H02-FP-CONV-22x4_2-LIVE-20261120",
+        "documentUuid": "4d38590959875927",
+        "documentType": "schematic",
+        "tabId": "4d38590959875927@576ccce42fd1310e3cc2c3bbb14ccbae9eb92ba3990cbe17a1f01ede05b1f274"
+      },
+      "ok": true
+    }
+  ]
+}
