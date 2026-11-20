@@ -1,0 +1,882 @@
+{
+  "status": "CANDIDATE_BUILT",
+  "manufacturing": "BLOCKED",
+  "baselinePath": "h02-h03-native\\native\\ZY_AIAR_EVT1_H02_H03_NATIVE_NOT_FOR_FAB.epro2",
+  "baselineSha256": "8d4025db711e620374155c702decab2d9b9e68bf8a7bc87cb3eeac97ca5f4586",
+  "candidateSha256": "bcdb8be699011f3584def8ee612a54787196611d6181926fb31fcb8dcd4f0400",
+  "newFootprintsCreated": {
+    "TI_DCK0006A_SC70-6": "3d1b0ff681b359af",
+    "ADI_TSOT23_6_S6": "2a4e367380f58f3f",
+    "TI_DSE0006A_WSON-6_1.5x1.5mm": "076b2d5f4c04c154",
+    "TI_DCU0008A_VSSOP-8_2.3x2.0mm": "0109895bffa8ecad",
+    "TI_DRL0006A_SOT-563-6_1.6x1.2mm": "49e3be6e86a29734",
+    "TI_DRL0008A_SOT-583-8_2.1x1.2mm": "5a8b8fa0a9a5135c",
+    "Nexperia_SOT23_TO-236AB": "fbc45fe4a72991b0",
+    "Murata_DFE201612E_2016_2.0x1.6mm": "c9b27c0b97689251"
+  },
+  "auditedEmbeddedFootprintsUsed": {
+    "TI_DSG0008A": "500cb0da72c86ae0",
+    "TI_DQN0004A": "7fc3ca1940b32b12",
+    "TI_DQE0008A": "92b62afaf009333a",
+    "TI_DPW0005A": "2f8d631073922488"
+  },
+  "ecoEditsCount": 9,
+  "footprintBindingsCount": 22,
+  "footprintBindingsByBoard": {
+    "M-MAIN-L": 12,
+    "M-OPT-BRIDGE": 9,
+    "M-AUD-R": 1
+  },
+  "ecoEdits": [
+    {
+      "eco": "ECO-01",
+      "board": "M-MAIN-L",
+      "cadReference": "U9",
+      "sourceReference": "U4_OR",
+      "pageUuid": "3fdc6001a068d82e",
+      "primitiveId": "ie183",
+      "deviceUuid": "1c1ff64d6ac5d99a",
+      "fields": {
+        "MPN": {
+          "old": "LM66200DRLR",
+          "new": "TPS2116DRLR"
+        },
+        "Manufacturer Part": {
+          "old": "LM66200DRLR",
+          "new": "TPS2116DRLR"
+        },
+        "Value": {
+          "old": "U4_OR | LM66200DRLR",
+          "new": "U4_OR | TPS2116DRLR (Auto-Switchover 2.5A, ECO-01)"
+        },
+        "UserDocLink": {
+          "old": "https://www.ti.com/lit/ds/symlink/lm66200.pdf",
+          "new": "https://www.ti.com/lit/ds/symlink/tps2116.pdf"
+        }
+      },
+      "terminalContract": {
+        "1": "GND",
+        "2": "VSYS",
+        "3": "VOUT_L_PPATH",
+        "4": "GND",
+        "5": "GND",
+        "6": "VBAT_R_ISOLATED",
+        "7": "VSYS",
+        "8": "NC_OR_ST"
+      }
+    },
+    {
+      "eco": "ECO-01",
+      "board": "M-MAIN-L",
+      "cadReference": "C27",
+      "sourceReference": "C_OR_OUT",
+      "pageUuid": "3fdc6001a068d82e",
+      "primitiveId": "ie491",
+      "deviceUuid": "d14c6cf9e0455082",
+      "fields": {
+        "MPN": {
+          "old": "1uF 10V X7R",
+          "new": "22uF 10V X5R 0603 (ECO-01 bulk; >=30uF effective VSYS)"
+        },
+        "Value": {
+          "old": "C_OR_OUT | 1uF 10V X7R",
+          "new": "C_OR_OUT | 22uF 10V X5R (ECO-01)"
+        }
+      },
+      "terminalContract": {
+        "1": "VSYS",
+        "2": "GND"
+      }
+    },
+    {
+      "eco": "ECO-02",
+      "board": "M-MAIN-L",
+      "cadReference": "U5",
+      "sourceReference": "U5_LED2V8",
+      "pageUuid": "e99e682aca69cae1",
+      "primitiveId": "ie322",
+      "deviceUuid": "91b6f66664a491d1",
+      "fields": {
+        "MPN": {
+          "old": "TLV75528PDQNR",
+          "new": "TLV75533PDQNR"
+        },
+        "Manufacturer Part": {
+          "old": "TLV75528PDQNR",
+          "new": "TLV75533PDQNR"
+        },
+        "Value": {
+          "old": "U5_LED2V8 | TLV75528PDQNR",
+          "new": "U5_LED2V8 | TLV75533PDQNR (3.3V, ECO-02)"
+        }
+      },
+      "terminalContract": {
+        "1": "LED_2V8",
+        "2": "GND",
+        "3": "CAM_PWR_REQ",
+        "4": "3V3_SYS",
+        "5": "GND"
+      }
+    },
+    {
+      "eco": "ECO-02",
+      "board": "M-MAIN-L",
+      "cadReference": "R21",
+      "sourceReference": "R_LIMIT",
+      "pageUuid": "e99e682aca69cae1",
+      "primitiveId": "ie1022",
+      "deviceUuid": "d39c465b6ed6ef67",
+      "fields": {
+        "Value": {
+          "old": "R_LIMIT | 249R (Rev D: high side, left board)",
+          "new": "R_LIMIT | 150R 1% 0402 100mW (ECO-02)"
+        },
+        "MPN": {
+          "old": "R_SENSE ERA-2AEB2R2X (2.20R 0.1%) + R_LIMIT 249R (high side) + window divider R1=33.2k/R2=32.4k/R3=32.4k + R_PRIV_PU 10k + 1ms RC + R_CRST_A_PD 100k + R_DIR1_PU 10k + R_LS1_A4/B4 100k + 4x I2C 2.2k + R_LS3_EN 200k + R_BB_FB1 560k/R_BB_FB2 100k + R_VSET_1V8 + R_CHIP_PU 10k/C_CHIP_PU 1uF",
+          "new": "RC0402FR-07150RL (150R 1% 0402 100mW, ECO-02)"
+        }
+      },
+      "terminalContract": {
+        "1": "ISENSE_N",
+        "2": "PRIV_LED_ANODE"
+      }
+    },
+    {
+      "eco": "ECO-02",
+      "board": "M-MAIN-L",
+      "cadReference": "R31",
+      "sourceReference": "R_SENSE",
+      "pageUuid": "35d0bca337813128",
+      "primitiveId": "ie91",
+      "deviceUuid": "0c0c437bf51a1c49",
+      "fields": {
+        "Value": {
+          "old": "R_SENSE | 2.20R 0.1% (Kelvin)",
+          "new": "R_SENSE | 1.10R 0.1% 0402 Kelvin (ECO-02)"
+        },
+        "MPN": {
+          "old": "R_SENSE ERA-2AEB2R2X (2.20R 0.1%) + R_LIMIT 249R (high side) + window divider R1=33.2k/R2=32.4k/R3=32.4k + R_PRIV_PU 10k + 1ms RC + R_CRST_A_PD 100k + R_DIR1_PU 10k + R_LS1_A4/B4 100k + 4x I2C 2.2k + R_LS3_EN 200k + R_BB_FB1 560k/R_BB_FB2 100k + R_VSET_1V8 + R_CHIP_PU 10k/C_CHIP_PU 1uF",
+          "new": "1.10R 0.1% 0402 Kelvin (ECO-02)"
+        }
+      },
+      "terminalContract": {
+        "1": "LED_2V8",
+        "2": "ISENSE_N"
+      }
+    },
+    {
+      "eco": "ECO-02",
+      "board": "M-MAIN-L",
+      "cadReference": "R35",
+      "sourceReference": "R_WIN_TOP",
+      "pageUuid": "35d0bca337813128",
+      "primitiveId": "ie160",
+      "deviceUuid": "7dd8448e2b4f5944",
+      "fields": {
+        "Value": {
+          "old": "R_WIN_TOP | 33.2k 1%",
+          "new": "R_WIN_TOP | 20.0k 1% (ECO-02)"
+        },
+        "MPN": {
+          "old": "33.2k 1%",
+          "new": "20.0k 1%"
+        }
+      },
+      "terminalContract": {
+        "1": "3V3_SYS",
+        "2": "PRIV_VTH_H"
+      }
+    },
+    {
+      "eco": "ECO-02",
+      "board": "M-MAIN-L",
+      "cadReference": "R34",
+      "sourceReference": "R_WIN_MID",
+      "pageUuid": "35d0bca337813128",
+      "primitiveId": "ie137",
+      "deviceUuid": "39a1e943b9719210",
+      "fields": {
+        "Value": {
+          "old": "R_WIN_MID | 32.4k 1%",
+          "new": "R_WIN_MID | 56.2k 1% (ECO-02)"
+        },
+        "MPN": {
+          "old": "32.4k 1%",
+          "new": "56.2k 1%"
+        }
+      },
+      "terminalContract": {
+        "1": "PRIV_VTH_H",
+        "2": "PRIV_VTH_L"
+      }
+    },
+    {
+      "eco": "ECO-02",
+      "board": "M-MAIN-L",
+      "cadReference": "R33",
+      "sourceReference": "R_WIN_BOT",
+      "pageUuid": "35d0bca337813128",
+      "primitiveId": "ie114",
+      "deviceUuid": "fbda8811986b8aee",
+      "fields": {
+        "Value": {
+          "old": "R_WIN_BOT | 32.4k 1%",
+          "new": "R_WIN_BOT | 24.9k 1% (ECO-02)"
+        },
+        "MPN": {
+          "old": "32.4k 1%",
+          "new": "24.9k 1%"
+        }
+      },
+      "terminalContract": {
+        "1": "PRIV_VTH_L",
+        "2": "GND"
+      }
+    },
+    {
+      "eco": "ECO-13",
+      "board": "M-MAIN-L",
+      "cadReference": "L1",
+      "sourceReference": "L1_BB",
+      "pageUuid": "3fdc6001a068d82e",
+      "primitiveId": "ie514",
+      "deviceUuid": "161eebf711aa8e3b",
+      "fields": {
+        "MPN": {
+          "old": "MPN_TBD (0.47uH effective0.37..0.57uH over temperature/DC current)",
+          "new": "DFE201612E-R47M=P2"
+        },
+        "Value": {
+          "old": "L1_BB | BLOCKED | 0.47 uH",
+          "new": "L1_BB | CONDITIONAL | DFE201612E-R47M=P2 (0.47uH, Z=1.2mm, Isat=5.5A)"
+        },
+        "UserDocLink": {
+          "old": "URL_TBD (Murata; Rev C linked the TPS63802 datasheet)",
+          "new": "https://www.murata.com/en-us/products/productdetail?partno=DFE201612E-R47M%3DP2"
+        }
+      },
+      "terminalContract": {
+        "1": "BB_L1",
+        "2": "BB_L2"
+      }
+    }
+  ],
+  "footprintBindings": [
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "U10",
+      "sourceReference": "U_AVDD_QUAL",
+      "pageUuid": "d643a0611d67a31a",
+      "primitiveId": "ie233",
+      "deviceUuid": "0774e0552b5bc8d7",
+      "symbolUuid": "bd562888d8aa238e",
+      "footprintUuid": "3d1b0ff681b359af",
+      "footprintTitle": "TI_DCK0006A_SC70-6",
+      "origin": "EVT1-reviewed-OEM-new",
+      "pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "terminalContract": {
+        "1": "AVDD_D3_VSYS",
+        "2": "GND",
+        "3": "VSYS",
+        "4": "AVDD_PULSE_QUAL",
+        "5": "VSYS",
+        "6": "AVDD_QUAL_CLR_N"
+      }
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "U11",
+      "sourceReference": "U_AVDD_SCHMITT",
+      "pageUuid": "d643a0611d67a31a",
+      "primitiveId": "ie272",
+      "deviceUuid": "5e62fe63a88f1665",
+      "symbolUuid": "61d925caacae8e79",
+      "footprintUuid": "3d1b0ff681b359af",
+      "footprintTitle": "TI_DCK0006A_SC70-6",
+      "origin": "EVT1-reviewed-OEM-new",
+      "pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "terminalContract": {
+        "1": "AVDD_PG_NODE",
+        "2": "GND",
+        "3": "AVDD_QUAL_RC",
+        "4": "AVDD_QUAL_CLR_N",
+        "5": "VSYS",
+        "6": "AVDD_PG_OK"
+      }
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "U14",
+      "sourceReference": "U_AVDD_WD",
+      "pageUuid": "d643a0611d67a31a",
+      "primitiveId": "ie381",
+      "deviceUuid": "6ec394ca784bc1e9",
+      "symbolUuid": "1330badeec598603",
+      "footprintUuid": "2a4e367380f58f3f",
+      "footprintTitle": "ADI_TSOT23_6_S6",
+      "origin": "EVT1-reviewed-OEM-new",
+      "pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "terminalContract": {
+        "1": "AVDD_D3_VSYS",
+        "2": "GND",
+        "3": "AVDD_WD_SET",
+        "4": "AVDD_WD_DIV",
+        "5": "VSYS",
+        "6": "AVDD_WD_Q"
+      }
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "U7",
+      "sourceReference": "U_AVDD_IO_PG",
+      "pageUuid": "d643a0611d67a31a",
+      "primitiveId": "ie198",
+      "deviceUuid": "bd1b18df4f38ec7c",
+      "symbolUuid": "0414aa643c25bf15",
+      "footprintUuid": "076b2d5f4c04c154",
+      "footprintTitle": "TI_DSE0006A_WSON-6_1.5x1.5mm",
+      "origin": "EVT1-reviewed-OEM-new",
+      "pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "terminalContract": {
+        "1": "1V8_FPGA_IO",
+        "2": "GND",
+        "3": "AVDD_CRESET_VSYS",
+        "4": "VSYS",
+        "5": "NC_U_AVDD_IO_PG_CT",
+        "6": "AVDD_PG_NODE"
+      }
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "U12",
+      "sourceReference": "U_AVDD_SYS_CLAMP",
+      "pageUuid": "d643a0611d67a31a",
+      "primitiveId": "ie311",
+      "deviceUuid": "8b92fe91faec2d62",
+      "symbolUuid": "a4e285a874d63690",
+      "footprintUuid": "076b2d5f4c04c154",
+      "footprintTitle": "TI_DSE0006A_WSON-6_1.5x1.5mm",
+      "origin": "EVT1-reviewed-OEM-new",
+      "pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "terminalContract": {
+        "1": "VSYS",
+        "2": "GND",
+        "3": "VSYS",
+        "4": "VSYS",
+        "5": "NC_U_AVDD_SYS_CLAMP_CT",
+        "6": "OPT_AVDD_EN"
+      }
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "U13",
+      "sourceReference": "U_AVDD_SYS_PG",
+      "pageUuid": "d643a0611d67a31a",
+      "primitiveId": "ie346",
+      "deviceUuid": "af2bb7c68aca61ec",
+      "symbolUuid": "fc862dfd3b12bdcb",
+      "footprintUuid": "076b2d5f4c04c154",
+      "footprintTitle": "TI_DSE0006A_WSON-6_1.5x1.5mm",
+      "origin": "EVT1-reviewed-OEM-new",
+      "pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "terminalContract": {
+        "1": "VSYS",
+        "2": "GND",
+        "3": "AVDD_REQ_FILTER",
+        "4": "VSYS",
+        "5": "NC_U_AVDD_SYS_PG_CT",
+        "6": "AVDD_PG_NODE"
+      }
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "U8",
+      "sourceReference": "U_AVDD_LS",
+      "pageUuid": "d643a0611d67a31a",
+      "primitiveId": "ie73",
+      "deviceUuid": "34e022de9964f68f",
+      "symbolUuid": "d3e9d81bae2f8fe4",
+      "footprintUuid": "0109895bffa8ecad",
+      "footprintTitle": "TI_DCU0008A_VSSOP-8_2.3x2.0mm",
+      "origin": "EVT1-reviewed-OEM-new",
+      "pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "terminalContract": {
+        "1": "1V8_FPGA_IO",
+        "2": "FPGA_CDONE_VSYNC_N",
+        "3": "FPGA_CRESET_B",
+        "4": "GND",
+        "5": "1V8_FPGA_IO",
+        "6": "AVDD_CRESET_VSYS",
+        "7": "AVDD_D3_VSYS",
+        "8": "VSYS"
+      }
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "U1",
+      "sourceReference": "U4_1V8F",
+      "pageUuid": "ed9e9866a1b746ac",
+      "primitiveId": "ie145",
+      "deviceUuid": "49fc72699df84575",
+      "symbolUuid": "c33ca12719ffa209",
+      "footprintUuid": "7fc3ca1940b32b12",
+      "footprintTitle": "X2SON-4_L1.0-W1.0-P0.65-TL-EP",
+      "origin": "PR36-embedded-OEM-audited",
+      "pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "terminalContract": {
+        "1": "1V8_FPGA_IO",
+        "2": "GND",
+        "3": "1V2_FPGA_PLL",
+        "4": "VSYS",
+        "5": "GND"
+      }
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "cadReference": "U4",
+      "sourceReference": "U4_1V2",
+      "pageUuid": "ed9e9866a1b746ac",
+      "primitiveId": "ie180",
+      "deviceUuid": "cc48b7d97417629e",
+      "symbolUuid": "fd13e117e040f7ae",
+      "footprintUuid": "7fc3ca1940b32b12",
+      "footprintTitle": "X2SON-4_L1.0-W1.0-P0.65-TL-EP",
+      "origin": "PR36-embedded-OEM-audited",
+      "pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "terminalContract": {
+        "1": "1V2_FPGA_CORE",
+        "2": "GND",
+        "3": "VSYS",
+        "4": "VSYS",
+        "5": "GND"
+      }
+    },
+    {
+      "board": "M-MAIN-L",
+      "cadReference": "U9",
+      "sourceReference": "U4_OR",
+      "pageUuid": "3fdc6001a068d82e",
+      "primitiveId": "ie183",
+      "deviceUuid": "1c1ff64d6ac5d99a",
+      "symbolUuid": "b96135161d43b1a1",
+      "footprintUuid": "5a8b8fa0a9a5135c",
+      "footprintTitle": "TI_DRL0008A_SOT-583-8_2.1x1.2mm",
+      "origin": "EVT1-reviewed-OEM-new",
+      "pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "terminalContract": {
+        "1": "GND",
+        "2": "VSYS",
+        "3": "VOUT_L_PPATH",
+        "4": "GND",
+        "5": "GND",
+        "6": "VBAT_R_ISOLATED",
+        "7": "VSYS",
+        "8": "NC_OR_ST"
+      }
+    },
+    {
+      "board": "M-MAIN-L",
+      "cadReference": "U7",
+      "sourceReference": "U7_INA",
+      "pageUuid": "e99e682aca69cae1",
+      "primitiveId": "ie283",
+      "deviceUuid": "9e676da79441064d",
+      "symbolUuid": "35225db496771d3f",
+      "footprintUuid": "49e3be6e86a29734",
+      "footprintTitle": "TI_DRL0006A_SOT-563-6_1.6x1.2mm",
+      "origin": "EVT1-reviewed-OEM-new",
+      "pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "terminalContract": {
+        "1": "V_INA_OUT",
+        "2": "GND",
+        "3": "LED_2V8",
+        "4": "ISENSE_N",
+        "5": "GND",
+        "6": "3V3_SYS"
+      }
+    },
+    {
+      "board": "M-MAIN-L",
+      "cadReference": "Q1",
+      "sourceReference": "Q_CHG_ISO_R",
+      "pageUuid": "3fdc6001a068d82e",
+      "primitiveId": "ie257",
+      "deviceUuid": "90b88cb0e66c432d",
+      "symbolUuid": "4484fab902098392",
+      "footprintUuid": "fbc45fe4a72991b0",
+      "footprintTitle": "Nexperia_SOT23_TO-236AB",
+      "origin": "EVT1-reviewed-OEM-new",
+      "pins": [
+        "1",
+        "2",
+        "3"
+      ],
+      "terminalContract": {
+        "1": "CHG_ISO_GATE",
+        "2": "VBAT_R_RET",
+        "3": "VBAT_R_ISOLATED"
+      }
+    },
+    {
+      "board": "M-MAIN-L",
+      "cadReference": "L1",
+      "sourceReference": "L1_BB",
+      "pageUuid": "3fdc6001a068d82e",
+      "primitiveId": "ie514",
+      "deviceUuid": "161eebf711aa8e3b",
+      "symbolUuid": "fa3cdc9239ffbd1e",
+      "footprintUuid": "c9b27c0b97689251",
+      "footprintTitle": "Murata_DFE201612E_2016_2.0x1.6mm",
+      "origin": "EVT1-reviewed-OEM-new",
+      "pins": [
+        "1",
+        "2"
+      ],
+      "terminalContract": {
+        "1": "BB_L1",
+        "2": "BB_L2"
+      }
+    },
+    {
+      "board": "M-MAIN-L",
+      "cadReference": "U14",
+      "sourceReference": "U7_WIN",
+      "pageUuid": "e99e682aca69cae1",
+      "primitiveId": "ie232",
+      "deviceUuid": "b1e0344f4228d13a",
+      "symbolUuid": "92e67905f0c193f8",
+      "footprintUuid": "500cb0da72c86ae0",
+      "footprintTitle": "WSON-8_L2.0-W2.0-P0.50-TL-EP",
+      "origin": "PR36-embedded-OEM-audited",
+      "pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "terminalContract": {
+        "1": "PRIV_WINDOW_OK",
+        "2": "PRIV_VTH_L",
+        "3": "V_INA_OUT",
+        "4": "GND",
+        "5": "PRIV_VTH_H",
+        "6": "V_INA_OUT",
+        "7": "PRIV_WINDOW_OK",
+        "8": "3V3_SYS",
+        "9": "GND"
+      }
+    },
+    {
+      "board": "M-MAIN-L",
+      "cadReference": "U5",
+      "sourceReference": "U5_LED2V8",
+      "pageUuid": "e99e682aca69cae1",
+      "primitiveId": "ie322",
+      "deviceUuid": "91b6f66664a491d1",
+      "symbolUuid": "c7a292b4a50334a7",
+      "footprintUuid": "7fc3ca1940b32b12",
+      "footprintTitle": "X2SON-4_L1.0-W1.0-P0.65-TL-EP",
+      "origin": "PR36-embedded-OEM-audited",
+      "pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "terminalContract": {
+        "1": "LED_2V8",
+        "2": "GND",
+        "3": "CAM_PWR_REQ",
+        "4": "3V3_SYS",
+        "5": "GND"
+      }
+    },
+    {
+      "board": "M-MAIN-L",
+      "cadReference": "U6",
+      "sourceReference": "U6_CAM_AVDD",
+      "pageUuid": "e99e682aca69cae1",
+      "primitiveId": "ie357",
+      "deviceUuid": "f60b9472673341f7",
+      "symbolUuid": "8d6e8b8c0a0febbc",
+      "footprintUuid": "7fc3ca1940b32b12",
+      "footprintTitle": "X2SON-4_L1.0-W1.0-P0.65-TL-EP",
+      "origin": "PR36-embedded-OEM-audited",
+      "pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "terminalContract": {
+        "1": "CAM_AVDD_2V8",
+        "2": "GND",
+        "3": "PRIV_WINDOW_OK_F",
+        "4": "3V3_SYS",
+        "5": "GND"
+      }
+    },
+    {
+      "board": "M-MAIN-L",
+      "cadReference": "U11",
+      "sourceReference": "U6_CAM_DOVDD",
+      "pageUuid": "e99e682aca69cae1",
+      "primitiveId": "ie392",
+      "deviceUuid": "dd5ea8c3ffd11750",
+      "symbolUuid": "3b902d351604f999",
+      "footprintUuid": "7fc3ca1940b32b12",
+      "footprintTitle": "X2SON-4_L1.0-W1.0-P0.65-TL-EP",
+      "origin": "PR36-embedded-OEM-audited",
+      "pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "terminalContract": {
+        "1": "CAM_DOVDD_1V8",
+        "2": "GND",
+        "3": "PRIV_WINDOW_OK_F",
+        "4": "3V3_SYS",
+        "5": "GND"
+      }
+    },
+    {
+      "board": "M-MAIN-L",
+      "cadReference": "U13",
+      "sourceReference": "U6_CAM_DVDD",
+      "pageUuid": "e99e682aca69cae1",
+      "primitiveId": "ie427",
+      "deviceUuid": "8a96669183f52bb6",
+      "symbolUuid": "7ad62525ce762759",
+      "footprintUuid": "7fc3ca1940b32b12",
+      "footprintTitle": "X2SON-4_L1.0-W1.0-P0.65-TL-EP",
+      "origin": "PR36-embedded-OEM-audited",
+      "pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "terminalContract": {
+        "1": "CAM_DVDD_1V2",
+        "2": "GND",
+        "3": "PRIV_WINDOW_OK_F",
+        "4": "3V3_SYS",
+        "5": "GND"
+      }
+    },
+    {
+      "board": "M-MAIN-L",
+      "cadReference": "U19",
+      "sourceReference": "U8_LS3",
+      "pageUuid": "3e7683d1ed324ce9",
+      "primitiveId": "ie320",
+      "deviceUuid": "2b33eb87901f49ce",
+      "symbolUuid": "f081aa9b121ce429",
+      "footprintUuid": "92b62afaf009333a",
+      "footprintTitle": "X2SON-8_L1.4-W1.0-P0.35-BL",
+      "origin": "PR36-embedded-OEM-audited",
+      "pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "terminalContract": {
+        "1": "GND",
+        "2": "1V8_SYS",
+        "3": "SYS_I2C_SCL_1V8",
+        "4": "SYS_I2C_SDA_1V8",
+        "5": "SYS_I2C_SDA_3V3",
+        "6": "SYS_I2C_SCL_3V3",
+        "7": "LS3_VREF2_EN",
+        "8": "LS3_VREF2_EN"
+      }
+    },
+    {
+      "board": "M-MAIN-L",
+      "cadReference": "U20",
+      "sourceReference": "U8_LS4",
+      "pageUuid": "3e7683d1ed324ce9",
+      "primitiveId": "ie367",
+      "deviceUuid": "5c817c4203d5345e",
+      "symbolUuid": "b5872c1305bcf893",
+      "footprintUuid": "92b62afaf009333a",
+      "footprintTitle": "X2SON-8_L1.4-W1.0-P0.35-BL",
+      "origin": "PR36-embedded-OEM-audited",
+      "pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "terminalContract": {
+        "1": "GND",
+        "2": "CAM_DOVDD_1V8",
+        "3": "CAM_SCCB_SCL",
+        "4": "CAM_SCCB_SDA",
+        "5": "SYS_I2C_SDA_3V3",
+        "6": "SYS_I2C_SCL_3V3",
+        "7": "LS4_VREF2_EN",
+        "8": "LS4_VREF2_EN"
+      }
+    },
+    {
+      "board": "M-MAIN-L",
+      "cadReference": "U17",
+      "sourceReference": "U8_CAM_SCCB_EN",
+      "pageUuid": "e99e682aca69cae1",
+      "primitiveId": "ie462",
+      "deviceUuid": "938e841720c445de",
+      "symbolUuid": "bdabff766d59de19",
+      "footprintUuid": "2f8d631073922488",
+      "footprintTitle": "X2SON-5_L0.8-W0.8-P0.48-BL-EP",
+      "origin": "PR36-embedded-OEM-audited",
+      "pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "terminalContract": {
+        "1": "NC_CAM_SCCB_EN_1",
+        "2": "CAM_DOVDD_OK_3V3",
+        "3": "GND",
+        "4": "LS4_VREF2_EN",
+        "5": "3V3_SYS"
+      }
+    },
+    {
+      "board": "M-AUD-R",
+      "cadReference": "U3",
+      "sourceReference": "U3_R",
+      "pageUuid": "bbbca101b360e299",
+      "primitiveId": "ie22",
+      "deviceUuid": "941c6c39364107e0",
+      "symbolUuid": "2a01ece521c539d6",
+      "footprintUuid": "500cb0da72c86ae0",
+      "footprintTitle": "WSON-8_L2.0-W2.0-P0.50-TL-EP",
+      "origin": "PR36-embedded-OEM-audited",
+      "pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "terminalContract": {
+        "1": "VBUS_5V",
+        "2": "CHG_R_ISET",
+        "3": "NTC_TS_R",
+        "4": "GND",
+        "5": "NC_CHG_R_STAT",
+        "6": "NC_CHG_R_PG",
+        "7": "CHG_R_VSET",
+        "8": "VBAT_R_RET",
+        "9": "GND"
+      }
+    }
+  ]
+}

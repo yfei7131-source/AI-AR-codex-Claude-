@@ -1,0 +1,1676 @@
+{
+  "id": "req_2518",
+  "type": "response",
+  "version": "v1",
+  "windowId": "bb506d69-fce2-4589-9a42-17c2ef571136",
+  "createdAt": "2026-11-20T01:24:04.6373112Z",
+  "ok": true,
+  "result": {
+    "components": [
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "component": {
+          "libraryUuid": "",
+          "name": "default420x297",
+          "uuid": "3b05ac1a29246ae6"
+        },
+        "componentType": "sheet",
+        "designator": "",
+        "device": {
+          "libraryUuid": "",
+          "name": "default420x297",
+          "uuid": "3b05ac1a29246ae6"
+        },
+        "footprint": {
+          "uuid": ""
+        },
+        "mirror": false,
+        "name": "default420x297",
+        "net": "",
+        "netlistAvailable": true,
+        "otherProperty": {
+          "Comment1": "",
+          "Comment2": "",
+          "Comment3": "",
+          "Comment4": "",
+          "Comp": "",
+          "Date": "",
+          "Description": "",
+          "File": "03-camera-rails-and-privacy-interlock-2",
+          "Id": "/",
+          "Origin Footprint": "",
+          "Rev": "",
+          "Sheet": "/",
+          "Size": "\"A3\"",
+          "Title": "",
+          "Type": ""
+        },
+        "pins": [],
+        "pinsAvailable": true,
+        "primitiveId": "ie0",
+        "rotation": 0,
+        "subPartName": "default420x297.1",
+        "symbol": {
+          "libraryUuid": "",
+          "name": "default420x297",
+          "uuid": "412ca47752bc0af4"
+        },
+        "x": 0,
+        "y": 0
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "component": {
+          "libraryUuid": "",
+          "name": "EVT1_R28_R_PRIV_RC",
+          "uuid": "b6fd706c730a1fe1"
+        },
+        "componentType": "part",
+        "designator": "R28",
+        "device": {
+          "libraryUuid": "",
+          "name": "EVT1_R28_R_PRIV_RC",
+          "uuid": "b6fd706c730a1fe1"
+        },
+        "footprint": {
+          "uuid": ""
+        },
+        "manufacturer": "TBD",
+        "manufacturerId": "",
+        "mirror": false,
+        "name": "EVT1_R28_R_PRIV_RC",
+        "net": "",
+        "netlistAvailable": true,
+        "otherProperty": {
+          "BOM Line": "BOM-D1-PRIV-R_PRIV_RC",
+          "Description": "",
+          "Design Notes": "Analog node in 3V3_SYS domain. High is derived from V_INA_OUT through R_PRIV_PU/R_PRIV_RC.",
+          "EVT1 Source Ref": "R_PRIV_RC",
+          "Footprint Status": "PASS",
+          "MPN": "1k 1%",
+          "Origin Footprint": "Resistor_SMD:R_0201_0603Metric",
+          "PCB Layer": "Default",
+          "UserDocLink": "",
+          "Value": "R_PRIV_RC | 1k 1%"
+        },
+        "pins": [
+          {
+            "net": "PRIV_WINDOW_OK",
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "~",
+            "pinNumber": "1",
+            "primitiveId": "ie22-ie1",
+            "rotation": 180,
+            "x": 280,
+            "y": -165
+          },
+          {
+            "net": "PRIV_WINDOW_OK_F",
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "~",
+            "pinNumber": "2",
+            "primitiveId": "ie22-ie5",
+            "rotation": 0,
+            "x": 320,
+            "y": -165
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "ie22",
+        "rotation": 0,
+        "subPartName": "1",
+        "supplier": "",
+        "supplierId": "",
+        "symbol": {
+          "libraryUuid": "",
+          "name": "EVT1_R28_R_PRIV_RC",
+          "uuid": "d91dd525cfcc1c89"
+        },
+        "uniqueId": "d9f908b8ca857374",
+        "x": 300,
+        "y": -165
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "component": {
+          "libraryUuid": "",
+          "name": "PRIV_WINDOW_OK",
+          "uuid": "044b08dd24d31b3c"
+        },
+        "componentType": "netport",
+        "designator": "?",
+        "device": {
+          "libraryUuid": "",
+          "name": "PRIV_WINDOW_OK",
+          "uuid": "044b08dd24d31b3c"
+        },
+        "footprint": {
+          "uuid": ""
+        },
+        "mirror": false,
+        "name": "PRIV_WINDOW_OK",
+        "net": "PRIV_WINDOW_OK",
+        "netlistAvailable": true,
+        "otherProperty": {
+          "Description": "",
+          "Relevance": "[]"
+        },
+        "pins": [
+          {
+            "net": null,
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "",
+            "pinNumber": "1",
+            "primitiveId": "ie37-ie1",
+            "rotation": 0,
+            "x": 270,
+            "y": -164.99999999999997
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "ie37",
+        "rotation": 180,
+        "subPartName": "1",
+        "symbol": {
+          "libraryUuid": "",
+          "name": "g_passive",
+          "uuid": "1be07761567207c6"
+        },
+        "x": 270,
+        "y": -165
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "component": {
+          "libraryUuid": "",
+          "name": "PRIV_WINDOW_OK_F",
+          "uuid": "0932022ae4474107"
+        },
+        "componentType": "netport",
+        "designator": "?",
+        "device": {
+          "libraryUuid": "",
+          "name": "PRIV_WINDOW_OK_F",
+          "uuid": "0932022ae4474107"
+        },
+        "footprint": {
+          "uuid": ""
+        },
+        "mirror": false,
+        "name": "PRIV_WINDOW_OK_F",
+        "net": "PRIV_WINDOW_OK_F",
+        "netlistAvailable": true,
+        "otherProperty": {
+          "Description": "",
+          "Relevance": "[]"
+        },
+        "pins": [
+          {
+            "net": null,
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "",
+            "pinNumber": "1",
+            "primitiveId": "ie41-ie1",
+            "rotation": 180,
+            "x": 330,
+            "y": -165
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "ie41",
+        "rotation": 0,
+        "subPartName": "1",
+        "symbol": {
+          "libraryUuid": "",
+          "name": "g_passive",
+          "uuid": "1be07761567207c6"
+        },
+        "x": 330,
+        "y": -165
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "component": {
+          "libraryUuid": "",
+          "name": "CAM_SCCB_SCL",
+          "uuid": "9118aba7936cab1d"
+        },
+        "componentType": "netport",
+        "designator": "?",
+        "device": {
+          "libraryUuid": "",
+          "name": "CAM_SCCB_SCL",
+          "uuid": "9118aba7936cab1d"
+        },
+        "footprint": {
+          "uuid": ""
+        },
+        "mirror": false,
+        "name": "CAM_SCCB_SCL",
+        "net": "CAM_SCCB_SCL",
+        "netlistAvailable": true,
+        "otherProperty": {
+          "Description": "",
+          "Relevance": "[]"
+        },
+        "pins": [
+          {
+            "net": null,
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "",
+            "pinNumber": "1",
+            "primitiveId": "ie60-ie1",
+            "rotation": 0,
+            "x": 790,
+            "y": -165.00000000000003
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "ie60",
+        "rotation": 180,
+        "subPartName": "1",
+        "symbol": {
+          "libraryUuid": "",
+          "name": "g_passive",
+          "uuid": "1be07761567207c6"
+        },
+        "x": 790,
+        "y": -165
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "component": {
+          "libraryUuid": "",
+          "name": "CAM_DOVDD_1V8",
+          "uuid": "b6be72912db5b368"
+        },
+        "componentType": "netport",
+        "designator": "?",
+        "device": {
+          "libraryUuid": "",
+          "name": "CAM_DOVDD_1V8",
+          "uuid": "b6be72912db5b368"
+        },
+        "footprint": {
+          "uuid": ""
+        },
+        "mirror": false,
+        "name": "CAM_DOVDD_1V8",
+        "net": "CAM_DOVDD_1V8",
+        "netlistAvailable": true,
+        "otherProperty": {
+          "Description": "",
+          "Relevance": "[]"
+        },
+        "pins": [
+          {
+            "net": null,
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "",
+            "pinNumber": "1",
+            "primitiveId": "ie64-ie1",
+            "rotation": 180,
+            "x": 850,
+            "y": -165
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "ie64",
+        "rotation": 0,
+        "subPartName": "1",
+        "symbol": {
+          "libraryUuid": "",
+          "name": "g_passive",
+          "uuid": "1be07761567207c6"
+        },
+        "x": 850,
+        "y": -165
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "component": {
+          "libraryUuid": "",
+          "name": "CAM_SCCB_SDA",
+          "uuid": "a8665841127d806f"
+        },
+        "componentType": "netport",
+        "designator": "?",
+        "device": {
+          "libraryUuid": "",
+          "name": "CAM_SCCB_SDA",
+          "uuid": "a8665841127d806f"
+        },
+        "footprint": {
+          "uuid": ""
+        },
+        "mirror": false,
+        "name": "CAM_SCCB_SDA",
+        "net": "CAM_SCCB_SDA",
+        "netlistAvailable": true,
+        "otherProperty": {
+          "Description": "",
+          "Relevance": "[]"
+        },
+        "pins": [
+          {
+            "net": null,
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "",
+            "pinNumber": "1",
+            "primitiveId": "ie83-ie1",
+            "rotation": 0,
+            "x": 1310,
+            "y": -165
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "ie83",
+        "rotation": 180,
+        "subPartName": "1",
+        "symbol": {
+          "libraryUuid": "",
+          "name": "g_passive",
+          "uuid": "1be07761567207c6"
+        },
+        "x": 1310,
+        "y": -165
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "component": {
+          "libraryUuid": "",
+          "name": "CAM_DOVDD_1V8",
+          "uuid": "b6be72912db5b368"
+        },
+        "componentType": "netport",
+        "designator": "?",
+        "device": {
+          "libraryUuid": "",
+          "name": "CAM_DOVDD_1V8",
+          "uuid": "b6be72912db5b368"
+        },
+        "footprint": {
+          "uuid": ""
+        },
+        "mirror": false,
+        "name": "CAM_DOVDD_1V8",
+        "net": "CAM_DOVDD_1V8",
+        "netlistAvailable": true,
+        "otherProperty": {
+          "Description": "",
+          "Relevance": "[]"
+        },
+        "pins": [
+          {
+            "net": null,
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "",
+            "pinNumber": "1",
+            "primitiveId": "ie87-ie1",
+            "rotation": 180,
+            "x": 1370,
+            "y": -165
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "ie87",
+        "rotation": 0,
+        "subPartName": "1",
+        "symbol": {
+          "libraryUuid": "",
+          "name": "g_passive",
+          "uuid": "1be07761567207c6"
+        },
+        "x": 1370,
+        "y": -165
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "component": {
+          "libraryUuid": "",
+          "name": "LED_2V8",
+          "uuid": "685a56fbe8e33afc"
+        },
+        "componentType": "netport",
+        "designator": "?",
+        "device": {
+          "libraryUuid": "",
+          "name": "LED_2V8",
+          "uuid": "685a56fbe8e33afc"
+        },
+        "footprint": {
+          "uuid": ""
+        },
+        "mirror": false,
+        "name": "LED_2V8",
+        "net": "LED_2V8",
+        "netlistAvailable": true,
+        "otherProperty": {
+          "Description": "",
+          "Relevance": "[]"
+        },
+        "pins": [
+          {
+            "net": null,
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "",
+            "pinNumber": "1",
+            "primitiveId": "ie106-ie1",
+            "rotation": 0,
+            "x": 270,
+            "y": -224.99999999999997
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "ie106",
+        "rotation": 180,
+        "subPartName": "1",
+        "symbol": {
+          "libraryUuid": "",
+          "name": "g_passive",
+          "uuid": "1be07761567207c6"
+        },
+        "x": 270,
+        "y": -225
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "component": {
+          "libraryUuid": "",
+          "name": "ISENSE_N",
+          "uuid": "9e1d7b43ff52178f"
+        },
+        "componentType": "netport",
+        "designator": "?",
+        "device": {
+          "libraryUuid": "",
+          "name": "ISENSE_N",
+          "uuid": "9e1d7b43ff52178f"
+        },
+        "footprint": {
+          "uuid": ""
+        },
+        "mirror": false,
+        "name": "ISENSE_N",
+        "net": "ISENSE_N",
+        "netlistAvailable": true,
+        "otherProperty": {
+          "Description": "",
+          "Relevance": "[]"
+        },
+        "pins": [
+          {
+            "net": null,
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "",
+            "pinNumber": "1",
+            "primitiveId": "ie110-ie1",
+            "rotation": 180,
+            "x": 330,
+            "y": -225
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "ie110",
+        "rotation": 0,
+        "subPartName": "1",
+        "symbol": {
+          "libraryUuid": "",
+          "name": "g_passive",
+          "uuid": "1be07761567207c6"
+        },
+        "x": 330,
+        "y": -225
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "component": {
+          "libraryUuid": "",
+          "name": "PRIV_VTH_L",
+          "uuid": "f69fb112ecdb49fa"
+        },
+        "componentType": "netport",
+        "designator": "?",
+        "device": {
+          "libraryUuid": "",
+          "name": "PRIV_VTH_L",
+          "uuid": "f69fb112ecdb49fa"
+        },
+        "footprint": {
+          "uuid": ""
+        },
+        "mirror": false,
+        "name": "PRIV_VTH_L",
+        "net": "PRIV_VTH_L",
+        "netlistAvailable": true,
+        "otherProperty": {
+          "Description": "",
+          "Relevance": "[]"
+        },
+        "pins": [
+          {
+            "net": null,
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "",
+            "pinNumber": "1",
+            "primitiveId": "ie129-ie1",
+            "rotation": 0,
+            "x": 790,
+            "y": -225.00000000000003
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "ie129",
+        "rotation": 180,
+        "subPartName": "1",
+        "symbol": {
+          "libraryUuid": "",
+          "name": "g_passive",
+          "uuid": "1be07761567207c6"
+        },
+        "x": 790,
+        "y": -225
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "component": {
+          "libraryUuid": "",
+          "name": "GND",
+          "uuid": "a5ffa8e3714d10fd"
+        },
+        "componentType": "netport",
+        "designator": "?",
+        "device": {
+          "libraryUuid": "",
+          "name": "GND",
+          "uuid": "a5ffa8e3714d10fd"
+        },
+        "footprint": {
+          "uuid": ""
+        },
+        "mirror": false,
+        "name": "GND",
+        "net": "GND",
+        "netlistAvailable": true,
+        "otherProperty": {
+          "Description": "",
+          "Relevance": "[]"
+        },
+        "pins": [
+          {
+            "net": null,
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "",
+            "pinNumber": "1",
+            "primitiveId": "ie133-ie1",
+            "rotation": 180,
+            "x": 850,
+            "y": -225
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "ie133",
+        "rotation": 0,
+        "subPartName": "1",
+        "symbol": {
+          "libraryUuid": "",
+          "name": "g_passive",
+          "uuid": "1be07761567207c6"
+        },
+        "x": 850,
+        "y": -225
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "component": {
+          "libraryUuid": "",
+          "name": "PRIV_VTH_H",
+          "uuid": "9682ec238788aae4"
+        },
+        "componentType": "netport",
+        "designator": "?",
+        "device": {
+          "libraryUuid": "",
+          "name": "PRIV_VTH_H",
+          "uuid": "9682ec238788aae4"
+        },
+        "footprint": {
+          "uuid": ""
+        },
+        "mirror": false,
+        "name": "PRIV_VTH_H",
+        "net": "PRIV_VTH_H",
+        "netlistAvailable": true,
+        "otherProperty": {
+          "Description": "",
+          "Relevance": "[]"
+        },
+        "pins": [
+          {
+            "net": null,
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "",
+            "pinNumber": "1",
+            "primitiveId": "ie152-ie1",
+            "rotation": 0,
+            "x": 1310,
+            "y": -225
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "ie152",
+        "rotation": 180,
+        "subPartName": "1",
+        "symbol": {
+          "libraryUuid": "",
+          "name": "g_passive",
+          "uuid": "1be07761567207c6"
+        },
+        "x": 1310,
+        "y": -225
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "component": {
+          "libraryUuid": "",
+          "name": "PRIV_VTH_L",
+          "uuid": "f69fb112ecdb49fa"
+        },
+        "componentType": "netport",
+        "designator": "?",
+        "device": {
+          "libraryUuid": "",
+          "name": "PRIV_VTH_L",
+          "uuid": "f69fb112ecdb49fa"
+        },
+        "footprint": {
+          "uuid": ""
+        },
+        "mirror": false,
+        "name": "PRIV_VTH_L",
+        "net": "PRIV_VTH_L",
+        "netlistAvailable": true,
+        "otherProperty": {
+          "Description": "",
+          "Relevance": "[]"
+        },
+        "pins": [
+          {
+            "net": null,
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "",
+            "pinNumber": "1",
+            "primitiveId": "ie156-ie1",
+            "rotation": 180,
+            "x": 1370,
+            "y": -225
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "ie156",
+        "rotation": 0,
+        "subPartName": "1",
+        "symbol": {
+          "libraryUuid": "",
+          "name": "g_passive",
+          "uuid": "1be07761567207c6"
+        },
+        "x": 1370,
+        "y": -225
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "component": {
+          "libraryUuid": "",
+          "name": "3V3_SYS",
+          "uuid": "493b264b383c1bec"
+        },
+        "componentType": "netport",
+        "designator": "?",
+        "device": {
+          "libraryUuid": "",
+          "name": "3V3_SYS",
+          "uuid": "493b264b383c1bec"
+        },
+        "footprint": {
+          "uuid": ""
+        },
+        "mirror": false,
+        "name": "3V3_SYS",
+        "net": "3V3_SYS",
+        "netlistAvailable": true,
+        "otherProperty": {
+          "Description": "",
+          "Relevance": "[]"
+        },
+        "pins": [
+          {
+            "net": null,
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "",
+            "pinNumber": "1",
+            "primitiveId": "ie175-ie1",
+            "rotation": 0,
+            "x": 270.00000000000006,
+            "y": -284.99999999999994
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "ie175",
+        "rotation": 180,
+        "subPartName": "1",
+        "symbol": {
+          "libraryUuid": "",
+          "name": "g_passive",
+          "uuid": "1be07761567207c6"
+        },
+        "x": 270,
+        "y": -285
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "component": {
+          "libraryUuid": "",
+          "name": "PRIV_VTH_H",
+          "uuid": "9682ec238788aae4"
+        },
+        "componentType": "netport",
+        "designator": "?",
+        "device": {
+          "libraryUuid": "",
+          "name": "PRIV_VTH_H",
+          "uuid": "9682ec238788aae4"
+        },
+        "footprint": {
+          "uuid": ""
+        },
+        "mirror": false,
+        "name": "PRIV_VTH_H",
+        "net": "PRIV_VTH_H",
+        "netlistAvailable": true,
+        "otherProperty": {
+          "Description": "",
+          "Relevance": "[]"
+        },
+        "pins": [
+          {
+            "net": null,
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "",
+            "pinNumber": "1",
+            "primitiveId": "ie179-ie1",
+            "rotation": 180,
+            "x": 330,
+            "y": -285
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "ie179",
+        "rotation": 0,
+        "subPartName": "1",
+        "symbol": {
+          "libraryUuid": "",
+          "name": "g_passive",
+          "uuid": "1be07761567207c6"
+        },
+        "x": 330,
+        "y": -285
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "component": {
+          "libraryUuid": "",
+          "name": "CAM_XCLK_3V3",
+          "uuid": "27e405f4b064d23f"
+        },
+        "componentType": "netport",
+        "designator": "?",
+        "device": {
+          "libraryUuid": "",
+          "name": "CAM_XCLK_3V3",
+          "uuid": "27e405f4b064d23f"
+        },
+        "footprint": {
+          "uuid": ""
+        },
+        "mirror": false,
+        "name": "CAM_XCLK_3V3",
+        "net": "CAM_XCLK_3V3",
+        "netlistAvailable": true,
+        "otherProperty": {
+          "Description": "",
+          "Relevance": "[]"
+        },
+        "pins": [
+          {
+            "net": null,
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "",
+            "pinNumber": "1",
+            "primitiveId": "ie198-ie1",
+            "rotation": 0,
+            "x": 790,
+            "y": -285
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "ie198",
+        "rotation": 180,
+        "subPartName": "1",
+        "symbol": {
+          "libraryUuid": "",
+          "name": "g_passive",
+          "uuid": "1be07761567207c6"
+        },
+        "x": 790,
+        "y": -285
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "component": {
+          "libraryUuid": "",
+          "name": "XREQ_A",
+          "uuid": "9c603b54a19a41a7"
+        },
+        "componentType": "netport",
+        "designator": "?",
+        "device": {
+          "libraryUuid": "",
+          "name": "XREQ_A",
+          "uuid": "9c603b54a19a41a7"
+        },
+        "footprint": {
+          "uuid": ""
+        },
+        "mirror": false,
+        "name": "XREQ_A",
+        "net": "XREQ_A",
+        "netlistAvailable": true,
+        "otherProperty": {
+          "Description": "",
+          "Relevance": "[]"
+        },
+        "pins": [
+          {
+            "net": null,
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "",
+            "pinNumber": "1",
+            "primitiveId": "ie202-ie1",
+            "rotation": 180,
+            "x": 850,
+            "y": -285
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "ie202",
+        "rotation": 0,
+        "subPartName": "1",
+        "symbol": {
+          "libraryUuid": "",
+          "name": "g_passive",
+          "uuid": "1be07761567207c6"
+        },
+        "x": 850,
+        "y": -285
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "component": {
+          "libraryUuid": "",
+          "name": "CAM_PWR_REQ",
+          "uuid": "4c75ab52ed4316a7"
+        },
+        "componentType": "netport",
+        "designator": "?",
+        "device": {
+          "libraryUuid": "",
+          "name": "CAM_PWR_REQ",
+          "uuid": "4c75ab52ed4316a7"
+        },
+        "footprint": {
+          "uuid": ""
+        },
+        "mirror": false,
+        "name": "CAM_PWR_REQ",
+        "net": "CAM_PWR_REQ",
+        "netlistAvailable": true,
+        "otherProperty": {
+          "Description": "",
+          "Relevance": "[]"
+        },
+        "pins": [
+          {
+            "net": null,
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "",
+            "pinNumber": "1",
+            "primitiveId": "ie221-ie1",
+            "rotation": 0,
+            "x": 1310,
+            "y": -285.00000000000006
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "ie221",
+        "rotation": 180,
+        "subPartName": "1",
+        "symbol": {
+          "libraryUuid": "",
+          "name": "g_passive",
+          "uuid": "1be07761567207c6"
+        },
+        "x": 1310,
+        "y": -285
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "component": {
+          "libraryUuid": "",
+          "name": "GND",
+          "uuid": "a5ffa8e3714d10fd"
+        },
+        "componentType": "netport",
+        "designator": "?",
+        "device": {
+          "libraryUuid": "",
+          "name": "GND",
+          "uuid": "a5ffa8e3714d10fd"
+        },
+        "footprint": {
+          "uuid": ""
+        },
+        "mirror": false,
+        "name": "GND",
+        "net": "GND",
+        "netlistAvailable": true,
+        "otherProperty": {
+          "Description": "",
+          "Relevance": "[]"
+        },
+        "pins": [
+          {
+            "net": null,
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "",
+            "pinNumber": "1",
+            "primitiveId": "ie225-ie1",
+            "rotation": 180,
+            "x": 1370,
+            "y": -285
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "ie225",
+        "rotation": 0,
+        "subPartName": "1",
+        "symbol": {
+          "libraryUuid": "",
+          "name": "g_passive",
+          "uuid": "1be07761567207c6"
+        },
+        "x": 1370,
+        "y": -285
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "component": {
+          "libraryUuid": "",
+          "name": "EVT1_R29_R_SCCB_SCL",
+          "uuid": "8ab4e5beb5a0e2f4"
+        },
+        "componentType": "part",
+        "designator": "R29",
+        "device": {
+          "libraryUuid": "",
+          "name": "EVT1_R29_R_SCCB_SCL",
+          "uuid": "8ab4e5beb5a0e2f4"
+        },
+        "footprint": {
+          "uuid": ""
+        },
+        "manufacturer": "Yageo/Murata/ROHM",
+        "manufacturerId": "",
+        "mirror": false,
+        "name": "EVT1_R29_R_SCCB_SCL",
+        "net": "",
+        "netlistAvailable": true,
+        "otherProperty": {
+          "BOM Line": "BOM-49",
+          "Description": "",
+          "Design Notes": "Explicit return expanded from inherited Rev D function text",
+          "EVT1 Source Ref": "R_SCCB_SCL",
+          "Footprint Status": "BLOCKED",
+          "MPN": "R_XREQ 330R + D_XREQ RB521S-30 + C_XREQ 100nF + R_XREQ_BLEED 100k + R_CAMRST 10k/100nF + R_CAMPWDN 10k + 2x R_SCCB 4.7k + R_LS4_EN 200k",
+          "Origin Footprint": "",
+          "PCB Layer": "Default",
+          "UserDocLink": "",
+          "Value": "R_SCCB_SCL | 4.7k pull-up to CAM_DOVDD_1V8"
+        },
+        "pins": [
+          {
+            "net": "CAM_SCCB_SCL",
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "~",
+            "pinNumber": "1",
+            "primitiveId": "ie45-ie1",
+            "rotation": 180,
+            "x": 800,
+            "y": -165
+          },
+          {
+            "net": "CAM_DOVDD_1V8",
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "~",
+            "pinNumber": "2",
+            "primitiveId": "ie45-ie5",
+            "rotation": 0,
+            "x": 840,
+            "y": -165
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "ie45",
+        "rotation": 0,
+        "subPartName": "1",
+        "supplier": "",
+        "supplierId": "",
+        "symbol": {
+          "libraryUuid": "",
+          "name": "EVT1_R29_R_SCCB_SCL",
+          "uuid": "a68972c2103f6c43"
+        },
+        "uniqueId": "9e71ce6b7342da3b",
+        "x": 820,
+        "y": -165
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "component": {
+          "libraryUuid": "",
+          "name": "EVT1_R30_R_SCCB_SDA",
+          "uuid": "748890b9388cfc97"
+        },
+        "componentType": "part",
+        "designator": "R30",
+        "device": {
+          "libraryUuid": "",
+          "name": "EVT1_R30_R_SCCB_SDA",
+          "uuid": "748890b9388cfc97"
+        },
+        "footprint": {
+          "uuid": ""
+        },
+        "manufacturer": "Yageo/Murata/ROHM",
+        "manufacturerId": "",
+        "mirror": false,
+        "name": "EVT1_R30_R_SCCB_SDA",
+        "net": "",
+        "netlistAvailable": true,
+        "otherProperty": {
+          "BOM Line": "BOM-49",
+          "Description": "",
+          "Design Notes": "Explicit return expanded from inherited Rev D function text",
+          "EVT1 Source Ref": "R_SCCB_SDA",
+          "Footprint Status": "BLOCKED",
+          "MPN": "R_XREQ 330R + D_XREQ RB521S-30 + C_XREQ 100nF + R_XREQ_BLEED 100k + R_CAMRST 10k/100nF + R_CAMPWDN 10k + 2x R_SCCB 4.7k + R_LS4_EN 200k",
+          "Origin Footprint": "",
+          "PCB Layer": "Default",
+          "UserDocLink": "",
+          "Value": "R_SCCB_SDA | 4.7k pull-up to CAM_DOVDD_1V8"
+        },
+        "pins": [
+          {
+            "net": "CAM_SCCB_SDA",
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "~",
+            "pinNumber": "1",
+            "primitiveId": "ie68-ie1",
+            "rotation": 180,
+            "x": 1320,
+            "y": -165
+          },
+          {
+            "net": "CAM_DOVDD_1V8",
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "~",
+            "pinNumber": "2",
+            "primitiveId": "ie68-ie5",
+            "rotation": 0,
+            "x": 1360,
+            "y": -165
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "ie68",
+        "rotation": 0,
+        "subPartName": "1",
+        "supplier": "",
+        "supplierId": "",
+        "symbol": {
+          "libraryUuid": "",
+          "name": "EVT1_R30_R_SCCB_SDA",
+          "uuid": "43c638066a68bce5"
+        },
+        "uniqueId": "8a972535593efa61",
+        "x": 1340,
+        "y": -165
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "component": {
+          "libraryUuid": "",
+          "name": "EVT1_R31_R_SENSE",
+          "uuid": "0c0c437bf51a1c49"
+        },
+        "componentType": "part",
+        "designator": "R31",
+        "device": {
+          "libraryUuid": "",
+          "name": "EVT1_R31_R_SENSE",
+          "uuid": "0c0c437bf51a1c49"
+        },
+        "footprint": {
+          "uuid": ""
+        },
+        "manufacturer": "Panasonic / Yageo",
+        "mirror": false,
+        "name": "EVT1_R31_R_SENSE",
+        "net": "",
+        "netlistAvailable": true,
+        "otherProperty": {
+          "BOM Line": "BOM-24",
+          "Description": "",
+          "Design Notes": "",
+          "EVT1 Source Ref": "R_SENSE",
+          "Footprint Status": "BLOCKED",
+          "MPN": "1.10R 0.1% 0402 Kelvin (ECO-02)",
+          "Origin Footprint": "",
+          "PCB Layer": "Default",
+          "UserDocLink": "https://www.ti.com/lit/ds/symlink/ina185.pdf",
+          "Value": "R_SENSE | 1.10R 0.1% 0402 Kelvin (ECO-02)"
+        },
+        "pins": [
+          {
+            "net": "LED_2V8",
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "~",
+            "pinNumber": "1",
+            "primitiveId": "ie91-ie1",
+            "rotation": 180,
+            "x": 280,
+            "y": -225
+          },
+          {
+            "net": "ISENSE_N",
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "~",
+            "pinNumber": "2",
+            "primitiveId": "ie91-ie5",
+            "rotation": 0,
+            "x": 320,
+            "y": -225
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "ie91",
+        "rotation": 0,
+        "subPartName": "1",
+        "symbol": {
+          "libraryUuid": "",
+          "name": "EVT1_R31_R_SENSE",
+          "uuid": "11e297923711baad"
+        },
+        "uniqueId": "b304d0fb6138316f",
+        "x": 300,
+        "y": -225
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "component": {
+          "libraryUuid": "",
+          "name": "EVT1_R33_R_WIN_BOT",
+          "uuid": "fbda8811986b8aee"
+        },
+        "componentType": "part",
+        "designator": "R33",
+        "device": {
+          "libraryUuid": "",
+          "name": "EVT1_R33_R_WIN_BOT",
+          "uuid": "fbda8811986b8aee"
+        },
+        "footprint": {
+          "uuid": ""
+        },
+        "manufacturer": "TBD",
+        "manufacturerId": "",
+        "mirror": false,
+        "name": "EVT1_R33_R_WIN_BOT",
+        "net": "",
+        "netlistAvailable": true,
+        "otherProperty": {
+          "BOM Line": "BOM-D1-PRIV-R_WIN_BOT",
+          "Description": "",
+          "Design Notes": "",
+          "EVT1 Source Ref": "R_WIN_BOT",
+          "Footprint Status": "PASS",
+          "MPN": "24.9k 1%",
+          "Origin Footprint": "Resistor_SMD:R_0201_0603Metric",
+          "PCB Layer": "Default",
+          "UserDocLink": "",
+          "Value": "R_WIN_BOT | 24.9k 1% (ECO-02)"
+        },
+        "pins": [
+          {
+            "net": "PRIV_VTH_L",
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "~",
+            "pinNumber": "1",
+            "primitiveId": "ie114-ie1",
+            "rotation": 180,
+            "x": 800,
+            "y": -225
+          },
+          {
+            "net": "GND",
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "~",
+            "pinNumber": "2",
+            "primitiveId": "ie114-ie5",
+            "rotation": 0,
+            "x": 840,
+            "y": -225
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "ie114",
+        "rotation": 0,
+        "subPartName": "1",
+        "supplier": "",
+        "supplierId": "",
+        "symbol": {
+          "libraryUuid": "",
+          "name": "EVT1_R33_R_WIN_BOT",
+          "uuid": "347aacf612ed8b28"
+        },
+        "uniqueId": "e0ee0f05e2f0b4da",
+        "x": 820,
+        "y": -225
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "component": {
+          "libraryUuid": "",
+          "name": "EVT1_R34_R_WIN_MID",
+          "uuid": "39a1e943b9719210"
+        },
+        "componentType": "part",
+        "designator": "R34",
+        "device": {
+          "libraryUuid": "",
+          "name": "EVT1_R34_R_WIN_MID",
+          "uuid": "39a1e943b9719210"
+        },
+        "footprint": {
+          "uuid": ""
+        },
+        "manufacturer": "TBD",
+        "manufacturerId": "",
+        "mirror": false,
+        "name": "EVT1_R34_R_WIN_MID",
+        "net": "",
+        "netlistAvailable": true,
+        "otherProperty": {
+          "BOM Line": "BOM-D1-PRIV-R_WIN_MID",
+          "Description": "",
+          "Design Notes": "",
+          "EVT1 Source Ref": "R_WIN_MID",
+          "Footprint Status": "PASS",
+          "MPN": "56.2k 1%",
+          "Origin Footprint": "Resistor_SMD:R_0201_0603Metric",
+          "PCB Layer": "Default",
+          "UserDocLink": "",
+          "Value": "R_WIN_MID | 56.2k 1% (ECO-02)"
+        },
+        "pins": [
+          {
+            "net": "PRIV_VTH_H",
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "~",
+            "pinNumber": "1",
+            "primitiveId": "ie137-ie1",
+            "rotation": 180,
+            "x": 1320,
+            "y": -225
+          },
+          {
+            "net": "PRIV_VTH_L",
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "~",
+            "pinNumber": "2",
+            "primitiveId": "ie137-ie5",
+            "rotation": 0,
+            "x": 1360,
+            "y": -225
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "ie137",
+        "rotation": 0,
+        "subPartName": "1",
+        "supplier": "",
+        "supplierId": "",
+        "symbol": {
+          "libraryUuid": "",
+          "name": "EVT1_R34_R_WIN_MID",
+          "uuid": "f51e2ca058e2d770"
+        },
+        "uniqueId": "c7fcac2dc179deab",
+        "x": 1340,
+        "y": -225
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "component": {
+          "libraryUuid": "",
+          "name": "EVT1_R35_R_WIN_TOP",
+          "uuid": "7dd8448e2b4f5944"
+        },
+        "componentType": "part",
+        "designator": "R35",
+        "device": {
+          "libraryUuid": "",
+          "name": "EVT1_R35_R_WIN_TOP",
+          "uuid": "7dd8448e2b4f5944"
+        },
+        "footprint": {
+          "uuid": ""
+        },
+        "manufacturer": "TBD",
+        "manufacturerId": "",
+        "mirror": false,
+        "name": "EVT1_R35_R_WIN_TOP",
+        "net": "",
+        "netlistAvailable": true,
+        "otherProperty": {
+          "BOM Line": "BOM-D1-PRIV-R_WIN_TOP",
+          "Description": "",
+          "Design Notes": "",
+          "EVT1 Source Ref": "R_WIN_TOP",
+          "Footprint Status": "PASS",
+          "MPN": "20.0k 1%",
+          "Origin Footprint": "Resistor_SMD:R_0201_0603Metric",
+          "PCB Layer": "Default",
+          "UserDocLink": "",
+          "Value": "R_WIN_TOP | 20.0k 1% (ECO-02)"
+        },
+        "pins": [
+          {
+            "net": "3V3_SYS",
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "~",
+            "pinNumber": "1",
+            "primitiveId": "ie160-ie1",
+            "rotation": 180,
+            "x": 280,
+            "y": -285
+          },
+          {
+            "net": "PRIV_VTH_H",
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "~",
+            "pinNumber": "2",
+            "primitiveId": "ie160-ie5",
+            "rotation": 0,
+            "x": 320,
+            "y": -285
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "ie160",
+        "rotation": 0,
+        "subPartName": "1",
+        "supplier": "",
+        "supplierId": "",
+        "symbol": {
+          "libraryUuid": "",
+          "name": "EVT1_R35_R_WIN_TOP",
+          "uuid": "fee435b1d3e4df39"
+        },
+        "uniqueId": "ed5ed49cac6cc905",
+        "x": 300,
+        "y": -285
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "component": {
+          "libraryUuid": "",
+          "name": "EVT1_R36_R_XREQ",
+          "uuid": "4349488d29b3a559"
+        },
+        "componentType": "part",
+        "designator": "R36",
+        "device": {
+          "libraryUuid": "",
+          "name": "EVT1_R36_R_XREQ",
+          "uuid": "4349488d29b3a559"
+        },
+        "footprint": {
+          "uuid": ""
+        },
+        "manufacturer": "Yageo/Murata/ROHM",
+        "manufacturerId": "",
+        "mirror": false,
+        "name": "EVT1_R36_R_XREQ",
+        "net": "",
+        "netlistAvailable": true,
+        "otherProperty": {
+          "BOM Line": "BOM-49",
+          "Description": "",
+          "Design Notes": "",
+          "EVT1 Source Ref": "R_XREQ",
+          "Footprint Status": "BLOCKED",
+          "MPN": "R_XREQ 330R + D_XREQ RB521S-30 + C_XREQ 100nF + R_XREQ_BLEED 100k + R_CAMRST 10k/100nF + R_CAMPWDN 10k + 2x R_SCCB 4.7k + R_LS4_EN 200k",
+          "Origin Footprint": "",
+          "PCB Layer": "Default",
+          "UserDocLink": "",
+          "Value": "R_XREQ | 330R series to detector"
+        },
+        "pins": [
+          {
+            "net": "CAM_XCLK_3V3",
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "~",
+            "pinNumber": "1",
+            "primitiveId": "ie183-ie1",
+            "rotation": 180,
+            "x": 800,
+            "y": -285
+          },
+          {
+            "net": "XREQ_A",
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "~",
+            "pinNumber": "2",
+            "primitiveId": "ie183-ie5",
+            "rotation": 0,
+            "x": 840,
+            "y": -285
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "ie183",
+        "rotation": 0,
+        "subPartName": "1",
+        "supplier": "",
+        "supplierId": "",
+        "symbol": {
+          "libraryUuid": "",
+          "name": "EVT1_R36_R_XREQ",
+          "uuid": "99db83d095649010"
+        },
+        "uniqueId": "ee084f684bde39fa",
+        "x": 820,
+        "y": -285
+      },
+      {
+        "addIntoBom": true,
+        "addIntoPcb": true,
+        "component": {
+          "libraryUuid": "",
+          "name": "EVT1_R37_R_XREQ_BLEED",
+          "uuid": "40c9575b9d5a5eee"
+        },
+        "componentType": "part",
+        "designator": "R37",
+        "device": {
+          "libraryUuid": "",
+          "name": "EVT1_R37_R_XREQ_BLEED",
+          "uuid": "40c9575b9d5a5eee"
+        },
+        "footprint": {
+          "uuid": ""
+        },
+        "manufacturer": "Yageo/Murata/ROHM",
+        "manufacturerId": "",
+        "mirror": false,
+        "name": "EVT1_R37_R_XREQ_BLEED",
+        "net": "",
+        "netlistAvailable": true,
+        "otherProperty": {
+          "BOM Line": "BOM-49",
+          "Description": "",
+          "Design Notes": "Explicit return expanded from inherited Rev D function text",
+          "EVT1 Source Ref": "R_XREQ_BLEED",
+          "Footprint Status": "BLOCKED",
+          "MPN": "R_XREQ 330R + D_XREQ RB521S-30 + C_XREQ 100nF + R_XREQ_BLEED 100k + R_CAMRST 10k/100nF + R_CAMPWDN 10k + 2x R_SCCB 4.7k + R_LS4_EN 200k",
+          "Origin Footprint": "",
+          "PCB Layer": "Default",
+          "UserDocLink": "",
+          "Value": "R_XREQ_BLEED | 100k to GND"
+        },
+        "pins": [
+          {
+            "net": "CAM_PWR_REQ",
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "~",
+            "pinNumber": "1",
+            "primitiveId": "ie206-ie1",
+            "rotation": 180,
+            "x": 1320,
+            "y": -285
+          },
+          {
+            "net": "GND",
+            "noConnected": false,
+            "otherProperty": {},
+            "pinName": "~",
+            "pinNumber": "2",
+            "primitiveId": "ie206-ie5",
+            "rotation": 0,
+            "x": 1360,
+            "y": -285
+          }
+        ],
+        "pinsAvailable": true,
+        "primitiveId": "ie206",
+        "rotation": 0,
+        "subPartName": "1",
+        "supplier": "",
+        "supplierId": "",
+        "symbol": {
+          "libraryUuid": "",
+          "name": "EVT1_R37_R_XREQ_BLEED",
+          "uuid": "9f47d2f724cdff9a"
+        },
+        "uniqueId": "0e69257913149112",
+        "x": 1340,
+        "y": -285
+      }
+    ],
+    "count": 28,
+    "pinNetsAvailable": true,
+    "wires": []
+  },
+  "context": {
+    "projectUuid": "69e0af55d0371eb2dc23e878fa4739d7541262712a367a7dafaeb9549ef936e9",
+    "projectName": "EVT1-H02-H03-RD-20261120",
+    "documentUuid": "35d0bca337813128",
+    "documentType": "schematic",
+    "tabId": "35d0bca337813128@69e0af55d0371eb2dc23e878fa4739d7541262712a367a7dafaeb9549ef936e9",
+    "pageVisibility": "hidden"
+  },
+  "mutationContext": {
+    "projectUuid": "69e0af55d0371eb2dc23e878fa4739d7541262712a367a7dafaeb9549ef936e9",
+    "projectName": "EVT1-H02-H03-RD-20261120",
+    "documentUuid": "35d0bca337813128",
+    "documentType": "schematic",
+    "tabId": "35d0bca337813128@69e0af55d0371eb2dc23e878fa4739d7541262712a367a7dafaeb9549ef936e9",
+    "pageVisibility": "hidden"
+  },
+  "mutationContextAvailable": true,
+  "seq": 53,
+  "seqAbandoned": 0
+}
