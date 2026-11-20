@@ -1,0 +1,3207 @@
+PROTEL NETLIST 2.0
+[
+DESIGNATOR
+J1
+FOOTPRINT
+
+PARTTYPE
+EVT1_J1_J_BTB_R
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_J1_J_BTB_R
+PCB Layer
+Default
+Name
+EVT1_J1_J_BTB_R
+Designator
+J1
+Value
+J_BTB_R | BM28B0.6-16DS/2-0.35V(53)
+UserDocLink
+https://www.hirose.com/en/product/document?clcode=CL0673-5043-0-51&productname=BM28B0.6-16DS/2-0.35V(51)&series=BM28&documenttype=Catalog&lang=en&documentid=D49354_en
+Description
+
+Symbol
+EVT1_J1_J_BTB_R
+EVT1 Source Ref
+J_BTB_R
+BOM Line
+BOM-40
+MPN
+BM28B0.6-16DS/2-0.35V(53)
+Manufacturer
+Hirose (HRS)
+Footprint Status
+BLOCKED
+Design Notes
+
+Origin Footprint
+
+Unique ID
+51bfc0e5166a1c40
+Manufacturer Part
+BM28B0.6-16DS/2-0.35V(53)
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+U10
+FOOTPRINT
+
+PARTTYPE
+EVT1_U10_U10_AMP_R
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_U10_U10_AMP_R
+PCB Layer
+Default
+Name
+EVT1_U10_U10_AMP_R
+Designator
+U10
+Value
+U10_AMP_R | MAX98357AEWL+T
+UserDocLink
+https://www.analog.com/media/en/technical-documentation/data-sheets/max98357a-max98357b.pdf
+Description
+
+Symbol
+EVT1_U10_U10_AMP_R
+EVT1 Source Ref
+U10_AMP_R
+BOM Line
+BOM-38
+MPN
+MAX98357AEWL+T
+Manufacturer
+Analog Devices
+Footprint Status
+BLOCKED
+Design Notes
+69.8k RSMALL -> RIGHT (B1 0.825 V max .. B2 1.245 V min) | 10 uF + 0.1 uF at bump | tied to adjacent C2 GND bump (12 dB, no via; ADI AN6643)
+Origin Footprint
+
+Unique ID
+c69de7c088414df5
+Manufacturer Part
+MAX98357AEWL+T
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+U1
+FOOTPRINT
+
+PARTTYPE
+EVT1_U1_U10_SD_BUF
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_U1_U10_SD_BUF
+PCB Layer
+Default
+Name
+EVT1_U1_U10_SD_BUF
+Designator
+U1
+Value
+U10_SD_BUF | SN74LVC1G3157DSFR
+UserDocLink
+https://www.ti.com/lit/ds/symlink/sn74lvc1g3157.pdf
+Description
+
+Symbol
+EVT1_U1_U10_SD_BUF
+EVT1 Source Ref
+U10_SD_BUF
+BOM Line
+BOM-D1-AT02
+MPN
+SN74LVC1G3157DSFR
+Manufacturer
+Texas Instruments
+Footprint Status
+BLOCKED
+Design Notes
+SN74LVC1G3157DSFR SPDT; S=0 connects A toGND; S=1 connects A to1V8_SYS; conservative140ohm full-range bound
+Origin Footprint
+
+Unique ID
+1bdc0ab44f99f92d
+Manufacturer Part
+SN74LVC1G3157DSFR
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+MK3
+FOOTPRINT
+
+PARTTYPE
+EVT1_MK3_MK3_R
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_MK3_MK3_R
+PCB Layer
+Default
+Name
+EVT1_MK3_MK3_R
+Designator
+MK3
+Value
+MK3_R | IM69D130V01XTSA1
+UserDocLink
+https://www.infineon.com/assets/row/public/documents/30/49/infineon-im69d130-datasheet-en.pdf
+Description
+
+Symbol
+EVT1_MK3_MK3_R
+EVT1 Source Ref
+MK3_R
+BOM Line
+BOM-39
+MPN
+IM69D130V01XTSA1
+Manufacturer
+Infineon
+Footprint Status
+BLOCKED
+Design Notes
+tDV <= 100 ns, tDD 40..80 ns, tHZ 5..30 ns | 100 nF at VDD | SELECT=GND
+Origin Footprint
+
+Unique ID
+fb705c0b1c749660
+Manufacturer Part
+IM69D130V01XTSA1
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C1
+FOOTPRINT
+
+PARTTYPE
+EVT1_C1_C_AMP_SD_BUF
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C1_C_AMP_SD_BUF
+PCB Layer
+Default
+Name
+EVT1_C1_C_AMP_SD_BUF
+Designator
+C1
+Value
+C_AMP_SD_BUF | 100nF X7R 6.3V 0201
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0201_0603Metric
+Symbol
+EVT1_C1_C_AMP_SD_BUF
+EVT1 Source Ref
+C_AMP_SD_BUF
+BOM Line
+BOM-D1-AT03
+MPN
+0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+
+Unique ID
+b4693cfd16d534cd
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C4
+FOOTPRINT
+
+PARTTYPE
+EVT1_C4_C_MK3_R
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C4_C_MK3_R
+PCB Layer
+Default
+Name
+EVT1_C4_C_MK3_R
+Designator
+C4
+Value
+C_MK3_R | 100nF X7R 6.3V 0201
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0201_0603Metric
+Symbol
+EVT1_C4_C_MK3_R
+EVT1 Source Ref
+C_MK3_R
+BOM Line
+BOM-D1-AT03
+MPN
+0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+Infineon IM69D130 Table4/Figure10: close to pin2
+Unique ID
+3a68d3ddabf48558
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C5
+FOOTPRINT
+
+PARTTYPE
+EVT1_C5_C_U10_AMP_R_BULK
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C5_C_U10_AMP_R_BULK
+PCB Layer
+Default
+Name
+EVT1_C5_C_U10_AMP_R_BULK
+Designator
+C5
+Value
+C_U10_AMP_R_BULK | 10uF X5R 10V 0402
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C5_C_U10_AMP_R_BULK
+EVT1 Source Ref
+C_U10_AMP_R_BULK
+BOM Line
+BOM-D1-AT03
+MPN
+0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+check effective capacitance at actual DC bias and local pulse load
+Unique ID
+ddba3c46cf8b8e66
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C6
+FOOTPRINT
+
+PARTTYPE
+EVT1_C6_C_U10_AMP_R_HF
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C6_C_U10_AMP_R_HF
+PCB Layer
+Default
+Name
+EVT1_C6_C_U10_AMP_R_HF
+Designator
+C6
+Value
+C_U10_AMP_R_HF | 100nF X7R 10V 0201
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0201_0603Metric
+Symbol
+EVT1_C6_C_U10_AMP_R_HF
+EVT1 Source Ref
+C_U10_AMP_R_HF
+BOM Line
+BOM-D1-AT03
+MPN
+0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+ADI supply input p33: directly at A2/C2
+Unique ID
+ab4a8fe24fad9fe4
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+R1
+FOOTPRINT
+
+PARTTYPE
+EVT1_R1_R_AMP_REQ_PD
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R1_R_AMP_REQ_PD
+PCB Layer
+Default
+Name
+EVT1_R1_R_AMP_REQ_PD
+Designator
+R1
+Value
+R_AMP_REQ_PD | 47k 1%
+UserDocLink
+
+Description
+
+Symbol
+EVT1_R1_R_AMP_REQ_PD
+EVT1 Source Ref
+R_AMP_REQ_PD
+BOM Line
+BOM-D1-AT03
+MPN
+0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification
+Manufacturer
+TBD
+Footprint Status
+BLOCKED
+Design Notes
+defined reset OFF; <=2uA input leakage creates<=95mV
+Origin Footprint
+
+Unique ID
+353b166cc2dee846
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+R2
+FOOTPRINT
+
+PARTTYPE
+EVT1_R2_R_IDLE_I2S_AMP_DIN_1V8
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R2_R_IDLE_I2S_AMP_DIN_1V8
+PCB Layer
+Default
+Name
+EVT1_R2_R_IDLE_I2S_AMP_DIN_1V8
+Designator
+R2
+Value
+R_IDLE_I2S_AMP_DIN_1V8 | 100k 1%
+UserDocLink
+
+Description
+
+Symbol
+EVT1_R2_R_IDLE_I2S_AMP_DIN_1V8
+EVT1 Source Ref
+R_IDLE_I2S_AMP_DIN_1V8
+BOM Line
+BOM-D1-AT03
+MPN
+0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification
+Manufacturer
+TBD
+Footprint Status
+BLOCKED
+Design Notes
+defined I2S idle while nRF pins are inputs; master remains nRF only
+Origin Footprint
+
+Unique ID
+6f63fc6711cfa315
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+R3
+FOOTPRINT
+
+PARTTYPE
+EVT1_R3_R_IDLE_I2S_BCLK_1V8
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R3_R_IDLE_I2S_BCLK_1V8
+PCB Layer
+Default
+Name
+EVT1_R3_R_IDLE_I2S_BCLK_1V8
+Designator
+R3
+Value
+R_IDLE_I2S_BCLK_1V8 | 100k 1%
+UserDocLink
+
+Description
+
+Symbol
+EVT1_R3_R_IDLE_I2S_BCLK_1V8
+EVT1 Source Ref
+R_IDLE_I2S_BCLK_1V8
+BOM Line
+BOM-D1-AT03
+MPN
+0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification
+Manufacturer
+TBD
+Footprint Status
+BLOCKED
+Design Notes
+defined I2S idle while nRF pins are inputs; master remains nRF only
+Origin Footprint
+
+Unique ID
+fe89d0632cfce75f
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+R4
+FOOTPRINT
+
+PARTTYPE
+EVT1_R4_R_IDLE_I2S_LRCLK_1V8
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R4_R_IDLE_I2S_LRCLK_1V8
+PCB Layer
+Default
+Name
+EVT1_R4_R_IDLE_I2S_LRCLK_1V8
+Designator
+R4
+Value
+R_IDLE_I2S_LRCLK_1V8 | 100k 1%
+UserDocLink
+
+Description
+
+Symbol
+EVT1_R4_R_IDLE_I2S_LRCLK_1V8
+EVT1 Source Ref
+R_IDLE_I2S_LRCLK_1V8
+BOM Line
+BOM-D1-AT03
+MPN
+0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification
+Manufacturer
+TBD
+Footprint Status
+BLOCKED
+Design Notes
+defined I2S idle while nRF pins are inputs; master remains nRF only
+Origin Footprint
+
+Unique ID
+fdc86a4b576d9e98
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+R5
+FOOTPRINT
+
+PARTTYPE
+EVT1_R5_R_IPC_PU
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R5_R_IPC_PU
+PCB Layer
+Default
+Name
+EVT1_R5_R_IPC_PU
+Designator
+R5
+Value
+R_IPC_PU | 100k pull-up to 1V8_SYS (UART idle when ESP32 side off)
+UserDocLink
+
+Description
+
+Symbol
+EVT1_R5_R_IPC_PU
+EVT1 Source Ref
+R_IPC_PU
+BOM Line
+BOM-53
+MPN
+R_SDR 69.8k 1% + R_IPC_PU 100k + R_ISET_R 5.49k 1% + R_VSET_R 27k 1%
+Manufacturer
+Yageo
+Footprint Status
+BLOCKED
+Design Notes
+Explicit return expanded from inherited Rev D function text
+Origin Footprint
+
+Unique ID
+9cdd622c9eeecfe7
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+R9
+FOOTPRINT
+
+PARTTYPE
+EVT1_R9_R_SDR
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R9_R_SDR
+PCB Layer
+Default
+Name
+EVT1_R9_R_SDR
+Designator
+R9
+Value
+R_SDR | 69.8k 1%
+UserDocLink
+
+Description
+
+Symbol
+EVT1_R9_R_SDR
+EVT1 Source Ref
+R_SDR
+BOM Line
+BOM-53
+MPN
+R_SDR 69.8k 1% + R_IPC_PU 100k + R_ISET_R 5.49k 1% + R_VSET_R 27k 1%
+Manufacturer
+Yageo
+Footprint Status
+BLOCKED
+Design Notes
+
+Origin Footprint
+
+Unique ID
+1e1ffada38203b9e
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+SPK1
+FOOTPRINT
+
+PARTTYPE
+EVT1_SPK1_SPK_R
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+no
+Device
+EVT1_SPK1_SPK_R
+PCB Layer
+Default
+Name
+EVT1_SPK1_SPK_R
+Designator
+SPK1
+Value
+SPK_R | MPN_TBD (8 ohm micro-speaker)
+UserDocLink
+
+Description
+
+Symbol
+EVT1_SPK1_SPK_R
+EVT1 Source Ref
+SPK_R
+BOM Line
+BOM-52
+MPN
+MPN_TBD (8 ohm micro-speaker)
+Manufacturer
+TBD
+Footprint Status
+External assembly boundary; no PCB footprint
+Design Notes
+
+Origin Footprint
+
+Unique ID
+d2e4bc6839561c23
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+TP4
+FOOTPRINT
+
+PARTTYPE
+EVT1_TP4_TP_SPK_R_N
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_TP4_TP_SPK_R_N
+PCB Layer
+Default
+Name
+EVT1_TP4_TP_SPK_R_N
+Designator
+TP4
+Value
+TP_SPK_R_N | SPK_LEAD_PAD
+UserDocLink
+
+Description
+
+Symbol
+EVT1_TP4_TP_SPK_R_N
+EVT1 Source Ref
+TP_SPK_R_N
+BOM Line
+BOM-CAD-TP_SPK_R_N
+MPN
+PCB copper pad
+Manufacturer
+
+Footprint Status
+BLOCKED
+Design Notes
+On-board speaker lead termination per BOM-52. Floating class-D BTL; never tie to ground.
+Origin Footprint
+
+Unique ID
+6410be24ff53b3b6
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+TP5
+FOOTPRINT
+
+PARTTYPE
+EVT1_TP5_TP_SPK_R_P
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_TP5_TP_SPK_R_P
+PCB Layer
+Default
+Name
+EVT1_TP5_TP_SPK_R_P
+Designator
+TP5
+Value
+TP_SPK_R_P | SPK_LEAD_PAD
+UserDocLink
+
+Description
+
+Symbol
+EVT1_TP5_TP_SPK_R_P
+EVT1 Source Ref
+TP_SPK_R_P
+BOM Line
+BOM-CAD-TP_SPK_R_P
+MPN
+PCB copper pad
+Manufacturer
+
+Footprint Status
+BLOCKED
+Design Notes
+On-board speaker lead termination per BOM-52. Floating class-D BTL; never tie to ground.
+Origin Footprint
+
+Unique ID
+f7ec211fb22f3ea3
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+U3
+FOOTPRINT
+WSON-8_L2.0-W2.0-P0.50-TL-EP
+PARTTYPE
+EVT1_U3_U3_R
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_U3_U3_R
+PCB Layer
+Default
+Name
+EVT1_U3_U3_R
+Designator
+U3
+Value
+U3_R | BQ25170DSGR
+UserDocLink
+https://www.mouser.lt/datasheet/2/405/1/bq25170-2303674.pdf
+Description
+
+Origin Footprint
+Package_SON:Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm
+Symbol
+EVT1_U3_U3_R
+EVT1 Source Ref
+U3_R
+BOM Line
+BOM-37
+MPN
+BQ25170DSGR
+Manufacturer
+Texas Instruments
+Footprint Status
+PASS
+Design Notes
+R_ISET_R 5.49k -> 54.6 mA (KISET 300 AOhm, range 375R..30k) | open-drain, unused | R_VSET_R 27k 1% -> 4.20 V (Table 7-1) | battery node
+Unique ID
+66797bcd97f4f6c2
+Manufacturer Part
+BQ25170DSGR
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+BAT1
+FOOTPRINT
+
+PARTTYPE
+EVT1_BAT1_BAT_R
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+no
+Device
+EVT1_BAT1_BAT_R
+PCB Layer
+Default
+Name
+EVT1_BAT1_BAT_R
+Designator
+BAT1
+Value
+BAT_R | Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47m...
+UserDocLink
+https://www.grepow.com/shaped-battery/ultra-narrow-battery.html
+Description
+
+Symbol
+EVT1_BAT1_BAT_R
+EVT1 Source Ref
+BAT_R
+BOM Line
+BOM-44
+MPN
+Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight)
+Manufacturer
+Grepow (格瑞普)
+Footprint Status
+External assembly boundary; no PCB footprint
+Design Notes
+103AT-compatible R/T curve required; curve and exact pack pin order OPEN | Required external protected-pack contract; raw cell connection PROHIBITED
+Origin Footprint
+
+Unique ID
+209f0e49c54e94d7
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+Q1
+FOOTPRINT
+
+PARTTYPE
+EVT1_Q1_Q_CHG_MUTE_R
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_Q1_Q_CHG_MUTE_R
+PCB Layer
+Default
+Name
+EVT1_Q1_Q_CHG_MUTE_R
+Designator
+Q1
+Value
+Q_CHG_MUTE_R | 2N7002
+UserDocLink
+https://assets.nexperia.com/documents/data-sheet/2N7002.pdf
+Description
+
+Origin Footprint
+Package_TO_SOT_SMD:SOT-23
+Symbol
+EVT1_Q1_Q_CHG_MUTE_R
+EVT1 Source Ref
+Q_CHG_MUTE_R
+BOM Line
+BOM-D1-PWR-Q_CHG_MUTE_R
+MPN
+2N7002
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+VBUS present forces right MAX98357A shutdown; 69.8k limits nRF GPIO current
+Unique ID
+f76c01de5337d462
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C2
+FOOTPRINT
+
+PARTTYPE
+EVT1_C2_C_CHG_R_IN
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C2_C_CHG_R_IN
+PCB Layer
+Default
+Name
+EVT1_C2_C_CHG_R_IN
+Designator
+C2
+Value
+C_CHG_R_IN | 1uF 25V X7R; effective >=1uF
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C2_C_CHG_R_IN
+EVT1 Source Ref
+C_CHG_R_IN
+BOM Line
+BOM-D1-PWR-C_CHG_R_IN
+MPN
+1uF 25V X7R; effective >=1uF
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+place at corresponding IC pins; DC-bias curve approval OPEN
+Unique ID
+a2c5d49bc5dde298
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C3
+FOOTPRINT
+
+PARTTYPE
+EVT1_C3_C_CHG_R_OUT
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C3_C_CHG_R_OUT
+PCB Layer
+Default
+Name
+EVT1_C3_C_CHG_R_OUT
+Designator
+C3
+Value
+C_CHG_R_OUT | 1uF 10V X7R; effective >=1uF
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C3_C_CHG_R_OUT
+EVT1 Source Ref
+C_CHG_R_OUT
+BOM Line
+BOM-D1-PWR-C_CHG_R_OUT
+MPN
+1uF 10V X7R; effective >=1uF
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+place at corresponding IC pins; DC-bias curve approval OPEN
+Unique ID
+cc82bf2c2e22e605
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+R6
+FOOTPRINT
+
+PARTTYPE
+EVT1_R6_R_ISET_R
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R6_R_ISET_R
+PCB Layer
+Default
+Name
+EVT1_R6_R_ISET_R
+Designator
+R6
+Value
+R_ISET_R | 5.49k 1%
+UserDocLink
+
+Description
+
+Symbol
+EVT1_R6_R_ISET_R
+EVT1 Source Ref
+R_ISET_R
+BOM Line
+BOM-53
+MPN
+R_SDR 69.8k 1% + R_IPC_PU 100k + R_ISET_R 5.49k 1% + R_VSET_R 27k 1%
+Manufacturer
+Yageo
+Footprint Status
+BLOCKED
+Design Notes
+
+Origin Footprint
+
+Unique ID
+e06ccd13940482ac
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+R7
+FOOTPRINT
+
+PARTTYPE
+EVT1_R7_R_MUTE_GATE
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R7_R_MUTE_GATE
+PCB Layer
+Default
+Name
+EVT1_R7_R_MUTE_GATE
+Designator
+R7
+Value
+R_MUTE_GATE | 100 ohm 1%
+UserDocLink
+
+Description
+
+Origin Footprint
+Resistor_SMD:R_0201_0603Metric
+Symbol
+EVT1_R7_R_MUTE_GATE
+EVT1 Source Ref
+R_MUTE_GATE
+BOM Line
+BOM-D1-PWR-R_MUTE_GATE
+MPN
+100 ohm 1%
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+
+Unique ID
+ba2c6d155e7fd301
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+R8
+FOOTPRINT
+
+PARTTYPE
+EVT1_R8_R_MUTE_PD
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R8_R_MUTE_PD
+PCB Layer
+Default
+Name
+EVT1_R8_R_MUTE_PD
+Designator
+R8
+Value
+R_MUTE_PD | 100k 1%
+UserDocLink
+
+Description
+
+Origin Footprint
+Resistor_SMD:R_0201_0603Metric
+Symbol
+EVT1_R8_R_MUTE_PD
+EVT1 Source Ref
+R_MUTE_PD
+BOM Line
+BOM-D1-PWR-R_MUTE_PD
+MPN
+100k 1%
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+
+Unique ID
+86d447fa2a9c8586
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+R10
+FOOTPRINT
+
+PARTTYPE
+EVT1_R10_R_VSET_R
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R10_R_VSET_R
+PCB Layer
+Default
+Name
+EVT1_R10_R_VSET_R
+Designator
+R10
+Value
+R_VSET_R | 27k 1%
+UserDocLink
+
+Description
+
+Symbol
+EVT1_R10_R_VSET_R
+EVT1 Source Ref
+R_VSET_R
+BOM Line
+BOM-53
+MPN
+R_SDR 69.8k 1% + R_IPC_PU 100k + R_ISET_R 5.49k 1% + R_VSET_R 27k 1%
+Manufacturer
+Yageo
+Footprint Status
+BLOCKED
+Design Notes
+
+Origin Footprint
+
+Unique ID
+41bc0941336b1513
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+TP1
+FOOTPRINT
+
+PARTTYPE
+EVT1_TP1_TP_BAT_R_N
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_TP1_TP_BAT_R_N
+PCB Layer
+Default
+Name
+EVT1_TP1_TP_BAT_R_N
+Designator
+TP1
+Value
+TP_BAT_R_N | solder pad BAT_R-
+UserDocLink
+https://www.grepow.com/shaped-battery/ultra-narrow-battery.html
+Description
+
+Symbol
+EVT1_TP1_TP_BAT_R_N
+EVT1 Source Ref
+TP_BAT_R_N
+BOM Line
+BOM-44
+MPN
+Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight)
+Manufacturer
+Grepow (格瑞普)
+Footprint Status
+BLOCKED
+Design Notes
+
+Origin Footprint
+
+Unique ID
+4726d92b84fba278
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+TP2
+FOOTPRINT
+
+PARTTYPE
+EVT1_TP2_TP_BAT_R_P
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_TP2_TP_BAT_R_P
+PCB Layer
+Default
+Name
+EVT1_TP2_TP_BAT_R_P
+Designator
+TP2
+Value
+TP_BAT_R_P | solder pad BAT_R+ (Rev D: off-connector)
+UserDocLink
+https://www.grepow.com/shaped-battery/ultra-narrow-battery.html
+Description
+
+Symbol
+EVT1_TP2_TP_BAT_R_P
+EVT1 Source Ref
+TP_BAT_R_P
+BOM Line
+BOM-44
+MPN
+Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight)
+Manufacturer
+Grepow (格瑞普)
+Footprint Status
+BLOCKED
+Design Notes
+
+Origin Footprint
+
+Unique ID
+21ffbae72f4f4154
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+TP3
+FOOTPRINT
+
+PARTTYPE
+EVT1_TP3_TP_NTC_R
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_TP3_TP_NTC_R
+PCB Layer
+Default
+Name
+EVT1_TP3_TP_NTC_R
+Designator
+TP3
+Value
+TP_NTC_R | solder pad NTC
+UserDocLink
+https://www.grepow.com/shaped-battery/ultra-narrow-battery.html
+Description
+
+Symbol
+EVT1_TP3_TP_NTC_R
+EVT1 Source Ref
+TP_NTC_R
+BOM Line
+BOM-44
+MPN
+Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight)
+Manufacturer
+Grepow (格瑞普)
+Footprint Status
+BLOCKED
+Design Notes
+
+Origin Footprint
+
+Unique ID
+8df4c48c9acaaf69
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+U11
+FOOTPRINT
+
+PARTTYPE
+EVT1_U11_U11_BLE
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_U11_U11_BLE
+PCB Layer
+Default
+Name
+EVT1_U11_U11_BLE
+Designator
+U11
+Value
+U11_BLE | nRF5340-CMAA-R7
+UserDocLink
+https://docs.nordicsemi.com/bundle/ps_nrf5340/page/chapters/pin.html
+Description
+
+Symbol
+EVT1_U11_U11_BLE
+EVT1 Source Ref
+U11_BLE
+BOM Line
+BOM-36
+MPN
+nRF5340-CMAA-R7
+Manufacturer
+Nordic Semiconductor
+Footprint Status
+BLOCKED
+Design Notes
+normal-voltage supply; local decoupling per Nordic config3 | USB/VREGH unused; Nordic CMAA config3 | Nordic CMAA config3; DECR and DECRF intentionally share a decoupling node | USB unused: grounded as Nordic CMAA config3 | Tied VDD in normal-voltage mode; VREGH disabled automatically | Unused GPIO; disable input and pulls; LFRC calibrated; NFC disabled for G11/H12 | nRESET has internal pull-up | I2S SDOUT; PSEL assignment; GPIO input disconnected when unused | I2S SDIN; PSEL assignment; GPIO input disconnected when unused | amplifier enable/select control; PSEL assignment; GPIO input disconnected when unused; local U10_SD_BUF SPDT selects GND or 1V8_SYS | UARTE TXD; PSEL assignment; GPIO input disconnected when unused | I2S LRCK; PSEL assignment; GPIO input disconnected when unused | I2S SCK; PSEL assignment; GPIO input disconnected when unused | UARTE RXD; enable pull-up; PSEL assignment; GPIO input disconnected when unused
+Origin Footprint
+
+Unique ID
+2fd166bdb6936536
+Manufacturer Part
+nRF5340-CMAA-R7
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+TP6
+FOOTPRINT
+
+PARTTYPE
+EVT1_TP6_TP_SWD_R
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_TP6_TP_SWD_R
+PCB Layer
+Default
+Name
+EVT1_TP6_TP_SWD_R
+Designator
+TP6
+Value
+TP_SWD_R | 5x 0.6 mm pads (SWDIO, SWDCLK, nRESET, VTREF, GND) fo...
+UserDocLink
+
+Description
+
+Symbol
+EVT1_TP6_TP_SWD_R
+EVT1 Source Ref
+TP_SWD_R
+BOM Line
+BOM-57
+MPN
+5x 0.6 mm pads (SWDIO, SWDCLK, nRESET, VTREF, GND) for pogo fixture
+Manufacturer
+PCB
+Footprint Status
+BLOCKED
+Design Notes
+
+Origin Footprint
+
+Unique ID
+84aa4de12bc2747c
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+Y2
+FOOTPRINT
+
+PARTTYPE
+EVT1_Y2_Y2_BLE
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_Y2_Y2_BLE
+PCB Layer
+Default
+Name
+EVT1_Y2_Y2_BLE
+Designator
+Y2
+Value
+Y2_BLE | FA-128 32 MHz 8 pF +/-10 ppm initial +/-10 ppm temper...
+UserDocLink
+
+Description
+
+Symbol
+EVT1_Y2_Y2_BLE
+EVT1 Source Ref
+Y2_BLE
+BOM Line
+BOM-55
+MPN
+FA-128 32 MHz 8 pF +/-10 ppm initial +/-10 ppm temperature; candidate Q22FA12800025 (ordering suffix/vendor controlled spec pending)
+Manufacturer
+Epson
+Footprint Status
+BLOCKED
+Design Notes
+Epson FA-128 pinout; internal nRF HFXO caps selected in firmware before HFXO start
+Origin Footprint
+
+Unique ID
+54aa28710a128dff
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C7
+FOOTPRINT
+
+PARTTYPE
+EVT1_C7_NRF_C1
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C7_NRF_C1
+PCB Layer
+Default
+Name
+EVT1_C7_NRF_C1
+Designator
+C7
+Value
+NRF_C1 | 0.7 pF NP0 +/-0.05 pF
+UserDocLink
+
+Description
+
+Symbol
+EVT1_C7_NRF_C1
+EVT1 Source Ref
+NRF_C1
+BOM Line
+BOM-56
+MPN
+Nordic CMAA config3 reference passives; exact procurement MPNs pending
+Manufacturer
+Murata / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+Nordic CMAA reference config3; package per source BOM
+Origin Footprint
+
+Unique ID
+48d2dd422533522c
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C8
+FOOTPRINT
+
+PARTTYPE
+EVT1_C8_NRF_C2
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C8_NRF_C2
+PCB Layer
+Default
+Name
+EVT1_C8_NRF_C2
+Designator
+C8
+Value
+NRF_C2 | 1.0 uF X7S +/-10%
+UserDocLink
+
+Description
+
+Symbol
+EVT1_C8_NRF_C2
+EVT1 Source Ref
+NRF_C2
+BOM Line
+BOM-56
+MPN
+Nordic CMAA config3 reference passives; exact procurement MPNs pending
+Manufacturer
+Murata / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+Nordic CMAA reference config3; package per source BOM
+Origin Footprint
+
+Unique ID
+80f3708378e3d903
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C9
+FOOTPRINT
+
+PARTTYPE
+EVT1_C9_NRF_C3
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C9_NRF_C3
+PCB Layer
+Default
+Name
+EVT1_C9_NRF_C3
+Designator
+C9
+Value
+NRF_C3 | 1.0 uF X7S +/-10%
+UserDocLink
+
+Description
+
+Symbol
+EVT1_C9_NRF_C3
+EVT1 Source Ref
+NRF_C3
+BOM Line
+BOM-56
+MPN
+Nordic CMAA config3 reference passives; exact procurement MPNs pending
+Manufacturer
+Murata / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+Nordic CMAA reference config3; package per source BOM
+Origin Footprint
+
+Unique ID
+7ddfd2f632a8b17d
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C10
+FOOTPRINT
+
+PARTTYPE
+EVT1_C10_NRF_C4
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C10_NRF_C4
+PCB Layer
+Default
+Name
+EVT1_C10_NRF_C4
+Designator
+C10
+Value
+NRF_C4 | 2.2 nF X7R +/-10%
+UserDocLink
+
+Description
+
+Symbol
+EVT1_C10_NRF_C4
+EVT1 Source Ref
+NRF_C4
+BOM Line
+BOM-56
+MPN
+Nordic CMAA config3 reference passives; exact procurement MPNs pending
+Manufacturer
+Murata / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+Nordic CMAA reference config3; package per source BOM
+Origin Footprint
+
+Unique ID
+3e75135af30e0f04
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C11
+FOOTPRINT
+
+PARTTYPE
+EVT1_C11_NRF_C5
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C11_NRF_C5
+PCB Layer
+Default
+Name
+EVT1_C11_NRF_C5
+Designator
+C11
+Value
+NRF_C5 | 1.0 uF X7S +/-10%
+UserDocLink
+
+Description
+
+Symbol
+EVT1_C11_NRF_C5
+EVT1 Source Ref
+NRF_C5
+BOM Line
+BOM-56
+MPN
+Nordic CMAA config3 reference passives; exact procurement MPNs pending
+Manufacturer
+Murata / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+Nordic CMAA reference config3; package per source BOM
+Origin Footprint
+
+Unique ID
+20764de07767b3a1
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C12
+FOOTPRINT
+
+PARTTYPE
+EVT1_C12_NRF_C6
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C12_NRF_C6
+PCB Layer
+Default
+Name
+EVT1_C12_NRF_C6
+Designator
+C12
+Value
+NRF_C6 | 100 nF X7S +/-10%
+UserDocLink
+
+Description
+
+Symbol
+EVT1_C12_NRF_C6
+EVT1 Source Ref
+NRF_C6
+BOM Line
+BOM-56
+MPN
+Nordic CMAA config3 reference passives; exact procurement MPNs pending
+Manufacturer
+Murata / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+Nordic CMAA reference config3; package per source BOM
+Origin Footprint
+
+Unique ID
+26a39bcafcc8ce7c
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C13
+FOOTPRINT
+
+PARTTYPE
+EVT1_C13_NRF_C7
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C13_NRF_C7
+PCB Layer
+Default
+Name
+EVT1_C13_NRF_C7
+Designator
+C13
+Value
+NRF_C7 | 1.0 uF X7S +/-10%
+UserDocLink
+
+Description
+
+Symbol
+EVT1_C13_NRF_C7
+EVT1 Source Ref
+NRF_C7
+BOM Line
+BOM-56
+MPN
+Nordic CMAA config3 reference passives; exact procurement MPNs pending
+Manufacturer
+Murata / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+Nordic CMAA reference config3; package per source BOM
+Origin Footprint
+
+Unique ID
+e7ba3aba9f9889c8
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C14
+FOOTPRINT
+
+PARTTYPE
+EVT1_C14_NRF_C8
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C14_NRF_C8
+PCB Layer
+Default
+Name
+EVT1_C14_NRF_C8
+Designator
+C14
+Value
+NRF_C8 | 100 nF X7S +/-10%
+UserDocLink
+
+Description
+
+Symbol
+EVT1_C14_NRF_C8
+EVT1 Source Ref
+NRF_C8
+BOM Line
+BOM-56
+MPN
+Nordic CMAA config3 reference passives; exact procurement MPNs pending
+Manufacturer
+Murata / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+Nordic CMAA reference config3; package per source BOM
+Origin Footprint
+
+Unique ID
+00361082df9d4549
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C15
+FOOTPRINT
+
+PARTTYPE
+EVT1_C15_NRF_C9
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C15_NRF_C9
+PCB Layer
+Default
+Name
+EVT1_C15_NRF_C9
+Designator
+C15
+Value
+NRF_C9 | 100 nF X7S +/-10%
+UserDocLink
+
+Description
+
+Symbol
+EVT1_C15_NRF_C9
+EVT1 Source Ref
+NRF_C9
+BOM Line
+BOM-56
+MPN
+Nordic CMAA config3 reference passives; exact procurement MPNs pending
+Manufacturer
+Murata / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+Nordic CMAA reference config3; package per source BOM
+Origin Footprint
+
+Unique ID
+86bb77bda672094d
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C16
+FOOTPRINT
+
+PARTTYPE
+EVT1_C16_NRF_C10
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C16_NRF_C10
+PCB Layer
+Default
+Name
+EVT1_C16_NRF_C10
+Designator
+C16
+Value
+NRF_C10 | 1.0 uF X7S +/-10%
+UserDocLink
+
+Description
+
+Symbol
+EVT1_C16_NRF_C10
+EVT1 Source Ref
+NRF_C10
+BOM Line
+BOM-56
+MPN
+Nordic CMAA config3 reference passives; exact procurement MPNs pending
+Manufacturer
+Murata / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+Nordic CMAA reference config3; package per source BOM
+Origin Footprint
+
+Unique ID
+c8e923f96b539988
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C17
+FOOTPRINT
+
+PARTTYPE
+EVT1_C17_NRF_C11
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C17_NRF_C11
+PCB Layer
+Default
+Name
+EVT1_C17_NRF_C11
+Designator
+C17
+Value
+NRF_C11 | 100 nF X7S +/-10%
+UserDocLink
+
+Description
+
+Symbol
+EVT1_C17_NRF_C11
+EVT1 Source Ref
+NRF_C11
+BOM Line
+BOM-56
+MPN
+Nordic CMAA config3 reference passives; exact procurement MPNs pending
+Manufacturer
+Murata / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+Nordic CMAA reference config3; package per source BOM
+Origin Footprint
+
+Unique ID
+48700c84863a802e
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C18
+FOOTPRINT
+
+PARTTYPE
+EVT1_C18_NRF_C12
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C18_NRF_C12
+PCB Layer
+Default
+Name
+EVT1_C18_NRF_C12
+Designator
+C18
+Value
+NRF_C12 | 100 nF X7S +/-10%
+UserDocLink
+
+Description
+
+Symbol
+EVT1_C18_NRF_C12
+EVT1 Source Ref
+NRF_C12
+BOM Line
+BOM-56
+MPN
+Nordic CMAA config3 reference passives; exact procurement MPNs pending
+Manufacturer
+Murata / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+Nordic CMAA reference config3; package per source BOM
+Origin Footprint
+
+Unique ID
+d9d0285421fe3ef0
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C19
+FOOTPRINT
+
+PARTTYPE
+EVT1_C19_NRF_C13
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C19_NRF_C13
+PCB Layer
+Default
+Name
+EVT1_C19_NRF_C13
+Designator
+C19
+Value
+NRF_C13 | 100 nF X7S +/-10%
+UserDocLink
+
+Description
+
+Symbol
+EVT1_C19_NRF_C13
+EVT1 Source Ref
+NRF_C13
+BOM Line
+BOM-56
+MPN
+Nordic CMAA config3 reference passives; exact procurement MPNs pending
+Manufacturer
+Murata / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+Nordic CMAA reference config3; package per source BOM
+Origin Footprint
+
+Unique ID
+9b75bd895f0e39d2
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C20
+FOOTPRINT
+
+PARTTYPE
+EVT1_C20_NRF_C14
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C20_NRF_C14
+PCB Layer
+Default
+Name
+EVT1_C20_NRF_C14
+Designator
+C20
+Value
+NRF_C14 | 1.0 uF X7S +/-10%
+UserDocLink
+
+Description
+
+Symbol
+EVT1_C20_NRF_C14
+EVT1 Source Ref
+NRF_C14
+BOM Line
+BOM-56
+MPN
+Nordic CMAA config3 reference passives; exact procurement MPNs pending
+Manufacturer
+Murata / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+Nordic CMAA reference config3; package per source BOM
+Origin Footprint
+
+Unique ID
+97d7532320e593d5
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C21
+FOOTPRINT
+
+PARTTYPE
+EVT1_C21_NRF_CT19
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C21_NRF_CT19
+PCB Layer
+Default
+Name
+EVT1_C21_NRF_CT19
+Designator
+C21
+Value
+NRF_CT19 | DNP antenna tuning shunt
+UserDocLink
+
+Description
+
+Symbol
+EVT1_C21_NRF_CT19
+EVT1 Source Ref
+NRF_CT19
+BOM Line
+BOM-56
+MPN
+Nordic CMAA config3 reference passives; exact procurement MPNs pending
+Manufacturer
+Murata / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+Nordic C19 DNP; antenna qualification/VNA pending
+Origin Footprint
+
+Unique ID
+0259cc883dd91c7a
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+L1
+FOOTPRINT
+
+PARTTYPE
+EVT1_L1_NRF_L1
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_L1_NRF_L1
+PCB Layer
+Default
+Name
+EVT1_L1_NRF_L1
+Designator
+L1
+Value
+NRF_L1 | 2.2 nH +/-5%
+UserDocLink
+
+Description
+
+Origin Footprint
+Inductor_SMD:L_0201_0603Metric
+Symbol
+EVT1_L1_NRF_L1
+EVT1 Source Ref
+NRF_L1
+BOM Line
+BOM-56
+MPN
+Nordic CMAA config3 reference passives; exact procurement MPNs pending
+Manufacturer
+Murata / Yageo
+Footprint Status
+PASS
+Design Notes
+L1/L2=0201; L3/L4=0603 per Nordic config3; procurement/derating open
+Unique ID
+d450ceac7adb81c3
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+L2
+FOOTPRINT
+
+PARTTYPE
+EVT1_L2_NRF_L2
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_L2_NRF_L2
+PCB Layer
+Default
+Name
+EVT1_L2_NRF_L2
+Designator
+L2
+Value
+NRF_L2 | 2.2 nH +/-5%
+UserDocLink
+
+Description
+
+Origin Footprint
+Inductor_SMD:L_0201_0603Metric
+Symbol
+EVT1_L2_NRF_L2
+EVT1 Source Ref
+NRF_L2
+BOM Line
+BOM-56
+MPN
+Nordic CMAA config3 reference passives; exact procurement MPNs pending
+Manufacturer
+Murata / Yageo
+Footprint Status
+PASS
+Design Notes
+L1/L2=0201; L3/L4=0603 per Nordic config3; procurement/derating open
+Unique ID
+3f6ee2b1a34b017f
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+L3
+FOOTPRINT
+
+PARTTYPE
+EVT1_L3_NRF_L3
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_L3_NRF_L3
+PCB Layer
+Default
+Name
+EVT1_L3_NRF_L3
+Designator
+L3
+Value
+NRF_L3 | 10 uH >=50 mA +/-20%
+UserDocLink
+
+Description
+
+Origin Footprint
+Inductor_SMD:L_0603_1608Metric
+Symbol
+EVT1_L3_NRF_L3
+EVT1 Source Ref
+NRF_L3
+BOM Line
+BOM-56
+MPN
+Nordic CMAA config3 reference passives; exact procurement MPNs pending
+Manufacturer
+Murata / Yageo
+Footprint Status
+PASS
+Design Notes
+L1/L2=0201; L3/L4=0603 per Nordic config3; procurement/derating open
+Unique ID
+510f7e7047da8839
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+L4
+FOOTPRINT
+
+PARTTYPE
+EVT1_L4_NRF_L4
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_L4_NRF_L4
+PCB Layer
+Default
+Name
+EVT1_L4_NRF_L4
+Designator
+L4
+Value
+NRF_L4 | 10 uH >=50 mA +/-20%
+UserDocLink
+
+Description
+
+Origin Footprint
+Inductor_SMD:L_0603_1608Metric
+Symbol
+EVT1_L4_NRF_L4
+EVT1 Source Ref
+NRF_L4
+BOM Line
+BOM-56
+MPN
+Nordic CMAA config3 reference passives; exact procurement MPNs pending
+Manufacturer
+Murata / Yageo
+Footprint Status
+PASS
+Design Notes
+L1/L2=0201; L3/L4=0603 per Nordic config3; procurement/derating open
+Unique ID
+fd5a5c0f77d1aabb
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+ANT2
+FOOTPRINT
+
+PARTTYPE
+EVT1_ANT2_ANT2_BLE
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_ANT2_ANT2_BLE
+PCB Layer
+Default
+Name
+EVT1_ANT2_ANT2_BLE
+Designator
+ANT2
+Value
+ANT2_BLE | 2450AT18B100E (Z=1.50mm BOM fix, ECO-10)
+UserDocLink
+URL_TBD (Johanson 2450AT18B100E; Rev C linked a blog post)
+Description
+
+Symbol
+EVT1_ANT2_ANT2_BLE
+EVT1 Source Ref
+ANT2_BLE
+BOM Line
+BOM-35
+MPN
+2450AT18B100E
+Manufacturer
+Johanson Technology
+Footprint Status
+BLOCKED
+Design Notes
+
+Origin Footprint
+
+Unique ID
+8d88eafcc5a7cade
+Manufacturer Part
+2450AT18B100E
+Supplier
+
+Supplier Part
+
+
+*
+]
+(
+VBUS_5V 
+J1-P1 EVT1_J1_J_BTB_R-SIGNAL_0.3A Passive 
+U3-1 EVT1_U3_U3_R-IN Passive 
+C2-1 EVT1_C2_C_CHG_R_IN-~ Passive 
+R7-1 EVT1_R7_R_MUTE_GATE-~ Passive 
+)
+(
+GND 
+J1-P2 EVT1_J1_J_BTB_R-SIGNAL_0.3A Passive 
+J1-P6 EVT1_J1_J_BTB_R-SIGNAL_0.3A Passive 
+J1-P10 EVT1_J1_J_BTB_R-SIGNAL_0.3A Passive 
+J1-P16 EVT1_J1_J_BTB_R-SIGNAL_0.3A Passive 
+J1-PWR2 EVT1_J1_J_BTB_R-POWER_5A Passive 
+U10-B2 EVT1_U10_U10_AMP_R-GAIN_SLOT Passive 
+U10-C2 EVT1_U10_U10_AMP_R-GND Passive 
+U1-2 EVT1_U1_U10_SD_BUF-GND Passive 
+U1-3 EVT1_U1_U10_SD_BUF-B1 Passive 
+MK3-4 EVT1_MK3_MK3_R-SELECT Passive 
+MK3-5 EVT1_MK3_MK3_R-GND Passive 
+C1-2 EVT1_C1_C_AMP_SD_BUF-~ Passive 
+C4-2 EVT1_C4_C_MK3_R-~ Passive 
+C5-2 EVT1_C5_C_U10_AMP_R_BULK-~ Passive 
+C6-2 EVT1_C6_C_U10_AMP_R_HF-~ Passive 
+R1-2 EVT1_R1_R_AMP_REQ_PD-~ Passive 
+R2-2 EVT1_R2_R_IDLE_I2S_AMP_DIN_1V8-~ Passive 
+R3-2 EVT1_R3_R_IDLE_I2S_BCLK_1V8-~ Passive 
+R4-2 EVT1_R4_R_IDLE_I2S_LRCLK_1V8-~ Passive 
+U3-4 EVT1_U3_U3_R-GND Passive 
+U3-9 EVT1_U3_U3_R-EP_GND Passive 
+BAT1-NTC_RETURN EVT1_BAT1_BAT_R-NTC return Passive 
+BAT1-P- EVT1_BAT1_BAT_R-protected pack negative Passive 
+Q1-2 EVT1_Q1_Q_CHG_MUTE_R-S Passive 
+C2-2 EVT1_C2_C_CHG_R_IN-~ Passive 
+C3-2 EVT1_C3_C_CHG_R_OUT-~ Passive 
+R6-2 EVT1_R6_R_ISET_R-~ Passive 
+R8-2 EVT1_R8_R_MUTE_PD-~ Passive 
+R10-2 EVT1_R10_R_VSET_R-~ Passive 
+TP1-1 EVT1_TP1_TP_BAT_R_N-~ Passive 
+U11-A5 EVT1_U11_U11_BLE-VSS Passive 
+U11-B2 EVT1_U11_U11_BLE-VSS Passive 
+U11-B9 EVT1_U11_U11_BLE-VSS Passive 
+U11-B11 EVT1_U11_U11_BLE-VBUS Passive 
+U11-C2 EVT1_U11_U11_BLE-VSS Passive 
+U11-D12 EVT1_U11_U11_BLE-VSS Passive 
+U11-E5 EVT1_U11_U11_BLE-VSS Passive 
+U11-E6 EVT1_U11_U11_BLE-VSS Passive 
+U11-E7 EVT1_U11_U11_BLE-VSS Passive 
+U11-E8 EVT1_U11_U11_BLE-VSS Passive 
+U11-F5 EVT1_U11_U11_BLE-VSS Passive 
+U11-F6 EVT1_U11_U11_BLE-VSS Passive 
+U11-F7 EVT1_U11_U11_BLE-VSS Passive 
+U11-F8 EVT1_U11_U11_BLE-VSS Passive 
+U11-G5 EVT1_U11_U11_BLE-AVSS Passive 
+U11-G6 EVT1_U11_U11_BLE-VSS Passive 
+U11-G7 EVT1_U11_U11_BLE-VSS Passive 
+U11-G8 EVT1_U11_U11_BLE-VSS Passive 
+U11-K6 EVT1_U11_U11_BLE-AVSS Passive 
+U11-K11 EVT1_U11_U11_BLE-AVSS Passive 
+TP6-5 EVT1_TP6_TP_SWD_R-GND Passive 
+Y2-2 EVT1_Y2_Y2_BLE-metal case GND Passive 
+Y2-4 EVT1_Y2_Y2_BLE-metal case GND Passive 
+C7-2 EVT1_C7_NRF_C1-~ Passive 
+C8-2 EVT1_C8_NRF_C2-~ Passive 
+C9-2 EVT1_C9_NRF_C3-~ Passive 
+C10-2 EVT1_C10_NRF_C4-~ Passive 
+C11-2 EVT1_C11_NRF_C5-~ Passive 
+C12-2 EVT1_C12_NRF_C6-~ Passive 
+C13-2 EVT1_C13_NRF_C7-~ Passive 
+C14-2 EVT1_C14_NRF_C8-~ Passive 
+C15-2 EVT1_C15_NRF_C9-~ Passive 
+C16-2 EVT1_C16_NRF_C10-~ Passive 
+C17-2 EVT1_C17_NRF_C11-~ Passive 
+C18-2 EVT1_C18_NRF_C12-~ Passive 
+C19-2 EVT1_C19_NRF_C13-~ Passive 
+C20-2 EVT1_C20_NRF_C14-~ Passive 
+C21-2 EVT1_C21_NRF_CT19-~ Passive 
+)
+(
+1V8_SYS 
+J1-P3 EVT1_J1_J_BTB_R-SIGNAL_0.3A Passive 
+J1-P4 EVT1_J1_J_BTB_R-SIGNAL_0.3A Passive 
+U1-1 EVT1_U1_U10_SD_BUF-B2 Passive 
+U1-5 EVT1_U1_U10_SD_BUF-VCC Passive 
+MK3-2 EVT1_MK3_MK3_R-VDD Passive 
+C1-1 EVT1_C1_C_AMP_SD_BUF-~ Passive 
+C4-1 EVT1_C4_C_MK3_R-~ Passive 
+R5-2 EVT1_R5_R_IPC_PU-~ Passive 
+U11-A3 EVT1_U11_U11_BLE-VDD Passive 
+U11-B7 EVT1_U11_U11_BLE-VDD Passive 
+U11-B10 EVT1_U11_U11_BLE-VDD Passive 
+U11-B12 EVT1_U11_U11_BLE-VDDH Passive 
+U11-D2 EVT1_U11_U11_BLE-VDD Passive 
+U11-E11 EVT1_U11_U11_BLE-VDD Passive 
+U11-H11 EVT1_U11_U11_BLE-VDD Passive 
+U11-K1 EVT1_U11_U11_BLE-VDD Passive 
+U11-L5 EVT1_U11_U11_BLE-VDD Passive 
+U11-L11 EVT1_U11_U11_BLE-VDD Passive 
+TP6-4 EVT1_TP6_TP_SWD_R-VTREF Passive 
+C8-1 EVT1_C8_NRF_C2-~ Passive 
+C14-1 EVT1_C14_NRF_C8-~ Passive 
+C15-1 EVT1_C15_NRF_C9-~ Passive 
+C16-1 EVT1_C16_NRF_C10-~ Passive 
+C17-1 EVT1_C17_NRF_C11-~ Passive 
+C18-1 EVT1_C18_NRF_C12-~ Passive 
+C19-1 EVT1_C19_NRF_C13-~ Passive 
+C20-1 EVT1_C20_NRF_C14-~ Passive 
+)
+(
+PDM_CLK_1V8 
+J1-P5 EVT1_J1_J_BTB_R-SIGNAL_0.3A Passive 
+MK3-3 EVT1_MK3_MK3_R-CLOCK Input   
+)
+(
+PDM_D1_1V8 
+J1-P7 EVT1_J1_J_BTB_R-SIGNAL_0.3A Passive 
+MK3-1 EVT1_MK3_MK3_R-DATA Output  
+)
+(
+IPC_S3_TX_1V8 
+J1-P8 EVT1_J1_J_BTB_R-SIGNAL_0.3A Passive 
+R5-1 EVT1_R5_R_IPC_PU-~ Passive 
+U11-L3 EVT1_U11_U11_BLE-P1.05 Input   
+)
+(
+IPC_NRF_TX_1V8 
+J1-P9 EVT1_J1_J_BTB_R-SIGNAL_0.3A Passive 
+U11-K3 EVT1_U11_U11_BLE-P1.04 Output  
+)
+(
+I2S_BCLK_1V8 
+J1-P11 EVT1_J1_J_BTB_R-SIGNAL_0.3A Passive 
+U10-C1 EVT1_U10_U10_AMP_R-BCLK Input   
+R3-1 EVT1_R3_R_IDLE_I2S_BCLK_1V8-~ Passive 
+U11-K5 EVT1_U11_U11_BLE-P0.20 Output  
+)
+(
+I2S_LRCLK_1V8 
+J1-P12 EVT1_J1_J_BTB_R-SIGNAL_0.3A Passive 
+U10-C3 EVT1_U10_U10_AMP_R-LRCLK Input   
+R4-1 EVT1_R4_R_IDLE_I2S_LRCLK_1V8-~ Passive 
+U11-K4 EVT1_U11_U11_BLE-P0.22 Output  
+)
+(
+I2S_AMP_DIN_1V8 
+J1-P13 EVT1_J1_J_BTB_R-SIGNAL_0.3A Passive 
+U10-B1 EVT1_U10_U10_AMP_R-DIN Input   
+R2-1 EVT1_R2_R_IDLE_I2S_AMP_DIN_1V8-~ Passive 
+U11-J4 EVT1_U11_U11_BLE-P0.21 Output  
+)
+(
+I2S_S3_DOUT_1V8 
+J1-P14 EVT1_J1_J_BTB_R-SIGNAL_0.3A Passive 
+U11-J5 EVT1_U11_U11_BLE-P0.19 Input   
+)
+(
+AMP_SD_MODE_1V8 
+J1-P15 EVT1_J1_J_BTB_R-SIGNAL_0.3A Passive 
+U1-4 EVT1_U1_U10_SD_BUF-A Output  
+R9-1 EVT1_R9_R_SDR-~ Passive 
+)
+(
+VBAT_R_RET 
+J1-PWR1 EVT1_J1_J_BTB_R-POWER_5A Passive 
+U10-A2 EVT1_U10_U10_AMP_R-VDD Passive 
+C5-1 EVT1_C5_C_U10_AMP_R_BULK-~ Passive 
+C6-1 EVT1_C6_C_U10_AMP_R_HF-~ Passive 
+U3-8 EVT1_U3_U3_R-OUT Passive 
+BAT1-P+ EVT1_BAT1_BAT_R-protected pack positive Passive 
+C3-1 EVT1_C3_C_CHG_R_OUT-~ Passive 
+TP2-1 EVT1_TP2_TP_BAT_R_P-~ Passive 
+)
+(
+AMP_R_SD_MODE 
+U10-A1 EVT1_U10_U10_AMP_R-SD_MODE Input   
+R9-2 EVT1_R9_R_SDR-~ Passive 
+Q1-3 EVT1_Q1_Q_CHG_MUTE_R-D Passive 
+)
+(
+SPK_R_P 
+U10-A3 EVT1_U10_U10_AMP_R-OUTP Output  
+SPK1-+ EVT1_SPK1_SPK_R-speaker + (solder pad) Passive 
+TP5-1 EVT1_TP5_TP_SPK_R_P-~ Passive 
+)
+(
+SPK_R_N 
+U10-B3 EVT1_U10_U10_AMP_R-OUTN Output  
+SPK1-- EVT1_SPK1_SPK_R-speaker - Passive 
+TP4-1 EVT1_TP4_TP_SPK_R_N-~ Passive 
+)
+(
+AMP_SD_REQ_1V8 
+U1-6 EVT1_U1_U10_SD_BUF-S Input   
+R1-1 EVT1_R1_R_AMP_REQ_PD-~ Passive 
+U11-K2 EVT1_U11_U11_BLE-P0.24 Output  
+)
+(
+CHG_R_ISET 
+U3-2 EVT1_U3_U3_R-ISET Passive 
+R6-1 EVT1_R6_R_ISET_R-~ Passive 
+)
+(
+NTC_TS_R 
+U3-3 EVT1_U3_U3_R-TS Input   
+BAT1-NTC EVT1_BAT1_BAT_R-10k NTC at cell Passive 
+TP3-1 EVT1_TP3_TP_NTC_R-~ Passive 
+)
+(
+CHG_R_VSET 
+U3-7 EVT1_U3_U3_R-VSET Passive 
+R10-1 EVT1_R10_R_VSET_R-~ Passive 
+)
+(
+CHG_MUTE_GATE 
+Q1-1 EVT1_Q1_Q_CHG_MUTE_R-G Passive 
+R7-2 EVT1_R7_R_MUTE_GATE-~ Passive 
+R8-1 EVT1_R8_R_MUTE_PD-~ Passive 
+)
+(
+BLE_XC1 
+U11-A1 EVT1_U11_U11_BLE-XC1 Passive 
+Y2-1 EVT1_Y2_Y2_BLE-32 MHz crystal terminal Passive 
+)
+(
+BLE_XC2 
+U11-A2 EVT1_U11_U11_BLE-XC2 Passive 
+Y2-3 EVT1_Y2_Y2_BLE-32 MHz crystal terminal Passive 
+)
+(
+NRF_DECD 
+U11-A7 EVT1_U11_U11_BLE-DECD Passive 
+C11-1 EVT1_C11_NRF_C5-~ Passive 
+L4-1 EVT1_L4_NRF_L4-~ Passive 
+)
+(
+NRF_DCCD 
+U11-A9 EVT1_U11_U11_BLE-DCCD Passive 
+L4-2 EVT1_L4_NRF_L4-~ Passive 
+)
+(
+NRF_DECR_RF 
+U11-B1 EVT1_U11_U11_BLE-DECRF Passive 
+U11-B4 EVT1_U11_U11_BLE-DECR Passive 
+C9-1 EVT1_C9_NRF_C3-~ Passive 
+C10-1 EVT1_C10_NRF_C4-~ Passive 
+L3-1 EVT1_L3_NRF_L3-~ Passive 
+)
+(
+NRF_DECN 
+U11-B5 EVT1_U11_U11_BLE-DECN Passive 
+C12-1 EVT1_C12_NRF_C6-~ Passive 
+)
+(
+NRF_DCC 
+U11-B6 EVT1_U11_U11_BLE-DCC Passive 
+L3-2 EVT1_L3_NRF_L3-~ Passive 
+)
+(
+NRF_DECA 
+U11-B8 EVT1_U11_U11_BLE-DECA Passive 
+C13-1 EVT1_C13_NRF_C7-~ Passive 
+)
+(
+BLE_RF_ANT 
+U11-D1 EVT1_U11_U11_BLE-ANT Passive 
+L1-2 EVT1_L1_NRF_L1-~ Passive 
+)
+(
+BLE_SWDIO 
+U11-F1 EVT1_U11_U11_BLE-SWDIO Passive 
+TP6-1 EVT1_TP6_TP_SWD_R-SWDIO Passive 
+)
+(
+BLE_SWDCLK 
+U11-F2 EVT1_U11_U11_BLE-SWDCLK Input   
+TP6-2 EVT1_TP6_TP_SWD_R-SWDCLK Passive 
+)
+(
+BLE_NRESET 
+U11-G2 EVT1_U11_U11_BLE-nRESET Input   
+TP6-3 EVT1_TP6_TP_SWD_R-nRESET Passive 
+)
+(
+BLE_RF_MID 
+C7-1 EVT1_C7_NRF_C1-~ Passive 
+L1-1 EVT1_L1_NRF_L1-~ Passive 
+L2-2 EVT1_L2_NRF_L2-~ Passive 
+)
+(
+BLE_ANT_FEED 
+C21-1 EVT1_C21_NRF_CT19-~ Passive 
+L2-1 EVT1_L2_NRF_L2-~ Passive 
+ANT2-FEED EVT1_ANT2_ANT2_BLE-feed terminal Passive 
+)
