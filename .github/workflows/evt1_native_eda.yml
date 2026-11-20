@@ -12,6 +12,7 @@ permissions:
 
 env:
   EVT1_PACKAGE: hardware/evt1-native-eda-20261118
+  EVT1_H03_CHECKS: ${{ github.ref_name == 'hardware/evt1-h03-h05-20261119' || github.ref_name == 'hardware/evt1-h02-h03-native-20261120' }}
 
 jobs:
   fpga:
@@ -25,7 +26,7 @@ jobs:
       - name: Software wire encoding against inherited RTL
         run: python3 "$EVT1_PACKAGE/host/check_bridge.py"
       - name: Reproduce malformed host control and test recovery
-        if: github.ref_name == 'hardware/evt1-h03-h05-20261119'
+        if: env.EVT1_H03_CHECKS == 'true'
         run: make -C hardware/evt1-rev-d1-1-20261117/03_FPGA_RTL sim-framing
       - name: Native display, shutdown, synthesis, routing and independent STA
         run: make -C hardware/evt1-rev-d1-1-20261117/03_FPGA_RTL all
@@ -53,7 +54,7 @@ jobs:
           git diff --exit-code -- "$EVT1_PACKAGE/kicad"
           test -z "$(git ls-files --others --exclude-standard -- "$EVT1_PACKAGE/kicad")"
       - name: Replay archived bridge placement and supplier envelope assessment
-        if: github.ref_name == 'hardware/evt1-h03-h05-20261119'
+        if: env.EVT1_H03_CHECKS == 'true'
         run: |
           python3 -m unittest discover -s "$EVT1_PACKAGE/closure" -p test_bridge_placement.py -v
           python3 "$EVT1_PACKAGE/closure/check_bridge_placement.py" --check
@@ -61,10 +62,20 @@ jobs:
           python3 "$EVT1_PACKAGE/closure/check_bridge_placement.py" --check --strict || verdict=$?
           test "$verdict" -eq 1
       - name: Verify effective electrical bounds and bench probe coverage
-        if: github.ref_name == 'hardware/evt1-h03-h05-20261119'
+        if: env.EVT1_H03_CHECKS == 'true'
         run: |
           python3 "$EVT1_PACKAGE/closure/check_electrical_inputs.py" > "$RUNNER_TEMP/electrical_inputs.json"
           diff --strip-trailing-cr -u "$EVT1_PACKAGE/closure/evidence/electrical_inputs.json" "$RUNNER_TEMP/electrical_inputs.json"
+      - name: Verify the editor archive, native netlists and persisted bridge keepouts
+        if: github.ref_name == 'hardware/evt1-h02-h03-native-20261120'
+        run: |
+          round="$EVT1_PACKAGE/h02-h03-native"
+          archive="$round/native/ZY_AIAR_EVT1_H02_H03_NATIVE_NOT_FOR_FAB.epro2"
+          bridge="$round/evidence/bridge"
+          python3 -B "$round/verify_h02_h03.py" --archive "$archive" --capture "$round/evidence/after" --output "$RUNNER_TEMP/h02-h03.json"
+          diff -u "$round/evidence/verification.json" "$RUNNER_TEMP/h02-h03.json"
+          python3 -B "$round/footprints/audit_candidates.py" --check
+          python3 -B "$round/bridge_preflight.py" --dump "$bridge/bridge-persisted.dump.json" --archive "$archive" --drc "$bridge/pcb-drc-after.json" --before-dump "$bridge/bridge-before.dump.json" --before-drc "$bridge/pcb-drc-before.json" --require-keepouts --check "$round/bridge_preflight_after.json"
       - name: KiCad CLI version, electrical rules and native netlist parity
         run: |
           mkdir -p "$PWD/ci-kicad-evidence"
