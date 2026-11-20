@@ -1,0 +1,13 @@
+$ iverilog -g2005 -Wall -o display-raw.vvp evt1_ar_display_fpga_bridge_rev_c.v ice40_spram_ebr_sim.v tb_evt1_ar_display_fpga_bridge_rev_c.v
+
+Exit 0
+$ vvp display-raw.vvp
+[TB] Starting Continuous Full-Frame Burst #1 (19,200 L + 19,200 R + 2 boundary words)...
+[TB] Burst #1 Complete: words_written_l=19200, words_written_r=19200, fifo_max_level=1, overflow=0, boundary_err_cnt=2
+[TB] Measured Frame Period = 800000 clk_48m cycles (Expected 800,000 for 60.000 Hz)
+[TB] Rev D: unexpected_cs=0 pwr_hold_err=0 raw_reject_err=0 raw_mirror_err=0 raw_leak_err=0
+[TB] Active Row 10->11 Tear-Guard Verification: row10_prefetch_seen=1, tear_hazard_cnt=166, active_tear_err_cnt=0, words_written_l=38480, fifo_max_level=34/256, overflow=0
+VERILOG_TB_RESULT: PASS (38,400/38,400 words/frame + Row 10->11 active prefetch tear-guard verified, 0 drops, 0 overflow, 0 torn pixels, 800,000 clks = 60.000 Hz; Rev D scan-gate/D3-power/RAW-window checks clean)
+tb_evt1_ar_display_fpga_bridge_rev_c.v:437: $finish called at 56715096075 (1ps)
+
+Exit 0

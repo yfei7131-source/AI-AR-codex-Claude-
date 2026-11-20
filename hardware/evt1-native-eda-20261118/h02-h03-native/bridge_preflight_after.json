@@ -1,0 +1,1129 @@
+{
+  "scope": "Native partial PCB pose and visible pad nets; prior keepouts and exact D3 footprint projection.",
+  "manufacturing": "BLOCKED",
+  "projectUuid": "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+  "documentUuid": "9ce45f14cb79dc9d",
+  "inputSha256": {
+    "dump": "7845c5b7e11cb56ca4cb3f14985ad5be125ba0a51680f95097809505b4fdbb17",
+    "archive": "8d4025db711e620374155c702decab2d9b9e68bf8a7bc87cb3eeac97ca5f4586",
+    "drc": "0ef7cb28a448fb4c1f8992cd2b30e8c2768656bc559f19b409e5c012ebbf1a72",
+    "schematicNetlist": "c5ad5a217566f82d589e0e33b3fdd43823cb69d4d786ea9c90d085ef67403c48",
+    "cadTerminals": "514c3ff1239173bf23966c53b339f6ff07f022ae6f78f58b52d94d1f1aff6f06",
+    "constraintManifest": "2564eccb6c18703594c771a69b634e49804e56d6961fad99165e04028c970a4a",
+    "PR35Geometry": "fce4b6426e0ed698b7590a561aa62be2196b69dba66287e85c25aa30799f9e94",
+    "PR32Geometry": "3abdf78584ab83613551c55576c62462042889057b217ac34829ed2d2459da68",
+    "beforeDump": "17c248f01af1ffa3dddd7251d8d45b559b9028b5b481653476a373ac63592ba0",
+    "beforeDrc": "0ef7cb28a448fb4c1f8992cd2b30e8c2768656bc559f19b409e5c012ebbf1a72"
+  },
+  "observedComponentCount": 10,
+  "observedPhysicalPads": {
+    "CONNECTED": 81,
+    "NC": 11
+  },
+  "visiblePadNetAgreement": "PASS",
+  "nativeComponents": [
+    {
+      "ref": "MK2",
+      "pcbPrimitiveId": "be23c51e45e6cd5a",
+      "mpn": "IM69D130V01XTSA1",
+      "pcbUniqueId": "",
+      "schematicUniqueId": "bf764e531503d1e5",
+      "uniqueIdMatches": false,
+      "physicalPads": [
+        {
+          "pad": "1",
+          "net": "PDM_D0_1V8",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "2",
+          "net": "1V8_SYS",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "3",
+          "net": "PDM_CLK_1V8",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "4",
+          "net": "1V8_SYS",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "5",
+          "net": "GND",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "5",
+          "net": "GND",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "5",
+          "net": "GND",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "5",
+          "net": "GND",
+          "state": "CONNECTED"
+        }
+      ],
+      "repeatedPadNumbers": {
+        "5": 4
+      }
+    },
+    {
+      "ref": "U1",
+      "pcbPrimitiveId": "5f5102619810ed4d",
+      "mpn": "TLV75518PDQNR",
+      "pcbUniqueId": "",
+      "schematicUniqueId": "1bdc0ab44f99f92d",
+      "uniqueIdMatches": false,
+      "physicalPads": [
+        {
+          "pad": "3",
+          "net": "1V2_FPGA_PLL",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "2",
+          "net": "GND",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "1",
+          "net": "1V8_FPGA_IO",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "4",
+          "net": "VSYS",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "5",
+          "net": "GND",
+          "state": "CONNECTED"
+        }
+      ],
+      "repeatedPadNumbers": {}
+    },
+    {
+      "ref": "U12",
+      "pcbPrimitiveId": "d1aacd828ef8e75e",
+      "mpn": "TPS389025DSET",
+      "pcbUniqueId": "",
+      "schematicUniqueId": "b6112465b0588c80",
+      "uniqueIdMatches": false,
+      "physicalPads": [
+        {
+          "pad": "1",
+          "net": "VSYS",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "2",
+          "net": "GND",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "3",
+          "net": "VSYS",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "4",
+          "net": "VSYS",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "5",
+          "net": "",
+          "state": "NC"
+        },
+        {
+          "pad": "6",
+          "net": "OPT_AVDD_EN",
+          "state": "CONNECTED"
+        }
+      ],
+      "repeatedPadNumbers": {}
+    },
+    {
+      "ref": "U13",
+      "pcbPrimitiveId": "1152d412de1e0771",
+      "mpn": "TPS389025DSET",
+      "pcbUniqueId": "",
+      "schematicUniqueId": "95e557ff5ab9d76b",
+      "uniqueIdMatches": false,
+      "physicalPads": [
+        {
+          "pad": "1",
+          "net": "VSYS",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "2",
+          "net": "GND",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "3",
+          "net": "AVDD_REQ_FILTER",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "4",
+          "net": "VSYS",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "5",
+          "net": "",
+          "state": "NC"
+        },
+        {
+          "pad": "6",
+          "net": "AVDD_PG_NODE",
+          "state": "CONNECTED"
+        }
+      ],
+      "repeatedPadNumbers": {}
+    },
+    {
+      "ref": "U2",
+      "pcbPrimitiveId": "b6a84c4c3d4d92c1",
+      "mpn": "ICE40UP5K-UWG30ITR",
+      "pcbUniqueId": "",
+      "schematicUniqueId": "48f0ae2437312dae",
+      "uniqueIdMatches": false,
+      "physicalPads": [
+        {
+          "pad": "A1",
+          "net": "opt_l_qdo0",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "B1",
+          "net": "host_qio3",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "C1",
+          "net": "host_cs_n",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "D1",
+          "net": "host_sck",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "E1",
+          "net": "host_qio0",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "F1",
+          "net": "host_qio1",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "A2",
+          "net": "opt_l_qdo1",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "B2",
+          "net": "1V2_FPGA_PLL",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "C2",
+          "net": "1V2_FPGA_CORE",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "D2",
+          "net": "1V8_FPGA_IO",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "E2",
+          "net": "GND",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "F2",
+          "net": "host_qio2",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "A3",
+          "net": "1V8_FPGA_IO",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "B3",
+          "net": "clk_48m",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "C3",
+          "net": "opt_cs_n",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "D3",
+          "net": "FPGA_CDONE_VSYNC_N",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "E3",
+          "net": "opt_sck",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "F3",
+          "net": "FPGA_CRESET_B",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "A4",
+          "net": "opt_l_qdo2",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "B4",
+          "net": "GND",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "C4",
+          "net": "1V8_FPGA_IO",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "D4",
+          "net": "1V8_FPGA_VPP",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "E4",
+          "net": "opt_l_qdo3",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "F4",
+          "net": "opt_r_qdo3",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "A5",
+          "net": "",
+          "state": "NC"
+        },
+        {
+          "pad": "B5",
+          "net": "",
+          "state": "NC"
+        },
+        {
+          "pad": "C5",
+          "net": "",
+          "state": "NC"
+        },
+        {
+          "pad": "D5",
+          "net": "opt_r_qdo1",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "E5",
+          "net": "opt_r_qdo0",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "F5",
+          "net": "opt_r_qdo2",
+          "state": "CONNECTED"
+        }
+      ],
+      "repeatedPadNumbers": {}
+    },
+    {
+      "ref": "U4",
+      "pcbPrimitiveId": "cad0300e1c3fb6b4",
+      "mpn": "TLV75512PDQNR",
+      "pcbUniqueId": "",
+      "schematicUniqueId": "bac468049775df37",
+      "uniqueIdMatches": false,
+      "physicalPads": [
+        {
+          "pad": "3",
+          "net": "VSYS",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "2",
+          "net": "GND",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "1",
+          "net": "1V2_FPGA_CORE",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "4",
+          "net": "VSYS",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "5",
+          "net": "GND",
+          "state": "CONNECTED"
+        }
+      ],
+      "repeatedPadNumbers": {}
+    },
+    {
+      "ref": "U7",
+      "pcbPrimitiveId": "bd0359273377f430",
+      "mpn": "TPS389018DSET",
+      "pcbUniqueId": "",
+      "schematicUniqueId": "4ec783ed4741de1f",
+      "uniqueIdMatches": false,
+      "physicalPads": [
+        {
+          "pad": "1",
+          "net": "1V8_FPGA_IO",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "2",
+          "net": "GND",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "3",
+          "net": "AVDD_CRESET_VSYS",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "4",
+          "net": "VSYS",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "5",
+          "net": "",
+          "state": "NC"
+        },
+        {
+          "pad": "6",
+          "net": "AVDD_PG_NODE",
+          "state": "CONNECTED"
+        }
+      ],
+      "repeatedPadNumbers": {}
+    },
+    {
+      "ref": "U8",
+      "pcbPrimitiveId": "5e4fb56443877d4f",
+      "mpn": "SN74LVC2T45DCUR",
+      "pcbUniqueId": "UNIQUEU8",
+      "schematicUniqueId": "484e3008dca2bfa8",
+      "uniqueIdMatches": false,
+      "physicalPads": [
+        {
+          "pad": "8",
+          "net": "VSYS",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "7",
+          "net": "AVDD_D3_VSYS",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "6",
+          "net": "AVDD_CRESET_VSYS",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "5",
+          "net": "1V8_FPGA_IO",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "4",
+          "net": "GND",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "3",
+          "net": "FPGA_CRESET_B",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "2",
+          "net": "FPGA_CDONE_VSYNC_N",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "1",
+          "net": "1V8_FPGA_IO",
+          "state": "CONNECTED"
+        }
+      ],
+      "repeatedPadNumbers": {}
+    },
+    {
+      "ref": "U9",
+      "pcbPrimitiveId": "98ed0edb5c050aaa",
+      "mpn": "ICM-42688-P",
+      "pcbUniqueId": "",
+      "schematicUniqueId": "2dbbb3175ebf36d7",
+      "uniqueIdMatches": false,
+      "physicalPads": [
+        {
+          "pad": "1",
+          "net": "GND",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "2",
+          "net": "",
+          "state": "NC"
+        },
+        {
+          "pad": "3",
+          "net": "",
+          "state": "NC"
+        },
+        {
+          "pad": "4",
+          "net": "",
+          "state": "NC"
+        },
+        {
+          "pad": "5",
+          "net": "1V8_SYS",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "6",
+          "net": "GND",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "7",
+          "net": "GND",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "8",
+          "net": "1V8_SYS",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "9",
+          "net": "FPGA_CDONE_VSYNC_N",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "10",
+          "net": "",
+          "state": "NC"
+        },
+        {
+          "pad": "11",
+          "net": "",
+          "state": "NC"
+        },
+        {
+          "pad": "12",
+          "net": "1V8_SYS",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "13",
+          "net": "SYS_I2C_SCL_1V8",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "14",
+          "net": "SYS_I2C_SDA_1V8",
+          "state": "CONNECTED"
+        }
+      ],
+      "repeatedPadNumbers": {}
+    },
+    {
+      "ref": "Y1",
+      "pcbPrimitiveId": "6aeaf22afa429c01",
+      "mpn": "ASADV-48.000MHZ-LC-T",
+      "pcbUniqueId": "UNIQUEY1",
+      "schematicUniqueId": "9790cc8ece124e27",
+      "uniqueIdMatches": false,
+      "physicalPads": [
+        {
+          "pad": "4",
+          "net": "1V8_FPGA_IO",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "3",
+          "net": "clk_48m",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "2",
+          "net": "GND",
+          "state": "CONNECTED"
+        },
+        {
+          "pad": "1",
+          "net": "1V8_FPGA_IO",
+          "state": "CONNECTED"
+        }
+      ],
+      "repeatedPadNumbers": {}
+    }
+  ],
+  "unmatchedLinkRefs": [
+    "MK2",
+    "U1",
+    "U12",
+    "U13",
+    "U2",
+    "U4",
+    "U7",
+    "U8",
+    "U9",
+    "Y1"
+  ],
+  "nativeDRC": {
+    "passed": false,
+    "ruleCounts": {
+      "Clearance Error": 2,
+      "Clearance Error in the same footprint": 4,
+      "Connection Error": 59,
+      "Netlist Error": 1
+    },
+    "total": 66,
+    "acousticSlotClearance": [
+      {
+        "rule": "Clearance Error",
+        "objType": "Plane Zone to Slot Region",
+        "ruleName": "copperThickness1oz",
+        "x": 84.49,
+        "y": 637.01,
+        "layer": "Inner1",
+        "objs": [
+          "dab34e0934bb52ff",
+          "be23c51e45e6cd5ae26"
+        ],
+        "message": ": e-1 to : e2e26 distance is 0mil, should be >= 10mil",
+        "globalIndex": "err4"
+      },
+      {
+        "rule": "Clearance Error",
+        "objType": "Plane Zone to Slot Region",
+        "ruleName": "copperThickness1oz",
+        "x": 84.49,
+        "y": 637.01,
+        "layer": "Inner3",
+        "objs": [
+          "c260039a156e317b",
+          "be23c51e45e6cd5ae26"
+        ],
+        "message": ": e-1 to : e2e26 distance is 0mil, should be >= 10mil",
+        "globalIndex": "err5"
+      },
+      {
+        "rule": "Clearance Error in the same footprint",
+        "objType": "SMD Pad to Slot Region",
+        "ruleName": "copperThickness1oz",
+        "net": "GND",
+        "x": 55.3,
+        "y": 631.31,
+        "layer": "Bottom Layer",
+        "objs": [
+          "be23c51e45e6cd5ae14",
+          "be23c51e45e6cd5ae26"
+        ],
+        "message": "(GND): e2e14 to : e2e26 in the same footprint distance is 5.3mil, should be >= 6mil",
+        "globalIndex": "err0"
+      },
+      {
+        "rule": "Clearance Error in the same footprint",
+        "objType": "SMD Pad to Slot Region",
+        "ruleName": "copperThickness1oz",
+        "net": "GND",
+        "x": 65,
+        "y": 652.42,
+        "layer": "Bottom Layer",
+        "objs": [
+          "be23c51e45e6cd5ae17",
+          "be23c51e45e6cd5ae26"
+        ],
+        "message": "(GND): e2e17 to : e2e26 in the same footprint distance is 5.3mil, should be >= 6mil",
+        "globalIndex": "err1"
+      },
+      {
+        "rule": "Clearance Error in the same footprint",
+        "objType": "SMD Pad to Slot Region",
+        "ruleName": "copperThickness1oz",
+        "net": "GND",
+        "x": 76.41,
+        "y": 621.6,
+        "layer": "Bottom Layer",
+        "objs": [
+          "be23c51e45e6cd5ae15",
+          "be23c51e45e6cd5ae26"
+        ],
+        "message": "(GND): e2e15 to : e2e26 in the same footprint distance is 5.3mil, should be >= 6mil",
+        "globalIndex": "err2"
+      },
+      {
+        "rule": "Clearance Error in the same footprint",
+        "objType": "SMD Pad to Slot Region",
+        "ruleName": "copperThickness1oz",
+        "net": "GND",
+        "x": 86.12,
+        "y": 642.71,
+        "layer": "Bottom Layer",
+        "objs": [
+          "be23c51e45e6cd5ae16",
+          "be23c51e45e6cd5ae26"
+        ],
+        "message": "(GND): e2e16 to : e2e26 in the same footprint distance is 5.3mil, should be >= 6mil",
+        "globalIndex": "err3"
+      }
+    ],
+    "netlistErrors": [
+      {
+        "rule": "Netlist Error",
+        "objType": "Netlist Error",
+        "ruleName": "Import Changes",
+        "objs": [
+          "err6"
+        ],
+        "message": "PCB and schematic netlist does not match. You can click on the rule name \"Import Changes\" to view the difference.",
+        "globalIndex": "err6"
+      }
+    ]
+  },
+  "microphoneSlot": {
+    "footprintId": "46f530bc0d70e19b",
+    "pcbSlotId": "be23c51e45e6cd5ae26",
+    "shape": "CIRCLE",
+    "localCenterMil": [
+      -0.005,
+      -31.89
+    ],
+    "radiusMil": 13.78,
+    "observedDiameterMm": 0.700024,
+    "manufacturerRecommendedPcbPortDiameterMm": 0.8,
+    "manufacturerSource": "https://www.infineon.com/assets/row/public/documents/30/49/infineon-im69d130-datasheet-en.pdf",
+    "manufacturerFigure": "Section 7 and Fig. 12"
+  },
+  "d3": {
+    "status": "PREFLIGHT_ONLY",
+    "designator": "D3",
+    "manufacturerPart": "APHD1608LCGCK",
+    "deviceId": "1c28d1d16e4e1c73",
+    "footprintId": "34c183bc51cfb609",
+    "schematicUniqueId": "81689f1d3303caec",
+    "netByPad": {
+      "K": "GND",
+      "A": "PRIV_LED_ANODE"
+    },
+    "anchorMm": [
+      2.1,
+      1.4
+    ],
+    "anchorMil": [
+      82.677165,
+      55.11811
+    ],
+    "layer": 1,
+    "angleDegrees": 90,
+    "landCopperMm": {
+      "A": [
+        1.7,
+        1.8,
+        2.5,
+        2.5
+      ],
+      "K": [
+        1.7,
+        0.3,
+        2.5,
+        1.0
+      ]
+    },
+    "occupiedBoxMm": [
+      1.45,
+      0.05,
+      2.75,
+      2.75
+    ],
+    "minimumCopperEdgeMm": 0.3,
+    "nearestExistingTopComponentMm": 3.047969,
+    "nearestTopReservationMm": 0.28
+  },
+  "plannedTopOpticalFpcKeepouts": [
+    {
+      "purpose": "J_DISP_L_FPC_CORRIDOR",
+      "pcbLayer": 1,
+      "rule": "no-components",
+      "rectMil": [
+        0.0,
+        119.291339,
+        165.3543,
+        211.417323
+      ],
+      "nearestPlacedPart": "U13",
+      "minSameSideGapMm": 0.427969
+    },
+    {
+      "purpose": "J_DISP_R_FPC_CORRIDOR",
+      "pcbLayer": 1,
+      "rule": "no-components",
+      "rectMil": [
+        0.0,
+        536.614173,
+        165.3543,
+        628.740157
+      ],
+      "nearestPlacedPart": "U7",
+      "minSameSideGapMm": 0.427969
+    }
+  ],
+  "nativeTopOpticalFpcKeepouts": {
+    "status": "CAPTURED",
+    "regionsObserved": 2,
+    "matchingLockedRegions": [
+      {
+        "purpose": "J_DISP_L_FPC_CORRIDOR",
+        "pcbLayer": 1,
+        "rule": "no-components",
+        "rectMil": [
+          0.0,
+          119.291339,
+          165.3543,
+          211.417323
+        ],
+        "nearestPlacedPart": "U13",
+        "minSameSideGapMm": 0.427969,
+        "nativePrimitiveId": "0a908ce33a052ebb",
+        "locked": true,
+        "nativeClosedPathMil": [
+          0,
+          119.2913,
+          "L",
+          0,
+          211.4173,
+          165.3543,
+          211.4173,
+          165.3543,
+          119.2913,
+          0,
+          119.2913
+        ]
+      },
+      {
+        "purpose": "J_DISP_R_FPC_CORRIDOR",
+        "pcbLayer": 1,
+        "rule": "no-components",
+        "rectMil": [
+          0.0,
+          536.614173,
+          165.3543,
+          628.740157
+        ],
+        "nearestPlacedPart": "U7",
+        "minSameSideGapMm": 0.427969,
+        "nativePrimitiveId": "0ba8a7175248ae26",
+        "locked": true,
+        "nativeClosedPathMil": [
+          0,
+          536.6142,
+          "L",
+          0,
+          628.7402,
+          165.3543,
+          628.7402,
+          165.3543,
+          536.6142,
+          0,
+          536.6142
+        ]
+      }
+    ]
+  },
+  "u8RetainingOriginalInterfaceReservations": [
+    {
+      "source": "u8_top_0",
+      "readbackRef": "U8",
+      "device": "SN74LVC2T45DCUR",
+      "layer": 1,
+      "rotation": 0,
+      "nativeOrientationObserved": true,
+      "bodyAtNativeOriginMm": [
+        -1.924787,
+        -1.116025,
+        2.148103,
+        1.099972
+      ],
+      "copperAtNativeOriginMm": [
+        -1.923572,
+        -0.873966,
+        1.924528,
+        0.873554
+      ],
+      "copperWidthMm": 3.8481,
+      "anchorsWithOutlineAndReservationsOnly": 0,
+      "anchorsWithAllExistingObjectsFixed": 0,
+      "minimumExistingObjectsToDisplace": null,
+      "minimalDisplacementSets": []
+    },
+    {
+      "source": "u8_top_90",
+      "readbackRef": "U8",
+      "device": "SN74LVC2T45DCUR",
+      "layer": 1,
+      "rotation": 90,
+      "nativeOrientationObserved": true,
+      "bodyAtNativeOriginMm": [
+        -1.099972,
+        -1.924787,
+        1.116025,
+        2.148103
+      ],
+      "copperAtNativeOriginMm": [
+        -0.875822,
+        -1.925645,
+        0.874238,
+        1.924995
+      ],
+      "copperWidthMm": 1.75006,
+      "anchorsWithOutlineAndReservationsOnly": 4329,
+      "anchorsWithAllExistingObjectsFixed": 0,
+      "minimumExistingObjectsToDisplace": 1,
+      "minimalDisplacementSets": [
+        {
+          "locations": 1365,
+          "mustMoveExistingRefs": [
+            "U9"
+          ],
+          "sampleNativeAnchorMm": [
+            2.0,
+            18.95
+          ],
+          "sampleBodyBoxMm": [
+            0.900028,
+            17.025213,
+            3.116025,
+            21.098103
+          ],
+          "sampleCopperBoxMm": [
+            1.124178,
+            17.024355,
+            2.874238,
+            20.874995
+          ],
+          "sampleMinimumSlackMm": 0.855213
+        }
+      ]
+    },
+    {
+      "source": "restored",
+      "readbackRef": "U8",
+      "device": "SN74LVC2T45DCUR",
+      "layer": 2,
+      "rotation": 90,
+      "nativeOrientationObserved": true,
+      "bodyAtNativeOriginMm": [
+        -1.116025,
+        -1.924787,
+        1.099972,
+        2.148103
+      ],
+      "copperAtNativeOriginMm": [
+        -0.873282,
+        -1.925645,
+        0.874238,
+        1.924995
+      ],
+      "copperWidthMm": 1.74752,
+      "anchorsWithOutlineAndReservationsOnly": 3900,
+      "anchorsWithAllExistingObjectsFixed": 0,
+      "minimumExistingObjectsToDisplace": 1,
+      "minimalDisplacementSets": [
+        {
+          "locations": 546,
+          "mustMoveExistingRefs": [
+            "MK2"
+          ],
+          "sampleNativeAnchorMm": [
+            1.5,
+            15.15
+          ],
+          "sampleBodyBoxMm": [
+            0.383975,
+            13.225213,
+            2.599972,
+            17.298103
+          ],
+          "sampleCopperBoxMm": [
+            0.626718,
+            13.224355,
+            2.374238,
+            17.074995
+          ],
+          "sampleMinimumSlackMm": 0.325213
+        }
+      ]
+    },
+    {
+      "source": "u8_top_0",
+      "readbackRef": "U8",
+      "device": "SN74LVC2T45DCUR",
+      "layer": 1,
+      "rotation": 180,
+      "nativeOrientationObserved": false,
+      "bodyAtNativeOriginMm": [
+        -2.148103,
+        -1.099972,
+        1.924787,
+        1.116025
+      ],
+      "copperAtNativeOriginMm": [
+        -1.924528,
+        -0.873554,
+        1.923572,
+        0.873966
+      ],
+      "copperWidthMm": 3.8481,
+      "anchorsWithOutlineAndReservationsOnly": 0,
+      "anchorsWithAllExistingObjectsFixed": 0,
+      "minimumExistingObjectsToDisplace": null,
+      "minimalDisplacementSets": []
+    },
+    {
+      "source": "u8_top_90",
+      "readbackRef": "U8",
+      "device": "SN74LVC2T45DCUR",
+      "layer": 1,
+      "rotation": 270,
+      "nativeOrientationObserved": false,
+      "bodyAtNativeOriginMm": [
+        -1.116025,
+        -2.148103,
+        1.099972,
+        1.924787
+      ],
+      "copperAtNativeOriginMm": [
+        -0.874238,
+        -1.924995,
+        0.875822,
+        1.925645
+      ],
+      "copperWidthMm": 1.75006,
+      "anchorsWithOutlineAndReservationsOnly": 4134,
+      "anchorsWithAllExistingObjectsFixed": 0,
+      "minimumExistingObjectsToDisplace": 1,
+      "minimalDisplacementSets": [
+        {
+          "locations": 1170,
+          "mustMoveExistingRefs": [
+            "U9"
+          ],
+          "sampleNativeAnchorMm": [
+            1.9,
+            19.05
+          ],
+          "sampleBodyBoxMm": [
+            0.783975,
+            16.901897,
+            2.999972,
+            20.974787
+          ],
+          "sampleCopperBoxMm": [
+            1.025762,
+            17.125005,
+            2.775822,
+            20.975645
+          ],
+          "sampleMinimumSlackMm": 0.731897
+        }
+      ]
+    },
+    {
+      "source": "restored",
+      "readbackRef": "U8",
+      "device": "SN74LVC2T45DCUR",
+      "layer": 2,
+      "rotation": 270,
+      "nativeOrientationObserved": false,
+      "bodyAtNativeOriginMm": [
+        -1.099972,
+        -2.148103,
+        1.116025,
+        1.924787
+      ],
+      "copperAtNativeOriginMm": [
+        -0.874238,
+        -1.924995,
+        0.873282,
+        1.925645
+      ],
+      "copperWidthMm": 1.74752,
+      "anchorsWithOutlineAndReservationsOnly": 3744,
+      "anchorsWithAllExistingObjectsFixed": 0,
+      "minimumExistingObjectsToDisplace": 1,
+      "minimalDisplacementSets": [
+        {
+          "locations": 546,
+          "mustMoveExistingRefs": [
+            "MK2"
+          ],
+          "sampleNativeAnchorMm": [
+            1.5,
+            15.4
+          ],
+          "sampleBodyBoxMm": [
+            0.400028,
+            13.251897,
+            2.616025,
+            17.324787
+          ],
+          "sampleCopperBoxMm": [
+            0.625762,
+            13.475005,
+            2.373282,
+            17.325645
+          ],
+          "sampleMinimumSlackMm": 0.33488
+        }
+      ]
+    }
+  ],
+  "copperCoverage": "available",
+  "routedLines": 0,
+  "beforeAfter": {
+    "existingComponentsPadsAndSilkUnchanged": true,
+    "outlineAndRulesUnchanged": true,
+    "routedLinesUnchanged": true,
+    "strictViolationSetUnchanged": true,
+    "newRegions": 2,
+    "scope": "Existing component and pad raw fields; DRC entries compared modulo list order and globalIndex."
+  }
+}
