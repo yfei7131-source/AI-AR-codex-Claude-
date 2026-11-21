@@ -1,0 +1,4978 @@
+PROTEL NETLIST 2.0
+[
+DESIGNATOR
+U9
+FOOTPRINT
+LGA-14_L3.0-W2.5-P0.50-TL
+PARTTYPE
+EVT1_U9_U9_IMU
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_U9_U9_IMU
+PCB Layer
+Default
+Name
+EVT1_U9_U9_IMU
+Designator
+U9
+Value
+U9_IMU | ICM-42688-P
+UserDocLink
+https://www.farnell.com/datasheets/3215488.pdf
+Description
+
+Symbol
+EVT1_U9_U9_IMU
+EVT1 Source Ref
+U9_IMU
+BOM Line
+BOM-30
+MPN
+ICM-42688-P
+Manufacturer
+TDK InvenSense
+Footprint Status
+BLOCKED
+Design Notes
+AD0=0 -> 7-bit addr 0x68 | no free FPGA/host input; data-ready polled over I2C | Always-on SYS_I2C rail; removes delayed-rail backfeed; DS-000347sec4.1 | RESV pin 7 -> GND | FSYNC input: select PIN9_FUNCTION=01 before enabling any INT2 routes; FSYNC_CONFIG.POLARITY=1; no pull-up fromalways-on rail onto FPGA_CDONE_VSYNC_N; resetdefaultINT2 isopen-drain/disabled
+Origin Footprint
+
+Unique ID
+2dbbb3175ebf36d7
+Manufacturer Part
+ICM-42688-P
+
+*
+]
+[
+DESIGNATOR
+MK2
+FOOTPRINT
+MIC-SMD_5P-L4.0-W3.0-P0.70-TR_IM69D130V01
+PARTTYPE
+EVT1_MK2_MK2_C
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_MK2_MK2_C
+PCB Layer
+Default
+Name
+EVT1_MK2_MK2_C
+Designator
+MK2
+Value
+MK2_C | IM69D130V01XTSA1
+UserDocLink
+https://www.infineon.com/assets/row/public/documents/30/49/infineon-im69d130-datasheet-en.pdf
+Description
+
+Symbol
+EVT1_MK2_MK2_C
+EVT1 Source Ref
+MK2_C
+BOM Line
+BOM-34
+MPN
+IM69D130V01XTSA1
+Manufacturer
+Infineon
+Footprint Status
+BLOCKED
+Design Notes
+tDV <= 100 ns, tDD 40..80 ns, tHZ 5..30 ns | Rev D1: common PDM supply; do not use delayed FPGA rail
+Origin Footprint
+
+Unique ID
+bf764e531503d1e5
+Manufacturer Part
+IM69D130V01XTSA1
+
+*
+]
+[
+DESIGNATOR
+C24
+FOOTPRINT
+IPC_0402_1005Metric
+PARTTYPE
+EVT1_C24_C_IMU_VDD1
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C24_C_IMU_VDD1
+PCB Layer
+Default
+Name
+EVT1_C24_C_IMU_VDD1
+Designator
+C24
+Value
+C_IMU_VDD1 | 0.1 uF
+UserDocLink
+
+Description
+
+Symbol
+EVT1_C24_C_IMU_VDD1
+EVT1 Source Ref
+C_IMU_VDD1
+BOM Line
+BOM-SOC-02
+MPN
+0.1uF+2.2uF VDD,10nF VDDIO; effective capacitance/voltage qualify
+Manufacturer
+TBD (value/package selected; exact procurement MPN open)
+Footprint Status
+BLOCKED
+Design Notes
+TDK DS-000347 sec4.2 typical operating circuit; close to corresponding pin5/8
+Origin Footprint
+
+Unique ID
+7c674fedd66d7165
+
+*
+]
+[
+DESIGNATOR
+C25
+FOOTPRINT
+IPC_0402_1005Metric
+PARTTYPE
+EVT1_C25_C_IMU_VDD2
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C25_C_IMU_VDD2
+PCB Layer
+Default
+Name
+EVT1_C25_C_IMU_VDD2
+Designator
+C25
+Value
+C_IMU_VDD2 | 2.2 uF
+UserDocLink
+
+Description
+
+Symbol
+EVT1_C25_C_IMU_VDD2
+EVT1 Source Ref
+C_IMU_VDD2
+BOM Line
+BOM-SOC-02
+MPN
+0.1uF+2.2uF VDD,10nF VDDIO; effective capacitance/voltage qualify
+Manufacturer
+TBD (value/package selected; exact procurement MPN open)
+Footprint Status
+BLOCKED
+Design Notes
+TDK DS-000347 sec4.2 typical operating circuit; close to corresponding pin5/8
+Origin Footprint
+
+Unique ID
+d99985aa138ce050
+
+*
+]
+[
+DESIGNATOR
+C26
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_C26_C_IMU_VDDIO
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C26_C_IMU_VDDIO
+PCB Layer
+Default
+Name
+EVT1_C26_C_IMU_VDDIO
+Designator
+C26
+Value
+C_IMU_VDDIO | 10 nF
+UserDocLink
+
+Description
+
+Symbol
+EVT1_C26_C_IMU_VDDIO
+EVT1 Source Ref
+C_IMU_VDDIO
+BOM Line
+BOM-SOC-02
+MPN
+0.1uF+2.2uF VDD,10nF VDDIO; effective capacitance/voltage qualify
+Manufacturer
+TBD (value/package selected; exact procurement MPN open)
+Footprint Status
+BLOCKED
+Design Notes
+TDK DS-000347 sec4.2 typical operating circuit; close to corresponding pin5/8
+Origin Footprint
+
+Unique ID
+5bc8fc857418e778
+
+*
+]
+[
+DESIGNATOR
+C33
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_C33_C_MK2_C
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C33_C_MK2_C
+PCB Layer
+Default
+Name
+EVT1_C33_C_MK2_C
+Designator
+C33
+Value
+C_MK2_C | 100nF X7R 6.3V 0201
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0201_0603Metric
+Symbol
+EVT1_C33_C_MK2_C
+EVT1 Source Ref
+C_MK2_C
+BOM Line
+BOM-D1-AT03
+MPN
+0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+Infineon IM69D130 Table4/Figure10: close to pin2
+Unique ID
+deb55bbe20a101cf
+
+*
+]
+[
+DESIGNATOR
+D3
+FOOTPRINT
+Kingbright_APHD1608LCGCK_1608
+PARTTYPE
+EVT1_D3_D3_PRIV
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_D3_D3_PRIV
+PCB Layer
+Default
+Name
+EVT1_D3_D3_PRIV
+Designator
+D3
+Value
+D3_PRIV | anode
+UserDocLink
+https://www.kingbrightusa.com/images/catalog/SPEC/APHD1608LCGCK.pdf
+Description
+
+Symbol
+EVT1_D3_D3_PRIV
+EVT1 Source Ref
+D3_PRIV
+BOM Line
+BOM-25
+MPN
+APHD1608LCGCK
+Manufacturer
+Kingbright
+Footprint Status
+BLOCKED
+Design Notes
+
+Origin Footprint
+
+Unique ID
+81689f1d3303caec
+Manufacturer Part
+APHD1608LCGCK
+
+*
+]
+[
+DESIGNATOR
+U2
+FOOTPRINT
+WLCSP-30_L2.5-W2.1-R6-C5-P0.40-TL
+PARTTYPE
+EVT1_U2_U2_FPGA
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_U2_U2_FPGA
+PCB Layer
+Default
+Name
+EVT1_U2_U2_FPGA
+Designator
+U2
+Value
+U2_FPGA | iCE40UP5K-UWG30ITR
+UserDocLink
+https://0x04.net/~mwk/sbdocs/ice40/FPGA-TN-02006-2-3-iCE40-Hardware-Checklist.pdf
+Description
+
+Symbol
+EVT1_U2_U2_FPGA
+EVT1 Source Ref
+U2_FPGA
+BOM Line
+BOM-28
+MPN
+iCE40UP5K-UWG30ITR
+Manufacturer
+Lattice Semiconductor
+Footprint Status
+BLOCKED
+Design Notes
+CDONE open-drain during config; user push-pull ~d3_low_q after wake-up | SPI_SO during Target-SPI config; user-mode input
+Origin Footprint
+
+Unique ID
+48f0ae2437312dae
+Manufacturer Part
+iCE40UP5K-UWG30ITR
+
+*
+]
+[
+DESIGNATOR
+U1
+FOOTPRINT
+X2SON-4_L1.0-W1.0-P0.65-TL-EP
+PARTTYPE
+EVT1_U1_U4_1V8F
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_U1_U4_1V8F
+PCB Layer
+Default
+Name
+EVT1_U1_U4_1V8F
+Designator
+U1
+Value
+U4_1V8F | TLV75518PDQNR
+UserDocLink
+https://www.ti.com/lit/ds/symlink/tlv755p.pdf
+Description
+
+Origin Footprint
+Package_SON:Texas_X2SON-4_1x1mm_P0.65mm
+Symbol
+EVT1_U1_U4_1V8F
+EVT1 Source Ref
+U4_1V8F
+BOM Line
+BOM-46
+MPN
+TLV75518PDQNR
+Manufacturer
+Texas Instruments
+Footprint Status
+PASS
+Design Notes
+EN from VCCPLL (>=1.082 V > VHI 1.0 V) | EN senses 1V2_FPGA_PLL. Ramp and threshold margins remain unverified. | SBVS320D Table4-1: DQN thermal pad internally GND, PCB ground connection required
+Unique ID
+1bdc0ab44f99f92d
+Manufacturer Part
+TLV75518PDQNR
+
+*
+]
+[
+DESIGNATOR
+U4
+FOOTPRINT
+X2SON-4_L1.0-W1.0-P0.65-TL-EP
+PARTTYPE
+EVT1_U4_U4_1V2
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_U4_U4_1V2
+PCB Layer
+Default
+Name
+EVT1_U4_U4_1V2
+Designator
+U4
+Value
+U4_1V2 | TLV75512PDQNR
+UserDocLink
+https://www.ti.com/lit/ds/symlink/tlv755p.pdf
+Description
+
+Origin Footprint
+Package_SON:Texas_X2SON-4_1x1mm_P0.65mm
+Symbol
+EVT1_U4_U4_1V2
+EVT1 Source Ref
+U4_1V2
+BOM Line
+BOM-32
+MPN
+TLV75512PDQNR
+Manufacturer
+Texas Instruments
+Footprint Status
+PASS
+Design Notes
+EN tied IN | EN is tied to VSYS. 4.4 V is the nominal input contract, not a rail limit. | SBVS320D Table4-1: DQN thermal pad internally GND, PCB ground connection required
+Unique ID
+bac468049775df37
+Manufacturer Part
+TLV75512PDQNR
+
+*
+]
+[
+DESIGNATOR
+Y1
+FOOTPRINT
+Abracon_ASADV_2016-4Pin_2.0x1.6mm
+PARTTYPE
+EVT1_Y1_Y1_OSC
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_Y1_Y1_OSC
+PCB Layer
+Default
+Name
+EVT1_Y1_Y1_OSC
+Designator
+Y1
+Value
+Y1_OSC | ASADV-48.000MHZ-LC-T
+UserDocLink
+https://abracon.com/datasheets/ASADV.pdf
+Description
+
+Origin Footprint
+EVT1_Reviewed:Abracon_ASADV_2016-4Pin_2.0x1.6mm
+Symbol
+EVT1_Y1_Y1_OSC
+EVT1 Source Ref
+Y1_OSC
+BOM Line
+BOM-27
+MPN
+ASADV-48.000MHZ-LC-T
+Manufacturer
+Abracon
+Footprint Status
+PASS
+Design Notes
+Abracon ASADV mechanical drawing pin 2. Place C_FPGA_OSC_HF between pins 4 and 2.
+Unique ID
+9790cc8ece124e27
+Manufacturer Part
+ASADV-48.000MHZ-LC-T
+
+*
+]
+[
+DESIGNATOR
+C13
+FOOTPRINT
+IPC_0402_1005Metric
+PARTTYPE
+EVT1_C13_C_FPGA_CORE_BULK
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C13_C_FPGA_CORE_BULK
+PCB Layer
+Default
+Name
+EVT1_C13_C_FPGA_CORE_BULK
+Designator
+C13
+Value
+C_FPGA_CORE_BULK | 4.7uF 6.3V X7R
+UserDocLink
+https://www.latticesemi.com/api/document/download?id=47779
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0603_1608Metric
+Symbol
+EVT1_C13_C_FPGA_CORE_BULK
+EVT1 Source Ref
+C_FPGA_CORE_BULK
+BOM Line
+BOM-CAD-05
+MPN
+4.7uF 6.3V X7R (0603 (1608 metric)); exact MPN TBD
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+Place directly at U2_FPGA.C2; shortest supply/ground loop. Bias, tolerance and actual MPN open.
+Unique ID
+e7ba3aba9f9889c8
+
+*
+]
+[
+DESIGNATOR
+C14
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_C14_C_FPGA_CORE_HF
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C14_C_FPGA_CORE_HF
+PCB Layer
+Default
+Name
+EVT1_C14_C_FPGA_CORE_HF
+Designator
+C14
+Value
+C_FPGA_CORE_HF | 100nF 6.3V X7R
+UserDocLink
+https://www.latticesemi.com/api/document/download?id=47779
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C14_C_FPGA_CORE_HF
+EVT1 Source Ref
+C_FPGA_CORE_HF
+BOM Line
+BOM-CAD-06
+MPN
+100nF 6.3V X7R (0402 (1005 metric)); exact MPN TBD
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+Place directly at U2_FPGA.C2; shortest supply/ground loop. Bias, tolerance and actual MPN open.
+Unique ID
+00361082df9d4549
+
+*
+]
+[
+DESIGNATOR
+C15
+FOOTPRINT
+IPC_0402_1005Metric
+PARTTYPE
+EVT1_C15_C_FPGA_IO_BULK
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C15_C_FPGA_IO_BULK
+PCB Layer
+Default
+Name
+EVT1_C15_C_FPGA_IO_BULK
+Designator
+C15
+Value
+C_FPGA_IO_BULK | 4.7uF 6.3V X7R
+UserDocLink
+https://www.latticesemi.com/api/document/download?id=47779
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0603_1608Metric
+Symbol
+EVT1_C15_C_FPGA_IO_BULK
+EVT1 Source Ref
+C_FPGA_IO_BULK
+BOM Line
+BOM-CAD-07
+MPN
+4.7uF 6.3V X7R (0603 (1608 metric)); exact MPN TBD
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+Place directly at U2_FPGA.D2/A3/C4; shortest supply/ground loop. Bias, tolerance and actual MPN open.
+Unique ID
+86bb77bda672094d
+
+*
+]
+[
+DESIGNATOR
+C16
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_C16_C_FPGA_IO_HF0
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C16_C_FPGA_IO_HF0
+PCB Layer
+Default
+Name
+EVT1_C16_C_FPGA_IO_HF0
+Designator
+C16
+Value
+C_FPGA_IO_HF0 | 100nF 6.3V X7R
+UserDocLink
+https://www.latticesemi.com/api/document/download?id=47779
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C16_C_FPGA_IO_HF0
+EVT1 Source Ref
+C_FPGA_IO_HF0
+BOM Line
+BOM-CAD-08
+MPN
+100nF 6.3V X7R (0402 (1005 metric)); exact MPN TBD
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+Place directly at U2_FPGA.A3; shortest supply/ground loop. Bias, tolerance and actual MPN open.
+Unique ID
+c8e923f96b539988
+
+*
+]
+[
+DESIGNATOR
+C17
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_C17_C_FPGA_IO_HF1
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C17_C_FPGA_IO_HF1
+PCB Layer
+Default
+Name
+EVT1_C17_C_FPGA_IO_HF1
+Designator
+C17
+Value
+C_FPGA_IO_HF1 | 100nF 6.3V X7R
+UserDocLink
+https://www.latticesemi.com/api/document/download?id=47779
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C17_C_FPGA_IO_HF1
+EVT1 Source Ref
+C_FPGA_IO_HF1
+BOM Line
+BOM-CAD-09
+MPN
+100nF 6.3V X7R (0402 (1005 metric)); exact MPN TBD
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+Place directly at U2_FPGA.D2; shortest supply/ground loop. Bias, tolerance and actual MPN open.
+Unique ID
+48700c84863a802e
+
+*
+]
+[
+DESIGNATOR
+C18
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_C18_C_FPGA_IO_HF2
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C18_C_FPGA_IO_HF2
+PCB Layer
+Default
+Name
+EVT1_C18_C_FPGA_IO_HF2
+Designator
+C18
+Value
+C_FPGA_IO_HF2 | 100nF 6.3V X7R
+UserDocLink
+https://www.latticesemi.com/api/document/download?id=47779
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C18_C_FPGA_IO_HF2
+EVT1 Source Ref
+C_FPGA_IO_HF2
+BOM Line
+BOM-CAD-10
+MPN
+100nF 6.3V X7R (0402 (1005 metric)); exact MPN TBD
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+Place directly at U2_FPGA.C4; shortest supply/ground loop. Bias, tolerance and actual MPN open.
+Unique ID
+d9d0285421fe3ef0
+
+*
+]
+[
+DESIGNATOR
+C19
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_C19_C_FPGA_OSC_HF
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C19_C_FPGA_OSC_HF
+PCB Layer
+Default
+Name
+EVT1_C19_C_FPGA_OSC_HF
+Designator
+C19
+Value
+C_FPGA_OSC_HF | 10nF 6.3V C0G
+UserDocLink
+https://abracon.com/datasheets/ASADV.pdf
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C19_C_FPGA_OSC_HF
+EVT1 Source Ref
+C_FPGA_OSC_HF
+BOM Line
+BOM-CAD-11
+MPN
+10nF 6.3V C0G (0402 (1005 metric)); exact MPN TBD
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+Place directly at Y1_OSC.4; shortest supply/ground loop. Bias, tolerance and actual MPN open.
+Unique ID
+9b75bd895f0e39d2
+
+*
+]
+[
+DESIGNATOR
+C20
+FOOTPRINT
+IPC_0402_1005Metric
+PARTTYPE
+EVT1_C20_C_FPGA_PLL_BULK
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C20_C_FPGA_PLL_BULK
+PCB Layer
+Default
+Name
+EVT1_C20_C_FPGA_PLL_BULK
+Designator
+C20
+Value
+C_FPGA_PLL_BULK | 4.7uF 6.3V X7R
+UserDocLink
+https://www.latticesemi.com/api/document/download?id=47779
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0603_1608Metric
+Symbol
+EVT1_C20_C_FPGA_PLL_BULK
+EVT1 Source Ref
+C_FPGA_PLL_BULK
+BOM Line
+BOM-CAD-01
+MPN
+4.7uF 6.3V X7R (0603 (1608 metric)); exact MPN TBD
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+Place directly at U2_FPGA.B2; shortest supply/ground loop. Bias, tolerance and actual MPN open.
+Unique ID
+97d7532320e593d5
+
+*
+]
+[
+DESIGNATOR
+C21
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_C21_C_FPGA_PLL_HF
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C21_C_FPGA_PLL_HF
+PCB Layer
+Default
+Name
+EVT1_C21_C_FPGA_PLL_HF
+Designator
+C21
+Value
+C_FPGA_PLL_HF | 100nF 6.3V X7R
+UserDocLink
+https://www.latticesemi.com/api/document/download?id=47779
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C21_C_FPGA_PLL_HF
+EVT1 Source Ref
+C_FPGA_PLL_HF
+BOM Line
+BOM-CAD-02
+MPN
+100nF 6.3V X7R (0402 (1005 metric)); exact MPN TBD
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+Place directly at U2_FPGA.B2; shortest supply/ground loop. Bias, tolerance and actual MPN open.
+Unique ID
+0259cc883dd91c7a
+
+*
+]
+[
+DESIGNATOR
+C22
+FOOTPRINT
+IPC_0402_1005Metric
+PARTTYPE
+EVT1_C22_C_FPGA_VPP_BULK
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C22_C_FPGA_VPP_BULK
+PCB Layer
+Default
+Name
+EVT1_C22_C_FPGA_VPP_BULK
+Designator
+C22
+Value
+C_FPGA_VPP_BULK | 4.7uF 6.3V X7R
+UserDocLink
+https://www.latticesemi.com/api/document/download?id=47779
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0603_1608Metric
+Symbol
+EVT1_C22_C_FPGA_VPP_BULK
+EVT1 Source Ref
+C_FPGA_VPP_BULK
+BOM Line
+BOM-CAD-03
+MPN
+4.7uF 6.3V X7R (0603 (1608 metric)); exact MPN TBD
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+Place directly at U2_FPGA.D4; shortest supply/ground loop. Bias, tolerance and actual MPN open.
+Unique ID
+7f35450ac3171d20
+
+*
+]
+[
+DESIGNATOR
+C23
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_C23_C_FPGA_VPP_HF
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C23_C_FPGA_VPP_HF
+PCB Layer
+Default
+Name
+EVT1_C23_C_FPGA_VPP_HF
+Designator
+C23
+Value
+C_FPGA_VPP_HF | 100nF 6.3V X7R
+UserDocLink
+https://www.latticesemi.com/api/document/download?id=47779
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C23_C_FPGA_VPP_HF
+EVT1 Source Ref
+C_FPGA_VPP_HF
+BOM Line
+BOM-CAD-04
+MPN
+100nF 6.3V X7R (0402 (1005 metric)); exact MPN TBD
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+Place directly at U2_FPGA.D4; shortest supply/ground loop. Bias, tolerance and actual MPN open.
+Unique ID
+8bc5c1e1749a19fa
+
+*
+]
+[
+DESIGNATOR
+C27
+FOOTPRINT
+IPC_0402_1005Metric
+PARTTYPE
+EVT1_C27_C_LDO_1V2F_IN
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C27_C_LDO_1V2F_IN
+PCB Layer
+Default
+Name
+EVT1_C27_C_LDO_1V2F_IN
+Designator
+C27
+Value
+C_LDO_1V2F_IN | 1uF 10V X7R; effective >=1uF
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C27_C_LDO_1V2F_IN
+EVT1 Source Ref
+C_LDO_1V2F_IN
+BOM Line
+BOM-D1-PWR-C_LDO_1V2F_IN
+MPN
+1uF 10V X7R; effective >=1uF
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+place at corresponding IC pins; DC-bias curve approval OPEN
+Unique ID
+a26eb100929f0697
+
+*
+]
+[
+DESIGNATOR
+C28
+FOOTPRINT
+IPC_0402_1005Metric
+PARTTYPE
+EVT1_C28_C_LDO_1V2F_OUT
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C28_C_LDO_1V2F_OUT
+PCB Layer
+Default
+Name
+EVT1_C28_C_LDO_1V2F_OUT
+Designator
+C28
+Value
+C_LDO_1V2F_OUT | 1uF 10V X7R; effective >=1uF
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C28_C_LDO_1V2F_OUT
+EVT1 Source Ref
+C_LDO_1V2F_OUT
+BOM Line
+BOM-D1-PWR-C_LDO_1V2F_OUT
+MPN
+1uF 10V X7R; effective >=1uF
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+place at corresponding IC pins; DC-bias curve approval OPEN
+Unique ID
+e3aeb17489c0ab5d
+
+*
+]
+[
+DESIGNATOR
+C29
+FOOTPRINT
+IPC_0402_1005Metric
+PARTTYPE
+EVT1_C29_C_LDO_1V8F_IN
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C29_C_LDO_1V8F_IN
+PCB Layer
+Default
+Name
+EVT1_C29_C_LDO_1V8F_IN
+Designator
+C29
+Value
+C_LDO_1V8F_IN | 1uF 10V X7R; effective >=1uF
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C29_C_LDO_1V8F_IN
+EVT1 Source Ref
+C_LDO_1V8F_IN
+BOM Line
+BOM-D1-PWR-C_LDO_1V8F_IN
+MPN
+1uF 10V X7R; effective >=1uF
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+place at corresponding IC pins; DC-bias curve approval OPEN
+Unique ID
+5bfcee5f0e3d202c
+
+*
+]
+[
+DESIGNATOR
+C30
+FOOTPRINT
+IPC_0402_1005Metric
+PARTTYPE
+EVT1_C30_C_LDO_1V8F_OUT
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C30_C_LDO_1V8F_OUT
+PCB Layer
+Default
+Name
+EVT1_C30_C_LDO_1V8F_OUT
+Designator
+C30
+Value
+C_LDO_1V8F_OUT | 1uF 10V X7R; effective >=1uF
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C30_C_LDO_1V8F_OUT
+EVT1 Source Ref
+C_LDO_1V8F_OUT
+BOM Line
+BOM-D1-PWR-C_LDO_1V8F_OUT
+MPN
+1uF 10V X7R; effective >=1uF
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+place at corresponding IC pins; DC-bias curve approval OPEN
+Unique ID
+a2ee6ceb65d30336
+
+*
+]
+[
+DESIGNATOR
+R11
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_R11_R_CDONE_PU
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R11_R_CDONE_PU
+PCB Layer
+Default
+Name
+EVT1_R11_R_CDONE_PU
+Designator
+R11
+Value
+R_CDONE_PU | 4.7k
+UserDocLink
+https://0x04.net/~mwk/sbdocs/ice40/FPGA-TN-02006-2-3-iCE40-Hardware-Checklist.pdf
+Description
+
+Symbol
+EVT1_R11_R_CDONE_PU
+EVT1 Source Ref
+R_CDONE_PU
+BOM Line
+BOM-33
+MPN
+R_PLL(100R)+R_VPP(10R)+R_SS_PD(10k)+R_CRST_PD(10k)+R_CDONE_PU(4.7k)+10xR_DAMP(22R)+2xR_OPTCS_PU(10k)
+Manufacturer
+Murata / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+
+Origin Footprint
+
+Unique ID
+763cf8d5648cb4fd
+
+*
+]
+[
+DESIGNATOR
+R12
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_R12_R_CRST_PD
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R12_R_CRST_PD
+PCB Layer
+Default
+Name
+EVT1_R12_R_CRST_PD
+Designator
+R12
+Value
+R_CRST_PD | 10k reset pulldown
+UserDocLink
+https://0x04.net/~mwk/sbdocs/ice40/FPGA-TN-02006-2-3-iCE40-Hardware-Checklist.pdf
+Description
+
+Symbol
+EVT1_R12_R_CRST_PD
+EVT1 Source Ref
+R_CRST_PD
+BOM Line
+BOM-33
+MPN
+R_PLL(100R)+R_VPP(10R)+R_SS_PD(10k)+R_CRST_PD(10k)+R_CDONE_PU(4.7k)+10xR_DAMP(22R)+2xR_OPTCS_PU(10k)
+Manufacturer
+Murata / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+D1.1 FPGA reset defaults LOW; no discharge diode injecting current into reset
+Origin Footprint
+
+Unique ID
+15ac9218146e0f4b
+
+*
+]
+[
+DESIGNATOR
+R27
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_R27_R_PLL
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R27_R_PLL
+PCB Layer
+Default
+Name
+EVT1_R27_R_PLL
+Designator
+R27
+Value
+R_PLL | 100R
+UserDocLink
+https://0x04.net/~mwk/sbdocs/ice40/FPGA-TN-02006-2-3-iCE40-Hardware-Checklist.pdf
+Description
+
+Symbol
+EVT1_R27_R_PLL
+EVT1 Source Ref
+R_PLL
+BOM Line
+BOM-33
+MPN
+R_PLL(100R)+R_VPP(10R)+R_SS_PD(10k)+R_CRST_PD(10k)+R_CDONE_PU(4.7k)+10xR_DAMP(22R)+2xR_OPTCS_PU(10k)
+Manufacturer
+Murata / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+See explicit C_FPGA bypass parts on this net.
+Origin Footprint
+
+Unique ID
+28145adf450505d9
+
+*
+]
+[
+DESIGNATOR
+R28
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_R28_R_SS_PD
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R28_R_SS_PD
+PCB Layer
+Default
+Name
+EVT1_R28_R_SS_PD
+Designator
+R28
+Value
+R_SS_PD | 10k
+UserDocLink
+https://0x04.net/~mwk/sbdocs/ice40/FPGA-TN-02006-2-3-iCE40-Hardware-Checklist.pdf
+Description
+
+Symbol
+EVT1_R28_R_SS_PD
+EVT1 Source Ref
+R_SS_PD
+BOM Line
+BOM-33
+MPN
+R_PLL(100R)+R_VPP(10R)+R_SS_PD(10k)+R_CRST_PD(10k)+R_CDONE_PU(4.7k)+10xR_DAMP(22R)+2xR_OPTCS_PU(10k)
+Manufacturer
+Murata / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+
+Origin Footprint
+
+Unique ID
+d9f908b8ca857374
+
+*
+]
+[
+DESIGNATOR
+R29
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_R29_R_VPP
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R29_R_VPP
+PCB Layer
+Default
+Name
+EVT1_R29_R_VPP
+Designator
+R29
+Value
+R_VPP | 10R
+UserDocLink
+https://0x04.net/~mwk/sbdocs/ice40/FPGA-TN-02006-2-3-iCE40-Hardware-Checklist.pdf
+Description
+
+Symbol
+EVT1_R29_R_VPP
+EVT1 Source Ref
+R_VPP
+BOM Line
+BOM-33
+MPN
+R_PLL(100R)+R_VPP(10R)+R_SS_PD(10k)+R_CRST_PD(10k)+R_CDONE_PU(4.7k)+10xR_DAMP(22R)+2xR_OPTCS_PU(10k)
+Manufacturer
+Murata / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+See explicit C_FPGA bypass parts on this net.
+Origin Footprint
+
+Unique ID
+9e71ce6b7342da3b
+
+*
+]
+[
+DESIGNATOR
+U15
+FOOTPRINT
+TI_DRY0006A_USON-6_1.45x1.0mm
+PARTTYPE
+EVT1_U15_U_FPGA_SEQ
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_U15_U_FPGA_SEQ
+PCB Layer
+Default
+Name
+EVT1_U15_U_FPGA_SEQ
+Designator
+U15
+Value
+U_FPGA_SEQ | TPS3895ADRYR (ECO-03)
+UserDocLink
+https://www.ti.com/lit/ds/symlink/tps3895.pdf
+Description
+
+Origin Footprint
+
+Symbol
+EVT1_U15_U_FPGA_SEQ
+EVT1 Source Ref
+U_FPGA_SEQ
+BOM Line
+BOM-ECO-03A
+MPN
+TPS3895ADRYR
+Manufacturer
+Texas Instruments
+Footprint Status
+PASS
+Unique ID
+635848892ecc77ee
+Manufacturer Part
+TPS3895ADRYR
+Supplier
+
+Supplier Part
+
+Design Notes
+Keep flash3.3V strap low during reset; active PDM clock after reset
+
+*
+]
+[
+DESIGNATOR
+R30
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_R30_R_FPGA_SEQ_H
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R30_R_FPGA_SEQ_H
+PCB Layer
+Default
+Name
+EVT1_R30_R_FPGA_SEQ_H
+Designator
+R30
+Value
+R_FPGA_SEQ_H | 49.9k 1% 0201 (ECO-03)
+UserDocLink
+
+Description
+
+Symbol
+EVT1_R30_R_FPGA_SEQ_H
+EVT1 Source Ref
+R_FPGA_SEQ_H
+BOM Line
+BOM-ECO-03B
+MPN
+RC0201FR-0749K9L
+Manufacturer
+YAGEO
+Footprint Status
+PASS
+Origin Footprint
+
+Unique ID
+155d665eb4ae4c58
+Manufacturer Part
+RC0201FR-0749K9L
+Supplier
+
+Supplier Part
+
+Design Notes
+Keep flash3.3V strap low during reset; active PDM clock after reset
+
+*
+]
+[
+DESIGNATOR
+R31
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_R31_R_FPGA_SEQ_L
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R31_R_FPGA_SEQ_L
+PCB Layer
+Default
+Name
+EVT1_R31_R_FPGA_SEQ_L
+Designator
+R31
+Value
+R_FPGA_SEQ_L | 56.2k 1% 0201 (ECO-03)
+UserDocLink
+
+Description
+
+Symbol
+EVT1_R31_R_FPGA_SEQ_L
+EVT1 Source Ref
+R_FPGA_SEQ_L
+BOM Line
+BOM-ECO-03C
+MPN
+RC0201FR-0756K2L
+Manufacturer
+YAGEO
+Footprint Status
+PASS
+Origin Footprint
+
+Unique ID
+8a3e21afbfeff0a6
+Manufacturer Part
+RC0201FR-0756K2L
+Supplier
+
+Supplier Part
+
+Design Notes
+Keep flash3.3V strap low during reset; active PDM clock after reset
+
+*
+]
+[
+DESIGNATOR
+J1
+FOOTPRINT
+Hirose_BM28B0.6-30DS_2-0.35V
+PARTTYPE
+EVT1_J1_J_BRIDGE_IN
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_J1_J_BRIDGE_IN
+PCB Layer
+Default
+Name
+EVT1_J1_J_BRIDGE_IN
+Designator
+J1
+Value
+J_BRIDGE_IN | BM28B0.6-30DS/2-0.35V(53)
+UserDocLink
+https://www.hirose.com/en/product/document?clcode=CL0673-5043-0-51&productname=BM28B0.6-16DS/2-0.35V(51)&series=BM28&documenttype=Catalog&lang=en&documentid=D49354_en
+Description
+
+Symbol
+EVT1_J1_J_BRIDGE_IN
+EVT1 Source Ref
+J_BRIDGE_IN
+BOM Line
+BOM-31
+MPN
+BM28B0.6-30DS/2-0.35V(53)
+Manufacturer
+Hirose (HRS)
+Footprint Status
+BLOCKED
+Design Notes
+NC_TRUNK_PASS | 0.45 A is the total VSYS branch peak across P2/P3, not per contact. Sharing and derating remain unverified. | Rev D1 bridge IMU/mic supply tap; not NC_TRUNK_PASS
+Origin Footprint
+
+Unique ID
+51bfc0e5166a1c40
+Manufacturer Part
+BM28B0.6-30DS/2-0.35V(53)
+
+*
+]
+[
+DESIGNATOR
+J2
+FOOTPRINT
+Hirose_BM28B0.6-10DS_2-0.35V_PROVISIONAL_NDA
+PARTTYPE
+EVT1_J2_J_DISP_L
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+no
+Convert to PCB
+yes
+Device
+EVT1_J2_J_DISP_L
+PCB Layer
+Default
+Name
+EVT1_J2_J_DISP_L
+Designator
+J2
+Value
+J_DISP_L | BLOCKED | BM28B0.6-10DS/2-0.35V(53)
+UserDocLink
+https://www.hirose.com/en/product/document?clcode=CL0673-5043-0-51&productname=BM28B0.6-16DS/2-0.35V(51)&series=BM28&documenttype=Catalog&lang=en&documentid=D49354_en
+Description
+
+Symbol
+EVT1_J2_J_DISP_L
+EVT1 Source Ref
+J_DISP_L
+BOM Line
+BOM-26
+MPN
+BM28B0.6-10DS/2-0.35V(53)
+Manufacturer
+Hirose (HRS)
+Footprint Status
+BLOCKED
+Design Notes
+BLOCKED JBD_FPC and AVDD. Connector is bridge-side only. Board-side candidate only. JBD voltage, load, capacitance and sequencing remain BLK-JBD-04.
+Origin Footprint
+
+Unique ID
+1fb9863844ab5169
+Manufacturer Part
+BM28B0.6-10DS/2-0.35V(53)
+
+*
+]
+[
+DESIGNATOR
+J3
+FOOTPRINT
+Hirose_BM28B0.6-10DS_2-0.35V_PROVISIONAL_NDA
+PARTTYPE
+EVT1_J3_J_DISP_R
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+no
+Convert to PCB
+yes
+Device
+EVT1_J3_J_DISP_R
+PCB Layer
+Default
+Name
+EVT1_J3_J_DISP_R
+Designator
+J3
+Value
+J_DISP_R | BLOCKED | BM28B0.6-10DS/2-0.35V(53)
+UserDocLink
+https://www.hirose.com/en/product/document?clcode=CL0673-5043-0-51&productname=BM28B0.6-16DS/2-0.35V(51)&series=BM28&documenttype=Catalog&lang=en&documentid=D49354_en
+Description
+
+Symbol
+EVT1_J3_J_DISP_R
+EVT1 Source Ref
+J_DISP_R
+BOM Line
+BOM-29
+MPN
+BM28B0.6-10DS/2-0.35V(53)
+Manufacturer
+Hirose (HRS)
+Footprint Status
+BLOCKED
+Design Notes
+BLOCKED JBD_FPC and AVDD. Connector is bridge-side only. Board-side candidate only. JBD voltage, load, capacitance and sequencing remain BLK-JBD-04.
+Origin Footprint
+
+Unique ID
+bd3ee0abdb58119f
+Manufacturer Part
+BM28B0.6-10DS/2-0.35V(53)
+
+*
+]
+[
+DESIGNATOR
+R13
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_R13_R_DAMP_CS_L
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R13_R_DAMP_CS_L
+PCB Layer
+Default
+Name
+EVT1_R13_R_DAMP_CS_L
+Designator
+R13
+Value
+R_DAMP_CS_L | 22R
+UserDocLink
+https://0x04.net/~mwk/sbdocs/ice40/FPGA-TN-02006-2-3-iCE40-Hardware-Checklist.pdf
+Description
+
+Symbol
+EVT1_R13_R_DAMP_CS_L
+EVT1 Source Ref
+R_DAMP_CS_L
+BOM Line
+BOM-33
+MPN
+R_PLL(100R)+R_VPP(10R)+R_SS_PD(10k)+R_CRST_PD(10k)+R_CDONE_PU(4.7k)+10xR_DAMP(22R)+2xR_OPTCS_PU(10k)
+Manufacturer
+Murata / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+
+Origin Footprint
+
+Unique ID
+ff4077a9ca69db92
+
+*
+]
+[
+DESIGNATOR
+R14
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_R14_R_DAMP_CS_R
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R14_R_DAMP_CS_R
+PCB Layer
+Default
+Name
+EVT1_R14_R_DAMP_CS_R
+Designator
+R14
+Value
+R_DAMP_CS_R | 22R
+UserDocLink
+https://0x04.net/~mwk/sbdocs/ice40/FPGA-TN-02006-2-3-iCE40-Hardware-Checklist.pdf
+Description
+
+Symbol
+EVT1_R14_R_DAMP_CS_R
+EVT1 Source Ref
+R_DAMP_CS_R
+BOM Line
+BOM-33
+MPN
+R_PLL(100R)+R_VPP(10R)+R_SS_PD(10k)+R_CRST_PD(10k)+R_CDONE_PU(4.7k)+10xR_DAMP(22R)+2xR_OPTCS_PU(10k)
+Manufacturer
+Murata / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+
+Origin Footprint
+
+Unique ID
+8b54177fc4d64d35
+
+*
+]
+[
+DESIGNATOR
+R15
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_R15_R_DAMP_LD0
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R15_R_DAMP_LD0
+PCB Layer
+Default
+Name
+EVT1_R15_R_DAMP_LD0
+Designator
+R15
+Value
+R_DAMP_LD0 | 22R (series at FPGA)
+UserDocLink
+https://0x04.net/~mwk/sbdocs/ice40/FPGA-TN-02006-2-3-iCE40-Hardware-Checklist.pdf
+Description
+
+Symbol
+EVT1_R15_R_DAMP_LD0
+EVT1 Source Ref
+R_DAMP_LD0
+BOM Line
+BOM-33
+MPN
+R_PLL(100R)+R_VPP(10R)+R_SS_PD(10k)+R_CRST_PD(10k)+R_CDONE_PU(4.7k)+10xR_DAMP(22R)+2xR_OPTCS_PU(10k)
+Manufacturer
+Murata / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+Rev C 22R series retained; for brevity the post-resistor node shares the net name | Panel-side series damping terminal; FPGA-side net/PCF unchanged
+Origin Footprint
+
+Unique ID
+feece054417b9159
+
+*
+]
+[
+DESIGNATOR
+R16
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_R16_R_DAMP_LD1
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R16_R_DAMP_LD1
+PCB Layer
+Default
+Name
+EVT1_R16_R_DAMP_LD1
+Designator
+R16
+Value
+R_DAMP_LD1 | 22R (series at FPGA)
+UserDocLink
+https://0x04.net/~mwk/sbdocs/ice40/FPGA-TN-02006-2-3-iCE40-Hardware-Checklist.pdf
+Description
+
+Symbol
+EVT1_R16_R_DAMP_LD1
+EVT1 Source Ref
+R_DAMP_LD1
+BOM Line
+BOM-33
+MPN
+R_PLL(100R)+R_VPP(10R)+R_SS_PD(10k)+R_CRST_PD(10k)+R_CDONE_PU(4.7k)+10xR_DAMP(22R)+2xR_OPTCS_PU(10k)
+Manufacturer
+Murata / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+Rev C 22R series retained; for brevity the post-resistor node shares the net name | Panel-side series damping terminal; FPGA-side net/PCF unchanged
+Origin Footprint
+
+Unique ID
+3c543c7c58e1cc80
+
+*
+]
+[
+DESIGNATOR
+R17
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_R17_R_DAMP_LD2
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R17_R_DAMP_LD2
+PCB Layer
+Default
+Name
+EVT1_R17_R_DAMP_LD2
+Designator
+R17
+Value
+R_DAMP_LD2 | 22R (series at FPGA)
+UserDocLink
+https://0x04.net/~mwk/sbdocs/ice40/FPGA-TN-02006-2-3-iCE40-Hardware-Checklist.pdf
+Description
+
+Symbol
+EVT1_R17_R_DAMP_LD2
+EVT1 Source Ref
+R_DAMP_LD2
+BOM Line
+BOM-33
+MPN
+R_PLL(100R)+R_VPP(10R)+R_SS_PD(10k)+R_CRST_PD(10k)+R_CDONE_PU(4.7k)+10xR_DAMP(22R)+2xR_OPTCS_PU(10k)
+Manufacturer
+Murata / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+Rev C 22R series retained; for brevity the post-resistor node shares the net name | Panel-side series damping terminal; FPGA-side net/PCF unchanged
+Origin Footprint
+
+Unique ID
+6346d187b4e0bc9c
+
+*
+]
+[
+DESIGNATOR
+R18
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_R18_R_DAMP_LD3
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R18_R_DAMP_LD3
+PCB Layer
+Default
+Name
+EVT1_R18_R_DAMP_LD3
+Designator
+R18
+Value
+R_DAMP_LD3 | 22R (series at FPGA)
+UserDocLink
+https://0x04.net/~mwk/sbdocs/ice40/FPGA-TN-02006-2-3-iCE40-Hardware-Checklist.pdf
+Description
+
+Symbol
+EVT1_R18_R_DAMP_LD3
+EVT1 Source Ref
+R_DAMP_LD3
+BOM Line
+BOM-33
+MPN
+R_PLL(100R)+R_VPP(10R)+R_SS_PD(10k)+R_CRST_PD(10k)+R_CDONE_PU(4.7k)+10xR_DAMP(22R)+2xR_OPTCS_PU(10k)
+Manufacturer
+Murata / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+Rev C 22R series retained; for brevity the post-resistor node shares the net name | Panel-side series damping terminal; FPGA-side net/PCF unchanged
+Origin Footprint
+
+Unique ID
+5f673669f0d56d8f
+
+*
+]
+[
+DESIGNATOR
+R19
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_R19_R_DAMP_RD0
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R19_R_DAMP_RD0
+PCB Layer
+Default
+Name
+EVT1_R19_R_DAMP_RD0
+Designator
+R19
+Value
+R_DAMP_RD0 | 22R (series at FPGA)
+UserDocLink
+https://0x04.net/~mwk/sbdocs/ice40/FPGA-TN-02006-2-3-iCE40-Hardware-Checklist.pdf
+Description
+
+Symbol
+EVT1_R19_R_DAMP_RD0
+EVT1 Source Ref
+R_DAMP_RD0
+BOM Line
+BOM-33
+MPN
+R_PLL(100R)+R_VPP(10R)+R_SS_PD(10k)+R_CRST_PD(10k)+R_CDONE_PU(4.7k)+10xR_DAMP(22R)+2xR_OPTCS_PU(10k)
+Manufacturer
+Murata / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+Rev C 22R series retained; for brevity the post-resistor node shares the net name | Panel-side series damping terminal; FPGA-side net/PCF unchanged
+Origin Footprint
+
+Unique ID
+a32210a39874d8f8
+
+*
+]
+[
+DESIGNATOR
+R20
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_R20_R_DAMP_RD1
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R20_R_DAMP_RD1
+PCB Layer
+Default
+Name
+EVT1_R20_R_DAMP_RD1
+Designator
+R20
+Value
+R_DAMP_RD1 | 22R (series at FPGA)
+UserDocLink
+https://0x04.net/~mwk/sbdocs/ice40/FPGA-TN-02006-2-3-iCE40-Hardware-Checklist.pdf
+Description
+
+Symbol
+EVT1_R20_R_DAMP_RD1
+EVT1 Source Ref
+R_DAMP_RD1
+BOM Line
+BOM-33
+MPN
+R_PLL(100R)+R_VPP(10R)+R_SS_PD(10k)+R_CRST_PD(10k)+R_CDONE_PU(4.7k)+10xR_DAMP(22R)+2xR_OPTCS_PU(10k)
+Manufacturer
+Murata / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+Rev C 22R series retained; for brevity the post-resistor node shares the net name | Panel-side series damping terminal; FPGA-side net/PCF unchanged
+Origin Footprint
+
+Unique ID
+13e77c54ede4b306
+
+*
+]
+[
+DESIGNATOR
+R21
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_R21_R_DAMP_RD2
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R21_R_DAMP_RD2
+PCB Layer
+Default
+Name
+EVT1_R21_R_DAMP_RD2
+Designator
+R21
+Value
+R_DAMP_RD2 | 22R (series at FPGA)
+UserDocLink
+https://0x04.net/~mwk/sbdocs/ice40/FPGA-TN-02006-2-3-iCE40-Hardware-Checklist.pdf
+Description
+
+Symbol
+EVT1_R21_R_DAMP_RD2
+EVT1 Source Ref
+R_DAMP_RD2
+BOM Line
+BOM-33
+MPN
+R_PLL(100R)+R_VPP(10R)+R_SS_PD(10k)+R_CRST_PD(10k)+R_CDONE_PU(4.7k)+10xR_DAMP(22R)+2xR_OPTCS_PU(10k)
+Manufacturer
+Murata / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+Rev C 22R series retained; for brevity the post-resistor node shares the net name | Panel-side series damping terminal; FPGA-side net/PCF unchanged
+Origin Footprint
+
+Unique ID
+c77b08197b178948
+
+*
+]
+[
+DESIGNATOR
+R22
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_R22_R_DAMP_RD3
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R22_R_DAMP_RD3
+PCB Layer
+Default
+Name
+EVT1_R22_R_DAMP_RD3
+Designator
+R22
+Value
+R_DAMP_RD3 | 22R (series at FPGA)
+UserDocLink
+https://0x04.net/~mwk/sbdocs/ice40/FPGA-TN-02006-2-3-iCE40-Hardware-Checklist.pdf
+Description
+
+Symbol
+EVT1_R22_R_DAMP_RD3
+EVT1 Source Ref
+R_DAMP_RD3
+BOM Line
+BOM-33
+MPN
+R_PLL(100R)+R_VPP(10R)+R_SS_PD(10k)+R_CRST_PD(10k)+R_CDONE_PU(4.7k)+10xR_DAMP(22R)+2xR_OPTCS_PU(10k)
+Manufacturer
+Murata / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+Rev C 22R series retained; for brevity the post-resistor node shares the net name | Panel-side series damping terminal; FPGA-side net/PCF unchanged
+Origin Footprint
+
+Unique ID
+fa394caafc8878d8
+
+*
+]
+[
+DESIGNATOR
+R23
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_R23_R_DAMP_SCK_L
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R23_R_DAMP_SCK_L
+PCB Layer
+Default
+Name
+EVT1_R23_R_DAMP_SCK_L
+Designator
+R23
+Value
+R_DAMP_SCK_L | 22R
+UserDocLink
+https://0x04.net/~mwk/sbdocs/ice40/FPGA-TN-02006-2-3-iCE40-Hardware-Checklist.pdf
+Description
+
+Symbol
+EVT1_R23_R_DAMP_SCK_L
+EVT1 Source Ref
+R_DAMP_SCK_L
+BOM Line
+BOM-33
+MPN
+R_PLL(100R)+R_VPP(10R)+R_SS_PD(10k)+R_CRST_PD(10k)+R_CDONE_PU(4.7k)+10xR_DAMP(22R)+2xR_OPTCS_PU(10k)
+Manufacturer
+Murata / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+
+Origin Footprint
+
+Unique ID
+d92c635076b33213
+
+*
+]
+[
+DESIGNATOR
+R24
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_R24_R_DAMP_SCK_R
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R24_R_DAMP_SCK_R
+PCB Layer
+Default
+Name
+EVT1_R24_R_DAMP_SCK_R
+Designator
+R24
+Value
+R_DAMP_SCK_R | 22R
+UserDocLink
+https://0x04.net/~mwk/sbdocs/ice40/FPGA-TN-02006-2-3-iCE40-Hardware-Checklist.pdf
+Description
+
+Symbol
+EVT1_R24_R_DAMP_SCK_R
+EVT1 Source Ref
+R_DAMP_SCK_R
+BOM Line
+BOM-33
+MPN
+R_PLL(100R)+R_VPP(10R)+R_SS_PD(10k)+R_CRST_PD(10k)+R_CDONE_PU(4.7k)+10xR_DAMP(22R)+2xR_OPTCS_PU(10k)
+Manufacturer
+Murata / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+
+Origin Footprint
+
+Unique ID
+f7952e9f9cd6773b
+
+*
+]
+[
+DESIGNATOR
+R25
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_R25_R_OPTCS_PU_L
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R25_R_OPTCS_PU_L
+PCB Layer
+Default
+Name
+EVT1_R25_R_OPTCS_PU_L
+Designator
+R25
+Value
+R_OPTCS_PU_L | 10k pull-up
+UserDocLink
+https://0x04.net/~mwk/sbdocs/ice40/FPGA-TN-02006-2-3-iCE40-Hardware-Checklist.pdf
+Description
+
+Symbol
+EVT1_R25_R_OPTCS_PU_L
+EVT1 Source Ref
+R_OPTCS_PU_L
+BOM Line
+BOM-33
+MPN
+R_PLL(100R)+R_VPP(10R)+R_SS_PD(10k)+R_CRST_PD(10k)+R_CDONE_PU(4.7k)+10xR_DAMP(22R)+2xR_OPTCS_PU(10k)
+Manufacturer
+Murata / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+
+Origin Footprint
+
+Unique ID
+6f4c4beafd605d3e
+
+*
+]
+[
+DESIGNATOR
+R26
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_R26_R_OPTCS_PU_R
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R26_R_OPTCS_PU_R
+PCB Layer
+Default
+Name
+EVT1_R26_R_OPTCS_PU_R
+Designator
+R26
+Value
+R_OPTCS_PU_R | 10k pull-up
+UserDocLink
+https://0x04.net/~mwk/sbdocs/ice40/FPGA-TN-02006-2-3-iCE40-Hardware-Checklist.pdf
+Description
+
+Symbol
+EVT1_R26_R_OPTCS_PU_R
+EVT1 Source Ref
+R_OPTCS_PU_R
+BOM Line
+BOM-33
+MPN
+R_PLL(100R)+R_VPP(10R)+R_SS_PD(10k)+R_CRST_PD(10k)+R_CDONE_PU(4.7k)+10xR_DAMP(22R)+2xR_OPTCS_PU(10k)
+Manufacturer
+Murata / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+
+Origin Footprint
+
+Unique ID
+09b823a69019dbbf
+
+*
+]
+[
+DESIGNATOR
+TP1
+FOOTPRINT
+EVT1_TP9_AVDD_0.6mm
+PARTTYPE
+EVT1_TP1_TP_AVDD_SAFE
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_TP1_TP_AVDD_SAFE
+PCB Layer
+Default
+Name
+EVT1_TP1_TP_AVDD_SAFE
+Designator
+TP1
+Value
+TP_AVDD_SAFE | PCB test pads, fixture geometry TBD
+UserDocLink
+
+Description
+
+Symbol
+EVT1_TP1_TP_AVDD_SAFE
+EVT1 Source Ref
+TP_AVDD_SAFE
+BOM Line
+BOM-D11-TP_AVDD_SAFE
+MPN
+PCB test pads, fixture geometry TBD
+Manufacturer
+See source ledger
+Footprint Status
+BLOCKED
+Design Notes
+AVDD output voltage remains BLK-JBD-04; probe loading must be included in qualification | Board-side candidate only. JBD voltage, load, capacitance and sequencing remain BLK-JBD-04.
+Origin Footprint
+
+Unique ID
+4726d92b84fba278
+
+*
+]
+[
+DESIGNATOR
+U8
+FOOTPRINT
+TI_DCU0008A_VSSOP-8_2.3x2.0mm
+PARTTYPE
+EVT1_U8_U_AVDD_LS
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_U8_U_AVDD_LS
+PCB Layer
+Default
+Name
+EVT1_U8_U_AVDD_LS
+Designator
+U8
+Value
+U_AVDD_LS | SN74LVC2T45DCUR
+UserDocLink
+https://www.ti.com/lit/ds/symlink/sn74lvc2t45.pdf
+Description
+
+Origin Footprint
+Package_SO:VSSOP-8_2.3x2mm_P0.5mm
+Symbol
+EVT1_U8_U_AVDD_LS
+EVT1 Source Ref
+U_AVDD_LS
+BOM Line
+BOM-D11-U_AVDD_LS
+MPN
+SN74LVC2T45DCUR
+Manufacturer
+See source ledger
+Footprint Status
+PASS
+Design Notes
+
+Unique ID
+484e3008dca2bfa8
+Manufacturer Part
+SN74LVC2T45DCUR
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+U3
+FOOTPRINT
+X2SON-6_L1.0-W1.0-P0.35-TL
+PARTTYPE
+EVT1_U3_U_AVDD_CLEAR_OD
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_U3_U_AVDD_CLEAR_OD
+PCB Layer
+Default
+Name
+EVT1_U3_U_AVDD_CLEAR_OD
+Designator
+U3
+Value
+U_AVDD_CLEAR_OD | 74LVC2G07GS
+UserDocLink
+https://assets.nexperia.com/documents/data-sheet/74LVC2G07.pdf
+Description
+
+Symbol
+EVT1_U3_U_AVDD_CLEAR_OD
+EVT1 Source Ref
+U_AVDD_CLEAR_OD
+BOM Line
+BOM-D11-U_AVDD_CLEAR_OD
+MPN
+74LVC2G07GS
+Manufacturer
+See source ledger
+Footprint Status
+BLOCKED
+Design Notes
+
+Origin Footprint
+
+Unique ID
+66797bcd97f4f6c2
+Manufacturer Part
+74LVC2G07GS
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+U5
+FOOTPRINT
+X2SON-6_L1.0-W1.0-P0.35-TL
+PARTTYPE
+EVT1_U5_U_AVDD_EN_OD
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_U5_U_AVDD_EN_OD
+PCB Layer
+Default
+Name
+EVT1_U5_U_AVDD_EN_OD
+Designator
+U5
+Value
+U_AVDD_EN_OD | 74LVC2G07GS
+UserDocLink
+https://assets.nexperia.com/documents/data-sheet/74LVC2G07.pdf
+Description
+
+Symbol
+EVT1_U5_U_AVDD_EN_OD
+EVT1 Source Ref
+U_AVDD_EN_OD
+BOM Line
+BOM-D11-U_AVDD_EN_OD
+MPN
+74LVC2G07GS
+Manufacturer
+See source ledger
+Footprint Status
+BLOCKED
+Design Notes
+
+Origin Footprint
+
+Unique ID
+adf583383e4d69d4
+Manufacturer Part
+74LVC2G07GS
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+U7
+FOOTPRINT
+TI_DSE0006A_WSON-6_1.5x1.5mm
+PARTTYPE
+EVT1_U7_U_AVDD_IO_PG
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_U7_U_AVDD_IO_PG
+PCB Layer
+Default
+Name
+EVT1_U7_U_AVDD_IO_PG
+Designator
+U7
+Value
+U_AVDD_IO_PG | TPS389018DSET
+UserDocLink
+https://www.ti.com/lit/ds/symlink/tps3890.pdf
+Description
+
+Origin Footprint
+Package_SON:WSON-6_1.5x1.5mm_P0.5mm
+Symbol
+EVT1_U7_U_AVDD_IO_PG
+EVT1 Source Ref
+U_AVDD_IO_PG
+BOM Line
+BOM-D11-U_AVDD_IO_PG
+MPN
+TPS389018DSET
+Manufacturer
+See source ledger
+Footprint Status
+PASS
+Design Notes
+CT unpopulated: response/release timings are nominal, not guaranteed board fault latency
+Unique ID
+4ec783ed4741de1f
+Manufacturer Part
+TPS389018DSET
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+U10
+FOOTPRINT
+TI_DCK0006A_SC70-6
+PARTTYPE
+EVT1_U10_U_AVDD_QUAL
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_U10_U_AVDD_QUAL
+PCB Layer
+Default
+Name
+EVT1_U10_U_AVDD_QUAL
+Designator
+U10
+Value
+U_AVDD_QUAL | SN74LVC1G175DCKR
+UserDocLink
+https://www.ti.com/lit/ds/symlink/sn74lvc1g175.pdf
+Description
+
+Origin Footprint
+Package_TO_SOT_SMD:SOT-363_SC-70-6
+Symbol
+EVT1_U10_U_AVDD_QUAL
+EVT1 Source Ref
+U_AVDD_QUAL
+BOM Line
+BOM-D11-U_AVDD_QUAL
+MPN
+SN74LVC1G175DCKR
+Manufacturer
+See source ledger
+Footprint Status
+PASS
+Design Notes
+
+Unique ID
+c69de7c088414df5
+Manufacturer Part
+SN74LVC1G175DCKR
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+U11
+FOOTPRINT
+TI_DCK0006A_SC70-6
+PARTTYPE
+EVT1_U11_U_AVDD_SCHMITT
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_U11_U_AVDD_SCHMITT
+PCB Layer
+Default
+Name
+EVT1_U11_U_AVDD_SCHMITT
+Designator
+U11
+Value
+U_AVDD_SCHMITT | SN74LVC2G17DCKR
+UserDocLink
+https://www.ti.com/lit/ds/symlink/sn74lvc2g17.pdf
+Description
+
+Origin Footprint
+Package_TO_SOT_SMD:SOT-363_SC-70-6
+Symbol
+EVT1_U11_U_AVDD_SCHMITT
+EVT1 Source Ref
+U_AVDD_SCHMITT
+BOM Line
+BOM-D11-U_AVDD_SCHMITT
+MPN
+SN74LVC2G17DCKR
+Manufacturer
+See source ledger
+Footprint Status
+PASS
+Design Notes
+
+Unique ID
+2fd166bdb6936536
+Manufacturer Part
+SN74LVC2G17DCKR
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+U12
+FOOTPRINT
+TI_DSE0006A_WSON-6_1.5x1.5mm
+PARTTYPE
+EVT1_U12_U_AVDD_SYS_CLAMP
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_U12_U_AVDD_SYS_CLAMP
+PCB Layer
+Default
+Name
+EVT1_U12_U_AVDD_SYS_CLAMP
+Designator
+U12
+Value
+U_AVDD_SYS_CLAMP | TPS389025DSET
+UserDocLink
+https://www.ti.com/lit/ds/symlink/tps3890.pdf
+Description
+
+Origin Footprint
+Package_SON:WSON-6_1.5x1.5mm_P0.5mm
+Symbol
+EVT1_U12_U_AVDD_SYS_CLAMP
+EVT1 Source Ref
+U_AVDD_SYS_CLAMP
+BOM Line
+BOM-D11-U_AVDD_SYS_CLAMP
+MPN
+TPS389025DSET
+Manufacturer
+See source ledger
+Footprint Status
+PASS
+Design Notes
+CT unpopulated: response/release timings are nominal, not guaranteed board fault latency
+Unique ID
+b6112465b0588c80
+Manufacturer Part
+TPS389025DSET
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+U13
+FOOTPRINT
+TI_DSE0006A_WSON-6_1.5x1.5mm
+PARTTYPE
+EVT1_U13_U_AVDD_SYS_PG
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_U13_U_AVDD_SYS_PG
+PCB Layer
+Default
+Name
+EVT1_U13_U_AVDD_SYS_PG
+Designator
+U13
+Value
+U_AVDD_SYS_PG | TPS389025DSET
+UserDocLink
+https://www.ti.com/lit/ds/symlink/tps3890.pdf
+Description
+
+Origin Footprint
+Package_SON:WSON-6_1.5x1.5mm_P0.5mm
+Symbol
+EVT1_U13_U_AVDD_SYS_PG
+EVT1 Source Ref
+U_AVDD_SYS_PG
+BOM Line
+BOM-D11-U_AVDD_SYS_PG
+MPN
+TPS389025DSET
+Manufacturer
+See source ledger
+Footprint Status
+PASS
+Design Notes
+CT unpopulated: response/release timings are nominal, not guaranteed board fault latency
+Unique ID
+95e557ff5ab9d76b
+Manufacturer Part
+TPS389025DSET
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+U14
+FOOTPRINT
+ADI_TSOT23_6_S6
+PARTTYPE
+EVT1_U14_U_AVDD_WD
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_U14_U_AVDD_WD
+PCB Layer
+Default
+Name
+EVT1_U14_U_AVDD_WD
+Designator
+U14
+Value
+U_AVDD_WD | LTC6993IS6-2#TRPBF
+UserDocLink
+https://www.analog.com/media/en/technical-documentation/data-sheets/LTC6993-6993-1-6993-2-6993-3-6993-4.pdf
+Description
+
+Origin Footprint
+Package_TO_SOT_SMD:TSOT-23-6
+Symbol
+EVT1_U14_U_AVDD_WD
+EVT1 Source Ref
+U_AVDD_WD
+BOM Line
+BOM-D11-U_AVDD_WD
+MPN
+LTC6993IS6-2#TRPBF
+Manufacturer
+See source ledger
+Footprint Status
+PASS
+Design Notes
+
+Unique ID
+8791d75d94e1481b
+Manufacturer Part
+LTC6993IS6-2#TRPBF
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+U6
+FOOTPRINT
+X2SON-4_L1.0-W1.0-P0.65-TL-EP
+PARTTYPE
+EVT1_U6_U6_OPT_AVDD
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+no
+Convert to PCB
+yes
+Device
+EVT1_U6_U6_OPT_AVDD
+PCB Layer
+Default
+Name
+EVT1_U6_U6_OPT_AVDD
+Designator
+U6
+Value
+U6_OPT_AVDD | BLOCKED | MPN_TBD (TLV755P DQN family; AVDD voltage r...
+UserDocLink
+https://www.ti.com/lit/ds/symlink/tlv755p.pdf
+Description
+
+Symbol
+EVT1_U6_U6_OPT_AVDD
+EVT1 Source Ref
+U6_OPT_AVDD
+BOM Line
+BOM-45
+MPN
+MPN_TBD (TLV755P DQN family; AVDD voltage requires BLK-JBD-04)
+Manufacturer
+Texas Instruments
+Footprint Status
+BLOCKED
+Design Notes
+Board-side candidate only. JBD voltage, load, capacitance and sequencing remain BLK-JBD-04. | Output requirement and fitted regulator are BLK-JBD-04. | D1.1 watchdog, completed-heartbeat qualifier and independent UVLO clamps. LDO output value remains JBD BLOCKED. | SBVS320D Table4-1: DQN thermal pad internally GND, PCB ground connection required
+Origin Footprint
+
+Unique ID
+124c013cfc851acc
+
+*
+]
+[
+DESIGNATOR
+C1
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_C1_C_AVDD_LS_A
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C1_C_AVDD_LS_A
+PCB Layer
+Default
+Name
+EVT1_C1_C_AVDD_LS_A
+Designator
+C1
+Value
+C_AVDD_LS_A | 100nF X7R 6.3V
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C1_C_AVDD_LS_A
+EVT1 Source Ref
+C_AVDD_LS_A
+BOM Line
+BOM-D11-C_AVDD_LS_A
+MPN
+100nF X7R 6.3V
+Manufacturer
+See source ledger
+Footprint Status
+PASS
+Design Notes
+
+Unique ID
+b4693cfd16d534cd
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C2
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_C2_C_AVDD_QUAL
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C2_C_AVDD_QUAL
+PCB Layer
+Default
+Name
+EVT1_C2_C_AVDD_QUAL
+Designator
+C2
+Value
+C_AVDD_QUAL | 100nF X7R10V; effective50..110nF qualification OPEN
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C2_C_AVDD_QUAL
+EVT1 Source Ref
+C_AVDD_QUAL
+BOM Line
+BOM-D11-C_AVDD_QUAL
+MPN
+100nF X7R10V; effective50..110nF qualification OPEN
+Manufacturer
+See source ledger
+Footprint Status
+PASS
+Design Notes
+
+Unique ID
+a2c5d49bc5dde298
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C3
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_C3_C_AVDD_REQ_FILTER
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C3_C_AVDD_REQ_FILTER
+PCB Layer
+Default
+Name
+EVT1_C3_C_AVDD_REQ_FILTER
+Designator
+C3
+Value
+C_AVDD_REQ_FILTER | 10nF C0G 5%
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C3_C_AVDD_REQ_FILTER
+EVT1 Source Ref
+C_AVDD_REQ_FILTER
+BOM Line
+BOM-D11-C_AVDD_REQ_FILTER
+MPN
+10nF C0G 5%
+Manufacturer
+See source ledger
+Footprint Status
+PASS
+Design Notes
+
+Unique ID
+cc82bf2c2e22e605
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C4
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_C4_C_AVDD_U_AVDD_CLEAR_OD_V
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C4_C_AVDD_U_AVDD_CLEAR_OD_V
+PCB Layer
+Default
+Name
+EVT1_C4_C_AVDD_U_AVDD_CLEAR_OD_V
+Designator
+C4
+Value
+C_AVDD_U_AVDD_CLEAR_OD_V | 100nF X7R 10V
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C4_C_AVDD_U_AVDD_CLEAR_OD_V
+EVT1 Source Ref
+C_AVDD_U_AVDD_CLEAR_OD_V
+BOM Line
+BOM-D11-C_AVDD_U_AVDD_CLEAR_OD_V
+MPN
+100nF X7R 10V
+Manufacturer
+See source ledger
+Footprint Status
+PASS
+Design Notes
+
+Unique ID
+3a68d3ddabf48558
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C5
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_C5_C_AVDD_U_AVDD_EN_OD_V
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C5_C_AVDD_U_AVDD_EN_OD_V
+PCB Layer
+Default
+Name
+EVT1_C5_C_AVDD_U_AVDD_EN_OD_V
+Designator
+C5
+Value
+C_AVDD_U_AVDD_EN_OD_V | 100nF X7R 10V
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C5_C_AVDD_U_AVDD_EN_OD_V
+EVT1 Source Ref
+C_AVDD_U_AVDD_EN_OD_V
+BOM Line
+BOM-D11-C_AVDD_U_AVDD_EN_OD_V
+MPN
+100nF X7R 10V
+Manufacturer
+See source ledger
+Footprint Status
+PASS
+Design Notes
+
+Unique ID
+ddba3c46cf8b8e66
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C6
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_C6_C_AVDD_U_AVDD_IO_PG_V
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C6_C_AVDD_U_AVDD_IO_PG_V
+PCB Layer
+Default
+Name
+EVT1_C6_C_AVDD_U_AVDD_IO_PG_V
+Designator
+C6
+Value
+C_AVDD_U_AVDD_IO_PG_V | 100nF X7R 10V
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C6_C_AVDD_U_AVDD_IO_PG_V
+EVT1 Source Ref
+C_AVDD_U_AVDD_IO_PG_V
+BOM Line
+BOM-D11-C_AVDD_U_AVDD_IO_PG_V
+MPN
+100nF X7R 10V
+Manufacturer
+See source ledger
+Footprint Status
+PASS
+Design Notes
+
+Unique ID
+ab4a8fe24fad9fe4
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C7
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_C7_C_AVDD_U_AVDD_LS_V
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C7_C_AVDD_U_AVDD_LS_V
+PCB Layer
+Default
+Name
+EVT1_C7_C_AVDD_U_AVDD_LS_V
+Designator
+C7
+Value
+C_AVDD_U_AVDD_LS_V | 100nF X7R 10V
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C7_C_AVDD_U_AVDD_LS_V
+EVT1 Source Ref
+C_AVDD_U_AVDD_LS_V
+BOM Line
+BOM-D11-C_AVDD_U_AVDD_LS_V
+MPN
+100nF X7R 10V
+Manufacturer
+See source ledger
+Footprint Status
+PASS
+Design Notes
+
+Unique ID
+48d2dd422533522c
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C8
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_C8_C_AVDD_U_AVDD_QUAL_V
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C8_C_AVDD_U_AVDD_QUAL_V
+PCB Layer
+Default
+Name
+EVT1_C8_C_AVDD_U_AVDD_QUAL_V
+Designator
+C8
+Value
+C_AVDD_U_AVDD_QUAL_V | 100nF X7R 10V
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C8_C_AVDD_U_AVDD_QUAL_V
+EVT1 Source Ref
+C_AVDD_U_AVDD_QUAL_V
+BOM Line
+BOM-D11-C_AVDD_U_AVDD_QUAL_V
+MPN
+100nF X7R 10V
+Manufacturer
+See source ledger
+Footprint Status
+PASS
+Design Notes
+
+Unique ID
+80f3708378e3d903
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C9
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_C9_C_AVDD_U_AVDD_SCHMITT_V
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C9_C_AVDD_U_AVDD_SCHMITT_V
+PCB Layer
+Default
+Name
+EVT1_C9_C_AVDD_U_AVDD_SCHMITT_V
+Designator
+C9
+Value
+C_AVDD_U_AVDD_SCHMITT_V | 100nF X7R 10V
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C9_C_AVDD_U_AVDD_SCHMITT_V
+EVT1 Source Ref
+C_AVDD_U_AVDD_SCHMITT_V
+BOM Line
+BOM-D11-C_AVDD_U_AVDD_SCHMITT_V
+MPN
+100nF X7R 10V
+Manufacturer
+See source ledger
+Footprint Status
+PASS
+Design Notes
+
+Unique ID
+7ddfd2f632a8b17d
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C10
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_C10_C_AVDD_U_AVDD_SYS_CLAMP_V
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C10_C_AVDD_U_AVDD_SYS_CLAMP_V
+PCB Layer
+Default
+Name
+EVT1_C10_C_AVDD_U_AVDD_SYS_CLAMP_V
+Designator
+C10
+Value
+C_AVDD_U_AVDD_SYS_CLAMP_V | 100nF X7R 10V
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C10_C_AVDD_U_AVDD_SYS_CLAMP_V
+EVT1 Source Ref
+C_AVDD_U_AVDD_SYS_CLAMP_V
+BOM Line
+BOM-D11-C_AVDD_U_AVDD_SYS_CLAMP_V
+MPN
+100nF X7R 10V
+Manufacturer
+See source ledger
+Footprint Status
+PASS
+Design Notes
+
+Unique ID
+3e75135af30e0f04
+
+*
+]
+[
+DESIGNATOR
+C11
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_C11_C_AVDD_U_AVDD_SYS_PG_V
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C11_C_AVDD_U_AVDD_SYS_PG_V
+PCB Layer
+Default
+Name
+EVT1_C11_C_AVDD_U_AVDD_SYS_PG_V
+Designator
+C11
+Value
+C_AVDD_U_AVDD_SYS_PG_V | 100nF X7R 10V
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C11_C_AVDD_U_AVDD_SYS_PG_V
+EVT1 Source Ref
+C_AVDD_U_AVDD_SYS_PG_V
+BOM Line
+BOM-D11-C_AVDD_U_AVDD_SYS_PG_V
+MPN
+100nF X7R 10V
+Manufacturer
+See source ledger
+Footprint Status
+PASS
+Design Notes
+
+Unique ID
+20764de07767b3a1
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C12
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_C12_C_AVDD_U_AVDD_WD_V
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C12_C_AVDD_U_AVDD_WD_V
+PCB Layer
+Default
+Name
+EVT1_C12_C_AVDD_U_AVDD_WD_V
+Designator
+C12
+Value
+C_AVDD_U_AVDD_WD_V | 100nF X7R 10V
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C12_C_AVDD_U_AVDD_WD_V
+EVT1 Source Ref
+C_AVDD_U_AVDD_WD_V
+BOM Line
+BOM-D11-C_AVDD_U_AVDD_WD_V
+MPN
+100nF X7R 10V
+Manufacturer
+See source ledger
+Footprint Status
+PASS
+Design Notes
+
+Unique ID
+26a39bcafcc8ce7c
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C31
+FOOTPRINT
+IPC_0402_1005Metric
+PARTTYPE
+EVT1_C31_C_LDO_OPT_IN
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C31_C_LDO_OPT_IN
+PCB Layer
+Default
+Name
+EVT1_C31_C_LDO_OPT_IN
+Designator
+C31
+Value
+C_LDO_OPT_IN | 1uF 10V X7R; effective >=1uF
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C31_C_LDO_OPT_IN
+EVT1 Source Ref
+C_LDO_OPT_IN
+BOM Line
+BOM-D1-PWR-C_LDO_OPT_IN
+MPN
+1uF 10V X7R; effective >=1uF
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+place at corresponding IC pins; DC-bias curve approval OPEN
+Unique ID
+cc1d00c51cc12124
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C32
+FOOTPRINT
+IPC_0402_1005Metric
+PARTTYPE
+EVT1_C32_C_LDO_OPT_OUT
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C32_C_LDO_OPT_OUT
+PCB Layer
+Default
+Name
+EVT1_C32_C_LDO_OPT_OUT
+Designator
+C32
+Value
+C_LDO_OPT_OUT | 1uF 10V X7R; effective >=1uF
+UserDocLink
+
+Description
+
+Symbol
+EVT1_C32_C_LDO_OPT_OUT
+EVT1 Source Ref
+C_LDO_OPT_OUT
+BOM Line
+BOM-D1-PWR-C_LDO_OPT_OUT
+MPN
+1uF 10V X7R; effective >=1uF
+Manufacturer
+TBD
+Footprint Status
+BLOCKED
+Design Notes
+Board-side candidate only. JBD voltage, load, capacitance and sequencing remain BLK-JBD-04.
+Origin Footprint
+
+Unique ID
+d2625f4b4bd439ef
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+R1
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_R1_R_AVDD_CRST_PD
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R1_R_AVDD_CRST_PD
+PCB Layer
+Default
+Name
+EVT1_R1_R_AVDD_CRST_PD
+Designator
+R1
+Value
+R_AVDD_CRST_PD | 100k1%
+UserDocLink
+
+Description
+
+Origin Footprint
+Resistor_SMD:R_0201_0603Metric
+Symbol
+EVT1_R1_R_AVDD_CRST_PD
+EVT1 Source Ref
+R_AVDD_CRST_PD
+BOM Line
+BOM-D11-R_AVDD_CRST_PD
+MPN
+100k1%
+Manufacturer
+See source ledger
+Footprint Status
+PASS
+Design Notes
+
+Unique ID
+353b166cc2dee846
+
+*
+]
+[
+DESIGNATOR
+R2
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_R2_R_AVDD_D3_PD
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R2_R_AVDD_D3_PD
+PCB Layer
+Default
+Name
+EVT1_R2_R_AVDD_D3_PD
+Designator
+R2
+Value
+R_AVDD_D3_PD | 100k1%
+UserDocLink
+
+Description
+
+Origin Footprint
+Resistor_SMD:R_0201_0603Metric
+Symbol
+EVT1_R2_R_AVDD_D3_PD
+EVT1 Source Ref
+R_AVDD_D3_PD
+BOM Line
+BOM-D11-R_AVDD_D3_PD
+MPN
+100k1%
+Manufacturer
+See source ledger
+Footprint Status
+PASS
+Design Notes
+
+Unique ID
+6f63fc6711cfa315
+
+*
+]
+[
+DESIGNATOR
+R3
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_R3_R_AVDD_EN_FEED
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R3_R_AVDD_EN_FEED
+PCB Layer
+Default
+Name
+EVT1_R3_R_AVDD_EN_FEED
+Designator
+R3
+Value
+R_AVDD_EN_FEED | 68k1%
+UserDocLink
+
+Description
+
+Origin Footprint
+Resistor_SMD:R_0201_0603Metric
+Symbol
+EVT1_R3_R_AVDD_EN_FEED
+EVT1 Source Ref
+R_AVDD_EN_FEED
+BOM Line
+BOM-D11-R_AVDD_EN_FEED
+MPN
+68k1%
+Manufacturer
+See source ledger
+Footprint Status
+PASS
+Design Notes
+
+Unique ID
+fe89d0632cfce75f
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+R4
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_R4_R_AVDD_EN_PD
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R4_R_AVDD_EN_PD
+PCB Layer
+Default
+Name
+EVT1_R4_R_AVDD_EN_PD
+Designator
+R4
+Value
+R_AVDD_EN_PD | 330k1%
+UserDocLink
+
+Description
+
+Origin Footprint
+Resistor_SMD:R_0201_0603Metric
+Symbol
+EVT1_R4_R_AVDD_EN_PD
+EVT1 Source Ref
+R_AVDD_EN_PD
+BOM Line
+BOM-D11-R_AVDD_EN_PD
+MPN
+330k1%
+Manufacturer
+See source ledger
+Footprint Status
+PASS
+Design Notes
+
+Unique ID
+fdc86a4b576d9e98
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+R5
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_R5_R_AVDD_PG_PU
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R5_R_AVDD_PG_PU
+PCB Layer
+Default
+Name
+EVT1_R5_R_AVDD_PG_PU
+Designator
+R5
+Value
+R_AVDD_PG_PU | 10k1%
+UserDocLink
+
+Description
+
+Origin Footprint
+Resistor_SMD:R_0201_0603Metric
+Symbol
+EVT1_R5_R_AVDD_PG_PU
+EVT1 Source Ref
+R_AVDD_PG_PU
+BOM Line
+BOM-D11-R_AVDD_PG_PU
+MPN
+10k1%
+Manufacturer
+See source ledger
+Footprint Status
+PASS
+Design Notes
+
+Unique ID
+9cdd622c9eeecfe7
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+R6
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_R6_R_AVDD_QUAL_PU
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R6_R_AVDD_QUAL_PU
+PCB Layer
+Default
+Name
+EVT1_R6_R_AVDD_QUAL_PU
+Designator
+R6
+Value
+R_AVDD_QUAL_PU | 10k1%
+UserDocLink
+
+Description
+
+Origin Footprint
+Resistor_SMD:R_0201_0603Metric
+Symbol
+EVT1_R6_R_AVDD_QUAL_PU
+EVT1 Source Ref
+R_AVDD_QUAL_PU
+BOM Line
+BOM-D11-R_AVDD_QUAL_PU
+MPN
+10k1%
+Manufacturer
+See source ledger
+Footprint Status
+PASS
+Design Notes
+
+Unique ID
+e06ccd13940482ac
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+R7
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_R7_R_AVDD_REQ_FILTER
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R7_R_AVDD_REQ_FILTER
+PCB Layer
+Default
+Name
+EVT1_R7_R_AVDD_REQ_FILTER
+Designator
+R7
+Value
+R_AVDD_REQ_FILTER | 10k1%
+UserDocLink
+
+Description
+
+Origin Footprint
+Resistor_SMD:R_0201_0603Metric
+Symbol
+EVT1_R7_R_AVDD_REQ_FILTER
+EVT1 Source Ref
+R_AVDD_REQ_FILTER
+BOM Line
+BOM-D11-R_AVDD_REQ_FILTER
+MPN
+10k1%
+Manufacturer
+See source ledger
+Footprint Status
+PASS
+Design Notes
+
+Unique ID
+ba2c6d155e7fd301
+
+*
+]
+[
+DESIGNATOR
+R8
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_R8_R_AVDD_WD_DIV_H
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R8_R_AVDD_WD_DIV_H
+PCB Layer
+Default
+Name
+EVT1_R8_R_AVDD_WD_DIV_H
+Designator
+R8
+Value
+R_AVDD_WD_DIV_H | 1.00M1%
+UserDocLink
+
+Description
+
+Origin Footprint
+Resistor_SMD:R_0201_0603Metric
+Symbol
+EVT1_R8_R_AVDD_WD_DIV_H
+EVT1 Source Ref
+R_AVDD_WD_DIV_H
+BOM Line
+BOM-D11-R_AVDD_WD_DIV_H
+MPN
+1.00M1%
+Manufacturer
+See source ledger
+Footprint Status
+PASS
+Design Notes
+
+Unique ID
+86d447fa2a9c8586
+
+*
+]
+[
+DESIGNATOR
+R9
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_R9_R_AVDD_WD_DIV_L
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R9_R_AVDD_WD_DIV_L
+PCB Layer
+Default
+Name
+EVT1_R9_R_AVDD_WD_DIV_L
+Designator
+R9
+Value
+R_AVDD_WD_DIV_L | 392k1%
+UserDocLink
+
+Description
+
+Origin Footprint
+Resistor_SMD:R_0201_0603Metric
+Symbol
+EVT1_R9_R_AVDD_WD_DIV_L
+EVT1 Source Ref
+R_AVDD_WD_DIV_L
+BOM Line
+BOM-D11-R_AVDD_WD_DIV_L
+MPN
+392k1%
+Manufacturer
+See source ledger
+Footprint Status
+PASS
+Design Notes
+
+Unique ID
+1e1ffada38203b9e
+
+*
+]
+[
+DESIGNATOR
+R10
+FOOTPRINT
+IPC_0201_0603Metric
+PARTTYPE
+EVT1_R10_R_AVDD_WD_SET
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R10_R_AVDD_WD_SET
+PCB Layer
+Default
+Name
+EVT1_R10_R_AVDD_WD_SET
+Designator
+R10
+Value
+R_AVDD_WD_SET | 402k1%
+UserDocLink
+
+Description
+
+Origin Footprint
+Resistor_SMD:R_0201_0603Metric
+Symbol
+EVT1_R10_R_AVDD_WD_SET
+EVT1 Source Ref
+R_AVDD_WD_SET
+BOM Line
+BOM-D11-R_AVDD_WD_SET
+MPN
+402k1%
+Manufacturer
+See source ledger
+Footprint Status
+PASS
+Design Notes
+
+Unique ID
+41bc0941336b1513
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+(
+GND 
+U9-1 EVT1_U9_U9_IMU-AP_SDO/AP_AD0 Passive 
+U9-6 EVT1_U9_U9_IMU-GND Passive 
+U9-7 EVT1_U9_U9_IMU-RESV Passive 
+MK2-5 EVT1_MK2_MK2_C-GND Passive 
+C24-2 EVT1_C24_C_IMU_VDD1-~ Passive 
+C25-2 EVT1_C25_C_IMU_VDD2-~ Passive 
+C26-2 EVT1_C26_C_IMU_VDDIO-~ Passive 
+C33-2 EVT1_C33_C_MK2_C-~ Passive 
+D3-K EVT1_D3_D3_PRIV-~ Passive 
+U2-B4 EVT1_U2_U2_FPGA-GND Passive 
+U2-E2 EVT1_U2_U2_FPGA-GND Passive 
+U1-2 EVT1_U1_U4_1V8F-GND Passive 
+U1-5 EVT1_U1_U4_1V8F-EP_GND Passive 
+U4-2 EVT1_U4_U4_1V2-GND Passive 
+U4-5 EVT1_U4_U4_1V2-EP_GND Passive 
+Y1-2 EVT1_Y1_Y1_OSC-GND Passive 
+C13-2 EVT1_C13_C_FPGA_CORE_BULK-~ Passive 
+C14-2 EVT1_C14_C_FPGA_CORE_HF-~ Passive 
+C15-2 EVT1_C15_C_FPGA_IO_BULK-~ Passive 
+C16-2 EVT1_C16_C_FPGA_IO_HF0-~ Passive 
+C17-2 EVT1_C17_C_FPGA_IO_HF1-~ Passive 
+C18-2 EVT1_C18_C_FPGA_IO_HF2-~ Passive 
+C19-2 EVT1_C19_C_FPGA_OSC_HF-~ Passive 
+C20-2 EVT1_C20_C_FPGA_PLL_BULK-~ Passive 
+C21-2 EVT1_C21_C_FPGA_PLL_HF-~ Passive 
+C22-2 EVT1_C22_C_FPGA_VPP_BULK-~ Passive 
+C23-2 EVT1_C23_C_FPGA_VPP_HF-~ Passive 
+C27-2 EVT1_C27_C_LDO_1V2F_IN-~ Passive 
+C28-2 EVT1_C28_C_LDO_1V2F_OUT-~ Passive 
+C29-2 EVT1_C29_C_LDO_1V8F_IN-~ Passive 
+C30-2 EVT1_C30_C_LDO_1V8F_OUT-~ Passive 
+R12-2 EVT1_R12_R_CRST_PD-~ Passive 
+R28-2 EVT1_R28_R_SS_PD-~ Passive 
+U15-2 EVT1_U15_U_FPGA_SEQ-GND Passive 
+R31-2 EVT1_R31_R_FPGA_SEQ_L-~ Passive 
+J1-P7 EVT1_J1_J_BRIDGE_IN-SIGNAL_0.3A Passive 
+J1-P9 EVT1_J1_J_BRIDGE_IN-SIGNAL_0.3A Passive 
+J1-P21 EVT1_J1_J_BRIDGE_IN-SIGNAL_0.3A Passive 
+J1-PWR2 EVT1_J1_J_BRIDGE_IN-POWER_5A Passive 
+J2-P2 EVT1_J2_J_DISP_L-SIGNAL_0.3A Passive 
+J2-P10 EVT1_J2_J_DISP_L-SIGNAL_0.3A Passive 
+J2-PWR2 EVT1_J2_J_DISP_L-POWER_5A Passive 
+J3-P2 EVT1_J3_J_DISP_R-SIGNAL_0.3A Passive 
+J3-P10 EVT1_J3_J_DISP_R-SIGNAL_0.3A Passive 
+J3-PWR2 EVT1_J3_J_DISP_R-POWER_5A Passive 
+TP1-9 EVT1_TP1_TP_AVDD_SAFE-Probe GND Passive 
+U8-4 EVT1_U8_U_AVDD_LS-GND Passive 
+U3-2 EVT1_U3_U_AVDD_CLEAR_OD-GND Passive 
+U5-2 EVT1_U5_U_AVDD_EN_OD-GND Passive 
+U7-2 EVT1_U7_U_AVDD_IO_PG-GND Passive 
+U10-2 EVT1_U10_U_AVDD_QUAL-GND Passive 
+U11-2 EVT1_U11_U_AVDD_SCHMITT-GND Passive 
+U12-2 EVT1_U12_U_AVDD_SYS_CLAMP-GND Passive 
+U13-2 EVT1_U13_U_AVDD_SYS_PG-GND Passive 
+U14-2 EVT1_U14_U_AVDD_WD-GND Passive 
+U6-2 EVT1_U6_U6_OPT_AVDD-GND Passive 
+U6-5 EVT1_U6_U6_OPT_AVDD-EP_GND Passive 
+C1-2 EVT1_C1_C_AVDD_LS_A-~ Passive 
+C2-2 EVT1_C2_C_AVDD_QUAL-~ Passive 
+C3-2 EVT1_C3_C_AVDD_REQ_FILTER-~ Passive 
+C4-2 EVT1_C4_C_AVDD_U_AVDD_CLEAR_OD_V-~ Passive 
+C5-2 EVT1_C5_C_AVDD_U_AVDD_EN_OD_V-~ Passive 
+C6-2 EVT1_C6_C_AVDD_U_AVDD_IO_PG_V-~ Passive 
+C7-2 EVT1_C7_C_AVDD_U_AVDD_LS_V-~ Passive 
+C8-2 EVT1_C8_C_AVDD_U_AVDD_QUAL_V-~ Passive 
+C9-2 EVT1_C9_C_AVDD_U_AVDD_SCHMITT_V-~ Passive 
+C10-2 EVT1_C10_C_AVDD_U_AVDD_SYS_CLAMP_V-~ Passive 
+C11-2 EVT1_C11_C_AVDD_U_AVDD_SYS_PG_V-~ Passive 
+C12-2 EVT1_C12_C_AVDD_U_AVDD_WD_V-~ Passive 
+C31-2 EVT1_C31_C_LDO_OPT_IN-~ Passive 
+C32-2 EVT1_C32_C_LDO_OPT_OUT-~ Passive 
+R1-2 EVT1_R1_R_AVDD_CRST_PD-~ Passive 
+R2-2 EVT1_R2_R_AVDD_D3_PD-~ Passive 
+R4-2 EVT1_R4_R_AVDD_EN_PD-~ Passive 
+R9-2 EVT1_R9_R_AVDD_WD_DIV_L-~ Passive 
+R10-2 EVT1_R10_R_AVDD_WD_SET-~ Passive 
+)
+(
+1V8_SYS 
+U9-5 EVT1_U9_U9_IMU-VDDIO Passive 
+U9-8 EVT1_U9_U9_IMU-VDD Passive 
+U9-12 EVT1_U9_U9_IMU-AP_CS Passive 
+MK2-2 EVT1_MK2_MK2_C-VDD Passive 
+MK2-4 EVT1_MK2_MK2_C-SELECT Passive 
+C24-1 EVT1_C24_C_IMU_VDD1-~ Passive 
+C25-1 EVT1_C25_C_IMU_VDD2-~ Passive 
+C26-1 EVT1_C26_C_IMU_VDDIO-~ Passive 
+C33-1 EVT1_C33_C_MK2_C-~ Passive 
+J1-P4 EVT1_J1_J_BRIDGE_IN-SIGNAL_0.3A Passive 
+J1-P5 EVT1_J1_J_BRIDGE_IN-SIGNAL_0.3A Passive 
+)
+(
+FPGA_CDONE_VSYNC_N 
+U9-9 EVT1_U9_U9_IMU-INT2/FSYNC/CLKIN Input   
+U2-D3 EVT1_U2_U2_FPGA-IOB_12A_G4_CDONE Output  
+R11-1 EVT1_R11_R_CDONE_PU-~ Passive 
+J1-P16 EVT1_J1_J_BRIDGE_IN-SIGNAL_0.3A Passive 
+TP1-1 EVT1_TP1_TP_AVDD_SAFE-Probe FPGA_CDONE_VSYNC_N Passive 
+U8-2 EVT1_U8_U_AVDD_LS-A1 Input   
+)
+(
+SYS_I2C_SCL_1V8 
+U9-13 EVT1_U9_U9_IMU-AP_SCL/AP_SCLK Passive 
+J1-P17 EVT1_J1_J_BRIDGE_IN-SIGNAL_0.3A Passive 
+)
+(
+SYS_I2C_SDA_1V8 
+U9-14 EVT1_U9_U9_IMU-AP_SDA/AP_SDIO/AP_SDI Passive 
+J1-P18 EVT1_J1_J_BRIDGE_IN-SIGNAL_0.3A Passive 
+)
+(
+PDM_D0_1V8 
+MK2-1 EVT1_MK2_MK2_C-DATA Passive 
+J1-P22 EVT1_J1_J_BRIDGE_IN-SIGNAL_0.3A Passive 
+)
+(
+PDM_CLK_1V8 
+MK2-3 EVT1_MK2_MK2_C-CLOCK Input   
+J1-P20 EVT1_J1_J_BRIDGE_IN-SIGNAL_0.3A Passive 
+)
+(
+PRIV_LED_ANODE 
+D3-A EVT1_D3_D3_PRIV-~ Passive 
+J1-P19 EVT1_J1_J_BRIDGE_IN-SIGNAL_0.3A Passive 
+)
+(
+opt_l_qdo0 
+U2-A1 EVT1_U2_U2_FPGA-IOT_36B Output  
+R15-1 EVT1_R15_R_DAMP_LD0-~ Passive 
+)
+(
+opt_l_qdo1 
+U2-A2 EVT1_U2_U2_FPGA-IOT_37A Output  
+R16-1 EVT1_R16_R_DAMP_LD1-~ Passive 
+)
+(
+1V8_FPGA_IO 
+U2-A3 EVT1_U2_U2_FPGA-VCCIO_0 Passive 
+U2-C4 EVT1_U2_U2_FPGA-VCCIO_2 Passive 
+U2-D2 EVT1_U2_U2_FPGA-SPI_VCCIO1 Passive 
+U1-1 EVT1_U1_U4_1V8F-OUT Passive 
+Y1-1 EVT1_Y1_Y1_OSC-TRISTATE Input   
+Y1-4 EVT1_Y1_Y1_OSC-VDD Passive 
+C15-1 EVT1_C15_C_FPGA_IO_BULK-~ Passive 
+C16-1 EVT1_C16_C_FPGA_IO_HF0-~ Passive 
+C17-1 EVT1_C17_C_FPGA_IO_HF1-~ Passive 
+C18-1 EVT1_C18_C_FPGA_IO_HF2-~ Passive 
+C19-1 EVT1_C19_C_FPGA_OSC_HF-~ Passive 
+C30-1 EVT1_C30_C_LDO_1V8F_OUT-~ Passive 
+R11-2 EVT1_R11_R_CDONE_PU-~ Passive 
+R29-1 EVT1_R29_R_VPP-~ Passive 
+J1-P6 EVT1_J1_J_BRIDGE_IN-SIGNAL_0.3A Passive 
+J2-P1 EVT1_J2_J_DISP_L-SIGNAL_0.3A Passive 
+J3-P1 EVT1_J3_J_DISP_R-SIGNAL_0.3A Passive 
+R25-2 EVT1_R25_R_OPTCS_PU_L-~ Passive 
+R26-2 EVT1_R26_R_OPTCS_PU_R-~ Passive 
+U8-1 EVT1_U8_U_AVDD_LS-VCCA Passive 
+U8-5 EVT1_U8_U_AVDD_LS-DIR Passive 
+U7-1 EVT1_U7_U_AVDD_IO_PG-SENSE Input   
+C1-1 EVT1_C1_C_AVDD_LS_A-~ Passive 
+)
+(
+opt_l_qdo2 
+U2-A4 EVT1_U2_U2_FPGA-IOT_47A Output  
+R17-1 EVT1_R17_R_DAMP_LD2-~ Passive 
+)
+(
+host_qio3 
+U2-B1 EVT1_U2_U2_FPGA-IOB_24A Input   
+J1-P15 EVT1_J1_J_BRIDGE_IN-SIGNAL_0.3A Passive 
+)
+(
+1V2_FPGA_PLL 
+U2-B2 EVT1_U2_U2_FPGA-VCCPLL Passive 
+C20-1 EVT1_C20_C_FPGA_PLL_BULK-~ Passive 
+C21-1 EVT1_C21_C_FPGA_PLL_HF-~ Passive 
+R27-2 EVT1_R27_R_PLL-~ Passive 
+R30-1 EVT1_R30_R_FPGA_SEQ_H-~ Passive 
+)
+(
+clk_48m 
+U2-B3 EVT1_U2_U2_FPGA-IOT_46B_G0 Input   
+Y1-3 EVT1_Y1_Y1_OSC-OUT Output  
+)
+(
+host_cs_n 
+U2-C1 EVT1_U2_U2_FPGA-IOB_35B_SPI_SS Input   
+R28-1 EVT1_R28_R_SS_PD-~ Passive 
+J1-P10 EVT1_J1_J_BRIDGE_IN-SIGNAL_0.3A Passive 
+)
+(
+1V2_FPGA_CORE 
+U2-C2 EVT1_U2_U2_FPGA-VCC Passive 
+U4-1 EVT1_U4_U4_1V2-OUT Passive 
+C13-1 EVT1_C13_C_FPGA_CORE_BULK-~ Passive 
+C14-1 EVT1_C14_C_FPGA_CORE_HF-~ Passive 
+C28-1 EVT1_C28_C_LDO_1V2F_OUT-~ Passive 
+R27-1 EVT1_R27_R_PLL-~ Passive 
+)
+(
+opt_cs_n 
+U2-C3 EVT1_U2_U2_FPGA-IOB_10A Output  
+R13-1 EVT1_R13_R_DAMP_CS_L-~ Passive 
+R14-1 EVT1_R14_R_DAMP_CS_R-~ Passive 
+)
+(
+host_sck 
+U2-D1 EVT1_U2_U2_FPGA-IOB_34A_SPI_SCK Input   
+J1-P8 EVT1_J1_J_BRIDGE_IN-SIGNAL_0.3A Passive 
+)
+(
+1V8_FPGA_VPP 
+U2-D4 EVT1_U2_U2_FPGA-VPP_2V5 Passive 
+C22-1 EVT1_C22_C_FPGA_VPP_BULK-~ Passive 
+C23-1 EVT1_C23_C_FPGA_VPP_HF-~ Passive 
+R29-2 EVT1_R29_R_VPP-~ Passive 
+)
+(
+opt_r_qdo1 
+U2-D5 EVT1_U2_U2_FPGA-IOB_2A Output  
+R20-1 EVT1_R20_R_DAMP_RD1-~ Passive 
+)
+(
+host_qio0 
+U2-E1 EVT1_U2_U2_FPGA-IOB_33B_SPI_SI Input   
+J1-P12 EVT1_J1_J_BRIDGE_IN-SIGNAL_0.3A Passive 
+)
+(
+opt_sck 
+U2-E3 EVT1_U2_U2_FPGA-IOB_13B Output  
+R23-1 EVT1_R23_R_DAMP_SCK_L-~ Passive 
+R24-1 EVT1_R24_R_DAMP_SCK_R-~ Passive 
+)
+(
+opt_l_qdo3 
+U2-E4 EVT1_U2_U2_FPGA-IOB_9B Output  
+R18-1 EVT1_R18_R_DAMP_LD3-~ Passive 
+)
+(
+opt_r_qdo0 
+U2-E5 EVT1_U2_U2_FPGA-IOB_0A Output  
+R19-1 EVT1_R19_R_DAMP_RD0-~ Passive 
+)
+(
+host_qio1 
+U2-F1 EVT1_U2_U2_FPGA-IOB_32A_SPI_SO Passive 
+J1-P13 EVT1_J1_J_BRIDGE_IN-SIGNAL_0.3A Passive 
+)
+(
+host_qio2 
+U2-F2 EVT1_U2_U2_FPGA-IOB_25B_G3 Input   
+J1-P14 EVT1_J1_J_BRIDGE_IN-SIGNAL_0.3A Passive 
+)
+(
+FPGA_CRESET_B 
+U2-F3 EVT1_U2_U2_FPGA-CRESET_B Input   
+R12-1 EVT1_R12_R_CRST_PD-~ Passive 
+J1-P11 EVT1_J1_J_BRIDGE_IN-SIGNAL_0.3A Passive 
+TP1-2 EVT1_TP1_TP_AVDD_SAFE-Probe FPGA_CRESET_B Passive 
+U8-3 EVT1_U8_U_AVDD_LS-A2 Input   
+)
+(
+opt_r_qdo3 
+U2-F4 EVT1_U2_U2_FPGA-IOB_11B_G5 Output  
+R22-1 EVT1_R22_R_DAMP_RD3-~ Passive 
+)
+(
+opt_r_qdo2 
+U2-F5 EVT1_U2_U2_FPGA-IOB_3B_G6 Output  
+R21-1 EVT1_R21_R_DAMP_RD2-~ Passive 
+)
+(
+FPGA_1V8_EN 
+U1-3 EVT1_U1_U4_1V8F-EN Input   
+U15-4 EVT1_U15_U_FPGA_SEQ-SENSE_OUT Output  
+)
+(
+VSYS 
+U1-4 EVT1_U1_U4_1V8F-IN Passive 
+U4-3 EVT1_U4_U4_1V2-EN Input   
+U4-4 EVT1_U4_U4_1V2-IN Passive 
+C27-1 EVT1_C27_C_LDO_1V2F_IN-~ Passive 
+C29-1 EVT1_C29_C_LDO_1V8F_IN-~ Passive 
+U15-1 EVT1_U15_U_FPGA_SEQ-ENABLE Input   
+U15-6 EVT1_U15_U_FPGA_SEQ-VCC Passive 
+J1-P2 EVT1_J1_J_BRIDGE_IN-SIGNAL_0.3A Passive 
+J1-P3 EVT1_J1_J_BRIDGE_IN-SIGNAL_0.3A Passive 
+U8-8 EVT1_U8_U_AVDD_LS-VCCB Passive 
+U3-5 EVT1_U3_U_AVDD_CLEAR_OD-VCC Passive 
+U5-5 EVT1_U5_U_AVDD_EN_OD-VCC Passive 
+U7-4 EVT1_U7_U_AVDD_IO_PG-VDD Passive 
+U10-3 EVT1_U10_U_AVDD_QUAL-D Passive 
+U10-5 EVT1_U10_U_AVDD_QUAL-VCC Passive 
+U11-5 EVT1_U11_U_AVDD_SCHMITT-VCC Passive 
+U12-1 EVT1_U12_U_AVDD_SYS_CLAMP-SENSE Input   
+U12-3 EVT1_U12_U_AVDD_SYS_CLAMP-MR Input   
+U12-4 EVT1_U12_U_AVDD_SYS_CLAMP-VDD Passive 
+U13-1 EVT1_U13_U_AVDD_SYS_PG-SENSE Input   
+U13-4 EVT1_U13_U_AVDD_SYS_PG-VDD Passive 
+U14-5 EVT1_U14_U_AVDD_WD-V+ Passive 
+U6-4 EVT1_U6_U6_OPT_AVDD-IN Passive 
+C4-1 EVT1_C4_C_AVDD_U_AVDD_CLEAR_OD_V-~ Passive 
+C5-1 EVT1_C5_C_AVDD_U_AVDD_EN_OD_V-~ Passive 
+C6-1 EVT1_C6_C_AVDD_U_AVDD_IO_PG_V-~ Passive 
+C7-1 EVT1_C7_C_AVDD_U_AVDD_LS_V-~ Passive 
+C8-1 EVT1_C8_C_AVDD_U_AVDD_QUAL_V-~ Passive 
+C9-1 EVT1_C9_C_AVDD_U_AVDD_SCHMITT_V-~ Passive 
+C10-1 EVT1_C10_C_AVDD_U_AVDD_SYS_CLAMP_V-~ Passive 
+C11-1 EVT1_C11_C_AVDD_U_AVDD_SYS_PG_V-~ Passive 
+C12-1 EVT1_C12_C_AVDD_U_AVDD_WD_V-~ Passive 
+C31-1 EVT1_C31_C_LDO_OPT_IN-~ Passive 
+R5-2 EVT1_R5_R_AVDD_PG_PU-~ Passive 
+R8-1 EVT1_R8_R_AVDD_WD_DIV_H-~ Passive 
+)
+(
+FPGA_1V2_SENSE 
+U15-3 EVT1_U15_U_FPGA_SEQ-SENSE Input   
+R30-2 EVT1_R30_R_FPGA_SEQ_H-~ Passive 
+R31-1 EVT1_R31_R_FPGA_SEQ_L-~ Passive 
+)
+(
+OPT_SCK_L 
+J2-P3 EVT1_J2_J_DISP_L-SIGNAL_0.3A Passive 
+R23-2 EVT1_R23_R_DAMP_SCK_L-~ Passive 
+)
+(
+OPT_CS_N_L 
+J2-P4 EVT1_J2_J_DISP_L-SIGNAL_0.3A Passive 
+R13-2 EVT1_R13_R_DAMP_CS_L-~ Passive 
+R25-1 EVT1_R25_R_OPTCS_PU_L-~ Passive 
+)
+(
+opt_l_qdo0_PANEL 
+J2-P5 EVT1_J2_J_DISP_L-SIGNAL_0.3A Passive 
+R15-2 EVT1_R15_R_DAMP_LD0-~ Passive 
+)
+(
+opt_l_qdo1_PANEL 
+J2-P6 EVT1_J2_J_DISP_L-SIGNAL_0.3A Passive 
+R16-2 EVT1_R16_R_DAMP_LD1-~ Passive 
+)
+(
+opt_l_qdo2_PANEL 
+J2-P7 EVT1_J2_J_DISP_L-SIGNAL_0.3A Passive 
+R17-2 EVT1_R17_R_DAMP_LD2-~ Passive 
+)
+(
+opt_l_qdo3_PANEL 
+J2-P8 EVT1_J2_J_DISP_L-SIGNAL_0.3A Passive 
+R18-2 EVT1_R18_R_DAMP_LD3-~ Passive 
+)
+(
+AVDD_OPT_BIAS 
+J2-P9 EVT1_J2_J_DISP_L-SIGNAL_0.3A Passive 
+J2-PWR1 EVT1_J2_J_DISP_L-POWER_5A Passive 
+J3-P9 EVT1_J3_J_DISP_R-SIGNAL_0.3A Passive 
+J3-PWR1 EVT1_J3_J_DISP_R-POWER_5A Passive 
+TP1-8 EVT1_TP1_TP_AVDD_SAFE-Probe AVDD_OPT_BIAS Passive 
+U6-1 EVT1_U6_U6_OPT_AVDD-OUT Passive 
+C32-1 EVT1_C32_C_LDO_OPT_OUT-~ Passive 
+)
+(
+OPT_SCK_R 
+J3-P3 EVT1_J3_J_DISP_R-SIGNAL_0.3A Passive 
+R24-2 EVT1_R24_R_DAMP_SCK_R-~ Passive 
+)
+(
+OPT_CS_N_R 
+J3-P4 EVT1_J3_J_DISP_R-SIGNAL_0.3A Passive 
+R14-2 EVT1_R14_R_DAMP_CS_R-~ Passive 
+R26-1 EVT1_R26_R_OPTCS_PU_R-~ Passive 
+)
+(
+opt_r_qdo0_PANEL 
+J3-P5 EVT1_J3_J_DISP_R-SIGNAL_0.3A Passive 
+R19-2 EVT1_R19_R_DAMP_RD0-~ Passive 
+)
+(
+opt_r_qdo1_PANEL 
+J3-P6 EVT1_J3_J_DISP_R-SIGNAL_0.3A Passive 
+R20-2 EVT1_R20_R_DAMP_RD1-~ Passive 
+)
+(
+opt_r_qdo2_PANEL 
+J3-P7 EVT1_J3_J_DISP_R-SIGNAL_0.3A Passive 
+R21-2 EVT1_R21_R_DAMP_RD2-~ Passive 
+)
+(
+opt_r_qdo3_PANEL 
+J3-P8 EVT1_J3_J_DISP_R-SIGNAL_0.3A Passive 
+R22-2 EVT1_R22_R_DAMP_RD3-~ Passive 
+)
+(
+AVDD_WD_Q 
+TP1-3 EVT1_TP1_TP_AVDD_SAFE-Probe AVDD_WD_Q Passive 
+U3-1 EVT1_U3_U_AVDD_CLEAR_OD-1A Input   
+U14-6 EVT1_U14_U_AVDD_WD-OUT Output  
+R3-1 EVT1_R3_R_AVDD_EN_FEED-~ Passive 
+R6-1 EVT1_R6_R_AVDD_QUAL_PU-~ Passive 
+)
+(
+AVDD_PG_NODE 
+TP1-4 EVT1_TP1_TP_AVDD_SAFE-Probe AVDD_PG_NODE Passive 
+U7-6 EVT1_U7_U_AVDD_IO_PG-RESET Passive 
+U11-1 EVT1_U11_U_AVDD_SCHMITT-1A Input   
+U13-6 EVT1_U13_U_AVDD_SYS_PG-RESET Passive 
+R5-1 EVT1_R5_R_AVDD_PG_PU-~ Passive 
+)
+(
+AVDD_QUAL_CLR_N 
+TP1-5 EVT1_TP1_TP_AVDD_SAFE-Probe AVDD_QUAL_CLR_N Passive 
+U10-6 EVT1_U10_U_AVDD_QUAL-CLR Input   
+U11-4 EVT1_U11_U_AVDD_SCHMITT-2Y Output  
+)
+(
+AVDD_PULSE_QUAL 
+TP1-6 EVT1_TP1_TP_AVDD_SAFE-Probe AVDD_PULSE_QUAL Passive 
+U5-3 EVT1_U5_U_AVDD_EN_OD-2A Input   
+U10-4 EVT1_U10_U_AVDD_QUAL-Q Output  
+)
+(
+OPT_AVDD_EN 
+TP1-7 EVT1_TP1_TP_AVDD_SAFE-Probe OPT_AVDD_EN Passive 
+U5-4 EVT1_U5_U_AVDD_EN_OD-2Y Passive 
+U5-6 EVT1_U5_U_AVDD_EN_OD-1Y Passive 
+U12-6 EVT1_U12_U_AVDD_SYS_CLAMP-RESET Passive 
+U6-3 EVT1_U6_U6_OPT_AVDD-EN Input   
+R3-2 EVT1_R3_R_AVDD_EN_FEED-~ Passive 
+R4-1 EVT1_R4_R_AVDD_EN_PD-~ Passive 
+)
+(
+AVDD_CRESET_VSYS 
+U8-6 EVT1_U8_U_AVDD_LS-B2 Output  
+U7-3 EVT1_U7_U_AVDD_IO_PG-MR Input   
+R1-1 EVT1_R1_R_AVDD_CRST_PD-~ Passive 
+)
+(
+AVDD_D3_VSYS 
+U8-7 EVT1_U8_U_AVDD_LS-B1 Output  
+U10-1 EVT1_U10_U_AVDD_QUAL-CLK Input   
+U14-1 EVT1_U14_U_AVDD_WD-TRIG Input   
+R2-1 EVT1_R2_R_AVDD_D3_PD-~ Passive 
+R7-1 EVT1_R7_R_AVDD_REQ_FILTER-~ Passive 
+)
+(
+AVDD_PG_OK 
+U3-3 EVT1_U3_U_AVDD_CLEAR_OD-2A Input   
+U5-1 EVT1_U5_U_AVDD_EN_OD-1A Input   
+U11-6 EVT1_U11_U_AVDD_SCHMITT-1Y Output  
+)
+(
+AVDD_QUAL_RC 
+U3-4 EVT1_U3_U_AVDD_CLEAR_OD-2Y Passive 
+U3-6 EVT1_U3_U_AVDD_CLEAR_OD-1Y Passive 
+U11-3 EVT1_U11_U_AVDD_SCHMITT-2A Input   
+C2-1 EVT1_C2_C_AVDD_QUAL-~ Passive 
+R6-2 EVT1_R6_R_AVDD_QUAL_PU-~ Passive 
+)
+(
+AVDD_REQ_FILTER 
+U13-3 EVT1_U13_U_AVDD_SYS_PG-MR Input   
+C3-1 EVT1_C3_C_AVDD_REQ_FILTER-~ Passive 
+R7-2 EVT1_R7_R_AVDD_REQ_FILTER-~ Passive 
+)
+(
+AVDD_WD_SET 
+U14-3 EVT1_U14_U_AVDD_WD-SET Passive 
+R10-1 EVT1_R10_R_AVDD_WD_SET-~ Passive 
+)
+(
+AVDD_WD_DIV 
+U14-4 EVT1_U14_U_AVDD_WD-DIV Passive 
+R8-2 EVT1_R8_R_AVDD_WD_DIV_H-~ Passive 
+R9-1 EVT1_R9_R_AVDD_WD_DIV_L-~ Passive 
+)

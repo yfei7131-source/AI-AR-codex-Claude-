@@ -1,0 +1,138 @@
+{
+  "board": "PCB2",
+  "summary": {
+    "existing_pr45_tracks": 384,
+    "existing_pr45_vias": 46,
+    "delta_tracks": 11,
+    "delta_vias": 1,
+    "delta_blind_vias": 1,
+    "delta_mech_signal_vias": 0,
+    "delta_gnd_stitch_vias": 0,
+    "non_gnd_merges_added": 1,
+    "gnd_pads_newly_grounded": 1,
+    "total_projected_unconn_reduction": 2
+  },
+  "nets": [
+    {
+      "net": "OPT_SCK_R",
+      "pads": 2,
+      "components_before": 2,
+      "components_after": 1,
+      "merges_added": 1,
+      "new_tracks": 9,
+      "new_vias": 0
+    }
+  ],
+  "delta_tracks": [
+    {
+      "layer": 1,
+      "x1": 76.8,
+      "y1": 613.6,
+      "x2": 76.5,
+      "y2": 628.5,
+      "width": 3.0,
+      "net": "OPT_SCK_R"
+    },
+    {
+      "layer": 1,
+      "x1": 76.5,
+      "y1": 628.5,
+      "x2": 75.0,
+      "y2": 628.5,
+      "width": 3.0,
+      "net": "OPT_SCK_R"
+    },
+    {
+      "layer": 1,
+      "x1": 75.0,
+      "y1": 628.5,
+      "x2": 70.5,
+      "y2": 633.0,
+      "width": 3.0,
+      "net": "OPT_SCK_R"
+    },
+    {
+      "layer": 1,
+      "x1": 70.5,
+      "y1": 633.0,
+      "x2": 55.5,
+      "y2": 633.0,
+      "width": 3.0,
+      "net": "OPT_SCK_R"
+    },
+    {
+      "layer": 1,
+      "x1": 55.5,
+      "y1": 633.0,
+      "x2": 43.5,
+      "y2": 621.0,
+      "width": 3.0,
+      "net": "OPT_SCK_R"
+    },
+    {
+      "layer": 1,
+      "x1": 43.5,
+      "y1": 621.0,
+      "x2": 24.0,
+      "y2": 621.0,
+      "width": 3.0,
+      "net": "OPT_SCK_R"
+    },
+    {
+      "layer": 1,
+      "x1": 24.0,
+      "y1": 621.0,
+      "x2": 16.5,
+      "y2": 613.5,
+      "width": 3.0,
+      "net": "OPT_SCK_R"
+    },
+    {
+      "layer": 1,
+      "x1": 16.5,
+      "y1": 613.5,
+      "x2": 16.5,
+      "y2": 531.0,
+      "width": 3.0,
+      "net": "OPT_SCK_R"
+    },
+    {
+      "layer": 1,
+      "x1": 16.5,
+      "y1": 531.0,
+      "x2": 22.0,
+      "y2": 521.3,
+      "width": 3.0,
+      "net": "OPT_SCK_R"
+    },
+    {
+      "layer": 1,
+      "x1": 117.1,
+      "y1": 283.3,
+      "x2": 117.0,
+      "y2": 306.0,
+      "width": 3.0,
+      "net": "GND"
+    },
+    {
+      "layer": 1,
+      "x1": 117.0,
+      "y1": 306.0,
+      "x2": 117.0,
+      "y2": 312.0,
+      "width": 3.0,
+      "net": "GND"
+    }
+  ],
+  "delta_vias": [
+    {
+      "x": 117.0,
+      "y": 312.0,
+      "hole": 4.0,
+      "diameter": 10.0,
+      "net": "GND",
+      "viaType": "BLIND",
+      "ruleName": "BV_L1_L2"
+    }
+  ]
+}

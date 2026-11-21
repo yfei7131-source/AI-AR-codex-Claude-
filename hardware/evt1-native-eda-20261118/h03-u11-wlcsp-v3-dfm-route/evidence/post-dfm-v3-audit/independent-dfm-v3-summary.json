@@ -1,0 +1,650 @@
+{
+  "PCB1": {
+    "board": "PCB1",
+    "tracks": 808,
+    "vias": 98,
+    "pads": 507,
+    "blind_spans": {
+      "BV_L1_L2": [
+        1,
+        15
+      ],
+      "BV_L5_L6": [
+        2,
+        18
+      ]
+    },
+    "total_matrix_rows": 128,
+    "by_classification": {
+      "CHECKER_FP_BLIND_VIA_CROSS_LAYER": 98,
+      "CHECKER_FP_OPPOSITE_BLIND_VIAS_L1L2_VS_L5L6": 3,
+      "CHECKER_FP_VIA_IN_PAD_OPPOSITE_BLIND": 18,
+      "INTENTIONAL_VIPPO_BGA_OR_EPAD": 9
+    },
+    "by_pair_and_class": {
+      "Overlapping-Via(SameNet) | CHECKER_FP_OPPOSITE_BLIND_VIAS_L1L2_VS_L5L6": 3,
+      "Track-to-Via | CHECKER_FP_BLIND_VIA_CROSS_LAYER": 50,
+      "Via-in-Pad(SameNet) | CHECKER_FP_VIA_IN_PAD_OPPOSITE_BLIND": 18,
+      "Via-in-Pad(SameNet) | INTENTIONAL_VIPPO_BGA_OR_EPAD": 9,
+      "Via-to-Pad(DiffNet) | CHECKER_FP_BLIND_VIA_CROSS_LAYER": 48
+    },
+    "sample_true_violations": [],
+    "sample_rule_diff_3_to_6": [],
+    "sample_blind_fp": [
+      {
+        "board": "PCB1",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:4c21af30574f9d6c(L16,USB_DP,w=3.0)",
+        "obj2": "via:80593792f6ce3475(BLIND:BV_L5_L6,GND,4.0/10.0)",
+        "gap_mil": 0.0,
+        "shares_z_layer": false,
+        "x": 198.53,
+        "y": 257.17
+      },
+      {
+        "board": "PCB1",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:4c21af30574f9d6c(L16,USB_DP,w=3.0)",
+        "obj2": "via:9dd4ca0f9b8b51aa(BLIND:BV_L5_L6,GND,4.0/10.0)",
+        "gap_mil": 0.41,
+        "shares_z_layer": false,
+        "x": 211.98,
+        "y": 269.41
+      },
+      {
+        "board": "PCB1",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:19a72b286a44658c(L16,USB_DP,w=3.0)",
+        "obj2": "via:ef04ed16e6531499(BLIND:BV_L5_L6,GND,4.0/10.0)",
+        "gap_mil": 0.0,
+        "shares_z_layer": false,
+        "x": 75.0,
+        "y": 332.5
+      },
+      {
+        "board": "PCB1",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:60460ef9b51aa5dc(L1,USB_DM,w=3.0)",
+        "obj2": "via:80593792f6ce3475(BLIND:BV_L5_L6,GND,4.0/10.0)",
+        "gap_mil": 3.17,
+        "shares_z_layer": false,
+        "x": 198.53,
+        "y": 257.17
+      },
+      {
+        "board": "PCB1",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:e9a9bd54b7ace665(L1,USB_DM,w=3.0)",
+        "obj2": "via:27644a9b42277987(BLIND:BV_L5_L6,GND,4.0/10.0)",
+        "gap_mil": 0.0,
+        "shares_z_layer": false,
+        "x": 56.2,
+        "y": 336.2
+      },
+      {
+        "board": "PCB1",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:40c96824c9892213(L16,VBUS_5V,w=6.0)",
+        "obj2": "via:48d7bf4a018ce69f(BLIND:BV_L5_L6,GND,4.0/10.0)",
+        "gap_mil": 0.0,
+        "shares_z_layer": false,
+        "x": 143.85,
+        "y": 1080.2
+      },
+      {
+        "board": "PCB1",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:dcada600316c8db2(L2,PRIV_VTH_L,w=3.0)",
+        "obj2": "via:8942480a244cacbe(BLIND:BV_L1_L2,GND,4.0/10.0)",
+        "gap_mil": 0.69,
+        "shares_z_layer": false,
+        "x": 193.62,
+        "y": 881.45
+      },
+      {
+        "board": "PCB1",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:b11520fc3721e820(L2,PRIV_VTH_L,w=3.0)",
+        "obj2": "via:8942480a244cacbe(BLIND:BV_L1_L2,GND,4.0/10.0)",
+        "gap_mil": 0.0,
+        "shares_z_layer": false,
+        "x": 193.62,
+        "y": 881.45
+      },
+      {
+        "board": "PCB1",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:7f65053205a9e400(L16,PRIV_VTH_L,w=3.0)",
+        "obj2": "via:2bfd63a396256212(BLIND:BV_L1_L2,GND,4.0/10.0)",
+        "gap_mil": 1.1,
+        "shares_z_layer": false,
+        "x": 189.9,
+        "y": 660.1
+      },
+      {
+        "board": "PCB1",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:7f65053205a9e400(L16,PRIV_VTH_L,w=3.0)",
+        "obj2": "via:847abf98e73026d9(BLIND:BV_L1_L2,GND,4.0/10.0)",
+        "gap_mil": 1.1,
+        "shares_z_layer": false,
+        "x": 189.9,
+        "y": 786.1
+      }
+    ],
+    "laser_blind_annular_ring_audit": {
+      "total_blind_vias": 62,
+      "total_mech_through_vias": 36,
+      "min_blind_hole_mil": 4.0,
+      "min_blind_diam_mil": 10.0,
+      "min_blind_ring_mil": 3.0,
+      "min_blind_ring_mm": 0.0762,
+      "under_3mil_ring_blind_vias": 0,
+      "illegal_mech_through_vias": 0,
+      "blind_size_breakdown": {
+        "BV_L5_L6 (4.0/10.0mil, ring=3.0mil)": 41,
+        "BV_L1_L2 (4.0/10.0mil, ring=3.0mil)": 21
+      }
+    },
+    "extended_blind_via_manufacturing_audit_v3": {
+      "total_blind_vias": 62,
+      "span_breakdown": {
+        "BV_L5_L6": 41,
+        "BV_L1_L2": 21
+      },
+      "thresholds_mil": {
+        "min_cu_to_edge_mil": 11.811,
+        "min_same_span_vv_cu_gap_mil": 6.0,
+        "min_same_span_vv_hole_wall_mil": 8.0,
+        "min_annular_ring_mil": 2.95,
+        "min_laser_hole_mil": 2.95
+      },
+      "measured_min_cu_to_edge_mil": 12.5,
+      "measured_min_cu_to_edge_mm": 0.3175,
+      "measured_min_same_span_vv_cu_gap_mil": 7.702,
+      "measured_min_same_span_vv_cu_gap_mm": 0.1956,
+      "measured_min_same_span_vv_hole_wall_mil": 13.702,
+      "measured_min_same_span_vv_hole_wall_mm": 0.348,
+      "measured_min_ring_mil": 3.0,
+      "measured_min_hole_mil": 4.0,
+      "violations": {
+        "edge_clearance_violations": 0,
+        "same_span_vv_cu_violations": 0,
+        "same_span_vv_hole_wall_violations": 0,
+        "under_annular_ring_violations": 0,
+        "under_hole_violations": 0,
+        "invalid_layer_span_violations": 0,
+        "illegal_mech_through_violations": 0,
+        "total_v3_blind_via_violations": 0
+      },
+      "violation_details": {
+        "edge": [],
+        "vv_cu": [],
+        "vv_hole": [],
+        "ring": [],
+        "hole": [],
+        "span": []
+      },
+      "fab_governance_blocked_items": [
+        "6L_0p80mm_1plus4plus1_HDI_stackup_and_controlled_impedance_fab_EQ",
+        "11_VIPPO_copper_fill_cap_sites_fab_EQ",
+        "PCB3_U11_0p35mm_WLCSP_Tier1_Advanced_HDI_2N2_fab_EQ",
+        "ANT1_ANT2_keepout_and_JBD_optical_camera_MECR01_signoff"
+      ]
+    }
+  },
+  "PCB2": {
+    "board": "PCB2",
+    "tracks": 394,
+    "vias": 47,
+    "pads": 328,
+    "blind_spans": {
+      "BV_L1_L2": [
+        1,
+        15
+      ],
+      "BV_L5_L6": [
+        2,
+        18
+      ]
+    },
+    "total_matrix_rows": 80,
+    "by_classification": {
+      "CHECKER_FP_BLIND_VIA_CROSS_LAYER": 75,
+      "CHECKER_FP_VIA_IN_PAD_OPPOSITE_BLIND": 3,
+      "INTENTIONAL_VIPPO_BGA_OR_EPAD": 2
+    },
+    "by_pair_and_class": {
+      "Track-to-Via | CHECKER_FP_BLIND_VIA_CROSS_LAYER": 25,
+      "Via-in-Pad(SameNet) | CHECKER_FP_VIA_IN_PAD_OPPOSITE_BLIND": 3,
+      "Via-in-Pad(SameNet) | INTENTIONAL_VIPPO_BGA_OR_EPAD": 2,
+      "Via-to-Pad(DiffNet) | CHECKER_FP_BLIND_VIA_CROSS_LAYER": 50
+    },
+    "sample_true_violations": [],
+    "sample_rule_diff_3_to_6": [],
+    "sample_blind_fp": [
+      {
+        "board": "PCB2",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:2a557a8fcb3c4cc7(L16,FPGA_CRESET_B,w=3.0)",
+        "obj2": "via:887a0eee3522b2a1(BLIND:BV_L5_L6,GND,4.0/10.0)",
+        "gap_mil": 3.07,
+        "shares_z_layer": false,
+        "x": 55.57,
+        "y": 259.28
+      },
+      {
+        "board": "PCB2",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:2a557a8fcb3c4cc7(L16,FPGA_CRESET_B,w=3.0)",
+        "obj2": "via:7a9a00092f252d56(BLIND:BV_L1_L2,GND,4.0/10.0)",
+        "gap_mil": 0.0,
+        "shares_z_layer": false,
+        "x": 42.7,
+        "y": 290.2
+      },
+      {
+        "board": "PCB2",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:2800dfef901e4064(L16,FPGA_CRESET_B,w=3.0)",
+        "obj2": "via:7d3455ccc292f592(BLIND:BV_L1_L2,GND,4.0/10.0)",
+        "gap_mil": 0.0,
+        "shares_z_layer": false,
+        "x": 52.48,
+        "y": 544.16
+      },
+      {
+        "board": "PCB2",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:94b6a35a08a1a407(L2,FPGA_CDONE_VSYNC_N,w=3.0)",
+        "obj2": "via:7d3455ccc292f592(BLIND:BV_L1_L2,GND,4.0/10.0)",
+        "gap_mil": 0.24,
+        "shares_z_layer": false,
+        "x": 52.48,
+        "y": 544.16
+      },
+      {
+        "board": "PCB2",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:711cfbf45b5b76ad(L2,FPGA_CDONE_VSYNC_N,w=3.0)",
+        "obj2": "via:7d3455ccc292f592(BLIND:BV_L1_L2,GND,4.0/10.0)",
+        "gap_mil": 0.24,
+        "shares_z_layer": false,
+        "x": 52.48,
+        "y": 544.16
+      },
+      {
+        "board": "PCB2",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:127ad27b7fce582d(L2,FPGA_CDONE_VSYNC_N,w=3.0)",
+        "obj2": "via:7d3455ccc292f592(BLIND:BV_L1_L2,GND,4.0/10.0)",
+        "gap_mil": 0.0,
+        "shares_z_layer": false,
+        "x": 52.48,
+        "y": 544.16
+      },
+      {
+        "board": "PCB2",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:bc04b31aeda6435a(L2,FPGA_CDONE_VSYNC_N,w=3.0)",
+        "obj2": "via:7d3455ccc292f592(BLIND:BV_L1_L2,GND,4.0/10.0)",
+        "gap_mil": 0.0,
+        "shares_z_layer": false,
+        "x": 52.48,
+        "y": 544.16
+      },
+      {
+        "board": "PCB2",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:e5525a880aa9687c(L2,FPGA_CDONE_VSYNC_N,w=3.0)",
+        "obj2": "via:7d3455ccc292f592(BLIND:BV_L1_L2,GND,4.0/10.0)",
+        "gap_mil": 1.35,
+        "shares_z_layer": false,
+        "x": 52.48,
+        "y": 544.16
+      },
+      {
+        "board": "PCB2",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:09e897abca994d95(L2,FPGA_CDONE_VSYNC_N,w=3.0)",
+        "obj2": "via:7d3455ccc292f592(BLIND:BV_L1_L2,GND,4.0/10.0)",
+        "gap_mil": 1.35,
+        "shares_z_layer": false,
+        "x": 52.48,
+        "y": 544.16
+      },
+      {
+        "board": "PCB2",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:aab0a28a8347c0b3(L2,FPGA_CDONE_VSYNC_N,w=3.0)",
+        "obj2": "via:7d3455ccc292f592(BLIND:BV_L1_L2,GND,4.0/10.0)",
+        "gap_mil": 3.34,
+        "shares_z_layer": false,
+        "x": 52.48,
+        "y": 544.16
+      }
+    ],
+    "laser_blind_annular_ring_audit": {
+      "total_blind_vias": 40,
+      "total_mech_through_vias": 7,
+      "min_blind_hole_mil": 3.0,
+      "min_blind_diam_mil": 9.0,
+      "min_blind_ring_mil": 3.0,
+      "min_blind_ring_mm": 0.0762,
+      "under_3mil_ring_blind_vias": 0,
+      "illegal_mech_through_vias": 0,
+      "blind_size_breakdown": {
+        "BV_L1_L2 (4.0/10.0mil, ring=3.0mil)": 25,
+        "BV_L5_L6 (4.0/10.0mil, ring=3.0mil)": 13,
+        "BV_L1_L2 (3.0/9.0mil, ring=3.0mil)": 2
+      }
+    },
+    "extended_blind_via_manufacturing_audit_v3": {
+      "total_blind_vias": 40,
+      "span_breakdown": {
+        "BV_L1_L2": 27,
+        "BV_L5_L6": 13
+      },
+      "thresholds_mil": {
+        "min_cu_to_edge_mil": 11.811,
+        "min_same_span_vv_cu_gap_mil": 6.0,
+        "min_same_span_vv_hole_wall_mil": 8.0,
+        "min_annular_ring_mil": 2.95,
+        "min_laser_hole_mil": 2.95
+      },
+      "measured_min_cu_to_edge_mil": 14.872,
+      "measured_min_cu_to_edge_mm": 0.3777,
+      "measured_min_same_span_vv_cu_gap_mil": 7.984,
+      "measured_min_same_span_vv_cu_gap_mm": 0.2028,
+      "measured_min_same_span_vv_hole_wall_mil": 13.984,
+      "measured_min_same_span_vv_hole_wall_mm": 0.3552,
+      "measured_min_ring_mil": 3.0,
+      "measured_min_hole_mil": 3.0,
+      "violations": {
+        "edge_clearance_violations": 0,
+        "same_span_vv_cu_violations": 0,
+        "same_span_vv_hole_wall_violations": 0,
+        "under_annular_ring_violations": 0,
+        "under_hole_violations": 0,
+        "invalid_layer_span_violations": 0,
+        "illegal_mech_through_violations": 0,
+        "total_v3_blind_via_violations": 0
+      },
+      "violation_details": {
+        "edge": [],
+        "vv_cu": [],
+        "vv_hole": [],
+        "ring": [],
+        "hole": [],
+        "span": []
+      },
+      "fab_governance_blocked_items": [
+        "6L_0p80mm_1plus4plus1_HDI_stackup_and_controlled_impedance_fab_EQ",
+        "11_VIPPO_copper_fill_cap_sites_fab_EQ",
+        "PCB3_U11_0p35mm_WLCSP_Tier1_Advanced_HDI_2N2_fab_EQ",
+        "ANT1_ANT2_keepout_and_JBD_optical_camera_MECR01_signoff"
+      ]
+    }
+  },
+  "PCB3": {
+    "board": "PCB3",
+    "tracks": 380,
+    "vias": 51,
+    "pads": 239,
+    "blind_spans": {
+      "BV_L1_L2": [
+        1,
+        15
+      ],
+      "BV_L5_L6": [
+        2,
+        18
+      ]
+    },
+    "total_matrix_rows": 66,
+    "by_classification": {
+      "CHECKER_FP_BLIND_VIA_CROSS_LAYER": 57,
+      "CHECKER_FP_VIA_IN_PAD_OPPOSITE_BLIND": 9
+    },
+    "by_pair_and_class": {
+      "Track-to-Via | CHECKER_FP_BLIND_VIA_CROSS_LAYER": 31,
+      "Via-in-Pad(SameNet) | CHECKER_FP_VIA_IN_PAD_OPPOSITE_BLIND": 9,
+      "Via-to-Pad(DiffNet) | CHECKER_FP_BLIND_VIA_CROSS_LAYER": 26
+    },
+    "sample_true_violations": [],
+    "sample_rule_diff_3_to_6": [],
+    "sample_blind_fp": [
+      {
+        "board": "PCB3",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:fce8192558fab4ee(L1,BLE_XC1,w=3.0)",
+        "obj2": "via:92d35ac5e73b99a1(BLIND:BV_L5_L6,GND,4.0/10.0)",
+        "gap_mil": 5.38,
+        "shares_z_layer": false,
+        "x": 20.9,
+        "y": 297.53
+      },
+      {
+        "board": "PCB3",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:4f72fc619dfb79b3(L1,BLE_XC1,w=3.0)",
+        "obj2": "via:92d35ac5e73b99a1(BLIND:BV_L5_L6,GND,4.0/10.0)",
+        "gap_mil": 3.03,
+        "shares_z_layer": false,
+        "x": 20.9,
+        "y": 297.53
+      },
+      {
+        "board": "PCB3",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:a0cc6a8fc1615cd4(L1,BLE_XC1,w=3.0)",
+        "obj2": "via:a051461510c1d381(BLIND:BV_L5_L6,GND,4.0/10.0)",
+        "gap_mil": 2.05,
+        "shares_z_layer": false,
+        "x": 28.55,
+        "y": 430.38
+      },
+      {
+        "board": "PCB3",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:a0cc6a8fc1615cd4(L1,BLE_XC1,w=3.0)",
+        "obj2": "via:92d35ac5e73b99a1(BLIND:BV_L5_L6,GND,4.0/10.0)",
+        "gap_mil": 0.0,
+        "shares_z_layer": false,
+        "x": 20.9,
+        "y": 297.53
+      },
+      {
+        "board": "PCB3",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:5075f488650562df(L16,LFXO_XL1,w=3.0)",
+        "obj2": "via:0e98f5832f73bbfe(BLIND:BV_L1_L2,GND,4.0/10.0)",
+        "gap_mil": 0.0,
+        "shares_z_layer": false,
+        "x": 132.71,
+        "y": 686.38
+      },
+      {
+        "board": "PCB3",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:cd36508cd86bbada(L1,LFXO_XL2,w=3.0)",
+        "obj2": "via:8123b063753ffeab(BLIND:BV_L5_L6,GND,4.0/10.0)",
+        "gap_mil": 2.44,
+        "shares_z_layer": false,
+        "x": 62.0,
+        "y": 456.0
+      },
+      {
+        "board": "PCB3",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:d7201eb8cbad4449(L1,LFXO_XL2,w=3.0)",
+        "obj2": "via:8123b063753ffeab(BLIND:BV_L5_L6,GND,4.0/10.0)",
+        "gap_mil": 1.75,
+        "shares_z_layer": false,
+        "x": 62.0,
+        "y": 456.0
+      },
+      {
+        "board": "PCB3",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:23f38a03c2d79653(L1,LFXO_XL2,w=3.0)",
+        "obj2": "via:8123b063753ffeab(BLIND:BV_L5_L6,GND,4.0/10.0)",
+        "gap_mil": 0.0,
+        "shares_z_layer": false,
+        "x": 62.0,
+        "y": 456.0
+      },
+      {
+        "board": "PCB3",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:8ed01d86ed08b9cb(L1,LFXO_XL2,w=3.0)",
+        "obj2": "via:8123b063753ffeab(BLIND:BV_L5_L6,GND,4.0/10.0)",
+        "gap_mil": 0.0,
+        "shares_z_layer": false,
+        "x": 62.0,
+        "y": 456.0
+      },
+      {
+        "board": "PCB3",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:d2f8f984f79da141(L1,LFXO_XL2,w=3.0)",
+        "obj2": "via:8123b063753ffeab(BLIND:BV_L5_L6,GND,4.0/10.0)",
+        "gap_mil": 0.0,
+        "shares_z_layer": false,
+        "x": 62.0,
+        "y": 456.0
+      }
+    ],
+    "laser_blind_annular_ring_audit": {
+      "total_blind_vias": 39,
+      "total_mech_through_vias": 12,
+      "min_blind_hole_mil": 4.0,
+      "min_blind_diam_mil": 10.0,
+      "min_blind_ring_mil": 3.0,
+      "min_blind_ring_mm": 0.0762,
+      "under_3mil_ring_blind_vias": 0,
+      "illegal_mech_through_vias": 0,
+      "blind_size_breakdown": {
+        "BV_L1_L2 (4.0/10.0mil, ring=3.0mil)": 20,
+        "BV_L5_L6 (4.0/10.0mil, ring=3.0mil)": 19
+      }
+    },
+    "extended_blind_via_manufacturing_audit_v3": {
+      "total_blind_vias": 39,
+      "span_breakdown": {
+        "BV_L1_L2": 20,
+        "BV_L5_L6": 19
+      },
+      "thresholds_mil": {
+        "min_cu_to_edge_mil": 11.811,
+        "min_same_span_vv_cu_gap_mil": 6.0,
+        "min_same_span_vv_hole_wall_mil": 8.0,
+        "min_annular_ring_mil": 2.95,
+        "min_laser_hole_mil": 2.95
+      },
+      "measured_min_cu_to_edge_mil": 13.514,
+      "measured_min_cu_to_edge_mm": 0.3433,
+      "measured_min_same_span_vv_cu_gap_mil": 7.681,
+      "measured_min_same_span_vv_cu_gap_mm": 0.1951,
+      "measured_min_same_span_vv_hole_wall_mil": 13.681,
+      "measured_min_same_span_vv_hole_wall_mm": 0.3475,
+      "measured_min_ring_mil": 3.0,
+      "measured_min_hole_mil": 4.0,
+      "violations": {
+        "edge_clearance_violations": 0,
+        "same_span_vv_cu_violations": 0,
+        "same_span_vv_hole_wall_violations": 0,
+        "under_annular_ring_violations": 0,
+        "under_hole_violations": 0,
+        "invalid_layer_span_violations": 0,
+        "illegal_mech_through_violations": 0,
+        "total_v3_blind_via_violations": 0
+      },
+      "violation_details": {
+        "edge": [],
+        "vv_cu": [],
+        "vv_hole": [],
+        "ring": [],
+        "hole": [],
+        "span": []
+      },
+      "fab_governance_blocked_items": [
+        "6L_0p80mm_1plus4plus1_HDI_stackup_and_controlled_impedance_fab_EQ",
+        "11_VIPPO_copper_fill_cap_sites_fab_EQ",
+        "PCB3_U11_0p35mm_WLCSP_Tier1_Advanced_HDI_2N2_fab_EQ",
+        "ANT1_ANT2_keepout_and_JBD_optical_camera_MECR01_signoff"
+      ]
+    },
+    "u11_wlcsp_95_audit": {
+      "found": true,
+      "designator": "U11",
+      "bom_mpn": "nRF5340-CMAA-R7",
+      "package": "WLCSP-95 (3.994 x 4.390 x 0.449 mm, 0.35 mm pitch)",
+      "total_balls": 95,
+      "grid_cols": 11,
+      "grid_rows": 12,
+      "measured_pitch_x_mil": 13.78,
+      "measured_pitch_y_mil": 13.782,
+      "measured_pitch_mm": 0.35,
+      "active_balls": 52,
+      "nc_unassigned_balls": 43,
+      "outer_perimeter_depth0_active": 16,
+      "ring1_depth1_active": 22,
+      "ring1_power_gnd_count": 11,
+      "ring1_signal_rf_clk_count": 11,
+      "deep_inner_depth2plus_active": 14,
+      "deep_inner_gnd_count": 12,
+      "deep_inner_signal_count": 2,
+      "deep_inner_signal_balls": [
+        "J4:I2S_AMP_DIN_1V8",
+        "J5:I2S_S3_DOUT_1V8"
+      ],
+      "ring1_signal_balls": [
+        "B4:NRF_DECR_RF",
+        "B5:NRF_DECN",
+        "B6:NRF_DCC",
+        "B8:NRF_DECA",
+        "F11:LFXO_XL1",
+        "F2:BLE_SWDCLK",
+        "G2:BLE_NRESET",
+        "K2:AMP_SD_REQ_1V8",
+        "K3:IPC_NRF_TX_1V8",
+        "K4:I2S_LRCLK_1V8",
+        "K5:I2S_BCLK_1V8"
+      ],
+      "inner_balls_blocked_under_std_1stage_hdi_6mil": 36,
+      "selected_technical_route": "OPTION_1_RETAIN_CMAA_UPGRADE_PCB3_TIER1_ADVANCED_HDI_2N2_VIPPO",
+      "fab_approval_status": "BLOCKED_PENDING_TIER1_HDI_FAB_EQ"
+    }
+  }
+}
