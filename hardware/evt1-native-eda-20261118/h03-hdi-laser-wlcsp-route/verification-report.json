@@ -1,0 +1,327 @@
+{
+  "round": "H03_LASER_RING_WLCSP_DFM_AND_P1_ROUTING_PR45",
+  "manufacturing_status": "BLOCKED_NOT_FOR_FAB",
+  "inherited_archives_untouched": {
+    "track_a_22x4_2_sha256": "8483c0594bd5e20aee3f91cb0b851d84a2036bf7f211ebb92c0d05a35309db8e",
+    "pr41_sha256": "82a7f78219b7262749d5051241cb5b0fab2ecd67b703b550dc6d84e33a143b62",
+    "pr42_sha256": "62e1f3cd21b36420bf1b5da6d2af57abd6e6ed67f221c55bfc59516aad117571",
+    "pr43_sha256": "57e89c02373d71beb3224c7295b053d1a2a94d5d9d5ed1579dfd1d9ac4cf896d",
+    "pr44_sha256": "5ede1c91f09bd6ceefa67da513e456f96d866d672971348a3516d2925ee0dc4a"
+  },
+  "exported_epro2": {
+    "path": "native/ZY_AIAR_EVT1_H03_3BOARD_LASER_WLCSP_MECR01_NOT_FOR_FAB.epro2",
+    "bytes": 1244499,
+    "sha256": "7d72bad53f8825db29456f2ad1338537968bdf7c98ffe83cc1969034a008524d",
+    "reimport_exact_match": true
+  },
+  "totals": {
+    "persisted_lines": 1563,
+    "persisted_vias": 194,
+    "total_compliant_blind_vias": 139,
+    "blind_BV_L1_L2": 66,
+    "blind_BV_L5_L6": 73,
+    "mech_through_6_12mil": 46,
+    "mech_through_8_14mil_thermal": 9,
+    "under_3mil_ring_blind_vias_pr44": 154,
+    "under_3mil_ring_blind_vias_pr45": 0,
+    "illegal_mech_through_vias": 0,
+    "tracks_below_3mil": 0,
+    "dangling_ends_pr44": 3,
+    "dangling_ends_pr45": 0,
+    "duplicate_segments_pr44": 7,
+    "duplicate_segments_pr45": 0,
+    "decap_too_far_pr44": 18,
+    "decap_too_far_pr45": 13,
+    "total_unconnected_pr44": 751,
+    "total_unconnected_pr45": 739,
+    "total_unconnected_delta": -12,
+    "non_gnd_unconnected_pr44": 629,
+    "non_gnd_unconnected_pr45": 627,
+    "non_gnd_unconnected_delta": -2,
+    "net_groups_verified": 207
+  },
+  "boards": {
+    "PCB1": {
+      "components": 118,
+      "persisted_lines": 804,
+      "min_track_width_mil": 3.0,
+      "tracks_below_3mil": 0,
+      "persisted_vias": 98,
+      "laser_blind_annular_ring_audit": {
+        "total_blind_vias": 62,
+        "total_mech_through_vias": 36,
+        "min_blind_hole_mil": 4.0,
+        "min_blind_diam_mil": 10.0,
+        "min_blind_ring_mil": 3.0,
+        "min_blind_ring_mm": 0.0762,
+        "under_3mil_ring_blind_vias": 0,
+        "illegal_mech_through_vias": 0,
+        "blind_size_breakdown": {
+          "BV_L5_L6 (4.0/10.0mil, ring=3.0mil)": 41,
+          "BV_L1_L2 (4.0/10.0mil, ring=3.0mil)": 21
+        }
+      },
+      "independent_3d_dfm_audit": {
+        "CHECKER_FP_BLIND_VIA_CROSS_LAYER": 98,
+        "CHECKER_FP_OPPOSITE_BLIND_VIAS_L1L2_VS_L5L6": 3,
+        "CHECKER_FP_VIA_IN_PAD_OPPOSITE_BLIND": 18,
+        "INTENTIONAL_VIPPO_BGA_OR_EPAD": 9
+      },
+      "pcb_check_p0_metrics": {
+        "danglingEnds": 0,
+        "duplicateSegments": 0,
+        "floatingIslands": 0,
+        "trackOverPad": 0,
+        "parallelCoupling": 0,
+        "overlappingVias": 0,
+        "copperNearEdge": 0,
+        "decapTooFar": 3
+      },
+      "drc_before_pr44": {
+        "total": 372,
+        "clearance": 0,
+        "connection": 371,
+        "non_gnd_connection": 310,
+        "gnd_connection": 61,
+        "netlist": 1,
+        "plane_zone": 0,
+        "mic_clearance": 0,
+        "by_rule": {
+          "Connection Error (SMD Pad)": 357,
+          "Connection Error (Via)": 12,
+          "Connection Error (Track)": 2,
+          "Netlist Error (Netlist Error)": 1
+        }
+      },
+      "drc_after_pr45": {
+        "total": 360,
+        "clearance": 0,
+        "connection": 359,
+        "non_gnd_connection": 307,
+        "gnd_connection": 52,
+        "netlist": 1,
+        "plane_zone": 0,
+        "mic_clearance": 0,
+        "by_rule": {
+          "Connection Error (SMD Pad)": 351,
+          "Connection Error (Via)": 5,
+          "Connection Error (Track)": 3,
+          "Netlist Error (Netlist Error)": 1
+        }
+      }
+    },
+    "PCB2": {
+      "components": 86,
+      "persisted_lines": 384,
+      "min_track_width_mil": 3.0,
+      "tracks_below_3mil": 0,
+      "persisted_vias": 46,
+      "laser_blind_annular_ring_audit": {
+        "total_blind_vias": 39,
+        "total_mech_through_vias": 7,
+        "min_blind_hole_mil": 3.0,
+        "min_blind_diam_mil": 9.0,
+        "min_blind_ring_mil": 3.0,
+        "min_blind_ring_mm": 0.0762,
+        "under_3mil_ring_blind_vias": 0,
+        "illegal_mech_through_vias": 0,
+        "blind_size_breakdown": {
+          "BV_L1_L2 (4.0/10.0mil, ring=3.0mil)": 24,
+          "BV_L5_L6 (4.0/10.0mil, ring=3.0mil)": 13,
+          "BV_L1_L2 (3.0/9.0mil, ring=3.0mil)": 2
+        }
+      },
+      "independent_3d_dfm_audit": {
+        "CHECKER_FP_BLIND_VIA_CROSS_LAYER": 72,
+        "CHECKER_FP_VIA_IN_PAD_OPPOSITE_BLIND": 3,
+        "INTENTIONAL_VIPPO_BGA_OR_EPAD": 2
+      },
+      "pcb_check_p0_metrics": {
+        "danglingEnds": 0,
+        "duplicateSegments": 0,
+        "floatingIslands": 0,
+        "trackOverPad": 0,
+        "parallelCoupling": 0,
+        "overlappingVias": 0,
+        "copperNearEdge": 0,
+        "decapTooFar": 10
+      },
+      "drc_before_pr44": {
+        "total": 245,
+        "clearance": 0,
+        "connection": 244,
+        "non_gnd_connection": 205,
+        "gnd_connection": 39,
+        "netlist": 1,
+        "plane_zone": 0,
+        "mic_clearance": 0,
+        "by_rule": {
+          "Connection Error (SMD Pad)": 233,
+          "Connection Error (Via)": 11,
+          "Netlist Error (Netlist Error)": 1
+        }
+      },
+      "drc_after_pr45": {
+        "total": 243,
+        "clearance": 0,
+        "connection": 242,
+        "non_gnd_connection": 206,
+        "gnd_connection": 36,
+        "netlist": 1,
+        "plane_zone": 0,
+        "mic_clearance": 0,
+        "by_rule": {
+          "Connection Error (SMD Pad)": 231,
+          "Connection Error (Via)": 11,
+          "Netlist Error (Netlist Error)": 1
+        }
+      }
+    },
+    "PCB3": {
+      "components": 53,
+      "persisted_lines": 375,
+      "min_track_width_mil": 3.0,
+      "tracks_below_3mil": 0,
+      "persisted_vias": 50,
+      "laser_blind_annular_ring_audit": {
+        "total_blind_vias": 38,
+        "total_mech_through_vias": 12,
+        "min_blind_hole_mil": 4.0,
+        "min_blind_diam_mil": 10.0,
+        "min_blind_ring_mil": 3.0,
+        "min_blind_ring_mm": 0.0762,
+        "under_3mil_ring_blind_vias": 0,
+        "illegal_mech_through_vias": 0,
+        "blind_size_breakdown": {
+          "BV_L1_L2 (4.0/10.0mil, ring=3.0mil)": 19,
+          "BV_L5_L6 (4.0/10.0mil, ring=3.0mil)": 19
+        }
+      },
+      "independent_3d_dfm_audit": {
+        "CHECKER_FP_BLIND_VIA_CROSS_LAYER": 56,
+        "CHECKER_FP_VIA_IN_PAD_OPPOSITE_BLIND": 9
+      },
+      "pcb_check_p0_metrics": {
+        "danglingEnds": 0,
+        "duplicateSegments": 0,
+        "floatingIslands": 0,
+        "trackOverPad": 0,
+        "parallelCoupling": 0,
+        "overlappingVias": 0,
+        "copperNearEdge": 0,
+        "decapTooFar": 0
+      },
+      "drc_before_pr44": {
+        "total": 137,
+        "clearance": 0,
+        "connection": 136,
+        "non_gnd_connection": 114,
+        "gnd_connection": 22,
+        "netlist": 1,
+        "plane_zone": 0,
+        "mic_clearance": 0,
+        "by_rule": {
+          "Connection Error (SMD Pad)": 131,
+          "Connection Error (Via)": 3,
+          "Connection Error (Track)": 2,
+          "Netlist Error (Netlist Error)": 1
+        }
+      },
+      "drc_after_pr45": {
+        "total": 139,
+        "clearance": 0,
+        "connection": 138,
+        "non_gnd_connection": 114,
+        "gnd_connection": 24,
+        "netlist": 1,
+        "plane_zone": 0,
+        "mic_clearance": 0,
+        "by_rule": {
+          "Connection Error (SMD Pad)": 131,
+          "Connection Error (Track)": 2,
+          "Connection Error (Via)": 5,
+          "Netlist Error (Netlist Error)": 1
+        }
+      }
+    }
+  },
+  "erc_and_netlists": {
+    "M-MAIN-L": {
+      "net_groups": 112,
+      "netlist_parity_vs_track_a": true,
+      "live_mecr01_strict_erc": {
+        "strict": true,
+        "fatal": 11,
+        "error": 0,
+        "warn": 0,
+        "total": 11,
+        "by_rule": {
+          "ONLYSYMBOL": 7,
+          "MISSFOOTPRINT": 4
+        }
+      },
+      "track_a_22x4_2_strict_erc": {
+        "strict": true,
+        "fatal": 11,
+        "error": 0,
+        "warn": 0,
+        "total": 11,
+        "by_rule": {
+          "ONLYSYMBOL": 7,
+          "MISSFOOTPRINT": 4
+        }
+      }
+    },
+    "M-OPT-BRIDGE": {
+      "net_groups": 58,
+      "netlist_parity_vs_track_a": true,
+      "live_mecr01_strict_erc": {
+        "strict": true,
+        "fatal": 6,
+        "error": 0,
+        "warn": 0,
+        "total": 6,
+        "by_rule": {
+          "ONLYSYMBOL": 6
+        }
+      },
+      "track_a_22x4_2_strict_erc": {
+        "strict": true,
+        "fatal": 9,
+        "error": 0,
+        "warn": 0,
+        "total": 9,
+        "by_rule": {
+          "ONLYSYMBOL": 6,
+          "MISSFOOTPRINT": 3
+        }
+      }
+    },
+    "M-AUD-R": {
+      "net_groups": 37,
+      "netlist_parity_vs_track_a": true,
+      "live_mecr01_strict_erc": {
+        "strict": true,
+        "fatal": 7,
+        "error": 0,
+        "warn": 0,
+        "total": 7,
+        "by_rule": {
+          "ONLYSYMBOL": 5,
+          "MISSFOOTPRINT": 2
+        }
+      },
+      "track_a_22x4_2_strict_erc": {
+        "strict": true,
+        "fatal": 7,
+        "error": 0,
+        "warn": 0,
+        "total": 7,
+        "by_rule": {
+          "ONLYSYMBOL": 5,
+          "MISSFOOTPRINT": 2
+        }
+      }
+    }
+  }
+}
