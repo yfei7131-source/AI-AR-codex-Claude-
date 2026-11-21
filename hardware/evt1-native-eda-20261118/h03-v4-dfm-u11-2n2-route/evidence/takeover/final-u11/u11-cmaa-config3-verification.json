@@ -1,0 +1,366 @@
+{
+  "scope": "PCB3 U11 footprint and pin-level native net identities; local copper geometry is not net completion",
+  "status": "95_BALL_IDENTITIES_AGREE",
+  "manufacturing": "BLOCKED",
+  "native_archive_sha256": "5f0d842d25b8bbf43d0dfdbb30034a7c9e6fc45d254c27d03a44d0439f99bf1a",
+  "native_pcb3_dump_sha256": "cc98fb4783ddde071b1f640dd8e32795576f3b1865f63449c0161672bb0565fd",
+  "native_schematic_protel2_sha256": "e20db4b647a21ea52fcdc3d202ca137a5aad29d771aacb2871dfbc00c668cbb9",
+  "pr46_schematic_protel2_sha256": "e20db4b647a21ea52fcdc3d202ca137a5aad29d771aacb2871dfbc00c668cbb9",
+  "unchanged_pr46_schematic_export": true,
+  "schematic_footprint": "ddd711692e399705",
+  "native_footprint_description": "Nordic nRF5340-CMAA WLCSP95 (4.39x3.994mm, 0.35mm pitch, 0.21mm NSMD balls).",
+  "native_nrf_schematic_design_notes": "normal-voltage supply; local decoupling per Nordic config3 | USB/VREGH unused; Nordic CMAA config3 | Nordic CMAA config3; DECR and DECRF intentionally share a decoupling node | USB unused: grounded as Nordic CMAA config3 | Tied VDD in normal-voltage mode; VREGH disabled automatically | Unused GPIO; disable input and pulls; LFRC calibrated; NFC disabled for G11/H12 | nRESET has internal pull-up | I2S SDOUT; PSEL assignment; GPIO input disconnected when unused | I2S SDIN; PSEL assignment; GPIO input disconnected when unused | amplifier enable/select control; PSEL assignment; GPIO input disconnected when unused; local U10_SD_BUF SPDT selects GND or 1V8_SYS | UARTE TXD; PSEL assignment; GPIO input disconnected when unused | I2S LRCK; PSEL assignment; GPIO input disconnected when unused | I2S SCK; PSEL assignment; GPIO input disconnected when unused | UARTE RXD; enable pull-up; PSEL assignment; GPIO input disconnected when unused",
+  "balls_physical": 95,
+  "balls_connected_in_schematic": 52,
+  "balls_explicit_nc_in_schematic": 43,
+  "active_balls_by_geometric_ring": {
+    "outer": 16,
+    "ring1": 22,
+    "deep": 14
+  },
+  "role_counts": {
+    "ANALOG_GROUND": 3,
+    "DCDC_FILTER": 1,
+    "DCDC_FILTER_RF": 2,
+    "DCDC_SWITCH": 2,
+    "DEBUG_FIXED": 2,
+    "GPIO": 1,
+    "GROUND": 16,
+    "HFXO_FIXED": 2,
+    "I2S_PSEL": 4,
+    "LFXO_FIXED_WHEN_USED": 2,
+    "NORMAL_SUPPLY": 10,
+    "REG_DECAP": 2,
+    "RESET_FIXED": 1,
+    "RF_FIXED": 1,
+    "UARTE_PSEL": 2,
+    "UNUSED_GPIO": 39,
+    "USB_DISABLED_NC": 3,
+    "USB_DISABLED_TIE": 1,
+    "VREGH_DISABLED_NC": 1
+  },
+  "retained_eco08_balls": [
+    "F11",
+    "F12"
+  ],
+  "pin_reassignment_requires_eco": [
+    "J4",
+    "J5",
+    "K2",
+    "K3",
+    "K4",
+    "K5",
+    "L3"
+  ],
+  "copper_escape": {
+    "nominal_pitch_mm": 0.35,
+    "archived_land_diameter_mm": 0.195,
+    "live_dump_clearance_mil": 5.98,
+    "required_clearance_mm": 0.1524,
+    "trial_drill_mm": 0.075,
+    "required_radial_ring_mm": 0.0762,
+    "needed_trial_via_diameter_mm": 0.2274,
+    "max_single_via_adjacent_to_nominal_foreign_land_mm": 0.2002,
+    "max_equal_adjacent_via_diameter_mm": 0.1976,
+    "inner_balls_failing_centered_single_via_top_clearance": [
+      "B2",
+      "B4",
+      "B5",
+      "B6",
+      "B7",
+      "B8",
+      "B9",
+      "B10",
+      "B11",
+      "C2",
+      "D2",
+      "E5",
+      "E11",
+      "F2",
+      "F11",
+      "G2",
+      "H11",
+      "J4",
+      "J5",
+      "K2",
+      "K3",
+      "K4",
+      "K5",
+      "K6",
+      "K11"
+    ],
+    "scope": "Necessary circular-copper clearance only; treats empty-net lands as physical copper and equal-net lands as same net. Excludes mask, off-center escape, connection completeness and layer stack."
+  },
+  "nordic_reference_revision": {
+    "pinout": "https://docs.nordicsemi.com/r/bundle/ps_nrf5340/page/chapters/pin.html",
+    "manufacturer_config3": "https://docs.nordicsemi.com/r/bundle/ps_nrf5340/page/chapters/ref_circuitry.html",
+    "layout_archive_url": "https://nsscprodmedia.blob.core.windows.net/prod/software-and-other-downloads/reference-layouts/nrf5340/nrf5340-xxaa-reference-layout-1_3.zip",
+    "layout_archive_sha256": "c6cc5cf123afa0ac2e2609b5793a3deecdfe33ecdbaaf44a4a7d0b78c065f60d",
+    "config3_schematic_pdf_sha256": "efd696d6f662552371c27ef80dd3a8527e8f1c066ddee42a11c210144b5bf6ba",
+    "config3_drill_report_sha256": "cf3bb275d7146e8269f11789137e01e47f639acc8629ab2175c83caac8960376",
+    "config3_copper_files": [
+      "GTL",
+      "G1",
+      "G2",
+      "GBL"
+    ],
+    "config3_reported_blind_drills": {
+      "layer_pair": "Top to Mid Layer 1",
+      "plated_count": 30,
+      "hole_mm": 0.079
+    },
+    "config3_reported_through_drills": {
+      "layer_pair": "Top to Bottom",
+      "plated_count": 58,
+      "hole_mm": 0.249
+    },
+    "oscillator": "https://docs.nordicsemi.com/r/bundle/ps_nrf5340/page/chapters/oscillators/doc/oscillators.html"
+  },
+  "support_components": [
+    {
+      "reference_ref": "C1",
+      "board_ref": "C7",
+      "board_value": "NRF_C1 | 0.7 pF NP0 +/-0.05 pF",
+      "ordered_pin_nets": [
+        "BLE_RF_MID",
+        "GND"
+      ],
+      "native_add_into_bom": "yes"
+    },
+    {
+      "reference_ref": "C2",
+      "board_ref": "C8",
+      "board_value": "NRF_C2 | 1.0 uF X7S +/-10%",
+      "ordered_pin_nets": [
+        "1V8_SYS",
+        "GND"
+      ],
+      "native_add_into_bom": "yes"
+    },
+    {
+      "reference_ref": "C3",
+      "board_ref": "C9",
+      "board_value": "NRF_C3 | 1.0 uF X7S +/-10%",
+      "ordered_pin_nets": [
+        "NRF_DECR_RF",
+        "GND"
+      ],
+      "native_add_into_bom": "yes"
+    },
+    {
+      "reference_ref": "C4",
+      "board_ref": "C10",
+      "board_value": "NRF_C4 | 2.2 nF X7R +/-10%",
+      "ordered_pin_nets": [
+        "NRF_DECR_RF",
+        "GND"
+      ],
+      "native_add_into_bom": "yes"
+    },
+    {
+      "reference_ref": "C5",
+      "board_ref": "C11",
+      "board_value": "NRF_C5 | 1.0 uF X7S +/-10%",
+      "ordered_pin_nets": [
+        "NRF_DECD",
+        "GND"
+      ],
+      "native_add_into_bom": "yes"
+    },
+    {
+      "reference_ref": "C6",
+      "board_ref": "C12",
+      "board_value": "NRF_C6 | 100 nF X7S +/-10%",
+      "ordered_pin_nets": [
+        "NRF_DECN",
+        "GND"
+      ],
+      "native_add_into_bom": "yes"
+    },
+    {
+      "reference_ref": "C7",
+      "board_ref": "C13",
+      "board_value": "NRF_C7 | 1.0 uF X7S +/-10%",
+      "ordered_pin_nets": [
+        "NRF_DECA",
+        "GND"
+      ],
+      "native_add_into_bom": "yes"
+    },
+    {
+      "reference_ref": "C8",
+      "board_ref": "C14",
+      "board_value": "NRF_C8 | 100 nF X7S +/-10%",
+      "ordered_pin_nets": [
+        "1V8_SYS",
+        "GND"
+      ],
+      "native_add_into_bom": "yes"
+    },
+    {
+      "reference_ref": "C9",
+      "board_ref": "C15",
+      "board_value": "NRF_C9 | 100 nF X7S +/-10%",
+      "ordered_pin_nets": [
+        "1V8_SYS",
+        "GND"
+      ],
+      "native_add_into_bom": "yes"
+    },
+    {
+      "reference_ref": "C10",
+      "board_ref": "C16",
+      "board_value": "NRF_C10 | 1.0 uF X7S +/-10%",
+      "ordered_pin_nets": [
+        "1V8_SYS",
+        "GND"
+      ],
+      "native_add_into_bom": "yes"
+    },
+    {
+      "reference_ref": "C11",
+      "board_ref": "C17",
+      "board_value": "NRF_C11 | 100 nF X7S +/-10%",
+      "ordered_pin_nets": [
+        "1V8_SYS",
+        "GND"
+      ],
+      "native_add_into_bom": "yes"
+    },
+    {
+      "reference_ref": "C12",
+      "board_ref": "C18",
+      "board_value": "NRF_C12 | 100 nF X7S +/-10%",
+      "ordered_pin_nets": [
+        "1V8_SYS",
+        "GND"
+      ],
+      "native_add_into_bom": "yes"
+    },
+    {
+      "reference_ref": "C13",
+      "board_ref": "C19",
+      "board_value": "NRF_C13 | 100 nF X7S +/-10%",
+      "ordered_pin_nets": [
+        "1V8_SYS",
+        "GND"
+      ],
+      "native_add_into_bom": "yes"
+    },
+    {
+      "reference_ref": "C14",
+      "board_ref": "C20",
+      "board_value": "NRF_C14 | 1.0 uF X7S +/-10%",
+      "ordered_pin_nets": [
+        "1V8_SYS",
+        "GND"
+      ],
+      "native_add_into_bom": "yes"
+    },
+    {
+      "reference_ref": "C19",
+      "board_ref": "C21",
+      "board_value": "NRF_CT19 | DNP antenna tuning shunt",
+      "ordered_pin_nets": [
+        "BLE_ANT_FEED",
+        "GND"
+      ],
+      "native_add_into_bom": "no"
+    },
+    {
+      "reference_ref": "L1",
+      "board_ref": "L1",
+      "board_value": "NRF_L1 | 2.2 nH +/-5%",
+      "ordered_pin_nets": [
+        "BLE_RF_MID",
+        "BLE_RF_ANT"
+      ],
+      "native_add_into_bom": "yes"
+    },
+    {
+      "reference_ref": "L2",
+      "board_ref": "L2",
+      "board_value": "NRF_L2 | 2.2 nH +/-5%",
+      "ordered_pin_nets": [
+        "BLE_ANT_FEED",
+        "BLE_RF_MID"
+      ],
+      "native_add_into_bom": "yes"
+    },
+    {
+      "reference_ref": "L3",
+      "board_ref": "L3",
+      "board_value": "NRF_L3 | 10 uH >=50 mA +/-20%",
+      "ordered_pin_nets": [
+        "NRF_DECR_RF",
+        "NRF_DCC"
+      ],
+      "native_add_into_bom": "yes"
+    },
+    {
+      "reference_ref": "L4",
+      "board_ref": "L4",
+      "board_value": "NRF_L4 | 10 uH >=50 mA +/-20%",
+      "ordered_pin_nets": [
+        "NRF_DECD",
+        "NRF_DCCD"
+      ],
+      "native_add_into_bom": "yes"
+    },
+    {
+      "reference_ref": "X1",
+      "board_ref": "Y2",
+      "board_value": "Y2_BLE | FA-128 32 MHz 8 pF +/-10 ppm initial +/-10 ppm temper...",
+      "ordered_pin_nets": [
+        "BLE_XC1",
+        "GND",
+        "BLE_XC2",
+        "GND"
+      ],
+      "native_add_into_bom": "yes"
+    },
+    {
+      "reference_ref": "X2",
+      "board_ref": "Y3",
+      "board_value": "Y_LFXO | FC1610AN 32.768kHz 9pF (ECO-08)",
+      "ordered_pin_nets": [
+        "LFXO_XL1",
+        "LFXO_XL2"
+      ],
+      "native_add_into_bom": "yes"
+    },
+    {
+      "reference_ref": "ECO-08",
+      "board_ref": "C22",
+      "board_value": "C_LFXO1 | 12pF 50V C0G 0201 (ECO-08)",
+      "ordered_pin_nets": [
+        "LFXO_XL1",
+        "GND"
+      ],
+      "native_add_into_bom": "yes"
+    },
+    {
+      "reference_ref": "ECO-08",
+      "board_ref": "C23",
+      "board_value": "C_LFXO2 | 12pF 50V C0G 0201 (ECO-08)",
+      "ordered_pin_nets": [
+        "LFXO_XL2",
+        "GND"
+      ],
+      "native_add_into_bom": "yes"
+    },
+    {
+      "reference_ref": "debug interface",
+      "board_ref": "TP6",
+      "board_value": "TP_SWD_R | 5x 0.6 mm pads (SWDIO, SWDCLK, nRESET, VTREF, GND) fo...",
+      "ordered_pin_nets": [
+        "BLE_SWDIO",
+        "BLE_SWDCLK",
+        "BLE_NRESET",
+        "1V8_SYS",
+        "GND"
+      ],
+      "native_add_into_bom": "yes"
+    }
+  ]
+}
