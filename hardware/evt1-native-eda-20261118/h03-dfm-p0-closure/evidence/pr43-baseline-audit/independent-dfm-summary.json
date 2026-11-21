@@ -1,0 +1,664 @@
+{
+  "PCB1": {
+    "board": "PCB1",
+    "tracks": 436,
+    "vias": 140,
+    "pads": 507,
+    "blind_spans": {
+      "BV_L1_L2": [
+        1,
+        15
+      ],
+      "BV_L5_L6": [
+        2,
+        18
+      ]
+    },
+    "total_matrix_rows": 367,
+    "by_classification": {
+      "CHECKER_FP_BLIND_VIA_CROSS_LAYER": 187,
+      "RULE_DIFF_HDI_3_TO_6MIL_TRACK_TRACK": 14,
+      "CHECKER_FP_OPPOSITE_BLIND_VIAS_L1L2_VS_L5L6": 11,
+      "REAL_DFM_VIA_TOUCHES_SMD_PAD": 106,
+      "CHECKER_FP_VIA_IN_PAD_OPPOSITE_BLIND": 40,
+      "INTENTIONAL_VIPPO_BGA_OR_EPAD": 9
+    },
+    "by_pair_and_class": {
+      "Overlapping-Via(SameNet) | CHECKER_FP_OPPOSITE_BLIND_VIAS_L1L2_VS_L5L6": 11,
+      "Track-to-Track | RULE_DIFF_HDI_3_TO_6MIL_TRACK_TRACK": 14,
+      "Track-to-Via | CHECKER_FP_BLIND_VIA_CROSS_LAYER": 101,
+      "Via-in-Pad(SameNet) | CHECKER_FP_VIA_IN_PAD_OPPOSITE_BLIND": 40,
+      "Via-in-Pad(SameNet) | INTENTIONAL_VIPPO_BGA_OR_EPAD": 9,
+      "Via-in-Pad(SameNet) | REAL_DFM_VIA_TOUCHES_SMD_PAD": 106,
+      "Via-to-Pad(DiffNet) | CHECKER_FP_BLIND_VIA_CROSS_LAYER": 86
+    },
+    "sample_true_violations": [],
+    "sample_rule_diff_3_to_6": [
+      {
+        "board": "PCB1",
+        "pair_type": "Track-to-Track",
+        "classification": "RULE_DIFF_HDI_3_TO_6MIL_TRACK_TRACK",
+        "obj1": "track:946fb3b3b6c695b6(L17,I2S_S3_DOUT_3V3,w=3.0)",
+        "obj2": "track:fe0d8e3467adc3b5(L17,BK_SW,w=3.5)",
+        "gap_mil": 5.75,
+        "shares_z_layer": true,
+        "x": 147.0,
+        "y": 696.0
+      },
+      {
+        "board": "PCB1",
+        "pair_type": "Track-to-Track",
+        "classification": "RULE_DIFF_HDI_3_TO_6MIL_TRACK_TRACK",
+        "obj1": "track:810f2e315b840a5f(L17,I2S_S3_DOUT_3V3,w=3.0)",
+        "obj2": "track:b4b8368dc10e89cf(L17,BK_SW,w=3.5)",
+        "gap_mil": 5.75,
+        "shares_z_layer": true,
+        "x": 141.0,
+        "y": 699.0
+      },
+      {
+        "board": "PCB1",
+        "pair_type": "Track-to-Track",
+        "classification": "RULE_DIFF_HDI_3_TO_6MIL_TRACK_TRACK",
+        "obj1": "track:810f2e315b840a5f(L17,I2S_S3_DOUT_3V3,w=3.0)",
+        "obj2": "track:24280f8eed293329(L17,BK_SW,w=3.5)",
+        "gap_mil": 3.46,
+        "shares_z_layer": true,
+        "x": 145.5,
+        "y": 699.0
+      },
+      {
+        "board": "PCB1",
+        "pair_type": "Track-to-Track",
+        "classification": "RULE_DIFF_HDI_3_TO_6MIL_TRACK_TRACK",
+        "obj1": "track:810f2e315b840a5f(L17,I2S_S3_DOUT_3V3,w=3.0)",
+        "obj2": "track:d9eff0bd89d250d7(L17,BK_SW,w=3.5)",
+        "gap_mil": 3.46,
+        "shares_z_layer": true,
+        "x": 145.5,
+        "y": 697.5
+      },
+      {
+        "board": "PCB1",
+        "pair_type": "Track-to-Track",
+        "classification": "RULE_DIFF_HDI_3_TO_6MIL_TRACK_TRACK",
+        "obj1": "track:810f2e315b840a5f(L17,I2S_S3_DOUT_3V3,w=3.0)",
+        "obj2": "track:8db34fd36663a33c(L17,BK_SW,w=3.5)",
+        "gap_mil": 3.46,
+        "shares_z_layer": true,
+        "x": 147.0,
+        "y": 697.5
+      },
+      {
+        "board": "PCB1",
+        "pair_type": "Track-to-Track",
+        "classification": "RULE_DIFF_HDI_3_TO_6MIL_TRACK_TRACK",
+        "obj1": "track:810f2e315b840a5f(L17,I2S_S3_DOUT_3V3,w=3.0)",
+        "obj2": "track:c6a560680454760b(L17,BK_SW,w=3.5)",
+        "gap_mil": 3.46,
+        "shares_z_layer": true,
+        "x": 147.0,
+        "y": 696.0
+      },
+      {
+        "board": "PCB1",
+        "pair_type": "Track-to-Track",
+        "classification": "RULE_DIFF_HDI_3_TO_6MIL_TRACK_TRACK",
+        "obj1": "track:810f2e315b840a5f(L17,I2S_S3_DOUT_3V3,w=3.0)",
+        "obj2": "track:fe0d8e3467adc3b5(L17,BK_SW,w=3.5)",
+        "gap_mil": 5.75,
+        "shares_z_layer": true,
+        "x": 148.5,
+        "y": 696.0
+      },
+      {
+        "board": "PCB1",
+        "pair_type": "Track-to-Track",
+        "classification": "RULE_DIFF_HDI_3_TO_6MIL_TRACK_TRACK",
+        "obj1": "track:2d6ef10d54b02893(L17,I2S_S3_DOUT_3V3,w=3.0)",
+        "obj2": "track:05fc30a3a0d314f0(L17,BK_SW,w=3.5)",
+        "gap_mil": 5.75,
+        "shares_z_layer": true,
+        "x": 141.0,
+        "y": 837.0
+      },
+      {
+        "board": "PCB1",
+        "pair_type": "Track-to-Track",
+        "classification": "RULE_DIFF_HDI_3_TO_6MIL_TRACK_TRACK",
+        "obj1": "track:2d6ef10d54b02893(L17,I2S_S3_DOUT_3V3,w=3.0)",
+        "obj2": "track:b4b8368dc10e89cf(L17,BK_SW,w=3.5)",
+        "gap_mil": 5.75,
+        "shares_z_layer": true,
+        "x": 141.0,
+        "y": 835.5
+      },
+      {
+        "board": "PCB1",
+        "pair_type": "Track-to-Track",
+        "classification": "RULE_DIFF_HDI_3_TO_6MIL_TRACK_TRACK",
+        "obj1": "track:2d6ef10d54b02893(L17,I2S_S3_DOUT_3V3,w=3.0)",
+        "obj2": "track:24280f8eed293329(L17,BK_SW,w=3.5)",
+        "gap_mil": 3.46,
+        "shares_z_layer": true,
+        "x": 145.5,
+        "y": 835.5
+      }
+    ],
+    "sample_blind_fp": [
+      {
+        "board": "PCB1",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:927a73d7fd4ba3fd(L1,USB_DP,w=3.0)",
+        "obj2": "via:4095a0f5ba5e9374(BLIND:BV_L5_L6,GND,4.0/8.0)",
+        "gap_mil": 3.93,
+        "shares_z_layer": false,
+        "x": 237.3,
+        "y": 216.1
+      },
+      {
+        "board": "PCB1",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:5b477c0605d3926d(L1,USB_DP,w=3.0)",
+        "obj2": "via:071be4188ed0157c(BLIND:BV_L5_L6,GND,4.0/8.0)",
+        "gap_mil": 0.0,
+        "shares_z_layer": false,
+        "x": 199.9,
+        "y": 245.7
+      },
+      {
+        "board": "PCB1",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:1747d1a216e09873(L16,VBUS_5V_USB,w=4.0)",
+        "obj2": "via:68fddd072360e552(BLIND:BV_L5_L6,GND,4.0/8.0)",
+        "gap_mil": 0.0,
+        "shares_z_layer": false,
+        "x": 95.8,
+        "y": 813.6
+      },
+      {
+        "board": "PCB1",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:1747d1a216e09873(L16,VBUS_5V_USB,w=4.0)",
+        "obj2": "via:38345eac6ed939ff(BLIND:BV_L5_L6,GND,4.0/8.0)",
+        "gap_mil": 0.0,
+        "shares_z_layer": false,
+        "x": 93.8,
+        "y": 689.5
+      },
+      {
+        "board": "PCB1",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:1747d1a216e09873(L16,VBUS_5V_USB,w=4.0)",
+        "obj2": "via:c763680d1885db4e(BLIND:BV_L5_L6,GND,4.0/8.0)",
+        "gap_mil": 0.0,
+        "shares_z_layer": false,
+        "x": 103.0,
+        "y": 664.6
+      },
+      {
+        "board": "PCB1",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:1747d1a216e09873(L16,VBUS_5V_USB,w=4.0)",
+        "obj2": "via:f71207d6c3f50f24(BLIND:BV_L5_L6,GND,4.0/8.0)",
+        "gap_mil": 3.66,
+        "shares_z_layer": false,
+        "x": 89.34,
+        "y": 654.46
+      },
+      {
+        "board": "PCB1",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:1747d1a216e09873(L16,VBUS_5V_USB,w=4.0)",
+        "obj2": "via:1c85ac0de6be8b65(BLIND:BV_L5_L6,GND,4.0/8.0)",
+        "gap_mil": 0.0,
+        "shares_z_layer": false,
+        "x": 102.73,
+        "y": 635.17
+      },
+      {
+        "board": "PCB1",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:dcb0386749bbe466(L16,VBUS_5V,w=4.0)",
+        "obj2": "via:799a7567066ddc2d(BLIND:BV_L1_L2,GND,4.0/8.0)",
+        "gap_mil": 0.0,
+        "shares_z_layer": false,
+        "x": 148.76,
+        "y": 1265.26
+      },
+      {
+        "board": "PCB1",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:dcb0386749bbe466(L16,VBUS_5V,w=4.0)",
+        "obj2": "via:81661b5e5549e178(BLIND:BV_L5_L6,GND,4.0/8.0)",
+        "gap_mil": 0.0,
+        "shares_z_layer": false,
+        "x": 141.5,
+        "y": 1142.7
+      },
+      {
+        "board": "PCB1",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:dcb0386749bbe466(L16,VBUS_5V,w=4.0)",
+        "obj2": "via:2642428e1a47338a(BLIND:BV_L1_L2,GND,4.0/8.0)",
+        "gap_mil": 0.0,
+        "shares_z_layer": false,
+        "x": 141.5,
+        "y": 1162.4
+      }
+    ]
+  },
+  "PCB2": {
+    "board": "PCB2",
+    "tracks": 320,
+    "vias": 77,
+    "pads": 328,
+    "blind_spans": {
+      "BV_L1_L2": [
+        1,
+        15
+      ],
+      "BV_L5_L6": [
+        2,
+        18
+      ]
+    },
+    "total_matrix_rows": 216,
+    "by_classification": {
+      "CHECKER_FP_BLIND_VIA_CROSS_LAYER": 108,
+      "RULE_DIFF_HDI_3_TO_6MIL_TRACK_TRACK": 27,
+      "CHECKER_FP_OPPOSITE_BLIND_VIAS_L1L2_VS_L5L6": 1,
+      "REAL_DFM_VIA_TOUCHES_SMD_PAD": 66,
+      "CHECKER_FP_VIA_IN_PAD_OPPOSITE_BLIND": 12,
+      "INTENTIONAL_VIPPO_BGA_OR_EPAD": 2
+    },
+    "by_pair_and_class": {
+      "Overlapping-Via(SameNet) | CHECKER_FP_OPPOSITE_BLIND_VIAS_L1L2_VS_L5L6": 1,
+      "Track-to-Track | RULE_DIFF_HDI_3_TO_6MIL_TRACK_TRACK": 27,
+      "Track-to-Via | CHECKER_FP_BLIND_VIA_CROSS_LAYER": 48,
+      "Via-in-Pad(SameNet) | CHECKER_FP_VIA_IN_PAD_OPPOSITE_BLIND": 12,
+      "Via-in-Pad(SameNet) | INTENTIONAL_VIPPO_BGA_OR_EPAD": 2,
+      "Via-in-Pad(SameNet) | REAL_DFM_VIA_TOUCHES_SMD_PAD": 66,
+      "Via-to-Pad(DiffNet) | CHECKER_FP_BLIND_VIA_CROSS_LAYER": 60
+    },
+    "sample_true_violations": [],
+    "sample_rule_diff_3_to_6": [
+      {
+        "board": "PCB2",
+        "pair_type": "Track-to-Track",
+        "classification": "RULE_DIFF_HDI_3_TO_6MIL_TRACK_TRACK",
+        "obj1": "track:5595f5aa42c1b552(L16,FPGA_CRESET_B,w=3.0)",
+        "obj2": "track:cedbd4626229548b(L16,AVDD_PG_NODE,w=3.0)",
+        "gap_mil": 5.0,
+        "shares_z_layer": true,
+        "x": 45.0,
+        "y": 118.0
+      },
+      {
+        "board": "PCB2",
+        "pair_type": "Track-to-Track",
+        "classification": "RULE_DIFF_HDI_3_TO_6MIL_TRACK_TRACK",
+        "obj1": "track:5595f5aa42c1b552(L16,FPGA_CRESET_B,w=3.0)",
+        "obj2": "track:3372c5c955ea1b27(L16,AVDD_PG_NODE,w=3.0)",
+        "gap_mil": 5.0,
+        "shares_z_layer": true,
+        "x": 45.0,
+        "y": 166.0
+      },
+      {
+        "board": "PCB2",
+        "pair_type": "Track-to-Track",
+        "classification": "RULE_DIFF_HDI_3_TO_6MIL_TRACK_TRACK",
+        "obj1": "track:5595f5aa42c1b552(L16,FPGA_CRESET_B,w=3.0)",
+        "obj2": "track:40987d036bb7595f(L16,AVDD_PG_NODE,w=3.0)",
+        "gap_mil": 3.32,
+        "shares_z_layer": true,
+        "x": 43.0,
+        "y": 166.0
+      },
+      {
+        "board": "PCB2",
+        "pair_type": "Track-to-Track",
+        "classification": "RULE_DIFF_HDI_3_TO_6MIL_TRACK_TRACK",
+        "obj1": "track:5595f5aa42c1b552(L16,FPGA_CRESET_B,w=3.0)",
+        "obj2": "track:9cf26febc91341f7(L16,AVDD_PG_NODE,w=3.0)",
+        "gap_mil": 3.32,
+        "shares_z_layer": true,
+        "x": 43.0,
+        "y": 167.0
+      },
+      {
+        "board": "PCB2",
+        "pair_type": "Track-to-Track",
+        "classification": "RULE_DIFF_HDI_3_TO_6MIL_TRACK_TRACK",
+        "obj1": "track:5595f5aa42c1b552(L16,FPGA_CRESET_B,w=3.0)",
+        "obj2": "track:3393ae908c8fbe64(L16,AVDD_PG_NODE,w=3.0)",
+        "gap_mil": 3.32,
+        "shares_z_layer": true,
+        "x": 41.0,
+        "y": 167.0
+      },
+      {
+        "board": "PCB2",
+        "pair_type": "Track-to-Track",
+        "classification": "RULE_DIFF_HDI_3_TO_6MIL_TRACK_TRACK",
+        "obj1": "track:5595f5aa42c1b552(L16,FPGA_CRESET_B,w=3.0)",
+        "obj2": "track:e1455146d415237d(L16,AVDD_PG_NODE,w=3.0)",
+        "gap_mil": 3.32,
+        "shares_z_layer": true,
+        "x": 41.0,
+        "y": 169.0
+      },
+      {
+        "board": "PCB2",
+        "pair_type": "Track-to-Track",
+        "classification": "RULE_DIFF_HDI_3_TO_6MIL_TRACK_TRACK",
+        "obj1": "track:5595f5aa42c1b552(L16,FPGA_CRESET_B,w=3.0)",
+        "obj2": "track:809450976b2ac014(L16,AVDD_PG_NODE,w=3.0)",
+        "gap_mil": 5.0,
+        "shares_z_layer": true,
+        "x": 40.0,
+        "y": 169.0
+      },
+      {
+        "board": "PCB2",
+        "pair_type": "Track-to-Track",
+        "classification": "RULE_DIFF_HDI_3_TO_6MIL_TRACK_TRACK",
+        "obj1": "track:dea930f54c222031(L16,FPGA_CRESET_B,w=3.0)",
+        "obj2": "track:cedbd4626229548b(L16,AVDD_PG_NODE,w=3.0)",
+        "gap_mil": 5.25,
+        "shares_z_layer": true,
+        "x": 31.0,
+        "y": 118.0
+      },
+      {
+        "board": "PCB2",
+        "pair_type": "Track-to-Track",
+        "classification": "RULE_DIFF_HDI_3_TO_6MIL_TRACK_TRACK",
+        "obj1": "track:dea930f54c222031(L16,FPGA_CRESET_B,w=3.0)",
+        "obj2": "track:3372c5c955ea1b27(L16,AVDD_PG_NODE,w=3.0)",
+        "gap_mil": 5.0,
+        "shares_z_layer": true,
+        "x": 31.0,
+        "y": 166.0
+      },
+      {
+        "board": "PCB2",
+        "pair_type": "Track-to-Track",
+        "classification": "RULE_DIFF_HDI_3_TO_6MIL_TRACK_TRACK",
+        "obj1": "track:dea930f54c222031(L16,FPGA_CRESET_B,w=3.0)",
+        "obj2": "track:40987d036bb7595f(L16,AVDD_PG_NODE,w=3.0)",
+        "gap_mil": 3.32,
+        "shares_z_layer": true,
+        "x": 29.0,
+        "y": 166.0
+      }
+    ],
+    "sample_blind_fp": [
+      {
+        "board": "PCB2",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:b51a7a55d3a3f509(L2,FPGA_CRESET_B,w=3.0)",
+        "obj2": "via:b79dba48500b854c(BLIND:BV_L1_L2,GND,4.0/8.0)",
+        "gap_mil": 0.0,
+        "shares_z_layer": false,
+        "x": 60.93,
+        "y": 142.13
+      },
+      {
+        "board": "PCB2",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:dea930f54c222031(L16,FPGA_CRESET_B,w=3.0)",
+        "obj2": "via:32f5843ce7f2845d(BLIND:BV_L1_L2,GND,4.0/8.0)",
+        "gap_mil": 0.0,
+        "shares_z_layer": false,
+        "x": 32.6,
+        "y": 371.5
+      },
+      {
+        "board": "PCB2",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:dea930f54c222031(L16,FPGA_CRESET_B,w=3.0)",
+        "obj2": "via:6f20feab4f2c2b3c(BLIND:BV_L5_L6,GND,4.0/8.0)",
+        "gap_mil": 0.0,
+        "shares_z_layer": false,
+        "x": 32.6,
+        "y": 381.3
+      },
+      {
+        "board": "PCB2",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:dea930f54c222031(L16,FPGA_CRESET_B,w=3.0)",
+        "obj2": "via:0f60ea2894a6ca02(BLIND:BV_L1_L2,GND,4.0/8.0)",
+        "gap_mil": 0.0,
+        "shares_z_layer": false,
+        "x": 31.53,
+        "y": 444.4
+      },
+      {
+        "board": "PCB2",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:dea930f54c222031(L16,FPGA_CRESET_B,w=3.0)",
+        "obj2": "via:995945b97d52b162(BLIND:BV_L1_L2,GND,4.0/8.0)",
+        "gap_mil": 0.0,
+        "shares_z_layer": false,
+        "x": 32.2,
+        "y": 290.2
+      },
+      {
+        "board": "PCB2",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:dea930f54c222031(L16,FPGA_CRESET_B,w=3.0)",
+        "obj2": "via:0c76d06d918b2dce(BLIND:BV_L5_L6,GND,4.0/8.0)",
+        "gap_mil": 0.0,
+        "shares_z_layer": false,
+        "x": 26.43,
+        "y": 315.7
+      },
+      {
+        "board": "PCB2",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:6b37cfe8050ed27a(L2,FPGA_CDONE_VSYNC_N,w=3.0)",
+        "obj2": "via:03e807b380a00bae(BLIND:BV_L1_L2,GND,4.0/8.0)",
+        "gap_mil": 0.0,
+        "shares_z_layer": false,
+        "x": 56.07,
+        "y": 547.8
+      },
+      {
+        "board": "PCB2",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:d2893b024d4a65ea(L2,FPGA_CDONE_VSYNC_N,w=3.0)",
+        "obj2": "via:03e807b380a00bae(BLIND:BV_L1_L2,GND,4.0/8.0)",
+        "gap_mil": 0.0,
+        "shares_z_layer": false,
+        "x": 56.07,
+        "y": 547.8
+      },
+      {
+        "board": "PCB2",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:d834cfd88c2a7f72(L2,FPGA_CDONE_VSYNC_N,w=3.0)",
+        "obj2": "via:03e807b380a00bae(BLIND:BV_L1_L2,GND,4.0/8.0)",
+        "gap_mil": 0.0,
+        "shares_z_layer": false,
+        "x": 56.07,
+        "y": 547.8
+      },
+      {
+        "board": "PCB2",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:31dff01042d96b1a(L2,FPGA_CDONE_VSYNC_N,w=3.0)",
+        "obj2": "via:03e807b380a00bae(BLIND:BV_L1_L2,GND,4.0/8.0)",
+        "gap_mil": 0.0,
+        "shares_z_layer": false,
+        "x": 56.07,
+        "y": 547.8
+      }
+    ]
+  },
+  "PCB3": {
+    "board": "PCB3",
+    "tracks": 215,
+    "vias": 65,
+    "pads": 239,
+    "blind_spans": {
+      "BV_L1_L2": [
+        1,
+        15
+      ],
+      "BV_L5_L6": [
+        2,
+        18
+      ]
+    },
+    "total_matrix_rows": 157,
+    "by_classification": {
+      "CHECKER_FP_BLIND_VIA_CROSS_LAYER": 85,
+      "CHECKER_FP_OPPOSITE_BLIND_VIAS_L1L2_VS_L5L6": 2,
+      "REAL_DFM_VIA_TOUCHES_SMD_PAD": 60,
+      "CHECKER_FP_VIA_IN_PAD_OPPOSITE_BLIND": 10
+    },
+    "by_pair_and_class": {
+      "Overlapping-Via(SameNet) | CHECKER_FP_OPPOSITE_BLIND_VIAS_L1L2_VS_L5L6": 2,
+      "Track-to-Via | CHECKER_FP_BLIND_VIA_CROSS_LAYER": 38,
+      "Via-in-Pad(SameNet) | CHECKER_FP_VIA_IN_PAD_OPPOSITE_BLIND": 10,
+      "Via-in-Pad(SameNet) | REAL_DFM_VIA_TOUCHES_SMD_PAD": 60,
+      "Via-to-Pad(DiffNet) | CHECKER_FP_BLIND_VIA_CROSS_LAYER": 47
+    },
+    "sample_true_violations": [],
+    "sample_rule_diff_3_to_6": [],
+    "sample_blind_fp": [
+      {
+        "board": "PCB3",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:8ac467c95daec896(L16,LFXO_XL1,w=3.0)",
+        "obj2": "via:852e1a2a1a1b0fb6(BLIND:BV_L5_L6,GND,4.0/8.0)",
+        "gap_mil": 0.0,
+        "shares_z_layer": false,
+        "x": 105.46,
+        "y": 698.36
+      },
+      {
+        "board": "PCB3",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:8ac467c95daec896(L16,LFXO_XL1,w=3.0)",
+        "obj2": "via:5abba615578cde3a(BLIND:BV_L5_L6,GND,4.0/8.0)",
+        "gap_mil": 2.47,
+        "shares_z_layer": false,
+        "x": 145.34,
+        "y": 687.04
+      },
+      {
+        "board": "PCB3",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:8890c6520188330d(L16,LFXO_XL1,w=3.0)",
+        "obj2": "via:480cb6097c556b03(BLIND:BV_L1_L2,GND,4.0/8.0)",
+        "gap_mil": 2.54,
+        "shares_z_layer": false,
+        "x": 136.96,
+        "y": 655.06
+      },
+      {
+        "board": "PCB3",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:8890c6520188330d(L16,LFXO_XL1,w=3.0)",
+        "obj2": "via:eeaf114694a7e1f7(BLIND:BV_L1_L2,GND,4.0/8.0)",
+        "gap_mil": 2.54,
+        "shares_z_layer": false,
+        "x": 136.96,
+        "y": 678.66
+      },
+      {
+        "board": "PCB3",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:8890c6520188330d(L16,LFXO_XL1,w=3.0)",
+        "obj2": "via:5abba615578cde3a(BLIND:BV_L5_L6,GND,4.0/8.0)",
+        "gap_mil": 0.0,
+        "shares_z_layer": false,
+        "x": 145.34,
+        "y": 687.04
+      },
+      {
+        "board": "PCB3",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:8890c6520188330d(L16,LFXO_XL1,w=3.0)",
+        "obj2": "via:b28e747508dc9f46(BLIND:BV_L5_L6,GND,4.0/8.0)",
+        "gap_mil": 0.0,
+        "shares_z_layer": false,
+        "x": 143.2,
+        "y": 598.2
+      },
+      {
+        "board": "PCB3",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:019cd7c5d930402f(L16,BLE_ANT_FEED,w=3.5)",
+        "obj2": "via:8d85eb4c3a36b102(BLIND:BV_L5_L6,GND,4.0/8.0)",
+        "gap_mil": 0.0,
+        "shares_z_layer": false,
+        "x": 159.0,
+        "y": 669.1
+      },
+      {
+        "board": "PCB3",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:019cd7c5d930402f(L16,BLE_ANT_FEED,w=3.5)",
+        "obj2": "via:d894c293685fafab(BLIND:BV_L5_L6,GND,4.0/8.0)",
+        "gap_mil": 5.75,
+        "shares_z_layer": false,
+        "x": 166.5,
+        "y": 464.2
+      },
+      {
+        "board": "PCB3",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:019cd7c5d930402f(L16,BLE_ANT_FEED,w=3.5)",
+        "obj2": "via:882c6e7f38c36fa0(BLIND:BV_L5_L6,GND,4.0/8.0)",
+        "gap_mil": 0.0,
+        "shares_z_layer": false,
+        "x": 156.66,
+        "y": 651.16
+      },
+      {
+        "board": "PCB3",
+        "pair_type": "Track-to-Via",
+        "classification": "CHECKER_FP_BLIND_VIA_CROSS_LAYER",
+        "obj1": "track:019cd7c5d930402f(L16,BLE_ANT_FEED,w=3.5)",
+        "obj2": "via:32c72e33fca859f8(BLIND:BV_L5_L6,GND,4.0/8.0)",
+        "gap_mil": 0.0,
+        "shares_z_layer": false,
+        "x": 159.0,
+        "y": 621.9
+      }
+    ]
+  }
+}
