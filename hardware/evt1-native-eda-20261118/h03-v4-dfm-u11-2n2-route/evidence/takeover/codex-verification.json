@@ -1,0 +1,188 @@
+{
+  "status": "VERIFIED",
+  "manufacturing": "BLOCKED",
+  "archive_sha256": "5f0d842d25b8bbf43d0dfdbb30034a7c9e6fc45d254c27d03a44d0439f99bf1a",
+  "independent_archive_sha256": "3e0c13d7741ea03ca42b0c46149884038b0c99816d5b087a91d5c799b52f0c21",
+  "board_drc": {
+    "PCB1": {
+      "strict_verdict": "FAIL",
+      "before": {
+        "Connection Error": 358,
+        "Netlist Error": 1
+      },
+      "after": {
+        "Connection Error": 358,
+        "Netlist Error": 1
+      },
+      "independent_reimport_exact": true,
+      "dfm_summary": {
+        "danglingEnds": 0,
+        "acuteAngles": 29,
+        "nonOrthogonal": 155,
+        "trackOverPad": 0,
+        "clearance": 41,
+        "silkscreenFlipped": 118,
+        "overlappingVias": 0,
+        "singleLayerVias": 0,
+        "widthMismatches": 2,
+        "duplicateSegments": 0,
+        "parallelCoupling": 0,
+        "antennaKeepout": 1,
+        "netlessPours": 0,
+        "viaCrossesPlane": 2,
+        "floatingIslands": 0,
+        "powerNotPoured": 9,
+        "netlessViaInPad": 0,
+        "widthUnderSpec": 3,
+        "silkOverPad": 117,
+        "silkOffBoard": 15,
+        "decapTooFar": 3,
+        "viaInPad": 27,
+        "copperNearEdge": 0,
+        "fiducialMissing": 1,
+        "zoneViolation": 0,
+        "internalOnEdge": 0,
+        "connectorPlugClearance": 0,
+        "connectorMatingBlocked": 0,
+        "connectorOpeningInward": 0,
+        "errors": 41,
+        "warnings": 515,
+        "total": 523
+      }
+    },
+    "PCB2": {
+      "strict_verdict": "FAIL",
+      "before": {
+        "Connection Error": 238,
+        "Netlist Error": 1
+      },
+      "after": {
+        "Connection Error": 237,
+        "Netlist Error": 1
+      },
+      "independent_reimport_exact": true,
+      "dfm_summary": {
+        "danglingEnds": 0,
+        "acuteAngles": 21,
+        "nonOrthogonal": 97,
+        "trackOverPad": 0,
+        "clearance": 41,
+        "silkscreenFlipped": 86,
+        "overlappingVias": 0,
+        "singleLayerVias": 0,
+        "widthMismatches": 0,
+        "duplicateSegments": 0,
+        "parallelCoupling": 0,
+        "antennaKeepout": 0,
+        "netlessPours": 0,
+        "viaCrossesPlane": 2,
+        "floatingIslands": 0,
+        "powerNotPoured": 15,
+        "netlessViaInPad": 0,
+        "widthUnderSpec": 0,
+        "silkOverPad": 86,
+        "silkOffBoard": 25,
+        "decapTooFar": 10,
+        "viaInPad": 7,
+        "copperNearEdge": 0,
+        "fiducialMissing": 1,
+        "zoneViolation": 0,
+        "internalOnEdge": 0,
+        "connectorPlugClearance": 0,
+        "connectorMatingBlocked": 0,
+        "connectorOpeningInward": 0,
+        "errors": 41,
+        "warnings": 387,
+        "total": 391
+      }
+    },
+    "PCB3": {
+      "strict_verdict": "FAIL",
+      "before": {
+        "Connection Error": 134,
+        "Netlist Error": 1
+      },
+      "after": {
+        "Connection Error": 134,
+        "Netlist Error": 1
+      },
+      "independent_reimport_exact": true,
+      "dfm_summary": {
+        "danglingEnds": 0,
+        "acuteAngles": 8,
+        "nonOrthogonal": 84,
+        "trackOverPad": 0,
+        "clearance": 41,
+        "silkscreenFlipped": 53,
+        "overlappingVias": 0,
+        "singleLayerVias": 0,
+        "widthMismatches": 0,
+        "duplicateSegments": 0,
+        "parallelCoupling": 0,
+        "antennaKeepout": 1,
+        "netlessPours": 0,
+        "viaCrossesPlane": 2,
+        "floatingIslands": 0,
+        "powerNotPoured": 1,
+        "netlessViaInPad": 0,
+        "widthUnderSpec": 1,
+        "silkOverPad": 53,
+        "silkOffBoard": 7,
+        "decapTooFar": 0,
+        "viaInPad": 10,
+        "copperNearEdge": 0,
+        "fiducialMissing": 1,
+        "zoneViolation": 0,
+        "internalOnEdge": 0,
+        "connectorPlugClearance": 0,
+        "connectorMatingBlocked": 0,
+        "connectorOpeningInward": 0,
+        "errors": 41,
+        "warnings": 258,
+        "total": 262
+      }
+    }
+  },
+  "erc": {
+    "M-MAIN-L": {
+      "fatal": 11,
+      "error": 0,
+      "warn": 0,
+      "info": 0,
+      "unknown": 0,
+      "total": 11
+    },
+    "M-OPT-BRIDGE": {
+      "fatal": 6,
+      "error": 0,
+      "warn": 0,
+      "info": 0,
+      "unknown": 0,
+      "total": 6
+    },
+    "M-AUD-R": {
+      "fatal": 7,
+      "error": 0,
+      "warn": 0,
+      "info": 0,
+      "unknown": 0,
+      "total": 7
+    }
+  },
+  "verified_named_protel2_groups": {
+    "M-MAIN-L": 112,
+    "M-OPT-BRIDGE": 58,
+    "M-AUD-R": 37
+  },
+  "exact_archive_change": {
+    "new_pcb2_track": "f6f086804273d161",
+    "removed_pcb3_redundant_gnd": [
+      "248452904b1b15c9",
+      "2d02a47206d7014f",
+      "745f87472f6e79c1",
+      "c5a4ee5b7638fa61",
+      "d1d29279e63eabbc",
+      "e46b6c305882ff2f"
+    ]
+  }
+}
