@@ -32,6 +32,8 @@ jobs:
         with:
           fetch-depth: 0
       - uses: YosysHQ/setup-oss-cad-suite@v3
+        with:
+          github-token: ${{ github.token }}
       - name: Software wire encoding against inherited RTL
         run: python3 "$EVT1_PACKAGE/host/check_bridge.py"
       - name: Reproduce malformed host control and test recovery
