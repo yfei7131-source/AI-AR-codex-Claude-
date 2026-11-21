@@ -12,6 +12,7 @@ on:
       - hardware/evt1-h03-hdi-dfm-route-closure-20261121
       - hardware/evt1-h03-dfm-p0-closure-20261121
       - hardware/evt1-h03-hdi-laser-wlcsp-route-20261121
+      - hardware/evt1-h03-u11-wlcsp-v3-dfm-route-20261121
   workflow_dispatch:
 
 permissions:
@@ -19,7 +20,7 @@ permissions:
 
 env:
   EVT1_PACKAGE: hardware/evt1-native-eda-20261118
-  EVT1_H03_CHECKS: ${{ github.ref_name == 'hardware/evt1-h03-h05-20261119' || github.ref_name == 'hardware/evt1-h02-h03-native-20261120' || github.ref_name == 'hardware/evt1-h02-reve-h03-bridge-20261120' || github.ref_name == 'hardware/evt1-h02-fp-h03-pcb-20261120' || github.ref_name == 'hardware/evt1-h03-bridge-route-3board-20261120' || github.ref_name == 'hardware/evt1-h03-3board-routing-hdi-20261121' || github.ref_name == 'hardware/evt1-h03-hdi-dfm-route-closure-20261121' || github.ref_name == 'hardware/evt1-h03-dfm-p0-closure-20261121' || github.ref_name == 'hardware/evt1-h03-hdi-laser-wlcsp-route-20261121' }}
+  EVT1_H03_CHECKS: ${{ github.ref_name == 'hardware/evt1-h03-h05-20261119' || github.ref_name == 'hardware/evt1-h02-h03-native-20261120' || github.ref_name == 'hardware/evt1-h02-reve-h03-bridge-20261120' || github.ref_name == 'hardware/evt1-h02-fp-h03-pcb-20261120' || github.ref_name == 'hardware/evt1-h03-bridge-route-3board-20261120' || github.ref_name == 'hardware/evt1-h03-3board-routing-hdi-20261121' || github.ref_name == 'hardware/evt1-h03-hdi-dfm-route-closure-20261121' || github.ref_name == 'hardware/evt1-h03-dfm-p0-closure-20261121' || github.ref_name == 'hardware/evt1-h03-hdi-laser-wlcsp-route-20261121' || github.ref_name == 'hardware/evt1-h03-u11-wlcsp-v3-dfm-route-20261121' }}
 
 jobs:
   fpga:
@@ -167,6 +168,28 @@ jobs:
           round="$EVT1_PACKAGE/h03-hdi-laser-wlcsp-route"
           python3 -m unittest discover -s "$round" -p "test_*.py" -v
           python3 -B "$round/verify_h03_hdi_laser_wlcsp_route.py" --root "$round" --out "$RUNNER_TEMP/h03-hdi-laser-wlcsp-route.json"
+          python3 -m unittest discover -s "$EVT1_PACKAGE/h03-dfm-p0-closure" -p "test_*.py" -v
+          python3 -B "$EVT1_PACKAGE/h03-dfm-p0-closure/verify_h03_dfm_p0_closure.py" \
+            --root "$EVT1_PACKAGE/h03-dfm-p0-closure" \
+            --out "$RUNNER_TEMP/h03-dfm-p0-closure.json"
+          python3 -B "$EVT1_PACKAGE/h03-hdi-dfm-route-closure/verify_h03_hdi_dfm_closure.py" \
+            --root "$EVT1_PACKAGE/h03-hdi-dfm-route-closure" \
+            --out "$RUNNER_TEMP/h03-hdi-dfm-closure.json"
+          python3 -B "$EVT1_PACKAGE/h02-fp-h03-pcb/verify_h02_fp_h03_pcb.py" \
+            --root "$EVT1_PACKAGE/h02-fp-h03-pcb" \
+            --out "$RUNNER_TEMP/h02-fp-h03-pcb.json"
+          python3 -B hardware/evt1-rev-d1-1-20261117/05_Verification_Scripts/test_rev_d1_1_avdd_safety.py
+          python3 -m unittest discover -s "$EVT1_PACKAGE/h02-native" -p "test_*.py" -v
+      - name: Verify H03 U11 WLCSP technical route, V3 extended blind-via DFM and priority-backbone routing
+        if: github.ref_name == 'hardware/evt1-h03-u11-wlcsp-v3-dfm-route-20261121'
+        run: |
+          round="$EVT1_PACKAGE/h03-u11-wlcsp-v3-dfm-route"
+          python3 -m unittest discover -s "$round" -p "test_*.py" -v
+          python3 -B "$round/verify_h03_u11_wlcsp_v3_dfm_route.py" --root "$round" --out "$RUNNER_TEMP/h03-u11-wlcsp-v3-dfm-route.json"
+          python3 -m unittest discover -s "$EVT1_PACKAGE/h03-hdi-laser-wlcsp-route" -p "test_*.py" -v
+          python3 -B "$EVT1_PACKAGE/h03-hdi-laser-wlcsp-route/verify_h03_hdi_laser_wlcsp_route.py" \
+            --root "$EVT1_PACKAGE/h03-hdi-laser-wlcsp-route" \
+            --out "$RUNNER_TEMP/h03-hdi-laser-wlcsp-route.json"
           python3 -m unittest discover -s "$EVT1_PACKAGE/h03-dfm-p0-closure" -p "test_*.py" -v
           python3 -B "$EVT1_PACKAGE/h03-dfm-p0-closure/verify_h03_dfm_p0_closure.py" \
             --root "$EVT1_PACKAGE/h03-dfm-p0-closure" \
