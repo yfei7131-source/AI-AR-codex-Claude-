@@ -1,0 +1,225 @@
+{
+  "scope": "R5 nominal copper search. No approved stackup, native design change or fabrication.",
+  "main": {
+    "top": [
+      177.5,
+      328
+    ],
+    "core": [
+      180,
+      318
+    ],
+    "ltop": {
+      "path": [
+        [
+          157.48031,
+          327.75588
+        ],
+        [
+          177.5,
+          328
+        ]
+      ],
+      "width_mil": 4,
+      "length_mil": 20.021178343706445,
+      "foreign_gap_mil": 7.7711196231277055,
+      "foreign_id": "U11.L5",
+      "foreign_guard_mil": 6.05
+    },
+    "l3": {
+      "path": [
+        [
+          177.5,
+          328
+        ],
+        [
+          180,
+          318
+        ]
+      ],
+      "width_mil": 4,
+      "length_mil": 10.307764064044152,
+      "foreign_gap_mil": 15.752364325550301,
+      "foreign_id": "5687da4248f23be3",
+      "foreign_guard_mil": 12
+    }
+  },
+  "destinations": [
+    {
+      "name": "J1.P12",
+      "via": [
+        101,
+        301
+      ],
+      "net": "I2S_LRCLK_1V8",
+      "bottom_route": {
+        "path": [
+          [
+            71.5,
+            288.4
+          ],
+          [
+            88.39999999999998,
+            288.4
+          ],
+          [
+            101,
+            301
+          ]
+        ],
+        "width_mil": 4,
+        "length_mil": 34.71909088590101,
+        "foreign_gap_mil": 6.892677020388496,
+        "foreign_id": "bbe5904a9ffbcb80",
+        "foreign_guard_mil": 6.05
+      },
+      "l4_route": {
+        "path": [
+          [
+            180,
+            318
+          ],
+          [
+            101,
+            301
+          ]
+        ],
+        "width_mil": 4,
+        "length_mil": 80.8084154033477,
+        "foreign_gap_mil": 100,
+        "foreign_id": "",
+        "foreign_guard_mil": 6.05
+      },
+      "length": 115.5275062892487,
+      "plane_guard_to_ground_copper": 8.475583526029265,
+      "candidates": 175
+    },
+    {
+      "name": "U10.C3",
+      "via": [
+        136,
+        376
+      ],
+      "net": "I2S_LRCLK_1V8",
+      "bottom_route": {
+        "path": [
+          [
+            150.8,
+            367.3
+          ],
+          [
+            136,
+            376
+          ]
+        ],
+        "width_mil": 4,
+        "length_mil": 17.16770223413722,
+        "foreign_gap_mil": 6.949689005946659,
+        "foreign_id": "U10.B3",
+        "foreign_guard_mil": 6.05
+      },
+      "l4_route": {
+        "path": [
+          [
+            180,
+            318
+          ],
+          [
+            136,
+            376
+          ]
+        ],
+        "width_mil": 4,
+        "length_mil": 72.80109889280519,
+        "foreign_gap_mil": 100,
+        "foreign_id": "",
+        "foreign_guard_mil": 6.05
+      },
+      "length": 89.96880112694241,
+      "plane_guard_to_ground_copper": 8.475583526029265,
+      "candidates": 87
+    }
+  ],
+  "unresolved": {
+    "R4.1": "No mask-clear route in the bounded search"
+  },
+  "plane_after": {
+    "15": {
+      "new_void_area_mil2": 864.0665864421753,
+      "edge_opening": true,
+      "components_before": 1,
+      "components_after": 1,
+      "closest_ground_copper_to_cutout_mil": 7.179989702785633,
+      "ground_contact_overlap": []
+    },
+    "18": {
+      "new_void_area_mil2": 1436.4308393840329,
+      "edge_opening": false,
+      "components_before": 1,
+      "components_after": 1,
+      "closest_ground_copper_to_cutout_mil": 8.475583526029265,
+      "ground_contact_overlap": []
+    }
+  },
+  "width": 4,
+  "laser_um": 100,
+  "buried_mil": [
+    6,
+    12
+  ],
+  "rules": {
+    "ground_margin": 6,
+    "clearance_plane": 10.15,
+    "trace_edge": 11.85
+  },
+  "ground_transfer_near_buried_core": [
+    [
+      422.2464,
+      "3b5905bd63bd80c2",
+      [
+        64,
+        724
+      ]
+    ],
+    [
+      627.7332,
+      "c0a4847d00805f9a",
+      [
+        20,
+        925
+      ]
+    ],
+    [
+      823.6893,
+      "b04d5044c6ff9db9",
+      [
+        20,
+        1126
+      ]
+    ],
+    [
+      922.4299,
+      "MK3.5",
+      [
+        115.9,
+        1238.2
+      ]
+    ],
+    [
+      927.0655,
+      "MK3.5",
+      [
+        72.4,
+        1238.8
+      ]
+    ],
+    [
+      965.7898,
+      "MK3.5",
+      [
+        116.5,
+        1281.7
+      ]
+    ]
+  ]
+}

@@ -1,0 +1,407 @@
+{
+  "scope": "Offline local route candidate screen. Native DRC required after typed apply.",
+  "archive_sha256": "84b99c1c60fd03aca74e19f025c3a37b421342d79de7c068009543e6b2e9b070",
+  "dump_sha256": "02a71c1f68c0cae83f8efa6f005e57986a47cabea584398b0cbded9ceb5cd13a",
+  "drc_sha256": "66a56624da932532f7c872972a333af87ba437ce921ca98b6787022f1fc17ca2",
+  "airwire_matched_isolated_anchors": 155,
+  "pairs_screened": 1042,
+  "routes": [
+    {
+      "net": "GND",
+      "layer": 1,
+      "from": "U16.13",
+      "to": "copper:a81a25f7500053ca",
+      "pad_ids": [
+        "85b8a96060e76675e40",
+        "a81a25f7500053ca"
+      ],
+      "isolated_drc_anchors": [
+        "85b8a96060e76675e40"
+      ],
+      "endpoint_kind": "GND track",
+      "width_mil": 4.0,
+      "length_mil": 15.7091,
+      "segments": [
+        [
+          [
+            178.9,
+            739.1
+          ],
+          [
+            163.1909,
+            739.0943
+          ]
+        ]
+      ],
+      "edge_copper_gap_mil": 47.4465,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 25.5409,
+          "id": "85b8a96060e76675e43"
+        },
+        "track": {
+          "gap_mil": 27.9631,
+          "id": "770cac61274e48bb"
+        }
+      },
+      "path_assertion_to": "U16.14",
+      "minimum_foreign_line_gap_after_actual_widths_mil": 27.96307
+    },
+    {
+      "net": "GND",
+      "layer": 1,
+      "from": "U16.11",
+      "to": "copper:f97c84934fb5a60c",
+      "pad_ids": [
+        "85b8a96060e76675e38",
+        "f97c84934fb5a60c"
+      ],
+      "isolated_drc_anchors": [
+        "85b8a96060e76675e38"
+      ],
+      "endpoint_kind": "GND track",
+      "width_mil": 4.0,
+      "length_mil": 32.8841,
+      "segments": [
+        [
+          [
+            182,
+            691.7
+          ],
+          [
+            178.9,
+            688.6
+          ]
+        ],
+        [
+          [
+            178.9,
+            688.6
+          ],
+          [
+            178.9,
+            660.1
+          ]
+        ]
+      ],
+      "edge_copper_gap_mil": 44.3465,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 9.75,
+          "id": "85b8a96060e76675e36"
+        }
+      },
+      "path_assertion_to": "U16.10",
+      "minimum_foreign_line_gap_after_actual_widths_mil": 52.52607
+    },
+    {
+      "net": "GND",
+      "layer": 1,
+      "from": "U21.11",
+      "to": "copper:cc60f476265a5267",
+      "pad_ids": [
+        "e5a402ba1da2afdfe38",
+        "cc60f476265a5267"
+      ],
+      "isolated_drc_anchors": [
+        "e5a402ba1da2afdfe38"
+      ],
+      "endpoint_kind": "GND track",
+      "width_mil": 4.0,
+      "length_mil": 32.8841,
+      "segments": [
+        [
+          [
+            182,
+            817.7
+          ],
+          [
+            178.9,
+            814.6
+          ]
+        ],
+        [
+          [
+            178.9,
+            814.6
+          ],
+          [
+            178.9,
+            786.1
+          ]
+        ]
+      ],
+      "edge_copper_gap_mil": 44.3465,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 9.75,
+          "id": "e5a402ba1da2afdfe36"
+        },
+        "via": {
+          "gap_mil": 32.3923,
+          "id": "7e842330e0617250"
+        },
+        "track": {
+          "gap_mil": 40.2049,
+          "id": "304ab8d25ced20d0"
+        }
+      },
+      "path_assertion_to": "U21.10",
+      "minimum_foreign_line_gap_after_actual_widths_mil": 40.20492
+    },
+    {
+      "net": "GND",
+      "layer": 1,
+      "from": "U21.12",
+      "to": "copper:e4fb0f005e48b86b",
+      "pad_ids": [
+        "e5a402ba1da2afdfe39",
+        "e4fb0f005e48b86b"
+      ],
+      "isolated_drc_anchors": [
+        "e5a402ba1da2afdfe39"
+      ],
+      "endpoint_kind": "GND track",
+      "width_mil": 4.0,
+      "length_mil": 32.8841,
+      "segments": [
+        [
+          [
+            182,
+            833.5
+          ],
+          [
+            178.9,
+            836.6
+          ]
+        ],
+        [
+          [
+            178.9,
+            836.6
+          ],
+          [
+            178.9,
+            865.1
+          ]
+        ]
+      ],
+      "edge_copper_gap_mil": 44.3465,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 9.75,
+          "id": "e5a402ba1da2afdfe41"
+        },
+        "via": {
+          "gap_mil": 10.6,
+          "id": "7e842330e0617250"
+        },
+        "track": {
+          "gap_mil": 27.9,
+          "id": "304ab8d25ced20d0"
+        }
+      },
+      "path_assertion_to": "U21.13",
+      "minimum_foreign_line_gap_after_actual_widths_mil": 27.9
+    },
+    {
+      "net": "GND",
+      "layer": 1,
+      "from": "U16.14",
+      "to": "copper:e7b284a0a40b2141",
+      "pad_ids": [
+        "85b8a96060e76675e41",
+        "e7b284a0a40b2141"
+      ],
+      "isolated_drc_anchors": [
+        "85b8a96060e76675e41"
+      ],
+      "endpoint_kind": "GND track",
+      "width_mil": 4.0,
+      "length_mil": 39.4071,
+      "segments": [
+        [
+          [
+            163.2,
+            739.1
+          ],
+          [
+            181.9909,
+            720.3091
+          ]
+        ],
+        [
+          [
+            181.9909,
+            720.3091
+          ],
+          [
+            181.9909,
+            707.4763
+          ]
+        ]
+      ],
+      "edge_copper_gap_mil": 44.3556,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 25.55,
+          "id": "85b8a96060e76675e43"
+        },
+        "track": {
+          "gap_mil": 27.9724,
+          "id": "770cac61274e48bb"
+        }
+      },
+      "path_assertion_to": "U16.12",
+      "minimum_foreign_line_gap_after_actual_widths_mil": 27.97241
+    },
+    {
+      "net": "GND",
+      "layer": 1,
+      "from": "U15.11",
+      "to": "U16.10",
+      "pad_ids": [
+        "45a75ba74b6e57dce38",
+        "85b8a96060e76675e37"
+      ],
+      "isolated_drc_anchors": [
+        "45a75ba74b6e57dce38"
+      ],
+      "endpoint_kind": "pad",
+      "width_mil": 4.0,
+      "length_mil": 107.182,
+      "segments": [
+        [
+          [
+            182,
+            565.8
+          ],
+          [
+            196.0,
+            579.8
+          ]
+        ],
+        [
+          [
+            196.0,
+            579.8
+          ],
+          [
+            196.0,
+            643.0
+          ]
+        ],
+        [
+          [
+            196.0,
+            643.0
+          ],
+          [
+            178.9,
+            660.1
+          ]
+        ]
+      ],
+      "edge_copper_gap_mil": 30.3465,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 9.75,
+          "id": "85b8a96060e76675e36"
+        },
+        "track": {
+          "gap_mil": 28.3512,
+          "id": "a11ec719d0196f7b"
+        }
+      },
+      "path_assertion_to": "U16.10",
+      "minimum_foreign_line_gap_after_actual_widths_mil": 27.85122
+    }
+  ],
+  "plane_bound_gnd_vias": {
+    "GND-PLANE-18-0-0": [
+      "69a7648d44530a03",
+      "183500634c35d7ab",
+      "27644a9b42277987",
+      "2c30b66862fe6a3b",
+      "a8cf92d1461323f0",
+      "e18c144078f9861a",
+      "c7fd2da94a4e1cbf",
+      "9cb3282b6ab7638f",
+      "2dddde4b361d722c",
+      "c62e2987494a4ee6",
+      "60610f2fea49aebd",
+      "ce873c7d4a59a885",
+      "96c279d245d1541c",
+      "8cadefb75dd65943",
+      "d9ecb5c3d6115fd5",
+      "202275af053d0efe",
+      "80593792f6ce3475",
+      "9dd4ca0f9b8b51aa",
+      "cba9d923b0afc34e",
+      "95bfb259ae624864",
+      "ae0e42c0eeaee2ae",
+      "165abbb03b097f16",
+      "48d7bf4a018ce69f",
+      "70d7deb61160e88c",
+      "a4d843b18593d50d",
+      "94787de6a2d933f3",
+      "39afc1a20f461cb5",
+      "c7ee90f5e3ff75dd",
+      "44f9726974b7b2df",
+      "ba3c15e6f0964a71",
+      "fcac4827536f5491",
+      "d0df874d4e49dd85",
+      "b00e4b788f1ad4eb",
+      "2bf8158c17f427f4",
+      "c9414a5da5f9f41c",
+      "a873b4b7416c046e",
+      "0eab49beeca051f6",
+      "f9a84389955997f2",
+      "8a8c58abf0e0d3cf",
+      "ef04ed16e6531499",
+      "51e2e0efc5bcb4de",
+      "6917cb2ab5ec5b38",
+      "42e53c455a4c051f",
+      "7db2b25bf227f9b2",
+      "66d462cffbc64a75",
+      "8e3f1519fe655980",
+      "2e7811a52213e76a",
+      "8b3af8a796e0d901",
+      "24d31fa6e8380b35"
+    ],
+    "GND-PLANE-15-0-0": [
+      "f31bef06e458e04f",
+      "4f00b9b457be3153",
+      "2e3f88f7061135c3",
+      "c7b04a2ae9273f5f",
+      "3ef88c43ffdeff11",
+      "072388689ed4f674",
+      "43272b3c86764a94",
+      "71d5d774027e4db4",
+      "6167b26dfdb9a189",
+      "5c7b9b124177f755",
+      "49b8b3c430c2a39d",
+      "d2bb4e5135d36f03",
+      "4e6df1566fc081ae",
+      "bf4d94cdd5096714",
+      "2000ec3d2ce3c827",
+      "2bfd63a396256212",
+      "324d9b34c515205d",
+      "847abf98e73026d9",
+      "8942480a244cacbe",
+      "063449d7808500d7",
+      "c377247b5d36b08b",
+      "51e2e0efc5bcb4de",
+      "6917cb2ab5ec5b38",
+      "42e53c455a4c051f",
+      "7db2b25bf227f9b2",
+      "66d462cffbc64a75",
+      "8e3f1519fe655980",
+      "2e7811a52213e76a",
+      "8b3af8a796e0d901",
+      "24d31fa6e8380b35"
+    ]
+  },
+  "native_width_checkpoint_copper_sha256": "f1e9347cf30338ab97127419bc6c4546927b359cfdfcae7eb55a1eebe40d8a25",
+  "native_width_checkpoint_scope": "Track-clearance overlay using actual post-width copper. Baseline pad/via/outline screen is unchanged."
+}

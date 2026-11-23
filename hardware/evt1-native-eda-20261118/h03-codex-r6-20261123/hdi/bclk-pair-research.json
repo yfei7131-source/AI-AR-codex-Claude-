@@ -1,0 +1,429 @@
+{
+  "U11.K5": {
+    "through": {
+      "source": "U11.K5",
+      "destination": "U10.C1",
+      "candidate_count": 0,
+      "best": []
+    },
+    "symmetric": {
+      "start_sites": 0,
+      "destination_sites": 31,
+      "route_pairs": 0,
+      "plans": []
+    }
+  },
+  "U11.L7": {
+    "through": {
+      "source": "U11.L7",
+      "destination": "U10.C1",
+      "candidate_count": 0,
+      "best": []
+    },
+    "symmetric": {
+      "start_sites": 202,
+      "destination_sites": 31,
+      "route_pairs": 3144,
+      "plans": []
+    }
+  },
+  "U11.L9": {
+    "through": {
+      "source": "U11.L9",
+      "destination": "U10.C1",
+      "candidate_count": 0,
+      "best": []
+    },
+    "symmetric": {
+      "start_sites": 416,
+      "destination_sites": 31,
+      "route_pairs": 4044,
+      "plans": [
+        {
+          "source": "U11.L9",
+          "destination": "U10.C1",
+          "ball_escape_top": [
+            176.25,
+            383.25
+          ],
+          "ball_escape_bottom": [
+            185,
+            359
+          ],
+          "native_top_layers": [
+            1,
+            15,
+            16
+          ],
+          "native_bottom_layers": [
+            2,
+            18,
+            17
+          ],
+          "blind_diameter_um": 75,
+          "blind_annulus_mil": 3,
+          "buried_xy": [
+            180,
+            372
+          ],
+          "buried_hole_mil": 6,
+          "buried_land_mil": 12,
+          "buried_layers": [
+            16,
+            17
+          ],
+          "trace_mil": 4,
+          "paths": [
+            {
+              "path": [
+                [
+                  171.25984,
+                  396.65352
+                ],
+                [
+                  176.25,
+                  383.25
+                ]
+              ],
+              "width_mil": 4,
+              "length_mil": 14.302309086857283,
+              "foreign_gap_mil": 7.941522431358018,
+              "foreign_id": "U11.K9",
+              "foreign_guard_mil": 6.05
+            },
+            {
+              "path": [
+                [
+                  176.25,
+                  383.25
+                ],
+                [
+                  180,
+                  372
+                ]
+              ],
+              "width_mil": 4,
+              "length_mil": 11.858541225631422,
+              "foreign_gap_mil": 14.500741222525818,
+              "foreign_id": "5687da4248f23be3",
+              "foreign_guard_mil": 12
+            },
+            {
+              "path": [
+                [
+                  180,
+                  372
+                ],
+                [
+                  185,
+                  359
+                ]
+              ],
+              "width_mil": 4,
+              "length_mil": 13.92838827718412,
+              "foreign_gap_mil": 100,
+              "foreign_id": "",
+              "foreign_guard_mil": 6.05
+            },
+            {
+              "path": [
+                [
+                  182.3,
+                  367.3
+                ],
+                [
+                  185,
+                  359
+                ]
+              ],
+              "width_mil": 4,
+              "length_mil": 8.728115489611724,
+              "foreign_gap_mil": 9.129079692012054,
+              "foreign_id": "U10.C2",
+              "foreign_guard_mil": 6.05
+            }
+          ],
+          "antipads": {
+            "15": {
+              "cutout_to_nearest_plane_boundary_mil": 0.0,
+              "minimum_cutout_radius_mil": 14.626377952755906,
+              "new_void_area_mil2": 861.1971743609174,
+              "edge_opening": true,
+              "components_before": 1,
+              "components_after": 1,
+              "closest_ground_copper_to_cutout_mil": 8.322115687037579,
+              "ground_contact_overlap": []
+            },
+            "18": {
+              "cutout_to_nearest_plane_boundary_mil": 0.0,
+              "minimum_cutout_radius_mil": 14.626377952755906,
+              "new_void_area_mil2": 605.2355601876625,
+              "edge_opening": true,
+              "components_before": 1,
+              "components_after": 1,
+              "closest_ground_copper_to_cutout_mil": 0.8644223280386766,
+              "ground_contact_overlap": []
+            }
+          },
+          "total_length_mil": 48.81735407928455
+        },
+        {
+          "source": "U11.L9",
+          "destination": "U10.C1",
+          "ball_escape_top": [
+            176.25,
+            384.0
+          ],
+          "ball_escape_bottom": [
+            185,
+            359
+          ],
+          "native_top_layers": [
+            1,
+            15,
+            16
+          ],
+          "native_bottom_layers": [
+            2,
+            18,
+            17
+          ],
+          "blind_diameter_um": 75,
+          "blind_annulus_mil": 3,
+          "buried_xy": [
+            180,
+            372
+          ],
+          "buried_hole_mil": 6,
+          "buried_land_mil": 12,
+          "buried_layers": [
+            16,
+            17
+          ],
+          "trace_mil": 4,
+          "paths": [
+            {
+              "path": [
+                [
+                  171.25984,
+                  396.65352
+                ],
+                [
+                  176.25,
+                  384.0
+                ]
+              ],
+              "width_mil": 4,
+              "length_mil": 13.601958139032792,
+              "foreign_gap_mil": 7.940237741113706,
+              "foreign_id": "U11.K9",
+              "foreign_guard_mil": 6.05
+            },
+            {
+              "path": [
+                [
+                  176.25,
+                  384.0
+                ],
+                [
+                  180,
+                  372
+                ]
+              ],
+              "width_mil": 4,
+              "length_mil": 12.572290960680158,
+              "foreign_gap_mil": 14.500069898507888,
+              "foreign_id": "5687da4248f23be3",
+              "foreign_guard_mil": 12
+            },
+            {
+              "path": [
+                [
+                  180,
+                  372
+                ],
+                [
+                  185,
+                  359
+                ]
+              ],
+              "width_mil": 4,
+              "length_mil": 13.92838827718412,
+              "foreign_gap_mil": 100,
+              "foreign_id": "",
+              "foreign_guard_mil": 6.05
+            },
+            {
+              "path": [
+                [
+                  182.3,
+                  367.3
+                ],
+                [
+                  185,
+                  359
+                ]
+              ],
+              "width_mil": 4,
+              "length_mil": 8.728115489611724,
+              "foreign_gap_mil": 9.129079692012054,
+              "foreign_id": "U10.C2",
+              "foreign_guard_mil": 6.05
+            }
+          ],
+          "antipads": {
+            "15": {
+              "cutout_to_nearest_plane_boundary_mil": 0.0,
+              "minimum_cutout_radius_mil": 14.626377952755906,
+              "new_void_area_mil2": 861.1971743609174,
+              "edge_opening": true,
+              "components_before": 1,
+              "components_after": 1,
+              "closest_ground_copper_to_cutout_mil": 9.07211568703758,
+              "ground_contact_overlap": []
+            },
+            "18": {
+              "cutout_to_nearest_plane_boundary_mil": 0.0,
+              "minimum_cutout_radius_mil": 14.626377952755906,
+              "new_void_area_mil2": 605.2355601876625,
+              "edge_opening": true,
+              "components_before": 1,
+              "components_after": 1,
+              "closest_ground_copper_to_cutout_mil": 0.8644223280386766,
+              "ground_contact_overlap": []
+            }
+          },
+          "total_length_mil": 48.830752866508796
+        },
+        {
+          "source": "U11.L9",
+          "destination": "U10.C1",
+          "ball_escape_top": [
+            176.25,
+            384.0
+          ],
+          "ball_escape_bottom": [
+            185,
+            359
+          ],
+          "native_top_layers": [
+            1,
+            15,
+            16
+          ],
+          "native_bottom_layers": [
+            2,
+            18,
+            17
+          ],
+          "blind_diameter_um": 75,
+          "blind_annulus_mil": 3,
+          "buried_xy": [
+            180,
+            375
+          ],
+          "buried_hole_mil": 6,
+          "buried_land_mil": 12,
+          "buried_layers": [
+            16,
+            17
+          ],
+          "trace_mil": 4,
+          "paths": [
+            {
+              "path": [
+                [
+                  171.25984,
+                  396.65352
+                ],
+                [
+                  176.25,
+                  384.0
+                ]
+              ],
+              "width_mil": 4,
+              "length_mil": 13.601958139032792,
+              "foreign_gap_mil": 7.940237741113706,
+              "foreign_id": "U11.K9",
+              "foreign_guard_mil": 6.05
+            },
+            {
+              "path": [
+                [
+                  176.25,
+                  384.0
+                ],
+                [
+                  180,
+                  375
+                ]
+              ],
+              "width_mil": 4,
+              "length_mil": 9.75,
+              "foreign_gap_mil": 14.500004376621405,
+              "foreign_id": "5687da4248f23be3",
+              "foreign_guard_mil": 12
+            },
+            {
+              "path": [
+                [
+                  180,
+                  375
+                ],
+                [
+                  185,
+                  359
+                ]
+              ],
+              "width_mil": 4,
+              "length_mil": 16.76305461424021,
+              "foreign_gap_mil": 100,
+              "foreign_id": "",
+              "foreign_guard_mil": 6.05
+            },
+            {
+              "path": [
+                [
+                  182.3,
+                  367.3
+                ],
+                [
+                  185,
+                  359
+                ]
+              ],
+              "width_mil": 4,
+              "length_mil": 8.728115489611724,
+              "foreign_gap_mil": 9.129079692012054,
+              "foreign_id": "U10.C2",
+              "foreign_guard_mil": 6.05
+            }
+          ],
+          "antipads": {
+            "15": {
+              "cutout_to_nearest_plane_boundary_mil": 0.0,
+              "minimum_cutout_radius_mil": 14.626377952755906,
+              "new_void_area_mil2": 861.1971743609174,
+              "edge_opening": true,
+              "components_before": 1,
+              "components_after": 1,
+              "closest_ground_copper_to_cutout_mil": 9.07211568703758,
+              "ground_contact_overlap": []
+            },
+            "18": {
+              "cutout_to_nearest_plane_boundary_mil": 0.0,
+              "minimum_cutout_radius_mil": 14.626377952755906,
+              "new_void_area_mil2": 605.2355601876625,
+              "edge_opening": true,
+              "components_before": 1,
+              "components_after": 1,
+              "closest_ground_copper_to_cutout_mil": 0.8644223280386766,
+              "ground_contact_overlap": []
+            }
+          },
+          "total_length_mil": 48.84312824288473
+        }
+      ]
+    }
+  }
+}

@@ -16,6 +16,7 @@ on:
       - hardware/codex-evt1-h03-pr46-takeover-20261121
       - hardware/evt1-h03-r4-codex-20261123
       - hardware/evt1-h03-r5-codex-20261123
+      - hardware/evt1-h03-r6-codex-20261123
   workflow_dispatch:
 
 permissions:
@@ -236,6 +237,12 @@ jobs:
           round="$EVT1_PACKAGE/h03-codex-r5-20261123"
           python3 -B "$round/verify_r5.py"
           python3 -B -m unittest discover -s "$round" -p test_prepare_a5_candidate.py -v
+      - name: Replay H03 R6 native copper scope, netlists, and rejected HDI trial
+        if: github.ref_name == 'hardware/evt1-h03-r6-codex-20261123'
+        run: |
+          round="$EVT1_PACKAGE/h03-codex-r6-20261123"
+          python3 -B "$round/verify_r6.py"
+          python3 -B -m unittest discover -s "$round" -p test_copper_scope.py -v
       - name: KiCad CLI version, electrical rules and native netlist parity
         run: |
           mkdir -p "$PWD/ci-kicad-evidence"
