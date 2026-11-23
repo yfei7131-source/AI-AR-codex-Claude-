@@ -14,6 +14,7 @@ on:
       - hardware/evt1-h03-hdi-laser-wlcsp-route-20261121
       - hardware/evt1-h03-u11-wlcsp-v3-dfm-route-20261121
       - hardware/codex-evt1-h03-pr46-takeover-20261121
+      - hardware/evt1-h03-r4-codex-20261123
   workflow_dispatch:
 
 permissions:
@@ -221,6 +222,13 @@ jobs:
           diff -r "$captures/final-u11" "$RUNNER_TEMP/codex-u11"
           python3 -B "$round/plan_local_routes.py" --board PCB2 --dump "$captures/before/PCB2.dump.json" --drc "$captures/before/PCB2-drc.json" --archive "$round/native/ZY_AIAR_EVT1_H03_3BOARD_V4_DFM_U11_2N2_MECR01_NOT_FOR_FAB.epro2" --out "$RUNNER_TEMP/pcb2-plan.json"
           diff -u "$captures/operations/PCB2-local-v3.json" "$RUNNER_TEMP/pcb2-plan.json"
+      - name: Replay H03 R4 EasyEDA archive and strict-check evidence
+        if: github.ref_name == 'hardware/evt1-h03-r4-codex-20261123'
+        run: |
+          round="$EVT1_PACKAGE/h03-codex-r4-20261123"
+          python3 -B "$round/verify_r4.py"
+          python3 -B -m unittest discover -s "$round" -p test_pcb1_spur.py -v
+          python3 -B "$round/replay_v4_dfm.py" --out-dir "$RUNNER_TEMP/h03-r4-dfm"
       - name: KiCad CLI version, electrical rules and native netlist parity
         run: |
           mkdir -p "$PWD/ci-kicad-evidence"

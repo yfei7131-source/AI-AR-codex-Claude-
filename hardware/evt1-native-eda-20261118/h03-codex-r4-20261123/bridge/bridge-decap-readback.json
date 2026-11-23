@@ -1,0 +1,857 @@
+{
+  "scope": "Read-only archive geometry and inherited native readback. The filter covers component box overlap, board containment and foreign line/via copper, without routing, full DRC or assembly clearance.",
+  "r3_sha256": "223584c23bff4cd9fa65d99e6689b8a4feccba3cdbd4e5467c6f61957beec918",
+  "reference_sha256": "5f0d842d25b8bbf43d0dfdbb30034a7c9e6fc45d254c27d03a44d0439f99bf1a",
+  "components_unchanged_in_xy_side_and_normalized_angle": 86,
+  "raw_native_object_payloads_identical_to_reference": {
+    "PAD_NET": 328,
+    "LINE": 397,
+    "VIA": 47,
+    "POLY": 1,
+    "RULE": 17,
+    "RULE_TEMPLATE": 1,
+    "LAYER": 60,
+    "LAYER_PHYS": 9,
+    "LAYER_FILL": 2
+  },
+  "outline_mil": [
+    0,
+    0,
+    181.1024,
+    984.252
+  ],
+  "harness_all_by_net_and_layer": [
+    {
+      "net": "FPGA_CDONE_VSYNC_N",
+      "layer_id": 1,
+      "segments": 3
+    },
+    {
+      "net": "FPGA_CDONE_VSYNC_N",
+      "layer_id": 2,
+      "segments": 20
+    },
+    {
+      "net": "FPGA_CRESET_B",
+      "layer_id": 2,
+      "segments": 11
+    },
+    {
+      "net": "FPGA_CRESET_B",
+      "layer_id": 16,
+      "segments": 6
+    }
+  ],
+  "harness_bottom_window_mil": [
+    460,
+    850
+  ],
+  "harness_window_segments": {
+    "d5d0f1e413d6e11c": {
+      "partitionId": "",
+      "groupId": 0,
+      "netName": "FPGA_CRESET_B",
+      "layerId": 2,
+      "startX": 58,
+      "startY": 576,
+      "endX": 54,
+      "endY": 576,
+      "width": 3,
+      "locked": false,
+      "zIndex": -1
+    },
+    "dbb6c7b622db3a56": {
+      "partitionId": "",
+      "groupId": 0,
+      "netName": "FPGA_CRESET_B",
+      "layerId": 2,
+      "startX": 54,
+      "startY": 576,
+      "endX": 54,
+      "endY": 574,
+      "width": 3,
+      "locked": false,
+      "zIndex": -1
+    },
+    "87ed1a54c029b1ce": {
+      "partitionId": "",
+      "groupId": 0,
+      "netName": "FPGA_CRESET_B",
+      "layerId": 2,
+      "startX": 54,
+      "startY": 574,
+      "endX": 52,
+      "endY": 574,
+      "width": 3,
+      "locked": false,
+      "zIndex": -1
+    },
+    "1a80444954f3365e": {
+      "partitionId": "",
+      "groupId": 0,
+      "netName": "FPGA_CRESET_B",
+      "layerId": 2,
+      "startX": 52,
+      "startY": 574,
+      "endX": 52,
+      "endY": 572,
+      "width": 3,
+      "locked": false,
+      "zIndex": -1
+    },
+    "64f318351af9ac9e": {
+      "partitionId": "",
+      "groupId": 0,
+      "netName": "FPGA_CRESET_B",
+      "layerId": 2,
+      "startX": 52,
+      "startY": 572,
+      "endX": 50,
+      "endY": 572,
+      "width": 3,
+      "locked": false,
+      "zIndex": -1
+    },
+    "f0e16b7d1c4323f1": {
+      "partitionId": "",
+      "groupId": 0,
+      "netName": "FPGA_CRESET_B",
+      "layerId": 2,
+      "startX": 50,
+      "startY": 572,
+      "endX": 50,
+      "endY": 570,
+      "width": 3,
+      "locked": false,
+      "zIndex": -1
+    },
+    "9462648d869329a3": {
+      "partitionId": "",
+      "groupId": 0,
+      "netName": "FPGA_CRESET_B",
+      "layerId": 2,
+      "startX": 50,
+      "startY": 570,
+      "endX": 46,
+      "endY": 570,
+      "width": 3,
+      "locked": false,
+      "zIndex": -1
+    },
+    "5b94726cf96631fa": {
+      "partitionId": "",
+      "groupId": 0,
+      "netName": "FPGA_CRESET_B",
+      "layerId": 2,
+      "startX": 46,
+      "startY": 570,
+      "endX": 46,
+      "endY": 566,
+      "width": 3,
+      "locked": false,
+      "zIndex": -1
+    },
+    "1d8f3cf8465930cd": {
+      "partitionId": "",
+      "groupId": 0,
+      "netName": "FPGA_CRESET_B",
+      "layerId": 2,
+      "startX": 46,
+      "startY": 566,
+      "endX": 29.1,
+      "endY": 565.4,
+      "width": 3,
+      "locked": false,
+      "zIndex": -1
+    },
+    "94b6a35a08a1a407": {
+      "partitionId": "",
+      "groupId": 0,
+      "netName": "FPGA_CDONE_VSYNC_N",
+      "layerId": 2,
+      "startX": 29.1,
+      "startY": 545.7,
+      "endX": 46,
+      "endY": 546,
+      "width": 3,
+      "locked": false,
+      "zIndex": -1
+    },
+    "711cfbf45b5b76ad": {
+      "partitionId": "",
+      "groupId": 0,
+      "netName": "FPGA_CDONE_VSYNC_N",
+      "layerId": 2,
+      "startX": 46,
+      "startY": 546,
+      "endX": 46,
+      "endY": 550,
+      "width": 3,
+      "locked": false,
+      "zIndex": -1
+    },
+    "127ad27b7fce582d": {
+      "partitionId": "",
+      "groupId": 0,
+      "netName": "FPGA_CDONE_VSYNC_N",
+      "layerId": 2,
+      "startX": 46,
+      "startY": 550,
+      "endX": 50,
+      "endY": 550,
+      "width": 3,
+      "locked": false,
+      "zIndex": -1
+    },
+    "bc04b31aeda6435a": {
+      "partitionId": "",
+      "groupId": 0,
+      "netName": "FPGA_CDONE_VSYNC_N",
+      "layerId": 2,
+      "startX": 50,
+      "startY": 550,
+      "endX": 50,
+      "endY": 552,
+      "width": 3,
+      "locked": false,
+      "zIndex": -1
+    },
+    "e5525a880aa9687c": {
+      "partitionId": "",
+      "groupId": 0,
+      "netName": "FPGA_CDONE_VSYNC_N",
+      "layerId": 2,
+      "startX": 50,
+      "startY": 552,
+      "endX": 52,
+      "endY": 552,
+      "width": 3,
+      "locked": false,
+      "zIndex": -1
+    },
+    "09e897abca994d95": {
+      "partitionId": "",
+      "groupId": 0,
+      "netName": "FPGA_CDONE_VSYNC_N",
+      "layerId": 2,
+      "startX": 52,
+      "startY": 552,
+      "endX": 52,
+      "endY": 554,
+      "width": 3,
+      "locked": false,
+      "zIndex": -1
+    },
+    "aab0a28a8347c0b3": {
+      "partitionId": "",
+      "groupId": 0,
+      "netName": "FPGA_CDONE_VSYNC_N",
+      "layerId": 2,
+      "startX": 52,
+      "startY": 554,
+      "endX": 54,
+      "endY": 554,
+      "width": 3,
+      "locked": false,
+      "zIndex": -1
+    },
+    "f7ebd135c25ef3c4": {
+      "partitionId": "",
+      "groupId": 0,
+      "netName": "FPGA_CDONE_VSYNC_N",
+      "layerId": 2,
+      "startX": 54,
+      "startY": 554,
+      "endX": 54,
+      "endY": 560,
+      "width": 3,
+      "locked": false,
+      "zIndex": -1
+    },
+    "0adbe319c490546f": {
+      "partitionId": "",
+      "groupId": 0,
+      "netName": "FPGA_CDONE_VSYNC_N",
+      "layerId": 2,
+      "startX": 54,
+      "startY": 560,
+      "endX": 56,
+      "endY": 560,
+      "width": 3,
+      "locked": false,
+      "zIndex": -1
+    },
+    "378b022ecd7c5e6e": {
+      "partitionId": "",
+      "groupId": 0,
+      "netName": "FPGA_CDONE_VSYNC_N",
+      "layerId": 2,
+      "startX": 56,
+      "startY": 560,
+      "endX": 56,
+      "endY": 562,
+      "width": 3,
+      "locked": false,
+      "zIndex": -1
+    },
+    "60ba295708ed3b72": {
+      "partitionId": "",
+      "groupId": 0,
+      "netName": "FPGA_CDONE_VSYNC_N",
+      "layerId": 2,
+      "startX": 56,
+      "startY": 562,
+      "endX": 66,
+      "endY": 562,
+      "width": 3,
+      "locked": false,
+      "zIndex": -1
+    },
+    "5ea7c035b9fbf72f": {
+      "partitionId": "",
+      "groupId": 0,
+      "netName": "FPGA_CDONE_VSYNC_N",
+      "layerId": 2,
+      "startX": 66,
+      "startY": 562,
+      "endX": 66,
+      "endY": 564,
+      "width": 3,
+      "locked": false,
+      "zIndex": -1
+    },
+    "6fb05501325dc8eb": {
+      "partitionId": "",
+      "groupId": 0,
+      "netName": "FPGA_CDONE_VSYNC_N",
+      "layerId": 2,
+      "startX": 66,
+      "startY": 564,
+      "endX": 68,
+      "endY": 564,
+      "width": 3,
+      "locked": false,
+      "zIndex": -1
+    },
+    "e050f73e961d43fc": {
+      "partitionId": "",
+      "groupId": 0,
+      "netName": "FPGA_CDONE_VSYNC_N",
+      "layerId": 2,
+      "startX": 68,
+      "startY": 564,
+      "endX": 68,
+      "endY": 566,
+      "width": 3,
+      "locked": false,
+      "zIndex": -1
+    },
+    "a40bd929da30aaab": {
+      "partitionId": "",
+      "groupId": 0,
+      "netName": "FPGA_CDONE_VSYNC_N",
+      "layerId": 2,
+      "startX": 68,
+      "startY": 566,
+      "endX": 70,
+      "endY": 566,
+      "width": 3,
+      "locked": false,
+      "zIndex": -1
+    },
+    "04956d54a7be87a3": {
+      "partitionId": "",
+      "groupId": 0,
+      "netName": "FPGA_CDONE_VSYNC_N",
+      "layerId": 2,
+      "startX": 70,
+      "startY": 566,
+      "endX": 70,
+      "endY": 568,
+      "width": 3,
+      "locked": false,
+      "zIndex": -1
+    },
+    "aa5f57aa47a314bb": {
+      "partitionId": "",
+      "groupId": 0,
+      "netName": "FPGA_CDONE_VSYNC_N",
+      "layerId": 2,
+      "startX": 70,
+      "startY": 568,
+      "endX": 72,
+      "endY": 568,
+      "width": 3,
+      "locked": false,
+      "zIndex": -1
+    },
+    "40de63417c0c29df": {
+      "partitionId": "",
+      "groupId": 0,
+      "netName": "FPGA_CDONE_VSYNC_N",
+      "layerId": 2,
+      "startX": 72,
+      "startY": 568,
+      "endX": 72,
+      "endY": 678,
+      "width": 3,
+      "locked": false,
+      "zIndex": -1
+    },
+    "198bf599f9fd78e7": {
+      "partitionId": "",
+      "groupId": 0,
+      "netName": "FPGA_CDONE_VSYNC_N",
+      "layerId": 2,
+      "startX": 72,
+      "startY": 678,
+      "endX": 86,
+      "endY": 678,
+      "width": 3,
+      "locked": false,
+      "zIndex": -1
+    },
+    "9ccef355b294e71f": {
+      "partitionId": "",
+      "groupId": 0,
+      "netName": "FPGA_CDONE_VSYNC_N",
+      "layerId": 2,
+      "startX": 86,
+      "startY": 678,
+      "endX": 86,
+      "endY": 682,
+      "width": 3,
+      "locked": false,
+      "zIndex": -1
+    }
+  },
+  "harness_vias": {
+    "0a845fa9a60f8810": {
+      "partitionId": "",
+      "groupId": 0,
+      "netName": "FPGA_CRESET_B",
+      "ruleName": "",
+      "centerX": 56,
+      "centerY": 172,
+      "holeDiameter": 6,
+      "viaDiameter": 12,
+      "viaType": "NORMAL",
+      "topSolderExpansion": null,
+      "bottomSolderExpansion": null,
+      "locked": false,
+      "unusedInnerLayers": [],
+      "propagationDelay": 0
+    },
+    "85e0039de26184d6": {
+      "partitionId": "",
+      "groupId": 0,
+      "netName": "FPGA_CRESET_B",
+      "ruleName": "",
+      "centerX": 58,
+      "centerY": 576,
+      "holeDiameter": 6,
+      "viaDiameter": 12,
+      "viaType": "NORMAL",
+      "topSolderExpansion": null,
+      "bottomSolderExpansion": null,
+      "locked": false,
+      "unusedInnerLayers": [],
+      "propagationDelay": 0
+    },
+    "1cf29a59df9ecb22": {
+      "partitionId": "",
+      "groupId": 0,
+      "netName": "FPGA_CDONE_VSYNC_N",
+      "ruleName": "",
+      "centerX": 86,
+      "centerY": 682,
+      "holeDiameter": 6,
+      "viaDiameter": 12,
+      "viaType": "NORMAL",
+      "topSolderExpansion": null,
+      "bottomSolderExpansion": null,
+      "locked": false,
+      "unusedInnerLayers": [],
+      "propagationDelay": 0
+    }
+  },
+  "harness_named_pads": [
+    {
+      "ref": "J1",
+      "pad": "P11",
+      "net": "FPGA_CRESET_B",
+      "layer": 2
+    },
+    {
+      "ref": "J1",
+      "pad": "P16",
+      "net": "FPGA_CDONE_VSYNC_N",
+      "layer": 2
+    },
+    {
+      "ref": "R11",
+      "pad": "1",
+      "net": "FPGA_CDONE_VSYNC_N",
+      "layer": 2
+    },
+    {
+      "ref": "R12",
+      "pad": "1",
+      "net": "FPGA_CRESET_B",
+      "layer": 1
+    },
+    {
+      "ref": "TP1",
+      "pad": "1",
+      "net": "FPGA_CDONE_VSYNC_N",
+      "layer": 1
+    },
+    {
+      "ref": "TP1",
+      "pad": "2",
+      "net": "FPGA_CRESET_B",
+      "layer": 1
+    },
+    {
+      "ref": "U2",
+      "pad": "D3",
+      "net": "FPGA_CDONE_VSYNC_N",
+      "layer": 1
+    },
+    {
+      "ref": "U2",
+      "pad": "F3",
+      "net": "FPGA_CRESET_B",
+      "layer": 1
+    },
+    {
+      "ref": "U8",
+      "pad": "2",
+      "net": "FPGA_CDONE_VSYNC_N",
+      "layer": 2
+    },
+    {
+      "ref": "U8",
+      "pad": "3",
+      "net": "FPGA_CRESET_B",
+      "layer": 2
+    },
+    {
+      "ref": "U9",
+      "pad": "9",
+      "net": "FPGA_CDONE_VSYNC_N",
+      "layer": 1
+    }
+  ],
+  "ground_plane_layers_with_fill": [
+    15,
+    18
+  ],
+  "guard_mil_for_foreign_track_and_via_copper": 6,
+  "decaps": [
+    {
+      "cap": "C10",
+      "cap_layer": 1,
+      "net": "VSYS",
+      "role": "bypass",
+      "target": "U12.4",
+      "target_layer": 2,
+      "target_function": "VDD",
+      "current_pad_center_distance_mil": 703.9,
+      "existing_pad_copper_contacts": {
+        "1": [
+          "2cb008093907b868"
+        ],
+        "2": [
+          "0ec139c029f3dc4b",
+          "6b4123627ee9998e",
+          "76b4cca89cfdb4cc",
+          "84f2edd6c9998264",
+          "93819a9657cf44d7",
+          "b5c4a68649c028dd",
+          "bdabbea791e13f74",
+          "cca0e60b0b573131",
+          "e0c8bf645cddc4e5"
+        ]
+      },
+      "placement_screen": {
+        "1": {
+          "inside_outline_and_near_target": 99982,
+          "clear_component_envelopes": 0,
+          "clear_component_envelopes_and_foreign_line_via_copper": 0,
+          "nearest_placement_only": null
+        },
+        "2": {
+          "inside_outline_and_near_target": 99982,
+          "clear_component_envelopes": 0,
+          "clear_component_envelopes_and_foreign_line_via_copper": 0,
+          "nearest_placement_only": null
+        }
+      }
+    },
+    {
+      "cap": "C11",
+      "cap_layer": 2,
+      "net": "VSYS",
+      "role": "bypass",
+      "target": "U13.4",
+      "target_layer": 2,
+      "target_function": "VDD",
+      "current_pad_center_distance_mil": 639.25,
+      "existing_pad_copper_contacts": {
+        "1": [],
+        "2": []
+      },
+      "placement_screen": {
+        "1": {
+          "inside_outline_and_near_target": 99973,
+          "clear_component_envelopes": 0,
+          "clear_component_envelopes_and_foreign_line_via_copper": 0,
+          "nearest_placement_only": null
+        },
+        "2": {
+          "inside_outline_and_near_target": 99973,
+          "clear_component_envelopes": 0,
+          "clear_component_envelopes_and_foreign_line_via_copper": 0,
+          "nearest_placement_only": null
+        }
+      }
+    },
+    {
+      "cap": "C12",
+      "cap_layer": 1,
+      "net": "VSYS",
+      "role": "bypass",
+      "target": "U14.5",
+      "target_layer": 2,
+      "target_function": "V+",
+      "current_pad_center_distance_mil": 435.01,
+      "existing_pad_copper_contacts": {
+        "1": [
+          "798b125450f8a919",
+          "ec3d65460006d9fa"
+        ],
+        "2": [
+          "95037c5880b25a56",
+          "fde4a27ba2bd29be"
+        ]
+      },
+      "placement_screen": {
+        "1": {
+          "inside_outline_and_near_target": 81661,
+          "clear_component_envelopes": 0,
+          "clear_component_envelopes_and_foreign_line_via_copper": 0,
+          "nearest_placement_only": null
+        },
+        "2": {
+          "inside_outline_and_near_target": 81661,
+          "clear_component_envelopes": 137,
+          "clear_component_envelopes_and_foreign_line_via_copper": 137,
+          "nearest_placement_only": {
+            "x_mil": 97,
+            "y_mil": 378,
+            "turn_deg": 180,
+            "distance_mil": 90.524
+          }
+        }
+      }
+    },
+    {
+      "cap": "C31",
+      "cap_layer": 1,
+      "net": "VSYS",
+      "role": "conditional-optical-ldo",
+      "target": "U6.4",
+      "target_layer": 2,
+      "target_function": "IN",
+      "current_pad_center_distance_mil": 475.35,
+      "existing_pad_copper_contacts": {
+        "1": [],
+        "2": [
+          "e35cfdfa515ce93e"
+        ]
+      },
+      "placement_screen": {
+        "1": {
+          "inside_outline_and_near_target": 81324,
+          "clear_component_envelopes": 0,
+          "clear_component_envelopes_and_foreign_line_via_copper": 0,
+          "nearest_placement_only": null
+        },
+        "2": {
+          "inside_outline_and_near_target": 81324,
+          "clear_component_envelopes": 128,
+          "clear_component_envelopes_and_foreign_line_via_copper": 128,
+          "nearest_placement_only": {
+            "x_mil": 78,
+            "y_mil": 365,
+            "turn_deg": 0,
+            "distance_mil": 71.071
+          }
+        }
+      }
+    },
+    {
+      "cap": "C32",
+      "cap_layer": 1,
+      "net": "AVDD_OPT_BIAS",
+      "role": "conditional-optical-ldo",
+      "target": "U6.1",
+      "target_layer": 2,
+      "target_function": "OUT (DNP)",
+      "current_pad_center_distance_mil": 479.92,
+      "existing_pad_copper_contacts": {
+        "1": [],
+        "2": [
+          "19b5633ee164574f",
+          "1f24c876d67187a9",
+          "5d83088caaf1ee2b",
+          "7a6fb515bebb8acb",
+          "930beb979148b336",
+          "a4077f561ed13d1f",
+          "c1774823e699a8c9",
+          "deffa688e8957ff2",
+          "e287db440d83aa37"
+        ]
+      },
+      "placement_screen": {
+        "1": {
+          "inside_outline_and_near_target": 57388,
+          "clear_component_envelopes": 0,
+          "clear_component_envelopes_and_foreign_line_via_copper": 0,
+          "nearest_placement_only": null
+        },
+        "2": {
+          "inside_outline_and_near_target": 57388,
+          "clear_component_envelopes": 64,
+          "clear_component_envelopes_and_foreign_line_via_copper": 64,
+          "nearest_placement_only": {
+            "x_mil": 78,
+            "y_mil": 365,
+            "turn_deg": 0,
+            "distance_mil": 80.814
+          }
+        }
+      }
+    },
+    {
+      "cap": "C5",
+      "cap_layer": 1,
+      "net": "VSYS",
+      "role": "bypass",
+      "target": "U5.5",
+      "target_layer": 2,
+      "target_function": "VCC",
+      "current_pad_center_distance_mil": 521.84,
+      "existing_pad_copper_contacts": {
+        "1": [
+          "2cb008093907b868"
+        ],
+        "2": [
+          "067f36639161242b",
+          "0ec139c029f3dc4b",
+          "0f4d1fe6eba8fb1a",
+          "575a1d4cb986134c",
+          "6b4123627ee9998e",
+          "785aaa85596e43ce",
+          "f2c1700db15c7be4"
+        ]
+      },
+      "placement_screen": {
+        "1": {
+          "inside_outline_and_near_target": 66431,
+          "clear_component_envelopes": 0,
+          "clear_component_envelopes_and_foreign_line_via_copper": 0,
+          "nearest_placement_only": null
+        },
+        "2": {
+          "inside_outline_and_near_target": 66431,
+          "clear_component_envelopes": 833,
+          "clear_component_envelopes_and_foreign_line_via_copper": 833,
+          "nearest_placement_only": {
+            "x_mil": 97,
+            "y_mil": 360,
+            "turn_deg": 180,
+            "distance_mil": 64.659
+          }
+        }
+      }
+    },
+    {
+      "cap": "C8",
+      "cap_layer": 1,
+      "net": "VSYS",
+      "role": "bypass",
+      "target": "U10.5",
+      "target_layer": 2,
+      "target_function": "VCC",
+      "current_pad_center_distance_mil": 247.39,
+      "existing_pad_copper_contacts": {
+        "1": [
+          "ec3d65460006d9fa"
+        ],
+        "2": [
+          "1a54fd75a63826d7",
+          "6c64c1eff0233ab8",
+          "fde4a27ba2bd29be"
+        ]
+      },
+      "placement_screen": {
+        "1": {
+          "inside_outline_and_near_target": 97219,
+          "clear_component_envelopes": 0,
+          "clear_component_envelopes_and_foreign_line_via_copper": 0,
+          "nearest_placement_only": null
+        },
+        "2": {
+          "inside_outline_and_near_target": 97219,
+          "clear_component_envelopes": 0,
+          "clear_component_envelopes_and_foreign_line_via_copper": 0,
+          "nearest_placement_only": null
+        }
+      }
+    },
+    {
+      "cap": "C9",
+      "cap_layer": 1,
+      "net": "VSYS",
+      "role": "bypass",
+      "target": "U11.5",
+      "target_layer": 2,
+      "target_function": "VCC",
+      "current_pad_center_distance_mil": 160.68,
+      "existing_pad_copper_contacts": {
+        "1": [],
+        "2": [
+          "8db37623612ecded",
+          "ead87be86106a314",
+          "f390888075132c3c"
+        ]
+      },
+      "placement_screen": {
+        "1": {
+          "inside_outline_and_near_target": 97216,
+          "clear_component_envelopes": 0,
+          "clear_component_envelopes_and_foreign_line_via_copper": 0,
+          "nearest_placement_only": null
+        },
+        "2": {
+          "inside_outline_and_near_target": 97216,
+          "clear_component_envelopes": 0,
+          "clear_component_envelopes_and_foreign_line_via_copper": 0,
+          "nearest_placement_only": null
+        }
+      }
+    }
+  ],
+  "functional_rc_excluded": {
+    "C2": {
+      "1": "AVDD_QUAL_RC",
+      "2": "GND"
+    },
+    "C3": {
+      "1": "AVDD_REQ_FILTER",
+      "2": "GND"
+    }
+  }
+}
