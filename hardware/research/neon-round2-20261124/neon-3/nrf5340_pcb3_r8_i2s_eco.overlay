@@ -1,0 +1,52 @@
+/*
+ * Zhiyuan AI/AR Smart Glasses V1.0 (EVT-1 H03-R8)
+ * PCB3 (evt1-audio-right) nRF5340-CMAA (WLCSP95) Application Core DTS Overlay
+ *
+ * ECO-1 Synchronization:
+ *   - I2S_BCLK_1V8 (SCK): Remapped from inner ball K5 (P0.20) -> outer ball L9 (P0.15)
+ *   - I2S_LRCLK_1V8 (LRCK): K4 (P0.22)
+ *   - I2S_AMP_DIN_1V8 (SDOUT): J4 (P0.21)
+ *   - I2S_S3_DOUT_1V8 (SDIN): J5 (P0.19)
+ *
+ * Nordic PS Verification:
+ *   - nRF5340 Pin Assignments (Table 3 WLCSP95): P0.15 is QSPI IO2 / General purpose I/O.
+ *     PCB3 has no external QSPI flash, so &qspi MUST remain disabled.
+ *   - nRF5340 I2S Peripheral Spec: When I2S is disabled or in System OFF, GPIO peripheral
+ *     must explicitly hold SCK/LRCK/SDOUT low (paired with hardware 100k pull-downs R3.1/R4.1)
+ *     to prevent audio amp (U10) pop noise and floating leakage.
+ *
+ * Engineering Baseline: EVT1-H03-GEMINI-R8-NOT-FOR-FAB-20261123 (NOT FOR FAB)
+ */
+
+&qspi {
+	status = "disabled";
+};
+
+&pinctrl {
+	i2s0_default: i2s0_default {
+		group1 {
+			psels = <NRF_PSEL(I2S_SCK_M, 0, 15)>,   /* U11.L9: I2S_BCLK_1V8 (ECO-1 from K5/P0.20) */
+				<NRF_PSEL(I2S_LRCK_M, 0, 22)>,  /* U11.K4: I2S_LRCLK_1V8 */
+				<NRF_PSEL(I2S_SDOUT, 0, 21)>,   /* U11.J4: I2S_AMP_DIN_1V8 */
+				<NRF_PSEL(I2S_SDIN, 0, 19)>;    /* U11.J5: I2S_S3_DOUT_1V8 */
+		};
+	};
+
+	i2s0_sleep: i2s0_sleep {
+		group1 {
+			psels = <NRF_PSEL(I2S_SCK_M, 0, 15)>,
+				<NRF_PSEL(I2S_LRCK_M, 0, 22)>,
+				<NRF_PSEL(I2S_SDOUT, 0, 21)>,
+				<NRF_PSEL(I2S_SDIN, 0, 19)>;
+			low-power-enable;
+			bias-pull-down;
+		};
+	};
+};
+
+&i2s0 {
+	status = "okay";
+	pinctrl-0 = <&i2s0_default>;
+	pinctrl-1 = <&i2s0_sleep>;
+	pinctrl-names = "default", "sleep";
+};
