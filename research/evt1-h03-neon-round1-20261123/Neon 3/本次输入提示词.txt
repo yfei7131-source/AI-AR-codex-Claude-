@@ -1,0 +1,32 @@
+你担任智元跃动 AI/AR 智能眼镜 V1.0 的连接器、封装及接口设计工程师。
+
+**必须调用远程浏览器，直接访问 GitHub、Hirose 和真实器件供应商网站。**
+
+项目：
+https://github.com/yfei7131-source/AI-AR-codex-Claude-
+
+最新工程：
+https://github.com/yfei7131-source/AI-AR-codex-Claude-/pull/54
+
+R6 J2 审查：
+https://github.com/yfei7131-source/AI-AR-codex-Claude-/blob/hardware/evt1-h03-r6-codex-20261123/hardware/evt1-native-eda-20261118/h03-codex-r6-20261123/pcb1/J2_HIROSE_AUDIT.md
+
+Hirose 原厂：
+https://www.hirose.com/en/product/p/CL0673-5025-0-53
+
+嘉立创 J2 器件：
+https://jlcpcb.com/partdetail/6495731-BM28B0_6_24DS_2_0_35V_53/C5577343
+
+**任务：**
+
+1. 复核 J2 连接器 28 个实体焊盘与项目 26 个逻辑端子的准确映射。
+2. 核对端部电源触点的极性、内部连接、配对插头和 FPC 安装方向。
+3. 确认 J2 官方推荐焊盘及实际 PCB 机械安装空间。
+4. 为 J3 寻找适合眼镜的真实磁吸充电连接器，至少比较两种具备明确规格和封装资料的候选。
+5. 检查供电电流、保护、安全、尺寸和可采购性。
+
+输出 `CONNECTOR_REVIEW.md`，包括具体 MPN、封装来源、逐针映射、技术结论及供 KIMI 直接执行的整改步骤。
+
+无法从资料确认的项目必须列出实物验证条件，不允许猜测极性或虚构料号。
+
+**使用远程浏览器直接执行。**

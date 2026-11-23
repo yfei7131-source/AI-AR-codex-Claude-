@@ -1,0 +1,32 @@
+你担任智元跃动 AI/AR 智能眼镜 V1.0 的 FPGA、光学桥板及电源完整性工程师。
+
+**必须使用远程浏览器访问 GitHub 工程、FPGA 原厂资料与 PCB 制造资料。**
+
+项目：
+https://github.com/yfei7131-source/AI-AR-codex-Claude-
+
+最新工程：
+https://github.com/yfei7131-source/AI-AR-codex-Claude-/pull/54
+
+R6 PCB2 阻断与研究：
+https://github.com/yfei7131-source/AI-AR-codex-Claude-/blob/hardware/evt1-h03-r6-codex-20261123/hardware/evt1-native-eda-20261118/h03-codex-r6-20261123/pcb2/PCB2_R6.md
+
+Lattice 官方技术资料：
+https://www.latticesemi.com/
+
+嘉立创装配间距：
+https://jlcpcb.com/help/article/minimum-spacing-for-smd-components
+
+**任务：**
+
+1. 独立研究 PCB2 的 C5/C8/C9/C10/C11/C12/C31/C32 去耦布局。
+2. 重点解决 C11 的 VSYS、GND 无法同时安全连接的问题。
+3. 研究 FPGA 线束换层、去耦回流路径及 L2/L5 地平面连续性。
+4. 考虑 PCB2 4.6 mm 窄板、MEMS 声学区域、光机 FPC 和装配限制。
+5. 基于真实工程约束提出至少一套可实施的布局、过孔、走线与回流方案，明确每项方案的 ERC/DRC 验收要求。
+
+输出 `PCB2_DESIGN_REVIEW.md`，包含器件位置建议、网络连接、层选择、几何约束、原厂依据与 KIMI 执行步骤。
+
+不得修改 KIMI 原生工程。无法直接读取原生几何时注明数据缺口，不得虚构坐标和测试结果。
+
+**立即调用远程浏览器完成核查与设计研究。**
