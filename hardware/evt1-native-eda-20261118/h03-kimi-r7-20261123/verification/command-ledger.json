@@ -1,0 +1,3214 @@
+[
+  {
+    "label": "00-import-r6",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "--timeout",
+      "240",
+      "project",
+      "import",
+      "--file",
+      "hardware/evt1-native-eda-20261118/h03-kimi-r7-20261123/baseline/EVT1-H03-CODEX-R6-NOT-FOR-FAB.epro2",
+      "--name",
+      "EVT1-H03-KIMI-R7-NOT-FOR-FAB-20261123"
+    ],
+    "exitCode": 1,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "00b-import-r6",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "project",
+      "import",
+      "--file",
+      "hardware/evt1-native-eda-20261118/h03-kimi-r7-20261123/baseline/EVT1-H03-CODEX-R6-NOT-FOR-FAB.epro2",
+      "--name",
+      "EVT1-H03-KIMI-R7-NOT-FOR-FAB-20261123"
+    ],
+    "exitCode": 1,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "00c-import-r6",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "project",
+      "import",
+      "--window",
+      "0df3b77f-c2ac-44c5-b137-d6c9320e4e7d",
+      "--file",
+      "hardware/evt1-native-eda-20261118/h03-kimi-r7-20261123/baseline/EVT1-H03-CODEX-R6-NOT-FOR-FAB.epro2",
+      "--name",
+      "EVT1-H03-KIMI-R7-NOT-FOR-FAB-20261123"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "01-open-r7",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "project",
+      "open",
+      "--window",
+      "0df3b77f-c2ac-44c5-b137-d6c9320e4e7d",
+      "--project-uuid",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d"
+    ],
+    "exitCode": 1,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "01b-open-r7",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "project",
+      "open",
+      "--window",
+      "0df3b77f-c2ac-44c5-b137-d6c9320e4e7d",
+      "--project-uuid",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--allow-discard-unsaved"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "02-actions",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "actions"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "03-pcb-docs",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "docs",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "04-open-pcb3",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "doc",
+      "open",
+      "1db01a36f669a47a",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "05-pcb3-baseline-copper",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "dump",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--doc",
+      "1db01a36f669a47a",
+      "--include-copper",
+      "--out",
+      "hardware/evt1-native-eda-20261118/h03-kimi-r7-20261123/verification/PCB3-baseline-copper.json"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "06-pcb3-layers",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "layers",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "07-pcb3-baseline-drc",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "drc",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--doc",
+      "1db01a36f669a47a",
+      "--json",
+      "--strict",
+      "--timeout",
+      "120"
+    ],
+    "exitCode": 1,
+    "timedOut": false,
+    "timeoutSeconds": 180
+  },
+  {
+    "label": "08-pcb3-export-dsn",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "export-dsn",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--doc",
+      "1db01a36f669a47a",
+      "--name",
+      "hardware/evt1-native-eda-20261118/h03-kimi-r7-20261123/verification/PCB3-baseline.dsn"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "09-import-autoroute-help",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "import-autoroute",
+      "--help"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 60
+  },
+  {
+    "label": "09b-export-dsn-help",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "export-dsn",
+      "--help"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 60
+  },
+  {
+    "label": "10-pcb-via-help",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "via",
+      "--help"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 60
+  },
+  {
+    "label": "10b-pcb-config-via-help",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "config",
+      "via",
+      "--help"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 60
+  },
+  {
+    "label": "10c-pcb-route-help",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "route",
+      "--help"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 60
+  },
+  {
+    "label": "11-import-hdi-ses-trial",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "project",
+      "import",
+      "--window",
+      "0df3b77f-c2ac-44c5-b137-d6c9320e4e7d",
+      "--file",
+      "hardware/evt1-native-eda-20261118/h03-kimi-r7-20261123/baseline/EVT1-H03-CODEX-R6-NOT-FOR-FAB.epro2",
+      "--name",
+      "EVT1-H03-KIMI-R7-HDI-SES-TRIAL-NOT-FOR-FAB"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "12-open-hdi-ses-trial",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "project",
+      "open",
+      "--window",
+      "0df3b77f-c2ac-44c5-b137-d6c9320e4e7d",
+      "--project-uuid",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--page-uuid",
+      "1db01a36f669a47a",
+      "--allow-discard-unsaved"
+    ],
+    "exitCode": 1,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "12b-hdi-ses-docs",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "doc",
+      "ls",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 120
+  },
+  {
+    "label": "12c-open-hdi-ses-pcb3",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "doc",
+      "switch",
+      "1db01a36f669a47a",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 180
+  },
+  {
+    "label": "13-import-hdi-span-probe",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "import-autoroute",
+      "hardware/evt1-native-eda-20261118/h03-kimi-r7-20261123/hdi/r7-hdi-span-probe.ses",
+      "--format",
+      "ses",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 180
+  },
+  {
+    "label": "14-save-hdi-span-probe",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "save",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 180
+  },
+  {
+    "label": "14b-reload-hdi-span-probe",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "doc",
+      "reload",
+      "1db01a36f669a47a",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 180
+  },
+  {
+    "label": "14c-dump-hdi-span-probe",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "dump",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a",
+      "--include-copper",
+      "--out",
+      "hardware/evt1-native-eda-20261118/h03-kimi-r7-20261123/verification/hdi-span-probe-copper.json"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "15-export-hdi-span-probe",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "project",
+      "export",
+      "--window",
+      "0df3b77f-c2ac-44c5-b137-d6c9320e4e7d",
+      "--project-uuid",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--out",
+      "hardware/evt1-native-eda-20261118/h03-kimi-r7-20261123/verification/hdi-span-probe.epro2"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "16-pcb-track-help",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "track",
+      "--help"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 60
+  },
+  {
+    "label": "16b-pcb-via-delete-help",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "via-delete",
+      "--help"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 60
+  },
+  {
+    "label": "16c-pcb-route-solve-help",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "route",
+      "solve",
+      "--help"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 60
+  },
+  {
+    "label": "17-delete-ses-probe-via",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "via-delete",
+      "--ids",
+      "ebcd6e8ba51e304e",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 120
+  },
+  {
+    "label": "17b-pth-via-k4",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "via",
+      "--x",
+      "177.5",
+      "--y",
+      "328",
+      "--hole",
+      "6",
+      "--diameter",
+      "12",
+      "--net",
+      "I2S_LRCLK_1V8",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 120
+  },
+  {
+    "label": "17c-pth-via-j1",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "via",
+      "--x",
+      "101",
+      "--y",
+      "301",
+      "--hole",
+      "6",
+      "--diameter",
+      "12",
+      "--net",
+      "I2S_LRCLK_1V8",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 120
+  },
+  {
+    "label": "17d-pth-via-u10",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "via",
+      "--x",
+      "136",
+      "--y",
+      "376",
+      "--hole",
+      "6",
+      "--diameter",
+      "12",
+      "--net",
+      "I2S_LRCLK_1V8",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 120
+  },
+  {
+    "label": "17e-track-k4-top",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "track",
+      "--x1",
+      "157.48031",
+      "--y1",
+      "327.75588",
+      "--x2",
+      "177.5",
+      "--y2",
+      "328",
+      "--layer",
+      "1",
+      "--width",
+      "4",
+      "--net",
+      "I2S_LRCLK_1V8",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 120
+  },
+  {
+    "label": "17f-track-l4-j1-diag",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "track",
+      "--x1",
+      "177.5",
+      "--y1",
+      "328",
+      "--x2",
+      "150.5",
+      "--y2",
+      "301",
+      "--layer",
+      "17",
+      "--width",
+      "4",
+      "--net",
+      "I2S_LRCLK_1V8",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 120
+  },
+  {
+    "label": "17g-track-l4-j1-horizontal",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "track",
+      "--x1",
+      "150.5",
+      "--y1",
+      "301",
+      "--x2",
+      "101",
+      "--y2",
+      "301",
+      "--layer",
+      "17",
+      "--width",
+      "4",
+      "--net",
+      "I2S_LRCLK_1V8",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 120
+  },
+  {
+    "label": "17h-track-l4-u10-diag",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "track",
+      "--x1",
+      "177.5",
+      "--y1",
+      "328",
+      "--x2",
+      "136",
+      "--y2",
+      "369.5",
+      "--layer",
+      "17",
+      "--width",
+      "4",
+      "--net",
+      "I2S_LRCLK_1V8",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 120
+  },
+  {
+    "label": "17i-track-l4-u10-vertical",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "track",
+      "--x1",
+      "136",
+      "--y1",
+      "369.5",
+      "--x2",
+      "136",
+      "--y2",
+      "376",
+      "--layer",
+      "17",
+      "--width",
+      "4",
+      "--net",
+      "I2S_LRCLK_1V8",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 120
+  },
+  {
+    "label": "17j-track-j1-bottom-1",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "track",
+      "--x1",
+      "101",
+      "--y1",
+      "301",
+      "--x2",
+      "88.4",
+      "--y2",
+      "288.4",
+      "--layer",
+      "2",
+      "--width",
+      "4",
+      "--net",
+      "I2S_LRCLK_1V8",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 120
+  },
+  {
+    "label": "17k-track-j1-bottom-2",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "track",
+      "--x1",
+      "88.4",
+      "--y1",
+      "288.4",
+      "--x2",
+      "71.5",
+      "--y2",
+      "288.4",
+      "--layer",
+      "2",
+      "--width",
+      "4",
+      "--net",
+      "I2S_LRCLK_1V8",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 120
+  },
+  {
+    "label": "17l-track-u10-bottom",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "track",
+      "--x1",
+      "136",
+      "--y1",
+      "376",
+      "--x2",
+      "150.8",
+      "--y2",
+      "367.3",
+      "--layer",
+      "2",
+      "--width",
+      "4",
+      "--net",
+      "I2S_LRCLK_1V8",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 120
+  },
+  {
+    "label": "18-save-pth-trial",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "save",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 180
+  },
+  {
+    "label": "18b-reload-pth-trial",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "doc",
+      "reload",
+      "1db01a36f669a47a",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 180
+  },
+  {
+    "label": "18c-dump-pth-trial",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "dump",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a",
+      "--include-copper",
+      "--out",
+      "hardware/evt1-native-eda-20261118/h03-kimi-r7-20261123/verification/pth-trial-copper.json"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "18d-pth-path-j1",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "net-path",
+      "--from",
+      "U11.K4",
+      "--to",
+      "J1.P12",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a",
+      "--json"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 120
+  },
+  {
+    "label": "18e-pth-path-u10",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "net-path",
+      "--from",
+      "U11.K4",
+      "--to",
+      "U10.C3",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a",
+      "--json"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 120
+  },
+  {
+    "label": "18f-pth-trial-drc",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "drc",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a",
+      "--json",
+      "--strict",
+      "--timeout",
+      "120"
+    ],
+    "exitCode": 1,
+    "timedOut": false,
+    "timeoutSeconds": 180
+  },
+  {
+    "label": "19-autoroute-help",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "autoroute",
+      "--help"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "19b-routing-skill",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "skill",
+      "read",
+      "--stage",
+      "pcb-routing"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "20-delete-pth-tracks",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "track-delete",
+      "--ids",
+      "47cc1b9d2b3c40a2,8fe55be0b6e3d29d,1b027e411d743dad,f828c006c5ccdff8,4fa4be6e40dcf908,92ad78e81f0dbde1,c038f26e11cae946,2c1d70bc22daa3e8",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "20b-delete-pth-vias",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "via-delete",
+      "--ids",
+      "788619d546797327,29d69e7990079896,f43bfb21b9a07354",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "20c-save-cleaned-trial",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "save",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "20d-reload-cleaned-trial",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "doc",
+      "reload",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "20e-drc-cleaned-trial",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "drc",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a",
+      "--json",
+      "--strict",
+      "--timeout",
+      "120"
+    ],
+    "exitCode": 1,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "21-autoroute-lrclk",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "autoroute",
+      "--net",
+      "I2S_LRCLK_1V8",
+      "--layers",
+      "1,17,2",
+      "--optimize",
+      "completion",
+      "--timeout",
+      "180",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 1,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "21b-autoroute-lrclk",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "autoroute",
+      "--net",
+      "I2S_LRCLK_1V8",
+      "--layers",
+      "1,17,2",
+      "--optimize",
+      "completion",
+      "--timeout",
+      "180s",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "22-save-autorouted-lrclk",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "save",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "22b-reload-autorouted-lrclk",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "doc",
+      "reload",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "22c-dump-autorouted-lrclk",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "dump",
+      "--include-copper",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a",
+      "--out",
+      "hardware/evt1-native-eda-20261118/h03-kimi-r7-20261123/verification/autorouted-lrclk-copper.json"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "22d-drc-autorouted-lrclk",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "drc",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a",
+      "--json",
+      "--strict",
+      "--timeout",
+      "120"
+    ],
+    "exitCode": 1,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "23-path-autoroute-j1-u10",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "net-path",
+      "--from",
+      "U10.C3",
+      "--to",
+      "J1.P12",
+      "--net",
+      "I2S_LRCLK_1V8",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a",
+      "--json"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "23b-path-autoroute-k4-j1",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "net-path",
+      "--from",
+      "U11.K4",
+      "--to",
+      "J1.P12",
+      "--net",
+      "I2S_LRCLK_1V8",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a",
+      "--json"
+    ],
+    "exitCode": 1,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "23c-path-autoroute-r4-j1",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "net-path",
+      "--from",
+      "R4.1",
+      "--to",
+      "J1.P12",
+      "--net",
+      "I2S_LRCLK_1V8",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a",
+      "--json"
+    ],
+    "exitCode": 1,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "24-autoroute-lrclk-outer",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "autoroute",
+      "--net",
+      "I2S_LRCLK_1V8",
+      "--layers",
+      "1,2",
+      "--optimize",
+      "completion",
+      "--timeout",
+      "180s",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 1,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "25-widen-lrclk-branch-create-01",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "track",
+      "--net",
+      "I2S_LRCLK_1V8",
+      "--layer",
+      "2",
+      "--width",
+      "4.0",
+      "--x1",
+      "150.7796",
+      "--y1",
+      "367.3291",
+      "--x2",
+      "140.4096",
+      "--y2",
+      "356.9591",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "25-widen-lrclk-branch-create-02",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "track",
+      "--net",
+      "I2S_LRCLK_1V8",
+      "--layer",
+      "2",
+      "--width",
+      "4.0",
+      "--x1",
+      "140.4096",
+      "--y1",
+      "356.9591",
+      "--x2",
+      "140.4096",
+      "--y2",
+      "328.9392",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "25-widen-lrclk-branch-create-03",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "track",
+      "--net",
+      "I2S_LRCLK_1V8",
+      "--layer",
+      "2",
+      "--width",
+      "4.0",
+      "--x1",
+      "140.4096",
+      "--y1",
+      "328.9392",
+      "--x2",
+      "139.8496",
+      "--y2",
+      "328.3792",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "25-widen-lrclk-branch-create-04",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "track",
+      "--net",
+      "I2S_LRCLK_1V8",
+      "--layer",
+      "2",
+      "--width",
+      "4.0",
+      "--x1",
+      "139.8496",
+      "--y1",
+      "328.3792",
+      "--x2",
+      "120.2997",
+      "--y2",
+      "328.3792",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "25-widen-lrclk-branch-create-05",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "track",
+      "--net",
+      "I2S_LRCLK_1V8",
+      "--layer",
+      "2",
+      "--width",
+      "4.0",
+      "--x1",
+      "120.2997",
+      "--y1",
+      "328.3792",
+      "--x2",
+      "89.7998",
+      "--y2",
+      "297.8792",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "25-widen-lrclk-branch-create-06",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "track",
+      "--net",
+      "I2S_LRCLK_1V8",
+      "--layer",
+      "2",
+      "--width",
+      "4.0",
+      "--x1",
+      "89.7998",
+      "--y1",
+      "297.8792",
+      "--x2",
+      "89.7998",
+      "--y2",
+      "289.0693",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "25-widen-lrclk-branch-create-07",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "track",
+      "--net",
+      "I2S_LRCLK_1V8",
+      "--layer",
+      "2",
+      "--width",
+      "4.0",
+      "--x1",
+      "89.7998",
+      "--y1",
+      "289.0693",
+      "--x2",
+      "89.1198",
+      "--y2",
+      "288.3893",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "25-widen-lrclk-branch-create-08",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "track",
+      "--net",
+      "I2S_LRCLK_1V8",
+      "--layer",
+      "2",
+      "--width",
+      "4.0",
+      "--x1",
+      "89.1198",
+      "--y1",
+      "288.3893",
+      "--x2",
+      "71.4498",
+      "--y2",
+      "288.3893",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "25-widen-lrclk-branch-dump-after-create",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "dump",
+      "--include-copper",
+      "--out",
+      "C:\\Users\\Admin（无密码）\\Desktop\\产品设计\\AI眼镜\\evt1-h03-r7-kimi\\hardware\\evt1-native-eda-20261118\\h03-kimi-r7-20261123\\verification\\25-widen-lrclk-branch-after-create.json",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "25-widen-lrclk-branch-save",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "save",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "25-widen-lrclk-branch-reload",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "doc",
+      "reload",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "25-widen-lrclk-branch-dump-after",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "dump",
+      "--include-copper",
+      "--out",
+      "C:\\Users\\Admin（无密码）\\Desktop\\产品设计\\AI眼镜\\evt1-h03-r7-kimi\\hardware\\evt1-native-eda-20261118\\h03-kimi-r7-20261123\\verification\\25-widen-lrclk-branch-after.json",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "25-widen-lrclk-branch-drc",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "drc",
+      "--strict",
+      "--json",
+      "--timeout",
+      "120",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 1,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "26-delete-widened-lrclk",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "track-delete",
+      "--ids",
+      "693a2287c0a52a49,0282e8d8cb1bdf89,2e481513845995d3,042e27b43dc0efc1,cbc9bb7674388e02,a3f24d08aeb96195,8a3bd7a734f0c560,71e1994b23555e9a",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "26b-save-cleaned-lrclk",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "save",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "26c-reload-cleaned-lrclk",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "doc",
+      "reload",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "26d-drc-cleaned-lrclk",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "drc",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a",
+      "--json",
+      "--strict",
+      "--timeout",
+      "120"
+    ],
+    "exitCode": 1,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "27-pcb1-r7-dump",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "dump",
+      "--include-copper",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--doc",
+      "8fbc3cae65886fe5",
+      "--out",
+      "hardware/evt1-native-eda-20261118/h03-kimi-r7-20261123/verification/PCB1-r7-before-copper.json"
+    ],
+    "exitCode": 1,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "27b-pcb2-r7-dump",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "dump",
+      "--include-copper",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--doc",
+      "9ce45f14cb79dc9d",
+      "--out",
+      "hardware/evt1-native-eda-20261118/h03-kimi-r7-20261123/verification/PCB2-r7-before-copper.json"
+    ],
+    "exitCode": 1,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "28-project-help",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "project",
+      "--help"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "28b-project-open-help",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "project",
+      "open",
+      "--help"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "29-open-integrated-r7",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "project",
+      "open",
+      "--project-uuid",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d"
+    ],
+    "exitCode": 1,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "29b-save-current-trial",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "save",
+      "--project",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "29c-export-source-help",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "project",
+      "export-source",
+      "--help"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "29d-export-current-trial",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "project",
+      "export-source",
+      "--uuid",
+      "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+      "--window",
+      "0df3b77f-c2ac-44c5-b137-d6c9320e4e7d",
+      "--out",
+      "hardware/evt1-native-eda-20261118/h03-kimi-r7-20261123/baseline/EVT1-H03-KIMI-R7-HDI-TRIAL-CLEANED-NOT-FOR-FAB.epro2"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "29e-open-integrated-r7",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "project",
+      "open",
+      "--project-uuid",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--allow-discard-unsaved"
+    ],
+    "exitCode": 1,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "29f-open-integrated-r7",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "project",
+      "open",
+      "--project-uuid",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--window",
+      "0df3b77f-c2ac-44c5-b137-d6c9320e4e7d",
+      "--allow-discard-unsaved"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "30-integrated-docs",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "doc",
+      "ls",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "31-integrated-info",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "project",
+      "info",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "32-save-integrated-pcb1",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "save",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--doc",
+      "8fbc3cae65886fe5"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "33-save-integrated-pcb2",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "save",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--doc",
+      "9ce45f14cb79dc9d"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "34-save-integrated-pcb3",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "save",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "35-export-integrated-baseline",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "project",
+      "export-source",
+      "--uuid",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--window",
+      "0df3b77f-c2ac-44c5-b137-d6c9320e4e7d",
+      "--out",
+      "hardware/evt1-native-eda-20261118/h03-kimi-r7-20261123/baseline/EVT1-H03-KIMI-R7-INTEGRATED-BASELINE-NOT-FOR-FAB.epro2"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "36-pcb1-r7-dump",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "dump",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--doc",
+      "8fbc3cae65886fe5",
+      "--out",
+      "hardware/evt1-native-eda-20261118/h03-kimi-r7-20261123/verification/integrated-baseline-pcb1-copper.json"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "37-pcb2-r7-dump",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "dump",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--doc",
+      "9ce45f14cb79dc9d",
+      "--out",
+      "hardware/evt1-native-eda-20261118/h03-kimi-r7-20261123/verification/integrated-baseline-pcb2-copper.json"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "38-pcb1-integrated-baseline-drc",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "drc",
+      "--strict",
+      "--json",
+      "--timeout",
+      "120",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--doc",
+      "8fbc3cae65886fe5"
+    ],
+    "exitCode": 1,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "39-pcb2-integrated-baseline-drc",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "drc",
+      "--strict",
+      "--json",
+      "--timeout",
+      "120",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--doc",
+      "9ce45f14cb79dc9d"
+    ],
+    "exitCode": 1,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "40-pcb1-r7-full-dump",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "dump",
+      "--include-copper",
+      "--no-silk",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--doc",
+      "8fbc3cae65886fe5",
+      "--out",
+      "hardware/evt1-native-eda-20261118/h03-kimi-r7-20261123/verification/integrated-baseline-pcb1-full-copper.json"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "41-pcb2-r7-full-dump",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "dump",
+      "--include-copper",
+      "--no-silk",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--doc",
+      "9ce45f14cb79dc9d",
+      "--out",
+      "hardware/evt1-native-eda-20261118/h03-kimi-r7-20261123/verification/integrated-baseline-pcb2-full-copper.json"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "42-pcb2-c12-c33-before",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "net-path",
+      "--help"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "42b-pcb2-c12-c33-before",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "net-path",
+      "--from",
+      "C12.2",
+      "--to",
+      "C33.2",
+      "--net",
+      "GND",
+      "--json",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--doc",
+      "9ce45f14cb79dc9d"
+    ],
+    "exitCode": 1,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "43-import-routing-trial",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "project",
+      "import",
+      "--window",
+      "0df3b77f-c2ac-44c5-b137-d6c9320e4e7d",
+      "--file",
+      "hardware/evt1-native-eda-20261118/h03-kimi-r7-20261123/baseline/EVT1-H03-KIMI-R7-INTEGRATED-BASELINE-NOT-FOR-FAB.epro2",
+      "--name",
+      "EVT1-H03-KIMI-R7-ROUTING-TRIAL-NOT-FOR-FAB"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "44-pcb-erc-help",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "erc",
+      "--help"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "45-open-routing-trial",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "project",
+      "open",
+      "--project-uuid",
+      "e97e93750dda70eaa90201ae8f1cbfb4fda0649edefb7a4ee6d5dbd21c97c4a6",
+      "--window",
+      "0df3b77f-c2ac-44c5-b137-d6c9320e4e7d",
+      "--allow-discard-unsaved"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "46-sch-erc-help",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "sch",
+      "erc",
+      "--help"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "47-sch-drc-help",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "sch",
+      "drc",
+      "--help"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "48-route-short-help",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "route-short",
+      "--help"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "49-pcb-config-help",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "config",
+      "--help"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "50-net-class-help",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "net-class",
+      "--help"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "51-pcb1-short-route-plan",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "route-short",
+      "--dry-run",
+      "--no-multilayer",
+      "--max-len",
+      "165",
+      "--width",
+      "4",
+      "--corner",
+      "45",
+      "--project",
+      "e97e93750dda70eaa90201ae8f1cbfb4fda0649edefb7a4ee6d5dbd21c97c4a6",
+      "--doc",
+      "8fbc3cae65886fe5"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "52-pcb1-short-route-extended-plan",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "route-short",
+      "--dry-run",
+      "--no-multilayer",
+      "--max-len",
+      "1000",
+      "--width",
+      "4",
+      "--corner",
+      "45",
+      "--project",
+      "e97e93750dda70eaa90201ae8f1cbfb4fda0649edefb7a4ee6d5dbd21c97c4a6",
+      "--doc",
+      "8fbc3cae65886fe5"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "53-pcb1-fpga-reset-autoroute",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "autoroute",
+      "--net",
+      "FPGA_CRESET_B",
+      "--layers",
+      "1,2",
+      "--optimize",
+      "completion",
+      "--timeout",
+      "180s",
+      "--project",
+      "e97e93750dda70eaa90201ae8f1cbfb4fda0649edefb7a4ee6d5dbd21c97c4a6",
+      "--doc",
+      "8fbc3cae65886fe5"
+    ],
+    "exitCode": 1,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "54-pcb2-vsys-width-trial-dump-before",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "dump",
+      "--include-copper",
+      "--no-silk",
+      "--out",
+      "C:\\Users\\Admin（无密码）\\Desktop\\产品设计\\AI眼镜\\evt1-h03-r7-kimi\\hardware\\evt1-native-eda-20261118\\h03-kimi-r7-20261123\\verification\\54-pcb2-vsys-width-trial-before.json",
+      "--project",
+      "e97e93750dda70eaa90201ae8f1cbfb4fda0649edefb7a4ee6d5dbd21c97c4a6",
+      "--doc",
+      "9ce45f14cb79dc9d"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "54-pcb2-vsys-width-trial-drc-before",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "drc",
+      "--strict",
+      "--json",
+      "--timeout",
+      "120",
+      "--project",
+      "e97e93750dda70eaa90201ae8f1cbfb4fda0649edefb7a4ee6d5dbd21c97c4a6",
+      "--doc",
+      "9ce45f14cb79dc9d"
+    ],
+    "exitCode": 1,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "54-pcb2-vsys-width-trial-create-01",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "track",
+      "--net",
+      "VSYS",
+      "--layer",
+      "1",
+      "--width",
+      "4",
+      "--x1",
+      "73.4",
+      "--y1",
+      "309.8",
+      "--x2",
+      "64",
+      "--y2",
+      "304",
+      "--project",
+      "e97e93750dda70eaa90201ae8f1cbfb4fda0649edefb7a4ee6d5dbd21c97c4a6",
+      "--doc",
+      "9ce45f14cb79dc9d"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "54-pcb2-vsys-width-trial-create-02",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "track",
+      "--net",
+      "VSYS",
+      "--layer",
+      "1",
+      "--width",
+      "4",
+      "--x1",
+      "64",
+      "--y1",
+      "304",
+      "--x2",
+      "32",
+      "--y2",
+      "304",
+      "--project",
+      "e97e93750dda70eaa90201ae8f1cbfb4fda0649edefb7a4ee6d5dbd21c97c4a6",
+      "--doc",
+      "9ce45f14cb79dc9d"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "54-pcb2-vsys-width-trial-create-03",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "track",
+      "--net",
+      "VSYS",
+      "--layer",
+      "1",
+      "--width",
+      "4",
+      "--x1",
+      "32",
+      "--y1",
+      "304",
+      "--x2",
+      "24.2",
+      "--y2",
+      "309.8",
+      "--project",
+      "e97e93750dda70eaa90201ae8f1cbfb4fda0649edefb7a4ee6d5dbd21c97c4a6",
+      "--doc",
+      "9ce45f14cb79dc9d"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "54-pcb2-vsys-width-trial-dump-after-create",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "dump",
+      "--include-copper",
+      "--no-silk",
+      "--out",
+      "C:\\Users\\Admin（无密码）\\Desktop\\产品设计\\AI眼镜\\evt1-h03-r7-kimi\\hardware\\evt1-native-eda-20261118\\h03-kimi-r7-20261123\\verification\\54-pcb2-vsys-width-trial-after-create.json",
+      "--project",
+      "e97e93750dda70eaa90201ae8f1cbfb4fda0649edefb7a4ee6d5dbd21c97c4a6",
+      "--doc",
+      "9ce45f14cb79dc9d"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "54-pcb2-vsys-width-trial-save",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "save",
+      "--project",
+      "e97e93750dda70eaa90201ae8f1cbfb4fda0649edefb7a4ee6d5dbd21c97c4a6",
+      "--doc",
+      "9ce45f14cb79dc9d"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "54-pcb2-vsys-width-trial-reload",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "doc",
+      "reload",
+      "--project",
+      "e97e93750dda70eaa90201ae8f1cbfb4fda0649edefb7a4ee6d5dbd21c97c4a6",
+      "--doc",
+      "9ce45f14cb79dc9d"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "54-pcb2-vsys-width-trial-dump-after",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "dump",
+      "--include-copper",
+      "--no-silk",
+      "--out",
+      "C:\\Users\\Admin（无密码）\\Desktop\\产品设计\\AI眼镜\\evt1-h03-r7-kimi\\hardware\\evt1-native-eda-20261118\\h03-kimi-r7-20261123\\verification\\54-pcb2-vsys-width-trial-after.json",
+      "--project",
+      "e97e93750dda70eaa90201ae8f1cbfb4fda0649edefb7a4ee6d5dbd21c97c4a6",
+      "--doc",
+      "9ce45f14cb79dc9d"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "54-pcb2-vsys-width-trial-drc-after",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "drc",
+      "--strict",
+      "--json",
+      "--timeout",
+      "120",
+      "--project",
+      "e97e93750dda70eaa90201ae8f1cbfb4fda0649edefb7a4ee6d5dbd21c97c4a6",
+      "--doc",
+      "9ce45f14cb79dc9d"
+    ],
+    "exitCode": 1,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "55-pcb2-routing-trial-save",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "save",
+      "--project",
+      "e97e93750dda70eaa90201ae8f1cbfb4fda0649edefb7a4ee6d5dbd21c97c4a6",
+      "--doc",
+      "9ce45f14cb79dc9d"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "55-pcb2-integrated-open",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "project",
+      "open",
+      "--window",
+      "0df3b77f-c2ac-44c5-b137-d6c9320e4e7d",
+      "--project-uuid",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--page-uuid",
+      "9ce45f14cb79dc9d",
+      "--allow-discard-unsaved"
+    ],
+    "exitCode": 1,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "57-pcb2-integrated-document-inventory",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "doc",
+      "ls",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "56-pcb2-vsys-width-integrated-dump-before",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "dump",
+      "--include-copper",
+      "--no-silk",
+      "--out",
+      "C:\\Users\\Admin（无密码）\\Desktop\\产品设计\\AI眼镜\\evt1-h03-r7-kimi\\hardware\\evt1-native-eda-20261118\\h03-kimi-r7-20261123\\verification\\56-pcb2-vsys-width-integrated-before.json",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--doc",
+      "9ce45f14cb79dc9d"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "56-pcb2-vsys-width-integrated-drc-before",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "drc",
+      "--strict",
+      "--json",
+      "--timeout",
+      "120",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--doc",
+      "9ce45f14cb79dc9d"
+    ],
+    "exitCode": 1,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "56-pcb2-vsys-width-integrated-create-01",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "track",
+      "--net",
+      "VSYS",
+      "--layer",
+      "1",
+      "--width",
+      "4",
+      "--x1",
+      "73.4",
+      "--y1",
+      "309.8",
+      "--x2",
+      "64",
+      "--y2",
+      "304",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--doc",
+      "9ce45f14cb79dc9d"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "56-pcb2-vsys-width-integrated-create-02",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "track",
+      "--net",
+      "VSYS",
+      "--layer",
+      "1",
+      "--width",
+      "4",
+      "--x1",
+      "64",
+      "--y1",
+      "304",
+      "--x2",
+      "32",
+      "--y2",
+      "304",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--doc",
+      "9ce45f14cb79dc9d"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "56-pcb2-vsys-width-integrated-create-03",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "track",
+      "--net",
+      "VSYS",
+      "--layer",
+      "1",
+      "--width",
+      "4",
+      "--x1",
+      "32",
+      "--y1",
+      "304",
+      "--x2",
+      "24.2",
+      "--y2",
+      "309.8",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--doc",
+      "9ce45f14cb79dc9d"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "56-pcb2-vsys-width-integrated-dump-after-create",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "dump",
+      "--include-copper",
+      "--no-silk",
+      "--out",
+      "C:\\Users\\Admin（无密码）\\Desktop\\产品设计\\AI眼镜\\evt1-h03-r7-kimi\\hardware\\evt1-native-eda-20261118\\h03-kimi-r7-20261123\\verification\\56-pcb2-vsys-width-integrated-after-create.json",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--doc",
+      "9ce45f14cb79dc9d"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "56-pcb2-vsys-width-integrated-save",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "save",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--doc",
+      "9ce45f14cb79dc9d"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "56-pcb2-vsys-width-integrated-reload",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "doc",
+      "reload",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--doc",
+      "9ce45f14cb79dc9d"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "56-pcb2-vsys-width-integrated-dump-after",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "dump",
+      "--include-copper",
+      "--no-silk",
+      "--out",
+      "C:\\Users\\Admin（无密码）\\Desktop\\产品设计\\AI眼镜\\evt1-h03-r7-kimi\\hardware\\evt1-native-eda-20261118\\h03-kimi-r7-20261123\\verification\\56-pcb2-vsys-width-integrated-after.json",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--doc",
+      "9ce45f14cb79dc9d"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "56-pcb2-vsys-width-integrated-drc-after",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "drc",
+      "--strict",
+      "--json",
+      "--timeout",
+      "120",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--doc",
+      "9ce45f14cb79dc9d"
+    ],
+    "exitCode": 1,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "58-sch-netlist-help",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "sch",
+      "netlist",
+      "--help"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 60
+  },
+  {
+    "label": "59-project-export-help",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "project",
+      "export",
+      "--help"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 60
+  },
+  {
+    "label": "60-project-import-help",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "project",
+      "import",
+      "--help"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 60
+  },
+  {
+    "label": "61-PCB1-final-save",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "save",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--doc",
+      "8fbc3cae65886fe5"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "61-PCB1-final-reload",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "doc",
+      "reload",
+      "--json",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--doc",
+      "8fbc3cae65886fe5"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "61-PCB1-final-dump",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "dump",
+      "--include-copper",
+      "--no-silk",
+      "--out",
+      "C:\\Users\\Admin（无密码）\\Desktop\\产品设计\\AI眼镜\\evt1-h03-r7-kimi\\hardware\\evt1-native-eda-20261118\\h03-kimi-r7-20261123\\verification\\final\\PCB1-copper.json",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--doc",
+      "8fbc3cae65886fe5"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "61-PCB1-final-drc",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "drc",
+      "--strict",
+      "--json",
+      "--timeout",
+      "120",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--doc",
+      "8fbc3cae65886fe5"
+    ],
+    "exitCode": 1,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "61-PCB1-final-erc",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "sch",
+      "drc",
+      "--strict",
+      "--json",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--doc",
+      "4d38590959875927"
+    ],
+    "exitCode": 1,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "61-PCB1-final-netlist",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "sch",
+      "netlist",
+      "--type",
+      "Protel2",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--doc",
+      "4d38590959875927"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "62-PCB2-final-save",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "save",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--doc",
+      "9ce45f14cb79dc9d"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "62-PCB2-final-reload",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "doc",
+      "reload",
+      "--json",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--doc",
+      "9ce45f14cb79dc9d"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "62-PCB2-final-dump",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "dump",
+      "--include-copper",
+      "--no-silk",
+      "--out",
+      "C:\\Users\\Admin（无密码）\\Desktop\\产品设计\\AI眼镜\\evt1-h03-r7-kimi\\hardware\\evt1-native-eda-20261118\\h03-kimi-r7-20261123\\verification\\final\\PCB2-copper.json",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--doc",
+      "9ce45f14cb79dc9d"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "62-PCB2-final-drc",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "drc",
+      "--strict",
+      "--json",
+      "--timeout",
+      "120",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--doc",
+      "9ce45f14cb79dc9d"
+    ],
+    "exitCode": 1,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "62-PCB2-final-erc",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "sch",
+      "drc",
+      "--strict",
+      "--json",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--doc",
+      "e00fbca5c08cc114"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "62-PCB2-final-netlist",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "sch",
+      "netlist",
+      "--type",
+      "Protel2",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--doc",
+      "e00fbca5c08cc114"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "63-PCB3-final-save",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "save",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "63-PCB3-final-reload",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "doc",
+      "reload",
+      "--json",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 1,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "63b-PCB3-final-ready-after-partial",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "doc",
+      "ready",
+      "1db01a36f669a47a",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--timeout",
+      "10s",
+      "--json"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 60
+  },
+  {
+    "label": "63-PCB3-final-dump",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "dump",
+      "--include-copper",
+      "--no-silk",
+      "--out",
+      "C:\\Users\\Admin（无密码）\\Desktop\\产品设计\\AI眼镜\\evt1-h03-r7-kimi\\hardware\\evt1-native-eda-20261118\\h03-kimi-r7-20261123\\verification\\final\\PCB3-copper.json",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "63-PCB3-final-drc",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "drc",
+      "--strict",
+      "--json",
+      "--timeout",
+      "120",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 1,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "63-PCB3-final-erc",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "sch",
+      "drc",
+      "--strict",
+      "--json",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--doc",
+      "e98944c2045546cf"
+    ],
+    "exitCode": 1,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "63-PCB3-final-netlist",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "sch",
+      "netlist",
+      "--type",
+      "Protel2",
+      "--project",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--doc",
+      "e98944c2045546cf"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "65-r7-final-export",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "project",
+      "export",
+      "--window",
+      "0df3b77f-c2ac-44c5-b137-d6c9320e4e7d",
+      "--project-uuid",
+      "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+      "--out",
+      "C:\\Users\\Admin（无密码）\\Desktop\\产品设计\\AI眼镜\\evt1-h03-r7-kimi\\hardware\\evt1-native-eda-20261118\\h03-kimi-r7-20261123\\native\\EVT1-H03-KIMI-R7-NOT-FOR-FAB.epro2"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "66-r7-independent-import",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "project",
+      "import",
+      "--window",
+      "0df3b77f-c2ac-44c5-b137-d6c9320e4e7d",
+      "--file",
+      "hardware/evt1-native-eda-20261118/h03-kimi-r7-20261123/native/EVT1-H03-KIMI-R7-NOT-FOR-FAB.epro2",
+      "--name",
+      "EVT1-H03-KIMI-R7-INDEPENDENT-VERIFY-NOT-FOR-FAB-20261123"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "67-r7-independent-open",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "project",
+      "open",
+      "--window",
+      "0df3b77f-c2ac-44c5-b137-d6c9320e4e7d",
+      "--project-uuid",
+      "038ca2c55a325ffb9f130a53eab997bca78c8b05f2c589857db34f8be255a3e2",
+      "--allow-discard-unsaved"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "68-r7-independent-reexport",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "project",
+      "export",
+      "--window",
+      "0df3b77f-c2ac-44c5-b137-d6c9320e4e7d",
+      "--project-uuid",
+      "038ca2c55a325ffb9f130a53eab997bca78c8b05f2c589857db34f8be255a3e2",
+      "--out",
+      "hardware/evt1-native-eda-20261118/h03-kimi-r7-20261123/verification/independent/EVT1-H03-KIMI-R7-REEXPORT-NOT-FOR-FAB.epro2"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "69-PCB1-independent-dump",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "dump",
+      "--include-copper",
+      "--no-silk",
+      "--out",
+      "C:\\Users\\Admin（无密码）\\Desktop\\产品设计\\AI眼镜\\evt1-h03-r7-kimi\\hardware\\evt1-native-eda-20261118\\h03-kimi-r7-20261123\\verification\\independent\\PCB1-copper.json",
+      "--project",
+      "038ca2c55a325ffb9f130a53eab997bca78c8b05f2c589857db34f8be255a3e2",
+      "--doc",
+      "8fbc3cae65886fe5"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "69-PCB1-independent-drc",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "drc",
+      "--strict",
+      "--json",
+      "--timeout",
+      "120",
+      "--project",
+      "038ca2c55a325ffb9f130a53eab997bca78c8b05f2c589857db34f8be255a3e2",
+      "--doc",
+      "8fbc3cae65886fe5"
+    ],
+    "exitCode": 1,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "69-PCB1-independent-erc",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "sch",
+      "drc",
+      "--strict",
+      "--json",
+      "--project",
+      "038ca2c55a325ffb9f130a53eab997bca78c8b05f2c589857db34f8be255a3e2",
+      "--doc",
+      "4d38590959875927"
+    ],
+    "exitCode": 1,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "69-PCB1-independent-netlist",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "sch",
+      "netlist",
+      "--type",
+      "Protel2",
+      "--project",
+      "038ca2c55a325ffb9f130a53eab997bca78c8b05f2c589857db34f8be255a3e2",
+      "--doc",
+      "4d38590959875927"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "70-PCB2-independent-dump",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "dump",
+      "--include-copper",
+      "--no-silk",
+      "--out",
+      "C:\\Users\\Admin（无密码）\\Desktop\\产品设计\\AI眼镜\\evt1-h03-r7-kimi\\hardware\\evt1-native-eda-20261118\\h03-kimi-r7-20261123\\verification\\independent\\PCB2-copper.json",
+      "--project",
+      "038ca2c55a325ffb9f130a53eab997bca78c8b05f2c589857db34f8be255a3e2",
+      "--doc",
+      "9ce45f14cb79dc9d"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "70-PCB2-independent-drc",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "drc",
+      "--strict",
+      "--json",
+      "--timeout",
+      "120",
+      "--project",
+      "038ca2c55a325ffb9f130a53eab997bca78c8b05f2c589857db34f8be255a3e2",
+      "--doc",
+      "9ce45f14cb79dc9d"
+    ],
+    "exitCode": 1,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "70-PCB2-independent-erc",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "sch",
+      "drc",
+      "--strict",
+      "--json",
+      "--project",
+      "038ca2c55a325ffb9f130a53eab997bca78c8b05f2c589857db34f8be255a3e2",
+      "--doc",
+      "e00fbca5c08cc114"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "70-PCB2-independent-netlist",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "sch",
+      "netlist",
+      "--type",
+      "Protel2",
+      "--project",
+      "038ca2c55a325ffb9f130a53eab997bca78c8b05f2c589857db34f8be255a3e2",
+      "--doc",
+      "e00fbca5c08cc114"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "71-PCB3-independent-dump",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "dump",
+      "--include-copper",
+      "--no-silk",
+      "--out",
+      "C:\\Users\\Admin（无密码）\\Desktop\\产品设计\\AI眼镜\\evt1-h03-r7-kimi\\hardware\\evt1-native-eda-20261118\\h03-kimi-r7-20261123\\verification\\independent\\PCB3-copper.json",
+      "--project",
+      "038ca2c55a325ffb9f130a53eab997bca78c8b05f2c589857db34f8be255a3e2",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "71-PCB3-independent-drc",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "pcb",
+      "drc",
+      "--strict",
+      "--json",
+      "--timeout",
+      "120",
+      "--project",
+      "038ca2c55a325ffb9f130a53eab997bca78c8b05f2c589857db34f8be255a3e2",
+      "--doc",
+      "1db01a36f669a47a"
+    ],
+    "exitCode": 1,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "71-PCB3-independent-erc",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "sch",
+      "drc",
+      "--strict",
+      "--json",
+      "--project",
+      "038ca2c55a325ffb9f130a53eab997bca78c8b05f2c589857db34f8be255a3e2",
+      "--doc",
+      "e98944c2045546cf"
+    ],
+    "exitCode": 1,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  },
+  {
+    "label": "71-PCB3-independent-netlist",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "sch",
+      "netlist",
+      "--type",
+      "Protel2",
+      "--project",
+      "038ca2c55a325ffb9f130a53eab997bca78c8b05f2c589857db34f8be255a3e2",
+      "--doc",
+      "e98944c2045546cf"
+    ],
+    "exitCode": 0,
+    "timedOut": false,
+    "timeoutSeconds": 240
+  }
+]

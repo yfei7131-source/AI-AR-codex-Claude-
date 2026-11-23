@@ -1,0 +1,1426 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "baseline": "C:\\Users\\Admin（无密码）\\Desktop\\产品设计\\AI眼镜\\evt1-h03-r7-kimi\\hardware\\evt1-native-eda-20261118\\h03-kimi-r7-20261123\\verification\\07-pcb3-baseline-drc.stdout.json",
+    "baselineSha256": "8da65f39866839038734a03e50be6a1dd66e96df96ca575e1fe79037b030dc76",
+    "candidate": "C:\\Users\\Admin（无密码）\\Desktop\\产品设计\\AI眼镜\\evt1-h03-r7-kimi\\hardware\\evt1-native-eda-20261118\\h03-kimi-r7-20261123\\verification\\18f-pth-trial-drc.stdout.json",
+    "candidateSha256": "518f708f720448b316556508242fd38c7c54ad5971b20f1c3f139eec971b2607"
+  },
+  "baseline": {
+    "passed": false,
+    "counts": {
+      "Connection Error": 132
+    }
+  },
+  "candidate": {
+    "passed": false,
+    "counts": {
+      "Clearance Error": 39,
+      "Connection Error": 130
+    }
+  },
+  "comparisonMethod": "Multiset difference of native normalized rule/object-pair/objects/layer/message; not a globalIndex comparison.",
+  "introducedCount": 40,
+  "removedCount": 3,
+  "introducedByRule": {
+    "Clearance Error": 39,
+    "Connection Error": 1
+  },
+  "removedByRule": {
+    "Connection Error": 3
+  },
+  "introduced": [
+    {
+      "rule": "Clearance Error",
+      "objType": "SMD Pad to Via",
+      "ruleName": "copperThickness1oz",
+      "net": "1V8_SYS",
+      "x": 173.93,
+      "y": 335.75,
+      "layer": "Top Layer",
+      "objs": [
+        "fb9a90e154948529nrfp201",
+        "788619d546797327"
+      ],
+      "message": "(1V8_SYS): U11_L5 to (I2S_LRCLK_1V8): e54 distance is 5.1mil, should be >= 6mil",
+      "globalIndex": "err6"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "SMD Pad to Via",
+      "ruleName": "copperThickness1oz",
+      "net": "BLE_NRESET",
+      "x": 109.65,
+      "y": 300.54,
+      "layer": "Top Layer",
+      "objs": [
+        "fb9a90e154948529nrfp163",
+        "29d69e7990079896"
+      ],
+      "message": "(BLE_NRESET): U11_G2 to (I2S_LRCLK_1V8): e55 distance is 5.3mil, should be >= 6mil",
+      "globalIndex": "err15"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "SMD Pad to Via",
+      "ruleName": "copperThickness1oz",
+      "net": "BLE_SWDCLK",
+      "x": 106.2,
+      "y": 300.2,
+      "layer": "Top Layer",
+      "objs": [
+        "fb9a90e154948529nrfp155",
+        "29d69e7990079896"
+      ],
+      "message": "(BLE_SWDCLK): U11_F2 to (I2S_LRCLK_1V8): e55 distance is 0mil, should be >= 6mil",
+      "globalIndex": "err11"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "Hole to SMD Pad",
+      "ruleName": "copperThickness1oz",
+      "net": "BLE_SWDCLK",
+      "x": 104,
+      "y": 301,
+      "layer": "Top Layer",
+      "objs": [
+        "fb9a90e154948529nrfp155",
+        "29d69e7990079896"
+      ],
+      "message": "(BLE_SWDCLK): U11_F2 to (I2S_LRCLK_1V8): e55 distance is 0mil, should be >= 6.9mil",
+      "globalIndex": "err12"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "SMD Pad to Via",
+      "ruleName": "copperThickness1oz",
+      "net": "BLE_SWDIO",
+      "x": 101.78,
+      "y": 292.63,
+      "layer": "Top Layer",
+      "objs": [
+        "fb9a90e154948529nrfp151",
+        "29d69e7990079896"
+      ],
+      "message": "(BLE_SWDIO): U11_F1 to (I2S_LRCLK_1V8): e55 distance is 4.8mil, should be >= 6mil",
+      "globalIndex": "err10"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "Track to Via",
+      "ruleName": "copperThickness1oz",
+      "net": "GND",
+      "x": 128.54,
+      "y": 379.62,
+      "layer": "Top Layer",
+      "objs": [
+        "2aa19b0d9dbc8377",
+        "f43bfb21b9a07354"
+      ],
+      "message": "(GND): e196 to (I2S_LRCLK_1V8): e56 distance is 2.8mil, should be >= 6mil",
+      "globalIndex": "err0"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "Hole to Track",
+      "ruleName": "copperThickness1oz",
+      "net": "GND",
+      "x": 129.89,
+      "y": 378.96,
+      "layer": "Top Layer",
+      "objs": [
+        "2aa19b0d9dbc8377",
+        "f43bfb21b9a07354"
+      ],
+      "message": "(GND): e196 to (I2S_LRCLK_1V8): e56 distance is 5.8mil, should be >= 6.9mil",
+      "globalIndex": "err1"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "Track to Via",
+      "ruleName": "copperThickness1oz",
+      "net": "GND",
+      "x": 168.96,
+      "y": 329.75,
+      "layer": "Bottom Layer",
+      "objs": [
+        "627affcd15372189",
+        "788619d546797327"
+      ],
+      "message": "(GND): e172 to (I2S_LRCLK_1V8): e54 distance is 3.7mil, should be >= 6mil",
+      "globalIndex": "err2"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "SMD Pad to Via",
+      "ruleName": "copperThickness1oz",
+      "net": "GND",
+      "x": 178.54,
+      "y": 328,
+      "layer": "Bottom Layer",
+      "objs": [
+        "04821a712662b59fre5p110",
+        "788619d546797327"
+      ],
+      "message": "(GND): C3_2 to (I2S_LRCLK_1V8): e54 distance is 0mil, should be >= 6mil",
+      "globalIndex": "err20"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "Hole to SMD Pad",
+      "ruleName": "copperThickness1oz",
+      "net": "GND",
+      "x": 178.54,
+      "y": 328,
+      "layer": "Bottom Layer",
+      "objs": [
+        "04821a712662b59fre5p110",
+        "788619d546797327"
+      ],
+      "message": "(GND): C3_2 to (I2S_LRCLK_1V8): e54 distance is 0mil, should be >= 6.9mil",
+      "globalIndex": "err21"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "Plane Zone to Via",
+      "ruleName": "copperThickness1oz",
+      "net": "GND",
+      "x": 183.5,
+      "y": 328,
+      "layer": "Inner1",
+      "objs": [
+        "8ae199b84b265f97",
+        "788619d546797327"
+      ],
+      "message": "(GND): e-1 to (I2S_LRCLK_1V8): e54 distance is 0mil, should be >= 10mil",
+      "globalIndex": "err23"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "Hole to Plane Zone",
+      "ruleName": "copperThickness1oz",
+      "net": "GND",
+      "x": 180.5,
+      "y": 328,
+      "layer": "Inner1",
+      "objs": [
+        "8ae199b84b265f97",
+        "788619d546797327"
+      ],
+      "message": "(GND): e-1 to (I2S_LRCLK_1V8): e54 distance is 0mil, should be >= 10mil",
+      "globalIndex": "err24"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "Plane Zone to Via",
+      "ruleName": "copperThickness1oz",
+      "net": "GND",
+      "x": 107,
+      "y": 301,
+      "layer": "Inner1",
+      "objs": [
+        "8ae199b84b265f97",
+        "29d69e7990079896"
+      ],
+      "message": "(GND): e-1 to (I2S_LRCLK_1V8): e55 distance is 0mil, should be >= 10mil",
+      "globalIndex": "err25"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "Hole to Plane Zone",
+      "ruleName": "copperThickness1oz",
+      "net": "GND",
+      "x": 104,
+      "y": 301,
+      "layer": "Inner1",
+      "objs": [
+        "8ae199b84b265f97",
+        "29d69e7990079896"
+      ],
+      "message": "(GND): e-1 to (I2S_LRCLK_1V8): e55 distance is 0mil, should be >= 10mil",
+      "globalIndex": "err26"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "Plane Zone to Via",
+      "ruleName": "copperThickness1oz",
+      "net": "GND",
+      "x": 142,
+      "y": 376,
+      "layer": "Inner1",
+      "objs": [
+        "8ae199b84b265f97",
+        "f43bfb21b9a07354"
+      ],
+      "message": "(GND): e-1 to (I2S_LRCLK_1V8): e56 distance is 0mil, should be >= 10mil",
+      "globalIndex": "err27"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "Hole to Plane Zone",
+      "ruleName": "copperThickness1oz",
+      "net": "GND",
+      "x": 139,
+      "y": 376,
+      "layer": "Inner1",
+      "objs": [
+        "8ae199b84b265f97",
+        "f43bfb21b9a07354"
+      ],
+      "message": "(GND): e-1 to (I2S_LRCLK_1V8): e56 distance is 0mil, should be >= 10mil",
+      "globalIndex": "err28"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "Plane Zone to Via",
+      "ruleName": "copperThickness1oz",
+      "net": "GND",
+      "x": 183.5,
+      "y": 328,
+      "layer": "Inner4",
+      "objs": [
+        "e8b34b9bceb74291",
+        "788619d546797327"
+      ],
+      "message": "(GND): e-1 to (I2S_LRCLK_1V8): e54 distance is 0mil, should be >= 10mil",
+      "globalIndex": "err29"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "Hole to Track",
+      "ruleName": "copperThickness1oz",
+      "net": "GND",
+      "x": 170.43,
+      "y": 329.45,
+      "layer": "Bottom Layer",
+      "objs": [
+        "627affcd15372189",
+        "788619d546797327"
+      ],
+      "message": "(GND): e172 to (I2S_LRCLK_1V8): e54 distance is 6.7mil, should be >= 6.9mil",
+      "globalIndex": "err3"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "Hole to Plane Zone",
+      "ruleName": "copperThickness1oz",
+      "net": "GND",
+      "x": 180.5,
+      "y": 328,
+      "layer": "Inner4",
+      "objs": [
+        "e8b34b9bceb74291",
+        "788619d546797327"
+      ],
+      "message": "(GND): e-1 to (I2S_LRCLK_1V8): e54 distance is 0mil, should be >= 10mil",
+      "globalIndex": "err30"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "Plane Zone to Via",
+      "ruleName": "copperThickness1oz",
+      "net": "GND",
+      "x": 107,
+      "y": 301,
+      "layer": "Inner4",
+      "objs": [
+        "e8b34b9bceb74291",
+        "29d69e7990079896"
+      ],
+      "message": "(GND): e-1 to (I2S_LRCLK_1V8): e55 distance is 0mil, should be >= 10mil",
+      "globalIndex": "err31"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "Hole to Plane Zone",
+      "ruleName": "copperThickness1oz",
+      "net": "GND",
+      "x": 104,
+      "y": 301,
+      "layer": "Inner4",
+      "objs": [
+        "e8b34b9bceb74291",
+        "29d69e7990079896"
+      ],
+      "message": "(GND): e-1 to (I2S_LRCLK_1V8): e55 distance is 0mil, should be >= 10mil",
+      "globalIndex": "err32"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "Plane Zone to Via",
+      "ruleName": "copperThickness1oz",
+      "net": "GND",
+      "x": 142,
+      "y": 376,
+      "layer": "Inner4",
+      "objs": [
+        "e8b34b9bceb74291",
+        "f43bfb21b9a07354"
+      ],
+      "message": "(GND): e-1 to (I2S_LRCLK_1V8): e56 distance is 0mil, should be >= 10mil",
+      "globalIndex": "err33"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "Hole to Plane Zone",
+      "ruleName": "copperThickness1oz",
+      "net": "GND",
+      "x": 139,
+      "y": 376,
+      "layer": "Inner4",
+      "objs": [
+        "e8b34b9bceb74291",
+        "f43bfb21b9a07354"
+      ],
+      "message": "(GND): e-1 to (I2S_LRCLK_1V8): e56 distance is 0mil, should be >= 10mil",
+      "globalIndex": "err34"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "SMD Pad to Via",
+      "ruleName": "copperThickness1oz",
+      "net": "I2S_LRCLK_1V8",
+      "x": 101.79,
+      "y": 308.56,
+      "layer": "Top Layer",
+      "objs": [
+        "fb9a90e154948529nrfp156",
+        "29d69e7990079896"
+      ],
+      "message": ": U11_F3 to (I2S_LRCLK_1V8): e55 distance is 3.2mil, should be >= 6mil",
+      "globalIndex": "err13"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "Hole to SMD Pad",
+      "ruleName": "copperThickness1oz",
+      "net": "I2S_LRCLK_1V8",
+      "x": 101.64,
+      "y": 307.07,
+      "layer": "Top Layer",
+      "objs": [
+        "fb9a90e154948529nrfp156",
+        "29d69e7990079896"
+      ],
+      "message": ": U11_F3 to (I2S_LRCLK_1V8): e55 distance is 6.2mil, should be >= 6.9mil",
+      "globalIndex": "err14"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "SMD Pad to Via",
+      "ruleName": "copperThickness1oz",
+      "net": "I2S_LRCLK_1V8",
+      "x": 140.66,
+      "y": 371.83,
+      "layer": "Top Layer",
+      "objs": [
+        "fb9a90e154948529nrfp182",
+        "f43bfb21b9a07354"
+      ],
+      "message": ": U11_J7 to (I2S_LRCLK_1V8): e56 distance is 0.5mil, should be >= 6mil",
+      "globalIndex": "err16"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "Hole to SMD Pad",
+      "ruleName": "copperThickness1oz",
+      "net": "I2S_LRCLK_1V8",
+      "x": 139.54,
+      "y": 372.83,
+      "layer": "Top Layer",
+      "objs": [
+        "fb9a90e154948529nrfp182",
+        "f43bfb21b9a07354"
+      ],
+      "message": ": U11_J7 to (I2S_LRCLK_1V8): e56 distance is 3.5mil, should be >= 6.9mil",
+      "globalIndex": "err17"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "SMD Pad to Via",
+      "ruleName": "copperThickness1oz",
+      "net": "I2S_LRCLK_1V8",
+      "x": 140.66,
+      "y": 380.16,
+      "layer": "Top Layer",
+      "objs": [
+        "fb9a90e154948529nrfp183",
+        "f43bfb21b9a07354"
+      ],
+      "message": ": U11_J8 to (I2S_LRCLK_1V8): e56 distance is 0.5mil, should be >= 6mil",
+      "globalIndex": "err18"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "Hole to SMD Pad",
+      "ruleName": "copperThickness1oz",
+      "net": "I2S_LRCLK_1V8",
+      "x": 139.54,
+      "y": 379.16,
+      "layer": "Top Layer",
+      "objs": [
+        "fb9a90e154948529nrfp183",
+        "f43bfb21b9a07354"
+      ],
+      "message": ": U11_J8 to (I2S_LRCLK_1V8): e56 distance is 3.5mil, should be >= 6.9mil",
+      "globalIndex": "err19"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "Via to Via",
+      "ruleName": "copperThickness1oz",
+      "net": "I2S_LRCLK_1V8",
+      "x": 130.77,
+      "y": 378.54,
+      "layer": "Top Layer",
+      "objs": [
+        "f43bfb21b9a07354",
+        "875bb84e46eb1ea5"
+      ],
+      "message": "(I2S_LRCLK_1V8): e56 to (GND): e30 distance is 0mil, should be >= 6mil",
+      "globalIndex": "err35"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "Hole to Hole",
+      "ruleName": "otherClearance",
+      "net": "I2S_LRCLK_1V8",
+      "x": 130.79,
+      "y": 378.53,
+      "layer": "Multi-Layer",
+      "objs": [
+        "f43bfb21b9a07354",
+        "875bb84e46eb1ea5"
+      ],
+      "message": "(I2S_LRCLK_1V8): e56 to (GND): e30 distance is 5.6mil, should be >= 11.8mil",
+      "globalIndex": "err36"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "Hole to Via",
+      "ruleName": "copperThickness1oz",
+      "net": "I2S_LRCLK_1V8",
+      "x": 129.44,
+      "y": 379.18,
+      "layer": "Top Layer",
+      "objs": [
+        "f43bfb21b9a07354",
+        "875bb84e46eb1ea5"
+      ],
+      "message": "(I2S_LRCLK_1V8): e56 to (GND): e30 distance is 2.6mil, should be >= 6.9mil",
+      "globalIndex": "err37"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "Hole to Via",
+      "ruleName": "copperThickness1oz",
+      "net": "I2S_LRCLK_1V8",
+      "x": 132.13,
+      "y": 377.87,
+      "layer": "Top Layer",
+      "objs": [
+        "f43bfb21b9a07354",
+        "875bb84e46eb1ea5"
+      ],
+      "message": "(I2S_LRCLK_1V8): e56 to (GND): e30 distance is 2.6mil, should be >= 6.9mil",
+      "globalIndex": "err38"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "SMD Pad to Via",
+      "ruleName": "copperThickness1oz",
+      "net": "I2S_LRCLK_1V8",
+      "x": 93.71,
+      "y": 300.53,
+      "layer": "Top Layer",
+      "objs": [
+        "fb9a90e154948529nrfp144",
+        "29d69e7990079896"
+      ],
+      "message": ": U11_E2 to (I2S_LRCLK_1V8): e55 distance is 2.6mil, should be >= 6mil",
+      "globalIndex": "err8"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "Hole to SMD Pad",
+      "ruleName": "copperThickness1oz",
+      "net": "I2S_LRCLK_1V8",
+      "x": 95.21,
+      "y": 300.63,
+      "layer": "Top Layer",
+      "objs": [
+        "fb9a90e154948529nrfp144",
+        "29d69e7990079896"
+      ],
+      "message": ": U11_E2 to (I2S_LRCLK_1V8): e55 distance is 5.6mil, should be >= 6.9mil",
+      "globalIndex": "err9"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "SMD Pad to Via",
+      "ruleName": "copperThickness1oz",
+      "net": "IPC_S3_TX_1V8",
+      "x": 173.94,
+      "y": 320,
+      "layer": "Top Layer",
+      "objs": [
+        "fb9a90e154948529nrfp200",
+        "788619d546797327"
+      ],
+      "message": "(IPC_S3_TX_1V8): U11_L3 to (I2S_LRCLK_1V8): e54 distance is 5.5mil, should be >= 6mil",
+      "globalIndex": "err7"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "SMD Pad to Via",
+      "ruleName": "copperThickness1oz",
+      "net": "SPK_R_N",
+      "x": 144.05,
+      "y": 379.86,
+      "layer": "Bottom Layer",
+      "objs": [
+        "6ef83c9c880e6eede18",
+        "f43bfb21b9a07354"
+      ],
+      "message": "(SPK_R_N): U10_B3 to (I2S_LRCLK_1V8): e56 distance is 5.9mil, should be >= 6mil",
+      "globalIndex": "err22"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "Track to Via",
+      "ruleName": "copperThickness1oz",
+      "net": "VBAT_R_RET",
+      "x": 106,
+      "y": 301,
+      "layer": "Inner2",
+      "objs": [
+        "a544cf3234d27b3d",
+        "29d69e7990079896"
+      ],
+      "message": "(VBAT_R_RET): e148 to (I2S_LRCLK_1V8): e55 distance is 0mil, should be >= 6mil",
+      "globalIndex": "err4"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "Hole to Track",
+      "ruleName": "copperThickness1oz",
+      "net": "VBAT_R_RET",
+      "x": 105,
+      "y": 301,
+      "layer": "Inner2",
+      "objs": [
+        "a544cf3234d27b3d",
+        "29d69e7990079896"
+      ],
+      "message": "(VBAT_R_RET): e148 to (I2S_LRCLK_1V8): e55 distance is 0mil, should be >= 6.9mil",
+      "globalIndex": "err5"
+    },
+    {
+      "rule": "Connection Error",
+      "objType": "Via",
+      "ruleName": "Common",
+      "net": "I2S_LRCLK_1V8",
+      "x": 136,
+      "y": 376,
+      "objs": [
+        "f43bfb21b9a07354"
+      ],
+      "message": "(I2S_LRCLK_1V8): e56 is disconnected from other objects of the same network",
+      "globalIndex": "err102"
+    }
+  ],
+  "removed": [
+    {
+      "rule": "Connection Error",
+      "objType": "SMD Pad",
+      "ruleName": "Common",
+      "net": "I2S_LRCLK_1V8",
+      "x": 150.78,
+      "y": 367.32,
+      "objs": [
+        "6ef83c9c880e6eede21"
+      ],
+      "message": "(I2S_LRCLK_1V8): U10_C3 is disconnected from other objects of the same network",
+      "globalIndex": "err89"
+    },
+    {
+      "rule": "Connection Error",
+      "objType": "SMD Pad",
+      "ruleName": "Common",
+      "net": "I2S_LRCLK_1V8",
+      "x": 157.48,
+      "y": 327.76,
+      "objs": [
+        "fb9a90e154948529nrfp191"
+      ],
+      "message": "(I2S_LRCLK_1V8): U11_K4 is disconnected from other objects of the same network",
+      "globalIndex": "err90"
+    },
+    {
+      "rule": "Connection Error",
+      "objType": "SMD Pad",
+      "ruleName": "Common",
+      "net": "I2S_LRCLK_1V8",
+      "x": 71.46,
+      "y": 288.39,
+      "objs": [
+        "d2732f172a8d0a5abm16p120"
+      ],
+      "message": "(I2S_LRCLK_1V8): J1_P12 is disconnected from other objects of the same network",
+      "globalIndex": "err91"
+    }
+  ],
+  "trial": {
+    "primitiveIds": [
+      "1b027e411d743dad",
+      "29d69e7990079896",
+      "2c1d70bc22daa3e8",
+      "47cc1b9d2b3c40a2",
+      "4fa4be6e40dcf908",
+      "788619d546797327",
+      "8fe55be0b6e3d29d",
+      "92ad78e81f0dbde1",
+      "c038f26e11cae946",
+      "f43bfb21b9a07354",
+      "f828c006c5ccdff8"
+    ],
+    "status": "candidate-rejected",
+    "violationsTouchingTrial": 40,
+    "byObjectPair": {
+      "Hole to Hole": 1,
+      "Hole to Plane Zone": 6,
+      "Hole to SMD Pad": 6,
+      "Hole to Track": 3,
+      "Hole to Via": 2,
+      "Plane Zone to Via": 6,
+      "SMD Pad to Via": 11,
+      "Track to Via": 3,
+      "Via": 1,
+      "Via to Via": 1
+    },
+    "byLayer": {
+      "Bottom Layer": 5,
+      "Inner1": 6,
+      "Inner2": 2,
+      "Inner4": 6,
+      "Multi-Layer": 1,
+      "Top Layer": 19,
+      "unspecified": 1
+    },
+    "byVia": {
+      "1b027e411d743dad": {
+        "count": 0,
+        "byObjectPair": {},
+        "byLayer": {},
+        "violations": []
+      },
+      "29d69e7990079896": {
+        "count": 14,
+        "byObjectPair": {
+          "Hole to Plane Zone": 2,
+          "Hole to SMD Pad": 3,
+          "Hole to Track": 1,
+          "Plane Zone to Via": 2,
+          "SMD Pad to Via": 5,
+          "Track to Via": 1
+        },
+        "byLayer": {
+          "Inner1": 2,
+          "Inner2": 2,
+          "Inner4": 2,
+          "Top Layer": 8
+        },
+        "violations": [
+          {
+            "rule": "Clearance Error",
+            "objType": "SMD Pad to Via",
+            "ruleName": "copperThickness1oz",
+            "net": "BLE_NRESET",
+            "x": 109.65,
+            "y": 300.54,
+            "layer": "Top Layer",
+            "objs": [
+              "fb9a90e154948529nrfp163",
+              "29d69e7990079896"
+            ],
+            "message": "(BLE_NRESET): U11_G2 to (I2S_LRCLK_1V8): e55 distance is 5.3mil, should be >= 6mil",
+            "globalIndex": "err15"
+          },
+          {
+            "rule": "Clearance Error",
+            "objType": "SMD Pad to Via",
+            "ruleName": "copperThickness1oz",
+            "net": "BLE_SWDCLK",
+            "x": 106.2,
+            "y": 300.2,
+            "layer": "Top Layer",
+            "objs": [
+              "fb9a90e154948529nrfp155",
+              "29d69e7990079896"
+            ],
+            "message": "(BLE_SWDCLK): U11_F2 to (I2S_LRCLK_1V8): e55 distance is 0mil, should be >= 6mil",
+            "globalIndex": "err11"
+          },
+          {
+            "rule": "Clearance Error",
+            "objType": "Hole to SMD Pad",
+            "ruleName": "copperThickness1oz",
+            "net": "BLE_SWDCLK",
+            "x": 104,
+            "y": 301,
+            "layer": "Top Layer",
+            "objs": [
+              "fb9a90e154948529nrfp155",
+              "29d69e7990079896"
+            ],
+            "message": "(BLE_SWDCLK): U11_F2 to (I2S_LRCLK_1V8): e55 distance is 0mil, should be >= 6.9mil",
+            "globalIndex": "err12"
+          },
+          {
+            "rule": "Clearance Error",
+            "objType": "SMD Pad to Via",
+            "ruleName": "copperThickness1oz",
+            "net": "BLE_SWDIO",
+            "x": 101.78,
+            "y": 292.63,
+            "layer": "Top Layer",
+            "objs": [
+              "fb9a90e154948529nrfp151",
+              "29d69e7990079896"
+            ],
+            "message": "(BLE_SWDIO): U11_F1 to (I2S_LRCLK_1V8): e55 distance is 4.8mil, should be >= 6mil",
+            "globalIndex": "err10"
+          },
+          {
+            "rule": "Clearance Error",
+            "objType": "Plane Zone to Via",
+            "ruleName": "copperThickness1oz",
+            "net": "GND",
+            "x": 107,
+            "y": 301,
+            "layer": "Inner1",
+            "objs": [
+              "8ae199b84b265f97",
+              "29d69e7990079896"
+            ],
+            "message": "(GND): e-1 to (I2S_LRCLK_1V8): e55 distance is 0mil, should be >= 10mil",
+            "globalIndex": "err25"
+          },
+          {
+            "rule": "Clearance Error",
+            "objType": "Hole to Plane Zone",
+            "ruleName": "copperThickness1oz",
+            "net": "GND",
+            "x": 104,
+            "y": 301,
+            "layer": "Inner1",
+            "objs": [
+              "8ae199b84b265f97",
+              "29d69e7990079896"
+            ],
+            "message": "(GND): e-1 to (I2S_LRCLK_1V8): e55 distance is 0mil, should be >= 10mil",
+            "globalIndex": "err26"
+          },
+          {
+            "rule": "Clearance Error",
+            "objType": "Plane Zone to Via",
+            "ruleName": "copperThickness1oz",
+            "net": "GND",
+            "x": 107,
+            "y": 301,
+            "layer": "Inner4",
+            "objs": [
+              "e8b34b9bceb74291",
+              "29d69e7990079896"
+            ],
+            "message": "(GND): e-1 to (I2S_LRCLK_1V8): e55 distance is 0mil, should be >= 10mil",
+            "globalIndex": "err31"
+          },
+          {
+            "rule": "Clearance Error",
+            "objType": "Hole to Plane Zone",
+            "ruleName": "copperThickness1oz",
+            "net": "GND",
+            "x": 104,
+            "y": 301,
+            "layer": "Inner4",
+            "objs": [
+              "e8b34b9bceb74291",
+              "29d69e7990079896"
+            ],
+            "message": "(GND): e-1 to (I2S_LRCLK_1V8): e55 distance is 0mil, should be >= 10mil",
+            "globalIndex": "err32"
+          },
+          {
+            "rule": "Clearance Error",
+            "objType": "SMD Pad to Via",
+            "ruleName": "copperThickness1oz",
+            "net": "I2S_LRCLK_1V8",
+            "x": 101.79,
+            "y": 308.56,
+            "layer": "Top Layer",
+            "objs": [
+              "fb9a90e154948529nrfp156",
+              "29d69e7990079896"
+            ],
+            "message": ": U11_F3 to (I2S_LRCLK_1V8): e55 distance is 3.2mil, should be >= 6mil",
+            "globalIndex": "err13"
+          },
+          {
+            "rule": "Clearance Error",
+            "objType": "Hole to SMD Pad",
+            "ruleName": "copperThickness1oz",
+            "net": "I2S_LRCLK_1V8",
+            "x": 101.64,
+            "y": 307.07,
+            "layer": "Top Layer",
+            "objs": [
+              "fb9a90e154948529nrfp156",
+              "29d69e7990079896"
+            ],
+            "message": ": U11_F3 to (I2S_LRCLK_1V8): e55 distance is 6.2mil, should be >= 6.9mil",
+            "globalIndex": "err14"
+          },
+          {
+            "rule": "Clearance Error",
+            "objType": "SMD Pad to Via",
+            "ruleName": "copperThickness1oz",
+            "net": "I2S_LRCLK_1V8",
+            "x": 93.71,
+            "y": 300.53,
+            "layer": "Top Layer",
+            "objs": [
+              "fb9a90e154948529nrfp144",
+              "29d69e7990079896"
+            ],
+            "message": ": U11_E2 to (I2S_LRCLK_1V8): e55 distance is 2.6mil, should be >= 6mil",
+            "globalIndex": "err8"
+          },
+          {
+            "rule": "Clearance Error",
+            "objType": "Hole to SMD Pad",
+            "ruleName": "copperThickness1oz",
+            "net": "I2S_LRCLK_1V8",
+            "x": 95.21,
+            "y": 300.63,
+            "layer": "Top Layer",
+            "objs": [
+              "fb9a90e154948529nrfp144",
+              "29d69e7990079896"
+            ],
+            "message": ": U11_E2 to (I2S_LRCLK_1V8): e55 distance is 5.6mil, should be >= 6.9mil",
+            "globalIndex": "err9"
+          },
+          {
+            "rule": "Clearance Error",
+            "objType": "Track to Via",
+            "ruleName": "copperThickness1oz",
+            "net": "VBAT_R_RET",
+            "x": 106,
+            "y": 301,
+            "layer": "Inner2",
+            "objs": [
+              "a544cf3234d27b3d",
+              "29d69e7990079896"
+            ],
+            "message": "(VBAT_R_RET): e148 to (I2S_LRCLK_1V8): e55 distance is 0mil, should be >= 6mil",
+            "globalIndex": "err4"
+          },
+          {
+            "rule": "Clearance Error",
+            "objType": "Hole to Track",
+            "ruleName": "copperThickness1oz",
+            "net": "VBAT_R_RET",
+            "x": 105,
+            "y": 301,
+            "layer": "Inner2",
+            "objs": [
+              "a544cf3234d27b3d",
+              "29d69e7990079896"
+            ],
+            "message": "(VBAT_R_RET): e148 to (I2S_LRCLK_1V8): e55 distance is 0mil, should be >= 6.9mil",
+            "globalIndex": "err5"
+          }
+        ]
+      },
+      "2c1d70bc22daa3e8": {
+        "count": 0,
+        "byObjectPair": {},
+        "byLayer": {},
+        "violations": []
+      },
+      "47cc1b9d2b3c40a2": {
+        "count": 0,
+        "byObjectPair": {},
+        "byLayer": {},
+        "violations": []
+      },
+      "4fa4be6e40dcf908": {
+        "count": 0,
+        "byObjectPair": {},
+        "byLayer": {},
+        "violations": []
+      },
+      "788619d546797327": {
+        "count": 10,
+        "byObjectPair": {
+          "Hole to Plane Zone": 2,
+          "Hole to SMD Pad": 1,
+          "Hole to Track": 1,
+          "Plane Zone to Via": 2,
+          "SMD Pad to Via": 3,
+          "Track to Via": 1
+        },
+        "byLayer": {
+          "Bottom Layer": 4,
+          "Inner1": 2,
+          "Inner4": 2,
+          "Top Layer": 2
+        },
+        "violations": [
+          {
+            "rule": "Clearance Error",
+            "objType": "SMD Pad to Via",
+            "ruleName": "copperThickness1oz",
+            "net": "1V8_SYS",
+            "x": 173.93,
+            "y": 335.75,
+            "layer": "Top Layer",
+            "objs": [
+              "fb9a90e154948529nrfp201",
+              "788619d546797327"
+            ],
+            "message": "(1V8_SYS): U11_L5 to (I2S_LRCLK_1V8): e54 distance is 5.1mil, should be >= 6mil",
+            "globalIndex": "err6"
+          },
+          {
+            "rule": "Clearance Error",
+            "objType": "Track to Via",
+            "ruleName": "copperThickness1oz",
+            "net": "GND",
+            "x": 168.96,
+            "y": 329.75,
+            "layer": "Bottom Layer",
+            "objs": [
+              "627affcd15372189",
+              "788619d546797327"
+            ],
+            "message": "(GND): e172 to (I2S_LRCLK_1V8): e54 distance is 3.7mil, should be >= 6mil",
+            "globalIndex": "err2"
+          },
+          {
+            "rule": "Clearance Error",
+            "objType": "SMD Pad to Via",
+            "ruleName": "copperThickness1oz",
+            "net": "GND",
+            "x": 178.54,
+            "y": 328,
+            "layer": "Bottom Layer",
+            "objs": [
+              "04821a712662b59fre5p110",
+              "788619d546797327"
+            ],
+            "message": "(GND): C3_2 to (I2S_LRCLK_1V8): e54 distance is 0mil, should be >= 6mil",
+            "globalIndex": "err20"
+          },
+          {
+            "rule": "Clearance Error",
+            "objType": "Hole to SMD Pad",
+            "ruleName": "copperThickness1oz",
+            "net": "GND",
+            "x": 178.54,
+            "y": 328,
+            "layer": "Bottom Layer",
+            "objs": [
+              "04821a712662b59fre5p110",
+              "788619d546797327"
+            ],
+            "message": "(GND): C3_2 to (I2S_LRCLK_1V8): e54 distance is 0mil, should be >= 6.9mil",
+            "globalIndex": "err21"
+          },
+          {
+            "rule": "Clearance Error",
+            "objType": "Plane Zone to Via",
+            "ruleName": "copperThickness1oz",
+            "net": "GND",
+            "x": 183.5,
+            "y": 328,
+            "layer": "Inner1",
+            "objs": [
+              "8ae199b84b265f97",
+              "788619d546797327"
+            ],
+            "message": "(GND): e-1 to (I2S_LRCLK_1V8): e54 distance is 0mil, should be >= 10mil",
+            "globalIndex": "err23"
+          },
+          {
+            "rule": "Clearance Error",
+            "objType": "Hole to Plane Zone",
+            "ruleName": "copperThickness1oz",
+            "net": "GND",
+            "x": 180.5,
+            "y": 328,
+            "layer": "Inner1",
+            "objs": [
+              "8ae199b84b265f97",
+              "788619d546797327"
+            ],
+            "message": "(GND): e-1 to (I2S_LRCLK_1V8): e54 distance is 0mil, should be >= 10mil",
+            "globalIndex": "err24"
+          },
+          {
+            "rule": "Clearance Error",
+            "objType": "Plane Zone to Via",
+            "ruleName": "copperThickness1oz",
+            "net": "GND",
+            "x": 183.5,
+            "y": 328,
+            "layer": "Inner4",
+            "objs": [
+              "e8b34b9bceb74291",
+              "788619d546797327"
+            ],
+            "message": "(GND): e-1 to (I2S_LRCLK_1V8): e54 distance is 0mil, should be >= 10mil",
+            "globalIndex": "err29"
+          },
+          {
+            "rule": "Clearance Error",
+            "objType": "Hole to Track",
+            "ruleName": "copperThickness1oz",
+            "net": "GND",
+            "x": 170.43,
+            "y": 329.45,
+            "layer": "Bottom Layer",
+            "objs": [
+              "627affcd15372189",
+              "788619d546797327"
+            ],
+            "message": "(GND): e172 to (I2S_LRCLK_1V8): e54 distance is 6.7mil, should be >= 6.9mil",
+            "globalIndex": "err3"
+          },
+          {
+            "rule": "Clearance Error",
+            "objType": "Hole to Plane Zone",
+            "ruleName": "copperThickness1oz",
+            "net": "GND",
+            "x": 180.5,
+            "y": 328,
+            "layer": "Inner4",
+            "objs": [
+              "e8b34b9bceb74291",
+              "788619d546797327"
+            ],
+            "message": "(GND): e-1 to (I2S_LRCLK_1V8): e54 distance is 0mil, should be >= 10mil",
+            "globalIndex": "err30"
+          },
+          {
+            "rule": "Clearance Error",
+            "objType": "SMD Pad to Via",
+            "ruleName": "copperThickness1oz",
+            "net": "IPC_S3_TX_1V8",
+            "x": 173.94,
+            "y": 320,
+            "layer": "Top Layer",
+            "objs": [
+              "fb9a90e154948529nrfp200",
+              "788619d546797327"
+            ],
+            "message": "(IPC_S3_TX_1V8): U11_L3 to (I2S_LRCLK_1V8): e54 distance is 5.5mil, should be >= 6mil",
+            "globalIndex": "err7"
+          }
+        ]
+      },
+      "8fe55be0b6e3d29d": {
+        "count": 0,
+        "byObjectPair": {},
+        "byLayer": {},
+        "violations": []
+      },
+      "92ad78e81f0dbde1": {
+        "count": 0,
+        "byObjectPair": {},
+        "byLayer": {},
+        "violations": []
+      },
+      "c038f26e11cae946": {
+        "count": 0,
+        "byObjectPair": {},
+        "byLayer": {},
+        "violations": []
+      },
+      "f43bfb21b9a07354": {
+        "count": 16,
+        "byObjectPair": {
+          "Hole to Hole": 1,
+          "Hole to Plane Zone": 2,
+          "Hole to SMD Pad": 2,
+          "Hole to Track": 1,
+          "Hole to Via": 2,
+          "Plane Zone to Via": 2,
+          "SMD Pad to Via": 3,
+          "Track to Via": 1,
+          "Via": 1,
+          "Via to Via": 1
+        },
+        "byLayer": {
+          "Bottom Layer": 1,
+          "Inner1": 2,
+          "Inner4": 2,
+          "Multi-Layer": 1,
+          "Top Layer": 9,
+          "unspecified": 1
+        },
+        "violations": [
+          {
+            "rule": "Clearance Error",
+            "objType": "Track to Via",
+            "ruleName": "copperThickness1oz",
+            "net": "GND",
+            "x": 128.54,
+            "y": 379.62,
+            "layer": "Top Layer",
+            "objs": [
+              "2aa19b0d9dbc8377",
+              "f43bfb21b9a07354"
+            ],
+            "message": "(GND): e196 to (I2S_LRCLK_1V8): e56 distance is 2.8mil, should be >= 6mil",
+            "globalIndex": "err0"
+          },
+          {
+            "rule": "Clearance Error",
+            "objType": "Hole to Track",
+            "ruleName": "copperThickness1oz",
+            "net": "GND",
+            "x": 129.89,
+            "y": 378.96,
+            "layer": "Top Layer",
+            "objs": [
+              "2aa19b0d9dbc8377",
+              "f43bfb21b9a07354"
+            ],
+            "message": "(GND): e196 to (I2S_LRCLK_1V8): e56 distance is 5.8mil, should be >= 6.9mil",
+            "globalIndex": "err1"
+          },
+          {
+            "rule": "Clearance Error",
+            "objType": "Plane Zone to Via",
+            "ruleName": "copperThickness1oz",
+            "net": "GND",
+            "x": 142,
+            "y": 376,
+            "layer": "Inner1",
+            "objs": [
+              "8ae199b84b265f97",
+              "f43bfb21b9a07354"
+            ],
+            "message": "(GND): e-1 to (I2S_LRCLK_1V8): e56 distance is 0mil, should be >= 10mil",
+            "globalIndex": "err27"
+          },
+          {
+            "rule": "Clearance Error",
+            "objType": "Hole to Plane Zone",
+            "ruleName": "copperThickness1oz",
+            "net": "GND",
+            "x": 139,
+            "y": 376,
+            "layer": "Inner1",
+            "objs": [
+              "8ae199b84b265f97",
+              "f43bfb21b9a07354"
+            ],
+            "message": "(GND): e-1 to (I2S_LRCLK_1V8): e56 distance is 0mil, should be >= 10mil",
+            "globalIndex": "err28"
+          },
+          {
+            "rule": "Clearance Error",
+            "objType": "Plane Zone to Via",
+            "ruleName": "copperThickness1oz",
+            "net": "GND",
+            "x": 142,
+            "y": 376,
+            "layer": "Inner4",
+            "objs": [
+              "e8b34b9bceb74291",
+              "f43bfb21b9a07354"
+            ],
+            "message": "(GND): e-1 to (I2S_LRCLK_1V8): e56 distance is 0mil, should be >= 10mil",
+            "globalIndex": "err33"
+          },
+          {
+            "rule": "Clearance Error",
+            "objType": "Hole to Plane Zone",
+            "ruleName": "copperThickness1oz",
+            "net": "GND",
+            "x": 139,
+            "y": 376,
+            "layer": "Inner4",
+            "objs": [
+              "e8b34b9bceb74291",
+              "f43bfb21b9a07354"
+            ],
+            "message": "(GND): e-1 to (I2S_LRCLK_1V8): e56 distance is 0mil, should be >= 10mil",
+            "globalIndex": "err34"
+          },
+          {
+            "rule": "Clearance Error",
+            "objType": "SMD Pad to Via",
+            "ruleName": "copperThickness1oz",
+            "net": "I2S_LRCLK_1V8",
+            "x": 140.66,
+            "y": 371.83,
+            "layer": "Top Layer",
+            "objs": [
+              "fb9a90e154948529nrfp182",
+              "f43bfb21b9a07354"
+            ],
+            "message": ": U11_J7 to (I2S_LRCLK_1V8): e56 distance is 0.5mil, should be >= 6mil",
+            "globalIndex": "err16"
+          },
+          {
+            "rule": "Clearance Error",
+            "objType": "Hole to SMD Pad",
+            "ruleName": "copperThickness1oz",
+            "net": "I2S_LRCLK_1V8",
+            "x": 139.54,
+            "y": 372.83,
+            "layer": "Top Layer",
+            "objs": [
+              "fb9a90e154948529nrfp182",
+              "f43bfb21b9a07354"
+            ],
+            "message": ": U11_J7 to (I2S_LRCLK_1V8): e56 distance is 3.5mil, should be >= 6.9mil",
+            "globalIndex": "err17"
+          },
+          {
+            "rule": "Clearance Error",
+            "objType": "SMD Pad to Via",
+            "ruleName": "copperThickness1oz",
+            "net": "I2S_LRCLK_1V8",
+            "x": 140.66,
+            "y": 380.16,
+            "layer": "Top Layer",
+            "objs": [
+              "fb9a90e154948529nrfp183",
+              "f43bfb21b9a07354"
+            ],
+            "message": ": U11_J8 to (I2S_LRCLK_1V8): e56 distance is 0.5mil, should be >= 6mil",
+            "globalIndex": "err18"
+          },
+          {
+            "rule": "Clearance Error",
+            "objType": "Hole to SMD Pad",
+            "ruleName": "copperThickness1oz",
+            "net": "I2S_LRCLK_1V8",
+            "x": 139.54,
+            "y": 379.16,
+            "layer": "Top Layer",
+            "objs": [
+              "fb9a90e154948529nrfp183",
+              "f43bfb21b9a07354"
+            ],
+            "message": ": U11_J8 to (I2S_LRCLK_1V8): e56 distance is 3.5mil, should be >= 6.9mil",
+            "globalIndex": "err19"
+          },
+          {
+            "rule": "Clearance Error",
+            "objType": "Via to Via",
+            "ruleName": "copperThickness1oz",
+            "net": "I2S_LRCLK_1V8",
+            "x": 130.77,
+            "y": 378.54,
+            "layer": "Top Layer",
+            "objs": [
+              "f43bfb21b9a07354",
+              "875bb84e46eb1ea5"
+            ],
+            "message": "(I2S_LRCLK_1V8): e56 to (GND): e30 distance is 0mil, should be >= 6mil",
+            "globalIndex": "err35"
+          },
+          {
+            "rule": "Clearance Error",
+            "objType": "Hole to Hole",
+            "ruleName": "otherClearance",
+            "net": "I2S_LRCLK_1V8",
+            "x": 130.79,
+            "y": 378.53,
+            "layer": "Multi-Layer",
+            "objs": [
+              "f43bfb21b9a07354",
+              "875bb84e46eb1ea5"
+            ],
+            "message": "(I2S_LRCLK_1V8): e56 to (GND): e30 distance is 5.6mil, should be >= 11.8mil",
+            "globalIndex": "err36"
+          },
+          {
+            "rule": "Clearance Error",
+            "objType": "Hole to Via",
+            "ruleName": "copperThickness1oz",
+            "net": "I2S_LRCLK_1V8",
+            "x": 129.44,
+            "y": 379.18,
+            "layer": "Top Layer",
+            "objs": [
+              "f43bfb21b9a07354",
+              "875bb84e46eb1ea5"
+            ],
+            "message": "(I2S_LRCLK_1V8): e56 to (GND): e30 distance is 2.6mil, should be >= 6.9mil",
+            "globalIndex": "err37"
+          },
+          {
+            "rule": "Clearance Error",
+            "objType": "Hole to Via",
+            "ruleName": "copperThickness1oz",
+            "net": "I2S_LRCLK_1V8",
+            "x": 132.13,
+            "y": 377.87,
+            "layer": "Top Layer",
+            "objs": [
+              "f43bfb21b9a07354",
+              "875bb84e46eb1ea5"
+            ],
+            "message": "(I2S_LRCLK_1V8): e56 to (GND): e30 distance is 2.6mil, should be >= 6.9mil",
+            "globalIndex": "err38"
+          },
+          {
+            "rule": "Clearance Error",
+            "objType": "SMD Pad to Via",
+            "ruleName": "copperThickness1oz",
+            "net": "SPK_R_N",
+            "x": 144.05,
+            "y": 379.86,
+            "layer": "Bottom Layer",
+            "objs": [
+              "6ef83c9c880e6eede18",
+              "f43bfb21b9a07354"
+            ],
+            "message": "(SPK_R_N): U10_B3 to (I2S_LRCLK_1V8): e56 distance is 5.9mil, should be >= 6mil",
+            "globalIndex": "err22"
+          },
+          {
+            "rule": "Connection Error",
+            "objType": "Via",
+            "ruleName": "Common",
+            "net": "I2S_LRCLK_1V8",
+            "x": 136,
+            "y": 376,
+            "objs": [
+              "f43bfb21b9a07354"
+            ],
+            "message": "(I2S_LRCLK_1V8): e56 is disconnected from other objects of the same network",
+            "globalIndex": "err102"
+          }
+        ]
+      },
+      "f828c006c5ccdff8": {
+        "count": 0,
+        "byObjectPair": {},
+        "byLayer": {},
+        "violations": []
+      }
+    }
+  },
+  "limitations": [
+    "Native DRC only; does not prove manufacturer capability, impedance or hardware performance.",
+    "Trial IDs identify candidate copper, not authorization to merge it into the integrated project."
+  ]
+}

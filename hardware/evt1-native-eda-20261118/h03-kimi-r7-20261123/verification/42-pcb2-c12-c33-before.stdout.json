@@ -1,0 +1,45 @@
+Build a physical-copper graph from pcb.components.list --include-pads,
+pcb.line.list, and pcb.via.list, then prove one continuous path between two pads.
+
+Pad references use DESIGNATOR.PAD, for example U2.3 or CARD1.4. Repeat --through
+(or pass a comma-separated list) to require one non-repeating copper path to visit
+the pads in order, such as C3.1 -> C4.1 -> U2.3. Pairwise reachability with branch
+backtracking does not pass this ordered proof.
+The report includes the actual primitive path, copper layers, widths, and unique via
+count. The optional --net is an assertion; it must match every requested pad.
+--layer constrains graph construction itself to that copper layer. Physical vias and
+all tracks/arcs on other layers are excluded, so --layer 1 proves a TOP-only path
+rather than finding an arbitrary path and checking its layers afterwards.
+
+Scope: routed line/arc/via copper and placed pad copper only. Copper pours, filled
+regions, and PLANE connectivity are deliberately not inferred, so a failed result
+means "not proven by listed routed copper". Run native pcb drc separately for the
+board-wide connection verdict. Arc bodies are traversed, but junctions to an arc are
+recognized only at the arc endpoints exposed by pcb.line.list. Unsupported pad
+geometry, unavailable arc readback, and overlapping primitives that make an ordered
+topology ambiguous return unknown/error instead of PASS.
+
+Usage:
+  easyeda pcb net-path [flags]
+
+Examples:
+  easyeda pcb net-path --from C3.1 --through C4.1 --to U2.3 --layer 1
+  easyeda pcb net-path --from U5.6 --to CN1.1 --net CANL --json
+
+Flags:
+      --from string       start pad as DESIGNATOR.PAD (required)
+  -h, --help              help for net-path
+      --json              emit a machine-readable report
+      --layer int         constrain proof to one copper layer (for example 1=TOP); excludes physical vias
+      --net string        assert the expected net name
+      --through strings   ordered intermediate pad(s); repeat or comma-separate
+      --to string         destination pad as DESIGNATOR.PAD (required)
+
+Global Flags:
+      --doc string                pin every mutating action to this schematic page / PCB (uuid or name): the CLI switches to it and confirms via live document.current before editing, refusing rather than land the edit on whatever page is foreground — removes the doc-switch race
+      --force-stale-read string   deprecated compatibility option; stale PCB reads now continue with staleRisk and authoritative workflows still save, reload, then read back
+      --host string               daemon host (default "127.0.0.1")
+      --ports string              daemon port range (start-end) (default "60832-60841")
+      --project string            route by project name/uuid instead of --window (survives windowId churn)
+      --skip-version-check        deprecated compatibility option; version differences are diagnostic and no longer block actions
+      --window string             EasyEDA window ID
