@@ -1,0 +1,31 @@
+你担任智元跃动 AI/AR 智能眼镜 V1.0 的 SoC、封装和 PCB 高密度集成工程师。
+
+**必须使用远程浏览器访问 GitHub 和 Nordic 官方资料，直接核对现有设计及原厂引脚定义。**
+
+项目：
+https://github.com/yfei7131-source/AI-AR-codex-Claude-
+
+最新工程：
+https://github.com/yfei7131-source/AI-AR-codex-Claude-/pull/54
+
+R6 U11/HDI 研究：
+https://github.com/yfei7131-source/AI-AR-codex-Claude-/blob/hardware/evt1-h03-r6-codex-20261123/hardware/evt1-native-eda-20261118/h03-codex-r6-20261123/hdi/README.md
+
+Nordic 官方资料：
+https://docs.nordicsemi.com/r/bundle/ps_nrf5340/page/chapters/pin.html
+https://docs.nordicsemi.com/r/bundle/ps_nrf5340/page/chapters/ordering_info/doc/ordering_info.html
+https://docs.nordicsemi.com/r/bundle/ps_nrf5340/page/i2s.html
+
+**任务：**
+
+1. 全面复核 U11 nRF5340 WLCSP95 的球位和剩余 25 个内圈受阻球位。
+2. 研究 0.35 mm 球距下的可制造扇出、微盲孔及多层信号连接。
+3. 验证 K4/K5 I2S、BCLK 引脚重映射的电气及固件兼容性。
+4. 比较现有封装与其他真实封装或处理器方案。
+5. 必须考虑 PCB3 现有约 5.2 mm 板宽、功耗、射频、软件兼容和整机 40g 目标。
+
+输出 `U11_ESCAPE_DECISION.md`，给出明确首选方案、原厂证据、需实际验证的条件和供 KIMI 执行的工程变更建议。
+
+远程浏览器必须实际打开来源并核对资料。不得把理论几何可行性当成实际制造通过，不修改 KIMI 工程。
+
+**立即执行。**
