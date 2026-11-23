@@ -1,0 +1,1965 @@
+{
+  "scope": "Same XY replace archived blind with 6/12 mil through GND. Preserves both planes and checks both outer layers, 11.811 mil native hole wall, and actual copper outlines.",
+  "candidates": [
+    {
+      "prior_primitive_id": "b08842b31aa45cf3",
+      "prior_span": "BV_L5_L6",
+      "coordinate_mil": [
+        156.31,
+        955.88
+      ],
+      "new_drill_mil": 6.0,
+      "new_land_mil": 12.0,
+      "viable": false,
+      "margin_mil": -3.417793,
+      "limiting": [
+        {
+          "gap_mil": 8.393207,
+          "limit_mil": 11.811,
+          "primitive": "6a6db1dc889f416a",
+          "net": "GND",
+          "type": "hole_wall"
+        },
+        {
+          "gap_mil": 1.235,
+          "limit_mil": 3.55,
+          "primitive": "ffa5d7e7cdfe7bfdre4p110",
+          "net": "GND",
+          "type": "gnd_pad_drill_vs_opening"
+        },
+        {
+          "gap_mil": 8.6924,
+          "limit_mil": 6.2,
+          "primitive": null,
+          "net": "GND",
+          "type": "plane_15"
+        },
+        {
+          "gap_mil": 8.6924,
+          "limit_mil": 6.2,
+          "primitive": null,
+          "net": "GND",
+          "type": "plane_18"
+        },
+        {
+          "gap_mil": 18.7924,
+          "limit_mil": 14,
+          "primitive": null,
+          "net": "",
+          "type": "outer_copper_edge"
+        }
+      ]
+    },
+    {
+      "prior_primitive_id": "23501cb8ab96fae8",
+      "prior_span": "BV_L1_L2",
+      "coordinate_mil": [
+        137.52,
+        748.63
+      ],
+      "new_drill_mil": 6.0,
+      "new_land_mil": 12.0,
+      "viable": false,
+      "margin_mil": -3.613523,
+      "limiting": [
+        {
+          "gap_mil": 2.586477,
+          "limit_mil": 6.2,
+          "primitive": "a58afe0093ae7de7rd1p112",
+          "net": "AVDD_QUAL_CLR_N",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 1.685,
+          "limit_mil": 3.55,
+          "primitive": "5834b130fe097de5re5p110",
+          "net": "GND",
+          "type": "gnd_pad_drill_vs_opening"
+        },
+        {
+          "gap_mil": 4.895,
+          "limit_mil": 6.2,
+          "primitive": "5834b130fe097de5re5p109",
+          "net": "1V8_SYS",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 2.625,
+          "limit_mil": 3.55,
+          "primitive": "a99d6a238c9ac376re5p110",
+          "net": "GND",
+          "type": "gnd_pad_drill_vs_opening"
+        },
+        {
+          "gap_mil": 7.142238,
+          "limit_mil": 6.2,
+          "primitive": "0d460a75340a72fere4p109",
+          "net": "1V8_FPGA_VPP",
+          "type": "foreign_pad"
+        }
+      ]
+    },
+    {
+      "prior_primitive_id": "4740f651ce64a7c0",
+      "prior_span": "BV_L5_L6",
+      "coordinate_mil": [
+        54.75,
+        712.34
+      ],
+      "new_drill_mil": 6.0,
+      "new_land_mil": 12.0,
+      "viable": false,
+      "margin_mil": -4.595725,
+      "limiting": [
+        {
+          "gap_mil": 1.604275,
+          "limit_mil": 6.2,
+          "primitive": null,
+          "net": "GND",
+          "type": "plane_15"
+        },
+        {
+          "gap_mil": 1.604275,
+          "limit_mil": 6.2,
+          "primitive": null,
+          "net": "GND",
+          "type": "plane_18"
+        },
+        {
+          "gap_mil": 2.985,
+          "limit_mil": 6.2,
+          "primitive": "8689cf4fe98e0082e26",
+          "net": "SYS_I2C_SDA_1V8",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 1.905,
+          "limit_mil": 3.55,
+          "primitive": "a58afe0093ae7de7rd1p110",
+          "net": "GND",
+          "type": "gnd_pad_drill_vs_opening"
+        },
+        {
+          "gap_mil": 8.235936,
+          "limit_mil": 6.2,
+          "primitive": "a58afe0093ae7de7rd1p111",
+          "net": "AVDD_QUAL_RC",
+          "type": "foreign_pad"
+        }
+      ]
+    },
+    {
+      "prior_primitive_id": "a72d849708c0d56e",
+      "prior_span": "BV_L5_L6",
+      "coordinate_mil": [
+        126.0,
+        212.0
+      ],
+      "new_drill_mil": 6.0,
+      "new_land_mil": 12.0,
+      "viable": false,
+      "margin_mil": -6.016195,
+      "limiting": [
+        {
+          "gap_mil": 0.183805,
+          "limit_mil": 6.2,
+          "primitive": "0fae57a9b4b0e18dbm10p117",
+          "net": "AVDD_OPT_BIAS",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 2.556357,
+          "limit_mil": 6.2,
+          "primitive": "bab7a9407562401bre4p110",
+          "net": "opt_l_qdo2_PANEL",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 3.160801,
+          "limit_mil": 6.2,
+          "primitive": "7b32cc59dad8423cre4p110",
+          "net": "opt_l_qdo3_PANEL",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 4.48,
+          "limit_mil": 6.2,
+          "primitive": "69cceb5374d1f0b2",
+          "net": "opt_l_qdo3_PANEL",
+          "type": "foreign_track"
+        },
+        {
+          "gap_mil": 1.881043,
+          "limit_mil": 3.55,
+          "primitive": "f4248be9af4dc8abrd3p110",
+          "net": "GND",
+          "type": "gnd_pad_drill_vs_opening"
+        }
+      ]
+    },
+    {
+      "prior_primitive_id": "d66a84af7c151bc9",
+      "prior_span": "BV_L1_L2",
+      "coordinate_mil": [
+        46.11,
+        894.88
+      ],
+      "new_drill_mil": 6.0,
+      "new_land_mil": 12.0,
+      "viable": false,
+      "margin_mil": -7.168842,
+      "limiting": [
+        {
+          "gap_mil": -3.618842,
+          "limit_mil": 3.55,
+          "primitive": "3571daebd6374c67e14",
+          "net": "GND",
+          "type": "gnd_pad_drill_vs_opening"
+        },
+        {
+          "gap_mil": 1.235,
+          "limit_mil": 3.55,
+          "primitive": "73d5b500099048b1re4p110",
+          "net": "GND",
+          "type": "gnd_pad_drill_vs_opening"
+        },
+        {
+          "gap_mil": 6.168367,
+          "limit_mil": 6.2,
+          "primitive": null,
+          "net": "GND",
+          "type": "plane_15"
+        },
+        {
+          "gap_mil": 6.168367,
+          "limit_mil": 6.2,
+          "primitive": null,
+          "net": "GND",
+          "type": "plane_18"
+        },
+        {
+          "gap_mil": 8.655,
+          "limit_mil": 6.2,
+          "primitive": "3571daebd6374c67e13",
+          "net": "1V8_SYS",
+          "type": "foreign_pad"
+        }
+      ]
+    },
+    {
+      "prior_primitive_id": "6a6db1dc889f416a",
+      "prior_span": "BV_L1_L2",
+      "coordinate_mil": [
+        146.75,
+        946.5
+      ],
+      "new_drill_mil": 6.0,
+      "new_land_mil": 12.0,
+      "viable": false,
+      "margin_mil": -7.545,
+      "limiting": [
+        {
+          "gap_mil": -3.995,
+          "limit_mil": 3.55,
+          "primitive": "ffa5d7e7cdfe7bfdre4p110",
+          "net": "GND",
+          "type": "gnd_pad_drill_vs_opening"
+        },
+        {
+          "gap_mil": 8.393207,
+          "limit_mil": 11.811,
+          "primitive": "b08842b31aa45cf3",
+          "net": "GND",
+          "type": "hole_wall"
+        },
+        {
+          "gap_mil": 3.875,
+          "limit_mil": 6.2,
+          "primitive": "ffa5d7e7cdfe7bfdre4p109",
+          "net": "AVDD_WD_DIV",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 1.305,
+          "limit_mil": 3.55,
+          "primitive": "da5999f83b2c5e9bre4p110",
+          "net": "GND",
+          "type": "gnd_pad_drill_vs_opening"
+        },
+        {
+          "gap_mil": 9.846145,
+          "limit_mil": 6.2,
+          "primitive": "e15deb1d8c39f842re4p110",
+          "net": "AVDD_REQ_FILTER",
+          "type": "foreign_pad"
+        }
+      ]
+    },
+    {
+      "prior_primitive_id": "b288a4698f8901fc",
+      "prior_span": "BV_L1_L2",
+      "coordinate_mil": [
+        117.0,
+        312.0
+      ],
+      "new_drill_mil": 6.0,
+      "new_land_mil": 12.0,
+      "viable": false,
+      "margin_mil": -7.607551,
+      "limiting": [
+        {
+          "gap_mil": -1.407551,
+          "limit_mil": 6.2,
+          "primitive": "e543af78d26c8241e11",
+          "net": "VSYS",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": -0.483452,
+          "limit_mil": 6.2,
+          "primitive": "e543af78d26c8241e10",
+          "net": "AVDD_QUAL_RC",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": -0.2419,
+          "limit_mil": 6.2,
+          "primitive": "38e3101c2eb6ff76e15",
+          "net": "AVDD_PG_OK",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": -0.090639,
+          "limit_mil": 3.55,
+          "primitive": "38e3101c2eb6ff76e14",
+          "net": "GND",
+          "type": "gnd_pad_drill_vs_opening"
+        },
+        {
+          "gap_mil": 6.23,
+          "limit_mil": 6.2,
+          "primitive": "e88f50f57aedf297",
+          "net": "1V2_FPGA_CORE",
+          "type": "foreign_track"
+        }
+      ]
+    },
+    {
+      "prior_primitive_id": "3ee8ab886f357cc2",
+      "prior_span": "BV_L1_L2",
+      "coordinate_mil": [
+        87.13,
+        896.19
+      ],
+      "new_drill_mil": 6.0,
+      "new_land_mil": 12.0,
+      "viable": false,
+      "margin_mil": -7.790376,
+      "limiting": [
+        {
+          "gap_mil": -4.240376,
+          "limit_mil": 3.55,
+          "primitive": "3571daebd6374c67e15",
+          "net": "GND",
+          "type": "gnd_pad_drill_vs_opening"
+        },
+        {
+          "gap_mil": 2.545,
+          "limit_mil": 3.55,
+          "primitive": "8c5c4b597e348008re4p110",
+          "net": "GND",
+          "type": "gnd_pad_drill_vs_opening"
+        },
+        {
+          "gap_mil": 5.573661,
+          "limit_mil": 6.2,
+          "primitive": null,
+          "net": "GND",
+          "type": "plane_15"
+        },
+        {
+          "gap_mil": 5.573661,
+          "limit_mil": 6.2,
+          "primitive": null,
+          "net": "GND",
+          "type": "plane_18"
+        },
+        {
+          "gap_mil": 7.795,
+          "limit_mil": 6.2,
+          "primitive": "8b1597b265bc938cre4p109",
+          "net": "OPT_AVDD_EN",
+          "type": "foreign_pad"
+        }
+      ]
+    },
+    {
+      "prior_primitive_id": "6df04d0016b6e8f7",
+      "prior_span": "BV_L1_L2",
+      "coordinate_mil": [
+        129.1,
+        551.8
+      ],
+      "new_drill_mil": 6.0,
+      "new_land_mil": 12.0,
+      "viable": false,
+      "margin_mil": -7.847365,
+      "limiting": [
+        {
+          "gap_mil": -1.647365,
+          "limit_mil": 6.2,
+          "primitive": "42d68e3665ede3c3",
+          "net": "AVDD_D3_VSYS",
+          "type": "foreign_track"
+        },
+        {
+          "gap_mil": -0.72121,
+          "limit_mil": 6.2,
+          "primitive": "bbd64b18f082a0c0rd4p115",
+          "net": "AVDD_D3_VSYS",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": -0.42,
+          "limit_mil": 6.2,
+          "primitive": "781cd7db3965bb13",
+          "net": "AVDD_D3_VSYS",
+          "type": "foreign_track"
+        },
+        {
+          "gap_mil": 1.445874,
+          "limit_mil": 6.2,
+          "primitive": null,
+          "net": "GND",
+          "type": "plane_15"
+        },
+        {
+          "gap_mil": 1.445874,
+          "limit_mil": 6.2,
+          "primitive": null,
+          "net": "GND",
+          "type": "plane_18"
+        }
+      ]
+    },
+    {
+      "prior_primitive_id": "90af6e58250f741e",
+      "prior_span": "BV_L1_L2",
+      "coordinate_mil": [
+        144.9,
+        409.49
+      ],
+      "new_drill_mil": 6.0,
+      "new_land_mil": 12.0,
+      "viable": false,
+      "margin_mil": -7.965,
+      "limiting": [
+        {
+          "gap_mil": -1.765,
+          "limit_mil": 6.2,
+          "primitive": "5252ec4b97f2e1ddrd2p114",
+          "net": "AVDD_WD_Q",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 0.495,
+          "limit_mil": 3.55,
+          "primitive": "73d3ee0aeba58dd1re5p110",
+          "net": "GND",
+          "type": "gnd_pad_drill_vs_opening"
+        },
+        {
+          "gap_mil": 1.215,
+          "limit_mil": 3.55,
+          "primitive": "b08bf9a6f0bb090fre5p110",
+          "net": "GND",
+          "type": "gnd_pad_drill_vs_opening"
+        },
+        {
+          "gap_mil": 5.365,
+          "limit_mil": 6.2,
+          "primitive": "b08bf9a6f0bb090fre5p109",
+          "net": "VSYS",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 14.075981,
+          "limit_mil": 6.2,
+          "primitive": "c489db83c3ffdfdfe58",
+          "net": "",
+          "type": "foreign_pad"
+        }
+      ]
+    },
+    {
+      "prior_primitive_id": "67abd30f64ccfc6a",
+      "prior_span": "BV_L5_L6",
+      "coordinate_mil": [
+        152.7,
+        631.89
+      ],
+      "new_drill_mil": 6.0,
+      "new_land_mil": 12.0,
+      "viable": false,
+      "margin_mil": -7.965,
+      "limiting": [
+        {
+          "gap_mil": -1.765,
+          "limit_mil": 6.2,
+          "primitive": "dbd30f59f54f1c1dre4p109",
+          "net": "1V8_FPGA_IO",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 1.215,
+          "limit_mil": 3.55,
+          "primitive": "482e76c446e02dddre5p110",
+          "net": "GND",
+          "type": "gnd_pad_drill_vs_opening"
+        },
+        {
+          "gap_mil": 5.365,
+          "limit_mil": 6.2,
+          "primitive": "482e76c446e02dddre5p109",
+          "net": "1V8_FPGA_IO",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 12.225,
+          "limit_mil": 6.2,
+          "primitive": "dfc76cb6407cdd81rd1p113",
+          "net": "VSYS",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 12.3024,
+          "limit_mil": 6.2,
+          "primitive": null,
+          "net": "GND",
+          "type": "plane_15"
+        }
+      ]
+    },
+    {
+      "prior_primitive_id": "e5ebf1dd9fbc84a4",
+      "prior_span": "BV_L1_L2",
+      "coordinate_mil": [
+        109.73,
+        645.39
+      ],
+      "new_drill_mil": 6.0,
+      "new_land_mil": 12.0,
+      "viable": false,
+      "margin_mil": -7.99,
+      "limiting": [
+        {
+          "gap_mil": -1.79,
+          "limit_mil": 6.2,
+          "primitive": "316b5453f4801351",
+          "net": "AVDD_QUAL_CLR_N",
+          "type": "foreign_track"
+        },
+        {
+          "gap_mil": -1.415,
+          "limit_mil": 6.2,
+          "primitive": "dfc76cb6407cdd81rd1p112",
+          "net": "AVDD_PULSE_QUAL",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": -0.835,
+          "limit_mil": 6.2,
+          "primitive": "dfc76cb6407cdd81rd1p113",
+          "net": "VSYS",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 4.75,
+          "limit_mil": 6.2,
+          "primitive": "23f35836d297c54f",
+          "net": "AVDD_D3_VSYS",
+          "type": "foreign_track"
+        },
+        {
+          "gap_mil": 2.685,
+          "limit_mil": 3.55,
+          "primitive": "8689cf4fe98e0082e19",
+          "net": "GND",
+          "type": "gnd_pad_drill_vs_opening"
+        }
+      ]
+    },
+    {
+      "prior_primitive_id": "edbb1e25173edee5",
+      "prior_span": "BV_L5_L6",
+      "coordinate_mil": [
+        51.0,
+        108.3
+      ],
+      "new_drill_mil": 6.0,
+      "new_land_mil": 12.0,
+      "viable": false,
+      "margin_mil": -8.02,
+      "limiting": [
+        {
+          "gap_mil": -1.82,
+          "limit_mil": 6.2,
+          "primitive": "3d1f69863b3d54d9",
+          "net": "OPT_CS_N_L",
+          "type": "foreign_track"
+        },
+        {
+          "gap_mil": 0.062467,
+          "limit_mil": 6.2,
+          "primitive": "a0bc7293001f6df2",
+          "net": "OPT_CS_N_L",
+          "type": "foreign_track"
+        },
+        {
+          "gap_mil": 7.063929,
+          "limit_mil": 11.8,
+          "primitive": "9223567ab0951e13",
+          "net": "FPGA_CRESET_B",
+          "type": "foreign_track"
+        },
+        {
+          "gap_mil": 7.063929,
+          "limit_mil": 11.8,
+          "primitive": "023943656d6b5177",
+          "net": "FPGA_CRESET_B",
+          "type": "foreign_track"
+        },
+        {
+          "gap_mil": 2.016526,
+          "limit_mil": 6.2,
+          "primitive": "113b68bafa8f4098d3110",
+          "net": "PRIV_LED_ANODE",
+          "type": "foreign_pad"
+        }
+      ]
+    },
+    {
+      "prior_primitive_id": "584b5375092b5e50",
+      "prior_span": "BV_L5_L6",
+      "coordinate_mil": [
+        93.49,
+        275.3
+      ],
+      "new_drill_mil": 6.0,
+      "new_land_mil": 12.0,
+      "viable": false,
+      "margin_mil": -8.1007,
+      "limiting": [
+        {
+          "gap_mil": -4.5507,
+          "limit_mil": 3.55,
+          "primitive": "1d6034c9636c4e6ae12",
+          "net": "GND",
+          "type": "gnd_pad_drill_vs_opening"
+        },
+        {
+          "gap_mil": 2.227278,
+          "limit_mil": 6.2,
+          "primitive": "3decae6651870f63re1p112",
+          "net": "FPGA_1V8_EN",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 1.795,
+          "limit_mil": 3.55,
+          "primitive": "c7a3bf451856c7c3bm30p140",
+          "net": "GND",
+          "type": "gnd_pad_drill_vs_opening"
+        },
+        {
+          "gap_mil": 7.342416,
+          "limit_mil": 6.2,
+          "primitive": "3decae6651870f63re1p113",
+          "net": "",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 8.772692,
+          "limit_mil": 6.2,
+          "primitive": "c8e0ab5b0080ff86e13",
+          "net": "1V8_FPGA_IO",
+          "type": "foreign_pad"
+        }
+      ]
+    },
+    {
+      "prior_primitive_id": "f1e6bafdeb6091fd",
+      "prior_span": "BV_L1_L2",
+      "coordinate_mil": [
+        111.64,
+        433.89
+      ],
+      "new_drill_mil": 6.0,
+      "new_land_mil": 12.0,
+      "viable": false,
+      "margin_mil": -8.315,
+      "limiting": [
+        {
+          "gap_mil": -2.115,
+          "limit_mil": 6.2,
+          "primitive": "5252ec4b97f2e1ddrd2p114",
+          "net": "AVDD_WD_Q",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 1.645,
+          "limit_mil": 3.55,
+          "primitive": "5eb7463fb00b02b5re5p110",
+          "net": "GND",
+          "type": "gnd_pad_drill_vs_opening"
+        },
+        {
+          "gap_mil": 5.393815,
+          "limit_mil": 6.2,
+          "primitive": "4d1d241597a3ce0bre4p109",
+          "net": "1V2_FPGA_CORE",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 7.403973,
+          "limit_mil": 6.2,
+          "primitive": "c489db83c3ffdfdfe52",
+          "net": "opt_l_qdo2",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 9.588385,
+          "limit_mil": 6.2,
+          "primitive": "c489db83c3ffdfdfe58",
+          "net": "",
+          "type": "foreign_pad"
+        }
+      ]
+    },
+    {
+      "prior_primitive_id": "6c76674ee2ac3b22",
+      "prior_span": "BV_L1_L2",
+      "coordinate_mil": [
+        128.0,
+        644.0
+      ],
+      "new_drill_mil": 6.0,
+      "new_land_mil": 12.0,
+      "viable": false,
+      "margin_mil": -8.425,
+      "limiting": [
+        {
+          "gap_mil": -2.225,
+          "limit_mil": 6.2,
+          "primitive": "dfc76cb6407cdd81rd1p113",
+          "net": "VSYS",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": -1.52,
+          "limit_mil": 6.2,
+          "primitive": "23f35836d297c54f",
+          "net": "AVDD_D3_VSYS",
+          "type": "foreign_track"
+        },
+        {
+          "gap_mil": -0.025,
+          "limit_mil": 6.2,
+          "primitive": "dfc76cb6407cdd81rd1p112",
+          "net": "AVDD_PULSE_QUAL",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 13.3228,
+          "limit_mil": 11.811,
+          "primitive": "e5ebf1dd9fbc84a4",
+          "net": "GND",
+          "type": "hole_wall"
+        },
+        {
+          "gap_mil": 9.825,
+          "limit_mil": 6.2,
+          "primitive": "8689cf4fe98e0082e20",
+          "net": "1V8_SYS",
+          "type": "foreign_pad"
+        }
+      ]
+    },
+    {
+      "prior_primitive_id": "d6e5bb9e76d289c7",
+      "prior_span": "BV_L1_L2",
+      "coordinate_mil": [
+        74.8,
+        354.3
+      ],
+      "new_drill_mil": 6.0,
+      "new_land_mil": 12.0,
+      "viable": false,
+      "margin_mil": -8.52,
+      "limiting": [
+        {
+          "gap_mil": -4.97,
+          "limit_mil": 3.55,
+          "primitive": "c489db83c3ffdfdfe44",
+          "net": "GND",
+          "type": "gnd_pad_drill_vs_opening"
+        },
+        {
+          "gap_mil": 5.675023,
+          "limit_mil": 6.2,
+          "primitive": "c489db83c3ffdfdfe38",
+          "net": "host_qio0",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 5.675023,
+          "limit_mil": 6.2,
+          "primitive": "c489db83c3ffdfdfe45",
+          "net": "host_qio2",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 5.775023,
+          "limit_mil": 6.2,
+          "primitive": "c489db83c3ffdfdfe50",
+          "net": "opt_sck",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 5.775023,
+          "limit_mil": 6.2,
+          "primitive": "c489db83c3ffdfdfe43",
+          "net": "1V8_FPGA_IO",
+          "type": "foreign_pad"
+        }
+      ]
+    },
+    {
+      "prior_primitive_id": "8a2b07870a0e0ccd",
+      "prior_span": "BV_L1_L2",
+      "coordinate_mil": [
+        106.3,
+        401.6
+      ],
+      "new_drill_mil": 6.0,
+      "new_land_mil": 12.0,
+      "viable": false,
+      "margin_mil": -8.52,
+      "limiting": [
+        {
+          "gap_mil": -4.97,
+          "limit_mil": 3.55,
+          "primitive": "c489db83c3ffdfdfe53",
+          "net": "GND",
+          "type": "gnd_pad_drill_vs_opening"
+        },
+        {
+          "gap_mil": 5.675023,
+          "limit_mil": 6.2,
+          "primitive": "c489db83c3ffdfdfe47",
+          "net": "clk_48m",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 5.675023,
+          "limit_mil": 6.2,
+          "primitive": "c489db83c3ffdfdfe52",
+          "net": "opt_l_qdo2",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 5.775023,
+          "limit_mil": 6.2,
+          "primitive": "c489db83c3ffdfdfe59",
+          "net": "",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 5.775023,
+          "limit_mil": 6.2,
+          "primitive": "c489db83c3ffdfdfe54",
+          "net": "1V8_FPGA_IO",
+          "type": "foreign_pad"
+        }
+      ]
+    },
+    {
+      "prior_primitive_id": "b0307a690c28ce58",
+      "prior_span": "BV_L1_L2",
+      "coordinate_mil": [
+        161.23,
+        534.66
+      ],
+      "new_drill_mil": 6.0,
+      "new_land_mil": 12.0,
+      "viable": false,
+      "margin_mil": -9.515,
+      "limiting": [
+        {
+          "gap_mil": -3.315,
+          "limit_mil": 6.2,
+          "primitive": "bbd64b18f082a0c0rd4p116",
+          "net": "VSYS",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": -0.935,
+          "limit_mil": 6.2,
+          "primitive": "bbd64b18f082a0c0rd4p115",
+          "net": "AVDD_D3_VSYS",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 4.981965,
+          "limit_mil": 11.8,
+          "primitive": "7e0527981f9af2b2",
+          "net": "VSYS",
+          "type": "foreign_track"
+        },
+        {
+          "gap_mil": 3.7724,
+          "limit_mil": 6.2,
+          "primitive": null,
+          "net": "GND",
+          "type": "plane_15"
+        },
+        {
+          "gap_mil": 3.7724,
+          "limit_mil": 6.2,
+          "primitive": null,
+          "net": "GND",
+          "type": "plane_18"
+        }
+      ]
+    },
+    {
+      "prior_primitive_id": "887a0eee3522b2a1",
+      "prior_span": "BV_L5_L6",
+      "coordinate_mil": [
+        55.57,
+        259.28
+      ],
+      "new_drill_mil": 6.0,
+      "new_land_mil": 12.0,
+      "viable": false,
+      "margin_mil": -9.75,
+      "limiting": [
+        {
+          "gap_mil": 2.05,
+          "limit_mil": 11.8,
+          "primitive": "2a557a8fcb3c4cc7",
+          "net": "FPGA_CRESET_B",
+          "type": "foreign_track"
+        },
+        {
+          "gap_mil": -2.899828,
+          "limit_mil": 6.2,
+          "primitive": "a204e1009732aebfre4p109",
+          "net": "opt_cs_n",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": -0.242186,
+          "limit_mil": 6.2,
+          "primitive": "1c329b71dd21078cre4p109",
+          "net": "opt_l_qdo0",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 3.066037,
+          "limit_mil": 6.2,
+          "primitive": "3decae6651870f63re1p112",
+          "net": "FPGA_1V8_EN",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 1.225,
+          "limit_mil": 3.55,
+          "primitive": "c7a3bf451856c7c3bm30p140",
+          "net": "GND",
+          "type": "gnd_pad_drill_vs_opening"
+        }
+      ]
+    },
+    {
+      "prior_primitive_id": "de748f007112a400",
+      "prior_span": "BV_L1_L2",
+      "coordinate_mil": [
+        144.9,
+        340.59
+      ],
+      "new_drill_mil": 6.0,
+      "new_land_mil": 12.0,
+      "viable": false,
+      "margin_mil": -10.015,
+      "limiting": [
+        {
+          "gap_mil": -3.815,
+          "limit_mil": 6.2,
+          "primitive": "73d3ee0aeba58dd1re5p109",
+          "net": "1V8_FPGA_VPP",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 2.276947,
+          "limit_mil": 6.2,
+          "primitive": "38e3101c2eb6ff76e12",
+          "net": "OPT_AVDD_EN",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 1.215,
+          "limit_mil": 3.55,
+          "primitive": "b8aa8c34d071b943re5p110",
+          "net": "GND",
+          "type": "gnd_pad_drill_vs_opening"
+        },
+        {
+          "gap_mil": 4.112946,
+          "limit_mil": 6.2,
+          "primitive": "38e3101c2eb6ff76e13",
+          "net": "AVDD_PULSE_QUAL",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 5.365,
+          "limit_mil": 6.2,
+          "primitive": "b8aa8c34d071b943re5p109",
+          "net": "1V2_FPGA_CORE",
+          "type": "foreign_pad"
+        }
+      ]
+    },
+    {
+      "prior_primitive_id": "c4f97fc769fe79b5",
+      "prior_span": "BV_L5_L6",
+      "coordinate_mil": [
+        132.0,
+        48.0
+      ],
+      "new_drill_mil": 6.0,
+      "new_land_mil": 12.0,
+      "viable": false,
+      "margin_mil": -10.276111,
+      "limiting": [
+        {
+          "gap_mil": -4.076111,
+          "limit_mil": 6.2,
+          "primitive": "b6e79ce885fde532tp9p114",
+          "net": "AVDD_PULSE_QUAL",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 5.325,
+          "limit_mil": 6.2,
+          "primitive": "1c582c3050ee4f23rd3p113",
+          "net": "",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 3.155,
+          "limit_mil": 3.55,
+          "primitive": "1c582c3050ee4f23rd3p110",
+          "net": "GND",
+          "type": "gnd_pad_drill_vs_opening"
+        },
+        {
+          "gap_mil": 10.409268,
+          "limit_mil": 6.2,
+          "primitive": "1c582c3050ee4f23rd3p109",
+          "net": "1V8_FPGA_IO",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 11.283859,
+          "limit_mil": 6.2,
+          "primitive": "1c582c3050ee4f23rd3p111",
+          "net": "AVDD_CRESET_VSYS",
+          "type": "foreign_pad"
+        }
+      ]
+    },
+    {
+      "prior_primitive_id": "4def814286440476",
+      "prior_span": "BV_L1_L2",
+      "coordinate_mil": [
+        22.8,
+        354.39
+      ],
+      "new_drill_mil": 6.0,
+      "new_land_mil": 12.0,
+      "viable": false,
+      "margin_mil": -10.635,
+      "limiting": [
+        {
+          "gap_mil": -4.435,
+          "limit_mil": 6.2,
+          "primitive": "d2fe78ad41c0c277re5p109",
+          "net": "1V2_FPGA_PLL",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 1.215,
+          "limit_mil": 3.55,
+          "primitive": "bc68286d793a696ere5p110",
+          "net": "GND",
+          "type": "gnd_pad_drill_vs_opening"
+        },
+        {
+          "gap_mil": 5.365,
+          "limit_mil": 6.2,
+          "primitive": "bc68286d793a696ere5p109",
+          "net": "1V8_FPGA_IO",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 6.7,
+          "limit_mil": 6.2,
+          "primitive": null,
+          "net": "GND",
+          "type": "plane_15"
+        },
+        {
+          "gap_mil": 6.7,
+          "limit_mil": 6.2,
+          "primitive": null,
+          "net": "GND",
+          "type": "plane_18"
+        }
+      ]
+    },
+    {
+      "prior_primitive_id": "64722ce12906da3f",
+      "prior_span": "BV_L1_L2",
+      "coordinate_mil": [
+        156.6,
+        23.0
+      ],
+      "new_drill_mil": 6.0,
+      "new_land_mil": 12.0,
+      "viable": false,
+      "margin_mil": -11.775,
+      "limiting": [
+        {
+          "gap_mil": -5.575,
+          "limit_mil": 6.2,
+          "primitive": "1c582c3050ee4f23rd3p109",
+          "net": "1V8_FPGA_IO",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 1.305023,
+          "limit_mil": 3.55,
+          "primitive": "b6e79ce885fde532tp9p117",
+          "net": "GND",
+          "type": "gnd_pad_drill_vs_opening"
+        },
+        {
+          "gap_mil": 6.9,
+          "limit_mil": 6.2,
+          "primitive": null,
+          "net": "GND",
+          "type": "plane_15"
+        },
+        {
+          "gap_mil": 6.9,
+          "limit_mil": 6.2,
+          "primitive": null,
+          "net": "GND",
+          "type": "plane_18"
+        },
+        {
+          "gap_mil": 17.0,
+          "limit_mil": 14,
+          "primitive": null,
+          "net": "",
+          "type": "outer_copper_edge"
+        }
+      ]
+    },
+    {
+      "prior_primitive_id": "192e34c6366831f0",
+      "prior_span": "BV_L5_L6",
+      "coordinate_mil": [
+        137.0,
+        375.99
+      ],
+      "new_drill_mil": 6.0,
+      "new_land_mil": 12.0,
+      "viable": false,
+      "margin_mil": -11.915,
+      "limiting": [
+        {
+          "gap_mil": -5.715,
+          "limit_mil": 6.2,
+          "primitive": "b08bf9a6f0bb090fre5p109",
+          "net": "VSYS",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 1.215,
+          "limit_mil": 3.55,
+          "primitive": "73d3ee0aeba58dd1re5p110",
+          "net": "GND",
+          "type": "gnd_pad_drill_vs_opening"
+        },
+        {
+          "gap_mil": 2.395,
+          "limit_mil": 3.55,
+          "primitive": "b8aa8c34d071b943re5p110",
+          "net": "GND",
+          "type": "gnd_pad_drill_vs_opening"
+        },
+        {
+          "gap_mil": 5.365,
+          "limit_mil": 6.2,
+          "primitive": "73d3ee0aeba58dd1re5p109",
+          "net": "1V8_FPGA_VPP",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 5.997618,
+          "limit_mil": 6.2,
+          "primitive": "c489db83c3ffdfdfe61",
+          "net": "opt_r_qdo1",
+          "type": "foreign_pad"
+        }
+      ]
+    },
+    {
+      "prior_primitive_id": "ae0a29446cb9c1ec",
+      "prior_span": "BV_L1_L2",
+      "coordinate_mil": [
+        158.55,
+        452.4
+      ],
+      "new_drill_mil": 6.0,
+      "new_land_mil": 12.0,
+      "viable": false,
+      "margin_mil": -12.2,
+      "limiting": [
+        {
+          "gap_mil": -6.0,
+          "limit_mil": 6.2,
+          "primitive": "5252ec4b97f2e1ddrd2p113",
+          "net": "VSYS",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 1.305,
+          "limit_mil": 3.55,
+          "primitive": "4d1d241597a3ce0bre4p110",
+          "net": "GND",
+          "type": "gnd_pad_drill_vs_opening"
+        },
+        {
+          "gap_mil": 6.4524,
+          "limit_mil": 6.2,
+          "primitive": null,
+          "net": "GND",
+          "type": "plane_15"
+        },
+        {
+          "gap_mil": 6.4524,
+          "limit_mil": 6.2,
+          "primitive": null,
+          "net": "GND",
+          "type": "plane_18"
+        },
+        {
+          "gap_mil": 13.641923,
+          "limit_mil": 11.8,
+          "primitive": "46d66f361ee9d65f",
+          "net": "VSYS",
+          "type": "foreign_track"
+        }
+      ]
+    },
+    {
+      "prior_primitive_id": "e636c62d72d66383",
+      "prior_span": "BV_L1_L2",
+      "coordinate_mil": [
+        152.65,
+        474.0
+      ],
+      "new_drill_mil": 6.0,
+      "new_land_mil": 12.0,
+      "viable": false,
+      "margin_mil": -12.2,
+      "limiting": [
+        {
+          "gap_mil": -6.0,
+          "limit_mil": 6.2,
+          "primitive": "5252ec4b97f2e1ddrd2p113",
+          "net": "VSYS",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 8.542615,
+          "limit_mil": 11.8,
+          "primitive": "46d66f361ee9d65f",
+          "net": "VSYS",
+          "type": "foreign_track"
+        },
+        {
+          "gap_mil": 1.305,
+          "limit_mil": 3.55,
+          "primitive": "e9b657a0733f5749re4p110",
+          "net": "GND",
+          "type": "gnd_pad_drill_vs_opening"
+        },
+        {
+          "gap_mil": 8.525,
+          "limit_mil": 6.2,
+          "primitive": "5252ec4b97f2e1ddrd2p112",
+          "net": "AVDD_WD_DIV",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 8.925084,
+          "limit_mil": 6.2,
+          "primitive": "215529ebad173a14re4p109",
+          "net": "VSYS",
+          "type": "foreign_pad"
+        }
+      ]
+    },
+    {
+      "prior_primitive_id": "890f67b8c5232ab4",
+      "prior_span": "BV_L5_L6",
+      "coordinate_mil": [
+        26.4,
+        398.41
+      ],
+      "new_drill_mil": 6.0,
+      "new_land_mil": 12.0,
+      "viable": false,
+      "margin_mil": -12.2,
+      "limiting": [
+        {
+          "gap_mil": -6.0,
+          "limit_mil": 6.2,
+          "primitive": "62d22cb60c57007fre5p109",
+          "net": "1V2_FPGA_CORE",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": -5.972685,
+          "limit_mil": 6.2,
+          "primitive": "5d4117610276137b",
+          "net": "1V2_FPGA_CORE",
+          "type": "foreign_track"
+        },
+        {
+          "gap_mil": 1.215,
+          "limit_mil": 3.55,
+          "primitive": "d2fe78ad41c0c277re5p110",
+          "net": "GND",
+          "type": "gnd_pad_drill_vs_opening"
+        },
+        {
+          "gap_mil": 4.07778,
+          "limit_mil": 6.2,
+          "primitive": "01308d8e4dfe07c5",
+          "net": "1V2_FPGA_CORE",
+          "type": "foreign_track"
+        },
+        {
+          "gap_mil": 5.483429,
+          "limit_mil": 6.2,
+          "primitive": "0594236c467cd8ef",
+          "net": "1V2_FPGA_CORE",
+          "type": "foreign_track"
+        }
+      ]
+    },
+    {
+      "prior_primitive_id": "79ca8f6cdfcf5a70",
+      "prior_span": "BV_L5_L6",
+      "coordinate_mil": [
+        156.3,
+        735.01
+      ],
+      "new_drill_mil": 6.0,
+      "new_land_mil": 12.0,
+      "viable": false,
+      "margin_mil": -12.2,
+      "limiting": [
+        {
+          "gap_mil": -6.0,
+          "limit_mil": 6.2,
+          "primitive": "0d460a75340a72fere4p109",
+          "net": "1V8_FPGA_VPP",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 1.215,
+          "limit_mil": 3.55,
+          "primitive": "6271b4f9a39cb400re5p110",
+          "net": "GND",
+          "type": "gnd_pad_drill_vs_opening"
+        },
+        {
+          "gap_mil": 8.7024,
+          "limit_mil": 6.2,
+          "primitive": null,
+          "net": "GND",
+          "type": "plane_15"
+        },
+        {
+          "gap_mil": 8.7024,
+          "limit_mil": 6.2,
+          "primitive": null,
+          "net": "GND",
+          "type": "plane_18"
+        },
+        {
+          "gap_mil": 7.165,
+          "limit_mil": 3.55,
+          "primitive": "131266a903501025re4p110",
+          "net": "GND",
+          "type": "gnd_pad_drill_vs_opening"
+        }
+      ]
+    },
+    {
+      "prior_primitive_id": "dd69cecc7a9c25e6",
+      "prior_span": "BV_L1_L2",
+      "coordinate_mil": [
+        22.8,
+        423.29
+      ],
+      "new_drill_mil": 6.0,
+      "new_land_mil": 12.0,
+      "viable": false,
+      "margin_mil": -12.2,
+      "limiting": [
+        {
+          "gap_mil": -6.0,
+          "limit_mil": 6.2,
+          "primitive": "5252ec4b97f2e1ddrd2p109",
+          "net": "AVDD_D3_VSYS",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 1.215,
+          "limit_mil": 3.55,
+          "primitive": "62d22cb60c57007fre5p110",
+          "net": "GND",
+          "type": "gnd_pad_drill_vs_opening"
+        },
+        {
+          "gap_mil": 5.365,
+          "limit_mil": 6.2,
+          "primitive": "62d22cb60c57007fre5p109",
+          "net": "1V2_FPGA_CORE",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 6.347625,
+          "limit_mil": 6.2,
+          "primitive": "7865addddaeb2867",
+          "net": "AVDD_D3_VSYS",
+          "type": "foreign_track"
+        },
+        {
+          "gap_mil": 6.7,
+          "limit_mil": 6.2,
+          "primitive": null,
+          "net": "GND",
+          "type": "plane_15"
+        }
+      ]
+    },
+    {
+      "prior_primitive_id": "08dc6db23acf155d",
+      "prior_span": "BV_L1_L2",
+      "coordinate_mil": [
+        114.97,
+        750.14
+      ],
+      "new_drill_mil": 6.0,
+      "new_land_mil": 12.0,
+      "viable": false,
+      "margin_mil": -12.2,
+      "limiting": [
+        {
+          "gap_mil": -6.0,
+          "limit_mil": 6.2,
+          "primitive": "5834b130fe097de5re5p109",
+          "net": "1V8_SYS",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 3.515,
+          "limit_mil": 6.2,
+          "primitive": "a58afe0093ae7de7rd1p112",
+          "net": "AVDD_QUAL_CLR_N",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 3.334084,
+          "limit_mil": 3.55,
+          "primitive": "a99d6a238c9ac376re5p110",
+          "net": "GND",
+          "type": "gnd_pad_drill_vs_opening"
+        },
+        {
+          "gap_mil": 7.070401,
+          "limit_mil": 6.2,
+          "primitive": "8689cf4fe98e0082e24",
+          "net": "1V8_SYS",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 7.431528,
+          "limit_mil": 6.2,
+          "primitive": "a99d6a238c9ac376re5p109",
+          "net": "AVDD_OPT_BIAS",
+          "type": "foreign_pad"
+        }
+      ]
+    },
+    {
+      "prior_primitive_id": "3362060ec696ac76",
+      "prior_span": "BV_L5_L6",
+      "coordinate_mil": [
+        69.9,
+        98.35
+      ],
+      "new_drill_mil": 6.0,
+      "new_land_mil": 12.0,
+      "viable": false,
+      "margin_mil": -12.2,
+      "limiting": [
+        {
+          "gap_mil": -6.0,
+          "limit_mil": 6.2,
+          "primitive": "b6e79ce885fde532tp9p109",
+          "net": "FPGA_CDONE_VSYNC_N",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 1.86159,
+          "limit_mil": 3.55,
+          "primitive": "c7a3bf451856c7c3bm30p115",
+          "net": "GND",
+          "type": "gnd_pad_drill_vs_opening"
+        },
+        {
+          "gap_mil": 4.366217,
+          "limit_mil": 3.55,
+          "primitive": "c7a3bf451856c7c3bm30p117",
+          "net": "GND",
+          "type": "gnd_pad_drill_vs_opening"
+        },
+        {
+          "gap_mil": 8.13,
+          "limit_mil": 6.2,
+          "primitive": "3d1f69863b3d54d9",
+          "net": "OPT_CS_N_L",
+          "type": "foreign_track"
+        },
+        {
+          "gap_mil": 8.130354,
+          "limit_mil": 6.2,
+          "primitive": "f0f04d5aa7e14057",
+          "net": "OPT_CS_N_L",
+          "type": "foreign_track"
+        }
+      ]
+    },
+    {
+      "prior_primitive_id": "770b5a04396aa71e",
+      "prior_span": "BV_L1_L2",
+      "coordinate_mil": [
+        131.3,
+        165.4
+      ],
+      "new_drill_mil": 6.0,
+      "new_land_mil": 12.0,
+      "viable": false,
+      "margin_mil": -12.2,
+      "limiting": [
+        {
+          "gap_mil": -6.0,
+          "limit_mil": 6.2,
+          "primitive": "77bd1229d6a9baf8rd3p113",
+          "net": "",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 1.305,
+          "limit_mil": 3.55,
+          "primitive": "0fae57a9b4b0e18dbm10p120",
+          "net": "GND",
+          "type": "gnd_pad_drill_vs_opening"
+        },
+        {
+          "gap_mil": 12.984004,
+          "limit_mil": 11.811,
+          "primitive": "de3daf8ccb0beac2",
+          "net": "GND",
+          "type": "hole_wall"
+        },
+        {
+          "gap_mil": 13.671161,
+          "limit_mil": 11.8,
+          "primitive": "42c6ebe36c72cbd0",
+          "net": "VSYS",
+          "type": "foreign_track"
+        },
+        {
+          "gap_mil": 8.525,
+          "limit_mil": 6.2,
+          "primitive": "77bd1229d6a9baf8rd3p112",
+          "net": "VSYS",
+          "type": "foreign_pad"
+        }
+      ]
+    },
+    {
+      "prior_primitive_id": "f10ad1d77ccd6d28",
+      "prior_span": "BV_L1_L2",
+      "coordinate_mil": [
+        160.5,
+        582.7
+      ],
+      "new_drill_mil": 6.0,
+      "new_land_mil": 12.0,
+      "viable": false,
+      "margin_mil": -12.2,
+      "limiting": [
+        {
+          "gap_mil": -6.0,
+          "limit_mil": 6.2,
+          "primitive": "bbd64b18f082a0c0rd4p113",
+          "net": "1V8_FPGA_IO",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 1.810317,
+          "limit_mil": 6.2,
+          "primitive": "c7ec0b9c231484aa",
+          "net": "1V8_FPGA_IO",
+          "type": "foreign_track"
+        },
+        {
+          "gap_mil": 1.305,
+          "limit_mil": 3.55,
+          "primitive": "4a39ccc1070ff81abm10p120",
+          "net": "GND",
+          "type": "gnd_pad_drill_vs_opening"
+        },
+        {
+          "gap_mil": 4.5024,
+          "limit_mil": 6.2,
+          "primitive": null,
+          "net": "GND",
+          "type": "plane_15"
+        },
+        {
+          "gap_mil": 4.5024,
+          "limit_mil": 6.2,
+          "primitive": null,
+          "net": "GND",
+          "type": "plane_18"
+        }
+      ]
+    },
+    {
+      "prior_primitive_id": "b8de348a52ab310d",
+      "prior_span": "BV_L1_L2",
+      "coordinate_mil": [
+        28.34,
+        736.19
+      ],
+      "new_drill_mil": 6.0,
+      "new_land_mil": 12.0,
+      "viable": false,
+      "margin_mil": -12.2,
+      "limiting": [
+        {
+          "gap_mil": -6.0,
+          "limit_mil": 6.2,
+          "primitive": "a58afe0093ae7de7rd1p111",
+          "net": "AVDD_QUAL_RC",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 1.245,
+          "limit_mil": 3.55,
+          "primitive": "8689cf4fe98e0082e13",
+          "net": "GND",
+          "type": "gnd_pad_drill_vs_opening"
+        },
+        {
+          "gap_mil": 6.185,
+          "limit_mil": 6.2,
+          "primitive": "655f45aeef0106c6ie8",
+          "net": "1V8_FPGA_IO",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 12.24,
+          "limit_mil": 6.2,
+          "primitive": null,
+          "net": "GND",
+          "type": "plane_15"
+        },
+        {
+          "gap_mil": 12.24,
+          "limit_mil": 6.2,
+          "primitive": null,
+          "net": "GND",
+          "type": "plane_18"
+        }
+      ]
+    },
+    {
+      "prior_primitive_id": "10f21b62526a4b35",
+      "prior_span": "BV_L5_L6",
+      "coordinate_mil": [
+        60.0,
+        198.0
+      ],
+      "new_drill_mil": 6.0,
+      "new_land_mil": 12.0,
+      "viable": false,
+      "margin_mil": -12.2,
+      "limiting": [
+        {
+          "gap_mil": -6.0,
+          "limit_mil": 6.2,
+          "primitive": "0fae57a9b4b0e18dbm10p109",
+          "net": "1V8_FPGA_IO",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 6.48,
+          "limit_mil": 11.8,
+          "primitive": "2a557a8fcb3c4cc7",
+          "net": "FPGA_CRESET_B",
+          "type": "foreign_track"
+        },
+        {
+          "gap_mil": 2.596071,
+          "limit_mil": 6.2,
+          "primitive": null,
+          "net": "GND",
+          "type": "plane_15"
+        },
+        {
+          "gap_mil": 2.596071,
+          "limit_mil": 6.2,
+          "primitive": null,
+          "net": "GND",
+          "type": "plane_18"
+        },
+        {
+          "gap_mil": 7.175,
+          "limit_mil": 6.2,
+          "primitive": "0fae57a9b4b0e18dbm10p111",
+          "net": "OPT_SCK_L",
+          "type": "foreign_pad"
+        }
+      ]
+    },
+    {
+      "prior_primitive_id": "7d3455ccc292f592",
+      "prior_span": "BV_L1_L2",
+      "coordinate_mil": [
+        52.48,
+        544.16
+      ],
+      "new_drill_mil": 6.0,
+      "new_land_mil": 12.0,
+      "viable": false,
+      "margin_mil": -14.84,
+      "limiting": [
+        {
+          "gap_mil": -3.04,
+          "limit_mil": 11.8,
+          "primitive": "2800dfef901e4064",
+          "net": "FPGA_CRESET_B",
+          "type": "foreign_track"
+        },
+        {
+          "gap_mil": -1.17516,
+          "limit_mil": 11.8,
+          "primitive": "127ad27b7fce582d",
+          "net": "FPGA_CDONE_VSYNC_N",
+          "type": "foreign_track"
+        },
+        {
+          "gap_mil": -1.17516,
+          "limit_mil": 11.8,
+          "primitive": "bc04b31aeda6435a",
+          "net": "FPGA_CDONE_VSYNC_N",
+          "type": "foreign_track"
+        },
+        {
+          "gap_mil": -0.783829,
+          "limit_mil": 11.8,
+          "primitive": "94b6a35a08a1a407",
+          "net": "FPGA_CDONE_VSYNC_N",
+          "type": "foreign_track"
+        },
+        {
+          "gap_mil": -0.783516,
+          "limit_mil": 11.8,
+          "primitive": "711cfbf45b5b76ad",
+          "net": "FPGA_CDONE_VSYNC_N",
+          "type": "foreign_track"
+        }
+      ]
+    },
+    {
+      "prior_primitive_id": "9cce57f15e1e0954",
+      "prior_span": "BV_L1_L2",
+      "coordinate_mil": [
+        40.34,
+        48.67
+      ],
+      "new_drill_mil": 6.0,
+      "new_land_mil": 12.0,
+      "viable": false,
+      "margin_mil": -15.036037,
+      "limiting": [
+        {
+          "gap_mil": -3.236037,
+          "limit_mil": 11.8,
+          "primitive": "32804e1f79551b77",
+          "net": "VSYS",
+          "type": "foreign_track"
+        },
+        {
+          "gap_mil": -3.006123,
+          "limit_mil": 6.2,
+          "primitive": "c7a3bf451856c7c3bm30p110",
+          "net": "VSYS",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 2.225,
+          "limit_mil": 3.55,
+          "primitive": "113b68bafa8f4098d3109",
+          "net": "GND",
+          "type": "gnd_pad_drill_vs_opening"
+        },
+        {
+          "gap_mil": 14.286173,
+          "limit_mil": 11.8,
+          "primitive": "322e14d6ac7bfd53",
+          "net": "VSYS",
+          "type": "foreign_track"
+        },
+        {
+          "gap_mil": 8.896506,
+          "limit_mil": 6.2,
+          "primitive": "c7a3bf451856c7c3bm30p112",
+          "net": "1V8_SYS",
+          "type": "foreign_pad"
+        }
+      ]
+    },
+    {
+      "prior_primitive_id": "de3daf8ccb0beac2",
+      "prior_span": "BV_L1_L2",
+      "coordinate_mil": [
+        115.8,
+        156.28
+      ],
+      "new_drill_mil": 6.0,
+      "new_land_mil": 12.0,
+      "viable": false,
+      "margin_mil": -15.801966,
+      "limiting": [
+        {
+          "gap_mil": -4.001966,
+          "limit_mil": 11.8,
+          "primitive": "42c6ebe36c72cbd0",
+          "net": "VSYS",
+          "type": "foreign_track"
+        },
+        {
+          "gap_mil": -6.0,
+          "limit_mil": 6.2,
+          "primitive": "77bd1229d6a9baf8rd3p112",
+          "net": "VSYS",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 4.725,
+          "limit_mil": 6.2,
+          "primitive": "77bd1229d6a9baf8rd3p113",
+          "net": "",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 7.239171,
+          "limit_mil": 6.2,
+          "primitive": "0fae57a9b4b0e18dbm10p116",
+          "net": "opt_l_qdo3_PANEL",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 12.984004,
+          "limit_mil": 11.811,
+          "primitive": "770b5a04396aa71e",
+          "net": "GND",
+          "type": "hole_wall"
+        }
+      ]
+    },
+    {
+      "prior_primitive_id": "7a9a00092f252d56",
+      "prior_span": "BV_L1_L2",
+      "coordinate_mil": [
+        42.7,
+        290.2
+      ],
+      "new_drill_mil": 6.0,
+      "new_land_mil": 12.0,
+      "viable": false,
+      "margin_mil": -16.02,
+      "limiting": [
+        {
+          "gap_mil": -4.22,
+          "limit_mil": 11.8,
+          "primitive": "2a557a8fcb3c4cc7",
+          "net": "FPGA_CRESET_B",
+          "type": "foreign_track"
+        },
+        {
+          "gap_mil": -2.5167,
+          "limit_mil": 6.2,
+          "primitive": "52a9930df4fcde16e14",
+          "net": "VSYS",
+          "type": "foreign_pad"
+        },
+        {
+          "gap_mil": 6.28,
+          "limit_mil": 11.8,
+          "primitive": "3de2ea0455688422",
+          "net": "VSYS",
+          "type": "foreign_track"
+        },
+        {
+          "gap_mil": 1.655,
+          "limit_mil": 3.55,
+          "primitive": "3decae6651870f63re1p110",
+          "net": "GND",
+          "type": "gnd_pad_drill_vs_opening"
+        },
+        {
+          "gap_mil": 9.942671,
+          "limit_mil": 11.8,
+          "primitive": "b95291d44ac4bb63",
+          "net": "VSYS",
+          "type": "foreign_track"
+        }
+      ]
+    }
+  ]
+}

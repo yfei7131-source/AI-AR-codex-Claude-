@@ -1,0 +1,77 @@
+{
+  "scope": "Exact ref/PCB-eligibility and nonempty ref-pin→net parity only. The native aggregate DRC rule itself has no per-connector attribution.",
+  "inputs": {
+    "schematic_protel2_sha256": "7586a150a92b4d5711b1a03498a15952b53937d3178c3750e5b4efa9945e2725",
+    "schematic_receipt_sha256": "8af0e38eaa6e0d8fd53a3c5198c2f00a74961832e98c14ae9d869bbeec7f1cfe",
+    "copper_dump_sha256": "f1e9347cf30338ab97127419bc6c4546927b359cfdfcae7eb55a1eebe40d8a25",
+    "native_drc_sha256": "bf8fffbe473a862db96f37a1031c03cf135d7b2e82791e2e6e891efa5f386deb"
+  },
+  "designators": {
+    "schematic": 122,
+    "pcb": 118,
+    "schematic_convert_to_pcb_counts": {
+      "True": 120,
+      "False": 2
+    },
+    "pcb_extras": [],
+    "missing_pcb_eligible": [
+      "J2",
+      "J3"
+    ],
+    "intentional_external_parts": [
+      "BAT1",
+      "SPK1"
+    ]
+  },
+  "matched_placed_terminals": 477,
+  "native_named_net_groups": 112,
+  "placed_pin_net_differences": [],
+  "missing_eligible_terminals": {
+    "J2": {
+      "P2": "GND",
+      "P7": "GND",
+      "P9": "GND",
+      "P11": "GND",
+      "P24": "GND",
+      "PWR2": "GND",
+      "P15": "CAM_DOVDD_1V8",
+      "P16": "CAM_D0_1V8",
+      "P17": "CAM_D1_1V8",
+      "P18": "CAM_D2_1V8",
+      "P19": "CAM_D3_1V8",
+      "P20": "CAM_D4_1V8",
+      "P21": "CAM_D5_1V8",
+      "P22": "CAM_D6_1V8",
+      "P23": "CAM_D7_1V8",
+      "P10": "CAM_PCLK_1V8",
+      "P12": "CAM_VSYNC_1V8",
+      "P13": "CAM_HREF_1V8",
+      "P8": "CAM_XCLK_1V8",
+      "P1": "CAM_AVDD_2V8",
+      "PWR1": "CAM_AVDD_2V8",
+      "P14": "CAM_DVDD_1V2",
+      "P5": "CAM_RESET_N",
+      "P6": "CAM_PWDN",
+      "P3": "CAM_SCCB_SCL",
+      "P4": "CAM_SCCB_SDA"
+    },
+    "J3": {
+      "4": "GND",
+      "1": "VBUS_5V_USB",
+      "2": "USB_DM",
+      "3": "USB_DP"
+    }
+  },
+  "native_aggregate_netlist_errors": [
+    {
+      "rule": "Netlist Error",
+      "objType": "Netlist Error",
+      "ruleName": "Import Changes",
+      "objs": [
+        "err0"
+      ],
+      "message": "PCB and schematic netlist does not match. You can click on the rule name \"Import Changes\" to view the difference.",
+      "globalIndex": "err0"
+    }
+  ]
+}

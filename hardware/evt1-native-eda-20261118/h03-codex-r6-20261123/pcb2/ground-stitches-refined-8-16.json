@@ -1,0 +1,54 @@
+{
+  "role": "GND_L2_L5_return_stitch",
+  "screen": "0.5 mil grid, positive-data native planes, full copper and pad geometry",
+  "native_planar_viability_only": true,
+  "hole_mil": 8.0,
+  "land_mil": 16.0,
+  "plane_land_to_boundary_min_mil": 6.2,
+  "checked": [
+    {
+      "role": "decoupling",
+      "point": [
+        24.5,
+        954.0
+      ],
+      "clearances_mil": {
+        "all_pads": [
+          1.63189,
+          "3571daebd6374c67e17",
+          "GND"
+        ],
+        "foreign_tracks": [
+          41.13107,
+          "798b125450f8a919",
+          "VSYS"
+        ],
+        "foreign_vias": [
+          239.55687,
+          "25dff6ebabe62536",
+          "AVDD_QUAL_CLR_N"
+        ],
+        "sensitive_tracks": [
+          41.13107,
+          "798b125450f8a919",
+          "VSYS"
+        ]
+      },
+      "native_hole_wall_mil": 56.94574,
+      "outer_copper_edge_mil": 16.5,
+      "plane_boundary_mil": 6.4
+    }
+  ],
+  "partition_counts": {
+    "outline": 509640,
+    "plane": 406955,
+    "hole_wall": 300238,
+    "foreign_lands": 3952,
+    "gnd_pad_drill_to_mask": 7,
+    "foreign_copper": 7,
+    "sensitive": 7
+  },
+  "all_passing_grid_points": 7,
+  "passing_sites_outside_MK2_copper_envelope": 0,
+  "outside_preview": []
+}

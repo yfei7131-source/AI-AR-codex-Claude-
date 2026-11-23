@@ -1,0 +1,963 @@
+{
+  "scope": "Offline local route candidate screen. Native DRC required after typed apply.",
+  "archive_sha256": "77dc7b667284245af6c9c2b6206edb65eda55e1c33f37b3669c498cad987b325",
+  "dump_sha256": "103fd7ffc670e3dc02937fe438dff0d94b8be458764440778ddb521cd6faa1a6",
+  "drc_sha256": "8da65f39866839038734a03e50be6a1dd66e96df96ca575e1fe79037b030dc76",
+  "airwire_matched_isolated_anchors": 49,
+  "pairs_screened": 254,
+  "routes": [
+    {
+      "net": "GND",
+      "layer": 2,
+      "from": "R4.2",
+      "to": "copper:0e9922f45b661d09",
+      "pad_ids": [
+        "63182b5c3c167d13re4p110",
+        "0e9922f45b661d09"
+      ],
+      "isolated_drc_anchors": [
+        "63182b5c3c167d13re4p110"
+      ],
+      "endpoint_kind": "GND track",
+      "width_mil": 4.0,
+      "length_mil": 53.4356,
+      "segments": [
+        [
+          [
+            177,
+            623.4
+          ],
+          [
+            177.0,
+            619.83
+          ]
+        ],
+        [
+          [
+            177.0,
+            619.83
+          ],
+          [
+            173.43,
+            616.26
+          ]
+        ],
+        [
+          [
+            173.43,
+            616.26
+          ],
+          [
+            160.27,
+            616.26
+          ]
+        ],
+        [
+          [
+            160.27,
+            616.26
+          ],
+          [
+            156.27,
+            612.26
+          ]
+        ],
+        [
+          [
+            156.27,
+            612.26
+          ],
+          [
+            156.27,
+            586.26
+          ]
+        ]
+      ],
+      "edge_copper_gap_mil": 25.7244,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 8.96,
+          "id": "63182b5c3c167d13re4p109"
+        },
+        "track": {
+          "gap_mil": 25.4948,
+          "id": "44b0cf1d9faceae3"
+        }
+      }
+    }
+  ],
+  "width_candidates": [
+    {
+      "id": "cc893a3d777874e3",
+      "net": "GND",
+      "layer": 1,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        176,
+        502
+      ],
+      "end": [
+        176,
+        518
+      ],
+      "edge_copper_gap_mil": 26.7244,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 7.65,
+          "id": "86b1d8eabf8bdda4re3p110"
+        },
+        "track": {
+          "gap_mil": 22.9,
+          "id": "ab277408858e1eb8"
+        }
+      }
+    },
+    {
+      "id": "df4b5a4179f90dcd",
+      "net": "1V8_SYS",
+      "layer": 1,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        54.900000000000006,
+        673
+      ],
+      "end": [
+        27.6,
+        673
+      ],
+      "edge_copper_gap_mil": 25.6,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 9.6,
+          "id": "74025dccbdaca19ctp5p111"
+        },
+        "track": {
+          "gap_mil": 18.7308,
+          "id": "fe99eb8a32be5f25"
+        }
+      }
+    },
+    {
+      "id": "1bbd22af9a82dde4",
+      "net": "1V8_SYS",
+      "layer": 1,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        27.6,
+        673
+      ],
+      "end": [
+        27.6,
+        689
+      ],
+      "edge_copper_gap_mil": 25.6,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 9.6,
+          "id": "74025dccbdaca19ctp5p111"
+        },
+        "via": {
+          "gap_mil": 36.2887,
+          "id": "f8132c4ecf809888"
+        },
+        "track": {
+          "gap_mil": 35.55,
+          "id": "03df7b0adc7eacdb"
+        }
+      }
+    },
+    {
+      "id": "81d371f3636c8357",
+      "net": "1V8_SYS",
+      "layer": 1,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        42,
+        680.5604
+      ],
+      "end": [
+        42,
+        688
+      ],
+      "edge_copper_gap_mil": 40.0,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 17.336,
+          "id": "74025dccbdaca19ctp5p111"
+        },
+        "via": {
+          "gap_mil": 33.4741,
+          "id": "f8132c4ecf809888"
+        },
+        "track": {
+          "gap_mil": 33.4866,
+          "id": "fe99eb8a32be5f25"
+        }
+      }
+    },
+    {
+      "id": "7710609f5736c476",
+      "net": "1V8_SYS",
+      "layer": 1,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        106.1,
+        673
+      ],
+      "end": [
+        98,
+        678
+      ],
+      "edge_copper_gap_mil": 96.0,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 8.8,
+          "id": "dbd3cb52b0b1e6b0re4p110"
+        },
+        "via": {
+          "gap_mil": 22.7845,
+          "id": "0e98f5832f73bbfe"
+        },
+        "track": {
+          "gap_mil": 15.0852,
+          "id": "fe99eb8a32be5f25"
+        }
+      }
+    },
+    {
+      "id": "5affff68f9e565f9",
+      "net": "1V8_SYS",
+      "layer": 1,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        96,
+        678
+      ],
+      "end": [
+        96,
+        686
+      ],
+      "edge_copper_gap_mil": 94.0,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 6.8,
+          "id": "dbd3cb52b0b1e6b0re4p110"
+        },
+        "via": {
+          "gap_mil": 29.712,
+          "id": "0e98f5832f73bbfe"
+        },
+        "track": {
+          "gap_mil": 13.1676,
+          "id": "fe99eb8a32be5f25"
+        }
+      }
+    },
+    {
+      "id": "c9e59cf10f7de18b",
+      "net": "1V8_SYS",
+      "layer": 1,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        90,
+        690
+      ],
+      "end": [
+        64,
+        690
+      ],
+      "edge_copper_gap_mil": 62.0,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 7.9,
+          "id": "dbd3cb52b0b1e6b0re4p110"
+        },
+        "via": {
+          "gap_mil": 26.0,
+          "id": "3b5905bd63bd80c2"
+        },
+        "track": {
+          "gap_mil": 13.5,
+          "id": "fe99eb8a32be5f25"
+        }
+      }
+    },
+    {
+      "id": "9eda69b5de1ff991",
+      "net": "1V8_SYS",
+      "layer": 1,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        64,
+        689
+      ],
+      "end": [
+        64,
+        678
+      ],
+      "edge_copper_gap_mil": 62.0,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 7.0,
+          "id": "dbd3cb52b0b1e6b0re4p110"
+        },
+        "via": {
+          "gap_mil": 27.0,
+          "id": "3b5905bd63bd80c2"
+        },
+        "track": {
+          "gap_mil": 12.9194,
+          "id": "fe99eb8a32be5f25"
+        }
+      }
+    },
+    {
+      "id": "3944885f60d634ce",
+      "net": "1V8_SYS",
+      "layer": 1,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        64,
+        678
+      ],
+      "end": [
+        54.900000000000006,
+        673
+      ],
+      "edge_copper_gap_mil": 52.9,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 7.0,
+          "id": "dbd3cb52b0b1e6b0re4p110"
+        },
+        "via": {
+          "gap_mil": 38.0,
+          "id": "3b5905bd63bd80c2"
+        },
+        "track": {
+          "gap_mil": 12.9194,
+          "id": "fe99eb8a32be5f25"
+        }
+      }
+    },
+    {
+      "id": "fe99eb8a32be5f25",
+      "net": "GND",
+      "layer": 1,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        80.1,
+        673
+      ],
+      "end": [
+        76,
+        666
+      ],
+      "edge_copper_gap_mil": 74.0,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 12.0,
+          "id": "dbd3cb52b0b1e6b0re4p109"
+        },
+        "track": {
+          "gap_mil": 12.4194,
+          "id": "9eda69b5de1ff991"
+        }
+      }
+    },
+    {
+      "id": "ab12479d2bcdae14",
+      "net": "GND",
+      "layer": 1,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        76,
+        666
+      ],
+      "end": [
+        76,
+        658
+      ],
+      "edge_copper_gap_mil": 74.0,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 12.0,
+          "id": "dbd3cb52b0b1e6b0re4p109"
+        },
+        "track": {
+          "gap_mil": 12.9706,
+          "id": "9eda69b5de1ff991"
+        }
+      }
+    },
+    {
+      "id": "cab65277f0c9de34",
+      "net": "GND",
+      "layer": 1,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        78,
+        658
+      ],
+      "end": [
+        80.1,
+        649.4
+      ],
+      "edge_copper_gap_mil": 76.0,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 14.0702,
+          "id": "6b660619ae3faa60re4p109"
+        },
+        "track": {
+          "gap_mil": 20.4131,
+          "id": "9eda69b5de1ff991"
+        }
+      }
+    },
+    {
+      "id": "31123a53ebc15b7c",
+      "net": "GND",
+      "layer": 1,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        98,
+        552.2
+      ],
+      "end": [
+        86,
+        562
+      ],
+      "edge_copper_gap_mil": 84.0,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 12.3089,
+          "id": "a8e55eba7a1d2051tp1p109"
+        },
+        "track": {
+          "gap_mil": 57.4332,
+          "id": "ab277408858e1eb8"
+        }
+      }
+    },
+    {
+      "id": "b176d33cf142a177",
+      "net": "GND",
+      "layer": 1,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        78,
+        562
+      ],
+      "end": [
+        78,
+        570
+      ],
+      "edge_copper_gap_mil": 76.0,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 6.45,
+          "id": "3ffbbc7ba026154cre5p109"
+        }
+      }
+    },
+    {
+      "id": "3e427cf6127f283e",
+      "net": "GND",
+      "layer": 1,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        74,
+        572
+      ],
+      "end": [
+        63.6,
+        591.1
+      ],
+      "edge_copper_gap_mil": 61.6,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 6.807,
+          "id": "3ffbbc7ba026154cre5p109"
+        }
+      }
+    },
+    {
+      "id": "c17066b426dea1ce",
+      "net": "GND",
+      "layer": 1,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        98,
+        552.2
+      ],
+      "end": [
+        82.5,
+        561
+      ],
+      "edge_copper_gap_mil": 80.5,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 10.95,
+          "id": "3ffbbc7ba026154cre5p109"
+        },
+        "track": {
+          "gap_mil": 57.4332,
+          "id": "ab277408858e1eb8"
+        }
+      }
+    },
+    {
+      "id": "ee7361c87a14823f",
+      "net": "1V8_SYS",
+      "layer": 2,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        133.5,
+        567.9
+      ],
+      "end": [
+        110,
+        567.9
+      ],
+      "edge_copper_gap_mil": 69.2244,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 16.1,
+          "id": "fca0b40d995a47c0e11"
+        },
+        "via": {
+          "gap_mil": 21.44,
+          "id": "593ec1639a1f3847"
+        },
+        "track": {
+          "gap_mil": 24.69,
+          "id": "d68ce424ddd03077"
+        }
+      }
+    },
+    {
+      "id": "1bec3d9e4a9f736b",
+      "net": "1V8_SYS",
+      "layer": 2,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        110,
+        567.9
+      ],
+      "end": [
+        110,
+        598.2
+      ],
+      "edge_copper_gap_mil": 92.7244,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 14.887,
+          "id": "3a744b76679fe0efre4p110"
+        },
+        "via": {
+          "gap_mil": 13.8397,
+          "id": "f62760e3cdb5171b"
+        },
+        "track": {
+          "gap_mil": 16.3308,
+          "id": "63b0f6394be504c3"
+        }
+      }
+    },
+    {
+      "id": "672162871f07e4af",
+      "net": "GND",
+      "layer": 2,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        177,
+        674.6000000000001
+      ],
+      "end": [
+        151,
+        669.0999999999999
+      ],
+      "edge_copper_gap_mil": 25.7244,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 14.2387,
+          "id": "3f1b6b91baeec3d7re4p109"
+        },
+        "via": {
+          "gap_mil": 17.8874,
+          "id": "4d95aa218297c7ed"
+        },
+        "track": {
+          "gap_mil": 37.5148,
+          "id": "5e2d9410b01f9d0c"
+        }
+      }
+    },
+    {
+      "id": "74c19bea63f9087b",
+      "net": "GND",
+      "layer": 2,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        64,
+        515.4
+      ],
+      "end": [
+        64,
+        544.9
+      ],
+      "edge_copper_gap_mil": 62.0,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 12.75,
+          "id": "756ee9a47ecd1167tp1p109"
+        },
+        "track": {
+          "gap_mil": 43.6961,
+          "id": "b08b8c88bda14673"
+        }
+      }
+    },
+    {
+      "id": "9b969164121d3f6e",
+      "net": "GND",
+      "layer": 2,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        177,
+        674.6000000000001
+      ],
+      "end": [
+        170,
+        678
+      ],
+      "edge_copper_gap_mil": 25.7244,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 16.1,
+          "id": "3f1b6b91baeec3d7re4p109"
+        },
+        "via": {
+          "gap_mil": 14.0907,
+          "id": "4d95aa218297c7ed"
+        },
+        "track": {
+          "gap_mil": 40.3634,
+          "id": "5e2d9410b01f9d0c"
+        }
+      }
+    },
+    {
+      "id": "35fd68dff2751317",
+      "net": "GND",
+      "layer": 2,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        170,
+        678
+      ],
+      "end": [
+        158,
+        678
+      ],
+      "edge_copper_gap_mil": 32.7244,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 19.5,
+          "id": "3f1b6b91baeec3d7re4p109"
+        },
+        "via": {
+          "gap_mil": 14.0907,
+          "id": "4d95aa218297c7ed"
+        },
+        "track": {
+          "gap_mil": 32.5555,
+          "id": "5e2d9410b01f9d0c"
+        }
+      }
+    },
+    {
+      "id": "ec0279890ea87bdb",
+      "net": "GND",
+      "layer": 2,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        156,
+        678
+      ],
+      "end": [
+        151,
+        669.0999999999999
+      ],
+      "edge_copper_gap_mil": 46.7244,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 16.1,
+          "id": "dcefb04326357f2are4p109"
+        },
+        "via": {
+          "gap_mil": 19.2029,
+          "id": "4d95aa218297c7ed"
+        },
+        "track": {
+          "gap_mil": 31.4857,
+          "id": "5e2d9410b01f9d0c"
+        }
+      }
+    },
+    {
+      "id": "b56a0622aaa07971",
+      "net": "GND",
+      "layer": 2,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        174,
+        474
+      ],
+      "end": [
+        174,
+        484
+      ],
+      "edge_copper_gap_mil": 28.7244,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 27.6608,
+          "id": "736ef29f62298015re5p109"
+        },
+        "track": {
+          "gap_mil": 26.5,
+          "id": "a25306357993a8e6"
+        }
+      }
+    },
+    {
+      "id": "c4bf41154ebd8772",
+      "net": "GND",
+      "layer": 2,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        174,
+        484
+      ],
+      "end": [
+        184,
+        484
+      ],
+      "edge_copper_gap_mil": 18.7244,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 27.6608,
+          "id": "736ef29f62298015re5p109"
+        },
+        "track": {
+          "gap_mil": 36.5,
+          "id": "a25306357993a8e6"
+        }
+      }
+    },
+    {
+      "id": "4c5b83e03e7e0152",
+      "net": "GND",
+      "layer": 2,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        184,
+        484
+      ],
+      "end": [
+        184,
+        504
+      ],
+      "edge_copper_gap_mil": 18.7244,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 37.65,
+          "id": "736ef29f62298015re5p109"
+        },
+        "track": {
+          "gap_mil": 37.2922,
+          "id": "a25306357993a8e6"
+        }
+      }
+    },
+    {
+      "id": "dc2d3009065c9509",
+      "net": "GND",
+      "layer": 2,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        184,
+        504
+      ],
+      "end": [
+        172.8,
+        497
+      ],
+      "edge_copper_gap_mil": 18.7244,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 26.45,
+          "id": "736ef29f62298015re5p109"
+        }
+      }
+    },
+    {
+      "id": "3aff2acae57da7d6",
+      "net": "GND",
+      "layer": 2,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        177,
+        623.4
+      ],
+      "end": [
+        170,
+        626
+      ],
+      "edge_copper_gap_mil": 25.7244,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 14.3,
+          "id": "3f1b6b91baeec3d7re4p109"
+        },
+        "track": {
+          "gap_mil": 60.6991,
+          "id": "44b0cf1d9faceae3"
+        }
+      }
+    },
+    {
+      "id": "78c2f1e2653a82b8",
+      "net": "GND",
+      "layer": 2,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        170,
+        626
+      ],
+      "end": [
+        158,
+        626
+      ],
+      "edge_copper_gap_mil": 32.7244,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 14.3,
+          "id": "3f1b6b91baeec3d7re4p109"
+        },
+        "track": {
+          "gap_mil": 51.2167,
+          "id": "44b0cf1d9faceae3"
+        }
+      }
+    },
+    {
+      "id": "6332c4d028f1b3d5",
+      "net": "GND",
+      "layer": 2,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        158,
+        626
+      ],
+      "end": [
+        151,
+        621.9
+      ],
+      "edge_copper_gap_mil": 44.7244,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 16.1,
+          "id": "79e4a98aa449786bre4p109"
+        },
+        "track": {
+          "gap_mil": 43.1727,
+          "id": "44b0cf1d9faceae3"
+        }
+      }
+    },
+    {
+      "id": "b4d1e2e1d423e242",
+      "net": "GND",
+      "layer": 2,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        177,
+        623.4
+      ],
+      "end": [
+        167.69309999999996,
+        622.8631
+      ],
+      "edge_copper_gap_mil": 25.7244,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 15.661,
+          "id": "63182b5c3c167d13re4p109"
+        },
+        "track": {
+          "gap_mil": 56.9537,
+          "id": "44b0cf1d9faceae3"
+        }
+      }
+    },
+    {
+      "id": "6a5923ffe2f3373f",
+      "net": "GND",
+      "layer": 2,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        167.69309999999996,
+        622.8631
+      ],
+      "end": [
+        151,
+        621.9
+      ],
+      "edge_copper_gap_mil": 35.0313,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 15.7012,
+          "id": "63182b5c3c167d13re4p109"
+        },
+        "track": {
+          "gap_mil": 43.1727,
+          "id": "44b0cf1d9faceae3"
+        }
+      }
+    }
+  ]
+}
