@@ -1,0 +1,473 @@
+{
+  "baseline": {
+    "pr": "PR #55 (H03-R7, commit ac38a71947f5d7bdd4e5d193584fbb7c6c05363c)",
+    "board_mil": [
+      0.0,
+      0.0,
+      181.1024,
+      984.252
+    ],
+    "c11_native_center_mil": [
+      142.3228,
+      877.5591
+    ],
+    "u13_native_center_mil": [
+      131.4961,
+      214.9606
+    ],
+    "c11_to_u13_native_dist_mil": 662.69,
+    "c11_native_mk2_overlap_sqmil": 906.73,
+    "pcb2_r7_opens": 236,
+    "pcb2_r7_erc_fatal": 0,
+    "l4_tracks_y0_450": 0,
+    "l3_tracks_y0_450": 2,
+    "l6_fpga_c_tracks": 31,
+    "full_copper_json_loaded": false
+  },
+  "rules_mil": {
+    "edge_clearance": 12.0,
+    "copper_clearance": 6.2,
+    "sensitive_3w_clearance": 11.8,
+    "hole_wall_clearance": 11.811,
+    "smd_chip_spacing": 6.0,
+    "smd_sot_spacing": 8.0,
+    "smd_qfn_bga_spacing": 40.0
+  },
+  "eight_decap_audit": {
+    "C5": {
+      "layer": "L1 (Top)",
+      "center_mil": [
+        126.5748,
+        838.189
+      ],
+      "pwr_net": "VSYS",
+      "gnd_pad_mil": [
+        139.2,
+        838.2
+      ],
+      "nearest_same_side_gnd_bv": "3ee8ab886f357cc2",
+      "nearest_bv_coord_mil": [
+        87.13,
+        896.19
+      ],
+      "gnd_pad_to_nearest_bv_mil": 77.94,
+      "above_or_in_mk2_footprint": true,
+      "through_via_allowed_locally": false
+    },
+    "C8": {
+      "layer": "L1 (Top)",
+      "center_mil": [
+        32.0866,
+        859.8425
+      ],
+      "pwr_net": "VSYS",
+      "gnd_pad_mil": [
+        44.7,
+        859.8
+      ],
+      "nearest_same_side_gnd_bv": "d66a84af7c151bc9",
+      "nearest_bv_coord_mil": [
+        46.11,
+        894.88
+      ],
+      "gnd_pad_to_nearest_bv_mil": 35.11,
+      "above_or_in_mk2_footprint": true,
+      "through_via_allowed_locally": false
+    },
+    "C9": {
+      "layer": "L1 (Top)",
+      "center_mil": [
+        79.3307,
+        859.8425
+      ],
+      "pwr_net": "VSYS",
+      "gnd_pad_mil": [
+        91.9,
+        859.8
+      ],
+      "nearest_same_side_gnd_bv": "3ee8ab886f357cc2",
+      "nearest_bv_coord_mil": [
+        87.13,
+        896.19
+      ],
+      "gnd_pad_to_nearest_bv_mil": 36.7,
+      "above_or_in_mk2_footprint": true,
+      "through_via_allowed_locally": false
+    },
+    "C10": {
+      "layer": "L1 (Top)",
+      "center_mil": [
+        126.5748,
+        859.8425
+      ],
+      "pwr_net": "VSYS",
+      "gnd_pad_mil": [
+        139.2,
+        859.8
+      ],
+      "nearest_same_side_gnd_bv": "3ee8ab886f357cc2",
+      "nearest_bv_coord_mil": [
+        87.13,
+        896.19
+      ],
+      "gnd_pad_to_nearest_bv_mil": 63.53,
+      "above_or_in_mk2_footprint": true,
+      "through_via_allowed_locally": false
+    },
+    "C11": {
+      "layer": "L6 (Bottom)",
+      "center_mil": [
+        142.3228,
+        877.5591
+      ],
+      "pwr_net": "VSYS",
+      "gnd_pad_mil": [
+        154.9,
+        877.6
+      ],
+      "nearest_same_side_gnd_bv": "b08842b31aa45cf3",
+      "nearest_bv_coord_mil": [
+        156.31,
+        955.88
+      ],
+      "gnd_pad_to_nearest_bv_mil": 78.29,
+      "above_or_in_mk2_footprint": true,
+      "through_via_allowed_locally": false
+    },
+    "C12": {
+      "layer": "L1 (Top)",
+      "center_mil": [
+        32.0866,
+        881.4961
+      ],
+      "pwr_net": "VSYS",
+      "gnd_pad_mil": [
+        44.7,
+        881.5
+      ],
+      "nearest_same_side_gnd_bv": "d66a84af7c151bc9",
+      "nearest_bv_coord_mil": [
+        46.11,
+        894.88
+      ],
+      "gnd_pad_to_nearest_bv_mil": 13.45,
+      "above_or_in_mk2_footprint": true,
+      "through_via_allowed_locally": false
+    },
+    "C31": {
+      "layer": "L1 (Top)",
+      "center_mil": [
+        42.9134,
+        768.5039
+      ],
+      "pwr_net": "VSYS",
+      "gnd_pad_mil": [
+        62.6,
+        768.5
+      ],
+      "nearest_same_side_gnd_bv": "b8de348a52ab310d",
+      "nearest_bv_coord_mil": [
+        28.34,
+        736.19
+      ],
+      "gnd_pad_to_nearest_bv_mil": 47.09,
+      "above_or_in_mk2_footprint": false,
+      "through_via_allowed_locally": true
+    },
+    "C32": {
+      "layer": "L1 (Top)",
+      "center_mil": [
+        111.811,
+        768.5039
+      ],
+      "pwr_net": "AVDD_OPT_BIAS",
+      "gnd_pad_mil": [
+        131.5,
+        768.5
+      ],
+      "nearest_same_side_gnd_bv": "23501cb8ab96fae8",
+      "nearest_bv_coord_mil": [
+        137.52,
+        748.63
+      ],
+      "gnd_pad_to_nearest_bv_mil": 20.76,
+      "above_or_in_mk2_footprint": false,
+      "through_via_allowed_locally": true
+    }
+  },
+  "scheme_r8_c_joint_u1_u5_relayout": {
+    "count": 12,
+    "top5": [
+      {
+        "scheme": "R8-C (Joint Shift U1 +50mil / U3 +38mil / U5 +64mil -> C11 North of U13)",
+        "layer": "L6 (Bottom)",
+        "center_mil": [
+          132,
+          282
+        ],
+        "angle_deg": 0,
+        "pad1_vsys_mil": [
+          119.4,
+          282
+        ],
+        "pad2_gnd_mil": [
+          144.6,
+          282
+        ],
+        "vsys_direct_len_to_u13_4_mil": 44.06,
+        "vsys_gap_to_avdd_req_filter_mil": 31.5,
+        "vsys_gap_to_u13_other_pads_mil": 10.2,
+        "dist_to_existing_bv_584b_mil": 51.55,
+        "new_bv_l5_l6_mil": [
+          158.6,
+          282
+        ],
+        "new_bv_hole_wall_gap_mil": 47.29,
+        "min_l6_comp_gap_mil": 6.02,
+        "in_u2_bga_shadow": false
+      },
+      {
+        "scheme": "R8-C (Joint Shift U1 +50mil / U3 +38mil / U5 +64mil -> C11 North of U13)",
+        "layer": "L6 (Bottom)",
+        "center_mil": [
+          134,
+          282
+        ],
+        "angle_deg": 0,
+        "pad1_vsys_mil": [
+          121.4,
+          282
+        ],
+        "pad2_gnd_mil": [
+          146.6,
+          282
+        ],
+        "vsys_direct_len_to_u13_4_mil": 44.45,
+        "vsys_gap_to_avdd_req_filter_mil": 31.5,
+        "vsys_gap_to_u13_other_pads_mil": 9.47,
+        "dist_to_existing_bv_584b_mil": 53.53,
+        "new_bv_l5_l6_mil": [
+          160.6,
+          282
+        ],
+        "new_bv_hole_wall_gap_mil": 48.92,
+        "min_l6_comp_gap_mil": 7.98,
+        "in_u2_bga_shadow": false
+      },
+      {
+        "scheme": "R8-C (Joint Shift U1 +50mil / U3 +38mil / U5 +64mil -> C11 North of U13)",
+        "layer": "L6 (Bottom)",
+        "center_mil": [
+          136,
+          282
+        ],
+        "angle_deg": 0,
+        "pad1_vsys_mil": [
+          123.4,
+          282
+        ],
+        "pad2_gnd_mil": [
+          148.6,
+          282
+        ],
+        "vsys_direct_len_to_u13_4_mil": 44.92,
+        "vsys_gap_to_avdd_req_filter_mil": 31.5,
+        "vsys_gap_to_u13_other_pads_mil": 8.73,
+        "dist_to_existing_bv_584b_mil": 55.52,
+        "new_bv_l5_l6_mil": [
+          162.6,
+          282
+        ],
+        "new_bv_hole_wall_gap_mil": 50.58,
+        "min_l6_comp_gap_mil": 7.98,
+        "in_u2_bga_shadow": false
+      },
+      {
+        "scheme": "R8-C (Joint Shift U1 +50mil / U3 +38mil / U5 +64mil -> C11 North of U13)",
+        "layer": "L6 (Bottom)",
+        "center_mil": [
+          138,
+          282
+        ],
+        "angle_deg": 0,
+        "pad1_vsys_mil": [
+          125.4,
+          282
+        ],
+        "pad2_gnd_mil": [
+          150.6,
+          282
+        ],
+        "vsys_direct_len_to_u13_4_mil": 45.48,
+        "vsys_gap_to_avdd_req_filter_mil": 31.5,
+        "vsys_gap_to_u13_other_pads_mil": 8.0,
+        "dist_to_existing_bv_584b_mil": 57.5,
+        "new_bv_l5_l6_mil": [
+          164.6,
+          282
+        ],
+        "new_bv_hole_wall_gap_mil": 52.27,
+        "min_l6_comp_gap_mil": 7.98,
+        "in_u2_bga_shadow": false
+      },
+      {
+        "scheme": "R8-C (Joint Shift U1 +50mil / U3 +38mil / U5 +64mil -> C11 North of U13)",
+        "layer": "L6 (Bottom)",
+        "center_mil": [
+          132,
+          284
+        ],
+        "angle_deg": 0,
+        "pad1_vsys_mil": [
+          119.4,
+          284
+        ],
+        "pad2_gnd_mil": [
+          144.6,
+          284
+        ],
+        "vsys_direct_len_to_u13_4_mil": 46.03,
+        "vsys_gap_to_avdd_req_filter_mil": 31.5,
+        "vsys_gap_to_u13_other_pads_mil": 10.32,
+        "dist_to_existing_bv_584b_mil": 51.85,
+        "new_bv_l5_l6_mil": [
+          158.6,
+          284
+        ],
+        "new_bv_hole_wall_gap_mil": 46.15,
+        "min_l6_comp_gap_mil": 6.02,
+        "in_u2_bga_shadow": false
+      }
+    ]
+  },
+  "scheme_r8_a_l6_pocket_stereo": {
+    "count": 56,
+    "top5": [
+      {
+        "scheme": "R8-A (L6 Pocket + BV_L5_L6 GND + L4 Stereo VSYS)",
+        "layer": "L6 (Bottom)",
+        "center_mil": [
+          90,
+          366
+        ],
+        "angle_deg": 180,
+        "pad1_vsys_mil": [
+          102.6,
+          366
+        ],
+        "pad2_gnd_mil": [
+          77.4,
+          366
+        ],
+        "gnd_blind_via_mil": [
+          77.4,
+          380.0
+        ],
+        "min_l6_comp_gap_mil": 6.96,
+        "gnd_hole_wall_gap_mil": 22.33,
+        "in_u2_bga_shadow": true,
+        "dist_to_u13_4_mil": 127.73
+      },
+      {
+        "scheme": "R8-A (L6 Pocket + BV_L5_L6 GND + L4 Stereo VSYS)",
+        "layer": "L6 (Bottom)",
+        "center_mil": [
+          88,
+          366
+        ],
+        "angle_deg": 180,
+        "pad1_vsys_mil": [
+          100.6,
+          366
+        ],
+        "pad2_gnd_mil": [
+          75.4,
+          366
+        ],
+        "gnd_blind_via_mil": [
+          75.4,
+          380.0
+        ],
+        "min_l6_comp_gap_mil": 6.96,
+        "gnd_hole_wall_gap_mil": 22.21,
+        "in_u2_bga_shadow": true,
+        "dist_to_u13_4_mil": 127.89
+      },
+      {
+        "scheme": "R8-A (L6 Pocket + BV_L5_L6 GND + L4 Stereo VSYS)",
+        "layer": "L6 (Bottom)",
+        "center_mil": [
+          86,
+          366
+        ],
+        "angle_deg": 180,
+        "pad1_vsys_mil": [
+          98.6,
+          366
+        ],
+        "pad2_gnd_mil": [
+          73.4,
+          366
+        ],
+        "gnd_blind_via_mil": [
+          73.4,
+          380.0
+        ],
+        "min_l6_comp_gap_mil": 6.96,
+        "gnd_hole_wall_gap_mil": 22.24,
+        "in_u2_bga_shadow": true,
+        "dist_to_u13_4_mil": 128.08
+      },
+      {
+        "scheme": "R8-A (L6 Pocket + BV_L5_L6 GND + L4 Stereo VSYS)",
+        "layer": "L6 (Bottom)",
+        "center_mil": [
+          84,
+          366
+        ],
+        "angle_deg": 180,
+        "pad1_vsys_mil": [
+          96.6,
+          366
+        ],
+        "pad2_gnd_mil": [
+          71.4,
+          366
+        ],
+        "gnd_blind_via_mil": [
+          71.4,
+          380.0
+        ],
+        "min_l6_comp_gap_mil": 6.96,
+        "gnd_hole_wall_gap_mil": 22.42,
+        "in_u2_bga_shadow": true,
+        "dist_to_u13_4_mil": 128.3
+      },
+      {
+        "scheme": "R8-A (L6 Pocket + BV_L5_L6 GND + L4 Stereo VSYS)",
+        "layer": "L6 (Bottom)",
+        "center_mil": [
+          82,
+          366
+        ],
+        "angle_deg": 180,
+        "pad1_vsys_mil": [
+          94.6,
+          366
+        ],
+        "pad2_gnd_mil": [
+          69.4,
+          366
+        ],
+        "gnd_blind_via_mil": [
+          69.4,
+          380.0
+        ],
+        "min_l6_comp_gap_mil": 6.96,
+        "gnd_hole_wall_gap_mil": 22.76,
+        "in_u2_bga_shadow": true,
+        "dist_to_u13_4_mil": 128.56
+      }
+    ]
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "run_timestamp_utc": "2026-11-23T22:54:18.646316+00:00",
+  "scope": "H03-R8 Offline Geometry & Stack-up Verification (NOT native EasyEDA Pro DRC)",
+  "native_easyeda_pro_drc_status": "BLOCKED - requires local Windows EasyEDA Pro daemon (127.0.0.1:60832-60841)",
+  "rules_checked": {
+    "easyeda_native_hole_to_hole_mil": 11.8,
+    "jlcpcb_same_net_blind_via_spacing_mil": 5.0,
+    "jlcpcb_diff_net_blind_via_spacing_mil": 9.5,
+    "jlcpcb_min_core_for_buried_via_um": 300.0,
+    "jlcpcb_min_pp_um": 50.0,
+    "jlcpcb_max_laser_aspect_ratio": 1.0,
+    "jlcpcb_min_annular_ring_mil": 3.0,
+    "project_locked_copper_clearance_mm": 0.1524
+  },
+  "stackup_verification": [
+    {
+      "name": "R6_R8_Base_50um_PP",
+      "total_thickness_mm": 0.8,
+      "pp_um": 50.0,
+      "core_um": 418.0,
+      "ar_75um_laser": 0.667,
+      "ar_100um_laser": 0.5,
+      "core_ge_300um_pass": true,
+      "pp_ge_50um_pass": true,
+      "laser_75um_ar_pass": true,
+      "laser_100um_ar_pass": true,
+      "overall_jlc_feasible": true
+    },
+    {
+      "name": "R8_Alt_55um_PP",
+      "total_thickness_mm": 0.8,
+      "pp_um": 55.0,
+      "core_um": 398.0,
+      "ar_75um_laser": 0.733,
+      "ar_100um_laser": 0.55,
+      "core_ge_300um_pass": true,
+      "pp_ge_50um_pass": true,
+      "laser_75um_ar_pass": true,
+      "laser_100um_ar_pass": true,
+      "overall_jlc_feasible": true
+    },
+    {
+      "name": "R8_Alt_60um_PP",
+      "total_thickness_mm": 0.8,
+      "pp_um": 60.0,
+      "core_um": 378.0,
+      "ar_75um_laser": 0.8,
+      "ar_100um_laser": 0.6,
+      "core_ge_300um_pass": true,
+      "pp_ge_50um_pass": true,
+      "laser_75um_ar_pass": true,
+      "laser_100um_ar_pass": true,
+      "overall_jlc_feasible": true
+    },
+    {
+      "name": "Conflict_Check_86um_1080_PP",
+      "total_thickness_mm": 0.8,
+      "pp_um": 86.0,
+      "core_um": 274.0,
+      "ar_75um_laser": 1.147,
+      "ar_100um_laser": 0.86,
+      "core_ge_300um_pass": false,
+      "pp_ge_50um_pass": true,
+      "laser_75um_ar_pass": false,
+      "laser_100um_ar_pass": true,
+      "overall_jlc_feasible": false
+    }
+  ],
+  "k4_remediation_geometry": {
+    "adjacent_pair_checks": [
+      {
+        "pair": "e53_r8 (BV_L1_L2) <-> e54_r8 (BV_L2_L3)",
+        "center_to_center_mil": 16.0,
+        "wall_to_wall_mil": 12.063,
+        "wall_to_wall_mm": 0.3064,
+        "pad_to_pad_gap_mil": 6.063,
+        "easyeda_11_8mil_pass": true,
+        "jlcpcb_5_0mil_pass": true
+      },
+      {
+        "pair": "e53_r8 (BV_L1_L2) <-> e55_r8 (BV_L3_L4)",
+        "center_to_center_mil": 23.3452,
+        "wall_to_wall_mil": 18.3767,
+        "wall_to_wall_mm": 0.4668,
+        "pad_to_pad_gap_mil": 12.3767,
+        "easyeda_11_8mil_pass": true,
+        "jlcpcb_5_0mil_pass": true
+      },
+      {
+        "pair": "e54_r8 (BV_L2_L3) <-> e55_r8 (BV_L3_L4)",
+        "center_to_center_mil": 17.0,
+        "wall_to_wall_mil": 12.0315,
+        "wall_to_wall_mm": 0.3056,
+        "pad_to_pad_gap_mil": 6.0315,
+        "easyeda_11_8mil_pass": true,
+        "jlcpcb_5_0mil_pass": true
+      },
+      {
+        "pair": "e56_r8 (BV_L4_L5) <-> e57_r8 (BV_L5_L6)",
+        "center_to_center_mil": 16.0,
+        "wall_to_wall_mil": 12.063,
+        "wall_to_wall_mm": 0.3064,
+        "pad_to_pad_gap_mil": 6.063,
+        "easyeda_11_8mil_pass": true,
+        "jlcpcb_5_0mil_pass": true
+      },
+      {
+        "pair": "e58_r8 (BV_L4_L5) <-> e59_r8 (BV_L5_L6)",
+        "center_to_center_mil": 16.0,
+        "wall_to_wall_mil": 12.063,
+        "wall_to_wall_mm": 0.3064,
+        "pad_to_pad_gap_mil": 6.063,
+        "easyeda_11_8mil_pass": true,
+        "jlcpcb_5_0mil_pass": true
+      }
+    ],
+    "min_wall_to_wall_mil_all_pairs": 12.0315,
+    "all_pairs_pass_easyeda_11_8mil": true,
+    "all_pairs_pass_jlcpcb_5_0mil": true
+  }
+}
