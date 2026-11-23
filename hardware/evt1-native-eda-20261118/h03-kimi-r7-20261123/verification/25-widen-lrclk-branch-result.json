@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "project": "f3fe67ec34c07aa7f42bf96ef49a152d9c5abd2b1aa8ffb88031d81f13118df7",
+  "document": "1db01a36f669a47a",
+  "beforeSha256": "d6f701a07db9ef61f2818cda53b5be18b19f3dee8d70642d9e361e7f7b55c63f",
+  "afterSha256": "6a0905ea9a7031ae603b69fde2575b6d90855649285752ebf1c4b819b69994e3",
+  "originalIds": [
+    "038a5eae862982f3",
+    "17299b70b475ba27",
+    "405c6bf101710be8",
+    "51b31475c255ca15",
+    "5347d83c85ce483f",
+    "75dbf14d8e75fc60",
+    "7ed2f56001c3dae3",
+    "fd4fd972be859bab"
+  ],
+  "createdPrimitiveIds": [
+    "693a2287c0a52a49",
+    "0282e8d8cb1bdf89",
+    "2e481513845995d3",
+    "042e27b43dc0efc1",
+    "cbc9bb7674388e02",
+    "a3f24d08aeb96195",
+    "8a3bd7a734f0c560",
+    "71e1994b23555e9a"
+  ],
+  "toWidthMil": 4.0,
+  "geometryScopeVerified": true,
+  "saved": true,
+  "reloaded": true,
+  "drcCounts": {
+    "Clearance Error": 5,
+    "Connection Error": 131
+  },
+  "nativeDrcPassed": false,
+  "clearanceErrors": [
+    {
+      "rule": "Clearance Error",
+      "objType": "SMD Pad to Track",
+      "ruleName": "copperThickness1oz",
+      "net": "I2S_LRCLK_1V8",
+      "x": 131.89,
+      "y": 331.91,
+      "layer": "Bottom Layer",
+      "objs": [
+        "042e27b43dc0efc1",
+        "d2732f172a8d0a5abm16p126"
+      ],
+      "message": "(I2S_LRCLK_1V8): e477 to (GND): J1_PWR2 distance is 5.1mil, should be >= 6mil",
+      "globalIndex": "err0"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "SMD Pad to Track",
+      "ruleName": "copperThickness1oz",
+      "net": "I2S_LRCLK_1V8",
+      "x": 86.24,
+      "y": 298.25,
+      "layer": "Bottom Layer",
+      "objs": [
+        "cbc9bb7674388e02",
+        "d2732f172a8d0a5abm16p122"
+      ],
+      "message": "(I2S_LRCLK_1V8): e478 to (I2S_S3_DOUT_1V8): J1_P14 distance is 5.2mil, should be >= 6mil",
+      "globalIndex": "err1"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "SMD Pad to Track",
+      "ruleName": "copperThickness1oz",
+      "net": "I2S_LRCLK_1V8",
+      "x": 120.3,
+      "y": 331.91,
+      "layer": "Bottom Layer",
+      "objs": [
+        "cbc9bb7674388e02",
+        "d2732f172a8d0a5abm16p126"
+      ],
+      "message": "(I2S_LRCLK_1V8): e478 to (GND): J1_PWR2 distance is 5.1mil, should be >= 6mil",
+      "globalIndex": "err2"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "SMD Pad to Track",
+      "ruleName": "copperThickness1oz",
+      "net": "I2S_LRCLK_1V8",
+      "x": 119.39,
+      "y": 322.15,
+      "layer": "Bottom Layer",
+      "objs": [
+        "cbc9bb7674388e02",
+        "d2732f172a8d0a5abm16p123"
+      ],
+      "message": "(I2S_LRCLK_1V8): e478 to (AMP_SD_MODE_1V8): J1_P15 distance is 5.5mil, should be >= 6mil",
+      "globalIndex": "err3"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "SMD Pad to Track",
+      "ruleName": "copperThickness1oz",
+      "net": "I2S_LRCLK_1V8",
+      "x": 86.24,
+      "y": 298.25,
+      "layer": "Bottom Layer",
+      "objs": [
+        "a3f24d08aeb96195",
+        "d2732f172a8d0a5abm16p122"
+      ],
+      "message": "(I2S_LRCLK_1V8): e479 to (I2S_S3_DOUT_1V8): J1_P14 distance is 5.2mil, should be >= 6mil",
+      "globalIndex": "err4"
+    }
+  ],
+  "candidateStatus": "candidate-rejected",
+  "reconciliation": "Existing native receipts only; no EDA command or edit was replayed.",
+  "limitations": [
+    "Full-net connectivity, controlled impedance, manufacturer approval and hardware are not proven."
+  ]
+}

@@ -1,0 +1,32 @@
+Use a complete pcb dump --include-copper snapshot and a schemaVersion 1
+request (mil, y-UP): net, layer, widthMil, from/to as designator.pad,
+stepMil, maxDetourMil, maxStates, units. TOP/BOTTOM single-layer, zero new vias.
+The shared Go package performs bounded direction-aware search; exact measured
+geometry supplies clearance. Missing geometry and exhausted searches remain
+incomplete. This is an offline endpoint-pair proof, not whole-board autorouting
+or native DRC. No daemon, connector, editor writes or additional CLI is needed.
+Reports are written even for rejected candidates and incomplete searches; only
+pass exits zero. A same-name SVG preview is always rendered beside the JSON.
+Check verifies provenance and geometry without rerunning solve.
+
+Usage:
+  easyeda pcb route solve [flags]
+
+Examples:
+  easyeda pcb route solve --board board.json --from request.json --out plan.json
+  easyeda pcb route check --board board.json --from request.json --plan plan.json --out check.json
+
+Flags:
+      --board string   complete measured JSON from pcb dump --include-copper
+      --from string    schemaVersion 1 route request JSON (mil, y-UP)
+  -h, --help           help for solve
+      --out string     output JSON report; a same-name .svg preview is also written
+
+Global Flags:
+      --doc string                pin every mutating action to this schematic page / PCB (uuid or name): the CLI switches to it and confirms via live document.current before editing, refusing rather than land the edit on whatever page is foreground — removes the doc-switch race
+      --force-stale-read string   deprecated compatibility option; stale PCB reads now continue with staleRisk and authoritative workflows still save, reload, then read back
+      --host string               daemon host (default "127.0.0.1")
+      --ports string              daemon port range (start-end) (default "60832-60841")
+      --project string            route by project name/uuid instead of --window (survives windowId churn)
+      --skip-version-check        deprecated compatibility option; version differences are diagnostic and no longer block actions
+      --window string             EasyEDA window ID

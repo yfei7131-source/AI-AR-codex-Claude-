@@ -1,0 +1,35 @@
+Set via outer/hole diameter limits without changing existing vias.
+Read current state, preview or write a parameterized patch, then verify readback.
+Unknown host schemas/units fail before writing. Unspecified fields stay intact.
+Track/clearance update all existing layer-table entries. New track rules require
+--copy-from and do not become the default rule. Bind requires a non-empty class
+created using "pcb net-class create"; it does not alter members.
+Use pcb save, doc reload, config get to verify persistence.
+
+Usage:
+  easyeda pcb config via [flags]
+
+Examples:
+  easyeda pcb config via --name viaSize --min-outer 24 --min-hole 12 --dry-run --project ceshi --doc PCB1
+  easyeda pcb config via --name viaSize --min-outer 24 --min-hole 12 --project ceshi --doc PCB1
+
+Flags:
+      --default-hole float    default hole diameter (in --unit)
+      --default-outer float   default outer diameter (in --unit)
+      --dry-run               show before/requested/changes without writing
+  -h, --help                  help for via
+      --max-hole float        maximum hole diameter (in --unit)
+      --max-outer float       maximum outer diameter (in --unit)
+      --min-hole float        minimum hole diameter (in --unit)
+      --min-outer float       minimum outer diameter (in --unit)
+      --name string           exact rule name from config get (required)
+      --unit string           input dimensions: mil or mm; converted to the stored unit (default "mil")
+
+Global Flags:
+      --doc string                pin every mutating action to this schematic page / PCB (uuid or name): the CLI switches to it and confirms via live document.current before editing, refusing rather than land the edit on whatever page is foreground — removes the doc-switch race
+      --force-stale-read string   deprecated compatibility option; stale PCB reads now continue with staleRisk and authoritative workflows still save, reload, then read back
+      --host string               daemon host (default "127.0.0.1")
+      --ports string              daemon port range (start-end) (default "60832-60841")
+      --project string            route by project name/uuid instead of --window (survives windowId churn)
+      --skip-version-check        deprecated compatibility option; version differences are diagnostic and no longer block actions
+      --window string             EasyEDA window ID

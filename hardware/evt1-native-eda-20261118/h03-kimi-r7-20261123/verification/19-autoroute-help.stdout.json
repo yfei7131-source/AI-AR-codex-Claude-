@@ -1,0 +1,38 @@
+Default: run the official router eda.pcb_Document.autoRouting (@beta since
+pro-api-types 0.4.25, live on Web 4.1.78) — the same engine as the native
+布线 → 自动布线 dialog, with no popup. Existing tracks/vias are always KEPT, so
+critical nets routed by hand and locked ('pcb track-lock') survive; the command
+fails if any locked primitive disappears. Exclude nets you will pour (GND) or have
+already routed with --ignore-net. The result lists the router's per-net report
+and the created copper. Afterwards: pcb save → doc reload → pcb drc / pcb check.
+
+  easyeda pcb autoroute --layers 1,2 --ignore-net GND --ignore-net XTAL_P
+
+External engine (fallback): --router '<dsn→ses command> {in} {out}' (or
+FREEROUTING_CMD) exports a Specctra DSN, runs it, imports the SES and runs DRC.
+getDsnFile drops keep-out regions, so verify the DSN before trusting that path.
+
+Usage:
+  easyeda pcb autoroute [flags]
+
+Flags:
+      --corner string         official router: corner style 45|90 (default "45")
+      --force string          deprecated compatibility option; workflow stages no longer gate routing
+      --force-unsafe string   deprecated compatibility option; workflow stages no longer gate routing
+  -h, --help                  help for autoroute
+      --ignore-net strings    official router: nets to leave alone, e.g. GND (poured later) and hand-routed critical nets
+      --keep                  external router: keep the intermediate SES file
+      --layers ints           official router: copper layer ids it may use, e.g. 1,2 (omit = all signal layers)
+      --net strings           official router: route only these nets (repeat or comma-separate; omit = all unrouted)
+      --optimize string       official router: completion (布通率) | faster (速度) (default "completion")
+      --router string         external router command with {in}/{out} (or FREEROUTING_CMD env)
+      --timeout duration      official router: request budget for the routing call (default 10m0s)
+
+Global Flags:
+      --doc string                pin every mutating action to this schematic page / PCB (uuid or name): the CLI switches to it and confirms via live document.current before editing, refusing rather than land the edit on whatever page is foreground — removes the doc-switch race
+      --force-stale-read string   deprecated compatibility option; stale PCB reads now continue with staleRisk and authoritative workflows still save, reload, then read back
+      --host string               daemon host (default "127.0.0.1")
+      --ports string              daemon port range (start-end) (default "60832-60841")
+      --project string            route by project name/uuid instead of --window (survives windowId churn)
+      --skip-version-check        deprecated compatibility option; version differences are diagnostic and no longer block actions
+      --window string             EasyEDA window ID

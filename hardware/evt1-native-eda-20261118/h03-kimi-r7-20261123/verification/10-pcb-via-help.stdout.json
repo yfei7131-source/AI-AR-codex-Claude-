@@ -1,0 +1,25 @@
+Place a via (过孔) at (x,y) with hole + outer diameter (mil, y-up)
+
+Usage:
+  easyeda pcb via [flags]
+
+Examples:
+  easyeda pcb via --x 1200 --y 1000 --net GND
+  easyeda pcb via --x 1200 --y 1000 --hole 12 --diameter 24 --net GND
+
+Flags:
+      --diameter float   outer pad diameter (mil; default 24)
+  -h, --help             help for via
+      --hole float       hole (drill) diameter (mil; default 12)
+      --net string       net name to bind the via to
+      --x float          via center X (mil, required)
+      --y float          via center Y (mil, required)
+
+Global Flags:
+      --doc string                pin every mutating action to this schematic page / PCB (uuid or name): the CLI switches to it and confirms via live document.current before editing, refusing rather than land the edit on whatever page is foreground — removes the doc-switch race
+      --force-stale-read string   deprecated compatibility option; stale PCB reads now continue with staleRisk and authoritative workflows still save, reload, then read back
+      --host string               daemon host (default "127.0.0.1")
+      --ports string              daemon port range (start-end) (default "60832-60841")
+      --project string            route by project name/uuid instead of --window (survives windowId churn)
+      --skip-version-check        deprecated compatibility option; version differences are diagnostic and no longer block actions
+      --window string             EasyEDA window ID

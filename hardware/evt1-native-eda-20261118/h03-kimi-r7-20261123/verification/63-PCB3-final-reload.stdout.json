@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "status": "partial",
+  "windowId": "0df3b77f-c2ac-44c5-b137-d6c9320e4e7d",
+  "target": "1db01a36f669a47a",
+  "documentType": "pcb",
+  "saved": true,
+  "closed": true,
+  "reloaded": "",
+  "activeRestored": "",
+  "startedAt": "2026-11-23T15:25:17.9951586Z",
+  "completedAt": "2026-11-23T15:25:33.2740999Z",
+  "timeSource": "cli-host-observation",
+  "failedStage": "ready",
+  "error": "document 1db01a36f669a47a reopened but its pcb data did not settle: document readiness document.current failed: document.current failed: connector did not respond — context deadline exceeded; stop writes and retain this failure/context",
+  "targetContext": {
+    "projectUuid": "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+    "projectName": "EVT1-H03-KIMI-R7-NOT-FOR-FAB-20261123",
+    "documentUuid": "1db01a36f669a47a",
+    "documentType": "pcb",
+    "tabId": "1db01a36f669a47a@37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d"
+  },
+  "steps": [
+    {
+      "stage": "inspect",
+      "action": "document.current",
+      "startedAt": "2026-11-23T15:25:17.9951586Z",
+      "completedAt": "2026-11-23T15:25:18.2864785Z",
+      "requestId": "req_35100",
+      "responseCreatedAt": "2026-11-23T15:25:18.284872Z",
+      "context": {
+        "projectUuid": "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+        "projectName": "EVT1-H03-KIMI-R7-NOT-FOR-FAB-20261123",
+        "documentUuid": "1db01a36f669a47a",
+        "documentType": "pcb",
+        "tabId": "1db01a36f669a47a@37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d"
+      },
+      "ok": true
+    },
+    {
+      "stage": "save",
+      "action": "pcb.save",
+      "startedAt": "2026-11-23T15:25:18.2864785Z",
+      "completedAt": "2026-11-23T15:25:18.5386267Z",
+      "requestId": "req_35101",
+      "responseCreatedAt": "2026-11-23T15:25:18.5370506Z",
+      "context": {
+        "projectUuid": "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+        "projectName": "EVT1-H03-KIMI-R7-NOT-FOR-FAB-20261123",
+        "documentUuid": "1db01a36f669a47a",
+        "documentType": "pcb",
+        "tabId": "1db01a36f669a47a@37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d"
+      },
+      "ok": true
+    },
+    {
+      "stage": "close",
+      "action": "document.close",
+      "startedAt": "2026-11-23T15:25:18.5386267Z",
+      "completedAt": "2026-11-23T15:25:20.1688085Z",
+      "requestId": "req_35102",
+      "responseCreatedAt": "2026-11-23T15:25:20.167964Z",
+      "context": {
+        "projectUuid": "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+        "projectName": "EVT1-H03-KIMI-R7-NOT-FOR-FAB-20261123",
+        "documentUuid": "e00fbca5c08cc114",
+        "documentType": "schematic",
+        "tabId": "e00fbca5c08cc114@37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d"
+      },
+      "ok": true
+    },
+    {
+      "stage": "close-settle",
+      "action": "document.current",
+      "startedAt": "2026-11-23T15:25:20.1688085Z",
+      "completedAt": "2026-11-23T15:25:20.6935315Z",
+      "requestId": "req_35103",
+      "responseCreatedAt": "2026-11-23T15:25:20.6922359Z",
+      "context": {
+        "projectUuid": "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+        "projectName": "EVT1-H03-KIMI-R7-NOT-FOR-FAB-20261123",
+        "documentUuid": "e00fbca5c08cc114",
+        "documentType": "schematic",
+        "tabId": "e00fbca5c08cc114@37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d"
+      },
+      "ok": true
+    },
+    {
+      "stage": "reopen",
+      "action": "document.open",
+      "startedAt": "2026-11-23T15:25:20.6935315Z",
+      "completedAt": "2026-11-23T15:25:30.2696635Z",
+      "requestId": "req_35104",
+      "responseCreatedAt": "2026-11-23T15:25:30.2691145Z",
+      "context": {
+        "projectUuid": "37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d",
+        "projectName": "EVT1-H03-KIMI-R7-NOT-FOR-FAB-20261123",
+        "documentUuid": "1db01a36f669a47a",
+        "documentType": "pcb",
+        "tabId": "1db01a36f669a47a@37f434ba2161d11e7536f134c776285fbdc9db9c040debca7ccd85f6ebbea46d"
+      },
+      "ok": true
+    },
+    {
+      "stage": "ready",
+      "startedAt": "2026-11-23T15:25:30.2696635Z",
+      "completedAt": "2026-11-23T15:25:33.2740999Z",
+      "ok": false,
+      "error": "document 1db01a36f669a47a reopened but its pcb data did not settle: document readiness document.current failed: document.current failed: connector did not respond — context deadline exceeded; stop writes and retain this failure/context"
+    }
+  ]
+}

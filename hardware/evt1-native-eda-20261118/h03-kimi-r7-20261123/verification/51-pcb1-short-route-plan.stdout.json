@@ -1,0 +1,628 @@
+{
+  "avoid": true,
+  "drawn": 0,
+  "dryRun": true,
+  "failures": null,
+  "multilayer": false,
+  "ok": true,
+  "routes": null,
+  "rules": {
+    "clearanceMil": 5.98,
+    "netClassWidths": {
+      "gnd": 19.68503937,
+      "high-current": 19.68503937,
+      "power-branch": 9.842519685,
+      "power-trunk": 15.748031496,
+      "signal": 1.97
+    },
+    "powerWidth": 20,
+    "signalWidth": 1.97,
+    "source": "live",
+    "trackWidthMil": 1.97
+  },
+  "segments": 0,
+  "skipped": [
+    {
+      "net": "1V8_FPGA_IO",
+      "reason": "already routed"
+    },
+    {
+      "net": "1V8_SYS",
+      "reason": "already routed"
+    },
+    {
+      "net": "3V3_SYS",
+      "reason": "already routed"
+    },
+    {
+      "net": "AMP_SD_MODE_1V8",
+      "reason": "J1.P30↔U10.A1 needs a via (layers 2/1) — enable --multilayer"
+    },
+    {
+      "net": "BB_FB",
+      "reason": "already routed"
+    },
+    {
+      "net": "BB_L1",
+      "reason": "already routed"
+    },
+    {
+      "net": "BB_L2",
+      "reason": "already routed"
+    },
+    {
+      "net": "BK_SW",
+      "reason": "L2.1↔U4.7 needs a via (layers 1/2) — enable --multilayer"
+    },
+    {
+      "net": "BK_VSET",
+      "reason": "R32.1↔U4.5 needs a via (layers 1/2) — enable --multilayer"
+    },
+    {
+      "net": "CAM_AVDD_2V8",
+      "reason": "skipped (power/ground — pour it, don't route)"
+    },
+    {
+      "net": "CAM_D0_1V8",
+      "reason": "single pad — nothing to route"
+    },
+    {
+      "net": "CAM_D0_3V3",
+      "reason": "U1.9↔U15.20 too long (320 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "CAM_D1_1V8",
+      "reason": "single pad — nothing to route"
+    },
+    {
+      "net": "CAM_D1_3V3",
+      "reason": "U1.10↔U15.19 too long (351 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "CAM_D2_1V8",
+      "reason": "single pad — nothing to route"
+    },
+    {
+      "net": "CAM_D2_3V3",
+      "reason": "U1.11↔U15.18 too long (383 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "CAM_D3_1V8",
+      "reason": "single pad — nothing to route"
+    },
+    {
+      "net": "CAM_D3_3V3",
+      "reason": "U1.12↔U15.17 too long (414 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "CAM_D4_1V8",
+      "reason": "single pad — nothing to route"
+    },
+    {
+      "net": "CAM_D4_3V3",
+      "reason": "U1.13↔U15.16 too long (446 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "CAM_D5_1V8",
+      "reason": "single pad — nothing to route"
+    },
+    {
+      "net": "CAM_D5_3V3",
+      "reason": "already routed"
+    },
+    {
+      "net": "CAM_D6_1V8",
+      "reason": "single pad — nothing to route"
+    },
+    {
+      "net": "CAM_D6_3V3",
+      "reason": "U1.44↔U15.14 too long (206 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "CAM_D7_1V8",
+      "reason": "single pad — nothing to route"
+    },
+    {
+      "net": "CAM_D7_3V3",
+      "reason": "U1.45↔U15.13 too long (174 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "CAM_DOVDD_1V8",
+      "reason": "already routed"
+    },
+    {
+      "net": "CAM_DOVDD_OK_3V3",
+      "reason": "skipped (power/ground — pour it, don't route)"
+    },
+    {
+      "net": "CAM_DVDD_1V2",
+      "reason": "skipped (power/ground — pour it, don't route)"
+    },
+    {
+      "net": "CAM_HREF_1V8",
+      "reason": "single pad — nothing to route"
+    },
+    {
+      "net": "CAM_HREF_3V3",
+      "reason": "R12.1↔U16.18 too long (668 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "CAM_HREF_3V3",
+      "reason": "U16.18↔U1.8 too long (462 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "CAM_PCLK_1V8",
+      "reason": "single pad — nothing to route"
+    },
+    {
+      "net": "CAM_PCLK_3V3",
+      "reason": "U1.47↔U16.20 too long (379 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "CAM_PWDN",
+      "reason": "single pad — nothing to route"
+    },
+    {
+      "net": "CAM_PWR_REQ",
+      "reason": "C42.1↔R37.1 needs a via (layers 2/1) — enable --multilayer"
+    },
+    {
+      "net": "CAM_PWR_REQ",
+      "reason": "R37.1↔U5.3 needs a via (layers 1/2) — enable --multilayer"
+    },
+    {
+      "net": "CAM_PWR_REQ",
+      "reason": "U5.3↔D1.K no clearance-safe path (other-net pad field) — maze tier / manual"
+    },
+    {
+      "net": "CAM_RESET_N",
+      "reason": "C6.1↔R6.1 needs a via (layers 2/1) — enable --multilayer"
+    },
+    {
+      "net": "CAM_SCCB_SCL",
+      "reason": "R29.1↔U20.3 too long (273 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "CAM_SCCB_SDA",
+      "reason": "R30.1↔U20.4 too long (626 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "CAM_VSYNC_1V8",
+      "reason": "single pad — nothing to route"
+    },
+    {
+      "net": "CAM_VSYNC_3V3",
+      "reason": "U1.48↔U16.19 too long (347 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "CAM_XCLK_1V8",
+      "reason": "single pad — nothing to route"
+    },
+    {
+      "net": "CAM_XCLK_3V3",
+      "reason": "already routed"
+    },
+    {
+      "net": "CHG_ISO_GATE",
+      "reason": "already routed"
+    },
+    {
+      "net": "ESP_ANT_FEED",
+      "reason": "ANT1.FEED↔C13.1 needs a via (layers 2/1) — enable --multilayer"
+    },
+    {
+      "net": "ESP_ANT_FEED",
+      "reason": "C13.1↔R11.2 needs a via (layers 1/2) — enable --multilayer"
+    },
+    {
+      "net": "ESP_CHIP_PU",
+      "reason": "C10.1↔TP4.1 no clearance-safe path (other-net pad field) — maze tier / manual"
+    },
+    {
+      "net": "ESP_CHIP_PU",
+      "reason": "C10.1↔R7.1 too long (176 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "ESP_CHIP_PU",
+      "reason": "TP4.1↔U1.4 needs a via (layers 2/1) — enable --multilayer"
+    },
+    {
+      "net": "ESP_RF_ANT",
+      "reason": "C12.1↔R11.1 needs a via (layers 1/2) — enable --multilayer"
+    },
+    {
+      "net": "ESP_RF_ANT",
+      "reason": "C12.1↔U1.1 too long (850 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "ESP_VDD_SPI_3V3",
+      "reason": "skipped (power/ground — pour it, don't route)"
+    },
+    {
+      "net": "FPGA_CDONE_VSYNC_N",
+      "reason": "J1.P16↔U21.2 needs a via (layers 2/1) — enable --multilayer"
+    },
+    {
+      "net": "FPGA_CRESET_3V3",
+      "reason": "R8.1↔U18.8 too long (499 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "FPGA_CRESET_3V3",
+      "reason": "U18.8↔U1.24 needs a via (layers 2/1) — enable --multilayer"
+    },
+    {
+      "net": "FPGA_CRESET_B",
+      "reason": "J1.P11↔U18.14 too long (225 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "GND",
+      "reason": "already routed"
+    },
+    {
+      "net": "I2S_AMP_DIN_1V8",
+      "reason": "J1.P28↔U10.B1 needs a via (layers 2/1) — enable --multilayer"
+    },
+    {
+      "net": "I2S_BCLK_1V8",
+      "reason": "J1.P26↔U8.6 too long (172 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "I2S_BCLK_1V8",
+      "reason": "J1.P26↔U10.C1 needs a via (layers 2/1) — enable --multilayer"
+    },
+    {
+      "net": "I2S_BCLK_3V3",
+      "reason": "U1.50↔U8.15 needs a via (layers 1/2) — enable --multilayer"
+    },
+    {
+      "net": "I2S_LRCLK_1V8",
+      "reason": "J1.P27↔U8.7 too long (232 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "I2S_LRCLK_1V8",
+      "reason": "U8.7↔U10.C3 needs a via (layers 2/1) — enable --multilayer"
+    },
+    {
+      "net": "I2S_LRCLK_3V3",
+      "reason": "U1.23↔U8.14 needs a via (layers 1/2) — enable --multilayer"
+    },
+    {
+      "net": "I2S_S3_DOUT_1V8",
+      "reason": "J1.P29↔U21.7 needs a via (layers 2/1) — enable --multilayer"
+    },
+    {
+      "net": "I2S_S3_DOUT_3V3",
+      "reason": "already routed"
+    },
+    {
+      "net": "IPC_NRF_TX_1V8",
+      "reason": "J1.P25↔U21.3 needs a via (layers 2/1) — enable --multilayer"
+    },
+    {
+      "net": "IPC_NRF_TX_3V3",
+      "reason": "U1.37↔U21.19 too long (694 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "IPC_S3_TX_1V8",
+      "reason": "J1.P24↔U21.8 needs a via (layers 2/1) — enable --multilayer"
+    },
+    {
+      "net": "IPC_S3_TX_3V3",
+      "reason": "U1.36↔U21.14 too long (631 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "ISENSE_N",
+      "reason": "R21.1↔U7.4 needs a via (layers 1/2) — enable --multilayer"
+    },
+    {
+      "net": "ISENSE_N",
+      "reason": "U7.4↔R31.2 needs a via (layers 2/1) — enable --multilayer"
+    },
+    {
+      "net": "LED_3V3_PRIV",
+      "reason": "C23.1↔U5.1 needs a via (layers 1/2) — enable --multilayer"
+    },
+    {
+      "net": "LED_3V3_PRIV",
+      "reason": "C23.1↔U7.3 needs a via (layers 1/2) — enable --multilayer"
+    },
+    {
+      "net": "LED_3V3_PRIV",
+      "reason": "U7.3↔R31.1 needs a via (layers 2/1) — enable --multilayer"
+    },
+    {
+      "net": "LS1_A4_TIE_100K_GND",
+      "reason": "skipped (power/ground — pour it, don't route)"
+    },
+    {
+      "net": "LS1_B4_TIE_100K_GND",
+      "reason": "skipped (power/ground — pour it, don't route)"
+    },
+    {
+      "net": "LS3_VREF2_EN",
+      "reason": "already routed"
+    },
+    {
+      "net": "LS4_VREF2_EN",
+      "reason": "already routed"
+    },
+    {
+      "net": "NTC_TS_L",
+      "reason": "TP5.1↔U3.D1 needs a via (layers 1/2) — enable --multilayer"
+    },
+    {
+      "net": "PDM_CLK_1V8",
+      "reason": "already routed"
+    },
+    {
+      "net": "PDM_CLK_3V3",
+      "reason": "R13.1↔U21.16 too long (522 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "PDM_CLK_3V3",
+      "reason": "U21.16↔U1.51 too long (379 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "PDM_D0_1V8",
+      "reason": "J1.P22↔U21.4 needs a via (layers 2/1) — enable --multilayer"
+    },
+    {
+      "net": "PDM_D0_1V8",
+      "reason": "U21.4↔MK1.1 needs a via (layers 1/2) — enable --multilayer"
+    },
+    {
+      "net": "PDM_D0_3V3",
+      "reason": "U1.21↔U21.18 too long (694 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "PDM_D1_1V8",
+      "reason": "J1.P23↔U21.5 needs a via (layers 2/1) — enable --multilayer"
+    },
+    {
+      "net": "PDM_D1_3V3",
+      "reason": "U1.22↔U21.17 too long (694 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "PRIV_LED_ANODE",
+      "reason": "J1.P19↔R21.2 needs a via (layers 2/1) — enable --multilayer"
+    },
+    {
+      "net": "PRIV_VTH_H",
+      "reason": "R34.1↔R35.2 needs a via (layers 2/1) — enable --multilayer"
+    },
+    {
+      "net": "PRIV_VTH_H",
+      "reason": "R34.1↔U14.5 too long (1033 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "PRIV_VTH_L",
+      "reason": "already routed"
+    },
+    {
+      "net": "PRIV_WINDOW_OK",
+      "reason": "already routed"
+    },
+    {
+      "net": "PRIV_WINDOW_OK_F",
+      "reason": "C28.1↔U13.3 no clearance-safe path (other-net pad field) — maze tier / manual"
+    },
+    {
+      "net": "PRIV_WINDOW_OK_F",
+      "reason": "U13.3↔U11.3 needs a via (layers 2/1) — enable --multilayer"
+    },
+    {
+      "net": "PRIV_WINDOW_OK_F",
+      "reason": "U13.3↔U6.3 no clearance-safe path (other-net pad field) — maze tier / manual"
+    },
+    {
+      "net": "PRIV_WINDOW_OK_F",
+      "reason": "U6.3↔R28.2 too long (972 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "QSPI_DIR1_EN",
+      "reason": "R9.1↔TP3.1 needs a via (layers 2/1) — enable --multilayer"
+    },
+    {
+      "net": "QSPI_DIR1_EN",
+      "reason": "TP3.1↔U18.1 needs a via (layers 1/2) — enable --multilayer"
+    },
+    {
+      "net": "QSPI_DIR1_EN",
+      "reason": "U18.1↔U1.5 needs a via (layers 2/1) — enable --multilayer"
+    },
+    {
+      "net": "SPK_L_N",
+      "reason": "TP6.1↔U10.B3 no clearance-safe path (other-net pad field) — maze tier / manual"
+    },
+    {
+      "net": "SPK_L_P",
+      "reason": "TP7.1↔U10.A3 too long (208 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "SYS_I2C_SCL_1V8",
+      "reason": "J1.P17↔U3.B1 too long (194 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "SYS_I2C_SCL_1V8",
+      "reason": "J1.P17↔U19.3 too long (353 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "SYS_I2C_SCL_1V8",
+      "reason": "U19.3↔R15.1 too long (397 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "SYS_I2C_SCL_3V3",
+      "reason": "R16.1↔U20.6 needs a via (layers 2/1) — enable --multilayer"
+    },
+    {
+      "net": "SYS_I2C_SCL_3V3",
+      "reason": "U20.6↔U19.6 needs a via (layers 1/2) — enable --multilayer"
+    },
+    {
+      "net": "SYS_I2C_SCL_3V3",
+      "reason": "U20.6↔U1.7 too long (779 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "SYS_I2C_SDA_1V8",
+      "reason": "J1.P18↔U3.C1 too long (202 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "SYS_I2C_SDA_1V8",
+      "reason": "J1.P18↔U19.4 too long (305 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "SYS_I2C_SDA_1V8",
+      "reason": "U19.4↔R17.1 needs a via (layers 2/1) — enable --multilayer"
+    },
+    {
+      "net": "SYS_I2C_SDA_3V3",
+      "reason": "R18.1↔U20.5 too long (359 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "SYS_I2C_SDA_3V3",
+      "reason": "U20.5↔U19.5 needs a via (layers 1/2) — enable --multilayer"
+    },
+    {
+      "net": "SYS_I2C_SDA_3V3",
+      "reason": "U20.5↔U1.6 too long (777 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "USB_DM",
+      "reason": "already routed"
+    },
+    {
+      "net": "USB_DP",
+      "reason": "already routed"
+    },
+    {
+      "net": "USB_LIM_ILIM",
+      "reason": "R38.1↔U22.3 needs a via (layers 2/1) — enable --multilayer"
+    },
+    {
+      "net": "VBAT_L",
+      "reason": "C7.1↔TP2.1 needs a via (layers 1/2) — enable --multilayer"
+    },
+    {
+      "net": "VBAT_L",
+      "reason": "C7.1↔U3.C2 needs a via (layers 1/2) — enable --multilayer"
+    },
+    {
+      "net": "VBAT_R_ISOLATED",
+      "reason": "already routed"
+    },
+    {
+      "net": "VBAT_R_RET",
+      "reason": "already routed"
+    },
+    {
+      "net": "VBUS_5V",
+      "reason": "already routed"
+    },
+    {
+      "net": "VBUS_5V_USB",
+      "reason": "U12.5↔U22.4 needs a via (layers 2/1) — enable --multilayer"
+    },
+    {
+      "net": "VBUS_5V_USB",
+      "reason": "U22.4↔U22.6 no clearance-safe path (other-net pad field) — maze tier / manual"
+    },
+    {
+      "net": "VOUT_L_PPATH",
+      "reason": "C25.1↔C9.1 too long (314 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "VOUT_L_PPATH",
+      "reason": "C9.1↔U3.B2 too long (581 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "VOUT_L_PPATH",
+      "reason": "U3.B2↔U9.3 no clearance-safe path (other-net pad field) — maze tier / manual"
+    },
+    {
+      "net": "VSYNC_CDONE_3V3",
+      "reason": "U1.27↔U21.20 too long (820 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "VSYS",
+      "reason": "already routed"
+    },
+    {
+      "net": "V_INA_OUT",
+      "reason": "R27.2↔U7.1 needs a via (layers 1/2) — enable --multilayer"
+    },
+    {
+      "net": "V_INA_OUT",
+      "reason": "U7.1↔U14.3 too long (730 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "V_INA_OUT",
+      "reason": "U14.3↔U14.6 no clearance-safe path (other-net pad field) — maze tier / manual"
+    },
+    {
+      "net": "XREQ_A",
+      "reason": "D1.A↔R36.2 needs a via (layers 2/1) — enable --multilayer"
+    },
+    {
+      "net": "host_cs_n",
+      "reason": "J1.P10↔U18.15 too long (210 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "host_cs_n_3v3",
+      "reason": "U1.15↔U18.7 needs a via (layers 1/2) — enable --multilayer"
+    },
+    {
+      "net": "host_qio0",
+      "reason": "J1.P12↔U18.13 too long (228 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "host_qio0_3v3",
+      "reason": "U1.16↔U18.9 needs a via (layers 1/2) — enable --multilayer"
+    },
+    {
+      "net": "host_qio1",
+      "reason": "J1.P13↔U18.20 too long (305 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "host_qio1_3v3",
+      "reason": "R39.1↔U18.2 needs a via (layers 1/2) — enable --multilayer"
+    },
+    {
+      "net": "host_qio1_3v3",
+      "reason": "U18.2↔U1.18 needs a via (layers 2/1) — enable --multilayer"
+    },
+    {
+      "net": "host_qio2",
+      "reason": "J1.P14↔U18.19 too long (228 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "host_qio2_3v3",
+      "reason": "R40.1↔U18.3 needs a via (layers 1/2) — enable --multilayer"
+    },
+    {
+      "net": "host_qio2_3v3",
+      "reason": "U18.3↔U1.19 needs a via (layers 2/1) — enable --multilayer"
+    },
+    {
+      "net": "host_qio3",
+      "reason": "J1.P15↔U18.18 too long (260 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "host_qio3_3v3",
+      "reason": "R41.1↔U18.4 too long (475 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "host_qio3_3v3",
+      "reason": "U18.4↔U1.14 needs a via (layers 2/1) — enable --multilayer"
+    },
+    {
+      "net": "host_sck",
+      "reason": "J1.P8↔U18.16 too long (222 \u003e 165 mil) — maze tier or --multilayer"
+    },
+    {
+      "net": "host_sck_3v3",
+      "reason": "U1.17↔U18.6 needs a via (layers 1/2) — enable --multilayer"
+    }
+  ],
+  "vias": 0,
+  "viasDrawn": 0
+}

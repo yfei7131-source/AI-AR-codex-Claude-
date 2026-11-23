@@ -1,0 +1,603 @@
+{
+  "scope": "Offline local route candidate screen. Native DRC required after typed apply.",
+  "archive_sha256": "3f57d1a128d890e0ae45332825ad77bf6359cfce0d2d68cb89b8692f9898f607",
+  "dump_sha256": "6a8bf0585404241e0d739626f68f9d6a48a72f13e91f2cf96ca232b4c3f6ef78",
+  "drc_sha256": "dee49714f680b3efa7cf4f531ff0427a5880a6b0683eeadd031357d554b071f2",
+  "airwire_matched_isolated_anchors": 103,
+  "pairs_screened": 798,
+  "routes": [
+    {
+      "net": "GND",
+      "layer": 1,
+      "from": "C12.2",
+      "to": "C33.2",
+      "pad_ids": [
+        "73d5b500099048b1re4p110",
+        "3e02f4d3fdf273a8re4p110"
+      ],
+      "isolated_drc_anchors": [
+        "3e02f4d3fdf273a8re4p110"
+      ],
+      "endpoint_kind": "pad",
+      "width_mil": 4.0,
+      "length_mil": 147.5137,
+      "segments": [
+        [
+          [
+            44.7,
+            881.5
+          ],
+          [
+            44.7,
+            897.5
+          ]
+        ],
+        [
+          [
+            44.7,
+            897.5
+          ],
+          [
+            48.7,
+            901.5
+          ]
+        ],
+        [
+          [
+            48.7,
+            901.5
+          ],
+          [
+            87.9,
+            901.5
+          ]
+        ],
+        [
+          [
+            87.9,
+            901.5
+          ],
+          [
+            91.9,
+            897.5
+          ]
+        ],
+        [
+          [
+            91.9,
+            897.5
+          ],
+          [
+            91.9,
+            816.5
+          ]
+        ]
+      ],
+      "edge_copper_gap_mil": 42.7,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 7.1,
+          "id": "8b1597b265bc938cre4p109"
+        },
+        "track": {
+          "gap_mil": 18.1,
+          "id": "2cb008093907b868"
+        }
+      }
+    }
+  ],
+  "width_candidates": [
+    {
+      "id": "317d60c67ab41772",
+      "net": "GND",
+      "layer": 1,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        118.1,
+        134.4
+      ],
+      "end": [
+        115.8,
+        156.28
+      ],
+      "edge_copper_gap_mil": 61.0024,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 7.023,
+          "id": "0fae57a9b4b0e18dbm10p116"
+        },
+        "track": {
+          "gap_mil": 10.0118,
+          "id": "bb5ba1f8f03dbe21"
+        }
+      }
+    },
+    {
+      "id": "e5583cbb0fa85a3f",
+      "net": "GND",
+      "layer": 1,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        91.9,
+        468.1
+      ],
+      "end": [
+        94.1,
+        441.7
+      ],
+      "edge_copper_gap_mil": 85.0024,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 12.8485,
+          "id": "e9b657a0733f5749re4p109"
+        }
+      }
+    },
+    {
+      "id": "67b90d547a20f3dc",
+      "net": "GND",
+      "layer": 1,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        118.1,
+        134.4
+      ],
+      "end": [
+        145.9,
+        165.4
+      ],
+      "edge_copper_gap_mil": 33.2024,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 8.25,
+          "id": "0fae57a9b4b0e18dbm10p116"
+        },
+        "track": {
+          "gap_mil": 9.6323,
+          "id": "bb5ba1f8f03dbe21"
+        }
+      }
+    },
+    {
+      "id": "264213a34825b031",
+      "net": "GND",
+      "layer": 1,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        118,
+        166
+      ],
+      "end": [
+        118.1,
+        134.4
+      ],
+      "edge_copper_gap_mil": 61.0024,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 8.2145,
+          "id": "0fae57a9b4b0e18dbm10p116"
+        },
+        "track": {
+          "gap_mil": 7.9119,
+          "id": "816f55906e9bdebb"
+        }
+      }
+    },
+    {
+      "id": "04ef56062f36311f",
+      "net": "GND",
+      "layer": 1,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        126,
+        172
+      ],
+      "end": [
+        134,
+        172
+      ],
+      "edge_copper_gap_mil": 45.1024,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 11.8034,
+          "id": "0fae57a9b4b0e18dbm10p117"
+        },
+        "track": {
+          "gap_mil": 7.9119,
+          "id": "be90035f7f32489c"
+        }
+      }
+    },
+    {
+      "id": "951790ab9e7ba202",
+      "net": "GND",
+      "layer": 1,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        134,
+        172
+      ],
+      "end": [
+        145.9,
+        165.4
+      ],
+      "edge_copper_gap_mil": 33.2024,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 16.0037,
+          "id": "0fae57a9b4b0e18dbm10p117"
+        },
+        "track": {
+          "gap_mil": 14.6,
+          "id": "7246587cd91a3858"
+        }
+      }
+    },
+    {
+      "id": "381ef9afc47f16a4",
+      "net": "VSYS",
+      "layer": 1,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        73.4,
+        309.8
+      ],
+      "end": [
+        64,
+        304
+      ],
+      "edge_copper_gap_mil": 62.0,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 7.45,
+          "id": "3decae6651870f63re1p113"
+        },
+        "via": {
+          "gap_mil": 18.3797,
+          "id": "7a9a00092f252d56"
+        },
+        "track": {
+          "gap_mil": 12.45,
+          "id": "e88f50f57aedf297"
+        }
+      }
+    },
+    {
+      "id": "3de2ea0455688422",
+      "net": "VSYS",
+      "layer": 1,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        64,
+        304
+      ],
+      "end": [
+        32,
+        304
+      ],
+      "edge_copper_gap_mil": 30.0,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 7.45,
+          "id": "3decae6651870f63re1p110"
+        },
+        "via": {
+          "gap_mil": 6.8,
+          "id": "7a9a00092f252d56"
+        },
+        "track": {
+          "gap_mil": 10.05,
+          "id": "7b17085f4f924e28"
+        }
+      }
+    },
+    {
+      "id": "b95291d44ac4bb63",
+      "net": "VSYS",
+      "layer": 1,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        32,
+        304
+      ],
+      "end": [
+        24.2,
+        309.8
+      ],
+      "edge_copper_gap_mil": 22.2,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 7.45,
+          "id": "3decae6651870f63re1p110"
+        },
+        "via": {
+          "gap_mil": 10.4622,
+          "id": "7a9a00092f252d56"
+        },
+        "track": {
+          "gap_mil": 10.05,
+          "id": "7b17085f4f924e28"
+        }
+      }
+    },
+    {
+      "id": "fff03e28f8c12258",
+      "net": "GND",
+      "layer": 1,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        117,
+        312
+      ],
+      "end": [
+        117.1,
+        283.3
+      ],
+      "edge_copper_gap_mil": 62.0024,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 7.7584,
+          "id": "1d6034c9636c4e6ae13"
+        },
+        "track": {
+          "gap_mil": 10.25,
+          "id": "e88f50f57aedf297"
+        }
+      }
+    },
+    {
+      "id": "d4ca5cb6211b4cf9",
+      "net": "GND",
+      "layer": 2,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        130.9,
+        277.4
+      ],
+      "end": [
+        114,
+        290.2
+      ],
+      "edge_copper_gap_mil": 48.2024,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 9.3528,
+          "id": "e543af78d26c8241e10"
+        },
+        "track": {
+          "gap_mil": 40.2896,
+          "id": "fc40f43020a71259"
+        }
+      }
+    },
+    {
+      "id": "495c3b2e29de1a50",
+      "net": "GND",
+      "layer": 2,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        36.4,
+        306.9
+      ],
+      "end": [
+        36.4,
+        273.8
+      ],
+      "edge_copper_gap_mil": 34.4,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 7.8267,
+          "id": "52a9930df4fcde16e13"
+        }
+      }
+    },
+    {
+      "id": "6802595168400362",
+      "net": "GND",
+      "layer": 2,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        36.4,
+        273.8
+      ],
+      "end": [
+        57.1,
+        273.8
+      ],
+      "edge_copper_gap_mil": 34.4,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 13.9678,
+          "id": "52a9930df4fcde16e14"
+        }
+      }
+    },
+    {
+      "id": "f98d4e895950c5b4",
+      "net": "GND",
+      "layer": 2,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        19.5,
+        319.7
+      ],
+      "end": [
+        36.4,
+        306.9
+      ],
+      "edge_copper_gap_mil": 17.5,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 9.35,
+          "id": "d2fe78ad41c0c277re5p109"
+        }
+      }
+    },
+    {
+      "id": "bfe1ca9200310c49",
+      "net": "1V8_FPGA_IO",
+      "layer": 2,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        29.7,
+        802.4
+      ],
+      "end": [
+        49.7,
+        802.4
+      ],
+      "edge_copper_gap_mil": 27.7,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 11.1,
+          "id": "655f45aeef0106c6ie6"
+        }
+      }
+    },
+    {
+      "id": "e69414a0d9051793",
+      "net": "1V8_FPGA_IO",
+      "layer": 2,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        49.7,
+        802.4
+      ],
+      "end": [
+        49.7,
+        763.8
+      ],
+      "edge_copper_gap_mil": 47.7,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 11.1,
+          "id": "655f45aeef0106c6ie6"
+        },
+        "track": {
+          "gap_mil": 50.3677,
+          "id": "5a0e7ce7330487f1"
+        }
+      }
+    },
+    {
+      "id": "743e0d1ffe3a2f08",
+      "net": "1V8_FPGA_IO",
+      "layer": 2,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        49.7,
+        763.8
+      ],
+      "end": [
+        29.7,
+        763.8
+      ],
+      "edge_copper_gap_mil": 27.7,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 11.1,
+          "id": "655f45aeef0106c6ie7"
+        },
+        "track": {
+          "gap_mil": 50.3677,
+          "id": "5a0e7ce7330487f1"
+        }
+      }
+    },
+    {
+      "id": "9a76f283ba76bb4c",
+      "net": "GND",
+      "layer": 2,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        154.5,
+        717.9
+      ],
+      "end": [
+        148,
+        730
+      ],
+      "edge_copper_gap_mil": 24.6024,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 11.6,
+          "id": "a58afe0093ae7de7rd1p112"
+        },
+        "track": {
+          "gap_mil": 27.9162,
+          "id": "020c29b9b6efd739"
+        }
+      }
+    },
+    {
+      "id": "87999eff9e63af47",
+      "net": "GND",
+      "layer": 2,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        144,
+        730
+      ],
+      "end": [
+        144,
+        744
+      ],
+      "edge_copper_gap_mil": 35.1024,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 7.6,
+          "id": "a58afe0093ae7de7rd1p112"
+        },
+        "track": {
+          "gap_mil": 23.8,
+          "id": "020c29b9b6efd739"
+        }
+      }
+    },
+    {
+      "id": "bcbf67ce5d1b58eb",
+      "net": "GND",
+      "layer": 2,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        140,
+        748
+      ],
+      "end": [
+        140,
+        768
+      ],
+      "edge_copper_gap_mil": 39.1024,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 7.32,
+          "id": "a58afe0093ae7de7rd1p112"
+        },
+        "track": {
+          "gap_mil": 24.3744,
+          "id": "020c29b9b6efd739"
+        }
+      }
+    }
+  ]
+}

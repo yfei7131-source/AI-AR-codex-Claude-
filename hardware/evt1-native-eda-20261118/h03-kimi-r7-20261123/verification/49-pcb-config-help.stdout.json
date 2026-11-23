@@ -1,0 +1,37 @@
+Read or update the active PCB's design rules through typed EDA actions.
+Preserves unspecified settings. Values default to mil; --unit mm converts to
+the rule's storage unit. Every write supports --dry-run and readback.
+This changes rules, not existing tracks/vias or global editor preferences.
+Use --project and --doc to select the target. Save, reload and read back to
+verify persistence. See pcb stackup/origin and silk-add/silk-set for other
+exam settings. Grid/snap/global preferences are currently unsupported.
+
+Usage:
+  easyeda pcb config [flags]
+  easyeda pcb config [command]
+
+Examples:
+  easyeda pcb config get --project ceshi
+  easyeda pcb config track --name copperThickness1oz --min 8 --default 8 --dry-run --project ceshi --doc PCB1
+
+Available Commands:
+  bind        Assign a track rule to an existing net class and every member
+  clearance   Set only Track-to-Track clearance across existing layer tables
+  get         Export current rules, net classes and assignments
+  net-color   Set one network's RGB color, preserving transparency
+  track       Set track width limits, or copy an existing rule into a new named rule
+  via         Set via outer/hole diameter limits without changing existing vias
+
+Flags:
+  -h, --help   help for config
+
+Global Flags:
+      --doc string                pin every mutating action to this schematic page / PCB (uuid or name): the CLI switches to it and confirms via live document.current before editing, refusing rather than land the edit on whatever page is foreground — removes the doc-switch race
+      --force-stale-read string   deprecated compatibility option; stale PCB reads now continue with staleRisk and authoritative workflows still save, reload, then read back
+      --host string               daemon host (default "127.0.0.1")
+      --ports string              daemon port range (start-end) (default "60832-60841")
+      --project string            route by project name/uuid instead of --window (survives windowId churn)
+      --skip-version-check        deprecated compatibility option; version differences are diagnostic and no longer block actions
+      --window string             EasyEDA window ID
+
+Use "easyeda pcb config [command] --help" for more information about a command.

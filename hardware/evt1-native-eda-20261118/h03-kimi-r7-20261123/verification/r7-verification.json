@@ -1,0 +1,303 @@
+{
+  "status": "VERIFIED-LIMITED-R7",
+  "manufacturing": "BLOCKED",
+  "notForFab": true,
+  "nativeSha256": "85764dfc4ad8e9a408a67a78575c50b5cb091ea704c6bd3783f5d12906c6b2e6",
+  "independentReexportSha256": "22a278fda082fcc67f7caa53830ac9946a9fc83c86266af4a3a1bdd8275bb7a9",
+  "independent_full_reexport_compared": true,
+  "independentDocumentRecordsEqual": true,
+  "documentCount": 1451,
+  "schematicPages": 21,
+  "components": 257,
+  "archivedResolvedSchematicTerminals": 1076,
+  "archivedExplicitControlledNC": 92,
+  "archiveRawNCMarkers": 94,
+  "controlledTerminalBaseline": {
+    "status": "INHERITED-R6-DELTA-NOT-R7-REGRESSION",
+    "historicalH02Terminals": 1075,
+    "unresolvedLegacySourceReferences": [
+      "R_ESP_BOOT"
+    ],
+    "terminalDifference": [
+      [
+        "M-MAIN-L",
+        "R10",
+        "1"
+      ],
+      [
+        "M-MAIN-L",
+        "R10",
+        "2"
+      ],
+      [
+        "M-MAIN-L",
+        "U12",
+        "4"
+      ],
+      [
+        "M-MAIN-L",
+        "U12",
+        "5"
+      ],
+      [
+        "M-MAIN-L",
+        "U12",
+        "6"
+      ]
+    ],
+    "r6R7AndIndependentAuditsIdentical": true,
+    "note": "The H02 terminal list predates inherited R6 symbol changes; it is not silently rewritten."
+  },
+  "netGroups": 207,
+  "netMembers": 1013,
+  "totalConnectionErrors": 708,
+  "netlistErrors": 1,
+  "strictErcFatal": 6,
+  "boards": {
+    "PCB1": {
+      "components": 118,
+      "nativeDrc": {
+        "Connection Error": 340,
+        "Netlist Error": 1
+      },
+      "strictErcFatal": 4,
+      "liveGeometryMatchesIndependentImport": true,
+      "netlistSha256": "7586a150a92b4d5711b1a03498a15952b53937d3178c3750e5b4efa9945e2725",
+      "reload": {
+        "initialReloadStatus": "passed",
+        "saved": true,
+        "readiness": true
+      },
+      "boundedV4BlindViaSubset": {
+        "blindVias": 61,
+        "violations": 0
+      }
+    },
+    "PCB2": {
+      "components": 86,
+      "nativeDrc": {
+        "Connection Error": 236
+      },
+      "strictErcFatal": 0,
+      "liveGeometryMatchesIndependentImport": true,
+      "netlistSha256": "1384cfc519ded82551192228cb2b776273a1ccc3df59bb2af1423c2240283926",
+      "reload": {
+        "initialReloadStatus": "passed",
+        "saved": true,
+        "readiness": true
+      },
+      "boundedV4BlindViaSubset": {
+        "blindVias": 40,
+        "violations": 0
+      }
+    },
+    "PCB3": {
+      "components": 53,
+      "nativeDrc": {
+        "Connection Error": 132
+      },
+      "strictErcFatal": 2,
+      "liveGeometryMatchesIndependentImport": true,
+      "netlistSha256": "545399c2bd10c7dfe6c73d5631798558abe42471756f6ce658c5946a7ef6ded0",
+      "reload": {
+        "initialReloadStatus": "partial-readiness-timeout",
+        "saved": true,
+        "reopenObserved": true,
+        "boundedReadOnlyReadyPassed": true,
+        "originalFailureRetained": "63-PCB3-final-reload.stdout.json"
+      },
+      "boundedV4BlindViaSubset": {
+        "blindVias": 41,
+        "violations": 0
+      }
+    }
+  },
+  "acceptedScope": {
+    "changedBoard": "PCB2",
+    "net": "VSYS",
+    "fromWidthMil": 3,
+    "toWidthMil": 4,
+    "centerlinePreserved": true,
+    "widenedLines": 3,
+    "carriedForwardBoards": [
+      "PCB1",
+      "PCB3"
+    ],
+    "documentDeltaSummary": {
+      "9ce45f14cb79dc9d": {
+        "recordKindsBefore": {
+          "META": 1,
+          "PRIMITIVE": 71,
+          "CANVAS": 1,
+          "LAYER": 60,
+          "LAYER_PHYS": 9,
+          "ACTIVE_LAYER": 1,
+          "RULE_TEMPLATE": 1,
+          "RULE": 17,
+          "SILK_OPTS": 2,
+          "D3_ATTRIBUTE": 1,
+          "PREFERENCE": 1,
+          "PANELIZE": 1,
+          "POLY": 1,
+          "LAYER_FILL": 2,
+          "NET": 59,
+          "COMPONENT": 86,
+          "PAD_NET": 328,
+          "ATTR": 258,
+          "VIA": 47,
+          "ELE_PLACEHOLDER": 38,
+          "LINE": 400
+        },
+        "recordKindsAfter": {
+          "META": 1,
+          "PRIMITIVE": 71,
+          "CANVAS": 1,
+          "LAYER": 60,
+          "LAYER_PHYS": 9,
+          "ACTIVE_LAYER": 1,
+          "RULE_TEMPLATE": 1,
+          "RULE": 17,
+          "SILK_OPTS": 2,
+          "D3_ATTRIBUTE": 1,
+          "PREFERENCE": 1,
+          "PANELIZE": 1,
+          "POLY": 1,
+          "LAYER_FILL": 2,
+          "NET": 59,
+          "COMPONENT": 86,
+          "PAD_NET": 328,
+          "ATTR": 258,
+          "VIA": 47,
+          "ELE_PLACEHOLDER": 37,
+          "LINE": 400
+        },
+        "lineRecordsBefore": 400,
+        "lineRecordsAfter": 400
+      },
+      "8fbc3cae65886fe5": {
+        "recordKindsBefore": {
+          "META": 1,
+          "PRIMITIVE": 56,
+          "CANVAS": 1,
+          "LAYER": 60,
+          "LAYER_PHYS": 9,
+          "ACTIVE_LAYER": 1,
+          "RULE_TEMPLATE": 1,
+          "RULE": 17,
+          "SILK_OPTS": 2,
+          "D3_ATTRIBUTE": 1,
+          "PREFERENCE": 1,
+          "PANELIZE": 1,
+          "POLY": 1,
+          "LAYER_FILL": 2,
+          "ELE_PLACEHOLDER": 65,
+          "REGION": 6,
+          "NET": 113,
+          "COMPONENT": 118,
+          "PAD_NET": 507,
+          "ATTR": 354,
+          "VIA": 97,
+          "LINE": 820
+        },
+        "recordKindsAfter": {
+          "META": 1,
+          "PRIMITIVE": 56,
+          "CANVAS": 1,
+          "LAYER": 60,
+          "LAYER_PHYS": 9,
+          "ACTIVE_LAYER": 1,
+          "RULE_TEMPLATE": 1,
+          "RULE": 17,
+          "SILK_OPTS": 2,
+          "D3_ATTRIBUTE": 1,
+          "PREFERENCE": 1,
+          "PANELIZE": 1,
+          "POLY": 1,
+          "LAYER_FILL": 2,
+          "ELE_PLACEHOLDER": 65,
+          "REGION": 6,
+          "NET": 113,
+          "COMPONENT": 118,
+          "PAD_NET": 507,
+          "ATTR": 354,
+          "VIA": 97,
+          "LINE": 820
+        },
+        "lineRecordsBefore": 820,
+        "lineRecordsAfter": 820
+      },
+      "1db01a36f669a47a": {
+        "recordKindsBefore": {
+          "META": 1,
+          "PRIMITIVE": 53,
+          "CANVAS": 1,
+          "LAYER": 60,
+          "LAYER_PHYS": 9,
+          "ACTIVE_LAYER": 1,
+          "RULE_TEMPLATE": 1,
+          "RULE": 17,
+          "SILK_OPTS": 2,
+          "D3_ATTRIBUTE": 1,
+          "PREFERENCE": 1,
+          "PANELIZE": 1,
+          "POLY": 1,
+          "LAYER_FILL": 2,
+          "REGION": 6,
+          "NET": 38,
+          "COMPONENT": 53,
+          "PAD_NET": 239,
+          "ATTR": 159,
+          "VIA": 53,
+          "LINE": 393,
+          "ELE_PLACEHOLDER": 32
+        },
+        "recordKindsAfter": {
+          "META": 1,
+          "PRIMITIVE": 53,
+          "CANVAS": 1,
+          "LAYER": 60,
+          "LAYER_PHYS": 9,
+          "ACTIVE_LAYER": 1,
+          "RULE_TEMPLATE": 1,
+          "RULE": 17,
+          "SILK_OPTS": 2,
+          "D3_ATTRIBUTE": 1,
+          "PREFERENCE": 1,
+          "PANELIZE": 1,
+          "POLY": 1,
+          "LAYER_FILL": 2,
+          "REGION": 6,
+          "NET": 38,
+          "COMPONENT": 53,
+          "PAD_NET": 239,
+          "ATTR": 159,
+          "VIA": 53,
+          "LINE": 393,
+          "ELE_PLACEHOLDER": 32
+        },
+        "lineRecordsBefore": 393,
+        "lineRecordsAfter": 393
+      }
+    },
+    "unchangedCommonLineCount": 397
+  },
+  "repositoryTests": {
+    "python": {
+      "total": 102,
+      "passed": 101,
+      "skipped": 1
+    },
+    "nodeSeparateExecutable": {
+      "passed": 25,
+      "failed": 0
+    }
+  },
+  "excludedClaims": [
+    "U11.K4 complete-net closure",
+    "HDI manufacturer approval",
+    "impedance signoff",
+    "full-board routing",
+    "40 g hardware validation",
+    "physical prototype validation"
+  ]
+}
