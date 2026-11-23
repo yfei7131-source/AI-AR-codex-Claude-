@@ -1,0 +1,180 @@
+{
+  "replacements": [
+    {
+      "id": "a4bdaa9c236b97c9",
+      "net": "3V3_SYS",
+      "layer": 1,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        34.2,
+        739.0999999999999
+      ],
+      "end": [
+        34.2,
+        707.5
+      ],
+      "edge_copper_gap_mil": 32.2,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 9.85,
+          "id": "85b8a96060e76675e51"
+        },
+        "track": {
+          "gap_mil": 12.3,
+          "id": "3dc64e9ec9040186"
+        }
+      },
+      "width": 4
+    },
+    {
+      "id": "fb046131cdcf7fad",
+      "net": "3V3_SYS",
+      "layer": 1,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        37.2,
+        707.5
+      ],
+      "end": [
+        37.2,
+        739.0999999999999
+      ],
+      "edge_copper_gap_mil": 35.2,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 9.85,
+          "id": "85b8a96060e76675e51"
+        },
+        "track": {
+          "gap_mil": 12.3,
+          "id": "9f468b55f59df312"
+        }
+      },
+      "width": 4
+    },
+    {
+      "id": "f217926295fb75fd",
+      "net": "3V3_SYS",
+      "layer": 1,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        34.2,
+        865.1
+      ],
+      "end": [
+        34.2,
+        833.5
+      ],
+      "edge_copper_gap_mil": 32.2,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 9.85,
+          "id": "e5a402ba1da2afdfe51"
+        },
+        "track": {
+          "gap_mil": 11.8,
+          "id": "2d6e9ace7ecaf964"
+        }
+      },
+      "width": 4
+    },
+    {
+      "id": "0136a15d4ffd08ff",
+      "net": "3V3_SYS",
+      "layer": 1,
+      "before_width_mil": 3,
+      "after_width_mil": 4,
+      "start": [
+        37.2,
+        833.5
+      ],
+      "end": [
+        37.2,
+        865.1
+      ],
+      "edge_copper_gap_mil": 35.2,
+      "nearest_foreign_by_type_within_search": {
+        "pad": {
+          "gap_mil": 9.85,
+          "id": "e5a402ba1da2afdfe51"
+        },
+        "track": {
+          "gap_mil": 12.045,
+          "id": "dd9cd638e4834862"
+        }
+      },
+      "width": 4
+    }
+  ],
+  "new_tracks": [
+    {
+      "net": "GND",
+      "layer": 1,
+      "width": 6.0,
+      "start": [
+        151,
+        1377.8
+      ],
+      "end": [
+        151,
+        1354.1
+      ]
+    },
+    {
+      "net": "CHG_ISO_GATE",
+      "layer": 1,
+      "width": 4.0,
+      "start": [
+        99.8,
+        1377.8
+      ],
+      "end": [
+        107.8,
+        1369.8
+      ]
+    },
+    {
+      "net": "CHG_ISO_GATE",
+      "layer": 1,
+      "width": 4.0,
+      "start": [
+        107.8,
+        1369.8
+      ],
+      "end": [
+        117.8,
+        1369.8
+      ]
+    },
+    {
+      "net": "CHG_ISO_GATE",
+      "layer": 1,
+      "width": 4.0,
+      "start": [
+        117.8,
+        1369.8
+      ],
+      "end": [
+        125.8,
+        1377.8
+      ]
+    }
+  ],
+  "paths": [
+    {
+      "from": "R20.2",
+      "to": "R22.2",
+      "net": "GND",
+      "layer": 1
+    },
+    {
+      "from": "R19.2",
+      "to": "R20.1",
+      "net": "CHG_ISO_GATE",
+      "layer": 1
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+# H03 R5 剩余技术决策 · NOT FOR FAB
+
+- **PCB3 U11**。A5 本轮实现的是外侧 GND 扇出。25 个 R4 内圈受阻球中，Ø0.075 mm 偏心法找到 4 个保留标称间距的候选，其中 C2/E5 已有 L2 GND，B4 为电源滤波，B2 仍有返回铜验证任务。外置法的 D2/K4 要先验证 L2 隔离捕获与第二阶到信号层；A5 的阻焊边余量、孔填平和回流均需制造确认。 [95 球基线](../h03-codex-r4-20261123/u11/r3-u11-95ball-native.csv) · [R5 几何](u11/U11_R5_GEOMETRY.md)
+- **0.80 mm HDI**。计算了 0.800 mm 六层 2+2+2 的材料厚度预算。按 Ø0.035 mm 铜填 UHDI 候选，25 个旧受阻位置均通过独立标称位置筛查。第二阶联合逃线、两级介质、目标盘与反焊盘叠加、参考地、填孔和装配需板厂 EQ。保留现有层叠与间距。 [工艺预算和候选](u11/U11_R5_GEOMETRY.md) · [嘉立创 HDI](https://jlcpcb.com/pcb-fabrication/hdi-pcb) · [GS Swiss 能力](https://www.gs-swiss.com/en/technologies-and-products/pcb-manufacturing-capabilities)
+- **PCB1 接口与 DFM**。J2 的准确主板插座为 Hirose CL0673-5025-0-53，嘉立创对应 C5577343，配对插头 C3653707。按 MPN 已在专业版原生库回读 C5577343 的设备和封装 UUID，其原生库符号实际编号 1–28，项目 J2 则是 24 个信号及 PWR1/PWR2。须确认 25–28 对应的物理焊盘、两端电源触点的内部并联关系与相机配对映射。实际配对相机 FPC、插接防反、替代摆放仍待冻结。J3 仍缺实物料号、电流和配对图。原生的单项 Netlist Error 和 366 段 3 mil 待关闭。 [原生符号针位](pcb1/j2-native-symbol-pin-audit.json) · [嘉立创 J2 库零件页](https://jlcpcb.com/partdetail/6495731-BM28B0_6_24DS_2_0_35V_53/C5577343) · [原厂插座资料](https://www.hirose.com/en/product/p/CL0673-5025-0-53)
+- **PCB2 去耦与 FPGA**。八颗待重排电容仍需负载、供电与回流一起迁移。以 C11 为例，试摆虽缩短器件间距并找到 GND 路径，仍缺 VSYS 同层路径及 XSON 的装配间距确认。维持 C2/C3 的功能 RC、AVDD 安全和 FPGA 上电时序。改底层高速控制束前需完成内层参考和阻抗。 [回读和候选](pcb2/README.md)
+- **三板与整机**。关闭 720 个剩余未连通、网表差异与缺封装，验证电源上电时序与安全联锁、高速差分和射频、光机对位、视野及 40 g 重量。PCB3 的 1V8 跨层候选需 L2/L5 反焊盘与功放控制线联合验证。所有裸板和装配守则仍需实际制造签核。 [PCB3 1V8 候选](u11/pcb3-c1-c8-power-research.json)

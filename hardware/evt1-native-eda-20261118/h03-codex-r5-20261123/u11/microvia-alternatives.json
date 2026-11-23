@@ -1,0 +1,1125 @@
+{
+  "scope": "Alternative copper geometry offline. No native edits. \u00d835 \u00b5m is below inherited process minimum. Process-specific PCB variant and written EQ would be required. Nominal hole wall limits apply same-layer or intersecting spans. Dogbone uses unchanged U11 mask and paste.",
+  "source_routes_stage": "R4 plus R5 B2\u2013C2 top copper",
+  "u11_top_soldermask_expansion_mil": 2,
+  "board_radii_raw": {
+    "unit": "mm",
+    "minRadius": 3.5433,
+    "defRadius": 7.874,
+    "maxRadius": 196.8504,
+    "minInner": 1.4764,
+    "defInner": 3.937,
+    "maxInner": 124.0157
+  },
+  "prior_blocked_balls": 25,
+  "centered_35um_individually_nominal_pass_count_of_25": 25,
+  "dogbone_100um_individually_nominal_pass_count_of_25": 4,
+  "rows": [
+    {
+      "ball": "A5",
+      "net": "GND",
+      "blocked_in_r4": false,
+      "centered_35um_research": {
+        "point": [
+          33.46456,
+          341.53541
+        ],
+        "board_edge_copper_gap_mil": 29.77558,
+        "layer_end_id": 15,
+        "nearest_foreign_top_copper": "U11.B5",
+        "foreign_top_copper_gap_mil": 6.25205,
+        "critical_hole_wall_gap_mil": 41.7437,
+        "critical_hole_wall_candidate": "c05bf22129468014",
+        "critical_hole_wall_min_mil": 5.11811,
+        "independent_nominal_screen": true,
+        "existing_land_drill_annular_ring_mil": 3.14952,
+        "mask_geometry_changed": false
+      },
+      "external_100um_dogbone_research": {
+        "ball": "A5",
+        "net": "GND",
+        "start": [
+          33.46456,
+          341.53541
+        ],
+        "candidate_count": 24,
+        "best": {
+          "point": [
+            32.96456,
+            332.53541
+          ],
+          "board_edge_copper_gap_mil": 27.99606,
+          "layer_end_id": 15,
+          "nearest_foreign_top_copper": "U11.B4",
+          "foreign_top_copper_gap_mil": 6.25118,
+          "critical_hole_wall_gap_mil": 42.29672,
+          "critical_hole_wall_candidate": "c05bf22129468014",
+          "critical_hole_wall_min_mil": 5.11811,
+          "independent_nominal_screen": true,
+          "trace_foreign_gap_mil": 7.94103,
+          "via_diameter_mil": 9.937007874015748
+        },
+        "diameter_drill_mm": 0.1,
+        "length_mil": 9.01388,
+        "l2_completion": "overlaps existing L2 GND plane"
+      }
+    },
+    {
+      "ball": "B2",
+      "net": "GND",
+      "blocked_in_r4": true,
+      "centered_35um_research": {
+        "point": [
+          47.24409,
+          300.19683
+        ],
+        "board_edge_copper_gap_mil": 43.55511,
+        "layer_end_id": 15,
+        "nearest_foreign_top_copper": "U11.B1",
+        "foreign_top_copper_gap_mil": 6.25205,
+        "critical_hole_wall_gap_mil": 50.56958,
+        "critical_hole_wall_candidate": "c05bf22129468014",
+        "critical_hole_wall_min_mil": 5.11811,
+        "independent_nominal_screen": true,
+        "existing_land_drill_annular_ring_mil": 3.14952,
+        "mask_geometry_changed": false
+      },
+      "external_100um_dogbone_research": {
+        "ball": "B2",
+        "net": "GND",
+        "start": [
+          47.24409,
+          300.19683
+        ],
+        "candidate_count": 0,
+        "best": null,
+        "diameter_drill_mm": 0.1,
+        "length_mil": null,
+        "l2_completion": "overlaps existing L2 GND plane"
+      }
+    },
+    {
+      "ball": "B4",
+      "net": "NRF_DECR_RF",
+      "blocked_in_r4": true,
+      "centered_35um_research": {
+        "point": [
+          47.24409,
+          327.75588
+        ],
+        "board_edge_copper_gap_mil": 43.55511,
+        "layer_end_id": 15,
+        "nearest_foreign_top_copper": "U11.C4",
+        "foreign_top_copper_gap_mil": 6.25205,
+        "critical_hole_wall_gap_mil": 31.85379,
+        "critical_hole_wall_candidate": "c05bf22129468014",
+        "critical_hole_wall_min_mil": 9.44882,
+        "independent_nominal_screen": true,
+        "existing_land_drill_annular_ring_mil": 3.14952,
+        "mask_geometry_changed": false
+      },
+      "external_100um_dogbone_research": {
+        "ball": "B4",
+        "net": "NRF_DECR_RF",
+        "start": [
+          47.24409,
+          327.75588
+        ],
+        "candidate_count": 0,
+        "best": null,
+        "diameter_drill_mm": 0.1,
+        "length_mil": null,
+        "l2_completion": "requires isolated L2 capture and L2/L3 routing study"
+      }
+    },
+    {
+      "ball": "B5",
+      "net": "NRF_DECN",
+      "blocked_in_r4": true,
+      "centered_35um_research": {
+        "point": [
+          47.24409,
+          341.53541
+        ],
+        "board_edge_copper_gap_mil": 43.55511,
+        "layer_end_id": 15,
+        "nearest_foreign_top_copper": "U11.B6",
+        "foreign_top_copper_gap_mil": 6.25205,
+        "critical_hole_wall_gap_mil": 27.98989,
+        "critical_hole_wall_candidate": "c05bf22129468014",
+        "critical_hole_wall_min_mil": 9.44882,
+        "independent_nominal_screen": true,
+        "existing_land_drill_annular_ring_mil": 3.14952,
+        "mask_geometry_changed": false
+      },
+      "external_100um_dogbone_research": {
+        "ball": "B5",
+        "net": "NRF_DECN",
+        "start": [
+          47.24409,
+          341.53541
+        ],
+        "candidate_count": 0,
+        "best": null,
+        "diameter_drill_mm": 0.1,
+        "length_mil": null,
+        "l2_completion": "requires isolated L2 capture and L2/L3 routing study"
+      }
+    },
+    {
+      "ball": "B6",
+      "net": "NRF_DCC",
+      "blocked_in_r4": true,
+      "centered_35um_research": {
+        "point": [
+          47.24409,
+          355.31494
+        ],
+        "board_edge_copper_gap_mil": 43.55511,
+        "layer_end_id": 15,
+        "nearest_foreign_top_copper": "U11.B7",
+        "foreign_top_copper_gap_mil": 6.25204,
+        "critical_hole_wall_gap_mil": 29.0757,
+        "critical_hole_wall_candidate": "10fef65565389552",
+        "critical_hole_wall_min_mil": 9.44882,
+        "independent_nominal_screen": true,
+        "existing_land_drill_annular_ring_mil": 3.14952,
+        "mask_geometry_changed": false
+      },
+      "external_100um_dogbone_research": {
+        "ball": "B6",
+        "net": "NRF_DCC",
+        "start": [
+          47.24409,
+          355.31494
+        ],
+        "candidate_count": 0,
+        "best": null,
+        "diameter_drill_mm": 0.1,
+        "length_mil": null,
+        "l2_completion": "requires isolated L2 capture and L2/L3 routing study"
+      }
+    },
+    {
+      "ball": "B7",
+      "net": "1V8_SYS",
+      "blocked_in_r4": true,
+      "centered_35um_research": {
+        "point": [
+          47.24409,
+          369.09446
+        ],
+        "board_edge_copper_gap_mil": 43.55511,
+        "layer_end_id": 15,
+        "nearest_foreign_top_copper": "U11.B6",
+        "foreign_top_copper_gap_mil": 6.25204,
+        "critical_hole_wall_gap_mil": 28.75511,
+        "critical_hole_wall_candidate": "10fef65565389552",
+        "critical_hole_wall_min_mil": 9.44882,
+        "independent_nominal_screen": true,
+        "existing_land_drill_annular_ring_mil": 3.14952,
+        "mask_geometry_changed": false
+      },
+      "external_100um_dogbone_research": {
+        "ball": "B7",
+        "net": "1V8_SYS",
+        "start": [
+          47.24409,
+          369.09446
+        ],
+        "candidate_count": 0,
+        "best": null,
+        "diameter_drill_mm": 0.1,
+        "length_mil": null,
+        "l2_completion": "requires isolated L2 capture and L2/L3 routing study"
+      }
+    },
+    {
+      "ball": "B8",
+      "net": "NRF_DECA",
+      "blocked_in_r4": true,
+      "centered_35um_research": {
+        "point": [
+          47.24409,
+          382.87399
+        ],
+        "board_edge_copper_gap_mil": 43.55511,
+        "layer_end_id": 15,
+        "nearest_foreign_top_copper": "U11.B7",
+        "foreign_top_copper_gap_mil": 6.25205,
+        "critical_hole_wall_gap_mil": 28.37881,
+        "critical_hole_wall_candidate": "8a003220a784f7e6",
+        "critical_hole_wall_min_mil": 9.44882,
+        "independent_nominal_screen": true,
+        "existing_land_drill_annular_ring_mil": 3.14952,
+        "mask_geometry_changed": false
+      },
+      "external_100um_dogbone_research": {
+        "ball": "B8",
+        "net": "NRF_DECA",
+        "start": [
+          47.24409,
+          382.87399
+        ],
+        "candidate_count": 0,
+        "best": null,
+        "diameter_drill_mm": 0.1,
+        "length_mil": null,
+        "l2_completion": "requires isolated L2 capture and L2/L3 routing study"
+      }
+    },
+    {
+      "ball": "B9",
+      "net": "GND",
+      "blocked_in_r4": true,
+      "centered_35um_research": {
+        "point": [
+          47.24409,
+          396.65352
+        ],
+        "board_edge_copper_gap_mil": 43.55511,
+        "layer_end_id": 15,
+        "nearest_foreign_top_copper": "U11.B10",
+        "foreign_top_copper_gap_mil": 6.25205,
+        "critical_hole_wall_gap_mil": 32.19942,
+        "critical_hole_wall_candidate": "8a003220a784f7e6",
+        "critical_hole_wall_min_mil": 5.11811,
+        "independent_nominal_screen": true,
+        "existing_land_drill_annular_ring_mil": 3.14952,
+        "mask_geometry_changed": false
+      },
+      "external_100um_dogbone_research": {
+        "ball": "B9",
+        "net": "GND",
+        "start": [
+          47.24409,
+          396.65352
+        ],
+        "candidate_count": 0,
+        "best": null,
+        "diameter_drill_mm": 0.1,
+        "length_mil": null,
+        "l2_completion": "overlaps existing L2 GND plane"
+      }
+    },
+    {
+      "ball": "B10",
+      "net": "1V8_SYS",
+      "blocked_in_r4": true,
+      "centered_35um_research": {
+        "point": [
+          47.24409,
+          410.43305
+        ],
+        "board_edge_copper_gap_mil": 43.55511,
+        "layer_end_id": 15,
+        "nearest_foreign_top_copper": "U11.B11",
+        "foreign_top_copper_gap_mil": 6.25204,
+        "critical_hole_wall_gap_mil": 31.56799,
+        "critical_hole_wall_candidate": "986a8ff55f55f579",
+        "critical_hole_wall_min_mil": 9.44882,
+        "independent_nominal_screen": true,
+        "existing_land_drill_annular_ring_mil": 3.14952,
+        "mask_geometry_changed": false
+      },
+      "external_100um_dogbone_research": {
+        "ball": "B10",
+        "net": "1V8_SYS",
+        "start": [
+          47.24409,
+          410.43305
+        ],
+        "candidate_count": 0,
+        "best": null,
+        "diameter_drill_mm": 0.1,
+        "length_mil": null,
+        "l2_completion": "requires isolated L2 capture and L2/L3 routing study"
+      }
+    },
+    {
+      "ball": "B11",
+      "net": "GND",
+      "blocked_in_r4": true,
+      "centered_35um_research": {
+        "point": [
+          47.24409,
+          424.21257
+        ],
+        "board_edge_copper_gap_mil": 43.55511,
+        "layer_end_id": 15,
+        "nearest_foreign_top_copper": "U11.B10",
+        "foreign_top_copper_gap_mil": 6.25204,
+        "critical_hole_wall_gap_mil": 20.56154,
+        "critical_hole_wall_candidate": "986a8ff55f55f579",
+        "critical_hole_wall_min_mil": 5.11811,
+        "independent_nominal_screen": true,
+        "existing_land_drill_annular_ring_mil": 3.14952,
+        "mask_geometry_changed": false
+      },
+      "external_100um_dogbone_research": {
+        "ball": "B11",
+        "net": "GND",
+        "start": [
+          47.24409,
+          424.21257
+        ],
+        "candidate_count": 0,
+        "best": null,
+        "diameter_drill_mm": 0.1,
+        "length_mil": null,
+        "l2_completion": "overlaps existing L2 GND plane"
+      }
+    },
+    {
+      "ball": "B12",
+      "net": "1V8_SYS",
+      "blocked_in_r4": false,
+      "centered_35um_research": {
+        "point": [
+          47.24409,
+          437.9921
+        ],
+        "board_edge_copper_gap_mil": 43.55511,
+        "layer_end_id": 15,
+        "nearest_foreign_top_copper": "U11.B11",
+        "foreign_top_copper_gap_mil": 6.25205,
+        "critical_hole_wall_gap_mil": 14.2634,
+        "critical_hole_wall_candidate": "986a8ff55f55f579",
+        "critical_hole_wall_min_mil": 9.44882,
+        "independent_nominal_screen": true,
+        "existing_land_drill_annular_ring_mil": 3.14952,
+        "mask_geometry_changed": false
+      },
+      "external_100um_dogbone_research": {
+        "ball": "B12",
+        "net": "1V8_SYS",
+        "start": [
+          47.24409,
+          437.9921
+        ],
+        "candidate_count": 275,
+        "best": {
+          "point": [
+            45.99409,
+            446.7421
+          ],
+          "board_edge_copper_gap_mil": 41.02559,
+          "layer_end_id": 15,
+          "nearest_foreign_top_copper": "U11.A12",
+          "foreign_top_copper_gap_mil": 6.47539,
+          "critical_hole_wall_gap_mil": 15.19616,
+          "critical_hole_wall_candidate": "986a8ff55f55f579",
+          "critical_hole_wall_min_mil": 9.44882,
+          "independent_nominal_screen": true,
+          "trace_foreign_gap_mil": 7.80254,
+          "via_diameter_mil": 9.937007874015748
+        },
+        "diameter_drill_mm": 0.1,
+        "length_mil": 8.83883,
+        "l2_completion": "requires isolated L2 capture and L2/L3 routing study"
+      }
+    },
+    {
+      "ball": "C2",
+      "net": "GND",
+      "blocked_in_r4": true,
+      "centered_35um_research": {
+        "point": [
+          61.02362,
+          300.19683
+        ],
+        "board_edge_copper_gap_mil": 57.33464,
+        "layer_end_id": 15,
+        "nearest_foreign_top_copper": "U11.D2",
+        "foreign_top_copper_gap_mil": 6.25204,
+        "critical_hole_wall_gap_mil": 44.03527,
+        "critical_hole_wall_candidate": "c05bf22129468014",
+        "critical_hole_wall_min_mil": 5.11811,
+        "independent_nominal_screen": true,
+        "existing_land_drill_annular_ring_mil": 3.14952,
+        "mask_geometry_changed": false
+      },
+      "external_100um_dogbone_research": {
+        "ball": "C2",
+        "net": "GND",
+        "start": [
+          61.02362,
+          300.19683
+        ],
+        "candidate_count": 53,
+        "best": {
+          "point": [
+            61.02362,
+            280.69683
+          ],
+          "board_edge_copper_gap_mil": 56.05512,
+          "layer_end_id": 15,
+          "nearest_foreign_top_copper": "U11.D1",
+          "foreign_top_copper_gap_mil": 6.11275,
+          "critical_hole_wall_gap_mil": 61.32727,
+          "critical_hole_wall_candidate": "c05bf22129468014",
+          "critical_hole_wall_min_mil": 5.11811,
+          "independent_nominal_screen": true,
+          "trace_foreign_gap_mil": 7.94102,
+          "via_diameter_mil": 9.937007874015748
+        },
+        "diameter_drill_mm": 0.1,
+        "length_mil": 19.5,
+        "l2_completion": "overlaps existing L2 GND plane"
+      }
+    },
+    {
+      "ball": "D2",
+      "net": "1V8_SYS",
+      "blocked_in_r4": true,
+      "centered_35um_research": {
+        "point": [
+          74.80314,
+          300.19683
+        ],
+        "board_edge_copper_gap_mil": 71.11416,
+        "layer_end_id": 15,
+        "nearest_foreign_top_copper": "U11.C2",
+        "foreign_top_copper_gap_mil": 6.25204,
+        "critical_hole_wall_gap_mil": 41.00984,
+        "critical_hole_wall_candidate": "c05bf22129468014",
+        "critical_hole_wall_min_mil": 9.44882,
+        "independent_nominal_screen": true,
+        "existing_land_drill_annular_ring_mil": 3.14952,
+        "mask_geometry_changed": false
+      },
+      "external_100um_dogbone_research": {
+        "ball": "D2",
+        "net": "1V8_SYS",
+        "start": [
+          74.80314,
+          300.19683
+        ],
+        "candidate_count": 641,
+        "best": {
+          "point": [
+            73.55314,
+            308.94683
+          ],
+          "board_edge_copper_gap_mil": 68.58464,
+          "layer_end_id": 15,
+          "nearest_foreign_top_copper": "U11.C2",
+          "foreign_top_copper_gap_mil": 6.47538,
+          "critical_hole_wall_gap_mil": 31.13739,
+          "critical_hole_wall_candidate": "c05bf22129468014",
+          "critical_hole_wall_min_mil": 9.44882,
+          "independent_nominal_screen": true,
+          "trace_foreign_gap_mil": 7.80253,
+          "via_diameter_mil": 9.937007874015748
+        },
+        "diameter_drill_mm": 0.1,
+        "length_mil": 8.83883,
+        "l2_completion": "requires isolated L2 capture and L2/L3 routing study"
+      }
+    },
+    {
+      "ball": "E5",
+      "net": "GND",
+      "blocked_in_r4": true,
+      "centered_35um_research": {
+        "point": [
+          88.58267,
+          341.53541
+        ],
+        "board_edge_copper_gap_mil": 84.89369,
+        "layer_end_id": 15,
+        "nearest_foreign_top_copper": "U11.E4",
+        "foreign_top_copper_gap_mil": 6.25205,
+        "critical_hole_wall_gap_mil": 8.28773,
+        "critical_hole_wall_candidate": "c05bf22129468014",
+        "critical_hole_wall_min_mil": 5.11811,
+        "independent_nominal_screen": true,
+        "existing_land_drill_annular_ring_mil": 3.14952,
+        "mask_geometry_changed": false
+      },
+      "external_100um_dogbone_research": {
+        "ball": "E5",
+        "net": "GND",
+        "start": [
+          88.58267,
+          341.53541
+        ],
+        "candidate_count": 397,
+        "best": {
+          "point": [
+            94.83267,
+            347.78541
+          ],
+          "board_edge_copper_gap_mil": 89.86417,
+          "layer_end_id": 15,
+          "nearest_foreign_top_copper": "U11.E4",
+          "foreign_top_copper_gap_mil": 12.175,
+          "critical_hole_wall_gap_mil": 13.48756,
+          "critical_hole_wall_candidate": "c05bf22129468014",
+          "critical_hole_wall_min_mil": 5.11811,
+          "independent_nominal_screen": true,
+          "trace_foreign_gap_mil": 7.94103,
+          "via_diameter_mil": 9.937007874015748
+        },
+        "diameter_drill_mm": 0.1,
+        "length_mil": 8.83883,
+        "l2_completion": "overlaps existing L2 GND plane"
+      }
+    },
+    {
+      "ball": "E11",
+      "net": "1V8_SYS",
+      "blocked_in_r4": true,
+      "centered_35um_research": {
+        "point": [
+          88.58267,
+          424.21257
+        ],
+        "board_edge_copper_gap_mil": 84.89369,
+        "layer_end_id": 15,
+        "nearest_foreign_top_copper": "U11.E10",
+        "foreign_top_copper_gap_mil": 6.25204,
+        "critical_hole_wall_gap_mil": 26.65087,
+        "critical_hole_wall_candidate": "986a8ff55f55f579",
+        "critical_hole_wall_min_mil": 9.44882,
+        "independent_nominal_screen": true,
+        "existing_land_drill_annular_ring_mil": 3.14952,
+        "mask_geometry_changed": false
+      },
+      "external_100um_dogbone_research": {
+        "ball": "E11",
+        "net": "1V8_SYS",
+        "start": [
+          88.58267,
+          424.21257
+        ],
+        "candidate_count": 0,
+        "best": null,
+        "diameter_drill_mm": 0.1,
+        "length_mil": null,
+        "l2_completion": "requires isolated L2 capture and L2/L3 routing study"
+      }
+    },
+    {
+      "ball": "F2",
+      "net": "BLE_SWDCLK",
+      "blocked_in_r4": true,
+      "centered_35um_research": {
+        "point": [
+          102.3622,
+          300.19683
+        ],
+        "board_edge_copper_gap_mil": 98.67322,
+        "layer_end_id": 15,
+        "nearest_foreign_top_copper": "U11.F3",
+        "foreign_top_copper_gap_mil": 6.25204,
+        "critical_hole_wall_gap_mil": 28.34519,
+        "critical_hole_wall_candidate": "d8f164263263ea29",
+        "critical_hole_wall_min_mil": 9.44882,
+        "independent_nominal_screen": true,
+        "existing_land_drill_annular_ring_mil": 3.14952,
+        "mask_geometry_changed": false
+      },
+      "external_100um_dogbone_research": {
+        "ball": "F2",
+        "net": "BLE_SWDCLK",
+        "start": [
+          102.3622,
+          300.19683
+        ],
+        "candidate_count": 0,
+        "best": null,
+        "diameter_drill_mm": 0.1,
+        "length_mil": null,
+        "l2_completion": "requires isolated L2 capture and L2/L3 routing study"
+      }
+    },
+    {
+      "ball": "F11",
+      "net": "LFXO_XL1",
+      "blocked_in_r4": true,
+      "centered_35um_research": {
+        "point": [
+          102.3622,
+          424.21257
+        ],
+        "board_edge_copper_gap_mil": 98.67322,
+        "layer_end_id": 15,
+        "nearest_foreign_top_copper": "U11.F10",
+        "foreign_top_copper_gap_mil": 6.25204,
+        "critical_hole_wall_gap_mil": 25.4826,
+        "critical_hole_wall_candidate": "3ade46fe1dbe7215",
+        "critical_hole_wall_min_mil": 9.44882,
+        "independent_nominal_screen": true,
+        "existing_land_drill_annular_ring_mil": 3.14952,
+        "mask_geometry_changed": false
+      },
+      "external_100um_dogbone_research": {
+        "ball": "F11",
+        "net": "LFXO_XL1",
+        "start": [
+          102.3622,
+          424.21257
+        ],
+        "candidate_count": 0,
+        "best": null,
+        "diameter_drill_mm": 0.1,
+        "length_mil": null,
+        "l2_completion": "requires isolated L2 capture and L2/L3 routing study"
+      }
+    },
+    {
+      "ball": "G2",
+      "net": "BLE_NRESET",
+      "blocked_in_r4": true,
+      "centered_35um_research": {
+        "point": [
+          116.14173,
+          300.19683
+        ],
+        "board_edge_copper_gap_mil": 84.89369,
+        "layer_end_id": 15,
+        "nearest_foreign_top_copper": "U11.G3",
+        "foreign_top_copper_gap_mil": 6.25204,
+        "critical_hole_wall_gap_mil": 29.84182,
+        "critical_hole_wall_candidate": "d8f164263263ea29",
+        "critical_hole_wall_min_mil": 9.44882,
+        "independent_nominal_screen": true,
+        "existing_land_drill_annular_ring_mil": 3.14952,
+        "mask_geometry_changed": false
+      },
+      "external_100um_dogbone_research": {
+        "ball": "G2",
+        "net": "BLE_NRESET",
+        "start": [
+          116.14173,
+          300.19683
+        ],
+        "candidate_count": 0,
+        "best": null,
+        "diameter_drill_mm": 0.1,
+        "length_mil": null,
+        "l2_completion": "requires isolated L2 capture and L2/L3 routing study"
+      }
+    },
+    {
+      "ball": "H11",
+      "net": "1V8_SYS",
+      "blocked_in_r4": true,
+      "centered_35um_research": {
+        "point": [
+          129.92126,
+          424.21257
+        ],
+        "board_edge_copper_gap_mil": 71.11416,
+        "layer_end_id": 15,
+        "nearest_foreign_top_copper": "U11.J11",
+        "foreign_top_copper_gap_mil": 6.25204,
+        "critical_hole_wall_gap_mil": 25.61619,
+        "critical_hole_wall_candidate": "3ade46fe1dbe7215",
+        "critical_hole_wall_min_mil": 9.44882,
+        "independent_nominal_screen": true,
+        "existing_land_drill_annular_ring_mil": 3.14952,
+        "mask_geometry_changed": false
+      },
+      "external_100um_dogbone_research": {
+        "ball": "H11",
+        "net": "1V8_SYS",
+        "start": [
+          129.92126,
+          424.21257
+        ],
+        "candidate_count": 0,
+        "best": null,
+        "diameter_drill_mm": 0.1,
+        "length_mil": null,
+        "l2_completion": "requires isolated L2 capture and L2/L3 routing study"
+      }
+    },
+    {
+      "ball": "J4",
+      "net": "I2S_AMP_DIN_1V8",
+      "blocked_in_r4": true,
+      "centered_35um_research": {
+        "point": [
+          143.70078,
+          327.75588
+        ],
+        "board_edge_copper_gap_mil": 57.33464,
+        "layer_end_id": 15,
+        "nearest_foreign_top_copper": "U11.J3",
+        "foreign_top_copper_gap_mil": 6.25205,
+        "critical_hole_wall_gap_mil": 18.86298,
+        "critical_hole_wall_candidate": "0fa8885be3d11145",
+        "critical_hole_wall_min_mil": 9.44882,
+        "independent_nominal_screen": true,
+        "existing_land_drill_annular_ring_mil": 3.14952,
+        "mask_geometry_changed": false
+      },
+      "external_100um_dogbone_research": {
+        "ball": "J4",
+        "net": "I2S_AMP_DIN_1V8",
+        "start": [
+          143.70078,
+          327.75588
+        ],
+        "candidate_count": 0,
+        "best": null,
+        "diameter_drill_mm": 0.1,
+        "length_mil": null,
+        "l2_completion": "requires isolated L2 capture and L2/L3 routing study"
+      }
+    },
+    {
+      "ball": "J5",
+      "net": "I2S_S3_DOUT_1V8",
+      "blocked_in_r4": true,
+      "centered_35um_research": {
+        "point": [
+          143.70078,
+          341.53541
+        ],
+        "board_edge_copper_gap_mil": 57.33464,
+        "layer_end_id": 15,
+        "nearest_foreign_top_copper": "U11.J6",
+        "foreign_top_copper_gap_mil": 6.25205,
+        "critical_hole_wall_gap_mil": 13.91184,
+        "critical_hole_wall_candidate": "0fa8885be3d11145",
+        "critical_hole_wall_min_mil": 9.44882,
+        "independent_nominal_screen": true,
+        "existing_land_drill_annular_ring_mil": 3.14952,
+        "mask_geometry_changed": false
+      },
+      "external_100um_dogbone_research": {
+        "ball": "J5",
+        "net": "I2S_S3_DOUT_1V8",
+        "start": [
+          143.70078,
+          341.53541
+        ],
+        "candidate_count": 0,
+        "best": null,
+        "diameter_drill_mm": 0.1,
+        "length_mil": null,
+        "l2_completion": "requires isolated L2 capture and L2/L3 routing study"
+      }
+    },
+    {
+      "ball": "K1",
+      "net": "1V8_SYS",
+      "blocked_in_r4": false,
+      "centered_35um_research": {
+        "point": [
+          157.48031,
+          286.4173
+        ],
+        "board_edge_copper_gap_mil": 43.55511,
+        "layer_end_id": 15,
+        "nearest_foreign_top_copper": "U11.K2",
+        "foreign_top_copper_gap_mil": 6.25205,
+        "critical_hole_wall_gap_mil": 23.81043,
+        "critical_hole_wall_candidate": "572c8d8f8c336c15",
+        "critical_hole_wall_min_mil": 9.44882,
+        "independent_nominal_screen": true,
+        "existing_land_drill_annular_ring_mil": 3.14952,
+        "mask_geometry_changed": false
+      },
+      "external_100um_dogbone_research": {
+        "ball": "K1",
+        "net": "1V8_SYS",
+        "start": [
+          157.48031,
+          286.4173
+        ],
+        "candidate_count": 324,
+        "best": {
+          "point": [
+            148.73031,
+            285.1673
+          ],
+          "board_edge_copper_gap_mil": 51.02559,
+          "layer_end_id": 15,
+          "nearest_foreign_top_copper": "U11.J2",
+          "foreign_top_copper_gap_mil": 7.04175,
+          "critical_hole_wall_gap_mil": 20.47827,
+          "critical_hole_wall_candidate": "572c8d8f8c336c15",
+          "critical_hole_wall_min_mil": 9.44882,
+          "independent_nominal_screen": true,
+          "trace_foreign_gap_mil": 7.94103,
+          "via_diameter_mil": 9.937007874015748
+        },
+        "diameter_drill_mm": 0.1,
+        "length_mil": 8.83883,
+        "l2_completion": "requires isolated L2 capture and L2/L3 routing study"
+      }
+    },
+    {
+      "ball": "K2",
+      "net": "AMP_SD_REQ_1V8",
+      "blocked_in_r4": true,
+      "centered_35um_research": {
+        "point": [
+          157.48031,
+          300.19683
+        ],
+        "board_edge_copper_gap_mil": 43.55511,
+        "layer_end_id": 15,
+        "nearest_foreign_top_copper": "U11.K3",
+        "foreign_top_copper_gap_mil": 6.25204,
+        "critical_hole_wall_gap_mil": 37.28705,
+        "critical_hole_wall_candidate": "572c8d8f8c336c15",
+        "critical_hole_wall_min_mil": 9.44882,
+        "independent_nominal_screen": true,
+        "existing_land_drill_annular_ring_mil": 3.14952,
+        "mask_geometry_changed": false
+      },
+      "external_100um_dogbone_research": {
+        "ball": "K2",
+        "net": "AMP_SD_REQ_1V8",
+        "start": [
+          157.48031,
+          300.19683
+        ],
+        "candidate_count": 0,
+        "best": null,
+        "diameter_drill_mm": 0.1,
+        "length_mil": null,
+        "l2_completion": "requires isolated L2 capture and L2/L3 routing study"
+      }
+    },
+    {
+      "ball": "K3",
+      "net": "IPC_NRF_TX_1V8",
+      "blocked_in_r4": true,
+      "centered_35um_research": {
+        "point": [
+          157.48031,
+          313.97635
+        ],
+        "board_edge_copper_gap_mil": 43.55511,
+        "layer_end_id": 15,
+        "nearest_foreign_top_copper": "U11.K2",
+        "foreign_top_copper_gap_mil": 6.25204,
+        "critical_hole_wall_gap_mil": 38.3051,
+        "critical_hole_wall_candidate": "0fa8885be3d11145",
+        "critical_hole_wall_min_mil": 9.44882,
+        "independent_nominal_screen": true,
+        "existing_land_drill_annular_ring_mil": 3.14952,
+        "mask_geometry_changed": false
+      },
+      "external_100um_dogbone_research": {
+        "ball": "K3",
+        "net": "IPC_NRF_TX_1V8",
+        "start": [
+          157.48031,
+          313.97635
+        ],
+        "candidate_count": 0,
+        "best": null,
+        "diameter_drill_mm": 0.1,
+        "length_mil": null,
+        "l2_completion": "requires isolated L2 capture and L2/L3 routing study"
+      }
+    },
+    {
+      "ball": "K4",
+      "net": "I2S_LRCLK_1V8",
+      "blocked_in_r4": true,
+      "centered_35um_research": {
+        "point": [
+          157.48031,
+          327.75588
+        ],
+        "board_edge_copper_gap_mil": 43.55511,
+        "layer_end_id": 15,
+        "nearest_foreign_top_copper": "U11.K3",
+        "foreign_top_copper_gap_mil": 6.25205,
+        "critical_hole_wall_gap_mil": 30.65565,
+        "critical_hole_wall_candidate": "0fa8885be3d11145",
+        "critical_hole_wall_min_mil": 9.44882,
+        "independent_nominal_screen": true,
+        "existing_land_drill_annular_ring_mil": 3.14952,
+        "mask_geometry_changed": false
+      },
+      "external_100um_dogbone_research": {
+        "ball": "K4",
+        "net": "I2S_LRCLK_1V8",
+        "start": [
+          157.48031,
+          327.75588
+        ],
+        "candidate_count": 53,
+        "best": {
+          "point": [
+            176.98031,
+            327.75588
+          ],
+          "board_edge_copper_gap_mil": 22.77559,
+          "layer_end_id": 15,
+          "nearest_foreign_top_copper": "U11.L3",
+          "foreign_top_copper_gap_mil": 6.11276,
+          "critical_hole_wall_gap_mil": 24.33671,
+          "critical_hole_wall_candidate": "0e1cd2511bfb548a",
+          "critical_hole_wall_min_mil": 9.44882,
+          "independent_nominal_screen": true,
+          "trace_foreign_gap_mil": 7.94103,
+          "via_diameter_mil": 9.937007874015748
+        },
+        "diameter_drill_mm": 0.1,
+        "length_mil": 19.5,
+        "l2_completion": "requires isolated L2 capture and L2/L3 routing study"
+      }
+    },
+    {
+      "ball": "K5",
+      "net": "I2S_BCLK_1V8",
+      "blocked_in_r4": true,
+      "centered_35um_research": {
+        "point": [
+          157.48031,
+          341.53541
+        ],
+        "board_edge_copper_gap_mil": 43.55511,
+        "layer_end_id": 15,
+        "nearest_foreign_top_copper": "U11.K6",
+        "foreign_top_copper_gap_mil": 6.25205,
+        "critical_hole_wall_gap_mil": 26.7472,
+        "critical_hole_wall_candidate": "0e1cd2511bfb548a",
+        "critical_hole_wall_min_mil": 9.44882,
+        "independent_nominal_screen": true,
+        "existing_land_drill_annular_ring_mil": 3.14952,
+        "mask_geometry_changed": false
+      },
+      "external_100um_dogbone_research": {
+        "ball": "K5",
+        "net": "I2S_BCLK_1V8",
+        "start": [
+          157.48031,
+          341.53541
+        ],
+        "candidate_count": 0,
+        "best": null,
+        "diameter_drill_mm": 0.1,
+        "length_mil": null,
+        "l2_completion": "requires isolated L2 capture and L2/L3 routing study"
+      }
+    },
+    {
+      "ball": "K6",
+      "net": "GND",
+      "blocked_in_r4": true,
+      "centered_35um_research": {
+        "point": [
+          157.48031,
+          355.31494
+        ],
+        "board_edge_copper_gap_mil": 43.55511,
+        "layer_end_id": 15,
+        "nearest_foreign_top_copper": "U11.K7",
+        "foreign_top_copper_gap_mil": 6.25204,
+        "critical_hole_wall_gap_mil": 23.33072,
+        "critical_hole_wall_candidate": "0e1cd2511bfb548a",
+        "critical_hole_wall_min_mil": 5.11811,
+        "independent_nominal_screen": true,
+        "existing_land_drill_annular_ring_mil": 3.14952,
+        "mask_geometry_changed": false
+      },
+      "external_100um_dogbone_research": {
+        "ball": "K6",
+        "net": "GND",
+        "start": [
+          157.48031,
+          355.31494
+        ],
+        "candidate_count": 0,
+        "best": null,
+        "diameter_drill_mm": 0.1,
+        "length_mil": null,
+        "l2_completion": "overlaps existing L2 GND plane"
+      }
+    },
+    {
+      "ball": "K11",
+      "net": "GND",
+      "blocked_in_r4": true,
+      "centered_35um_research": {
+        "point": [
+          157.48031,
+          424.21257
+        ],
+        "board_edge_copper_gap_mil": 43.55511,
+        "layer_end_id": 15,
+        "nearest_foreign_top_copper": "U11.K10",
+        "foreign_top_copper_gap_mil": 6.25204,
+        "critical_hole_wall_gap_mil": 45.15371,
+        "critical_hole_wall_candidate": "3ade46fe1dbe7215",
+        "critical_hole_wall_min_mil": 9.44882,
+        "independent_nominal_screen": true,
+        "existing_land_drill_annular_ring_mil": 3.14952,
+        "mask_geometry_changed": false
+      },
+      "external_100um_dogbone_research": {
+        "ball": "K11",
+        "net": "GND",
+        "start": [
+          157.48031,
+          424.21257
+        ],
+        "candidate_count": 0,
+        "best": null,
+        "diameter_drill_mm": 0.1,
+        "length_mil": null,
+        "l2_completion": "overlaps existing L2 GND plane"
+      }
+    },
+    {
+      "ball": "L5",
+      "net": "1V8_SYS",
+      "blocked_in_r4": false,
+      "centered_35um_research": {
+        "point": [
+          171.25984,
+          341.53541
+        ],
+        "board_edge_copper_gap_mil": 29.77558,
+        "layer_end_id": 15,
+        "nearest_foreign_top_copper": "U11.K5",
+        "foreign_top_copper_gap_mil": 6.25205,
+        "critical_hole_wall_gap_mil": 15.73073,
+        "critical_hole_wall_candidate": "0e1cd2511bfb548a",
+        "critical_hole_wall_min_mil": 9.44882,
+        "independent_nominal_screen": true,
+        "existing_land_drill_annular_ring_mil": 3.14952,
+        "mask_geometry_changed": false
+      },
+      "external_100um_dogbone_research": {
+        "ball": "L5",
+        "net": "1V8_SYS",
+        "start": [
+          171.25984,
+          341.53541
+        ],
+        "candidate_count": 2316,
+        "best": {
+          "point": [
+            175.00984,
+            333.53541
+          ],
+          "board_edge_copper_gap_mil": 24.74606,
+          "layer_end_id": 15,
+          "nearest_foreign_top_copper": "U11.K4",
+          "foreign_top_copper_gap_mil": 9.65072,
+          "critical_hole_wall_gap_mil": 19.39344,
+          "critical_hole_wall_candidate": "0e1cd2511bfb548a",
+          "critical_hole_wall_min_mil": 9.44882,
+          "independent_nominal_screen": true,
+          "trace_foreign_gap_mil": 7.94103,
+          "via_diameter_mil": 9.937007874015748
+        },
+        "diameter_drill_mm": 0.1,
+        "length_mil": 8.8353,
+        "l2_completion": "requires isolated L2 capture and L2/L3 routing study"
+      }
+    }
+  ]
+}

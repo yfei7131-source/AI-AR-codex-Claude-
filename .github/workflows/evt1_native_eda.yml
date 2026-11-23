@@ -15,6 +15,7 @@ on:
       - hardware/evt1-h03-u11-wlcsp-v3-dfm-route-20261121
       - hardware/codex-evt1-h03-pr46-takeover-20261121
       - hardware/evt1-h03-r4-codex-20261123
+      - hardware/evt1-h03-r5-codex-20261123
   workflow_dispatch:
 
 permissions:
@@ -229,6 +230,12 @@ jobs:
           python3 -B "$round/verify_r4.py"
           python3 -B -m unittest discover -s "$round" -p test_pcb1_spur.py -v
           python3 -B "$round/replay_v4_dfm.py" --out-dir "$RUNNER_TEMP/h03-r4-dfm"
+      - name: Replay H03 R5 native copper, strict checks and blind-via geometry
+        if: github.ref_name == 'hardware/evt1-h03-r5-codex-20261123'
+        run: |
+          round="$EVT1_PACKAGE/h03-codex-r5-20261123"
+          python3 -B "$round/verify_r5.py"
+          python3 -B -m unittest discover -s "$round" -p test_prepare_a5_candidate.py -v
       - name: KiCad CLI version, electrical rules and native netlist parity
         run: |
           mkdir -p "$PWD/ci-kicad-evidence"

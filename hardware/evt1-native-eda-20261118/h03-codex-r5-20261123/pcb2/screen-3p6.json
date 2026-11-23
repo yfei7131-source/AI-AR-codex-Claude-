@@ -1,0 +1,60 @@
+{
+  "board_uuid": "9ce45f14cb79dc9d",
+  "route_scope": "offline conservative copper, no native verification",
+  "archive_sha256": "178f0098acb0fa4194578f01674a84fb26a0d14e27b77b35937b6c27607ea7da",
+  "dump_sha256": "2c75cbd101c8fb562d40902ae89833a9be2955ad7cd2f69853ea85fe56432fbf",
+  "drc_sha256": "37637ce56484b0647302487f0fe98e3e1c778114bde4fda3773e560b6523e641",
+  "geometry_inputs": {
+    "pad": 328,
+    "track": 397,
+    "via": 47
+  },
+  "routes": [
+    {
+      "net": "GND",
+      "from": "C16.2",
+      "to": "C28.2",
+      "layer": 1,
+      "width_mil": 3.6,
+      "endpoint_ids": [
+        "b1529d5d463211ffre4p110",
+        "62d22cb60c57007fre5p110"
+      ],
+      "endpoint_drc_open": [
+        true,
+        true
+      ],
+      "length_mil": 36.0257,
+      "points": [
+        [
+          44.7,
+          468.1
+        ],
+        [
+          44.7,
+          466.2
+        ],
+        [
+          24.6,
+          446.1
+        ],
+        [
+          24.6,
+          440.4
+        ]
+      ],
+      "limiting_copper": [
+        {
+          "kind": "pad",
+          "gap_mil": 6.2964,
+          "id": "5eb7463fb00b02b5re5p109"
+        },
+        {
+          "kind": "edge",
+          "gap_mil": 22.8,
+          "id": null
+        }
+      ]
+    }
+  ]
+}
