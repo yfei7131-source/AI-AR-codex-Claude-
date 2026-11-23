@@ -1,0 +1,71 @@
+{
+  "r4_sha256": "178f0098acb0fa4194578f01674a84fb26a0d14e27b77b35937b6c27607ea7da",
+  "source_document_payload_count": 1451,
+  "pcb1_width_counts_r2": {
+    "1.9685": 8,
+    "3": 472,
+    "3.5": 187,
+    "4": 53,
+    "6": 83
+  },
+  "pcb1_width_counts_r3": {
+    "2": 1,
+    "3": 472,
+    "3.5": 187,
+    "4": 60,
+    "6": 83
+  },
+  "pcb1_width_counts_r4": {
+    "3": 472,
+    "3.5": 187,
+    "4": 60,
+    "6": 83
+  },
+  "pcb1_three_mil_by_layer": {
+    "1": 181,
+    "2": 175,
+    "16": 72,
+    "17": 44
+  },
+  "pcb1_three_mil_by_net": {
+    "1V8_FPGA_IO": 14,
+    "1V8_SYS": 16,
+    "3V3_SYS": 13,
+    "BB_FB": 64,
+    "BB_L1": 3,
+    "BB_L2": 3,
+    "CAM_D5_3V3": 33,
+    "CAM_DOVDD_1V8": 72,
+    "CAM_XCLK_3V3": 48,
+    "GND": 104,
+    "I2S_S3_DOUT_3V3": 28,
+    "LS3_VREF2_EN": 1,
+    "LS4_VREF2_EN": 6,
+    "PDM_CLK_1V8": 14,
+    "PRIV_VTH_L": 28,
+    "PRIV_WINDOW_OK": 7,
+    "USB_DM": 13,
+    "USB_DP": 5
+  },
+  "strict_native_drc_before_and_after": {
+    "PCB1": {
+      "Connection Error": 355,
+      "Netlist Error": 1
+    },
+    "PCB2": {
+      "Connection Error": 237
+    },
+    "PCB3": {
+      "Connection Error": 134
+    }
+  },
+  "strict_native_erc_fatals_before_and_after": {
+    "SCH1": 4,
+    "SCH2": 0,
+    "SCH3": 2
+  },
+  "pcb1_restored_native_drc_violations_equal": true,
+  "full_r3_import_export_payload_parity_checked": true,
+  "full_r4_restore_export_payload_parity_checked": true,
+  "manufacturing_status": "NOT FOR FAB"
+}

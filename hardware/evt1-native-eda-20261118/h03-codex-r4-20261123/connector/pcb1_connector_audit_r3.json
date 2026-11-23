@@ -1,0 +1,465 @@
+{
+  "archive_name": "ProPrj_EVT1-H03-GEMINI-R3-NOT-FOR-FAB-20261123_2026-11-23.epro2",
+  "archive_sha256": "223584c23bff4cd9fa65d99e6689b8a4feccba3cdbd4e5467c6f61957beec918",
+  "pcb": "8fbc3cae65886fe5",
+  "sch_page": "89cd87358a17e3c2",
+  "inherited_protel_file": "h03-v4-dfm-u11-2n2-route/evidence/takeover/independent/board-netlists/M-MAIN-L.net",
+  "inherited_protel_comparison": "30 matching contacts",
+  "legacy_controlled_file": "kicad/CAD_TERMINALS.csv",
+  "legacy_controlled_delta": [
+    {
+      "ref": "J3",
+      "pin": "1",
+      "legacy": "VBUS_5V",
+      "native": "VBUS_5V_USB"
+    }
+  ],
+  "legacy_delta_authority": "h02-reve-h03-bridge/REV_E_NETLIST_AND_ECO_DIFF.md ECO-07",
+  "connectors": [
+    {
+      "ref": "J2",
+      "logical_ref": "J_CAM",
+      "sch_instance": "ie165",
+      "unique_id": "1fb9863844ab5169",
+      "device": "7d68d31d2a01c88c",
+      "symbol": "29376e0d37c5dd7e",
+      "mpn": "BM28B0.6-24DS/2-0.35V(53)",
+      "instance_convert_to_pcb": "yes",
+      "instance_footprint": null,
+      "device_footprint": "",
+      "instance_origin_footprint": "",
+      "instance_source": "https://www.hirose.com/en/product/document?clcode=CL0673-5043-0-51&productname=BM28B0.6-16DS/2-0.35V(51)&series=BM28&documenttype=Catalog&lang=en&documentid=D49354_en",
+      "device_source": "https://www.hirose.com/en/product/document?clcode=CL0673-5043-0-51&productname=BM28B0.6-16DS/2-0.35V(51)&series=BM28&documenttype=Catalog&lang=en&documentid=D49354_en",
+      "needs_exact_source": true,
+      "pcb_component_ids": [],
+      "contacts": [
+        {
+          "pin": "P1",
+          "name": "SIGNAL_0.3A",
+          "pin_id": "ie1",
+          "wire_id": "ie379",
+          "sch_endpoint": [
+            740,
+            170
+          ],
+          "net": "CAM_AVDD_2V8"
+        },
+        {
+          "pin": "P2",
+          "name": "SIGNAL_0.3A",
+          "pin_id": "ie5",
+          "wire_id": "ie381",
+          "sch_endpoint": [
+            740,
+            180
+          ],
+          "net": "GND"
+        },
+        {
+          "pin": "P3",
+          "name": "SIGNAL_0.3A",
+          "pin_id": "ie9",
+          "wire_id": "ie383",
+          "sch_endpoint": [
+            740,
+            190
+          ],
+          "net": "CAM_SCCB_SCL"
+        },
+        {
+          "pin": "P4",
+          "name": "SIGNAL_0.3A",
+          "pin_id": "ie13",
+          "wire_id": "ie385",
+          "sch_endpoint": [
+            740,
+            200
+          ],
+          "net": "CAM_SCCB_SDA"
+        },
+        {
+          "pin": "P5",
+          "name": "SIGNAL_0.3A",
+          "pin_id": "ie17",
+          "wire_id": "ie387",
+          "sch_endpoint": [
+            740,
+            210
+          ],
+          "net": "CAM_RESET_N"
+        },
+        {
+          "pin": "P6",
+          "name": "SIGNAL_0.3A",
+          "pin_id": "ie21",
+          "wire_id": "ie389",
+          "sch_endpoint": [
+            740,
+            220
+          ],
+          "net": "CAM_PWDN"
+        },
+        {
+          "pin": "P7",
+          "name": "SIGNAL_0.3A",
+          "pin_id": "ie25",
+          "wire_id": "ie391",
+          "sch_endpoint": [
+            740,
+            230
+          ],
+          "net": "GND"
+        },
+        {
+          "pin": "P8",
+          "name": "SIGNAL_0.3A",
+          "pin_id": "ie29",
+          "wire_id": "ie393",
+          "sch_endpoint": [
+            740,
+            240
+          ],
+          "net": "CAM_XCLK_1V8"
+        },
+        {
+          "pin": "P9",
+          "name": "SIGNAL_0.3A",
+          "pin_id": "ie33",
+          "wire_id": "ie395",
+          "sch_endpoint": [
+            740,
+            250
+          ],
+          "net": "GND"
+        },
+        {
+          "pin": "P10",
+          "name": "SIGNAL_0.3A",
+          "pin_id": "ie37",
+          "wire_id": "ie397",
+          "sch_endpoint": [
+            740,
+            260
+          ],
+          "net": "CAM_PCLK_1V8"
+        },
+        {
+          "pin": "P11",
+          "name": "SIGNAL_0.3A",
+          "pin_id": "ie41",
+          "wire_id": "ie399",
+          "sch_endpoint": [
+            740,
+            270
+          ],
+          "net": "GND"
+        },
+        {
+          "pin": "P12",
+          "name": "SIGNAL_0.3A",
+          "pin_id": "ie45",
+          "wire_id": "ie401",
+          "sch_endpoint": [
+            740,
+            280.0
+          ],
+          "net": "CAM_VSYNC_1V8"
+        },
+        {
+          "pin": "P13",
+          "name": "SIGNAL_0.3A",
+          "pin_id": "ie49",
+          "wire_id": "ie403",
+          "sch_endpoint": [
+            740,
+            290
+          ],
+          "net": "CAM_HREF_1V8"
+        },
+        {
+          "pin": "P14",
+          "name": "SIGNAL_0.3A",
+          "pin_id": "ie53",
+          "wire_id": "ie405",
+          "sch_endpoint": [
+            900,
+            170
+          ],
+          "net": "CAM_DVDD_1V2"
+        },
+        {
+          "pin": "P15",
+          "name": "SIGNAL_0.3A",
+          "pin_id": "ie57",
+          "wire_id": "ie407",
+          "sch_endpoint": [
+            900,
+            180
+          ],
+          "net": "CAM_DOVDD_1V8"
+        },
+        {
+          "pin": "P16",
+          "name": "SIGNAL_0.3A",
+          "pin_id": "ie61",
+          "wire_id": "ie409",
+          "sch_endpoint": [
+            900,
+            190
+          ],
+          "net": "CAM_D0_1V8"
+        },
+        {
+          "pin": "P17",
+          "name": "SIGNAL_0.3A",
+          "pin_id": "ie65",
+          "wire_id": "ie411",
+          "sch_endpoint": [
+            900,
+            200
+          ],
+          "net": "CAM_D1_1V8"
+        },
+        {
+          "pin": "P18",
+          "name": "SIGNAL_0.3A",
+          "pin_id": "ie69",
+          "wire_id": "ie413",
+          "sch_endpoint": [
+            900,
+            210
+          ],
+          "net": "CAM_D2_1V8"
+        },
+        {
+          "pin": "P19",
+          "name": "SIGNAL_0.3A",
+          "pin_id": "ie73",
+          "wire_id": "ie415",
+          "sch_endpoint": [
+            900,
+            220
+          ],
+          "net": "CAM_D3_1V8"
+        },
+        {
+          "pin": "P20",
+          "name": "SIGNAL_0.3A",
+          "pin_id": "ie77",
+          "wire_id": "ie417",
+          "sch_endpoint": [
+            900,
+            230
+          ],
+          "net": "CAM_D4_1V8"
+        },
+        {
+          "pin": "P21",
+          "name": "SIGNAL_0.3A",
+          "pin_id": "ie81",
+          "wire_id": "ie419",
+          "sch_endpoint": [
+            900,
+            240
+          ],
+          "net": "CAM_D5_1V8"
+        },
+        {
+          "pin": "P22",
+          "name": "SIGNAL_0.3A",
+          "pin_id": "ie85",
+          "wire_id": "ie421",
+          "sch_endpoint": [
+            900,
+            250
+          ],
+          "net": "CAM_D6_1V8"
+        },
+        {
+          "pin": "P23",
+          "name": "SIGNAL_0.3A",
+          "pin_id": "ie89",
+          "wire_id": "ie423",
+          "sch_endpoint": [
+            900,
+            260
+          ],
+          "net": "CAM_D7_1V8"
+        },
+        {
+          "pin": "P24",
+          "name": "SIGNAL_0.3A",
+          "pin_id": "ie93",
+          "wire_id": "ie425",
+          "sch_endpoint": [
+            900,
+            270
+          ],
+          "net": "GND"
+        },
+        {
+          "pin": "PWR1",
+          "name": "POWER_5A",
+          "pin_id": "ie97",
+          "wire_id": "ie427",
+          "sch_endpoint": [
+            900,
+            280.0
+          ],
+          "net": "CAM_AVDD_2V8"
+        },
+        {
+          "pin": "PWR2",
+          "name": "POWER_5A",
+          "pin_id": "ie101",
+          "wire_id": "ie429",
+          "sch_endpoint": [
+            900,
+            290
+          ],
+          "net": "GND"
+        }
+      ],
+      "inherited_export_convert_to_pcb": true
+    },
+    {
+      "ref": "J3",
+      "logical_ref": "J_CHG",
+      "sch_instance": "ie284",
+      "unique_id": "bd3ee0abdb58119f",
+      "device": "afa98f6c724bc576",
+      "symbol": "026a69649d7c782b",
+      "mpn": "MPN_TBD (4-pos magnetic pogo: VBUS, D-, D+, GND)",
+      "instance_convert_to_pcb": null,
+      "instance_footprint": null,
+      "device_footprint": "",
+      "instance_origin_footprint": "",
+      "instance_source": "",
+      "device_source": null,
+      "needs_exact_source": false,
+      "pcb_component_ids": [],
+      "contacts": [
+        {
+          "pin": "1",
+          "name": "VBUS",
+          "pin_id": "ie1",
+          "wire_id": "ie431",
+          "sch_endpoint": [
+            1275.0,
+            170
+          ],
+          "net": "VBUS_5V_USB"
+        },
+        {
+          "pin": "2",
+          "name": "D-",
+          "pin_id": "ie5",
+          "wire_id": "ie433",
+          "sch_endpoint": [
+            1275.0,
+            180
+          ],
+          "net": "USB_DM"
+        },
+        {
+          "pin": "3",
+          "name": "D+",
+          "pin_id": "ie9",
+          "wire_id": "ie435",
+          "sch_endpoint": [
+            1405.0,
+            170
+          ],
+          "net": "USB_DP"
+        },
+        {
+          "pin": "4",
+          "name": "GND",
+          "pin_id": "ie13",
+          "wire_id": "ie437",
+          "sch_endpoint": [
+            1405.0,
+            180
+          ],
+          "net": "GND"
+        }
+      ],
+      "inherited_export_convert_to_pcb": true
+    }
+  ],
+  "camera_anchor_screen": {
+    "capture_sha256": "63d813a62a827cbf97888e8ad8f8985a5342325820ed09ed168996745959a480",
+    "capture_semantic_sha256": "9eb9656081f507b55e6c41a6784762f1ab5451dc7659acaa55a244d3f9c81ce5",
+    "top_layer": 1,
+    "anchor_xy_mm": [
+      2.9,
+      19.0
+    ],
+    "body_projection_xyxy_mm": [
+      2.05,
+      15.6,
+      3.75,
+      22.4
+    ],
+    "overlaps": [
+      {
+        "ref": "U15",
+        "component_id": "45a75ba74b6e57dc",
+        "bbox_overlap_mm": [
+          1.7,
+          0.425
+        ],
+        "pad_centers_inside_body_projection": []
+      },
+      {
+        "ref": "U16",
+        "component_id": "85b8a96060e76675",
+        "bbox_overlap_mm": [
+          1.7,
+          3.235
+        ],
+        "pad_centers_inside_body_projection": [
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "15",
+          "16",
+          "17",
+          "18",
+          "19"
+        ]
+      },
+      {
+        "ref": "U21",
+        "component_id": "e5a402ba1da2afdf",
+        "bbox_overlap_mm": [
+          1.7,
+          3.21
+        ],
+        "pad_centers_inside_body_projection": [
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "15",
+          "16",
+          "17",
+          "18",
+          "19"
+        ]
+      },
+      {
+        "ref": "U22",
+        "component_id": "ecd118b6f3381a97",
+        "bbox_overlap_mm": [
+          0.915,
+          0.16
+        ],
+        "pad_centers_inside_body_projection": []
+      }
+    ]
+  }
+}

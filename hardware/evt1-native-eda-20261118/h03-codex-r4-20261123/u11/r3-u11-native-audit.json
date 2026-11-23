@@ -1,0 +1,118 @@
+{
+  "scope": "Offline read of original R3 native archive. Contact means shared same-net copper geometry for listed primitives, with no claim of whole-net connectivity.",
+  "r2_to_r3_pcb3_changed_records_by_type": {},
+  "r2_to_r3_u11_footprint_changed_records_by_type": {},
+  "r2_to_r3_u11_schematic_page_changed_records_by_type": {},
+  "pcb_uuid": "1db01a36f669a47a",
+  "footprint_uuid": "ddd711692e399705",
+  "schematic_page_uuid": "07dc7dde94c1bf76",
+  "u11_primitive_id": "fb9a90e154948529",
+  "u11_pose": {
+    "x": 102.3622,
+    "y": 362.2047,
+    "angle": 90,
+    "layerId": 1
+  },
+  "all_balls_match_inherited_nordic_config3_mapping": 95,
+  "balls_with_pcb_nets": 52,
+  "schematic_nc_balls_match_pcb_unassigned": 43,
+  "u11_role_counts": {
+    "ANALOG_GROUND": 3,
+    "DCDC_FILTER": 1,
+    "DCDC_FILTER_RF": 2,
+    "DCDC_SWITCH": 2,
+    "DEBUG_FIXED": 2,
+    "GPIO": 1,
+    "GROUND": 16,
+    "HFXO_FIXED": 2,
+    "I2S_PSEL": 4,
+    "LFXO_FIXED_WHEN_USED": 2,
+    "NORMAL_SUPPLY": 10,
+    "REG_DECAP": 2,
+    "RESET_FIXED": 1,
+    "RF_FIXED": 1,
+    "UARTE_PSEL": 2,
+    "UNUSED_GPIO": 39,
+    "USB_DISABLED_NC": 3,
+    "USB_DISABLED_TIE": 1,
+    "VREGH_DISABLED_NC": 1
+  },
+  "inner_balls_with_nets": 36,
+  "inner_balls_failing_locked_6mil_clearance_with_0p2274mm_centered_via": [
+    "B2",
+    "B4",
+    "B5",
+    "B6",
+    "B7",
+    "B8",
+    "B9",
+    "B10",
+    "B11",
+    "C2",
+    "D2",
+    "E5",
+    "E11",
+    "F2",
+    "F11",
+    "G2",
+    "H11",
+    "J4",
+    "J5",
+    "K2",
+    "K3",
+    "K4",
+    "K5",
+    "K6",
+    "K11"
+  ],
+  "existing_pads_with_centered_vias": {},
+  "active_balls_with_direct_track_or_via_contact": 22,
+  "top_track_width_histogram_mil": {
+    "3": 110,
+    "3.5": 74
+  },
+  "pcb3_copper_layers": {
+    "1": "TOP",
+    "2": "BOTTOM",
+    "15": "PLANE",
+    "16": "SIGNAL",
+    "17": "SIGNAL",
+    "18": "PLANE"
+  },
+  "pcb3_blind_via_rules": [
+    {
+      "name": "BV_L1_L2",
+      "staLayerId": 1,
+      "endLayerId": 15,
+      "viaSizeRule": ""
+    },
+    {
+      "name": "BV_L5_L6",
+      "staLayerId": 18,
+      "endLayerId": 2,
+      "viaSizeRule": ""
+    }
+  ],
+  "pcb3_physical_layer_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    361
+  ],
+  "pcb3_blind_via_aperture_and_pad_counts": {
+    "BV_L1_L2 4.0 / 10.0 mil": 21,
+    "BV_L5_L6 4.0 / 10.0 mil": 19
+  },
+  "pcb3_existing_centered_via_geometry": {},
+  "manufacturing": "BLOCKED",
+  "pr47_reference_to_r3_pcb3_selected_changed_records": {
+    "LINE": 6
+  },
+  "pr47_reference_to_r3_u11_footprint_changed_records": {},
+  "r3_epro2_sha256": "223584c23bff4cd9fa65d99e6689b8a4feccba3cdbd4e5467c6f61957beec918"
+}

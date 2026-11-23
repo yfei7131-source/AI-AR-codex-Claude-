@@ -1,0 +1,17 @@
+BASELINE_WITNESS clock_stopped_high: OFF decoded but D3 remained HIGH
+BASELINE_D1_FAILURE_WITNESS: PASS (known unsafe D3-high state reproduced; baseline is not safety-approved)
+C:\codex-tools\evt1-r4-iverilog\regression\hardware\evt1-rev-d1-1-20261117\03_FPGA_RTL\tb_evt1_rev_d1_1_safety.v:103: $finish called at 2121793 (1ps)
+SAFETY_CASE scan_off_heartbeat: PASS (48 clocks LOW / 800000 clocks period)
+SAFETY_CASE frozen_clk_0_D3_1_OFF_ON: PASS
+SAFETY_CASE frozen_clk_1_D3_1_OFF_ON: PASS
+SAFETY_CASE frozen_clk_0_D3_0_OFF_ON: PASS
+SAFETY_CASE frozen_clk_1_D3_0_OFF_ON: PASS
+SAFETY_CASE heartbeat_stuck_0_blocks_command_edges_until_real_pulse: PASS
+SAFETY_CASE heartbeat_stuck_1_blocks_command_edges_until_real_pulse: PASS
+SAFETY_CASE OFF_rejects_scan_and_RAW: PASS
+SAFETY_CASE active_scan_abort_and_no_phantom_resume: PASS
+SAFETY_CASE RAW_payload_is_not_control: PASS
+SAFETY_CASE RAW_internal_OFF_fault_abort: PASS
+REV_D1_1_SAFETY_TB_RESULT: PASS (11 user-mode RTL cases; hard CDONE/reset/power states are outside this model)
+C:\codex-tools\evt1-r4-iverilog\regression\hardware\evt1-rev-d1-1-20261117\03_FPGA_RTL\tb_evt1_rev_d1_1_safety.v:264: $finish called at 140013272948 (1ps)
+REV_D1_1_NATIVE_SAFETY_SUITE: PASS (baseline fault reproduced; repaired user-mode RTL assertions passed)

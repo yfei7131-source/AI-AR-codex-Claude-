@@ -1,0 +1,81 @@
+{
+  "source": "EasyEDA Pro PCB1 native copper capture",
+  "document_uuid": "8fbc3cae65886fe5",
+  "spur": {
+    "endX": 45.0501,
+    "endY": 1391.7324000000003,
+    "layer": 2,
+    "lineWidth": 2,
+    "locked": false,
+    "net": "GND",
+    "primitiveId": "3ca748787f4325f4",
+    "startX": 53.5025,
+    "startY": 1383.28
+  },
+  "retained_ground_track": {
+    "endX": 53.5025,
+    "endY": 1383.28,
+    "layer": 2,
+    "lineWidth": 4,
+    "locked": false,
+    "net": "GND",
+    "primitiveId": "cc601d47aeaf5f49",
+    "startX": 56.33,
+    "startY": 1383.28
+  },
+  "retained_ground_feed": {
+    "endX": 56.33,
+    "endY": 1383.28,
+    "layer": 2,
+    "lineWidth": 3.5,
+    "locked": false,
+    "net": "GND",
+    "primitiveId": "5d8242ec900c779f",
+    "startX": 48.6,
+    "startY": 1369.9
+  },
+  "retained_ground_via": {
+    "diameter": 10,
+    "holeDiameter": 4,
+    "locked": false,
+    "net": "GND",
+    "primitiveId": "d9ecb5c3d6115fd5",
+    "x": 56.33,
+    "y": 1383.28
+  },
+  "retained_feedback_via": {
+    "diameter": 12,
+    "holeDiameter": 6,
+    "locked": false,
+    "net": "BB_FB",
+    "primitiveId": "cfecd61eed9d9491",
+    "x": 32.5,
+    "y": 1395
+  },
+  "touching_copper": [
+    [
+      "track",
+      "5d8242ec900c779f",
+      "GND"
+    ],
+    [
+      "track",
+      "cc601d47aeaf5f49",
+      "GND"
+    ],
+    [
+      "via",
+      "d9ecb5c3d6115fd5",
+      "GND"
+    ]
+  ],
+  "nearest_pad_lower_bound_gap_mil": 3.008958,
+  "e85_board_rule_mil_rounded": 5.98,
+  "e85_copper_edge_gap_mil": {
+    "2": 5.968509,
+    "3.5": 5.218509,
+    "4": 4.968509
+  },
+  "e85_to_retained_ground_via_copper_edge_gap_mil": 15.556116,
+  "planned_change": "Delete only the dangling PCB1 bottom-layer GND spur; retain the parent and both vias."
+}
