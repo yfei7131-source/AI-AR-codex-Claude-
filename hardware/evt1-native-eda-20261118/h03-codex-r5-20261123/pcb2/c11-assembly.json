@@ -1,0 +1,65 @@
+{
+  "proposed_anchor_mil": [
+    93,
+    364
+  ],
+  "cap_package": "EIA 0201",
+  "scope": "Nominal body in placement coordinates. Verify selected MLCC dimensions and SMT class with manufacturer.",
+  "distance_method": "Minimum axis-aligned body-to-body edge distance, physical package bounds distinct from native footprint envelope.",
+  "scoped_neighbors": [
+    {
+      "reference": "U3",
+      "package": "XSON6",
+      "nominal_body_to_body_mil": 20.1023,
+      "native_envelope_gap_mil": 4.9276,
+      "recommended_spacing_mil": null,
+      "leadless_screen_at_qfn_proxy_40mil": false
+    },
+    {
+      "reference": "C22",
+      "package": "EIA 0402",
+      "nominal_body_to_body_mil": 24.126,
+      "native_envelope_gap_mil": 4.4409,
+      "recommended_spacing_mil": 6,
+      "leadless_screen_at_qfn_proxy_40mil": null
+    },
+    {
+      "reference": "U5",
+      "package": "XSON6",
+      "nominal_body_to_body_mil": 27.856,
+      "native_envelope_gap_mil": 4.9276,
+      "recommended_spacing_mil": null,
+      "leadless_screen_at_qfn_proxy_40mil": false
+    },
+    {
+      "reference": "U6",
+      "package": "X2SON4",
+      "nominal_body_to_body_mil": 40.2843,
+      "native_envelope_gap_mil": 22.9237,
+      "recommended_spacing_mil": null,
+      "leadless_screen_at_qfn_proxy_40mil": true
+    },
+    {
+      "reference": "C20",
+      "package": "EIA 0402",
+      "nominal_body_to_body_mil": 46.7402,
+      "native_envelope_gap_mil": 27.0551,
+      "recommended_spacing_mil": 6,
+      "leadless_screen_at_qfn_proxy_40mil": null
+    },
+    {
+      "reference": "U14",
+      "package": "TSOT-23-6",
+      "nominal_body_to_body_mil": 61.9842,
+      "native_envelope_gap_mil": 14.7401,
+      "recommended_spacing_mil": 8,
+      "leadless_screen_at_qfn_proxy_40mil": null
+    }
+  ],
+  "sources": [
+    "https://jlcpcb.com/help/article/minimum-spacing-for-smd-components",
+    "https://www.nexperia.com/packages/SOT1202.html",
+    "https://www.analog.com/media/en/technical-documentation/data-sheets/LTC6993-6993-1-6993-2-6993-3-6993-4.pdf"
+  ],
+  "release_state": "BLOCKED. Leadless package class, part tolerances, connector assembly and complete VSYS routing need validation."
+}
