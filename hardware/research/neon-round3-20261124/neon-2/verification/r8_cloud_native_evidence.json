@@ -1,0 +1,118 @@
+{
+  "verification_type": "LIVE_CLOUD_EASYEDA_PRO_NATIVE_TRIAL",
+  "recorded_at_utc": "2026-11-24T00:15:00Z",
+  "cloud_project": {
+    "name": "EVT1-H03-GEMINI-R8-NOT-FOR-FAB-20261123",
+    "id": "13bb509742f243a2852a46125154eb8a",
+    "url": "https://pro.lceda.cn/editor#id=13bb509742f243a2852a46125154eb8a",
+    "editor_version": "EasyEDA Pro V4.1.105",
+    "target_board": "PCB3"
+  },
+  "baseline": {
+    "board_outline": {
+      "primitive_id": "e0",
+      "layer": "11 板框层",
+      "perimeter_mil": 3086.6,
+      "x_min_mil": 915.0,
+      "x_max_mil": 1115.0,
+      "y_min_mil": -910.0,
+      "y_max_mil": 435.0
+    },
+    "layer_stack": [
+      { "index": 1, "name": "顶层", "layer_id": 1, "type": "信号层" },
+      { "index": 2, "name": "内层1", "layer_id": 15, "type": "内电层 (GND)" },
+      { "index": 3, "name": "内层2", "layer_id": 16, "type": "信号层" },
+      { "index": 4, "name": "内层3", "layer_id": 17, "type": "信号层" },
+      { "index": 5, "name": "内层4", "layer_id": 18, "type": "内电层" },
+      { "index": 6, "name": "底层", "layer_id": 2, "type": "信号层" }
+    ],
+    "rule_configuration": "自定义配置2",
+    "existing_blind_via_rules": [
+      { "name": "BV_L1_L2", "start_layer": "1.顶层", "end_layer": "2.内层1" },
+      { "name": "BV_L5_L6", "start_layer": "5.内层4", "end_layer": "6.底层" }
+    ],
+    "strict_native_drc": {
+      "total_errors": 135,
+      "connectivity_errors": 135,
+      "clearance_errors": 0
+    }
+  },
+  "minimal_l2_l3_trial": {
+    "added_rule": {
+      "name": "2-3",
+      "note": "Web UI defaulted name to '2-3'; inline rename to 'BV_L2_L3' did not trigger on click/F2/Enter",
+      "start_layer": "2.内层1 (ID 15)",
+      "end_layer": "3.内层2 (ID 16)",
+      "apply_status": "更新成功!"
+    },
+    "placed_via": {
+      "primitive_id": "e52",
+      "x_mil": 985.0,
+      "y_mil": 155.0,
+      "min_board_edge_clearance_mil": 70.0,
+      "via_type": "盲埋孔",
+      "rule_name": "2-3",
+      "start_layer": "内层1",
+      "end_layer": "内层2",
+      "outer_diameter_mil_input": 9.94,
+      "outer_diameter_mil_displayed": 9.9,
+      "inner_diameter_mil_input": 3.94,
+      "inner_diameter_mil_displayed": 3.9,
+      "net": ""
+    },
+    "save_close_reopen_persistence": {
+      "rule_persisted": true,
+      "via_persisted_as_blind_buried": true,
+      "degraded_to_normal_through_hole": false,
+      "reopened_via_properties": {
+        "via_type": "盲埋孔",
+        "rule_name": "2-3",
+        "start_layer": "内层1",
+        "end_layer": "内层2",
+        "x_mil": 985.0,
+        "y_mil": 155.0
+      }
+    },
+    "post_trial_strict_native_drc": {
+      "total_errors": 137,
+      "connectivity_errors": 135,
+      "clearance_errors": 2,
+      "new_errors": [
+        {
+          "category": "间距错误",
+          "subtype": "内电层 到 过孔",
+          "rule": "copperThickne...",
+          "object_1": "内电层 (GND)",
+          "object_2": "过孔 : e52",
+          "layer": "内层1",
+          "message": "对象 1到对象 2距离为0mil，应该>= 10mil"
+        },
+        {
+          "category": "间距错误",
+          "subtype": "钻孔 到 内电层",
+          "rule": "copperThickne...",
+          "object_1": "内电层 (GND)",
+          "object_2": "钻孔 : e52",
+          "layer": "内层1",
+          "message": "对象 1到对象 2距离为0mil，应该>= 10mil"
+        }
+      ]
+    }
+  },
+  "rollback": {
+    "reason": "New DRC clearance regression (+2 errors on Inner1 GND plane, 0 mil < 10 mil)",
+    "actions": [
+      "Deleted test via e52",
+      "Deleted blind/buried rule 2-3 from blindVia [默认]",
+      "Saved cloud project (保存成功!)",
+      "Re-ran strict native DRC"
+    ],
+    "post_rollback_strict_native_drc": {
+      "total_errors": 135,
+      "connectivity_errors": 135,
+      "clearance_errors": 0,
+      "restored_to_baseline": true
+    }
+  },
+  "fab_eq_status": "BLOCKED (NOT FOR FAB - no written JLCPCB / GS Swiss confirmation)"
+}

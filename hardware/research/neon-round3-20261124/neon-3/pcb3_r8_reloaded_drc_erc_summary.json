@@ -1,0 +1,50 @@
+{
+  "project_name": "EVT1-H03-GEMINI-R8-NOT-FOR-FAB-20261123",
+  "project_id": "13bb509742f243a2852a46125154eb8a",
+  "editor_url": "https://pro.lceda.cn/editor#id=13bb509742f243a2852a46125154eb8a",
+  "eda_version": "EasyEDA Pro V4.1.105",
+  "account": "eda_luhqetwc",
+  "status": "NOT_FOR_FAB",
+  "inherited_references": {
+    "pr55_r7": "https://github.com/yfei7131-source/AI-AR-codex-Claude-/pull/55",
+    "pr57_neon3": "https://github.com/yfei7131-source/AI-AR-codex-Claude-/pull/57"
+  },
+  "board": "PCB3 (evt1-audio-right)",
+  "board_width_mm": 5.20,
+  "stackup": "JLC06161H-3313 (6-layer, 1.7873 mm, BV_L1_L2 & BV_L5_L6 only)",
+  "eco_1_verified": {
+    "schematic_sheet": "05-nrf5340-reference-clock-rf-and-swd-1",
+    "net": "I2S_BCLK_1V8",
+    "from_pin": "U11.K5 (P0.20, ID e49e83) -> NC",
+    "to_pin": "U11.L9 (P0.15, ID e49e94) -> I2S_BCLK_1V8",
+    "inner_blocked_balls_before": 25,
+    "inner_blocked_balls_after": 24,
+    "firmware_overlay": "nrf5340_pcb3_r8_i2s_eco.overlay"
+  },
+  "delta_audit": {
+    "pr55_r7_pcb3_connection_errors": 132,
+    "r8_clone_baseline_connection_errors": 134,
+    "r8_post_eco1_before_cleanup_connection_errors": 135,
+    "r8_final_reloaded_connection_errors": 134,
+    "net_increment_vs_135": -1,
+    "removed_orphan_objects": [
+      {"id": "e415", "net": "I2S_BCLK_1V8", "layer": "L1", "width_mil": 4.0, "length_mil": 10.8},
+      {"id": "e414", "net": "I2S_BCLK_1V8", "layer": "L1", "width_mil": 4.0, "length_mil": 27.8},
+      {"id": "e416", "net": "BLE_SWDIO", "layer": "L1", "note": "reverted trial stub"},
+      {"id": "e417", "net": "BLE_SWDIO", "layer": "L1", "note": "reverted trial stub"}
+    ]
+  },
+  "reloaded_verification": {
+    "save_close_reopen_verified": true,
+    "schematic_erc": {"fatal": 2, "fatal_items": ["SPK1 missing footprint", "BAT1 missing footprint"], "error": 0, "warning": 0},
+    "pcb3_strict_drc": {
+      "total": 134,
+      "connection_errors": 134,
+      "clearance_errors": 0,
+      "short_errors": 0,
+      "hole_to_hole_errors": 0,
+      "board_edge_errors": 0
+    },
+    "persisted_ratlines_sample": ["U11:L9 - U10:C1", "R3:1 - U11:L9"]
+  }
+}

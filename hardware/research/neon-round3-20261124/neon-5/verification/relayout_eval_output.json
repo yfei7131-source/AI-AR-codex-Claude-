@@ -1,0 +1,2848 @@
+{
+  "verification_scope": "OFFLINE_GEOMETRY_SCREEN_NOT_FULL_BOARD_DRC",
+  "full_board_native_drc_completed": false,
+  "warning": "Offline Shapely 2 geometry screen only; MUST NOT be used as a substitute for native EasyEDA Pro full-board ERC/DRC.",
+  "source_copper_json": "fixtures/pcb2_verified_extract_pr55.json",
+  "board_bounds_mil": [
+    0.0,
+    0.0,
+    181.1024,
+    984.252
+  ],
+  "locked_rules_mil": {
+    "edge_clearance": 12.0,
+    "copper_clearance": 6.2,
+    "sensitive_3w_clearance": 11.8,
+    "hole_wall_clearance": 11.811,
+    "smd_chip_spacing": 6.0,
+    "smd_sot_spacing": 8.0,
+    "smd_qfn_bga_spacing": 40.0,
+    "min_plane_edge_margin": 5.0
+  },
+  "mk2_interference_audit": {
+    "mk2_layer": 2,
+    "mk2_bbox_mil": [
+      1.0977,
+      819.0128,
+      155.1172,
+      986.4918
+    ],
+    "mk2_polygon_pad_count": 4,
+    "mk2_polygon_total_area_sqmil": 1656.0,
+    "mk2_polygon_hole_diams_mil": [
+      1.42332,
+      1.42338
+    ],
+    "native_c11_vs_mk2_bbox_overlap_sqmil": 906.73,
+    "native_c11_vs_mk2_polygon_pads_dist_mil": 27.69
+  },
+  "l2_l5_return_and_decaps": {
+    "l2_gnd_plane_area_sqmil": 150857.89,
+    "l5_gnd_plane_area_sqmil": 150857.89,
+    "existing_bv_l1_l2_count": 27,
+    "existing_bv_l5_l6_count": 13,
+    "existing_gnd_through_via_count": 0,
+    "bv_l1_l2_outside_l2_plane": [],
+    "bv_l5_l6_outside_l5_plane": [],
+    "eight_decap_audit": {
+      "C5": {
+        "layer": "L1",
+        "center_mil": [
+          126.575,
+          838.189
+        ],
+        "pwr_net": "VSYS",
+        "gnd_pad_mil": [
+          139.2,
+          838.2
+        ],
+        "nearest_same_side_bv": "3ee8ab886f357cc2",
+        "gnd_pad_to_nearest_bv_mil": 77.94,
+        "nearest_bv_plane_edge_margin_mil": 75.13,
+        "intersects_mk2_projection": true,
+        "through_via_allowed_locally": false
+      },
+      "C8": {
+        "layer": "L1",
+        "center_mil": [
+          32.087,
+          859.842
+        ],
+        "pwr_net": "VSYS",
+        "gnd_pad_mil": [
+          44.7,
+          859.8
+        ],
+        "nearest_same_side_bv": "d66a84af7c151bc9",
+        "gnd_pad_to_nearest_bv_mil": 35.11,
+        "nearest_bv_plane_edge_margin_mil": 34.11,
+        "intersects_mk2_projection": true,
+        "through_via_allowed_locally": false
+      },
+      "C9": {
+        "layer": "L1",
+        "center_mil": [
+          79.331,
+          859.842
+        ],
+        "pwr_net": "VSYS",
+        "gnd_pad_mil": [
+          91.9,
+          859.8
+        ],
+        "nearest_same_side_bv": "3ee8ab886f357cc2",
+        "gnd_pad_to_nearest_bv_mil": 36.7,
+        "nearest_bv_plane_edge_margin_mil": 75.13,
+        "intersects_mk2_projection": true,
+        "through_via_allowed_locally": false
+      },
+      "C10": {
+        "layer": "L1",
+        "center_mil": [
+          126.575,
+          859.842
+        ],
+        "pwr_net": "VSYS",
+        "gnd_pad_mil": [
+          139.2,
+          859.8
+        ],
+        "nearest_same_side_bv": "3ee8ab886f357cc2",
+        "gnd_pad_to_nearest_bv_mil": 63.53,
+        "nearest_bv_plane_edge_margin_mil": 75.13,
+        "intersects_mk2_projection": true,
+        "through_via_allowed_locally": false
+      },
+      "C11": {
+        "layer": "L6",
+        "center_mil": [
+          142.323,
+          877.559
+        ],
+        "pwr_net": "VSYS",
+        "gnd_pad_mil": [
+          154.9,
+          877.6
+        ],
+        "nearest_same_side_bv": "b08842b31aa45cf3",
+        "gnd_pad_to_nearest_bv_mil": 78.29,
+        "nearest_bv_plane_edge_margin_mil": 12.792,
+        "intersects_mk2_projection": true,
+        "through_via_allowed_locally": false
+      },
+      "C12": {
+        "layer": "L1",
+        "center_mil": [
+          32.087,
+          881.496
+        ],
+        "pwr_net": "VSYS",
+        "gnd_pad_mil": [
+          44.7,
+          881.5
+        ],
+        "nearest_same_side_bv": "d66a84af7c151bc9",
+        "gnd_pad_to_nearest_bv_mil": 13.45,
+        "nearest_bv_plane_edge_margin_mil": 34.11,
+        "intersects_mk2_projection": true,
+        "through_via_allowed_locally": false
+      },
+      "C31": {
+        "layer": "L1",
+        "center_mil": [
+          42.913,
+          768.504
+        ],
+        "pwr_net": "VSYS",
+        "gnd_pad_mil": [
+          62.6,
+          768.5
+        ],
+        "nearest_same_side_bv": "b8de348a52ab310d",
+        "gnd_pad_to_nearest_bv_mil": 47.09,
+        "nearest_bv_plane_edge_margin_mil": 16.34,
+        "intersects_mk2_projection": false,
+        "through_via_allowed_locally": true
+      },
+      "C32": {
+        "layer": "L1",
+        "center_mil": [
+          111.811,
+          768.504
+        ],
+        "pwr_net": "AVDD_OPT_BIAS",
+        "gnd_pad_mil": [
+          131.5,
+          768.5
+        ],
+        "nearest_same_side_bv": "23501cb8ab96fae8",
+        "gnd_pad_to_nearest_bv_mil": 20.76,
+        "nearest_bv_plane_edge_margin_mil": 31.582,
+        "intersects_mk2_projection": false,
+        "through_via_allowed_locally": true
+      }
+    }
+  },
+  "baseline_zero_shift_repro": {
+    "scheme": "BASELINE_ZERO_SHIFT_L6_ONLY",
+    "joint_shifts_mil": {},
+    "joint_shift_neighbor_notes": [],
+    "passing_count": 20,
+    "passing_top5": [
+      {
+        "scheme": "BASELINE_ZERO_SHIFT_L6_ONLY",
+        "center_mil": [
+          88,
+          368
+        ],
+        "angle_deg": 180,
+        "pad1_vsys_mil": [
+          100.62,
+          368.0
+        ],
+        "pad2_gnd_mil": [
+          75.38,
+          368.0
+        ],
+        "gnd_bv_l5_l6_mil": [
+          61.38,
+          368.0
+        ],
+        "vsys_route_mode": "L6_DIRECT_ASTAR",
+        "vsys_route_len_mil": 135.01,
+        "vsys_waypoints_mil": [
+          [
+            100.62,
+            368.0
+          ],
+          [
+            100.0,
+            368.0
+          ],
+          [
+            100.0,
+            366.0
+          ],
+          [
+            100.0,
+            364.0
+          ],
+          [
+            100.0,
+            362.0
+          ],
+          [
+            100.0,
+            360.0
+          ],
+          [
+            100.0,
+            358.0
+          ],
+          [
+            100.0,
+            356.0
+          ],
+          [
+            100.0,
+            354.0
+          ],
+          [
+            100.0,
+            352.0
+          ],
+          [
+            100.0,
+            350.0
+          ],
+          [
+            100.0,
+            348.0
+          ],
+          [
+            100.0,
+            346.0
+          ],
+          [
+            102.0,
+            344.0
+          ],
+          [
+            104.0,
+            342.0
+          ],
+          [
+            106.0,
+            340.0
+          ],
+          [
+            106.0,
+            338.0
+          ],
+          [
+            106.0,
+            336.0
+          ],
+          [
+            106.0,
+            334.0
+          ],
+          [
+            106.0,
+            332.0
+          ],
+          [
+            106.0,
+            330.0
+          ],
+          [
+            106.0,
+            328.0
+          ],
+          [
+            106.0,
+            326.0
+          ],
+          [
+            106.0,
+            324.0
+          ],
+          [
+            106.0,
+            322.0
+          ],
+          [
+            106.0,
+            320.0
+          ],
+          [
+            106.0,
+            318.0
+          ],
+          [
+            106.0,
+            316.0
+          ],
+          [
+            106.0,
+            314.0
+          ],
+          [
+            106.0,
+            312.0
+          ],
+          [
+            106.0,
+            310.0
+          ],
+          [
+            106.0,
+            308.0
+          ],
+          [
+            106.0,
+            306.0
+          ],
+          [
+            106.0,
+            304.0
+          ],
+          [
+            106.0,
+            302.0
+          ],
+          [
+            106.0,
+            300.0
+          ],
+          [
+            106.0,
+            298.0
+          ],
+          [
+            106.0,
+            296.0
+          ],
+          [
+            106.0,
+            294.0
+          ],
+          [
+            106.0,
+            292.0
+          ],
+          [
+            106.0,
+            290.0
+          ],
+          [
+            106.0,
+            288.0
+          ],
+          [
+            106.0,
+            286.0
+          ],
+          [
+            106.0,
+            284.0
+          ],
+          [
+            106.0,
+            282.0
+          ],
+          [
+            106.0,
+            280.0
+          ],
+          [
+            108.0,
+            278.0
+          ],
+          [
+            108.0,
+            276.0
+          ],
+          [
+            108.0,
+            274.0
+          ],
+          [
+            108.0,
+            272.0
+          ],
+          [
+            108.0,
+            270.0
+          ],
+          [
+            108.0,
+            268.0
+          ],
+          [
+            108.0,
+            266.0
+          ],
+          [
+            108.0,
+            264.0
+          ],
+          [
+            108.0,
+            262.0
+          ],
+          [
+            108.0,
+            260.0
+          ],
+          [
+            108.0,
+            258.0
+          ],
+          [
+            108.0,
+            256.0
+          ],
+          [
+            108.0,
+            254.0
+          ],
+          [
+            108.0,
+            252.0
+          ],
+          [
+            108.0,
+            250.0
+          ],
+          [
+            108.0,
+            248.0
+          ],
+          [
+            108.0,
+            246.0
+          ],
+          [
+            110.0,
+            244.0
+          ],
+          [
+            110.0,
+            242.0
+          ],
+          [
+            112.0,
+            240.0
+          ],
+          [
+            111.8,
+            238.6
+          ]
+        ],
+        "avdd_req_filter_gap_mil": 31.5,
+        "min_l6_comp_gap_mil": 8.96,
+        "gnd_via_hole_wall_gap_mil": 15.68,
+        "l5_plane_edge_margin_mil": 49.38,
+        "in_u2_bga_shadow": true,
+        "mk2_overlap_sqmil": 0.0
+      },
+      {
+        "scheme": "BASELINE_ZERO_SHIFT_L6_ONLY",
+        "center_mil": [
+          84,
+          368
+        ],
+        "angle_deg": 180,
+        "pad1_vsys_mil": [
+          96.62,
+          368.0
+        ],
+        "pad2_gnd_mil": [
+          71.38,
+          368.0
+        ],
+        "gnd_bv_l5_l6_mil": [
+          57.38,
+          368.0
+        ],
+        "vsys_route_mode": "L6_DIRECT_ASTAR",
+        "vsys_route_len_mil": 136.66,
+        "vsys_waypoints_mil": [
+          [
+            96.62,
+            368.0
+          ],
+          [
+            96.0,
+            368.0
+          ],
+          [
+            96.0,
+            366.0
+          ],
+          [
+            96.0,
+            364.0
+          ],
+          [
+            96.0,
+            362.0
+          ],
+          [
+            96.0,
+            360.0
+          ],
+          [
+            96.0,
+            358.0
+          ],
+          [
+            96.0,
+            356.0
+          ],
+          [
+            96.0,
+            354.0
+          ],
+          [
+            96.0,
+            352.0
+          ],
+          [
+            98.0,
+            350.0
+          ],
+          [
+            100.0,
+            348.0
+          ],
+          [
+            102.0,
+            346.0
+          ],
+          [
+            104.0,
+            344.0
+          ],
+          [
+            106.0,
+            342.0
+          ],
+          [
+            108.0,
+            340.0
+          ],
+          [
+            108.0,
+            338.0
+          ],
+          [
+            108.0,
+            336.0
+          ],
+          [
+            108.0,
+            334.0
+          ],
+          [
+            108.0,
+            332.0
+          ],
+          [
+            108.0,
+            330.0
+          ],
+          [
+            108.0,
+            328.0
+          ],
+          [
+            108.0,
+            326.0
+          ],
+          [
+            108.0,
+            324.0
+          ],
+          [
+            108.0,
+            322.0
+          ],
+          [
+            108.0,
+            320.0
+          ],
+          [
+            108.0,
+            318.0
+          ],
+          [
+            108.0,
+            316.0
+          ],
+          [
+            108.0,
+            314.0
+          ],
+          [
+            108.0,
+            312.0
+          ],
+          [
+            108.0,
+            310.0
+          ],
+          [
+            108.0,
+            308.0
+          ],
+          [
+            108.0,
+            306.0
+          ],
+          [
+            108.0,
+            304.0
+          ],
+          [
+            108.0,
+            302.0
+          ],
+          [
+            108.0,
+            300.0
+          ],
+          [
+            108.0,
+            298.0
+          ],
+          [
+            108.0,
+            296.0
+          ],
+          [
+            108.0,
+            294.0
+          ],
+          [
+            108.0,
+            292.0
+          ],
+          [
+            108.0,
+            290.0
+          ],
+          [
+            108.0,
+            288.0
+          ],
+          [
+            108.0,
+            286.0
+          ],
+          [
+            108.0,
+            284.0
+          ],
+          [
+            108.0,
+            282.0
+          ],
+          [
+            108.0,
+            280.0
+          ],
+          [
+            108.0,
+            278.0
+          ],
+          [
+            108.0,
+            276.0
+          ],
+          [
+            108.0,
+            274.0
+          ],
+          [
+            108.0,
+            272.0
+          ],
+          [
+            108.0,
+            270.0
+          ],
+          [
+            108.0,
+            268.0
+          ],
+          [
+            108.0,
+            266.0
+          ],
+          [
+            108.0,
+            264.0
+          ],
+          [
+            108.0,
+            262.0
+          ],
+          [
+            108.0,
+            260.0
+          ],
+          [
+            108.0,
+            258.0
+          ],
+          [
+            108.0,
+            256.0
+          ],
+          [
+            108.0,
+            254.0
+          ],
+          [
+            108.0,
+            252.0
+          ],
+          [
+            108.0,
+            250.0
+          ],
+          [
+            108.0,
+            248.0
+          ],
+          [
+            108.0,
+            246.0
+          ],
+          [
+            110.0,
+            244.0
+          ],
+          [
+            110.0,
+            242.0
+          ],
+          [
+            112.0,
+            240.0
+          ],
+          [
+            111.8,
+            238.6
+          ]
+        ],
+        "avdd_req_filter_gap_mil": 31.5,
+        "min_l6_comp_gap_mil": 8.96,
+        "gnd_via_hole_wall_gap_mil": 18.66,
+        "l5_plane_edge_margin_mil": 45.38,
+        "in_u2_bga_shadow": true,
+        "mk2_overlap_sqmil": 0.0
+      },
+      {
+        "scheme": "BASELINE_ZERO_SHIFT_L6_ONLY",
+        "center_mil": [
+          80,
+          368
+        ],
+        "angle_deg": 180,
+        "pad1_vsys_mil": [
+          92.62,
+          368.0
+        ],
+        "pad2_gnd_mil": [
+          67.38,
+          368.0
+        ],
+        "gnd_bv_l5_l6_mil": [
+          53.38,
+          368.0
+        ],
+        "vsys_route_mode": "L6_DIRECT_ASTAR",
+        "vsys_route_len_mil": 138.32,
+        "vsys_waypoints_mil": [
+          [
+            92.62,
+            368.0
+          ],
+          [
+            92.0,
+            368.0
+          ],
+          [
+            92.0,
+            366.0
+          ],
+          [
+            92.0,
+            364.0
+          ],
+          [
+            92.0,
+            362.0
+          ],
+          [
+            92.0,
+            360.0
+          ],
+          [
+            92.0,
+            358.0
+          ],
+          [
+            92.0,
+            356.0
+          ],
+          [
+            92.0,
+            354.0
+          ],
+          [
+            92.0,
+            352.0
+          ],
+          [
+            94.0,
+            350.0
+          ],
+          [
+            96.0,
+            348.0
+          ],
+          [
+            98.0,
+            346.0
+          ],
+          [
+            100.0,
+            344.0
+          ],
+          [
+            102.0,
+            342.0
+          ],
+          [
+            104.0,
+            340.0
+          ],
+          [
+            104.0,
+            338.0
+          ],
+          [
+            104.0,
+            336.0
+          ],
+          [
+            104.0,
+            334.0
+          ],
+          [
+            104.0,
+            332.0
+          ],
+          [
+            104.0,
+            330.0
+          ],
+          [
+            104.0,
+            328.0
+          ],
+          [
+            106.0,
+            326.0
+          ],
+          [
+            106.0,
+            324.0
+          ],
+          [
+            106.0,
+            322.0
+          ],
+          [
+            106.0,
+            320.0
+          ],
+          [
+            106.0,
+            318.0
+          ],
+          [
+            106.0,
+            316.0
+          ],
+          [
+            106.0,
+            314.0
+          ],
+          [
+            106.0,
+            312.0
+          ],
+          [
+            106.0,
+            310.0
+          ],
+          [
+            108.0,
+            308.0
+          ],
+          [
+            108.0,
+            306.0
+          ],
+          [
+            108.0,
+            304.0
+          ],
+          [
+            108.0,
+            302.0
+          ],
+          [
+            108.0,
+            300.0
+          ],
+          [
+            108.0,
+            298.0
+          ],
+          [
+            108.0,
+            296.0
+          ],
+          [
+            108.0,
+            294.0
+          ],
+          [
+            108.0,
+            292.0
+          ],
+          [
+            108.0,
+            290.0
+          ],
+          [
+            108.0,
+            288.0
+          ],
+          [
+            108.0,
+            286.0
+          ],
+          [
+            108.0,
+            284.0
+          ],
+          [
+            108.0,
+            282.0
+          ],
+          [
+            108.0,
+            280.0
+          ],
+          [
+            108.0,
+            278.0
+          ],
+          [
+            108.0,
+            276.0
+          ],
+          [
+            108.0,
+            274.0
+          ],
+          [
+            108.0,
+            272.0
+          ],
+          [
+            108.0,
+            270.0
+          ],
+          [
+            108.0,
+            268.0
+          ],
+          [
+            108.0,
+            266.0
+          ],
+          [
+            108.0,
+            264.0
+          ],
+          [
+            108.0,
+            262.0
+          ],
+          [
+            108.0,
+            260.0
+          ],
+          [
+            108.0,
+            258.0
+          ],
+          [
+            108.0,
+            256.0
+          ],
+          [
+            108.0,
+            254.0
+          ],
+          [
+            108.0,
+            252.0
+          ],
+          [
+            108.0,
+            250.0
+          ],
+          [
+            108.0,
+            248.0
+          ],
+          [
+            108.0,
+            246.0
+          ],
+          [
+            110.0,
+            244.0
+          ],
+          [
+            110.0,
+            242.0
+          ],
+          [
+            112.0,
+            240.0
+          ],
+          [
+            111.8,
+            238.6
+          ]
+        ],
+        "avdd_req_filter_gap_mil": 31.5,
+        "min_l6_comp_gap_mil": 8.96,
+        "gnd_via_hole_wall_gap_mil": 21.93,
+        "l5_plane_edge_margin_mil": 41.38,
+        "in_u2_bga_shadow": true,
+        "mk2_overlap_sqmil": 0.0
+      },
+      {
+        "scheme": "BASELINE_ZERO_SHIFT_L6_ONLY",
+        "center_mil": [
+          88,
+          372
+        ],
+        "angle_deg": 180,
+        "pad1_vsys_mil": [
+          100.62,
+          372.0
+        ],
+        "pad2_gnd_mil": [
+          75.38,
+          372.0
+        ],
+        "gnd_bv_l5_l6_mil": [
+          61.38,
+          372.0
+        ],
+        "vsys_route_mode": "L6_DIRECT_ASTAR",
+        "vsys_route_len_mil": 139.01,
+        "vsys_waypoints_mil": [
+          [
+            100.62,
+            372.0
+          ],
+          [
+            100.0,
+            372.0
+          ],
+          [
+            100.0,
+            370.0
+          ],
+          [
+            100.0,
+            368.0
+          ],
+          [
+            100.0,
+            366.0
+          ],
+          [
+            100.0,
+            364.0
+          ],
+          [
+            100.0,
+            362.0
+          ],
+          [
+            100.0,
+            360.0
+          ],
+          [
+            100.0,
+            358.0
+          ],
+          [
+            100.0,
+            356.0
+          ],
+          [
+            100.0,
+            354.0
+          ],
+          [
+            100.0,
+            352.0
+          ],
+          [
+            100.0,
+            350.0
+          ],
+          [
+            102.0,
+            348.0
+          ],
+          [
+            104.0,
+            346.0
+          ],
+          [
+            106.0,
+            344.0
+          ],
+          [
+            106.0,
+            342.0
+          ],
+          [
+            106.0,
+            340.0
+          ],
+          [
+            106.0,
+            338.0
+          ],
+          [
+            106.0,
+            336.0
+          ],
+          [
+            106.0,
+            334.0
+          ],
+          [
+            106.0,
+            332.0
+          ],
+          [
+            106.0,
+            330.0
+          ],
+          [
+            106.0,
+            328.0
+          ],
+          [
+            106.0,
+            326.0
+          ],
+          [
+            106.0,
+            324.0
+          ],
+          [
+            106.0,
+            322.0
+          ],
+          [
+            106.0,
+            320.0
+          ],
+          [
+            106.0,
+            318.0
+          ],
+          [
+            106.0,
+            316.0
+          ],
+          [
+            106.0,
+            314.0
+          ],
+          [
+            106.0,
+            312.0
+          ],
+          [
+            106.0,
+            310.0
+          ],
+          [
+            106.0,
+            308.0
+          ],
+          [
+            106.0,
+            306.0
+          ],
+          [
+            106.0,
+            304.0
+          ],
+          [
+            106.0,
+            302.0
+          ],
+          [
+            106.0,
+            300.0
+          ],
+          [
+            106.0,
+            298.0
+          ],
+          [
+            106.0,
+            296.0
+          ],
+          [
+            106.0,
+            294.0
+          ],
+          [
+            106.0,
+            292.0
+          ],
+          [
+            106.0,
+            290.0
+          ],
+          [
+            106.0,
+            288.0
+          ],
+          [
+            106.0,
+            286.0
+          ],
+          [
+            106.0,
+            284.0
+          ],
+          [
+            106.0,
+            282.0
+          ],
+          [
+            106.0,
+            280.0
+          ],
+          [
+            108.0,
+            278.0
+          ],
+          [
+            108.0,
+            276.0
+          ],
+          [
+            108.0,
+            274.0
+          ],
+          [
+            108.0,
+            272.0
+          ],
+          [
+            108.0,
+            270.0
+          ],
+          [
+            108.0,
+            268.0
+          ],
+          [
+            108.0,
+            266.0
+          ],
+          [
+            108.0,
+            264.0
+          ],
+          [
+            108.0,
+            262.0
+          ],
+          [
+            108.0,
+            260.0
+          ],
+          [
+            108.0,
+            258.0
+          ],
+          [
+            108.0,
+            256.0
+          ],
+          [
+            108.0,
+            254.0
+          ],
+          [
+            108.0,
+            252.0
+          ],
+          [
+            108.0,
+            250.0
+          ],
+          [
+            108.0,
+            248.0
+          ],
+          [
+            108.0,
+            246.0
+          ],
+          [
+            110.0,
+            244.0
+          ],
+          [
+            110.0,
+            242.0
+          ],
+          [
+            112.0,
+            240.0
+          ],
+          [
+            111.8,
+            238.6
+          ]
+        ],
+        "avdd_req_filter_gap_mil": 31.5,
+        "min_l6_comp_gap_mil": 6.74,
+        "gnd_via_hole_wall_gap_mil": 18.71,
+        "l5_plane_edge_margin_mil": 49.38,
+        "in_u2_bga_shadow": true,
+        "mk2_overlap_sqmil": 0.0
+      },
+      {
+        "scheme": "BASELINE_ZERO_SHIFT_L6_ONLY",
+        "center_mil": [
+          76,
+          368
+        ],
+        "angle_deg": 180,
+        "pad1_vsys_mil": [
+          88.62,
+          368.0
+        ],
+        "pad2_gnd_mil": [
+          63.38,
+          368.0
+        ],
+        "gnd_bv_l5_l6_mil": [
+          49.38,
+          368.0
+        ],
+        "vsys_route_mode": "L6_DIRECT_ASTAR",
+        "vsys_route_len_mil": 139.98,
+        "vsys_waypoints_mil": [
+          [
+            88.62,
+            368.0
+          ],
+          [
+            88.0,
+            368.0
+          ],
+          [
+            88.0,
+            366.0
+          ],
+          [
+            88.0,
+            364.0
+          ],
+          [
+            88.0,
+            362.0
+          ],
+          [
+            88.0,
+            360.0
+          ],
+          [
+            90.0,
+            358.0
+          ],
+          [
+            92.0,
+            356.0
+          ],
+          [
+            94.0,
+            354.0
+          ],
+          [
+            96.0,
+            352.0
+          ],
+          [
+            98.0,
+            350.0
+          ],
+          [
+            100.0,
+            348.0
+          ],
+          [
+            102.0,
+            346.0
+          ],
+          [
+            104.0,
+            344.0
+          ],
+          [
+            104.0,
+            342.0
+          ],
+          [
+            104.0,
+            340.0
+          ],
+          [
+            104.0,
+            338.0
+          ],
+          [
+            104.0,
+            336.0
+          ],
+          [
+            104.0,
+            334.0
+          ],
+          [
+            104.0,
+            332.0
+          ],
+          [
+            104.0,
+            330.0
+          ],
+          [
+            104.0,
+            328.0
+          ],
+          [
+            106.0,
+            326.0
+          ],
+          [
+            106.0,
+            324.0
+          ],
+          [
+            106.0,
+            322.0
+          ],
+          [
+            106.0,
+            320.0
+          ],
+          [
+            106.0,
+            318.0
+          ],
+          [
+            106.0,
+            316.0
+          ],
+          [
+            106.0,
+            314.0
+          ],
+          [
+            106.0,
+            312.0
+          ],
+          [
+            106.0,
+            310.0
+          ],
+          [
+            106.0,
+            308.0
+          ],
+          [
+            106.0,
+            306.0
+          ],
+          [
+            106.0,
+            304.0
+          ],
+          [
+            106.0,
+            302.0
+          ],
+          [
+            106.0,
+            300.0
+          ],
+          [
+            106.0,
+            298.0
+          ],
+          [
+            106.0,
+            296.0
+          ],
+          [
+            106.0,
+            294.0
+          ],
+          [
+            106.0,
+            292.0
+          ],
+          [
+            106.0,
+            290.0
+          ],
+          [
+            106.0,
+            288.0
+          ],
+          [
+            106.0,
+            286.0
+          ],
+          [
+            106.0,
+            284.0
+          ],
+          [
+            106.0,
+            282.0
+          ],
+          [
+            106.0,
+            280.0
+          ],
+          [
+            108.0,
+            278.0
+          ],
+          [
+            108.0,
+            276.0
+          ],
+          [
+            108.0,
+            274.0
+          ],
+          [
+            108.0,
+            272.0
+          ],
+          [
+            108.0,
+            270.0
+          ],
+          [
+            108.0,
+            268.0
+          ],
+          [
+            108.0,
+            266.0
+          ],
+          [
+            108.0,
+            264.0
+          ],
+          [
+            108.0,
+            262.0
+          ],
+          [
+            108.0,
+            260.0
+          ],
+          [
+            108.0,
+            258.0
+          ],
+          [
+            108.0,
+            256.0
+          ],
+          [
+            108.0,
+            254.0
+          ],
+          [
+            108.0,
+            252.0
+          ],
+          [
+            108.0,
+            250.0
+          ],
+          [
+            108.0,
+            248.0
+          ],
+          [
+            108.0,
+            246.0
+          ],
+          [
+            110.0,
+            244.0
+          ],
+          [
+            110.0,
+            242.0
+          ],
+          [
+            112.0,
+            240.0
+          ],
+          [
+            111.8,
+            238.6
+          ]
+        ],
+        "avdd_req_filter_gap_mil": 31.5,
+        "min_l6_comp_gap_mil": 8.96,
+        "gnd_via_hole_wall_gap_mil": 25.38,
+        "l5_plane_edge_margin_mil": 37.38,
+        "in_u2_bga_shadow": true,
+        "mk2_overlap_sqmil": 0.0
+      }
+    ],
+    "failed_total": 1360,
+    "failure_reason_counts": {
+      "SMD_SPACING_FAIL": 1360
+    },
+    "failed_sample": [
+      {
+        "center_mil": [
+          60,
+          264
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=0.00 < 6.0 mil"
+      },
+      {
+        "center_mil": [
+          60,
+          268
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=0.00 < 6.0 mil"
+      },
+      {
+        "center_mil": [
+          60,
+          272
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=0.00 < 6.0 mil"
+      },
+      {
+        "center_mil": [
+          60,
+          276
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=0.00 < 6.0 mil"
+      },
+      {
+        "center_mil": [
+          60,
+          280
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=0.00 < 6.0 mil"
+      },
+      {
+        "center_mil": [
+          60,
+          284
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=0.00 < 6.0 mil"
+      },
+      {
+        "center_mil": [
+          60,
+          288
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=0.00 < 6.0 mil"
+      },
+      {
+        "center_mil": [
+          60,
+          292
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=0.00 < 6.0 mil"
+      },
+      {
+        "center_mil": [
+          60,
+          296
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=0.00 < 6.0 mil"
+      },
+      {
+        "center_mil": [
+          60,
+          300
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=0.00 < 6.0 mil"
+      },
+      {
+        "center_mil": [
+          60,
+          304
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=0.00 < 6.0 mil"
+      },
+      {
+        "center_mil": [
+          60,
+          308
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=0.00 < 6.0 mil"
+      },
+      {
+        "center_mil": [
+          60,
+          312
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=0.00 < 6.0 mil"
+      },
+      {
+        "center_mil": [
+          60,
+          316
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=0.00 < 6.0 mil"
+      },
+      {
+        "center_mil": [
+          60,
+          320
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=0.00 < 6.0 mil"
+      }
+    ]
+  },
+  "scheme_r8_c_joint_relayout": {
+    "scheme": "R8-C_JOINT_U1_U3_U5_SHIFT",
+    "joint_shifts_mil": {
+      "U1": [
+        0.0,
+        50.0
+      ],
+      "U3": [
+        0.0,
+        38.0
+      ],
+      "U5": [
+        0.0,
+        64.0
+      ]
+    },
+    "joint_shift_neighbor_notes": [
+      {
+        "shifted": "U1",
+        "neighbor": "J1",
+        "gap_mil": 0.0
+      },
+      {
+        "shifted": "U1",
+        "neighbor": "U3",
+        "gap_mil": 0.0
+      },
+      {
+        "shifted": "U1",
+        "neighbor": "U5",
+        "gap_mil": 3.35
+      },
+      {
+        "shifted": "U1",
+        "neighbor": "C22",
+        "gap_mil": 0.0
+      },
+      {
+        "shifted": "U3",
+        "neighbor": "U1",
+        "gap_mil": 0.0
+      },
+      {
+        "shifted": "U3",
+        "neighbor": "U6",
+        "gap_mil": 0.0
+      },
+      {
+        "shifted": "U3",
+        "neighbor": "U5",
+        "gap_mil": 0.0
+      },
+      {
+        "shifted": "U3",
+        "neighbor": "C20",
+        "gap_mil": 1.92
+      },
+      {
+        "shifted": "U3",
+        "neighbor": "C22",
+        "gap_mil": 0.0
+      },
+      {
+        "shifted": "U5",
+        "neighbor": "U1",
+        "gap_mil": 3.35
+      },
+      {
+        "shifted": "U5",
+        "neighbor": "U3",
+        "gap_mil": 0.0
+      },
+      {
+        "shifted": "U5",
+        "neighbor": "C22",
+        "gap_mil": 0.0
+      },
+      {
+        "shifted": "U5",
+        "neighbor": "U14",
+        "gap_mil": 0.0
+      }
+    ],
+    "passing_count": 33,
+    "passing_top5": [
+      {
+        "scheme": "R8-C_JOINT_U1_U3_U5_SHIFT",
+        "center_mil": [
+          132,
+          282
+        ],
+        "angle_deg": 0,
+        "pad1_vsys_mil": [
+          119.38,
+          282.0
+        ],
+        "pad2_gnd_mil": [
+          144.62,
+          282.0
+        ],
+        "gnd_bv_l5_l6_mil": [
+          158.62,
+          282.0
+        ],
+        "vsys_route_mode": "L6_DIRECT_ASTAR",
+        "vsys_route_len_mil": 44.06,
+        "vsys_waypoints_mil": [
+          [
+            119.38,
+            282.0
+          ],
+          [
+            111.8,
+            238.6
+          ]
+        ],
+        "avdd_req_filter_gap_mil": 31.5,
+        "min_l6_comp_gap_mil": 6.02,
+        "gnd_via_hole_wall_gap_mil": 47.31,
+        "l5_plane_edge_margin_mil": 10.48,
+        "in_u2_bga_shadow": false,
+        "mk2_overlap_sqmil": 0.0
+      },
+      {
+        "scheme": "R8-C_JOINT_U1_U3_U5_SHIFT",
+        "center_mil": [
+          134,
+          282
+        ],
+        "angle_deg": 0,
+        "pad1_vsys_mil": [
+          121.38,
+          282.0
+        ],
+        "pad2_gnd_mil": [
+          146.62,
+          282.0
+        ],
+        "gnd_bv_l5_l6_mil": [
+          160.62,
+          282.0
+        ],
+        "vsys_route_mode": "L6_DIRECT_ASTAR",
+        "vsys_route_len_mil": 44.44,
+        "vsys_waypoints_mil": [
+          [
+            121.38,
+            282.0
+          ],
+          [
+            111.8,
+            238.6
+          ]
+        ],
+        "avdd_req_filter_gap_mil": 31.5,
+        "min_l6_comp_gap_mil": 7.98,
+        "gnd_via_hole_wall_gap_mil": 48.94,
+        "l5_plane_edge_margin_mil": 8.48,
+        "in_u2_bga_shadow": false,
+        "mk2_overlap_sqmil": 0.0
+      },
+      {
+        "scheme": "R8-C_JOINT_U1_U3_U5_SHIFT",
+        "center_mil": [
+          136,
+          282
+        ],
+        "angle_deg": 0,
+        "pad1_vsys_mil": [
+          123.38,
+          282.0
+        ],
+        "pad2_gnd_mil": [
+          148.62,
+          282.0
+        ],
+        "gnd_bv_l5_l6_mil": [
+          162.62,
+          282.0
+        ],
+        "vsys_route_mode": "L6_DIRECT_ASTAR",
+        "vsys_route_len_mil": 44.92,
+        "vsys_waypoints_mil": [
+          [
+            123.38,
+            282.0
+          ],
+          [
+            111.8,
+            238.6
+          ]
+        ],
+        "avdd_req_filter_gap_mil": 31.5,
+        "min_l6_comp_gap_mil": 7.98,
+        "gnd_via_hole_wall_gap_mil": 50.6,
+        "l5_plane_edge_margin_mil": 6.48,
+        "in_u2_bga_shadow": false,
+        "mk2_overlap_sqmil": 0.0
+      },
+      {
+        "scheme": "R8-C_JOINT_U1_U3_U5_SHIFT",
+        "center_mil": [
+          138,
+          282
+        ],
+        "angle_deg": 0,
+        "pad1_vsys_mil": [
+          125.38,
+          282.0
+        ],
+        "pad2_gnd_mil": [
+          150.62,
+          282.0
+        ],
+        "gnd_bv_l5_l6_mil": [
+          150.62,
+          296.0
+        ],
+        "vsys_route_mode": "L6_DIRECT_ASTAR",
+        "vsys_route_len_mil": 45.47,
+        "vsys_waypoints_mil": [
+          [
+            125.38,
+            282.0
+          ],
+          [
+            111.8,
+            238.6
+          ]
+        ],
+        "avdd_req_filter_gap_mil": 31.5,
+        "min_l6_comp_gap_mil": 7.98,
+        "gnd_via_hole_wall_gap_mil": 33.24,
+        "l5_plane_edge_margin_mil": 18.48,
+        "in_u2_bga_shadow": false,
+        "mk2_overlap_sqmil": 0.0
+      },
+      {
+        "scheme": "R8-C_JOINT_U1_U3_U5_SHIFT",
+        "center_mil": [
+          132,
+          284
+        ],
+        "angle_deg": 0,
+        "pad1_vsys_mil": [
+          119.38,
+          284.0
+        ],
+        "pad2_gnd_mil": [
+          144.62,
+          284.0
+        ],
+        "gnd_bv_l5_l6_mil": [
+          158.62,
+          284.0
+        ],
+        "vsys_route_mode": "L6_DIRECT_ASTAR",
+        "vsys_route_len_mil": 46.03,
+        "vsys_waypoints_mil": [
+          [
+            119.38,
+            284.0
+          ],
+          [
+            111.8,
+            238.6
+          ]
+        ],
+        "avdd_req_filter_gap_mil": 31.5,
+        "min_l6_comp_gap_mil": 6.02,
+        "gnd_via_hole_wall_gap_mil": 46.16,
+        "l5_plane_edge_margin_mil": 10.48,
+        "in_u2_bga_shadow": false,
+        "mk2_overlap_sqmil": 0.0
+      }
+    ],
+    "failed_total": 149,
+    "failure_reason_counts": {
+      "SMD_SPACING_FAIL": 132,
+      "BOARD_EDGE_FAIL": 14,
+      "HOLE_WALL_FAIL": 3
+    },
+    "failed_sample": [
+      {
+        "center_mil": [
+          126,
+          276
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=0.02 < 6.0 mil"
+      },
+      {
+        "center_mil": [
+          126,
+          278
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=0.02 < 6.0 mil"
+      },
+      {
+        "center_mil": [
+          126,
+          280
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=0.02 < 6.0 mil"
+      },
+      {
+        "center_mil": [
+          126,
+          282
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=0.02 < 6.0 mil"
+      },
+      {
+        "center_mil": [
+          126,
+          284
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=0.02 < 6.0 mil"
+      },
+      {
+        "center_mil": [
+          126,
+          286
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=0.02 < 6.0 mil"
+      },
+      {
+        "center_mil": [
+          126,
+          288
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=0.02 < 6.0 mil"
+      },
+      {
+        "center_mil": [
+          128,
+          276
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=1.98 < 6.0 mil"
+      },
+      {
+        "center_mil": [
+          128,
+          278
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=2.02 < 6.0 mil"
+      },
+      {
+        "center_mil": [
+          128,
+          280
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=2.02 < 6.0 mil"
+      },
+      {
+        "center_mil": [
+          128,
+          282
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=2.02 < 6.0 mil"
+      },
+      {
+        "center_mil": [
+          128,
+          284
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=2.02 < 6.0 mil"
+      },
+      {
+        "center_mil": [
+          128,
+          286
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=2.02 < 6.0 mil"
+      },
+      {
+        "center_mil": [
+          128,
+          288
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=2.02 < 6.0 mil"
+      },
+      {
+        "center_mil": [
+          130,
+          276
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=1.98 < 6.0 mil"
+      }
+    ]
+  },
+  "scheme_r8_a_l4_stereo": {
+    "scheme": "R8-A_ZERO_IC_SHIFT_L4_STEREO",
+    "joint_shifts_mil": {},
+    "joint_shift_neighbor_notes": [],
+    "passing_count": 80,
+    "passing_top5": [
+      {
+        "scheme": "R8-A_ZERO_IC_SHIFT_L4_STEREO",
+        "center_mil": [
+          90,
+          366
+        ],
+        "angle_deg": 180,
+        "pad1_vsys_mil": [
+          102.62,
+          366.0
+        ],
+        "pad2_gnd_mil": [
+          77.38,
+          366.0
+        ],
+        "gnd_bv_l5_l6_mil": [
+          63.38,
+          366.0
+        ],
+        "vsys_route_mode": "L6_DIRECT_ASTAR",
+        "vsys_route_len_mil": 127.73,
+        "vsys_waypoints_mil": [
+          [
+            102.62,
+            366.0
+          ],
+          [
+            111.8,
+            238.6
+          ]
+        ],
+        "avdd_req_filter_gap_mil": 31.5,
+        "min_l6_comp_gap_mil": 6.96,
+        "gnd_via_hole_wall_gap_mil": 12.85,
+        "l5_plane_edge_margin_mil": 51.38,
+        "in_u2_bga_shadow": true,
+        "mk2_overlap_sqmil": 0.0
+      },
+      {
+        "scheme": "R8-A_ZERO_IC_SHIFT_L4_STEREO",
+        "center_mil": [
+          90,
+          368
+        ],
+        "angle_deg": 180,
+        "pad1_vsys_mil": [
+          102.62,
+          368.0
+        ],
+        "pad2_gnd_mil": [
+          77.38,
+          368.0
+        ],
+        "gnd_bv_l5_l6_mil": [
+          63.38,
+          368.0
+        ],
+        "vsys_route_mode": "L6_DIRECT_ASTAR",
+        "vsys_route_len_mil": 129.73,
+        "vsys_waypoints_mil": [
+          [
+            102.62,
+            368.0
+          ],
+          [
+            111.8,
+            238.6
+          ]
+        ],
+        "avdd_req_filter_gap_mil": 31.5,
+        "min_l6_comp_gap_mil": 7.44,
+        "gnd_via_hole_wall_gap_mil": 14.34,
+        "l5_plane_edge_margin_mil": 51.38,
+        "in_u2_bga_shadow": true,
+        "mk2_overlap_sqmil": 0.0
+      },
+      {
+        "scheme": "R8-A_ZERO_IC_SHIFT_L4_STEREO",
+        "center_mil": [
+          90,
+          370
+        ],
+        "angle_deg": 180,
+        "pad1_vsys_mil": [
+          102.62,
+          370.0
+        ],
+        "pad2_gnd_mil": [
+          77.38,
+          370.0
+        ],
+        "gnd_bv_l5_l6_mil": [
+          63.38,
+          370.0
+        ],
+        "vsys_route_mode": "L6_DIRECT_ASTAR",
+        "vsys_route_len_mil": 131.72,
+        "vsys_waypoints_mil": [
+          [
+            102.62,
+            370.0
+          ],
+          [
+            111.8,
+            238.6
+          ]
+        ],
+        "avdd_req_filter_gap_mil": 31.5,
+        "min_l6_comp_gap_mil": 7.44,
+        "gnd_via_hole_wall_gap_mil": 15.92,
+        "l5_plane_edge_margin_mil": 51.38,
+        "in_u2_bga_shadow": true,
+        "mk2_overlap_sqmil": 0.0
+      },
+      {
+        "scheme": "R8-A_ZERO_IC_SHIFT_L4_STEREO",
+        "center_mil": [
+          88,
+          366
+        ],
+        "angle_deg": 180,
+        "pad1_vsys_mil": [
+          100.62,
+          366.0
+        ],
+        "pad2_gnd_mil": [
+          75.38,
+          366.0
+        ],
+        "gnd_bv_l5_l6_mil": [
+          61.38,
+          366.0
+        ],
+        "vsys_route_mode": "L6_DIRECT_ASTAR",
+        "vsys_route_len_mil": 133.01,
+        "vsys_waypoints_mil": [
+          [
+            100.62,
+            366.0
+          ],
+          [
+            100.0,
+            366.0
+          ],
+          [
+            100.0,
+            364.0
+          ],
+          [
+            100.0,
+            362.0
+          ],
+          [
+            100.0,
+            360.0
+          ],
+          [
+            100.0,
+            358.0
+          ],
+          [
+            100.0,
+            356.0
+          ],
+          [
+            100.0,
+            354.0
+          ],
+          [
+            100.0,
+            352.0
+          ],
+          [
+            100.0,
+            350.0
+          ],
+          [
+            100.0,
+            348.0
+          ],
+          [
+            100.0,
+            346.0
+          ],
+          [
+            100.0,
+            344.0
+          ],
+          [
+            102.0,
+            342.0
+          ],
+          [
+            104.0,
+            340.0
+          ],
+          [
+            106.0,
+            338.0
+          ],
+          [
+            106.0,
+            336.0
+          ],
+          [
+            106.0,
+            334.0
+          ],
+          [
+            106.0,
+            332.0
+          ],
+          [
+            106.0,
+            330.0
+          ],
+          [
+            106.0,
+            328.0
+          ],
+          [
+            106.0,
+            326.0
+          ],
+          [
+            106.0,
+            324.0
+          ],
+          [
+            106.0,
+            322.0
+          ],
+          [
+            106.0,
+            320.0
+          ],
+          [
+            106.0,
+            318.0
+          ],
+          [
+            106.0,
+            316.0
+          ],
+          [
+            106.0,
+            314.0
+          ],
+          [
+            106.0,
+            312.0
+          ],
+          [
+            106.0,
+            310.0
+          ],
+          [
+            106.0,
+            308.0
+          ],
+          [
+            106.0,
+            306.0
+          ],
+          [
+            106.0,
+            304.0
+          ],
+          [
+            106.0,
+            302.0
+          ],
+          [
+            106.0,
+            300.0
+          ],
+          [
+            106.0,
+            298.0
+          ],
+          [
+            106.0,
+            296.0
+          ],
+          [
+            106.0,
+            294.0
+          ],
+          [
+            106.0,
+            292.0
+          ],
+          [
+            106.0,
+            290.0
+          ],
+          [
+            106.0,
+            288.0
+          ],
+          [
+            106.0,
+            286.0
+          ],
+          [
+            106.0,
+            284.0
+          ],
+          [
+            106.0,
+            282.0
+          ],
+          [
+            106.0,
+            280.0
+          ],
+          [
+            108.0,
+            278.0
+          ],
+          [
+            108.0,
+            276.0
+          ],
+          [
+            108.0,
+            274.0
+          ],
+          [
+            108.0,
+            272.0
+          ],
+          [
+            108.0,
+            270.0
+          ],
+          [
+            108.0,
+            268.0
+          ],
+          [
+            108.0,
+            266.0
+          ],
+          [
+            108.0,
+            264.0
+          ],
+          [
+            108.0,
+            262.0
+          ],
+          [
+            108.0,
+            260.0
+          ],
+          [
+            108.0,
+            258.0
+          ],
+          [
+            108.0,
+            256.0
+          ],
+          [
+            108.0,
+            254.0
+          ],
+          [
+            108.0,
+            252.0
+          ],
+          [
+            108.0,
+            250.0
+          ],
+          [
+            108.0,
+            248.0
+          ],
+          [
+            108.0,
+            246.0
+          ],
+          [
+            110.0,
+            244.0
+          ],
+          [
+            110.0,
+            242.0
+          ],
+          [
+            112.0,
+            240.0
+          ],
+          [
+            111.8,
+            238.6
+          ]
+        ],
+        "avdd_req_filter_gap_mil": 31.5,
+        "min_l6_comp_gap_mil": 6.96,
+        "gnd_via_hole_wall_gap_mil": 14.31,
+        "l5_plane_edge_margin_mil": 49.38,
+        "in_u2_bga_shadow": true,
+        "mk2_overlap_sqmil": 0.0
+      },
+      {
+        "scheme": "R8-A_ZERO_IC_SHIFT_L4_STEREO",
+        "center_mil": [
+          90,
+          372
+        ],
+        "angle_deg": 180,
+        "pad1_vsys_mil": [
+          102.62,
+          372.0
+        ],
+        "pad2_gnd_mil": [
+          77.38,
+          372.0
+        ],
+        "gnd_bv_l5_l6_mil": [
+          63.38,
+          372.0
+        ],
+        "vsys_route_mode": "L6_DIRECT_ASTAR",
+        "vsys_route_len_mil": 133.72,
+        "vsys_waypoints_mil": [
+          [
+            102.62,
+            372.0
+          ],
+          [
+            111.8,
+            238.6
+          ]
+        ],
+        "avdd_req_filter_gap_mil": 31.5,
+        "min_l6_comp_gap_mil": 6.74,
+        "gnd_via_hole_wall_gap_mil": 17.57,
+        "l5_plane_edge_margin_mil": 51.38,
+        "in_u2_bga_shadow": true,
+        "mk2_overlap_sqmil": 0.0
+      }
+    ],
+    "failed_total": 424,
+    "failure_reason_counts": {
+      "SMD_SPACING_FAIL": 424
+    },
+    "failed_sample": [
+      {
+        "center_mil": [
+          62,
+          358
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=0.00 < 6.0 mil"
+      },
+      {
+        "center_mil": [
+          62,
+          360
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=0.00 < 6.0 mil"
+      },
+      {
+        "center_mil": [
+          62,
+          362
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=0.00 < 6.0 mil"
+      },
+      {
+        "center_mil": [
+          62,
+          364
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=0.00 < 6.0 mil"
+      },
+      {
+        "center_mil": [
+          62,
+          366
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=0.00 < 6.0 mil"
+      },
+      {
+        "center_mil": [
+          62,
+          368
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=0.00 < 6.0 mil"
+      },
+      {
+        "center_mil": [
+          62,
+          370
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=0.00 < 6.0 mil"
+      },
+      {
+        "center_mil": [
+          62,
+          372
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=0.00 < 6.0 mil"
+      },
+      {
+        "center_mil": [
+          62,
+          374
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=0.00 < 6.0 mil"
+      },
+      {
+        "center_mil": [
+          62,
+          376
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=0.00 < 6.0 mil"
+      },
+      {
+        "center_mil": [
+          62,
+          378
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=0.00 < 6.0 mil"
+      },
+      {
+        "center_mil": [
+          62,
+          380
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=0.00 < 6.0 mil"
+      },
+      {
+        "center_mil": [
+          64,
+          358
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=0.00 < 6.0 mil"
+      },
+      {
+        "center_mil": [
+          64,
+          360
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=0.00 < 6.0 mil"
+      },
+      {
+        "center_mil": [
+          64,
+          362
+        ],
+        "angle_deg": 0,
+        "reason": "SMD_SPACING_FAIL",
+        "detail": "min L6 gap=0.00 < 6.0 mil"
+      }
+    ]
+  }
+}

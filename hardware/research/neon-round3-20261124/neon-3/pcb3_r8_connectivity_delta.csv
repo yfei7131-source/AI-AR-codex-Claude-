@@ -1,0 +1,10 @@
+stage_or_candidate,net,layer_or_span,result,connection_error_delta,clearance_short_errors,notes
+PR55_R7_Baseline,ALL_PCB3,6L_1+4+1,BASELINE_132,0,0,Inherited from Codex R6 PR54 / KIMI R7 PR55
+R8_Cloud_Clone_Baseline,ALL_PCB3,6L_1+4+1,BASELINE_134,+2_vs_R7,0,Cloned from cloud R3 9ddea73b8d35456bad84c40e331d2f05
+R8_ECO1_PreCleanup,I2S_BCLK_1V8,L1_K5_to_L9,COUNT_135,+1_vs_134,0,Orphan L1 stubs e415 (10.8mil) and e414 (27.8mil) left on I2S_BCLK_1V8
+R8_Orphan_Cleanup_Reloaded,I2S_BCLK_1V8,L1,PASS_134,-1_vs_135,0,Deleted e415+e414 (and trial stubs e416+e417); verified after close-and-reopen
+Trial_SPK_R_N,SPK_R_N,L6_same_layer,BLOCKED,0,0,e44e0 6-7mil to edge; U10.B3 interior to BGA under 6mil clearance
+Trial_SPK_R_P,SPK_R_P,L6_same_layer,BLOCKED,0,0,Blocked by 9 GND and U10 BGA 6mil clearance
+Trial_BLE_SWDIO,BLE_SWDIO,L1_same_layer,BLOCKED,0,0,Left corridor blocked by BLE_XC1/4 GND; right by U11 corner pads
+Trial_GND_Outer_e20e1_e35e1,GND,BV_L1_L2_and_BV_L5_L6,BLOCKED_REVERTED,0,0,Right board edge X~1118mil caused board-edge-to-via violation; reverted e54/e449
+Trial_GND_Interior_e30e1,GND,BV_L5_L6_ShiftB,BLOCKED_REVERTED,0,0,Safe zone X=971.3mil still triggered drill-to-drill(1) violation; reverted e55 + rebuilt copper
