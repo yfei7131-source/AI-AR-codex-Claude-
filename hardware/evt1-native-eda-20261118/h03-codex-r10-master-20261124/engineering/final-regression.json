@@ -1,0 +1,105 @@
+{
+  "status": "NOT FOR FAB",
+  "nativeArchiveSha256": "28f7f37f0a9b4cae0c2ab162445829d30062b91e34616b7f267917a95621248b",
+  "sourceArchiveSha256": "2ed5b0932c51f5995a68fa602dd922cbfb4ef69429cc21e05cea195c69eaae93",
+  "independentReexportSha256": "e4d9994d64c79c3c6a432e306be979ee629dcf076993a3a2079839477ea5e961",
+  "nativeDocumentRecords": 1451,
+  "totalConnectionsBeforeAfter": [
+    695,
+    689
+  ],
+  "strictERCFatal": 6,
+  "boards": {
+    "PCB1": {
+      "before": {
+        "Connection Error": 334,
+        "Netlist Error": 1
+      },
+      "after": {
+        "Connection Error": 328,
+        "Netlist Error": 1
+      },
+      "reimport": {
+        "Connection Error": 328,
+        "Netlist Error": 1
+      },
+      "ERCFatal": 4,
+      "nativeNetlistSha256": "7586a150a92b4d5711b1a03498a15952b53937d3178c3750e5b4efa9945e2725"
+    },
+    "PCB2": {
+      "before": {
+        "Connection Error": 232
+      },
+      "after": {
+        "Connection Error": 232
+      },
+      "reimport": {
+        "Connection Error": 232
+      },
+      "ERCFatal": 0,
+      "nativeNetlistSha256": "1384cfc519ded82551192228cb2b776273a1ccc3df59bb2af1423c2240283926"
+    },
+    "PCB3": {
+      "before": {
+        "Connection Error": 129
+      },
+      "after": {
+        "Connection Error": 129
+      },
+      "reimport": {
+        "Connection Error": 129
+      },
+      "ERCFatal": 2,
+      "nativeNetlistSha256": "545399c2bd10c7dfe6c73d5631798558abe42471756f6ce658c5946a7ef6ded0"
+    }
+  },
+  "acceptedBatches": [
+    {
+      "id": "H03-R10-PCB1-batch-01",
+      "planSha256": "0920d0c471a6b33e1ad092b4465122249c44b5e3cd8e4dca91c5eac200ab4a36",
+      "before": {
+        "Connection Error": 334,
+        "Netlist Error": 1
+      },
+      "after": {
+        "Connection Error": 330,
+        "Netlist Error": 1
+      },
+      "isolatedAndMasterSameCounts": true,
+      "nativeLineEndpoints": [
+        2,
+        4
+      ],
+      "exactNativeGeometryRoutes": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "H03-R10-PCB1-batch-02",
+      "planSha256": "7e42141ab3866e2e92118529963d8a107b35e621326ca7062e6d6a9eee248034",
+      "before": {
+        "Connection Error": 330,
+        "Netlist Error": 1
+      },
+      "after": {
+        "Connection Error": 328,
+        "Netlist Error": 1
+      },
+      "isolatedAndMasterSameCounts": true,
+      "nativeLineEndpoints": [],
+      "exactNativeGeometryRoutes": [
+        1
+      ]
+    }
+  ],
+  "rollback": {
+    "restoredNativeDRC": {
+      "Connection Error": 330,
+      "Netlist Error": 1
+    },
+    "checkpointSha256": "e901416fc3925ed6dd72cb0f0b21df51fefb7e66268378091d9070bfd33edc82",
+    "nativeDocumentRecords": 1451
+  },
+  "scope": "Final rule, component, schematic, board-binding, and routed copper audit"
+}

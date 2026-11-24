@@ -1,0 +1,19 @@
+{
+  "stale-checkpoint": {
+    "rejectedBeforeNativeCall": true,
+    "message": "Stale or unapproved checkpoint SHA-256"
+  },
+  "unknown-board": {
+    "rejectedBeforeNativeCall": true,
+    "message": "Increment must name exactly one board and at least one route"
+  },
+  "off-angle-geometry": {
+    "rejectedBeforeNativeCall": true,
+    "message": "Coincident or off-angle route leg: [10, 10], [13, 12]"
+  },
+  "centerline-coverage": {
+    "acceptsNativeSplit": true,
+    "rejectsUncoveredSpan": true,
+    "rejectsParallelOffset": true
+  }
+}
