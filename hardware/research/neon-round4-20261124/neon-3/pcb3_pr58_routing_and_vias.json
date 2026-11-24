@@ -1,0 +1,302 @@
+{
+  "vias": [
+    {
+      "id": "V_R8_BCLK_PTH",
+      "net": "I2S_BCLK_1V8",
+      "track": "Track_A_No_New_HDI_Span",
+      "type": "NORMAL_PTH_6_12",
+      "span": "L1-L6",
+      "x": 184.0,
+      "y": 412.0,
+      "drill_mil": 6.0,
+      "pad_mil": 12.0,
+      "notes": "Placed in newly vacated U10 overlap shadow (X=184.0, Y=412.0); edge-to-pad = 14.72 mil >= 13.78 mil."
+    },
+    {
+      "id": "V_R8_GND_RET_1",
+      "net": "GND",
+      "track": "Track_A_No_New_HDI_Span",
+      "type": "NORMAL_PTH_6_12",
+      "span": "L1-L6",
+      "x": 162.0,
+      "y": 412.0,
+      "drill_mil": 6.0,
+      "pad_mil": 12.0,
+      "notes": "L2<->L5 GND return stitching via 22.0 mil (0.56 mm <= 1.5 mm) from V_R8_BCLK_PTH."
+    },
+    {
+      "id": "V_R8_LRCK_L12",
+      "net": "I2S_LRCLK_1V8",
+      "track": "Track_B_2plus2plus2_HDI_EQ",
+      "type": "LASER_VIPPO_3_7p7",
+      "span": "L1-L2",
+      "x": 157.48,
+      "y": 327.76,
+      "drill_mil": 3.0,
+      "pad_mil": 7.7,
+      "notes": "Centered copper-filled laser microvia on U11.K4 (requires Fab EQ)."
+    },
+    {
+      "id": "V_R8_LRCK_L23",
+      "net": "I2S_LRCLK_1V8",
+      "track": "Track_B_2plus2plus2_HDI_EQ",
+      "type": "LASER_STAGGERED_3_7p7",
+      "span": "L2-L3",
+      "x": 157.48,
+      "y": 343.6,
+      "drill_mil": 3.0,
+      "pad_mil": 7.7,
+      "notes": "Staggered into vacated K5 (341.54) shadow; center-to-center from L1-L2 = 15.84 mil >= 15.75 mil."
+    },
+    {
+      "id": "V_R8_LRCK_L34",
+      "net": "I2S_LRCLK_1V8",
+      "track": "Track_B_2plus2plus2_HDI_EQ",
+      "type": "BURIED_MECH_6_12",
+      "span": "L3-L4",
+      "x": 157.48,
+      "y": 362.0,
+      "drill_mil": 6.0,
+      "pad_mil": 12.0,
+      "notes": "Core buried via; center-to-center from L2-L3 laser = 18.40 mil >= 16.78 mil."
+    },
+    {
+      "id": "V_R8_LRCK_L45",
+      "net": "I2S_LRCLK_1V8",
+      "track": "Track_B_2plus2plus2_HDI_EQ",
+      "type": "LASER_STAGGERED_3_7p7",
+      "span": "L4-L5",
+      "x": 138.0,
+      "y": 362.0,
+      "drill_mil": 3.0,
+      "pad_mil": 7.7,
+      "notes": "Center-to-center from L3-L4 buried = 19.48 mil >= 16.78 mil."
+    },
+    {
+      "id": "V_R8_LRCK_L56",
+      "net": "I2S_LRCLK_1V8",
+      "track": "Track_B_2plus2plus2_HDI_EQ",
+      "type": "LASER_STAGGERED_3_7p7",
+      "span": "L5-L6",
+      "x": 122.0,
+      "y": 362.0,
+      "drill_mil": 3.0,
+      "pad_mil": 7.7,
+      "notes": "Center-to-center from L4-L5 laser = 16.00 mil >= 15.75 mil; drops to L6 audio trunk."
+    }
+  ],
+  "routes": [
+    {
+      "net": "I2S_BCLK_1V8",
+      "track": "Track_A_No_New_HDI_Span",
+      "segments": [
+        {
+          "layer": "L1",
+          "x1": 171.26,
+          "y1": 396.66,
+          "x2": 184.0,
+          "y2": 396.66,
+          "w": 4.0
+        },
+        {
+          "layer": "L1",
+          "x1": 184.0,
+          "y1": 396.66,
+          "x2": 184.0,
+          "y2": 412.0,
+          "w": 4.0
+        },
+        {
+          "layer": "L6",
+          "x1": 184.0,
+          "y1": 412.0,
+          "x2": 133.3,
+          "y2": 412.0,
+          "w": 4.0
+        },
+        {
+          "layer": "L6",
+          "x1": 133.3,
+          "y1": 412.0,
+          "x2": 133.3,
+          "y2": 288.4,
+          "w": 4.0
+        },
+        {
+          "layer": "L6",
+          "x1": 133.75,
+          "y1": 412.0,
+          "x2": 133.75,
+          "y2": 542.25,
+          "w": 4.0
+        },
+        {
+          "layer": "L6",
+          "x1": 133.75,
+          "y1": 542.25,
+          "x2": 148.0,
+          "y2": 542.25,
+          "w": 4.0
+        },
+        {
+          "layer": "L6",
+          "x1": 148.0,
+          "y1": 542.25,
+          "x2": 148.0,
+          "y2": 596.0,
+          "w": 4.0
+        }
+      ],
+      "expected_drc_reduction": 3,
+      "endpoints": [
+        "U11.L9 (L1)",
+        "V_R8_BCLK_PTH",
+        "J1.P11 (L6)",
+        "U10.C1_NEW (L6)",
+        "R3.1_NEW (L6)"
+      ]
+    },
+    {
+      "net": "SPK_R_N",
+      "track": "Track_A_No_New_HDI_Span",
+      "segments": [
+        {
+          "layer": "L6",
+          "x1": 102.25,
+          "y1": 558.0,
+          "x2": 32.1,
+          "y2": 558.0,
+          "w": 6.0
+        },
+        {
+          "layer": "L6",
+          "x1": 32.1,
+          "y1": 558.0,
+          "x2": 32.1,
+          "y2": 575.4,
+          "w": 6.0
+        }
+      ],
+      "expected_drc_reduction": 2,
+      "endpoints": [
+        "U10.B3_NEW (L6)",
+        "SPK_R_N_PAD (L6)"
+      ]
+    },
+    {
+      "net": "SPK_R_P",
+      "track": "Track_A_No_New_HDI_Span",
+      "segments": [
+        {
+          "layer": "L6",
+          "x1": 102.25,
+          "y1": 573.75,
+          "x2": 75.4,
+          "y2": 573.75,
+          "w": 6.0
+        },
+        {
+          "layer": "L6",
+          "x1": 75.4,
+          "y1": 573.75,
+          "x2": 75.4,
+          "y2": 575.4,
+          "w": 6.0
+        }
+      ],
+      "expected_drc_reduction": 2,
+      "endpoints": [
+        "U10.A3_NEW (L6)",
+        "SPK_R_P_PAD (L6)"
+      ]
+    },
+    {
+      "net": "I2S_LRCLK_1V8_BOTTOM_TRUNK",
+      "track": "Track_A_No_New_HDI_Span",
+      "segments": [
+        {
+          "layer": "L6",
+          "x1": 71.5,
+          "y1": 288.4,
+          "x2": 71.5,
+          "y2": 542.25,
+          "w": 4.0
+        },
+        {
+          "layer": "L6",
+          "x1": 71.5,
+          "y1": 542.25,
+          "x2": 102.25,
+          "y2": 542.25,
+          "w": 4.0
+        },
+        {
+          "layer": "L6",
+          "x1": 102.25,
+          "y1": 542.25,
+          "x2": 102.25,
+          "y2": 596.0,
+          "w": 4.0
+        }
+      ],
+      "expected_drc_reduction": 2,
+      "endpoints": [
+        "J1.P12 (L6)",
+        "U10.C3_NEW (L6)",
+        "R4.1_NEW (L6)"
+      ]
+    },
+    {
+      "net": "I2S_LRCLK_1V8_K4_DROP",
+      "track": "Track_B_2plus2plus2_HDI_EQ",
+      "segments": [
+        {
+          "layer": "L2",
+          "x1": 157.48,
+          "y1": 327.76,
+          "x2": 157.48,
+          "y2": 343.6,
+          "w": 3.0
+        },
+        {
+          "layer": "L3",
+          "x1": 157.48,
+          "y1": 343.6,
+          "x2": 157.48,
+          "y2": 362.0,
+          "w": 4.0
+        },
+        {
+          "layer": "L4",
+          "x1": 157.48,
+          "y1": 362.0,
+          "x2": 138.0,
+          "y2": 362.0,
+          "w": 4.0
+        },
+        {
+          "layer": "L5",
+          "x1": 138.0,
+          "y1": 362.0,
+          "x2": 122.0,
+          "y2": 362.0,
+          "w": 4.0
+        },
+        {
+          "layer": "L6",
+          "x1": 122.0,
+          "y1": 362.0,
+          "x2": 71.5,
+          "y2": 362.0,
+          "w": 4.0
+        }
+      ],
+      "expected_drc_reduction": 2,
+      "endpoints": [
+        "U11.K4 (L1)",
+        "V_R8_LRCK_L12..L56",
+        "I2S_LRCLK_1V8_BOTTOM_TRUNK (L6)"
+      ]
+    }
+  ]
+}

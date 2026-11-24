@@ -1,0 +1,449 @@
+{
+  "verification_scope": "OFFLINE_PROGRAMMATIC_DESIGN_DELTA_ONLY_NOT_NATIVE_EDA",
+  "sole_baseline": "PR #58 (hardware/evt1-h03-r8-codex-20261124, commit 1b69c06) PCB3 = 130 Connection Errors",
+  "board_width_mm": 5.2,
+  "all_geometric_checks_pass": true,
+  "track_a_expected_connection_reduction": 9,
+  "track_a_projected_pcb3_errors": 121,
+  "track_b_additional_reduction_k4": 2,
+  "u10_overlap_check": {
+    "u10_old_vs_u11_overlap_mil2": 2434.23,
+    "u10_new_vs_u11_overlap_mil2": 0.0,
+    "u10_new_vs_c8c11_overlap_mil2": 0.0,
+    "u10_new_y_clearance_below_u11_mil": 91.67,
+    "u10_new_x_edge_margins_mil": [
+      92.5,
+      61.22
+    ],
+    "status": "PASS"
+  },
+  "edge_checks": [
+    {
+      "check": "via_pad_to_board_edge",
+      "obj": "V_R8_BCLK_PTH",
+      "measured_mil": 14.724,
+      "limit_mil": 13.78,
+      "status": "PASS"
+    },
+    {
+      "check": "via_pad_to_board_edge",
+      "obj": "V_R8_GND_RET_1",
+      "measured_mil": 36.724,
+      "limit_mil": 13.78,
+      "status": "PASS"
+    },
+    {
+      "check": "via_pad_to_board_edge",
+      "obj": "V_R8_LRCK_L12",
+      "measured_mil": 43.394,
+      "limit_mil": 13.78,
+      "status": "PASS"
+    },
+    {
+      "check": "via_pad_to_board_edge",
+      "obj": "V_R8_LRCK_L23",
+      "measured_mil": 43.394,
+      "limit_mil": 13.78,
+      "status": "PASS"
+    },
+    {
+      "check": "via_pad_to_board_edge",
+      "obj": "V_R8_LRCK_L34",
+      "measured_mil": 41.244,
+      "limit_mil": 13.78,
+      "status": "PASS"
+    },
+    {
+      "check": "via_pad_to_board_edge",
+      "obj": "V_R8_LRCK_L45",
+      "measured_mil": 62.874,
+      "limit_mil": 13.78,
+      "status": "PASS"
+    },
+    {
+      "check": "via_pad_to_board_edge",
+      "obj": "V_R8_LRCK_L56",
+      "measured_mil": 78.874,
+      "limit_mil": 13.78,
+      "status": "PASS"
+    },
+    {
+      "check": "trace_to_board_edge",
+      "obj": "I2S_BCLK_1V8_seg1",
+      "measured_mil": 18.724,
+      "limit_mil": 11.85,
+      "status": "PASS"
+    },
+    {
+      "check": "trace_to_board_edge",
+      "obj": "I2S_BCLK_1V8_seg2",
+      "measured_mil": 18.724,
+      "limit_mil": 11.85,
+      "status": "PASS"
+    },
+    {
+      "check": "trace_to_board_edge",
+      "obj": "I2S_BCLK_1V8_seg3",
+      "measured_mil": 18.724,
+      "limit_mil": 11.85,
+      "status": "PASS"
+    },
+    {
+      "check": "trace_to_board_edge",
+      "obj": "I2S_BCLK_1V8_seg4",
+      "measured_mil": 69.424,
+      "limit_mil": 11.85,
+      "status": "PASS"
+    },
+    {
+      "check": "trace_to_board_edge",
+      "obj": "I2S_BCLK_1V8_seg5",
+      "measured_mil": 68.974,
+      "limit_mil": 11.85,
+      "status": "PASS"
+    },
+    {
+      "check": "trace_to_board_edge",
+      "obj": "I2S_BCLK_1V8_seg6",
+      "measured_mil": 54.724,
+      "limit_mil": 11.85,
+      "status": "PASS"
+    },
+    {
+      "check": "trace_to_board_edge",
+      "obj": "I2S_BCLK_1V8_seg7",
+      "measured_mil": 54.724,
+      "limit_mil": 11.85,
+      "status": "PASS"
+    },
+    {
+      "check": "trace_to_board_edge",
+      "obj": "SPK_R_N_seg1",
+      "measured_mil": 29.1,
+      "limit_mil": 11.85,
+      "status": "PASS"
+    },
+    {
+      "check": "trace_to_board_edge",
+      "obj": "SPK_R_N_seg2",
+      "measured_mil": 29.1,
+      "limit_mil": 11.85,
+      "status": "PASS"
+    },
+    {
+      "check": "trace_to_board_edge",
+      "obj": "SPK_R_P_seg1",
+      "measured_mil": 72.4,
+      "limit_mil": 11.85,
+      "status": "PASS"
+    },
+    {
+      "check": "trace_to_board_edge",
+      "obj": "SPK_R_P_seg2",
+      "measured_mil": 72.4,
+      "limit_mil": 11.85,
+      "status": "PASS"
+    },
+    {
+      "check": "trace_to_board_edge",
+      "obj": "I2S_LRCLK_1V8_BOTTOM_TRUNK_seg1",
+      "measured_mil": 69.5,
+      "limit_mil": 11.85,
+      "status": "PASS"
+    },
+    {
+      "check": "trace_to_board_edge",
+      "obj": "I2S_LRCLK_1V8_BOTTOM_TRUNK_seg2",
+      "measured_mil": 69.5,
+      "limit_mil": 11.85,
+      "status": "PASS"
+    },
+    {
+      "check": "trace_to_board_edge",
+      "obj": "I2S_LRCLK_1V8_BOTTOM_TRUNK_seg3",
+      "measured_mil": 100.25,
+      "limit_mil": 11.85,
+      "status": "PASS"
+    },
+    {
+      "check": "trace_to_board_edge",
+      "obj": "I2S_LRCLK_1V8_K4_DROP_seg1",
+      "measured_mil": 45.744,
+      "limit_mil": 11.85,
+      "status": "PASS"
+    },
+    {
+      "check": "trace_to_board_edge",
+      "obj": "I2S_LRCLK_1V8_K4_DROP_seg2",
+      "measured_mil": 45.244,
+      "limit_mil": 11.85,
+      "status": "PASS"
+    },
+    {
+      "check": "trace_to_board_edge",
+      "obj": "I2S_LRCLK_1V8_K4_DROP_seg3",
+      "measured_mil": 45.244,
+      "limit_mil": 11.85,
+      "status": "PASS"
+    },
+    {
+      "check": "trace_to_board_edge",
+      "obj": "I2S_LRCLK_1V8_K4_DROP_seg4",
+      "measured_mil": 64.724,
+      "limit_mil": 11.85,
+      "status": "PASS"
+    },
+    {
+      "check": "trace_to_board_edge",
+      "obj": "I2S_LRCLK_1V8_K4_DROP_seg5",
+      "measured_mil": 69.5,
+      "limit_mil": 11.85,
+      "status": "PASS"
+    }
+  ],
+  "via_to_via_checks": [
+    {
+      "check": "via_to_via_clearance",
+      "pair": "V_R8_BCLK_PTH <-> V_R8_GND_RET_1",
+      "same_net": false,
+      "center_mil": 22.0,
+      "hole_wall_mil": 16.0,
+      "copper_gap_mil": 10.0,
+      "limit_wall_mil": 11.8,
+      "status": "PASS"
+    },
+    {
+      "check": "via_to_via_clearance",
+      "pair": "V_R8_BCLK_PTH <-> V_R8_LRCK_L12",
+      "same_net": false,
+      "center_mil": 88.316,
+      "hole_wall_mil": 83.816,
+      "copper_gap_mil": 78.466,
+      "limit_wall_mil": 11.8,
+      "status": "PASS"
+    },
+    {
+      "check": "via_to_via_clearance",
+      "pair": "V_R8_BCLK_PTH <-> V_R8_LRCK_L23",
+      "same_net": false,
+      "center_mil": 73.361,
+      "hole_wall_mil": 68.861,
+      "copper_gap_mil": 63.511,
+      "limit_wall_mil": 11.8,
+      "status": "PASS"
+    },
+    {
+      "check": "via_to_via_clearance",
+      "pair": "V_R8_BCLK_PTH <-> V_R8_LRCK_L34",
+      "same_net": false,
+      "center_mil": 56.598,
+      "hole_wall_mil": 50.598,
+      "copper_gap_mil": 44.598,
+      "limit_wall_mil": 11.8,
+      "status": "PASS"
+    },
+    {
+      "check": "via_to_via_clearance",
+      "pair": "V_R8_BCLK_PTH <-> V_R8_LRCK_L45",
+      "same_net": false,
+      "center_mil": 67.941,
+      "hole_wall_mil": 63.441,
+      "copper_gap_mil": 58.091,
+      "limit_wall_mil": 11.8,
+      "status": "PASS"
+    },
+    {
+      "check": "via_to_via_clearance",
+      "pair": "V_R8_BCLK_PTH <-> V_R8_LRCK_L56",
+      "same_net": false,
+      "center_mil": 79.649,
+      "hole_wall_mil": 75.149,
+      "copper_gap_mil": 69.799,
+      "limit_wall_mil": 11.8,
+      "status": "PASS"
+    },
+    {
+      "check": "via_to_via_clearance",
+      "pair": "V_R8_GND_RET_1 <-> V_R8_LRCK_L12",
+      "same_net": false,
+      "center_mil": 84.361,
+      "hole_wall_mil": 79.861,
+      "copper_gap_mil": 74.511,
+      "limit_wall_mil": 11.8,
+      "status": "PASS"
+    },
+    {
+      "check": "via_to_via_clearance",
+      "pair": "V_R8_GND_RET_1 <-> V_R8_LRCK_L23",
+      "same_net": false,
+      "center_mil": 68.549,
+      "hole_wall_mil": 64.049,
+      "copper_gap_mil": 58.699,
+      "limit_wall_mil": 11.8,
+      "status": "PASS"
+    },
+    {
+      "check": "via_to_via_clearance",
+      "pair": "V_R8_GND_RET_1 <-> V_R8_LRCK_L34",
+      "same_net": false,
+      "center_mil": 50.204,
+      "hole_wall_mil": 44.204,
+      "copper_gap_mil": 38.204,
+      "limit_wall_mil": 11.8,
+      "status": "PASS"
+    },
+    {
+      "check": "via_to_via_clearance",
+      "pair": "V_R8_GND_RET_1 <-> V_R8_LRCK_L45",
+      "same_net": false,
+      "center_mil": 55.462,
+      "hole_wall_mil": 50.962,
+      "copper_gap_mil": 45.612,
+      "limit_wall_mil": 11.8,
+      "status": "PASS"
+    },
+    {
+      "check": "via_to_via_clearance",
+      "pair": "V_R8_GND_RET_1 <-> V_R8_LRCK_L56",
+      "same_net": false,
+      "center_mil": 64.031,
+      "hole_wall_mil": 59.531,
+      "copper_gap_mil": 54.181,
+      "limit_wall_mil": 11.8,
+      "status": "PASS"
+    },
+    {
+      "check": "via_to_via_clearance",
+      "pair": "V_R8_LRCK_L12 <-> V_R8_LRCK_L23",
+      "same_net": true,
+      "center_mil": 15.84,
+      "hole_wall_mil": 12.84,
+      "copper_gap_mil": 8.14,
+      "limit_wall_mil": 11.8,
+      "status": "PASS"
+    },
+    {
+      "check": "via_to_via_clearance",
+      "pair": "V_R8_LRCK_L12 <-> V_R8_LRCK_L34",
+      "same_net": true,
+      "center_mil": 34.24,
+      "hole_wall_mil": 29.74,
+      "copper_gap_mil": 24.39,
+      "limit_wall_mil": 11.8,
+      "status": "PASS"
+    },
+    {
+      "check": "via_to_via_clearance",
+      "pair": "V_R8_LRCK_L12 <-> V_R8_LRCK_L45",
+      "same_net": true,
+      "center_mil": 39.394,
+      "hole_wall_mil": 36.394,
+      "copper_gap_mil": 31.694,
+      "limit_wall_mil": 11.8,
+      "status": "PASS"
+    },
+    {
+      "check": "via_to_via_clearance",
+      "pair": "V_R8_LRCK_L12 <-> V_R8_LRCK_L56",
+      "same_net": true,
+      "center_mil": 49.307,
+      "hole_wall_mil": 46.307,
+      "copper_gap_mil": 41.607,
+      "limit_wall_mil": 11.8,
+      "status": "PASS"
+    },
+    {
+      "check": "via_to_via_clearance",
+      "pair": "V_R8_LRCK_L23 <-> V_R8_LRCK_L34",
+      "same_net": true,
+      "center_mil": 18.4,
+      "hole_wall_mil": 13.9,
+      "copper_gap_mil": 8.55,
+      "limit_wall_mil": 11.8,
+      "status": "PASS"
+    },
+    {
+      "check": "via_to_via_clearance",
+      "pair": "V_R8_LRCK_L23 <-> V_R8_LRCK_L45",
+      "same_net": true,
+      "center_mil": 26.796,
+      "hole_wall_mil": 23.796,
+      "copper_gap_mil": 19.096,
+      "limit_wall_mil": 11.8,
+      "status": "PASS"
+    },
+    {
+      "check": "via_to_via_clearance",
+      "pair": "V_R8_LRCK_L23 <-> V_R8_LRCK_L56",
+      "same_net": true,
+      "center_mil": 39.967,
+      "hole_wall_mil": 36.967,
+      "copper_gap_mil": 32.267,
+      "limit_wall_mil": 11.8,
+      "status": "PASS"
+    },
+    {
+      "check": "via_to_via_clearance",
+      "pair": "V_R8_LRCK_L34 <-> V_R8_LRCK_L45",
+      "same_net": true,
+      "center_mil": 19.48,
+      "hole_wall_mil": 14.98,
+      "copper_gap_mil": 9.63,
+      "limit_wall_mil": 11.8,
+      "status": "PASS"
+    },
+    {
+      "check": "via_to_via_clearance",
+      "pair": "V_R8_LRCK_L34 <-> V_R8_LRCK_L56",
+      "same_net": true,
+      "center_mil": 35.48,
+      "hole_wall_mil": 30.98,
+      "copper_gap_mil": 25.63,
+      "limit_wall_mil": 11.8,
+      "status": "PASS"
+    },
+    {
+      "check": "via_to_via_clearance",
+      "pair": "V_R8_LRCK_L45 <-> V_R8_LRCK_L56",
+      "same_net": true,
+      "center_mil": 16.0,
+      "hole_wall_mil": 13.0,
+      "copper_gap_mil": 8.3,
+      "limit_wall_mil": 11.8,
+      "status": "PASS"
+    }
+  ],
+  "relocated_u10_pads": {
+    "C1": {
+      "x": 133.75,
+      "y": 542.25,
+      "layer": "L6",
+      "net": "I2S_BCLK_1V8"
+    },
+    "C3": {
+      "x": 102.25,
+      "y": 542.25,
+      "layer": "L6",
+      "net": "I2S_LRCLK_1V8"
+    },
+    "B3": {
+      "x": 102.25,
+      "y": 558.0,
+      "layer": "L6",
+      "net": "SPK_R_N"
+    },
+    "A3": {
+      "x": 102.25,
+      "y": 573.75,
+      "layer": "L6",
+      "net": "SPK_R_P"
+    }
+  },
+  "route_lengths_mil": {
+    "I2S_BCLK_1V8": 400.63,
+    "SPK_R_N": 87.55,
+    "SPK_R_P": 28.5,
+    "I2S_LRCLK_1V8_BOTTOM_TRUNK": 338.35,
+    "I2S_LRCLK_1V8_K4_DROP": 120.22
+  }
+}
