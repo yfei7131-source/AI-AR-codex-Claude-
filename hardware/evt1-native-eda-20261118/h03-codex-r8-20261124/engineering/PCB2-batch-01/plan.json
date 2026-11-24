@@ -1,0 +1,18 @@
+{
+  "id": "PCB2-batch-01",
+  "board": "PCB2",
+  "routes": [
+    {
+      "net": "GND", "layer": 1, "width": 4, "from": "U4.2",
+      "targetPrimitive": "fff03e28f8c12258", "sourcePrimitive": "1d6034c9636c4e6ae12",
+      "points": [[100.2,270.5],[108.2,278.5],[112.3,278.5],[117.1,283.3]],
+      "screenMinForeignCopperMil": 9.486
+    },
+    {
+      "net": "1V2_FPGA_CORE", "layer": 1, "width": 4, "from": "U4.1",
+      "targetPrimitive": "28c564e29e1ef8bb", "sourcePrimitive": "1d6034c9636c4e6ae13",
+      "points": [[100.2,296.1],[101.1,296.1],[102,297],[102,322],[106,326],[132,326]],
+      "screenMinForeignCopperMil": 6.65
+    }
+  ]
+}
