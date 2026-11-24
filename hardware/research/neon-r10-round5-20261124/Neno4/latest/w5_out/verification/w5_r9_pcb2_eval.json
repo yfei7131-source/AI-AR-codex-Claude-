@@ -1,0 +1,1033 @@
+{
+  "verification_scope": "OFFLINE_FULL_COPPER_GEOMETRY_SCREEN_NOT_NATIVE_DRC",
+  "full_board_native_drc_completed": false,
+  "warning": "Executed on real full-board PCB2-copper.json, but offline Shapely 2 checks NEVER substitute for native EasyEDA Pro full-board ERC/DRC. Missing plane/span fields are explicitly flagged below and NOT assumed empty.",
+  "source_copper_json": "../w5_in/PCB2-copper.json",
+  "semantic_sha256": "70482367cb313b6c89db8df62acdd64add39dbf534e2c1dc3cc17774ed758c06",
+  "full_board_inventory": {
+    "components_count": 86,
+    "copper_lines_count": 419,
+    "copper_vias_count": 47,
+    "polygon_pads_count": 16,
+    "lines_by_layer": {
+      "2": 159,
+      "16": 16,
+      "1": 242,
+      "17": 2
+    },
+    "board_bounds_mil": [
+      0.0,
+      0.0,
+      181.1024,
+      984.252
+    ]
+  },
+  "missing_data_flags": {
+    "l2_gnd_plane_geometry": "MISSING_IN_COPPER_JSON: copper.pours/poured/regions/fills contain 0 L2 (layer 15) polygons; DO NOT assume L2 is empty — verify L2 plane containment natively in EasyEDA Pro.",
+    "l5_gnd_plane_geometry": "MISSING_IN_COPPER_JSON: copper.pours/poured/regions/fills contain 0 L5 (layer 18) polygons; DO NOT assume L5 is empty — verify L5 plane containment natively in EasyEDA Pro.",
+    "via_layer_span_metadata": "MISSING_IN_COPPER_JSON: copper.vias entries lack layer-span fields; all 47 vias are treated conservatively for hole-wall & L6 copper clearance checks.",
+    "silkscreen_assembly_outline": "NOT_AVAILABLE_IN_COPPER_JSON (silk=not-requested); assembly clearance uses component bbox only."
+  },
+  "native_rules_snapshot": {
+    "clearanceMil": 5.98,
+    "clearanceTrackTrackMil": 1.97,
+    "trackWidthMil": 1.97,
+    "powerWidthMil": 20,
+    "trackWidthMinMil": 1.97,
+    "viaDrillMil": 7.87,
+    "viaDiameterMil": 15.75,
+    "copperToEdgeMil": 10,
+    "source": "live"
+  },
+  "locked_screening_rules_mil": {
+    "edge_clearance": 12.0,
+    "copper_clearance": 6.2,
+    "sensitive_3w_clearance": 11.8,
+    "hole_wall_clearance": 11.811,
+    "smd_chip_spacing": 6.0,
+    "smd_sot_spacing": 8.0,
+    "smd_qfn_bga_spacing": 40.0
+  },
+  "known_conflict_gnd_track": {
+    "primitiveId": "d4ca5cb6211b4cf9",
+    "layer": 2,
+    "net": "GND",
+    "lineWidth_mil": 3.0,
+    "coords_mil": [
+      [
+        130.9,
+        277.4
+      ],
+      [
+        114.0,
+        290.2
+      ]
+    ],
+    "round3_vsys_path_clearance_mil": 0.0,
+    "round3_conflict_confirmed": true
+  },
+  "mk2_interference_audit": {
+    "mk2_device": "IM69D130V01XTSA1",
+    "mk2_layer": 2,
+    "mk2_bbox_mil": [
+      1.0977,
+      819.0128,
+      155.1172,
+      986.4918
+    ],
+    "mk2_polygon_pad_count": 4,
+    "mk2_polygon_total_area_sqmil": 2539.79,
+    "mk2_polygon_hole_diams_mil": [
+      1.42332,
+      1.42338
+    ],
+    "native_c11_vs_mk2_bbox_overlap_sqmil": 906.73,
+    "native_c11_vs_mk2_polygon_dist_mil": 27.75
+  },
+  "scenarios": {
+    "S1_zero_shift_l6_only": {
+      "scheme": "S1_ZERO_SHIFT_L6_ONLY_INTACT_COPPER",
+      "joint_shifts_mil": {},
+      "rerouted_track_ids": [],
+      "shift_envelope_violations": [],
+      "shift_envelopes_clean": true,
+      "passing_count": 0,
+      "passing_top5": [],
+      "failed_total": 3456,
+      "failure_reason_counts": {
+        "SMD_SPACING_FAIL": 3308,
+        "NO_VSYS_L6_ROUTE": 20,
+        "BOARD_EDGE_FAIL": 128
+      },
+      "failed_sample": [
+        {
+          "center_mil": [
+            50,
+            260
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            50,
+            264
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            50,
+            268
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            50,
+            272
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            50,
+            276
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            50,
+            280
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            50,
+            284
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            50,
+            288
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            50,
+            292
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            50,
+            296
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            50,
+            300
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            50,
+            304
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            50,
+            308
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            50,
+            312
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            50,
+            316
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        }
+      ]
+    },
+    "S2_zero_shift_l6_pocket_l4_stereo": {
+      "scheme": "S2_ZERO_SHIFT_L6_POCKET_L4_STEREO",
+      "joint_shifts_mil": {},
+      "rerouted_track_ids": [],
+      "shift_envelope_violations": [],
+      "shift_envelopes_clean": true,
+      "passing_count": 80,
+      "passing_top5": [
+        {
+          "scheme": "S2_ZERO_SHIFT_L6_POCKET_L4_STEREO",
+          "center_mil": [
+            90,
+            366
+          ],
+          "angle_deg": 180,
+          "pad1_vsys_mil": [
+            102.62,
+            366.0
+          ],
+          "pad2_gnd_mil": [
+            77.38,
+            366.0
+          ],
+          "gnd_bv_l5_l6_mil": [
+            63.38,
+            366.0
+          ],
+          "vsys_route_mode": "L4_STEREO_REQUIRES_HDI_EQ",
+          "vsys_route_len_mil": 127.73,
+          "vsys_waypoints_mil": [
+            [
+              102.62,
+              366.0
+            ],
+            [
+              111.8,
+              238.6
+            ]
+          ],
+          "avdd_req_filter_gap_mil": 40.4,
+          "d4ca5cb6211b4cf9_gap_mil": "SEPARATED_ON_L4_ACROSS_L5_PLANE (2D_xy_proj=2.4mil)",
+          "min_l6_comp_gap_mil": 6.93,
+          "gnd_via_hole_wall_gap_mil": 12.85,
+          "l5_plane_check": "UNVERIFIED_MISSING_L5_PLANE_IN_COPPER_JSON",
+          "in_u2_bga_shadow": true,
+          "mk2_overlap_sqmil": 0.0
+        },
+        {
+          "scheme": "S2_ZERO_SHIFT_L6_POCKET_L4_STEREO",
+          "center_mil": [
+            88,
+            366
+          ],
+          "angle_deg": 180,
+          "pad1_vsys_mil": [
+            100.62,
+            366.0
+          ],
+          "pad2_gnd_mil": [
+            75.38,
+            366.0
+          ],
+          "gnd_bv_l5_l6_mil": [
+            61.38,
+            366.0
+          ],
+          "vsys_route_mode": "L4_STEREO_REQUIRES_HDI_EQ",
+          "vsys_route_len_mil": 127.89,
+          "vsys_waypoints_mil": [
+            [
+              100.62,
+              366.0
+            ],
+            [
+              111.8,
+              238.6
+            ]
+          ],
+          "avdd_req_filter_gap_mil": 40.4,
+          "d4ca5cb6211b4cf9_gap_mil": "SEPARATED_ON_L4_ACROSS_L5_PLANE (2D_xy_proj=3.2mil)",
+          "min_l6_comp_gap_mil": 6.93,
+          "gnd_via_hole_wall_gap_mil": 14.31,
+          "l5_plane_check": "UNVERIFIED_MISSING_L5_PLANE_IN_COPPER_JSON",
+          "in_u2_bga_shadow": true,
+          "mk2_overlap_sqmil": 0.0
+        },
+        {
+          "scheme": "S2_ZERO_SHIFT_L6_POCKET_L4_STEREO",
+          "center_mil": [
+            86,
+            366
+          ],
+          "angle_deg": 180,
+          "pad1_vsys_mil": [
+            98.62,
+            366.0
+          ],
+          "pad2_gnd_mil": [
+            73.38,
+            366.0
+          ],
+          "gnd_bv_l5_l6_mil": [
+            59.38,
+            366.0
+          ],
+          "vsys_route_mode": "L4_STEREO_REQUIRES_HDI_EQ",
+          "vsys_route_len_mil": 128.08,
+          "vsys_waypoints_mil": [
+            [
+              98.62,
+              366.0
+            ],
+            [
+              111.8,
+              238.6
+            ]
+          ],
+          "avdd_req_filter_gap_mil": 40.4,
+          "d4ca5cb6211b4cf9_gap_mil": "SEPARATED_ON_L4_ACROSS_L5_PLANE (2D_xy_proj=4.0mil)",
+          "min_l6_comp_gap_mil": 6.93,
+          "gnd_via_hole_wall_gap_mil": 15.86,
+          "l5_plane_check": "UNVERIFIED_MISSING_L5_PLANE_IN_COPPER_JSON",
+          "in_u2_bga_shadow": true,
+          "mk2_overlap_sqmil": 0.0
+        },
+        {
+          "scheme": "S2_ZERO_SHIFT_L6_POCKET_L4_STEREO",
+          "center_mil": [
+            84,
+            366
+          ],
+          "angle_deg": 180,
+          "pad1_vsys_mil": [
+            96.62,
+            366.0
+          ],
+          "pad2_gnd_mil": [
+            71.38,
+            366.0
+          ],
+          "gnd_bv_l5_l6_mil": [
+            57.38,
+            366.0
+          ],
+          "vsys_route_mode": "L4_STEREO_REQUIRES_HDI_EQ",
+          "vsys_route_len_mil": 128.3,
+          "vsys_waypoints_mil": [
+            [
+              96.62,
+              366.0
+            ],
+            [
+              111.8,
+              238.6
+            ]
+          ],
+          "avdd_req_filter_gap_mil": 40.4,
+          "d4ca5cb6211b4cf9_gap_mil": "SEPARATED_ON_L4_ACROSS_L5_PLANE (2D_xy_proj=4.79mil)",
+          "min_l6_comp_gap_mil": 6.93,
+          "gnd_via_hole_wall_gap_mil": 17.49,
+          "l5_plane_check": "UNVERIFIED_MISSING_L5_PLANE_IN_COPPER_JSON",
+          "in_u2_bga_shadow": true,
+          "mk2_overlap_sqmil": 0.0
+        },
+        {
+          "scheme": "S2_ZERO_SHIFT_L6_POCKET_L4_STEREO",
+          "center_mil": [
+            82,
+            366
+          ],
+          "angle_deg": 180,
+          "pad1_vsys_mil": [
+            94.62,
+            366.0
+          ],
+          "pad2_gnd_mil": [
+            69.38,
+            366.0
+          ],
+          "gnd_bv_l5_l6_mil": [
+            55.38,
+            366.0
+          ],
+          "vsys_route_mode": "L4_STEREO_REQUIRES_HDI_EQ",
+          "vsys_route_len_mil": 128.55,
+          "vsys_waypoints_mil": [
+            [
+              94.62,
+              366.0
+            ],
+            [
+              111.8,
+              238.6
+            ]
+          ],
+          "avdd_req_filter_gap_mil": 40.4,
+          "d4ca5cb6211b4cf9_gap_mil": "SEPARATED_ON_L4_ACROSS_L5_PLANE (2D_xy_proj=5.58mil)",
+          "min_l6_comp_gap_mil": 6.93,
+          "gnd_via_hole_wall_gap_mil": 19.17,
+          "l5_plane_check": "UNVERIFIED_MISSING_L5_PLANE_IN_COPPER_JSON",
+          "in_u2_bga_shadow": true,
+          "mk2_overlap_sqmil": 0.0
+        }
+      ],
+      "failed_total": 1064,
+      "failure_reason_counts": {
+        "SMD_SPACING_FAIL": 1064
+      },
+      "failed_sample": [
+        {
+          "center_mil": [
+            62,
+            358
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            62,
+            360
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            62,
+            362
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            62,
+            364
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            62,
+            366
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            62,
+            368
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            62,
+            370
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            62,
+            372
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            62,
+            374
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            62,
+            376
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            62,
+            378
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            62,
+            380
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            62,
+            382
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            64,
+            358
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            64,
+            360
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        }
+      ]
+    },
+    "S3_round3_shift_audit": {
+      "scheme": "S3_ROUND3_SHIFT_AUDIT_WITH_INTACT_d4ca5cb6211b4cf9",
+      "joint_shifts_mil": {
+        "U1": [
+          0.0,
+          50.0
+        ],
+        "U3": [
+          0.0,
+          38.0
+        ],
+        "U5": [
+          0.0,
+          64.0
+        ]
+      },
+      "rerouted_track_ids": [],
+      "shift_envelope_violations": [
+        {
+          "shifted": "U1",
+          "neighbor": "C22",
+          "gap_mil": 0.0
+        },
+        {
+          "shifted": "U1",
+          "neighbor": "J1",
+          "gap_mil": 0.0
+        },
+        {
+          "shifted": "U1",
+          "neighbor": "U3",
+          "gap_mil": 0.0
+        },
+        {
+          "shifted": "U1",
+          "neighbor": "U5",
+          "gap_mil": 3.35
+        },
+        {
+          "shifted": "U3",
+          "neighbor": "C20",
+          "gap_mil": 1.92
+        },
+        {
+          "shifted": "U3",
+          "neighbor": "C22",
+          "gap_mil": 0.0
+        },
+        {
+          "shifted": "U3",
+          "neighbor": "U1",
+          "gap_mil": 0.0
+        },
+        {
+          "shifted": "U3",
+          "neighbor": "U5",
+          "gap_mil": 0.0
+        },
+        {
+          "shifted": "U3",
+          "neighbor": "U6",
+          "gap_mil": 0.0
+        },
+        {
+          "shifted": "U5",
+          "neighbor": "C22",
+          "gap_mil": 0.0
+        },
+        {
+          "shifted": "U5",
+          "neighbor": "U1",
+          "gap_mil": 3.35
+        },
+        {
+          "shifted": "U5",
+          "neighbor": "U14",
+          "gap_mil": 0.0
+        },
+        {
+          "shifted": "U5",
+          "neighbor": "U3",
+          "gap_mil": 0.0
+        }
+      ],
+      "shift_envelopes_clean": false,
+      "passing_count": 0,
+      "passing_top5": [],
+      "failed_total": 364,
+      "failure_reason_counts": {
+        "SMD_SPACING_FAIL": 314,
+        "PAD_COPPER_CONFLICT": 10,
+        "KNOWN_GND_CONFLICT_d4ca5cb6211b4cf9": 10,
+        "BOARD_EDGE_FAIL": 14,
+        "NO_LEGAL_GND_BV_L5_L6": 16
+      },
+      "failed_sample": [
+        {
+          "center_mil": [
+            126,
+            276
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.02 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            126,
+            278
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.02 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            126,
+            280
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.02 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            126,
+            282
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.02 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            126,
+            284
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.02 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            126,
+            286
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.02 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            126,
+            288
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.02 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            128,
+            276
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=1.98 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            128,
+            278
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=2.02 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            128,
+            280
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=2.02 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            128,
+            282
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=2.02 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            128,
+            284
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=2.02 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            128,
+            286
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=2.02 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            128,
+            288
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=2.02 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            130,
+            276
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=1.98 < 6.0 mil"
+        }
+      ]
+    },
+    "S4_joint_relayout_reroute_d4ca": {
+      "scheme": "S4_JOINT_U1_U3_U5_C22_REROUTE_d4ca",
+      "joint_shifts_mil": {
+        "U1": [
+          -40.0,
+          76.0
+        ],
+        "U3": [
+          0.0,
+          0.0
+        ]
+      },
+      "rerouted_track_ids": [
+        "d4ca5cb6211b4cf9"
+      ],
+      "shift_envelope_violations": [
+        {
+          "shifted": "U1",
+          "neighbor": "C22",
+          "gap_mil": 5.16
+        },
+        {
+          "shifted": "U1",
+          "neighbor": "U3",
+          "gap_mil": 0.0
+        },
+        {
+          "shifted": "U1",
+          "neighbor": "U5",
+          "gap_mil": 0.0
+        },
+        {
+          "shifted": "U1",
+          "neighbor": "U6",
+          "gap_mil": 0.0
+        },
+        {
+          "shifted": "U3",
+          "neighbor": "C20",
+          "gap_mil": 1.92
+        },
+        {
+          "shifted": "U3",
+          "neighbor": "C22",
+          "gap_mil": 0.0
+        },
+        {
+          "shifted": "U3",
+          "neighbor": "J1",
+          "gap_mil": 0.0
+        },
+        {
+          "shifted": "U3",
+          "neighbor": "U1",
+          "gap_mil": 0.0
+        },
+        {
+          "shifted": "U3",
+          "neighbor": "U5",
+          "gap_mil": 0.0
+        },
+        {
+          "shifted": "U3",
+          "neighbor": "U6",
+          "gap_mil": 0.0
+        }
+      ],
+      "shift_envelopes_clean": false,
+      "passing_count": 0,
+      "passing_top5": [],
+      "failed_total": 836,
+      "failure_reason_counts": {
+        "SMD_SPACING_FAIL": 770,
+        "BOARD_EDGE_FAIL": 66
+      },
+      "failed_sample": [
+        {
+          "center_mil": [
+            118,
+            268
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            118,
+            270
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            118,
+            272
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            118,
+            274
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            118,
+            276
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            118,
+            278
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            118,
+            280
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            118,
+            282
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            118,
+            284
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            118,
+            286
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            118,
+            288
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            120,
+            268
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            120,
+            270
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            120,
+            272
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        },
+        {
+          "center_mil": [
+            120,
+            274
+          ],
+          "angle_deg": 0,
+          "reason": "SMD_SPACING_FAIL",
+          "detail": "min L6 comp gap=0.00 < 6.0 mil"
+        }
+      ]
+    }
+  }
+}
