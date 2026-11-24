@@ -1,0 +1,497 @@
+{
+  "boards": {
+    "PCB1": {
+      "blindViaRuleSubset": {
+        "rule_sources": {
+          "blind_via_to_board_edge_mm": "EVT-1 V4 conservative copper-land to routed-outline guard >= 0.350 mm",
+          "blind_via_hole_to_board_edge_mm": "JLCPCB HDI FAQ diagram D: laser hole wall to routed outline >= 0.350 mm, https://jlcpcb.com/help/article/hdi-pcb-capabilities-faq",
+          "blind_via_hole_to_hole_same_net_mm": "JLCPCB HDI FAQ diagram F: same-net hole wall gap >= 0.130 mm, https://jlcpcb.com/help/article/hdi-pcb-capabilities-faq",
+          "blind_via_hole_to_hole_diff_net_mm": "JLCPCB HDI FAQ diagram F: different-net hole wall gap >= 0.240 mm, https://jlcpcb.com/help/article/hdi-pcb-capabilities-faq",
+          "blind_via_annular_ring": "JLCPCB HDI capture and target-pad table: 3 mil radial, https://jlcpcb.com/pcb-fabrication/hdi-pcb",
+          "blind_via_aperture": "JLCPCB HDI laser aperture: 0.075\u20130.150 mm, https://jlcpcb.com/pcb-fabrication/hdi-pcb",
+          "same_span_copper_clearance_mil": "EVT-1 Locked EasyEDA Pro 6L HDI DRC Rule (>= 6.0 mil / 0.1524 mm)",
+          "through_to_through_different_net_hole_wall": "Inherited EVT-1 V4 through-via guard >= 0.254 mm; outside the HDI FAQ blind-hole scope"
+        },
+        "datum_diagram": "https://rs.jlcpcb.com/static/image/blog/pcb/jlcpcb-hdi-manufacturing-process.png",
+        "measurement_model": {
+          "signed_edge_clearance": "center to nearest routed contour segment minus nominal hole/copper radius",
+          "pair_clearances": "center pitch minus the sum of the two nominal hole/copper radii",
+          "shared_layers": "inclusive copper span from archive rules; distinct vias checked if their spans share copper",
+          "staggered_spans": "check a laterally offset shared-layer pair using nominal drill diameters; actual taper is not modeled",
+          "stacked_and_unresolved": "concentric same-net adjacent-span stacks are reported for fab approval; unknown spans fail the stack-scope check",
+          "minima": "pair minima cover observed applicable shared-layer pairs; closest_blind_pairs separately identifies FAQ-F pairs"
+        },
+        "inputs": {
+          "archive_sha256": "28f7f37f0a9b4cae0c2ab162445829d30062b91e34616b7f267917a95621248b",
+          "dump_sha256": "653e069dde086c886cd7319d2c742813b57983db8332bc0fd348993f8857b856",
+          "editor_archive_via_id_and_pad_hole_xy_parity": "PASS"
+        },
+        "thresholds": {
+          "min_jlc_blind_hole_to_edge_mm": 0.35,
+          "min_jlc_blind_hole_to_edge_mil": 13.779527559055119,
+          "min_blind_cu_to_edge_mm": 0.35,
+          "min_blind_cu_to_edge_mil": 13.7795,
+          "min_same_net_blind_hole_wall_mm": 0.13,
+          "min_same_net_blind_hole_wall_mil": 5.1181,
+          "min_diff_net_blind_hole_wall_mm": 0.24,
+          "min_diff_net_blind_hole_wall_mil": 9.4488,
+          "min_diff_net_mech_hole_wall_mm": 0.254,
+          "min_same_span_cu_gap_mil": 6.0,
+          "min_blind_ring_mil": 3.0,
+          "min_blind_ring_mm": 0.07619999999999999,
+          "min_blind_hole_mil": 2.952755905511811,
+          "max_blind_hole_mil": 5.905511811023622
+        },
+        "total_vias": 97,
+        "total_blind_vias": 61,
+        "span_breakdown": {
+          "BV_L5_L6": 40,
+          "BV_L1_L2": 21
+        },
+        "pair_coverage": {
+          "same_span": 1620,
+          "disjoint_spans": 840,
+          "overlapping_unlike_spans": 2196
+        },
+        "closest_blind_pairs": {
+          "same_net": {
+            "a": "71d5d774027e4db4",
+            "b": "c377247b5d36b08b",
+            "a_type": "BV_L1_L2",
+            "b_type": "BV_L1_L2",
+            "a_net": "GND",
+            "b_net": "GND",
+            "shared_layers": [
+              1,
+              15
+            ],
+            "span_relation": "same_span",
+            "stack_review": false,
+            "has_blind": true,
+            "same_net": true,
+            "center_pitch_mil": 17.702486,
+            "cu_gap_mil": 7.702486,
+            "hole_wall_mil": 13.702486,
+            "hole_wall_limit_mil": 5.11811,
+            "equivalent_hole_pitch_limit_mil": 9.11811,
+            "equivalent_cu_pitch_limit_mil": 16.0,
+            "cu_gap_limit_mil": 6.0,
+            "center_pitch_mm": 0.449643,
+            "cu_gap_mm": 0.195643,
+            "hole_wall_mm": 0.348043
+          },
+          "different_or_unknown_net": {
+            "a": "063449d7808500d7",
+            "b": "c082b5e3677e703a",
+            "a_type": "BV_L1_L2",
+            "b_type": "NORMAL",
+            "a_net": "GND",
+            "b_net": "BB_FB",
+            "shared_layers": [
+              1,
+              15
+            ],
+            "span_relation": "overlapping_unlike_spans",
+            "stack_review": false,
+            "has_blind": true,
+            "same_net": false,
+            "center_pitch_mil": 25.0,
+            "cu_gap_mil": 14.0,
+            "hole_wall_mil": 20.0,
+            "hole_wall_limit_mil": 9.448819,
+            "equivalent_hole_pitch_limit_mil": 14.448819,
+            "equivalent_cu_pitch_limit_mil": 17.0,
+            "cu_gap_limit_mil": 6.0,
+            "center_pitch_mm": 0.635,
+            "cu_gap_mm": 0.3556,
+            "hole_wall_mm": 0.508
+          }
+        },
+        "jlc_blind_geometry_findings": 0,
+        "measured_minimums": {
+          "min_blind_cu_to_edge_mil": 14.427,
+          "min_blind_cu_to_edge_mm": 0.3664,
+          "min_blind_hole_to_edge_mil": 17.427,
+          "min_blind_hole_to_edge_mm": 0.442633,
+          "min_blind_ring_mil": 3.0,
+          "min_blind_hole_mil": 4.0,
+          "min_same_net_vv_cu_gap_mil": 7.702,
+          "min_same_net_vv_hole_wall_mil": 13.702,
+          "min_same_net_vv_hole_wall_mm": 0.348,
+          "min_diff_net_vv_cu_gap_mil": 8.616,
+          "min_diff_net_vv_hole_wall_mil": 14.616,
+          "min_diff_net_vv_hole_wall_mm": 0.3712
+        },
+        "violations": {
+          "jlc_blind_hole_edge_below_0p35mm": 0,
+          "evt1_blind_copper_edge_guard_below_0p35mm": 0,
+          "same_net_vv_cu_below_6mil": 0,
+          "diff_net_vv_cu_below_6mil": 0,
+          "same_net_blind_hole_wall_below_0p13mm": 0,
+          "diff_net_via_hole_wall_below_limit": 0,
+          "blind_under_annular_ring": 0,
+          "blind_under_hole": 0,
+          "blind_over_hole": 0,
+          "invalid_blind_layer_span": 0,
+          "unqualified_concentric_stacks": 0,
+          "illegal_mech_through_vias": 0,
+          "total_v4_violations": 0
+        },
+        "violation_details": {
+          "jlc_blind_hole_edge_below_0p35mm": [],
+          "evt1_blind_copper_edge_guard_below_0p35mm": [],
+          "same_net_vv_cu": [],
+          "diff_net_vv_cu": [],
+          "same_net_vv_hole": [],
+          "diff_net_vv_hole": [],
+          "ring": [],
+          "hole_small": [],
+          "hole_large": [],
+          "span": [],
+          "stacked_review": [],
+          "mechanical": []
+        },
+        "fab_governance_blocked_items": [
+          "6L_0p80mm_1plus4plus1_HDI_stackup_and_controlled_impedance_fab_EQ",
+          "11_VIPPO_copper_fill_cap_sites_fab_EQ",
+          "PCB3_U11_0p35mm_WLCSP_Tier1_2N2_Advanced_HDI_fab_EQ",
+          "ANT1_ANT2_keepout_VNA_and_JBD_optical_camera_MECR01_signoff"
+        ]
+      },
+      "nativeNetGroups": 112,
+      "members": 513,
+      "placedDesignators": 118
+    },
+    "PCB2": {
+      "blindViaRuleSubset": {
+        "rule_sources": {
+          "blind_via_to_board_edge_mm": "EVT-1 V4 conservative copper-land to routed-outline guard >= 0.350 mm",
+          "blind_via_hole_to_board_edge_mm": "JLCPCB HDI FAQ diagram D: laser hole wall to routed outline >= 0.350 mm, https://jlcpcb.com/help/article/hdi-pcb-capabilities-faq",
+          "blind_via_hole_to_hole_same_net_mm": "JLCPCB HDI FAQ diagram F: same-net hole wall gap >= 0.130 mm, https://jlcpcb.com/help/article/hdi-pcb-capabilities-faq",
+          "blind_via_hole_to_hole_diff_net_mm": "JLCPCB HDI FAQ diagram F: different-net hole wall gap >= 0.240 mm, https://jlcpcb.com/help/article/hdi-pcb-capabilities-faq",
+          "blind_via_annular_ring": "JLCPCB HDI capture and target-pad table: 3 mil radial, https://jlcpcb.com/pcb-fabrication/hdi-pcb",
+          "blind_via_aperture": "JLCPCB HDI laser aperture: 0.075\u20130.150 mm, https://jlcpcb.com/pcb-fabrication/hdi-pcb",
+          "same_span_copper_clearance_mil": "EVT-1 Locked EasyEDA Pro 6L HDI DRC Rule (>= 6.0 mil / 0.1524 mm)",
+          "through_to_through_different_net_hole_wall": "Inherited EVT-1 V4 through-via guard >= 0.254 mm; outside the HDI FAQ blind-hole scope"
+        },
+        "datum_diagram": "https://rs.jlcpcb.com/static/image/blog/pcb/jlcpcb-hdi-manufacturing-process.png",
+        "measurement_model": {
+          "signed_edge_clearance": "center to nearest routed contour segment minus nominal hole/copper radius",
+          "pair_clearances": "center pitch minus the sum of the two nominal hole/copper radii",
+          "shared_layers": "inclusive copper span from archive rules; distinct vias checked if their spans share copper",
+          "staggered_spans": "check a laterally offset shared-layer pair using nominal drill diameters; actual taper is not modeled",
+          "stacked_and_unresolved": "concentric same-net adjacent-span stacks are reported for fab approval; unknown spans fail the stack-scope check",
+          "minima": "pair minima cover observed applicable shared-layer pairs; closest_blind_pairs separately identifies FAQ-F pairs"
+        },
+        "inputs": {
+          "archive_sha256": "28f7f37f0a9b4cae0c2ab162445829d30062b91e34616b7f267917a95621248b",
+          "dump_sha256": "42e1428f1f41e762be56abd32d2c06cdac15e1e4f2a04d0004bb0cb2b107a067",
+          "editor_archive_via_id_and_pad_hole_xy_parity": "PASS"
+        },
+        "thresholds": {
+          "min_jlc_blind_hole_to_edge_mm": 0.35,
+          "min_jlc_blind_hole_to_edge_mil": 13.779527559055119,
+          "min_blind_cu_to_edge_mm": 0.35,
+          "min_blind_cu_to_edge_mil": 13.7795,
+          "min_same_net_blind_hole_wall_mm": 0.13,
+          "min_same_net_blind_hole_wall_mil": 5.1181,
+          "min_diff_net_blind_hole_wall_mm": 0.24,
+          "min_diff_net_blind_hole_wall_mil": 9.4488,
+          "min_diff_net_mech_hole_wall_mm": 0.254,
+          "min_same_span_cu_gap_mil": 6.0,
+          "min_blind_ring_mil": 3.0,
+          "min_blind_ring_mm": 0.07619999999999999,
+          "min_blind_hole_mil": 2.952755905511811,
+          "max_blind_hole_mil": 5.905511811023622
+        },
+        "total_vias": 47,
+        "total_blind_vias": 40,
+        "span_breakdown": {
+          "BV_L1_L2": 27,
+          "BV_L5_L6": 13
+        },
+        "pair_coverage": {
+          "same_span": 450,
+          "disjoint_spans": 351,
+          "overlapping_unlike_spans": 280
+        },
+        "closest_blind_pairs": {
+          "same_net": {
+            "a": "de3daf8ccb0beac2",
+            "b": "770b5a04396aa71e",
+            "a_type": "BV_L1_L2",
+            "b_type": "BV_L1_L2",
+            "a_net": "GND",
+            "b_net": "GND",
+            "shared_layers": [
+              1,
+              15
+            ],
+            "span_relation": "same_span",
+            "stack_review": false,
+            "has_blind": true,
+            "same_net": true,
+            "center_pitch_mil": 17.984004,
+            "cu_gap_mil": 7.984004,
+            "hole_wall_mil": 13.984004,
+            "hole_wall_limit_mil": 5.11811,
+            "equivalent_hole_pitch_limit_mil": 9.11811,
+            "equivalent_cu_pitch_limit_mil": 16.0,
+            "cu_gap_limit_mil": 6.0,
+            "center_pitch_mm": 0.456794,
+            "cu_gap_mm": 0.202794,
+            "hole_wall_mm": 0.355194
+          },
+          "different_or_unknown_net": {
+            "a": "6df04d0016b6e8f7",
+            "b": "409b737870a2b3e0",
+            "a_type": "BV_L1_L2",
+            "b_type": "NORMAL",
+            "a_net": "GND",
+            "b_net": "AVDD_D3_VSYS",
+            "shared_layers": [
+              1,
+              15
+            ],
+            "span_relation": "overlapping_unlike_spans",
+            "stack_review": false,
+            "has_blind": true,
+            "same_net": false,
+            "center_pitch_mil": 25.220032,
+            "cu_gap_mil": 14.220032,
+            "hole_wall_mil": 20.220032,
+            "hole_wall_limit_mil": 9.448819,
+            "equivalent_hole_pitch_limit_mil": 14.448819,
+            "equivalent_cu_pitch_limit_mil": 17.0,
+            "cu_gap_limit_mil": 6.0,
+            "center_pitch_mm": 0.640589,
+            "cu_gap_mm": 0.361189,
+            "hole_wall_mm": 0.513589
+          }
+        },
+        "jlc_blind_geometry_findings": 0,
+        "measured_minimums": {
+          "min_blind_cu_to_edge_mil": 14.872,
+          "min_blind_cu_to_edge_mm": 0.3778,
+          "min_blind_hole_to_edge_mil": 17.872,
+          "min_blind_hole_to_edge_mm": 0.453959,
+          "min_blind_ring_mil": 3.0,
+          "min_blind_hole_mil": 3.0,
+          "min_same_net_vv_cu_gap_mil": 7.984,
+          "min_same_net_vv_hole_wall_mil": 13.984,
+          "min_same_net_vv_hole_wall_mm": 0.3552,
+          "min_diff_net_vv_cu_gap_mil": 10.804,
+          "min_diff_net_vv_hole_wall_mil": 16.804,
+          "min_diff_net_vv_hole_wall_mm": 0.4268
+        },
+        "violations": {
+          "jlc_blind_hole_edge_below_0p35mm": 0,
+          "evt1_blind_copper_edge_guard_below_0p35mm": 0,
+          "same_net_vv_cu_below_6mil": 0,
+          "diff_net_vv_cu_below_6mil": 0,
+          "same_net_blind_hole_wall_below_0p13mm": 0,
+          "diff_net_via_hole_wall_below_limit": 0,
+          "blind_under_annular_ring": 0,
+          "blind_under_hole": 0,
+          "blind_over_hole": 0,
+          "invalid_blind_layer_span": 0,
+          "unqualified_concentric_stacks": 0,
+          "illegal_mech_through_vias": 0,
+          "total_v4_violations": 0
+        },
+        "violation_details": {
+          "jlc_blind_hole_edge_below_0p35mm": [],
+          "evt1_blind_copper_edge_guard_below_0p35mm": [],
+          "same_net_vv_cu": [],
+          "diff_net_vv_cu": [],
+          "same_net_vv_hole": [],
+          "diff_net_vv_hole": [],
+          "ring": [],
+          "hole_small": [],
+          "hole_large": [],
+          "span": [],
+          "stacked_review": [],
+          "mechanical": []
+        },
+        "fab_governance_blocked_items": [
+          "6L_0p80mm_1plus4plus1_HDI_stackup_and_controlled_impedance_fab_EQ",
+          "11_VIPPO_copper_fill_cap_sites_fab_EQ",
+          "PCB3_U11_0p35mm_WLCSP_Tier1_2N2_Advanced_HDI_fab_EQ",
+          "ANT1_ANT2_keepout_VNA_and_JBD_optical_camera_MECR01_signoff"
+        ]
+      },
+      "nativeNetGroups": 58,
+      "members": 303,
+      "placedDesignators": 86
+    },
+    "PCB3": {
+      "blindViaRuleSubset": {
+        "rule_sources": {
+          "blind_via_to_board_edge_mm": "EVT-1 V4 conservative copper-land to routed-outline guard >= 0.350 mm",
+          "blind_via_hole_to_board_edge_mm": "JLCPCB HDI FAQ diagram D: laser hole wall to routed outline >= 0.350 mm, https://jlcpcb.com/help/article/hdi-pcb-capabilities-faq",
+          "blind_via_hole_to_hole_same_net_mm": "JLCPCB HDI FAQ diagram F: same-net hole wall gap >= 0.130 mm, https://jlcpcb.com/help/article/hdi-pcb-capabilities-faq",
+          "blind_via_hole_to_hole_diff_net_mm": "JLCPCB HDI FAQ diagram F: different-net hole wall gap >= 0.240 mm, https://jlcpcb.com/help/article/hdi-pcb-capabilities-faq",
+          "blind_via_annular_ring": "JLCPCB HDI capture and target-pad table: 3 mil radial, https://jlcpcb.com/pcb-fabrication/hdi-pcb",
+          "blind_via_aperture": "JLCPCB HDI laser aperture: 0.075\u20130.150 mm, https://jlcpcb.com/pcb-fabrication/hdi-pcb",
+          "same_span_copper_clearance_mil": "EVT-1 Locked EasyEDA Pro 6L HDI DRC Rule (>= 6.0 mil / 0.1524 mm)",
+          "through_to_through_different_net_hole_wall": "Inherited EVT-1 V4 through-via guard >= 0.254 mm; outside the HDI FAQ blind-hole scope"
+        },
+        "datum_diagram": "https://rs.jlcpcb.com/static/image/blog/pcb/jlcpcb-hdi-manufacturing-process.png",
+        "measurement_model": {
+          "signed_edge_clearance": "center to nearest routed contour segment minus nominal hole/copper radius",
+          "pair_clearances": "center pitch minus the sum of the two nominal hole/copper radii",
+          "shared_layers": "inclusive copper span from archive rules; distinct vias checked if their spans share copper",
+          "staggered_spans": "check a laterally offset shared-layer pair using nominal drill diameters; actual taper is not modeled",
+          "stacked_and_unresolved": "concentric same-net adjacent-span stacks are reported for fab approval; unknown spans fail the stack-scope check",
+          "minima": "pair minima cover observed applicable shared-layer pairs; closest_blind_pairs separately identifies FAQ-F pairs"
+        },
+        "inputs": {
+          "archive_sha256": "28f7f37f0a9b4cae0c2ab162445829d30062b91e34616b7f267917a95621248b",
+          "dump_sha256": "abefb308dffce7932bc810f15c0cc7a5d69f704e143b3076a20edfbcb8ad6897",
+          "editor_archive_via_id_and_pad_hole_xy_parity": "PASS"
+        },
+        "thresholds": {
+          "min_jlc_blind_hole_to_edge_mm": 0.35,
+          "min_jlc_blind_hole_to_edge_mil": 13.779527559055119,
+          "min_blind_cu_to_edge_mm": 0.35,
+          "min_blind_cu_to_edge_mil": 13.7795,
+          "min_same_net_blind_hole_wall_mm": 0.13,
+          "min_same_net_blind_hole_wall_mil": 5.1181,
+          "min_diff_net_blind_hole_wall_mm": 0.24,
+          "min_diff_net_blind_hole_wall_mil": 9.4488,
+          "min_diff_net_mech_hole_wall_mm": 0.254,
+          "min_same_span_cu_gap_mil": 6.0,
+          "min_blind_ring_mil": 3.0,
+          "min_blind_ring_mm": 0.07619999999999999,
+          "min_blind_hole_mil": 2.952755905511811,
+          "max_blind_hole_mil": 5.905511811023622
+        },
+        "total_vias": 53,
+        "total_blind_vias": 41,
+        "span_breakdown": {
+          "BV_L1_L2": 22,
+          "BV_L5_L6": 19
+        },
+        "pair_coverage": {
+          "disjoint_spans": 418,
+          "same_span": 468,
+          "overlapping_unlike_spans": 492
+        },
+        "closest_blind_pairs": {
+          "same_net": {
+            "a": "10fef65565389552",
+            "b": "8a003220a784f7e6",
+            "a_type": "BV_L1_L2",
+            "b_type": "BV_L1_L2",
+            "a_net": "GND",
+            "b_net": "GND",
+            "shared_layers": [
+              1,
+              15
+            ],
+            "span_relation": "same_span",
+            "stack_review": false,
+            "has_blind": true,
+            "same_net": true,
+            "center_pitch_mil": 17.680636,
+            "cu_gap_mil": 7.680636,
+            "hole_wall_mil": 13.680636,
+            "hole_wall_limit_mil": 5.11811,
+            "equivalent_hole_pitch_limit_mil": 9.11811,
+            "equivalent_cu_pitch_limit_mil": 16.0,
+            "cu_gap_limit_mil": 6.0,
+            "center_pitch_mm": 0.449088,
+            "cu_gap_mm": 0.195088,
+            "hole_wall_mm": 0.347488
+          },
+          "different_or_unknown_net": {
+            "a": "dbc80c583ad3783b",
+            "b": "ec0df0a04da39cb8",
+            "a_type": "BV_L1_L2",
+            "b_type": "NORMAL",
+            "a_net": "GND",
+            "b_net": "BLE_RF_MID",
+            "shared_layers": [
+              1,
+              15
+            ],
+            "span_relation": "overlapping_unlike_spans",
+            "stack_review": false,
+            "has_blind": true,
+            "same_net": false,
+            "center_pitch_mil": 25.059928,
+            "cu_gap_mil": 14.059928,
+            "hole_wall_mil": 20.059928,
+            "hole_wall_limit_mil": 9.448819,
+            "equivalent_hole_pitch_limit_mil": 14.448819,
+            "equivalent_cu_pitch_limit_mil": 17.0,
+            "cu_gap_limit_mil": 6.0,
+            "center_pitch_mm": 0.636522,
+            "cu_gap_mm": 0.357122,
+            "hole_wall_mm": 0.509522
+          }
+        },
+        "jlc_blind_geometry_findings": 0,
+        "measured_minimums": {
+          "min_blind_cu_to_edge_mil": 14.514,
+          "min_blind_cu_to_edge_mm": 0.3687,
+          "min_blind_hole_to_edge_mil": 17.514,
+          "min_blind_hole_to_edge_mm": 0.444866,
+          "min_blind_ring_mil": 3.0,
+          "min_blind_hole_mil": 4.0,
+          "min_same_net_vv_cu_gap_mil": 7.681,
+          "min_same_net_vv_hole_wall_mil": 13.681,
+          "min_same_net_vv_hole_wall_mm": 0.3475,
+          "min_diff_net_vv_cu_gap_mil": 10.091,
+          "min_diff_net_vv_hole_wall_mil": 16.091,
+          "min_diff_net_vv_hole_wall_mm": 0.4087
+        },
+        "violations": {
+          "jlc_blind_hole_edge_below_0p35mm": 0,
+          "evt1_blind_copper_edge_guard_below_0p35mm": 0,
+          "same_net_vv_cu_below_6mil": 0,
+          "diff_net_vv_cu_below_6mil": 0,
+          "same_net_blind_hole_wall_below_0p13mm": 0,
+          "diff_net_via_hole_wall_below_limit": 0,
+          "blind_under_annular_ring": 0,
+          "blind_under_hole": 0,
+          "blind_over_hole": 0,
+          "invalid_blind_layer_span": 0,
+          "unqualified_concentric_stacks": 0,
+          "illegal_mech_through_vias": 0,
+          "total_v4_violations": 0
+        },
+        "violation_details": {
+          "jlc_blind_hole_edge_below_0p35mm": [],
+          "evt1_blind_copper_edge_guard_below_0p35mm": [],
+          "same_net_vv_cu": [],
+          "diff_net_vv_cu": [],
+          "same_net_vv_hole": [],
+          "diff_net_vv_hole": [],
+          "ring": [],
+          "hole_small": [],
+          "hole_large": [],
+          "span": [],
+          "stacked_review": [],
+          "mechanical": []
+        },
+        "fab_governance_blocked_items": [
+          "6L_0p80mm_1plus4plus1_HDI_stackup_and_controlled_impedance_fab_EQ",
+          "11_VIPPO_copper_fill_cap_sites_fab_EQ",
+          "PCB3_U11_0p35mm_WLCSP_Tier1_2N2_Advanced_HDI_fab_EQ",
+          "ANT1_ANT2_keepout_VNA_and_JBD_optical_camera_MECR01_signoff"
+        ]
+      },
+      "nativeNetGroups": 37,
+      "members": 197,
+      "placedDesignators": 53
+    }
+  },
+  "totals": {
+    "blindVias": 142,
+    "nativeNetGroups": 207,
+    "netMembers": 1013,
+    "placedDesignators": 257
+  },
+  "manufacturingSignoff": false
+}
