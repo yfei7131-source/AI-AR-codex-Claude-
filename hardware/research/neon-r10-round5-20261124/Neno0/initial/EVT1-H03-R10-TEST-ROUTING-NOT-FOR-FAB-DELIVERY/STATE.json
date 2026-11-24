@@ -1,0 +1,48 @@
+{
+  "project": "EVT1-H03-R10-TEST-ROUTING-NOT-FOR-FAB",
+  "status": "NOT_FOR_FAB",
+  "basePRs": [
+    "PR #60 (a825953)",
+    "PR #61 (d5c2cf1)"
+  ],
+  "baseNativeEpro2": {
+    "file": "EVT1-H03-R9-NOT-FOR-FAB.epro2",
+    "sha256": "2ed5b0932c51f5995a68fa602dd922cbfb4ef69429cc21e05cea195c69eaae93"
+  },
+  "outputNativeEpro2": {
+    "file": "EVT1-H03-R10-TEST-ROUTING-NOT-FOR-FAB.epro2",
+    "sha256": "41bca1c382ba39deb3b60c47b9182ed39f3ec93b932d5a971830e1edc6c39d77",
+    "bytes": 1573062
+  },
+  "componentsPlaced": {
+    "PCB1": 118,
+    "PCB2": 86,
+    "PCB3": 53,
+    "total": 257
+  },
+  "r9BaselineNativeOpenConnections": {
+    "PCB1": 334,
+    "PCB2": 232,
+    "PCB3": 129,
+    "total": 695
+  },
+  "r10OfflineGeometricRoutingProgress": {
+    "pcb1OpenBefore": 212,
+    "pcb1OpenAfter": 197,
+    "pcb1NetClosed": 15,
+    "addedTracks": 19,
+    "addedVias": 9,
+    "offlineClearanceOrShortViolations": 0,
+    "projectedTotalOpens": 680
+  },
+  "nativeEasyEdaErcDrcVerification": "PENDING_MANUAL_IMPORT_AND_RECHECK",
+  "strictErcFatal": 6,
+  "nativeNetlistDifference": 1,
+  "blocked": [
+    "EasyEDA Pro native GUI import & strict ERC/DRC verification (remote browser blocks local file selector)",
+    "GitHub independent Draft PR upload (remote browser not signed into GitHub)",
+    "PCB1 J2/J3 official footprints & 1 Netlist Error",
+    "PCB3 U11 0.35 mm WLCSP & 0.80 mm 2+2+2 HDI fab EQ",
+    "Remaining PCB1/PCB2/PCB3 open connections, 40g & binocular transparent AR hardware verification"
+  ]
+}
