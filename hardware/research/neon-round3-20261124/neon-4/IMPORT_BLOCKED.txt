@@ -1,0 +1,11 @@
+我已通过远程浏览器核验了 PR #57（neon-4）及 PR #55 基线，并在 嘉立创 EDA 专业版 登录了账号 eda_luhqetwc，但卡在了工程导入环节：
+
+当前云端账号状态：eda_luhqetwc 账号下仅有 4 个工程（EVT1-H03-GEMINI-R8-NOT-FOR-FAB-20261123、R3、R2、CODEX-PR46），没有 PR #55 的云端工程 EVT1-H03-KIMI-R7-NOT-FOR-FAB（ID：37f434ba2161d11e7536f134c776285fbdc9db9c040debca7cd85f6ebbea46d）。
+
+本地 .epro2 导入受限：我已从 PR #55 分支下载 EVT1-H03-KIMI-R7-NOT-FOR-FAB.epro2（1,559 KB），但在点击嘉立创 EDA「导入专业版」时，远程浏览器弹出管理员策略限制（Access to local files on your machine is disabled by your administrator），无法调用本地文件选择器完成上传。
+
+请确认接下来的执行方式，确认后我立即继续完成原生库件绑定、ERCDRC 与网表验证并打包本地 ZIP（不上传 GitHub）：
+
+直接基于现有云端工程继续：先由我核对 eda_luhqetwc 账号下现有的 EVT1-H03-GEMINI-R8-NOT-FOR-FAB-20261123 基线并创建独立备份工程，在其上执行 J3（C41361286）绑定、J2（C5577343 核验且极性保持 BLOCKED）、U12BAT1SPK1 核查及网表验证；或
+
+补齐 R7 云端工程后再继续：由你先将 EVT1-H03-KIMI-R7-NOT-FOR-FAB.epro2 导入 eda_luhqetwc 云端（或告知需切换至存有 R7 工程的账号），完成后通知我继续执行

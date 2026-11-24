@@ -1,0 +1,1556 @@
+{
+  "_fixture_note": "Verified PR #55 (commit ac38a71947f5d7bdd4e5d193584fbb7c6c05363c) extract for offline unit/regression testing. Codex MUST pass the full 15,896-line native PCB2-copper.json to h03_r8_pcb2_joint_relayout.py before native EasyEDA Pro implementation.",
+  "outline": {
+    "points": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        984.252
+      ],
+      [
+        181.1024,
+        984.252
+      ],
+      [
+        181.1024,
+        0.0
+      ]
+    ],
+    "bbox": {
+      "minX": -2.0,
+      "minY": -2.0,
+      "maxX": 183.1024,
+      "maxY": 986.252
+    }
+  },
+  "planes": [
+    {
+      "layer": 15,
+      "net": "GND",
+      "points": [
+        [
+          12.0,
+          12.0
+        ],
+        [
+          169.1024,
+          12.0
+        ],
+        [
+          169.1024,
+          972.252
+        ],
+        [
+          12.0,
+          972.252
+        ]
+      ]
+    },
+    {
+      "layer": 18,
+      "net": "GND",
+      "points": [
+        [
+          12.0,
+          12.0
+        ],
+        [
+          169.1024,
+          12.0
+        ],
+        [
+          169.1024,
+          972.252
+        ],
+        [
+          12.0,
+          972.252
+        ]
+      ]
+    }
+  ],
+  "components": [
+    {
+      "designator": "C5",
+      "name": "EVT1_C5_C_AVDD_U_AVDD_EN_OD_V",
+      "layer": 1,
+      "x": 126.5748,
+      "y": 838.189,
+      "rotation": 0,
+      "bbox": [
+        103.93701,
+        825.39373,
+        149.21259,
+        850.98427
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "net": "VSYS",
+          "layer": 1,
+          "x": 114.0,
+          "y": 838.2,
+          "shape": [
+            "RECT",
+            14.2,
+            14.2,
+            0
+          ]
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "layer": 1,
+          "x": 139.2,
+          "y": 838.2,
+          "shape": [
+            "RECT",
+            14.2,
+            14.2,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "designator": "C8",
+      "name": "EVT1_C8_C_AVDD_U_AVDD_QUAL_V",
+      "layer": 1,
+      "x": 32.0866,
+      "y": 859.8425,
+      "rotation": 0,
+      "bbox": [
+        9.44881,
+        847.04723,
+        54.72439,
+        872.63777
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "net": "VSYS",
+          "layer": 1,
+          "x": 19.5,
+          "y": 859.8,
+          "shape": [
+            "RECT",
+            14.2,
+            14.2,
+            0
+          ]
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "layer": 1,
+          "x": 44.7,
+          "y": 859.8,
+          "shape": [
+            "RECT",
+            14.2,
+            14.2,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "designator": "C9",
+      "name": "EVT1_C9_C_AVDD_U_AVDD_SCHMITT_V",
+      "layer": 1,
+      "x": 79.3307,
+      "y": 859.8425,
+      "rotation": 0,
+      "bbox": [
+        56.69291,
+        847.04723,
+        101.96849,
+        872.63777
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "net": "VSYS",
+          "layer": 1,
+          "x": 66.7,
+          "y": 859.8,
+          "shape": [
+            "RECT",
+            14.2,
+            14.2,
+            0
+          ]
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "layer": 1,
+          "x": 91.9,
+          "y": 859.8,
+          "shape": [
+            "RECT",
+            14.2,
+            14.2,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "designator": "C10",
+      "name": "EVT1_C10_C_AVDD_U_AVDD_SYS_CLAMP_V",
+      "layer": 1,
+      "x": 126.5748,
+      "y": 859.8425,
+      "rotation": 0,
+      "bbox": [
+        103.93701,
+        847.04723,
+        149.21259,
+        872.63777
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "net": "VSYS",
+          "layer": 1,
+          "x": 114.0,
+          "y": 859.8,
+          "shape": [
+            "RECT",
+            14.2,
+            14.2,
+            0
+          ]
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "layer": 1,
+          "x": 139.2,
+          "y": 859.8,
+          "shape": [
+            "RECT",
+            14.2,
+            14.2,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "designator": "C11",
+      "name": "EVT1_C11_C_AVDD_U_AVDD_SYS_PG_V",
+      "layer": 2,
+      "x": 142.3228,
+      "y": 877.5591,
+      "rotation": 0,
+      "bbox": [
+        119.68501,
+        864.76383,
+        164.96059,
+        890.35437
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "net": "VSYS",
+          "layer": 2,
+          "x": 129.7,
+          "y": 877.6,
+          "shape": [
+            "RECT",
+            14.2,
+            14.2,
+            0
+          ]
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "layer": 2,
+          "x": 154.9,
+          "y": 877.6,
+          "shape": [
+            "RECT",
+            14.2,
+            14.2,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "designator": "C12",
+      "name": "EVT1_C12_C_AVDD_U_AVDD_WD_V",
+      "layer": 1,
+      "x": 32.0866,
+      "y": 881.4961,
+      "rotation": 0,
+      "bbox": [
+        9.44881,
+        868.70083,
+        54.72439,
+        894.29137
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "net": "VSYS",
+          "layer": 1,
+          "x": 19.5,
+          "y": 881.5,
+          "shape": [
+            "RECT",
+            14.2,
+            14.2,
+            0
+          ]
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "layer": 1,
+          "x": 44.7,
+          "y": 881.5,
+          "shape": [
+            "RECT",
+            14.2,
+            14.2,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "designator": "C31",
+      "name": "EVT1_C31_C_LDO_OPT_IN",
+      "layer": 1,
+      "x": 42.9134,
+      "y": 768.5039,
+      "rotation": 0,
+      "bbox": [
+        8.46458,
+        749.80311,
+        77.36222,
+        787.20469
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "net": "VSYS",
+          "layer": 1,
+          "x": 23.2,
+          "y": 768.5,
+          "shape": [
+            "RECT",
+            21.7,
+            24.4,
+            0
+          ]
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "layer": 1,
+          "x": 62.6,
+          "y": 768.5,
+          "shape": [
+            "RECT",
+            21.7,
+            24.4,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "designator": "C32",
+      "name": "EVT1_C32_C_LDO_OPT_OUT",
+      "layer": 1,
+      "x": 111.811,
+      "y": 768.5039,
+      "rotation": 0,
+      "bbox": [
+        77.36218,
+        749.80311,
+        146.25982,
+        787.20469
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "net": "AVDD_OPT_BIAS",
+          "layer": 1,
+          "x": 92.1,
+          "y": 768.5,
+          "shape": [
+            "RECT",
+            21.7,
+            24.4,
+            0
+          ]
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "layer": 1,
+          "x": 131.5,
+          "y": 768.5,
+          "shape": [
+            "RECT",
+            21.7,
+            24.4,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "designator": "U13",
+      "name": "EVT1_U13_U_AVDD_SYS_PG",
+      "layer": 2,
+      "x": 131.4961,
+      "y": 214.9606,
+      "rotation": 90,
+      "bbox": [
+        93.11028,
+        168.70076,
+        169.88192,
+        261.22044
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "net": "VSYS",
+          "layer": 2,
+          "x": 151.2,
+          "y": 191.3,
+          "rotation": 0,
+          "shape": [
+            "RECT",
+            9.8,
+            27.6,
+            0
+          ]
+        },
+        {
+          "number": "2",
+          "net": "GND",
+          "layer": 2,
+          "x": 131.5,
+          "y": 191.3,
+          "rotation": 0,
+          "shape": [
+            "RECT",
+            9.8,
+            27.6,
+            0
+          ]
+        },
+        {
+          "number": "3",
+          "net": "AVDD_REQ_FILTER",
+          "layer": 2,
+          "x": 111.8,
+          "y": 191.3,
+          "rotation": 0,
+          "shape": [
+            "RECT",
+            9.8,
+            27.6,
+            0
+          ]
+        },
+        {
+          "number": "4",
+          "net": "VSYS",
+          "layer": 2,
+          "x": 111.8,
+          "y": 238.6,
+          "rotation": 0,
+          "shape": [
+            "RECT",
+            9.8,
+            27.6,
+            0
+          ]
+        },
+        {
+          "number": "5",
+          "net": "",
+          "layer": 2,
+          "x": 131.5,
+          "y": 238.6,
+          "rotation": 0,
+          "shape": [
+            "RECT",
+            9.8,
+            27.6,
+            0
+          ]
+        },
+        {
+          "number": "6",
+          "net": "AVDD_PG_NODE",
+          "layer": 2,
+          "x": 151.2,
+          "y": 238.6,
+          "rotation": 0,
+          "shape": [
+            "RECT",
+            9.8,
+            27.6,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "designator": "MK2",
+      "name": "EVT1_MK2_MK2_C",
+      "layer": 2,
+      "x": 66.1417,
+      "y": 897.6378,
+      "rotation": 0,
+      "bbox": [
+        1.0977,
+        819.0128,
+        155.1172,
+        986.4918
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "net": "PDM_D0_1V8",
+          "layer": 2,
+          "x": 28.0,
+          "y": 845.0,
+          "shape": [
+            "RECT",
+            17.7,
+            29.5,
+            0
+          ]
+        },
+        {
+          "number": "2",
+          "net": "1V8_SYS",
+          "layer": 2,
+          "x": 104.0,
+          "y": 845.0,
+          "shape": [
+            "RECT",
+            17.7,
+            29.5,
+            0
+          ]
+        },
+        {
+          "number": "3",
+          "net": "PDM_CLK_1V8",
+          "layer": 2,
+          "x": 28.0,
+          "y": 950.0,
+          "shape": [
+            "RECT",
+            17.7,
+            29.5,
+            0
+          ]
+        },
+        {
+          "number": "4",
+          "net": "1V8_SYS",
+          "layer": 2,
+          "x": 104.0,
+          "y": 950.0,
+          "shape": [
+            "RECT",
+            17.7,
+            29.5,
+            0
+          ]
+        },
+        {
+          "number": "5a",
+          "net": "GND",
+          "layer": 2,
+          "x": 66.14,
+          "y": 918.0,
+          "shape": [
+            "POLYGON",
+            [
+              [
+                46.0,
+                912.0
+              ],
+              [
+                86.0,
+                912.0
+              ],
+              [
+                86.0,
+                924.0
+              ],
+              [
+                46.0,
+                924.0
+              ]
+            ]
+          ],
+          "hole": [
+            "ROUND",
+            1.42338,
+            1.42338
+          ]
+        },
+        {
+          "number": "5b",
+          "net": "GND",
+          "layer": 2,
+          "x": 66.14,
+          "y": 877.0,
+          "shape": [
+            "POLYGON",
+            [
+              [
+                46.0,
+                871.0
+              ],
+              [
+                86.0,
+                871.0
+              ],
+              [
+                86.0,
+                883.0
+              ],
+              [
+                46.0,
+                883.0
+              ]
+            ]
+          ],
+          "hole": [
+            "ROUND",
+            1.42338,
+            1.42338
+          ]
+        },
+        {
+          "number": "5c",
+          "net": "GND",
+          "layer": 2,
+          "x": 46.0,
+          "y": 897.64,
+          "shape": [
+            "POLYGON",
+            [
+              [
+                40.0,
+                883.0
+              ],
+              [
+                52.0,
+                883.0
+              ],
+              [
+                52.0,
+                912.0
+              ],
+              [
+                40.0,
+                912.0
+              ]
+            ]
+          ],
+          "hole": [
+            "ROUND",
+            1.42332,
+            1.42332
+          ]
+        },
+        {
+          "number": "5d",
+          "net": "GND",
+          "layer": 2,
+          "x": 86.0,
+          "y": 897.64,
+          "shape": [
+            "POLYGON",
+            [
+              [
+                80.0,
+                883.0
+              ],
+              [
+                92.0,
+                883.0
+              ],
+              [
+                92.0,
+                912.0
+              ],
+              [
+                80.0,
+                912.0
+              ]
+            ]
+          ],
+          "hole": [
+            "ROUND",
+            1.42332,
+            1.42332
+          ]
+        }
+      ]
+    },
+    {
+      "designator": "U7",
+      "name": "EVT1_U7_U_AVDD_IO_PG",
+      "layer": 2,
+      "x": 131.4961,
+      "y": 49.6063,
+      "rotation": 90,
+      "bbox": [
+        93.1103,
+        3.3465,
+        169.8819,
+        95.8661
+      ],
+      "pads": []
+    },
+    {
+      "designator": "J1",
+      "name": "EVT1_J1_J_BRIDGE_IN",
+      "layer": 2,
+      "x": 57.0866,
+      "y": 149.6063,
+      "rotation": 0,
+      "bbox": [
+        10.8268,
+        -5.9055,
+        103.3464,
+        305.1181
+      ],
+      "pads": []
+    },
+    {
+      "designator": "U12",
+      "name": "EVT1_U12_U_AVDD_SYS_CLAMP",
+      "layer": 2,
+      "x": 131.4961,
+      "y": 132.2835,
+      "rotation": 90,
+      "bbox": [
+        93.1103,
+        86.0237,
+        169.8819,
+        178.5433
+      ],
+      "pads": []
+    },
+    {
+      "designator": "U1",
+      "name": "EVT1_U1_U4_1V8F",
+      "layer": 2,
+      "x": 130.9055,
+      "y": 277.3622,
+      "rotation": 0,
+      "bbox": [
+        96.6255,
+        253.3152,
+        154.9195,
+        301.0162
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "net": "1V8_FPGA_IO",
+          "layer": 2,
+          "x": 130.9,
+          "y": 277.4,
+          "shape": [
+            "RECT",
+            12.0,
+            12.0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "designator": "U6",
+      "name": "EVT1_U6_U6_OPT_AVDD",
+      "layer": 2,
+      "x": 36.4173,
+      "y": 306.8898,
+      "rotation": 0,
+      "bbox": [
+        2.1373,
+        282.8428,
+        60.4313,
+        330.9368
+      ],
+      "pads": []
+    },
+    {
+      "designator": "U3",
+      "name": "EVT1_U3_U_AVDD_CLEAR_OD",
+      "layer": 2,
+      "x": 90.6299,
+      "y": 318.3071,
+      "rotation": 0,
+      "bbox": [
+        45.2319,
+        290.3711,
+        123.5859,
+        346.2431
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "net": "AVDD_QUAL_CLR_N",
+          "layer": 2,
+          "x": 90.6,
+          "y": 318.3,
+          "shape": [
+            "RECT",
+            12.0,
+            12.0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "designator": "U5",
+      "name": "EVT1_U5_U_AVDD_EN_OD",
+      "layer": 2,
+      "x": 143.7795,
+      "y": 318.3071,
+      "rotation": 0,
+      "bbox": [
+        98.3815,
+        290.3711,
+        176.7355,
+        346.2431
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "net": "AVDD_EN_OD",
+          "layer": 2,
+          "x": 143.8,
+          "y": 318.3,
+          "shape": [
+            "RECT",
+            12.0,
+            12.0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "designator": "C20",
+      "name": "EVT1_C20_C_FPGA_PLL_BULK",
+      "layer": 2,
+      "x": 24.6063,
+      "y": 361.6142,
+      "rotation": 0,
+      "bbox": [
+        5.9055,
+        327.1654,
+        43.3071,
+        396.063
+      ],
+      "pads": []
+    },
+    {
+      "designator": "C22",
+      "name": "EVT1_C22_C_FPGA_VPP_BULK",
+      "layer": 2,
+      "x": 138.7795,
+      "y": 373.4252,
+      "rotation": 0,
+      "bbox": [
+        120.0787,
+        338.9764,
+        157.4803,
+        407.874
+      ],
+      "pads": []
+    },
+    {
+      "designator": "U14",
+      "name": "EVT1_U14_U_AVDD_WD",
+      "layer": 2,
+      "x": 87.9921,
+      "y": 463.3858,
+      "rotation": 0,
+      "bbox": [
+        8.2677,
+        391.5354,
+        167.7165,
+        535.2362
+      ],
+      "pads": []
+    },
+    {
+      "designator": "J2",
+      "name": "EVT1_J2_J_DISP_L",
+      "layer": 1,
+      "x": 90.5512,
+      "y": 165.3543,
+      "rotation": 0,
+      "bbox": [
+        3.937,
+        119.0945,
+        177.1654,
+        211.6141
+      ],
+      "pads": []
+    },
+    {
+      "designator": "U2",
+      "name": "EVT1_U2_U2_FPGA",
+      "layer": 1,
+      "x": 90.5512,
+      "y": 377.9528,
+      "rotation": 0,
+      "bbox": [
+        26.6127,
+        325.7398,
+        136.8582,
+        440.9449
+      ],
+      "pads": []
+    },
+    {
+      "designator": "J3",
+      "name": "EVT1_J3_J_DISP_R",
+      "layer": 1,
+      "x": 90.5512,
+      "y": 582.6772,
+      "rotation": 0,
+      "bbox": [
+        3.937,
+        536.4174,
+        177.1654,
+        628.937
+      ],
+      "pads": []
+    }
+  ],
+  "tracks": [
+    {
+      "layer": 2,
+      "net": "VSYS",
+      "width": 4.0,
+      "points": [
+        [
+          88.0,
+          66.9
+        ],
+        [
+          111.8,
+          66.9
+        ]
+      ]
+    },
+    {
+      "layer": 2,
+      "net": "VSYS",
+      "width": 4.0,
+      "points": [
+        [
+          111.8,
+          66.9
+        ],
+        [
+          111.8,
+          73.2
+        ]
+      ]
+    },
+    {
+      "layer": 2,
+      "net": "VSYS",
+      "width": 4.0,
+      "points": [
+        [
+          111.8,
+          108.7
+        ],
+        [
+          111.8,
+          73.2
+        ]
+      ]
+    },
+    {
+      "layer": 2,
+      "net": "VSYS",
+      "width": 4.0,
+      "points": [
+        [
+          111.8,
+          108.7
+        ],
+        [
+          111.8,
+          155.9
+        ]
+      ]
+    },
+    {
+      "layer": 16,
+      "net": "FPGA_CRESET_B",
+      "width": 4.0,
+      "points": [
+        [
+          56.0,
+          172.0
+        ],
+        [
+          46.0,
+          172.0
+        ]
+      ]
+    },
+    {
+      "layer": 16,
+      "net": "FPGA_CRESET_B",
+      "width": 4.0,
+      "points": [
+        [
+          46.0,
+          172.0
+        ],
+        [
+          46.0,
+          484.0
+        ]
+      ]
+    }
+  ],
+  "vias": [
+    {
+      "id": "th_1",
+      "net": "FPGA_CRESET_B",
+      "x": 56.0,
+      "y": 172.0,
+      "hole": 6.0,
+      "diam": 12.0,
+      "layers": [
+        1,
+        15,
+        16,
+        17,
+        18,
+        2
+      ]
+    },
+    {
+      "id": "th_2",
+      "net": "FPGA_CRESET_B",
+      "x": 58.0,
+      "y": 576.0,
+      "hole": 6.0,
+      "diam": 12.0,
+      "layers": [
+        1,
+        15,
+        16,
+        17,
+        18,
+        2
+      ]
+    },
+    {
+      "id": "th_3",
+      "net": "FPGA_CDONE_VSYNC_N",
+      "x": 86.0,
+      "y": 682.0,
+      "hole": 6.0,
+      "diam": 12.0,
+      "layers": [
+        1,
+        15,
+        16,
+        17,
+        18,
+        2
+      ]
+    },
+    {
+      "id": "th_4",
+      "net": "AVDD_QUAL_CLR_N",
+      "x": 104.0,
+      "y": 590.0,
+      "hole": 6.0,
+      "diam": 12.0,
+      "layers": [
+        1,
+        15,
+        16,
+        17,
+        18,
+        2
+      ]
+    },
+    {
+      "id": "th_5",
+      "net": "AVDD_QUAL_CLR_N",
+      "x": 86.0,
+      "y": 708.0,
+      "hole": 6.0,
+      "diam": 12.0,
+      "layers": [
+        1,
+        15,
+        16,
+        17,
+        18,
+        2
+      ]
+    },
+    {
+      "id": "th_6",
+      "net": "AVDD_D3_VSYS",
+      "x": 62.0,
+      "y": 688.0,
+      "hole": 6.0,
+      "diam": 12.0,
+      "layers": [
+        1,
+        15,
+        16,
+        17,
+        18,
+        2
+      ]
+    },
+    {
+      "id": "th_7",
+      "net": "AVDD_D3_VSYS",
+      "x": 122.0,
+      "y": 576.0,
+      "hole": 6.0,
+      "diam": 12.0,
+      "layers": [
+        1,
+        15,
+        16,
+        17,
+        18,
+        2
+      ]
+    },
+    {
+      "id": "d66a84af7c151bc9",
+      "net": "GND",
+      "rule_name": "BV_L1_L2",
+      "span_layer_ids": "1/15",
+      "x": 46.11,
+      "y": 894.88,
+      "hole": 4.0,
+      "diam": 10.0
+    },
+    {
+      "id": "de748f007112a400",
+      "net": "GND",
+      "rule_name": "BV_L1_L2",
+      "span_layer_ids": "1/15",
+      "x": 144.9,
+      "y": 340.59,
+      "hole": 4.0,
+      "diam": 10.0
+    },
+    {
+      "id": "ae0a29446cb9c1ec",
+      "net": "GND",
+      "rule_name": "BV_L1_L2",
+      "span_layer_ids": "1/15",
+      "x": 158.55,
+      "y": 452.4,
+      "hole": 4.0,
+      "diam": 10.0
+    },
+    {
+      "id": "4def814286440476",
+      "net": "GND",
+      "rule_name": "BV_L1_L2",
+      "span_layer_ids": "1/15",
+      "x": 22.8,
+      "y": 354.39,
+      "hole": 4.0,
+      "diam": 10.0
+    },
+    {
+      "id": "e636c62d72d66383",
+      "net": "GND",
+      "rule_name": "BV_L1_L2",
+      "span_layer_ids": "1/15",
+      "x": 152.65,
+      "y": 474.0,
+      "hole": 4.0,
+      "diam": 10.0
+    },
+    {
+      "id": "890f67b8c5232ab4",
+      "net": "GND",
+      "rule_name": "BV_L5_L6",
+      "span_layer_ids": "18/2",
+      "x": 26.4,
+      "y": 398.41,
+      "hole": 4.0,
+      "diam": 10.0
+    },
+    {
+      "id": "192e34c6366831f0",
+      "net": "GND",
+      "rule_name": "BV_L5_L6",
+      "span_layer_ids": "18/2",
+      "x": 137.0,
+      "y": 375.99,
+      "hole": 4.0,
+      "diam": 10.0
+    },
+    {
+      "id": "23501cb8ab96fae8",
+      "net": "GND",
+      "rule_name": "BV_L1_L2",
+      "span_layer_ids": "1/15",
+      "x": 137.52,
+      "y": 748.63,
+      "hole": 4.0,
+      "diam": 10.0
+    },
+    {
+      "id": "79ca8f6cdfcf5a70",
+      "net": "GND",
+      "rule_name": "BV_L5_L6",
+      "span_layer_ids": "18/2",
+      "x": 156.3,
+      "y": 735.01,
+      "hole": 4.0,
+      "diam": 10.0
+    },
+    {
+      "id": "90af6e58250f741e",
+      "net": "GND",
+      "rule_name": "BV_L1_L2",
+      "span_layer_ids": "1/15",
+      "x": 144.9,
+      "y": 409.49,
+      "hole": 4.0,
+      "diam": 10.0
+    },
+    {
+      "id": "dd69cecc7a9c25e6",
+      "net": "GND",
+      "rule_name": "BV_L1_L2",
+      "span_layer_ids": "1/15",
+      "x": 22.8,
+      "y": 423.29,
+      "hole": 4.0,
+      "diam": 10.0
+    },
+    {
+      "id": "f1e6bafdeb6091fd",
+      "net": "GND",
+      "rule_name": "BV_L1_L2",
+      "span_layer_ids": "1/15",
+      "x": 111.64,
+      "y": 433.89,
+      "hole": 4.0,
+      "diam": 10.0
+    },
+    {
+      "id": "67abd30f64ccfc6a",
+      "net": "GND",
+      "rule_name": "BV_L5_L6",
+      "span_layer_ids": "18/2",
+      "x": 152.7,
+      "y": 631.89,
+      "hole": 4.0,
+      "diam": 10.0
+    },
+    {
+      "id": "08dc6db23acf155d",
+      "net": "GND",
+      "rule_name": "BV_L1_L2",
+      "span_layer_ids": "1/15",
+      "x": 114.97,
+      "y": 750.14,
+      "hole": 4.0,
+      "diam": 10.0
+    },
+    {
+      "id": "b0307a690c28ce58",
+      "net": "GND",
+      "rule_name": "BV_L1_L2",
+      "span_layer_ids": "1/15",
+      "x": 161.23,
+      "y": 534.66,
+      "hole": 4.0,
+      "diam": 10.0
+    },
+    {
+      "id": "9cce57f15e1e0954",
+      "net": "GND",
+      "rule_name": "BV_L1_L2",
+      "span_layer_ids": "1/15",
+      "x": 40.34,
+      "y": 48.67,
+      "hole": 4.0,
+      "diam": 10.0
+    },
+    {
+      "id": "3362060ec696ac76",
+      "net": "GND",
+      "rule_name": "BV_L5_L6",
+      "span_layer_ids": "18/2",
+      "x": 69.9,
+      "y": 98.35,
+      "hole": 4.0,
+      "diam": 10.0
+    },
+    {
+      "id": "edbb1e25173edee5",
+      "net": "GND",
+      "rule_name": "BV_L5_L6",
+      "span_layer_ids": "18/2",
+      "x": 51.0,
+      "y": 108.3,
+      "hole": 4.0,
+      "diam": 10.0
+    },
+    {
+      "id": "887a0eee3522b2a1",
+      "net": "GND",
+      "rule_name": "BV_L5_L6",
+      "span_layer_ids": "18/2",
+      "x": 55.57,
+      "y": 259.28,
+      "hole": 4.0,
+      "diam": 10.0
+    },
+    {
+      "id": "de3daf8ccb0beac2",
+      "net": "GND",
+      "rule_name": "BV_L1_L2",
+      "span_layer_ids": "1/15",
+      "x": 115.8,
+      "y": 156.28,
+      "hole": 4.0,
+      "diam": 10.0
+    },
+    {
+      "id": "770b5a04396aa71e",
+      "net": "GND",
+      "rule_name": "BV_L1_L2",
+      "span_layer_ids": "1/15",
+      "x": 131.3,
+      "y": 165.4,
+      "hole": 4.0,
+      "diam": 10.0
+    },
+    {
+      "id": "7d3455ccc292f592",
+      "net": "GND",
+      "rule_name": "BV_L1_L2",
+      "span_layer_ids": "1/15",
+      "x": 52.48,
+      "y": 544.16,
+      "hole": 4.0,
+      "diam": 10.0
+    },
+    {
+      "id": "6df04d0016b6e8f7",
+      "net": "GND",
+      "rule_name": "BV_L1_L2",
+      "span_layer_ids": "1/15",
+      "x": 129.1,
+      "y": 551.8,
+      "hole": 4.0,
+      "diam": 10.0
+    },
+    {
+      "id": "f10ad1d77ccd6d28",
+      "net": "GND",
+      "rule_name": "BV_L1_L2",
+      "span_layer_ids": "1/15",
+      "x": 160.5,
+      "y": 582.7,
+      "hole": 4.0,
+      "diam": 10.0
+    },
+    {
+      "id": "3ee8ab886f357cc2",
+      "net": "GND",
+      "rule_name": "BV_L1_L2",
+      "span_layer_ids": "1/15",
+      "x": 87.13,
+      "y": 896.19,
+      "hole": 4.0,
+      "diam": 10.0
+    },
+    {
+      "id": "6a6db1dc889f416a",
+      "net": "GND",
+      "rule_name": "BV_L1_L2",
+      "span_layer_ids": "1/15",
+      "x": 146.75,
+      "y": 946.5,
+      "hole": 4.0,
+      "diam": 10.0
+    },
+    {
+      "id": "b08842b31aa45cf3",
+      "net": "GND",
+      "rule_name": "BV_L5_L6",
+      "span_layer_ids": "18/2",
+      "x": 156.31,
+      "y": 955.88,
+      "hole": 4.0,
+      "diam": 10.0
+    },
+    {
+      "id": "64722ce12906da3f",
+      "net": "GND",
+      "rule_name": "BV_L1_L2",
+      "span_layer_ids": "1/15",
+      "x": 156.6,
+      "y": 23.0,
+      "hole": 4.0,
+      "diam": 10.0
+    },
+    {
+      "id": "584b5375092b5e50",
+      "net": "GND",
+      "rule_name": "BV_L5_L6",
+      "span_layer_ids": "18/2",
+      "x": 93.49,
+      "y": 275.3,
+      "hole": 4.0,
+      "diam": 10.0
+    },
+    {
+      "id": "4740f651ce64a7c0",
+      "net": "GND",
+      "rule_name": "BV_L5_L6",
+      "span_layer_ids": "18/2",
+      "x": 54.75,
+      "y": 712.34,
+      "hole": 4.0,
+      "diam": 10.0
+    },
+    {
+      "id": "7a9a00092f252d56",
+      "net": "GND",
+      "rule_name": "BV_L1_L2",
+      "span_layer_ids": "1/15",
+      "x": 42.7,
+      "y": 290.2,
+      "hole": 4.0,
+      "diam": 10.0
+    },
+    {
+      "id": "d6e5bb9e76d289c7",
+      "net": "GND",
+      "rule_name": "BV_L1_L2",
+      "span_layer_ids": "1/15",
+      "x": 74.8,
+      "y": 354.3,
+      "hole": 3.0,
+      "diam": 9.0
+    },
+    {
+      "id": "8a2b07870a0e0ccd",
+      "net": "GND",
+      "rule_name": "BV_L1_L2",
+      "span_layer_ids": "1/15",
+      "x": 106.3,
+      "y": 401.6,
+      "hole": 3.0,
+      "diam": 9.0
+    },
+    {
+      "id": "b8de348a52ab310d",
+      "net": "GND",
+      "rule_name": "BV_L1_L2",
+      "span_layer_ids": "1/15",
+      "x": 28.34,
+      "y": 736.19,
+      "hole": 4.0,
+      "diam": 10.0
+    },
+    {
+      "id": "e5ebf1dd9fbc84a4",
+      "net": "GND",
+      "rule_name": "BV_L1_L2",
+      "span_layer_ids": "1/15",
+      "x": 109.73,
+      "y": 645.39,
+      "hole": 4.0,
+      "diam": 10.0
+    },
+    {
+      "id": "6c76674ee2ac3b22",
+      "net": "GND",
+      "rule_name": "BV_L1_L2",
+      "span_layer_ids": "1/15",
+      "x": 128.0,
+      "y": 644.0,
+      "hole": 4.0,
+      "diam": 10.0
+    },
+    {
+      "id": "10f21b62526a4b35",
+      "net": "GND",
+      "rule_name": "BV_L5_L6",
+      "span_layer_ids": "18/2",
+      "x": 60.0,
+      "y": 198.0,
+      "hole": 4.0,
+      "diam": 10.0
+    },
+    {
+      "id": "a72d849708c0d56e",
+      "net": "GND",
+      "rule_name": "BV_L5_L6",
+      "span_layer_ids": "18/2",
+      "x": 126.0,
+      "y": 212.0,
+      "hole": 4.0,
+      "diam": 10.0
+    },
+    {
+      "id": "c4f97fc769fe79b5",
+      "net": "GND",
+      "rule_name": "BV_L5_L6",
+      "span_layer_ids": "18/2",
+      "x": 132.0,
+      "y": 48.0,
+      "hole": 4.0,
+      "diam": 10.0
+    },
+    {
+      "id": "b288a4698f8901fc",
+      "net": "GND",
+      "rule_name": "BV_L1_L2",
+      "span_layer_ids": "1/15",
+      "x": 117.0,
+      "y": 312.0,
+      "hole": 4.0,
+      "diam": 10.0
+    }
+  ]
+}

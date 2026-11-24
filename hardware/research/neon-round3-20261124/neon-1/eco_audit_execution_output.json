@@ -1,0 +1,47 @@
+{
+  "schematicEcoAudit": {
+    "status": "PASS_WITH_APPROVED_ECO_DELTA",
+    "terminalCount": 1076,
+    "controlledTerminalCount": 1075,
+    "netTerminalDelta": 1,
+    "explicitNCCount": 92,
+    "controlledNCCount": 92,
+    "archiveRawNCMarkers": 94,
+    "rawVsExplicitNCGap": 2,
+    "unexpectedFindings": []
+  },
+  "missfootprintAudit": {
+    "status": "PASS_CLASSIFIED",
+    "totalFound": 6,
+    "boardInterfaceBlocked": [
+      [
+        "PCB1",
+        "J2"
+      ],
+      [
+        "PCB1",
+        "J3"
+      ]
+    ],
+    "externalAssembly": [
+      [
+        "PCB1",
+        "BAT1"
+      ],
+      [
+        "PCB1",
+        "SPK1"
+      ],
+      [
+        "PCB3",
+        "BAT1"
+      ],
+      [
+        "PCB3",
+        "SPK1"
+      ]
+    ],
+    "unexpected": [],
+    "missing": []
+  }
+}
