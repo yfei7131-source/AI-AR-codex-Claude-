@@ -1,0 +1,810 @@
+{
+  "PCB1": {
+    "connectionErrors": 339,
+    "ERCfatal": 4,
+    "boardLengthMil": 1811.0236,
+    "routedTracksPerLayer": {
+      "1": 290,
+      "16": 116,
+      "2": 370,
+      "17": 44
+    },
+    "connectionErrorsByNet": {
+      "3V3_SYS": 44,
+      "GND": 33,
+      "1V8_SYS": 16,
+      "VSYS": 12,
+      "CAM_DOVDD_1V8": 11,
+      "PRIV_WINDOW_OK_F": 5,
+      "VBUS_5V": 5,
+      "1V8_FPGA_IO": 4,
+      "CAM_PWR_REQ": 4,
+      "ESP_CHIP_PU": 4,
+      "LED_3V3_PRIV": 4,
+      "QSPI_DIR1_EN": 4,
+      "SYS_I2C_SCL_1V8": 4,
+      "SYS_I2C_SCL_3V3": 4,
+      "SYS_I2C_SDA_1V8": 4,
+      "SYS_I2C_SDA_3V3": 4,
+      "VOUT_L_PPATH": 4,
+      "V_INA_OUT": 4,
+      "CAM_DOVDD_OK_3V3": 3,
+      "CAM_HREF_3V3": 3,
+      "CAM_XCLK_3V3": 3,
+      "ESP_ANT_FEED": 3,
+      "ESP_RF_ANT": 3,
+      "FPGA_CRESET_3V3": 3,
+      "I2S_BCLK_1V8": 3,
+      "I2S_LRCLK_1V8": 3,
+      "ISENSE_N": 3,
+      "LS4_VREF2_EN": 3,
+      "PDM_CLK_3V3": 3,
+      "PDM_D0_1V8": 3,
+      "PRIV_VTH_H": 3,
+      "PRIV_WINDOW_OK": 3,
+      "VBAT_L": 3,
+      "VBUS_5V_USB": 3,
+      "host_qio1_3v3": 3,
+      "host_qio2_3v3": 3,
+      "host_qio3_3v3": 3,
+      "AMP_SD_MODE_1V8": 2,
+      "BB_L1": 2,
+      "BB_L2": 2,
+      "BK_SW": 2,
+      "BK_VSET": 2,
+      "CAM_AVDD_2V8": 2,
+      "CAM_D0_3V3": 2,
+      "CAM_D1_3V3": 2,
+      "CAM_D2_3V3": 2,
+      "CAM_D3_3V3": 2,
+      "CAM_D4_3V3": 2,
+      "CAM_D6_3V3": 2,
+      "CAM_D7_3V3": 2,
+      "CAM_DVDD_1V2": 2,
+      "CAM_PCLK_3V3": 2,
+      "CAM_RESET_N": 2,
+      "CAM_SCCB_SCL": 2,
+      "CAM_SCCB_SDA": 2,
+      "CAM_VSYNC_3V3": 2,
+      "CHG_ISO_GATE": 2,
+      "ESP_VDD_SPI_3V3": 2,
+      "FPGA_CDONE_VSYNC_N": 2,
+      "FPGA_CRESET_B": 2,
+      "I2S_AMP_DIN_1V8": 2,
+      "I2S_BCLK_3V3": 2,
+      "I2S_LRCLK_3V3": 2,
+      "I2S_S3_DOUT_1V8": 2,
+      "IPC_NRF_TX_1V8": 2,
+      "IPC_NRF_TX_3V3": 2,
+      "IPC_S3_TX_1V8": 2,
+      "IPC_S3_TX_3V3": 2,
+      "LS1_A4_TIE_100K_GND": 2,
+      "LS1_B4_TIE_100K_GND": 2,
+      "LS3_VREF2_EN": 2,
+      "NTC_TS_L": 2,
+      "PDM_CLK_1V8": 2,
+      "PDM_D0_3V3": 2,
+      "PDM_D1_1V8": 2,
+      "PDM_D1_3V3": 2,
+      "PRIV_LED_ANODE": 2,
+      "PRIV_VTH_L": 2,
+      "SPK_L_N": 2,
+      "SPK_L_P": 2,
+      "USB_LIM_ILIM": 2,
+      "VBAT_R_ISOLATED": 2,
+      "VSYNC_CDONE_3V3": 2,
+      "XREQ_A": 2,
+      "host_cs_n": 2,
+      "host_cs_n_3v3": 2,
+      "host_qio0": 2,
+      "host_qio0_3v3": 2,
+      "host_qio1": 2,
+      "host_qio2": 2,
+      "host_qio3": 2,
+      "host_sck": 2,
+      "host_sck_3v3": 2
+    },
+    "zones200mil": [
+      {
+        "yRangeMil": [
+          0,
+          200
+        ],
+        "connectionErrors": 9,
+        "mostCommonNets": [
+          [
+            "3V3_SYS",
+            3
+          ],
+          [
+            "GND",
+            2
+          ],
+          [
+            "ESP_VDD_SPI_3V3",
+            1
+          ],
+          [
+            "ISENSE_N",
+            1
+          ],
+          [
+            "LED_3V3_PRIV",
+            1
+          ],
+          [
+            "PRIV_WINDOW_OK",
+            1
+          ]
+        ]
+      },
+      {
+        "yRangeMil": [
+          200,
+          400
+        ],
+        "connectionErrors": 37,
+        "mostCommonNets": [
+          [
+            "GND",
+            3
+          ],
+          [
+            "3V3_SYS",
+            2
+          ],
+          [
+            "VSYS",
+            2
+          ],
+          [
+            "V_INA_OUT",
+            2
+          ],
+          [
+            "BB_L1",
+            1
+          ],
+          [
+            "CAM_D0_3V3",
+            1
+          ]
+        ]
+      },
+      {
+        "yRangeMil": [
+          400,
+          600
+        ],
+        "connectionErrors": 40,
+        "mostCommonNets": [
+          [
+            "3V3_SYS",
+            6
+          ],
+          [
+            "CAM_DOVDD_1V8",
+            3
+          ],
+          [
+            "GND",
+            3
+          ],
+          [
+            "VSYS",
+            3
+          ],
+          [
+            "I2S_BCLK_3V3",
+            2
+          ],
+          [
+            "VOUT_L_PPATH",
+            2
+          ]
+        ]
+      },
+      {
+        "yRangeMil": [
+          600,
+          800
+        ],
+        "connectionErrors": 63,
+        "mostCommonNets": [
+          [
+            "1V8_SYS",
+            5
+          ],
+          [
+            "3V3_SYS",
+            5
+          ],
+          [
+            "GND",
+            4
+          ],
+          [
+            "CAM_DOVDD_1V8",
+            2
+          ],
+          [
+            "FPGA_CDONE_VSYNC_N",
+            2
+          ],
+          [
+            "I2S_BCLK_1V8",
+            2
+          ]
+        ]
+      },
+      {
+        "yRangeMil": [
+          800,
+          1000
+        ],
+        "connectionErrors": 48,
+        "mostCommonNets": [
+          [
+            "3V3_SYS",
+            6
+          ],
+          [
+            "1V8_SYS",
+            3
+          ],
+          [
+            "1V8_FPGA_IO",
+            2
+          ],
+          [
+            "GND",
+            2
+          ],
+          [
+            "VBUS_5V_USB",
+            2
+          ],
+          [
+            "AMP_SD_MODE_1V8",
+            1
+          ]
+        ]
+      },
+      {
+        "yRangeMil": [
+          1000,
+          1200
+        ],
+        "connectionErrors": 54,
+        "mostCommonNets": [
+          [
+            "3V3_SYS",
+            8
+          ],
+          [
+            "GND",
+            4
+          ],
+          [
+            "PRIV_WINDOW_OK_F",
+            4
+          ],
+          [
+            "VSYS",
+            4
+          ],
+          [
+            "CAM_AVDD_2V8",
+            2
+          ],
+          [
+            "CAM_DOVDD_1V8",
+            2
+          ]
+        ]
+      },
+      {
+        "yRangeMil": [
+          1200,
+          1400
+        ],
+        "connectionErrors": 82,
+        "mostCommonNets": [
+          [
+            "3V3_SYS",
+            14
+          ],
+          [
+            "GND",
+            10
+          ],
+          [
+            "1V8_SYS",
+            6
+          ],
+          [
+            "CAM_DOVDD_1V8",
+            4
+          ],
+          [
+            "CAM_DOVDD_OK_3V3",
+            2
+          ],
+          [
+            "CAM_PWR_REQ",
+            2
+          ]
+        ]
+      },
+      {
+        "yRangeMil": [
+          1600,
+          1800
+        ],
+        "connectionErrors": 6,
+        "mostCommonNets": [
+          [
+            "GND",
+            5
+          ],
+          [
+            "PDM_D0_1V8",
+            1
+          ]
+        ]
+      }
+    ],
+    "fixedConstraints": [
+      "boardOutline",
+      "RF and acoustic geometry where present",
+      "external connector identity/polarity",
+      "inherited manufacturing rules"
+    ]
+  },
+  "PCB2": {
+    "connectionErrors": 232,
+    "ERCfatal": 0,
+    "boardLengthMil": 984.252,
+    "routedTracksPerLayer": {
+      "2": 159,
+      "16": 16,
+      "1": 229,
+      "17": 2
+    },
+    "connectionErrorsByNet": {
+      "GND": 31,
+      "VSYS": 27,
+      "1V8_FPGA_IO": 22,
+      "1V8_SYS": 9,
+      "OPT_AVDD_EN": 7,
+      "AVDD_OPT_BIAS": 6,
+      "FPGA_CDONE_VSYNC_N": 6,
+      "FPGA_CRESET_B": 6,
+      "1V2_FPGA_PLL": 5,
+      "AVDD_PG_NODE": 5,
+      "AVDD_QUAL_RC": 5,
+      "1V2_FPGA_CORE": 4,
+      "1V8_FPGA_VPP": 4,
+      "AVDD_WD_Q": 4,
+      "AVDD_CRESET_VSYS": 3,
+      "AVDD_D3_VSYS": 3,
+      "AVDD_PG_OK": 3,
+      "AVDD_PULSE_QUAL": 3,
+      "AVDD_REQ_FILTER": 3,
+      "AVDD_WD_DIV": 3,
+      "FPGA_1V2_SENSE": 3,
+      "OPT_CS_N_R": 3,
+      "host_cs_n": 3,
+      "opt_cs_n": 3,
+      "opt_sck": 3,
+      "AVDD_QUAL_CLR_N": 2,
+      "AVDD_WD_SET": 2,
+      "FPGA_1V8_EN": 2,
+      "OPT_CS_N_L": 2,
+      "OPT_SCK_L": 2,
+      "PDM_CLK_1V8": 2,
+      "PDM_D0_1V8": 2,
+      "PRIV_LED_ANODE": 2,
+      "SYS_I2C_SCL_1V8": 2,
+      "SYS_I2C_SDA_1V8": 2,
+      "clk_48m": 2,
+      "host_qio0": 2,
+      "host_qio1": 2,
+      "host_qio2": 2,
+      "host_qio3": 2,
+      "host_sck": 2,
+      "opt_l_qdo0": 2,
+      "opt_l_qdo0_PANEL": 2,
+      "opt_l_qdo1": 2,
+      "opt_l_qdo1_PANEL": 2,
+      "opt_l_qdo2": 2,
+      "opt_l_qdo3": 2,
+      "opt_r_qdo0": 2,
+      "opt_r_qdo0_PANEL": 2,
+      "opt_r_qdo1": 2,
+      "opt_r_qdo2": 2,
+      "opt_r_qdo2_PANEL": 2,
+      "opt_r_qdo3": 2,
+      "opt_r_qdo3_PANEL": 2
+    },
+    "zones200mil": [
+      {
+        "yRangeMil": [
+          0,
+          200
+        ],
+        "connectionErrors": 41,
+        "mostCommonNets": [
+          [
+            "GND",
+            4
+          ],
+          [
+            "1V8_FPGA_IO",
+            3
+          ],
+          [
+            "FPGA_CRESET_B",
+            3
+          ],
+          [
+            "AVDD_OPT_BIAS",
+            2
+          ],
+          [
+            "AVDD_PG_NODE",
+            2
+          ],
+          [
+            "FPGA_CDONE_VSYNC_N",
+            2
+          ]
+        ]
+      },
+      {
+        "yRangeMil": [
+          200,
+          400
+        ],
+        "connectionErrors": 61,
+        "mostCommonNets": [
+          [
+            "VSYS",
+            9
+          ],
+          [
+            "1V8_FPGA_IO",
+            5
+          ],
+          [
+            "GND",
+            4
+          ],
+          [
+            "OPT_AVDD_EN",
+            3
+          ],
+          [
+            "1V8_FPGA_VPP",
+            2
+          ],
+          [
+            "AVDD_PG_OK",
+            2
+          ]
+        ]
+      },
+      {
+        "yRangeMil": [
+          400,
+          600
+        ],
+        "connectionErrors": 41,
+        "mostCommonNets": [
+          [
+            "1V8_FPGA_IO",
+            5
+          ],
+          [
+            "GND",
+            4
+          ],
+          [
+            "VSYS",
+            4
+          ],
+          [
+            "1V2_FPGA_CORE",
+            2
+          ],
+          [
+            "OPT_CS_N_R",
+            2
+          ],
+          [
+            "opt_r_qdo3_PANEL",
+            2
+          ]
+        ]
+      },
+      {
+        "yRangeMil": [
+          600,
+          800
+        ],
+        "connectionErrors": 42,
+        "mostCommonNets": [
+          [
+            "GND",
+            7
+          ],
+          [
+            "VSYS",
+            6
+          ],
+          [
+            "1V8_SYS",
+            5
+          ],
+          [
+            "1V8_FPGA_IO",
+            4
+          ],
+          [
+            "1V2_FPGA_PLL",
+            3
+          ],
+          [
+            "AVDD_OPT_BIAS",
+            2
+          ]
+        ]
+      },
+      {
+        "yRangeMil": [
+          800,
+          984.252
+        ],
+        "connectionErrors": 47,
+        "mostCommonNets": [
+          [
+            "GND",
+            12
+          ],
+          [
+            "VSYS",
+            6
+          ],
+          [
+            "1V8_FPGA_IO",
+            5
+          ],
+          [
+            "1V8_SYS",
+            3
+          ],
+          [
+            "AVDD_D3_VSYS",
+            2
+          ],
+          [
+            "AVDD_QUAL_RC",
+            2
+          ]
+        ]
+      }
+    ],
+    "fixedConstraints": [
+      "boardOutline",
+      "RF and acoustic geometry where present",
+      "external connector identity/polarity",
+      "inherited manufacturing rules"
+    ]
+  },
+  "PCB3": {
+    "connectionErrors": 130,
+    "ERCfatal": 2,
+    "boardLengthMil": 1338.5827,
+    "routedTracksPerLayer": {
+      "1": 184,
+      "2": 192,
+      "16": 23
+    },
+    "connectionErrorsByNet": {
+      "1V8_SYS": 24,
+      "GND": 16,
+      "VBAT_R_RET": 9,
+      "NRF_DECR_RF": 5,
+      "I2S_AMP_DIN_1V8": 4,
+      "I2S_BCLK_1V8": 4,
+      "I2S_LRCLK_1V8": 4,
+      "VBUS_5V": 4,
+      "AMP_SD_MODE_1V8": 3,
+      "AMP_SD_REQ_1V8": 3,
+      "CHG_MUTE_GATE": 3,
+      "NRF_DECD": 3,
+      "AMP_R_SD_MODE": 2,
+      "BLE_ANT_FEED": 2,
+      "BLE_NRESET": 2,
+      "BLE_RF_ANT": 2,
+      "BLE_RF_MID": 2,
+      "BLE_SWDCLK": 2,
+      "BLE_SWDIO": 2,
+      "BLE_XC2": 2,
+      "CHG_R_ISET": 2,
+      "CHG_R_VSET": 2,
+      "I2S_S3_DOUT_1V8": 2,
+      "IPC_NRF_TX_1V8": 2,
+      "IPC_S3_TX_1V8": 2,
+      "LFXO_XL1": 2,
+      "LFXO_XL2": 2,
+      "NRF_DCC": 2,
+      "NRF_DCCD": 2,
+      "NRF_DECA": 2,
+      "NRF_DECN": 2,
+      "NTC_TS_R": 2,
+      "PDM_CLK_1V8": 2,
+      "PDM_D1_1V8": 2,
+      "SPK_R_N": 2,
+      "SPK_R_P": 2
+    },
+    "zones200mil": [
+      {
+        "yRangeMil": [
+          0,
+          200
+        ],
+        "connectionErrors": 3,
+        "mostCommonNets": [
+          [
+            "NRF_DECD",
+            1
+          ],
+          [
+            "NRF_DECR_RF",
+            1
+          ],
+          [
+            "VBAT_R_RET",
+            1
+          ]
+        ]
+      },
+      {
+        "yRangeMil": [
+          200,
+          400
+        ],
+        "connectionErrors": 52,
+        "mostCommonNets": [
+          [
+            "1V8_SYS",
+            8
+          ],
+          [
+            "VBAT_R_RET",
+            4
+          ],
+          [
+            "I2S_AMP_DIN_1V8",
+            3
+          ],
+          [
+            "I2S_BCLK_1V8",
+            3
+          ],
+          [
+            "I2S_LRCLK_1V8",
+            3
+          ],
+          [
+            "AMP_SD_MODE_1V8",
+            2
+          ]
+        ]
+      },
+      {
+        "yRangeMil": [
+          400,
+          600
+        ],
+        "connectionErrors": 35,
+        "mostCommonNets": [
+          [
+            "1V8_SYS",
+            10
+          ],
+          [
+            "GND",
+            4
+          ],
+          [
+            "VBAT_R_RET",
+            4
+          ],
+          [
+            "LFXO_XL1",
+            2
+          ],
+          [
+            "NTC_TS_R",
+            2
+          ],
+          [
+            "AMP_R_SD_MODE",
+            1
+          ]
+        ]
+      },
+      {
+        "yRangeMil": [
+          600,
+          800
+        ],
+        "connectionErrors": 33,
+        "mostCommonNets": [
+          [
+            "1V8_SYS",
+            6
+          ],
+          [
+            "GND",
+            6
+          ],
+          [
+            "BLE_ANT_FEED",
+            2
+          ],
+          [
+            "BLE_RF_MID",
+            2
+          ],
+          [
+            "CHG_MUTE_GATE",
+            2
+          ],
+          [
+            "AMP_R_SD_MODE",
+            1
+          ]
+        ]
+      },
+      {
+        "yRangeMil": [
+          1000,
+          1200
+        ],
+        "connectionErrors": 2,
+        "mostCommonNets": [
+          [
+            "PDM_CLK_1V8",
+            1
+          ],
+          [
+            "PDM_D1_1V8",
+            1
+          ]
+        ]
+      },
+      {
+        "yRangeMil": [
+          1200,
+          1338.5827
+        ],
+        "connectionErrors": 5,
+        "mostCommonNets": [
+          [
+            "GND",
+            5
+          ]
+        ]
+      }
+    ],
+    "fixedConstraints": [
+      "boardOutline",
+      "RF and acoustic geometry where present",
+      "external connector identity/polarity",
+      "inherited manufacturing rules"
+    ]
+  }
+}

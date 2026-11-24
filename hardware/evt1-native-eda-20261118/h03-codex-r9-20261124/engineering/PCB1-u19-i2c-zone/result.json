@@ -1,0 +1,202 @@
+{
+  "id": "PCB1-u19-i2c-zone",
+  "board": "PCB1",
+  "projectUuid": "57afb39c6143d9b23f10ae5e2f03460316793d92e90c60effa97d5853b6ce565",
+  "moved": [
+    {
+      "ref": "U19",
+      "x": 159,
+      "y": 1460,
+      "rotation": 90,
+      "layer": 2,
+      "beforeLayer": 2,
+      "before": [
+        151.9685,
+        1001.1024,
+        90
+      ],
+      "pads": [
+        {
+          "number": "8",
+          "at": [
+            177.9315,
+            1439.2976
+          ]
+        },
+        {
+          "number": "7",
+          "at": [
+            177.9315,
+            1453.0976
+          ]
+        },
+        {
+          "number": "6",
+          "at": [
+            177.9315,
+            1466.8976
+          ]
+        },
+        {
+          "number": "5",
+          "at": [
+            177.9315,
+            1480.6976
+          ]
+        },
+        {
+          "number": "4",
+          "at": [
+            140.1315,
+            1480.6976
+          ]
+        },
+        {
+          "number": "3",
+          "at": [
+            140.1315,
+            1466.8976
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            140.1315,
+            1453.0976
+          ]
+        },
+        {
+          "number": "1",
+          "at": [
+            141.4315,
+            1439.2976
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R15",
+      "x": 116,
+      "y": 1465,
+      "rotation": 270,
+      "layer": 2,
+      "beforeLayer": 2,
+      "before": [
+        87.2047,
+        1346.2598,
+        0
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "at": [
+            116.0402,
+            1477.6047
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            116.0402,
+            1452.4047
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R17",
+      "x": 124,
+      "y": 1499,
+      "rotation": 180,
+      "layer": 2,
+      "beforeLayer": 1,
+      "before": [
+        36.0236,
+        1354.1338999999998,
+        0
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "at": [
+            136.6236,
+            1498.9661
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            111.4236,
+            1498.9661
+          ]
+        }
+      ]
+    }
+  ],
+  "addedReceipts": [
+    "e99728b1ff3ef708",
+    "4753a66f7a4b8349",
+    "067d14dc13cf83c3",
+    "697867a882875147",
+    "40a40eb85b3e28fe",
+    "05f331ec5028d356",
+    "0438ced0c85623b6",
+    "11c4d5dd18d9c72d",
+    "84420f4e3a8c456b",
+    "956a7a609bd7cd20",
+    "c8fac762f671bc21",
+    "c20057c6da015600"
+  ],
+  "before": {
+    "Connection Error": 339,
+    "Netlist Error": 1
+  },
+  "after": {
+    "Connection Error": 334,
+    "Netlist Error": 1
+  },
+  "removedSignatures": [
+    [
+      [
+        "Connection Error",
+        "1V8_SYS",
+        "SMD Pad"
+      ],
+      3
+    ],
+    [
+      [
+        "Connection Error",
+        "SYS_I2C_SCL_1V8",
+        "SMD Pad"
+      ],
+      1
+    ],
+    [
+      [
+        "Connection Error",
+        "SYS_I2C_SDA_1V8",
+        "SMD Pad"
+      ],
+      1
+    ]
+  ],
+  "addedSignatures": [],
+  "nativePathReceipts": [
+    {
+      "from": "U19.8",
+      "to": "U19.7",
+      "connected": true
+    },
+    {
+      "from": "R15.1",
+      "to": "U19.3",
+      "connected": true
+    },
+    {
+      "from": "R17.1",
+      "to": "U19.4",
+      "connected": true
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "windowId": "5f3bf5c7-9b52-4a5e-87d8-9549769f9d8a",
+  "target": "1db01a36f669a47a",
+  "documentType": "pcb",
+  "saved": true,
+  "closed": true,
+  "reloaded": "1db01a36f669a47a",
+  "activeRestored": "1db01a36f669a47a",
+  "startedAt": "2026-11-24T02:07:31.6396284Z",
+  "completedAt": "2026-11-24T02:07:41.8357185Z",
+  "timeSource": "cli-host-observation",
+  "targetContext": {
+    "projectUuid": "57afb39c6143d9b23f10ae5e2f03460316793d92e90c60effa97d5853b6ce565",
+    "projectName": "EVT1-H03-R9-NOT-FOR-FAB-20261124",
+    "documentUuid": "1db01a36f669a47a",
+    "documentType": "pcb",
+    "tabId": "1db01a36f669a47a@57afb39c6143d9b23f10ae5e2f03460316793d92e90c60effa97d5853b6ce565"
+  },
+  "finalContext": {
+    "projectUuid": "57afb39c6143d9b23f10ae5e2f03460316793d92e90c60effa97d5853b6ce565",
+    "projectName": "EVT1-H03-R9-NOT-FOR-FAB-20261124",
+    "documentUuid": "1db01a36f669a47a",
+    "documentType": "pcb",
+    "tabId": "1db01a36f669a47a@57afb39c6143d9b23f10ae5e2f03460316793d92e90c60effa97d5853b6ce565"
+  },
+  "readiness": {
+    "ready": true,
+    "scope": "component-inventory-readiness",
+    "active": {
+      "projectUuid": "57afb39c6143d9b23f10ae5e2f03460316793d92e90c60effa97d5853b6ce565",
+      "projectName": "EVT1-H03-R9-NOT-FOR-FAB-20261124",
+      "documentUuid": "1db01a36f669a47a",
+      "documentType": "pcb",
+      "tabId": "1db01a36f669a47a@57afb39c6143d9b23f10ae5e2f03460316793d92e90c60effa97d5853b6ce565"
+    },
+    "componentCount": 53,
+    "componentSha256": "7d0ff78c04b858de84dd4be414c4c6b5834c3ecbb5a1ed0010134312879ddebd",
+    "samples": 2,
+    "stableSamples": 2,
+    "requestIds": [
+      "req_36005",
+      "req_36006",
+      "req_36007",
+      "req_36008",
+      "req_36009"
+    ],
+    "observedAt": "2026-11-24T02:07:41.8357185Z"
+  },
+  "steps": [
+    {
+      "stage": "inspect",
+      "action": "document.current",
+      "startedAt": "2026-11-24T02:07:31.6396284Z",
+      "completedAt": "2026-11-24T02:07:31.6938913Z",
+      "requestId": "req_36000",
+      "responseCreatedAt": "2026-11-24T02:07:31.6933162Z",
+      "context": {
+        "projectUuid": "57afb39c6143d9b23f10ae5e2f03460316793d92e90c60effa97d5853b6ce565",
+        "projectName": "EVT1-H03-R9-NOT-FOR-FAB-20261124",
+        "documentUuid": "1db01a36f669a47a",
+        "documentType": "pcb",
+        "tabId": "1db01a36f669a47a@57afb39c6143d9b23f10ae5e2f03460316793d92e90c60effa97d5853b6ce565"
+      },
+      "ok": true
+    },
+    {
+      "stage": "save",
+      "action": "pcb.save",
+      "startedAt": "2026-11-24T02:07:31.6938913Z",
+      "completedAt": "2026-11-24T02:07:31.7827671Z",
+      "requestId": "req_36001",
+      "responseCreatedAt": "2026-11-24T02:07:31.7820817Z",
+      "context": {
+        "projectUuid": "57afb39c6143d9b23f10ae5e2f03460316793d92e90c60effa97d5853b6ce565",
+        "projectName": "EVT1-H03-R9-NOT-FOR-FAB-20261124",
+        "documentUuid": "1db01a36f669a47a",
+        "documentType": "pcb",
+        "tabId": "1db01a36f669a47a@57afb39c6143d9b23f10ae5e2f03460316793d92e90c60effa97d5853b6ce565"
+      },
+      "ok": true
+    },
+    {
+      "stage": "close",
+      "action": "document.close",
+      "startedAt": "2026-11-24T02:07:31.7827671Z",
+      "completedAt": "2026-11-24T02:07:32.2393137Z",
+      "requestId": "req_36002",
+      "responseCreatedAt": "2026-11-24T02:07:32.2382849Z",
+      "context": {
+        "projectUuid": "57afb39c6143d9b23f10ae5e2f03460316793d92e90c60effa97d5853b6ce565",
+        "projectName": "EVT1-H03-R9-NOT-FOR-FAB-20261124"
+      },
+      "ok": true
+    },
+    {
+      "stage": "close-settle",
+      "action": "document.current",
+      "startedAt": "2026-11-24T02:07:32.2393137Z",
+      "completedAt": "2026-11-24T02:07:32.3566846Z",
+      "requestId": "req_36003",
+      "responseCreatedAt": "2026-11-24T02:07:32.3552751Z",
+      "ok": false,
+      "error": "document.current failed: No active document."
+    },
+    {
+      "stage": "reopen",
+      "action": "document.open",
+      "startedAt": "2026-11-24T02:07:32.3566846Z",
+      "completedAt": "2026-11-24T02:07:38.9595295Z",
+      "requestId": "req_36004",
+      "responseCreatedAt": "2026-11-24T02:07:38.9577478Z",
+      "context": {
+        "projectUuid": "57afb39c6143d9b23f10ae5e2f03460316793d92e90c60effa97d5853b6ce565",
+        "projectName": "EVT1-H03-R9-NOT-FOR-FAB-20261124",
+        "documentUuid": "1db01a36f669a47a",
+        "documentType": "pcb",
+        "tabId": "1db01a36f669a47a@57afb39c6143d9b23f10ae5e2f03460316793d92e90c60effa97d5853b6ce565"
+      },
+      "ok": true
+    },
+    {
+      "stage": "ready",
+      "startedAt": "2026-11-24T02:07:38.9595295Z",
+      "completedAt": "2026-11-24T02:07:41.8357185Z",
+      "context": {
+        "projectUuid": "57afb39c6143d9b23f10ae5e2f03460316793d92e90c60effa97d5853b6ce565",
+        "projectName": "EVT1-H03-R9-NOT-FOR-FAB-20261124",
+        "documentUuid": "1db01a36f669a47a",
+        "documentType": "pcb",
+        "tabId": "1db01a36f669a47a@57afb39c6143d9b23f10ae5e2f03460316793d92e90c60effa97d5853b6ce565"
+      },
+      "ok": true
+    }
+  ]
+}

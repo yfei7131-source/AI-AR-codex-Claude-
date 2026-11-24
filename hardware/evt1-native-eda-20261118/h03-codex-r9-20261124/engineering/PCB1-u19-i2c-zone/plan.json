@@ -1,0 +1,321 @@
+{
+  "board": "PCB1",
+  "plan": "U19 and two 1.8 V bus pullups",
+  "moves": [
+    {
+      "ref": "U19",
+      "x": 159,
+      "y": 1460,
+      "rotation": 90,
+      "layer": 2,
+      "beforeLayer": 2,
+      "before": [
+        151.9685,
+        1001.1024,
+        90
+      ],
+      "pads": [
+        {
+          "number": "8",
+          "at": [
+            177.9315,
+            1439.2976
+          ]
+        },
+        {
+          "number": "7",
+          "at": [
+            177.9315,
+            1453.0976
+          ]
+        },
+        {
+          "number": "6",
+          "at": [
+            177.9315,
+            1466.8976
+          ]
+        },
+        {
+          "number": "5",
+          "at": [
+            177.9315,
+            1480.6976
+          ]
+        },
+        {
+          "number": "4",
+          "at": [
+            140.1315,
+            1480.6976
+          ]
+        },
+        {
+          "number": "3",
+          "at": [
+            140.1315,
+            1466.8976
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            140.1315,
+            1453.0976
+          ]
+        },
+        {
+          "number": "1",
+          "at": [
+            141.4315,
+            1439.2976
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R15",
+      "x": 116,
+      "y": 1465,
+      "rotation": 270,
+      "layer": 2,
+      "beforeLayer": 2,
+      "before": [
+        87.2047,
+        1346.2598,
+        0
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "at": [
+            116.0402,
+            1477.6047
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            116.0402,
+            1452.4047
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R17",
+      "x": 124,
+      "y": 1499,
+      "rotation": 180,
+      "layer": 2,
+      "beforeLayer": 1,
+      "before": [
+        36.0236,
+        1354.1338999999998,
+        0
+      ],
+      "pads": [
+        {
+          "number": "1",
+          "at": [
+            136.6236,
+            1498.9661
+          ]
+        },
+        {
+          "number": "2",
+          "at": [
+            111.4236,
+            1498.9661
+          ]
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "net": "LS3_VREF2_EN",
+      "layer": 2,
+      "width": 4,
+      "points": [
+        [
+          177.9315,
+          1439.2976
+        ],
+        [
+          177.9315,
+          1453.0976
+        ]
+      ],
+      "from": "U19.8",
+      "to": "U19.7",
+      "targetId": "3acefc6b422adbade8",
+      "length": 13.799999999999955,
+      "minForeignMil": 8.35,
+      "minEdgeMil": 48.415
+    },
+    {
+      "net": "GND",
+      "layer": 2,
+      "width": 6,
+      "points": [
+        [
+          141.4315,
+          1439.2976
+        ],
+        [
+          158.2291,
+          1422.5
+        ],
+        [
+          197.5,
+          1422.5
+        ]
+      ],
+      "from": "U19.1",
+      "to": "0eab49beeca051f6",
+      "targetId": "0eab49beeca051f6",
+      "length": 63.026293735318376,
+      "minForeignMil": 7.011,
+      "minEdgeMil": 27.846
+    },
+    {
+      "net": "1V8_SYS",
+      "layer": 2,
+      "width": 6,
+      "points": [
+        [
+          140.1315,
+          1453.0976
+        ],
+        [
+          116.0402,
+          1453.0976
+        ],
+        [
+          108.0976,
+          1453.0976
+        ],
+        [
+          82.5,
+          1427.5
+        ]
+      ],
+      "from": "U19.2",
+      "to": "3de94e2db45793a8",
+      "targetId": "3de94e2db45793a8",
+      "length": 68.23437308420156,
+      "minForeignMil": 7.35,
+      "minEdgeMil": 79.5,
+      "through": [
+        "R15.2"
+      ]
+    },
+    {
+      "net": "SYS_I2C_SCL_1V8",
+      "layer": 2,
+      "width": 4,
+      "points": [
+        [
+          116.0402,
+          1477.6047
+        ],
+        [
+          126.7473,
+          1466.8976
+        ],
+        [
+          140.1315,
+          1466.8976
+        ]
+      ],
+      "from": "R15.1",
+      "to": "U19.3",
+      "targetId": "3acefc6b422adbade12",
+      "length": 28.526326033685017,
+      "minForeignMil": 6.226,
+      "minEdgeMil": 86.215
+    },
+    {
+      "net": "SYS_I2C_SDA_1V8",
+      "layer": 2,
+      "width": 4,
+      "points": [
+        [
+          136.6236,
+          1498.9661
+        ],
+        [
+          140.1315,
+          1495.4582
+        ],
+        [
+          140.1315,
+          1480.6976
+        ]
+      ],
+      "from": "R17.1",
+      "to": "U19.4",
+      "targetId": "3acefc6b422adbade11",
+      "length": 19.72151975544868,
+      "minForeignMil": 8.35,
+      "minEdgeMil": 86.215
+    },
+    {
+      "net": "1V8_SYS",
+      "layer": 2,
+      "width": 6,
+      "points": [
+        [
+          111.4236,
+          1498.9661
+        ],
+        [
+          86.0339,
+          1498.9661
+        ],
+        [
+          82.5,
+          1502.5
+        ]
+      ],
+      "from": "R17.2",
+      "to": "8dc33b054dbcfe8e",
+      "targetId": "8dc33b054dbcfe8e",
+      "length": 30.387389308070205,
+      "minForeignMil": 10.485,
+      "minEdgeMil": 79.5
+    }
+  ],
+  "oldTrackIdsToRemove": [
+    "b10f5eca27f684e3",
+    "d51c7d44b4a93df8"
+  ],
+  "note": "U19 / R15 / R17 true zone arrangement. Two pulled-up I2C signal branches, VCCA and two pullup supplies. EN strap and GND restored. R15.2 is a junction in the 1V8_SYS route, with no duplicate overlap.",
+  "screenMinimumMil": {
+    "assembly": 6.89,
+    "padToForeign": 6.541
+  },
+  "placementProtected": [
+    "Native assembly footprint bodies",
+    "Antenna and fixed part keepouts",
+    "Original copper apart from two existing U19 terminal traces"
+  ],
+  "oldGndBranchEndpoint": [
+    125,
+    975
+  ],
+  "id": "PCB1-u19-i2c-zone",
+  "remove": [
+    {
+      "id": "b10f5eca27f684e3",
+      "net": "GND",
+      "layer": 2
+    },
+    {
+      "id": "d51c7d44b4a93df8",
+      "net": "LS3_VREF2_EN",
+      "layer": 2
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "measurementPathKind": "exact-centerline",
+  "connected": true,
+  "net": "LS3_VREF2_EN",
+  "from": "U19.8",
+  "to": "U19.7",
+  "waypointOrder": [
+    "U19.8",
+    "U19.7"
+  ],
+  "requestedLayer": 2,
+  "layers": [
+    2
+  ],
+  "layerSequence": [
+    2
+  ],
+  "widthsMil": [
+    4
+  ],
+  "minWidthMil": 4,
+  "maxWidthMil": 4,
+  "viaCount": 0,
+  "primitiveCount": 1,
+  "lengthMil": 13.7976,
+  "turnCount": 0,
+  "path": [
+    {
+      "kind": "pad",
+      "primitiveId": "3acefc6b422adbade7",
+      "ref": "U19.8",
+      "layer": 2,
+      "at": {
+        "x": 177.9,
+        "y": 1439.3
+      }
+    },
+    {
+      "kind": "track",
+      "primitiveId": "e99728b1ff3ef708",
+      "layer": 2,
+      "widthMil": 4,
+      "start": {
+        "x": 177.93,
+        "y": 1439.3
+      },
+      "end": {
+        "x": 177.93,
+        "y": 1453.1
+      }
+    },
+    {
+      "kind": "pad",
+      "primitiveId": "3acefc6b422adbade8",
+      "ref": "U19.7",
+      "layer": 2,
+      "at": {
+        "x": 177.9,
+        "y": 1453.1
+      }
+    }
+  ],
+  "legs": [
+    {
+      "from": "U19.8",
+      "to": "U19.7",
+      "connected": true,
+      "layers": [
+        2
+      ],
+      "widthsMil": [
+        4
+      ],
+      "minWidthMil": 4,
+      "maxWidthMil": 4,
+      "viaCount": 0,
+      "primitiveCount": 1,
+      "lengthMil": 13.7976,
+      "turnCount": 0,
+      "path": [
+        {
+          "kind": "pad",
+          "primitiveId": "3acefc6b422adbade7",
+          "ref": "U19.8",
+          "layer": 2,
+          "at": {
+            "x": 177.9,
+            "y": 1439.3
+          }
+        },
+        {
+          "kind": "track",
+          "primitiveId": "e99728b1ff3ef708",
+          "layer": 2,
+          "widthMil": 4,
+          "start": {
+            "x": 177.93,
+            "y": 1439.3
+          },
+          "end": {
+            "x": 177.93,
+            "y": 1453.1
+          }
+        },
+        {
+          "kind": "pad",
+          "primitiveId": "3acefc6b422adbade8",
+          "ref": "U19.7",
+          "layer": 2,
+          "at": {
+            "x": 177.9,
+            "y": 1453.1
+          }
+        }
+      ]
+    }
+  ],
+  "scope": "placed pad copper + listed tracks/arcs constrained to layer 2; physical vias, copper pours, fills, and PLANE connectivity excluded",
+  "excludedCopper": [
+    "pours",
+    "filled regions",
+    "PLANE layers",
+    "physical vias (--layer constraint)",
+    "tracks/arcs outside layer 2"
+  ],
+  "limitations": [
+    "does not infer connectivity through copper pours, filled regions, or PLANE layers",
+    "arc primitives are measured on their reconstructed centerlines; ambiguous or unsupported interior contacts make path measurement unknown",
+    "rotated RECT/rounded RECT and OVAL contacts use shape geometry; ELLIPSE, NGON, and pad-to-pad contacts use conservative inscribed geometry that may miss edge landings but cannot invent them",
+    "--layer 2 builds a layer-restricted graph; physical vias and all other-layer tracks/arcs are excluded"
+  ]
+}
