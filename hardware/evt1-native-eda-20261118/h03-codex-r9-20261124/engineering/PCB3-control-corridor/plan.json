@@ -1,0 +1,59 @@
+{
+  "board": "PCB3",
+  "moves": [],
+  "routes": [
+    {
+      "net": "AMP_SD_MODE_1V8",
+      "layer": 2,
+      "width": 4,
+      "points": [
+        [
+          133.3,
+          315.9
+        ],
+        [
+          141.0,
+          323.6
+        ],
+        [
+          141.0,
+          355.0
+        ],
+        [
+          124.0,
+          372.0
+        ],
+        [
+          81.0,
+          372.0
+        ],
+        [
+          44.0,
+          335.0
+        ],
+        [
+          23.0,
+          335.0
+        ],
+        [
+          15.4,
+          327.4
+        ],
+        [
+          15.4,
+          318.5
+        ]
+      ],
+      "from": "J1.P15",
+      "to": "U1.4",
+      "minimumForeignGapMil": 6.3439,
+      "nearestForeign": "c32488012288d90de11",
+      "minimumRfForeignGapMil": 87.1659,
+      "minimumBoardEdgeGapMil": 13.4,
+      "lengthMil": 202.305
+    }
+  ],
+  "removeTracks": [],
+  "notes": "R8 archive geometry screened; apply on native board then save/reload and validate strict DRC, net-path and actual line geometry.",
+  "id": "PCB3-control-corridor"
+}

@@ -1,0 +1,677 @@
+{
+  "status": "NOT FOR FAB",
+  "baselineCommit": "1b69c06e81500d6a8b5ce4aaf268513c6b89dfd4",
+  "nativeSha256": "2ed5b0932c51f5995a68fa602dd922cbfb4ef69429cc21e05cea195c69eaae93",
+  "independentReexportSha256": "353f36b6f328335075b5210452561917acf759000e19bb4feea09b008a8bf036",
+  "documents": 1451,
+  "connectionErrors": [
+    701,
+    695
+  ],
+  "boards": {
+    "PCB1": {
+      "before": {
+        "Connection Error": 339,
+        "Netlist Error": 1
+      },
+      "after": {
+        "Connection Error": 334,
+        "Netlist Error": 1
+      },
+      "reimport": {
+        "Connection Error": 334,
+        "Netlist Error": 1
+      },
+      "ERCFatal": 4,
+      "netlistSha256": "7586a150a92b4d5711b1a03498a15952b53937d3178c3750e5b4efa9945e2725",
+      "moved": {
+        "U19": {
+          "ref": "U19",
+          "x": 159,
+          "y": 1460,
+          "rotation": 90,
+          "layer": 2,
+          "beforeLayer": 2,
+          "before": [
+            151.9685,
+            1001.1024,
+            90
+          ],
+          "pads": [
+            {
+              "number": "8",
+              "at": [
+                177.9315,
+                1439.2976
+              ]
+            },
+            {
+              "number": "7",
+              "at": [
+                177.9315,
+                1453.0976
+              ]
+            },
+            {
+              "number": "6",
+              "at": [
+                177.9315,
+                1466.8976
+              ]
+            },
+            {
+              "number": "5",
+              "at": [
+                177.9315,
+                1480.6976
+              ]
+            },
+            {
+              "number": "4",
+              "at": [
+                140.1315,
+                1480.6976
+              ]
+            },
+            {
+              "number": "3",
+              "at": [
+                140.1315,
+                1466.8976
+              ]
+            },
+            {
+              "number": "2",
+              "at": [
+                140.1315,
+                1453.0976
+              ]
+            },
+            {
+              "number": "1",
+              "at": [
+                141.4315,
+                1439.2976
+              ]
+            }
+          ]
+        },
+        "R15": {
+          "ref": "R15",
+          "x": 116,
+          "y": 1465,
+          "rotation": 270,
+          "layer": 2,
+          "beforeLayer": 2,
+          "before": [
+            87.2047,
+            1346.2598,
+            0
+          ],
+          "pads": [
+            {
+              "number": "1",
+              "at": [
+                116.0402,
+                1477.6047
+              ]
+            },
+            {
+              "number": "2",
+              "at": [
+                116.0402,
+                1452.4047
+              ]
+            }
+          ]
+        },
+        "R17": {
+          "ref": "R17",
+          "x": 124,
+          "y": 1499,
+          "rotation": 180,
+          "layer": 2,
+          "beforeLayer": 1,
+          "before": [
+            36.0236,
+            1354.1338999999998,
+            0
+          ],
+          "pads": [
+            {
+              "number": "1",
+              "at": [
+                136.6236,
+                1498.9661
+              ]
+            },
+            {
+              "number": "2",
+              "at": [
+                111.4236,
+                1498.9661
+              ]
+            }
+          ]
+        }
+      },
+      "newTrackIDs": [
+        "0438ced0c85623b6",
+        "05f331ec5028d356",
+        "067d14dc13cf83c3",
+        "11c4d5dd18d9c72d",
+        "242b1e90981fc480",
+        "3bec63722382976d",
+        "4753a66f7a4b8349",
+        "71d7802cfda7bb6a",
+        "84420f4e3a8c456b",
+        "956a7a609bd7cd20",
+        "c20057c6da015600",
+        "c8fac762f671bc21",
+        "e99728b1ff3ef708"
+      ],
+      "retiredTrackIDs": [
+        "8dc33b054dbcfe8e",
+        "b10f5eca27f684e3",
+        "d51c7d44b4a93df8"
+      ],
+      "batches": [
+        {
+          "id": "PCB1-u19-i2c-zone",
+          "board": "PCB1",
+          "projectUuid": "57afb39c6143d9b23f10ae5e2f03460316793d92e90c60effa97d5853b6ce565",
+          "moved": [
+            {
+              "ref": "U19",
+              "x": 159,
+              "y": 1460,
+              "rotation": 90,
+              "layer": 2,
+              "beforeLayer": 2,
+              "before": [
+                151.9685,
+                1001.1024,
+                90
+              ],
+              "pads": [
+                {
+                  "number": "8",
+                  "at": [
+                    177.9315,
+                    1439.2976
+                  ]
+                },
+                {
+                  "number": "7",
+                  "at": [
+                    177.9315,
+                    1453.0976
+                  ]
+                },
+                {
+                  "number": "6",
+                  "at": [
+                    177.9315,
+                    1466.8976
+                  ]
+                },
+                {
+                  "number": "5",
+                  "at": [
+                    177.9315,
+                    1480.6976
+                  ]
+                },
+                {
+                  "number": "4",
+                  "at": [
+                    140.1315,
+                    1480.6976
+                  ]
+                },
+                {
+                  "number": "3",
+                  "at": [
+                    140.1315,
+                    1466.8976
+                  ]
+                },
+                {
+                  "number": "2",
+                  "at": [
+                    140.1315,
+                    1453.0976
+                  ]
+                },
+                {
+                  "number": "1",
+                  "at": [
+                    141.4315,
+                    1439.2976
+                  ]
+                }
+              ]
+            },
+            {
+              "ref": "R15",
+              "x": 116,
+              "y": 1465,
+              "rotation": 270,
+              "layer": 2,
+              "beforeLayer": 2,
+              "before": [
+                87.2047,
+                1346.2598,
+                0
+              ],
+              "pads": [
+                {
+                  "number": "1",
+                  "at": [
+                    116.0402,
+                    1477.6047
+                  ]
+                },
+                {
+                  "number": "2",
+                  "at": [
+                    116.0402,
+                    1452.4047
+                  ]
+                }
+              ]
+            },
+            {
+              "ref": "R17",
+              "x": 124,
+              "y": 1499,
+              "rotation": 180,
+              "layer": 2,
+              "beforeLayer": 1,
+              "before": [
+                36.0236,
+                1354.1338999999998,
+                0
+              ],
+              "pads": [
+                {
+                  "number": "1",
+                  "at": [
+                    136.6236,
+                    1498.9661
+                  ]
+                },
+                {
+                  "number": "2",
+                  "at": [
+                    111.4236,
+                    1498.9661
+                  ]
+                }
+              ]
+            }
+          ],
+          "addedReceipts": [
+            "e99728b1ff3ef708",
+            "4753a66f7a4b8349",
+            "067d14dc13cf83c3",
+            "697867a882875147",
+            "40a40eb85b3e28fe",
+            "05f331ec5028d356",
+            "0438ced0c85623b6",
+            "11c4d5dd18d9c72d",
+            "84420f4e3a8c456b",
+            "956a7a609bd7cd20",
+            "c8fac762f671bc21",
+            "c20057c6da015600"
+          ],
+          "before": {
+            "Connection Error": 339,
+            "Netlist Error": 1
+          },
+          "after": {
+            "Connection Error": 334,
+            "Netlist Error": 1
+          },
+          "removedSignatures": [
+            [
+              [
+                "Connection Error",
+                "1V8_SYS",
+                "SMD Pad"
+              ],
+              3
+            ],
+            [
+              [
+                "Connection Error",
+                "SYS_I2C_SCL_1V8",
+                "SMD Pad"
+              ],
+              1
+            ],
+            [
+              [
+                "Connection Error",
+                "SYS_I2C_SDA_1V8",
+                "SMD Pad"
+              ],
+              1
+            ]
+          ],
+          "addedSignatures": [],
+          "nativePathReceipts": [
+            {
+              "from": "U19.8",
+              "to": "U19.7",
+              "connected": true
+            },
+            {
+              "from": "R15.1",
+              "to": "U19.3",
+              "connected": true
+            },
+            {
+              "from": "R17.1",
+              "to": "U19.4",
+              "connected": true
+            }
+          ]
+        }
+      ],
+      "connectionSignaturesRemoved": [
+        [
+          [
+            "Connection Error",
+            "1V8_SYS",
+            "SMD Pad",
+            [
+              "32f61d5a4a03bbebre4p110"
+            ]
+          ],
+          1
+        ],
+        [
+          [
+            "Connection Error",
+            "1V8_SYS",
+            "SMD Pad",
+            [
+              "b4dcccb9842b25f7re4p110"
+            ]
+          ],
+          1
+        ],
+        [
+          [
+            "Connection Error",
+            "1V8_SYS",
+            "SMD Pad",
+            [
+              "3acefc6b422adbade13"
+            ]
+          ],
+          1
+        ],
+        [
+          [
+            "Connection Error",
+            "LS3_VREF2_EN",
+            "SMD Pad",
+            [
+              "3acefc6b422adbade8"
+            ]
+          ],
+          1
+        ],
+        [
+          [
+            "Connection Error",
+            "SYS_I2C_SCL_1V8",
+            "SMD Pad",
+            [
+              "b4dcccb9842b25f7re4p109"
+            ]
+          ],
+          1
+        ],
+        [
+          [
+            "Connection Error",
+            "SYS_I2C_SDA_1V8",
+            "SMD Pad",
+            [
+              "32f61d5a4a03bbebre4p109"
+            ]
+          ],
+          1
+        ]
+      ],
+      "connectionSignaturesAdded": [
+        [
+          [
+            "Connection Error",
+            "LS3_VREF2_EN",
+            "SMD Pad",
+            [
+              "3acefc6b422adbade7"
+            ]
+          ],
+          1
+        ]
+      ]
+    },
+    "PCB2": {
+      "before": {
+        "Connection Error": 232
+      },
+      "after": {
+        "Connection Error": 232
+      },
+      "reimport": {
+        "Connection Error": 232
+      },
+      "ERCFatal": 0,
+      "netlistSha256": "1384cfc519ded82551192228cb2b776273a1ccc3df59bb2af1423c2240283926",
+      "moved": {},
+      "newTrackIDs": [
+        "3a3662abdd9a2db3",
+        "3edf6da714500345",
+        "4000f3f5d9f405a0",
+        "43faa70df6226c8b",
+        "59709a5d9c7c9c3c",
+        "6971d583ba9a7e5c",
+        "70c53330c30f14b5",
+        "84a0838759cad068",
+        "94bb366f474e7565",
+        "9e1be68029db8ce5",
+        "a462b147984f3f0a",
+        "a6a735d912bc8559",
+        "f107eac6f32289c0"
+      ],
+      "retiredTrackIDs": [],
+      "batches": [
+        {
+          "id": "PCB2-guarded-power-zones",
+          "board": "PCB2",
+          "moved": [],
+          "before": {
+            "Connection Error": 232
+          },
+          "after": {
+            "Connection Error": 232
+          },
+          "addedReceipts": [
+            "94bb366f474e7565",
+            "f107eac6f32289c0",
+            "59709a5d9c7c9c3c",
+            "84a0838759cad068",
+            "3edf6da714500345",
+            "43faa70df6226c8b",
+            "a462b147984f3f0a",
+            "9e1be68029db8ce5",
+            "a6a735d912bc8559",
+            "3a3662abdd9a2db3",
+            "6971d583ba9a7e5c",
+            "4000f3f5d9f405a0",
+            "70c53330c30f14b5"
+          ],
+          "nativePathReceipts": [
+            {
+              "from": "R5.2",
+              "to": "R8.1",
+              "connected": true
+            }
+          ],
+          "verifiedLocalPaths": [
+            {
+              "from": "R5.2",
+              "to": "R8.1",
+              "net": "VSYS",
+              "method": "native net-path and copper shape",
+              "before": [],
+              "after": [
+                {
+                  "referenceOrPrimitive": "R5.2",
+                  "positiveContactAreaMil2": null
+                },
+                {
+                  "referenceOrPrimitive": "f107eac6f32289c0",
+                  "positiveContactAreaMil2": 29.882064
+                },
+                {
+                  "referenceOrPrimitive": "59709a5d9c7c9c3c",
+                  "positiveContactAreaMil2": 12.650466
+                },
+                {
+                  "referenceOrPrimitive": "84a0838759cad068",
+                  "positiveContactAreaMil2": 12.650466
+                },
+                {
+                  "referenceOrPrimitive": "3edf6da714500345",
+                  "positiveContactAreaMil2": 12.650466
+                },
+                {
+                  "referenceOrPrimitive": "43faa70df6226c8b",
+                  "positiveContactAreaMil2": 12.650466
+                },
+                {
+                  "referenceOrPrimitive": "a462b147984f3f0a",
+                  "positiveContactAreaMil2": 12.650466
+                },
+                {
+                  "referenceOrPrimitive": "R8.1",
+                  "positiveContactAreaMil2": 36.640246
+                }
+              ]
+            },
+            {
+              "from": "U4.3",
+              "to": "U4.4",
+              "net": "VSYS",
+              "method": "native POLYGON pad and copper shape",
+              "before": [],
+              "after": [
+                {
+                  "referenceOrPrimitive": "U4.3",
+                  "positiveContactAreaMil2": null
+                },
+                {
+                  "referenceOrPrimitive": "6971d583ba9a7e5c",
+                  "positiveContactAreaMil2": 14.563468
+                },
+                {
+                  "referenceOrPrimitive": "U4.4",
+                  "positiveContactAreaMil2": 14.823397
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "connectionSignaturesRemoved": [],
+      "connectionSignaturesAdded": []
+    },
+    "PCB3": {
+      "before": {
+        "Connection Error": 130
+      },
+      "after": {
+        "Connection Error": 129
+      },
+      "reimport": {
+        "Connection Error": 129
+      },
+      "ERCFatal": 2,
+      "netlistSha256": "545399c2bd10c7dfe6c73d5631798558abe42471756f6ce658c5946a7ef6ded0",
+      "moved": {},
+      "newTrackIDs": [
+        "20441e7936c78f52",
+        "45b1136dfbadbc62",
+        "523d9545bb549a58",
+        "5e8d63bec46b501a",
+        "6d8e046264ace9b7",
+        "c36b3ef5dd0bb47b",
+        "cc9b96855bf27eb1",
+        "ef2818168514cd90"
+      ],
+      "retiredTrackIDs": [],
+      "batches": [
+        {
+          "id": "PCB3-control-corridor",
+          "board": "PCB3",
+          "projectUuid": "57afb39c6143d9b23f10ae5e2f03460316793d92e90c60effa97d5853b6ce565",
+          "moved": [],
+          "addedReceipts": [
+            "6d8e046264ace9b7",
+            "5e8d63bec46b501a",
+            "c36b3ef5dd0bb47b",
+            "45b1136dfbadbc62",
+            "20441e7936c78f52",
+            "cc9b96855bf27eb1",
+            "ef2818168514cd90",
+            "523d9545bb549a58"
+          ],
+          "before": {
+            "Connection Error": 130
+          },
+          "after": {
+            "Connection Error": 129
+          },
+          "removedSignatures": [
+            [
+              [
+                "Connection Error",
+                "AMP_SD_MODE_1V8",
+                "SMD Pad"
+              ],
+              1
+            ]
+          ],
+          "addedSignatures": [],
+          "nativePathReceipts": [
+            {
+              "from": "J1.P15",
+              "to": "U1.4",
+              "connected": true
+            }
+          ]
+        }
+      ],
+      "connectionSignaturesRemoved": [
+        [
+          [
+            "Connection Error",
+            "AMP_SD_MODE_1V8",
+            "SMD Pad",
+            [
+              "c32488012288d90de12"
+            ]
+          ],
+          1
+        ]
+      ],
+      "connectionSignaturesAdded": []
+    }
+  }
+}

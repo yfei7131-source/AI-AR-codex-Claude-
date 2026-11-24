@@ -1,0 +1,97 @@
+{
+  "id": "PCB2-guarded-power-zones",
+  "board": "PCB2",
+  "moved": [],
+  "before": {
+    "Connection Error": 232
+  },
+  "after": {
+    "Connection Error": 232
+  },
+  "addedReceipts": [
+    "94bb366f474e7565",
+    "f107eac6f32289c0",
+    "59709a5d9c7c9c3c",
+    "84a0838759cad068",
+    "3edf6da714500345",
+    "43faa70df6226c8b",
+    "a462b147984f3f0a",
+    "9e1be68029db8ce5",
+    "a6a735d912bc8559",
+    "3a3662abdd9a2db3",
+    "6971d583ba9a7e5c",
+    "4000f3f5d9f405a0",
+    "70c53330c30f14b5"
+  ],
+  "nativePathReceipts": [
+    {
+      "from": "R5.2",
+      "to": "R8.1",
+      "connected": true
+    }
+  ],
+  "verifiedLocalPaths": [
+    {
+      "from": "R5.2",
+      "to": "R8.1",
+      "net": "VSYS",
+      "method": "native net-path and copper shape",
+      "before": [],
+      "after": [
+        {
+          "referenceOrPrimitive": "R5.2",
+          "positiveContactAreaMil2": null
+        },
+        {
+          "referenceOrPrimitive": "f107eac6f32289c0",
+          "positiveContactAreaMil2": 29.882064
+        },
+        {
+          "referenceOrPrimitive": "59709a5d9c7c9c3c",
+          "positiveContactAreaMil2": 12.650466
+        },
+        {
+          "referenceOrPrimitive": "84a0838759cad068",
+          "positiveContactAreaMil2": 12.650466
+        },
+        {
+          "referenceOrPrimitive": "3edf6da714500345",
+          "positiveContactAreaMil2": 12.650466
+        },
+        {
+          "referenceOrPrimitive": "43faa70df6226c8b",
+          "positiveContactAreaMil2": 12.650466
+        },
+        {
+          "referenceOrPrimitive": "a462b147984f3f0a",
+          "positiveContactAreaMil2": 12.650466
+        },
+        {
+          "referenceOrPrimitive": "R8.1",
+          "positiveContactAreaMil2": 36.640246
+        }
+      ]
+    },
+    {
+      "from": "U4.3",
+      "to": "U4.4",
+      "net": "VSYS",
+      "method": "native POLYGON pad and copper shape",
+      "before": [],
+      "after": [
+        {
+          "referenceOrPrimitive": "U4.3",
+          "positiveContactAreaMil2": null
+        },
+        {
+          "referenceOrPrimitive": "6971d583ba9a7e5c",
+          "positiveContactAreaMil2": 14.563468
+        },
+        {
+          "referenceOrPrimitive": "U4.4",
+          "positiveContactAreaMil2": 14.823397
+        }
+      ]
+    }
+  ]
+}
