@@ -1,0 +1,5 @@
+refdes,part,layer,action,old_x_mil,old_y_mil,new_x_mil,new_y_mil,dx_mil,dy_mil,rationale
+U11,nRF5340-CMAA (WLCSP95),L1 (Top),KEEP_FIXED,102.36,362.21,102.36,362.21,0.0,0.0,"Preserves RF antenna feed, 32MHz/32.768kHz crystal loop, and 5.20 mm board centerline."
+U10,Class-D Audio Amp (WLCSP9),L6 (Bottom),RELOCATE_OUT_OF_U11_OVERLAP,166.55,383.05,118.0,558.0,-48.55,174.95,"Eliminates 100% double-sided overlap under U11 cols J/K/L, unlocks L1->L6 via corridor for U11.L9, cuts SPK_R_N/P length by >65%."
+R3,100k Pull-Down (I2S_BCLK_1V8),L6 (Bottom),CO_LOCATE_WITH_U10,125.8,621.9,148.0,596.0,22.2,-25.9,"Co-locates BCLK pull-down ~55 mil from relocated U10.C1, avoiding board edge and MK3.5 polygon."
+R4,100k Pull-Down (I2S_LRCLK_1V8),L6 (Bottom),CO_LOCATE_WITH_U10,177.0,598.2,102.25,596.0,-74.75,-2.2,"Aligns R4.1 directly beneath U10.C3 (X=102.25) for straight L6 drop, bypassing MK3.5 polygon completely."

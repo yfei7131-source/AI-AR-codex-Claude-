@@ -1,0 +1,150 @@
+{
+  "run_timestamp_utc": "2026-11-24T02:26:22.405781+00:00",
+  "verification_scope": "Verbatim real-slice pre-check & netlist regression (NO reconstructed full JSON)",
+  "patch_file": "controlled_baseline_eco_h02_to_r7_v2_verified.patch",
+  "patch_verification": {
+    "hunk_checks": [
+      {
+        "hunk_index": 1,
+        "header_old": "-231,7",
+        "header_new": "+231,10",
+        "arithmetic_ok": true,
+        "verbatim_real_csv_context_match": true,
+        "context_mismatches": [],
+        "pass": true
+      },
+      {
+        "hunk_index": 2,
+        "header_old": "-438,6",
+        "header_new": "+441,4",
+        "arithmetic_ok": true,
+        "verbatim_real_csv_context_match": true,
+        "context_mismatches": [],
+        "pass": true
+      },
+      {
+        "hunk_index": 3,
+        "header_old": "-959,6",
+        "header_new": "+960,6",
+        "arithmetic_ok": true,
+        "verbatim_real_csv_context_match": true,
+        "context_mismatches": [],
+        "pass": true
+      }
+    ],
+    "all_hunks_pass": true,
+    "r10_removed_lines_count": 2,
+    "netlist_checks": [
+      {
+        "terminal": [
+          "M-MAIN-L",
+          "U12",
+          "1"
+        ],
+        "patched_cad_net": "USB_DP",
+        "real_pr55_netlist_net": "USB_DP",
+        "match": true
+      },
+      {
+        "terminal": [
+          "M-MAIN-L",
+          "U12",
+          "2"
+        ],
+        "patched_cad_net": "GND",
+        "real_pr55_netlist_net": "GND",
+        "match": true
+      },
+      {
+        "terminal": [
+          "M-MAIN-L",
+          "U12",
+          "3"
+        ],
+        "patched_cad_net": "USB_DM",
+        "real_pr55_netlist_net": "USB_DM",
+        "match": true
+      },
+      {
+        "terminal": [
+          "M-MAIN-L",
+          "U12",
+          "4"
+        ],
+        "patched_cad_net": "",
+        "real_pr55_netlist_net": "",
+        "match": true
+      },
+      {
+        "terminal": [
+          "M-MAIN-L",
+          "U12",
+          "5"
+        ],
+        "patched_cad_net": "VBUS_5V_USB",
+        "real_pr55_netlist_net": "VBUS_5V_USB",
+        "match": true
+      },
+      {
+        "terminal": [
+          "M-MAIN-L",
+          "U12",
+          "6"
+        ],
+        "patched_cad_net": "",
+        "real_pr55_netlist_net": "",
+        "match": true
+      },
+      {
+        "terminal": [
+          "M-AUD-R",
+          "U11",
+          "F11"
+        ],
+        "patched_cad_net": "LFXO_XL1",
+        "real_pr55_netlist_net": "LFXO_XL1",
+        "match": true
+      },
+      {
+        "terminal": [
+          "M-AUD-R",
+          "U11",
+          "F12"
+        ],
+        "patched_cad_net": "LFXO_XL2",
+        "real_pr55_netlist_net": "LFXO_XL2",
+        "match": true
+      }
+    ],
+    "all_netlist_checks_pass": true
+  },
+  "defects_found_in_neon1_original_patch": [
+    {
+      "id": "DEFECT-01",
+      "severity": "HIGH",
+      "item": "U11.F11 / U11.F12 net name mismatch",
+      "original_patch": "+LFXO_XL1 / +LFXO_XL2",
+      "real_netlist_M_AUD_R_r7_net": "LFXO_XL1 / LFXO_XL2 (lines 3363-3374, no '+' prefix)",
+      "fixed_in_v2_patch": true
+    },
+    {
+      "id": "DEFECT-02",
+      "severity": "HIGH",
+      "item": "catalog-plan.json missing from patch (R10 retirement & U12 6-pin sync)",
+      "real_catalog_plan_json": "R10 (captureUniqueId 41bc0941336b1513, lines 3271-3299) still present; U12 (lines 4692-4721) still lists footprintPins ['1','2','3']; counts.boardComponents=253",
+      "impact": "controlled_sch_audit.py keeps R10 in unresolvedComponents -> status remains FAIL"
+    },
+    {
+      "id": "DEFECT-03",
+      "severity": "MEDIUM",
+      "item": "controlled_sch_audit.py archive_markers == len(markers) gate",
+      "real_audit_record": "archiveRawNCMarkers=94 vs explicitNCCount=92 (2 orphan NO_CONNECT attributes in .epro2 outside 252 resolved components)",
+      "impact": "Even after syncing CSV + catalog-plan.json, controlled_sch_audit.py returns FAIL until the 2 orphan NO_CONNECT attributes in the native archive are resolved or accounted for"
+    }
+  ],
+  "blocked_items": [
+    "Full binary .epro2 execution of run_controlled_sch_audit.py requires local git clone (offline VM has no outbound network; run_controlled_sch_audit.py returned GitHub 500 on web view).",
+    "PR #58 h03-codex-r8-20261124/engineering/verification-summary.json returned GitHub 500 on web view.",
+    "M-MAIN-L-r7.net top-level U12 FOOTPRINT declaration block was not reached within browser step limit (pin names confirmed as EVT1_U12_U12_ESD_USB_TPD2E001-*)."
+  ]
+}
