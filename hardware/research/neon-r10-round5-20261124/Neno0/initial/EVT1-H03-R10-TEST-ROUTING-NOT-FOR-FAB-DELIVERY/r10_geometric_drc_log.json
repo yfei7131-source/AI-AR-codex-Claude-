@@ -1,0 +1,31 @@
+{
+  "verificationMode": "OFFLINE_EXACT_CONTINUOUS_GEOMETRY_DRC",
+  "nativeEasyEdaGuiDrcStatus": "BLOCKED_BROWSER_LOCAL_FILE_POLICY",
+  "rulesEnforced": {
+    "trackWidthMil": 4.0,
+    "trackToTrackMil": 4.2,
+    "copperToPadViaMil": 6.3,
+    "holeToCopperMil": 7.3,
+    "holeToHoleMil": 12.2,
+    "edgeToTrackMil": 12.5,
+    "edgeToViaMil": 14.5,
+    "keepoutProhibitEnforced": true
+  },
+  "pcb1BaselineOpenConnections": 212,
+  "pcb1FinalOpenConnections": 197,
+  "pcb1OpenDelta": -15,
+  "byCategoryBefore": {
+    "OTHER": 50,
+    "POWER": 131,
+    "GND": 19,
+    "I2C": 12
+  },
+  "byCategoryAfter": {
+    "OTHER": 50,
+    "POWER": 130,
+    "GND": 5,
+    "I2C": 12
+  },
+  "addedPrimitivesViolationCount": 0,
+  "violations": []
+}

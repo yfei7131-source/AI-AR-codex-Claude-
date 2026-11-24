@@ -1,0 +1,52 @@
+/*
+ * Zhiyuan AI/AR Smart Glasses V1.0 — EVT-1 H03 R10 PCB3 (evt1-audio-right)
+ * Zephyr Devicetree Overlay for U11 (nRF5340-CMAA-R7 WLCSP95) ECO-1: I2S_BCLK_1V8 K5 -> L9
+ *
+ * Official Nordic nRF5340 Documentation References:
+ *   - Pin Assignments (WLCSP95 Table 3): https://docs.nordicsemi.com/r/bundle/ps_nrf5340/page/chapters/pin.html
+ *       K5 = P0.20 (General purpose I/O; inner-ring blocked in 0.35 mm pitch)
+ *       L9 = P0.15 / QSPI IO2 (General purpose I/O; outer-ring accessible, no external QSPI on PCB3)
+ *       K4 = P0.22 (I2S_LRCLK_1V8, retained on K4 pending HDI or optional ECO-2)
+ *       J4 = P0.24 (I2S_AMP_DIN_1V8, retained)
+ *       J5 = P0.23 (I2S_S3_DOUT_1V8, retained)
+ *   - I2S Peripheral (PSEL.SCK 0x564): https://docs.nordicsemi.com/r/bundle/ps_nrf5340/page/i2s.html
+ *       Any P0/P1 GPIO may be assigned; f_SCK <= 8 MHz, f_LRCK <= 96 kHz, t_SCK_LRCK = +/-5 ns.
+ *       Idle/sleep state MUST explicitly pull down / drive low per Nordic I2S spec & MAX98357A idle rule.
+ *
+ * Status: NOT FOR FAB — Apply in lockstep with R10 schematic + PCB ECO-1 (U11.K5 -> U11.L9).
+ */
+
+&pinctrl {
+	i2s0_default_r10: i2s0_default_r10 {
+		group1 {
+			/* ECO-1: SCK remapped from P0.20 (K5) -> P0.15 (L9) */
+			psels = <NRF_PSEL(I2S_SCK_M, 0, 15)>,
+				<NRF_PSEL(I2S_LRCK_M, 0, 22)>,
+				<NRF_PSEL(I2S_SDOUT, 0, 24)>,
+				<NRF_PSEL(I2S_SDIN, 0, 23)>;
+		};
+	};
+
+	i2s0_sleep_r10: i2s0_sleep_r10 {
+		group1 {
+			psels = <NRF_PSEL(I2S_SCK_M, 0, 15)>,
+				<NRF_PSEL(I2S_LRCK_M, 0, 22)>,
+				<NRF_PSEL(I2S_SDOUT, 0, 24)>,
+				<NRF_PSEL(I2S_SDIN, 0, 23)>;
+			low-power-enable;
+			bias-pull-down;
+		};
+	};
+};
+
+&i2s0 {
+	status = "okay";
+	pinctrl-0 = <&i2s0_default_r10>;
+	pinctrl-1 = <&i2s0_sleep_r10>;
+	pinctrl-names = "default", "sleep";
+};
+
+/* Explicitly ensure QSPI peripheral remains disabled so P0.15 (L9) has zero pin conflict */
+&qspi {
+	status = "disabled";
+};

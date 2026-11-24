@@ -1,0 +1,46 @@
+{
+  "name": "J2_Hirose_BM28B0p6-24DS_2-0p35V53_28Pad",
+  "mpn": "BM28B0.6-24DS/2-0.35V(53)",
+  "cl_code": "CL0673-5025-0-53",
+  "manufacturer": "Hirose Electric Co Ltd",
+  "distributor_pn": [
+    "C5577343 (JLCPCB)",
+    "H125603CT-ND (DigiKey)"
+  ],
+  "source_url": "https://www.hirose.com/en/product/p/CL0673-5025-0-53",
+  "drawing_ref": "EDC-364666-53-00",
+  "units": "mm",
+  "mounting": "SMD Vertical",
+  "body_mm": {
+    "length": 6.8,
+    "width": 1.7,
+    "mated_height": 0.6,
+    "tolerance_xy": 0.2,
+    "tolerance_z": 0.1
+  },
+  "signal_pads_spec": {
+    "count": 24,
+    "rows": 2,
+    "pitch_mm": 0.35,
+    "pad_w_mm": 0.18,
+    "pad_l_mm": 0.31,
+    "x_span_mm": 3.85,
+    "y_inner_mm": 1.18,
+    "y_outer_mm": 1.8,
+    "y_center_mm": 0.745
+  },
+  "power_pads_spec": {
+    "count": 4,
+    "pad_w_mm": 0.53,
+    "pad_l_mm": 0.33,
+    "x_center_span_mm": 5.26,
+    "y_inner_mm": 1.24,
+    "y_outer_mm": 1.9,
+    "y_center_mm": 0.785,
+    "internal_continuity_verified": "High-X pair [25,26] shorted internally; Low-X pair [27,28] shorted internally; High-X and Low-X isolated by LCP housing.",
+    "polarity_status": "BLOCKED - 100% symmetrical housing, no Pin 1 mark, requires camera module FPC drawing + 4-wire continuity test"
+  },
+  "stencil_thickness_mm": 0.08,
+  "keepout_top_copper": "NO CONDUCTIVE TRACE between the two signal pad rows under connector body",
+  "mating_connector": "BM28B0.6-24DP/2-0.35V(53) / CL0673-5024-0-53 (DigiKey H125591CT-ND)"
+}

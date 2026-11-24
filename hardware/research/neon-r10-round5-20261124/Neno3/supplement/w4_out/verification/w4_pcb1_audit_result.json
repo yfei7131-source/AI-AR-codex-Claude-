@@ -1,0 +1,110 @@
+{
+  "verification_scope": "R9_W4_PCB1_OFFLINE_ASSEMBLY_AND_INTERFACE_AUDIT",
+  "cloud_import_verified": false,
+  "cloud_import_blocker": "Remote browser denied by session policy (POLICY_DECISION_DENY); native cloud import & ERC/DRC rerun remain BLOCKED.",
+  "baseline_inventory": {
+    "projectName": "EVT1-H03-R10-MASTER-NOT-FOR-FAB-20261124",
+    "semanticSha256": "a08bf39542ed6cda9ff75764bfcb25a13ff11f6b3c9112aa7dff9d264affa76b",
+    "components_count": 118,
+    "copper_lines_count": 830,
+    "copper_vias_count": 97,
+    "keepout_regions_count": 6,
+    "tail_width_mm": 5.8,
+    "wide_step_width_mm": 8.2,
+    "board_length_mm": 46.0,
+    "erc_fatal_count": 4,
+    "erc_missfootprint_refs": [
+      "J2",
+      "J3",
+      "SPK1",
+      "BAT1"
+    ],
+    "drc_counts": {
+      "Connection Error": 334,
+      "Netlist Error": 1
+    }
+  },
+  "j2_j_cam_audit": {
+    "candidate_part": "Hirose BM28B0.6-24DS/2-0.35V(53)",
+    "lcsc_part": "C5577343",
+    "pad_count": 28,
+    "nominal_envelope_mm": [
+      5.9,
+      1.98
+    ],
+    "horizontal_fits_5_8mm_tail": false,
+    "vertical_90deg_required_on_tail": true,
+    "legal_assembly_windows_found": 96,
+    "top5_assembly_windows": [
+      {
+        "layer": "L1",
+        "center_mil": [
+          60,
+          1600
+        ],
+        "angle_deg": 90,
+        "min_comp_gap_mil": 93.31,
+        "in_camera_zone_y1000_1600": true
+      },
+      {
+        "layer": "L1",
+        "center_mil": [
+          70,
+          1600
+        ],
+        "angle_deg": 90,
+        "min_comp_gap_mil": 93.31,
+        "in_camera_zone_y1000_1600": true
+      },
+      {
+        "layer": "L1",
+        "center_mil": [
+          80,
+          1600
+        ],
+        "angle_deg": 90,
+        "min_comp_gap_mil": 93.31,
+        "in_camera_zone_y1000_1600": true
+      },
+      {
+        "layer": "L1",
+        "center_mil": [
+          90,
+          1600
+        ],
+        "angle_deg": 90,
+        "min_comp_gap_mil": 93.31,
+        "in_camera_zone_y1000_1600": true
+      },
+      {
+        "layer": "L1",
+        "center_mil": [
+          100,
+          1600
+        ],
+        "angle_deg": 90,
+        "min_comp_gap_mil": 93.31,
+        "in_camera_zone_y1000_1600": true
+      }
+    ],
+    "witness_footprint_file": "J2_BM28B0.6-24DS_2-0.35V_53_C5577343_WITNESS.kicad_mod",
+    "binding_status": "BLOCKED_PENDING_SENSOR_FPC_PINOUT_POLARITY_AND_PHYSICAL_MATING"
+  },
+  "j3_j_chg_audit": {
+    "candidate_width_mm": 6.86,
+    "pcb1_tail_width_mm": 5.8,
+    "width_overflow_mm": 1.06,
+    "mk1_tail_tip_bbox_mil": {
+      "minX": 21.570199999999993,
+      "minY": 1622.1623999999997,
+      "maxX": 175.58970000000002,
+      "maxY": 1789.6414
+    },
+    "binding_status": "BLOCKED_MECH_WIDTH_OVERFLOW_AND_MISSING_MATING_PART_SPEC"
+  },
+  "missing_data_flags": {
+    "internal_planes_l2_l5": "MISSING_IN_COPPER_JSON (pours/poured/fills all empty)",
+    "j2_sensor_fpc_pinout": "MISSING_SUPPLIER_DATASHEET_AND_PHYSICAL_SAMPLE",
+    "j3_mating_pogo_spec": "MISSING_SUPPLIER_SPEC_AND_MECH_ENVELOPE_CHANGE_APPROVAL"
+  }
+}

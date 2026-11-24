@@ -1,0 +1,138 @@
+{
+  "baseline": {
+    "pr60_commit": "a825953d62603624d2ad5105d223d07b87ba8d05",
+    "epro2_sha256": "2ed5b0932c51f5995a68fa602dd922cbfb4ef69429cc21e05cea195c69eaae93",
+    "pcb1_components": 118,
+    "pcb1_erc_fatal": 4,
+    "pcb1_drc_counts": {
+      "Connection Error": 334,
+      "Netlist Error": 1
+    },
+    "pcb1_outline_mm": {
+      "front_width": 5.8,
+      "mid_wide_width": 8.2,
+      "tail_width": 5.8,
+      "total_length": 46.0
+    }
+  },
+  "rules_preserved": {
+    "clearanceMil": 5.98,
+    "clearanceTrackTrackMil": 1.97,
+    "trackWidthMil": 1.97,
+    "powerWidthMil": 20,
+    "trackWidthMinMil": 1.97,
+    "viaDrillMil": 7.87,
+    "viaDiameterMil": 15.75,
+    "copperToEdgeMil": 10,
+    "source": "live"
+  },
+  "candidate_placements_verified_zero_collision": {
+    "J3_Opt1_Solo_Tail_L1": {
+      "designator": "J3",
+      "mpn": "856-10-004-30-051000",
+      "footprint": "J3_MillMax_856-10-004-30-051000.kicad_mod",
+      "layer": "L1 (Top)",
+      "center_mm": [
+        2.9,
+        41.1
+      ],
+      "bbox_mm": [
+        1.795,
+        38.37,
+        4.005,
+        43.83
+      ],
+      "edge_margin_x_mm": 1.795,
+      "collisions": 0,
+      "status": "READY_AFTER_3D_ENCLOSURE_LOCK"
+    },
+    "Joint_Tail_L1_J2_plus_J3_Opt1": {
+      "J2": {
+        "layer": "L1 (Top)",
+        "center_mm": [
+          1.75,
+          40.0
+        ],
+        "bbox_mm": [
+          0.8,
+          36.6,
+          2.7,
+          43.4
+        ],
+        "collisions": 0,
+        "status": "BLOCKED_PENDING_FPC_PINOUT_POLARITY"
+      },
+      "J3": {
+        "layer": "L1 (Top)",
+        "center_mm": [
+          4.435,
+          40.73
+        ],
+        "bbox_mm": [
+          3.33,
+          38.0,
+          5.54,
+          43.46
+        ],
+        "collisions": 0,
+        "status": "READY_AFTER_3D_ENCLOSURE_LOCK"
+      },
+      "mutual_clearance_mm": 0.63
+    },
+    "Joint_Tail_L1_J2_plus_J3_Opt2": {
+      "J2": {
+        "layer": "L1 (Top)",
+        "center_mm": [
+          3.4,
+          39.7
+        ],
+        "bbox_mm": [
+          2.45,
+          36.3,
+          4.35,
+          43.1
+        ],
+        "collisions": 0,
+        "status": "BLOCKED_PENDING_FPC_PINOUT_POLARITY"
+      },
+      "J3": {
+        "layer": "L1 (Top)",
+        "center_mm": [
+          3.55,
+          44.65
+        ],
+        "bbox_mm": [
+          1.65,
+          43.65,
+          5.45,
+          45.65
+        ],
+        "collisions": 0,
+        "status": "READY_AFTER_SUBPCB_3D_LOCK"
+      },
+      "mutual_clearance_mm": 0.55
+    }
+  },
+  "erc_closure_plan": [
+    {
+      "designator": "J3",
+      "primitiveId": "ie284",
+      "action": "Bind verified SMD footprint (Opt1 Mill-Max 856-10-004-30-051000 or Opt2 4P 1.0mm FPC pad), keep 4 USB/VBUS nets intact, Import Changes to PCB1"
+    },
+    {
+      "designator": "BAT1",
+      "primitiveId": "ie226",
+      "action": "Keep BOM tracking; terminate off-board pack via on-board SMD solder pads (TP2 VBAT_L + GND/NTC pads) without disabling MISSFOOTPRINT"
+    },
+    {
+      "designator": "SPK1",
+      "primitiveId": "ie447",
+      "action": "Keep BOM tracking; terminate off-board speaker via on-board SMD solder pads (TP6 SPK_L_N, TP7 SPK_L_P) without disabling MISSFOOTPRINT"
+    },
+    {
+      "designator": "J2",
+      "primitiveId": "ie165",
+      "action": "BLOCKED: Upgrade to 28-pin native symbol matching C5577343; bind [25,26]/[27,28] polarity ONLY after camera FPC drawing + 4-wire continuity test"
+    }
+  ]
+}

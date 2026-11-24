@@ -1,0 +1,554 @@
+{
+  "run_timestamp_utc": "2026-11-24T07:53:25.745237+00:00",
+  "source_snapshot_sha256": "9a95369b0d0524ad60b30929c709e0addd0ae095475ddedf65f0434ab37df3ec",
+  "target_net": "I2S_LRCLK_1V8",
+  "connected_pads": [
+    "U11.K4 (L1)",
+    "J1.P12 (L6)",
+    "U10.C3 (L6)",
+    "R4.1 (L6)"
+  ],
+  "expected_pcb3_connection_error_delta": "129 -> 126 (-3)",
+  "vias": [
+    {
+      "id": "v_k4_12",
+      "span": "BV_L1_L2",
+      "layers": [
+        1,
+        15
+      ],
+      "x": 184.0,
+      "y": 328.0,
+      "hole": 3.94,
+      "pad": 9.94,
+      "type": "BLIND"
+    },
+    {
+      "id": "v_k4_23",
+      "span": "2-3",
+      "layers": [
+        15,
+        16
+      ],
+      "x": 184.0,
+      "y": 310.0,
+      "hole": 3.94,
+      "pad": 9.94,
+      "type": "BLIND"
+    },
+    {
+      "id": "v_k4_34",
+      "span": "3-4",
+      "layers": [
+        16,
+        17
+      ],
+      "x": 184.0,
+      "y": 290.0,
+      "hole": 6.0,
+      "pad": 12.0,
+      "type": "BURIED"
+    },
+    {
+      "id": "v_j1_45",
+      "span": "4-5",
+      "layers": [
+        17,
+        18
+      ],
+      "x": 98.0,
+      "y": 314.0,
+      "hole": 3.94,
+      "pad": 9.94,
+      "type": "BLIND"
+    },
+    {
+      "id": "v_j1_56",
+      "span": "BV_L5_L6",
+      "layers": [
+        18,
+        2
+      ],
+      "x": 98.0,
+      "y": 296.0,
+      "hole": 3.94,
+      "pad": 9.94,
+      "type": "BLIND"
+    },
+    {
+      "id": "v_u10_45",
+      "span": "4-5",
+      "layers": [
+        17,
+        18
+      ],
+      "x": 154.0,
+      "y": 336.0,
+      "hole": 3.94,
+      "pad": 9.94,
+      "type": "BLIND"
+    },
+    {
+      "id": "v_u10_56",
+      "span": "BV_L5_L6",
+      "layers": [
+        18,
+        2
+      ],
+      "x": 154.0,
+      "y": 355.0,
+      "hole": 3.94,
+      "pad": 9.94,
+      "type": "BLIND"
+    },
+    {
+      "id": "v_r4_45",
+      "span": "4-5",
+      "layers": [
+        17,
+        18
+      ],
+      "x": 184.0,
+      "y": 576.0,
+      "hole": 3.94,
+      "pad": 9.94,
+      "type": "BLIND"
+    },
+    {
+      "id": "v_r4_56",
+      "span": "BV_L5_L6",
+      "layers": [
+        18,
+        2
+      ],
+      "x": 184.0,
+      "y": 598.2,
+      "hole": 3.94,
+      "pad": 9.94,
+      "type": "BLIND"
+    }
+  ],
+  "segments": [
+    {
+      "id": "s_l1_k4",
+      "layer": 1,
+      "w": 3.5,
+      "x1": 157.5,
+      "y1": 327.8,
+      "x2": 184.0,
+      "y2": 328.0,
+      "note": "U11.K4 Top escape"
+    },
+    {
+      "id": "s_l2_stg",
+      "layer": 15,
+      "w": 3.5,
+      "x1": 184.0,
+      "y1": 328.0,
+      "x2": 184.0,
+      "y2": 310.0,
+      "note": "L2 stagger link"
+    },
+    {
+      "id": "s_l3_stg",
+      "layer": 16,
+      "w": 3.5,
+      "x1": 184.0,
+      "y1": 310.0,
+      "x2": 184.0,
+      "y2": 290.0,
+      "note": "L3 stagger link to L3-L4 buried via"
+    },
+    {
+      "id": "s_l4_j1a",
+      "layer": 17,
+      "w": 4.0,
+      "x1": 184.0,
+      "y1": 290.0,
+      "x2": 184.0,
+      "y2": 314.0,
+      "note": "L4 trunk south"
+    },
+    {
+      "id": "s_l4_j1b",
+      "layer": 17,
+      "w": 4.0,
+      "x1": 184.0,
+      "y1": 314.0,
+      "x2": 98.0,
+      "y2": 314.0,
+      "note": "L4 branch to J1.P12"
+    },
+    {
+      "id": "s_l4_u10a",
+      "layer": 17,
+      "w": 4.0,
+      "x1": 154.0,
+      "y1": 314.0,
+      "x2": 154.0,
+      "y2": 336.0,
+      "note": "L4 branch to U10.C3"
+    },
+    {
+      "id": "s_l4_r4a",
+      "layer": 17,
+      "w": 4.0,
+      "x1": 184.0,
+      "y1": 314.0,
+      "x2": 184.0,
+      "y2": 576.0,
+      "note": "L4 trunk to R4.1"
+    },
+    {
+      "id": "s_l5_j1",
+      "layer": 18,
+      "w": 3.5,
+      "x1": 98.0,
+      "y1": 314.0,
+      "x2": 98.0,
+      "y2": 296.0,
+      "note": "L5 stagger to J1"
+    },
+    {
+      "id": "s_l5_u10",
+      "layer": 18,
+      "w": 3.5,
+      "x1": 154.0,
+      "y1": 336.0,
+      "x2": 154.0,
+      "y2": 355.0,
+      "note": "L5 stagger to U10"
+    },
+    {
+      "id": "s_l5_r4",
+      "layer": 18,
+      "w": 3.5,
+      "x1": 184.0,
+      "y1": 576.0,
+      "x2": 184.0,
+      "y2": 598.2,
+      "note": "L5 stagger to R4"
+    },
+    {
+      "id": "s_l6_j1a",
+      "layer": 2,
+      "w": 3.5,
+      "x1": 98.0,
+      "y1": 296.0,
+      "x2": 90.4,
+      "y2": 288.4,
+      "note": "L6 drop to J1.P12"
+    },
+    {
+      "id": "s_l6_j1b",
+      "layer": 2,
+      "w": 3.5,
+      "x1": 90.4,
+      "y1": 288.4,
+      "x2": 71.5,
+      "y2": 288.4,
+      "note": "L6 into J1.P12"
+    },
+    {
+      "id": "s_l6_u10",
+      "layer": 2,
+      "w": 3.5,
+      "x1": 154.0,
+      "y1": 355.0,
+      "x2": 150.8,
+      "y2": 367.3,
+      "note": "L6 into U10.C3"
+    },
+    {
+      "id": "s_l6_r4",
+      "layer": 2,
+      "w": 3.5,
+      "x1": 184.0,
+      "y1": 598.2,
+      "x2": 177.0,
+      "y2": 598.2,
+      "note": "L6 into R4.1"
+    }
+  ],
+  "all_vias_pass": true,
+  "all_segments_pass": true,
+  "all_l5_gnd_bridges_unbroken": true,
+  "via_checks": [
+    {
+      "id": "v_k4_12",
+      "span": "BV_L1_L2",
+      "x": 184.0,
+      "y": 328.0,
+      "edge_clear_mil": 18.754,
+      "min_cu_clear_mil": 8.124,
+      "worst_cu": "PAD U11.L5 (1V8_SYS) L1",
+      "min_hole_clear_mil": 14.06,
+      "worst_hole": "NEW_VIA v_k4_23 (2-3)",
+      "pass_edge_14mil": true,
+      "pass_cu_6mil": true,
+      "pass_hole_11_8mil": true
+    },
+    {
+      "id": "v_k4_23",
+      "span": "2-3",
+      "x": 184.0,
+      "y": 310.0,
+      "edge_clear_mil": 18.754,
+      "min_cu_clear_mil": 19.28,
+      "worst_cu": "LINE 5687da4248f23be3 (BLE_ANT_FEED) L16",
+      "min_hole_clear_mil": 14.06,
+      "worst_hole": "NEW_VIA v_k4_12 (BV_L1_L2)",
+      "pass_edge_14mil": true,
+      "pass_cu_6mil": true,
+      "pass_hole_11_8mil": true
+    },
+    {
+      "id": "v_k4_34",
+      "span": "3-4",
+      "x": 184.0,
+      "y": 290.0,
+      "edge_clear_mil": 17.724,
+      "min_cu_clear_mil": 18.25,
+      "worst_cu": "LINE 5687da4248f23be3 (BLE_ANT_FEED) L16",
+      "min_hole_clear_mil": 15.03,
+      "worst_hole": "NEW_VIA v_k4_23 (2-3)",
+      "pass_edge_14mil": true,
+      "pass_cu_6mil": true,
+      "pass_hole_11_8mil": true
+    },
+    {
+      "id": "v_j1_45",
+      "span": "4-5",
+      "x": 98.0,
+      "y": 314.0,
+      "edge_clear_mil": 96.03,
+      "min_cu_clear_mil": 8.77,
+      "worst_cu": "EXIST_VIA_PAD d8f164263263ea29 (GND)",
+      "min_hole_clear_mil": 14.06,
+      "worst_hole": "NEW_VIA v_j1_56 (BV_L5_L6)",
+      "pass_edge_14mil": true,
+      "pass_cu_6mil": true,
+      "pass_hole_11_8mil": true
+    },
+    {
+      "id": "v_j1_56",
+      "span": "BV_L5_L6",
+      "x": 98.0,
+      "y": 296.0,
+      "edge_clear_mil": 96.03,
+      "min_cu_clear_mil": 10.558,
+      "worst_cu": "PAD J1.P14 (I2S_S3_DOUT_1V8) L2",
+      "min_hole_clear_mil": 14.06,
+      "worst_hole": "NEW_VIA v_j1_45 (4-5)",
+      "pass_edge_14mil": true,
+      "pass_cu_6mil": true,
+      "pass_hole_11_8mil": true
+    },
+    {
+      "id": "v_u10_45",
+      "span": "4-5",
+      "x": 154.0,
+      "y": 336.0,
+      "edge_clear_mil": 48.754,
+      "min_cu_clear_mil": 8.168,
+      "worst_cu": "EXIST_VIA_PAD 75546d88a9346a10 (GND)",
+      "min_hole_clear_mil": 14.168,
+      "worst_hole": "EXIST_VIA 75546d88a9346a10 (GND)",
+      "pass_edge_14mil": true,
+      "pass_cu_6mil": true,
+      "pass_hole_11_8mil": true
+    },
+    {
+      "id": "v_u10_56",
+      "span": "BV_L5_L6",
+      "x": 154.0,
+      "y": 355.0,
+      "edge_clear_mil": 48.754,
+      "min_cu_clear_mil": 6.03,
+      "worst_cu": "LINE 5e8d63bec46b501a (AMP_SD_MODE_1V8) L2",
+      "min_hole_clear_mil": 12.043,
+      "worst_hole": "EXIST_VIA 75546d88a9346a10 (GND)",
+      "pass_edge_14mil": true,
+      "pass_cu_6mil": true,
+      "pass_hole_11_8mil": true
+    },
+    {
+      "id": "v_r4_45",
+      "span": "4-5",
+      "x": 184.0,
+      "y": 576.0,
+      "edge_clear_mil": 18.754,
+      "min_cu_clear_mil": 19.597,
+      "worst_cu": "EXIST_VIA_PAD be5a587ab04e7eb8 (GND)",
+      "min_hole_clear_mil": 18.26,
+      "worst_hole": "NEW_VIA v_r4_56 (BV_L5_L6)",
+      "pass_edge_14mil": true,
+      "pass_cu_6mil": true,
+      "pass_hole_11_8mil": true
+    },
+    {
+      "id": "v_r4_56",
+      "span": "BV_L5_L6",
+      "x": 184.0,
+      "y": 598.2,
+      "edge_clear_mil": 18.754,
+      "min_cu_clear_mil": 13.13,
+      "worst_cu": "PAD R4.2 (GND) L2",
+      "min_hole_clear_mil": 18.26,
+      "worst_hole": "NEW_VIA v_r4_45 (4-5)",
+      "pass_edge_14mil": true,
+      "pass_cu_6mil": true,
+      "pass_hole_11_8mil": true
+    }
+  ],
+  "segment_checks": [
+    {
+      "id": "s_l1_k4",
+      "layer": 1,
+      "w": 3.5,
+      "min_cu_clear_mil": 7.967,
+      "worst": "PAD U11.L5 (1V8_SYS)",
+      "pass_cu_6mil": true
+    },
+    {
+      "id": "s_l2_stg",
+      "layer": 15,
+      "w": 3.5,
+      "min_cu_clear_mil": 999.0,
+      "worst": null,
+      "pass_cu_6mil": true
+    },
+    {
+      "id": "s_l3_stg",
+      "layer": 16,
+      "w": 3.5,
+      "min_cu_clear_mil": 22.5,
+      "worst": "LINE 5687da4248f23be3 (BLE_ANT_FEED)",
+      "pass_cu_6mil": true
+    },
+    {
+      "id": "s_l4_j1a",
+      "layer": 17,
+      "w": 4.0,
+      "min_cu_clear_mil": 999.0,
+      "worst": null,
+      "pass_cu_6mil": true
+    },
+    {
+      "id": "s_l4_j1b",
+      "layer": 17,
+      "w": 4.0,
+      "min_cu_clear_mil": 999.0,
+      "worst": null,
+      "pass_cu_6mil": true
+    },
+    {
+      "id": "s_l4_u10a",
+      "layer": 17,
+      "w": 4.0,
+      "min_cu_clear_mil": 999.0,
+      "worst": null,
+      "pass_cu_6mil": true
+    },
+    {
+      "id": "s_l4_r4a",
+      "layer": 17,
+      "w": 4.0,
+      "min_cu_clear_mil": 999.0,
+      "worst": null,
+      "pass_cu_6mil": true
+    },
+    {
+      "id": "s_l5_j1",
+      "layer": 18,
+      "w": 3.5,
+      "min_cu_clear_mil": 999.0,
+      "worst": null,
+      "pass_cu_6mil": true
+    },
+    {
+      "id": "s_l5_u10",
+      "layer": 18,
+      "w": 3.5,
+      "min_cu_clear_mil": 999.0,
+      "worst": null,
+      "pass_cu_6mil": true
+    },
+    {
+      "id": "s_l5_r4",
+      "layer": 18,
+      "w": 3.5,
+      "min_cu_clear_mil": 999.0,
+      "worst": null,
+      "pass_cu_6mil": true
+    },
+    {
+      "id": "s_l6_j1a",
+      "layer": 2,
+      "w": 3.5,
+      "min_cu_clear_mil": 10.306,
+      "worst": "LINE 176b65848c45958b (GND)",
+      "pass_cu_6mil": true
+    },
+    {
+      "id": "s_l6_j1b",
+      "layer": 2,
+      "w": 3.5,
+      "min_cu_clear_mil": 8.5,
+      "worst": "PAD J1.P10 (GND)",
+      "pass_cu_6mil": true
+    },
+    {
+      "id": "s_l6_u10",
+      "layer": 2,
+      "w": 3.5,
+      "min_cu_clear_mil": 7.896,
+      "worst": "PAD U10.C2 (GND)",
+      "pass_cu_6mil": true
+    },
+    {
+      "id": "s_l6_r4",
+      "layer": 2,
+      "w": 3.5,
+      "min_cu_clear_mil": 16.35,
+      "worst": "PAD R4.2 (GND)",
+      "pass_cu_6mil": true
+    }
+  ],
+  "antipad_and_return_plane": {
+    "L2_Inner1_GND_cutout": {
+      "capsule_endpoints_mil": [
+        [
+          184.0,
+          328.0
+        ],
+        [
+          184.0,
+          310.0
+        ]
+      ],
+      "radius_mil": 15.12,
+      "copper_to_pad_clear_mil": 10.15,
+      "remaining_gnd_width_left_mil": 158.88,
+      "plane_remains_single_connected_polygon": true
+    },
+    "L5_Inner4_GND_bridges": [
+      {
+        "between": "J1 <-> U10",
+        "remaining_gnd_bridge_mil": 29.93,
+        "unbroken": true
+      },
+      {
+        "between": "J1 <-> R4",
+        "remaining_gnd_bridge_mil": 245.51,
+        "unbroken": true
+      },
+      {
+        "between": "U10 <-> R4",
+        "remaining_gnd_bridge_mil": 192.79,
+        "unbroken": true
+      }
+    ]
+  },
+  "native_cloud_execution_status": "BLOCKED (GitHub PERMISSION_DENIED on cross-site download & pro.lceda.cn unauthenticated; zero fake .epro2 or DRC logs generated)"
+}
