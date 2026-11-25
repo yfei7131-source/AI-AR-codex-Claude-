@@ -1,0 +1,274 @@
+{
+  "status": "historical raw evidence analysis",
+  "nativeBaselineSHA256": "758618cb4bbb12a5ed34200cbf7c51f2e476c80ed9eee96643efed4764791074",
+  "defaultTrackRule": {
+    "PCB1": {
+      "ruleState": "DEFAULT",
+      "ruleContext": {
+        "unit": "mm",
+        "track": {
+          "isOpen": true,
+          "content": [
+            {
+              "layerId": 1,
+              "stroMin": 1.9685,
+              "stroDef": 1.9685,
+              "stroMax": 100
+            }
+          ]
+        }
+      }
+    },
+    "PCB2": {
+      "ruleState": "DEFAULT",
+      "ruleContext": {
+        "unit": "mm",
+        "track": {
+          "isOpen": true,
+          "content": [
+            {
+              "layerId": 1,
+              "stroMin": 1.9685,
+              "stroDef": 1.9685,
+              "stroMax": 100
+            }
+          ]
+        }
+      }
+    },
+    "PCB3": {
+      "ruleState": "DEFAULT",
+      "ruleContext": {
+        "unit": "mm",
+        "track": {
+          "isOpen": true,
+          "content": [
+            {
+              "layerId": 1,
+              "stroMin": 1.9685,
+              "stroDef": 1.9685,
+              "stroMax": 100
+            }
+          ]
+        }
+      }
+    }
+  },
+  "previousNarrowRoutes": [
+    {
+      "id": "53876a19cb020016",
+      "net": "AVDD_QUAL_CLR_N",
+      "widthMil": 1.96,
+      "layer": 2
+    },
+    {
+      "id": "9d3e583836aeefa5",
+      "net": "AVDD_QUAL_CLR_N",
+      "widthMil": 1.96,
+      "layer": 2
+    }
+  ],
+  "progress": {
+    "observations": 50,
+    "pollStates": {
+      "running:0": 50
+    },
+    "nativeTerminal": {
+      "jobId": "autoroute-1",
+      "state": "canceled",
+      "progress": 0
+    },
+    "engineProgress": {
+      "progress": 0.0017316017316017318,
+      "routabitity": 0.05194805194805195
+    },
+    "scopeAudit": {
+      "requestedNets": [
+        "1V8_SYS",
+        "AMP_R_SD_MODE",
+        "AMP_SD_MODE_1V8",
+        "AMP_SD_REQ_1V8",
+        "BLE_NRESET",
+        "CHG_MUTE_GATE",
+        "CHG_R_ISET",
+        "CHG_R_VSET",
+        "GND",
+        "IPC_S3_TX_1V8"
+      ],
+      "engineCandidateNetsOutsideRequest": {
+        "BLE_ANT_FEED": 3,
+        "BLE_RF_ANT": 3,
+        "BLE_RF_MID": 3,
+        "BLE_SWDCLK": 3,
+        "BLE_SWDIO": 3,
+        "BLE_XC2": 1,
+        "I2S_AMP_DIN_1V8": 6,
+        "I2S_BCLK_1V8": 5,
+        "I2S_LRCLK_1V8": 4,
+        "I2S_S3_DOUT_1V8": 2,
+        "IPC_NRF_TX_1V8": 3,
+        "LFXO_XL1": 1,
+        "LFXO_XL2": 3,
+        "NRF_DCC": 2,
+        "NRF_DCCD": 3,
+        "NRF_DECA": 1,
+        "NRF_DECD": 5,
+        "NRF_DECN": 3,
+        "NRF_DECR_RF": 9,
+        "NTC_TS_R": 3,
+        "PDM_CLK_1V8": 3,
+        "PDM_D1_1V8": 3,
+        "SPK_R_N": 3,
+        "SPK_R_P": 3,
+        "VBAT_R_RET": 7,
+        "VBUS_5V": 6
+      },
+      "engineCandidateTraceWidthsMm": {
+        "0.05": 143
+      },
+      "engineCandidateLayerIdsOutsideRequest": [],
+      "unrequestedNetCount": 26
+    },
+    "limitation": "Engine proposals came from getAutoJobLog after a canceled job and do not demonstrate committed copper."
+  },
+  "fanout": [
+    {
+      "board": "PCB1",
+      "accepted": true,
+      "jobId": null,
+      "requestOptions": {
+        "componentIds": [
+          "a7c07a72302f8948"
+        ],
+        "fanoutType": "BGA",
+        "operationType": "Add",
+        "bgaFanoutDirect": "45",
+        "viaPadSpacingType": "Custom",
+        "viaPadSpacing": 19,
+        "minChannelSpace": 6.2,
+        "includeNoNet": false,
+        "ignoreDRC": false,
+        "track": {
+          "widthRuleType": "Custom",
+          "width": 6
+        },
+        "via": {
+          "type": "Blind",
+          "blindName": "BV_L5_L6",
+          "sizeType": "Custom",
+          "outsideDiameter": 10,
+          "insideDiameter": 4
+        }
+      },
+      "copperDelta": {
+        "LINE": 0,
+        "VIA": 0,
+        "ARC": 0
+      },
+      "bgaChannelGeometry": {
+        "ref": "U2",
+        "balls": 15,
+        "axisPitchMil": 15.748,
+        "landDiameterAtPitchesMil": 7.9,
+        "nominalInterBallCopperGapMil": 7.848,
+        "minimumStraightChannelMil": 18.4
+      }
+    },
+    {
+      "board": "PCB2",
+      "accepted": true,
+      "jobId": null,
+      "requestOptions": {
+        "componentIds": [
+          "c489db83c3ffdfdf"
+        ],
+        "fanoutType": "BGA",
+        "operationType": "Add",
+        "bgaFanoutDirect": "45",
+        "viaPadSpacingType": "Custom",
+        "viaPadSpacing": 19,
+        "minChannelSpace": 6.2,
+        "includeNoNet": false,
+        "ignoreDRC": false,
+        "track": {
+          "widthRuleType": "Custom",
+          "width": 6
+        },
+        "via": {
+          "type": "Blind",
+          "blindName": "BV_L1_L2",
+          "sizeType": "Custom",
+          "outsideDiameter": 10,
+          "insideDiameter": 4
+        }
+      },
+      "copperDelta": {
+        "LINE": 0,
+        "VIA": 0,
+        "ARC": 0
+      },
+      "bgaChannelGeometry": {
+        "ref": "U2",
+        "balls": 30,
+        "axisPitchMil": 15.748,
+        "landDiameterAtPitchesMil": 7.9,
+        "nominalInterBallCopperGapMil": 7.848,
+        "minimumStraightChannelMil": 18.4
+      }
+    },
+    {
+      "board": "PCB3",
+      "accepted": true,
+      "jobId": null,
+      "requestOptions": {
+        "componentIds": [
+          "fb9a90e154948529"
+        ],
+        "fanoutType": "BGA",
+        "operationType": "Add",
+        "bgaFanoutDirect": "45",
+        "viaPadSpacingType": "Custom",
+        "viaPadSpacing": 19,
+        "minChannelSpace": 6.2,
+        "includeNoNet": false,
+        "ignoreDRC": false,
+        "track": {
+          "widthRuleType": "Custom",
+          "width": 6
+        },
+        "via": {
+          "type": "Blind",
+          "blindName": "BV_L1_L2",
+          "sizeType": "Custom",
+          "outsideDiameter": 10,
+          "insideDiameter": 4
+        }
+      },
+      "copperDelta": {
+        "LINE": 0,
+        "VIA": 0,
+        "ARC": 0
+      },
+      "bgaChannelGeometry": {
+        "ref": "U11",
+        "balls": 95,
+        "axisPitchMil": 13.7795,
+        "landDiameterAtPitchesMil": 7.7,
+        "nominalInterBallCopperGapMil": 6.0795,
+        "minimumStraightChannelMil": 18.4
+      }
+    }
+  ],
+  "sourceEvidence": {
+    "artifact": "_r11_run/autoroute.epro2",
+    "comparisonCheckpoint": "_r11_run/ground-trial/baseline.epro2",
+    "jobLog": "_r11_run/broad/PCB3/getAutoJobLog.json",
+    "ruleSource": "R11-MASTER EPRO2 native RULE records"
+  },
+  "sourceArchivesSHA256": {
+    "oldRejectedAutoRoute": "30cafcb42b1820b2fe0c01bf00e1aa77d30f87441168f6813a7298cc3483989f",
+    "oldPreAutoRoute": "9577e747046c3ce1d8fcdb6367ba9a5ea02f183b7026210e23ac31e2fe308bbb",
+    "oldFanoutBefore": "c18f6ad9d3778a74b02169069ed75d4d6c48d8cbe38c7458a0fc6a531bfbc7fb",
+    "oldFanoutAfter": "5c68f5d78cd7889055f696a856736c7b21c99a032ec3d8f3524cdf891fb6ea62"
+  }
+}
