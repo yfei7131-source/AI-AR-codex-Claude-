@@ -1,0 +1,161 @@
+{
+  "board": "PCB2",
+  "drcBefore": {
+    "Connection Error": 225
+  },
+  "drcAfter": {
+    "Connection Error": 225
+  },
+  "connectionErrorDelta": 0,
+  "deletedLeafStubsCount": 9,
+  "appliedMoves": [
+    {
+      "designator": "C1",
+      "id": "6989fd7e3972d2a0",
+      "before": {
+        "x": 126.5748,
+        "y": 816.5354,
+        "layer": 1,
+        "rotation": 0
+      },
+      "after": {
+        "x": 79.3,
+        "y": 859.8,
+        "layer": 1,
+        "rotation": 0
+      }
+    },
+    {
+      "designator": "C12",
+      "id": "73d5b500099048b1",
+      "before": {
+        "x": 32.0866,
+        "y": 881.4961,
+        "layer": 1,
+        "rotation": 0
+      },
+      "after": {
+        "x": 32.1,
+        "y": 838.2,
+        "layer": 1,
+        "rotation": 0
+      }
+    },
+    {
+      "designator": "C9",
+      "id": "66f600bef5e77bde",
+      "before": {
+        "x": 79.3307,
+        "y": 859.8425,
+        "layer": 1,
+        "rotation": 0
+      },
+      "after": {
+        "x": 126.6,
+        "y": 816.5,
+        "layer": 1,
+        "rotation": 0
+      }
+    }
+  ],
+  "rolledBackMoves": [],
+  "addedBlindVias": [],
+  "addedCorridorRoutes": [
+    {
+      "net": "VSYS",
+      "layer": 1,
+      "width": 10,
+      "from": "C12.1",
+      "to": "R8.1",
+      "lineIds": [
+        "2a92c2d0c44f8018"
+      ]
+    },
+    {
+      "net": "GND",
+      "layer": 1,
+      "width": 6,
+      "from": "C4.2",
+      "to": "C9.2",
+      "lineIds": [
+        "d55dabe1a9518b8a"
+      ]
+    },
+    {
+      "net": "GND",
+      "layer": 1,
+      "width": 6,
+      "from": "C9.2",
+      "to": "C5.2",
+      "lineIds": [
+        "67f32b7a9831ecf6"
+      ]
+    },
+    {
+      "net": "GND",
+      "layer": 1,
+      "width": 6,
+      "from": "C12.2",
+      "to": "C26.2",
+      "lineIds": [
+        "c97c37ff68ed2188"
+      ]
+    },
+    {
+      "net": "VSYS",
+      "layer": 1,
+      "width": 10.0,
+      "from": "C4.1",
+      "to": "C9.1",
+      "lineIds": [
+        "6fc6f84a1b3cb04c"
+      ]
+    },
+    {
+      "net": "VSYS",
+      "layer": 1,
+      "width": 10.0,
+      "from": "C9.1",
+      "to": "C5.1",
+      "lineIds": [
+        "0e96a002b3da9078"
+      ]
+    },
+    {
+      "net": "VSYS",
+      "layer": 1,
+      "width": 10.0,
+      "from": "C12.1",
+      "to": "C8.1",
+      "lineIds": [
+        "dd3b14b8c2bf8c66"
+      ]
+    },
+    {
+      "net": "GND",
+      "layer": 1,
+      "width": 6.0,
+      "from": "C8.2",
+      "to": "C12.2",
+      "lineIds": [
+        "f065bd2f2c5907e3"
+      ]
+    },
+    {
+      "net": "GND",
+      "layer": 1,
+      "width": 6,
+      "from": "C9.2",
+      "to": "GND_VIA_CLUSTER",
+      "lineIds": [
+        "b1c7fc942d1c0ca5",
+        "e00217b782a9aa63",
+        "ba43efad8e89ccb1"
+      ]
+    }
+  ],
+  "restoredC8GndBridgeIds": [
+    "2072e9fdd496b9e3",
+    "84373ce9378232a4"
+  ]
+}

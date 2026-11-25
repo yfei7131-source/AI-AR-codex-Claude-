@@ -1,0 +1,195 @@
+{
+  "fullBoardSilkRedo": false,
+  "boards": {
+    "PCB1": {
+      "movedDirectionalComponents": [],
+      "resyncedSilkDots": [
+        {
+          "designator": "U5",
+          "oldId": "5151fa8ff49516bf",
+          "newId": "2ebc148de95c66f2",
+          "oldCenter": [
+            145.7,
+            1010.34
+          ],
+          "newCenter": [
+            73.7,
+            1052.4
+          ]
+        }
+      ],
+      "persistedPin1DotsTotal": 24,
+      "visibleSilkAttributes": 0,
+      "corridorCapacityBefore": {
+        "componentCountInZone": 8,
+        "avgNearestPadGapMil": 9.4,
+        "maxNearestPadGapMil": 9.4,
+        "maxContinuousHorizontalCorridorMil": 8.0,
+        "passable4milSignalTracks": 0,
+        "passable6milPowerTracks": 0
+      },
+      "corridorCapacityAfter": {
+        "componentCountInZone": 5,
+        "avgNearestPadGapMil": 8.52,
+        "maxNearestPadGapMil": 9.4,
+        "maxContinuousHorizontalCorridorMil": 10.0,
+        "passable4milSignalTracks": 0,
+        "passable6milPowerTracks": 0
+      },
+      "keyDistances": {
+        "C31_to_U11.1": {
+          "beforeMil": 197.29,
+          "afterMil": 159.46
+        }
+      },
+      "decapTooFarBefore": 2,
+      "decapTooFarAfter": 1,
+      "drcBefore": {
+        "Connection Error": 320,
+        "Netlist Error": 1
+      },
+      "drcAfter": {
+        "Connection Error": 318,
+        "Netlist Error": 1
+      },
+      "netConnectionDeltas": {
+        "3V3_SYS": {
+          "before": 43,
+          "after": 42,
+          "delta": -1
+        },
+        "CAM_DOVDD_1V8": {
+          "before": 11,
+          "after": 10,
+          "delta": -1
+        }
+      },
+      "addedBlindViasCount": 6,
+      "addedCorridorRoutesCount": 7
+    },
+    "PCB2": {
+      "movedDirectionalComponents": [],
+      "resyncedSilkDots": [],
+      "persistedPin1DotsTotal": 20,
+      "visibleSilkAttributes": 0,
+      "corridorCapacityBefore": {
+        "componentCountInZone": 1,
+        "avgNearestPadGapMil": 0.0,
+        "maxNearestPadGapMil": 0.0,
+        "maxContinuousHorizontalCorridorMil": 14.0,
+        "passable4milSignalTracks": 0,
+        "passable6milPowerTracks": 0
+      },
+      "corridorCapacityAfter": {
+        "componentCountInZone": 0,
+        "avgNearestPadGapMil": 0.0,
+        "maxNearestPadGapMil": 0.0,
+        "maxContinuousHorizontalCorridorMil": 42.0,
+        "passable4milSignalTracks": 3,
+        "passable6milPowerTracks": 3
+      },
+      "keyDistances": {
+        "C9_to_U11.5": {
+          "beforeMil": 160.68,
+          "afterMil": 109.43
+        },
+        "C12_to_U11.5": {
+          "beforeMil": 199.66,
+          "afterMil": 163.2
+        },
+        "C4_C9_VSYS_pitch": {
+          "beforeMil": 80.31,
+          "afterMil": 21.6
+        },
+        "C5_C9_VSYS_pitch": {
+          "beforeMil": 52.0,
+          "afterMil": 21.7
+        }
+      },
+      "decapTooFarBefore": 9,
+      "decapTooFarAfter": 9,
+      "drcBefore": {
+        "Connection Error": 225
+      },
+      "drcAfter": {
+        "Connection Error": 225
+      },
+      "netConnectionDeltas": {
+        "GND": {
+          "before": 26,
+          "after": 27,
+          "delta": 1
+        },
+        "VSYS": {
+          "before": 25,
+          "after": 24,
+          "delta": -1
+        }
+      },
+      "addedBlindViasCount": 0,
+      "addedCorridorRoutesCount": 9
+    },
+    "PCB3": {
+      "movedDirectionalComponents": [],
+      "resyncedSilkDots": [],
+      "persistedPin1DotsTotal": 10,
+      "visibleSilkAttributes": 0,
+      "corridorCapacityBefore": {
+        "componentCountInZone": 8,
+        "avgNearestPadGapMil": 9.74,
+        "maxNearestPadGapMil": 11.8,
+        "maxContinuousHorizontalCorridorMil": 0.0,
+        "passable4milSignalTracks": 0,
+        "passable6milPowerTracks": 0
+      },
+      "corridorCapacityAfter": {
+        "componentCountInZone": 5,
+        "avgNearestPadGapMil": 10.42,
+        "maxNearestPadGapMil": 11.8,
+        "maxContinuousHorizontalCorridorMil": 18.0,
+        "passable4milSignalTracks": 1,
+        "passable6milPowerTracks": 1
+      },
+      "keyDistances": {
+        "R6_to_U3.2_CHG_R_ISET": {
+          "beforeMil": 128.24,
+          "afterMil": 57.92
+        },
+        "R10_to_U3.7_CHG_R_VSET": {
+          "beforeMil": 142.11,
+          "afterMil": 67.66
+        },
+        "C15_to_LFXO_C22_isolation": {
+          "beforeMil": 23.6,
+          "afterMil": 47.33
+        },
+        "C17_to_LFXO_C23_isolation": {
+          "beforeMil": 23.6,
+          "afterMil": 47.32
+        }
+      },
+      "decapTooFarBefore": 0,
+      "decapTooFarAfter": 0,
+      "drcBefore": {
+        "Connection Error": 127
+      },
+      "drcAfter": {
+        "Connection Error": 123
+      },
+      "netConnectionDeltas": {
+        "1V8_SYS": {
+          "before": 24,
+          "after": 22,
+          "delta": -2
+        },
+        "GND": {
+          "before": 14,
+          "after": 12,
+          "delta": -2
+        }
+      },
+      "addedBlindViasCount": 8,
+      "addedCorridorRoutesCount": 2
+    }
+  }
+}

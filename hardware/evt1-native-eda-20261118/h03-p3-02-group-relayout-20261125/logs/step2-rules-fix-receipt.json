@@ -1,0 +1,133 @@
+{
+  "PCB1": {
+    "observedMinDiffNetTrackTrackMil": 6.5,
+    "updatedBaseRule": {
+      "name": "copperThickness1oz",
+      "minMil": 3.0,
+      "defaultMil": 4.0,
+      "trackTrackClearanceMil": 5.98
+    },
+    "updatedPowerRules": {
+      "P3_PWR_HI_4_16MIL": {
+        "minMil": 4.0,
+        "defaultMil": 20.0
+      },
+      "P3_PWR_BR_6MIL": {
+        "minMil": 6.0,
+        "defaultMil": 10.0
+      },
+      "P3_PWR_BR_4_8MIL": {
+        "minMil": 4.0,
+        "defaultMil": 10.0
+      },
+      "P3_LEGACY_PWR_3_6MIL": {
+        "minMil": 3.0,
+        "defaultMil": 10.0
+      }
+    },
+    "explicitWidthLadder": {
+      "signal": "min 4.0 mil / default 4.0 mil (legacy min 3.0 mil)",
+      "powerBranch": "min 6.0 mil / default 10.0 mil (controlled fine-pitch pad-entry neckdown min 4.0 mil)",
+      "powerTrunkHighCurrent": "default 20.0 mil / controlled pad-entry neckdown min 4.0 mil (6-8 mil at 0.35-0.40 mm pads)",
+      "gndReturn": "4/10 mil blind vias to L2/L5 planes + 6-10 mil outer stubs"
+    },
+    "r15TrackOverPadFix": null,
+    "dumpRulesAfter": {
+      "clearanceMil": 5.98,
+      "clearanceTrackTrackMil": 5.98,
+      "trackWidthMil": 4,
+      "trackWidthMinMil": 3,
+      "powerWidthMil": 20
+    },
+    "netClassesLadder": null,
+    "neckdownPlanEntryCount": 0,
+    "drcAfterStep2": {
+      "Connection Error": 320,
+      "Netlist Error": 1
+    }
+  },
+  "PCB2": {
+    "observedMinDiffNetTrackTrackMil": 7.0,
+    "updatedBaseRule": {
+      "name": "copperThickness1oz",
+      "minMil": 3.0,
+      "defaultMil": 4.0,
+      "trackTrackClearanceMil": 5.98
+    },
+    "updatedPowerRules": {
+      "P3_PWR_HI_4_16MIL": {
+        "minMil": 4.0,
+        "defaultMil": 20.0
+      },
+      "P3_PWR_BR_6MIL": {
+        "minMil": 6.0,
+        "defaultMil": 10.0
+      },
+      "P3_LEGACY_PWR_3_6MIL": {
+        "minMil": 3.0,
+        "defaultMil": 10.0
+      }
+    },
+    "explicitWidthLadder": {
+      "signal": "min 4.0 mil / default 4.0 mil (legacy min 3.0 mil)",
+      "powerBranch": "min 6.0 mil / default 10.0 mil (controlled fine-pitch pad-entry neckdown min 4.0 mil)",
+      "powerTrunkHighCurrent": "default 20.0 mil / controlled pad-entry neckdown min 4.0 mil (6-8 mil at 0.35-0.40 mm pads)",
+      "gndReturn": "4/10 mil blind vias to L2/L5 planes + 6-10 mil outer stubs"
+    },
+    "r15TrackOverPadFix": null,
+    "dumpRulesAfter": {
+      "clearanceMil": 5.98,
+      "clearanceTrackTrackMil": 5.98,
+      "trackWidthMil": 4,
+      "trackWidthMinMil": 3,
+      "powerWidthMil": 20
+    },
+    "netClassesLadder": null,
+    "neckdownPlanEntryCount": 0,
+    "drcAfterStep2": {
+      "Connection Error": 225
+    }
+  },
+  "PCB3": {
+    "observedMinDiffNetTrackTrackMil": 7.0,
+    "updatedBaseRule": {
+      "name": "copperThickness1oz",
+      "minMil": 3.0,
+      "defaultMil": 4.0,
+      "trackTrackClearanceMil": 5.98
+    },
+    "updatedPowerRules": {
+      "P3_PWR_HI_4_16MIL": {
+        "minMil": 4.0,
+        "defaultMil": 20.0
+      },
+      "P3_PWR_BR_6MIL": {
+        "minMil": 6.0,
+        "defaultMil": 10.0
+      },
+      "P3_LEGACY_PWR_3_6MIL": {
+        "minMil": 3.0,
+        "defaultMil": 10.0
+      }
+    },
+    "explicitWidthLadder": {
+      "signal": "min 4.0 mil / default 4.0 mil (legacy min 3.0 mil)",
+      "powerBranch": "min 6.0 mil / default 10.0 mil (controlled fine-pitch pad-entry neckdown min 4.0 mil)",
+      "powerTrunkHighCurrent": "default 20.0 mil / controlled pad-entry neckdown min 4.0 mil (6-8 mil at 0.35-0.40 mm pads)",
+      "gndReturn": "4/10 mil blind vias to L2/L5 planes + 6-10 mil outer stubs"
+    },
+    "r15TrackOverPadFix": null,
+    "dumpRulesAfter": {
+      "clearanceMil": 5.98,
+      "clearanceTrackTrackMil": 5.98,
+      "trackWidthMil": 4,
+      "trackWidthMinMil": 3,
+      "powerWidthMil": 20
+    },
+    "netClassesLadder": null,
+    "neckdownPlanEntryCount": 0,
+    "drcAfterStep2": {
+      "Connection Error": 127
+    }
+  }
+}
