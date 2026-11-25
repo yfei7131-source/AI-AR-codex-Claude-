@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "method": "inherited-native-v4-hdi-and-copper-dfm",
+  "scope": "V4 hole/outline/original-classified copper findings; no fab approval",
+  "checkpointSha256": "28f7f37f0a9b4cae0c2ab162445829d30062b91e34616b7f267917a95621248b",
+  "postSha256": "758618cb4bbb12a5ed34200cbf7c51f2e476c80ed9eee96643efed4764791074",
+  "planSha256": "8ddfde0ded3770821488eae4cae20ed5f8ca4cdcc7f522cae5fcc38c804538e0",
+  "boards": {
+    "PCB1": {
+      "inheritedFlags": 1,
+      "circularCopperReconciliation": [],
+      "v4NativeCheckpoints": [
+        "3249bc59e1af66bed15c3b48d78696765a06e8c4ac889b8ae3d0e68f04d3f79c",
+        "0248e7e082b805dd82418dfd80321aea336e130d6870fbba1be6d70b2d7f2647"
+      ],
+      "rawV4ReportSha256": [
+        "ae1cdc970a3387273d2ce4b66e9eae1f154a19a45ad18aebfa96d5d1deca99e1",
+        "a6545af5ef7a647cc97b85fb18ba351840978d124d1798f2db6a311116aa2d1c"
+      ]
+    },
+    "PCB2": {
+      "inheritedFlags": 8,
+      "circularCopperReconciliation": [],
+      "v4NativeCheckpoints": [
+        "0c40e6e5bde430d0a68e21315c357033d1266fa106a3200c5a7a8010d0908ca7",
+        "d4326067060045827993de03ed6b6741459fc82a553aab5c73aeeec12e733b84"
+      ],
+      "rawV4ReportSha256": [
+        "4dc85bede176774e82e2b229b78000c6ebac06360fa461f042a202432546507a",
+        "7889a6d12eee009229b1a454456cde67c0ea9ffb854aa9d826486d3d1a282c89"
+      ]
+    },
+    "PCB3": {
+      "inheritedFlags": 3,
+      "circularCopperReconciliation": [
+        {
+          "padId": "5bb0491d9b472a90tp1p109",
+          "copperId": "1cf40bd16e827fe5",
+          "nativePadShape": [
+            "ELLIPSE",
+            31.5,
+            31.5
+          ],
+          "nativeNominalGapLowerBoundMil": 9.1414,
+          "minRequiredMil": 6.2
+        },
+        {
+          "padId": "5bb0491d9b472a90tp1p109",
+          "copperId": "4196f39ae665d6a3",
+          "nativePadShape": [
+            "ELLIPSE",
+            31.5,
+            31.5
+          ],
+          "nativeNominalGapLowerBoundMil": 8.85464,
+          "minRequiredMil": 6.2
+        },
+        {
+          "padId": "5bb0491d9b472a90tp1p109",
+          "copperId": "c32ffe36b61f0ea9",
+          "nativePadShape": [
+            "ELLIPSE",
+            31.5,
+            31.5
+          ],
+          "nativeNominalGapLowerBoundMil": 6.85464,
+          "minRequiredMil": 6.2
+        }
+      ],
+      "v4NativeCheckpoints": [
+        "278ba798a833e2a47663825cc2f7ec77c59b9d4d1a6ded647177a8c1d2f0518d",
+        "b9309ccb19aa6b3afc260613d3487293ff49906ad679cf048a9cb809b6d8e9d1"
+      ],
+      "rawV4ReportSha256": [
+        "133325c8b7564124213977a432b1c327d396e7555610dc0502e166119740cc05",
+        "3fe6abb12c86f27fe91b3314c07b27c27c4151661b1a54334a29b9b18eef090b"
+      ]
+    }
+  },
+  "unresolvedNewFindings": []
+}
