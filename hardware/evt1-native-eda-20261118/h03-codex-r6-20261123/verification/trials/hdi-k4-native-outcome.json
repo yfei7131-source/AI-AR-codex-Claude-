@@ -1,0 +1,80 @@
+{
+  "native_export_sha256": "3fe877331f4d92795c725224f0f1810f1fab7e7f6045f44c9d95803e9ec2ac59",
+  "native_drc_before": {
+    "Connection Error": 132
+  },
+  "native_drc_hdi_trial": {
+    "Clearance Error": 4,
+    "Connection Error": 130
+  },
+  "k4_native_path_to_both_receivers": [
+    true,
+    true
+  ],
+  "archive_persisted_design_trial_vias": 7,
+  "new_hole_to_hole": [
+    {
+      "rule": "Clearance Error",
+      "objType": "Hole to Hole",
+      "ruleName": "otherClearance",
+      "net": "I2S_LRCLK_1V8",
+      "x": 179.47,
+      "y": 328,
+      "layer": "Multi-Layer",
+      "objs": [
+        "7fa29d9f0f3614ee",
+        "7f50c60184eec044"
+      ],
+      "message": "(I2S_LRCLK_1V8): e54 to (I2S_LRCLK_1V8): e53 distance is 0mil, should be >= 11.8mil",
+      "globalIndex": "err0"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "Hole to Hole",
+      "ruleName": "otherClearance",
+      "net": "I2S_LRCLK_1V8",
+      "x": 178.62,
+      "y": 323.5,
+      "layer": "Multi-Layer",
+      "objs": [
+        "7fa29d9f0f3614ee",
+        "49b4adac003c25fb"
+      ],
+      "message": "(I2S_LRCLK_1V8): e54 to (I2S_LRCLK_1V8): e55 distance is 5.3mil, should be >= 11.8mil",
+      "globalIndex": "err1"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "Hole to Hole",
+      "ruleName": "otherClearance",
+      "net": "I2S_LRCLK_1V8",
+      "x": 102.97,
+      "y": 301,
+      "layer": "Multi-Layer",
+      "objs": [
+        "f56f95e25feded23",
+        "81e5bfe5b5bccb1d"
+      ],
+      "message": "(I2S_LRCLK_1V8): e57 to (I2S_LRCLK_1V8): e56 distance is 0mil, should be >= 11.8mil",
+      "globalIndex": "err2"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "Hole to Hole",
+      "ruleName": "otherClearance",
+      "net": "I2S_LRCLK_1V8",
+      "x": 137.97,
+      "y": 376,
+      "layer": "Multi-Layer",
+      "objs": [
+        "7e6a6f49aba20daa",
+        "39c14a439eb27f4b"
+      ],
+      "message": "(I2S_LRCLK_1V8): e58 to (I2S_LRCLK_1V8): e59 distance is 0mil, should be >= 11.8mil",
+      "globalIndex": "err3"
+    }
+  ],
+  "target_drc_center_distance_laser_laser_mil": 15.748008,
+  "target_drc_center_distance_laser_core_mil": 16.779504,
+  "excluded_from_delivery": true
+}

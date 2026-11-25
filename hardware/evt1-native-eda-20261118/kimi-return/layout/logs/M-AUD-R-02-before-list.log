@@ -1,0 +1,55 @@
+$ C:\Users\Admin（无密码）\.local\bin\easyeda.exe pcb list --include-bbox --include-pads --project cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662 --doc 1db01a36f669a47a
+{
+  "id": "req_1008",
+  "type": "response",
+  "version": "v1",
+  "windowId": "259b1d05-24b1-4f23-acb8-5a09746f811e",
+  "createdAt": "2026-11-18T16:01:04.5247844Z",
+  "ok": true,
+  "result": {
+    "components": [],
+    "count": 0,
+    "coverage": {
+      "bbox": {
+        "available": 0,
+        "notRequested": 0,
+        "requested": true,
+        "unavailable": 0
+      },
+      "pads": {
+        "available": 0,
+        "failed": 0,
+        "geometryAvailable": 0,
+        "geometryUnavailable": 0,
+        "notRequested": 0,
+        "observed": 0,
+        "requested": true,
+        "serialized": 0,
+        "unavailable": 0
+      }
+    },
+    "incomplete": false,
+    "partial": false
+  },
+  "context": {
+    "projectUuid": "cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+    "projectName": "ZY_AIAR_EVT1_KIMI_20261118",
+    "documentUuid": "1db01a36f669a47a",
+    "documentType": "pcb",
+    "tabId": "1db01a36f669a47a@cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+    "pageVisibility": "hidden"
+  },
+  "mutationContext": {
+    "projectUuid": "cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+    "projectName": "ZY_AIAR_EVT1_KIMI_20261118",
+    "documentUuid": "1db01a36f669a47a",
+    "documentType": "pcb",
+    "tabId": "1db01a36f669a47a@cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+    "pageVisibility": "hidden"
+  },
+  "mutationContextAvailable": true,
+  "staleRisk": "PCB was mutated by pcb.component.modify since the last reload — pcb.components.list (and DRC) may read stale engine state; authoritative workflows should save, run `easyeda doc reload`, then read back; if refresh fails, treat the data as unavailable",
+  "seq": 79,
+  "seqAbandoned": 0
+}
+⚠ staleRisk: PCB was mutated by pcb.component.modify since the last reload — pcb.components.list (and DRC) may read stale engine state; authoritative workflows should save, run `easyeda doc reload`, then read back; if refresh fails, treat the data as unavailable

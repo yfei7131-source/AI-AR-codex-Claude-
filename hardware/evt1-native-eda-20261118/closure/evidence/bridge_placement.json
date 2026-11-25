@@ -1,0 +1,1729 @@
+{
+  "sourcePullRequest": 30,
+  "sourceFiles": [
+    {
+      "path": "kimi-return/native/ZY_AIAR_EVT1_KIMI_20261118.epro2",
+      "sha256": "0fda67af01f31551b1c269c0fc386bd400d4c30ae1dfc0c6def6c5dfa6075a0d"
+    },
+    {
+      "path": "kimi-return/native/restored-readback/M-OPT-BRIDGE.json",
+      "sha256": "e643a3314b85d53f187330e06d7da58470c28246b72fc46ad3f62a85dcb362cb"
+    },
+    {
+      "path": "kimi-return/layout/review-3/M-OPT-BRIDGE/fresh-board.json",
+      "sha256": "b6b255fcb5395d8eaa37fa734e13a5368132c952d88399c0e3937bf64ac47f9b"
+    },
+    {
+      "path": "kimi-return/layout/candidate-placement-plan.json",
+      "sha256": "1b6be4903cab872569b998ff318f7afaf9977d4a90edd91067aa2015650ba202"
+    },
+    {
+      "path": "kimi-return/layout/review-1/M-OPT-BRIDGE/fresh-board.json",
+      "sha256": "46b5002b2d1a8755f768a0636212f94ce5d0ffd9d41439a8c23ff7e76edd0de3"
+    },
+    {
+      "path": "kimi-return/layout/review-2/M-OPT-BRIDGE/fresh-board.json",
+      "sha256": "6afe2be139360e5603bf5a8b05f431e5f3ec2b4a4982c070c155a497c383f2f6"
+    },
+    {
+      "path": "kimi-return/evidence/pad-audit/audit-board-after.json",
+      "sha256": "2cda78d7c1891d08b9d7e54d4098756249e121f4c06c44aeb725b70e11ef09d3"
+    },
+    {
+      "path": "PCB_CONSTRAINTS.json",
+      "sha256": "2564eccb6c18703594c771a69b634e49804e56d6961fad99165e04028c970a4a"
+    },
+    {
+      "path": "evt1-rev-d1-1-20261117/02_BOM_PINMAP_ICD_Blocked/BOM_V1_0_FROZEN.csv",
+      "pathBase": "hardware",
+      "sha256": "1e199454829da3bf3c782f2e5ae44bca49b4564cfce4c1bb901b4401f8c89750"
+    },
+    {
+      "path": "closure/bridge_connector_bodies.json",
+      "sha256": "e66393b748b72c241921784367dc94c132f78f19eaf2226ae63a547b4bd8ce92"
+    }
+  ],
+  "archiveGeometryAgreement": "PASS",
+  "existingSnapshotStatus": "FAIL",
+  "placementClosure": "BLOCKED",
+  "manufacturing": "BLOCKED",
+  "label": "NOT FOR FAB",
+  "geometryScope": "2D native rendered AABBs and observed copper-pad extents. No supplier courtyard, routing, STEP, or electrical release.",
+  "outlineMm": [
+    0.0,
+    0.0,
+    4.199999,
+    21.999999
+  ],
+  "copperEdgeMinimumMm": 0.254,
+  "requiredBBoxGapMm": 0.2,
+  "widthAvailableForCopperMm": 3.691999,
+  "gridMm": 0.05,
+  "layerNames": {
+    "TOP": 1,
+    "BOTTOM": 2
+  },
+  "components": [
+    {
+      "ref": "MK2",
+      "device": "IM69D130V01XTSA1",
+      "layer": 2,
+      "rotation": 0,
+      "bodyBoxMm": [
+        0.143952,
+        13.373016,
+        4.056047,
+        17.626983
+      ],
+      "copperBoxMm": [
+        0.57023,
+        13.77569,
+        3.02133,
+        17.160105
+      ],
+      "padCount": 8,
+      "minPadEdgeMm": 0.57023
+    },
+    {
+      "ref": "U1",
+      "device": "TLV75518PDQNR",
+      "layer": 2,
+      "rotation": 90,
+      "bodyBoxMm": [
+        1.794198,
+        17.859667,
+        3.005803,
+        19.340335
+      ],
+      "copperBoxMm": [
+        1.96006,
+        18.120347,
+        2.829908,
+        19.340335
+      ],
+      "padCount": 5,
+      "minPadEdgeMm": 1.370091
+    },
+    {
+      "ref": "U12",
+      "device": "TPS389025DSET",
+      "layer": 2,
+      "rotation": 0,
+      "bodyBoxMm": [
+        0.753166,
+        19.597969,
+        3.446836,
+        21.602029
+      ],
+      "copperBoxMm": [
+        1.27889,
+        19.97202,
+        3.30073,
+        21.25218
+      ],
+      "padCount": 6,
+      "minPadEdgeMm": 0.747819
+    },
+    {
+      "ref": "U13",
+      "device": "TPS389025DSET",
+      "layer": 1,
+      "rotation": 0,
+      "bodyBoxMm": [
+        0.753166,
+        5.797969,
+        3.446836,
+        7.802029
+      ],
+      "copperBoxMm": [
+        1.27889,
+        6.1468,
+        3.30073,
+        7.42696
+      ],
+      "padCount": 6,
+      "minPadEdgeMm": 0.899269
+    },
+    {
+      "ref": "U2",
+      "device": "ICE40UP5K-UWG30ITR",
+      "layer": 1,
+      "rotation": 0,
+      "bodyBoxMm": [
+        0.699882,
+        8.036895,
+        3.500117,
+        10.963102
+      ],
+      "copperBoxMm": [
+        1.42367,
+        8.26389,
+        3.22453,
+        10.46353
+      ],
+      "padCount": 30,
+      "minPadEdgeMm": 0.975469
+    },
+    {
+      "ref": "U4",
+      "device": "TLV75512PDQNR",
+      "layer": 2,
+      "rotation": 0,
+      "bodyBoxMm": [
+        0.059667,
+        17.994198,
+        1.540335,
+        19.205804
+      ],
+      "copperBoxMm": [
+        0.320347,
+        18.170093,
+        1.540335,
+        19.039942
+      ],
+      "padCount": 5,
+      "minPadEdgeMm": 0.320347
+    },
+    {
+      "ref": "U7",
+      "device": "TPS389018DSET",
+      "layer": 1,
+      "rotation": 0,
+      "bodyBoxMm": [
+        0.753166,
+        11.197971,
+        3.446836,
+        13.202031
+      ],
+      "copperBoxMm": [
+        1.27889,
+        11.54684,
+        3.30073,
+        12.827
+      ],
+      "padCount": 6,
+      "minPadEdgeMm": 0.899269
+    },
+    {
+      "ref": "U8",
+      "device": "SN74LVC2T45DCUR",
+      "layer": 2,
+      "rotation": 90,
+      "bodyBoxMm": [
+        0.872317,
+        0.309469,
+        3.088315,
+        4.382359
+      ],
+      "copperBoxMm": [
+        1.11506,
+        0.30861,
+        2.86258,
+        4.15925
+      ],
+      "padCount": 8,
+      "minPadEdgeMm": 0.30861
+    },
+    {
+      "ref": "U9",
+      "device": "ICM-42688-P",
+      "layer": 1,
+      "rotation": 0,
+      "bodyBoxMm": [
+        0.246334,
+        17.39759,
+        3.953667,
+        20.202411
+      ],
+      "copperBoxMm": [
+        0.70104,
+        17.4498,
+        3.90144,
+        20.14982
+      ],
+      "padCount": 14,
+      "minPadEdgeMm": 0.298559
+    },
+    {
+      "ref": "Y1",
+      "device": "ASADV-48.000MHZ-LC-T",
+      "layer": 2,
+      "rotation": 90,
+      "bodyBoxMm": [
+        0.489308,
+        7.72192,
+        2.911331,
+        10.667919
+      ],
+      "copperBoxMm": [
+        0.95631,
+        8.2423,
+        2.71399,
+        10.4013
+      ],
+      "padCount": 4,
+      "minPadEdgeMm": 0.95631
+    }
+  ],
+  "violations": [
+    {
+      "kind": "reservedSpace",
+      "ref": "U8",
+      "reserve": "J_BRIDGE_IN",
+      "layer": 2,
+      "gapMm": 0.0
+    }
+  ],
+  "reservations": [
+    {
+      "ref": "J_DISP_L",
+      "layer": 1,
+      "boxMm": [
+        0.3,
+        3.35,
+        3.9,
+        5.05
+      ]
+    },
+    {
+      "ref": "J_DISP_R",
+      "layer": 1,
+      "boxMm": [
+        0.3,
+        13.95,
+        3.9,
+        15.65
+      ]
+    },
+    {
+      "ref": "J_DISP_L_FPC_CORRIDOR",
+      "layer": 1,
+      "boxMm": [
+        0.0,
+        3.03,
+        4.2,
+        5.37
+      ]
+    },
+    {
+      "ref": "J_DISP_R_FPC_CORRIDOR",
+      "layer": 1,
+      "boxMm": [
+        0.0,
+        13.63,
+        4.2,
+        15.97
+      ]
+    },
+    {
+      "ref": "J_BRIDGE_IN",
+      "layer": 2,
+      "boxMm": [
+        1.25,
+        0.325,
+        2.95,
+        6.875
+      ]
+    },
+    {
+      "ref": "U6_OPT_AVDD",
+      "layer": 2,
+      "boxMm": [
+        1.6,
+        11.7,
+        2.6,
+        12.7
+      ]
+    },
+    {
+      "ref": "Y1_CLOCK_SEARCH_RESERVE",
+      "layer": 2,
+      "boxMm": [
+        0.627,
+        8.288988,
+        3.573,
+        10.711012
+      ]
+    }
+  ],
+  "independentSearch": {
+    "U8": [
+      {
+        "source": "u8_top_0",
+        "readbackRef": "U8",
+        "device": "SN74LVC2T45DCUR",
+        "layer": 1,
+        "rotation": 0,
+        "nativeOrientationObserved": true,
+        "bodyAtNativeOriginMm": [
+          -1.924787,
+          -1.116025,
+          2.148103,
+          1.099972
+        ],
+        "copperAtNativeOriginMm": [
+          -1.923572,
+          -0.873966,
+          1.924528,
+          0.873554
+        ],
+        "copperWidthMm": 3.8481,
+        "anchorsWithOutlineAndReservationsOnly": 0,
+        "anchorsWithAllExistingObjectsFixed": 0,
+        "minimumExistingObjectsToDisplace": null,
+        "minimalDisplacementSets": []
+      },
+      {
+        "source": "u8_top_90",
+        "readbackRef": "U8",
+        "device": "SN74LVC2T45DCUR",
+        "layer": 1,
+        "rotation": 90,
+        "nativeOrientationObserved": true,
+        "bodyAtNativeOriginMm": [
+          -1.099972,
+          -1.924787,
+          1.116025,
+          2.148103
+        ],
+        "copperAtNativeOriginMm": [
+          -0.875822,
+          -1.925645,
+          0.874238,
+          1.924995
+        ],
+        "copperWidthMm": 1.75006,
+        "anchorsWithOutlineAndReservationsOnly": 4329,
+        "anchorsWithAllExistingObjectsFixed": 0,
+        "minimumExistingObjectsToDisplace": 1,
+        "minimalDisplacementSets": [
+          {
+            "locations": 1365,
+            "mustMoveExistingRefs": [
+              "U9"
+            ],
+            "sampleNativeAnchorMm": [
+              2.0,
+              18.95
+            ],
+            "sampleBodyBoxMm": [
+              0.900028,
+              17.025213,
+              3.116025,
+              21.098103
+            ],
+            "sampleCopperBoxMm": [
+              1.124178,
+              17.024355,
+              2.874238,
+              20.874995
+            ],
+            "sampleMinimumSlackMm": 0.855213
+          }
+        ]
+      },
+      {
+        "source": "restored",
+        "readbackRef": "U8",
+        "device": "SN74LVC2T45DCUR",
+        "layer": 2,
+        "rotation": 90,
+        "nativeOrientationObserved": true,
+        "bodyAtNativeOriginMm": [
+          -1.116025,
+          -1.924787,
+          1.099972,
+          2.148103
+        ],
+        "copperAtNativeOriginMm": [
+          -0.873282,
+          -1.925645,
+          0.874238,
+          1.924995
+        ],
+        "copperWidthMm": 1.74752,
+        "anchorsWithOutlineAndReservationsOnly": 3900,
+        "anchorsWithAllExistingObjectsFixed": 0,
+        "minimumExistingObjectsToDisplace": 1,
+        "minimalDisplacementSets": [
+          {
+            "locations": 546,
+            "mustMoveExistingRefs": [
+              "MK2"
+            ],
+            "sampleNativeAnchorMm": [
+              1.5,
+              15.15
+            ],
+            "sampleBodyBoxMm": [
+              0.383975,
+              13.225213,
+              2.599972,
+              17.298103
+            ],
+            "sampleCopperBoxMm": [
+              0.626718,
+              13.224355,
+              2.374238,
+              17.074995
+            ],
+            "sampleMinimumSlackMm": 0.325213
+          }
+        ]
+      }
+    ],
+    "U10": [
+      {
+        "source": "footprint_geometry",
+        "readbackRef": "AUDIT_24",
+        "device": "SN74LVC1G175DCKR",
+        "layer": 1,
+        "rotation": 0,
+        "nativeOrientationObserved": true,
+        "bodyAtNativeOriginMm": [
+          -1.249959,
+          -1.492981,
+          1.773999,
+          1.199998
+        ],
+        "copperAtNativeOriginMm": [
+          -1.24968,
+          -0.85979,
+          1.24968,
+          0.85979
+        ],
+        "copperWidthMm": 2.49936,
+        "anchorsWithOutlineAndReservationsOnly": 3042,
+        "anchorsWithAllExistingObjectsFixed": 54,
+        "minimumExistingObjectsToDisplace": 0,
+        "minimalDisplacementSets": [
+          {
+            "locations": 54,
+            "mustMoveExistingRefs": [],
+            "sampleNativeAnchorMm": [
+              1.6,
+              1.55
+            ],
+            "sampleBodyBoxMm": [
+              0.350041,
+              0.057019,
+              3.373999,
+              2.749998
+            ],
+            "sampleCopperBoxMm": [
+              0.35032,
+              0.69021,
+              2.84968,
+              2.40979
+            ],
+            "sampleMinimumSlackMm": 0.057019
+          }
+        ]
+      },
+      {
+        "source": "footprint_geometry",
+        "readbackRef": "AUDIT_24",
+        "device": "SN74LVC1G175DCKR",
+        "layer": 1,
+        "rotation": 90,
+        "nativeOrientationObserved": false,
+        "bodyAtNativeOriginMm": [
+          -1.199998,
+          -1.249959,
+          1.492981,
+          1.773999
+        ],
+        "copperAtNativeOriginMm": [
+          -0.85979,
+          -1.24968,
+          0.85979,
+          1.24968
+        ],
+        "copperWidthMm": 1.71958,
+        "anchorsWithOutlineAndReservationsOnly": 4743,
+        "anchorsWithAllExistingObjectsFixed": 0,
+        "minimumExistingObjectsToDisplace": 1,
+        "minimalDisplacementSets": [
+          {
+            "locations": 1736,
+            "mustMoveExistingRefs": [
+              "U9"
+            ],
+            "sampleNativeAnchorMm": [
+              1.95,
+              18.2
+            ],
+            "sampleBodyBoxMm": [
+              0.750002,
+              16.950041,
+              3.442981,
+              19.973999
+            ],
+            "sampleCopperBoxMm": [
+              1.09021,
+              16.95032,
+              2.80979,
+              19.44968
+            ],
+            "sampleMinimumSlackMm": 0.750002
+          }
+        ]
+      },
+      {
+        "source": "footprint_geometry",
+        "readbackRef": "AUDIT_24",
+        "device": "SN74LVC1G175DCKR",
+        "layer": 2,
+        "rotation": 0,
+        "nativeOrientationObserved": false,
+        "bodyAtNativeOriginMm": [
+          -1.773999,
+          -1.492981,
+          1.249959,
+          1.199998
+        ],
+        "copperAtNativeOriginMm": [
+          -1.24968,
+          -0.85979,
+          1.24968,
+          0.85979
+        ],
+        "copperWidthMm": 2.49936,
+        "anchorsWithOutlineAndReservationsOnly": 2322,
+        "anchorsWithAllExistingObjectsFixed": 0,
+        "minimumExistingObjectsToDisplace": 1,
+        "minimalDisplacementSets": [
+          {
+            "locations": 756,
+            "mustMoveExistingRefs": [
+              "MK2"
+            ],
+            "sampleNativeAnchorMm": [
+              2.25,
+              14.85
+            ],
+            "sampleBodyBoxMm": [
+              0.476001,
+              13.357019,
+              3.499959,
+              16.049998
+            ],
+            "sampleCopperBoxMm": [
+              1.00032,
+              13.99021,
+              3.49968,
+              15.70979
+            ],
+            "sampleMinimumSlackMm": 0.446319
+          }
+        ]
+      },
+      {
+        "source": "footprint_geometry",
+        "readbackRef": "AUDIT_24",
+        "device": "SN74LVC1G175DCKR",
+        "layer": 2,
+        "rotation": 90,
+        "nativeOrientationObserved": false,
+        "bodyAtNativeOriginMm": [
+          -1.199998,
+          -1.773999,
+          1.492981,
+          1.249959
+        ],
+        "copperAtNativeOriginMm": [
+          -0.85979,
+          -1.24968,
+          0.85979,
+          1.24968
+        ],
+        "copperWidthMm": 1.71958,
+        "anchorsWithOutlineAndReservationsOnly": 3596,
+        "anchorsWithAllExistingObjectsFixed": 0,
+        "minimumExistingObjectsToDisplace": 1,
+        "minimalDisplacementSets": [
+          {
+            "locations": 1085,
+            "mustMoveExistingRefs": [
+              "MK2"
+            ],
+            "sampleNativeAnchorMm": [
+              1.95,
+              15.45
+            ],
+            "sampleBodyBoxMm": [
+              0.750002,
+              13.676001,
+              3.442981,
+              16.699959
+            ],
+            "sampleCopperBoxMm": [
+              1.09021,
+              14.20032,
+              2.80979,
+              16.69968
+            ],
+            "sampleMinimumSlackMm": 0.750002
+          }
+        ]
+      }
+    ],
+    "U14": [
+      {
+        "source": "footprint_geometry",
+        "readbackRef": "AUDIT_21",
+        "device": "LTC6993IS6-2#TRPBF",
+        "layer": 1,
+        "rotation": 0,
+        "nativeOrientationObserved": true,
+        "bodyAtNativeOriginMm": [
+          -1.600022,
+          -1.96864,
+          1.899971,
+          1.60241
+        ],
+        "copperAtNativeOriginMm": [
+          -1.59893,
+          -1.21539,
+          1.59893,
+          1.21539
+        ],
+        "copperWidthMm": 3.19786,
+        "anchorsWithOutlineAndReservationsOnly": 1179,
+        "anchorsWithAllExistingObjectsFixed": 0,
+        "minimumExistingObjectsToDisplace": 1,
+        "minimalDisplacementSets": [
+          {
+            "locations": 405,
+            "mustMoveExistingRefs": [
+              "U9"
+            ],
+            "sampleNativeAnchorMm": [
+              2.1,
+              18.35
+            ],
+            "sampleBodyBoxMm": [
+              0.499978,
+              16.38136,
+              3.999971,
+              19.95241
+            ],
+            "sampleCopperBoxMm": [
+              0.50107,
+              17.13461,
+              3.69893,
+              19.56539
+            ],
+            "sampleMinimumSlackMm": 0.200028
+          }
+        ]
+      },
+      {
+        "source": "footprint_geometry",
+        "readbackRef": "AUDIT_21",
+        "device": "LTC6993IS6-2#TRPBF",
+        "layer": 1,
+        "rotation": 90,
+        "nativeOrientationObserved": false,
+        "bodyAtNativeOriginMm": [
+          -1.60241,
+          -1.600022,
+          1.96864,
+          1.899971
+        ],
+        "copperAtNativeOriginMm": [
+          -1.21539,
+          -1.59893,
+          1.21539,
+          1.59893
+        ],
+        "copperWidthMm": 2.43078,
+        "anchorsWithOutlineAndReservationsOnly": 1608,
+        "anchorsWithAllExistingObjectsFixed": 0,
+        "minimumExistingObjectsToDisplace": 1,
+        "minimalDisplacementSets": [
+          {
+            "locations": 564,
+            "mustMoveExistingRefs": [
+              "U9"
+            ],
+            "sampleNativeAnchorMm": [
+              1.9,
+              18.1
+            ],
+            "sampleBodyBoxMm": [
+              0.29759,
+              16.499978,
+              3.86864,
+              19.999971
+            ],
+            "sampleCopperBoxMm": [
+              0.68461,
+              16.50107,
+              3.11539,
+              19.69893
+            ],
+            "sampleMinimumSlackMm": 0.29759
+          }
+        ]
+      },
+      {
+        "source": "footprint_geometry",
+        "readbackRef": "AUDIT_21",
+        "device": "LTC6993IS6-2#TRPBF",
+        "layer": 2,
+        "rotation": 0,
+        "nativeOrientationObserved": false,
+        "bodyAtNativeOriginMm": [
+          -1.899971,
+          -1.96864,
+          1.600022,
+          1.60241
+        ],
+        "copperAtNativeOriginMm": [
+          -1.59893,
+          -1.21539,
+          1.59893,
+          1.21539
+        ],
+        "copperWidthMm": 3.19786,
+        "anchorsWithOutlineAndReservationsOnly": 990,
+        "anchorsWithAllExistingObjectsFixed": 0,
+        "minimumExistingObjectsToDisplace": 1,
+        "minimalDisplacementSets": [
+          {
+            "locations": 216,
+            "mustMoveExistingRefs": [
+              "MK2"
+            ],
+            "sampleNativeAnchorMm": [
+              2.1,
+              15.1
+            ],
+            "sampleBodyBoxMm": [
+              0.200029,
+              13.13136,
+              3.700022,
+              16.70241
+            ],
+            "sampleCopperBoxMm": [
+              0.50107,
+              13.88461,
+              3.69893,
+              16.31539
+            ],
+            "sampleMinimumSlackMm": 0.200029
+          }
+        ]
+      },
+      {
+        "source": "footprint_geometry",
+        "readbackRef": "AUDIT_21",
+        "device": "LTC6993IS6-2#TRPBF",
+        "layer": 2,
+        "rotation": 90,
+        "nativeOrientationObserved": false,
+        "bodyAtNativeOriginMm": [
+          -1.60241,
+          -1.899971,
+          1.96864,
+          1.600022
+        ],
+        "copperAtNativeOriginMm": [
+          -1.21539,
+          -1.59893,
+          1.21539,
+          1.59893
+        ],
+        "copperWidthMm": 2.43078,
+        "anchorsWithOutlineAndReservationsOnly": 1284,
+        "anchorsWithAllExistingObjectsFixed": 0,
+        "minimumExistingObjectsToDisplace": 1,
+        "minimalDisplacementSets": [
+          {
+            "locations": 312,
+            "mustMoveExistingRefs": [
+              "MK2"
+            ],
+            "sampleNativeAnchorMm": [
+              1.9,
+              15.1
+            ],
+            "sampleBodyBoxMm": [
+              0.29759,
+              13.200029,
+              3.86864,
+              16.700022
+            ],
+            "sampleCopperBoxMm": [
+              0.68461,
+              13.50107,
+              3.11539,
+              16.69893
+            ],
+            "sampleMinimumSlackMm": 0.29759
+          }
+        ]
+      }
+    ]
+  },
+  "unplacedRequiredSourceRefs": [
+    "J_BRIDGE_IN",
+    "J_DISP_L",
+    "J_DISP_R",
+    "R_DAMP_SCK_L",
+    "R_DAMP_CS_L",
+    "R_OPTCS_PU_L",
+    "R_DAMP_LD0",
+    "R_DAMP_LD1",
+    "R_DAMP_LD2",
+    "R_DAMP_LD3",
+    "R_DAMP_SCK_R",
+    "R_DAMP_CS_R",
+    "R_OPTCS_PU_R",
+    "R_DAMP_RD0",
+    "R_DAMP_RD1",
+    "R_DAMP_RD2",
+    "R_DAMP_RD3",
+    "R_PLL",
+    "R_VPP",
+    "R_CDONE_PU",
+    "R_CRST_PD",
+    "R_SS_PD",
+    "D3_PRIV",
+    "U6_OPT_AVDD",
+    "C_LDO_1V2F_IN",
+    "C_LDO_1V2F_OUT",
+    "C_LDO_1V8F_IN",
+    "C_LDO_1V8F_OUT",
+    "C_LDO_OPT_IN",
+    "C_LDO_OPT_OUT",
+    "C_IMU_VDD1",
+    "C_IMU_VDD2",
+    "C_IMU_VDDIO",
+    "C_MK2_C",
+    "U_AVDD_CLEAR_OD",
+    "U_AVDD_SCHMITT",
+    "U_AVDD_EN_OD",
+    "R_AVDD_WD_SET",
+    "R_AVDD_WD_DIV_H",
+    "R_AVDD_WD_DIV_L",
+    "R_AVDD_D3_PD",
+    "R_AVDD_CRST_PD",
+    "R_AVDD_PG_PU",
+    "R_AVDD_REQ_FILTER",
+    "R_AVDD_QUAL_PU",
+    "R_AVDD_EN_FEED",
+    "R_AVDD_EN_PD",
+    "C_AVDD_REQ_FILTER",
+    "C_AVDD_QUAL",
+    "C_AVDD_U_AVDD_LS_V",
+    "C_AVDD_U_AVDD_WD_V",
+    "C_AVDD_U_AVDD_IO_PG_V",
+    "C_AVDD_U_AVDD_SYS_PG_V",
+    "C_AVDD_U_AVDD_SYS_CLAMP_V",
+    "C_AVDD_U_AVDD_CLEAR_OD_V",
+    "C_AVDD_U_AVDD_SCHMITT_V",
+    "C_AVDD_U_AVDD_QUAL_V",
+    "C_AVDD_U_AVDD_EN_OD_V",
+    "C_AVDD_LS_A",
+    "TP_AVDD_SAFE",
+    "C_FPGA_PLL_BULK",
+    "C_FPGA_PLL_HF",
+    "C_FPGA_VPP_BULK",
+    "C_FPGA_VPP_HF",
+    "C_FPGA_CORE_BULK",
+    "C_FPGA_CORE_HF",
+    "C_FPGA_IO_BULK",
+    "C_FPGA_IO_HF0",
+    "C_FPGA_IO_HF1",
+    "C_FPGA_IO_HF2",
+    "C_FPGA_OSC_HF"
+  ],
+  "privacyApertureStatus": "BLOCKED",
+  "privacyNominalBodyBoxMm": [
+    1.7,
+    0.6,
+    2.5,
+    2.2
+  ],
+  "privacyNominalBodySource": "PR #25 BOM-25 D3_PRIV. Added to the search because PR #30 treated D3 as unplaced with no reservation. The nominal rectangle does not substitute for exact LED land, land orientation or shell aperture.",
+  "independentSearchWithPrivacyReservation": {
+    "U8": [
+      {
+        "source": "u8_top_0",
+        "readbackRef": "U8",
+        "device": "SN74LVC2T45DCUR",
+        "layer": 1,
+        "rotation": 0,
+        "nativeOrientationObserved": true,
+        "bodyAtNativeOriginMm": [
+          -1.924787,
+          -1.116025,
+          2.148103,
+          1.099972
+        ],
+        "copperAtNativeOriginMm": [
+          -1.923572,
+          -0.873966,
+          1.924528,
+          0.873554
+        ],
+        "copperWidthMm": 3.8481,
+        "anchorsWithOutlineAndReservationsOnly": 0,
+        "anchorsWithAllExistingObjectsFixed": 0,
+        "minimumExistingObjectsToDisplace": null,
+        "minimalDisplacementSets": []
+      },
+      {
+        "source": "u8_top_90",
+        "readbackRef": "U8",
+        "device": "SN74LVC2T45DCUR",
+        "layer": 1,
+        "rotation": 90,
+        "nativeOrientationObserved": true,
+        "bodyAtNativeOriginMm": [
+          -1.099972,
+          -1.924787,
+          1.116025,
+          2.148103
+        ],
+        "copperAtNativeOriginMm": [
+          -0.875822,
+          -1.925645,
+          0.874238,
+          1.924995
+        ],
+        "copperWidthMm": 1.75006,
+        "anchorsWithOutlineAndReservationsOnly": 4329,
+        "anchorsWithAllExistingObjectsFixed": 0,
+        "minimumExistingObjectsToDisplace": 1,
+        "minimalDisplacementSets": [
+          {
+            "locations": 1365,
+            "mustMoveExistingRefs": [
+              "U9"
+            ],
+            "sampleNativeAnchorMm": [
+              2.0,
+              18.95
+            ],
+            "sampleBodyBoxMm": [
+              0.900028,
+              17.025213,
+              3.116025,
+              21.098103
+            ],
+            "sampleCopperBoxMm": [
+              1.124178,
+              17.024355,
+              2.874238,
+              20.874995
+            ],
+            "sampleMinimumSlackMm": 0.855213
+          }
+        ]
+      },
+      {
+        "source": "restored",
+        "readbackRef": "U8",
+        "device": "SN74LVC2T45DCUR",
+        "layer": 2,
+        "rotation": 90,
+        "nativeOrientationObserved": true,
+        "bodyAtNativeOriginMm": [
+          -1.116025,
+          -1.924787,
+          1.099972,
+          2.148103
+        ],
+        "copperAtNativeOriginMm": [
+          -0.873282,
+          -1.925645,
+          0.874238,
+          1.924995
+        ],
+        "copperWidthMm": 1.74752,
+        "anchorsWithOutlineAndReservationsOnly": 3900,
+        "anchorsWithAllExistingObjectsFixed": 0,
+        "minimumExistingObjectsToDisplace": 1,
+        "minimalDisplacementSets": [
+          {
+            "locations": 546,
+            "mustMoveExistingRefs": [
+              "MK2"
+            ],
+            "sampleNativeAnchorMm": [
+              1.5,
+              15.15
+            ],
+            "sampleBodyBoxMm": [
+              0.383975,
+              13.225213,
+              2.599972,
+              17.298103
+            ],
+            "sampleCopperBoxMm": [
+              0.626718,
+              13.224355,
+              2.374238,
+              17.074995
+            ],
+            "sampleMinimumSlackMm": 0.325213
+          }
+        ]
+      }
+    ],
+    "U10": [
+      {
+        "source": "footprint_geometry",
+        "readbackRef": "AUDIT_24",
+        "device": "SN74LVC1G175DCKR",
+        "layer": 1,
+        "rotation": 0,
+        "nativeOrientationObserved": true,
+        "bodyAtNativeOriginMm": [
+          -1.249959,
+          -1.492981,
+          1.773999,
+          1.199998
+        ],
+        "copperAtNativeOriginMm": [
+          -1.24968,
+          -0.85979,
+          1.24968,
+          0.85979
+        ],
+        "copperWidthMm": 2.49936,
+        "anchorsWithOutlineAndReservationsOnly": 2988,
+        "anchorsWithAllExistingObjectsFixed": 0,
+        "minimumExistingObjectsToDisplace": 1,
+        "minimalDisplacementSets": [
+          {
+            "locations": 108,
+            "mustMoveExistingRefs": [
+              "U2"
+            ],
+            "sampleNativeAnchorMm": [
+              1.7,
+              9.65
+            ],
+            "sampleBodyBoxMm": [
+              0.450041,
+              8.157019,
+              3.473999,
+              10.849998
+            ],
+            "sampleCopperBoxMm": [
+              0.45032,
+              8.79021,
+              2.94968,
+              10.50979
+            ],
+            "sampleMinimumSlackMm": 0.147973
+          },
+          {
+            "locations": 1134,
+            "mustMoveExistingRefs": [
+              "U9"
+            ],
+            "sampleNativeAnchorMm": [
+              1.95,
+              18.15
+            ],
+            "sampleBodyBoxMm": [
+              0.700041,
+              16.657019,
+              3.723999,
+              19.349998
+            ],
+            "sampleCopperBoxMm": [
+              0.70032,
+              17.29021,
+              3.19968,
+              19.00979
+            ],
+            "sampleMinimumSlackMm": 0.44632
+          }
+        ]
+      },
+      {
+        "source": "footprint_geometry",
+        "readbackRef": "AUDIT_24",
+        "device": "SN74LVC1G175DCKR",
+        "layer": 1,
+        "rotation": 90,
+        "nativeOrientationObserved": false,
+        "bodyAtNativeOriginMm": [
+          -1.199998,
+          -1.249959,
+          1.492981,
+          1.773999
+        ],
+        "copperAtNativeOriginMm": [
+          -0.85979,
+          -1.24968,
+          0.85979,
+          1.24968
+        ],
+        "copperWidthMm": 1.71958,
+        "anchorsWithOutlineAndReservationsOnly": 4743,
+        "anchorsWithAllExistingObjectsFixed": 0,
+        "minimumExistingObjectsToDisplace": 1,
+        "minimalDisplacementSets": [
+          {
+            "locations": 1736,
+            "mustMoveExistingRefs": [
+              "U9"
+            ],
+            "sampleNativeAnchorMm": [
+              1.95,
+              18.2
+            ],
+            "sampleBodyBoxMm": [
+              0.750002,
+              16.950041,
+              3.442981,
+              19.973999
+            ],
+            "sampleCopperBoxMm": [
+              1.09021,
+              16.95032,
+              2.80979,
+              19.44968
+            ],
+            "sampleMinimumSlackMm": 0.750002
+          }
+        ]
+      },
+      {
+        "source": "footprint_geometry",
+        "readbackRef": "AUDIT_24",
+        "device": "SN74LVC1G175DCKR",
+        "layer": 2,
+        "rotation": 0,
+        "nativeOrientationObserved": false,
+        "bodyAtNativeOriginMm": [
+          -1.773999,
+          -1.492981,
+          1.249959,
+          1.199998
+        ],
+        "copperAtNativeOriginMm": [
+          -1.24968,
+          -0.85979,
+          1.24968,
+          0.85979
+        ],
+        "copperWidthMm": 2.49936,
+        "anchorsWithOutlineAndReservationsOnly": 2322,
+        "anchorsWithAllExistingObjectsFixed": 0,
+        "minimumExistingObjectsToDisplace": 1,
+        "minimalDisplacementSets": [
+          {
+            "locations": 756,
+            "mustMoveExistingRefs": [
+              "MK2"
+            ],
+            "sampleNativeAnchorMm": [
+              2.25,
+              14.85
+            ],
+            "sampleBodyBoxMm": [
+              0.476001,
+              13.357019,
+              3.499959,
+              16.049998
+            ],
+            "sampleCopperBoxMm": [
+              1.00032,
+              13.99021,
+              3.49968,
+              15.70979
+            ],
+            "sampleMinimumSlackMm": 0.446319
+          }
+        ]
+      },
+      {
+        "source": "footprint_geometry",
+        "readbackRef": "AUDIT_24",
+        "device": "SN74LVC1G175DCKR",
+        "layer": 2,
+        "rotation": 90,
+        "nativeOrientationObserved": false,
+        "bodyAtNativeOriginMm": [
+          -1.199998,
+          -1.773999,
+          1.492981,
+          1.249959
+        ],
+        "copperAtNativeOriginMm": [
+          -0.85979,
+          -1.24968,
+          0.85979,
+          1.24968
+        ],
+        "copperWidthMm": 1.71958,
+        "anchorsWithOutlineAndReservationsOnly": 3596,
+        "anchorsWithAllExistingObjectsFixed": 0,
+        "minimumExistingObjectsToDisplace": 1,
+        "minimalDisplacementSets": [
+          {
+            "locations": 1085,
+            "mustMoveExistingRefs": [
+              "MK2"
+            ],
+            "sampleNativeAnchorMm": [
+              1.95,
+              15.45
+            ],
+            "sampleBodyBoxMm": [
+              0.750002,
+              13.676001,
+              3.442981,
+              16.699959
+            ],
+            "sampleCopperBoxMm": [
+              1.09021,
+              14.20032,
+              2.80979,
+              16.69968
+            ],
+            "sampleMinimumSlackMm": 0.750002
+          }
+        ]
+      }
+    ],
+    "U14": [
+      {
+        "source": "footprint_geometry",
+        "readbackRef": "AUDIT_21",
+        "device": "LTC6993IS6-2#TRPBF",
+        "layer": 1,
+        "rotation": 0,
+        "nativeOrientationObserved": true,
+        "bodyAtNativeOriginMm": [
+          -1.600022,
+          -1.96864,
+          1.899971,
+          1.60241
+        ],
+        "copperAtNativeOriginMm": [
+          -1.59893,
+          -1.21539,
+          1.59893,
+          1.21539
+        ],
+        "copperWidthMm": 3.19786,
+        "anchorsWithOutlineAndReservationsOnly": 1179,
+        "anchorsWithAllExistingObjectsFixed": 0,
+        "minimumExistingObjectsToDisplace": 1,
+        "minimalDisplacementSets": [
+          {
+            "locations": 405,
+            "mustMoveExistingRefs": [
+              "U9"
+            ],
+            "sampleNativeAnchorMm": [
+              2.1,
+              18.35
+            ],
+            "sampleBodyBoxMm": [
+              0.499978,
+              16.38136,
+              3.999971,
+              19.95241
+            ],
+            "sampleCopperBoxMm": [
+              0.50107,
+              17.13461,
+              3.69893,
+              19.56539
+            ],
+            "sampleMinimumSlackMm": 0.200028
+          }
+        ]
+      },
+      {
+        "source": "footprint_geometry",
+        "readbackRef": "AUDIT_21",
+        "device": "LTC6993IS6-2#TRPBF",
+        "layer": 1,
+        "rotation": 90,
+        "nativeOrientationObserved": false,
+        "bodyAtNativeOriginMm": [
+          -1.60241,
+          -1.600022,
+          1.96864,
+          1.899971
+        ],
+        "copperAtNativeOriginMm": [
+          -1.21539,
+          -1.59893,
+          1.21539,
+          1.59893
+        ],
+        "copperWidthMm": 2.43078,
+        "anchorsWithOutlineAndReservationsOnly": 1608,
+        "anchorsWithAllExistingObjectsFixed": 0,
+        "minimumExistingObjectsToDisplace": 1,
+        "minimalDisplacementSets": [
+          {
+            "locations": 564,
+            "mustMoveExistingRefs": [
+              "U9"
+            ],
+            "sampleNativeAnchorMm": [
+              1.9,
+              18.1
+            ],
+            "sampleBodyBoxMm": [
+              0.29759,
+              16.499978,
+              3.86864,
+              19.999971
+            ],
+            "sampleCopperBoxMm": [
+              0.68461,
+              16.50107,
+              3.11539,
+              19.69893
+            ],
+            "sampleMinimumSlackMm": 0.29759
+          }
+        ]
+      },
+      {
+        "source": "footprint_geometry",
+        "readbackRef": "AUDIT_21",
+        "device": "LTC6993IS6-2#TRPBF",
+        "layer": 2,
+        "rotation": 0,
+        "nativeOrientationObserved": false,
+        "bodyAtNativeOriginMm": [
+          -1.899971,
+          -1.96864,
+          1.600022,
+          1.60241
+        ],
+        "copperAtNativeOriginMm": [
+          -1.59893,
+          -1.21539,
+          1.59893,
+          1.21539
+        ],
+        "copperWidthMm": 3.19786,
+        "anchorsWithOutlineAndReservationsOnly": 990,
+        "anchorsWithAllExistingObjectsFixed": 0,
+        "minimumExistingObjectsToDisplace": 1,
+        "minimalDisplacementSets": [
+          {
+            "locations": 216,
+            "mustMoveExistingRefs": [
+              "MK2"
+            ],
+            "sampleNativeAnchorMm": [
+              2.1,
+              15.1
+            ],
+            "sampleBodyBoxMm": [
+              0.200029,
+              13.13136,
+              3.700022,
+              16.70241
+            ],
+            "sampleCopperBoxMm": [
+              0.50107,
+              13.88461,
+              3.69893,
+              16.31539
+            ],
+            "sampleMinimumSlackMm": 0.200029
+          }
+        ]
+      },
+      {
+        "source": "footprint_geometry",
+        "readbackRef": "AUDIT_21",
+        "device": "LTC6993IS6-2#TRPBF",
+        "layer": 2,
+        "rotation": 90,
+        "nativeOrientationObserved": false,
+        "bodyAtNativeOriginMm": [
+          -1.60241,
+          -1.899971,
+          1.96864,
+          1.600022
+        ],
+        "copperAtNativeOriginMm": [
+          -1.21539,
+          -1.59893,
+          1.21539,
+          1.59893
+        ],
+        "copperWidthMm": 2.43078,
+        "anchorsWithOutlineAndReservationsOnly": 1284,
+        "anchorsWithAllExistingObjectsFixed": 0,
+        "minimumExistingObjectsToDisplace": 1,
+        "minimalDisplacementSets": [
+          {
+            "locations": 312,
+            "mustMoveExistingRefs": [
+              "MK2"
+            ],
+            "sampleNativeAnchorMm": [
+              1.9,
+              15.1
+            ],
+            "sampleBodyBoxMm": [
+              0.29759,
+              13.200029,
+              3.86864,
+              16.700022
+            ],
+            "sampleCopperBoxMm": [
+              0.68461,
+              13.50107,
+              3.11539,
+              16.69893
+            ],
+            "sampleMinimumSlackMm": 0.29759
+          }
+        ]
+      }
+    ]
+  },
+  "manufacturerConnectorEnvelopeAnalysis": {
+    "sourceScope": "Hirose exact receptacle body dimensions. Mated outline, land, tolerance, insertion access, FPC and JBD optical connector interface remain BLOCKED.",
+    "orientations": [
+      {
+        "ref": "J_DISP_L",
+        "layer": 1,
+        "mpn": "BM28B0.6-10DS/2-0.35V(53)",
+        "source": "https://www.hirose.com/en/product/p/CL0673-5044-0-53",
+        "bodyLengthMm": 4.35,
+        "bodyWidthMm": 1.7,
+        "bodyHeightMm": 0.6,
+        "baselineLongAxis": "X",
+        "candidateLongAxis": "Y",
+        "candidateBodyCenterMm": [
+          2.1,
+          4.2
+        ],
+        "priorReservationMm": [
+          0.3,
+          3.35,
+          3.9,
+          5.05
+        ],
+        "bodyAtBaselineAnchorMm": [
+          -0.075,
+          3.35,
+          4.275,
+          5.05
+        ],
+        "bodyMarginAtBaselineAnchorMm": -0.075001,
+        "originalGeometryStatus": "FAIL",
+        "projectedBodyMm": [
+          1.25,
+          2.025,
+          2.95,
+          6.375
+        ],
+        "projectedBodyEdgeMm": 1.249999,
+        "projectedConflictRefs": [
+          {
+            "ref": "U13",
+            "gapMm": 0.0
+          },
+          {
+            "ref": "D3_PRIV_NOMINAL_BODY",
+            "gapMm": 0.0
+          }
+        ],
+        "projectedPlacementStatus": "FAIL"
+      },
+      {
+        "ref": "J_DISP_R",
+        "layer": 1,
+        "mpn": "BM28B0.6-10DS/2-0.35V(53)",
+        "source": "https://www.hirose.com/en/product/p/CL0673-5044-0-53",
+        "bodyLengthMm": 4.35,
+        "bodyWidthMm": 1.7,
+        "bodyHeightMm": 0.6,
+        "baselineLongAxis": "X",
+        "candidateLongAxis": "Y",
+        "candidateBodyCenterMm": [
+          2.1,
+          14.8
+        ],
+        "priorReservationMm": [
+          0.3,
+          13.95,
+          3.9,
+          15.65
+        ],
+        "bodyAtBaselineAnchorMm": [
+          -0.075,
+          13.95,
+          4.275,
+          15.65
+        ],
+        "bodyMarginAtBaselineAnchorMm": -0.075001,
+        "originalGeometryStatus": "FAIL",
+        "projectedBodyMm": [
+          1.25,
+          12.625,
+          2.95,
+          16.975
+        ],
+        "projectedBodyEdgeMm": 1.249999,
+        "projectedConflictRefs": [
+          {
+            "ref": "U7",
+            "gapMm": 0.0
+          }
+        ],
+        "projectedPlacementStatus": "FAIL"
+      },
+      {
+        "ref": "J_BRIDGE_IN",
+        "layer": 2,
+        "mpn": "BM28B0.6-30DS/2-0.35V(53)",
+        "source": "https://www.hirose.com/en/product/p/CL0673-5021-0-53",
+        "bodyLengthMm": 7.85,
+        "bodyWidthMm": 1.7,
+        "bodyHeightMm": 0.6,
+        "baselineLongAxis": "Y",
+        "candidateLongAxis": "Y",
+        "candidateBodyCenterMm": [
+          2.1,
+          4.25
+        ],
+        "priorReservationMm": [
+          1.25,
+          0.325,
+          2.95,
+          6.875
+        ],
+        "bodyAtBaselineAnchorMm": [
+          1.25,
+          -0.325,
+          2.95,
+          7.525
+        ],
+        "bodyMarginAtBaselineAnchorMm": -0.325,
+        "originalGeometryStatus": "FAIL",
+        "projectedBodyMm": [
+          1.25,
+          0.325,
+          2.95,
+          8.175
+        ],
+        "projectedBodyEdgeMm": 0.325,
+        "projectedConflictRefs": [
+          {
+            "ref": "U8",
+            "gapMm": 0.0
+          },
+          {
+            "ref": "Y1",
+            "gapMm": 0.0
+          }
+        ],
+        "projectedPlacementStatus": "FAIL"
+      }
+    ],
+    "trunkBeforeClock": {
+      "status": "FAIL",
+      "availableLeftLateralWidthMm": 0.289308,
+      "availableRightLateralWidthMm": 1.088668,
+      "requiredBodyWidthMm": 1.7,
+      "requiredBodyLengthMm": 7.85,
+      "maxBodyLengthBeforeClockMm": 7.52192,
+      "lengthDeficitMm": 0.32808,
+      "clockBodyMm": [
+        0.489308,
+        7.72192,
+        2.911331,
+        10.667919
+      ],
+      "scope": "Axis-aligned trunk along Y in original entry end, with ASADV held fixed. Uses body geometry alone before any land, mated plugs, flex, or tooling."
+    },
+    "layout": [
+      {
+        "ref": "J_DISP_L",
+        "layer": 1,
+        "boxMm": [
+          1.25,
+          2.025,
+          2.95,
+          6.375
+        ]
+      },
+      {
+        "ref": "J_DISP_R",
+        "layer": 1,
+        "boxMm": [
+          1.25,
+          12.625,
+          2.95,
+          16.975
+        ]
+      },
+      {
+        "ref": "J_DISP_L_FPC_CORRIDOR",
+        "layer": 1,
+        "boxMm": [
+          0.0,
+          3.03,
+          4.2,
+          5.37
+        ]
+      },
+      {
+        "ref": "J_DISP_R_FPC_CORRIDOR",
+        "layer": 1,
+        "boxMm": [
+          0.0,
+          13.63,
+          4.2,
+          15.97
+        ]
+      },
+      {
+        "ref": "J_BRIDGE_IN",
+        "layer": 2,
+        "boxMm": [
+          1.25,
+          0.325,
+          2.95,
+          8.175
+        ]
+      },
+      {
+        "ref": "U6_OPT_AVDD",
+        "layer": 2,
+        "boxMm": [
+          1.6,
+          11.7,
+          2.6,
+          12.7
+        ]
+      },
+      {
+        "ref": "Y1_CLOCK_SEARCH_RESERVE",
+        "layer": 2,
+        "boxMm": [
+          0.627,
+          8.288988,
+          3.573,
+          10.711012
+        ]
+      }
+    ],
+    "manufacturing": "BLOCKED"
+  },
+  "independentSearchScope": "Observed U8 TOP 0°, TOP 90°, and BOTTOM 90° only. U10/U14 0° and 90° both layers. In each search other existing refs stay fixed. Minimal conflict sets are separate constraints, not co-placeable moves. No conclusion outside the search domain."
+}

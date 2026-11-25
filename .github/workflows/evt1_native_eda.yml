@@ -1,0 +1,261 @@
+name: EVT-1 native schematic and FPGA validation
+on:
+  push:
+    branches:
+      - hardware/evt1-native-eda-20261118
+      - hardware/evt1-h03-h05-20261119
+      - hardware/evt1-h02-h03-native-20261120
+      - hardware/evt1-h02-reve-h03-bridge-20261120
+      - hardware/evt1-h02-fp-h03-pcb-20261120
+      - hardware/evt1-h03-bridge-route-3board-20261120
+      - hardware/evt1-h03-3board-routing-hdi-20261121
+      - hardware/evt1-h03-hdi-dfm-route-closure-20261121
+      - hardware/evt1-h03-dfm-p0-closure-20261121
+      - hardware/evt1-h03-hdi-laser-wlcsp-route-20261121
+      - hardware/evt1-h03-u11-wlcsp-v3-dfm-route-20261121
+      - hardware/codex-evt1-h03-pr46-takeover-20261121
+      - hardware/evt1-h03-r4-codex-20261123
+      - hardware/evt1-h03-r5-codex-20261123
+      - hardware/evt1-h03-r6-codex-20261123
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  EVT1_PACKAGE: hardware/evt1-native-eda-20261118
+  EVT1_H03_CHECKS: ${{ github.ref_name == 'hardware/evt1-h03-h05-20261119' || github.ref_name == 'hardware/evt1-h02-h03-native-20261120' || github.ref_name == 'hardware/evt1-h02-reve-h03-bridge-20261120' || github.ref_name == 'hardware/evt1-h02-fp-h03-pcb-20261120' || github.ref_name == 'hardware/evt1-h03-bridge-route-3board-20261120' || github.ref_name == 'hardware/evt1-h03-3board-routing-hdi-20261121' || github.ref_name == 'hardware/evt1-h03-hdi-dfm-route-closure-20261121' || github.ref_name == 'hardware/evt1-h03-dfm-p0-closure-20261121' || github.ref_name == 'hardware/evt1-h03-hdi-laser-wlcsp-route-20261121' || github.ref_name == 'hardware/evt1-h03-u11-wlcsp-v3-dfm-route-20261121' || github.ref_name == 'hardware/codex-evt1-h03-pr46-takeover-20261121' }}
+
+jobs:
+  fpga:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: YosysHQ/setup-oss-cad-suite@v3
+        with:
+          github-token: ${{ github.token }}
+      - name: Software wire encoding against inherited RTL
+        run: python3 "$EVT1_PACKAGE/host/check_bridge.py"
+      - name: Reproduce malformed host control and test recovery
+        if: env.EVT1_H03_CHECKS == 'true'
+        run: make -C hardware/evt1-rev-d1-1-20261117/03_FPGA_RTL sim-framing
+      - name: Native display, shutdown, synthesis, routing and independent STA
+        run: make -C hardware/evt1-rev-d1-1-20261117/03_FPGA_RTL all
+      - name: Preserve actual tool outputs
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: evt1-native-fpga
+          path: |
+            hardware/evt1-rev-d1-1-20261117/03_FPGA_RTL/*.log
+            hardware/evt1-rev-d1-1-20261117/03_FPGA_RTL/*.rpt
+            hardware/evt1-rev-d1-1-20261117/03_FPGA_RTL/*.json
+            hardware/evt1-rev-d1-1-20261117/03_FPGA_RTL/*.asc
+
+  native-erc:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reproduce audited electrical and PCB inputs
+        run: |
+          python3 "$EVT1_PACKAGE/Inputs/build_effective_inputs.py" --check
+          python3 "$EVT1_PACKAGE/tools/build_pcb_constraints.py" --check
+          python3 "$EVT1_PACKAGE/tools/generate_kicad.py"
+          git diff --exit-code -- "$EVT1_PACKAGE/kicad"
+          test -z "$(git ls-files --others --exclude-standard -- "$EVT1_PACKAGE/kicad")"
+      - name: Replay archived bridge placement and supplier envelope assessment
+        if: env.EVT1_H03_CHECKS == 'true'
+        run: |
+          python3 -m unittest discover -s "$EVT1_PACKAGE/closure" -p test_bridge_placement.py -v
+          python3 "$EVT1_PACKAGE/closure/check_bridge_placement.py" --check
+          verdict=0
+          python3 "$EVT1_PACKAGE/closure/check_bridge_placement.py" --check --strict || verdict=$?
+          test "$verdict" -eq 1
+      - name: Verify effective electrical bounds and bench probe coverage
+        if: env.EVT1_H03_CHECKS == 'true'
+        run: |
+          python3 "$EVT1_PACKAGE/closure/check_electrical_inputs.py" > "$RUNNER_TEMP/electrical_inputs.json"
+          diff --strip-trailing-cr -u "$EVT1_PACKAGE/closure/evidence/electrical_inputs.json" "$RUNNER_TEMP/electrical_inputs.json"
+      - name: Verify the editor archive, native netlists and persisted bridge keepouts
+        if: github.ref_name == 'hardware/evt1-h02-h03-native-20261120'
+        run: |
+          round="$EVT1_PACKAGE/h02-h03-native"
+          archive="$round/native/ZY_AIAR_EVT1_H02_H03_NATIVE_NOT_FOR_FAB.epro2"
+          bridge="$round/evidence/bridge"
+          python3 -B "$round/verify_h02_h03.py" --archive "$archive" --capture "$round/evidence/after" --output "$RUNNER_TEMP/h02-h03.json"
+          diff -u "$round/evidence/verification.json" "$RUNNER_TEMP/h02-h03.json"
+          python3 -B "$round/footprints/audit_candidates.py" --check
+          python3 -B "$round/bridge_preflight.py" --dump "$bridge/bridge-persisted.dump.json" --archive "$archive" --drc "$bridge/pcb-drc-after.json" --before-dump "$bridge/bridge-before.dump.json" --before-drc "$bridge/pcb-drc-before.json" --require-keepouts --check "$round/bridge_preflight_after.json"
+      - name: Verify the H02 Rev E and H03 native bridge round
+        if: github.ref_name == 'hardware/evt1-h02-reve-h03-bridge-20261120'
+        run: |
+          round="$EVT1_PACKAGE/h02-reve-h03-bridge"
+          archive="$round/native/ZY_AIAR_EVT1_H02_REVE_H03_BRIDGE_NOT_FOR_FAB.epro2"
+          python3 -B "$round/verify_reve_h03.py" --capture "$round/evidence" --archive "$archive" --out "$RUNNER_TEMP/reve-h03.json"
+          python3 -B hardware/evt1-rev-d1-1-20261117/05_Verification_Scripts/test_rev_d1_1_avdd_safety.py
+          python3 -m unittest discover -s "$EVT1_PACKAGE/h02-native" -p "test_*.py" -v
+      - name: Verify H02 footprint convergence and MECR-01 25x4.6 bridge trial
+        if: github.ref_name == 'hardware/evt1-h02-fp-h03-pcb-20261120'
+        run: |
+          round="$EVT1_PACKAGE/h02-fp-h03-pcb"
+          python3 -B "$round/verify_h02_fp_h03_pcb.py" --root "$round" --out "$RUNNER_TEMP/h02-fp-h03-pcb.json"
+          python3 -B "$EVT1_PACKAGE/h02-reve-h03-bridge/verify_reve_h03.py" \
+            --capture "$EVT1_PACKAGE/h02-reve-h03-bridge/evidence" \
+            --archive "$EVT1_PACKAGE/h02-reve-h03-bridge/native/ZY_AIAR_EVT1_H02_REVE_H03_BRIDGE_NOT_FOR_FAB.epro2" \
+            --out "$RUNNER_TEMP/reve-h03.json"
+          python3 -B hardware/evt1-rev-d1-1-20261117/05_Verification_Scripts/test_rev_d1_1_avdd_safety.py
+          python3 -m unittest discover -s "$EVT1_PACKAGE/h02-native" -p "test_*.py" -v
+      - name: Verify H03 3-board layout and bridge live routing
+        if: github.ref_name == 'hardware/evt1-h03-bridge-route-3board-20261120'
+        run: |
+          round="$EVT1_PACKAGE/h03-bridge-route-3board"
+          python3 -B "$round/verify_h03_3board.py" --root "$round" --out "$RUNNER_TEMP/h03-3board.json"
+          python3 -B "$EVT1_PACKAGE/h02-fp-h03-pcb/verify_h02_fp_h03_pcb.py" \
+            --root "$EVT1_PACKAGE/h02-fp-h03-pcb" \
+            --out "$RUNNER_TEMP/h02-fp-h03-pcb.json"
+          python3 -B hardware/evt1-rev-d1-1-20261117/05_Verification_Scripts/test_rev_d1_1_avdd_safety.py
+          python3 -m unittest discover -s "$EVT1_PACKAGE/h02-native" -p "test_*.py" -v
+      - name: Verify H03 3-board routing and HDI fab audit
+        if: github.ref_name == 'hardware/evt1-h03-3board-routing-hdi-20261121'
+        run: |
+          round="$EVT1_PACKAGE/h03-3board-routing-hdi"
+          python3 -B "$round/verify_h03_3board_routing_hdi.py" --root "$round" --out "$RUNNER_TEMP/h03-3board-routing-hdi.json"
+          python3 -B "$EVT1_PACKAGE/h03-bridge-route-3board/verify_h03_3board.py" \
+            --root "$EVT1_PACKAGE/h03-bridge-route-3board" \
+            --out "$RUNNER_TEMP/h03-3board.json"
+          python3 -B "$EVT1_PACKAGE/h02-fp-h03-pcb/verify_h02_fp_h03_pcb.py" \
+            --root "$EVT1_PACKAGE/h02-fp-h03-pcb" \
+            --out "$RUNNER_TEMP/h02-fp-h03-pcb.json"
+          python3 -B hardware/evt1-rev-d1-1-20261117/05_Verification_Scripts/test_rev_d1_1_avdd_safety.py
+          python3 -m unittest discover -s "$EVT1_PACKAGE/h02-native" -p "test_*.py" -v
+      - name: Verify H03 HDI-DFM blind-via closure and 3-board routing
+        if: github.ref_name == 'hardware/evt1-h03-hdi-dfm-route-closure-20261121'
+        run: |
+          round="$EVT1_PACKAGE/h03-hdi-dfm-route-closure"
+          python3 -B "$round/verify_h03_hdi_dfm_closure.py" --root "$round" --out "$RUNNER_TEMP/h03-hdi-dfm-closure.json"
+          python3 -B "$EVT1_PACKAGE/h03-3board-routing-hdi/verify_h03_3board_routing_hdi.py" \
+            --root "$EVT1_PACKAGE/h03-3board-routing-hdi" \
+            --out "$RUNNER_TEMP/h03-3board-routing-hdi.json"
+          python3 -B "$EVT1_PACKAGE/h03-bridge-route-3board/verify_h03_3board.py" \
+            --root "$EVT1_PACKAGE/h03-bridge-route-3board" \
+            --out "$RUNNER_TEMP/h03-3board.json"
+          python3 -B "$EVT1_PACKAGE/h02-fp-h03-pcb/verify_h02_fp_h03_pcb.py" \
+            --root "$EVT1_PACKAGE/h02-fp-h03-pcb" \
+            --out "$RUNNER_TEMP/h02-fp-h03-pcb.json"
+          python3 -B hardware/evt1-rev-d1-1-20261117/05_Verification_Scripts/test_rev_d1_1_avdd_safety.py
+          python3 -m unittest discover -s "$EVT1_PACKAGE/h02-native" -p "test_*.py" -v
+      - name: Verify H03 P0 DFM closure, untruncated 3D auditor and P1 routing
+        if: github.ref_name == 'hardware/evt1-h03-dfm-p0-closure-20261121'
+        run: |
+          round="$EVT1_PACKAGE/h03-dfm-p0-closure"
+          python3 -m unittest discover -s "$round" -p "test_*.py" -v
+          python3 -B "$round/verify_h03_dfm_p0_closure.py" --root "$round" --out "$RUNNER_TEMP/h03-dfm-p0-closure.json"
+          python3 -B "$EVT1_PACKAGE/h03-hdi-dfm-route-closure/verify_h03_hdi_dfm_closure.py" \
+            --root "$EVT1_PACKAGE/h03-hdi-dfm-route-closure" \
+            --out "$RUNNER_TEMP/h03-hdi-dfm-closure.json"
+          python3 -B "$EVT1_PACKAGE/h03-3board-routing-hdi/verify_h03_3board_routing_hdi.py" \
+            --root "$EVT1_PACKAGE/h03-3board-routing-hdi" \
+            --out "$RUNNER_TEMP/h03-3board-routing-hdi.json"
+          python3 -B "$EVT1_PACKAGE/h03-bridge-route-3board/verify_h03_3board.py" \
+            --root "$EVT1_PACKAGE/h03-bridge-route-3board" \
+            --out "$RUNNER_TEMP/h03-3board.json"
+          python3 -B "$EVT1_PACKAGE/h02-fp-h03-pcb/verify_h02_fp_h03_pcb.py" \
+            --root "$EVT1_PACKAGE/h02-fp-h03-pcb" \
+            --out "$RUNNER_TEMP/h02-fp-h03-pcb.json"
+          python3 -B hardware/evt1-rev-d1-1-20261117/05_Verification_Scripts/test_rev_d1_1_avdd_safety.py
+          python3 -m unittest discover -s "$EVT1_PACKAGE/h02-native" -p "test_*.py" -v
+      - name: Verify H03 laser-microvia annular-ring closure, WLCSP audit and P1 routing
+        if: github.ref_name == 'hardware/evt1-h03-hdi-laser-wlcsp-route-20261121'
+        run: |
+          round="$EVT1_PACKAGE/h03-hdi-laser-wlcsp-route"
+          python3 -m unittest discover -s "$round" -p "test_*.py" -v
+          python3 -B "$round/verify_h03_hdi_laser_wlcsp_route.py" --root "$round" --out "$RUNNER_TEMP/h03-hdi-laser-wlcsp-route.json"
+          python3 -m unittest discover -s "$EVT1_PACKAGE/h03-dfm-p0-closure" -p "test_*.py" -v
+          python3 -B "$EVT1_PACKAGE/h03-dfm-p0-closure/verify_h03_dfm_p0_closure.py" \
+            --root "$EVT1_PACKAGE/h03-dfm-p0-closure" \
+            --out "$RUNNER_TEMP/h03-dfm-p0-closure.json"
+          python3 -B "$EVT1_PACKAGE/h03-hdi-dfm-route-closure/verify_h03_hdi_dfm_closure.py" \
+            --root "$EVT1_PACKAGE/h03-hdi-dfm-route-closure" \
+            --out "$RUNNER_TEMP/h03-hdi-dfm-closure.json"
+          python3 -B "$EVT1_PACKAGE/h02-fp-h03-pcb/verify_h02_fp_h03_pcb.py" \
+            --root "$EVT1_PACKAGE/h02-fp-h03-pcb" \
+            --out "$RUNNER_TEMP/h02-fp-h03-pcb.json"
+          python3 -B hardware/evt1-rev-d1-1-20261117/05_Verification_Scripts/test_rev_d1_1_avdd_safety.py
+          python3 -m unittest discover -s "$EVT1_PACKAGE/h02-native" -p "test_*.py" -v
+      - name: Verify H03 U11 WLCSP technical route, V3 extended blind-via DFM and priority-backbone routing
+        if: github.ref_name == 'hardware/evt1-h03-u11-wlcsp-v3-dfm-route-20261121'
+        run: |
+          round="$EVT1_PACKAGE/h03-u11-wlcsp-v3-dfm-route"
+          python3 -m unittest discover -s "$round" -p "test_*.py" -v
+          python3 -B "$round/verify_h03_u11_wlcsp_v3_dfm_route.py" --root "$round" --out "$RUNNER_TEMP/h03-u11-wlcsp-v3-dfm-route.json"
+          python3 -m unittest discover -s "$EVT1_PACKAGE/h03-hdi-laser-wlcsp-route" -p "test_*.py" -v
+          python3 -B "$EVT1_PACKAGE/h03-hdi-laser-wlcsp-route/verify_h03_hdi_laser_wlcsp_route.py" \
+            --root "$EVT1_PACKAGE/h03-hdi-laser-wlcsp-route" \
+            --out "$RUNNER_TEMP/h03-hdi-laser-wlcsp-route.json"
+          python3 -m unittest discover -s "$EVT1_PACKAGE/h03-dfm-p0-closure" -p "test_*.py" -v
+          python3 -B "$EVT1_PACKAGE/h03-dfm-p0-closure/verify_h03_dfm_p0_closure.py" \
+            --root "$EVT1_PACKAGE/h03-dfm-p0-closure" \
+            --out "$RUNNER_TEMP/h03-dfm-p0-closure.json"
+          python3 -B "$EVT1_PACKAGE/h03-hdi-dfm-route-closure/verify_h03_hdi_dfm_closure.py" \
+            --root "$EVT1_PACKAGE/h03-hdi-dfm-route-closure" \
+            --out "$RUNNER_TEMP/h03-hdi-dfm-closure.json"
+          python3 -B "$EVT1_PACKAGE/h02-fp-h03-pcb/verify_h02_fp_h03_pcb.py" \
+            --root "$EVT1_PACKAGE/h02-fp-h03-pcb" \
+            --out "$RUNNER_TEMP/h02-fp-h03-pcb.json"
+          python3 -B hardware/evt1-rev-d1-1-20261117/05_Verification_Scripts/test_rev_d1_1_avdd_safety.py
+          python3 -m unittest discover -s "$EVT1_PACKAGE/h02-native" -p "test_*.py" -v
+      - name: Replay PR46 takeover, V4 blind-via measurements and native round trip
+        if: github.ref_name == 'hardware/codex-evt1-h03-pr46-takeover-20261121'
+        run: |
+          round="$EVT1_PACKAGE/h03-v4-dfm-u11-2n2-route"
+          captures="$round/evidence/takeover"
+          archive="$round/native/ZY_AIAR_EVT1_H03_CODEX_V4_NOT_FOR_FAB.epro2"
+          python3 -B -m unittest discover -s "$round" -p 'test_*.py' -v
+          python3 -B -m unittest discover -s "$round/residual" -p 'test_*.py' -v
+          python3 -B "$round/verify_codex_round.py" --capture "$captures" --before "$captures/before" --live "$archive" --restored "$captures/independent-editor-export.epro2" --output "$RUNNER_TEMP/codex-verification.json"
+          diff -u "$captures/codex-verification.json" "$RUNNER_TEMP/codex-verification.json"
+          python3 -B "$round/independent_hdi_dfm_auditor_v4.py" --epro "$archive" --dump-dir "$captures/after" --dump-suffix .dump.json --out-dir "$RUNNER_TEMP/codex-v4"
+          diff -u "$captures/final-dfm/independent-dfm-v4-summary.json" "$RUNNER_TEMP/codex-v4/independent-dfm-v4-summary.json"
+          python3 -B "$round/u11/audit_u11.py" --archive "$archive" --pcb-dump "$captures/after/PCB3.dump.json" --netlist "$captures/after/board-netlists/M-AUD-R.net" --output-dir "$RUNNER_TEMP/codex-u11"
+          diff -r "$captures/final-u11" "$RUNNER_TEMP/codex-u11"
+          python3 -B "$round/plan_local_routes.py" --board PCB2 --dump "$captures/before/PCB2.dump.json" --drc "$captures/before/PCB2-drc.json" --archive "$round/native/ZY_AIAR_EVT1_H03_3BOARD_V4_DFM_U11_2N2_MECR01_NOT_FOR_FAB.epro2" --out "$RUNNER_TEMP/pcb2-plan.json"
+          diff -u "$captures/operations/PCB2-local-v3.json" "$RUNNER_TEMP/pcb2-plan.json"
+      - name: Replay H03 R4 EasyEDA archive and strict-check evidence
+        if: github.ref_name == 'hardware/evt1-h03-r4-codex-20261123'
+        run: |
+          round="$EVT1_PACKAGE/h03-codex-r4-20261123"
+          python3 -B "$round/verify_r4.py"
+          python3 -B -m unittest discover -s "$round" -p test_pcb1_spur.py -v
+          python3 -B "$round/replay_v4_dfm.py" --out-dir "$RUNNER_TEMP/h03-r4-dfm"
+      - name: Replay H03 R5 native copper, strict checks and blind-via geometry
+        if: github.ref_name == 'hardware/evt1-h03-r5-codex-20261123'
+        run: |
+          round="$EVT1_PACKAGE/h03-codex-r5-20261123"
+          python3 -B "$round/verify_r5.py"
+          python3 -B -m unittest discover -s "$round" -p test_prepare_a5_candidate.py -v
+      - name: Replay H03 R6 native copper scope, netlists, and rejected HDI trial
+        if: github.ref_name == 'hardware/evt1-h03-r6-codex-20261123'
+        run: |
+          round="$EVT1_PACKAGE/h03-codex-r6-20261123"
+          python3 -B "$round/verify_r6.py"
+          python3 -B -m unittest discover -s "$round" -p test_copper_scope.py -v
+      - name: KiCad CLI version, electrical rules and native netlist parity
+        run: |
+          mkdir -p "$PWD/ci-kicad-evidence"
+          docker run --rm --user "$(id -u):$(id -g)" -e HOME=/tmp \
+            -v "$PWD:/work" -w /work --entrypoint /bin/bash \
+            kicad/kicad:10.0@sha256:3f4a01786dfbe803a65f345c3342b765db9add913f5e9448f8356793714ddc34 \
+            -ec "kicad-cli version
+                 python3 '$EVT1_PACKAGE/tools/build_footprint_map.py' --libraries /usr/share/kicad/footprints --check
+                 python3 '$EVT1_PACKAGE/tools/verify_kicad.py' --kicad-cli kicad-cli --output /work/ci-kicad-evidence --pdf"
+      - name: Preserve raw KiCad reports and exported nets
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: evt1-native-erc
+          if-no-files-found: error
+          path: ci-kicad-evidence/

@@ -1,0 +1,2494 @@
+{
+  "PCB1": {
+    "outlineMil": {
+      "width": 326.83,
+      "height": 1815.02
+    },
+    "outlineMm": {
+      "width": 8.3,
+      "height": 46.1
+    },
+    "componentsByLayer": {
+      "2": 62,
+      "1": 56
+    },
+    "drcByRule": {
+      "Connection Error": 322,
+      "Netlist Error": 1
+    },
+    "openNetCount": 92,
+    "openConnectionErrors": 322,
+    "netClasses": {
+      "power-branch": {
+        "nets": 65,
+        "openNets": 50,
+        "openErrors": 182
+      },
+      "signal": {
+        "nets": 33,
+        "openNets": 31,
+        "openErrors": 76
+      },
+      "rf-clock-hs": {
+        "nets": 2,
+        "openNets": 2,
+        "openErrors": 6
+      },
+      "gnd": {
+        "nets": 1,
+        "openNets": 1,
+        "openErrors": 25
+      },
+      "diff-or-paired": {
+        "nets": 4,
+        "openNets": 2,
+        "openErrors": 4
+      },
+      "high-current": {
+        "nets": 7,
+        "openNets": 6,
+        "openErrors": 29
+      },
+      "power-trunk": {
+        "nets": 0,
+        "openNets": 0,
+        "openErrors": 0
+      }
+    },
+    "denseComponents": [
+      {
+        "designator": "U1",
+        "pads": 57,
+        "layers": [
+          1
+        ],
+        "openPads": 36,
+        "minPitchMil": 15.7,
+        "approxMinGapMil": 7.8,
+        "samplePair": "8-9"
+      },
+      {
+        "designator": "J1",
+        "pads": 32,
+        "layers": [
+          2
+        ],
+        "openPads": 27,
+        "minPitchMil": 13.7,
+        "approxMinGapMil": -8.7,
+        "samplePair": "P15-P17"
+      },
+      {
+        "designator": "U15",
+        "pads": 24,
+        "layers": [
+          1
+        ],
+        "openPads": 11,
+        "minPitchMil": 15.7,
+        "approxMinGapMil": 7.8,
+        "samplePair": "2-3"
+      },
+      {
+        "designator": "U16",
+        "pads": 24,
+        "layers": [
+          1
+        ],
+        "openPads": 10,
+        "minPitchMil": 15.7,
+        "approxMinGapMil": 7.8,
+        "samplePair": "2-3"
+      },
+      {
+        "designator": "U18",
+        "pads": 24,
+        "layers": [
+          2
+        ],
+        "openPads": 21,
+        "minPitchMil": 15.7,
+        "approxMinGapMil": 7.8,
+        "samplePair": "2-3"
+      },
+      {
+        "designator": "U21",
+        "pads": 24,
+        "layers": [
+          1
+        ],
+        "openPads": 17,
+        "minPitchMil": 15.7,
+        "approxMinGapMil": 7.8,
+        "samplePair": "2-3"
+      },
+      {
+        "designator": "U8",
+        "pads": 16,
+        "layers": [
+          2
+        ],
+        "openPads": 8,
+        "minPitchMil": 15.7,
+        "approxMinGapMil": -10.5,
+        "samplePair": "2-3"
+      },
+      {
+        "designator": "U2",
+        "pads": 15,
+        "layers": [
+          2
+        ],
+        "openPads": 5,
+        "minPitchMil": 15.7,
+        "approxMinGapMil": 7.8,
+        "samplePair": "E3-E2"
+      },
+      {
+        "designator": "U10",
+        "pads": 9,
+        "layers": [
+          1
+        ],
+        "openPads": 7,
+        "minPitchMil": 15.7,
+        "approxMinGapMil": 6.6,
+        "samplePair": "A2-A3"
+      },
+      {
+        "designator": "U14",
+        "pads": 9,
+        "layers": [
+          2
+        ],
+        "openPads": 7,
+        "minPitchMil": 19.7,
+        "approxMinGapMil": 9.9,
+        "samplePair": "2-3"
+      },
+      {
+        "designator": "MK1",
+        "pads": 8,
+        "layers": [
+          2
+        ],
+        "openPads": 6,
+        "minPitchMil": 27.6,
+        "approxMinGapMil": -1.9,
+        "samplePair": "1-2"
+      },
+      {
+        "designator": "U19",
+        "pads": 8,
+        "layers": [
+          2
+        ],
+        "openPads": 4,
+        "minPitchMil": 13.8,
+        "approxMinGapMil": -7.1,
+        "samplePair": "8-7"
+      },
+      {
+        "designator": "U20",
+        "pads": 8,
+        "layers": [
+          1
+        ],
+        "openPads": 6,
+        "minPitchMil": 13.8,
+        "approxMinGapMil": -7.1,
+        "samplePair": "7-6"
+      },
+      {
+        "designator": "U3",
+        "pads": 8,
+        "layers": [
+          2
+        ],
+        "openPads": 6,
+        "minPitchMil": 15.7,
+        "approxMinGapMil": 8.5,
+        "samplePair": "D2-C2"
+      },
+      {
+        "designator": "U4",
+        "pads": 8,
+        "layers": [
+          2
+        ],
+        "openPads": 7,
+        "minPitchMil": 19.6,
+        "approxMinGapMil": 9.8,
+        "samplePair": "2-3"
+      },
+      {
+        "designator": "U9",
+        "pads": 8,
+        "layers": [
+          2
+        ],
+        "openPads": 2,
+        "minPitchMil": 19.7,
+        "approxMinGapMil": -6.7,
+        "samplePair": "1-2"
+      }
+    ],
+    "topOpenNets": [
+      [
+        "3V3_SYS",
+        43
+      ],
+      [
+        "GND",
+        25
+      ],
+      [
+        "1V8_SYS",
+        13
+      ],
+      [
+        "VSYS",
+        12
+      ],
+      [
+        "CAM_DOVDD_1V8",
+        11
+      ],
+      [
+        "PRIV_WINDOW_OK_F",
+        5
+      ],
+      [
+        "VBUS_5V",
+        5
+      ],
+      [
+        "1V8_FPGA_IO",
+        4
+      ],
+      [
+        "CAM_PWR_REQ",
+        4
+      ],
+      [
+        "ESP_CHIP_PU",
+        4
+      ],
+      [
+        "LED_3V3_PRIV",
+        4
+      ],
+      [
+        "QSPI_DIR1_EN",
+        4
+      ],
+      [
+        "SYS_I2C_SDA_3V3",
+        4
+      ],
+      [
+        "VOUT_L_PPATH",
+        4
+      ],
+      [
+        "V_INA_OUT",
+        4
+      ],
+      [
+        "CAM_DOVDD_OK_3V3",
+        3
+      ],
+      [
+        "CAM_HREF_3V3",
+        3
+      ],
+      [
+        "CAM_XCLK_3V3",
+        3
+      ],
+      [
+        "ESP_ANT_FEED",
+        3
+      ],
+      [
+        "ESP_RF_ANT",
+        3
+      ],
+      [
+        "FPGA_CRESET_3V3",
+        3
+      ],
+      [
+        "I2S_BCLK_1V8",
+        3
+      ],
+      [
+        "I2S_LRCLK_1V8",
+        3
+      ],
+      [
+        "ISENSE_N",
+        3
+      ],
+      [
+        "LS4_VREF2_EN",
+        3
+      ]
+    ],
+    "topOpenComponents": [
+      [
+        "U1",
+        36
+      ],
+      [
+        "J1",
+        27
+      ],
+      [
+        "U18",
+        21
+      ],
+      [
+        "U21",
+        17
+      ],
+      [
+        "U15",
+        11
+      ],
+      [
+        "U16",
+        10
+      ],
+      [
+        "U8",
+        8
+      ],
+      [
+        "U4",
+        7
+      ],
+      [
+        "U14",
+        7
+      ],
+      [
+        "U10",
+        7
+      ],
+      [
+        "U20",
+        6
+      ],
+      [
+        "MK1",
+        6
+      ],
+      [
+        "U3",
+        6
+      ],
+      [
+        "U2",
+        5
+      ],
+      [
+        "U17",
+        4
+      ],
+      [
+        "U7",
+        4
+      ],
+      [
+        "U19",
+        4
+      ],
+      [
+        "U22",
+        4
+      ],
+      [
+        "U13",
+        3
+      ],
+      [
+        "U11",
+        3
+      ]
+    ],
+    "openGndByLayer": {
+      "1": 9,
+      "2": 15,
+      "null": 1
+    },
+    "sameLayerOpenCandidates": [
+      {
+        "net": "LS4_VREF2_EN",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "U20.7",
+        "to": "U20.8",
+        "distMil": 13.8,
+        "padCount": 4,
+        "openErrs": 3,
+        "existingTracks": 0
+      },
+      {
+        "net": "BB_L1",
+        "class": "signal",
+        "layer": 2,
+        "from": "U2.B2",
+        "to": "U2.B3",
+        "distMil": 15.7,
+        "padCount": 3,
+        "openErrs": 2,
+        "existingTracks": 0
+      },
+      {
+        "net": "BB_L2",
+        "class": "signal",
+        "layer": 2,
+        "from": "U2.D2",
+        "to": "U2.D3",
+        "distMil": 15.7,
+        "padCount": 3,
+        "openErrs": 2,
+        "existingTracks": 0
+      },
+      {
+        "net": "SYS_I2C_SDA_1V8",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "U19.4",
+        "to": "R17.1",
+        "distMil": 18.63,
+        "padCount": 4,
+        "openErrs": 3,
+        "existingTracks": 0
+      },
+      {
+        "net": "CHG_ISO_GATE",
+        "class": "signal",
+        "layer": 1,
+        "from": "R19.2",
+        "to": "R20.1",
+        "distMil": 26.0,
+        "padCount": 3,
+        "openErrs": 2,
+        "existingTracks": 0
+      },
+      {
+        "net": "SYS_I2C_SCL_1V8",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "U19.3",
+        "to": "R15.1",
+        "distMil": 26.37,
+        "padCount": 4,
+        "openErrs": 3,
+        "existingTracks": 0
+      },
+      {
+        "net": "SYS_I2C_SCL_3V3",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "U19.6",
+        "to": "R16.1",
+        "distMil": 31.02,
+        "padCount": 4,
+        "openErrs": 3,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_FPGA_IO",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "U18.22",
+        "to": "U18.23",
+        "distMil": 31.74,
+        "padCount": 4,
+        "openErrs": 4,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_FPGA_IO",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "U18.23",
+        "to": "U18.22",
+        "distMil": 31.74,
+        "padCount": 4,
+        "openErrs": 4,
+        "existingTracks": 0
+      },
+      {
+        "net": "PRIV_WINDOW_OK",
+        "class": "signal",
+        "layer": 2,
+        "from": "U14.7",
+        "to": "R28.1",
+        "distMil": 33.36,
+        "padCount": 4,
+        "openErrs": 3,
+        "existingTracks": 0
+      },
+      {
+        "net": "VOUT_L_PPATH",
+        "class": "high-current",
+        "layer": 2,
+        "from": "U9.3",
+        "to": "U3.B2",
+        "distMil": 41.47,
+        "padCount": 4,
+        "openErrs": 4,
+        "existingTracks": 0
+      },
+      {
+        "net": "VOUT_L_PPATH",
+        "class": "high-current",
+        "layer": 2,
+        "from": "U3.B2",
+        "to": "U9.3",
+        "distMil": 41.47,
+        "padCount": 4,
+        "openErrs": 4,
+        "existingTracks": 0
+      },
+      {
+        "net": "V_INA_OUT",
+        "class": "signal",
+        "layer": 2,
+        "from": "U14.3",
+        "to": "U14.6",
+        "distMil": 74.8,
+        "padCount": 4,
+        "openErrs": 4,
+        "existingTracks": 0
+      },
+      {
+        "net": "V_INA_OUT",
+        "class": "signal",
+        "layer": 2,
+        "from": "U14.6",
+        "to": "U14.3",
+        "distMil": 74.8,
+        "padCount": 4,
+        "openErrs": 4,
+        "existingTracks": 0
+      },
+      {
+        "net": "PRIV_WINDOW_OK",
+        "class": "signal",
+        "layer": 2,
+        "from": "U14.1",
+        "to": "U14.7",
+        "distMil": 77.35,
+        "padCount": 4,
+        "openErrs": 3,
+        "existingTracks": 0
+      },
+      {
+        "net": "PRIV_WINDOW_OK_F",
+        "class": "signal",
+        "layer": 2,
+        "from": "U13.3",
+        "to": "C28.1",
+        "distMil": 78.78,
+        "padCount": 5,
+        "openErrs": 5,
+        "existingTracks": 0
+      },
+      {
+        "net": "PRIV_WINDOW_OK_F",
+        "class": "signal",
+        "layer": 2,
+        "from": "C28.1",
+        "to": "U13.3",
+        "distMil": 78.78,
+        "padCount": 5,
+        "openErrs": 5,
+        "existingTracks": 0
+      },
+      {
+        "net": "VBUS_5V",
+        "class": "high-current",
+        "layer": 2,
+        "from": "U3.A2",
+        "to": "J1.P1",
+        "distMil": 81.95,
+        "padCount": 5,
+        "openErrs": 5,
+        "existingTracks": 0
+      },
+      {
+        "net": "VBUS_5V",
+        "class": "high-current",
+        "layer": 2,
+        "from": "J1.P1",
+        "to": "U3.A2",
+        "distMil": 81.95,
+        "padCount": 5,
+        "openErrs": 5,
+        "existingTracks": 0
+      },
+      {
+        "net": "CAM_DOVDD_OK_3V3",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "U17.2",
+        "to": "R4.1",
+        "distMil": 86.08,
+        "padCount": 3,
+        "openErrs": 3,
+        "existingTracks": 0
+      },
+      {
+        "net": "CAM_DOVDD_OK_3V3",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "R4.1",
+        "to": "U17.2",
+        "distMil": 86.08,
+        "padCount": 3,
+        "openErrs": 3,
+        "existingTracks": 0
+      },
+      {
+        "net": "ESP_VDD_SPI_3V3",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "C14.1",
+        "to": "U1.29",
+        "distMil": 88.99,
+        "padCount": 2,
+        "openErrs": 2,
+        "existingTracks": 0
+      },
+      {
+        "net": "VBAT_R_ISOLATED",
+        "class": "high-current",
+        "layer": 2,
+        "from": "Q1.3",
+        "to": "U9.6",
+        "distMil": 103.2,
+        "padCount": 3,
+        "openErrs": 2,
+        "existingTracks": 0
+      },
+      {
+        "net": "ESP_CHIP_PU",
+        "class": "signal",
+        "layer": 2,
+        "from": "TP4.1",
+        "to": "C10.1",
+        "distMil": 116.46,
+        "padCount": 4,
+        "openErrs": 4,
+        "existingTracks": 0
+      },
+      {
+        "net": "ESP_CHIP_PU",
+        "class": "signal",
+        "layer": 2,
+        "from": "C10.1",
+        "to": "TP4.1",
+        "distMil": 116.46,
+        "padCount": 4,
+        "openErrs": 4,
+        "existingTracks": 0
+      },
+      {
+        "net": "I2S_BCLK_1V8",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "U8.6",
+        "to": "J1.P26",
+        "distMil": 121.8,
+        "padCount": 3,
+        "openErrs": 3,
+        "existingTracks": 0
+      },
+      {
+        "net": "I2S_BCLK_1V8",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "J1.P26",
+        "to": "U8.6",
+        "distMil": 121.8,
+        "padCount": 3,
+        "openErrs": 3,
+        "existingTracks": 0
+      },
+      {
+        "net": "SPK_L_N",
+        "class": "diff-or-paired",
+        "layer": 1,
+        "from": "TP6.1",
+        "to": "U10.B3",
+        "distMil": 127.49,
+        "padCount": 2,
+        "openErrs": 2,
+        "existingTracks": 0
+      },
+      {
+        "net": "CAM_D7_3V3",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "U1.45",
+        "to": "U15.13",
+        "distMil": 131.99,
+        "padCount": 2,
+        "openErrs": 2,
+        "existingTracks": 0
+      },
+      {
+        "net": "PRIV_WINDOW_OK_F",
+        "class": "signal",
+        "layer": 2,
+        "from": "U6.3",
+        "to": "U13.3",
+        "distMil": 133.3,
+        "padCount": 5,
+        "openErrs": 5,
+        "existingTracks": 0
+      },
+      {
+        "net": "ESP_CHIP_PU",
+        "class": "signal",
+        "layer": 2,
+        "from": "R7.1",
+        "to": "TP4.1",
+        "distMil": 135.6,
+        "padCount": 4,
+        "openErrs": 4,
+        "existingTracks": 0
+      },
+      {
+        "net": "CAM_PWR_REQ",
+        "class": "signal",
+        "layer": 2,
+        "from": "D1.K",
+        "to": "U5.3",
+        "distMil": 135.62,
+        "padCount": 4,
+        "openErrs": 4,
+        "existingTracks": 0
+      },
+      {
+        "net": "CAM_PWR_REQ",
+        "class": "signal",
+        "layer": 2,
+        "from": "U5.3",
+        "to": "D1.K",
+        "distMil": 135.62,
+        "padCount": 4,
+        "openErrs": 4,
+        "existingTracks": 0
+      },
+      {
+        "net": "CAM_D6_3V3",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "U1.44",
+        "to": "U15.14",
+        "distMil": 147.51,
+        "padCount": 2,
+        "openErrs": 2,
+        "existingTracks": 0
+      },
+      {
+        "net": "SPK_L_P",
+        "class": "diff-or-paired",
+        "layer": 1,
+        "from": "TP7.1",
+        "to": "U10.A3",
+        "distMil": 155.99,
+        "padCount": 2,
+        "openErrs": 2,
+        "existingTracks": 0
+      },
+      {
+        "net": "SYS_I2C_SCL_1V8",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "U3.B1",
+        "to": "J1.P17",
+        "distMil": 162.82,
+        "padCount": 4,
+        "openErrs": 3,
+        "existingTracks": 0
+      },
+      {
+        "net": "SYS_I2C_SCL_1V8",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "J1.P17",
+        "to": "U3.B1",
+        "distMil": 162.82,
+        "padCount": 4,
+        "openErrs": 3,
+        "existingTracks": 0
+      },
+      {
+        "net": "LS4_VREF2_EN",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "U17.4",
+        "to": "R26.1",
+        "distMil": 163.06,
+        "padCount": 4,
+        "openErrs": 3,
+        "existingTracks": 0
+      },
+      {
+        "net": "LS4_VREF2_EN",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "R26.1",
+        "to": "U17.4",
+        "distMil": 163.06,
+        "padCount": 4,
+        "openErrs": 3,
+        "existingTracks": 0
+      },
+      {
+        "net": "SYS_I2C_SDA_1V8",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "J1.P18",
+        "to": "U3.C1",
+        "distMil": 164.81,
+        "padCount": 4,
+        "openErrs": 3,
+        "existingTracks": 0
+      }
+    ],
+    "polygonPadsUnsupportedByRoutability": [
+      {
+        "comp": "MK1",
+        "pad": "5",
+        "net": "GND",
+        "layer": 2
+      },
+      {
+        "comp": "MK1",
+        "pad": "5",
+        "net": "GND",
+        "layer": 2
+      },
+      {
+        "comp": "MK1",
+        "pad": "5",
+        "net": "GND",
+        "layer": 2
+      },
+      {
+        "comp": "MK1",
+        "pad": "5",
+        "net": "GND",
+        "layer": 2
+      },
+      {
+        "comp": "U11",
+        "pad": "3",
+        "net": "PRIV_WINDOW_OK_F",
+        "layer": 1
+      },
+      {
+        "comp": "U11",
+        "pad": "2",
+        "net": "GND",
+        "layer": 1
+      },
+      {
+        "comp": "U11",
+        "pad": "1",
+        "net": "CAM_DOVDD_1V8",
+        "layer": 1
+      },
+      {
+        "comp": "U11",
+        "pad": "4",
+        "net": "3V3_SYS",
+        "layer": 1
+      },
+      {
+        "comp": "U13",
+        "pad": "3",
+        "net": "PRIV_WINDOW_OK_F",
+        "layer": 2
+      },
+      {
+        "comp": "U13",
+        "pad": "2",
+        "net": "GND",
+        "layer": 2
+      },
+      {
+        "comp": "U13",
+        "pad": "1",
+        "net": "CAM_DVDD_1V2",
+        "layer": 2
+      },
+      {
+        "comp": "U13",
+        "pad": "4",
+        "net": "3V3_SYS",
+        "layer": 2
+      },
+      {
+        "comp": "U17",
+        "pad": "1",
+        "net": "",
+        "layer": 2
+      },
+      {
+        "comp": "U17",
+        "pad": "4",
+        "net": "LS4_VREF2_EN",
+        "layer": 2
+      },
+      {
+        "comp": "U17",
+        "pad": "5",
+        "net": "3V3_SYS",
+        "layer": 2
+      },
+      {
+        "comp": "U17",
+        "pad": "2",
+        "net": "CAM_DOVDD_OK_3V3",
+        "layer": 2
+      },
+      {
+        "comp": "U5",
+        "pad": "3",
+        "net": "CAM_PWR_REQ",
+        "layer": 2
+      },
+      {
+        "comp": "U5",
+        "pad": "2",
+        "net": "GND",
+        "layer": 2
+      },
+      {
+        "comp": "U5",
+        "pad": "1",
+        "net": "LED_3V3_PRIV",
+        "layer": 2
+      },
+      {
+        "comp": "U5",
+        "pad": "4",
+        "net": "3V3_SYS",
+        "layer": 2
+      },
+      {
+        "comp": "U6",
+        "pad": "3",
+        "net": "PRIV_WINDOW_OK_F",
+        "layer": 2
+      },
+      {
+        "comp": "U6",
+        "pad": "2",
+        "net": "GND",
+        "layer": 2
+      },
+      {
+        "comp": "U6",
+        "pad": "1",
+        "net": "CAM_AVDD_2V8",
+        "layer": 2
+      },
+      {
+        "comp": "U6",
+        "pad": "4",
+        "net": "3V3_SYS",
+        "layer": 2
+      }
+    ]
+  },
+  "PCB2": {
+    "outlineMil": {
+      "width": 185.1,
+      "height": 988.25
+    },
+    "outlineMm": {
+      "width": 4.7,
+      "height": 25.1
+    },
+    "componentsByLayer": {
+      "1": 58,
+      "2": 28
+    },
+    "drcByRule": {
+      "Connection Error": 227
+    },
+    "openNetCount": 54,
+    "openConnectionErrors": 227,
+    "netClasses": {
+      "power-branch": {
+        "nets": 22,
+        "openNets": 22,
+        "openErrors": 100
+      },
+      "high-current": {
+        "nets": 3,
+        "openNets": 3,
+        "openErrors": 31
+      },
+      "signal": {
+        "nets": 31,
+        "openNets": 27,
+        "openErrors": 66
+      },
+      "gnd": {
+        "nets": 1,
+        "openNets": 1,
+        "openErrors": 28
+      },
+      "rf-clock-hs": {
+        "nets": 1,
+        "openNets": 1,
+        "openErrors": 2
+      },
+      "power-trunk": {
+        "nets": 0,
+        "openNets": 0,
+        "openErrors": 0
+      },
+      "diff-or-paired": {
+        "nets": 0,
+        "openNets": 0,
+        "openErrors": 0
+      }
+    },
+    "denseComponents": [
+      {
+        "designator": "J1",
+        "pads": 32,
+        "layers": [
+          2
+        ],
+        "openPads": 15,
+        "minPitchMil": 13.7,
+        "approxMinGapMil": -8.7,
+        "samplePair": "P9-P11"
+      },
+      {
+        "designator": "U2",
+        "pads": 30,
+        "layers": [
+          1
+        ],
+        "openPads": 25,
+        "minPitchMil": 15.7,
+        "approxMinGapMil": 7.8,
+        "samplePair": "A1-B1"
+      },
+      {
+        "designator": "U9",
+        "pads": 14,
+        "layers": [
+          1
+        ],
+        "openPads": 6,
+        "minPitchMil": 19.6,
+        "approxMinGapMil": 8.6,
+        "samplePair": "3-4"
+      },
+      {
+        "designator": "J2",
+        "pads": 12,
+        "layers": [
+          1
+        ],
+        "openPads": 7,
+        "minPitchMil": 13.7,
+        "approxMinGapMil": 6.6,
+        "samplePair": "P5-P7"
+      },
+      {
+        "designator": "J3",
+        "pads": 12,
+        "layers": [
+          1
+        ],
+        "openPads": 7,
+        "minPitchMil": 13.7,
+        "approxMinGapMil": 6.6,
+        "samplePair": "P5-P7"
+      },
+      {
+        "designator": "TP1",
+        "pads": 9,
+        "layers": [
+          1
+        ],
+        "openPads": 8,
+        "minPitchMil": 35.4,
+        "approxMinGapMil": 13.7,
+        "samplePair": "1-2"
+      },
+      {
+        "designator": "MK2",
+        "pads": 8,
+        "layers": [
+          2
+        ],
+        "openPads": 7,
+        "minPitchMil": 27.6,
+        "approxMinGapMil": -1.9,
+        "samplePair": "1-2"
+      },
+      {
+        "designator": "U8",
+        "pads": 8,
+        "layers": [
+          2
+        ],
+        "openPads": 4,
+        "minPitchMil": 19.6,
+        "approxMinGapMil": 7.8,
+        "samplePair": "3-4"
+      }
+    ],
+    "topOpenNets": [
+      [
+        "GND",
+        28
+      ],
+      [
+        "VSYS",
+        25
+      ],
+      [
+        "1V8_FPGA_IO",
+        22
+      ],
+      [
+        "1V8_SYS",
+        9
+      ],
+      [
+        "OPT_AVDD_EN",
+        7
+      ],
+      [
+        "AVDD_OPT_BIAS",
+        6
+      ],
+      [
+        "FPGA_CDONE_VSYNC_N",
+        6
+      ],
+      [
+        "FPGA_CRESET_B",
+        6
+      ],
+      [
+        "1V2_FPGA_PLL",
+        5
+      ],
+      [
+        "AVDD_PG_NODE",
+        5
+      ],
+      [
+        "AVDD_QUAL_RC",
+        5
+      ],
+      [
+        "1V2_FPGA_CORE",
+        4
+      ],
+      [
+        "1V8_FPGA_VPP",
+        4
+      ],
+      [
+        "AVDD_WD_Q",
+        4
+      ],
+      [
+        "AVDD_CRESET_VSYS",
+        3
+      ],
+      [
+        "AVDD_D3_VSYS",
+        3
+      ],
+      [
+        "AVDD_PG_OK",
+        3
+      ],
+      [
+        "AVDD_PULSE_QUAL",
+        3
+      ],
+      [
+        "AVDD_REQ_FILTER",
+        3
+      ],
+      [
+        "AVDD_WD_DIV",
+        3
+      ],
+      [
+        "FPGA_1V2_SENSE",
+        3
+      ],
+      [
+        "OPT_CS_N_R",
+        3
+      ],
+      [
+        "host_cs_n",
+        3
+      ],
+      [
+        "opt_cs_n",
+        3
+      ],
+      [
+        "opt_sck",
+        3
+      ]
+    ],
+    "topOpenComponents": [
+      [
+        "U2",
+        25
+      ],
+      [
+        "J1",
+        15
+      ],
+      [
+        "TP1",
+        8
+      ],
+      [
+        "J2",
+        7
+      ],
+      [
+        "J3",
+        7
+      ],
+      [
+        "MK2",
+        7
+      ],
+      [
+        "U9",
+        6
+      ],
+      [
+        "U3",
+        6
+      ],
+      [
+        "U5",
+        6
+      ],
+      [
+        "U8",
+        4
+      ],
+      [
+        "Y1",
+        4
+      ],
+      [
+        "U11",
+        4
+      ],
+      [
+        "U13",
+        4
+      ],
+      [
+        "U10",
+        4
+      ],
+      [
+        "U14",
+        4
+      ],
+      [
+        "U1",
+        3
+      ],
+      [
+        "U7",
+        3
+      ],
+      [
+        "U6",
+        3
+      ],
+      [
+        "U15",
+        3
+      ],
+      [
+        "U12",
+        3
+      ]
+    ],
+    "openGndByLayer": {
+      "2": 14,
+      "null": 6,
+      "1": 8
+    },
+    "sameLayerOpenCandidates": [
+      {
+        "net": "AVDD_WD_Q",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "R3.1",
+        "to": "R6.1",
+        "distMil": 21.7,
+        "padCount": 5,
+        "openErrs": 4,
+        "existingTracks": 0
+      },
+      {
+        "net": "AVDD_QUAL_RC",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "U3.6",
+        "to": "U3.4",
+        "distMil": 27.6,
+        "padCount": 5,
+        "openErrs": 5,
+        "existingTracks": 0
+      },
+      {
+        "net": "AVDD_QUAL_RC",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "U3.4",
+        "to": "U3.6",
+        "distMil": 27.6,
+        "padCount": 5,
+        "openErrs": 5,
+        "existingTracks": 0
+      },
+      {
+        "net": "opt_l_qdo0_PANEL",
+        "class": "signal",
+        "layer": 1,
+        "from": "J2.P5",
+        "to": "R15.2",
+        "distMil": 37.67,
+        "padCount": 2,
+        "openErrs": 2,
+        "existingTracks": 0
+      },
+      {
+        "net": "AVDD_D3_VSYS",
+        "class": "high-current",
+        "layer": 1,
+        "from": "R7.1",
+        "to": "R2.1",
+        "distMil": 43.7,
+        "padCount": 5,
+        "openErrs": 3,
+        "existingTracks": 0
+      },
+      {
+        "net": "AVDD_D3_VSYS",
+        "class": "high-current",
+        "layer": 1,
+        "from": "R2.1",
+        "to": "R7.1",
+        "distMil": 43.7,
+        "padCount": 5,
+        "openErrs": 3,
+        "existingTracks": 0
+      },
+      {
+        "net": "OPT_CS_N_R",
+        "class": "signal",
+        "layer": 1,
+        "from": "R14.2",
+        "to": "J3.P4",
+        "distMil": 43.85,
+        "padCount": 3,
+        "openErrs": 3,
+        "existingTracks": 0
+      },
+      {
+        "net": "OPT_CS_N_R",
+        "class": "signal",
+        "layer": 1,
+        "from": "J3.P4",
+        "to": "R14.2",
+        "distMil": 43.85,
+        "padCount": 3,
+        "openErrs": 3,
+        "existingTracks": 0
+      },
+      {
+        "net": "opt_r_qdo3_PANEL",
+        "class": "signal",
+        "layer": 1,
+        "from": "J3.P8",
+        "to": "R22.2",
+        "distMil": 45.6,
+        "padCount": 2,
+        "openErrs": 2,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V2_FPGA_CORE",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "C28.1",
+        "to": "U2.C2",
+        "distMil": 52.45,
+        "padCount": 6,
+        "openErrs": 4,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V2_FPGA_CORE",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "U2.C2",
+        "to": "C28.1",
+        "distMil": 52.45,
+        "padCount": 6,
+        "openErrs": 4,
+        "existingTracks": 0
+      },
+      {
+        "net": "AVDD_PG_OK",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "U3.3",
+        "to": "U5.1",
+        "distMil": 60.73,
+        "padCount": 3,
+        "openErrs": 3,
+        "existingTracks": 0
+      },
+      {
+        "net": "AVDD_PG_OK",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "U5.1",
+        "to": "U3.3",
+        "distMil": 60.73,
+        "padCount": 3,
+        "openErrs": 3,
+        "existingTracks": 0
+      },
+      {
+        "net": "OPT_SCK_L",
+        "class": "signal",
+        "layer": 1,
+        "from": "J2.P3",
+        "to": "R23.2",
+        "distMil": 62.72,
+        "padCount": 2,
+        "openErrs": 2,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V2_FPGA_PLL",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "R27.2",
+        "to": "R30.1",
+        "distMil": 70.0,
+        "padCount": 5,
+        "openErrs": 5,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V2_FPGA_PLL",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "R30.1",
+        "to": "R27.2",
+        "distMil": 70.0,
+        "padCount": 5,
+        "openErrs": 5,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V2_FPGA_CORE",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "C14.1",
+        "to": "U2.C2",
+        "distMil": 80.43,
+        "padCount": 6,
+        "openErrs": 4,
+        "existingTracks": 0
+      },
+      {
+        "net": "AVDD_QUAL_RC",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "C2.1",
+        "to": "R6.2",
+        "distMil": 90.19,
+        "padCount": 5,
+        "openErrs": 5,
+        "existingTracks": 0
+      },
+      {
+        "net": "AVDD_QUAL_RC",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "R6.2",
+        "to": "C2.1",
+        "distMil": 90.19,
+        "padCount": 5,
+        "openErrs": 5,
+        "existingTracks": 0
+      },
+      {
+        "net": "opt_l_qdo1_PANEL",
+        "class": "signal",
+        "layer": 1,
+        "from": "J2.P6",
+        "to": "R16.2",
+        "distMil": 92.41,
+        "padCount": 2,
+        "openErrs": 2,
+        "existingTracks": 0
+      },
+      {
+        "net": "opt_r_qdo2_PANEL",
+        "class": "signal",
+        "layer": 1,
+        "from": "J3.P7",
+        "to": "R21.2",
+        "distMil": 92.92,
+        "padCount": 2,
+        "openErrs": 2,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V2_FPGA_PLL",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "C21.1",
+        "to": "R30.1",
+        "distMil": 94.58,
+        "padCount": 5,
+        "openErrs": 5,
+        "existingTracks": 0
+      },
+      {
+        "net": "opt_r_qdo0_PANEL",
+        "class": "signal",
+        "layer": 1,
+        "from": "J3.P5",
+        "to": "R19.2",
+        "distMil": 94.91,
+        "padCount": 2,
+        "openErrs": 2,
+        "existingTracks": 0
+      },
+      {
+        "net": "OPT_CS_N_L",
+        "class": "signal",
+        "layer": 1,
+        "from": "R13.2",
+        "to": "J2.P4",
+        "distMil": 97.62,
+        "padCount": 3,
+        "openErrs": 2,
+        "existingTracks": 0
+      },
+      {
+        "net": "opt_l_qdo3",
+        "class": "signal",
+        "layer": 1,
+        "from": "R18.1",
+        "to": "U2.E4",
+        "distMil": 107.16,
+        "padCount": 2,
+        "openErrs": 2,
+        "existingTracks": 0
+      },
+      {
+        "net": "OPT_CS_N_L",
+        "class": "signal",
+        "layer": 1,
+        "from": "R25.1",
+        "to": "R13.2",
+        "distMil": 117.24,
+        "padCount": 3,
+        "openErrs": 2,
+        "existingTracks": 0
+      },
+      {
+        "net": "opt_cs_n",
+        "class": "signal",
+        "layer": 1,
+        "from": "R14.1",
+        "to": "U2.C3",
+        "distMil": 119.24,
+        "padCount": 3,
+        "openErrs": 3,
+        "existingTracks": 0
+      },
+      {
+        "net": "opt_cs_n",
+        "class": "signal",
+        "layer": 1,
+        "from": "U2.C3",
+        "to": "R14.1",
+        "distMil": 119.24,
+        "padCount": 3,
+        "openErrs": 3,
+        "existingTracks": 0
+      },
+      {
+        "net": "opt_sck",
+        "class": "signal",
+        "layer": 1,
+        "from": "R23.1",
+        "to": "U2.E3",
+        "distMil": 123.17,
+        "padCount": 3,
+        "openErrs": 3,
+        "existingTracks": 0
+      },
+      {
+        "net": "opt_sck",
+        "class": "signal",
+        "layer": 1,
+        "from": "U2.E3",
+        "to": "R23.1",
+        "distMil": 123.17,
+        "padCount": 3,
+        "openErrs": 3,
+        "existingTracks": 0
+      },
+      {
+        "net": "opt_r_qdo1",
+        "class": "signal",
+        "layer": 1,
+        "from": "R20.1",
+        "to": "U2.D5",
+        "distMil": 129.62,
+        "padCount": 2,
+        "openErrs": 2,
+        "existingTracks": 0
+      },
+      {
+        "net": "AVDD_WD_Q",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "U3.1",
+        "to": "U14.6",
+        "distMil": 136.95,
+        "padCount": 5,
+        "openErrs": 4,
+        "existingTracks": 0
+      },
+      {
+        "net": "AVDD_WD_Q",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "U14.6",
+        "to": "U3.1",
+        "distMil": 136.95,
+        "padCount": 5,
+        "openErrs": 4,
+        "existingTracks": 0
+      },
+      {
+        "net": "opt_cs_n",
+        "class": "signal",
+        "layer": 1,
+        "from": "R13.1",
+        "to": "U2.C3",
+        "distMil": 141.26,
+        "padCount": 3,
+        "openErrs": 3,
+        "existingTracks": 0
+      },
+      {
+        "net": "AVDD_QUAL_RC",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "U11.3",
+        "to": "C2.1",
+        "distMil": 142.28,
+        "padCount": 5,
+        "openErrs": 5,
+        "existingTracks": 0
+      },
+      {
+        "net": "AVDD_REQ_FILTER",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "C3.1",
+        "to": "R7.2",
+        "distMil": 143.0,
+        "padCount": 3,
+        "openErrs": 3,
+        "existingTracks": 0
+      },
+      {
+        "net": "AVDD_REQ_FILTER",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "R7.2",
+        "to": "C3.1",
+        "distMil": 143.0,
+        "padCount": 3,
+        "openErrs": 3,
+        "existingTracks": 0
+      },
+      {
+        "net": "opt_r_qdo0",
+        "class": "signal",
+        "layer": 1,
+        "from": "R19.1",
+        "to": "U2.E5",
+        "distMil": 151.59,
+        "padCount": 2,
+        "openErrs": 2,
+        "existingTracks": 0
+      },
+      {
+        "net": "opt_sck",
+        "class": "signal",
+        "layer": 1,
+        "from": "R24.1",
+        "to": "U2.E3",
+        "distMil": 157.52,
+        "padCount": 3,
+        "openErrs": 3,
+        "existingTracks": 0
+      },
+      {
+        "net": "opt_r_qdo2",
+        "class": "signal",
+        "layer": 1,
+        "from": "R21.1",
+        "to": "U2.F5",
+        "distMil": 157.66,
+        "padCount": 2,
+        "openErrs": 2,
+        "existingTracks": 0
+      }
+    ],
+    "polygonPadsUnsupportedByRoutability": [
+      {
+        "comp": "MK2",
+        "pad": "5",
+        "net": "GND",
+        "layer": 2
+      },
+      {
+        "comp": "MK2",
+        "pad": "5",
+        "net": "GND",
+        "layer": 2
+      },
+      {
+        "comp": "MK2",
+        "pad": "5",
+        "net": "GND",
+        "layer": 2
+      },
+      {
+        "comp": "MK2",
+        "pad": "5",
+        "net": "GND",
+        "layer": 2
+      },
+      {
+        "comp": "U1",
+        "pad": "3",
+        "net": "FPGA_1V8_EN",
+        "layer": 2
+      },
+      {
+        "comp": "U1",
+        "pad": "2",
+        "net": "GND",
+        "layer": 2
+      },
+      {
+        "comp": "U1",
+        "pad": "1",
+        "net": "1V8_FPGA_IO",
+        "layer": 2
+      },
+      {
+        "comp": "U1",
+        "pad": "4",
+        "net": "VSYS",
+        "layer": 2
+      },
+      {
+        "comp": "U4",
+        "pad": "3",
+        "net": "VSYS",
+        "layer": 1
+      },
+      {
+        "comp": "U4",
+        "pad": "2",
+        "net": "GND",
+        "layer": 1
+      },
+      {
+        "comp": "U4",
+        "pad": "1",
+        "net": "1V2_FPGA_CORE",
+        "layer": 1
+      },
+      {
+        "comp": "U4",
+        "pad": "4",
+        "net": "VSYS",
+        "layer": 1
+      },
+      {
+        "comp": "U6",
+        "pad": "3",
+        "net": "OPT_AVDD_EN",
+        "layer": 2
+      },
+      {
+        "comp": "U6",
+        "pad": "2",
+        "net": "GND",
+        "layer": 2
+      },
+      {
+        "comp": "U6",
+        "pad": "1",
+        "net": "AVDD_OPT_BIAS",
+        "layer": 2
+      },
+      {
+        "comp": "U6",
+        "pad": "4",
+        "net": "VSYS",
+        "layer": 2
+      }
+    ]
+  },
+  "PCB3": {
+    "outlineMil": {
+      "width": 208.72,
+      "height": 1342.58
+    },
+    "outlineMm": {
+      "width": 5.3,
+      "height": 34.1
+    },
+    "componentsByLayer": {
+      "1": 23,
+      "2": 30
+    },
+    "drcByRule": {
+      "Connection Error": 127
+    },
+    "openNetCount": 36,
+    "openConnectionErrors": 127,
+    "netClasses": {
+      "power-branch": {
+        "nets": 15,
+        "openNets": 15,
+        "openErrors": 63
+      },
+      "signal": {
+        "nets": 6,
+        "openNets": 6,
+        "openErrors": 13
+      },
+      "rf-clock-hs": {
+        "nets": 11,
+        "openNets": 10,
+        "openErrors": 20
+      },
+      "gnd": {
+        "nets": 1,
+        "openNets": 1,
+        "openErrors": 14
+      },
+      "diff-or-paired": {
+        "nets": 2,
+        "openNets": 2,
+        "openErrors": 4
+      },
+      "high-current": {
+        "nets": 2,
+        "openNets": 2,
+        "openErrors": 13
+      },
+      "power-trunk": {
+        "nets": 0,
+        "openNets": 0,
+        "openErrors": 0
+      }
+    },
+    "denseComponents": [
+      {
+        "designator": "U11",
+        "pads": 95,
+        "layers": [
+          1
+        ],
+        "openPads": 32,
+        "minPitchMil": 13.7,
+        "approxMinGapMil": 6.0,
+        "samplePair": "B10-B9"
+      },
+      {
+        "designator": "J1",
+        "pads": 18,
+        "layers": [
+          2
+        ],
+        "openPads": 12,
+        "minPitchMil": 13.7,
+        "approxMinGapMil": -8.7,
+        "samplePair": "P3-P5"
+      },
+      {
+        "designator": "U10",
+        "pads": 9,
+        "layers": [
+          2
+        ],
+        "openPads": 6,
+        "minPitchMil": 15.7,
+        "approxMinGapMil": 6.6,
+        "samplePair": "A1-B1"
+      },
+      {
+        "designator": "U3",
+        "pads": 9,
+        "layers": [
+          2
+        ],
+        "openPads": 5,
+        "minPitchMil": 19.7,
+        "approxMinGapMil": 9.9,
+        "samplePair": "3-4"
+      },
+      {
+        "designator": "MK3",
+        "pads": 8,
+        "layers": [
+          2
+        ],
+        "openPads": 7,
+        "minPitchMil": 27.6,
+        "approxMinGapMil": -1.9,
+        "samplePair": "1-2"
+      }
+    ],
+    "topOpenNets": [
+      [
+        "1V8_SYS",
+        24
+      ],
+      [
+        "GND",
+        14
+      ],
+      [
+        "VBAT_R_RET",
+        9
+      ],
+      [
+        "NRF_DECR_RF",
+        5
+      ],
+      [
+        "I2S_AMP_DIN_1V8",
+        4
+      ],
+      [
+        "I2S_BCLK_1V8",
+        4
+      ],
+      [
+        "I2S_LRCLK_1V8",
+        4
+      ],
+      [
+        "VBUS_5V",
+        4
+      ],
+      [
+        "AMP_SD_REQ_1V8",
+        3
+      ],
+      [
+        "CHG_MUTE_GATE",
+        3
+      ],
+      [
+        "NRF_DECD",
+        3
+      ],
+      [
+        "AMP_R_SD_MODE",
+        2
+      ],
+      [
+        "AMP_SD_MODE_1V8",
+        2
+      ],
+      [
+        "BLE_ANT_FEED",
+        2
+      ],
+      [
+        "BLE_NRESET",
+        2
+      ],
+      [
+        "BLE_RF_ANT",
+        2
+      ],
+      [
+        "BLE_RF_MID",
+        2
+      ],
+      [
+        "BLE_SWDCLK",
+        2
+      ],
+      [
+        "BLE_SWDIO",
+        2
+      ],
+      [
+        "BLE_XC2",
+        2
+      ],
+      [
+        "CHG_R_ISET",
+        2
+      ],
+      [
+        "CHG_R_VSET",
+        2
+      ],
+      [
+        "I2S_S3_DOUT_1V8",
+        2
+      ],
+      [
+        "IPC_NRF_TX_1V8",
+        2
+      ],
+      [
+        "IPC_S3_TX_1V8",
+        2
+      ]
+    ],
+    "topOpenComponents": [
+      [
+        "U11",
+        32
+      ],
+      [
+        "J1",
+        12
+      ],
+      [
+        "MK3",
+        7
+      ],
+      [
+        "U10",
+        6
+      ],
+      [
+        "U3",
+        5
+      ],
+      [
+        "U1",
+        3
+      ],
+      [
+        "TP6",
+        3
+      ],
+      [
+        "C8",
+        2
+      ],
+      [
+        "C14",
+        2
+      ],
+      [
+        "R5",
+        2
+      ],
+      [
+        "Q1",
+        2
+      ],
+      [
+        "R9",
+        2
+      ],
+      [
+        "C21",
+        2
+      ],
+      [
+        "L1",
+        2
+      ],
+      [
+        "C7",
+        2
+      ],
+      [
+        "R7",
+        2
+      ],
+      [
+        "L3",
+        2
+      ],
+      [
+        "L4",
+        2
+      ],
+      [
+        "C16",
+        1
+      ],
+      [
+        "C20",
+        1
+      ]
+    ],
+    "openGndByLayer": {
+      "1": 5,
+      "null": 2,
+      "2": 7
+    },
+    "sameLayerOpenCandidates": [
+      {
+        "net": "NRF_DECR_RF",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "U11.B1",
+        "to": "U11.B4",
+        "distMil": 41.4,
+        "padCount": 5,
+        "openErrs": 5,
+        "existingTracks": 0
+      },
+      {
+        "net": "NRF_DECR_RF",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "U11.B4",
+        "to": "U11.B1",
+        "distMil": 41.4,
+        "padCount": 5,
+        "openErrs": 5,
+        "existingTracks": 0
+      },
+      {
+        "net": "LFXO_XL1",
+        "class": "rf-clock-hs",
+        "layer": 1,
+        "from": "U11.F11",
+        "to": "Y3.1",
+        "distMil": 68.9,
+        "padCount": 3,
+        "openErrs": 2,
+        "existingTracks": 0
+      },
+      {
+        "net": "AMP_R_SD_MODE",
+        "class": "signal",
+        "layer": 2,
+        "from": "Q1.3",
+        "to": "U10.A1",
+        "distMil": 69.63,
+        "padCount": 3,
+        "openErrs": 2,
+        "existingTracks": 0
+      },
+      {
+        "net": "LFXO_XL2",
+        "class": "rf-clock-hs",
+        "layer": 1,
+        "from": "Y3.2",
+        "to": "U11.F12",
+        "distMil": 92.63,
+        "padCount": 3,
+        "openErrs": 2,
+        "existingTracks": 0
+      },
+      {
+        "net": "I2S_BCLK_1V8",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "U10.C1",
+        "to": "J1.P11",
+        "distMil": 92.88,
+        "padCount": 4,
+        "openErrs": 4,
+        "existingTracks": 0
+      },
+      {
+        "net": "I2S_BCLK_1V8",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "J1.P11",
+        "to": "U10.C1",
+        "distMil": 92.88,
+        "padCount": 4,
+        "openErrs": 4,
+        "existingTracks": 0
+      },
+      {
+        "net": "I2S_AMP_DIN_1V8",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "J1.P13",
+        "to": "U10.B1",
+        "distMil": 94.58,
+        "padCount": 4,
+        "openErrs": 4,
+        "existingTracks": 0
+      },
+      {
+        "net": "I2S_AMP_DIN_1V8",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "U10.B1",
+        "to": "J1.P13",
+        "distMil": 94.58,
+        "padCount": 4,
+        "openErrs": 4,
+        "existingTracks": 0
+      },
+      {
+        "net": "I2S_LRCLK_1V8",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "U10.C3",
+        "to": "J1.P12",
+        "distMil": 111.86,
+        "padCount": 4,
+        "openErrs": 4,
+        "existingTracks": 0
+      },
+      {
+        "net": "I2S_LRCLK_1V8",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "J1.P12",
+        "to": "U10.C3",
+        "distMil": 111.86,
+        "padCount": 4,
+        "openErrs": 4,
+        "existingTracks": 0
+      },
+      {
+        "net": "AMP_SD_MODE_1V8",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "J1.P15",
+        "to": "U1.4",
+        "distMil": 117.93,
+        "padCount": 3,
+        "openErrs": 2,
+        "existingTracks": 0
+      },
+      {
+        "net": "CHG_R_ISET",
+        "class": "signal",
+        "layer": 2,
+        "from": "R6.1",
+        "to": "U3.2",
+        "distMil": 128.24,
+        "padCount": 2,
+        "openErrs": 2,
+        "existingTracks": 0
+      },
+      {
+        "net": "BLE_RF_MID",
+        "class": "rf-clock-hs",
+        "layer": 1,
+        "from": "C7.1",
+        "to": "L2.2",
+        "distMil": 131.43,
+        "padCount": 3,
+        "openErrs": 2,
+        "existingTracks": 0
+      },
+      {
+        "net": "CHG_R_VSET",
+        "class": "signal",
+        "layer": 2,
+        "from": "R10.1",
+        "to": "U3.7",
+        "distMil": 142.11,
+        "padCount": 2,
+        "openErrs": 2,
+        "existingTracks": 0
+      },
+      {
+        "net": "NRF_DECA",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "C13.1",
+        "to": "U11.B8",
+        "distMil": 169.69,
+        "padCount": 2,
+        "openErrs": 2,
+        "existingTracks": 0
+      },
+      {
+        "net": "SPK_R_P",
+        "class": "diff-or-paired",
+        "layer": 2,
+        "from": "TP5.1",
+        "to": "U10.A3",
+        "distMil": 192.02,
+        "padCount": 2,
+        "openErrs": 2,
+        "existingTracks": 0
+      },
+      {
+        "net": "SPK_R_N",
+        "class": "diff-or-paired",
+        "layer": 2,
+        "from": "TP4.1",
+        "to": "U10.B3",
+        "distMil": 225.98,
+        "padCount": 2,
+        "openErrs": 2,
+        "existingTracks": 0
+      },
+      {
+        "net": "BLE_XC2",
+        "class": "rf-clock-hs",
+        "layer": 1,
+        "from": "U11.A2",
+        "to": "Y2.3",
+        "distMil": 226.07,
+        "padCount": 2,
+        "openErrs": 2,
+        "existingTracks": 0
+      },
+      {
+        "net": "I2S_LRCLK_1V8",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "R4.1",
+        "to": "U10.C3",
+        "distMil": 232.38,
+        "padCount": 4,
+        "openErrs": 4,
+        "existingTracks": 0
+      },
+      {
+        "net": "BLE_SWDIO",
+        "class": "rf-clock-hs",
+        "layer": 1,
+        "from": "TP6.1",
+        "to": "U11.F1",
+        "distMil": 294.17,
+        "padCount": 2,
+        "openErrs": 2,
+        "existingTracks": 0
+      },
+      {
+        "net": "BLE_SWDCLK",
+        "class": "rf-clock-hs",
+        "layer": 1,
+        "from": "TP6.2",
+        "to": "U11.F2",
+        "distMil": 318.9,
+        "padCount": 2,
+        "openErrs": 2,
+        "existingTracks": 0
+      },
+      {
+        "net": "BLE_NRESET",
+        "class": "signal",
+        "layer": 1,
+        "from": "TP6.3",
+        "to": "U11.G2",
+        "distMil": 360.43,
+        "padCount": 2,
+        "openErrs": 2,
+        "existingTracks": 0
+      },
+      {
+        "net": "PDM_D1_1V8",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "J1.P7",
+        "to": "MK3.1",
+        "distMil": 913.62,
+        "padCount": 2,
+        "openErrs": 2,
+        "existingTracks": 0
+      },
+      {
+        "net": "PDM_CLK_1V8",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "J1.P5",
+        "to": "MK3.3",
+        "distMil": 930.21,
+        "padCount": 2,
+        "openErrs": 2,
+        "existingTracks": 0
+      }
+    ],
+    "polygonPadsUnsupportedByRoutability": [
+      {
+        "comp": "MK3",
+        "pad": "5",
+        "net": "GND",
+        "layer": 2
+      },
+      {
+        "comp": "MK3",
+        "pad": "5",
+        "net": "GND",
+        "layer": 2
+      },
+      {
+        "comp": "MK3",
+        "pad": "5",
+        "net": "GND",
+        "layer": 2
+      },
+      {
+        "comp": "MK3",
+        "pad": "5",
+        "net": "GND",
+        "layer": 2
+      }
+    ]
+  }
+}

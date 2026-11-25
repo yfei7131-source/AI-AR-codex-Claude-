@@ -1,0 +1,33 @@
+{
+  "scope": "Archived polygon coverage, excluding plane fabrication/implementation and native connectivity verdict.",
+  "archive_sha256": "34371a5dc3f9ee267d6c7b673d499e4ecf7c2a28a4dd0a202de5045bc359ebcc",
+  "geometry_plan_sha256": "438bc8cc9e55d79773f0b9bc85cd2a82474b58507eac222a55fd4d54ded27c16",
+  "existing_ground_via": {
+    "primitive_id": "b04d5044c6ff9db9",
+    "center": [
+      20.0,
+      1126.0
+    ],
+    "via_type": "NORMAL",
+    "hole_mil": 6,
+    "land_mil": 12
+  },
+  "planes": [
+    {
+      "layer_id": 15,
+      "net": "GND",
+      "route_envelope_in_plane": true,
+      "via_land_envelope_in_plane": true,
+      "route_envelope_to_plane_boundary_mil": 7.5,
+      "via_land_to_plane_boundary_mil": 3.5
+    },
+    {
+      "layer_id": 18,
+      "net": "GND",
+      "route_envelope_in_plane": true,
+      "via_land_envelope_in_plane": true,
+      "route_envelope_to_plane_boundary_mil": 7.5,
+      "via_land_to_plane_boundary_mil": 3.5
+    }
+  ]
+}

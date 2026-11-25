@@ -1,0 +1,446 @@
+[
+  {
+    "board": "PCB1",
+    "net": "LS3_VREF2_EN",
+    "from": "U19.8",
+    "to": "U19.7",
+    "layer": 2,
+    "widthMil": 4,
+    "endpointContact": [
+      [
+        {
+          "reference": "U19.8",
+          "kind": "pad",
+          "positiveOverlapMil2": 20.09166
+        },
+        {
+          "reference": "U19.7",
+          "kind": "pad",
+          "positiveOverlapMil2": 20.07246
+        }
+      ],
+      [
+        {
+          "reference": "U19.8",
+          "kind": "pad",
+          "positiveOverlapMil2": 20.09166
+        },
+        {
+          "reference": "U19.7",
+          "kind": "pad",
+          "positiveOverlapMil2": 20.07246
+        }
+      ]
+    ],
+    "baselinePathPresent": true,
+    "afterAndIndependentPath": [
+      {
+        "referenceOrPrimitive": "U19.8",
+        "positiveContactAreaMil2": null
+      },
+      {
+        "referenceOrPrimitive": "e99728b1ff3ef708",
+        "positiveContactAreaMil2": 20.091664
+      },
+      {
+        "referenceOrPrimitive": "U19.7",
+        "positiveContactAreaMil2": 20.072464
+      }
+    ]
+  },
+  {
+    "board": "PCB1",
+    "net": "GND",
+    "from": "U19.1",
+    "to": "0eab49beeca051f6",
+    "layer": 2,
+    "widthMil": 6,
+    "endpointContact": [
+      [
+        {
+          "reference": "U19.1",
+          "kind": "pad",
+          "positiveOverlapMil2": 43.3885
+        },
+        {
+          "reference": "0eab49beeca051f6",
+          "kind": "via",
+          "positiveOverlapMil2": 42.21929
+        }
+      ],
+      [
+        {
+          "reference": "U19.1",
+          "kind": "pad",
+          "positiveOverlapMil2": 43.3885
+        },
+        {
+          "reference": "0eab49beeca051f6",
+          "kind": "via",
+          "positiveOverlapMil2": 42.21929
+        }
+      ]
+    ]
+  },
+  {
+    "board": "PCB1",
+    "net": "1V8_SYS",
+    "from": "U19.2",
+    "to": "3de94e2db45793a8",
+    "layer": 2,
+    "widthMil": 6,
+    "endpointContact": [
+      [
+        {
+          "reference": "U19.2",
+          "kind": "pad",
+          "positiveOverlapMil2": 77.02364
+        },
+        {
+          "reference": "3de94e2db45793a8",
+          "kind": "via",
+          "positiveOverlapMil2": 48.56929
+        }
+      ],
+      [
+        {
+          "reference": "U19.2",
+          "kind": "pad",
+          "positiveOverlapMil2": 77.02364
+        },
+        {
+          "reference": "3de94e2db45793a8",
+          "kind": "via",
+          "positiveOverlapMil2": 48.56929
+        }
+      ]
+    ]
+  },
+  {
+    "board": "PCB1",
+    "net": "SYS_I2C_SCL_1V8",
+    "from": "R15.1",
+    "to": "U19.3",
+    "layer": 2,
+    "widthMil": 4,
+    "endpointContact": [
+      [
+        {
+          "reference": "R15.1",
+          "kind": "pad",
+          "positiveOverlapMil2": 42.34431
+        },
+        {
+          "reference": "U19.3",
+          "kind": "pad",
+          "positiveOverlapMil2": 48.20806
+        }
+      ],
+      [
+        {
+          "reference": "R15.1",
+          "kind": "pad",
+          "positiveOverlapMil2": 42.34431
+        },
+        {
+          "reference": "U19.3",
+          "kind": "pad",
+          "positiveOverlapMil2": 48.20806
+        }
+      ]
+    ],
+    "baselinePathPresent": false,
+    "afterAndIndependentPath": [
+      {
+        "referenceOrPrimitive": "R15.1",
+        "positiveContactAreaMil2": null
+      },
+      {
+        "referenceOrPrimitive": "0438ced0c85623b6",
+        "positiveContactAreaMil2": 42.344312
+      },
+      {
+        "referenceOrPrimitive": "11c4d5dd18d9c72d",
+        "positiveContactAreaMil2": 12.650466
+      },
+      {
+        "referenceOrPrimitive": "U19.3",
+        "positiveContactAreaMil2": 48.208064
+      }
+    ]
+  },
+  {
+    "board": "PCB1",
+    "net": "SYS_I2C_SDA_1V8",
+    "from": "R17.1",
+    "to": "U19.4",
+    "layer": 2,
+    "widthMil": 4,
+    "endpointContact": [
+      [
+        {
+          "reference": "R17.1",
+          "kind": "pad",
+          "positiveOverlapMil2": 40.2722
+        },
+        {
+          "reference": "U19.4",
+          "kind": "pad",
+          "positiveOverlapMil2": 20.09166
+        }
+      ],
+      [
+        {
+          "reference": "R17.1",
+          "kind": "pad",
+          "positiveOverlapMil2": 40.2722
+        },
+        {
+          "reference": "U19.4",
+          "kind": "pad",
+          "positiveOverlapMil2": 20.09166
+        }
+      ]
+    ],
+    "baselinePathPresent": false,
+    "afterAndIndependentPath": [
+      {
+        "referenceOrPrimitive": "R17.1",
+        "positiveContactAreaMil2": null
+      },
+      {
+        "referenceOrPrimitive": "956a7a609bd7cd20",
+        "positiveContactAreaMil2": 20.514864
+      },
+      {
+        "referenceOrPrimitive": "U19.4",
+        "positiveContactAreaMil2": 20.091664
+      }
+    ]
+  },
+  {
+    "board": "PCB1",
+    "net": "1V8_SYS",
+    "from": "R17.2",
+    "to": "8dc33b054dbcfe8e",
+    "layer": 2,
+    "widthMil": 6,
+    "endpointContact": [
+      [
+        {
+          "reference": "R17.2",
+          "kind": "pad",
+          "positiveOverlapMil2": 56.87624
+        },
+        {
+          "reference": "8dc33b054dbcfe8e",
+          "kind": "inherited track",
+          "positiveOverlapMil2": 27.98204
+        }
+      ],
+      [
+        {
+          "reference": "R17.2",
+          "kind": "pad",
+          "positiveOverlapMil2": 56.87624
+        },
+        {
+          "reference": "8dc33b054dbcfe8e",
+          "kind": "inherited track",
+          "positiveOverlapMil2": 27.98204
+        }
+      ]
+    ]
+  },
+  {
+    "board": "PCB2",
+    "net": "VSYS",
+    "from": "R5.2",
+    "to": "R8.1",
+    "layer": 1,
+    "widthMil": 4,
+    "endpointContact": [
+      [
+        {
+          "reference": "R5.2",
+          "kind": "pad",
+          "positiveOverlapMil2": 36.58395
+        },
+        {
+          "reference": "R8.1",
+          "kind": "pad",
+          "positiveOverlapMil2": 42.95391
+        }
+      ],
+      [
+        {
+          "reference": "R5.2",
+          "kind": "pad",
+          "positiveOverlapMil2": 36.58395
+        },
+        {
+          "reference": "R8.1",
+          "kind": "pad",
+          "positiveOverlapMil2": 42.95391
+        }
+      ]
+    ],
+    "baselinePathPresent": false,
+    "afterAndIndependentPath": [
+      {
+        "referenceOrPrimitive": "R5.2",
+        "positiveContactAreaMil2": null
+      },
+      {
+        "referenceOrPrimitive": "f107eac6f32289c0",
+        "positiveContactAreaMil2": 29.882064
+      },
+      {
+        "referenceOrPrimitive": "59709a5d9c7c9c3c",
+        "positiveContactAreaMil2": 12.650466
+      },
+      {
+        "referenceOrPrimitive": "84a0838759cad068",
+        "positiveContactAreaMil2": 12.650466
+      },
+      {
+        "referenceOrPrimitive": "3edf6da714500345",
+        "positiveContactAreaMil2": 12.650466
+      },
+      {
+        "referenceOrPrimitive": "43faa70df6226c8b",
+        "positiveContactAreaMil2": 12.650466
+      },
+      {
+        "referenceOrPrimitive": "a462b147984f3f0a",
+        "positiveContactAreaMil2": 12.650466
+      },
+      {
+        "referenceOrPrimitive": "R8.1",
+        "positiveContactAreaMil2": 36.640246
+      }
+    ]
+  },
+  {
+    "board": "PCB2",
+    "net": "VSYS",
+    "from": "U4.3",
+    "to": "U4.4",
+    "layer": 1,
+    "widthMil": 6,
+    "endpointContact": [
+      [
+        {
+          "reference": "U4.3",
+          "kind": "pad",
+          "positiveOverlapMil2": 58.5885
+        },
+        {
+          "reference": "U4.4",
+          "kind": "pad",
+          "positiveOverlapMil2": 58.84895
+        }
+      ],
+      [
+        {
+          "reference": "U4.3",
+          "kind": "pad",
+          "positiveOverlapMil2": 58.5885
+        },
+        {
+          "reference": "U4.4",
+          "kind": "pad",
+          "positiveOverlapMil2": 58.84895
+        }
+      ]
+    ],
+    "baselinePathPresent": false,
+    "afterAndIndependentPath": [
+      {
+        "referenceOrPrimitive": "U4.3",
+        "positiveContactAreaMil2": null
+      },
+      {
+        "referenceOrPrimitive": "6971d583ba9a7e5c",
+        "positiveContactAreaMil2": 14.563468
+      },
+      {
+        "referenceOrPrimitive": "U4.4",
+        "positiveContactAreaMil2": 14.823397
+      }
+    ]
+  },
+  {
+    "board": "PCB3",
+    "net": "AMP_SD_MODE_1V8",
+    "from": "J1.P15",
+    "to": "U1.4",
+    "layer": 2,
+    "widthMil": 4,
+    "endpointContact": [
+      [
+        {
+          "reference": "J1.P15",
+          "kind": "pad",
+          "positiveOverlapMil2": 26.3639
+        },
+        {
+          "reference": "U1.4",
+          "kind": "pad",
+          "positiveOverlapMil2": 37.68206
+        }
+      ],
+      [
+        {
+          "reference": "J1.P15",
+          "kind": "pad",
+          "positiveOverlapMil2": 26.3639
+        },
+        {
+          "reference": "U1.4",
+          "kind": "pad",
+          "positiveOverlapMil2": 37.68206
+        }
+      ]
+    ],
+    "baselinePathPresent": false,
+    "afterAndIndependentPath": [
+      {
+        "referenceOrPrimitive": "J1.P15",
+        "positiveContactAreaMil2": null
+      },
+      {
+        "referenceOrPrimitive": "6d8e046264ace9b7",
+        "positiveContactAreaMil2": 26.363896
+      },
+      {
+        "referenceOrPrimitive": "5e8d63bec46b501a",
+        "positiveContactAreaMil2": 12.650466
+      },
+      {
+        "referenceOrPrimitive": "c36b3ef5dd0bb47b",
+        "positiveContactAreaMil2": 12.650466
+      },
+      {
+        "referenceOrPrimitive": "45b1136dfbadbc62",
+        "positiveContactAreaMil2": 12.650466
+      },
+      {
+        "referenceOrPrimitive": "20441e7936c78f52",
+        "positiveContactAreaMil2": 12.650466
+      },
+      {
+        "referenceOrPrimitive": "cc9b96855bf27eb1",
+        "positiveContactAreaMil2": 12.650466
+      },
+      {
+        "referenceOrPrimitive": "ef2818168514cd90",
+        "positiveContactAreaMil2": 12.650466
+      },
+      {
+        "referenceOrPrimitive": "U1.4",
+        "positiveContactAreaMil2": 2.29406
+      }
+    ]
+  }
+]

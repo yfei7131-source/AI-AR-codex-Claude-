@@ -1,0 +1,66 @@
+{
+  "policy": "first seed in fixed ordered list passing final routed clocks AND independent icetime; no clock/PCF/RTL relaxation",
+  "ordered_seed_candidates": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "required_mhz": 48.0,
+  "selected_seed": 0,
+  "attempts": [
+    {
+      "seed": 0,
+      "pnr_command": [
+        "nextpnr-ice40",
+        "--up5k",
+        "--package",
+        "uwg30",
+        "--pcf",
+        "ice40up5k_uwg30_rev_c.pcf",
+        "--json",
+        "evt1_ar_display_fpga_bridge_rev_c.json",
+        "--asc",
+        "route_seed_0.asc",
+        "--freq",
+        "48.0",
+        "--seed",
+        "0",
+        "-l",
+        "route_seed_0.log"
+      ],
+      "pnr_exit": 0,
+      "final_routed_clocks_mhz": {
+        "host_cs_n$SB_IO_IN_$glb_clk": 232.23,
+        "host_sck$SB_IO_IN_$glb_clk": 54.79,
+        "clk_48m$SB_IO_IN_$glb_clk": 52.21
+      },
+      "status": "PASS_ROUTED_AND_STA",
+      "icetime_command": [
+        "icetime",
+        "-d",
+        "up5k",
+        "-P",
+        "uwg30",
+        "-p",
+        "ice40up5k_uwg30_rev_c.pcf",
+        "-c",
+        "48.0",
+        "-t",
+        "-m",
+        "-r",
+        "route_seed_0_sta.rpt",
+        "route_seed_0.asc"
+      ],
+      "icetime_exit": 0,
+      "icetime_mhz": [
+        49.65
+      ]
+    }
+  ],
+  "physical_board_status": "BLOCKED_NOT_FOR_FAB"
+}

@@ -1,0 +1,46 @@
+# Rev D1.1 FPGA user-mode safety review — NOT FOR FAB
+
+Baseline: PR #21, `ff7ccf93fb6ebce289e6a262adcea4e77c8d4928`.
+Gemini comparison: archived `94b50cf66c149f0b5a613edd8e15f18cd2a0eb15`, actual delta `94b50cf_vs_bb87623.patch`. No Gemini code was cherry-picked.
+
+## Confirmed failure paths
+
+1. Rev D1 writes `opt_pwr_off_h` in the host-SCK domain, but D3 consumed it only through `pwr_off_sync` and `d3_low_q` clocked by `clk_48m`. If that clock stopped while D3 was HIGH, a correctly received `A4 OPT_PWR_REQ=0` could never pull D3 LOW. Its DC RC input remained HIGH indefinitely. This is a source-derived predicted failure. The native baseline-witness run must reproduce it before closure; it is not a silicon measurement.
+2. An output-only combinational OFF term is insufficient on its own: OFF followed by ON while `clk_48m` remains stopped could release D3 before the clock sampled the OFF request. The repaired shutdown synchronizer must asynchronously assert and release only through real clock edges.
+3. Rev D1 accepted SCAN_EN=1 with OPT_PWR_REQ=0. Its serializer and RAW outputs could remain active after power-off. Rev D1.1 explicitly idles the optical outputs while inhibited and clears the scan request. This is a digital idle guarantee; the missing JBD rail/pin constraints still prevent a physical back-powering or fault-tolerance claim.
+4. Restart must not expose frozen serializer values while the power and scan synchronizers settle. The serializer's active predicate now also checks synchronized SCAN_EN and the power inhibit.
+5. A correctly decoded OFF→ON sequence while the main clock runs previously generated a D3 rising edge even if the genuine VSYNC flag was stuck. Such command-generated edges could keep the external activity watchdog and qualifier alive. Rev D1.1 adds `hb_rearm_q`, asserted asynchronously on OFF. ON alone cannot clear it: a running-clock observation of an internal VSYNC pulse is required, and D3 remains LOW through the pulse's end. A stuck-LOW pulse flag cannot re-arm; stuck-HIGH holds D3 LOW. The output bus is also inhibited while awaiting heartbeat requalification, and the line-enable state stays cleared so requalification does not unmask a partial serializer line.
+
+Gemini's five-state peak-hold assumes positive VSYNC pulses and, for its missing-VSYNC calculation, a LOW final signal. Rev D1's actual D3 user waveform is HIGH with a 48-clock LOW pulse every 800,000 clocks. An arbitrary clock failure may freeze either phase. A static HIGH cannot be distinguished from healthy average HIGH by Rev D1's RC. Directly copying the positive-pulse peak-hold network neither matches Rev D1's polarity nor proves rejection of stuck-HIGH. The separate Rev D1.1 external liveness/supply supervisor is required.
+
+## Implemented delta
+
+- Existing top-level ports, PCF assignment, default OPT_PWR_REQ=1, command values, framebuffer, FIFO, anti-tearing and RAW payload format remain in place.
+- `pwr_off_sync` is a two-stage asynchronous-assert/synchronous-release shutdown chain. Both stages assert when the host OFF bit asserts; deassertion advances through running `clk_48m` edges.
+- D3 LOW includes both the host-domain OFF bit and the synchronized shutdown bit. The existing heartbeat/d3 register remains for frame timing and release.
+- Optical outputs are clamped to SCK=0, CS_N=1, left/right DATA=0 while inhibited. Shutdown may truncate a transaction. Such truncation is a deliberate fault abort and is not a valid panel command.
+- SCAN_EN and RAW_ARM are rejected when the same control word requests power OFF. A new power-ON command does not restore a previously aborted scan automatically.
+- RAW is still opaque. An A4-shaped sequence inside an armed RAW transaction remains vendor data; it is not a power-off escape command. Finish/abort RAW via the documented transaction or independent external reset path before issuing a control write.
+- The PCF and memory primitive simulation model are preserved byte-for-byte. The full-frame TB retains its exact prefix before R2 and suffix from R3 onward, including every pixel/RAW/FIFO/anti-tearing assertion. Only R2's obsolete 200-clock ON-release assumption is replaced with a bounded genuine-heartbeat-completion wait. The original TB remains byte-identical in the immutable D1 package. The new safety TB and runner are additional checks.
+
+## Native test contract
+
+Run `make sim-safety`, or `python3 run_rev_d1_1_safety.py` in `03_FPGA_RTL`.
+
+The runner compiles **two separate sources**. It first compiles the immutable Rev D1 RTL with `BASELINE_EXPECT_BUG`; that run must explicitly witness the known stopped-clock OFF failure. A successful witness proves a defect exists and does not certify baseline safety. It then compiles Rev D1.1 and requires the repaired assertions to pass.
+
+The repaired TB covers eleven cases: SCAN_EN=0 heartbeat timing; all four combinations of stopped clock level and D3 HIGH/LOW phase including OFF→ON without a clock; stuck-LOW and stuck-HIGH internal VSYNC with twenty repeated short OFF→ON writes and recovery only after the forced fault is removed and a real pulse completes; rejection of SCAN/RAW while OFF; active scan abort with no phantom restart; retained opaque A4 RAW payload; injected true internal OFF during RAW. The last is an internal control fault injection, not an external command decoded inside RAW.
+
+Missing Icarus/vvp returns exit2 and prints BLOCKED_NATIVE_ICARUS. It never prints a simulated PASS. Actual runner commands, source SHA256 and stdout are retained in native CI artifacts. Full Icarus regression, Yosys synthesis, nextpnr and icetime must still pass on the final commit; this document is not their result.
+
+## Explicit remaining boundaries
+
+Hard CDONE during configuration, hard CRESET_B, CRAM loading, brownout and unpowered I/O are outside this user-mode RTL module. No `$force` of the RTL POR counter is presented as a device-configuration test. Those cases require the separate board/supervisor model and physical qualification.
+
+Neither user RTL nor a same-clock counter can prove shutdown of its own stopped clock. Independent watchdog timing, supply-supervisor thresholds, output leakage, diode/switch transients, rail ordering and JBD discharge/settling requirements remain distinct engineering gates. Deassertion recovery/removal, FPC ground shift and real shutdown waveforms also require device/board verification; a passing fabric STA does not cover every asynchronous or analog path.
+
+## Native routing regression and closure policy
+
+Run43951167658 passed the updated full regression and all11 safety cases, but its default route failed host_sck at46.81MHz. The critical path was the inherited FIFO Gray-pointer comparison/write-enable path:6.60ns logic plus14.76ns routing,not the shutdown path. The48MHz requirement remains unchanged.
+
+`route_rev_d1_1.py` searches fixed seeds0..7 in order and accepts only the first candidate with successful nextpnr exit,all final routed clock frequencies≥48MHz,and independently successful icetime≥48MHz. Each failed candidate log and timing report is retained; `route_search_results.json` records the ordered attempts and selectedseed. CI reads the last report perclock (final routing),rather than an earlier placement estimate. No clock,PCF or RTL function is relaxed. A failed bounded search remains FAIL.

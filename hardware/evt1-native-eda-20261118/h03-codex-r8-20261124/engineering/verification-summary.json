@@ -1,0 +1,362 @@
+{
+  "status": "NOT FOR FAB",
+  "baselineCommit": "ac38a71947f5d7bdd4e5d193584fbb7c6c05363c",
+  "baselineSha256": "85764dfc4ad8e9a408a67a78575c50b5cb091ea704c6bd3783f5d12906c6b2e6",
+  "nativeSha256": "36f7bdd26d76bb17ef5c10c0037218de5eec64d3c85383e21b26b56ec59d59bc",
+  "reexportSha256": "ea6e2310da9c38837778e37b7c0ee955a0c743656d64c920c739610af0f7ad9d",
+  "nativeDocumentsCompared": 1451,
+  "boards": {
+    "PCB1": {
+      "before": {
+        "Connection Error": 340,
+        "Netlist Error": 1
+      },
+      "after": {
+        "Connection Error": 339,
+        "Netlist Error": 1
+      },
+      "reimport": {
+        "Connection Error": 339,
+        "Netlist Error": 1
+      },
+      "ercFatal": [
+        4,
+        4,
+        4
+      ],
+      "netlistSha256": "7586a150a92b4d5711b1a03498a15952b53937d3178c3750e5b4efa9945e2725",
+      "components": 118,
+      "addedArchiveTracks": 1,
+      "removedArchiveTracks": 0,
+      "removedDRCSignatures": [
+        [
+          "Connection Error",
+          "SMD Pad",
+          "GND",
+          [
+            "45582490ff996334e38"
+          ],
+          1
+        ]
+      ],
+      "addedDRCSignatures": []
+    },
+    "PCB2": {
+      "before": {
+        "Connection Error": 236
+      },
+      "after": {
+        "Connection Error": 232
+      },
+      "reimport": {
+        "Connection Error": 232
+      },
+      "ercFatal": [
+        0,
+        0,
+        0
+      ],
+      "netlistSha256": "1384cfc519ded82551192228cb2b776273a1ccc3df59bb2af1423c2240283926",
+      "components": 86,
+      "addedArchiveTracks": 9,
+      "removedArchiveTracks": 1,
+      "removedDRCSignatures": [
+        [
+          "Connection Error",
+          "SMD Pad",
+          "1V2_FPGA_CORE",
+          [
+            "1d6034c9636c4e6ae13"
+          ],
+          1
+        ],
+        [
+          "Connection Error",
+          "SMD Pad",
+          "1V2_FPGA_CORE",
+          [
+            "b8aa8c34d071b943re5p109"
+          ],
+          1
+        ],
+        [
+          "Connection Error",
+          "Via",
+          "GND",
+          [
+            "584b5375092b5e50"
+          ],
+          1
+        ],
+        [
+          "Connection Error",
+          "SMD Pad",
+          "GND",
+          [
+            "1d6034c9636c4e6ae12"
+          ],
+          1
+        ]
+      ],
+      "addedDRCSignatures": []
+    },
+    "PCB3": {
+      "before": {
+        "Connection Error": 132
+      },
+      "after": {
+        "Connection Error": 130
+      },
+      "reimport": {
+        "Connection Error": 130
+      },
+      "ercFatal": [
+        2,
+        2,
+        2
+      ],
+      "netlistSha256": "545399c2bd10c7dfe6c73d5631798558abe42471756f6ce658c5946a7ef6ded0",
+      "components": 53,
+      "addedArchiveTracks": 8,
+      "removedArchiveTracks": 2,
+      "removedDRCSignatures": [
+        [
+          "Connection Error",
+          "Via",
+          "GND",
+          [
+            "92d35ac5e73b99a1"
+          ],
+          1
+        ],
+        [
+          "Connection Error",
+          "SMD Pad",
+          "GND",
+          [
+            "c32488012288d90de14"
+          ],
+          1
+        ]
+      ],
+      "addedDRCSignatures": []
+    }
+  },
+  "surfacePaths": {
+    "PCB1 U18.11 -> U18.12": {
+      "net": "GND",
+      "layer": 2,
+      "nativeNetPath": true,
+      "scope": "Same-layer trace capsules and live pad shapes, excluding vias and planes",
+      "before": [],
+      "after": [
+        {
+          "referenceOrPrimitive": "U18.11",
+          "positiveContactAreaMil2": null
+        },
+        {
+          "referenceOrPrimitive": "72bd00645ffb87c6",
+          "positiveContactAreaMil2": 22.082064
+        },
+        {
+          "referenceOrPrimitive": "U18.12",
+          "positiveContactAreaMil2": 22.082064
+        }
+      ],
+      "reimport": [
+        {
+          "referenceOrPrimitive": "U18.11",
+          "positiveContactAreaMil2": null
+        },
+        {
+          "referenceOrPrimitive": "72bd00645ffb87c6",
+          "positiveContactAreaMil2": 22.082064
+        },
+        {
+          "referenceOrPrimitive": "U18.12",
+          "positiveContactAreaMil2": 22.082064
+        }
+      ]
+    },
+    "PCB2 U4.2 -> U4.5": {
+      "net": "GND",
+      "layer": 1,
+      "nativeNetPath": false,
+      "scope": "Same-layer trace capsules and live pad shapes, excluding vias and planes",
+      "before": [],
+      "after": [
+        {
+          "referenceOrPrimitive": "U4.2",
+          "positiveContactAreaMil2": null
+        },
+        {
+          "referenceOrPrimitive": "ff5a6af7091963c9",
+          "positiveContactAreaMil2": 19.972092
+        },
+        {
+          "referenceOrPrimitive": "U4.5",
+          "positiveContactAreaMil2": 5.334932
+        }
+      ],
+      "reimport": [
+        {
+          "referenceOrPrimitive": "U4.2",
+          "positiveContactAreaMil2": null
+        },
+        {
+          "referenceOrPrimitive": "ff5a6af7091963c9",
+          "positiveContactAreaMil2": 19.972092
+        },
+        {
+          "referenceOrPrimitive": "U4.5",
+          "positiveContactAreaMil2": 5.334932
+        }
+      ]
+    },
+    "PCB2 U4.1 -> C13.1": {
+      "net": "1V2_FPGA_CORE",
+      "layer": 1,
+      "nativeNetPath": false,
+      "scope": "Same-layer trace capsules and live pad shapes, excluding vias and planes",
+      "before": [],
+      "after": [
+        {
+          "referenceOrPrimitive": "U4.1",
+          "positiveContactAreaMil2": null
+        },
+        {
+          "referenceOrPrimitive": "d29a8f9a7b763d4c",
+          "positiveContactAreaMil2": 19.840864
+        },
+        {
+          "referenceOrPrimitive": "060eae02cc19cd77",
+          "positiveContactAreaMil2": 12.650466
+        },
+        {
+          "referenceOrPrimitive": "10f9c0b06b716d67",
+          "positiveContactAreaMil2": 10.776425
+        },
+        {
+          "referenceOrPrimitive": "bf04cc1a0c27e181",
+          "positiveContactAreaMil2": 0.941606
+        },
+        {
+          "referenceOrPrimitive": "C13.1",
+          "positiveContactAreaMil2": 2.979488
+        }
+      ],
+      "reimport": [
+        {
+          "referenceOrPrimitive": "U4.1",
+          "positiveContactAreaMil2": null
+        },
+        {
+          "referenceOrPrimitive": "d29a8f9a7b763d4c",
+          "positiveContactAreaMil2": 19.840864
+        },
+        {
+          "referenceOrPrimitive": "060eae02cc19cd77",
+          "positiveContactAreaMil2": 12.650466
+        },
+        {
+          "referenceOrPrimitive": "10f9c0b06b716d67",
+          "positiveContactAreaMil2": 10.776425
+        },
+        {
+          "referenceOrPrimitive": "bf04cc1a0c27e181",
+          "positiveContactAreaMil2": 0.941606
+        },
+        {
+          "referenceOrPrimitive": "C13.1",
+          "positiveContactAreaMil2": 2.979488
+        }
+      ]
+    },
+    "PCB3 U1.3 -> U1.2": {
+      "net": "GND",
+      "layer": 2,
+      "nativeNetPath": true,
+      "scope": "Same-layer trace capsules and live pad shapes, excluding vias and planes",
+      "before": [],
+      "after": [
+        {
+          "referenceOrPrimitive": "U1.3",
+          "positiveContactAreaMil2": null
+        },
+        {
+          "referenceOrPrimitive": "75290d2a8e4f1b58",
+          "positiveContactAreaMil2": 31.798515
+        },
+        {
+          "referenceOrPrimitive": "U1.2",
+          "positiveContactAreaMil2": 31.798515
+        }
+      ],
+      "reimport": [
+        {
+          "referenceOrPrimitive": "U1.3",
+          "positiveContactAreaMil2": null
+        },
+        {
+          "referenceOrPrimitive": "75290d2a8e4f1b58",
+          "positiveContactAreaMil2": 31.798515
+        },
+        {
+          "referenceOrPrimitive": "U1.2",
+          "positiveContactAreaMil2": 31.798515
+        }
+      ]
+    },
+    "PCB3 C8.2 -> C11.2": {
+      "net": "GND",
+      "layer": 2,
+      "nativeNetPath": true,
+      "scope": "Same-layer trace capsules and live pad shapes, excluding vias and planes",
+      "before": [],
+      "after": [
+        {
+          "referenceOrPrimitive": "C8.2",
+          "positiveContactAreaMil2": null
+        },
+        {
+          "referenceOrPrimitive": "b2eb4819d30e88f8",
+          "positiveContactAreaMil2": 44.434644
+        },
+        {
+          "referenceOrPrimitive": "833517707f78c4fe",
+          "positiveContactAreaMil2": 28.269288
+        },
+        {
+          "referenceOrPrimitive": "5f4736ae0f67637a",
+          "positiveContactAreaMil2": 28.269288
+        },
+        {
+          "referenceOrPrimitive": "C11.2",
+          "positiveContactAreaMil2": 48.334644
+        }
+      ],
+      "reimport": [
+        {
+          "referenceOrPrimitive": "C8.2",
+          "positiveContactAreaMil2": null
+        },
+        {
+          "referenceOrPrimitive": "b2eb4819d30e88f8",
+          "positiveContactAreaMil2": 44.434644
+        },
+        {
+          "referenceOrPrimitive": "833517707f78c4fe",
+          "positiveContactAreaMil2": 28.269288
+        },
+        {
+          "referenceOrPrimitive": "5f4736ae0f67637a",
+          "positiveContactAreaMil2": 28.269288
+        },
+        {
+          "referenceOrPrimitive": "C11.2",
+          "positiveContactAreaMil2": 48.334644
+        }
+      ]
+    }
+  }
+}

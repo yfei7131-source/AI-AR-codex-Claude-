@@ -1,0 +1,133 @@
+{
+  "measurementPathKind": "exact-centerline",
+  "connected": true,
+  "net": "GND",
+  "from": "U11.B2",
+  "to": "U11.C2",
+  "waypointOrder": [
+    "U11.B2",
+    "U11.C2"
+  ],
+  "requestedLayer": 1,
+  "layers": [
+    1
+  ],
+  "layerSequence": [
+    1
+  ],
+  "widthsMil": [
+    4
+  ],
+  "minWidthMil": 4,
+  "maxWidthMil": 4,
+  "viaCount": 0,
+  "primitiveCount": 1,
+  "lengthMil": 13.8,
+  "turnCount": 0,
+  "path": [
+    {
+      "kind": "pad",
+      "primitiveId": "fb9a90e154948529nrfp121",
+      "ref": "U11.B2",
+      "layer": 1,
+      "at": {
+        "x": 47.2,
+        "y": 300.2
+      }
+    },
+    {
+      "kind": "track",
+      "primitiveId": "2a4842481b774ba5",
+      "layer": 1,
+      "widthMil": 4,
+      "start": {
+        "x": 47.2,
+        "y": 300.2
+      },
+      "end": {
+        "x": 61,
+        "y": 300.2
+      }
+    },
+    {
+      "kind": "pad",
+      "primitiveId": "fb9a90e154948529nrfp130",
+      "ref": "U11.C2",
+      "layer": 1,
+      "at": {
+        "x": 61,
+        "y": 300.2
+      }
+    }
+  ],
+  "legs": [
+    {
+      "from": "U11.B2",
+      "to": "U11.C2",
+      "connected": true,
+      "layers": [
+        1
+      ],
+      "widthsMil": [
+        4
+      ],
+      "minWidthMil": 4,
+      "maxWidthMil": 4,
+      "viaCount": 0,
+      "primitiveCount": 1,
+      "lengthMil": 13.8,
+      "turnCount": 0,
+      "path": [
+        {
+          "kind": "pad",
+          "primitiveId": "fb9a90e154948529nrfp121",
+          "ref": "U11.B2",
+          "layer": 1,
+          "at": {
+            "x": 47.2,
+            "y": 300.2
+          }
+        },
+        {
+          "kind": "track",
+          "primitiveId": "2a4842481b774ba5",
+          "layer": 1,
+          "widthMil": 4,
+          "start": {
+            "x": 47.2,
+            "y": 300.2
+          },
+          "end": {
+            "x": 61,
+            "y": 300.2
+          }
+        },
+        {
+          "kind": "pad",
+          "primitiveId": "fb9a90e154948529nrfp130",
+          "ref": "U11.C2",
+          "layer": 1,
+          "at": {
+            "x": 61,
+            "y": 300.2
+          }
+        }
+      ]
+    }
+  ],
+  "scope": "placed pad copper + listed tracks/arcs constrained to layer 1; physical vias, copper pours, fills, and PLANE connectivity excluded",
+  "excludedCopper": [
+    "pours",
+    "filled regions",
+    "PLANE layers",
+    "physical vias (--layer constraint)",
+    "tracks/arcs outside layer 1"
+  ],
+  "limitations": [
+    "does not infer connectivity through copper pours, filled regions, or PLANE layers",
+    "arc primitives are measured on their reconstructed centerlines; ambiguous or unsupported interior contacts make path measurement unknown",
+    "rotated RECT/rounded RECT and OVAL contacts use shape geometry; ELLIPSE, NGON, and pad-to-pad contacts use conservative inscribed geometry that may miss edge landings but cannot invent them",
+    "--layer 1 builds a layer-restricted graph; physical vias and all other-layer tracks/arcs are excluded",
+    "4 unsupported same-net pad(s) were excluded from the proof graph: MK3.5 (POLYGON pad geometry is not supported by pcb net-path); MK3.5 (POLYGON pad geometry is not supported by pcb net-path); MK3.5 (POLYGON pad geometry is not supported by pcb net-path); MK3.5 (POLYGON pad geometry is not supported by pcb net-path)"
+  ]
+}

@@ -1,0 +1,5119 @@
+{
+  "projectUuid": "cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+  "scope": "Symbol identity/pins only, no footprint or land-pattern PASS implied",
+  "parts": [
+    {
+      "mpn": "2450AT18B100E",
+      "status": "FAIL",
+      "scope": "Exact library device identity and complete physical symbol-pin identifiers only; footprint not checked.",
+      "device": {
+        "uuid": "b95defd8f05d4097bad186a8867fbdc8",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "2450AT18B100E",
+        "manufacturer": "JOHANSON(约翰逊)",
+        "manufacturerId": "2450AT18B100E",
+        "lcsc": "C2917717",
+        "footprintName": "ANT-SMD_L3.2-W1.6"
+      },
+      "association": {
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "edc2cb78bae34f759dfd813e2b0eb520"
+        },
+        "footprintUuid": "edc2cb78bae34f759dfd813e2b0eb520",
+        "images": [
+          "https://alimg.szlcsc.com/upload/public/product/middle/20260522/0A179574BD521F51F4EBDFB8047D34BD.jpg"
+        ],
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "type": 2,
+          "uuid": "6d324883953946f48c00078744e29804"
+        },
+        "symbolType": 2,
+        "symbolUuid": "6d324883953946f48c00078744e29804"
+      },
+      "lcsc": "C2917717",
+      "symbolPins": {
+        "1": {
+          "name": "1",
+          "type": "Undefined",
+          "x": -20,
+          "y": 0,
+          "rotation": 0,
+          "length": 3
+        },
+        "2": {
+          "name": "2",
+          "type": "Undefined",
+          "x": 20,
+          "y": 0,
+          "rotation": 180,
+          "length": 3
+        }
+      },
+      "expectedPins": {
+        "FEED": "ANT2"
+      },
+      "missingPins": [
+        "FEED"
+      ],
+      "unexpectedPins": [
+        "1",
+        "2"
+      ],
+      "pinNameDifferences": [],
+      "sourceSha256": "1ee0beff4490d577456edfa05af7498bfcf00ab4a6620a5423ad72e790b3d671",
+      "sourceFile": "5ec12c8ec3576aec.elibz2"
+    },
+    {
+      "mpn": "2N7002",
+      "status": "UNVERIFIED",
+      "reason": "Multiple exact candidates and no unique manufacturer match: TBD",
+      "candidates": [
+        {
+          "uuid": "4bf6fb56f0a44a96860771f6cfb8e6d4",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "2N7002",
+          "manufacturer": "TWGMC(迪嘉)",
+          "manufacturerId": "2N7002",
+          "lcsc": "C727149",
+          "footprintName": "SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR"
+        },
+        {
+          "uuid": "b31a418101034a4f9443c5dfb64a0fb9",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "2N7002_C9900124607",
+          "manufacturer": "",
+          "manufacturerId": "2N7002",
+          "lcsc": "C9900124607",
+          "footprintName": "SOT-23-3_L2.9-W1.3-P1.90-LS2.8-BR"
+        }
+      ]
+    },
+    {
+      "mpn": "74LVC2G07GS",
+      "status": "BLOCKED",
+      "reason": "No exact library identity."
+    },
+    {
+      "mpn": "APHD1608LZGCK (or WP710A10LID)",
+      "status": "BLOCKED",
+      "reason": "No exact library identity."
+    },
+    {
+      "mpn": "ASADV-48.000MHZ-LC-T",
+      "status": "PASS",
+      "scope": "Exact library device identity and complete physical symbol-pin identifiers only; footprint not checked.",
+      "device": {
+        "uuid": "906435bfbc2d4adc8aadaeb659d1eccc",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "ASADV-48.000MHZ-LC-T",
+        "manufacturer": "ABRACON",
+        "manufacturerId": "ASADV-48.000MHZ-LC-T",
+        "lcsc": "C1857769",
+        "footprintName": "OSC-SMD_4P-L2.0-W1.6-BL_ABRACON_ASADV"
+      },
+      "association": {
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "3ae0581a4e5347f4b9863f4c397a2876"
+        },
+        "footprintUuid": "3ae0581a4e5347f4b9863f4c397a2876",
+        "images": [],
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "type": 2,
+          "uuid": "7f4a506ac9f74cfb87c518bce42f5be6"
+        },
+        "symbolType": 2,
+        "symbolUuid": "7f4a506ac9f74cfb87c518bce42f5be6"
+      },
+      "lcsc": "C1857769",
+      "symbolPins": {
+        "1": {
+          "name": "Tri-State",
+          "type": "Undefined",
+          "x": -70,
+          "y": -5,
+          "rotation": 0,
+          "length": 10
+        },
+        "2": {
+          "name": "GND",
+          "type": "Undefined",
+          "x": -70,
+          "y": 5,
+          "rotation": 0,
+          "length": 10
+        },
+        "3": {
+          "name": "Output",
+          "type": "Undefined",
+          "x": 70,
+          "y": 5,
+          "rotation": 180,
+          "length": 10
+        },
+        "4": {
+          "name": "Vdd",
+          "type": "Undefined",
+          "x": 70,
+          "y": -5,
+          "rotation": 180,
+          "length": 10
+        }
+      },
+      "expectedPins": {
+        "1": "Y1",
+        "2": "Y1",
+        "3": "Y1",
+        "4": "Y1"
+      },
+      "missingPins": [],
+      "unexpectedPins": [],
+      "pinNameDifferences": [
+        {
+          "pin": "3",
+          "source": "OUT",
+          "library": "Output"
+        }
+      ],
+      "sourceSha256": "b23d6e03cc5dac4299bc2156bc6e24e8cb92b4d49a0b803ef3ec5e2f0da5f286",
+      "sourceFile": "21d8a78ca4cd015c.elibz2"
+    },
+    {
+      "mpn": "BM28B0.6-10DS/2-0.35V(53)",
+      "status": "FAIL",
+      "scope": "Exact library device identity and complete physical symbol-pin identifiers only; footprint not checked.",
+      "device": {
+        "uuid": "56a1e02a451645f6886ada92788bd68a",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "BM28B0.6-10DS/2-0.35V(53)",
+        "manufacturer": "HRS(广濑)",
+        "manufacturerId": "BM28B0.6-10DS/2-0.35V(53)",
+        "lcsc": "C3037925",
+        "footprintName": "CONN-SMD_BM28B0.6-10DS-2-0.35V-51"
+      },
+      "association": {
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "d623e0ecfd814027a6f1321d7dc44341"
+        },
+        "footprintUuid": "d623e0ecfd814027a6f1321d7dc44341",
+        "images": [],
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "type": 2,
+          "uuid": "77c606edc9c94a2f90c5d053bf881449"
+        },
+        "symbolType": 2,
+        "symbolUuid": "77c606edc9c94a2f90c5d053bf881449"
+      },
+      "lcsc": "C3037925",
+      "symbolPins": {
+        "14": {
+          "name": "14",
+          "type": "Undefined",
+          "x": 10,
+          "y": -50,
+          "rotation": 270,
+          "length": 10
+        },
+        "13": {
+          "name": "13",
+          "type": "Undefined",
+          "x": -5,
+          "y": -50,
+          "rotation": 270,
+          "length": 10
+        },
+        "12": {
+          "name": "12",
+          "type": "Undefined",
+          "x": 10,
+          "y": 50,
+          "rotation": 90,
+          "length": 10
+        },
+        "11": {
+          "name": "11",
+          "type": "Undefined",
+          "x": -5,
+          "y": 50,
+          "rotation": 90,
+          "length": 10
+        },
+        "10": {
+          "name": "10",
+          "type": "Undefined",
+          "x": 25,
+          "y": -20,
+          "rotation": 180,
+          "length": 10
+        },
+        "9": {
+          "name": "9",
+          "type": "Undefined",
+          "x": 25,
+          "y": -10,
+          "rotation": 180,
+          "length": 10
+        },
+        "8": {
+          "name": "8",
+          "type": "Undefined",
+          "x": 25,
+          "y": 0,
+          "rotation": 180,
+          "length": 10
+        },
+        "7": {
+          "name": "7",
+          "type": "Undefined",
+          "x": 25,
+          "y": 10,
+          "rotation": 180,
+          "length": 10
+        },
+        "6": {
+          "name": "6",
+          "type": "Undefined",
+          "x": 25,
+          "y": 20,
+          "rotation": 180,
+          "length": 10
+        },
+        "5": {
+          "name": "5",
+          "type": "Undefined",
+          "x": -25,
+          "y": 20,
+          "rotation": 0,
+          "length": 10
+        },
+        "4": {
+          "name": "4",
+          "type": "Undefined",
+          "x": -25,
+          "y": 10,
+          "rotation": 0,
+          "length": 10
+        },
+        "3": {
+          "name": "3",
+          "type": "Undefined",
+          "x": -25,
+          "y": 0,
+          "rotation": 0,
+          "length": 10
+        },
+        "2": {
+          "name": "2",
+          "type": "Undefined",
+          "x": -25,
+          "y": -10,
+          "rotation": 0,
+          "length": 10
+        },
+        "1": {
+          "name": "1",
+          "type": "Undefined",
+          "x": -25,
+          "y": -20,
+          "rotation": 0,
+          "length": 10
+        }
+      },
+      "expectedPins": {
+        "P1": "J3",
+        "P2": "J3",
+        "P3": "J3",
+        "P4": "J3",
+        "P5": "J3",
+        "P6": "J3",
+        "P7": "J3",
+        "P8": "J3",
+        "P9": "J3",
+        "P10": "J3",
+        "PWR1": "J3",
+        "PWR2": "J3"
+      },
+      "missingPins": [
+        "P1",
+        "P10",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6",
+        "P7",
+        "P8",
+        "P9",
+        "PWR1",
+        "PWR2"
+      ],
+      "unexpectedPins": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "pinNameDifferences": [],
+      "sourceSha256": "187007436c3961f417b0e1d0f85f9640fc3a60980415bb45d20a87265661c2e1",
+      "sourceFile": "723c9ebca4fad635.elibz2"
+    },
+    {
+      "mpn": "BM28B0.6-16DS/2-0.35V(53)",
+      "status": "FAIL",
+      "scope": "Exact library device identity and complete physical symbol-pin identifiers only; footprint not checked.",
+      "device": {
+        "uuid": "841747ab3deb41719bcfbea99a3a1069",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "BM28B0.6-16DS/2-0.35V(53)",
+        "manufacturer": "HRS(广濑)",
+        "manufacturerId": "BM28B0.6-16DS/2-0.35V(53)",
+        "lcsc": "C3654276",
+        "footprintName": "CONN-SMD_BM28B0.6-16DS-2-0.35V-53"
+      },
+      "association": {
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "4610338751a64d18a829796b63c96843"
+        },
+        "footprintUuid": "4610338751a64d18a829796b63c96843",
+        "images": [],
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "type": 2,
+          "uuid": "7c658a86f0ff47d59deba90141e7c074"
+        },
+        "symbolType": 2,
+        "symbolUuid": "7c658a86f0ff47d59deba90141e7c074"
+      },
+      "lcsc": "C3654276",
+      "symbolPins": {
+        "1": {
+          "name": "1",
+          "type": "Undefined",
+          "x": -30,
+          "y": -35,
+          "rotation": 0,
+          "length": 10
+        },
+        "2": {
+          "name": "2",
+          "type": "Undefined",
+          "x": -30,
+          "y": -25,
+          "rotation": 0,
+          "length": 10
+        },
+        "3": {
+          "name": "3",
+          "type": "Undefined",
+          "x": -30,
+          "y": -15,
+          "rotation": 0,
+          "length": 10
+        },
+        "4": {
+          "name": "4",
+          "type": "Undefined",
+          "x": -30,
+          "y": -5,
+          "rotation": 0,
+          "length": 10
+        },
+        "5": {
+          "name": "5",
+          "type": "Undefined",
+          "x": -30,
+          "y": 5,
+          "rotation": 0,
+          "length": 10
+        },
+        "6": {
+          "name": "6",
+          "type": "Undefined",
+          "x": -30,
+          "y": 15,
+          "rotation": 0,
+          "length": 10
+        },
+        "7": {
+          "name": "7",
+          "type": "Undefined",
+          "x": -30,
+          "y": 25,
+          "rotation": 0,
+          "length": 10
+        },
+        "8": {
+          "name": "8",
+          "type": "Undefined",
+          "x": -30,
+          "y": 35,
+          "rotation": 0,
+          "length": 10
+        },
+        "9": {
+          "name": "9",
+          "type": "Undefined",
+          "x": 30,
+          "y": 35,
+          "rotation": 180,
+          "length": 10
+        },
+        "10": {
+          "name": "10",
+          "type": "Undefined",
+          "x": 30,
+          "y": 25,
+          "rotation": 180,
+          "length": 10
+        },
+        "11": {
+          "name": "11",
+          "type": "Undefined",
+          "x": 30,
+          "y": 15,
+          "rotation": 180,
+          "length": 10
+        },
+        "12": {
+          "name": "12",
+          "type": "Undefined",
+          "x": 30,
+          "y": 5,
+          "rotation": 180,
+          "length": 10
+        },
+        "13": {
+          "name": "13",
+          "type": "Undefined",
+          "x": 30,
+          "y": -5,
+          "rotation": 180,
+          "length": 10
+        },
+        "14": {
+          "name": "14",
+          "type": "Undefined",
+          "x": 30,
+          "y": -15,
+          "rotation": 180,
+          "length": 10
+        },
+        "15": {
+          "name": "15",
+          "type": "Undefined",
+          "x": 30,
+          "y": -25,
+          "rotation": 180,
+          "length": 10
+        },
+        "16": {
+          "name": "16",
+          "type": "Undefined",
+          "x": 30,
+          "y": -35,
+          "rotation": 180,
+          "length": 10
+        },
+        "17": {
+          "name": "17",
+          "type": "Undefined",
+          "x": 5,
+          "y": -60,
+          "rotation": 270,
+          "length": 10
+        },
+        "18": {
+          "name": "18",
+          "type": "Undefined",
+          "x": -5,
+          "y": -60,
+          "rotation": 270,
+          "length": 10
+        },
+        "19": {
+          "name": "19",
+          "type": "Undefined",
+          "x": -5,
+          "y": 60,
+          "rotation": 90,
+          "length": 10
+        },
+        "20": {
+          "name": "20",
+          "type": "Undefined",
+          "x": 5,
+          "y": 60,
+          "rotation": 90,
+          "length": 10
+        }
+      },
+      "expectedPins": {
+        "P1": "J1",
+        "P2": "J1",
+        "P3": "J1",
+        "P4": "J1",
+        "P5": "J1",
+        "P6": "J1",
+        "P7": "J1",
+        "P8": "J1",
+        "P9": "J1",
+        "P10": "J1",
+        "P11": "J1",
+        "P12": "J1",
+        "P13": "J1",
+        "P14": "J1",
+        "P15": "J1",
+        "P16": "J1",
+        "PWR1": "J1",
+        "PWR2": "J1"
+      },
+      "missingPins": [
+        "P1",
+        "P10",
+        "P11",
+        "P12",
+        "P13",
+        "P14",
+        "P15",
+        "P16",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6",
+        "P7",
+        "P8",
+        "P9",
+        "PWR1",
+        "PWR2"
+      ],
+      "unexpectedPins": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "2",
+        "20",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "pinNameDifferences": [],
+      "sourceSha256": "8d730573393cc4157cad42a25e491ebbf8c8836aa197d807221f32b3454bd2e5",
+      "sourceFile": "92280aa9177e5c8b.elibz2"
+    },
+    {
+      "mpn": "BM28B0.6-24DS/2-0.35V(53)",
+      "status": "FAIL",
+      "scope": "Exact library device identity and complete physical symbol-pin identifiers only; footprint not checked.",
+      "device": {
+        "uuid": "62ea7efdbfd1435bb6c1f2b87a78d4ec",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "BM28B0.6-24DS/2-0.35V(53)",
+        "manufacturer": "HRS(广濑)",
+        "manufacturerId": "BM28B0.6-24DS/2-0.35V(53)",
+        "lcsc": "C5577343",
+        "footprintName": "CONN-SMD_24P-P0.35_BM28B0.6-24DS-2-0.35V"
+      },
+      "association": {
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "9b580cc2e0104f3aa9f1e1b33357e09c"
+        },
+        "footprintUuid": "9b580cc2e0104f3aa9f1e1b33357e09c",
+        "images": [
+          "https://alimg.szlcsc.com/upload/public/product/middle/20230915/259B6BB9E3DD2C953E5305E9254558E2.jpg"
+        ],
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "type": 2,
+          "uuid": "b3a4cb61d5584331ae9edf3bdc3f1fbe"
+        },
+        "symbolType": 2,
+        "symbolUuid": "b3a4cb61d5584331ae9edf3bdc3f1fbe"
+      },
+      "lcsc": "C5577343",
+      "symbolPins": {
+        "1": {
+          "name": "1",
+          "type": "Undefined",
+          "x": -30,
+          "y": -55,
+          "rotation": 0,
+          "length": 10
+        },
+        "24": {
+          "name": "24",
+          "type": "Undefined",
+          "x": 30,
+          "y": 55,
+          "rotation": 180,
+          "length": 10
+        },
+        "3": {
+          "name": "3",
+          "type": "Undefined",
+          "x": -30,
+          "y": -45,
+          "rotation": 0,
+          "length": 10
+        },
+        "22": {
+          "name": "22",
+          "type": "Undefined",
+          "x": 30,
+          "y": 45,
+          "rotation": 180,
+          "length": 10
+        },
+        "5": {
+          "name": "5",
+          "type": "Undefined",
+          "x": -30,
+          "y": -35,
+          "rotation": 0,
+          "length": 10
+        },
+        "20": {
+          "name": "20",
+          "type": "Undefined",
+          "x": 30,
+          "y": 35,
+          "rotation": 180,
+          "length": 10
+        },
+        "7": {
+          "name": "7",
+          "type": "Undefined",
+          "x": -30,
+          "y": -25,
+          "rotation": 0,
+          "length": 10
+        },
+        "18": {
+          "name": "18",
+          "type": "Undefined",
+          "x": 30,
+          "y": 25,
+          "rotation": 180,
+          "length": 10
+        },
+        "9": {
+          "name": "9",
+          "type": "Undefined",
+          "x": -30,
+          "y": -15,
+          "rotation": 0,
+          "length": 10
+        },
+        "16": {
+          "name": "16",
+          "type": "Undefined",
+          "x": 30,
+          "y": 15,
+          "rotation": 180,
+          "length": 10
+        },
+        "11": {
+          "name": "11",
+          "type": "Undefined",
+          "x": -30,
+          "y": -5,
+          "rotation": 0,
+          "length": 10
+        },
+        "14": {
+          "name": "14",
+          "type": "Undefined",
+          "x": 30,
+          "y": 5,
+          "rotation": 180,
+          "length": 10
+        },
+        "13": {
+          "name": "13",
+          "type": "Undefined",
+          "x": -30,
+          "y": 5,
+          "rotation": 0,
+          "length": 10
+        },
+        "12": {
+          "name": "12",
+          "type": "Undefined",
+          "x": 30,
+          "y": -5,
+          "rotation": 180,
+          "length": 10
+        },
+        "15": {
+          "name": "15",
+          "type": "Undefined",
+          "x": -30,
+          "y": 15,
+          "rotation": 0,
+          "length": 10
+        },
+        "10": {
+          "name": "10",
+          "type": "Undefined",
+          "x": 30,
+          "y": -15,
+          "rotation": 180,
+          "length": 10
+        },
+        "17": {
+          "name": "17",
+          "type": "Undefined",
+          "x": -30,
+          "y": 25,
+          "rotation": 0,
+          "length": 10
+        },
+        "8": {
+          "name": "8",
+          "type": "Undefined",
+          "x": 30,
+          "y": -25,
+          "rotation": 180,
+          "length": 10
+        },
+        "19": {
+          "name": "19",
+          "type": "Undefined",
+          "x": -30,
+          "y": 35,
+          "rotation": 0,
+          "length": 10
+        },
+        "6": {
+          "name": "6",
+          "type": "Undefined",
+          "x": 30,
+          "y": -35,
+          "rotation": 180,
+          "length": 10
+        },
+        "21": {
+          "name": "21",
+          "type": "Undefined",
+          "x": -30,
+          "y": 45,
+          "rotation": 0,
+          "length": 10
+        },
+        "4": {
+          "name": "4",
+          "type": "Undefined",
+          "x": 30,
+          "y": -45,
+          "rotation": 180,
+          "length": 10
+        },
+        "23": {
+          "name": "23",
+          "type": "Undefined",
+          "x": -30,
+          "y": 55,
+          "rotation": 0,
+          "length": 10
+        },
+        "2": {
+          "name": "2",
+          "type": "Undefined",
+          "x": 30,
+          "y": -55,
+          "rotation": 180,
+          "length": 10
+        },
+        "25": {
+          "name": "25",
+          "type": "Undefined",
+          "x": 5,
+          "y": -75,
+          "rotation": 270,
+          "length": 10
+        },
+        "26": {
+          "name": "26",
+          "type": "Undefined",
+          "x": -5,
+          "y": -75,
+          "rotation": 270,
+          "length": 10
+        },
+        "27": {
+          "name": "27",
+          "type": "Undefined",
+          "x": -5,
+          "y": 75,
+          "rotation": 90,
+          "length": 10
+        },
+        "28": {
+          "name": "28",
+          "type": "Undefined",
+          "x": 5,
+          "y": 75,
+          "rotation": 90,
+          "length": 10
+        }
+      },
+      "expectedPins": {
+        "P1": "J2",
+        "P2": "J2",
+        "P3": "J2",
+        "P4": "J2",
+        "P5": "J2",
+        "P6": "J2",
+        "P7": "J2",
+        "P8": "J2",
+        "P9": "J2",
+        "P10": "J2",
+        "P11": "J2",
+        "P12": "J2",
+        "P13": "J2",
+        "P14": "J2",
+        "P15": "J2",
+        "P16": "J2",
+        "P17": "J2",
+        "P18": "J2",
+        "P19": "J2",
+        "P20": "J2",
+        "P21": "J2",
+        "P22": "J2",
+        "P23": "J2",
+        "P24": "J2",
+        "PWR1": "J2",
+        "PWR2": "J2"
+      },
+      "missingPins": [
+        "P1",
+        "P10",
+        "P11",
+        "P12",
+        "P13",
+        "P14",
+        "P15",
+        "P16",
+        "P17",
+        "P18",
+        "P19",
+        "P2",
+        "P20",
+        "P21",
+        "P22",
+        "P23",
+        "P24",
+        "P3",
+        "P4",
+        "P5",
+        "P6",
+        "P7",
+        "P8",
+        "P9",
+        "PWR1",
+        "PWR2"
+      ],
+      "unexpectedPins": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "2",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "pinNameDifferences": [],
+      "sourceSha256": "fd3d26b00e7b707b54cd14be22e22e84c6d94328b08b046e3a9e8ef8d0d4cfc7",
+      "sourceFile": "193c888a009a7f3e.elibz2"
+    },
+    {
+      "mpn": "BM28B0.6-30DS/2-0.35V(53)",
+      "status": "FAIL",
+      "scope": "Exact library device identity and complete physical symbol-pin identifiers only; footprint not checked.",
+      "device": {
+        "uuid": "27bb18bc4295426c9e2502ba3712fbd1",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "BM28B0.6-30DS/2-0.35V(53)",
+        "manufacturer": "HRS(广濑)",
+        "manufacturerId": "BM28B0.6-30DS/2-0.35V(53)",
+        "lcsc": "C3643247",
+        "footprintName": "CONN-SMD_BM28B0.6-30DS-2-0.35V-51"
+      },
+      "association": {
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "e6437aba6eb445ec848e381b3de443cd"
+        },
+        "footprintUuid": "e6437aba6eb445ec848e381b3de443cd",
+        "images": [
+          "https://alimg.szlcsc.com/upload/public/product/middle/20250522/0A6CA949B1868BCE463C8C92A9950C41.jpg"
+        ],
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "type": 2,
+          "uuid": "2b4381094ecb4c0fbd1bbb534d78897a"
+        },
+        "symbolType": 2,
+        "symbolUuid": "2b4381094ecb4c0fbd1bbb534d78897a"
+      },
+      "lcsc": "C3643247",
+      "symbolPins": {
+        "32": {
+          "name": "32",
+          "type": "Undefined",
+          "x": 0,
+          "y": 90,
+          "rotation": 90,
+          "length": 10
+        },
+        "31": {
+          "name": "31",
+          "type": "Undefined",
+          "x": -10,
+          "y": 90,
+          "rotation": 90,
+          "length": 10
+        },
+        "34": {
+          "name": "34",
+          "type": "Undefined",
+          "x": 0,
+          "y": -90,
+          "rotation": 270,
+          "length": 10
+        },
+        "33": {
+          "name": "33",
+          "type": "Undefined",
+          "x": -10,
+          "y": -90,
+          "rotation": 270,
+          "length": 10
+        },
+        "30": {
+          "name": "30",
+          "type": "Undefined",
+          "x": 35,
+          "y": -70,
+          "rotation": 180,
+          "length": 10
+        },
+        "29": {
+          "name": "29",
+          "type": "Undefined",
+          "x": 35,
+          "y": -60,
+          "rotation": 180,
+          "length": 10
+        },
+        "28": {
+          "name": "28",
+          "type": "Undefined",
+          "x": 35,
+          "y": -50,
+          "rotation": 180,
+          "length": 10
+        },
+        "27": {
+          "name": "27",
+          "type": "Undefined",
+          "x": 35,
+          "y": -40,
+          "rotation": 180,
+          "length": 10
+        },
+        "26": {
+          "name": "26",
+          "type": "Undefined",
+          "x": 35,
+          "y": -30,
+          "rotation": 180,
+          "length": 10
+        },
+        "25": {
+          "name": "25",
+          "type": "Undefined",
+          "x": 35,
+          "y": -20,
+          "rotation": 180,
+          "length": 10
+        },
+        "24": {
+          "name": "24",
+          "type": "Undefined",
+          "x": 35,
+          "y": -10,
+          "rotation": 180,
+          "length": 10
+        },
+        "23": {
+          "name": "23",
+          "type": "Undefined",
+          "x": 35,
+          "y": 0,
+          "rotation": 180,
+          "length": 10
+        },
+        "22": {
+          "name": "22",
+          "type": "Undefined",
+          "x": 35,
+          "y": 10,
+          "rotation": 180,
+          "length": 10
+        },
+        "21": {
+          "name": "21",
+          "type": "Undefined",
+          "x": 35,
+          "y": 20,
+          "rotation": 180,
+          "length": 10
+        },
+        "20": {
+          "name": "20",
+          "type": "Undefined",
+          "x": 35,
+          "y": 30,
+          "rotation": 180,
+          "length": 10
+        },
+        "19": {
+          "name": "19",
+          "type": "Undefined",
+          "x": 35,
+          "y": 40,
+          "rotation": 180,
+          "length": 10
+        },
+        "18": {
+          "name": "18",
+          "type": "Undefined",
+          "x": 35,
+          "y": 50,
+          "rotation": 180,
+          "length": 10
+        },
+        "17": {
+          "name": "17",
+          "type": "Undefined",
+          "x": 35,
+          "y": 60,
+          "rotation": 180,
+          "length": 10
+        },
+        "16": {
+          "name": "16",
+          "type": "Undefined",
+          "x": 35,
+          "y": 70,
+          "rotation": 180,
+          "length": 10
+        },
+        "15": {
+          "name": "15",
+          "type": "Undefined",
+          "x": -45,
+          "y": 70,
+          "rotation": 0,
+          "length": 10
+        },
+        "14": {
+          "name": "14",
+          "type": "Undefined",
+          "x": -45,
+          "y": 60,
+          "rotation": 0,
+          "length": 10
+        },
+        "13": {
+          "name": "13",
+          "type": "Undefined",
+          "x": -45,
+          "y": 50,
+          "rotation": 0,
+          "length": 10
+        },
+        "12": {
+          "name": "12",
+          "type": "Undefined",
+          "x": -45,
+          "y": 40,
+          "rotation": 0,
+          "length": 10
+        },
+        "11": {
+          "name": "11",
+          "type": "Undefined",
+          "x": -45,
+          "y": 30,
+          "rotation": 0,
+          "length": 10
+        },
+        "10": {
+          "name": "10",
+          "type": "Undefined",
+          "x": -45,
+          "y": 20,
+          "rotation": 0,
+          "length": 10
+        },
+        "9": {
+          "name": "9",
+          "type": "Undefined",
+          "x": -45,
+          "y": 10,
+          "rotation": 0,
+          "length": 10
+        },
+        "8": {
+          "name": "8",
+          "type": "Undefined",
+          "x": -45,
+          "y": 0,
+          "rotation": 0,
+          "length": 10
+        },
+        "7": {
+          "name": "7",
+          "type": "Undefined",
+          "x": -45,
+          "y": -10,
+          "rotation": 0,
+          "length": 10
+        },
+        "6": {
+          "name": "6",
+          "type": "Undefined",
+          "x": -45,
+          "y": -20,
+          "rotation": 0,
+          "length": 10
+        },
+        "5": {
+          "name": "5",
+          "type": "Undefined",
+          "x": -45,
+          "y": -30,
+          "rotation": 0,
+          "length": 10
+        },
+        "4": {
+          "name": "4",
+          "type": "Undefined",
+          "x": -45,
+          "y": -40,
+          "rotation": 0,
+          "length": 10
+        },
+        "3": {
+          "name": "3",
+          "type": "Undefined",
+          "x": -45,
+          "y": -50,
+          "rotation": 0,
+          "length": 10
+        },
+        "2": {
+          "name": "2",
+          "type": "Undefined",
+          "x": -45,
+          "y": -60,
+          "rotation": 0,
+          "length": 10
+        },
+        "1": {
+          "name": "1",
+          "type": "Undefined",
+          "x": -45,
+          "y": -70,
+          "rotation": 0,
+          "length": 10
+        }
+      },
+      "expectedPins": {
+        "P1": "J1",
+        "P2": "J1",
+        "P3": "J1",
+        "P4": "J1",
+        "P5": "J1",
+        "P6": "J1",
+        "P7": "J1",
+        "P8": "J1",
+        "P9": "J1",
+        "P10": "J1",
+        "P11": "J1",
+        "P12": "J1",
+        "P13": "J1",
+        "P14": "J1",
+        "P15": "J1",
+        "P16": "J1",
+        "P17": "J1",
+        "P18": "J1",
+        "P19": "J1",
+        "P20": "J1",
+        "P21": "J1",
+        "P22": "J1",
+        "P23": "J1",
+        "P24": "J1",
+        "P25": "J1",
+        "P26": "J1",
+        "P27": "J1",
+        "P28": "J1",
+        "P29": "J1",
+        "P30": "J1",
+        "PWR1": "J1",
+        "PWR2": "J1"
+      },
+      "missingPins": [
+        "P1",
+        "P10",
+        "P11",
+        "P12",
+        "P13",
+        "P14",
+        "P15",
+        "P16",
+        "P17",
+        "P18",
+        "P19",
+        "P2",
+        "P20",
+        "P21",
+        "P22",
+        "P23",
+        "P24",
+        "P25",
+        "P26",
+        "P27",
+        "P28",
+        "P29",
+        "P3",
+        "P30",
+        "P4",
+        "P5",
+        "P6",
+        "P7",
+        "P8",
+        "P9",
+        "PWR1",
+        "PWR2"
+      ],
+      "unexpectedPins": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "2",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "3",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "pinNameDifferences": [],
+      "sourceSha256": "8dcbb05addde0b342dc5333edc43491dfff735bd8a1af326bc36d09fd717d733",
+      "sourceFile": "4d1f02871493b11e.elibz2"
+    },
+    {
+      "mpn": "BQ25170DSGR",
+      "status": "PASS",
+      "scope": "Exact library device identity and complete physical symbol-pin identifiers only; footprint not checked.",
+      "device": {
+        "uuid": "65a0e95b40f14858a520fe79d094ae87",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "BQ25170DSGR",
+        "manufacturer": "TI(德州仪器)",
+        "manufacturerId": "BQ25170DSGR",
+        "lcsc": "C5208201",
+        "footprintName": "WSON-8_L2.0-W2.0-P0.50-TL-EP"
+      },
+      "association": {
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "ff1b854294ea4ce0976b7b0bdcaf3ea1"
+        },
+        "footprintUuid": "ff1b854294ea4ce0976b7b0bdcaf3ea1",
+        "images": [
+          "https://alimg.szlcsc.com/upload/public/product/middle/20230105/23FE27FCD18E14E202D4FFD896812F5B.jpg"
+        ],
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "type": 2,
+          "uuid": "29087814fd8d400bb1ba65646590266d"
+        },
+        "symbolType": 2,
+        "symbolUuid": "29087814fd8d400bb1ba65646590266d"
+      },
+      "lcsc": "C5208201",
+      "symbolPins": {
+        "1": {
+          "name": "IN",
+          "type": "Undefined",
+          "x": -45,
+          "y": -10,
+          "rotation": 0,
+          "length": 10
+        },
+        "2": {
+          "name": "ISET",
+          "type": "Undefined",
+          "x": -45,
+          "y": 0,
+          "rotation": 0,
+          "length": 10
+        },
+        "3": {
+          "name": "TS",
+          "type": "Undefined",
+          "x": -45,
+          "y": 10,
+          "rotation": 0,
+          "length": 10
+        },
+        "4": {
+          "name": "GND",
+          "type": "Undefined",
+          "x": -45,
+          "y": 20,
+          "rotation": 0,
+          "length": 10
+        },
+        "5": {
+          "name": "STAT",
+          "type": "Undefined",
+          "x": 45,
+          "y": 20,
+          "rotation": 180,
+          "length": 10
+        },
+        "6": {
+          "name": "PG#",
+          "type": "Undefined",
+          "x": 45,
+          "y": 10,
+          "rotation": 180,
+          "length": 10
+        },
+        "7": {
+          "name": "VSET",
+          "type": "Undefined",
+          "x": 45,
+          "y": 0,
+          "rotation": 180,
+          "length": 10
+        },
+        "8": {
+          "name": "OUT",
+          "type": "Undefined",
+          "x": 45,
+          "y": -10,
+          "rotation": 180,
+          "length": 10
+        },
+        "9": {
+          "name": "EP",
+          "type": "Undefined",
+          "x": 45,
+          "y": -20,
+          "rotation": 180,
+          "length": 10
+        }
+      },
+      "expectedPins": {
+        "1": "U3",
+        "2": "U3",
+        "3": "U3",
+        "4": "U3",
+        "5": "U3",
+        "6": "U3",
+        "7": "U3",
+        "8": "U3",
+        "9": "U3"
+      },
+      "missingPins": [],
+      "unexpectedPins": [],
+      "pinNameDifferences": [
+        {
+          "pin": "9",
+          "source": "EP_GND",
+          "library": "EP"
+        }
+      ],
+      "sourceSha256": "0b3c848151c27d37ad963de33b4ed2b5723852219829b4bbf33b4b923d6864cf",
+      "sourceFile": "2a33f80d5aa33032.elibz2"
+    },
+    {
+      "mpn": "BQ25180YBGR",
+      "status": "PASS",
+      "scope": "Exact library device identity and complete physical symbol-pin identifiers only; footprint not checked.",
+      "device": {
+        "uuid": "e4301a7d92c0448b9e603c325f56f468",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "BQ25180YBGR",
+        "manufacturer": "TI(德州仪器)",
+        "manufacturerId": "BQ25180YBGR",
+        "lcsc": "C3682423",
+        "footprintName": "DSBGA-8_L1.6-W0.9-R2-C4-P0.40-BL"
+      },
+      "association": {
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "81f3acaaccb14b25aca90859c5a07994"
+        },
+        "footprintUuid": "81f3acaaccb14b25aca90859c5a07994",
+        "images": [
+          "https://alimg.szlcsc.com/upload/public/product/middle/20230103/64E0A084AD8EEFBA39A9514D32658AA2.jpg"
+        ],
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "type": 2,
+          "uuid": "43901f9f72a549ba93c4518268ad0f76"
+        },
+        "symbolType": 2,
+        "symbolUuid": "43901f9f72a549ba93c4518268ad0f76"
+      },
+      "lcsc": "C3682423",
+      "symbolPins": {
+        "B1": {
+          "name": "SCL",
+          "type": "Undefined",
+          "x": -45,
+          "y": -15,
+          "rotation": 0,
+          "length": 10
+        },
+        "C1": {
+          "name": "SDA",
+          "type": "Undefined",
+          "x": -45,
+          "y": -5,
+          "rotation": 0,
+          "length": 10
+        },
+        "B2": {
+          "name": "SYS",
+          "type": "Undefined",
+          "x": -45,
+          "y": 5,
+          "rotation": 0,
+          "length": 10
+        },
+        "D2": {
+          "name": "GND",
+          "type": "Undefined",
+          "x": -45,
+          "y": 15,
+          "rotation": 0,
+          "length": 10
+        },
+        "D1": {
+          "name": "TS/MR",
+          "type": "Undefined",
+          "x": 45,
+          "y": 15,
+          "rotation": 180,
+          "length": 10
+        },
+        "A2": {
+          "name": "IN",
+          "type": "Undefined",
+          "x": 45,
+          "y": 5,
+          "rotation": 180,
+          "length": 10
+        },
+        "C2": {
+          "name": "BAT",
+          "type": "Undefined",
+          "x": 45,
+          "y": -5,
+          "rotation": 180,
+          "length": 10
+        },
+        "A1": {
+          "name": "/INT",
+          "type": "Undefined",
+          "x": 45,
+          "y": -15,
+          "rotation": 180,
+          "length": 10
+        }
+      },
+      "expectedPins": {
+        "A1": "U3",
+        "A2": "U3",
+        "B1": "U3",
+        "B2": "U3",
+        "C1": "U3",
+        "C2": "U3",
+        "D1": "U3",
+        "D2": "U3"
+      },
+      "missingPins": [],
+      "unexpectedPins": [],
+      "pinNameDifferences": [],
+      "sourceSha256": "f0bb2c3e3bf88d5adbaf6f0bcdda29e19c3a329758ef9b2b1343cf837ec3460b",
+      "sourceFile": "95b6af2d099cef03.elibz2"
+    },
+    {
+      "mpn": "DFE161212U-2R2M",
+      "status": "BLOCKED",
+      "reason": "No exact library identity."
+    },
+    {
+      "mpn": "ESP32-S3-PICO-1-N8R8",
+      "status": "PASS",
+      "scope": "Exact library device identity and complete physical symbol-pin identifiers only; footprint not checked.",
+      "device": {
+        "uuid": "6b9f2fd1fbdd415a9fe17c35acdeee3b",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "ESP32-S3-PICO-1-N8R8_C7545129",
+        "manufacturer": "ESPRESSIF(乐鑫)",
+        "manufacturerId": "ESP32-S3-PICO-1-N8R8",
+        "lcsc": "C7545129",
+        "footprintName": "QFN-56_L7.0-W7.0-P0.40-TL-EP4.0"
+      },
+      "association": {
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "5dabfa297a6544a8b3917f761c2e0956"
+        },
+        "footprintUuid": "5dabfa297a6544a8b3917f761c2e0956",
+        "images": [],
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "type": 2,
+          "uuid": "38e04d92110845909ef6ba62b18cd6d8"
+        },
+        "symbolType": 2,
+        "symbolUuid": "38e04d92110845909ef6ba62b18cd6d8"
+      },
+      "lcsc": "C7545129",
+      "symbolPins": {
+        "1": {
+          "name": "LNA_IN",
+          "type": "Undefined",
+          "x": -85,
+          "y": -135,
+          "rotation": 0,
+          "length": 10
+        },
+        "2": {
+          "name": "VDD3P3",
+          "type": "Undefined",
+          "x": -85,
+          "y": -125,
+          "rotation": 0,
+          "length": 10
+        },
+        "3": {
+          "name": "VDD3P3",
+          "type": "Undefined",
+          "x": -85,
+          "y": -115,
+          "rotation": 0,
+          "length": 10
+        },
+        "4": {
+          "name": "CHIP_PU",
+          "type": "Undefined",
+          "x": -85,
+          "y": -105,
+          "rotation": 0,
+          "length": 10
+        },
+        "5": {
+          "name": "GPIO0",
+          "type": "Undefined",
+          "x": -85,
+          "y": -95,
+          "rotation": 0,
+          "length": 10
+        },
+        "6": {
+          "name": "GPIO1",
+          "type": "Undefined",
+          "x": -85,
+          "y": -85,
+          "rotation": 0,
+          "length": 10
+        },
+        "7": {
+          "name": "GPIO2",
+          "type": "Undefined",
+          "x": -85,
+          "y": -75,
+          "rotation": 0,
+          "length": 10
+        },
+        "8": {
+          "name": "GPIO3",
+          "type": "Undefined",
+          "x": -85,
+          "y": -65,
+          "rotation": 0,
+          "length": 10
+        },
+        "9": {
+          "name": "GPIO4",
+          "type": "Undefined",
+          "x": -85,
+          "y": -55,
+          "rotation": 0,
+          "length": 10
+        },
+        "10": {
+          "name": "GPIO5",
+          "type": "Undefined",
+          "x": -85,
+          "y": -45,
+          "rotation": 0,
+          "length": 10
+        },
+        "11": {
+          "name": "GPIO6",
+          "type": "Undefined",
+          "x": -85,
+          "y": -35,
+          "rotation": 0,
+          "length": 10
+        },
+        "12": {
+          "name": "GPIO7",
+          "type": "Undefined",
+          "x": -85,
+          "y": -25,
+          "rotation": 0,
+          "length": 10
+        },
+        "13": {
+          "name": "GPIO8",
+          "type": "Undefined",
+          "x": -85,
+          "y": -15,
+          "rotation": 0,
+          "length": 10
+        },
+        "14": {
+          "name": "GPIO9",
+          "type": "Undefined",
+          "x": -85,
+          "y": -5,
+          "rotation": 0,
+          "length": 10
+        },
+        "15": {
+          "name": "GPIO10",
+          "type": "Undefined",
+          "x": -85,
+          "y": 5,
+          "rotation": 0,
+          "length": 10
+        },
+        "16": {
+          "name": "GPIO11",
+          "type": "Undefined",
+          "x": -85,
+          "y": 15,
+          "rotation": 0,
+          "length": 10
+        },
+        "17": {
+          "name": "GPIO12",
+          "type": "Undefined",
+          "x": -85,
+          "y": 25,
+          "rotation": 0,
+          "length": 10
+        },
+        "18": {
+          "name": "GPIO13",
+          "type": "Undefined",
+          "x": -85,
+          "y": 35,
+          "rotation": 0,
+          "length": 10
+        },
+        "19": {
+          "name": "GPIO14",
+          "type": "Undefined",
+          "x": -85,
+          "y": 45,
+          "rotation": 0,
+          "length": 10
+        },
+        "20": {
+          "name": "VDD3P3_RTC",
+          "type": "Undefined",
+          "x": -85,
+          "y": 55,
+          "rotation": 0,
+          "length": 10
+        },
+        "21": {
+          "name": "XTAL_32K_P",
+          "type": "Undefined",
+          "x": -85,
+          "y": 65,
+          "rotation": 0,
+          "length": 10
+        },
+        "22": {
+          "name": "XTAL_32K_N",
+          "type": "Undefined",
+          "x": -85,
+          "y": 75,
+          "rotation": 0,
+          "length": 10
+        },
+        "23": {
+          "name": "GPIO17",
+          "type": "Undefined",
+          "x": -85,
+          "y": 85,
+          "rotation": 0,
+          "length": 10
+        },
+        "24": {
+          "name": "GPIO18",
+          "type": "Undefined",
+          "x": -85,
+          "y": 95,
+          "rotation": 0,
+          "length": 10
+        },
+        "25": {
+          "name": "GPIO19",
+          "type": "Undefined",
+          "x": -85,
+          "y": 105,
+          "rotation": 0,
+          "length": 10
+        },
+        "26": {
+          "name": "GPIO20",
+          "type": "Undefined",
+          "x": -85,
+          "y": 115,
+          "rotation": 0,
+          "length": 10
+        },
+        "27": {
+          "name": "GPIO21",
+          "type": "Undefined",
+          "x": -85,
+          "y": 125,
+          "rotation": 0,
+          "length": 10
+        },
+        "28": {
+          "name": "SPICS1",
+          "type": "Undefined",
+          "x": -85,
+          "y": 135,
+          "rotation": 0,
+          "length": 10
+        },
+        "29": {
+          "name": "VDD_SPI",
+          "type": "Undefined",
+          "x": 85,
+          "y": 135,
+          "rotation": 180,
+          "length": 10
+        },
+        "30": {
+          "name": "NC",
+          "type": "Undefined",
+          "x": 85,
+          "y": 125,
+          "rotation": 180,
+          "length": 10
+        },
+        "31": {
+          "name": "NC",
+          "type": "Undefined",
+          "x": 85,
+          "y": 115,
+          "rotation": 180,
+          "length": 10
+        },
+        "32": {
+          "name": "NC",
+          "type": "Undefined",
+          "x": 85,
+          "y": 105,
+          "rotation": 180,
+          "length": 10
+        },
+        "33": {
+          "name": "NC",
+          "type": "Undefined",
+          "x": 85,
+          "y": 95,
+          "rotation": 180,
+          "length": 10
+        },
+        "34": {
+          "name": "NC",
+          "type": "Undefined",
+          "x": 85,
+          "y": 85,
+          "rotation": 180,
+          "length": 10
+        },
+        "35": {
+          "name": "NC",
+          "type": "Undefined",
+          "x": 85,
+          "y": 75,
+          "rotation": 180,
+          "length": 10
+        },
+        "36": {
+          "name": "SPICLK_N",
+          "type": "Undefined",
+          "x": 85,
+          "y": 65,
+          "rotation": 180,
+          "length": 10
+        },
+        "37": {
+          "name": "SPICLK_P",
+          "type": "Undefined",
+          "x": 85,
+          "y": 55,
+          "rotation": 180,
+          "length": 10
+        },
+        "38": {
+          "name": "GPIO33",
+          "type": "Undefined",
+          "x": 85,
+          "y": 45,
+          "rotation": 180,
+          "length": 10
+        },
+        "39": {
+          "name": "GPIO34",
+          "type": "Undefined",
+          "x": 85,
+          "y": 35,
+          "rotation": 180,
+          "length": 10
+        },
+        "40": {
+          "name": "GPIO35",
+          "type": "Undefined",
+          "x": 85,
+          "y": 25,
+          "rotation": 180,
+          "length": 10
+        },
+        "41": {
+          "name": "GPIO36",
+          "type": "Undefined",
+          "x": 85,
+          "y": 15,
+          "rotation": 180,
+          "length": 10
+        },
+        "42": {
+          "name": "GPIO37",
+          "type": "Undefined",
+          "x": 85,
+          "y": 5,
+          "rotation": 180,
+          "length": 10
+        },
+        "43": {
+          "name": "GPIO38",
+          "type": "Undefined",
+          "x": 85,
+          "y": -5,
+          "rotation": 180,
+          "length": 10
+        },
+        "44": {
+          "name": "MTCK",
+          "type": "Undefined",
+          "x": 85,
+          "y": -15,
+          "rotation": 180,
+          "length": 10
+        },
+        "45": {
+          "name": "MTDO",
+          "type": "Undefined",
+          "x": 85,
+          "y": -25,
+          "rotation": 180,
+          "length": 10
+        },
+        "46": {
+          "name": "VDD3P3_CPU",
+          "type": "Undefined",
+          "x": 85,
+          "y": -35,
+          "rotation": 180,
+          "length": 10
+        },
+        "47": {
+          "name": "MTDI",
+          "type": "Undefined",
+          "x": 85,
+          "y": -45,
+          "rotation": 180,
+          "length": 10
+        },
+        "48": {
+          "name": "MTMS",
+          "type": "Undefined",
+          "x": 85,
+          "y": -55,
+          "rotation": 180,
+          "length": 10
+        },
+        "49": {
+          "name": "U0TXD",
+          "type": "Undefined",
+          "x": 85,
+          "y": -65,
+          "rotation": 180,
+          "length": 10
+        },
+        "50": {
+          "name": "U0RXD",
+          "type": "Undefined",
+          "x": 85,
+          "y": -75,
+          "rotation": 180,
+          "length": 10
+        },
+        "51": {
+          "name": "GPIO45",
+          "type": "Undefined",
+          "x": 85,
+          "y": -85,
+          "rotation": 180,
+          "length": 10
+        },
+        "52": {
+          "name": "GPIO46",
+          "type": "Undefined",
+          "x": 85,
+          "y": -95,
+          "rotation": 180,
+          "length": 10
+        },
+        "53": {
+          "name": "NC",
+          "type": "Undefined",
+          "x": 85,
+          "y": -105,
+          "rotation": 180,
+          "length": 10
+        },
+        "54": {
+          "name": "NC",
+          "type": "Undefined",
+          "x": 85,
+          "y": -115,
+          "rotation": 180,
+          "length": 10
+        },
+        "55": {
+          "name": "VDDA",
+          "type": "Undefined",
+          "x": 85,
+          "y": -125,
+          "rotation": 180,
+          "length": 10
+        },
+        "56": {
+          "name": "VDDA",
+          "type": "Undefined",
+          "x": 85,
+          "y": -135,
+          "rotation": 180,
+          "length": 10
+        },
+        "57": {
+          "name": "EP",
+          "type": "Undefined",
+          "x": 0,
+          "y": -155,
+          "rotation": 270,
+          "length": 10
+        }
+      },
+      "expectedPins": {
+        "1": "U1",
+        "2": "U1",
+        "3": "U1",
+        "4": "U1",
+        "5": "U1",
+        "6": "U1",
+        "7": "U1",
+        "8": "U1",
+        "9": "U1",
+        "10": "U1",
+        "11": "U1",
+        "12": "U1",
+        "13": "U1",
+        "14": "U1",
+        "15": "U1",
+        "16": "U1",
+        "17": "U1",
+        "18": "U1",
+        "19": "U1",
+        "20": "U1",
+        "21": "U1",
+        "22": "U1",
+        "23": "U1",
+        "24": "U1",
+        "25": "U1",
+        "26": "U1",
+        "27": "U1",
+        "28": "U1",
+        "29": "U1",
+        "30": "U1",
+        "31": "U1",
+        "32": "U1",
+        "33": "U1",
+        "34": "U1",
+        "35": "U1",
+        "36": "U1",
+        "37": "U1",
+        "38": "U1",
+        "39": "U1",
+        "40": "U1",
+        "41": "U1",
+        "42": "U1",
+        "43": "U1",
+        "44": "U1",
+        "45": "U1",
+        "46": "U1",
+        "47": "U1",
+        "48": "U1",
+        "49": "U1",
+        "50": "U1",
+        "51": "U1",
+        "52": "U1",
+        "53": "U1",
+        "54": "U1",
+        "55": "U1",
+        "56": "U1",
+        "57": "U1"
+      },
+      "missingPins": [],
+      "unexpectedPins": [],
+      "pinNameDifferences": [
+        {
+          "pin": "21",
+          "source": "GPIO15",
+          "library": "XTAL_32K_P"
+        },
+        {
+          "pin": "22",
+          "source": "GPIO16",
+          "library": "XTAL_32K_N"
+        },
+        {
+          "pin": "28",
+          "source": "SPICS1/PSRAM_RESERVED",
+          "library": "SPICS1"
+        },
+        {
+          "pin": "36",
+          "source": "GPIO48",
+          "library": "SPICLK_N"
+        },
+        {
+          "pin": "37",
+          "source": "GPIO47",
+          "library": "SPICLK_P"
+        },
+        {
+          "pin": "44",
+          "source": "GPIO39",
+          "library": "MTCK"
+        },
+        {
+          "pin": "45",
+          "source": "GPIO40",
+          "library": "MTDO"
+        },
+        {
+          "pin": "47",
+          "source": "GPIO41",
+          "library": "MTDI"
+        },
+        {
+          "pin": "48",
+          "source": "GPIO42",
+          "library": "MTMS"
+        },
+        {
+          "pin": "49",
+          "source": "GPIO43",
+          "library": "U0TXD"
+        },
+        {
+          "pin": "50",
+          "source": "GPIO44",
+          "library": "U0RXD"
+        },
+        {
+          "pin": "57",
+          "source": "EPAD GND",
+          "library": "EP"
+        }
+      ],
+      "sourceSha256": "287308606b33d423e00fc59c657fbb063ef3ab56b7c6cb26c43ac7e13c7cffcc",
+      "sourceFile": "84645ab755c39261.elibz2"
+    },
+    {
+      "mpn": "ICM-42688-P",
+      "status": "PASS",
+      "scope": "Exact library device identity and complete physical symbol-pin identifiers only; footprint not checked.",
+      "device": {
+        "uuid": "443ba5de268a403d978bf2f06e3d8d0e",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "ICM-42688-P",
+        "manufacturer": "TDK InvenSense(应美盛)",
+        "manufacturerId": "ICM-42688-P",
+        "lcsc": "C1850418",
+        "footprintName": "LGA-14_L3.0-W2.5-P0.50-TL"
+      },
+      "association": {
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "01e9b30229ff4ead9c5972fad9dd35be"
+        },
+        "footprintUuid": "01e9b30229ff4ead9c5972fad9dd35be",
+        "images": [
+          "https://alimg.szlcsc.com/upload/public/product/middle/20230104/E806A1A3DD50F6FD9C4C5017A544629C.jpg"
+        ],
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "type": 2,
+          "uuid": "a02f7d561635477b818ac29e8603e37c"
+        },
+        "symbolType": 2,
+        "symbolUuid": "a02f7d561635477b818ac29e8603e37c"
+      },
+      "lcsc": "C1850418",
+      "symbolPins": {
+        "1": {
+          "name": "AP_SDO/AP_AD0",
+          "type": "Undefined",
+          "x": -135,
+          "y": -30,
+          "rotation": 0,
+          "length": 10
+        },
+        "2": {
+          "name": "RESV",
+          "type": "Undefined",
+          "x": -135,
+          "y": -20,
+          "rotation": 0,
+          "length": 10
+        },
+        "3": {
+          "name": "RESV",
+          "type": "Undefined",
+          "x": -135,
+          "y": -10,
+          "rotation": 0,
+          "length": 10
+        },
+        "4": {
+          "name": "INT1/INT",
+          "type": "Undefined",
+          "x": -135,
+          "y": 0,
+          "rotation": 0,
+          "length": 10
+        },
+        "5": {
+          "name": "VDDIO",
+          "type": "Undefined",
+          "x": -135,
+          "y": 10,
+          "rotation": 0,
+          "length": 10
+        },
+        "6": {
+          "name": "GND",
+          "type": "Undefined",
+          "x": -135,
+          "y": 20,
+          "rotation": 0,
+          "length": 10
+        },
+        "7": {
+          "name": "RESV",
+          "type": "Undefined",
+          "x": -135,
+          "y": 30,
+          "rotation": 0,
+          "length": 10
+        },
+        "8": {
+          "name": "VDD",
+          "type": "Undefined",
+          "x": 135,
+          "y": 30,
+          "rotation": 180,
+          "length": 10
+        },
+        "9": {
+          "name": "INT2/FSYNC/CLKIN",
+          "type": "Undefined",
+          "x": 135,
+          "y": 20,
+          "rotation": 180,
+          "length": 10
+        },
+        "10": {
+          "name": "RESV",
+          "type": "Undefined",
+          "x": 135,
+          "y": 10,
+          "rotation": 180,
+          "length": 10
+        },
+        "11": {
+          "name": "RESV",
+          "type": "Undefined",
+          "x": 135,
+          "y": 0,
+          "rotation": 180,
+          "length": 10
+        },
+        "12": {
+          "name": "AP_CS",
+          "type": "Undefined",
+          "x": 135,
+          "y": -10,
+          "rotation": 180,
+          "length": 10
+        },
+        "13": {
+          "name": "AP_SCL/AP_SCLK",
+          "type": "Undefined",
+          "x": 135,
+          "y": -20,
+          "rotation": 180,
+          "length": 10
+        },
+        "14": {
+          "name": "AP_SDA/AP_SDIO/AP_SDI",
+          "type": "Undefined",
+          "x": 135,
+          "y": -30,
+          "rotation": 180,
+          "length": 10
+        }
+      },
+      "expectedPins": {
+        "1": "U9",
+        "2": "U9",
+        "3": "U9",
+        "4": "U9",
+        "5": "U9",
+        "6": "U9",
+        "7": "U9",
+        "8": "U9",
+        "9": "U9",
+        "10": "U9",
+        "11": "U9",
+        "12": "U9",
+        "13": "U9",
+        "14": "U9"
+      },
+      "missingPins": [],
+      "unexpectedPins": [],
+      "pinNameDifferences": [],
+      "sourceSha256": "80aedee6cbb9607d93c889dcdcf8fe0601ea8161a0d521bc8b3b7fd1c37b7dde",
+      "sourceFile": "628827b659f9dba4.elibz2"
+    },
+    {
+      "mpn": "IM69D130V01XTSA1",
+      "status": "PASS",
+      "scope": "Exact library device identity and complete physical symbol-pin identifiers only; footprint not checked.",
+      "device": {
+        "uuid": "0669b752c8ff491ebce2eed3ac6000fe",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "IM69D130V01XTSA1_C42464166",
+        "manufacturer": "Infineon(英飞凌)",
+        "manufacturerId": "IM69D130V01XTSA1",
+        "lcsc": "C42464166",
+        "footprintName": "MIC-SMD_5P-L4.0-W3.0-P0.70-TR_IM69D130V01"
+      },
+      "association": {
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "06ee183c18d74fc99ada78ebe24334b9"
+        },
+        "footprintUuid": "06ee183c18d74fc99ada78ebe24334b9",
+        "images": [],
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "type": 2,
+          "uuid": "dccf8f0c0e79494582fee1891370d58f"
+        },
+        "symbolType": 2,
+        "symbolUuid": "dccf8f0c0e79494582fee1891370d58f"
+      },
+      "lcsc": "C42464166",
+      "symbolPins": {
+        "1": {
+          "name": "DATA",
+          "type": "Undefined",
+          "x": -55,
+          "y": -10,
+          "rotation": 0,
+          "length": 10
+        },
+        "2": {
+          "name": "VDD",
+          "type": "Undefined",
+          "x": -55,
+          "y": 0,
+          "rotation": 0,
+          "length": 10
+        },
+        "3": {
+          "name": "CLOCK",
+          "type": "Undefined",
+          "x": -55,
+          "y": 10,
+          "rotation": 0,
+          "length": 10
+        },
+        "4": {
+          "name": "SELECT",
+          "type": "Undefined",
+          "x": 55,
+          "y": 5,
+          "rotation": 180,
+          "length": 10
+        },
+        "5": {
+          "name": "GND",
+          "type": "Undefined",
+          "x": 55,
+          "y": -5,
+          "rotation": 180,
+          "length": 10
+        }
+      },
+      "expectedPins": {
+        "1": "MK3",
+        "2": "MK3",
+        "3": "MK3",
+        "4": "MK3",
+        "5": "MK3"
+      },
+      "missingPins": [],
+      "unexpectedPins": [],
+      "pinNameDifferences": [],
+      "sourceSha256": "9959a48915dec9ea11466e5b2016b4fc7a583ac739eac310ff951a9aba953b66",
+      "sourceFile": "3aa069ccfbc266a6.elibz2"
+    },
+    {
+      "mpn": "INA185A4IDRLR",
+      "status": "BLOCKED",
+      "reason": "No exact library identity."
+    },
+    {
+      "mpn": "LM66200DRLR",
+      "status": "PASS",
+      "scope": "Exact library device identity and complete physical symbol-pin identifiers only; footprint not checked.",
+      "device": {
+        "uuid": "423f61e390bc4a4a838a96ddb292c530",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "LM66200DRLR",
+        "manufacturer": "TI(德州仪器)",
+        "manufacturerId": "LM66200DRLR",
+        "lcsc": "C3235556",
+        "footprintName": "SOT-583-8_L2.1-W1.2-P0.50-LS1.6-BL"
+      },
+      "association": {
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "2383d5b014fe4932864241bc7813e9ce"
+        },
+        "footprintUuid": "2383d5b014fe4932864241bc7813e9ce",
+        "images": [
+          "https://alimg.szlcsc.com/upload/public/product/middle/20221228/65620E9DA6535F1A74FA2155382A81F0.jpg"
+        ],
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "type": 2,
+          "uuid": "3bd926cffb4244bc93924b886135aae6"
+        },
+        "symbolType": 2,
+        "symbolUuid": "3bd926cffb4244bc93924b886135aae6"
+      },
+      "lcsc": "C3235556",
+      "symbolPins": {
+        "1": {
+          "name": "GND",
+          "type": "Undefined",
+          "x": -45,
+          "y": -15,
+          "rotation": 0,
+          "length": 10
+        },
+        "2": {
+          "name": "VOUT",
+          "type": "Undefined",
+          "x": -45,
+          "y": -5,
+          "rotation": 0,
+          "length": 10
+        },
+        "3": {
+          "name": "VIN1",
+          "type": "Undefined",
+          "x": -45,
+          "y": 5,
+          "rotation": 0,
+          "length": 10
+        },
+        "4": {
+          "name": "ON#",
+          "type": "Undefined",
+          "x": -45,
+          "y": 15,
+          "rotation": 0,
+          "length": 10
+        },
+        "5": {
+          "name": "GND",
+          "type": "Undefined",
+          "x": 45,
+          "y": 15,
+          "rotation": 180,
+          "length": 10
+        },
+        "6": {
+          "name": "VIN2",
+          "type": "Undefined",
+          "x": 45,
+          "y": 5,
+          "rotation": 180,
+          "length": 10
+        },
+        "7": {
+          "name": "VOUT",
+          "type": "Undefined",
+          "x": 45,
+          "y": -5,
+          "rotation": 180,
+          "length": 10
+        },
+        "8": {
+          "name": "ST",
+          "type": "Undefined",
+          "x": 45,
+          "y": -15,
+          "rotation": 180,
+          "length": 10
+        }
+      },
+      "expectedPins": {
+        "1": "U9",
+        "2": "U9",
+        "3": "U9",
+        "4": "U9",
+        "5": "U9",
+        "6": "U9",
+        "7": "U9",
+        "8": "U9"
+      },
+      "missingPins": [],
+      "unexpectedPins": [],
+      "pinNameDifferences": [],
+      "sourceSha256": "c5e0eeb3373d81d28f6c88242f5b5b74facd154d385b99eaa22fba7a66d214a8",
+      "sourceFile": "18f57d972003c0d8.elibz2"
+    },
+    {
+      "mpn": "LTC6993IS6-2#TRPBF",
+      "status": "PASS",
+      "scope": "Exact library device identity and complete physical symbol-pin identifiers only; footprint not checked.",
+      "device": {
+        "uuid": "91f3c760c2db41449cb988573c712190",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "LTC6993IS6-2#TRPBF",
+        "manufacturer": "ADI(亚德诺)",
+        "manufacturerId": "LTC6993IS6-2#TRPBF",
+        "lcsc": "C690011",
+        "footprintName": "TSOT-23-6_L2.9-W1.6-P0.95-LS2.8-BR"
+      },
+      "association": {
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "5579e636f863400792d24e68c08750e6"
+        },
+        "footprintUuid": "5579e636f863400792d24e68c08750e6",
+        "images": [],
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "type": 2,
+          "uuid": "6031b2c449814bcdae032b542246859b"
+        },
+        "symbolType": 2,
+        "symbolUuid": "6031b2c449814bcdae032b542246859b"
+      },
+      "lcsc": "C690011",
+      "symbolPins": {
+        "6": {
+          "name": "OUT",
+          "type": "Undefined",
+          "x": 40,
+          "y": -10,
+          "rotation": 180,
+          "length": 10
+        },
+        "5": {
+          "name": "V+",
+          "type": "Undefined",
+          "x": 40,
+          "y": 0,
+          "rotation": 180,
+          "length": 10
+        },
+        "4": {
+          "name": "DIV",
+          "type": "Undefined",
+          "x": 40,
+          "y": 10,
+          "rotation": 180,
+          "length": 10
+        },
+        "3": {
+          "name": "SET",
+          "type": "Undefined",
+          "x": -40,
+          "y": 10,
+          "rotation": 0,
+          "length": 10
+        },
+        "2": {
+          "name": "GND",
+          "type": "Undefined",
+          "x": -40,
+          "y": 0,
+          "rotation": 0,
+          "length": 10
+        },
+        "1": {
+          "name": "TRIG",
+          "type": "Undefined",
+          "x": -40,
+          "y": -10,
+          "rotation": 0,
+          "length": 10
+        }
+      },
+      "expectedPins": {
+        "1": "U14",
+        "2": "U14",
+        "3": "U14",
+        "4": "U14",
+        "5": "U14",
+        "6": "U14"
+      },
+      "missingPins": [],
+      "unexpectedPins": [],
+      "pinNameDifferences": [],
+      "sourceSha256": "96850af2590479b948b938921226cb5fd82961137d57c3393d75de6b3bc97d10",
+      "sourceFile": "503ebdf0c123472f.elibz2"
+    },
+    {
+      "mpn": "MAX98357AEWL+T",
+      "status": "PASS",
+      "scope": "Exact library device identity and complete physical symbol-pin identifiers only; footprint not checked.",
+      "device": {
+        "uuid": "fae901b9c5d84f939c98bcdbe4b8c978",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "MAX98357AEWL+T",
+        "manufacturer": "ADI(亚德诺)/MAXIM(美信)",
+        "manufacturerId": "MAX98357AEWL+T",
+        "lcsc": "C2682619",
+        "footprintName": "WLP-9_L1.4-W1.3-P0.40-R3-C3-BR"
+      },
+      "association": {
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "ecbfb30e205f473ca4b17767c890b8e4"
+        },
+        "footprintUuid": "ecbfb30e205f473ca4b17767c890b8e4",
+        "images": [
+          "https://alimg.szlcsc.com/upload/public/product/middle/20230105/62D2DA7E7DA3E14E60D9B249D96C3F4E.jpg"
+        ],
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "type": 2,
+          "uuid": "10f01fdc9549474dbb3c820a95d461f0"
+        },
+        "symbolType": 2,
+        "symbolUuid": "10f01fdc9549474dbb3c820a95d461f0"
+      },
+      "lcsc": "C2682619",
+      "symbolPins": {
+        "A1": {
+          "name": "SD_MODE#",
+          "type": "Undefined",
+          "x": -80,
+          "y": -20,
+          "rotation": 0,
+          "length": 20
+        },
+        "A2": {
+          "name": "VDD",
+          "type": "Undefined",
+          "x": -80,
+          "y": -10,
+          "rotation": 0,
+          "length": 20
+        },
+        "A3": {
+          "name": "OUTP",
+          "type": "Undefined",
+          "x": -80,
+          "y": 0,
+          "rotation": 0,
+          "length": 20
+        },
+        "B1": {
+          "name": "DIN",
+          "type": "Undefined",
+          "x": -80,
+          "y": 10,
+          "rotation": 0,
+          "length": 20
+        },
+        "B2": {
+          "name": "GAIN_SLOT",
+          "type": "Undefined",
+          "x": -80,
+          "y": 20,
+          "rotation": 0,
+          "length": 20
+        },
+        "B3": {
+          "name": "OUTN",
+          "type": "Undefined",
+          "x": -80,
+          "y": 30,
+          "rotation": 0,
+          "length": 20
+        },
+        "C1": {
+          "name": "BCLK",
+          "type": "Undefined",
+          "x": 80,
+          "y": -20,
+          "rotation": 180,
+          "length": 20
+        },
+        "C2": {
+          "name": "GND",
+          "type": "Undefined",
+          "x": 80,
+          "y": -10,
+          "rotation": 180,
+          "length": 20
+        },
+        "C3": {
+          "name": "LRCLK",
+          "type": "Undefined",
+          "x": 80,
+          "y": 0,
+          "rotation": 180,
+          "length": 20
+        }
+      },
+      "expectedPins": {
+        "A1": "U10",
+        "A2": "U10",
+        "A3": "U10",
+        "B1": "U10",
+        "B2": "U10",
+        "B3": "U10",
+        "C1": "U10",
+        "C2": "U10",
+        "C3": "U10"
+      },
+      "missingPins": [],
+      "unexpectedPins": [],
+      "pinNameDifferences": [],
+      "sourceSha256": "39a16e7f9b5cbdbb27660675c04cb9095e9c4e984bc68eb65945cccc536d965e",
+      "sourceFile": "089470260239c122.elibz2"
+    },
+    {
+      "mpn": "PCA9306DQER",
+      "status": "PASS",
+      "scope": "Exact library device identity and complete physical symbol-pin identifiers only; footprint not checked.",
+      "device": {
+        "uuid": "1428090c2de2440db0c296ed79b6ebb3",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "PCA9306DQER",
+        "manufacturer": "TI(德州仪器)",
+        "manufacturerId": "PCA9306DQER",
+        "lcsc": "C440032",
+        "footprintName": "X2SON-8_L1.4-W1.0-P0.35-BL"
+      },
+      "association": {
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "3b017e7b9eec44c7b9aaa8ae7e7e0b47"
+        },
+        "footprintUuid": "3b017e7b9eec44c7b9aaa8ae7e7e0b47",
+        "images": [
+          "https://alimg.szlcsc.com/upload/public/product/middle/20230108/6A3EB832668878738811AAB7D8DC7C32.jpg"
+        ],
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "type": 2,
+          "uuid": "ba59a3a7641241999f1fcec4f7750b79"
+        },
+        "symbolType": 2,
+        "symbolUuid": "ba59a3a7641241999f1fcec4f7750b79"
+      },
+      "lcsc": "C440032",
+      "symbolPins": {
+        "1": {
+          "name": "GND",
+          "type": "Undefined",
+          "x": -50,
+          "y": -15,
+          "rotation": 0,
+          "length": 10
+        },
+        "2": {
+          "name": "VREF1",
+          "type": "Undefined",
+          "x": -50,
+          "y": -5,
+          "rotation": 0,
+          "length": 10
+        },
+        "3": {
+          "name": "SCL1",
+          "type": "Undefined",
+          "x": -50,
+          "y": 5,
+          "rotation": 0,
+          "length": 10
+        },
+        "4": {
+          "name": "SDA1",
+          "type": "Undefined",
+          "x": -50,
+          "y": 15,
+          "rotation": 0,
+          "length": 10
+        },
+        "5": {
+          "name": "SDA2",
+          "type": "Undefined",
+          "x": 50,
+          "y": 15,
+          "rotation": 180,
+          "length": 10
+        },
+        "6": {
+          "name": "SCL2",
+          "type": "Undefined",
+          "x": 50,
+          "y": 5,
+          "rotation": 180,
+          "length": 10
+        },
+        "7": {
+          "name": "VREF2",
+          "type": "Undefined",
+          "x": 50,
+          "y": -5,
+          "rotation": 180,
+          "length": 10
+        },
+        "8": {
+          "name": "EN",
+          "type": "Undefined",
+          "x": 50,
+          "y": -15,
+          "rotation": 180,
+          "length": 10
+        }
+      },
+      "expectedPins": {
+        "1": "U20",
+        "2": "U20",
+        "3": "U20",
+        "4": "U20",
+        "5": "U20",
+        "6": "U20",
+        "7": "U20",
+        "8": "U20"
+      },
+      "missingPins": [],
+      "unexpectedPins": [],
+      "pinNameDifferences": [],
+      "sourceSha256": "279b639925413c84091ea2ad176f5e8a9a414fd12525befe25dd4b73baca6e57",
+      "sourceFile": "372d7f6c71b54a42.elibz2"
+    },
+    {
+      "mpn": "PCB copper pad",
+      "status": "BLOCKED",
+      "reason": "No exact library identity."
+    },
+    {
+      "mpn": "PMV65XP",
+      "status": "PASS",
+      "scope": "Exact library device identity and complete physical symbol-pin identifiers only; footprint not checked.",
+      "device": {
+        "uuid": "d01492eea61a4a7ca03fe1fa505bd69c",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "PMV65XP",
+        "manufacturer": "TECH PUBLIC(台舟)",
+        "manufacturerId": "PMV65XP",
+        "lcsc": "C28646375",
+        "footprintName": "SOT-23-3_L2.9-W1.4-P1.90-LS2.5-BR"
+      },
+      "association": {
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "477d429f78ec4b83ba678933ca84e7ec"
+        },
+        "footprintUuid": "477d429f78ec4b83ba678933ca84e7ec",
+        "images": [
+          "https://alimg.szlcsc.com/upload/public/product/middle/20240719/52B68E4F0ABC5C4E5D74AD7A99406E94.jpg"
+        ],
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "type": 2,
+          "uuid": "450f7231df154cb297d6f87f3484895f"
+        },
+        "symbolType": 2,
+        "symbolUuid": "450f7231df154cb297d6f87f3484895f"
+      },
+      "lcsc": "C28646375",
+      "symbolPins": {
+        "2": {
+          "name": "S",
+          "type": "Undefined",
+          "x": 0,
+          "y": 20,
+          "rotation": 90,
+          "length": 10
+        },
+        "1": {
+          "name": "G",
+          "type": "Undefined",
+          "x": -25,
+          "y": 0,
+          "rotation": 0,
+          "length": 10
+        },
+        "3": {
+          "name": "D",
+          "type": "Undefined",
+          "x": 0,
+          "y": -20,
+          "rotation": 270,
+          "length": 10
+        }
+      },
+      "expectedPins": {
+        "1": "Q1",
+        "2": "Q1",
+        "3": "Q1"
+      },
+      "missingPins": [],
+      "unexpectedPins": [],
+      "pinNameDifferences": [],
+      "sourceSha256": "2cbeeac5a93e285ccb498d7fb68dd91e157b9e5a32542921248f073e749cd562",
+      "sourceFile": "8553e29d86a0e8b4.elibz2"
+    },
+    {
+      "mpn": "SN74AXC4T245RSVR",
+      "status": "PASS",
+      "scope": "Exact library device identity and complete physical symbol-pin identifiers only; footprint not checked.",
+      "device": {
+        "uuid": "e12e3a2873214150a212ce73193a23c6",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "SN74AXC4T245RSVR",
+        "manufacturer": "TI(德州仪器)",
+        "manufacturerId": "SN74AXC4T245RSVR",
+        "lcsc": "C2677409",
+        "footprintName": "UQFN-16_L2.6-W1.8-P0.40-BL"
+      },
+      "association": {
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "ed6cf90c4f0847e08f1c132b6b3ad597"
+        },
+        "footprintUuid": "ed6cf90c4f0847e08f1c132b6b3ad597",
+        "images": [
+          "https://alimg.szlcsc.com/upload/public/product/middle/20240103/11FEC4A239A94CE22D9237B5D86772D0.jpg"
+        ],
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "type": 2,
+          "uuid": "46ba734ce0334dcb8deb93a7a0312596"
+        },
+        "symbolType": 2,
+        "symbolUuid": "46ba734ce0334dcb8deb93a7a0312596"
+      },
+      "lcsc": "C2677409",
+      "symbolPins": {
+        "1": {
+          "name": "1OE#",
+          "type": "Undefined",
+          "x": -40,
+          "y": -15,
+          "rotation": 0,
+          "length": 10
+        },
+        "2": {
+          "name": "VCCB",
+          "type": "Undefined",
+          "x": -40,
+          "y": -5,
+          "rotation": 0,
+          "length": 10
+        },
+        "3": {
+          "name": "VCCA",
+          "type": "Undefined",
+          "x": -40,
+          "y": 5,
+          "rotation": 0,
+          "length": 10
+        },
+        "4": {
+          "name": "1DIR",
+          "type": "Undefined",
+          "x": -40,
+          "y": 15,
+          "rotation": 0,
+          "length": 10
+        },
+        "5": {
+          "name": "2DIR",
+          "type": "Undefined",
+          "x": -15,
+          "y": 60,
+          "rotation": 90,
+          "length": 10
+        },
+        "6": {
+          "name": "1A1",
+          "type": "Undefined",
+          "x": -5,
+          "y": 60,
+          "rotation": 90,
+          "length": 10
+        },
+        "7": {
+          "name": "1A2",
+          "type": "Undefined",
+          "x": 5,
+          "y": 60,
+          "rotation": 90,
+          "length": 10
+        },
+        "8": {
+          "name": "2A1",
+          "type": "Undefined",
+          "x": 15,
+          "y": 60,
+          "rotation": 90,
+          "length": 10
+        },
+        "9": {
+          "name": "2A2",
+          "type": "Undefined",
+          "x": 40,
+          "y": 15,
+          "rotation": 180,
+          "length": 10
+        },
+        "10": {
+          "name": "GND",
+          "type": "Undefined",
+          "x": 40,
+          "y": 5,
+          "rotation": 180,
+          "length": 10
+        },
+        "11": {
+          "name": "GND",
+          "type": "Undefined",
+          "x": 40,
+          "y": -5,
+          "rotation": 180,
+          "length": 10
+        },
+        "12": {
+          "name": "2B2",
+          "type": "Undefined",
+          "x": 40,
+          "y": -15,
+          "rotation": 180,
+          "length": 10
+        },
+        "13": {
+          "name": "2B1",
+          "type": "Undefined",
+          "x": 15,
+          "y": -60,
+          "rotation": 270,
+          "length": 10
+        },
+        "14": {
+          "name": "1B2",
+          "type": "Undefined",
+          "x": 5,
+          "y": -60,
+          "rotation": 270,
+          "length": 10
+        },
+        "15": {
+          "name": "1B1",
+          "type": "Undefined",
+          "x": -5,
+          "y": -60,
+          "rotation": 270,
+          "length": 10
+        },
+        "16": {
+          "name": "2OE#",
+          "type": "Undefined",
+          "x": -15,
+          "y": -60,
+          "rotation": 270,
+          "length": 10
+        }
+      },
+      "expectedPins": {
+        "1": "U8",
+        "2": "U8",
+        "3": "U8",
+        "4": "U8",
+        "5": "U8",
+        "6": "U8",
+        "7": "U8",
+        "8": "U8",
+        "9": "U8",
+        "10": "U8",
+        "11": "U8",
+        "12": "U8",
+        "13": "U8",
+        "14": "U8",
+        "15": "U8",
+        "16": "U8"
+      },
+      "missingPins": [],
+      "unexpectedPins": [],
+      "pinNameDifferences": [],
+      "sourceSha256": "9cbe445c964b2cab60870de867cd9e7aa898aa95b3feb263dcbb1c90f3138c85",
+      "sourceFile": "87811fbb97e33730.elibz2"
+    },
+    {
+      "mpn": "SN74AXC8T245RJWR",
+      "status": "PASS",
+      "scope": "Exact library device identity and complete physical symbol-pin identifiers only; footprint not checked.",
+      "device": {
+        "uuid": "adfb74f2e1e14840bffbd314e529747d",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "SN74AXC8T245RJWR",
+        "manufacturer": "TI(德州仪器)",
+        "manufacturerId": "SN74AXC8T245RJWR",
+        "lcsc": "C2859949",
+        "footprintName": "UQFN-24_L4.0-W2.0-P0.40-BL"
+      },
+      "association": {
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "85c63d2136994e699ffa4bcbc6e930e7"
+        },
+        "footprintUuid": "85c63d2136994e699ffa4bcbc6e930e7",
+        "images": [
+          "https://alimg.szlcsc.com/upload/public/product/middle/20230914/468D0AFE248D0E807FF0CE483D8C4DEA.jpg"
+        ],
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "type": 2,
+          "uuid": "5751996f949f4ea6a6c0cefe60a89400"
+        },
+        "symbolType": 2,
+        "symbolUuid": "5751996f949f4ea6a6c0cefe60a89400"
+      },
+      "lcsc": "C2859949",
+      "symbolPins": {
+        "1": {
+          "name": "DIR1",
+          "type": "Undefined",
+          "x": -45,
+          "y": -55,
+          "rotation": 0,
+          "length": 10
+        },
+        "2": {
+          "name": "A1",
+          "type": "Undefined",
+          "x": -45,
+          "y": -45,
+          "rotation": 0,
+          "length": 10
+        },
+        "3": {
+          "name": "A2",
+          "type": "Undefined",
+          "x": -45,
+          "y": -35,
+          "rotation": 0,
+          "length": 10
+        },
+        "4": {
+          "name": "A3",
+          "type": "Undefined",
+          "x": -45,
+          "y": -25,
+          "rotation": 0,
+          "length": 10
+        },
+        "5": {
+          "name": "A4",
+          "type": "Undefined",
+          "x": -45,
+          "y": -15,
+          "rotation": 0,
+          "length": 10
+        },
+        "6": {
+          "name": "A5",
+          "type": "Undefined",
+          "x": -45,
+          "y": -5,
+          "rotation": 0,
+          "length": 10
+        },
+        "7": {
+          "name": "A6",
+          "type": "Undefined",
+          "x": -45,
+          "y": 5,
+          "rotation": 0,
+          "length": 10
+        },
+        "8": {
+          "name": "A7",
+          "type": "Undefined",
+          "x": -45,
+          "y": 15,
+          "rotation": 0,
+          "length": 10
+        },
+        "9": {
+          "name": "A8",
+          "type": "Undefined",
+          "x": -45,
+          "y": 25,
+          "rotation": 0,
+          "length": 10
+        },
+        "10": {
+          "name": "DIR2",
+          "type": "Undefined",
+          "x": -45,
+          "y": 35,
+          "rotation": 0,
+          "length": 10
+        },
+        "11": {
+          "name": "GND",
+          "type": "Undefined",
+          "x": -45,
+          "y": 45,
+          "rotation": 0,
+          "length": 10
+        },
+        "12": {
+          "name": "GND",
+          "type": "Undefined",
+          "x": -45,
+          "y": 55,
+          "rotation": 0,
+          "length": 10
+        },
+        "13": {
+          "name": "B8",
+          "type": "Undefined",
+          "x": 45,
+          "y": 55,
+          "rotation": 180,
+          "length": 10
+        },
+        "14": {
+          "name": "B7",
+          "type": "Undefined",
+          "x": 45,
+          "y": 45,
+          "rotation": 180,
+          "length": 10
+        },
+        "15": {
+          "name": "B6",
+          "type": "Undefined",
+          "x": 45,
+          "y": 35,
+          "rotation": 180,
+          "length": 10
+        },
+        "16": {
+          "name": "B5",
+          "type": "Undefined",
+          "x": 45,
+          "y": 25,
+          "rotation": 180,
+          "length": 10
+        },
+        "17": {
+          "name": "B4",
+          "type": "Undefined",
+          "x": 45,
+          "y": 15,
+          "rotation": 180,
+          "length": 10
+        },
+        "18": {
+          "name": "B3",
+          "type": "Undefined",
+          "x": 45,
+          "y": 5,
+          "rotation": 180,
+          "length": 10
+        },
+        "19": {
+          "name": "B2",
+          "type": "Undefined",
+          "x": 45,
+          "y": -5,
+          "rotation": 180,
+          "length": 10
+        },
+        "20": {
+          "name": "B1",
+          "type": "Undefined",
+          "x": 45,
+          "y": -15,
+          "rotation": 180,
+          "length": 10
+        },
+        "21": {
+          "name": "OE#",
+          "type": "Undefined",
+          "x": 45,
+          "y": -25,
+          "rotation": 180,
+          "length": 10
+        },
+        "22": {
+          "name": "VCCB",
+          "type": "Undefined",
+          "x": 45,
+          "y": -35,
+          "rotation": 180,
+          "length": 10
+        },
+        "23": {
+          "name": "VCCB",
+          "type": "Undefined",
+          "x": 45,
+          "y": -45,
+          "rotation": 180,
+          "length": 10
+        },
+        "24": {
+          "name": "VCCA",
+          "type": "Undefined",
+          "x": 45,
+          "y": -55,
+          "rotation": 180,
+          "length": 10
+        }
+      },
+      "expectedPins": {
+        "1": "U16",
+        "2": "U16",
+        "3": "U16",
+        "4": "U16",
+        "5": "U16",
+        "6": "U16",
+        "7": "U16",
+        "8": "U16",
+        "9": "U16",
+        "10": "U16",
+        "11": "U16",
+        "12": "U16",
+        "13": "U16",
+        "14": "U16",
+        "15": "U16",
+        "16": "U16",
+        "17": "U16",
+        "18": "U16",
+        "19": "U16",
+        "20": "U16",
+        "21": "U16",
+        "22": "U16",
+        "23": "U16",
+        "24": "U16"
+      },
+      "missingPins": [],
+      "unexpectedPins": [],
+      "pinNameDifferences": [],
+      "sourceSha256": "afbd8a54a9e51238af4ab41d2d2d6febbba3b7e50ce879aac500fc3d8df68d47",
+      "sourceFile": "7a3efcef0a0f92bc.elibz2"
+    },
+    {
+      "mpn": "SN74LVC1G07DPWR",
+      "status": "PASS",
+      "scope": "Exact library device identity and complete physical symbol-pin identifiers only; footprint not checked.",
+      "device": {
+        "uuid": "823ee1eefa1f4bf58882b2173187cef7",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "SN74LVC1G07DPWR",
+        "manufacturer": "TI(德州仪器)",
+        "manufacturerId": "SN74LVC1G07DPWR",
+        "lcsc": "C2871155",
+        "footprintName": "X2SON-5_L0.8-W0.8-P0.48-BL-EP"
+      },
+      "association": {
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "ca8171b76da04f1abda38b7f3f16c88f"
+        },
+        "footprintUuid": "ca8171b76da04f1abda38b7f3f16c88f",
+        "images": [
+          "https://alimg.szlcsc.com/upload/public/product/middle/20230228/A1D15FE6CD46E4DB180EF08E2C931C7C.jpg"
+        ],
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "type": 2,
+          "uuid": "856b342263d144ffb0acf28f259fe624"
+        },
+        "symbolType": 2,
+        "symbolUuid": "856b342263d144ffb0acf28f259fe624"
+      },
+      "lcsc": "C2871155",
+      "symbolPins": {
+        "1": {
+          "name": "N.C.",
+          "type": "Undefined",
+          "x": -40,
+          "y": -10,
+          "rotation": 0,
+          "length": 10
+        },
+        "2": {
+          "name": "A",
+          "type": "Undefined",
+          "x": -40,
+          "y": 0,
+          "rotation": 0,
+          "length": 10
+        },
+        "3": {
+          "name": "GND",
+          "type": "Undefined",
+          "x": 0,
+          "y": 20,
+          "rotation": 90,
+          "length": 10
+        },
+        "4": {
+          "name": "Y",
+          "type": "Undefined",
+          "x": 40,
+          "y": 0,
+          "rotation": 180,
+          "length": 10
+        },
+        "5": {
+          "name": "VCC",
+          "type": "Undefined",
+          "x": 40,
+          "y": -10,
+          "rotation": 180,
+          "length": 10
+        }
+      },
+      "expectedPins": {
+        "1": "U17",
+        "2": "U17",
+        "3": "U17",
+        "4": "U17",
+        "5": "U17"
+      },
+      "missingPins": [],
+      "unexpectedPins": [],
+      "pinNameDifferences": [],
+      "sourceSha256": "fb68c93b0b7426e22cba87ea2eb3b3a39c252ae2b5345c950ce45a463dba6ed1",
+      "sourceFile": "aad8c43621ba5cf2.elibz2"
+    },
+    {
+      "mpn": "SN74LVC1G175DCKR",
+      "status": "PASS",
+      "scope": "Exact library device identity and complete physical symbol-pin identifiers only; footprint not checked.",
+      "device": {
+        "uuid": "e6bbf121fc0d4d47be8ec1827e0f3b5d",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "SN74LVC1G175DCKR",
+        "manufacturer": "TI(德州仪器)",
+        "manufacturerId": "SN74LVC1G175DCKR",
+        "lcsc": "C202238",
+        "footprintName": "SC-70-6_L2.0-W1.3-P0.65-LS2.1-BR"
+      },
+      "association": {
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "9a330370d13e4956a1ce320df2046066"
+        },
+        "footprintUuid": "9a330370d13e4956a1ce320df2046066",
+        "images": [
+          "https://alimg.szlcsc.com/upload/public/product/middle/20230108/371335F754127CE45494C4997B335C18.jpg"
+        ],
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "type": 2,
+          "uuid": "f04a613368844e48900c955f653e5e9a"
+        },
+        "symbolType": 2,
+        "symbolUuid": "f04a613368844e48900c955f653e5e9a"
+      },
+      "lcsc": "C202238",
+      "symbolPins": {
+        "1": {
+          "name": "CLK",
+          "type": "Undefined",
+          "x": -40,
+          "y": -10,
+          "rotation": 0,
+          "length": 10
+        },
+        "2": {
+          "name": "GND",
+          "type": "Undefined",
+          "x": -40,
+          "y": 0,
+          "rotation": 0,
+          "length": 10
+        },
+        "3": {
+          "name": "D",
+          "type": "Undefined",
+          "x": -40,
+          "y": 10,
+          "rotation": 0,
+          "length": 10
+        },
+        "4": {
+          "name": "Q",
+          "type": "Undefined",
+          "x": 40,
+          "y": 10,
+          "rotation": 180,
+          "length": 10
+        },
+        "5": {
+          "name": "VCC",
+          "type": "Undefined",
+          "x": 40,
+          "y": 0,
+          "rotation": 180,
+          "length": 10
+        },
+        "6": {
+          "name": "CLR#",
+          "type": "Undefined",
+          "x": 40,
+          "y": -10,
+          "rotation": 180,
+          "length": 10
+        }
+      },
+      "expectedPins": {
+        "1": "U10",
+        "2": "U10",
+        "3": "U10",
+        "4": "U10",
+        "5": "U10",
+        "6": "U10"
+      },
+      "missingPins": [],
+      "unexpectedPins": [],
+      "pinNameDifferences": [],
+      "sourceSha256": "0d12c5a298a14385ec254ad269d033a8e5c8ece1d3c9b3dc53282e5a3d224e4c",
+      "sourceFile": "fe1b7736dbc6addd.elibz2"
+    },
+    {
+      "mpn": "SN74LVC1G3157DSFR",
+      "status": "PASS",
+      "scope": "Exact library device identity and complete physical symbol-pin identifiers only; footprint not checked.",
+      "device": {
+        "uuid": "0c7a73ed91b5488286af3f992f3adb99",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "SN74LVC1G3157DSFR",
+        "manufacturer": "TI(德州仪器)",
+        "manufacturerId": "SN74LVC1G3157DSFR",
+        "lcsc": "C350945",
+        "footprintName": "X2SON-6_L1.0-W1.0-P0.35-TL"
+      },
+      "association": {
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "e854a67a658546c28f25f7e273d9631d"
+        },
+        "footprintUuid": "e854a67a658546c28f25f7e273d9631d",
+        "images": [
+          "https://alimg.szlcsc.com/upload/public/product/middle/20230109/EB8968C447B3D95254F4B2E67AA685A0.jpg"
+        ],
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "type": 2,
+          "uuid": "32e46eb845bb45749f2eb101140896a7"
+        },
+        "symbolType": 2,
+        "symbolUuid": "32e46eb845bb45749f2eb101140896a7"
+      },
+      "lcsc": "C350945",
+      "symbolPins": {
+        "1": {
+          "name": "B2",
+          "type": "Undefined",
+          "x": -40,
+          "y": -10,
+          "rotation": 0,
+          "length": 10
+        },
+        "2": {
+          "name": "GND",
+          "type": "Undefined",
+          "x": -40,
+          "y": 0,
+          "rotation": 0,
+          "length": 10
+        },
+        "3": {
+          "name": "B1",
+          "type": "Undefined",
+          "x": -40,
+          "y": 10,
+          "rotation": 0,
+          "length": 10
+        },
+        "4": {
+          "name": "A",
+          "type": "Undefined",
+          "x": 40,
+          "y": 10,
+          "rotation": 180,
+          "length": 10
+        },
+        "5": {
+          "name": "VCC",
+          "type": "Undefined",
+          "x": 40,
+          "y": 0,
+          "rotation": 180,
+          "length": 10
+        },
+        "6": {
+          "name": "S",
+          "type": "Undefined",
+          "x": 40,
+          "y": -10,
+          "rotation": 180,
+          "length": 10
+        }
+      },
+      "expectedPins": {
+        "1": "U1",
+        "2": "U1",
+        "3": "U1",
+        "4": "U1",
+        "5": "U1",
+        "6": "U1"
+      },
+      "missingPins": [],
+      "unexpectedPins": [],
+      "pinNameDifferences": [],
+      "sourceSha256": "b7ef1d62aba836616e8f13253a9c93cf7b553a033f9851b9694f08aad9321668",
+      "sourceFile": "d8cffa70517ab7c7.elibz2"
+    },
+    {
+      "mpn": "SN74LVC2G17DCKR",
+      "status": "UNVERIFIED",
+      "reason": "Multiple exact candidates and no unique manufacturer match: See source ledger",
+      "candidates": [
+        {
+          "uuid": "e0b324fead61483190b19506de3fb423",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "SN74LVC2G17DCKR",
+          "manufacturer": "TI(德州仪器)",
+          "manufacturerId": "SN74LVC2G17DCKR",
+          "lcsc": "C50714",
+          "footprintName": "SOT-363_L2.0-W1.3-P0.65-LS2.1-BR"
+        },
+        {
+          "uuid": "4d85eec99aef426a8d48fdfceb7ecc42",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "SN74LVC2G17DCKR_C19829678",
+          "manufacturer": "TECH PUBLIC(台舟)",
+          "manufacturerId": "SN74LVC2G17DCKR",
+          "lcsc": "C19829678",
+          "footprintName": "SOT-363_L2.0-W1.3-P0.65-LS2.1-BR"
+        }
+      ]
+    },
+    {
+      "mpn": "SN74LVC2T45DCUR",
+      "status": "PASS",
+      "scope": "Exact library device identity and complete physical symbol-pin identifiers only; footprint not checked.",
+      "device": {
+        "uuid": "5c75c471d44a42c18b81c95575085e21",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "SN74LVC2T45DCUR",
+        "manufacturer": "TI(德州仪器)",
+        "manufacturerId": "SN74LVC2T45DCUR",
+        "lcsc": "C15741",
+        "footprintName": "VSSOP-8_L2.4-W2.1-P0.50-LS3.2-BR"
+      },
+      "association": {
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "2a23aacc18ef427186a7e01375564768"
+        },
+        "footprintUuid": "2a23aacc18ef427186a7e01375564768",
+        "images": [
+          "https://alimg.szlcsc.com/upload/public/product/middle/20240802/0509974E78E06043F79CB0748BADC84B.jpg"
+        ],
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "type": 2,
+          "uuid": "5cf28ea1f8cc46ba8d766a692d42c553"
+        },
+        "symbolType": 2,
+        "symbolUuid": "5cf28ea1f8cc46ba8d766a692d42c553"
+      },
+      "lcsc": "C15741",
+      "symbolPins": {
+        "1": {
+          "name": "VCCA",
+          "type": "Undefined",
+          "x": -50,
+          "y": -15,
+          "rotation": 0,
+          "length": 10
+        },
+        "2": {
+          "name": "A1",
+          "type": "Undefined",
+          "x": -50,
+          "y": -5,
+          "rotation": 0,
+          "length": 10
+        },
+        "3": {
+          "name": "A2",
+          "type": "Undefined",
+          "x": -50,
+          "y": 5,
+          "rotation": 0,
+          "length": 10
+        },
+        "4": {
+          "name": "GND",
+          "type": "Undefined",
+          "x": -50,
+          "y": 15,
+          "rotation": 0,
+          "length": 10
+        },
+        "5": {
+          "name": "DIR",
+          "type": "Undefined",
+          "x": 50,
+          "y": 15,
+          "rotation": 180,
+          "length": 10
+        },
+        "6": {
+          "name": "B2",
+          "type": "Undefined",
+          "x": 50,
+          "y": 5,
+          "rotation": 180,
+          "length": 10
+        },
+        "7": {
+          "name": "B1",
+          "type": "Undefined",
+          "x": 50,
+          "y": -5,
+          "rotation": 180,
+          "length": 10
+        },
+        "8": {
+          "name": "VCCB",
+          "type": "Undefined",
+          "x": 50,
+          "y": -15,
+          "rotation": 180,
+          "length": 10
+        }
+      },
+      "expectedPins": {
+        "1": "U8",
+        "2": "U8",
+        "3": "U8",
+        "4": "U8",
+        "5": "U8",
+        "6": "U8",
+        "7": "U8",
+        "8": "U8"
+      },
+      "missingPins": [],
+      "unexpectedPins": [],
+      "pinNameDifferences": [],
+      "sourceSha256": "7a1a74590b3e1e6e960de3726182b4ae05004e7b5f65023992638678c82de0ea",
+      "sourceFile": "f52b5477fa7640ff.elibz2"
+    },
+    {
+      "mpn": "TLV7042DSGR",
+      "status": "PASS",
+      "scope": "Exact library device identity and complete physical symbol-pin identifiers only; footprint not checked.",
+      "device": {
+        "uuid": "173b24ef9eb140759a355c8c88767a97",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "TLV7042DSGR",
+        "manufacturer": "TI(德州仪器)",
+        "manufacturerId": "TLV7042DSGR",
+        "lcsc": "C3659180",
+        "footprintName": "WSON-8_L2.0-W2.0-P0.50-TL-EP"
+      },
+      "association": {
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "ff1b854294ea4ce0976b7b0bdcaf3ea1"
+        },
+        "footprintUuid": "ff1b854294ea4ce0976b7b0bdcaf3ea1",
+        "images": [
+          "https://alimg.szlcsc.com/upload/public/product/middle/20240614/DDC85AA1D204CBA05066CC3F36E5B32E.jpg"
+        ],
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "type": 2,
+          "uuid": "7f72ad79823242baa8b3373c53ddf292"
+        },
+        "symbolType": 2,
+        "symbolUuid": "7f72ad79823242baa8b3373c53ddf292"
+      },
+      "lcsc": "C3659180",
+      "symbolPins": {
+        "4": {
+          "name": "GND",
+          "type": "Power",
+          "x": 0,
+          "y": 40,
+          "rotation": 90,
+          "length": 20
+        },
+        "8": {
+          "name": "V+",
+          "type": "Power",
+          "x": 0,
+          "y": -40,
+          "rotation": 270,
+          "length": 20
+        },
+        "1": {
+          "name": "1OUT",
+          "type": "OUT",
+          "x": 40,
+          "y": 0,
+          "rotation": 180,
+          "length": 20
+        },
+        "2": {
+          "name": "1IN-",
+          "type": "Undefined",
+          "x": -40,
+          "y": -10,
+          "rotation": 0,
+          "length": 20
+        },
+        "3": {
+          "name": "1IN+",
+          "type": "Undefined",
+          "x": -40,
+          "y": 10,
+          "rotation": 0,
+          "length": 20
+        },
+        "9": {
+          "name": "EP",
+          "type": "Undefined",
+          "x": 40,
+          "y": -20,
+          "rotation": 180,
+          "length": 20
+        },
+        "5": {
+          "name": "2IN+",
+          "type": "Undefined",
+          "x": -40,
+          "y": 10,
+          "rotation": 0,
+          "length": 20
+        },
+        "6": {
+          "name": "2IN-",
+          "type": "Undefined",
+          "x": -40,
+          "y": -10,
+          "rotation": 0,
+          "length": 20
+        },
+        "7": {
+          "name": "2OUT",
+          "type": "OUT",
+          "x": 40,
+          "y": 0,
+          "rotation": 180,
+          "length": 20
+        }
+      },
+      "expectedPins": {
+        "1": "U14",
+        "2": "U14",
+        "3": "U14",
+        "4": "U14",
+        "5": "U14",
+        "6": "U14",
+        "7": "U14",
+        "8": "U14",
+        "9": "U14"
+      },
+      "missingPins": [],
+      "unexpectedPins": [],
+      "pinNameDifferences": [
+        {
+          "pin": "1",
+          "source": "OUTA",
+          "library": "1OUT"
+        },
+        {
+          "pin": "2",
+          "source": "INA-",
+          "library": "1IN-"
+        },
+        {
+          "pin": "3",
+          "source": "INA+",
+          "library": "1IN+"
+        },
+        {
+          "pin": "4",
+          "source": "VEE",
+          "library": "GND"
+        },
+        {
+          "pin": "5",
+          "source": "INB+",
+          "library": "2IN+"
+        },
+        {
+          "pin": "6",
+          "source": "INB-",
+          "library": "2IN-"
+        },
+        {
+          "pin": "7",
+          "source": "OUTB",
+          "library": "2OUT"
+        },
+        {
+          "pin": "8",
+          "source": "VCC",
+          "library": "V+"
+        },
+        {
+          "pin": "9",
+          "source": "EP_GND",
+          "library": "EP"
+        }
+      ],
+      "sourceSha256": "7830b2674298ced5abad584156ac9e55b85a8bb6e45166051334b6c7b0b16704",
+      "sourceFile": "47bf50b37b98c2de.elibz2"
+    },
+    {
+      "mpn": "TLV75512PDQNR",
+      "status": "PASS",
+      "scope": "Exact library device identity and complete physical symbol-pin identifiers only; footprint not checked.",
+      "device": {
+        "uuid": "53182ba115aa46a2a877ba45531ccbf8",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "TLV75512PDQNR",
+        "manufacturer": "TI(德州仪器)",
+        "manufacturerId": "TLV75512PDQNR",
+        "lcsc": "C2867150",
+        "footprintName": "X2SON-4_L1.0-W1.0-P0.65-TL-EP"
+      },
+      "association": {
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "9389abf02e4c4143ac8b0ed2752cc658"
+        },
+        "footprintUuid": "9389abf02e4c4143ac8b0ed2752cc658",
+        "images": [
+          "https://alimg.szlcsc.com/upload/public/product/middle/20230220/6195E30B6282793DCECD93D312C9945A.jpg"
+        ],
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "type": 2,
+          "uuid": "652c7643b94c404b8c3bdbb37c085bd1"
+        },
+        "symbolType": 2,
+        "symbolUuid": "652c7643b94c404b8c3bdbb37c085bd1"
+      },
+      "lcsc": "C2867150",
+      "symbolPins": {
+        "5": {
+          "name": "EP",
+          "type": "Undefined",
+          "x": 30,
+          "y": -10,
+          "rotation": 180,
+          "length": 10
+        },
+        "4": {
+          "name": "IN",
+          "type": "Undefined",
+          "x": 30,
+          "y": 10,
+          "rotation": 180,
+          "length": 10
+        },
+        "3": {
+          "name": "EN",
+          "type": "Undefined",
+          "x": -40,
+          "y": 10,
+          "rotation": 0,
+          "length": 10
+        },
+        "2": {
+          "name": "GND",
+          "type": "Undefined",
+          "x": -40,
+          "y": 0,
+          "rotation": 0,
+          "length": 10
+        },
+        "1": {
+          "name": "OUT",
+          "type": "Undefined",
+          "x": -40,
+          "y": -10,
+          "rotation": 0,
+          "length": 10
+        }
+      },
+      "expectedPins": {
+        "1": "U4",
+        "2": "U4",
+        "3": "U4",
+        "4": "U4",
+        "5": "U4"
+      },
+      "missingPins": [],
+      "unexpectedPins": [],
+      "pinNameDifferences": [
+        {
+          "pin": "5",
+          "source": "EP_GND",
+          "library": "EP"
+        }
+      ],
+      "sourceSha256": "8bf4d3c570dfa94cee08732fb914fbea0b4a7de01e1e2eeaa6eec772679aff8d",
+      "sourceFile": "85c0307ff96f22ed.elibz2"
+    },
+    {
+      "mpn": "TLV75518PDQNR",
+      "status": "PASS",
+      "scope": "Exact library device identity and complete physical symbol-pin identifiers only; footprint not checked.",
+      "device": {
+        "uuid": "82b47b2125fe40b896cbc9d367057553",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "TLV75518PDQNR",
+        "manufacturer": "TI(德州仪器)",
+        "manufacturerId": "TLV75518PDQNR",
+        "lcsc": "C2867154",
+        "footprintName": "X2SON-4_L1.0-W1.0-P0.65-TL-EP"
+      },
+      "association": {
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "9389abf02e4c4143ac8b0ed2752cc658"
+        },
+        "footprintUuid": "9389abf02e4c4143ac8b0ed2752cc658",
+        "images": [
+          "https://alimg.szlcsc.com/upload/public/product/middle/20240815/1672DA95B8325CB84E36232D5168B9A4.jpg"
+        ],
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "type": 2,
+          "uuid": "8f16ff6dc06545e5abb233b7aaba0a5b"
+        },
+        "symbolType": 2,
+        "symbolUuid": "8f16ff6dc06545e5abb233b7aaba0a5b"
+      },
+      "lcsc": "C2867154",
+      "symbolPins": {
+        "1": {
+          "name": "OUT",
+          "type": "Undefined",
+          "x": -35,
+          "y": -10,
+          "rotation": 0,
+          "length": 10
+        },
+        "2": {
+          "name": "GND",
+          "type": "Undefined",
+          "x": -35,
+          "y": 0,
+          "rotation": 0,
+          "length": 10
+        },
+        "3": {
+          "name": "EN",
+          "type": "Undefined",
+          "x": -35,
+          "y": 10,
+          "rotation": 0,
+          "length": 10
+        },
+        "4": {
+          "name": "IN",
+          "type": "Undefined",
+          "x": 35,
+          "y": 10,
+          "rotation": 180,
+          "length": 10
+        },
+        "5": {
+          "name": "EP",
+          "type": "Undefined",
+          "x": 35,
+          "y": -10,
+          "rotation": 180,
+          "length": 10
+        }
+      },
+      "expectedPins": {
+        "1": "U1",
+        "2": "U1",
+        "3": "U1",
+        "4": "U1",
+        "5": "U1"
+      },
+      "missingPins": [],
+      "unexpectedPins": [],
+      "pinNameDifferences": [
+        {
+          "pin": "5",
+          "source": "EP_GND",
+          "library": "EP"
+        }
+      ],
+      "sourceSha256": "9f8e8aa4aa11fba2893fb7a5bc3d6887d7a740a59868894a0a80be2f3f753683",
+      "sourceFile": "2b8b9b8f9d438115.elibz2"
+    },
+    {
+      "mpn": "TLV75528PDQNR",
+      "status": "PASS",
+      "scope": "Exact library device identity and complete physical symbol-pin identifiers only; footprint not checked.",
+      "device": {
+        "uuid": "e7370160c30041608b55a2fb9a66a975",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "TLV75528PDQNR",
+        "manufacturer": "TI(德州仪器)",
+        "manufacturerId": "TLV75528PDQNR",
+        "lcsc": "C2865384",
+        "footprintName": "X2SON-4_L1.0-W1.0-P0.65-TL-EP"
+      },
+      "association": {
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "9389abf02e4c4143ac8b0ed2752cc658"
+        },
+        "footprintUuid": "9389abf02e4c4143ac8b0ed2752cc658",
+        "images": [
+          "https://alimg.szlcsc.com/upload/public/product/middle/20241218/A10ECAE516B25D2A8B297A3BF5C60F7F.jpg"
+        ],
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "type": 2,
+          "uuid": "4d8ae62448934662b55dc3881cf8e9be"
+        },
+        "symbolType": 2,
+        "symbolUuid": "4d8ae62448934662b55dc3881cf8e9be"
+      },
+      "lcsc": "C2865384",
+      "symbolPins": {
+        "1": {
+          "name": "OUT",
+          "type": "Undefined",
+          "x": -35,
+          "y": -10,
+          "rotation": 0,
+          "length": 10
+        },
+        "2": {
+          "name": "GND",
+          "type": "Undefined",
+          "x": -35,
+          "y": 0,
+          "rotation": 0,
+          "length": 10
+        },
+        "3": {
+          "name": "EN",
+          "type": "Undefined",
+          "x": -35,
+          "y": 10,
+          "rotation": 0,
+          "length": 10
+        },
+        "4": {
+          "name": "IN",
+          "type": "Undefined",
+          "x": 35,
+          "y": 5,
+          "rotation": 180,
+          "length": 10
+        },
+        "5": {
+          "name": "NC",
+          "type": "Undefined",
+          "x": 35,
+          "y": -5,
+          "rotation": 180,
+          "length": 10
+        }
+      },
+      "expectedPins": {
+        "1": "U6",
+        "2": "U6",
+        "3": "U6",
+        "4": "U6",
+        "5": "U6"
+      },
+      "missingPins": [],
+      "unexpectedPins": [],
+      "pinNameDifferences": [
+        {
+          "pin": "5",
+          "source": "EP_GND",
+          "library": "NC"
+        }
+      ],
+      "sourceSha256": "68bf6147b510f1ba093272fe56b75610e19469654bbef144031fa3bf1cc679d5",
+      "sourceFile": "b2a5c30658ebf2c3.elibz2"
+    },
+    {
+      "mpn": "TPS389018DSET",
+      "status": "PASS",
+      "scope": "Exact library device identity and complete physical symbol-pin identifiers only; footprint not checked.",
+      "device": {
+        "uuid": "341cd4db1fb9470bb75624340e7b9310",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "TPS389018DSET",
+        "manufacturer": "TI(德州仪器)",
+        "manufacturerId": "TPS389018DSET",
+        "lcsc": "C2068240",
+        "footprintName": "WSON-6_L1.5-W1.5-P0.50-TL"
+      },
+      "association": {
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "032696bb2966479fa003e2bcbb4d8ec7"
+        },
+        "footprintUuid": "032696bb2966479fa003e2bcbb4d8ec7",
+        "images": [],
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "type": 2,
+          "uuid": "d4e8ec3c467148c786389691b370b1bb"
+        },
+        "symbolType": 2,
+        "symbolUuid": "d4e8ec3c467148c786389691b370b1bb"
+      },
+      "lcsc": "C2068240",
+      "symbolPins": {
+        "1": {
+          "name": "SENSE",
+          "type": "Undefined",
+          "x": -60,
+          "y": -10,
+          "rotation": 0,
+          "length": 10
+        },
+        "2": {
+          "name": "GND",
+          "type": "Undefined",
+          "x": -60,
+          "y": 0,
+          "rotation": 0,
+          "length": 10
+        },
+        "3": {
+          "name": "MR#",
+          "type": "Undefined",
+          "x": -60,
+          "y": 10,
+          "rotation": 0,
+          "length": 10
+        },
+        "4": {
+          "name": "VDD",
+          "type": "Undefined",
+          "x": 60,
+          "y": 10,
+          "rotation": 180,
+          "length": 10
+        },
+        "5": {
+          "name": "CT",
+          "type": "Undefined",
+          "x": 60,
+          "y": 0,
+          "rotation": 180,
+          "length": 10
+        },
+        "6": {
+          "name": "RESET#",
+          "type": "Undefined",
+          "x": 60,
+          "y": -10,
+          "rotation": 180,
+          "length": 10
+        }
+      },
+      "expectedPins": {
+        "1": "U7",
+        "2": "U7",
+        "3": "U7",
+        "4": "U7",
+        "5": "U7",
+        "6": "U7"
+      },
+      "missingPins": [],
+      "unexpectedPins": [],
+      "pinNameDifferences": [],
+      "sourceSha256": "bb09afb06c334ebe9ea02d833df9dbdcc9b9843c11bedbc0ddd153f9d1653a0d",
+      "sourceFile": "77a209a0a76cabf1.elibz2"
+    },
+    {
+      "mpn": "TPS389025DSET",
+      "status": "PASS",
+      "scope": "Exact library device identity and complete physical symbol-pin identifiers only; footprint not checked.",
+      "device": {
+        "uuid": "fbd52791be1b41a5a970dfb7ca996f4e",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "TPS389025DSET",
+        "manufacturer": "TI(德州仪器)",
+        "manufacturerId": "TPS389025DSET",
+        "lcsc": "C2868378",
+        "footprintName": "WSON-6_L1.5-W1.5-P0.50-TL"
+      },
+      "association": {
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "032696bb2966479fa003e2bcbb4d8ec7"
+        },
+        "footprintUuid": "032696bb2966479fa003e2bcbb4d8ec7",
+        "images": [],
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "type": 2,
+          "uuid": "52c71c1dcec644cfb229005003fe8043"
+        },
+        "symbolType": 2,
+        "symbolUuid": "52c71c1dcec644cfb229005003fe8043"
+      },
+      "lcsc": "C2868378",
+      "symbolPins": {
+        "1": {
+          "name": "SENSE",
+          "type": "Undefined",
+          "x": -55,
+          "y": -10,
+          "rotation": 0,
+          "length": 10
+        },
+        "2": {
+          "name": "GND",
+          "type": "Undefined",
+          "x": -55,
+          "y": 0,
+          "rotation": 0,
+          "length": 10
+        },
+        "3": {
+          "name": "MR#",
+          "type": "Undefined",
+          "x": -55,
+          "y": 10,
+          "rotation": 0,
+          "length": 10
+        },
+        "4": {
+          "name": "VDD",
+          "type": "Undefined",
+          "x": 55,
+          "y": 10,
+          "rotation": 180,
+          "length": 10
+        },
+        "5": {
+          "name": "CT",
+          "type": "Undefined",
+          "x": 55,
+          "y": 0,
+          "rotation": 180,
+          "length": 10
+        },
+        "6": {
+          "name": "RESET#",
+          "type": "Undefined",
+          "x": 55,
+          "y": -10,
+          "rotation": 180,
+          "length": 10
+        }
+      },
+      "expectedPins": {
+        "1": "U12",
+        "2": "U12",
+        "3": "U12",
+        "4": "U12",
+        "5": "U12",
+        "6": "U12"
+      },
+      "missingPins": [],
+      "unexpectedPins": [],
+      "pinNameDifferences": [],
+      "sourceSha256": "a7241b99d08806db430f48504d7ec33519abdffa1d0eda9e78d536ea66f3de91",
+      "sourceFile": "b6286e04293b9ec2.elibz2"
+    },
+    {
+      "mpn": "TPS62840DLCR",
+      "status": "PASS",
+      "scope": "Exact library device identity and complete physical symbol-pin identifiers only; footprint not checked.",
+      "device": {
+        "uuid": "2bf1f0242e7847c98af4ccfa94e90322",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "TPS62840DLCR",
+        "manufacturer": "TI(德州仪器)",
+        "manufacturerId": "TPS62840DLCR",
+        "lcsc": "C2071859",
+        "footprintName": "VSON-8_L2.0-W1.5-P0.50-BL"
+      },
+      "association": {
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "fcdb55ce60df4ea2980cd37c83b897f9"
+        },
+        "footprintUuid": "fcdb55ce60df4ea2980cd37c83b897f9",
+        "images": [
+          "https://alimg.szlcsc.com/upload/public/product/middle/20230105/362EE1E007A4D2A0D12B97B7DAF490DD.jpg"
+        ],
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "type": 2,
+          "uuid": "e44a2f3e18a943d8877ad0f04c06b6a7"
+        },
+        "symbolType": 2,
+        "symbolUuid": "e44a2f3e18a943d8877ad0f04c06b6a7"
+      },
+      "lcsc": "C2071859",
+      "symbolPins": {
+        "1": {
+          "name": "GND",
+          "type": "Undefined",
+          "x": -45,
+          "y": -15,
+          "rotation": 0,
+          "length": 10
+        },
+        "2": {
+          "name": "VIN",
+          "type": "Undefined",
+          "x": -45,
+          "y": -5,
+          "rotation": 0,
+          "length": 10
+        },
+        "3": {
+          "name": "MODE",
+          "type": "Undefined",
+          "x": -45,
+          "y": 5,
+          "rotation": 0,
+          "length": 10
+        },
+        "4": {
+          "name": "EN",
+          "type": "Undefined",
+          "x": -45,
+          "y": 15,
+          "rotation": 0,
+          "length": 10
+        },
+        "5": {
+          "name": "VSET",
+          "type": "Undefined",
+          "x": 45,
+          "y": 15,
+          "rotation": 180,
+          "length": 10
+        },
+        "6": {
+          "name": "STOP",
+          "type": "Undefined",
+          "x": 45,
+          "y": 5,
+          "rotation": 180,
+          "length": 10
+        },
+        "7": {
+          "name": "SW",
+          "type": "Undefined",
+          "x": 45,
+          "y": -5,
+          "rotation": 180,
+          "length": 10
+        },
+        "8": {
+          "name": "VOS",
+          "type": "Undefined",
+          "x": 45,
+          "y": -15,
+          "rotation": 180,
+          "length": 10
+        }
+      },
+      "expectedPins": {
+        "1": "U4",
+        "2": "U4",
+        "3": "U4",
+        "4": "U4",
+        "5": "U4",
+        "6": "U4",
+        "7": "U4",
+        "8": "U4"
+      },
+      "missingPins": [],
+      "unexpectedPins": [],
+      "pinNameDifferences": [],
+      "sourceSha256": "f6f22efe5171d8d30340fd73b1fde69db02aa5b40206296e688a300b4fa0377a",
+      "sourceFile": "cb1035b1f518b21b.elibz2"
+    },
+    {
+      "mpn": "TPS63805YFFR",
+      "status": "PASS",
+      "scope": "Exact library device identity and complete physical symbol-pin identifiers only; footprint not checked.",
+      "device": {
+        "uuid": "82d4e6675fc84e21b92ae8f7c0ab14b0",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "TPS63805YFFR",
+        "manufacturer": "TI(德州仪器)",
+        "manufacturerId": "TPS63805YFFR",
+        "lcsc": "C2879615",
+        "footprintName": "DSBGA-15_L2.3-W1.3-R5-C3-P0.40-TL"
+      },
+      "association": {
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "099b1cc207414ff8ad25ce6e91db253b"
+        },
+        "footprintUuid": "099b1cc207414ff8ad25ce6e91db253b",
+        "images": [
+          "https://alimg.szlcsc.com/upload/public/product/middle/20230105/B5FBC6B5CD811FDF692F862509C2398C.jpg"
+        ],
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "type": 2,
+          "uuid": "22ad04157f484ec984be3c556f275631"
+        },
+        "symbolType": 2,
+        "symbolUuid": "22ad04157f484ec984be3c556f275631"
+      },
+      "lcsc": "C2879615",
+      "symbolPins": {
+        "A1": {
+          "name": "EN",
+          "type": "Undefined",
+          "x": -40,
+          "y": -40,
+          "rotation": 0,
+          "length": 10
+        },
+        "A2": {
+          "name": "VIN",
+          "type": "Undefined",
+          "x": -40,
+          "y": -30,
+          "rotation": 0,
+          "length": 10
+        },
+        "A3": {
+          "name": "VIN",
+          "type": "Undefined",
+          "x": -40,
+          "y": -20,
+          "rotation": 0,
+          "length": 10
+        },
+        "B1": {
+          "name": "MODE",
+          "type": "Undefined",
+          "x": -40,
+          "y": -10,
+          "rotation": 0,
+          "length": 10
+        },
+        "B2": {
+          "name": "L1",
+          "type": "Undefined",
+          "x": -40,
+          "y": 0,
+          "rotation": 0,
+          "length": 10
+        },
+        "B3": {
+          "name": "L1",
+          "type": "Undefined",
+          "x": -40,
+          "y": 10,
+          "rotation": 0,
+          "length": 10
+        },
+        "C1": {
+          "name": "AGND",
+          "type": "Undefined",
+          "x": -40,
+          "y": 20,
+          "rotation": 0,
+          "length": 10
+        },
+        "C2": {
+          "name": "GND",
+          "type": "Undefined",
+          "x": -40,
+          "y": 30,
+          "rotation": 0,
+          "length": 10
+        },
+        "C3": {
+          "name": "GND",
+          "type": "Undefined",
+          "x": -40,
+          "y": 40,
+          "rotation": 0,
+          "length": 10
+        },
+        "D1": {
+          "name": "FB",
+          "type": "Undefined",
+          "x": 50,
+          "y": 10,
+          "rotation": 180,
+          "length": 10
+        },
+        "D2": {
+          "name": "L2",
+          "type": "Undefined",
+          "x": 50,
+          "y": 0,
+          "rotation": 180,
+          "length": 10
+        },
+        "D3": {
+          "name": "L2",
+          "type": "Undefined",
+          "x": 50,
+          "y": -10,
+          "rotation": 180,
+          "length": 10
+        },
+        "E1": {
+          "name": "PG",
+          "type": "Undefined",
+          "x": 50,
+          "y": -20,
+          "rotation": 180,
+          "length": 10
+        },
+        "E2": {
+          "name": "VOUT",
+          "type": "Undefined",
+          "x": 50,
+          "y": -30,
+          "rotation": 180,
+          "length": 10
+        },
+        "E3": {
+          "name": "VOUT",
+          "type": "Undefined",
+          "x": 50,
+          "y": -40,
+          "rotation": 180,
+          "length": 10
+        }
+      },
+      "expectedPins": {
+        "A1": "U2",
+        "A2": "U2",
+        "A3": "U2",
+        "B1": "U2",
+        "B2": "U2",
+        "B3": "U2",
+        "C1": "U2",
+        "C2": "U2",
+        "C3": "U2",
+        "D1": "U2",
+        "D2": "U2",
+        "D3": "U2",
+        "E1": "U2",
+        "E2": "U2",
+        "E3": "U2"
+      },
+      "missingPins": [],
+      "unexpectedPins": [],
+      "pinNameDifferences": [],
+      "sourceSha256": "44f146dd3a1af33ed1492e534d944f16824cd56b92b5f56be73437ed1419f56f",
+      "sourceFile": "32d98c797b9b1e85.elibz2"
+    },
+    {
+      "mpn": "iCE40UP5K-UWG30ITR",
+      "status": "PASS",
+      "scope": "Exact library device identity and complete physical symbol-pin identifiers only; footprint not checked.",
+      "device": {
+        "uuid": "61d5eb13eb6749f4806848ca40a4240f",
+        "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+        "name": "ICE40UP5K-UWG30ITR",
+        "manufacturer": "LATTICE(莱迪思)",
+        "manufacturerId": "ICE40UP5K-UWG30ITR",
+        "lcsc": "C2678192",
+        "footprintName": "WLCSP-30_L2.5-W2.1-R6-C5-P0.40-TL"
+      },
+      "association": {
+        "footprint": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "uuid": "dec9aa8ad13149bb9f46b9d887f8ee81"
+        },
+        "footprintUuid": "dec9aa8ad13149bb9f46b9d887f8ee81",
+        "images": [
+          "https://alimg.szlcsc.com/upload/public/product/middle/20260706/6EB1C360E691C6A6C3DE54F5E4C434F6.jpg"
+        ],
+        "symbol": {
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "type": 2,
+          "uuid": "6872052c483141b39565d5649728c428"
+        },
+        "symbolType": 2,
+        "symbolUuid": "6872052c483141b39565d5649728c428"
+      },
+      "lcsc": "C2678192",
+      "symbolPins": {
+        "E5": {
+          "name": "IOB_0a",
+          "type": "Undefined",
+          "x": -105,
+          "y": -70,
+          "rotation": 0,
+          "length": 10
+        },
+        "D5": {
+          "name": "IOB_2a",
+          "type": "Undefined",
+          "x": -105,
+          "y": -60,
+          "rotation": 0,
+          "length": 10
+        },
+        "F5": {
+          "name": "IOB_3b_G6",
+          "type": "Undefined",
+          "x": -105,
+          "y": -50,
+          "rotation": 0,
+          "length": 10
+        },
+        "E4": {
+          "name": "IOB_9b",
+          "type": "Undefined",
+          "x": -105,
+          "y": -40,
+          "rotation": 0,
+          "length": 10
+        },
+        "C3": {
+          "name": "IOB_10a",
+          "type": "Undefined",
+          "x": -105,
+          "y": -30,
+          "rotation": 0,
+          "length": 10
+        },
+        "F4": {
+          "name": "IOB_11b_G5",
+          "type": "Undefined",
+          "x": -105,
+          "y": -20,
+          "rotation": 0,
+          "length": 10
+        },
+        "F3": {
+          "name": "creset_b",
+          "type": "Undefined",
+          "x": -105,
+          "y": -10,
+          "rotation": 0,
+          "length": 10
+        },
+        "D3": {
+          "name": "IOB_12a_G4_CDONE",
+          "type": "Undefined",
+          "x": -105,
+          "y": 0,
+          "rotation": 0,
+          "length": 10
+        },
+        "E3": {
+          "name": "IOB_13b",
+          "type": "Undefined",
+          "x": -105,
+          "y": 10,
+          "rotation": 0,
+          "length": 10
+        },
+        "B1": {
+          "name": "IOB_24a",
+          "type": "Undefined",
+          "x": -105,
+          "y": 20,
+          "rotation": 0,
+          "length": 10
+        },
+        "F2": {
+          "name": "IOB_25b_G3",
+          "type": "Undefined",
+          "x": -105,
+          "y": 30,
+          "rotation": 0,
+          "length": 10
+        },
+        "F1": {
+          "name": "IOB_32a_SPI_SO",
+          "type": "Undefined",
+          "x": -105,
+          "y": 40,
+          "rotation": 0,
+          "length": 10
+        },
+        "E1": {
+          "name": "IOB_33b_SPI_SI",
+          "type": "Undefined",
+          "x": -105,
+          "y": 50,
+          "rotation": 0,
+          "length": 10
+        },
+        "D1": {
+          "name": "IOB_34a_SPI_SCK",
+          "type": "Undefined",
+          "x": -105,
+          "y": 60,
+          "rotation": 0,
+          "length": 10
+        },
+        "C1": {
+          "name": "IOB_35b_SPI_SS",
+          "type": "Undefined",
+          "x": -105,
+          "y": 70,
+          "rotation": 0,
+          "length": 10
+        },
+        "B2": {
+          "name": "VCCPLL",
+          "type": "Undefined",
+          "x": 105,
+          "y": 70,
+          "rotation": 180,
+          "length": 10
+        },
+        "A1": {
+          "name": "IOT_36b",
+          "type": "Undefined",
+          "x": 105,
+          "y": 60,
+          "rotation": 180,
+          "length": 10
+        },
+        "A2": {
+          "name": "IOT_37a",
+          "type": "Undefined",
+          "x": 105,
+          "y": 50,
+          "rotation": 180,
+          "length": 10
+        },
+        "B3": {
+          "name": "IOT_46b_G0",
+          "type": "Undefined",
+          "x": 105,
+          "y": 40,
+          "rotation": 180,
+          "length": 10
+        },
+        "A4": {
+          "name": "IOT_47a",
+          "type": "Undefined",
+          "x": 105,
+          "y": 30,
+          "rotation": 180,
+          "length": 10
+        },
+        "C5": {
+          "name": "RGB2",
+          "type": "Undefined",
+          "x": 105,
+          "y": 20,
+          "rotation": 180,
+          "length": 10
+        },
+        "B5": {
+          "name": "RGB1",
+          "type": "Undefined",
+          "x": 105,
+          "y": 10,
+          "rotation": 180,
+          "length": 10
+        },
+        "A5": {
+          "name": "RGB0",
+          "type": "Undefined",
+          "x": 105,
+          "y": 0,
+          "rotation": 180,
+          "length": 10
+        },
+        "B4": {
+          "name": "GND",
+          "type": "Undefined",
+          "x": 105,
+          "y": -10,
+          "rotation": 180,
+          "length": 10
+        },
+        "E2": {
+          "name": "GND",
+          "type": "Undefined",
+          "x": 105,
+          "y": -20,
+          "rotation": 180,
+          "length": 10
+        },
+        "C2": {
+          "name": "VCC",
+          "type": "Undefined",
+          "x": 105,
+          "y": -30,
+          "rotation": 180,
+          "length": 10
+        },
+        "A3": {
+          "name": "VCCIO_0",
+          "type": "Undefined",
+          "x": 105,
+          "y": -40,
+          "rotation": 180,
+          "length": 10
+        },
+        "D2": {
+          "name": "SPI_Vccio1",
+          "type": "Undefined",
+          "x": 105,
+          "y": -50,
+          "rotation": 180,
+          "length": 10
+        },
+        "C4": {
+          "name": "VCCIO_2",
+          "type": "Undefined",
+          "x": 105,
+          "y": -60,
+          "rotation": 180,
+          "length": 10
+        },
+        "D4": {
+          "name": "VPP_2V5",
+          "type": "Undefined",
+          "x": 105,
+          "y": -70,
+          "rotation": 180,
+          "length": 10
+        }
+      },
+      "expectedPins": {
+        "A1": "U2",
+        "A2": "U2",
+        "A3": "U2",
+        "A4": "U2",
+        "A5": "U2",
+        "B1": "U2",
+        "B2": "U2",
+        "B3": "U2",
+        "B4": "U2",
+        "B5": "U2",
+        "C1": "U2",
+        "C2": "U2",
+        "C3": "U2",
+        "C4": "U2",
+        "C5": "U2",
+        "D1": "U2",
+        "D2": "U2",
+        "D3": "U2",
+        "D4": "U2",
+        "D5": "U2",
+        "E1": "U2",
+        "E2": "U2",
+        "E3": "U2",
+        "E4": "U2",
+        "E5": "U2",
+        "F1": "U2",
+        "F2": "U2",
+        "F3": "U2",
+        "F4": "U2",
+        "F5": "U2"
+      },
+      "missingPins": [],
+      "unexpectedPins": [],
+      "pinNameDifferences": [
+        {
+          "pin": "A5",
+          "source": "RGB2",
+          "library": "RGB0"
+        },
+        {
+          "pin": "C5",
+          "source": "RGB0",
+          "library": "RGB2"
+        }
+      ],
+      "sourceSha256": "ebc069ae035cb8a03fccab7afc1fa65941b780ca477bf845fef7de24d793f324",
+      "sourceFile": "73d7b1f4a7ab7092.elibz2"
+    }
+  ]
+}

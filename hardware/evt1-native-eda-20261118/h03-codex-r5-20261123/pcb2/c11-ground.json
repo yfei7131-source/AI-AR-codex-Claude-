@@ -1,0 +1,83 @@
+{
+  "from": "C11.2",
+  "to": "C20.2",
+  "net": "GND",
+  "layer": 2,
+  "width_mil": 3.6,
+  "location": {
+    "center_mil": [
+      93,
+      364
+    ],
+    "current_side": 2,
+    "turn_relative_deg": 180,
+    "supply_to_U13_4_mil": 125.511,
+    "pad_boxes": [
+      {
+        "net": "VSYS",
+        "center": [
+          105.62280000000001,
+          363.9590999999999
+        ],
+        "rectangle": [
+          98.52280000000002,
+          356.8590999999999,
+          112.7228,
+          371.05909999999994
+        ]
+      },
+      {
+        "net": "GND",
+        "center": [
+          80.4228,
+          363.9590999999999
+        ],
+        "rectangle": [
+          73.3228,
+          356.8590999999999,
+          87.52279999999999,
+          371.05909999999994
+        ]
+      }
+    ]
+  },
+  "points": [
+    [
+      80.4,
+      364.0
+    ],
+    [
+      66.4,
+      378.0
+    ],
+    [
+      28.0,
+      378.0
+    ]
+  ],
+  "count": 2,
+  "length_mil": 58.19899,
+  "segment_clearances": [
+    {
+      "edge": [
+        64.60000000000001,
+        null
+      ],
+      "pad": [
+        16.32280000000001,
+        "new-vsys"
+      ]
+    },
+    {
+      "edge": [
+        26.2,
+        null
+      ],
+      "pad": [
+        23.45,
+        "d2fe78ad41c0c277re5p109"
+      ]
+    }
+  ],
+  "limitation": "VSYS loop to U13 power input remains BLOCKED. No EDA operations."
+}

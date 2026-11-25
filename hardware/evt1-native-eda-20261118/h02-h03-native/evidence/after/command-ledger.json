@@ -1,0 +1,297 @@
+[
+  {
+    "path": "project-info.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "project",
+      "info"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "l2-save.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "--doc",
+      "3fdc6001a068d82e",
+      "sch",
+      "save"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "l2-reload.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "doc",
+      "reload",
+      "3fdc6001a068d82e",
+      "--json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "l2-pins.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "sch",
+      "list",
+      "--page",
+      "3fdc6001a068d82e",
+      "--include-pins",
+      "--stay"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "lceda-boards.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "board",
+      "list"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "lceda-pages.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "sch",
+      "pages"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "lceda-pcbs.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "pcb",
+      "docs"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "save/M-MAIN-L.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "--doc",
+      "4d38590959875927",
+      "sch",
+      "save"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "reload/M-MAIN-L.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "doc",
+      "reload",
+      "4d38590959875927",
+      "--json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "root/M-MAIN-L.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "doc",
+      "switch",
+      "4d38590959875927",
+      "--json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "board-netlists/M-MAIN-L.response.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "sch",
+      "netlist",
+      "--type",
+      "Protel2"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "erc/4d38590959875927.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "sch",
+      "drc",
+      "--json",
+      "--strict"
+    ],
+    "exit_code": 1
+  },
+  {
+    "path": "save/M-OPT-BRIDGE.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "--doc",
+      "e00fbca5c08cc114",
+      "sch",
+      "save"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "reload/M-OPT-BRIDGE.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "doc",
+      "reload",
+      "e00fbca5c08cc114",
+      "--json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "root/M-OPT-BRIDGE.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "doc",
+      "switch",
+      "e00fbca5c08cc114",
+      "--json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "board-netlists/M-OPT-BRIDGE.response.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "sch",
+      "netlist",
+      "--type",
+      "Protel2"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "erc/e00fbca5c08cc114.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "sch",
+      "drc",
+      "--json",
+      "--strict"
+    ],
+    "exit_code": 1
+  },
+  {
+    "path": "save/M-AUD-R.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "--doc",
+      "e98944c2045546cf",
+      "sch",
+      "save"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "reload/M-AUD-R.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "doc",
+      "reload",
+      "e98944c2045546cf",
+      "--json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "root/M-AUD-R.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "doc",
+      "switch",
+      "e98944c2045546cf",
+      "--json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "board-netlists/M-AUD-R.response.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "sch",
+      "netlist",
+      "--type",
+      "Protel2"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "erc/e98944c2045546cf.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "sch",
+      "drc",
+      "--json",
+      "--strict"
+    ],
+    "exit_code": 1
+  },
+  {
+    "path": "archive-response.json",
+    "command": [
+      "easyeda",
+      "--window",
+      "27099cd7-6c55-44a8-bbe4-feed435ac18e",
+      "project",
+      "export",
+      "--project-uuid",
+      "f231bf66938cde53b57db2cbae3aed4b6a55b2e2d164cc4a5c007ae8db752bf7",
+      "--out",
+      "<WORKSPACE>\\_evt1_h02_h03_sync\\ZY_AIAR_EVT1_H02_H03_NATIVE_NOT_FOR_FAB.epro2"
+    ],
+    "exit_code": 0
+  }
+]

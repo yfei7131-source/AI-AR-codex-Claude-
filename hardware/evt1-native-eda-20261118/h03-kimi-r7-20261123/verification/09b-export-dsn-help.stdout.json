@@ -1,0 +1,28 @@
+Export the active PCB as a Specctra DSN (the external-autorouter input).
+
+By default it splices keep-out regions (禁止区域) back into the DSN: EasyEDA's
+getDsnFile DROPS pcb_PrimitiveRegion, so a raw export has zero keepout and an
+external router (Freerouting) would route under the antenna. The result reports
+`keepouts` = how many were injected. Pass --raw for the unmodified EasyEDA export.
+
+Usage:
+  easyeda pcb export-dsn [flags]
+
+Examples:
+  easyeda pcb export-dsn
+  easyeda pcb export-dsn --name board.dsn
+  easyeda pcb export-dsn --raw          # unmodified EasyEDA export (no keepout)
+
+Flags:
+  -h, --help          help for export-dsn
+      --name string   DSN file name (default design.dsn)
+      --raw           raw EasyEDA export — do NOT inject keep-out regions
+
+Global Flags:
+      --doc string                pin every mutating action to this schematic page / PCB (uuid or name): the CLI switches to it and confirms via live document.current before editing, refusing rather than land the edit on whatever page is foreground — removes the doc-switch race
+      --force-stale-read string   deprecated compatibility option; stale PCB reads now continue with staleRisk and authoritative workflows still save, reload, then read back
+      --host string               daemon host (default "127.0.0.1")
+      --ports string              daemon port range (start-end) (default "60832-60841")
+      --project string            route by project name/uuid instead of --window (survives windowId churn)
+      --skip-version-check        deprecated compatibility option; version differences are diagnostic and no longer block actions
+      --window string             EasyEDA window ID

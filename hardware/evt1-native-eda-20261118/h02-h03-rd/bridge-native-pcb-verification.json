@@ -1,0 +1,269 @@
+{
+  "status": "VERIFIED_NATIVE_PRE_ROUTING",
+  "manufacturing": "BLOCKED",
+  "board_dimensions_mm": {
+    "width": 4.2,
+    "length": 22.0,
+    "edge_keepout": 0.254
+  },
+  "live_pcb2_observation": {
+    "placed_components": 10,
+    "physical_pads": 92,
+    "top_components": [
+      {
+        "ref": "U13",
+        "x_mm": 2.29,
+        "y_mm": 6.787,
+        "rot": 0,
+        "min_x": 0.753,
+        "max_x": 3.447,
+        "min_y": 5.798,
+        "max_y": 7.802,
+        "w_mm": 2.694,
+        "h_mm": 2.004,
+        "pads": 6,
+        "uniqueId": ""
+      },
+      {
+        "ref": "U2",
+        "x_mm": 2.324,
+        "y_mm": 9.363,
+        "rot": 0,
+        "min_x": 0.7,
+        "max_x": 3.5,
+        "min_y": 8.037,
+        "max_y": 10.963,
+        "w_mm": 2.8,
+        "h_mm": 2.926,
+        "pads": 30,
+        "uniqueId": ""
+      },
+      {
+        "ref": "U7",
+        "x_mm": 2.29,
+        "y_mm": 12.187,
+        "rot": 0,
+        "min_x": 0.753,
+        "max_x": 3.447,
+        "min_y": 11.198,
+        "max_y": 13.202,
+        "w_mm": 2.694,
+        "h_mm": 2.004,
+        "pads": 6,
+        "uniqueId": ""
+      },
+      {
+        "ref": "U9",
+        "x_mm": 2.301,
+        "y_mm": 18.8,
+        "rot": 0,
+        "min_x": 0.246,
+        "max_x": 3.954,
+        "min_y": 17.398,
+        "max_y": 20.202,
+        "w_mm": 3.707,
+        "h_mm": 2.805,
+        "pads": 14,
+        "uniqueId": ""
+      }
+    ],
+    "bottom_components": [
+      {
+        "ref": "U8",
+        "x_mm": 1.988,
+        "y_mm": 2.234,
+        "rot": 90,
+        "min_x": 0.872,
+        "max_x": 3.088,
+        "min_y": 0.309,
+        "max_y": 4.382,
+        "w_mm": 2.216,
+        "h_mm": 4.073,
+        "pads": 8,
+        "uniqueId": "UNIQUEU8"
+      },
+      {
+        "ref": "Y1",
+        "x_mm": 1.835,
+        "y_mm": 9.322,
+        "rot": 90,
+        "min_x": 0.489,
+        "max_x": 2.911,
+        "min_y": 7.722,
+        "max_y": 10.668,
+        "w_mm": 2.422,
+        "h_mm": 2.946,
+        "pads": 4,
+        "uniqueId": "UNIQUEY1"
+      },
+      {
+        "ref": "MK2",
+        "x_mm": 1.796,
+        "y_mm": 15.37,
+        "rot": 0,
+        "min_x": 0.144,
+        "max_x": 4.056,
+        "min_y": 13.373,
+        "max_y": 17.627,
+        "w_mm": 3.912,
+        "h_mm": 4.254,
+        "pads": 8,
+        "uniqueId": ""
+      },
+      {
+        "ref": "U1",
+        "x_mm": 2.395,
+        "y_mm": 18.73,
+        "rot": 90,
+        "min_x": 1.794,
+        "max_x": 3.006,
+        "min_y": 17.86,
+        "max_y": 19.34,
+        "w_mm": 1.212,
+        "h_mm": 1.481,
+        "pads": 5,
+        "uniqueId": ""
+      },
+      {
+        "ref": "U4",
+        "x_mm": 0.93,
+        "y_mm": 18.605,
+        "rot": 0,
+        "min_x": 0.06,
+        "max_x": 1.54,
+        "min_y": 17.994,
+        "max_y": 19.206,
+        "w_mm": 1.481,
+        "h_mm": 1.212,
+        "pads": 5,
+        "uniqueId": ""
+      },
+      {
+        "ref": "U12",
+        "x_mm": 2.29,
+        "y_mm": 20.613,
+        "rot": 0,
+        "min_x": 0.753,
+        "max_x": 3.447,
+        "min_y": 19.598,
+        "max_y": 21.602,
+        "w_mm": 2.694,
+        "h_mm": 2.004,
+        "pads": 6,
+        "uniqueId": ""
+      }
+    ],
+    "bottom_free_y_gaps_mm": [
+      {
+        "from": "BOARD_Y_MIN",
+        "to": "U8",
+        "y_start": 0.254,
+        "y_end": 0.309,
+        "free_y_mm": 0.055
+      },
+      {
+        "from": "U8",
+        "to": "Y1",
+        "y_start": 4.382,
+        "y_end": 7.722,
+        "free_y_mm": 3.34
+      },
+      {
+        "from": "Y1",
+        "to": "MK2",
+        "y_start": 10.668,
+        "y_end": 13.373,
+        "free_y_mm": 2.705
+      },
+      {
+        "from": "MK2",
+        "to": "U1",
+        "y_start": 17.627,
+        "y_end": 17.86,
+        "free_y_mm": 0.233
+      },
+      {
+        "from": "U1",
+        "to": "U4",
+        "y_start": 19.34,
+        "y_end": 17.994,
+        "free_y_mm": -1.346
+      },
+      {
+        "from": "U4",
+        "to": "U12",
+        "y_start": 19.34,
+        "y_end": 19.598,
+        "free_y_mm": 0.258
+      },
+      {
+        "from": "U12",
+        "to": "BOARD_Y_MAX",
+        "y_start": 21.602,
+        "y_end": 21.746,
+        "free_y_mm": 0.144
+      }
+    ],
+    "max_contiguous_bot_y_gap_mm": 3.34,
+    "j_bridge_in_30p_len_mm": 7.22,
+    "j_bridge_in_20p_len_mm": 5.47,
+    "j_bridge_in_fits_without_relocating_existing": false,
+    "keepout_regions": [
+      {
+        "primitiveId": "0a908ce33a052ebb",
+        "layer": 1,
+        "locked": true,
+        "rules": [
+          "no-components"
+        ],
+        "y_min_mm": 3.027,
+        "y_max_mm": 5.373,
+        "area_mm2": 9.86
+      },
+      {
+        "primitiveId": "0ba8a7175248ae26",
+        "layer": 1,
+        "locked": true,
+        "rules": [
+          "no-components"
+        ],
+        "y_min_mm": 13.627,
+        "y_max_mm": 15.973,
+        "area_mm2": 9.86
+      }
+    ],
+    "top_keepout_area_mm2": 19.72,
+    "strict_drc_total": 66,
+    "strict_drc_by_rule": {
+      "copperThickness1oz": 6,
+      "Common": 59,
+      "Import Changes": 1
+    }
+  },
+  "pr37_83_component_verification": {
+    "total_component_count": 83,
+    "usable_area_opt_a_22x4_2_mm2": 138.97,
+    "usable_area_opt_b_25x4_6_mm2": 180.72,
+    "body_area_opt_a_mm2": 68.9,
+    "courtyard_area_opt_a_mm2": 127.3,
+    "courtyard_area_legacy_no_eco05_06_mm2": 149.32,
+    "utilization_opt_a_pct": 91.6,
+    "utilization_legacy_pct": 107.4,
+    "utilization_opt_b_pct": 70.4,
+    "verdict_legacy_22x4_2": "FAIL_OVERCONGESTED_NO_CONNECTOR_SLOT",
+    "verdict_opt_a_22x4_2_with_eco05_06": "CONDITIONAL_HIGH_DENSITY_91_6PCT_REQUIRES_RELOCATING_U8_Y1",
+    "verdict_opt_b_25x4_6_fallback": "RECOMMENDED_IF_ID_ALLOWS_73PCT_UTILIZATION"
+  },
+  "routing_and_power_return": {
+    "stackup": "6L 0.60-0.63mm HDI VIPPO (L1/L3/L4/L6 sig, L2/L5 solid GND/PWR)",
+    "usable_width_mm": 3.692,
+    "open_tracks_per_layer_at_50um_pitch": 36,
+    "mk2_0_8mm_port_blocked_width_mm": 1.308,
+    "mk2_bottleneck_tracks_per_layer": 23,
+    "inner_signal_capacity_l3_l4_at_mk2": 46,
+    "longitudinal_signals_required": 35,
+    "routing_margin_at_mk2_pct": 23.9,
+    "vsys_return_loop_vdrop_at_650ma_mv": 25.4,
+    "mk2_drc_root_cause": "Archived Ø0.70mm acoustic slot leaves 5.3 mil to MK2 GND pad (<6 mil rule) and overlaps L2/L5 planes (<10 mil rule); Infineon IM69D130 recommends Ø0.80mm port -> requires unified MK2 footprint + L2/L5 anti-pad cutout rework before routing."
+  }
+}

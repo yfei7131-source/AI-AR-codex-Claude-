@@ -1,0 +1,88 @@
+{
+  "sourceArchiveSha256": "36f7bdd26d76bb17ef5c10c0037218de5eec64d3c85383e21b26b56ec59d59bc",
+  "board": "PCB3",
+  "units": "mil",
+  "layoutCopperSource": "Native R8 archive plus persisted PCB3 dump",
+  "sourceAndTargetPrimitiveIds": {
+    "J1.P15": "d2732f172a8d0a5abm16p123",
+    "U1.4": "c32488012288d90de12"
+  },
+  "baselinePhysicalRoots": {
+    "J1.P15": "d2732f172a8d0a5abm16p123",
+    "U1.4": "c32488012288d90de12"
+  },
+  "positivePadContactMilSquared": {
+    "J1.P15": 26.354929566790023,
+    "U1.4": 37.67309698109198
+  },
+  "continuousReferencePlane18ProjectedPathCoverage": 1.0,
+  "referencePlane18ProjectedStrokeCoverage": 1.0,
+  "bottlenecks": [
+    {
+      "zone": "U3 Charger",
+      "reason": "left pad row takes x=16.35..36.85 mil copper; 4 mil routing alongside needs x <= 8.15 mil, but copper-edge screen needs x >=14 mil. GND exposed pad closes inner corridor. R6/R10 return branches are connected and cannot be discarded just to relocate resistors."
+    },
+    {
+      "zone": "Amplifier/Charger cluster",
+      "reason": "try moving C6 into same-side free placement and opposite-side near U10.A2. At full native package bboxes and copper clearances none joined both signal/supply and return simultaneously."
+    },
+    {
+      "zone": "Control passives",
+      "reason": "R5,R7,R9 pad-to-bbox and pad-to-copper relayout candidates around their served components produced no jointly reachable placements. R7/R9 share no same-layer continuation on top."
+    },
+    {
+      "zone": "Unoccupied longitudinal section",
+      "reason": "y~750\u20131149 has far fewer footprints but existing microphone tail routing and is distant from charger/amplifier; a site here alone does not close a useful local charger or amplifier loop."
+    }
+  ],
+  "route": {
+    "net": "AMP_SD_MODE_1V8",
+    "layer": 2,
+    "width": 4,
+    "points": [
+      [
+        133.3,
+        315.9
+      ],
+      [
+        141.0,
+        323.6
+      ],
+      [
+        141.0,
+        355.0
+      ],
+      [
+        124.0,
+        372.0
+      ],
+      [
+        81.0,
+        372.0
+      ],
+      [
+        44.0,
+        335.0
+      ],
+      [
+        23.0,
+        335.0
+      ],
+      [
+        15.4,
+        327.4
+      ],
+      [
+        15.4,
+        318.5
+      ]
+    ],
+    "from": "J1.P15",
+    "to": "U1.4",
+    "minimumForeignGapMil": 6.3439,
+    "nearestForeign": "c32488012288d90de11",
+    "minimumRfForeignGapMil": 87.1659,
+    "minimumBoardEdgeGapMil": 13.4,
+    "lengthMil": 202.305
+  }
+}

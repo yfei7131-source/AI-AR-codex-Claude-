@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "id": "H03-R10-PCB1-batch-01",
+  "board": "PCB1",
+  "checkpointSha256": "2ed5b0932c51f5995a68fa602dd922cbfb4ef69429cc21e05cea195c69eaae93",
+  "routes": [
+    {
+      "net": "GND",
+      "from": "U11.2",
+      "to": "U11.5",
+      "layer": 1,
+      "width": 6,
+      "points": [
+        [
+          19.5,
+          1060.0
+        ],
+        [
+          23.6,
+          1060.0
+        ],
+        [
+          36.4,
+          1072.8
+        ]
+      ],
+      "evidence": {
+        "expectedIndependentCopperRoots": [
+          "981a4faa649e821ee12",
+          "196f99c4727bbae4"
+        ],
+        "foreignMinimumMil": 11.099999999999909,
+        "nearestForeignRef": "C27.1",
+        "slotMinimumMil": 642.9368709217376,
+        "boardEdgeMinimumMil": 16.5,
+        "lengthMil": 22.201933598375582,
+        "fromAreaMil2": 43.87071524083513,
+        "toAreaMil2": 70.83574762919535
+      }
+    },
+    {
+      "net": "3V3_SYS",
+      "from": "R26.2",
+      "to": "R9.2",
+      "layer": 2,
+      "width": 6,
+      "points": [
+        [
+          99.8,
+          1369.9
+        ],
+        [
+          99.8,
+          1322.6
+        ]
+      ],
+      "evidence": {
+        "expectedIndependentCopperRoots": [
+          "bbefb41fa0d1b1d6",
+          "35496909e56bb413re4p110"
+        ],
+        "foreignMinimumMil": 13.5,
+        "nearestForeignRef": "C38.2",
+        "slotMinimumMil": 344.1705123788719,
+        "boardEdgeMinimumMil": 96.79999999999998,
+        "lengthMil": 47.30000000000018,
+        "fromAreaMil2": 56.735747629196936,
+        "toAreaMil2": 56.73574762919693
+      }
+    },
+    {
+      "net": "3V3_SYS",
+      "from": "U18.10",
+      "to": "U5.4",
+      "layer": 2,
+      "width": 6,
+      "points": [
+        [
+          178.9,
+          947.8
+        ],
+        [
+          178.9,
+          1025.1
+        ],
+        [
+          163.6,
+          1040.4
+        ]
+      ],
+      "evidence": {
+        "expectedIndependentCopperRoots": [
+          "45582490ff996334e37",
+          "502e053155320109e14"
+        ],
+        "foreignMinimumMil": 6.69959584957035,
+        "nearestForeignRef": "U6.2",
+        "slotMinimumMil": 677.6988481721664,
+        "boardEdgeMinimumMil": 46.44649999999998,
+        "lengthMil": 98.93746750430844,
+        "fromAreaMil2": 120.93574762919724,
+        "toAreaMil2": 50.03935082077425
+      }
+    },
+    {
+      "net": "GND",
+      "layer": 1,
+      "width": 6,
+      "from": "R12.2",
+      "to": "R2.2",
+      "points": [
+        [
+          48.6,
+          1330.5
+        ],
+        [
+          48.6,
+          1377.8
+        ]
+      ],
+      "lengthMil": 47.3,
+      "projectedClearanceAtTightest": {
+        "netMargin": 8.32559,
+        "distance": 14.54559,
+        "guard": 6.22,
+        "to": "cfecd61eed9d9491"
+      },
+      "minBoardEdgeMil": 45.6,
+      "fromPrimitive": "acd6173aad8e0e03re4p110",
+      "toPrimitive": "0f934102aa101226re4p110",
+      "newSameLayerConnection": true,
+      "projectedDirections": 1
+    }
+  ]
+}

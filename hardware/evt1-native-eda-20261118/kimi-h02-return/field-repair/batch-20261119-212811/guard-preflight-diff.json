@@ -1,0 +1,35 @@
+{
+  "pageUuid": "bbbca101b360e299",
+  "stage": "preflight",
+  "listDifferencesAfterControlledNormalization": [
+    {
+      "path": "$.components[32].deviceIdentityCandidates",
+      "baseline": "<absent>",
+      "working": [
+        {
+          "footprintLibraryUuid": "",
+          "footprintName": "SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR",
+          "footprintUuid": "bdad16194d454cb292a50525f39c3ffd",
+          "lcsc": "C727149",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "2N7002",
+          "uuid": "4bf6fb56f0a44a96860771f6cfb8e6d4"
+        },
+        {
+          "footprintLibraryUuid": "",
+          "footprintName": "SOT-23-3_L2.9-W1.3-P1.90-LS2.8-BR",
+          "footprintUuid": "847dd6b882734facb5e0b7c37d7c31c3",
+          "lcsc": "C9900124607",
+          "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+          "name": "2N7002_C9900124607",
+          "uuid": "b31a418101034a4f9443c5dfb64a0fb9"
+        }
+      ]
+    },
+    {
+      "path": "$.components[32].deviceIdentityError",
+      "baseline": "<absent>",
+      "working": "2 devices match by mpn + footprint — ambiguous"
+    }
+  ]
+}

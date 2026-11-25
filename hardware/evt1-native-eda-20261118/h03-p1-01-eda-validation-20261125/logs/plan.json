@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "P1-01-PCB3-C6-L3",
+  "checkpointSha256": "0504a9dcd23ce76c8bab4f2f1cefd38e9af9916ee07cefe5e01f4e9057570d0b",
+  "level": "L3",
+  "boards": {
+    "PCB3": {
+      "routes": [
+        {
+          "net": "GND",
+          "from": "C6.2",
+          "to": "L2-GND",
+          "layer": 1,
+          "width": 6,
+          "points": [
+            [
+              184.8,
+              607.7
+            ],
+            [
+              172.8,
+              607.7
+            ],
+            [
+              170.8,
+              609.7
+            ]
+          ],
+          "via": {
+            "x": 170.8,
+            "y": 609.7,
+            "drill": 4,
+            "diameter": 10,
+            "rule": "BV_L1_L2"
+          }
+        }
+      ]
+    }
+  }
+}

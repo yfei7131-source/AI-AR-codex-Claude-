@@ -1,0 +1,41 @@
+{
+  "measurementPathKind": "copper-contact-fallback",
+  "connected": false,
+  "reason": "no single continuous listed-copper path visits the requested pads in order without reusing copper primitives",
+  "net": "I2S_LRCLK_1V8",
+  "from": "U11.K4",
+  "to": "J1.P12",
+  "waypointOrder": [
+    "U11.K4",
+    "J1.P12"
+  ],
+  "viaCount": 0,
+  "primitiveCount": 0,
+  "lengthMil": 0,
+  "turnCount": 0,
+  "legs": [
+    {
+      "from": "U11.K4",
+      "to": "J1.P12",
+      "connected": false,
+      "reason": "no continuous path in listed track/arc/via copper (pours and PLANE connectivity are excluded)",
+      "viaCount": 0,
+      "primitiveCount": 0,
+      "lengthMil": 0,
+      "turnCount": 0
+    }
+  ],
+  "scope": "placed pad copper + listed tracks/arcs/vias; copper pours, fills, and PLANE connectivity excluded",
+  "excludedCopper": [
+    "pours",
+    "filled regions",
+    "PLANE layers"
+  ],
+  "limitations": [
+    "does not infer connectivity through copper pours, filled regions, or PLANE layers",
+    "arc primitives are measured on their reconstructed centerlines; ambiguous or unsupported interior contacts make path measurement unknown",
+    "rotated RECT/rounded RECT and OVAL contacts use shape geometry; ELLIPSE, NGON, and pad-to-pad contacts use conservative inscribed geometry that may miss edge landings but cannot invent them",
+    "vias are modeled as through vias because pcb.via.list exposes no blind/buried layer pair",
+    "direct via-on-pad overlap is not treated as connected; a listed track/arc stub must bridge the pad and via"
+  ]
+}

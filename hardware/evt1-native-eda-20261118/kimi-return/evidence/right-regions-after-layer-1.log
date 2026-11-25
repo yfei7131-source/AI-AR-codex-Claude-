@@ -1,0 +1,70 @@
+$ C:\Users\Admin（无密码）\.local\bin\easyeda.exe pcb region list --doc 1db01a36f669a47a --project cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662
+{
+  "id": "req_453",
+  "type": "response",
+  "version": "v1",
+  "windowId": "05e9143d-7956-4f1a-91a7-e59dbe47a43d",
+  "createdAt": "2026-11-18T15:00:00.9402821Z",
+  "ok": true,
+  "result": {
+    "count": 1,
+    "regions": [
+      {
+        "bbox": {
+          "maxX": 204.8244094488189,
+          "maxY": 157.58031496062992,
+          "minX": -0.1,
+          "minY": -0.1
+        },
+        "geometryAvailable": true,
+        "layer": 1,
+        "lineWidth": 0.2,
+        "locked": true,
+        "primitiveId": "0ed0208c5b49aab8",
+        "regionName": null,
+        "ruleType": [
+          5,
+          7
+        ],
+        "ruleTypeNames": [
+          "no-wires",
+          "no-pours"
+        ],
+        "source": [
+          0,
+          0,
+          "L",
+          0,
+          157.4803,
+          204.7244,
+          157.4803,
+          204.7244,
+          0,
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  "context": {
+    "projectUuid": "cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+    "projectName": "ZY_AIAR_EVT1_KIMI_20261118",
+    "documentUuid": "1db01a36f669a47a",
+    "documentType": "pcb",
+    "tabId": "1db01a36f669a47a@cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+    "pageVisibility": "hidden"
+  },
+  "mutationContext": {
+    "projectUuid": "cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+    "projectName": "ZY_AIAR_EVT1_KIMI_20261118",
+    "documentUuid": "1db01a36f669a47a",
+    "documentType": "pcb",
+    "tabId": "1db01a36f669a47a@cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+    "pageVisibility": "hidden"
+  },
+  "mutationContextAvailable": true,
+  "staleRisk": "PCB was mutated by pcb.region.create since the last reload — pcb.region.list (and DRC) may read stale engine state; authoritative workflows should save, run `easyeda doc reload`, then read back; if refresh fails, treat the data as unavailable",
+  "seq": 333,
+  "seqAbandoned": 0
+}
+⚠ staleRisk: PCB was mutated by pcb.region.create since the last reload — pcb.region.list (and DRC) may read stale engine state; authoritative workflows should save, run `easyeda doc reload`, then read back; if refresh fails, treat the data as unavailable

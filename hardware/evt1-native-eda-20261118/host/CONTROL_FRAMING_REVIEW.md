@@ -1,0 +1,11 @@
+# Host control framing repair
+
+The frozen PR25 ICD (`97ee1f6733416099f842dca00389ab50f3568c96`, `ICD_FPGA_HOST_OPTICS_SPEC_REV_D1_1.md`, section3) explicitly defines OPT_CTRL bit3 as reserved zero. The decoder nevertheless accepted it. Starting from a valid OFF state, `A4 00 00 00 0B` enabled both power permission and scanning in the baseline. This was a control-register violation, not a claim of observed physical AVDD activation.
+
+The repair adds only a reserved-bit rejection around the A4 control effects. The first data word is consumed even when rejected, so additional words under that CS cannot retry the control. Legal control, pixel, FIFO and RAW formats remain unchanged. No JBD data is invented or decoded. RAW stays opaque: an A4/0xB pattern in a properly armed RAW window is still transmitted to both eyes and does not change power or scan state.
+
+Run `python3 run_host_framing.py` or `make sim-framing` in the active `03_FPGA_RTL`. The runner exports the exact PR25 source with `git show` to a temporary file, compiles a baseline defect witness, then separately compiles the repaired implementation. Actions must fetch the pinned commit/history, or supply an explicit baseline export; no duplicate full RTL is added to this package. Missing native tools or the pinned source returns BLOCKED/exit2.
+
+Eight directed native groups cover incomplete A4 transactions at all0..9nibble abort positions; all8..F reserved flag combinations; rejecting then consuming a malformed first word under a long CS; high-CS clock noise; opaque RAW with reserved-looking data; legal OFF after RAW; incomplete pixel headers/words; and a complete pixel followed by an aborted tail then a separate right-eye/tear-guard transaction. The latter checks the real FIFO sink address, eye/guard flags and word values against independent protocol fixtures.
+
+These tests exercise digital user-mode RTL at the CS/SCK/QIO boundary. They do not qualify physical CS pulse widths, pad timing, CDC metastability, FPGA hard configuration/reset, JBD contents or AVDD discharge. No error response/CRC was added; the host must follow the documented framing. Native Icarus, full display/safety regressions and routed48MHz closure must actually pass for the final commit before reporting PASS.

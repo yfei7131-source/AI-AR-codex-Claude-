@@ -1,0 +1,139 @@
+{
+  "baseline": "cec8deab978c0a6e04bb2293291dd4b5f13ac43a",
+  "projectUuid": "cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+  "scope": "EVT-1 native partial candidate handoff; dual transparent AR and 40g are retained targets, not achieved qualifications",
+  "overall": "BLOCKED",
+  "fabrication": "BLOCKED",
+  "checks": [
+    {
+      "id": "PASS-01",
+      "status": "PASS",
+      "item": "指定基线与源输入审计",
+      "evidence": "evidence/kicad-source-audit.json"
+    },
+    {
+      "id": "PASS-02",
+      "status": "PASS",
+      "item": "受控 KiCad 三板 ERC：每板 error/warning/exclusion 均为 0",
+      "evidence": "evidence/kicad-native-workspace/kicad-verification.json"
+    },
+    {
+      "id": "PASS-03",
+      "status": "PASS",
+      "item": "26 种精确系统 Device 的脚号集合与原生焊盘编号集合",
+      "evidence": "evidence/pad-audit/native-pad-audit.json"
+    },
+    {
+      "id": "PASS-04",
+      "status": "PASS",
+      "item": "35 件候选器件原生写入、保存、回读及有限几何审查；主板21、桥板10、右板4",
+      "evidence": "layout/review-3/REVIEW_SUMMARY.json"
+    },
+    {
+      "id": "PASS-05",
+      "status": "PASS",
+      "item": "原生工程 ZIP 与三板 PCB 文档；独立导入项目后35件器件、焊盘、包围盒、板框、基础规则回读一致",
+      "evidence": "native/native-project-inspection.json"
+    },
+    {
+      "id": "PASS-06",
+      "status": "PASS",
+      "item": "三板 OBJ、桥板与右板 STEP 的实际文件与 SHA256；仅已有模型绑定覆盖",
+      "evidence": "3d/3D_AND_BINDINGS.json"
+    },
+    {
+      "id": "FAIL-01",
+      "status": "FAIL",
+      "item": "原生 DRC：主板229、桥板66、右板25；Connection/Netlist/Clearance 均未清零",
+      "evidence": "layout/review-3/REVIEW_SUMMARY.json"
+    },
+    {
+      "id": "FAIL-02",
+      "status": "FAIL",
+      "item": "桥板 U8 与 J_BRIDGE_IN 底层预留区冲突；不得通过缩小预留区或降低0.20mm规则消除",
+      "evidence": "layout/review-3/geometric-audit.json"
+    },
+    {
+      "id": "FAIL-03",
+      "status": "FAIL",
+      "item": "pcb check 与 layout-lint：丝印、嵌入过孔、铺铜及不完整几何覆盖；未作为整板通过",
+      "evidence": "layout/review-3/REVIEW_SUMMARY.json"
+    },
+    {
+      "id": "BLOCK-01",
+      "status": "BLOCKED",
+      "item": "KiCad .kicad_sch 不能直接导入；受控网表原生重建因符号构建失败而未完成；未改版本号伪装转换",
+      "evidence": "evidence/native-library/09a965e44457e53c-retry-01-symbol-build.log"
+    },
+    {
+      "id": "BLOCK-02",
+      "status": "BLOCKED",
+      "item": "三板嘉立创 SCH 仅有图框；空页 ERC=0 绝不能替代受控 KiCad ERC；没有完整 SCH↔PCB 绑定",
+      "evidence": "native/native-project-inspection.json"
+    },
+    {
+      "id": "BLOCK-03",
+      "status": "BLOCKED",
+      "item": "桥板 U14/U_AVDD_WD、U10/U_AVDD_QUAL 在有界0.20mm全bbox搜索内无合法候选",
+      "evidence": "layout/candidate-placement-plan.json"
+    },
+    {
+      "id": "BLOCK-04",
+      "status": "BLOCKED",
+      "item": "140项封装映射未解决；26种焊盘编号 PASS 不等于供应商 land pattern、mask/paste 或装配资格",
+      "evidence": "evidence/kicad-source-audit.json"
+    },
+    {
+      "id": "BLOCK-05",
+      "status": "BLOCKED",
+      "item": "JBD 原厂显示/FPC资料、连接器实物与光机装配资料未齐；双目透明显示架构保留但未验证",
+      "evidence": "../H03_PCB_INPUTS.md"
+    },
+    {
+      "id": "BLOCK-06",
+      "status": "BLOCKED",
+      "item": "板厂6层2+2+2叠层、介质、阻抗、盲埋孔层跨、VIPPO、桥板0.50mm目标；未降低制造规则",
+      "evidence": "evidence/board-rule-limitations.json"
+    },
+    {
+      "id": "BLOCK-07",
+      "status": "BLOCKED",
+      "item": "主板 STEP 22,150,672 bytes 超过20MiB传输上限；保留OBJ，不删模型伪造STEP",
+      "evidence": "3d/3D_AND_BINDINGS.json"
+    },
+    {
+      "id": "BLOCK-08",
+      "status": "BLOCKED",
+      "item": "未编写信号/电源走线或独立过孔/铺铜；仅保留9个ESP32封装嵌入GND过孔；无合法布线或连通性完成声明",
+      "evidence": "layout/review-3/geometric-audit.json"
+    },
+    {
+      "id": "BLOCK-09",
+      "status": "BLOCKED",
+      "item": "40g未证明；镜腿内腔、铰链折叠、双电池、配重、鼻梁/耳后/太阳穴、近视/散光镜片适配、散热、RF、FPC弯折与声学孔未验证",
+      "evidence": "../H03_PCB_INPUTS.md"
+    },
+    {
+      "id": "BLOCK-10",
+      "status": "BLOCKED",
+      "item": "Codex review_kimi_return.py 的真实审核结论与制造状态；不得伪造.kicad_pcb/.kicad_sch回件",
+      "evidence": "evidence/codex-review/KIMI_NATIVE_REVIEW.json"
+    },
+    {
+      "id": "UNVERIFIED-01",
+      "status": "UNVERIFIED",
+      "item": "nRF5340、天线、馈线、匹配、USB/RF阻抗、SI/PI、热、功耗与结构实装；没有物理样机验证",
+      "evidence": "layout/review-3/REVIEW_SUMMARY.json"
+    },
+    {
+      "id": "UNVERIFIED-02",
+      "status": "UNVERIFIED",
+      "item": "官方画布截图受隐藏标签页限制；actual-both.svg 为辅助回读渲染，3D previewVerified=false",
+      "evidence": "layout/review-3/REVIEW_SUMMARY.json"
+    }
+  ],
+  "coreArchitectureChanged": false,
+  "fabricationAuthorized": false,
+  "rawLogsRetained": true,
+  "fakeKiCadReturnFilesCreated": false
+}

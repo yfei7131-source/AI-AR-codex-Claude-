@@ -1,0 +1,285 @@
+{
+  "schemaVersion": "zyd-p3-02-summary/1",
+  "task": "P3-02 关键功能模块成组重排与逃线通道释放",
+  "status": "NOT FOR FAB",
+  "validationLevel": "L3",
+  "inheritedBaseline": {
+    "pr68Commit": "17598cace7fc702336a303c5d00b4847036738dd",
+    "p301Epro2Sha256": "1e9db8e70e1794ef4d7950440ad47ff2658f13d464dcd95772f79ac02ef69fb1",
+    "connectionErrors": {
+      "PCB1": 320,
+      "PCB2": 225,
+      "PCB3": 127,
+      "total": 672
+    }
+  },
+  "deliverableEpro2": {
+    "file": "EVT1-H03-P3-02-NOT-FOR-FAB.epro2",
+    "sha256": "cee49f6b0e85332611706109d71902828e09f406a414dbd78c142408c8a30e44",
+    "bytes": 1616411
+  },
+  "ruleCorrections": {
+    "PCB1": {
+      "clearanceMil": 5.98,
+      "clearanceTrackTrackMil": 5.98,
+      "trackWidthMil": 4,
+      "trackWidthMinMil": 3,
+      "powerWidthMil": 20
+    },
+    "PCB2": {
+      "clearanceMil": 5.98,
+      "clearanceTrackTrackMil": 5.98,
+      "trackWidthMil": 4,
+      "trackWidthMinMil": 3,
+      "powerWidthMil": 20
+    },
+    "PCB3": {
+      "clearanceMil": 5.98,
+      "clearanceTrackTrackMil": 5.98,
+      "trackWidthMil": 4,
+      "trackWidthMinMil": 3,
+      "powerWidthMil": 20
+    }
+  },
+  "groupRelayoutSummary": {
+    "PCB1": {
+      "movedComponents": [
+        "C31",
+        "R36",
+        "R29",
+        "R6",
+        "R27",
+        "C13",
+        "R13",
+        "R18",
+        "C34",
+        "R7",
+        "C30"
+      ],
+      "addedBlindViasCount": 6,
+      "addedCorridorRoutesCount": 7,
+      "corridorBefore": {
+        "componentCountInZone": 8,
+        "avgNearestPadGapMil": 9.4,
+        "maxNearestPadGapMil": 9.4,
+        "maxContinuousHorizontalCorridorMil": 8.0,
+        "passable4milSignalTracks": 0,
+        "passable6milPowerTracks": 0
+      },
+      "corridorAfter": {
+        "componentCountInZone": 5,
+        "avgNearestPadGapMil": 8.52,
+        "maxNearestPadGapMil": 9.4,
+        "maxContinuousHorizontalCorridorMil": 10.0,
+        "passable4milSignalTracks": 0,
+        "passable6milPowerTracks": 0
+      },
+      "keyDistances": {
+        "C31_to_U11.1": {
+          "beforeMil": 197.29,
+          "afterMil": 159.46
+        }
+      },
+      "netConnectionDeltas": {
+        "3V3_SYS": {
+          "before": 43,
+          "after": 42,
+          "delta": -1
+        },
+        "CAM_DOVDD_1V8": {
+          "before": 11,
+          "after": 10,
+          "delta": -1
+        }
+      },
+      "resyncedSilkDots": [
+        {
+          "designator": "U5",
+          "oldId": "5151fa8ff49516bf",
+          "newId": "2ebc148de95c66f2",
+          "oldCenter": [
+            145.7,
+            1010.34
+          ],
+          "newCenter": [
+            73.7,
+            1052.4
+          ]
+        }
+      ]
+    },
+    "PCB2": {
+      "movedComponents": [
+        "C1",
+        "C12",
+        "C9"
+      ],
+      "addedBlindViasCount": 0,
+      "addedCorridorRoutesCount": 9,
+      "corridorBefore": {
+        "componentCountInZone": 1,
+        "avgNearestPadGapMil": 0.0,
+        "maxNearestPadGapMil": 0.0,
+        "maxContinuousHorizontalCorridorMil": 14.0,
+        "passable4milSignalTracks": 0,
+        "passable6milPowerTracks": 0
+      },
+      "corridorAfter": {
+        "componentCountInZone": 0,
+        "avgNearestPadGapMil": 0.0,
+        "maxNearestPadGapMil": 0.0,
+        "maxContinuousHorizontalCorridorMil": 42.0,
+        "passable4milSignalTracks": 3,
+        "passable6milPowerTracks": 3
+      },
+      "keyDistances": {
+        "C9_to_U11.5": {
+          "beforeMil": 160.68,
+          "afterMil": 109.43
+        },
+        "C12_to_U11.5": {
+          "beforeMil": 199.66,
+          "afterMil": 163.2
+        },
+        "C4_C9_VSYS_pitch": {
+          "beforeMil": 80.31,
+          "afterMil": 21.6
+        },
+        "C5_C9_VSYS_pitch": {
+          "beforeMil": 52.0,
+          "afterMil": 21.7
+        }
+      },
+      "netConnectionDeltas": {
+        "GND": {
+          "before": 26,
+          "after": 27,
+          "delta": 1
+        },
+        "VSYS": {
+          "before": 25,
+          "after": 24,
+          "delta": -1
+        }
+      },
+      "resyncedSilkDots": []
+    },
+    "PCB3": {
+      "movedComponents": [
+        "TP4",
+        "TP5",
+        "R6",
+        "R10",
+        "R8",
+        "C12",
+        "C15",
+        "C17",
+        "C14",
+        "R5",
+        "R7"
+      ],
+      "addedBlindViasCount": 8,
+      "addedCorridorRoutesCount": 2,
+      "corridorBefore": {
+        "componentCountInZone": 8,
+        "avgNearestPadGapMil": 9.74,
+        "maxNearestPadGapMil": 11.8,
+        "maxContinuousHorizontalCorridorMil": 0.0,
+        "passable4milSignalTracks": 0,
+        "passable6milPowerTracks": 0
+      },
+      "corridorAfter": {
+        "componentCountInZone": 5,
+        "avgNearestPadGapMil": 10.42,
+        "maxNearestPadGapMil": 11.8,
+        "maxContinuousHorizontalCorridorMil": 18.0,
+        "passable4milSignalTracks": 1,
+        "passable6milPowerTracks": 1
+      },
+      "keyDistances": {
+        "R6_to_U3.2_CHG_R_ISET": {
+          "beforeMil": 128.24,
+          "afterMil": 57.92
+        },
+        "R10_to_U3.7_CHG_R_VSET": {
+          "beforeMil": 142.11,
+          "afterMil": 67.66
+        },
+        "C15_to_LFXO_C22_isolation": {
+          "beforeMil": 23.6,
+          "afterMil": 47.33
+        },
+        "C17_to_LFXO_C23_isolation": {
+          "beforeMil": 23.6,
+          "afterMil": 47.32
+        }
+      },
+      "netConnectionDeltas": {
+        "1V8_SYS": {
+          "before": 24,
+          "after": 22,
+          "delta": -2
+        },
+        "GND": {
+          "before": 14,
+          "after": 12,
+          "delta": -2
+        }
+      },
+      "resyncedSilkDots": []
+    }
+  },
+  "l3Verification": {
+    "connectionErrorsAfter": {
+      "PCB1": 318,
+      "PCB2": 225,
+      "PCB3": 123,
+      "total": 666
+    },
+    "deltaVsP301": {
+      "PCB1": -2,
+      "PCB2": 0,
+      "PCB3": -4,
+      "total": -6
+    },
+    "deltaVsR11": {
+      "PCB1": -4,
+      "PCB2": -2,
+      "PCB3": -4,
+      "total": -10
+    },
+    "v4OfficialViolations": {
+      "PCB1": 0,
+      "PCB2": 0,
+      "PCB3": 0
+    },
+    "unresolvedNewDfmRiskPairs": {
+      "PCB1": 0,
+      "PCB2": 0,
+      "PCB3": 0
+    },
+    "nonPcbDocsIdentical": true,
+    "independentReimport": {
+      "projectUuid": "1d2ffa6fcb3def6a3b436bfcad2f5c2d13b6e6abbd10df1f39b2dfc5c788d484",
+      "parityMatch": true,
+      "elapsedSeconds": 159.39
+    }
+  },
+  "blockedScope": [
+    {
+      "id": "BLK-01",
+      "status": "BLOCKED",
+      "item": "0.80 mm 6层 HDI 物理叠层与 PCB3 U11 (0.35 mm WLCSP 95球) 2+N+2 EQ"
+    },
+    {
+      "id": "BLK-02",
+      "status": "BLOCKED",
+      "item": "PCB1/PCB2 J2/J3 连接器针序极性及双目透明 AR 光机机械包络"
+    },
+    {
+      "id": "BLK-03",
+      "status": "BLOCKED",
+      "item": "PCB1 U12 (TPD2E001DRYR) 引脚冲突待正式 ECO 授权"
+    }
+  ]
+}

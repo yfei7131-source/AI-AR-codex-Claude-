@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "status": "partial",
+  "windowId": "73f1c575-c741-4b0e-b19a-e5646d782b6d",
+  "target": "9ce45f14cb79dc9d",
+  "documentType": "pcb",
+  "saved": true,
+  "closed": true,
+  "reloaded": "",
+  "activeRestored": "",
+  "startedAt": "2026-11-24T05:24:25.1088442Z",
+  "completedAt": "2026-11-24T05:24:42.3755304Z",
+  "timeSource": "cli-host-observation",
+  "failedStage": "ready",
+  "error": "document 9ce45f14cb79dc9d reopened but its pcb data did not settle: document readiness document.current failed: document.current failed: connector did not respond — context deadline exceeded; stop writes and retain this failure/context",
+  "targetContext": {
+    "projectUuid": "57afb39c6143d9b23f10ae5e2f03460316793d92e90c60effa97d5853b6ce565",
+    "projectName": "EVT1-H03-R9-NOT-FOR-FAB-20261124",
+    "documentUuid": "9ce45f14cb79dc9d",
+    "documentType": "pcb",
+    "tabId": "9ce45f14cb79dc9d@57afb39c6143d9b23f10ae5e2f03460316793d92e90c60effa97d5853b6ce565"
+  },
+  "steps": [
+    {
+      "stage": "inspect",
+      "action": "document.current",
+      "startedAt": "2026-11-24T05:24:25.1094199Z",
+      "completedAt": "2026-11-24T05:24:25.4156816Z",
+      "requestId": "req_36259",
+      "responseCreatedAt": "2026-11-24T05:24:25.4143608Z",
+      "context": {
+        "projectUuid": "57afb39c6143d9b23f10ae5e2f03460316793d92e90c60effa97d5853b6ce565",
+        "projectName": "EVT1-H03-R9-NOT-FOR-FAB-20261124",
+        "documentUuid": "9ce45f14cb79dc9d",
+        "documentType": "pcb",
+        "tabId": "9ce45f14cb79dc9d@57afb39c6143d9b23f10ae5e2f03460316793d92e90c60effa97d5853b6ce565"
+      },
+      "ok": true
+    },
+    {
+      "stage": "save",
+      "action": "pcb.save",
+      "startedAt": "2026-11-24T05:24:25.4156816Z",
+      "completedAt": "2026-11-24T05:24:25.6791976Z",
+      "requestId": "req_36260",
+      "responseCreatedAt": "2026-11-24T05:24:25.6781377Z",
+      "context": {
+        "projectUuid": "57afb39c6143d9b23f10ae5e2f03460316793d92e90c60effa97d5853b6ce565",
+        "projectName": "EVT1-H03-R9-NOT-FOR-FAB-20261124",
+        "documentUuid": "9ce45f14cb79dc9d",
+        "documentType": "pcb",
+        "tabId": "9ce45f14cb79dc9d@57afb39c6143d9b23f10ae5e2f03460316793d92e90c60effa97d5853b6ce565"
+      },
+      "ok": true
+    },
+    {
+      "stage": "close",
+      "action": "document.close",
+      "startedAt": "2026-11-24T05:24:25.6791976Z",
+      "completedAt": "2026-11-24T05:24:28.3742712Z",
+      "requestId": "req_36261",
+      "responseCreatedAt": "2026-11-24T05:24:28.3731528Z",
+      "context": {
+        "projectUuid": "57afb39c6143d9b23f10ae5e2f03460316793d92e90c60effa97d5853b6ce565",
+        "projectName": "EVT1-H03-R9-NOT-FOR-FAB-20261124",
+        "documentUuid": "8fbc3cae65886fe5",
+        "documentType": "pcb",
+        "tabId": "8fbc3cae65886fe5@57afb39c6143d9b23f10ae5e2f03460316793d92e90c60effa97d5853b6ce565"
+      },
+      "ok": true
+    },
+    {
+      "stage": "close-settle",
+      "action": "document.current",
+      "startedAt": "2026-11-24T05:24:28.3742712Z",
+      "completedAt": "2026-11-24T05:24:29.0162217Z",
+      "requestId": "req_36262",
+      "responseCreatedAt": "2026-11-24T05:24:29.0151609Z",
+      "context": {
+        "projectUuid": "57afb39c6143d9b23f10ae5e2f03460316793d92e90c60effa97d5853b6ce565",
+        "projectName": "EVT1-H03-R9-NOT-FOR-FAB-20261124",
+        "documentUuid": "8fbc3cae65886fe5",
+        "documentType": "pcb",
+        "tabId": "8fbc3cae65886fe5@57afb39c6143d9b23f10ae5e2f03460316793d92e90c60effa97d5853b6ce565"
+      },
+      "ok": true
+    },
+    {
+      "stage": "reopen",
+      "action": "document.open",
+      "startedAt": "2026-11-24T05:24:29.0162217Z",
+      "completedAt": "2026-11-24T05:24:39.3713384Z",
+      "requestId": "req_36263",
+      "responseCreatedAt": "2026-11-24T05:24:39.3706556Z",
+      "context": {
+        "projectUuid": "57afb39c6143d9b23f10ae5e2f03460316793d92e90c60effa97d5853b6ce565",
+        "projectName": "EVT1-H03-R9-NOT-FOR-FAB-20261124",
+        "documentUuid": "9ce45f14cb79dc9d",
+        "documentType": "pcb",
+        "tabId": "9ce45f14cb79dc9d@57afb39c6143d9b23f10ae5e2f03460316793d92e90c60effa97d5853b6ce565"
+      },
+      "ok": true
+    },
+    {
+      "stage": "ready",
+      "startedAt": "2026-11-24T05:24:39.3713384Z",
+      "completedAt": "2026-11-24T05:24:42.3755304Z",
+      "ok": false,
+      "error": "document 9ce45f14cb79dc9d reopened but its pcb data did not settle: document readiness document.current failed: document.current failed: connector did not respond — context deadline exceeded; stop writes and retain this failure/context"
+    }
+  ]
+}

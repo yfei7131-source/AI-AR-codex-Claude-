@@ -1,0 +1,108 @@
+{
+  "manufacturer": "Hirose",
+  "connector": "BM28B0.6-24DS/2-0.35V(53)",
+  "manufacturer_code": "CL0673-5025-0-53",
+  "mating_code": "CL0673-5024-0-53",
+  "catalog_document": {
+    "primary_url": "https://www.hirose.com/en/product/document?clcode=CL0673-5044-0-53&documentid=en_BM28_CAT&documenttype=Catalog&lang=en&productname=BM28B0.6-10DS%2F2-0.35V%2853%29&series=BM28",
+    "downloaded_revision": "2024-06-01, Hirose-origin series catalog mirrored by LCSC",
+    "sha256": "173723517ca3c431c7e9a497a61e7dd8959f915cc4594568d6805826c78466a4",
+    "receptacle_drawing_page_1based": 6
+  },
+  "manufacturer_spec_url": "https://www.hirose.com/en/product/p/CL0673-5025-0-53/documents?path=/api/v1/products/CL0673-5025-0-53/documents/spec_sheet/content?lang%3DEN",
+  "catalog_nominal_mm": {
+    "body_x": 6.8,
+    "body_y": 1.7,
+    "mated_z": 0.6,
+    "B_signal_span_x": 3.85,
+    "H_end_lands_span_x": 5.26,
+    "signal_pitch_x": 0.35,
+    "signal_land_width_x": 0.18,
+    "signal_pattern_outer_span_y": 1.8,
+    "signal_pattern_inner_span_y": 1.18,
+    "end_land_width_x": 0.53,
+    "end_land_outer_span_y": 1.9,
+    "end_land_inner_span_y": 1.24,
+    "reference_stencil_thickness": 0.08
+  },
+  "inferred_centered_board_pattern_mm": {
+    "signal_land_y_offsets": [
+      -0.745,
+      0.745
+    ],
+    "signal_land_height_y": 0.31,
+    "signal_land_x": [
+      -1.925,
+      -1.575,
+      -1.225,
+      -0.875,
+      -0.525,
+      -0.175,
+      0.175,
+      0.525,
+      0.875,
+      1.225,
+      1.575,
+      1.925
+    ],
+    "end_land_x_offsets": [
+      -2.63,
+      2.63
+    ],
+    "end_land_y_offsets": [
+      -0.785,
+      0.785
+    ],
+    "end_land_height_y": 0.33
+  },
+  "counts": {
+    "signal_copper_lands": 24,
+    "visually_separate_end_copper_lands": 4,
+    "manufacturer_power_circuit_count": 2
+  },
+  "project_terminal_contract": {
+    "signal_numbers": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24"
+    ],
+    "power_logical_ids": [
+      "PWR1",
+      "PWR2"
+    ],
+    "unverified_stock_library_ids": [
+      "25",
+      "26",
+      "27",
+      "28"
+    ]
+  },
+  "contact_rating_A": {
+    "signal": 0.3,
+    "power": 5.0
+  },
+  "placement_footprint_is_polarized": false,
+  "manufacturing_status": "BLOCKED",
+  "decision": "CAD numbers 25–28 are not assigned from the drawing. Confirm stock footprint primitive coordinates, same-half and cross-half 4-wire continuity, connector orientation and actual camera mating harness before binding."
+}

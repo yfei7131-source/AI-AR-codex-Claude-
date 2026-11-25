@@ -1,0 +1,62 @@
+$ C:\Users\Admin（无密码）\.local\bin\easyeda.exe pcb region create --doc 8fbc3cae65886fe5 --points [[0, 0], [0, 165.35433070866142], [228.3464566929134, 165.35433070866142], [228.3464566929134, 0]] --layer 15 --rule no-wires --rule no-pours --locked --project cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662
+{
+  "id": "req_295",
+  "type": "response",
+  "version": "v1",
+  "windowId": "05e9143d-7956-4f1a-91a7-e59dbe47a43d",
+  "createdAt": "2026-11-18T14:59:22.3914976Z",
+  "ok": true,
+  "result": {
+    "differences": [
+      "geometry"
+    ],
+    "layer": 15,
+    "lineWidth": 0.2,
+    "locked": true,
+    "partial": true,
+    "primitiveId": "ca886d9112e22a52",
+    "regionName": null,
+    "ruleType": [
+      5,
+      7
+    ],
+    "ruleTypeNames": [
+      "no-wires",
+      "no-pours"
+    ],
+    "source": [
+      0,
+      0,
+      "L",
+      0,
+      165.3543,
+      228.3465,
+      165.3543,
+      228.3465,
+      0,
+      0,
+      0
+    ],
+    "verified": false
+  },
+  "context": {
+    "projectUuid": "cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+    "projectName": "ZY_AIAR_EVT1_KIMI_20261118",
+    "documentUuid": "8fbc3cae65886fe5",
+    "documentType": "pcb",
+    "tabId": "8fbc3cae65886fe5@cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+    "pageVisibility": "hidden"
+  },
+  "mutationContext": {
+    "projectUuid": "cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+    "projectName": "ZY_AIAR_EVT1_KIMI_20261118",
+    "documentUuid": "8fbc3cae65886fe5",
+    "documentType": "pcb",
+    "tabId": "8fbc3cae65886fe5@cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+    "pageVisibility": "hidden"
+  },
+  "mutationContextAvailable": true,
+  "seq": 238,
+  "seqAbandoned": 0
+}
+pcb.region.create: write not fully verified; inspect returned IDs and fresh state before retrying

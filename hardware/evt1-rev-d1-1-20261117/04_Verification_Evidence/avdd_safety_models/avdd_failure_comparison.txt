@@ -1,0 +1,51 @@
+[PASS_MODEL_ONLY] D1 actual RC connectivity: R_SEQ100k,C_SEQ220nF; direct DC-high D3 source verified in immutable D1 NETLIST
+[REPRODUCED_FAILURE] D1 VSYNC/clock lost HIGH reproduced: {'en_at_200ms_v': 1.799797165955086, 'unsafe_condition': 'EN remains above1.0V indefinitely while D3 remains drivenHIGH'}
+[PASS_MODEL_ONLY] D1 failed configuration LOW conditional OFF: Assumes silicon CDONE truly holdsD3LOW and CRESET/rails are valid; not a simulation of the hard configuration engine
+[PASS_MODEL_ONLY] D1 explicit LOW RC discharge: {'nominal_off_ms': 39.41870832301721, 'scope': 'only after the physical D3 source has actually goneLOW'}
+[REPRODUCED_FAILURE] D1 IO-fall cannot prove fast AVDD cutoff: {'en_10us_after_ideal_IO_pull_down_v': 1.7992187161023767, 'scope': 'conditional RC discharge boundary; actual I/O clamps and floating rail impedances are not modeled'}
+[REPRODUCED_MODEL_DEFECT] Gemini finite1us charge discrepancy: {'first_peak_v': 1.1488308139514312, 'first_valley_v': 0.8141634771257502, 'steady_peak_v': 1.4242655656088443, 'steady_valley_v': 1.0093609878535112}
+[REPRODUCED_MODEL_DEFECT] Gemini first frame below current guaranteed ON: {'first_valley_v': 0.8141634771257502, 'ldo_guaranteed_on_v': 1.0}
+[PASS_MODEL_ONLY] Gemini native positive-pulse LOW-loss nominal discharge: With no charge source and zero leakage, voltage falls below0.3V within100ms; does not cover stuckHIGH
+[REPRODUCED_MODEL_DEFECT] Gemini old66.5ms claim threshold mismatch: {'off_ms_at_current0p3V': 80.41164632605688, 'old_claim_uses0p4V_ms': 66.48783401939068}
+[REPRODUCED_FAILURE] Gemini native or D1-polarity stuckHIGH reproduced: {'continuous_rectifier_en_v': 1.5799748640362539, 'missing_protection': 'peak hold is not an edge watchdog'}
+[REPRODUCED_MARGIN_FAILURE] Gemini parameter sensitivity below guaranteed ON: {'rail_minus5pct_cap_plus20pct_Rplusminus1pct': {'first_peak_v': 0.9796945630205403, 'first_valley_v': 0.7331815425167055, 'steady_peak_v': 1.3173276790893416, 'steady_valley_v': 0.9858586300375594}, 'scope': 'explicit design sensitivity, not a claim these are the exact populated-parts limits'}
+[REPRODUCED_MARGIN_FAILURE] Gemini leakage sensitivity defeats passive OFF: {'en_after1s_with_positive0p2uA_injection_v': 0.44000000104733544, 'scope': 'sensitivity bound. Missing diode/LDO/pin worst-case leakage must not be assumedzero.'}
+[PASS_MODEL_ONLY] D1.1 legacy EN reservoir/clamp removed from actual NETLIST: Checked actual RevD1.1 terminals, not merely a contract boolean
+[PASS_MODEL_ONLY] D1.1 no explicit EN hold capacitor: []
+[PASS_MODEL_ONLY] D1.1 actual timer, direct supervisor and two logical clamps: {'timer_output': [('U_AVDD_WD', '6', 'AVDD_WD_Q')], 'reset_clamps': [('U_AVDD_SYS_CLAMP', '6')]}
+[PASS_MODEL_ONLY] D1.1 actual qualification graph prevents CDONE-only combinationalON: {('U_AVDD_QUAL', '1'): 'AVDD_D3_VSYS', ('U_AVDD_QUAL', '3'): 'VSYS', ('U_AVDD_QUAL', '4'): 'AVDD_PULSE_QUAL', ('U_AVDD_QUAL', '6'): 'AVDD_QUAL_CLR_N', ('U_AVDD_SCHMITT', '3'): 'AVDD_QUAL_RC', ('U_AVDD_SCHMITT', '4'): 'AVDD_QUAL_CLR_N', ('R_AVDD_QUAL_PU', '1'): 'AVDD_WD_Q', ('R_AVDD_QUAL_PU', '2'): 'AVDD_QUAL_RC', ('C_AVDD_QUAL', '1'): 'AVDD_QUAL_RC', ('C_AVDD_QUAL', '2'): 'GND', ('U_AVDD_CLEAR_OD', '1'): 'AVDD_WD_Q', ('U_AVDD_CLEAR_OD', '3'): 'AVDD_PG_OK', ('U_AVDD_CLEAR_OD', '4'): 'AVDD_QUAL_RC', ('U_AVDD_CLEAR_OD', '6'): 'AVDD_QUAL_RC', ('U_AVDD_EN_OD', '1'): 'AVDD_PG_OK', ('U_AVDD_EN_OD', '3'): 'AVDD_PULSE_QUAL'}
+[PASS_MODEL_ONLY] D1.1 CDONE-only stuckHIGH staysOFF, guard=0.0001: {'scope': 'actual qualificationgraph eventmodel, guard is explicit unqualifiedPVTdesignbudget'}
+[PASS_MODEL_ONLY] D1.1 later completedheartbeat qualifies, guard=0.0001: FirstCDONE edge ignored; next1usLOWpulse completion can clockD=1 afterCLRrelease
+[PASS_MODEL_ONLY] D1.1 PG fault+restore without newheartbeat cannot reenable, guard=0.0001: {'scope': 'settledPGevents only; actual supervisor transientdeadline remainsBLOCKED'}
+[PASS_MODEL_ONLY] D1.1 CDONE-only stuckHIGH staysOFF, guard=0.003: {'scope': 'actual qualificationgraph eventmodel, guard is explicit unqualifiedPVTdesignbudget'}
+[PASS_MODEL_ONLY] D1.1 later completedheartbeat qualifies, guard=0.003: FirstCDONE edge ignored; next1usLOWpulse completion can clockD=1 afterCLRrelease
+[PASS_MODEL_ONLY] D1.1 PG fault+restore without newheartbeat cannot reenable, guard=0.003: {'scope': 'settledPGevents only; actual supervisor transientdeadline remainsBLOCKED'}
+[PASS_MODEL_ONLY] D1.1 normal60Hz retriggers before earliest expiry: {'period_ms': 16.666666666666668, 'minimum_timeout_ms': 31.624445952000002}
+[PASS_MODEL_ONLY] D1.1 clock/VSYNC stopped HIGH event watchdog expires: {'last_edge_s': 0.12666666666666668, 'latest_model_expiry_s': 0.1609256598186667, 'scope': 'timeout contract valid supply/domain only; supervisor propagation and AVDD output discharge not included'}
+[PASS_MODEL_ONLY] D1.1 clock/VSYNC stopped LOW event watchdog expires: {'last_edge_s': 0.12666666666666668, 'latest_model_expiry_s': 0.1609256598186667, 'scope': 'timeout contract valid supply/domain only; supervisor propagation and AVDD output discharge not included'}
+[PASS_MODEL_ONLY] D1.1 OPT_PWR_REQ LOW held event watchdog expires: {'last_edge_s': 0.12666666666666668, 'latest_model_expiry_s': 0.1609256598186667, 'scope': 'timeout contract valid supply/domain only; supervisor propagation and AVDD output discharge not included'}
+[PASS_MODEL_ONLY] D1.1 D3 disconnected/no further rising edge event watchdog expires: {'last_edge_s': 0.12666666666666668, 'latest_model_expiry_s': 0.1609256598186667, 'scope': 'timeout contract valid supply/domain only; supervisor propagation and AVDD output discharge not included'}
+[PASS_MODEL_ONLY] D1.1 failed config/no edges starts watchdoginactive: No synthetic trigger is invented for FPGA configuration failure; actual timerPOR/level-translator power-up must also be vendor-checked
+[PASS_MODEL_ONLY] D1.1 normal1us D3 LOW filtered above MR high level: {'mr_min_normal_fraction': 0.9900498337491681, 'mr_vih_fraction': 0.7, 'tau_us': 100.0}
+[PASS_MODEL_ONLY] D1.1 heldLOW reaches MR guaranteedLOW: {'nominal_filter_delay_us': 138.62943611198907, 'scope': 'R/C calculation only; supervisor response has no assumed maximum'}
+[PASS_MODEL_ONLY] D1.1 EN does not retain removed220nF charge reservoir: {'divider_ratio': 0.8291457286432161, 'scope': 'explicit populated capacitor removed; parasiticENcap stillphysicalunknown'}
+[PASS_MODEL_ONLY] D1.1 settled CRESET asserted clamp contract: {'en_clamped_low_max_v': 0.25, 'ldo_vlo_v': 0.3, 'scope': 'specified settledclamp current/load/validsupply conditions; not a response-time guarantee'}
+[PASS_MODEL_ONLY] D1.1 settled IO rail below supervisor threshold clamp contract: {'en_clamped_low_max_v': 0.25, 'ldo_vlo_v': 0.3, 'scope': 'specified settledclamp current/load/validsupply conditions; not a response-time guarantee'}
+[PASS_MODEL_ONLY] D1.1 settled VSYS below supervisor threshold clamp contract: {'en_clamped_low_max_v': 0.25, 'ldo_vlo_v': 0.3, 'scope': 'specified settledclamp current/load/validsupply conditions; not a response-time guarantee'}
+[PASS_MODEL_ONLY] D1.1 settled D3 heldLOW after MRfilter clamp contract: {'en_clamped_low_max_v': 0.25, 'ldo_vlo_v': 0.3, 'scope': 'specified settledclamp current/load/validsupply conditions; not a response-time guarantee'}
+{
+  "scope": "Analytical/event-contract tests and optional native idealizedRCSPICE; NOT_FOR_FAB",
+  "event_model_initial_conditions": [
+    "watchdoginactive, qualifierclear and RC discharged at modeledinitialization",
+    "PG transitions mean settled supervisorstates, not arbitrarysupplyramp timing",
+    "1us D3 pulses and guard100us..3ms are explicitdesignconditions, notqualifiedPVTlimits"
+  ],
+  "physical_hardware_status": "BLOCKED_NO_BENCH_MEASUREMENTS",
+  "guaranteed_power_transient_status": "BLOCKED_NO_SUPERVISOR_MAX_RESPONSE_OR_VENDOR_OPTICS_SEQUENCE",
+  "jbd_avdd_and_powerdown_status": "BLOCKED_VENDOR_NDA",
+  "hardware_contract_sha256": "972d60f7d845eb5e2e0aba5bae391f3745ec350cf89371691cec7c5b4dab60ff",
+  "native_spice": {
+    "status": "BLOCKED_NATIVE_NGSPICE_UNAVAILABLE"
+  },
+  "model_assertions": "PASS"
+}

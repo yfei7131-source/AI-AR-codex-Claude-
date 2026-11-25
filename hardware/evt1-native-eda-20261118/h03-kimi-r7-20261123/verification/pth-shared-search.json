@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "scope": "One normal 6/12 mil PTH from U11.K4 to Bottom with direct route variants; not a multilayer or multi-via completeness proof.",
+  "source": "U11.K4",
+  "receivers": [
+    "J1.P12",
+    "U10.C3",
+    "R4.1"
+  ],
+  "net": "I2S_LRCLK_1V8",
+  "nativeArchiveSha256": "c4ca657e50915789b7255430dd2e0f49c7828d85a2f73c42547701efbb213dd5",
+  "nativeCopperSnapshotSha256": "326bfa6cf8315a95955816ea2dd598effb4e32e437738119bfeac62789510290",
+  "searchWindowMil": {
+    "x": [
+      12,
+      192
+    ],
+    "y": [
+      180,
+      660
+    ],
+    "stepMil": 2
+  },
+  "gridPoints": 21931,
+  "viaAndTopEscapePositions": 0,
+  "positionsWithAnyTopRoute": 0,
+  "directBottomBranchCounts": {
+    "J1.P12": 0,
+    "U10.C3": 0,
+    "R4.1": 0
+  },
+  "sharedReceiverPairPositions": 0,
+  "sharedAllThreePositions": 0,
+  "receiverPairCandidates": [],
+  "allThreeCandidates": [],
+  "status": "bounded-search-complete",
+  "limitations": [
+    "Zero candidates only applies to the declared grid, route variants and single-PTH topology.",
+    "Plane-return geometry is not a native antipad write, impedance proof, supplier approval or fabrication release.",
+    "Any candidate requires fresh typed native creation, save/reload, full DRC and net-path verification before integration."
+  ]
+}

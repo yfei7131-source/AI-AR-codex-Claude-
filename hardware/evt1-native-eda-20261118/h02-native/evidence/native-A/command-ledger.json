@@ -1,0 +1,142 @@
+[
+  {
+    "path": "lceda-boards.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "07cd043dddb0a454d5f6a70ca160dd19814fb0d895a80795211f882761247b40",
+      "board",
+      "list"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "lceda-pages.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "07cd043dddb0a454d5f6a70ca160dd19814fb0d895a80795211f882761247b40",
+      "sch",
+      "pages"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "lceda-pcbs.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "07cd043dddb0a454d5f6a70ca160dd19814fb0d895a80795211f882761247b40",
+      "pcb",
+      "docs"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "save/M-MAIN-L.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "07cd043dddb0a454d5f6a70ca160dd19814fb0d895a80795211f882761247b40",
+      "--doc",
+      "4d38590959875927",
+      "sch",
+      "save"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "reload/M-MAIN-L.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "07cd043dddb0a454d5f6a70ca160dd19814fb0d895a80795211f882761247b40",
+      "doc",
+      "reload",
+      "4d38590959875927",
+      "--json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "root/M-MAIN-L.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "07cd043dddb0a454d5f6a70ca160dd19814fb0d895a80795211f882761247b40",
+      "doc",
+      "switch",
+      "4d38590959875927",
+      "--json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "board-netlists/M-MAIN-L.response.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "07cd043dddb0a454d5f6a70ca160dd19814fb0d895a80795211f882761247b40",
+      "sch",
+      "netlist",
+      "--type",
+      "Protel2"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "erc/4d38590959875927.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "07cd043dddb0a454d5f6a70ca160dd19814fb0d895a80795211f882761247b40",
+      "sch",
+      "drc",
+      "--json",
+      "--strict"
+    ],
+    "exit_code": 1
+  },
+  {
+    "path": "board-boms/M-MAIN-L.response.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "07cd043dddb0a454d5f6a70ca160dd19814fb0d895a80795211f882761247b40",
+      "bom",
+      "export",
+      "--type",
+      "csv",
+      "--enrich=false"
+    ],
+    "exit_code": 1
+  },
+  {
+    "path": "board-boms/M-MAIN-L.response.retry1.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "07cd043dddb0a454d5f6a70ca160dd19814fb0d895a80795211f882761247b40",
+      "bom",
+      "export",
+      "--type",
+      "csv",
+      "--enrich=false"
+    ],
+    "exit_code": 1
+  },
+  {
+    "path": "board-boms/M-MAIN-L.response.retry2.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "07cd043dddb0a454d5f6a70ca160dd19814fb0d895a80795211f882761247b40",
+      "bom",
+      "export",
+      "--type",
+      "csv",
+      "--enrich=false"
+    ],
+    "exit_code": 1
+  }
+]

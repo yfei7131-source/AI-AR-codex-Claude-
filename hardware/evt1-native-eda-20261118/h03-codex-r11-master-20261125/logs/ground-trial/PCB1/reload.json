@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "windowId": "9dcb7d09-8d57-490f-a38b-04479bc95302",
+  "target": "8fbc3cae65886fe5",
+  "documentType": "pcb",
+  "saved": true,
+  "closed": true,
+  "reloaded": "8fbc3cae65886fe5",
+  "activeRestored": "8fbc3cae65886fe5",
+  "startedAt": "2026-11-24T10:50:01.0151059Z",
+  "completedAt": "2026-11-24T10:50:04.5792245Z",
+  "timeSource": "cli-host-observation",
+  "targetContext": {
+    "projectUuid": "99e560524e65894fdf0b4b17428a837a574cf54248505284ec657cac6167b247",
+    "projectName": "EVT1-H03-R11-HDI-ROUTING-TRIAL",
+    "documentUuid": "8fbc3cae65886fe5",
+    "documentType": "pcb",
+    "tabId": "8fbc3cae65886fe5@99e560524e65894fdf0b4b17428a837a574cf54248505284ec657cac6167b247"
+  },
+  "finalContext": {
+    "projectUuid": "99e560524e65894fdf0b4b17428a837a574cf54248505284ec657cac6167b247",
+    "projectName": "EVT1-H03-R11-HDI-ROUTING-TRIAL",
+    "documentUuid": "8fbc3cae65886fe5",
+    "documentType": "pcb",
+    "tabId": "8fbc3cae65886fe5@99e560524e65894fdf0b4b17428a837a574cf54248505284ec657cac6167b247"
+  },
+  "readiness": {
+    "ready": true,
+    "scope": "component-inventory-readiness",
+    "active": {
+      "projectUuid": "99e560524e65894fdf0b4b17428a837a574cf54248505284ec657cac6167b247",
+      "projectName": "EVT1-H03-R11-HDI-ROUTING-TRIAL",
+      "documentUuid": "8fbc3cae65886fe5",
+      "documentType": "pcb",
+      "tabId": "8fbc3cae65886fe5@99e560524e65894fdf0b4b17428a837a574cf54248505284ec657cac6167b247"
+    },
+    "componentCount": 118,
+    "componentSha256": "29977e4f57bc7c3688462dcda47118a2f806f76d719019b06b08564e9010ba72",
+    "samples": 2,
+    "stableSamples": 2,
+    "requestIds": [
+      "req_167",
+      "req_168",
+      "req_169",
+      "req_170",
+      "req_171"
+    ],
+    "observedAt": "2026-11-24T10:50:04.5792245Z"
+  },
+  "steps": [
+    {
+      "stage": "inspect",
+      "action": "document.current",
+      "startedAt": "2026-11-24T10:50:01.0151059Z",
+      "completedAt": "2026-11-24T10:50:01.0310465Z",
+      "requestId": "req_162",
+      "responseCreatedAt": "2026-11-24T10:50:01.0305396Z",
+      "context": {
+        "projectUuid": "99e560524e65894fdf0b4b17428a837a574cf54248505284ec657cac6167b247",
+        "projectName": "EVT1-H03-R11-HDI-ROUTING-TRIAL",
+        "documentUuid": "8fbc3cae65886fe5",
+        "documentType": "pcb",
+        "tabId": "8fbc3cae65886fe5@99e560524e65894fdf0b4b17428a837a574cf54248505284ec657cac6167b247"
+      },
+      "ok": true
+    },
+    {
+      "stage": "save",
+      "action": "pcb.save",
+      "startedAt": "2026-11-24T10:50:01.0315759Z",
+      "completedAt": "2026-11-24T10:50:01.0879783Z",
+      "requestId": "req_163",
+      "responseCreatedAt": "2026-11-24T10:50:01.0872815Z",
+      "context": {
+        "projectUuid": "99e560524e65894fdf0b4b17428a837a574cf54248505284ec657cac6167b247",
+        "projectName": "EVT1-H03-R11-HDI-ROUTING-TRIAL",
+        "documentUuid": "8fbc3cae65886fe5",
+        "documentType": "pcb",
+        "tabId": "8fbc3cae65886fe5@99e560524e65894fdf0b4b17428a837a574cf54248505284ec657cac6167b247"
+      },
+      "ok": true
+    },
+    {
+      "stage": "close",
+      "action": "document.close",
+      "startedAt": "2026-11-24T10:50:01.0879783Z",
+      "completedAt": "2026-11-24T10:50:01.4510889Z",
+      "requestId": "req_164",
+      "responseCreatedAt": "2026-11-24T10:50:01.4505825Z",
+      "context": {
+        "projectUuid": "99e560524e65894fdf0b4b17428a837a574cf54248505284ec657cac6167b247",
+        "projectName": "EVT1-H03-R11-HDI-ROUTING-TRIAL"
+      },
+      "ok": true
+    },
+    {
+      "stage": "close-settle",
+      "action": "document.current",
+      "startedAt": "2026-11-24T10:50:01.4510889Z",
+      "completedAt": "2026-11-24T10:50:01.4714705Z",
+      "requestId": "req_165",
+      "responseCreatedAt": "2026-11-24T10:50:01.4707505Z",
+      "ok": false,
+      "error": "document.current failed: No active document."
+    },
+    {
+      "stage": "reopen",
+      "action": "document.open",
+      "startedAt": "2026-11-24T10:50:01.4714705Z",
+      "completedAt": "2026-11-24T10:50:03.9243768Z",
+      "requestId": "req_166",
+      "responseCreatedAt": "2026-11-24T10:50:03.9233462Z",
+      "context": {
+        "projectUuid": "99e560524e65894fdf0b4b17428a837a574cf54248505284ec657cac6167b247",
+        "projectName": "EVT1-H03-R11-HDI-ROUTING-TRIAL",
+        "documentUuid": "8fbc3cae65886fe5",
+        "documentType": "pcb",
+        "tabId": "8fbc3cae65886fe5@99e560524e65894fdf0b4b17428a837a574cf54248505284ec657cac6167b247"
+      },
+      "ok": true
+    },
+    {
+      "stage": "ready",
+      "startedAt": "2026-11-24T10:50:03.9243768Z",
+      "completedAt": "2026-11-24T10:50:04.5792245Z",
+      "context": {
+        "projectUuid": "99e560524e65894fdf0b4b17428a837a574cf54248505284ec657cac6167b247",
+        "projectName": "EVT1-H03-R11-HDI-ROUTING-TRIAL",
+        "documentUuid": "8fbc3cae65886fe5",
+        "documentType": "pcb",
+        "tabId": "8fbc3cae65886fe5@99e560524e65894fdf0b4b17428a837a574cf54248505284ec657cac6167b247"
+      },
+      "ok": true
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "status": "VERIFIED_H03_3BOARD_ZERO_CLEARANCE_AND_LIVE_ROUTING",
+  "manufacturing": "BLOCKED",
+  "baseline_22x4_2_preserved": {
+    "archive": "evt1-native-eda-20261118/h02-fp-h03-pcb/native/ZY_AIAR_EVT1_H02_FP_CONV_22x4_2_NOT_FOR_FAB.epro2",
+    "sha256": "8483c0594bd5e20aee3f91cb0b851d84a2036bf7f211ebb92c0d05a35309db8e",
+    "unchanged_vs_pr40": true
+  },
+  "h03_3board_mecr01_archive": {
+    "path": "evt1-native-eda-20261118/h03-bridge-route-3board/native/ZY_AIAR_EVT1_H03_3BOARD_MECR01_TRIAL_NOT_FOR_FAB.epro2",
+    "sha256": "82a7f78219b7262749d5051241cb5b0fab2ecd67b703b550dc6d84e33a143b62",
+    "total_placed_components_3boards": 257,
+    "total_physical_pads_3boards": 1074,
+    "total_persisted_tracks_3boards": 323,
+    "total_persisted_vias_3boards": 59,
+    "total_clearance_errors_3boards": 0
+  },
+  "pcb2_progression_vs_pr40": {
+    "pr40_total_drc": 338,
+    "h03_total_drc": 271,
+    "pr40_clearance_errors": 71,
+    "h03_clearance_errors": 0,
+    "routing_plan_summary": {
+      "total_tracks": 318,
+      "total_vias": 29,
+      "gnd_plane_vias": 15,
+      "non_gnd_signal_vias": 14,
+      "u2_bga_vippo_vias": 2,
+      "mst_edges_routed": 29,
+      "mst_edges_attempted": 170,
+      "nets_with_copper": 13,
+      "nets_100pct_complete": 6
+    }
+  },
+  "boards": {
+    "PCB1": {
+      "placed_components": 118,
+      "physical_pads": 507,
+      "unique_ids_matched": "118/118",
+      "persisted_tracks": 11,
+      "persisted_vias": 19,
+      "drc_pre_route": {
+        "total": 469,
+        "clearance_or_short": 0,
+        "connection_airwires": 468,
+        "plane_zone_disconnected": 1,
+        "mic_slot_errors": 0,
+        "netlist_errors": 1,
+        "by_rule": {
+          "Connection Error (SMD Pad)": 467,
+          "Connection Error (Plane Zone)": 1,
+          "Netlist Error (Netlist Error)": 1
+        }
+      },
+      "drc_post_route": {
+        "total": 465,
+        "clearance_or_short": 0,
+        "connection_airwires": 464,
+        "plane_zone_disconnected": 0,
+        "mic_slot_errors": 0,
+        "netlist_errors": 1,
+        "by_rule": {
+          "Connection Error (SMD Pad)": 459,
+          "Connection Error (Via)": 5,
+          "Netlist Error (Netlist Error)": 1
+        }
+      },
+      "airwires_reduced_vs_pre": 4
+    },
+    "PCB2": {
+      "placed_components": 86,
+      "physical_pads": 328,
+      "unique_ids_matched": "86/86",
+      "persisted_tracks": 300,
+      "persisted_vias": 28,
+      "drc_pre_route": {
+        "total": 309,
+        "clearance_or_short": 0,
+        "connection_airwires": 308,
+        "plane_zone_disconnected": 2,
+        "mic_slot_errors": 0,
+        "netlist_errors": 1,
+        "by_rule": {
+          "Connection Error (SMD Pad)": 306,
+          "Connection Error (Plane Zone)": 2,
+          "Netlist Error (Netlist Error)": 1
+        }
+      },
+      "drc_post_route": {
+        "total": 271,
+        "clearance_or_short": 0,
+        "connection_airwires": 270,
+        "plane_zone_disconnected": 0,
+        "mic_slot_errors": 0,
+        "netlist_errors": 1,
+        "by_rule": {
+          "Connection Error (SMD Pad)": 262,
+          "Connection Error (Via)": 6,
+          "Connection Error (Track)": 2,
+          "Netlist Error (Netlist Error)": 1
+        }
+      },
+      "airwires_reduced_vs_pre": 38
+    },
+    "PCB3": {
+      "placed_components": 53,
+      "physical_pads": 239,
+      "unique_ids_matched": "53/53",
+      "persisted_tracks": 12,
+      "persisted_vias": 12,
+      "drc_pre_route": {
+        "total": 197,
+        "clearance_or_short": 0,
+        "connection_airwires": 196,
+        "plane_zone_disconnected": 2,
+        "mic_slot_errors": 0,
+        "netlist_errors": 1,
+        "by_rule": {
+          "Connection Error (SMD Pad)": 194,
+          "Connection Error (Plane Zone)": 2,
+          "Netlist Error (Netlist Error)": 1
+        }
+      },
+      "drc_post_route": {
+        "total": 191,
+        "clearance_or_short": 0,
+        "connection_airwires": 190,
+        "plane_zone_disconnected": 0,
+        "mic_slot_errors": 0,
+        "netlist_errors": 1,
+        "by_rule": {
+          "Connection Error (SMD Pad)": 186,
+          "Connection Error (Via)": 4,
+          "Netlist Error (Netlist Error)": 1
+        }
+      },
+      "airwires_reduced_vs_pre": 6
+    }
+  }
+}

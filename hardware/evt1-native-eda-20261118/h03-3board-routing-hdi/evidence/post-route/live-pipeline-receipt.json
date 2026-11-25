@@ -1,0 +1,87 @@
+{
+  "status": "CAPTURED_LIVE_EASYEDA_4_1_97",
+  "manufacturing": "BLOCKED",
+  "project_uuid": "c5114ba5f16808cf52f7d6dce19d766bb8fd4f887c832eb88c4db730b44f71e6",
+  "commits": {
+    "PCB2": {
+      "tracks_cmd": 368,
+      "vias_cmd": 26,
+      "failures": 0,
+      "tracks_deleted_surgical": 1,
+      "deleted_ids": [
+        "19339d6f995e4f0a"
+      ]
+    },
+    "PCB3": {
+      "tracks_cmd": 276,
+      "vias_cmd": 31,
+      "failures": 0
+    },
+    "PCB1": {
+      "tracks_cmd": 531,
+      "vias_cmd": 78,
+      "failures": 0
+    }
+  },
+  "post_route_drc": {
+    "PCB2": {
+      "total": 247,
+      "clearance": 0,
+      "connection": 246,
+      "netlist": 1,
+      "plane_zone": 0,
+      "by_rule": {
+        "Connection Error (SMD Pad)": 241,
+        "Connection Error (Via)": 5,
+        "Netlist Error (Netlist Error)": 1
+      }
+    },
+    "PCB3": {
+      "total": 143,
+      "clearance": 0,
+      "connection": 142,
+      "netlist": 1,
+      "plane_zone": 0,
+      "by_rule": {
+        "Connection Error (SMD Pad)": 137,
+        "Connection Error (Track)": 2,
+        "Connection Error (Via)": 3,
+        "Netlist Error (Netlist Error)": 1
+      }
+    },
+    "PCB1": {
+      "total": 363,
+      "clearance": 0,
+      "connection": 362,
+      "netlist": 1,
+      "plane_zone": 0,
+      "by_rule": {
+        "Connection Error (SMD Pad)": 353,
+        "Connection Error (Via)": 6,
+        "Connection Error (Track)": 3,
+        "Netlist Error (Netlist Error)": 1
+      }
+    }
+  },
+  "exported_sha256": "62e1f3cd21b36420bf1b5da6d2af57abd6e6ed67f221c55bfc59516aad117571",
+  "persisted_copper_summary": {
+    "PCB1": {
+      "dump_lines": 554,
+      "dump_vias": 78,
+      "epro2_lines": 554,
+      "epro2_vias": 78
+    },
+    "PCB2": {
+      "dump_lines": 378,
+      "dump_vias": 26,
+      "epro2_lines": 378,
+      "epro2_vias": 26
+    },
+    "PCB3": {
+      "dump_lines": 301,
+      "dump_vias": 31,
+      "epro2_lines": 301,
+      "epro2_vias": 31
+    }
+  }
+}

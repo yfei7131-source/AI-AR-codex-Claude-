@@ -1,0 +1,334 @@
+{
+  "schemaVersion": 1,
+  "id": "P1-R11-FIXTURE",
+  "checkpointSha256": "28f7f37f0a9b4cae0c2ab162445829d30062b91e34616b7f267917a95621248b",
+  "level": "L3",
+  "boards": {
+    "PCB1": {
+      "routes": [
+        {
+          "candidate": 5,
+          "net": "GND",
+          "sourceIds": [
+            "r10c280a29a6f2e7",
+            "r10f12607d56ab56"
+          ],
+          "layer": 2,
+          "width": 6,
+          "sourcePoint": [
+            181.991,
+            916.138
+          ],
+          "targetPoint": [
+            149.991,
+            916.138
+          ],
+          "from": "U18.11",
+          "fromId": "45582490ff996334e38",
+          "fromNativeOpen": false,
+          "via": {
+            "x": 149.991,
+            "y": 916.138,
+            "rule": "BV_L5_L6",
+            "diameter": 10,
+            "drill": 4
+          },
+          "planeCoversViaLand": true,
+          "holeWallMil": 51.739,
+          "points": [
+            [
+              181.991,
+              916.138
+            ],
+            [
+              149.991,
+              916.138
+            ]
+          ],
+          "status": "native-trial-candidate",
+          "checks": {
+            "holeWallMil": 51.739,
+            "annulusToExpandedSMDMaskMil": 6.862,
+            "sensitiveGapMil": 73.9,
+            "sameFaceAcousticAntennaBodyGapMil": 658.185,
+            "otherNetViaCuGapMil": 8.862
+          },
+          "annulusToExpandedSMDMaskMil": 6.862,
+          "sensitiveGapMil": 73.9,
+          "sameFaceAcousticAntennaBodyGapMil": 658.185,
+          "otherNetViaCuGapMil": 8.862
+        },
+        {
+          "net": "SYS_I2C_SCL_3V3",
+          "from": "R16.1",
+          "to": "U19.6",
+          "layer": 2,
+          "width": 4,
+          "points": [
+            [
+              207.9598,
+              1474.4142
+            ],
+            [
+              200.4456,
+              1466.9
+            ],
+            [
+              177.9,
+              1466.9
+            ]
+          ]
+        },
+        {
+          "net": "LS3_VREF2_EN",
+          "from": "R24.1",
+          "to": "U19.7",
+          "layer": 2,
+          "width": 4,
+          "points": [
+            [
+              166.0339,
+              1498.4331
+            ],
+            [
+              159.0,
+              1491.3992
+            ],
+            [
+              159.0,
+              1460.0
+            ],
+            [
+              165.9,
+              1453.1
+            ],
+            [
+              177.9,
+              1453.1
+            ]
+          ]
+        },
+        {
+          "net": "3V3_SYS",
+          "from": "R24.2",
+          "to": "R16.2",
+          "layer": 2,
+          "width": 6,
+          "points": [
+            [
+              166.0339,
+              1523.6331
+            ],
+            [
+              183.9409,
+              1523.6331
+            ],
+            [
+              207.9598,
+              1499.6142
+            ]
+          ]
+        }
+      ],
+      "moves": [
+        {
+          "id": "b4050bb9b175fed6",
+          "before": {
+            "x": 138.3858,
+            "y": 1346.2598,
+            "rotation": 0,
+            "layer": 2
+          },
+          "after": {
+            "x": 208,
+            "y": 1487,
+            "rotation": 90,
+            "layer": 2
+          }
+        },
+        {
+          "id": "a9d57f15e25bbbc7",
+          "before": {
+            "x": 189.5669,
+            "y": 1354.1339,
+            "rotation": 0,
+            "layer": 2
+          },
+          "after": {
+            "x": 166,
+            "y": 1511,
+            "rotation": 90,
+            "layer": 2
+          }
+        }
+      ]
+    },
+    "PCB3": {
+      "routes": [
+        {
+          "net": "GND",
+          "from": "C6.2",
+          "layer": 1,
+          "width": 6,
+          "points": [
+            [
+              184.8,
+              607.7
+            ],
+            [
+              172.8,
+              607.7
+            ],
+            [
+              170.8,
+              609.7
+            ]
+          ],
+          "via": {
+            "x": 170.8,
+            "y": 609.7,
+            "diameter": 10,
+            "drill": 4,
+            "rule": "BV_L1_L2",
+            "planeLayer": 15
+          },
+          "padsInOriginalRoot": [
+            "C6.2"
+          ],
+          "plane": "[\"LAYER_FILL\",15]"
+        }
+      ],
+      "moves": []
+    },
+    "PCB2": {
+      "routes": [
+        {
+          "net": "GND",
+          "layer": 2,
+          "width": 6,
+          "points": [
+            [
+              71.38,
+              366.0
+            ],
+            [
+              52.38,
+              366.0
+            ]
+          ],
+          "via": {
+            "x": 52.38,
+            "y": 366.0,
+            "rule": "BV_L5_L6",
+            "diameter": 10,
+            "drill": 4
+          },
+          "from": "C11.2"
+        },
+        {
+          "to": "U14.5",
+          "from": "C11.1",
+          "net": "VSYS",
+          "layer": 2,
+          "width": 20,
+          "points": [
+            [
+              96.62,
+              366.0
+            ],
+            [
+              96.0,
+              366.62
+            ],
+            [
+              96,
+              419
+            ],
+            [
+              90,
+              425
+            ],
+            [
+              90,
+              437
+            ],
+            [
+              109,
+              456
+            ],
+            [
+              117,
+              456
+            ]
+          ],
+          "clearToGndMil": 7.52000000000001
+        },
+        {
+          "net": "GND",
+          "from": "U8.4",
+          "layer": 2,
+          "width": 6,
+          "points": [
+            [
+              29.1,
+              585.0
+            ],
+            [
+              33.6,
+              589.5
+            ],
+            [
+              50.85,
+              589.5
+            ],
+            [
+              51.6,
+              590.25
+            ],
+            [
+              52.35,
+              590.25
+            ],
+            [
+              59.1,
+              597.0
+            ],
+            [
+              59.1,
+              599.25
+            ]
+          ],
+          "via": {
+            "x": 59.1,
+            "y": 599.25,
+            "diameter": 10,
+            "drill": 4,
+            "rule": "BV_L5_L6",
+            "planeLayer": 18
+          },
+          "padsInOriginalRoot": [
+            "U8.4"
+          ],
+          "plane": "[\"LAYER_FILL\",18]"
+        }
+      ],
+      "moves": [
+        {
+          "id": "b460041b1be7d129",
+          "before": {
+            "x": 142.3228,
+            "y": 877.5591,
+            "rotation": 0,
+            "layer": 2
+          },
+          "after": {
+            "x": 84,
+            "y": 366,
+            "rotation": 180,
+            "layer": 2
+          }
+        }
+      ]
+    }
+  }
+}

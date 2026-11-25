@@ -1,0 +1,294 @@
+{
+  "scope": "Analytical/event-contract tests and optional native idealizedRCSPICE; NOT_FOR_FAB",
+  "event_model_initial_conditions": [
+    "watchdoginactive, qualifierclear and RC discharged at modeledinitialization",
+    "PG transitions mean settled supervisorstates, not arbitrarysupplyramp timing",
+    "1us D3 pulses and guard100us..3ms are explicitdesignconditions, notqualifiedPVTlimits"
+  ],
+  "physical_hardware_status": "BLOCKED_NO_BENCH_MEASUREMENTS",
+  "guaranteed_power_transient_status": "BLOCKED_NO_SUPERVISOR_MAX_RESPONSE_OR_VENDOR_OPTICS_SEQUENCE",
+  "jbd_avdd_and_powerdown_status": "BLOCKED_VENDOR_NDA",
+  "checks": [
+    {
+      "id": "D1 actual RC connectivity",
+      "status": "PASS_MODEL_ONLY",
+      "detail": "R_SEQ100k,C_SEQ220nF; direct DC-high D3 source verified in immutable D1 NETLIST"
+    },
+    {
+      "id": "D1 VSYNC/clock lost HIGH reproduced",
+      "status": "REPRODUCED_FAILURE",
+      "detail": {
+        "en_at_200ms_v": 1.799797165955086,
+        "unsafe_condition": "EN remains above1.0V indefinitely while D3 remains drivenHIGH"
+      }
+    },
+    {
+      "id": "D1 failed configuration LOW conditional OFF",
+      "status": "PASS_MODEL_ONLY",
+      "detail": "Assumes silicon CDONE truly holdsD3LOW and CRESET/rails are valid; not a simulation of the hard configuration engine"
+    },
+    {
+      "id": "D1 explicit LOW RC discharge",
+      "status": "PASS_MODEL_ONLY",
+      "detail": {
+        "nominal_off_ms": 39.41870832301721,
+        "scope": "only after the physical D3 source has actually goneLOW"
+      }
+    },
+    {
+      "id": "D1 IO-fall cannot prove fast AVDD cutoff",
+      "status": "REPRODUCED_FAILURE",
+      "detail": {
+        "en_10us_after_ideal_IO_pull_down_v": 1.7992187161023767,
+        "scope": "conditional RC discharge boundary; actual I/O clamps and floating rail impedances are not modeled"
+      }
+    },
+    {
+      "id": "Gemini finite1us charge discrepancy",
+      "status": "REPRODUCED_MODEL_DEFECT",
+      "detail": {
+        "first_peak_v": 1.1488308139514312,
+        "first_valley_v": 0.8141634771257502,
+        "steady_peak_v": 1.4242655656088443,
+        "steady_valley_v": 1.0093609878535112
+      }
+    },
+    {
+      "id": "Gemini first frame below current guaranteed ON",
+      "status": "REPRODUCED_MODEL_DEFECT",
+      "detail": {
+        "first_valley_v": 0.8141634771257502,
+        "ldo_guaranteed_on_v": 1.0
+      }
+    },
+    {
+      "id": "Gemini native positive-pulse LOW-loss nominal discharge",
+      "status": "PASS_MODEL_ONLY",
+      "detail": "With no charge source and zero leakage, voltage falls below0.3V within100ms; does not cover stuckHIGH"
+    },
+    {
+      "id": "Gemini old66.5ms claim threshold mismatch",
+      "status": "REPRODUCED_MODEL_DEFECT",
+      "detail": {
+        "off_ms_at_current0p3V": 80.41164632605688,
+        "old_claim_uses0p4V_ms": 66.48783401939068
+      }
+    },
+    {
+      "id": "Gemini native or D1-polarity stuckHIGH reproduced",
+      "status": "REPRODUCED_FAILURE",
+      "detail": {
+        "continuous_rectifier_en_v": 1.5799748640362539,
+        "missing_protection": "peak hold is not an edge watchdog"
+      }
+    },
+    {
+      "id": "Gemini parameter sensitivity below guaranteed ON",
+      "status": "REPRODUCED_MARGIN_FAILURE",
+      "detail": {
+        "rail_minus5pct_cap_plus20pct_Rplusminus1pct": {
+          "first_peak_v": 0.9796945630205403,
+          "first_valley_v": 0.7331815425167055,
+          "steady_peak_v": 1.3173276790893416,
+          "steady_valley_v": 0.9858586300375594
+        },
+        "scope": "explicit design sensitivity, not a claim these are the exact populated-parts limits"
+      }
+    },
+    {
+      "id": "Gemini leakage sensitivity defeats passive OFF",
+      "status": "REPRODUCED_MARGIN_FAILURE",
+      "detail": {
+        "en_after1s_with_positive0p2uA_injection_v": 0.44000000104733544,
+        "scope": "sensitivity bound. Missing diode/LDO/pin worst-case leakage must not be assumedzero."
+      }
+    },
+    {
+      "id": "D1.1 legacy EN reservoir/clamp removed from actual NETLIST",
+      "status": "PASS_MODEL_ONLY",
+      "detail": "Checked actual RevD1.1 terminals, not merely a contract boolean"
+    },
+    {
+      "id": "D1.1 no explicit EN hold capacitor",
+      "status": "PASS_MODEL_ONLY",
+      "detail": "[]"
+    },
+    {
+      "id": "D1.1 actual timer, direct supervisor and two logical clamps",
+      "status": "PASS_MODEL_ONLY",
+      "detail": {
+        "timer_output": [
+          [
+            "U_AVDD_WD",
+            "6",
+            "AVDD_WD_Q"
+          ]
+        ],
+        "reset_clamps": [
+          [
+            "U_AVDD_SYS_CLAMP",
+            "6"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "D1.1 actual qualification graph prevents CDONE-only combinationalON",
+      "status": "PASS_MODEL_ONLY",
+      "detail": "{('U_AVDD_QUAL', '1'): 'AVDD_D3_VSYS', ('U_AVDD_QUAL', '3'): 'VSYS', ('U_AVDD_QUAL', '4'): 'AVDD_PULSE_QUAL', ('U_AVDD_QUAL', '6'): 'AVDD_QUAL_CLR_N', ('U_AVDD_SCHMITT', '3'): 'AVDD_QUAL_RC', ('U_AVDD_SCHMITT', '4'): 'AVDD_QUAL_CLR_N', ('R_AVDD_QUAL_PU', '1'): 'AVDD_WD_Q', ('R_AVDD_QUAL_PU', '2'): 'AVDD_QUAL_RC', ('C_AVDD_QUAL', '1'): 'AVDD_QUAL_RC', ('C_AVDD_QUAL', '2'): 'GND', ('U_AVDD_CLEAR_OD', '1'): 'AVDD_WD_Q', ('U_AVDD_CLEAR_OD', '3'): 'AVDD_PG_OK', ('U_AVDD_CLEAR_OD', '4'): 'AVDD_QUAL_RC', ('U_AVDD_CLEAR_OD', '6'): 'AVDD_QUAL_RC', ('U_AVDD_EN_OD', '1'): 'AVDD_PG_OK', ('U_AVDD_EN_OD', '3'): 'AVDD_PULSE_QUAL'}"
+    },
+    {
+      "id": "D1.1 CDONE-only stuckHIGH staysOFF, guard=0.0001",
+      "status": "PASS_MODEL_ONLY",
+      "detail": {
+        "scope": "actual qualificationgraph eventmodel, guard is explicit unqualifiedPVTdesignbudget"
+      }
+    },
+    {
+      "id": "D1.1 later completedheartbeat qualifies, guard=0.0001",
+      "status": "PASS_MODEL_ONLY",
+      "detail": "FirstCDONE edge ignored; next1usLOWpulse completion can clockD=1 afterCLRrelease"
+    },
+    {
+      "id": "D1.1 PG fault+restore without newheartbeat cannot reenable, guard=0.0001",
+      "status": "PASS_MODEL_ONLY",
+      "detail": {
+        "scope": "settledPGevents only; actual supervisor transientdeadline remainsBLOCKED"
+      }
+    },
+    {
+      "id": "D1.1 CDONE-only stuckHIGH staysOFF, guard=0.003",
+      "status": "PASS_MODEL_ONLY",
+      "detail": {
+        "scope": "actual qualificationgraph eventmodel, guard is explicit unqualifiedPVTdesignbudget"
+      }
+    },
+    {
+      "id": "D1.1 later completedheartbeat qualifies, guard=0.003",
+      "status": "PASS_MODEL_ONLY",
+      "detail": "FirstCDONE edge ignored; next1usLOWpulse completion can clockD=1 afterCLRrelease"
+    },
+    {
+      "id": "D1.1 PG fault+restore without newheartbeat cannot reenable, guard=0.003",
+      "status": "PASS_MODEL_ONLY",
+      "detail": {
+        "scope": "settledPGevents only; actual supervisor transientdeadline remainsBLOCKED"
+      }
+    },
+    {
+      "id": "D1.1 normal60Hz retriggers before earliest expiry",
+      "status": "PASS_MODEL_ONLY",
+      "detail": {
+        "period_ms": 16.666666666666668,
+        "minimum_timeout_ms": 31.624445952000002
+      }
+    },
+    {
+      "id": "D1.1 clock/VSYNC stopped HIGH event watchdog expires",
+      "status": "PASS_MODEL_ONLY",
+      "detail": {
+        "last_edge_s": 0.12666666666666668,
+        "latest_model_expiry_s": 0.1609256598186667,
+        "scope": "timeout contract valid supply/domain only; supervisor propagation and AVDD output discharge not included"
+      }
+    },
+    {
+      "id": "D1.1 clock/VSYNC stopped LOW event watchdog expires",
+      "status": "PASS_MODEL_ONLY",
+      "detail": {
+        "last_edge_s": 0.12666666666666668,
+        "latest_model_expiry_s": 0.1609256598186667,
+        "scope": "timeout contract valid supply/domain only; supervisor propagation and AVDD output discharge not included"
+      }
+    },
+    {
+      "id": "D1.1 OPT_PWR_REQ LOW held event watchdog expires",
+      "status": "PASS_MODEL_ONLY",
+      "detail": {
+        "last_edge_s": 0.12666666666666668,
+        "latest_model_expiry_s": 0.1609256598186667,
+        "scope": "timeout contract valid supply/domain only; supervisor propagation and AVDD output discharge not included"
+      }
+    },
+    {
+      "id": "D1.1 D3 disconnected/no further rising edge event watchdog expires",
+      "status": "PASS_MODEL_ONLY",
+      "detail": {
+        "last_edge_s": 0.12666666666666668,
+        "latest_model_expiry_s": 0.1609256598186667,
+        "scope": "timeout contract valid supply/domain only; supervisor propagation and AVDD output discharge not included"
+      }
+    },
+    {
+      "id": "D1.1 failed config/no edges starts watchdoginactive",
+      "status": "PASS_MODEL_ONLY",
+      "detail": "No synthetic trigger is invented for FPGA configuration failure; actual timerPOR/level-translator power-up must also be vendor-checked"
+    },
+    {
+      "id": "D1.1 normal1us D3 LOW filtered above MR high level",
+      "status": "PASS_MODEL_ONLY",
+      "detail": {
+        "mr_min_normal_fraction": 0.9900498337491681,
+        "mr_vih_fraction": 0.7,
+        "tau_us": 100.0
+      }
+    },
+    {
+      "id": "D1.1 heldLOW reaches MR guaranteedLOW",
+      "status": "PASS_MODEL_ONLY",
+      "detail": {
+        "nominal_filter_delay_us": 138.62943611198907,
+        "scope": "R/C calculation only; supervisor response has no assumed maximum"
+      }
+    },
+    {
+      "id": "D1.1 EN does not retain removed220nF charge reservoir",
+      "status": "PASS_MODEL_ONLY",
+      "detail": {
+        "divider_ratio": 0.8291457286432161,
+        "scope": "explicit populated capacitor removed; parasiticENcap stillphysicalunknown"
+      }
+    },
+    {
+      "id": "D1.1 settled CRESET asserted clamp contract",
+      "status": "PASS_MODEL_ONLY",
+      "detail": {
+        "en_clamped_low_max_v": 0.25,
+        "ldo_vlo_v": 0.3,
+        "scope": "specified settledclamp current/load/validsupply conditions; not a response-time guarantee"
+      }
+    },
+    {
+      "id": "D1.1 settled IO rail below supervisor threshold clamp contract",
+      "status": "PASS_MODEL_ONLY",
+      "detail": {
+        "en_clamped_low_max_v": 0.25,
+        "ldo_vlo_v": 0.3,
+        "scope": "specified settledclamp current/load/validsupply conditions; not a response-time guarantee"
+      }
+    },
+    {
+      "id": "D1.1 settled VSYS below supervisor threshold clamp contract",
+      "status": "PASS_MODEL_ONLY",
+      "detail": {
+        "en_clamped_low_max_v": 0.25,
+        "ldo_vlo_v": 0.3,
+        "scope": "specified settledclamp current/load/validsupply conditions; not a response-time guarantee"
+      }
+    },
+    {
+      "id": "D1.1 settled D3 heldLOW after MRfilter clamp contract",
+      "status": "PASS_MODEL_ONLY",
+      "detail": {
+        "en_clamped_low_max_v": 0.25,
+        "ldo_vlo_v": 0.3,
+        "scope": "specified settledclamp current/load/validsupply conditions; not a response-time guarantee"
+      }
+    }
+  ],
+  "hardware_contract_sha256": "972d60f7d845eb5e2e0aba5bae391f3745ec350cf89371691cec7c5b4dab60ff",
+  "native_spice": {
+    "status": "BLOCKED_NATIVE_NGSPICE_UNAVAILABLE"
+  },
+  "model_assertions": "PASS"
+}

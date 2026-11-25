@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 805 414" role="img" aria-labelledby="title desc">
+<title id="title">H03 PCB1 bottom copper at e938 and e85</title>
+<desc id="desc">Measured copper readback before and after GND spur removal, with retained BB_FB and GND via geometry.</desc>
+<style>text{font-family:Arial,sans-serif;fill:#253341}.title{font-weight:700;font-size:21px}.label{font-size:17px;font-weight:700}.note{font-size:13px}</style>
+<rect width="805" height="414" fill="white"/>
+<text x="24" y="31" class="title">PCB1 bottom copper at e938 and e85</text>
+<text x="24" y="63" class="label">R3 | before</text>
+<rect x="24" y="79" width="360" height="285" rx="5" fill="#f3f6f7" stroke="#d5dfe4"/>
+<clipPath id="r3"><rect x="24" y="79" width="360" height="285" rx="5"/></clipPath>
+<g clip-path="url(#r3)">
+<line x1="741.500" y1="127.500" x2="111.500" y2="127.500" stroke="#b45c12" stroke-width="21" stroke-linecap="round"/>
+<line x1="111.500" y1="127.500" x2="111.500" y2="145.000" stroke="#b45c12" stroke-width="21" stroke-linecap="round"/>
+<line x1="224.200" y1="320.700" x2="278.310" y2="227.040" stroke="#258669" stroke-width="24.5" stroke-linecap="round"/>
+<line x1="278.310" y1="227.040" x2="258.517" y2="227.040" stroke="#258669" stroke-width="28" stroke-linecap="round"/>
+<line x1="258.517" y1="227.040" x2="199.351" y2="167.873" stroke="#b12e46" stroke-width="14" stroke-linecap="round"/>
+<circle cx="111.500" cy="145.000" r="42.0" fill="#b45c12"/>
+<circle cx="111.500" cy="145.000" r="21.0" fill="#ffffff"/>
+<text x="58.5" y="212.0" class="note">e85 | BB_FB</text>
+<circle cx="278.310" cy="227.040" r="35.0" fill="#258669"/>
+<circle cx="278.310" cy="227.040" r="14.0" fill="#ffffff"/>
+<text x="300.31" y="284.03999999999996" class="note">GND blind via</text>
+</g>
+<text x="181" y="162" class="note" fill="#b12e46">e938 | 2 mil</text>
+<path d="M 36 345 h 70" stroke="#344153" stroke-width="2"/>
+<text x="114" y="350" class="note">10 mil</text>
+<text x="420" y="63" class="label">R4 | after native save and reload</text>
+<rect x="420" y="79" width="360" height="285" rx="5" fill="#f3f6f7" stroke="#d5dfe4"/>
+<clipPath id="r4"><rect x="420" y="79" width="360" height="285" rx="5"/></clipPath>
+<g clip-path="url(#r4)">
+<line x1="1137.500" y1="127.500" x2="507.500" y2="127.500" stroke="#b45c12" stroke-width="21" stroke-linecap="round"/>
+<line x1="507.500" y1="127.500" x2="507.500" y2="145.000" stroke="#b45c12" stroke-width="21" stroke-linecap="round"/>
+<line x1="620.200" y1="320.700" x2="674.310" y2="227.040" stroke="#258669" stroke-width="24.5" stroke-linecap="round"/>
+<line x1="674.310" y1="227.040" x2="654.517" y2="227.040" stroke="#258669" stroke-width="28" stroke-linecap="round"/>
+<circle cx="507.500" cy="145.000" r="42.0" fill="#b45c12"/>
+<circle cx="507.500" cy="145.000" r="21.0" fill="#ffffff"/>
+<text x="454.5" y="212.0" class="note">e85 | BB_FB</text>
+<circle cx="674.310" cy="227.040" r="35.0" fill="#258669"/>
+<circle cx="674.310" cy="227.040" r="14.0" fill="#ffffff"/>
+<text x="696.31" y="284.03999999999996" class="note">GND blind via</text>
+</g>
+<text x="518" y="162" class="note" fill="#258669">e938 removed</text>
+<path d="M 432 345 h 70" stroke="#344153" stroke-width="2"/>
+<text x="510" y="350" class="note">10 mil</text>
+<text x="24" y="391" class="note">Selected geometry from native EDA copper readback · 7 drawing units per mil · NOT FOR FAB</text>
+</svg>

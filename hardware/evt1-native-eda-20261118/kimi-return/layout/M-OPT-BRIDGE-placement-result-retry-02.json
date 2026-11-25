@@ -1,0 +1,479 @@
+{
+  "board": "M-OPT-BRIDGE",
+  "pcbUuid": "9ce45f14cb79dc9d",
+  "projectUuid": "cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+  "scope": "PARTIAL_UNROUTED_CANDIDATE_NOT_FOR_FAB",
+  "startedAt": "2026-11-18T16:04:33.377087+00:00",
+  "planSha256": "1b6be4903cab872569b998ff318f7afaf9977d4a90edd91067aa2015650ba202",
+  "placements": [
+    {
+      "ref": "U2",
+      "sourceRef": "U2_FPGA",
+      "stage": "saved-reloaded",
+      "primitiveId": "b6a84c4c3d4d92c1",
+      "uniqueId": "",
+      "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+      "expectedCenterMm": {
+        "x": 2.1,
+        "y": 9.5
+      },
+      "observedCenterMil": {
+        "x": 82.67715000000001,
+        "y": 374.01570000000004
+      },
+      "anchorMil": {
+        "x": 91.4929,
+        "y": 368.6262
+      },
+      "rotation": 0,
+      "layer": 1,
+      "bboxMil": {
+        "maxX": 137.7999,
+        "maxY": 431.6182,
+        "minX": 27.5544,
+        "minY": 316.4132
+      },
+      "physicalPadPrimitiveCount": 30,
+      "distinctPadNumberCount": 30,
+      "intentionallyRepeatedPadNumbers": [],
+      "connectedLogicalPadCount": 27,
+      "ncAndLocalNcLogicalPadsRemainNetless": 3,
+      "manufacturerId": "ICE40UP5K-UWG30ITR",
+      "verificationErrors": [],
+      "verified": true
+    },
+    {
+      "ref": "U9",
+      "sourceRef": "U9_IMU",
+      "stage": "saved-reloaded",
+      "primitiveId": "98ed0edb5c050aaa",
+      "uniqueId": "",
+      "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+      "expectedCenterMm": {
+        "x": 2.1,
+        "y": 18.8
+      },
+      "observedCenterMil": {
+        "x": 82.6772,
+        "y": 740.1575
+      },
+      "anchorMil": {
+        "x": 90.6062,
+        "y": 740.1575
+      },
+      "rotation": 0,
+      "layer": 1,
+      "bboxMil": {
+        "maxX": 155.65619999999998,
+        "maxY": 795.3705,
+        "minX": 9.698200000000003,
+        "minY": 684.9445000000001
+      },
+      "physicalPadPrimitiveCount": 14,
+      "distinctPadNumberCount": 14,
+      "intentionallyRepeatedPadNumbers": [],
+      "connectedLogicalPadCount": 9,
+      "ncAndLocalNcLogicalPadsRemainNetless": 5,
+      "manufacturerId": "ICM-42688-P",
+      "verificationErrors": [],
+      "verified": true
+    },
+    {
+      "ref": "MK2",
+      "sourceRef": "MK2_C",
+      "stage": "saved-reloaded",
+      "primitiveId": "be23c51e45e6cd5a",
+      "uniqueId": "",
+      "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+      "expectedCenterMm": {
+        "x": 2.1,
+        "y": 15.5
+      },
+      "observedCenterMil": {
+        "x": 82.67715,
+        "y": 610.2362
+      },
+      "anchorMil": {
+        "x": 70.7114,
+        "y": 605.1217
+      },
+      "rotation": 0,
+      "layer": 2,
+      "bboxMil": {
+        "maxX": 159.6869,
+        "maxY": 693.9757,
+        "minX": 5.6673999999999936,
+        "minY": 526.4967
+      },
+      "physicalPadPrimitiveCount": 8,
+      "distinctPadNumberCount": 5,
+      "intentionallyRepeatedPadNumbers": [
+        "5"
+      ],
+      "connectedLogicalPadCount": 5,
+      "ncAndLocalNcLogicalPadsRemainNetless": 0,
+      "manufacturerId": "IM69D130V01XTSA1",
+      "verificationErrors": [],
+      "verified": true
+    },
+    {
+      "ref": "U4",
+      "sourceRef": "U4_1V2",
+      "stage": "saved-reloaded",
+      "primitiveId": "cad0300e1c3fb6b4",
+      "uniqueId": "",
+      "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+      "expectedCenterMm": {
+        "x": 0.8,
+        "y": 18.6
+      },
+      "observedCenterMil": {
+        "x": 31.496100000000002,
+        "y": 732.2835
+      },
+      "anchorMil": {
+        "x": 36.6291,
+        "y": 732.48
+      },
+      "rotation": 0,
+      "layer": 2,
+      "bboxMil": {
+        "maxX": 60.643100000000004,
+        "maxY": 756.134,
+        "minX": 2.3490999999999973,
+        "minY": 708.433
+      },
+      "physicalPadPrimitiveCount": 5,
+      "distinctPadNumberCount": 5,
+      "intentionallyRepeatedPadNumbers": [],
+      "connectedLogicalPadCount": 5,
+      "ncAndLocalNcLogicalPadsRemainNetless": 0,
+      "manufacturerId": "TLV75512PDQNR",
+      "verificationErrors": [],
+      "verified": true
+    },
+    {
+      "ref": "U1",
+      "sourceRef": "U4_1V8F",
+      "stage": "saved-reloaded",
+      "primitiveId": "5f5102619810ed4d",
+      "uniqueId": "",
+      "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+      "expectedCenterMm": {
+        "x": 2.4,
+        "y": 18.6
+      },
+      "observedCenterMil": {
+        "x": 94.4882,
+        "y": 732.2835
+      },
+      "anchorMil": {
+        "x": 94.2917,
+        "y": 737.4165
+      },
+      "rotation": 90,
+      "layer": 2,
+      "bboxMil": {
+        "maxX": 118.33870000000002,
+        "maxY": 761.4305,
+        "minX": 70.63770000000001,
+        "minY": 703.1365000000001
+      },
+      "physicalPadPrimitiveCount": 5,
+      "distinctPadNumberCount": 5,
+      "intentionallyRepeatedPadNumbers": [],
+      "connectedLogicalPadCount": 5,
+      "ncAndLocalNcLogicalPadsRemainNetless": 0,
+      "manufacturerId": "TLV75518PDQNR",
+      "verificationErrors": [],
+      "verified": true
+    },
+    {
+      "ref": "U8",
+      "sourceRef": "U_AVDD_LS",
+      "stage": "saved-reloaded",
+      "primitiveId": "5e4fb56443877d4f",
+      "uniqueId": "",
+      "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+      "expectedCenterMm": {
+        "x": 2.1,
+        "y": 1.6
+      },
+      "observedCenterMil": {
+        "x": 82.67720000000003,
+        "y": 62.99210000000001
+      },
+      "anchorMil": {
+        "x": 78.2812,
+        "y": 63.3081
+      },
+      "rotation": 0,
+      "layer": 1,
+      "bboxMil": {
+        "maxX": 162.85220000000004,
+        "maxY": 106.61410000000001,
+        "minX": 2.5022000000000055,
+        "minY": 19.370100000000008
+      },
+      "physicalPadPrimitiveCount": 8,
+      "distinctPadNumberCount": 8,
+      "intentionallyRepeatedPadNumbers": [],
+      "connectedLogicalPadCount": 8,
+      "ncAndLocalNcLogicalPadsRemainNetless": 0,
+      "manufacturerId": "SN74LVC2T45DCUR",
+      "verificationErrors": [],
+      "verified": true
+    },
+    {
+      "ref": "U7",
+      "sourceRef": "U_AVDD_IO_PG",
+      "stage": "saved-reloaded",
+      "primitiveId": "bd0359273377f430",
+      "uniqueId": "",
+      "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+      "expectedCenterMm": {
+        "x": 2.1,
+        "y": 12.2
+      },
+      "observedCenterMil": {
+        "x": 82.6772,
+        "y": 480.315
+      },
+      "anchorMil": {
+        "x": 90.1672,
+        "y": 479.81
+      },
+      "rotation": 0,
+      "layer": 1,
+      "bboxMil": {
+        "maxX": 135.7022,
+        "maxY": 519.765,
+        "minX": 29.652199999999993,
+        "minY": 440.865
+      },
+      "physicalPadPrimitiveCount": 6,
+      "distinctPadNumberCount": 6,
+      "intentionallyRepeatedPadNumbers": [],
+      "connectedLogicalPadCount": 5,
+      "ncAndLocalNcLogicalPadsRemainNetless": 1,
+      "manufacturerId": "TPS389018DSET",
+      "verificationErrors": [],
+      "verified": true
+    },
+    {
+      "ref": "U13",
+      "sourceRef": "U_AVDD_SYS_PG",
+      "stage": "saved-reloaded",
+      "primitiveId": "1152d412de1e0771",
+      "uniqueId": "",
+      "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+      "expectedCenterMm": {
+        "x": 2.1,
+        "y": 6.8
+      },
+      "observedCenterMil": {
+        "x": 82.6772,
+        "y": 267.7165
+      },
+      "anchorMil": {
+        "x": 90.1672,
+        "y": 267.2115
+      },
+      "rotation": 0,
+      "layer": 1,
+      "bboxMil": {
+        "maxX": 135.7022,
+        "maxY": 307.16650000000004,
+        "minX": 29.652199999999993,
+        "minY": 228.2665
+      },
+      "physicalPadPrimitiveCount": 6,
+      "distinctPadNumberCount": 6,
+      "intentionallyRepeatedPadNumbers": [],
+      "connectedLogicalPadCount": 5,
+      "ncAndLocalNcLogicalPadsRemainNetless": 1,
+      "manufacturerId": "TPS389025DSET",
+      "verificationErrors": [],
+      "verified": true
+    },
+    {
+      "ref": "U12",
+      "sourceRef": "U_AVDD_SYS_CLAMP",
+      "stage": "saved-reloaded",
+      "primitiveId": "d1aacd828ef8e75e",
+      "uniqueId": "",
+      "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+      "expectedCenterMm": {
+        "x": 2.1,
+        "y": 20.6
+      },
+      "observedCenterMil": {
+        "x": 82.6772,
+        "y": 811.0236
+      },
+      "anchorMil": {
+        "x": 90.1672,
+        "y": 811.5286000000001
+      },
+      "rotation": 0,
+      "layer": 2,
+      "bboxMil": {
+        "maxX": 135.7022,
+        "maxY": 850.4736,
+        "minX": 29.652199999999986,
+        "minY": 771.5735999999999
+      },
+      "physicalPadPrimitiveCount": 6,
+      "distinctPadNumberCount": 6,
+      "intentionallyRepeatedPadNumbers": [],
+      "connectedLogicalPadCount": 5,
+      "ncAndLocalNcLogicalPadsRemainNetless": 1,
+      "manufacturerId": "TPS389025DSET",
+      "verificationErrors": [],
+      "verified": true
+    },
+    {
+      "ref": "Y1",
+      "sourceRef": "Y1_OSC",
+      "stage": "saved-reloaded",
+      "primitiveId": "6aeaf22afa429c01",
+      "uniqueId": "",
+      "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+      "expectedCenterMm": {
+        "x": 2.95,
+        "y": 9.200000000000001
+      },
+      "observedCenterMil": {
+        "x": 116.1417,
+        "y": 362.2047
+      },
+      "anchorMil": {
+        "x": 121.4562,
+        "y": 367.2047
+      },
+      "rotation": 90,
+      "layer": 2,
+      "bboxMil": {
+        "maxX": 163.81932,
+        "maxY": 420.19681999999995,
+        "minX": 68.46408,
+        "minY": 304.21258
+      },
+      "physicalPadPrimitiveCount": 4,
+      "distinctPadNumberCount": 4,
+      "intentionallyRepeatedPadNumbers": [],
+      "connectedLogicalPadCount": 4,
+      "ncAndLocalNcLogicalPadsRemainNetless": 0,
+      "manufacturerId": "ASADV-48.000MHZ-LC-T",
+      "verificationErrors": [],
+      "verified": true
+    }
+  ],
+  "offlineFailedPlacements": [
+    {
+      "ref": "U14",
+      "sourceRef": "U_AVDD_WD",
+      "status": "BLOCKED_NO_LEGAL_CANDIDATE_IN_SEARCH",
+      "reason": "Fixed anchor conflict or bounded 0.20 mm full-bbox search found no legal position."
+    },
+    {
+      "ref": "U10",
+      "sourceRef": "U_AVDD_QUAL",
+      "status": "BLOCKED_NO_LEGAL_CANDIDATE_IN_SEARCH",
+      "reason": "Fixed anchor conflict or bounded 0.20 mm full-bbox search found no legal position."
+    }
+  ],
+  "requiredButNotPlaced": [
+    "J_BRIDGE_IN",
+    "J_DISP_L",
+    "J_DISP_R",
+    "R_DAMP_SCK_L",
+    "R_DAMP_CS_L",
+    "R_OPTCS_PU_L",
+    "R_DAMP_LD0",
+    "R_DAMP_LD1",
+    "R_DAMP_LD2",
+    "R_DAMP_LD3",
+    "R_DAMP_SCK_R",
+    "R_DAMP_CS_R",
+    "R_OPTCS_PU_R",
+    "R_DAMP_RD0",
+    "R_DAMP_RD1",
+    "R_DAMP_RD2",
+    "R_DAMP_RD3",
+    "R_PLL",
+    "R_VPP",
+    "R_CDONE_PU",
+    "R_CRST_PD",
+    "R_SS_PD",
+    "D3_PRIV",
+    "U6_OPT_AVDD",
+    "C_LDO_1V2F_IN",
+    "C_LDO_1V2F_OUT",
+    "C_LDO_1V8F_IN",
+    "C_LDO_1V8F_OUT",
+    "C_LDO_OPT_IN",
+    "C_LDO_OPT_OUT",
+    "C_IMU_VDD1",
+    "C_IMU_VDD2",
+    "C_IMU_VDDIO",
+    "C_MK2_C",
+    "U_AVDD_CLEAR_OD",
+    "U_AVDD_SCHMITT",
+    "U_AVDD_EN_OD",
+    "R_AVDD_WD_SET",
+    "R_AVDD_WD_DIV_H",
+    "R_AVDD_WD_DIV_L",
+    "R_AVDD_D3_PD",
+    "R_AVDD_CRST_PD",
+    "R_AVDD_PG_PU",
+    "R_AVDD_REQ_FILTER",
+    "R_AVDD_QUAL_PU",
+    "R_AVDD_EN_FEED",
+    "R_AVDD_EN_PD",
+    "C_AVDD_REQ_FILTER",
+    "C_AVDD_QUAL",
+    "C_AVDD_U_AVDD_LS_V",
+    "C_AVDD_U_AVDD_WD_V",
+    "C_AVDD_U_AVDD_IO_PG_V",
+    "C_AVDD_U_AVDD_SYS_PG_V",
+    "C_AVDD_U_AVDD_SYS_CLAMP_V",
+    "C_AVDD_U_AVDD_CLEAR_OD_V",
+    "C_AVDD_U_AVDD_SCHMITT_V",
+    "C_AVDD_U_AVDD_QUAL_V",
+    "C_AVDD_U_AVDD_EN_OD_V",
+    "C_AVDD_LS_A",
+    "TP_AVDD_SAFE",
+    "C_FPGA_PLL_BULK",
+    "C_FPGA_PLL_HF",
+    "C_FPGA_VPP_BULK",
+    "C_FPGA_VPP_HF",
+    "C_FPGA_CORE_BULK",
+    "C_FPGA_CORE_HF",
+    "C_FPGA_IO_BULK",
+    "C_FPGA_IO_HF0",
+    "C_FPGA_IO_HF1",
+    "C_FPGA_IO_HF2",
+    "C_FPGA_OSC_HF"
+  ],
+  "routing": {
+    "tracksViasPoursAuthored": false,
+    "status": "UNROUTED"
+  },
+  "status": "PARTIAL_CANDIDATE_LIVE_VERIFIED_UNROUTED",
+  "beforeDump": "layout\\M-OPT-BRIDGE-01-before-dump-retry-02.json",
+  "resumePrecondition": {
+    "freshExistingCount": 1,
+    "freshExistingRefs": [
+      "U2"
+    ],
+    "unexpectedRefs": [],
+    "policy": "Reuse only plan refs with exact distinct pads, nets, MPN, layer, rotation and empty uniqueId; center is the only recoverable difference."
+  },
+  "finishedAt": "2026-11-18T16:05:02.924635+00:00",
+  "saved": true,
+  "reloaded": true,
+  "afterDump": "layout\\M-OPT-BRIDGE-93-after-reload-dump.json",
+  "savedReloadedVerified": true,
+  "candidateComponentCount": 10
+}

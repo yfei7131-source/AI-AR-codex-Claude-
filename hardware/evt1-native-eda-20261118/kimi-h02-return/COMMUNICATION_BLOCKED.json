@@ -1,0 +1,31 @@
+{
+  "status": "BLOCKED_TWO_ATTEMPTS_FAILED",
+  "projectUuid": "1f475f192d4be7445a42ac79ebc824fcc4a803375837a9318c923e3aa35fe737",
+  "pageUuid": "bbbca101b360e299",
+  "operation": "read-only full sch list preflight",
+  "attemptCount": 2,
+  "retryCount": 1,
+  "attempts": [
+    {
+      "response": "field-repair/batch-20261119-221345/preflight/bbbca101b360e299.stdout.json",
+      "id": "req_1302",
+      "createdAt": "2026-11-19T14:19:13.5858401Z"
+    },
+    {
+      "response": "field-repair/recovery-bbb-list.stdout.json",
+      "id": "req_1309",
+      "createdAt": "2026-11-19T14:30:21.0425735Z"
+    }
+  ],
+  "error": {
+    "code": "DISPATCH_FAILED",
+    "message": "connector did not respond",
+    "detail": "context deadline exceeded"
+  },
+  "healthAndConnectorLogs": [
+    "field-repair/recovery-bbb-health.json",
+    "field-repair/recovery-bbb-connector-logs.json"
+  ],
+  "actionTaken": "Stopped all EDA-dependent work. No board binding, ERC, reload, final capture or final archive export was attempted after this block.",
+  "newWriteOnFailedPageInLastRun": false
+}

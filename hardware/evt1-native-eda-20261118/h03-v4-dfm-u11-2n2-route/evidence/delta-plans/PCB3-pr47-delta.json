@@ -1,0 +1,191 @@
+{
+  "board": "PCB3",
+  "summary": {
+    "p0_blind_vias_rectified_ge_0p35mm": 2,
+    "deleted_line_ids_count": 2,
+    "delta_tracks": 12,
+    "delta_vias": 1,
+    "delta_blind_vias": 1,
+    "delta_mech_signal_vias": 0,
+    "non_gnd_merges_added": 0,
+    "gnd_pads_newly_grounded": 2,
+    "total_projected_unconn_reduction": 2
+  },
+  "relocated_vias": [
+    {
+      "board": "PCB3",
+      "via_id": "8e88e3f04c0eac06",
+      "action": "RELOCATED_INWARD",
+      "merged_into_via_id": "",
+      "net": "GND",
+      "rule_name": "BV_L1_L2",
+      "hole_mil": 4.0,
+      "diam_mil": 10.0,
+      "anchor": "C1.2",
+      "old_x_mil": 186.21,
+      "old_y_mil": 498.98,
+      "old_cu_to_edge_mil": 13.514,
+      "old_cu_to_edge_mm": 0.3433,
+      "new_x_mil": 185.21,
+      "new_y_mil": 499.48,
+      "new_cu_to_edge_mil": 14.514,
+      "new_cu_to_edge_mm": 0.3687,
+      "delta_edge_mm": 0.0254,
+      "replaced_line_id": "19c656cd3fd1600b",
+      "replacement_track_count": 1,
+      "rule_threshold_mm": 0.35,
+      "rule_source": "JLCPCB HDI Capabilities (Blind/Buried Via Edge Clearance >= 0.35 mm / 13.78 mil)"
+    },
+    {
+      "board": "PCB3",
+      "via_id": "ff22ff18eb0e94fc",
+      "action": "RELOCATED_INWARD",
+      "merged_into_via_id": "",
+      "net": "GND",
+      "rule_name": "BV_L1_L2",
+      "hole_mil": 4.0,
+      "diam_mil": 10.0,
+      "anchor": "C16.2",
+      "old_x_mil": 186.1,
+      "old_y_mil": 552.2,
+      "old_cu_to_edge_mil": 13.624,
+      "old_cu_to_edge_mm": 0.3461,
+      "new_x_mil": 185.1,
+      "new_y_mil": 535.7,
+      "new_cu_to_edge_mil": 14.624,
+      "new_cu_to_edge_mm": 0.3715,
+      "delta_edge_mm": 0.0254,
+      "replaced_line_id": "357f1cfc034f5bbb",
+      "replacement_track_count": 1,
+      "rule_threshold_mm": 0.35,
+      "rule_source": "JLCPCB HDI Capabilities (Blind/Buried Via Edge Clearance >= 0.35 mm / 13.78 mil)"
+    }
+  ],
+  "deleted_via_ids": [],
+  "deleted_line_ids": [
+    "19c656cd3fd1600b",
+    "357f1cfc034f5bbb"
+  ],
+  "nets": [],
+  "delta_tracks": [
+    {
+      "layer": 1,
+      "x1": 184.8,
+      "y1": 485.6,
+      "x2": 185.21,
+      "y2": 499.48,
+      "width": 3.5,
+      "net": "GND"
+    },
+    {
+      "layer": 1,
+      "x1": 168.9,
+      "y1": 552.2,
+      "x2": 185.1,
+      "y2": 535.7,
+      "width": 3.5,
+      "net": "GND"
+    },
+    {
+      "layer": 1,
+      "x1": 62.6,
+      "y1": 260.8,
+      "x2": 73.5,
+      "y2": 246.0,
+      "width": 3.0,
+      "net": "GND"
+    },
+    {
+      "layer": 1,
+      "x1": 73.5,
+      "y1": 246.0,
+      "x2": 79.5,
+      "y2": 240.0,
+      "width": 3.0,
+      "net": "GND"
+    },
+    {
+      "layer": 1,
+      "x1": 79.5,
+      "y1": 240.0,
+      "x2": 114.0,
+      "y2": 240.0,
+      "width": 3.0,
+      "net": "GND"
+    },
+    {
+      "layer": 1,
+      "x1": 114.0,
+      "y1": 240.0,
+      "x2": 115.5,
+      "y2": 241.5,
+      "width": 3.0,
+      "net": "GND"
+    },
+    {
+      "layer": 1,
+      "x1": 61.0,
+      "y1": 300.2,
+      "x2": 63.0,
+      "y2": 292.5,
+      "width": 3.0,
+      "net": "GND"
+    },
+    {
+      "layer": 1,
+      "x1": 63.0,
+      "y1": 292.5,
+      "x2": 61.5,
+      "y2": 291.0,
+      "width": 3.0,
+      "net": "GND"
+    },
+    {
+      "layer": 1,
+      "x1": 61.5,
+      "y1": 291.0,
+      "x2": 61.5,
+      "y2": 282.0,
+      "width": 3.0,
+      "net": "GND"
+    },
+    {
+      "layer": 1,
+      "x1": 61.5,
+      "y1": 282.0,
+      "x2": 63.0,
+      "y2": 280.5,
+      "width": 3.0,
+      "net": "GND"
+    },
+    {
+      "layer": 1,
+      "x1": 63.0,
+      "y1": 280.5,
+      "x2": 63.0,
+      "y2": 276.0,
+      "width": 3.0,
+      "net": "GND"
+    },
+    {
+      "layer": 1,
+      "x1": 63.0,
+      "y1": 276.0,
+      "x2": 62.6,
+      "y2": 260.8,
+      "width": 3.0,
+      "net": "GND"
+    }
+  ],
+  "delta_vias": [
+    {
+      "x": 115.5,
+      "y": 241.5,
+      "hole": 4.0,
+      "diameter": 10.0,
+      "net": "GND",
+      "viaType": "BLIND",
+      "ruleName": "BV_L1_L2"
+    }
+  ]
+}

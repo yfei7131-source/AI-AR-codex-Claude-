@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "units": "mil",
+  "baseArchiveSha256": "758618cb4bbb12a5ed34200cbf7c51f2e476c80ed9eee96643efed4764791074",
+  "controls": [
+    {
+      "board": "PCB2",
+      "documentUuid": "9ce45f14cb79dc9d",
+      "intent": "Open one bridge in the existing 20 mil local VSYS path; then replay its exact geometry. Scope is an isolated P1 copy.",
+      "net": "VSYS",
+      "endpointEvidence": {
+        "C11.1": {
+          "primitiveId": "b460041b1be7d129re4p109",
+          "x": 96.6,
+          "y": 366,
+          "layer": 2,
+          "net": "VSYS"
+        },
+        "U14.5": {
+          "primitiveId": "5252ec4b97f2e1ddrd2p113",
+          "x": 139.6,
+          "y": 463.4,
+          "layer": 2,
+          "net": "VSYS"
+        }
+      },
+      "deleteInTest": {
+        "tracks": [
+          {
+            "endX": 96,
+            "endY": 419,
+            "layer": 2,
+            "lineWidth": 20,
+            "locked": false,
+            "net": "VSYS",
+            "primitiveId": "300b08a8ea409e7f",
+            "startX": 96,
+            "startY": 366.62
+          }
+        ],
+        "vias": []
+      },
+      "restoreExact": {
+        "tracks": [
+          {
+            "endX": 96,
+            "endY": 419,
+            "layer": 2,
+            "lineWidth": 20,
+            "locked": false,
+            "net": "VSYS",
+            "primitiveId": "300b08a8ea409e7f",
+            "startX": 96,
+            "startY": 366.62
+          }
+        ],
+        "vias": []
+      },
+      "acceptance": [
+        "Remove only the witnessed line ID.",
+        "Scoped VSYS DRC changed after cut and is identical to baseline after restore.",
+        "Restore only the witnessed geometry at 20 mil on layer 2.",
+        "Retain exact other copper geometry and the endpoints.",
+        "Save, reload and compare native rule records, DRC objects and netlist."
+      ]
+    },
+    {
+      "board": "PCB3",
+      "documentUuid": "1db01a36f669a47a",
+      "intent": "Open the accepted C6.2 dogbone on an isolated P1 board, then restore measured GND using the existing 4/10 mil blind span and filled L2 copper.",
+      "net": "GND",
+      "endpointEvidence": {
+        "C6.2": {
+          "primitiveId": "c0f07bd4076fc966re4p110",
+          "x": 184.8,
+          "y": 607.7,
+          "layer": 1,
+          "net": "GND"
+        },
+        "targetPlane": {
+          "layerId": 15,
+          "net": "GND"
+        }
+      },
+      "deleteInTest": {
+        "tracks": [
+          {
+            "endX": 172.8,
+            "endY": 607.7,
+            "layer": 1,
+            "lineWidth": 6,
+            "locked": false,
+            "net": "GND",
+            "primitiveId": "1cf40bd16e827fe5",
+            "startX": 184.8,
+            "startY": 607.7
+          },
+          {
+            "endX": 170.8,
+            "endY": 609.7,
+            "layer": 1,
+            "lineWidth": 6,
+            "locked": false,
+            "net": "GND",
+            "primitiveId": "4196f39ae665d6a3",
+            "startX": 172.8,
+            "startY": 607.7
+          }
+        ],
+        "vias": [
+          {
+            "diameter": 10,
+            "holeDiameter": 4,
+            "locked": false,
+            "net": "GND",
+            "primitiveId": "c32ffe36b61f0ea9",
+            "x": 170.8,
+            "y": 609.7,
+            "expectedSpanRule": "BV_L1_L2",
+            "nativeLayerIds": [
+              1,
+              15
+            ]
+          }
+        ]
+      },
+      "restoreExact": {
+        "tracks": [
+          {
+            "endX": 172.8,
+            "endY": 607.7,
+            "layer": 1,
+            "lineWidth": 6,
+            "locked": false,
+            "net": "GND",
+            "primitiveId": "1cf40bd16e827fe5",
+            "startX": 184.8,
+            "startY": 607.7
+          },
+          {
+            "endX": 170.8,
+            "endY": 609.7,
+            "layer": 1,
+            "lineWidth": 6,
+            "locked": false,
+            "net": "GND",
+            "primitiveId": "4196f39ae665d6a3",
+            "startX": 172.8,
+            "startY": 607.7
+          }
+        ],
+        "vias": [
+          {
+            "diameter": 10,
+            "holeDiameter": 4,
+            "locked": false,
+            "net": "GND",
+            "primitiveId": "c32ffe36b61f0ea9",
+            "x": 170.8,
+            "y": 609.7,
+            "expectedSpanRule": "BV_L1_L2",
+            "nativeLayerIds": [
+              1,
+              15
+            ]
+          }
+        ]
+      },
+      "acceptance": [
+        "Confirm both line geometries and blind rule before deleting any object.",
+        "Require the scoped gap before re-applying copper.",
+        "Restore exact two segments (6 mil), and one laser blind via (4/10 mil, layers 1\u219215).",
+        "Confirm the unchanged native inner ground copper contains the full via land.",
+        "Save, reload and compare copper, affected DRC objects and netlist."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,581 @@
+{
+  "verification": "OFFLINE_READBACK_AUDIT",
+  "manufacturing": "BLOCKED",
+  "boards": {
+    "PCB1": {
+      "source": "M-MAIN-L",
+      "protelByteIdenticalToPr46": true,
+      "netlistCrosscheck": {
+        "protelNetGroups": 112,
+        "placedComponentCount": 118,
+        "placedNamedTerminalsCompared": 477,
+        "schematicOnly": [
+          {
+            "designator": "BAT1",
+            "FOOTPRINT": "",
+            "Unique ID": "209f0e49c54e94d7",
+            "EVT1 Source Ref": "BAT_L",
+            "convert_to_pcb": false
+          },
+          {
+            "designator": "J2",
+            "FOOTPRINT": "",
+            "Unique ID": "1fb9863844ab5169",
+            "EVT1 Source Ref": "J_CAM",
+            "convert_to_pcb": true
+          },
+          {
+            "designator": "J3",
+            "FOOTPRINT": "",
+            "Unique ID": "bd3ee0abdb58119f",
+            "EVT1 Source Ref": "J_CHG",
+            "convert_to_pcb": true
+          },
+          {
+            "designator": "SPK1",
+            "FOOTPRINT": "",
+            "Unique ID": "d2e4bc6839561c23",
+            "EVT1 Source Ref": "SPK_L",
+            "convert_to_pcb": false
+          }
+        ],
+        "pcbOnly": [],
+        "placedUidMismatches": [],
+        "placedPadNetMismatches": [],
+        "copperNetsAbsentFromSchematic": {
+          "lines": [],
+          "vias": []
+        }
+      },
+      "strictDrcPr46": {
+        "Connection Error": 358,
+        "Netlist Error": 1
+      },
+      "strictDrcInherited": {
+        "Connection Error": 358,
+        "Netlist Error": 1
+      },
+      "nativeDuplicateSegmentsInherited": 0,
+      "decouplingReview": [
+        {
+          "ref": "C21",
+          "source": "C_LDO_DVDD_OUT",
+          "net": "CAM_DVDD_1V2",
+          "role": "ldo-output",
+          "reported": "decoupling cap C21 sits 117mil (3.0mm) from the nearest CAM_DVDD_1V2 pin U13.1 — a decap must hug its IC (≤100mil / 2.54mm) [规范 §3.1 去耦电容紧贴IC — pcb-design-rules.md]",
+          "actualLoopTarget": {
+            "ref": "U13",
+            "source": "U6_CAM_DVDD",
+            "pin": "1",
+            "function": "OUT"
+          },
+          "capUid": "0259cc883dd91c7a",
+          "capPrimitiveId": "df5318a5aed9762a",
+          "capPad": {
+            "x": 133.5,
+            "y": 1091.5,
+            "layer": 1,
+            "primitiveId": "df5318a5aed9762are5p109"
+          },
+          "loopTargetPad": {
+            "x": 19.5,
+            "y": 1064,
+            "layer": 2,
+            "primitiveId": "3f2502bc273149c3e13"
+          },
+          "ownerEuclideanDistanceMil": 117.27
+        },
+        {
+          "ref": "C31",
+          "source": "C_U8_CAM_ISO1_A",
+          "net": "CAM_DOVDD_1V8",
+          "role": "bypass",
+          "reported": "decoupling cap C31 sits 197mil (5.0mm) from the nearest CAM_DOVDD_1V8 pin U11.1 — a decap must hug its IC (≤100mil / 2.54mm) [规范 §3.1 去耦电容紧贴IC — pcb-design-rules.md]",
+          "actualLoopTarget": {
+            "ref": "U15",
+            "source": "U8_CAM_ISO1",
+            "pin": "24",
+            "function": "VCCA"
+          },
+          "capUid": "cc1d00c51cc12124",
+          "capPrimitiveId": "8f3cb86df2936ab5",
+          "capPad": {
+            "x": 125.8,
+            "y": 1251.8,
+            "layer": 2,
+            "primitiveId": "8f3cb86df2936ab5re4p109"
+          },
+          "loopTargetPad": {
+            "x": 34.2,
+            "y": 565.8,
+            "layer": 1,
+            "primitiveId": "45a75ba74b6e57dce51"
+          },
+          "ownerEuclideanDistanceMil": 692.09
+        },
+        {
+          "ref": "C40",
+          "source": "C_U10_AMP_L_HF",
+          "net": "VSYS",
+          "role": "bypass",
+          "reported": "decoupling cap C40 sits 241mil (6.1mm) from the nearest VSYS pin U10.A2 — a decap must hug its IC (≤100mil / 2.54mm) [规范 §3.1 去耦电容紧贴IC — pcb-design-rules.md]",
+          "actualLoopTarget": {
+            "ref": "U10",
+            "source": "U10_AMP_L",
+            "pin": "A2",
+            "function": "VDD"
+          },
+          "capUid": "12af2948e5a85261",
+          "capPrimitiveId": "8f8007e23293c01e",
+          "capPad": {
+            "x": 125.8,
+            "y": 1299,
+            "layer": 2,
+            "primitiveId": "8f8007e23293c01ere4p109"
+          },
+          "loopTargetPad": {
+            "x": 91.7,
+            "y": 1060.2,
+            "layer": 1,
+            "primitiveId": "569c4d3ca4854eb4e14"
+          },
+          "ownerEuclideanDistanceMil": 241.22
+        }
+      ],
+      "inputs": [
+        {
+          "sha256": "abe2e4d4c14ad8ca57602cc044ae5cf7c71e52423ebc23a161503cc717e103a9",
+          "relativePath": "h03-v4-dfm-u11-2n2-route/evidence/erc-3board/board-netlists/M-MAIN-L.net"
+        },
+        {
+          "sha256": "abe2e4d4c14ad8ca57602cc044ae5cf7c71e52423ebc23a161503cc717e103a9",
+          "relativePath": "h03-u11-wlcsp-v3-dfm-route/evidence/erc-3board/board-netlists/M-MAIN-L.net"
+        },
+        {
+          "sha256": "1c3463f5d735f914f34938268e781e57413ebda9bdb21538013d9be00b1cf591",
+          "relativePath": "h03-v4-dfm-u11-2n2-route/evidence/reimport-verify/PCB1-reimport.dump.json"
+        },
+        {
+          "sha256": "c6bedccc66901ca4042eb16b6146d3086e7df246b5d7b14aede40ebfd39a4bb2",
+          "relativePath": "h03-v4-dfm-u11-2n2-route/evidence/post-route/PCB1-dfm-check.json"
+        },
+        {
+          "sha256": "b78a29ddc9f8c289cdcd6d8eb0fb7c73b1331c2f0c50b4331ee00d18dc1da6e2",
+          "relativePath": "h03-v4-dfm-u11-2n2-route/evidence/reimport-verify/PCB1-drc-reimport.json"
+        },
+        {
+          "sha256": "8c6dc4d7fdb04d28f9dce4dc7d5e7716b3c4c620fc77afaf670de6f96a40052e",
+          "relativePath": "h03-u11-wlcsp-v3-dfm-route/evidence/reimport-verify/PCB1-drc-reimport.json"
+        }
+      ]
+    },
+    "PCB2": {
+      "source": "M-OPT-BRIDGE",
+      "protelByteIdenticalToPr46": true,
+      "netlistCrosscheck": {
+        "protelNetGroups": 58,
+        "placedComponentCount": 86,
+        "placedNamedTerminalsCompared": 303,
+        "schematicOnly": [],
+        "pcbOnly": [],
+        "placedUidMismatches": [],
+        "placedPadNetMismatches": [],
+        "copperNetsAbsentFromSchematic": {
+          "lines": [],
+          "vias": []
+        }
+      },
+      "strictDrcPr46": {
+        "Connection Error": 238,
+        "Netlist Error": 1
+      },
+      "strictDrcInherited": {
+        "Connection Error": 238,
+        "Netlist Error": 1
+      },
+      "nativeDuplicateSegmentsInherited": 0,
+      "decouplingReview": [
+        {
+          "ref": "C10",
+          "source": "C_AVDD_U_AVDD_SYS_CLAMP_V",
+          "net": "VSYS",
+          "role": "bypass",
+          "reported": "decoupling cap C10 sits 153mil (3.9mm) from the nearest VSYS pin U11.5 — a decap must hug its IC (≤100mil / 2.54mm) [规范 §3.1 去耦电容紧贴IC — pcb-design-rules.md]",
+          "actualLoopTarget": {
+            "ref": "U12",
+            "source": "U_AVDD_SYS_CLAMP",
+            "pin": "4",
+            "function": "VDD"
+          },
+          "capUid": "3e75135af30e0f04",
+          "capPrimitiveId": "ff1989fffd1dcf8b",
+          "capPad": {
+            "x": 114,
+            "y": 859.8,
+            "layer": 1,
+            "primitiveId": "ff1989fffd1dcf8bre4p109"
+          },
+          "loopTargetPad": {
+            "x": 111.8,
+            "y": 155.9,
+            "layer": 2,
+            "primitiveId": "77bd1229d6a9baf8rd3p112"
+          },
+          "ownerEuclideanDistanceMil": 703.9
+        },
+        {
+          "ref": "C11",
+          "source": "C_AVDD_U_AVDD_SYS_PG_V",
+          "net": "VSYS",
+          "role": "bypass",
+          "reported": "decoupling cap C11 sits 171mil (4.3mm) from the nearest VSYS pin U11.5 — a decap must hug its IC (≤100mil / 2.54mm) [规范 §3.1 去耦电容紧贴IC — pcb-design-rules.md]",
+          "actualLoopTarget": {
+            "ref": "U13",
+            "source": "U_AVDD_SYS_PG",
+            "pin": "4",
+            "function": "VDD"
+          },
+          "capUid": "20764de07767b3a1",
+          "capPrimitiveId": "b460041b1be7d129",
+          "capPad": {
+            "x": 129.7,
+            "y": 877.6,
+            "layer": 2,
+            "primitiveId": "b460041b1be7d129re4p109"
+          },
+          "loopTargetPad": {
+            "x": 111.8,
+            "y": 238.6,
+            "layer": 2,
+            "primitiveId": "f4248be9af4dc8abrd3p112"
+          },
+          "ownerEuclideanDistanceMil": 639.25
+        },
+        {
+          "ref": "C12",
+          "source": "C_AVDD_U_AVDD_WD_V",
+          "net": "VSYS",
+          "role": "bypass",
+          "reported": "decoupling cap C12 sits 200mil (5.1mm) from the nearest VSYS pin U11.5 — a decap must hug its IC (≤100mil / 2.54mm) [规范 §3.1 去耦电容紧贴IC — pcb-design-rules.md]",
+          "actualLoopTarget": {
+            "ref": "U14",
+            "source": "U_AVDD_WD",
+            "pin": "5",
+            "function": "V+"
+          },
+          "capUid": "26a39bcafcc8ce7c",
+          "capPrimitiveId": "73d5b500099048b1",
+          "capPad": {
+            "x": 19.5,
+            "y": 881.5,
+            "layer": 1,
+            "primitiveId": "73d5b500099048b1re4p109"
+          },
+          "loopTargetPad": {
+            "x": 139.6,
+            "y": 463.4,
+            "layer": 2,
+            "primitiveId": "5252ec4b97f2e1ddrd2p113"
+          },
+          "ownerEuclideanDistanceMil": 435.01
+        },
+        {
+          "ref": "C2",
+          "source": "C_AVDD_QUAL",
+          "net": "AVDD_QUAL_RC",
+          "role": "timing-rc",
+          "reported": "decoupling cap C2 sits 142mil (3.6mm) from the nearest AVDD_QUAL_RC pin U11.3 — a decap must hug its IC (≤100mil / 2.54mm) [规范 §3.1 去耦电容紧贴IC — pcb-design-rules.md]",
+          "actualLoopTarget": {
+            "ref": "U11",
+            "source": "U_AVDD_SCHMITT",
+            "pin": "3",
+            "function": "2A"
+          },
+          "capUid": "a2c5d49bc5dde298",
+          "capPrimitiveId": "716d1039ae2e8d89",
+          "capPad": {
+            "x": 129.7,
+            "y": 834.3,
+            "layer": 2,
+            "primitiveId": "716d1039ae2e8d89re4p109"
+          },
+          "loopTargetPad": {
+            "x": 30.1,
+            "y": 732.7,
+            "layer": 2,
+            "primitiveId": "a58afe0093ae7de7rd1p111"
+          },
+          "ownerEuclideanDistanceMil": 142.28
+        },
+        {
+          "ref": "C3",
+          "source": "C_AVDD_REQ_FILTER",
+          "net": "AVDD_REQ_FILTER",
+          "role": "timing-rc",
+          "reported": "decoupling cap C3 sits 653mil (16.6mm) from the nearest AVDD_REQ_FILTER pin U13.3 — a decap must hug its IC (≤100mil / 2.54mm) [规范 §3.1 去耦电容紧贴IC — pcb-design-rules.md]",
+          "actualLoopTarget": {
+            "ref": "U13",
+            "source": "U_AVDD_SYS_PG",
+            "pin": "3",
+            "function": "MR"
+          },
+          "capUid": "cc82bf2c2e22e605",
+          "capPrimitiveId": "6f1dedf9d15d0beb",
+          "capPad": {
+            "x": 19.5,
+            "y": 838.2,
+            "layer": 1,
+            "primitiveId": "6f1dedf9d15d0bebre4p109"
+          },
+          "loopTargetPad": {
+            "x": 111.8,
+            "y": 191.3,
+            "layer": 2,
+            "primitiveId": "f4248be9af4dc8abrd3p111"
+          },
+          "ownerEuclideanDistanceMil": 653.45
+        },
+        {
+          "ref": "C31",
+          "source": "C_LDO_OPT_IN",
+          "net": "VSYS",
+          "role": "conditional-optical-ldo",
+          "reported": "decoupling cap C31 sits 111mil (2.8mm) from the nearest VSYS pin U10.3 — a decap must hug its IC (≤100mil / 2.54mm) [规范 §3.1 去耦电容紧贴IC — pcb-design-rules.md]",
+          "actualLoopTarget": {
+            "ref": "U6",
+            "source": "U6_OPT_AVDD",
+            "pin": "4",
+            "function": "IN"
+          },
+          "capUid": "cc1d00c51cc12124",
+          "capPrimitiveId": "da17ff9cfd867a89",
+          "capPad": {
+            "x": 23.2,
+            "y": 768.5,
+            "layer": 1,
+            "primitiveId": "da17ff9cfd867a89re5p109"
+          },
+          "loopTargetPad": {
+            "x": 53.3,
+            "y": 294.1,
+            "layer": 2,
+            "primitiveId": "52a9930df4fcde16e14"
+          },
+          "ownerEuclideanDistanceMil": 475.35
+        },
+        {
+          "ref": "C32",
+          "source": "C_LDO_OPT_OUT",
+          "net": "AVDD_OPT_BIAS",
+          "role": "conditional-optical-ldo",
+          "reported": "decoupling cap C32 sits 480mil (12.2mm) from the nearest AVDD_OPT_BIAS pin U6.1 — a decap must hug its IC (≤100mil / 2.54mm) [规范 §3.1 去耦电容紧贴IC — pcb-design-rules.md]",
+          "actualLoopTarget": {
+            "ref": "U6",
+            "source": "U6_OPT_AVDD",
+            "pin": "1",
+            "function": "OUT (DNP)"
+          },
+          "capUid": "d2625f4b4bd439ef",
+          "capPrimitiveId": "a99d6a238c9ac376",
+          "capPad": {
+            "x": 92.1,
+            "y": 768.5,
+            "layer": 1,
+            "primitiveId": "a99d6a238c9ac376re5p109"
+          },
+          "loopTargetPad": {
+            "x": 19.5,
+            "y": 294.1,
+            "layer": 2,
+            "primitiveId": "52a9930df4fcde16e13"
+          },
+          "ownerEuclideanDistanceMil": 479.92
+        },
+        {
+          "ref": "C5",
+          "source": "C_AVDD_U_AVDD_EN_OD_V",
+          "net": "VSYS",
+          "role": "bypass",
+          "reported": "decoupling cap C5 sits 131mil (3.3mm) from the nearest VSYS pin U11.5 — a decap must hug its IC (≤100mil / 2.54mm) [规范 §3.1 去耦电容紧贴IC — pcb-design-rules.md]",
+          "actualLoopTarget": {
+            "ref": "U5",
+            "source": "U_AVDD_EN_OD",
+            "pin": "5",
+            "function": "VCC"
+          },
+          "capUid": "ddba3c46cf8b8e66",
+          "capPrimitiveId": "0ef47cdb2c14fdf8",
+          "capPad": {
+            "x": 114,
+            "y": 838.2,
+            "layer": 1,
+            "primitiveId": "0ef47cdb2c14fdf8re4p109"
+          },
+          "loopTargetPad": {
+            "x": 159,
+            "y": 318.3,
+            "layer": 2,
+            "primitiveId": "38e3101c2eb6ff76e11"
+          },
+          "ownerEuclideanDistanceMil": 521.84
+        },
+        {
+          "ref": "C8",
+          "source": "C_AVDD_U_AVDD_QUAL_V",
+          "net": "VSYS",
+          "role": "bypass",
+          "reported": "decoupling cap C8 sits 181mil (4.6mm) from the nearest VSYS pin U11.5 — a decap must hug its IC (≤100mil / 2.54mm) [规范 §3.1 去耦电容紧贴IC — pcb-design-rules.md]",
+          "actualLoopTarget": {
+            "ref": "U10",
+            "source": "U_AVDD_QUAL",
+            "pin": "5",
+            "function": "VCC"
+          },
+          "capUid": "80f3708378e3d903",
+          "capPrimitiveId": "d1d955f7a7c3957a",
+          "capPad": {
+            "x": 19.5,
+            "y": 859.8,
+            "layer": 1,
+            "primitiveId": "d1d955f7a7c3957are4p109"
+          },
+          "loopTargetPad": {
+            "x": 116.7,
+            "y": 632.3,
+            "layer": 2,
+            "primitiveId": "dfc76cb6407cdd81rd1p113"
+          },
+          "ownerEuclideanDistanceMil": 247.39
+        },
+        {
+          "ref": "C9",
+          "source": "C_AVDD_U_AVDD_SCHMITT_V",
+          "net": "VSYS",
+          "role": "bypass",
+          "reported": "decoupling cap C9 sits 161mil (4.1mm) from the nearest VSYS pin U11.5 — a decap must hug its IC (≤100mil / 2.54mm) [规范 §3.1 去耦电容紧贴IC — pcb-design-rules.md]",
+          "actualLoopTarget": {
+            "ref": "U11",
+            "source": "U_AVDD_SCHMITT",
+            "pin": "5",
+            "function": "VCC"
+          },
+          "capUid": "7ddfd2f632a8b17d",
+          "capPrimitiveId": "66f600bef5e77bde",
+          "capPad": {
+            "x": 66.7,
+            "y": 859.8,
+            "layer": 1,
+            "primitiveId": "66f600bef5e77bdere4p109"
+          },
+          "loopTargetPad": {
+            "x": 116.7,
+            "y": 707.1,
+            "layer": 2,
+            "primitiveId": "a58afe0093ae7de7rd1p113"
+          },
+          "ownerEuclideanDistanceMil": 160.68
+        }
+      ],
+      "inputs": [
+        {
+          "sha256": "bd50a4e16bf03edfdb30e72e096587de785b08c1b0c6700eed81cbdb1b7e1d2a",
+          "relativePath": "h03-v4-dfm-u11-2n2-route/evidence/erc-3board/board-netlists/M-OPT-BRIDGE.net"
+        },
+        {
+          "sha256": "bd50a4e16bf03edfdb30e72e096587de785b08c1b0c6700eed81cbdb1b7e1d2a",
+          "relativePath": "h03-u11-wlcsp-v3-dfm-route/evidence/erc-3board/board-netlists/M-OPT-BRIDGE.net"
+        },
+        {
+          "sha256": "cf38f4011ae0abb428e5e87a788acff62439d70c1c5fdb2fadae1f4b4c06e18d",
+          "relativePath": "h03-v4-dfm-u11-2n2-route/evidence/reimport-verify/PCB2-reimport.dump.json"
+        },
+        {
+          "sha256": "fc8fa7a4516f88be0470f218e7796bba380a9c9222163b0e0ae6060ec91769e8",
+          "relativePath": "h03-v4-dfm-u11-2n2-route/evidence/post-route/PCB2-dfm-check.json"
+        },
+        {
+          "sha256": "647f1a9647303b0736005a208ac0afe2b7d20f0f14fa549237ec8ab3677ccdf7",
+          "relativePath": "h03-v4-dfm-u11-2n2-route/evidence/reimport-verify/PCB2-drc-reimport.json"
+        },
+        {
+          "sha256": "647f1a9647303b0736005a208ac0afe2b7d20f0f14fa549237ec8ab3677ccdf7",
+          "relativePath": "h03-u11-wlcsp-v3-dfm-route/evidence/reimport-verify/PCB2-drc-reimport.json"
+        }
+      ],
+      "c11SingleMoveScreen": {
+        "gridMil": 1,
+        "powerToVddMaxMil": 100,
+        "candidatesInOutlineAndWithinDistance": 99973,
+        "componentBboxClearCandidates": []
+      }
+    },
+    "PCB3": {
+      "source": "M-AUD-R",
+      "protelByteIdenticalToPr46": true,
+      "netlistCrosscheck": {
+        "protelNetGroups": 37,
+        "placedComponentCount": 53,
+        "placedNamedTerminalsCompared": 191,
+        "schematicOnly": [
+          {
+            "designator": "BAT1",
+            "FOOTPRINT": "",
+            "Unique ID": "209f0e49c54e94d7",
+            "EVT1 Source Ref": "BAT_R",
+            "convert_to_pcb": false
+          },
+          {
+            "designator": "SPK1",
+            "FOOTPRINT": "",
+            "Unique ID": "d2e4bc6839561c23",
+            "EVT1 Source Ref": "SPK_R",
+            "convert_to_pcb": false
+          }
+        ],
+        "pcbOnly": [],
+        "placedUidMismatches": [],
+        "placedPadNetMismatches": [],
+        "copperNetsAbsentFromSchematic": {
+          "lines": [],
+          "vias": []
+        }
+      },
+      "strictDrcPr46": {
+        "Connection Error": 136,
+        "Netlist Error": 1
+      },
+      "strictDrcInherited": {
+        "Connection Error": 134,
+        "Netlist Error": 1
+      },
+      "nativeDuplicateSegmentsInherited": 1,
+      "decouplingReview": [],
+      "inputs": [
+        {
+          "sha256": "e20db4b647a21ea52fcdc3d202ca137a5aad29d771aacb2871dfbc00c668cbb9",
+          "relativePath": "h03-v4-dfm-u11-2n2-route/evidence/erc-3board/board-netlists/M-AUD-R.net"
+        },
+        {
+          "sha256": "e20db4b647a21ea52fcdc3d202ca137a5aad29d771aacb2871dfbc00c668cbb9",
+          "relativePath": "h03-u11-wlcsp-v3-dfm-route/evidence/erc-3board/board-netlists/M-AUD-R.net"
+        },
+        {
+          "sha256": "60649bb794454c4ba75cdc8cfb018427f98147984bb6d2b2493b1fafbff5b35a",
+          "relativePath": "h03-v4-dfm-u11-2n2-route/evidence/reimport-verify/PCB3-reimport.dump.json"
+        },
+        {
+          "sha256": "dd2894c1ece2ed024587758cfc682796ed36ed3e7ba520fd23d3033c80dff29d",
+          "relativePath": "h03-v4-dfm-u11-2n2-route/evidence/post-route/PCB3-dfm-check.json"
+        },
+        {
+          "sha256": "df80c258d76fd139ef94f4383e5eec0bd1c5318bff290688514b315b7595af8b",
+          "relativePath": "h03-v4-dfm-u11-2n2-route/evidence/reimport-verify/PCB3-drc-reimport.json"
+        },
+        {
+          "sha256": "4668cf78fb5dcbd4831e47e91c838920886130c7a54ea792feed950c9d25bb2f",
+          "relativePath": "h03-u11-wlcsp-v3-dfm-route/evidence/reimport-verify/PCB3-drc-reimport.json"
+        }
+      ]
+    }
+  }
+}

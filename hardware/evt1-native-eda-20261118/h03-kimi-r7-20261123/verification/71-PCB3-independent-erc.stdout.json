@@ -1,0 +1,56 @@
+{
+  "id": "req_35219",
+  "ok": true,
+  "result": {
+    "passed": false,
+    "nativePassed": false,
+    "strict": true,
+    "fatal": 2,
+    "summary": {
+      "fatal": 2,
+      "error": 0,
+      "warn": 0,
+      "info": 0,
+      "unknown": 0,
+      "total": 2
+    },
+    "violations": [
+      {
+        "level": "fatal",
+        "type": "fatalError",
+        "rule": "MISSFOOTPRINT",
+        "raw": {
+          "primitives": [
+            {
+              "name": "SPK1",
+              "primitiveId": "ie377",
+              "sheet": "8fa31840ba825b92"
+            }
+          ],
+          "rule": "MISSFOOTPRINT",
+          "type": "fatalError"
+        }
+      },
+      {
+        "level": "fatal",
+        "type": "fatalError",
+        "rule": "MISSFOOTPRINT",
+        "raw": {
+          "primitives": [
+            {
+              "name": "BAT1",
+              "primitiveId": "ie65",
+              "sheet": "bbbca101b360e299"
+            }
+          ],
+          "rule": "MISSFOOTPRINT",
+          "type": "fatalError"
+        }
+      }
+    ],
+    "countsAvailable": true,
+    "detailsAvailable": true
+  },
+  "type": "response",
+  "version": "v1"
+}

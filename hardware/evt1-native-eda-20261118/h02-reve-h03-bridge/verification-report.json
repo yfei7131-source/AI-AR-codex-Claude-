@@ -1,0 +1,275 @@
+{
+  "status": "VERIFIED_H02_REVE_H03_BRIDGE",
+  "manufacturing": "BLOCKED",
+  "project_uuid": "3986599b0e0b7459c7ccbe757fd9494ca2ea6a498e8401708e55d750b6959971",
+  "pr38_baseline_sha256": "d68190e5bcf36bfc3308ff194d792d4c5526577aab8bf601722e1c2d8e713727",
+  "reve_exported_sha256": "f9d885f5217c9bdcb29118dd71d460f8e78ca4a2c943f018d6c13ffff156be73",
+  "strict_erc_progression": {
+    "pr36_total": 268,
+    "pr38_total": 246,
+    "reve_total": 130,
+    "cleared_this_round": 116,
+    "boards": {
+      "M-MAIN-L": {
+        "pr38_before": 112,
+        "reve_after": 56,
+        "cleared_this_round": 56,
+        "diagnostics_after": {
+          "ONLYSYMBOL": 7,
+          "MISSFOOTPRINT": 49
+        },
+        "hierarchy_proxies_count": 7
+      },
+      "M-OPT-BRIDGE": {
+        "pr38_before": 78,
+        "reve_after": 34,
+        "cleared_this_round": 44,
+        "diagnostics_after": {
+          "ONLYSYMBOL": 6,
+          "MISSFOOTPRINT": 28
+        },
+        "hierarchy_proxies_count": 6
+      },
+      "M-AUD-R": {
+        "pr38_before": 56,
+        "reve_after": 40,
+        "cleared_this_round": 16,
+        "diagnostics_after": {
+          "ONLYSYMBOL": 5,
+          "MISSFOOTPRINT": 35
+        },
+        "hierarchy_proxies_count": 5
+      }
+    }
+  },
+  "protel2_netlist_rev_e_delta": {
+    "total_net_groups_before": 201,
+    "total_net_groups_after": 207,
+    "delta": 6,
+    "boards": {
+      "M-MAIN-L": {
+        "net_groups_before": 110,
+        "net_groups_after": 112,
+        "added_nets": {
+          "LED_3V3_PRIV": [
+            "C23-1 EVT1_C23_C_LDO_LED_OUT-~ Passive",
+            "R31-1 EVT1_R31_R_SENSE-~ Passive",
+            "U5-1 EVT1_U5_U5_LED2V8-OUT Passive",
+            "U7-3 EVT1_U7_U7_INA-IN+ Input"
+          ],
+          "USB_LIM_ILIM": [
+            "R38-1 EVT1_R38_R_USB_ILIM-~ Passive",
+            "U22-3 EVT1_U22_U_USB_LIM-ILIM Passive"
+          ],
+          "VBUS_5V_USB": [
+            "J3-1 EVT1_J3_J_CHG-VBUS Passive",
+            "U12-5 EVT1_U12_U12_ESD_USB_TPD2E001-VCC Passive",
+            "U22-4 EVT1_U22_U_USB_LIM-EN Input",
+            "U22-6 EVT1_U22_U_USB_LIM-IN Passive"
+          ]
+        },
+        "removed_nets": {
+          "LED_2V8": [
+            "C23-1 EVT1_C23_C_LDO_LED_OUT-~ Passive",
+            "R31-1 EVT1_R31_R_SENSE-~ Passive",
+            "U5-1 EVT1_U5_U5_LED2V8-OUT Passive",
+            "U7-3 EVT1_U7_U7_INA-IN+ Input"
+          ]
+        },
+        "modified_nets": {
+          "3V3_SYS": {
+            "added_pins": [],
+            "removed_pins": [
+              "R10-2 EVT1_R10_R_ESP_BOOT-~ Passive"
+            ]
+          },
+          "GND": {
+            "added_pins": [
+              "R38-2 EVT1_R38_R_USB_ILIM-~ Passive",
+              "R39-2 EVT1_R39_R_QIO1_PD-~ Passive",
+              "R40-2 EVT1_R40_R_QIO2_PD-~ Passive",
+              "R41-2 EVT1_R41_R_QIO3_PD-~ Passive",
+              "U12-2 EVT1_U12_U12_ESD_USB_TPD2E001-GND Passive",
+              "U22-5 EVT1_U22_U_USB_LIM-GND Passive",
+              "U22-7 EVT1_U22_U_USB_LIM-EP Passive"
+            ],
+            "removed_pins": []
+          },
+          "QSPI_DIR1_EN": {
+            "added_pins": [],
+            "removed_pins": [
+              "R10-1 EVT1_R10_R_ESP_BOOT-~ Passive"
+            ]
+          },
+          "USB_DM": {
+            "added_pins": [
+              "U12-3 EVT1_U12_U12_ESD_USB_TPD2E001-IO2 Passive"
+            ],
+            "removed_pins": [
+              "U12-2 EVT1_U12_U12_ESD_USB-D- clamp Passive"
+            ]
+          },
+          "USB_DP": {
+            "added_pins": [
+              "U12-1 EVT1_U12_U12_ESD_USB_TPD2E001-IO1 Passive"
+            ],
+            "removed_pins": [
+              "U12-3 EVT1_U12_U12_ESD_USB-D+ clamp Passive"
+            ]
+          },
+          "VBUS_5V": {
+            "added_pins": [
+              "U22-1 EVT1_U22_U_USB_LIM-OUT Passive"
+            ],
+            "removed_pins": [
+              "J3-1 EVT1_J3_J_CHG-VBUS Passive",
+              "U12-1 EVT1_U12_U12_ESD_USB-VBUS clamp Passive"
+            ]
+          },
+          "host_qio1_3v3": {
+            "added_pins": [
+              "R39-1 EVT1_R39_R_QIO1_PD-~ Passive"
+            ],
+            "removed_pins": []
+          },
+          "host_qio2_3v3": {
+            "added_pins": [
+              "R40-1 EVT1_R40_R_QIO2_PD-~ Passive"
+            ],
+            "removed_pins": []
+          },
+          "host_qio3_3v3": {
+            "added_pins": [
+              "R41-1 EVT1_R41_R_QIO3_PD-~ Passive"
+            ],
+            "removed_pins": []
+          }
+        }
+      },
+      "M-OPT-BRIDGE": {
+        "net_groups_before": 56,
+        "net_groups_after": 58,
+        "added_nets": {
+          "FPGA_1V2_SENSE": [
+            "R30-2 EVT1_R30_R_FPGA_SEQ_H-~ Passive",
+            "R31-1 EVT1_R31_R_FPGA_SEQ_L-~ Passive",
+            "U15-3 EVT1_U15_U_FPGA_SEQ-SENSE Input"
+          ],
+          "FPGA_1V8_EN": [
+            "U1-3 EVT1_U1_U4_1V8F-EN Input",
+            "U15-4 EVT1_U15_U_FPGA_SEQ-SENSE_OUT Output"
+          ]
+        },
+        "removed_nets": {},
+        "modified_nets": {
+          "1V2_FPGA_PLL": {
+            "added_pins": [
+              "R30-1 EVT1_R30_R_FPGA_SEQ_H-~ Passive"
+            ],
+            "removed_pins": [
+              "U1-3 EVT1_U1_U4_1V8F-EN Input"
+            ]
+          },
+          "GND": {
+            "added_pins": [
+              "R31-2 EVT1_R31_R_FPGA_SEQ_L-~ Passive",
+              "U15-2 EVT1_U15_U_FPGA_SEQ-GND Passive"
+            ],
+            "removed_pins": []
+          },
+          "VSYS": {
+            "added_pins": [
+              "U15-1 EVT1_U15_U_FPGA_SEQ-ENABLE Input",
+              "U15-6 EVT1_U15_U_FPGA_SEQ-VCC Passive"
+            ],
+            "removed_pins": []
+          }
+        }
+      },
+      "M-AUD-R": {
+        "net_groups_before": 35,
+        "net_groups_after": 37,
+        "added_nets": {
+          "LFXO_XL1": [
+            "C22-1 EVT1_C22_C_LFXO1-~ Passive",
+            "U11-F11 EVT1_U11_U11_BLE-P0.00/XL1 Passive",
+            "Y3-1 EVT1_Y3_Y_LFXO-~ Passive"
+          ],
+          "LFXO_XL2": [
+            "C23-1 EVT1_C23_C_LFXO2-~ Passive",
+            "U11-F12 EVT1_U11_U11_BLE-P0.01/XL2 Passive",
+            "Y3-2 EVT1_Y3_Y_LFXO-~ Passive"
+          ]
+        },
+        "removed_nets": {},
+        "modified_nets": {
+          "GND": {
+            "added_pins": [
+              "C22-2 EVT1_C22_C_LFXO1-~ Passive",
+              "C23-2 EVT1_C23_C_LFXO2-~ Passive"
+            ],
+            "removed_pins": []
+          }
+        }
+      }
+    }
+  },
+  "live_pcb2_verification": {
+    "board_outline_mm": [
+      22.0,
+      4.2
+    ],
+    "outline_enlarged": false,
+    "placed_components": 17,
+    "physical_pads": 122,
+    "unique_ids_matched": "17/17",
+    "mk2_clearance_errors_before": 6,
+    "mk2_clearance_errors_after": 0,
+    "total_clearance_errors": 0,
+    "strict_drc_total": 88,
+    "strict_drc_breakdown": {
+      "Connection Error (Plane Zone)": 2,
+      "Connection Error (SMD Pad)": 85,
+      "Netlist Error (Netlist Error)": 1
+    }
+  },
+  "reve_engineering_bom_summary": {
+    "M-MAIN-L": {
+      "total_parts": 125,
+      "footprint_bound": 73
+    },
+    "M-OPT-BRIDGE": {
+      "total_parts": 91,
+      "footprint_bound": 58
+    },
+    "M-AUD-R": {
+      "total_parts": 58,
+      "footprint_bound": 20
+    }
+  },
+  "electrical_safety_tests": {
+    "eco02_led_3v3_priv_pvt": {
+      "status": "PASS",
+      "margin_low_mV": 100.3,
+      "margin_high_mV": 231.4,
+      "r_limit_short_mW": 75.6
+    },
+    "eco03_tps3895a_fpga_seq": {
+      "status": "PASS",
+      "trip_window_V": [
+        0.926,
+        0.962
+      ]
+    },
+    "eco07_tps2553_61k9_limit": {
+      "status": "PASS",
+      "ios_max_mA": 475.5
+    },
+    "eco08_fc1610an_lfxo_cl": {
+      "status": "PASS",
+      "c_ext_pF": 12.0,
+      "c_l_eff_pF": 8.5,
+      "target_cl_pF": 9.0
+    }
+  }
+}

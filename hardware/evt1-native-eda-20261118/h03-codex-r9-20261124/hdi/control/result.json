@@ -1,0 +1,57 @@
+{
+  "projectUuid": "78d38acd4e72374f4e16cf5097c7274cb0f09fdfd02802f6595219a7483e297c",
+  "spanSavedAndReloaded": true,
+  "via": {
+    "partitionId": "",
+    "groupId": 0,
+    "netName": "",
+    "ruleName": "2-3",
+    "centerX": 70,
+    "centerY": 1065,
+    "holeDiameter": 3.94,
+    "viaDiameter": 9.94,
+    "viaType": "BLIND",
+    "topSolderExpansion": null,
+    "bottomSolderExpansion": null,
+    "locked": false,
+    "unusedInnerLayers": [],
+    "propagationDelay": 0
+  },
+  "planeMatchesTrial": true,
+  "strictDRC": {
+    "Clearance Error": 2,
+    "Connection Error": 130
+  },
+  "clearanceFindings": [
+    {
+      "rule": "Clearance Error",
+      "objType": "Plane Zone to Via",
+      "ruleName": "copperThickness1oz",
+      "net": "GND",
+      "x": 74.97,
+      "y": 1065,
+      "layer": "Inner1",
+      "objs": [
+        "8ae199b84b265f97",
+        "955751db00742c25"
+      ],
+      "message": "(GND): e-1 to : e53 distance is 0mil, should be >= 10mil",
+      "globalIndex": "err0"
+    },
+    {
+      "rule": "Clearance Error",
+      "objType": "Hole to Plane Zone",
+      "ruleName": "copperThickness1oz",
+      "net": "GND",
+      "x": 71.97,
+      "y": 1065,
+      "layer": "Inner1",
+      "objs": [
+        "8ae199b84b265f97",
+        "955751db00742c25"
+      ],
+      "message": "(GND): e-1 to : e53 distance is 0mil, should be >= 10mil",
+      "globalIndex": "err1"
+    }
+  ]
+}

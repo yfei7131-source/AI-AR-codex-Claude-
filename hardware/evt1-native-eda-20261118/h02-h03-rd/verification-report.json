@@ -1,0 +1,398 @@
+{
+  "status": "VERIFIED",
+  "manufacturing": "BLOCKED",
+  "project_uuid": "69e0af55d0371eb2dc23e878fa4739d7541262712a367a7dafaeb9549ef936e9",
+  "pr36_baseline_sha256": "8d4025db711e620374155c702decab2d9b9e68bf8a7bc87cb3eeac97ca5f4586",
+  "rd_exported_sha256": "d68190e5bcf36bfc3308ff194d792d4c5526577aab8bf601722e1c2d8e713727",
+  "controlled_baseline_parity": {
+    "net_groups": 201,
+    "board_netlists_status": {
+      "M-MAIN-L": "PASS",
+      "M-OPT-BRIDGE": "PASS",
+      "M-AUD-R": "PASS"
+    },
+    "board_netlists_detail": {
+      "M-MAIN-L": {
+        "status": "PASS",
+        "physical_partition_status": "PASS",
+        "compiled_names_status": "PASS",
+        "equivalent_renamed_groups": [],
+        "expected_net_groups": 110,
+        "observed_net_groups": 110,
+        "expected_connected_board_pins": 494,
+        "observed_unique_members": 494,
+        "net_differences": [],
+        "duplicate_members": [],
+        "native_export_sha256": "fd505978841de685f4fc5e3c9dfeec3a42d069d540cb89a546796afec1635d25",
+        "all_schematic_membership_including_external": {
+          "status": "PASS",
+          "physical_partition_status": "PASS",
+          "compiled_names_status": "PASS",
+          "equivalent_renamed_groups": [],
+          "expected_net_groups": 110,
+          "observed_net_groups": 110,
+          "expected_connected_board_pins": 500,
+          "observed_unique_members": 500,
+          "net_differences": [],
+          "duplicate_members": []
+        },
+        "native_component_count": 118,
+        "native_pcb_projection_flags": {
+          "status": "PASS",
+          "missing": [],
+          "incorrect": [],
+          "extra_refs": []
+        }
+      },
+      "M-OPT-BRIDGE": {
+        "status": "PASS",
+        "physical_partition_status": "PASS",
+        "compiled_names_status": "PASS",
+        "equivalent_renamed_groups": [],
+        "expected_net_groups": 56,
+        "observed_net_groups": 56,
+        "expected_connected_board_pins": 294,
+        "observed_unique_members": 294,
+        "net_differences": [],
+        "duplicate_members": [],
+        "native_export_sha256": "5ce1c3aa5a49f8c483569223b6e00277ecc3b023548439ccf353f6b6810befc8",
+        "all_schematic_membership_including_external": {
+          "status": "PASS",
+          "physical_partition_status": "PASS",
+          "compiled_names_status": "PASS",
+          "equivalent_renamed_groups": [],
+          "expected_net_groups": 56,
+          "observed_net_groups": 56,
+          "expected_connected_board_pins": 294,
+          "observed_unique_members": 294,
+          "net_differences": [],
+          "duplicate_members": []
+        },
+        "native_component_count": 83,
+        "native_pcb_projection_flags": {
+          "status": "PASS",
+          "missing": [],
+          "incorrect": [],
+          "extra_refs": []
+        }
+      },
+      "M-AUD-R": {
+        "status": "PASS",
+        "physical_partition_status": "PASS",
+        "compiled_names_status": "PASS",
+        "equivalent_renamed_groups": [],
+        "expected_net_groups": 35,
+        "observed_net_groups": 35,
+        "expected_connected_board_pins": 183,
+        "observed_unique_members": 183,
+        "net_differences": [],
+        "duplicate_members": [],
+        "native_export_sha256": "4bcd1f077a112e27a5d19bdd164ee4909ebb8278fd14534c32ee574cbf1ec909",
+        "all_schematic_membership_including_external": {
+          "status": "PASS",
+          "physical_partition_status": "PASS",
+          "compiled_names_status": "PASS",
+          "equivalent_renamed_groups": [],
+          "expected_net_groups": 35,
+          "observed_net_groups": 35,
+          "expected_connected_board_pins": 189,
+          "observed_unique_members": 189,
+          "net_differences": [],
+          "duplicate_members": []
+        },
+        "native_component_count": 52,
+        "native_pcb_projection_flags": {
+          "status": "PASS",
+          "missing": [],
+          "incorrect": [],
+          "extra_refs": []
+        }
+      }
+    },
+    "archived_schematic_terminals": 1075,
+    "archived_explicit_nc": 92,
+    "hierarchy_topology_unchanged": true
+  },
+  "strict_erc_delta": {
+    "total_before": 268,
+    "total_after": 246,
+    "total_cleared": 22,
+    "boards": {
+      "M-MAIN-L": {
+        "strict_before": 124,
+        "strict_after": 112,
+        "cleared_count": 12,
+        "cleared_refs": [
+          "L1",
+          "Q1",
+          "U11",
+          "U13",
+          "U14",
+          "U17",
+          "U19",
+          "U20",
+          "U5",
+          "U6",
+          "U7",
+          "U9"
+        ],
+        "diagnostics_after": {
+          "ONLYSYMBOL": 7,
+          "MISSFOOTPRINT": 105
+        },
+        "hierarchy_proxies": [
+          {
+            "board": "M-MAIN-L",
+            "overview": "4d38590959875927",
+            "primitive": "ie24",
+            "designator": "CBB1",
+            "use": "hierarchical sheet proxy",
+            "child_page": "2ef9ed7773e0c42f",
+            "child_title": "01-audio-and-digital-translation-1"
+          },
+          {
+            "board": "M-MAIN-L",
+            "overview": "4d38590959875927",
+            "primitive": "ie30",
+            "designator": "CBB2",
+            "use": "hierarchical sheet proxy",
+            "child_page": "3fdc6001a068d82e",
+            "child_title": "02-battery-charger-and-dc-conversion-1"
+          },
+          {
+            "board": "M-MAIN-L",
+            "overview": "4d38590959875927",
+            "primitive": "ie36",
+            "designator": "CBB3",
+            "use": "hierarchical sheet proxy",
+            "child_page": "e99e682aca69cae1",
+            "child_title": "03-camera-rails-and-privacy-interlock-1"
+          },
+          {
+            "board": "M-MAIN-L",
+            "overview": "4d38590959875927",
+            "primitive": "ie42",
+            "designator": "CBB4",
+            "use": "hierarchical sheet proxy",
+            "child_page": "35d0bca337813128",
+            "child_title": "03-camera-rails-and-privacy-interlock-2"
+          },
+          {
+            "board": "M-MAIN-L",
+            "overview": "4d38590959875927",
+            "primitive": "ie48",
+            "designator": "CBB5",
+            "use": "hierarchical sheet proxy",
+            "child_page": "3e7683d1ed324ce9",
+            "child_title": "04-esp32-s3-usb-and-host-interfaces-1"
+          },
+          {
+            "board": "M-MAIN-L",
+            "overview": "4d38590959875927",
+            "primitive": "ie54",
+            "designator": "CBB6",
+            "use": "hierarchical sheet proxy",
+            "child_page": "89cd87358a17e3c2",
+            "child_title": "05-harness-and-board-interfaces-1"
+          },
+          {
+            "board": "M-MAIN-L",
+            "overview": "4d38590959875927",
+            "primitive": "ie60",
+            "designator": "CBB7",
+            "use": "hierarchical sheet proxy",
+            "child_page": "2d94cb183ed4ccdc",
+            "child_title": "06-supply-origins-1"
+          }
+        ]
+      },
+      "M-OPT-BRIDGE": {
+        "strict_before": 87,
+        "strict_after": 78,
+        "cleared_count": 9,
+        "cleared_refs": [
+          "U1",
+          "U10",
+          "U11",
+          "U12",
+          "U13",
+          "U14",
+          "U4",
+          "U7",
+          "U8"
+        ],
+        "diagnostics_after": {
+          "ONLYSYMBOL": 6,
+          "MISSFOOTPRINT": 72
+        },
+        "hierarchy_proxies": [
+          {
+            "board": "M-OPT-BRIDGE",
+            "overview": "e00fbca5c08cc114",
+            "primitive": "ie24",
+            "designator": "CBB1",
+            "use": "hierarchical sheet proxy",
+            "child_page": "a7f2cc2b0cf16956",
+            "child_title": "01-bridge-sensors-microphone-and-privacy-led-1"
+          },
+          {
+            "board": "M-OPT-BRIDGE",
+            "overview": "e00fbca5c08cc114",
+            "primitive": "ie30",
+            "designator": "CBB2",
+            "use": "hierarchical sheet proxy",
+            "child_page": "ed9e9866a1b746ac",
+            "child_title": "02-fpga-configuration-and-rail-sequence-1"
+          },
+          {
+            "board": "M-OPT-BRIDGE",
+            "overview": "e00fbca5c08cc114",
+            "primitive": "ie36",
+            "designator": "CBB3",
+            "use": "hierarchical sheet proxy",
+            "child_page": "b1ec1f299f13f9eb",
+            "child_title": "03-harness-and-board-interfaces-1"
+          },
+          {
+            "board": "M-OPT-BRIDGE",
+            "overview": "e00fbca5c08cc114",
+            "primitive": "ie42",
+            "designator": "CBB4",
+            "use": "hierarchical sheet proxy",
+            "child_page": "35df718b650fe548",
+            "child_title": "04-independent-optical-link-termination-1"
+          },
+          {
+            "board": "M-OPT-BRIDGE",
+            "overview": "e00fbca5c08cc114",
+            "primitive": "ie48",
+            "designator": "CBB5",
+            "use": "hierarchical sheet proxy",
+            "child_page": "d643a0611d67a31a",
+            "child_title": "05-optical-power-supervisor-and-avdd-qualification-1"
+          },
+          {
+            "board": "M-OPT-BRIDGE",
+            "overview": "e00fbca5c08cc114",
+            "primitive": "ie54",
+            "designator": "CBB6",
+            "use": "hierarchical sheet proxy",
+            "child_page": "2abf127033234e68",
+            "child_title": "06-supply-origins-1_1"
+          }
+        ]
+      },
+      "M-AUD-R": {
+        "strict_before": 57,
+        "strict_after": 56,
+        "cleared_count": 1,
+        "cleared_refs": [
+          "U3"
+        ],
+        "diagnostics_after": {
+          "ONLYSYMBOL": 5,
+          "MISSFOOTPRINT": 51
+        },
+        "hierarchy_proxies": [
+          {
+            "board": "M-AUD-R",
+            "overview": "e98944c2045546cf",
+            "primitive": "ie24",
+            "designator": "CBB1",
+            "use": "hierarchical sheet proxy",
+            "child_page": "30968987fbc1647d",
+            "child_title": "01-harness-and-board-interfaces-1"
+          },
+          {
+            "board": "M-AUD-R",
+            "overview": "e98944c2045546cf",
+            "primitive": "ie30",
+            "designator": "CBB2",
+            "use": "hierarchical sheet proxy",
+            "child_page": "8fa31840ba825b92",
+            "child_title": "02-right-audio-and-microphone-1"
+          },
+          {
+            "board": "M-AUD-R",
+            "overview": "e98944c2045546cf",
+            "primitive": "ie36",
+            "designator": "CBB3",
+            "use": "hierarchical sheet proxy",
+            "child_page": "bbbca101b360e299",
+            "child_title": "03-right-protected-battery-and-independent-charging-1"
+          },
+          {
+            "board": "M-AUD-R",
+            "overview": "e98944c2045546cf",
+            "primitive": "ie42",
+            "designator": "CBB4",
+            "use": "hierarchical sheet proxy",
+            "child_page": "9e364700c984f124",
+            "child_title": "04-supply-origins-1"
+          },
+          {
+            "board": "M-AUD-R",
+            "overview": "e98944c2045546cf",
+            "primitive": "ie48",
+            "designator": "CBB5",
+            "use": "hierarchical sheet proxy",
+            "child_page": "07dc7dde94c1bf76",
+            "child_title": "05-nrf5340-reference-clock-rf-and-swd-1"
+          }
+        ]
+      }
+    }
+  },
+  "implemented_ecos_verified": [
+    "ECO-01",
+    "ECO-02",
+    "ECO-10",
+    "ECO-13"
+  ],
+  "footprint_bindings_verified": 22,
+  "electrical_safety_tests": {
+    "eco02_privacy_interlock_pvt": {
+      "status": "PASS",
+      "i_led_mA": [
+        4.5,
+        10.36
+      ],
+      "v_ina_normal_V": [
+        0.972,
+        2.304
+      ],
+      "vth_l_V": [
+        0.755,
+        0.872
+      ],
+      "vth_h_V": [
+        2.536,
+        2.759
+      ],
+      "margin_low_mV": 100.3,
+      "margin_high_mV": 231.4,
+      "open_lockout_margin_mV": 743.5,
+      "short_lockout_margin_mV": 391.7,
+      "r_limit_short_power_mW": 75.6
+    },
+    "eco01_tps2116_power_mux": {
+      "status": "PASS",
+      "rating_A": 2.5,
+      "peak_load_A": 2.3,
+      "current_margin_A": 0.2,
+      "mode_wired": "Auto-Switchover (MODE=GND, PR1=GND per TI SLVSEW3 Sec 7.3.1)",
+      "note": "C_OR_OUT upgraded 1uF->22uF (plus distributed VSYS caps >=30uF eff); bench oscilloscope switchover droop check required at EVT1 bring-up (0.65A*65us/30uF=1.41V open-loop upper bound; TPS2116 fast switchover t_SW~5us typ -> 0.11V)."
+    },
+    "eco07_tps2553_ilim_audit": {
+      "status": "PASS",
+      "pr37_56k2_ios_max_mA": 520.7,
+      "corrected_61k9_ios_max_mA": 475.5,
+      "usb2_fs_limit_mA": 500.0
+    },
+    "eco03_fpga_seq_threshold": {
+      "status": "PASS",
+      "v_1v2_trip_min_V": 0.926,
+      "v_1v2_trip_max_V": 0.962
+    }
+  }
+}

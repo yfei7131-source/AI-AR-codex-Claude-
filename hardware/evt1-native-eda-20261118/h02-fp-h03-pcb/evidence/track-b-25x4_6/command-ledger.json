@@ -1,0 +1,43 @@
+[
+  {
+    "path": "pcb-save.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "2a9c4c2d57b0dc3762eb01a1c9c264b7337b88a19258ea60cb2c42780e1374f8",
+      "--doc",
+      "9ce45f14cb79dc9d",
+      "pcb",
+      "save"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "pcb-reload.json",
+    "command": [
+      "easyeda",
+      "--project",
+      "2a9c4c2d57b0dc3762eb01a1c9c264b7337b88a19258ea60cb2c42780e1374f8",
+      "doc",
+      "reload",
+      "9ce45f14cb79dc9d",
+      "--json"
+    ],
+    "exit_code": 0
+  },
+  {
+    "path": "archive-response.json",
+    "command": [
+      "easyeda",
+      "--window",
+      "bb506d69-fce2-4589-9a42-17c2ef571136",
+      "project",
+      "export",
+      "--project-uuid",
+      "2a9c4c2d57b0dc3762eb01a1c9c264b7337b88a19258ea60cb2c42780e1374f8",
+      "--out",
+      "<REPO_ROOT>\\hardware\\evt1-native-eda-20261118\\h02-fp-h03-pcb\\native\\ZY_AIAR_EVT1_H03_MECR01_25x4_6_TRIAL_NOT_FOR_FAB.epro2"
+    ],
+    "exit_code": 0
+  }
+]

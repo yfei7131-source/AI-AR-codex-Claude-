@@ -1,0 +1,497 @@
+{
+  "status": "OFFLINE_VERIFIED",
+  "manufacturing": "BLOCKED",
+  "baseline_sha256": "760cf179ecc0ea545f59ecbafb4466b11bf2677369d2d0eadffb2630ae342a0c",
+  "candidate_sha256": "6afa2e488d35ca9a7b9a22ea50ec8fa2ccfe0f1243695a00b179fc7779da301c",
+  "wire_net_attribute_edits": [
+    {
+      "board": "M-MAIN-L",
+      "page": "2d94cb183ed4ccdc",
+      "flag": "#FLG01",
+      "flag_primitive": "ie22",
+      "port_primitive": "ie30",
+      "wire": "ie58",
+      "wire_net_attribute": "ie59",
+      "line": "line0",
+      "endpoints": [
+        [
+          270,
+          165
+        ],
+        [
+          280,
+          165
+        ]
+      ],
+      "before": "EVT1_#FLG01_SUPPLY_ORIGIN",
+      "after": "1V8_FPGA_IO",
+      "source": "J_BTB_L.P6, source U4_1V8F on the bridge"
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "2d94cb183ed4ccdc",
+      "flag": "#FLG02",
+      "flag_primitive": "ie34",
+      "port_primitive": "ie42",
+      "wire": "ie60",
+      "wire_net_attribute": "ie61",
+      "line": "line1",
+      "endpoints": [
+        [
+          790,
+          165
+        ],
+        [
+          800,
+          165
+        ]
+      ],
+      "before": "EVT1_#FLG02_SUPPLY_ORIGIN",
+      "after": "VBAT_R_RET",
+      "source": "J_BTB_L.PWR1, protected right pack"
+    },
+    {
+      "board": "M-MAIN-L",
+      "page": "2d94cb183ed4ccdc",
+      "flag": "#FLG03",
+      "flag_primitive": "ie46",
+      "port_primitive": "ie54",
+      "wire": "ie62",
+      "wire_net_attribute": "ie63",
+      "line": "line2",
+      "endpoints": [
+        [
+          1310,
+          165
+        ],
+        [
+          1320,
+          165
+        ]
+      ],
+      "before": "EVT1_#FLG03_SUPPLY_ORIGIN",
+      "after": "VBAT_R_ISOLATED",
+      "source": "Q_CHG_ISO_R conducts from protected right pack when enabled"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "page": "2abf127033234e68",
+      "flag": "#FLG01",
+      "flag_primitive": "ie22",
+      "port_primitive": "ie30",
+      "wire": "ie82",
+      "wire_net_attribute": "ie83",
+      "line": "line0",
+      "endpoints": [
+        [
+          270,
+          165
+        ],
+        [
+          280,
+          165
+        ]
+      ],
+      "before": "EVT1_#FLG01_SUPPLY_ORIGIN",
+      "after": "GND",
+      "source": "J_BRIDGE_IN.PWR2, system return"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "page": "2abf127033234e68",
+      "flag": "#FLG02",
+      "flag_primitive": "ie34",
+      "port_primitive": "ie42",
+      "wire": "ie84",
+      "wire_net_attribute": "ie85",
+      "line": "line1",
+      "endpoints": [
+        [
+          790,
+          165
+        ],
+        [
+          800,
+          165
+        ]
+      ],
+      "before": "EVT1_#FLG02_SUPPLY_ORIGIN",
+      "after": "VSYS",
+      "source": "J_BRIDGE_IN.P2/P3, source LM66200 on left main board"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "page": "2abf127033234e68",
+      "flag": "#FLG03",
+      "flag_primitive": "ie46",
+      "port_primitive": "ie54",
+      "wire": "ie86",
+      "wire_net_attribute": "ie87",
+      "line": "line2",
+      "endpoints": [
+        [
+          1310,
+          165
+        ],
+        [
+          1320,
+          165
+        ]
+      ],
+      "before": "EVT1_#FLG03_SUPPLY_ORIGIN",
+      "after": "1V8_SYS",
+      "source": "J_BRIDGE_IN.P4/P5, source TPS62840 on left main board"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "page": "2abf127033234e68",
+      "flag": "#FLG04",
+      "flag_primitive": "ie58",
+      "port_primitive": "ie66",
+      "wire": "ie88",
+      "wire_net_attribute": "ie89",
+      "line": "line3",
+      "endpoints": [
+        [
+          270,
+          225
+        ],
+        [
+          280,
+          225
+        ]
+      ],
+      "before": "EVT1_#FLG04_SUPPLY_ORIGIN",
+      "after": "1V2_FPGA_PLL",
+      "source": "R_PLL supplies filtered core rail"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "page": "2abf127033234e68",
+      "flag": "#FLG05",
+      "flag_primitive": "ie70",
+      "port_primitive": "ie78",
+      "wire": "ie90",
+      "wire_net_attribute": "ie91",
+      "line": "line4",
+      "endpoints": [
+        [
+          790,
+          225
+        ],
+        [
+          800,
+          225
+        ]
+      ],
+      "before": "EVT1_#FLG05_SUPPLY_ORIGIN",
+      "after": "1V8_FPGA_VPP",
+      "source": "R_VPP supplies D4 from the inherited 1V8 FPGA IO rail; not NVCM programming voltage"
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "9e364700c984f124",
+      "flag": "#FLG01",
+      "flag_primitive": "ie22",
+      "port_primitive": "ie30",
+      "wire": "ie58",
+      "wire_net_attribute": "ie59",
+      "line": "line0",
+      "endpoints": [
+        [
+          270,
+          165
+        ],
+        [
+          280,
+          165
+        ]
+      ],
+      "before": "EVT1_#FLG01_SUPPLY_ORIGIN",
+      "after": "GND",
+      "source": "J_BTB_R.PWR2, system return"
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "9e364700c984f124",
+      "flag": "#FLG02",
+      "flag_primitive": "ie34",
+      "port_primitive": "ie42",
+      "wire": "ie60",
+      "wire_net_attribute": "ie61",
+      "line": "line1",
+      "endpoints": [
+        [
+          790,
+          165
+        ],
+        [
+          800,
+          165
+        ]
+      ],
+      "before": "EVT1_#FLG02_SUPPLY_ORIGIN",
+      "after": "VBUS_5V",
+      "source": "J_BTB_R.P1, charging interface on left main board"
+    },
+    {
+      "board": "M-AUD-R",
+      "page": "9e364700c984f124",
+      "flag": "#FLG03",
+      "flag_primitive": "ie46",
+      "port_primitive": "ie54",
+      "wire": "ie62",
+      "wire_net_attribute": "ie63",
+      "line": "line2",
+      "endpoints": [
+        [
+          1310,
+          165
+        ],
+        [
+          1320,
+          165
+        ]
+      ],
+      "before": "EVT1_#FLG03_SUPPLY_ORIGIN",
+      "after": "1V8_SYS",
+      "source": "J_BTB_R.P4, source TPS62840 on left main board"
+    }
+  ],
+  "hierarchy_proxies": [
+    {
+      "board": "M-MAIN-L",
+      "overview": "4d38590959875927",
+      "primitive": "ie24",
+      "designator": "CBB1",
+      "use": "hierarchical sheet proxy",
+      "child_page": "2ef9ed7773e0c42f",
+      "child_title": "01-audio-and-digital-translation-1"
+    },
+    {
+      "board": "M-MAIN-L",
+      "overview": "4d38590959875927",
+      "primitive": "ie30",
+      "designator": "CBB2",
+      "use": "hierarchical sheet proxy",
+      "child_page": "3fdc6001a068d82e",
+      "child_title": "02-battery-charger-and-dc-conversion-1"
+    },
+    {
+      "board": "M-MAIN-L",
+      "overview": "4d38590959875927",
+      "primitive": "ie36",
+      "designator": "CBB3",
+      "use": "hierarchical sheet proxy",
+      "child_page": "e99e682aca69cae1",
+      "child_title": "03-camera-rails-and-privacy-interlock-1"
+    },
+    {
+      "board": "M-MAIN-L",
+      "overview": "4d38590959875927",
+      "primitive": "ie42",
+      "designator": "CBB4",
+      "use": "hierarchical sheet proxy",
+      "child_page": "35d0bca337813128",
+      "child_title": "03-camera-rails-and-privacy-interlock-2"
+    },
+    {
+      "board": "M-MAIN-L",
+      "overview": "4d38590959875927",
+      "primitive": "ie48",
+      "designator": "CBB5",
+      "use": "hierarchical sheet proxy",
+      "child_page": "3e7683d1ed324ce9",
+      "child_title": "04-esp32-s3-usb-and-host-interfaces-1"
+    },
+    {
+      "board": "M-MAIN-L",
+      "overview": "4d38590959875927",
+      "primitive": "ie54",
+      "designator": "CBB6",
+      "use": "hierarchical sheet proxy",
+      "child_page": "89cd87358a17e3c2",
+      "child_title": "05-harness-and-board-interfaces-1"
+    },
+    {
+      "board": "M-MAIN-L",
+      "overview": "4d38590959875927",
+      "primitive": "ie60",
+      "designator": "CBB7",
+      "use": "hierarchical sheet proxy",
+      "child_page": "2d94cb183ed4ccdc",
+      "child_title": "06-supply-origins-1"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "overview": "e00fbca5c08cc114",
+      "primitive": "ie24",
+      "designator": "CBB1",
+      "use": "hierarchical sheet proxy",
+      "child_page": "a7f2cc2b0cf16956",
+      "child_title": "01-bridge-sensors-microphone-and-privacy-led-1"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "overview": "e00fbca5c08cc114",
+      "primitive": "ie30",
+      "designator": "CBB2",
+      "use": "hierarchical sheet proxy",
+      "child_page": "ed9e9866a1b746ac",
+      "child_title": "02-fpga-configuration-and-rail-sequence-1"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "overview": "e00fbca5c08cc114",
+      "primitive": "ie36",
+      "designator": "CBB3",
+      "use": "hierarchical sheet proxy",
+      "child_page": "b1ec1f299f13f9eb",
+      "child_title": "03-harness-and-board-interfaces-1"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "overview": "e00fbca5c08cc114",
+      "primitive": "ie42",
+      "designator": "CBB4",
+      "use": "hierarchical sheet proxy",
+      "child_page": "35df718b650fe548",
+      "child_title": "04-independent-optical-link-termination-1"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "overview": "e00fbca5c08cc114",
+      "primitive": "ie48",
+      "designator": "CBB5",
+      "use": "hierarchical sheet proxy",
+      "child_page": "d643a0611d67a31a",
+      "child_title": "05-optical-power-supervisor-and-avdd-qualification-1"
+    },
+    {
+      "board": "M-OPT-BRIDGE",
+      "overview": "e00fbca5c08cc114",
+      "primitive": "ie54",
+      "designator": "CBB6",
+      "use": "hierarchical sheet proxy",
+      "child_page": "2abf127033234e68",
+      "child_title": "06-supply-origins-1_1"
+    },
+    {
+      "board": "M-AUD-R",
+      "overview": "e98944c2045546cf",
+      "primitive": "ie24",
+      "designator": "CBB1",
+      "use": "hierarchical sheet proxy",
+      "child_page": "30968987fbc1647d",
+      "child_title": "01-harness-and-board-interfaces-1"
+    },
+    {
+      "board": "M-AUD-R",
+      "overview": "e98944c2045546cf",
+      "primitive": "ie30",
+      "designator": "CBB2",
+      "use": "hierarchical sheet proxy",
+      "child_page": "8fa31840ba825b92",
+      "child_title": "02-right-audio-and-microphone-1"
+    },
+    {
+      "board": "M-AUD-R",
+      "overview": "e98944c2045546cf",
+      "primitive": "ie36",
+      "designator": "CBB3",
+      "use": "hierarchical sheet proxy",
+      "child_page": "bbbca101b360e299",
+      "child_title": "03-right-protected-battery-and-independent-charging-1"
+    },
+    {
+      "board": "M-AUD-R",
+      "overview": "e98944c2045546cf",
+      "primitive": "ie42",
+      "designator": "CBB4",
+      "use": "hierarchical sheet proxy",
+      "child_page": "9e364700c984f124",
+      "child_title": "04-supply-origins-1"
+    },
+    {
+      "board": "M-AUD-R",
+      "overview": "e98944c2045546cf",
+      "primitive": "ie48",
+      "designator": "CBB5",
+      "use": "hierarchical sheet proxy",
+      "child_page": "07dc7dde94c1bf76",
+      "child_title": "05-nrf5340-reference-clock-rf-and-swd-1"
+    }
+  ],
+  "footprint_binding": {
+    "assetId": "7391112ac3d1c151",
+    "deviceId": "2c8383e512515cad",
+    "sourceReference": "L2_1V8",
+    "mpn": "DFE21CCN2R2MELL",
+    "manufacturerSource": "https://search.murata.co.jp/Ceramy/image/img/P02/JETE243A-0052.pdf",
+    "drawing": "JETE243A-0052D-01 §12.1",
+    "landCopperMm": [
+      [
+        "1",
+        -0.8,
+        0.0,
+        0.8,
+        1.4
+      ],
+      [
+        "2",
+        0.8,
+        0.0,
+        0.8,
+        1.4
+      ]
+    ],
+    "terminalContract": {
+      "1": "BK_SW",
+      "2": "1V8_SYS"
+    }
+  },
+  "additional_footprint_bindings": [
+    {
+      "assetId": "34c183bc51cfb609",
+      "deviceId": "1c28d1d16e4e1c73",
+      "sourceReference": "D3_PRIV",
+      "mpn": "APHD1608LCGCK",
+      "manufacturerSource": "https://www.kingbrightusa.com/images/catalog/SPEC/APHD1608LCGCK.pdf",
+      "drawing": "DSAO7428 / 1203015409 V.4B p. 1",
+      "landCopperMm": [
+        [
+          "K",
+          -0.75,
+          0.0,
+          0.7,
+          0.8
+        ],
+        [
+          "A",
+          0.75,
+          0.0,
+          0.7,
+          0.8
+        ]
+      ],
+      "manufacturerPins": {
+        "1": "K",
+        "2": "A"
+      },
+      "terminalContract": {
+        "K": "GND",
+        "A": "PRIV_LED_ANODE"
+      },
+      "fields": {
+        "MPN": [
+          "APHD1608LZGCK (or WP710A10LID)",
+          "APHD1608LCGCK"
+        ],
+        "UserDocLink": [
+          "https://www.kingbrightusa.com/images/catalog/SPEC/WP710A10LID.pdf",
+          "https://www.kingbrightusa.com/images/catalog/SPEC/APHD1608LCGCK.pdf"
+        ]
+      }
+    }
+  ]
+}

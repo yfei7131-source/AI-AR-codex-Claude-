@@ -1,0 +1,7325 @@
+PROTEL NETLIST 2.0
+[
+DESIGNATOR
+U21
+FOOTPRINT
+
+PARTTYPE
+EVT1_U21_U8_PDM_LS
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_U21_U8_PDM_LS
+PCB Layer
+Default
+Name
+EVT1_U21_U8_PDM_LS
+Designator
+U21
+Value
+U8_PDM_LS | SN74AXC8T245RJWR
+UserDocLink
+https://www.ti.com/lit/ds/symlink/sn74axc8t245.pdf
+Description
+
+Symbol
+EVT1_U21_U8_PDM_LS
+EVT1 Source Ref
+U8_PDM_LS
+BOM Line
+BOM-19
+MPN
+SN74AXC8T245RJWR
+Manufacturer
+Texas Instruments
+Footprint Status
+BLOCKED
+Design Notes
+DIR1=H | bank=1 dir=H; Bank1 A1 | bank=1 dir=H; Bank1 A2 | bank=1 dir=H; Bank1 A3 | bank=1 dir=H; Bank1 A4 | bank=2 dir=L; Bank2 A5 | bank=2 dir=L; Bank2 A6 | bank=2 dir=L; Bank2 A7 | bank=2 dir=L; Bank2 A8 | DIR2=L | bank=2 dir=L; Bank2 B8; actual ground net, not an unconnected alias | bank=2 dir=L; Bank2 B7 | bank=2 dir=L; Bank2 B6 | bank=2 dir=L; Bank2 B5 | bank=1 dir=H; Bank1 B4 | bank=1 dir=H; Bank1 B3 | bank=1 dir=H; Bank1 B2 | bank=1 dir=H; Bank1 B1 | OE active-low tied GND | VCCA
+Origin Footprint
+
+Unique ID
+2c27b242a2875aaf
+Manufacturer Part
+SN74AXC8T245RJWR
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+U8
+FOOTPRINT
+
+PARTTYPE
+EVT1_U8_U8_AUD_LS2
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_U8_U8_AUD_LS2
+PCB Layer
+Default
+Name
+EVT1_U8_U8_AUD_LS2
+Designator
+U8
+Value
+U8_AUD_LS2 | SN74AXC4T245RSVR
+UserDocLink
+https://www.ti.com/lit/ds/symlink/sn74axc4t245.pdf
+Description
+
+Symbol
+EVT1_U8_U8_AUD_LS2
+EVT1 Source Ref
+U8_AUD_LS2
+BOM Line
+BOM-47
+MPN
+SN74AXC4T245RSVR
+Manufacturer
+Texas Instruments
+Footprint Status
+BLOCKED
+Design Notes
+VCCB | VCCA | DIR1=H | DIR2=H | bank=1 dir=H; Bank1 A1 | bank=1 dir=H; Bank1 A2 | bank=2 dir=H; Bank2 A3; actual ground net, not an unconnected alias | bank=2 dir=H; Bank2 A4; actual ground net, not an unconnected alias | bank=2 dir=H; Bank2 B4 | bank=2 dir=H; Bank2 B3 | bank=1 dir=H; Bank1 B2 | bank=1 dir=H; Bank1 B1
+Origin Footprint
+
+Unique ID
+484e3008dca2bfa8
+Manufacturer Part
+SN74AXC4T245RSVR
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+U10
+FOOTPRINT
+
+PARTTYPE
+EVT1_U10_U10_AMP_L
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_U10_U10_AMP_L
+PCB Layer
+Default
+Name
+EVT1_U10_U10_AMP_L
+Designator
+U10
+Value
+U10_AMP_L | MAX98357AEWL+T
+UserDocLink
+https://www.analog.com/media/en/technical-documentation/data-sheets/max98357a-max98357b.pdf
+Description
+
+Symbol
+EVT1_U10_U10_AMP_L
+EVT1 Source Ref
+U10_AMP_L
+BOM Line
+BOM-04
+MPN
+MAX98357AEWL+T
+Manufacturer
+Analog Devices
+Footprint Status
+BLOCKED
+Design Notes
+direct GPIO -> LEFT (>B2 1.5 V max) | 10 uF + 0.1 uF at bump | tied to adjacent C2 GND bump (12 dB, no via; ADI AN6643)
+Origin Footprint
+
+Unique ID
+c69de7c088414df5
+Manufacturer Part
+MAX98357AEWL+T
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+MK1
+FOOTPRINT
+
+PARTTYPE
+EVT1_MK1_MK1_L
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_MK1_MK1_L
+PCB Layer
+Default
+Name
+EVT1_MK1_MK1_L
+Designator
+MK1
+Value
+MK1_L | IM69D130V01XTSA1
+UserDocLink
+https://www.infineon.com/assets/row/public/documents/30/49/infineon-im69d130-datasheet-en.pdf
+Description
+
+Symbol
+EVT1_MK1_MK1_L
+EVT1 Source Ref
+MK1_L
+BOM Line
+BOM-14
+MPN
+IM69D130V01XTSA1
+Manufacturer
+Infineon
+Footprint Status
+BLOCKED
+Design Notes
+tDV <= 100 ns, tDD 40..80 ns, tHZ 5..30 ns | 100 nF at VDD | SELECT=GND
+Origin Footprint
+
+Unique ID
+5d01f3e0551b8d15
+Manufacturer Part
+IM69D130V01XTSA1
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C24
+FOOTPRINT
+
+PARTTYPE
+EVT1_C24_C_MK1_L
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C24_C_MK1_L
+PCB Layer
+Default
+Name
+EVT1_C24_C_MK1_L
+Designator
+C24
+Value
+C_MK1_L | 100nF X7R 6.3V 0201
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0201_0603Metric
+Symbol
+EVT1_C24_C_MK1_L
+EVT1 Source Ref
+C_MK1_L
+BOM Line
+BOM-D1-AT03
+MPN
+0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+Infineon IM69D130 Table4/Figure10: close to pin2
+Unique ID
+7c674fedd66d7165
+Manufacturer Part
+0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C29
+FOOTPRINT
+
+PARTTYPE
+EVT1_C29_C_U8_AUD_LS2_A
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C29_C_U8_AUD_LS2_A
+PCB Layer
+Default
+Name
+EVT1_C29_C_U8_AUD_LS2_A
+Designator
+C29
+Value
+C_U8_AUD_LS2_A | 100nF X7R 6.3V 0201
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0201_0603Metric
+Symbol
+EVT1_C29_C_U8_AUD_LS2_A
+EVT1 Source Ref
+C_U8_AUD_LS2_A
+BOM Line
+BOM-D1-AT03
+MPN
+0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+TI power-supply recommendations: nearest VCC/GND pins
+Unique ID
+5bfcee5f0e3d202c
+Manufacturer Part
+0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C30
+FOOTPRINT
+
+PARTTYPE
+EVT1_C30_C_U8_AUD_LS2_B
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C30_C_U8_AUD_LS2_B
+PCB Layer
+Default
+Name
+EVT1_C30_C_U8_AUD_LS2_B
+Designator
+C30
+Value
+C_U8_AUD_LS2_B | 100nF X7R 6.3V 0201
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0201_0603Metric
+Symbol
+EVT1_C30_C_U8_AUD_LS2_B
+EVT1 Source Ref
+C_U8_AUD_LS2_B
+BOM Line
+BOM-D1-AT03
+MPN
+0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+TI power-supply recommendations: nearest VCC/GND pins
+Unique ID
+a2ee6ceb65d30336
+Manufacturer Part
+0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C37
+FOOTPRINT
+
+PARTTYPE
+EVT1_C37_C_U8_PDM_LS_A
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C37_C_U8_PDM_LS_A
+PCB Layer
+Default
+Name
+EVT1_C37_C_U8_PDM_LS_A
+Designator
+C37
+Value
+C_U8_PDM_LS_A | 100nF X7R 6.3V 0201
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0201_0603Metric
+Symbol
+EVT1_C37_C_U8_PDM_LS_A
+EVT1 Source Ref
+C_U8_PDM_LS_A
+BOM Line
+BOM-D1-AT03
+MPN
+0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+TI power-supply recommendations: nearest VCC/GND pins
+Unique ID
+ff078052695da6b6
+Manufacturer Part
+0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C38
+FOOTPRINT
+
+PARTTYPE
+EVT1_C38_C_U8_PDM_LS_B
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C38_C_U8_PDM_LS_B
+PCB Layer
+Default
+Name
+EVT1_C38_C_U8_PDM_LS_B
+Designator
+C38
+Value
+C_U8_PDM_LS_B | 100nF X7R 6.3V 0201
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0201_0603Metric
+Symbol
+EVT1_C38_C_U8_PDM_LS_B
+EVT1 Source Ref
+C_U8_PDM_LS_B
+BOM Line
+BOM-D1-AT03
+MPN
+0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+TI power-supply recommendations: nearest VCC/GND pins
+Unique ID
+6827ca7a6bd67e26
+Manufacturer Part
+0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C39
+FOOTPRINT
+
+PARTTYPE
+EVT1_C39_C_U10_AMP_L_BULK
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C39_C_U10_AMP_L_BULK
+PCB Layer
+Default
+Name
+EVT1_C39_C_U10_AMP_L_BULK
+Designator
+C39
+Value
+C_U10_AMP_L_BULK | 10uF X5R 10V 0402
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C39_C_U10_AMP_L_BULK
+EVT1 Source Ref
+C_U10_AMP_L_BULK
+BOM Line
+BOM-D1-AT03
+MPN
+0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+check effective capacitance at actual DC bias and local pulse load
+Unique ID
+54d3d224326b3f8f
+Manufacturer Part
+0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C40
+FOOTPRINT
+
+PARTTYPE
+EVT1_C40_C_U10_AMP_L_HF
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C40_C_U10_AMP_L_HF
+PCB Layer
+Default
+Name
+EVT1_C40_C_U10_AMP_L_HF
+Designator
+C40
+Value
+C_U10_AMP_L_HF | 100nF X7R 10V 0201
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0201_0603Metric
+Symbol
+EVT1_C40_C_U10_AMP_L_HF
+EVT1 Source Ref
+C_U10_AMP_L_HF
+BOM Line
+BOM-D1-AT03
+MPN
+0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+ADI supply input p33: directly at A2/C2
+Unique ID
+12af2948e5a85261
+Manufacturer Part
+0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+SPK1
+FOOTPRINT
+
+PARTTYPE
+EVT1_SPK1_SPK_L
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+no
+Device
+EVT1_SPK1_SPK_L
+PCB Layer
+Default
+Name
+EVT1_SPK1_SPK_L
+Designator
+SPK1
+Value
+SPK_L | MPN_TBD (8 ohm micro-speaker)
+UserDocLink
+
+Description
+
+Symbol
+EVT1_SPK1_SPK_L
+EVT1 Source Ref
+SPK_L
+BOM Line
+BOM-52
+MPN
+MPN_TBD (8 ohm micro-speaker)
+Manufacturer
+TBD
+Footprint Status
+External assembly boundary; no PCB footprint
+Design Notes
+
+Origin Footprint
+
+Unique ID
+d2e4bc6839561c23
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+TP6
+FOOTPRINT
+
+PARTTYPE
+EVT1_TP6_TP_SPK_L_N
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_TP6_TP_SPK_L_N
+PCB Layer
+Default
+Name
+EVT1_TP6_TP_SPK_L_N
+Designator
+TP6
+Value
+TP_SPK_L_N | SPK_LEAD_PAD
+UserDocLink
+
+Description
+
+Symbol
+EVT1_TP6_TP_SPK_L_N
+EVT1 Source Ref
+TP_SPK_L_N
+BOM Line
+BOM-CAD-TP_SPK_L_N
+MPN
+PCB copper pad
+Manufacturer
+
+Footprint Status
+BLOCKED
+Design Notes
+On-board speaker lead termination per BOM-52. Floating class-D BTL; never tie to ground.
+Origin Footprint
+
+Unique ID
+84aa4de12bc2747c
+Manufacturer Part
+PCB copper pad
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+TP7
+FOOTPRINT
+
+PARTTYPE
+EVT1_TP7_TP_SPK_L_P
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_TP7_TP_SPK_L_P
+PCB Layer
+Default
+Name
+EVT1_TP7_TP_SPK_L_P
+Designator
+TP7
+Value
+TP_SPK_L_P | SPK_LEAD_PAD
+UserDocLink
+
+Description
+
+Symbol
+EVT1_TP7_TP_SPK_L_P
+EVT1 Source Ref
+TP_SPK_L_P
+BOM Line
+BOM-CAD-TP_SPK_L_P
+MPN
+PCB copper pad
+Manufacturer
+
+Footprint Status
+BLOCKED
+Design Notes
+On-board speaker lead termination per BOM-52. Floating class-D BTL; never tie to ground.
+Origin Footprint
+
+Unique ID
+7a581efd1dfccb02
+Manufacturer Part
+PCB copper pad
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+U2
+FOOTPRINT
+
+PARTTYPE
+EVT1_U2_U4_BB
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_U2_U4_BB
+PCB Layer
+Default
+Name
+EVT1_U2_U4_BB
+Designator
+U2
+Value
+U4_BB | TPS63805YFFR
+UserDocLink
+https://ti.com/lit/pdf/slvsds9
+Description
+
+Symbol
+EVT1_U2_U4_BB
+EVT1 Source Ref
+U4_BB
+BOM Line
+BOM-06
+MPN
+TPS63805YFFR
+Manufacturer
+Texas Instruments
+Footprint Status
+BLOCKED
+Design Notes
+EN tied VIN (must not float) | CIN eff >= 4 uF | power-save mode | R_FB1 560k (VOUT) / R_FB2 100k (GND): 0.5 V x 6.6 = 3.30 V | open-drain, unused | COUT eff >= 7 uF (22 uF nom)
+Origin Footprint
+
+Unique ID
+48f0ae2437312dae
+Manufacturer Part
+TPS63805YFFR
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+U3
+FOOTPRINT
+
+PARTTYPE
+EVT1_U3_U3_L
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_U3_U3_L
+PCB Layer
+Default
+Name
+EVT1_U3_U3_L
+Designator
+U3
+Value
+U3_L | BQ25180YBGR
+UserDocLink
+https://ti.com/lit/pdf/SLUSE99
+Description
+
+Symbol
+EVT1_U3_U3_L
+EVT1 Source Ref
+U3_L
+BOM Line
+BOM-20
+MPN
+BQ25180YBGR
+Manufacturer
+Texas Instruments
+Footprint Status
+BLOCKED
+Design Notes
+open-drain; no free host GPIO; status polled over I2C | 1 uF (25 V) at pin | 7-bit addr 0x6A | SYS_REG default 4.5 V (> VBAT_R max 4.2 V) keeps LM66200 priority; 10 uF | 1 uF | 10k NTC in pack (38 uA bias); TS must not float (charge suspends)
+Origin Footprint
+
+Unique ID
+66797bcd97f4f6c2
+Manufacturer Part
+BQ25180YBGR
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+U4
+FOOTPRINT
+
+PARTTYPE
+EVT1_U4_U4_1V8
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_U4_U4_1V8
+PCB Layer
+Default
+Name
+EVT1_U4_U4_1V8
+Designator
+U4
+Value
+U4_1V8 | TPS62840DLCR
+UserDocLink
+https://www.ti.com/lit/ds/symlink/tps62840.pdf
+Description
+
+Symbol
+EVT1_U4_U4_1V8
+EVT1 Source Ref
+U4_1V8
+BOM Line
+BOM-08
+MPN
+TPS62840DLCR
+Manufacturer
+Texas Instruments
+Footprint Status
+BLOCKED
+Design Notes
+CIN 4.7 uF | auto PFM/PWM | always on (internal 450k pull-down overridden) | SLVSEC6D Table 1: TPS62840DLC 1.8V requires VSET to GND via 0-ohm link | sense at COUT 10 uF
+Origin Footprint
+
+Unique ID
+bac468049775df37
+Manufacturer Part
+TPS62840DLCR
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+U9
+FOOTPRINT
+
+PARTTYPE
+EVT1_U9_U4_OR
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_U9_U4_OR
+PCB Layer
+Default
+Name
+EVT1_U9_U4_OR
+Designator
+U9
+Value
+U4_OR | LM66200DRLR
+UserDocLink
+https://www.ti.com/lit/ds/symlink/lm66200.pdf
+Description
+
+Symbol
+EVT1_U9_U4_OR
+EVT1 Source Ref
+U4_OR
+BOM Line
+BOM-21
+MPN
+LM66200DRLR
+Manufacturer
+Texas Instruments
+Footprint Status
+BLOCKED
+Design Notes
+SLVSG04 Table 5-1; /ON tied GND, ST unused
+Origin Footprint
+
+Unique ID
+2dbbb3175ebf36d7
+Manufacturer Part
+LM66200DRLR
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+BAT1
+FOOTPRINT
+
+PARTTYPE
+EVT1_BAT1_BAT_L
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+no
+Device
+EVT1_BAT1_BAT_L
+PCB Layer
+Default
+Name
+EVT1_BAT1_BAT_L
+Designator
+BAT1
+Value
+BAT_L | Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47m...
+UserDocLink
+https://www.grepow.com/shaped-battery/ultra-narrow-battery.html
+Description
+
+Symbol
+EVT1_BAT1_BAT_L
+EVT1 Source Ref
+BAT_L
+BOM Line
+BOM-43
+MPN
+Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight)
+Manufacturer
+Grepow (格瑞普)
+Footprint Status
+External assembly boundary; no PCB footprint
+Design Notes
+103AT-compatible R/T curve required; curve and exact pack pin order OPEN | Required external protected-pack contract; raw cell connection PROHIBITED
+Origin Footprint
+
+Unique ID
+209f0e49c54e94d7
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+Q1
+FOOTPRINT
+
+PARTTYPE
+EVT1_Q1_Q_CHG_ISO_R
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_Q1_Q_CHG_ISO_R
+PCB Layer
+Default
+Name
+EVT1_Q1_Q_CHG_ISO_R
+Designator
+Q1
+Value
+Q_CHG_ISO_R | PMV65XP
+UserDocLink
+https://assets.nexperia.com/documents/data-sheet/PMV65XP.pdf
+Description
+
+Origin Footprint
+Package_TO_SOT_SMD:SOT-23
+Symbol
+EVT1_Q1_Q_CHG_ISO_R
+EVT1 Source Ref
+Q_CHG_ISO_R
+BOM Line
+BOM-D1-PWR-Q_CHG_ISO_R
+MPN
+PMV65XP
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+
+Unique ID
+f76c01de5337d462
+Manufacturer Part
+PMV65XP
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C1
+FOOTPRINT
+
+PARTTYPE
+EVT1_C1_C_BB_IN
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C1_C_BB_IN
+PCB Layer
+Default
+Name
+EVT1_C1_C_BB_IN
+Designator
+C1
+Value
+C_BB_IN | 10uF 10V X5R; effective >=4uF
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0603_1608Metric
+Symbol
+EVT1_C1_C_BB_IN
+EVT1 Source Ref
+C_BB_IN
+BOM Line
+BOM-D1-PWR-C_BB_IN
+MPN
+10uF 10V X5R; effective >=4uF
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+place at corresponding IC pins; DC-bias curve approval OPEN
+Unique ID
+b4693cfd16d534cd
+Manufacturer Part
+10uF 10V X5R; effective >=4uF
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C2
+FOOTPRINT
+
+PARTTYPE
+EVT1_C2_C_BB_OUT
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C2_C_BB_OUT
+PCB Layer
+Default
+Name
+EVT1_C2_C_BB_OUT
+Designator
+C2
+Value
+C_BB_OUT | 22uF 10V X5R; effective >=7uF
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0603_1608Metric
+Symbol
+EVT1_C2_C_BB_OUT
+EVT1 Source Ref
+C_BB_OUT
+BOM Line
+BOM-D1-PWR-C_BB_OUT
+MPN
+22uF 10V X5R; effective >=7uF
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+place at corresponding IC pins; DC-bias curve approval OPEN
+Unique ID
+a2c5d49bc5dde298
+Manufacturer Part
+22uF 10V X5R; effective >=7uF
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C3
+FOOTPRINT
+
+PARTTYPE
+EVT1_C3_C_BK_IN
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C3_C_BK_IN
+PCB Layer
+Default
+Name
+EVT1_C3_C_BK_IN
+Designator
+C3
+Value
+C_BK_IN | 4.7uF 10V X5R; effective >=1uF
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C3_C_BK_IN
+EVT1 Source Ref
+C_BK_IN
+BOM Line
+BOM-D1-PWR-C_BK_IN
+MPN
+4.7uF 10V X5R; effective >=1uF
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+place at corresponding IC pins; DC-bias curve approval OPEN
+Unique ID
+cc82bf2c2e22e605
+Manufacturer Part
+4.7uF 10V X5R; effective >=1uF
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C4
+FOOTPRINT
+
+PARTTYPE
+EVT1_C4_C_BK_OUT
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C4_C_BK_OUT
+PCB Layer
+Default
+Name
+EVT1_C4_C_BK_OUT
+Designator
+C4
+Value
+C_BK_OUT | 10uF 6.3V X5R; effective 3..40uF
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C4_C_BK_OUT
+EVT1 Source Ref
+C_BK_OUT
+BOM Line
+BOM-D1-PWR-C_BK_OUT
+MPN
+10uF 6.3V X5R; effective 3..40uF
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+place at corresponding IC pins; DC-bias curve approval OPEN
+Unique ID
+3a68d3ddabf48558
+Manufacturer Part
+10uF 6.3V X5R; effective 3..40uF
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C7
+FOOTPRINT
+
+PARTTYPE
+EVT1_C7_C_CHG_L_BAT
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C7_C_CHG_L_BAT
+PCB Layer
+Default
+Name
+EVT1_C7_C_CHG_L_BAT
+Designator
+C7
+Value
+C_CHG_L_BAT | 1uF 10V X7R; effective >=1uF
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C7_C_CHG_L_BAT
+EVT1 Source Ref
+C_CHG_L_BAT
+BOM Line
+BOM-D1-PWR-C_CHG_L_BAT
+MPN
+1uF 10V X7R; effective >=1uF
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+place at corresponding IC pins; DC-bias curve approval OPEN
+Unique ID
+48d2dd422533522c
+Manufacturer Part
+1uF 10V X7R; effective >=1uF
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C8
+FOOTPRINT
+
+PARTTYPE
+EVT1_C8_C_CHG_L_IN
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C8_C_CHG_L_IN
+PCB Layer
+Default
+Name
+EVT1_C8_C_CHG_L_IN
+Designator
+C8
+Value
+C_CHG_L_IN | 1uF 25V X7R; effective >=1uF
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C8_C_CHG_L_IN
+EVT1 Source Ref
+C_CHG_L_IN
+BOM Line
+BOM-D1-PWR-C_CHG_L_IN
+MPN
+1uF 25V X7R; effective >=1uF
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+place at corresponding IC pins; DC-bias curve approval OPEN
+Unique ID
+80f3708378e3d903
+Manufacturer Part
+1uF 25V X7R; effective >=1uF
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C9
+FOOTPRINT
+
+PARTTYPE
+EVT1_C9_C_CHG_L_SYS
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C9_C_CHG_L_SYS
+PCB Layer
+Default
+Name
+EVT1_C9_C_CHG_L_SYS
+Designator
+C9
+Value
+C_CHG_L_SYS | 10uF 25V X5R; effective >1uF
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0603_1608Metric
+Symbol
+EVT1_C9_C_CHG_L_SYS
+EVT1 Source Ref
+C_CHG_L_SYS
+BOM Line
+BOM-D1-PWR-C_CHG_L_SYS
+MPN
+10uF 25V X5R; effective >1uF
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+place at corresponding IC pins; DC-bias curve approval OPEN
+Unique ID
+7ddfd2f632a8b17d
+Manufacturer Part
+10uF 25V X5R; effective >1uF
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C25
+FOOTPRINT
+
+PARTTYPE
+EVT1_C25_C_OR_IN1
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C25_C_OR_IN1
+PCB Layer
+Default
+Name
+EVT1_C25_C_OR_IN1
+Designator
+C25
+Value
+C_OR_IN1 | 1uF 10V X7R
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C25_C_OR_IN1
+EVT1 Source Ref
+C_OR_IN1
+BOM Line
+BOM-D1-PWR-C_OR_IN1
+MPN
+1uF 10V X7R
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+place at corresponding IC pins; DC-bias curve approval OPEN
+Unique ID
+d99985aa138ce050
+Manufacturer Part
+1uF 10V X7R
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C26
+FOOTPRINT
+
+PARTTYPE
+EVT1_C26_C_OR_IN2
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C26_C_OR_IN2
+PCB Layer
+Default
+Name
+EVT1_C26_C_OR_IN2
+Designator
+C26
+Value
+C_OR_IN2 | 1uF 10V X7R
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C26_C_OR_IN2
+EVT1 Source Ref
+C_OR_IN2
+BOM Line
+BOM-D1-PWR-C_OR_IN2
+MPN
+1uF 10V X7R
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+place at corresponding IC pins; DC-bias curve approval OPEN
+Unique ID
+5bc8fc857418e778
+Manufacturer Part
+1uF 10V X7R
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C27
+FOOTPRINT
+
+PARTTYPE
+EVT1_C27_C_OR_OUT
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C27_C_OR_OUT
+PCB Layer
+Default
+Name
+EVT1_C27_C_OR_OUT
+Designator
+C27
+Value
+C_OR_OUT | 1uF 10V X7R
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C27_C_OR_OUT
+EVT1 Source Ref
+C_OR_OUT
+BOM Line
+BOM-D1-PWR-C_OR_OUT
+MPN
+1uF 10V X7R
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+place at corresponding IC pins; DC-bias curve approval OPEN
+Unique ID
+a26eb100929f0697
+Manufacturer Part
+1uF 10V X7R
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+L1
+FOOTPRINT
+
+PARTTYPE
+EVT1_L1_L1_BB
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_L1_L1_BB
+PCB Layer
+Default
+Name
+EVT1_L1_L1_BB
+Designator
+L1
+Value
+L1_BB | BLOCKED | 0.47 uH
+UserDocLink
+URL_TBD (Murata; Rev C linked the TPS63802 datasheet)
+Description
+
+Symbol
+EVT1_L1_L1_BB
+EVT1 Source Ref
+L1_BB
+BOM Line
+BOM-07
+MPN
+MPN_TBD (0.47uH effective0.37..0.57uH over temperature/DC current)
+Manufacturer
+Murata
+Footprint Status
+BLOCKED
+Design Notes
+
+Origin Footprint
+
+Unique ID
+d450ceac7adb81c3
+
+*
+]
+[
+DESIGNATOR
+L2
+FOOTPRINT
+
+PARTTYPE
+EVT1_L2_L2_1V8
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_L2_L2_1V8
+PCB Layer
+Default
+Name
+EVT1_L2_L2_1V8
+Designator
+L2
+Value
+L2_1V8 | 2.2 uH
+UserDocLink
+URL_TBD (Murata; Rev C linked the TPS63802 datasheet)
+Description
+
+Symbol
+EVT1_L2_L2_1V8
+EVT1 Source Ref
+L2_1V8
+BOM Line
+BOM-09
+MPN
+DFE161212U-2R2M
+Manufacturer
+Murata
+Footprint Status
+BLOCKED
+Design Notes
+buck output delivered through L2
+Origin Footprint
+
+Unique ID
+3f6ee2b1a34b017f
+Manufacturer Part
+DFE161212U-2R2M
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+R1
+FOOTPRINT
+
+PARTTYPE
+EVT1_R1_R_BB_FB1
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R1_R_BB_FB1
+PCB Layer
+Default
+Name
+EVT1_R1_R_BB_FB1
+Designator
+R1
+Value
+R_BB_FB1 | 560k 1%
+UserDocLink
+https://www.ti.com/lit/ds/symlink/ina185.pdf
+Description
+
+Symbol
+EVT1_R1_R_BB_FB1
+EVT1 Source Ref
+R_BB_FB1
+BOM Line
+BOM-24
+MPN
+R_SENSE ERA-2AEB2R2X (2.20R 0.1%) + R_LIMIT 249R (high side) + window divider R1=33.2k/R2=32.4k/R3=32.4k + R_PRIV_PU 10k + 1ms RC + R_CRST_A_PD 100k + R_DIR1_PU 10k + R_LS1_A4/B4 100k + 4x I2C 2.2k + R_LS3_EN 200k + R_BB_FB1 560k/R_BB_FB2 100k + R_VSET_1V8 + R_CHIP_PU 10k/C_CHIP_PU 1uF
+Manufacturer
+Panasonic / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+
+Origin Footprint
+
+Unique ID
+353b166cc2dee846
+
+*
+]
+[
+DESIGNATOR
+R2
+FOOTPRINT
+
+PARTTYPE
+EVT1_R2_R_BB_FB2
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R2_R_BB_FB2
+PCB Layer
+Default
+Name
+EVT1_R2_R_BB_FB2
+Designator
+R2
+Value
+R_BB_FB2 | 100k 1%
+UserDocLink
+https://www.ti.com/lit/ds/symlink/ina185.pdf
+Description
+
+Symbol
+EVT1_R2_R_BB_FB2
+EVT1 Source Ref
+R_BB_FB2
+BOM Line
+BOM-24
+MPN
+R_SENSE ERA-2AEB2R2X (2.20R 0.1%) + R_LIMIT 249R (high side) + window divider R1=33.2k/R2=32.4k/R3=32.4k + R_PRIV_PU 10k + 1ms RC + R_CRST_A_PD 100k + R_DIR1_PU 10k + R_LS1_A4/B4 100k + 4x I2C 2.2k + R_LS3_EN 200k + R_BB_FB1 560k/R_BB_FB2 100k + R_VSET_1V8 + R_CHIP_PU 10k/C_CHIP_PU 1uF
+Manufacturer
+Panasonic / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+
+Origin Footprint
+
+Unique ID
+6f63fc6711cfa315
+
+*
+]
+[
+DESIGNATOR
+R19
+FOOTPRINT
+
+PARTTYPE
+EVT1_R19_R_ISO_GATE
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R19_R_ISO_GATE
+PCB Layer
+Default
+Name
+EVT1_R19_R_ISO_GATE
+Designator
+R19
+Value
+R_ISO_GATE | 100 ohm 1%
+UserDocLink
+
+Description
+
+Origin Footprint
+Resistor_SMD:R_0201_0603Metric
+Symbol
+EVT1_R19_R_ISO_GATE
+EVT1 Source Ref
+R_ISO_GATE
+BOM Line
+BOM-D1-PWR-R_ISO_GATE
+MPN
+100 ohm 1%
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+
+Unique ID
+a32210a39874d8f8
+Manufacturer Part
+100 ohm 1%
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+R20
+FOOTPRINT
+
+PARTTYPE
+EVT1_R20_R_ISO_PD
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R20_R_ISO_PD
+PCB Layer
+Default
+Name
+EVT1_R20_R_ISO_PD
+Designator
+R20
+Value
+R_ISO_PD | 100k 1%
+UserDocLink
+
+Description
+
+Origin Footprint
+Resistor_SMD:R_0201_0603Metric
+Symbol
+EVT1_R20_R_ISO_PD
+EVT1 Source Ref
+R_ISO_PD
+BOM Line
+BOM-D1-PWR-R_ISO_PD
+MPN
+100k 1%
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+
+Unique ID
+13e77c54ede4b306
+Manufacturer Part
+100k 1%
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+R32
+FOOTPRINT
+
+PARTTYPE
+EVT1_R32_R_VSET_1V8
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R32_R_VSET_1V8
+PCB Layer
+Default
+Name
+EVT1_R32_R_VSET_1V8
+Designator
+R32
+Value
+R_VSET_1V8 | 0 ohm (1.8V VSET strap)
+UserDocLink
+https://www.ti.com/lit/ds/symlink/ina185.pdf
+Description
+
+Symbol
+EVT1_R32_R_VSET_1V8
+EVT1 Source Ref
+R_VSET_1V8
+BOM Line
+BOM-24
+MPN
+R_SENSE ERA-2AEB2R2X (2.20R 0.1%) + R_LIMIT 249R (high side) + window divider R1=33.2k/R2=32.4k/R3=32.4k + R_PRIV_PU 10k + 1ms RC + R_CRST_A_PD 100k + R_DIR1_PU 10k + R_LS1_A4/B4 100k + 4x I2C 2.2k + R_LS3_EN 200k + R_BB_FB1 560k/R_BB_FB2 100k + R_VSET_1V8 + R_CHIP_PU 10k/C_CHIP_PU 1uF
+Manufacturer
+Panasonic / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+
+Origin Footprint
+
+Unique ID
+94189e0415d5623f
+
+*
+]
+[
+DESIGNATOR
+TP1
+FOOTPRINT
+
+PARTTYPE
+EVT1_TP1_TP_BAT_L_N
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_TP1_TP_BAT_L_N
+PCB Layer
+Default
+Name
+EVT1_TP1_TP_BAT_L_N
+Designator
+TP1
+Value
+TP_BAT_L_N | solder pad to BAT_L-
+UserDocLink
+https://www.grepow.com/shaped-battery/ultra-narrow-battery.html
+Description
+
+Symbol
+EVT1_TP1_TP_BAT_L_N
+EVT1 Source Ref
+TP_BAT_L_N
+BOM Line
+BOM-43
+MPN
+Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight)
+Manufacturer
+Grepow (格瑞普)
+Footprint Status
+BLOCKED
+Design Notes
+
+Origin Footprint
+
+Unique ID
+4726d92b84fba278
+Manufacturer Part
+Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight)
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+TP2
+FOOTPRINT
+
+PARTTYPE
+EVT1_TP2_TP_BAT_L_P
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_TP2_TP_BAT_L_P
+PCB Layer
+Default
+Name
+EVT1_TP2_TP_BAT_L_P
+Designator
+TP2
+Value
+TP_BAT_L_P | solder pad to BAT_L+
+UserDocLink
+https://www.grepow.com/shaped-battery/ultra-narrow-battery.html
+Description
+
+Symbol
+EVT1_TP2_TP_BAT_L_P
+EVT1 Source Ref
+TP_BAT_L_P
+BOM Line
+BOM-43
+MPN
+Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight)
+Manufacturer
+Grepow (格瑞普)
+Footprint Status
+BLOCKED
+Design Notes
+
+Origin Footprint
+
+Unique ID
+21ffbae72f4f4154
+Manufacturer Part
+Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight)
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+TP5
+FOOTPRINT
+
+PARTTYPE
+EVT1_TP5_TP_NTC_L
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_TP5_TP_NTC_L
+PCB Layer
+Default
+Name
+EVT1_TP5_TP_NTC_L
+Designator
+TP5
+Value
+TP_NTC_L | solder pad NTC (left pack)
+UserDocLink
+https://www.grepow.com/shaped-battery/ultra-narrow-battery.html
+Description
+
+Symbol
+EVT1_TP5_TP_NTC_L
+EVT1 Source Ref
+TP_NTC_L
+BOM Line
+BOM-43
+MPN
+Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight)
+Manufacturer
+Grepow (格瑞普)
+Footprint Status
+BLOCKED
+Design Notes
+
+Origin Footprint
+
+Unique ID
+f7ec211fb22f3ea3
+Manufacturer Part
+Grepow GRP3911040 (110mAh Drop-Tip) OR GRP220550 (47mAh Slim-Straight)
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+U15
+FOOTPRINT
+
+PARTTYPE
+EVT1_U15_U8_CAM_ISO1
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_U15_U8_CAM_ISO1
+PCB Layer
+Default
+Name
+EVT1_U15_U8_CAM_ISO1
+Designator
+U15
+Value
+U8_CAM_ISO1 | SN74AXC8T245RJWR
+UserDocLink
+https://www.ti.com/lit/ds/symlink/sn74axc8t245.pdf
+Description
+
+Symbol
+EVT1_U15_U8_CAM_ISO1
+EVT1 Source Ref
+U8_CAM_ISO1
+BOM Line
+BOM-17
+MPN
+SN74AXC8T245RJWR
+Manufacturer
+Texas Instruments
+Footprint Status
+BLOCKED
+Design Notes
+DIR1=H | bank=1 dir=H; Bank1 A1 | bank=1 dir=H; Bank1 A2 | bank=1 dir=H; Bank1 A3 | bank=1 dir=H; Bank1 A4 | bank=2 dir=H; Bank2 A5 | bank=2 dir=H; Bank2 A6 | bank=2 dir=H; Bank2 A7 | bank=2 dir=H; Bank2 A8 | DIR2=H | bank=2 dir=H; Bank2 B8 | bank=2 dir=H; Bank2 B7 | bank=2 dir=H; Bank2 B6 | bank=2 dir=H; Bank2 B5 | bank=1 dir=H; Bank1 B4 | bank=1 dir=H; Bank1 B3 | bank=1 dir=H; Bank1 B2 | bank=1 dir=H; Bank1 B1 | OE active-low tied GND | VCCA
+Origin Footprint
+
+Unique ID
+28995c53ef78d865
+Manufacturer Part
+SN74AXC8T245RJWR
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+U16
+FOOTPRINT
+
+PARTTYPE
+EVT1_U16_U8_CAM_ISO2
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_U16_U8_CAM_ISO2
+PCB Layer
+Default
+Name
+EVT1_U16_U8_CAM_ISO2
+Designator
+U16
+Value
+U8_CAM_ISO2 | SN74AXC8T245RJWR
+UserDocLink
+https://www.ti.com/lit/ds/symlink/sn74axc8t245.pdf
+Description
+
+Symbol
+EVT1_U16_U8_CAM_ISO2
+EVT1 Source Ref
+U8_CAM_ISO2
+BOM Line
+BOM-18
+MPN
+SN74AXC8T245RJWR
+Manufacturer
+Texas Instruments
+Footprint Status
+BLOCKED
+Design Notes
+DIR1=H | bank=1 dir=H; Bank1 A1 | bank=1 dir=H; Bank1 A2 | bank=1 dir=H; Bank1 A3 | Rev D1: VCCA rail-sense input; not a spare tied-low channel | bank=2 dir=L; Bank2 A5 | bank=2 dir=L; Bank2 A6 | bank=2 dir=L; Bank2 A7 | bank=2 dir=L; Bank2 A8 | DIR2=L | bank=2 dir=L; Bank2 B8; actual ground net, not an unconnected alias | bank=2 dir=L; Bank2 B7; actual ground net, not an unconnected alias | bank=2 dir=L; Bank2 B6; actual ground net, not an unconnected alias | bank=2 dir=L; Bank2 B5 | Hi-Z below VCCA 100mV; R_CAM_DOVDD_OK_PD defines OFF low | bank=1 dir=H; Bank1 B3 | bank=1 dir=H; Bank1 B2 | bank=1 dir=H; Bank1 B1 | OE active-low tied GND | VCCA
+Origin Footprint
+
+Unique ID
+ca4d2b64b6ec8380
+Manufacturer Part
+SN74AXC8T245RJWR
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+U14
+FOOTPRINT
+
+PARTTYPE
+EVT1_U14_U7_WIN
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_U14_U7_WIN
+PCB Layer
+Default
+Name
+EVT1_U14_U7_WIN
+Designator
+U14
+Value
+U7_WIN | TLV7042DSGR
+UserDocLink
+https://www.ti.com/lit/ds/symlink/tlv7042.pdf
+Description
+
+Origin Footprint
+Package_SON:Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm
+Symbol
+EVT1_U14_U7_WIN
+EVT1 Source Ref
+U7_WIN
+BOM Line
+BOM-23
+MPN
+TLV7042DSGR
+Manufacturer
+Texas Instruments
+Footprint Status
+PASS
+Design Notes
+TI SLVSE13J Table4-2/DSG figure4-6; wire-AND open-drain outputs
+Unique ID
+8791d75d94e1481b
+Manufacturer Part
+TLV7042DSGR
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+U7
+FOOTPRINT
+
+PARTTYPE
+EVT1_U7_U7_INA
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_U7_U7_INA
+PCB Layer
+Default
+Name
+EVT1_U7_U7_INA
+Designator
+U7
+Value
+U7_INA | INA185A4IDRLR
+UserDocLink
+https://www.ti.com/lit/ds/symlink/ina185.pdf
+Description
+
+Origin Footprint
+Package_TO_SOT_SMD:Texas_R-PDSO-N6_DRL-6
+Symbol
+EVT1_U7_U7_INA
+EVT1 Source Ref
+U7_INA
+BOM Line
+BOM-22
+MPN
+INA185A4IDRLR
+Manufacturer
+Texas Instruments
+Footprint Status
+PASS
+Design Notes
+TI SBOS378A Table4-1 DRL; REF=GND for positive-current unidirectional sensing
+Unique ID
+4ec783ed4741de1f
+Manufacturer Part
+INA185A4IDRLR
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+U5
+FOOTPRINT
+
+PARTTYPE
+EVT1_U5_U5_LED2V8
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_U5_U5_LED2V8
+PCB Layer
+Default
+Name
+EVT1_U5_U5_LED2V8
+Designator
+U5
+Value
+U5_LED2V8 | TLV75528PDQNR
+UserDocLink
+https://www.ti.com/lit/ds/symlink/tlv755p.pdf
+Description
+
+Origin Footprint
+Package_SON:Texas_X2SON-4_1x1mm_P0.65mm
+Symbol
+EVT1_U5_U5_LED2V8
+EVT1 Source Ref
+U5_LED2V8
+BOM Line
+BOM-10
+MPN
+TLV75528PDQNR
+Manufacturer
+Texas Instruments
+Footprint Status
+PASS
+Design Notes
+SBVS320D Table4-1: DQN thermal pad internally GND, PCB ground connection required
+Unique ID
+adf583383e4d69d4
+Manufacturer Part
+TLV75528PDQNR
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+U6
+FOOTPRINT
+
+PARTTYPE
+EVT1_U6_U6_CAM_AVDD
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_U6_U6_CAM_AVDD
+PCB Layer
+Default
+Name
+EVT1_U6_U6_CAM_AVDD
+Designator
+U6
+Value
+U6_CAM_AVDD | TLV75528PDQNR
+UserDocLink
+https://www.ti.com/lit/ds/symlink/tlv755p.pdf
+Description
+
+Origin Footprint
+Package_SON:Texas_X2SON-4_1x1mm_P0.65mm
+Symbol
+EVT1_U6_U6_CAM_AVDD
+EVT1 Source Ref
+U6_CAM_AVDD
+BOM Line
+BOM-13
+MPN
+TLV75528PDQNR
+Manufacturer
+Texas Instruments
+Footprint Status
+PASS
+Design Notes
+120R discharge | Analog node in 3V3_SYS domain. High is derived from V_INA_OUT through R_PRIV_PU/R_PRIV_RC. | SBVS320D Table4-1: DQN thermal pad internally GND, PCB ground connection required
+Unique ID
+124c013cfc851acc
+Manufacturer Part
+TLV75528PDQNR
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+U11
+FOOTPRINT
+
+PARTTYPE
+EVT1_U11_U6_CAM_DOVDD
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_U11_U6_CAM_DOVDD
+PCB Layer
+Default
+Name
+EVT1_U11_U6_CAM_DOVDD
+Designator
+U11
+Value
+U6_CAM_DOVDD | TLV75518PDQNR
+UserDocLink
+https://www.ti.com/lit/ds/symlink/tlv755p.pdf
+Description
+
+Origin Footprint
+Package_SON:Texas_X2SON-4_1x1mm_P0.65mm
+Symbol
+EVT1_U11_U6_CAM_DOVDD
+EVT1 Source Ref
+U6_CAM_DOVDD
+BOM Line
+BOM-11
+MPN
+TLV75518PDQNR
+Manufacturer
+Texas Instruments
+Footprint Status
+PASS
+Design Notes
+120R discharge | Analog node in 3V3_SYS domain. High is derived from V_INA_OUT through R_PRIV_PU/R_PRIV_RC. | SBVS320D Table4-1: DQN thermal pad internally GND, PCB ground connection required
+Unique ID
+2fd166bdb6936536
+Manufacturer Part
+TLV75518PDQNR
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+U13
+FOOTPRINT
+
+PARTTYPE
+EVT1_U13_U6_CAM_DVDD
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_U13_U6_CAM_DVDD
+PCB Layer
+Default
+Name
+EVT1_U13_U6_CAM_DVDD
+Designator
+U13
+Value
+U6_CAM_DVDD | TLV75512PDQNR
+UserDocLink
+https://www.ti.com/lit/ds/symlink/tlv755p.pdf
+Description
+
+Origin Footprint
+Package_SON:Texas_X2SON-4_1x1mm_P0.65mm
+Symbol
+EVT1_U13_U6_CAM_DVDD
+EVT1 Source Ref
+U6_CAM_DVDD
+BOM Line
+BOM-12
+MPN
+TLV75512PDQNR
+Manufacturer
+Texas Instruments
+Footprint Status
+PASS
+Design Notes
+120R discharge | Analog node in 3V3_SYS domain. High is derived from V_INA_OUT through R_PRIV_PU/R_PRIV_RC. | SBVS320D Table4-1: DQN thermal pad internally GND, PCB ground connection required
+Unique ID
+95e557ff5ab9d76b
+Manufacturer Part
+TLV75512PDQNR
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+U17
+FOOTPRINT
+
+PARTTYPE
+EVT1_U17_U8_CAM_SCCB_EN
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_U17_U8_CAM_SCCB_EN
+PCB Layer
+Default
+Name
+EVT1_U17_U8_CAM_SCCB_EN
+Designator
+U17
+Value
+U8_CAM_SCCB_EN | SN74LVC1G07DPWR
+UserDocLink
+https://www.ti.com/lit/ds/symlink/sn74lvc1g07.pdf
+Description
+
+Origin Footprint
+Package_SON:Texas_X2SON-5_0.8x0.8mm_P0.48mm
+Symbol
+EVT1_U17_U8_CAM_SCCB_EN
+EVT1 Source Ref
+U8_CAM_SCCB_EN
+BOM Line
+BOM-D1-AT01
+MPN
+SN74LVC1G07DPWR
+Manufacturer
+Texas Instruments
+Footprint Status
+PASS
+Design Notes
+SN74LVC1G07DPWR: A low forces PCA9306 EN low; A high releases the 200k bias
+Unique ID
+1a5dee1823ef113a
+Manufacturer Part
+SN74LVC1G07DPWR
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C5
+FOOTPRINT
+
+PARTTYPE
+EVT1_C5_C_CAM_SCCB_EN
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C5_C_CAM_SCCB_EN
+PCB Layer
+Default
+Name
+EVT1_C5_C_CAM_SCCB_EN
+Designator
+C5
+Value
+C_CAM_SCCB_EN | 100nF X7R 6.3V 0201
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0201_0603Metric
+Symbol
+EVT1_C5_C_CAM_SCCB_EN
+EVT1 Source Ref
+C_CAM_SCCB_EN
+BOM Line
+BOM-D1-AT03
+MPN
+0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+
+Unique ID
+ddba3c46cf8b8e66
+Manufacturer Part
+0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C6
+FOOTPRINT
+
+PARTTYPE
+EVT1_C6_C_CAMRST
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C6_C_CAMRST
+PCB Layer
+Default
+Name
+EVT1_C6_C_CAMRST
+Designator
+C6
+Value
+C_CAMRST | 100nF POR capacitor
+UserDocLink
+
+Description
+
+Symbol
+EVT1_C6_C_CAMRST
+EVT1 Source Ref
+C_CAMRST
+BOM Line
+BOM-49
+MPN
+R_XREQ 330R + D_XREQ RB521S-30 + C_XREQ 100nF + R_XREQ_BLEED 100k + R_CAMRST 10k/100nF + R_CAMPWDN 10k + 2x R_SCCB 4.7k + R_LS4_EN 200k
+Manufacturer
+Yageo/Murata/ROHM
+Footprint Status
+BLOCKED
+Design Notes
+Explicit camera reset RC capacitor
+Origin Footprint
+
+Unique ID
+ab4a8fe24fad9fe4
+Manufacturer Part
+R_XREQ 330R + D_XREQ RB521S-30 + C_XREQ 100nF + R_XREQ_BLEED 100k + R_CAMRST 10k/100nF + R_CAMPWDN 10k + 2x R_SCCB 4.7k + R_LS4_EN 200k
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C15
+FOOTPRINT
+
+PARTTYPE
+EVT1_C15_C_INA_SUPPLY
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C15_C_INA_SUPPLY
+PCB Layer
+Default
+Name
+EVT1_C15_C_INA_SUPPLY
+Designator
+C15
+Value
+C_INA_SUPPLY | 100nF 10V X7R at U7_INA VS/GND
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C15_C_INA_SUPPLY
+EVT1 Source Ref
+C_INA_SUPPLY
+BOM Line
+BOM-D1-PRIV-C_INA_SUPPLY
+MPN
+100nF 10V X7R at U7_INA VS/GND
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+
+Unique ID
+86bb77bda672094d
+Manufacturer Part
+100nF 10V X7R at U7_INA VS/GND
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C16
+FOOTPRINT
+
+PARTTYPE
+EVT1_C16_C_LDO_AVDD_IN
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C16_C_LDO_AVDD_IN
+PCB Layer
+Default
+Name
+EVT1_C16_C_LDO_AVDD_IN
+Designator
+C16
+Value
+C_LDO_AVDD_IN | 1uF 10V X7R; effective >=1uF
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C16_C_LDO_AVDD_IN
+EVT1 Source Ref
+C_LDO_AVDD_IN
+BOM Line
+BOM-D1-PWR-C_LDO_AVDD_IN
+MPN
+1uF 10V X7R; effective >=1uF
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+place at corresponding IC pins; DC-bias curve approval OPEN
+Unique ID
+c8e923f96b539988
+Manufacturer Part
+1uF 10V X7R; effective >=1uF
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C17
+FOOTPRINT
+
+PARTTYPE
+EVT1_C17_C_LDO_AVDD_OUT
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C17_C_LDO_AVDD_OUT
+PCB Layer
+Default
+Name
+EVT1_C17_C_LDO_AVDD_OUT
+Designator
+C17
+Value
+C_LDO_AVDD_OUT | 1uF 10V X7R; effective >=1uF
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C17_C_LDO_AVDD_OUT
+EVT1 Source Ref
+C_LDO_AVDD_OUT
+BOM Line
+BOM-D1-PWR-C_LDO_AVDD_OUT
+MPN
+1uF 10V X7R; effective >=1uF
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+place at corresponding IC pins; DC-bias curve approval OPEN
+Unique ID
+48700c84863a802e
+Manufacturer Part
+1uF 10V X7R; effective >=1uF
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C18
+FOOTPRINT
+
+PARTTYPE
+EVT1_C18_C_LDO_DOVDD_IN
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C18_C_LDO_DOVDD_IN
+PCB Layer
+Default
+Name
+EVT1_C18_C_LDO_DOVDD_IN
+Designator
+C18
+Value
+C_LDO_DOVDD_IN | 1uF 10V X7R; effective >=1uF
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C18_C_LDO_DOVDD_IN
+EVT1 Source Ref
+C_LDO_DOVDD_IN
+BOM Line
+BOM-D1-PWR-C_LDO_DOVDD_IN
+MPN
+1uF 10V X7R; effective >=1uF
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+place at corresponding IC pins; DC-bias curve approval OPEN
+Unique ID
+d9d0285421fe3ef0
+Manufacturer Part
+1uF 10V X7R; effective >=1uF
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C19
+FOOTPRINT
+
+PARTTYPE
+EVT1_C19_C_LDO_DOVDD_OUT
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C19_C_LDO_DOVDD_OUT
+PCB Layer
+Default
+Name
+EVT1_C19_C_LDO_DOVDD_OUT
+Designator
+C19
+Value
+C_LDO_DOVDD_OUT | 1uF 10V X7R; effective >=1uF
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C19_C_LDO_DOVDD_OUT
+EVT1 Source Ref
+C_LDO_DOVDD_OUT
+BOM Line
+BOM-D1-PWR-C_LDO_DOVDD_OUT
+MPN
+1uF 10V X7R; effective >=1uF
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+place at corresponding IC pins; DC-bias curve approval OPEN
+Unique ID
+9b75bd895f0e39d2
+Manufacturer Part
+1uF 10V X7R; effective >=1uF
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C20
+FOOTPRINT
+
+PARTTYPE
+EVT1_C20_C_LDO_DVDD_IN
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C20_C_LDO_DVDD_IN
+PCB Layer
+Default
+Name
+EVT1_C20_C_LDO_DVDD_IN
+Designator
+C20
+Value
+C_LDO_DVDD_IN | 1uF 10V X7R; effective >=1uF
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C20_C_LDO_DVDD_IN
+EVT1 Source Ref
+C_LDO_DVDD_IN
+BOM Line
+BOM-D1-PWR-C_LDO_DVDD_IN
+MPN
+1uF 10V X7R; effective >=1uF
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+place at corresponding IC pins; DC-bias curve approval OPEN
+Unique ID
+97d7532320e593d5
+Manufacturer Part
+1uF 10V X7R; effective >=1uF
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C21
+FOOTPRINT
+
+PARTTYPE
+EVT1_C21_C_LDO_DVDD_OUT
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C21_C_LDO_DVDD_OUT
+PCB Layer
+Default
+Name
+EVT1_C21_C_LDO_DVDD_OUT
+Designator
+C21
+Value
+C_LDO_DVDD_OUT | 1uF 10V X7R; effective >=1uF
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C21_C_LDO_DVDD_OUT
+EVT1 Source Ref
+C_LDO_DVDD_OUT
+BOM Line
+BOM-D1-PWR-C_LDO_DVDD_OUT
+MPN
+1uF 10V X7R; effective >=1uF
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+place at corresponding IC pins; DC-bias curve approval OPEN
+Unique ID
+0259cc883dd91c7a
+Manufacturer Part
+1uF 10V X7R; effective >=1uF
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C22
+FOOTPRINT
+
+PARTTYPE
+EVT1_C22_C_LDO_LED_IN
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C22_C_LDO_LED_IN
+PCB Layer
+Default
+Name
+EVT1_C22_C_LDO_LED_IN
+Designator
+C22
+Value
+C_LDO_LED_IN | 1uF 10V X7R; effective >=1uF
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C22_C_LDO_LED_IN
+EVT1 Source Ref
+C_LDO_LED_IN
+BOM Line
+BOM-D1-PWR-C_LDO_LED_IN
+MPN
+1uF 10V X7R; effective >=1uF
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+place at corresponding IC pins; DC-bias curve approval OPEN
+Unique ID
+7f35450ac3171d20
+Manufacturer Part
+1uF 10V X7R; effective >=1uF
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C23
+FOOTPRINT
+
+PARTTYPE
+EVT1_C23_C_LDO_LED_OUT
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C23_C_LDO_LED_OUT
+PCB Layer
+Default
+Name
+EVT1_C23_C_LDO_LED_OUT
+Designator
+C23
+Value
+C_LDO_LED_OUT | 1uF 10V X7R; effective >=1uF
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C23_C_LDO_LED_OUT
+EVT1 Source Ref
+C_LDO_LED_OUT
+BOM Line
+BOM-D1-PWR-C_LDO_LED_OUT
+MPN
+1uF 10V X7R; effective >=1uF
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+place at corresponding IC pins; DC-bias curve approval OPEN
+Unique ID
+8bc5c1e1749a19fa
+Manufacturer Part
+1uF 10V X7R; effective >=1uF
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C28
+FOOTPRINT
+
+PARTTYPE
+EVT1_C28_C_PRIV_RC
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C28_C_PRIV_RC
+PCB Layer
+Default
+Name
+EVT1_C28_C_PRIV_RC
+Designator
+C28
+Value
+C_PRIV_RC | 1uF 10V X7R; local discharge tau1ms; pullup charge ta...
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C28_C_PRIV_RC
+EVT1 Source Ref
+C_PRIV_RC
+BOM Line
+BOM-D1-PRIV-C_PRIV_RC
+MPN
+1uF 10V X7R; local discharge tau1ms; pullup charge tau11ms including10k
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+Analog node in 3V3_SYS domain. High is derived from V_INA_OUT through R_PRIV_PU/R_PRIV_RC.
+Unique ID
+e3aeb17489c0ab5d
+Manufacturer Part
+1uF 10V X7R; local discharge tau1ms; pullup charge tau11ms including10k
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C31
+FOOTPRINT
+
+PARTTYPE
+EVT1_C31_C_U8_CAM_ISO1_A
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C31_C_U8_CAM_ISO1_A
+PCB Layer
+Default
+Name
+EVT1_C31_C_U8_CAM_ISO1_A
+Designator
+C31
+Value
+C_U8_CAM_ISO1_A | 100nF X7R 6.3V 0201
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0201_0603Metric
+Symbol
+EVT1_C31_C_U8_CAM_ISO1_A
+EVT1 Source Ref
+C_U8_CAM_ISO1_A
+BOM Line
+BOM-D1-AT03
+MPN
+0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+TI power-supply recommendations: nearest VCC/GND pins
+Unique ID
+cc1d00c51cc12124
+Manufacturer Part
+0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C32
+FOOTPRINT
+
+PARTTYPE
+EVT1_C32_C_U8_CAM_ISO1_B
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C32_C_U8_CAM_ISO1_B
+PCB Layer
+Default
+Name
+EVT1_C32_C_U8_CAM_ISO1_B
+Designator
+C32
+Value
+C_U8_CAM_ISO1_B | 100nF X7R 6.3V 0201
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0201_0603Metric
+Symbol
+EVT1_C32_C_U8_CAM_ISO1_B
+EVT1 Source Ref
+C_U8_CAM_ISO1_B
+BOM Line
+BOM-D1-AT03
+MPN
+0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+TI power-supply recommendations: nearest VCC/GND pins
+Unique ID
+d2625f4b4bd439ef
+Manufacturer Part
+0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C33
+FOOTPRINT
+
+PARTTYPE
+EVT1_C33_C_U8_CAM_ISO2_A
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C33_C_U8_CAM_ISO2_A
+PCB Layer
+Default
+Name
+EVT1_C33_C_U8_CAM_ISO2_A
+Designator
+C33
+Value
+C_U8_CAM_ISO2_A | 100nF X7R 6.3V 0201
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0201_0603Metric
+Symbol
+EVT1_C33_C_U8_CAM_ISO2_A
+EVT1 Source Ref
+C_U8_CAM_ISO2_A
+BOM Line
+BOM-D1-AT03
+MPN
+0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+TI power-supply recommendations: nearest VCC/GND pins
+Unique ID
+deb55bbe20a101cf
+Manufacturer Part
+0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C34
+FOOTPRINT
+
+PARTTYPE
+EVT1_C34_C_U8_CAM_ISO2_B
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C34_C_U8_CAM_ISO2_B
+PCB Layer
+Default
+Name
+EVT1_C34_C_U8_CAM_ISO2_B
+Designator
+C34
+Value
+C_U8_CAM_ISO2_B | 100nF X7R 6.3V 0201
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0201_0603Metric
+Symbol
+EVT1_C34_C_U8_CAM_ISO2_B
+EVT1 Source Ref
+C_U8_CAM_ISO2_B
+BOM Line
+BOM-D1-AT03
+MPN
+0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+TI power-supply recommendations: nearest VCC/GND pins
+Unique ID
+553def7d7947fca6
+Manufacturer Part
+0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C41
+FOOTPRINT
+
+PARTTYPE
+EVT1_C41_C_WIN_SUPPLY
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C41_C_WIN_SUPPLY
+PCB Layer
+Default
+Name
+EVT1_C41_C_WIN_SUPPLY
+Designator
+C41
+Value
+C_WIN_SUPPLY | 100nF 10V X7R at U7_WIN VCC/VEE
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0402_1005Metric
+Symbol
+EVT1_C41_C_WIN_SUPPLY
+EVT1 Source Ref
+C_WIN_SUPPLY
+BOM Line
+BOM-D1-PRIV-C_WIN_SUPPLY
+MPN
+100nF 10V X7R at U7_WIN VCC/VEE
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+
+Unique ID
+c9655d0faea7d93e
+Manufacturer Part
+100nF 10V X7R at U7_WIN VCC/VEE
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C42
+FOOTPRINT
+
+PARTTYPE
+EVT1_C42_C_XREQ
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C42_C_XREQ
+PCB Layer
+Default
+Name
+EVT1_C42_C_XREQ
+Designator
+C42
+Value
+C_XREQ | 100nF
+UserDocLink
+
+Description
+
+Symbol
+EVT1_C42_C_XREQ
+EVT1 Source Ref
+C_XREQ
+BOM Line
+BOM-49
+MPN
+R_XREQ 330R + D_XREQ RB521S-30 + C_XREQ 100nF + R_XREQ_BLEED 100k + R_CAMRST 10k/100nF + R_CAMPWDN 10k + 2x R_SCCB 4.7k + R_LS4_EN 200k
+Manufacturer
+Yageo/Murata/ROHM
+Footprint Status
+BLOCKED
+Design Notes
+Explicit return expanded from inherited Rev D function text
+Origin Footprint
+
+Unique ID
+d39ee3bf0fadc3c1
+Manufacturer Part
+R_XREQ 330R + D_XREQ RB521S-30 + C_XREQ 100nF + R_XREQ_BLEED 100k + R_CAMRST 10k/100nF + R_CAMPWDN 10k + 2x R_SCCB 4.7k + R_LS4_EN 200k
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+D1
+FOOTPRINT
+
+PARTTYPE
+EVT1_D1_D_XREQ
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_D1_D_XREQ
+PCB Layer
+Default
+Name
+EVT1_D1_D_XREQ
+Designator
+D1
+Value
+D_XREQ | RB521S-30 anode
+UserDocLink
+
+Description
+
+Symbol
+EVT1_D1_D_XREQ
+EVT1 Source Ref
+D_XREQ
+BOM Line
+BOM-49
+MPN
+R_XREQ 330R + D_XREQ RB521S-30 + C_XREQ 100nF + R_XREQ_BLEED 100k + R_CAMRST 10k/100nF + R_CAMPWDN 10k + 2x R_SCCB 4.7k + R_LS4_EN 200k
+Manufacturer
+Yageo/Murata/ROHM
+Footprint Status
+BLOCKED
+Design Notes
+
+Origin Footprint
+
+Unique ID
+6eb2f7ba7a12821c
+Manufacturer Part
+R_XREQ 330R + D_XREQ RB521S-30 + C_XREQ 100nF + R_XREQ_BLEED 100k + R_CAMRST 10k/100nF + R_CAMPWDN 10k + 2x R_SCCB 4.7k + R_LS4_EN 200k
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+R3
+FOOTPRINT
+
+PARTTYPE
+EVT1_R3_R_CAM_DOVDD_BLEED
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R3_R_CAM_DOVDD_BLEED
+PCB Layer
+Default
+Name
+EVT1_R3_R_CAM_DOVDD_BLEED
+Designator
+R3
+Value
+R_CAM_DOVDD_BLEED | 100k 1%
+UserDocLink
+
+Description
+
+Symbol
+EVT1_R3_R_CAM_DOVDD_BLEED
+EVT1 Source Ref
+R_CAM_DOVDD_BLEED
+BOM Line
+BOM-D1-AT03
+MPN
+0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification
+Manufacturer
+TBD
+Footprint Status
+BLOCKED
+Design Notes
+defined OFF rail; PCA9306 bias leakage sink per SCPS113O 8.1.7
+Origin Footprint
+
+Unique ID
+fe89d0632cfce75f
+Manufacturer Part
+0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+R4
+FOOTPRINT
+
+PARTTYPE
+EVT1_R4_R_CAM_DOVDD_OK_PD
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R4_R_CAM_DOVDD_OK_PD
+PCB Layer
+Default
+Name
+EVT1_R4_R_CAM_DOVDD_OK_PD
+Designator
+R4
+Value
+R_CAM_DOVDD_OK_PD | 10k 1%
+UserDocLink
+
+Description
+
+Symbol
+EVT1_R4_R_CAM_DOVDD_OK_PD
+EVT1 Source Ref
+R_CAM_DOVDD_OK_PD
+BOM Line
+BOM-D1-AT03
+MPN
+0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification
+Manufacturer
+TBD
+Footprint Status
+BLOCKED
+Design Notes
+10k*2uA worst-case AXC Ioff =20mV; buffer input leakage <=5uA adds50mV
+Origin Footprint
+
+Unique ID
+fdc86a4b576d9e98
+Manufacturer Part
+0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+R5
+FOOTPRINT
+
+PARTTYPE
+EVT1_R5_R_CAMPWDN
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R5_R_CAMPWDN
+PCB Layer
+Default
+Name
+EVT1_R5_R_CAMPWDN
+Designator
+R5
+Value
+R_CAMPWDN | 10k to GND (power controlled by interlock rails)
+UserDocLink
+
+Description
+
+Symbol
+EVT1_R5_R_CAMPWDN
+EVT1 Source Ref
+R_CAMPWDN
+BOM Line
+BOM-49
+MPN
+R_XREQ 330R + D_XREQ RB521S-30 + C_XREQ 100nF + R_XREQ_BLEED 100k + R_CAMRST 10k/100nF + R_CAMPWDN 10k + 2x R_SCCB 4.7k + R_LS4_EN 200k
+Manufacturer
+Yageo/Murata/ROHM
+Footprint Status
+BLOCKED
+Design Notes
+Explicit return expanded from inherited Rev D function text
+Origin Footprint
+
+Unique ID
+9cdd622c9eeecfe7
+Manufacturer Part
+R_XREQ 330R + D_XREQ RB521S-30 + C_XREQ 100nF + R_XREQ_BLEED 100k + R_CAMRST 10k/100nF + R_CAMPWDN 10k + 2x R_SCCB 4.7k + R_LS4_EN 200k
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+R6
+FOOTPRINT
+
+PARTTYPE
+EVT1_R6_R_CAMRST
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R6_R_CAMRST
+PCB Layer
+Default
+Name
+EVT1_R6_R_CAMRST
+Designator
+R6
+Value
+R_CAMRST | 10k 1% (POR pullup)
+UserDocLink
+
+Description
+
+Symbol
+EVT1_R6_R_CAMRST
+EVT1 Source Ref
+R_CAMRST
+BOM Line
+BOM-49
+MPN
+R_XREQ 330R + D_XREQ RB521S-30 + C_XREQ 100nF + R_XREQ_BLEED 100k + R_CAMRST 10k/100nF + R_CAMPWDN 10k + 2x R_SCCB 4.7k + R_LS4_EN 200k
+Manufacturer
+Yageo/Murata/ROHM
+Footprint Status
+BLOCKED
+Design Notes
+Explicit return expanded from inherited Rev D function text
+Origin Footprint
+
+Unique ID
+e06ccd13940482ac
+Manufacturer Part
+R_XREQ 330R + D_XREQ RB521S-30 + C_XREQ 100nF + R_XREQ_BLEED 100k + R_CAMRST 10k/100nF + R_CAMPWDN 10k + 2x R_SCCB 4.7k + R_LS4_EN 200k
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+R21
+FOOTPRINT
+
+PARTTYPE
+EVT1_R21_R_LIMIT
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R21_R_LIMIT
+PCB Layer
+Default
+Name
+EVT1_R21_R_LIMIT
+Designator
+R21
+Value
+R_LIMIT | 249R (Rev D: high side, left board)
+UserDocLink
+https://www.ti.com/lit/ds/symlink/ina185.pdf
+Description
+
+Symbol
+EVT1_R21_R_LIMIT
+EVT1 Source Ref
+R_LIMIT
+BOM Line
+BOM-24
+MPN
+R_SENSE ERA-2AEB2R2X (2.20R 0.1%) + R_LIMIT 249R (high side) + window divider R1=33.2k/R2=32.4k/R3=32.4k + R_PRIV_PU 10k + 1ms RC + R_CRST_A_PD 100k + R_DIR1_PU 10k + R_LS1_A4/B4 100k + 4x I2C 2.2k + R_LS3_EN 200k + R_BB_FB1 560k/R_BB_FB2 100k + R_VSET_1V8 + R_CHIP_PU 10k/C_CHIP_PU 1uF
+Manufacturer
+Panasonic / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+
+Origin Footprint
+
+Unique ID
+c77b08197b178948
+
+*
+]
+[
+DESIGNATOR
+R27
+FOOTPRINT
+
+PARTTYPE
+EVT1_R27_R_PRIV_PU
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R27_R_PRIV_PU
+PCB Layer
+Default
+Name
+EVT1_R27_R_PRIV_PU
+Designator
+R27
+Value
+R_PRIV_PU | 10k 1%; dynamic pullup from V_INA_OUT
+UserDocLink
+https://www.ti.com/lit/ds/symlink/ina185.pdf
+Description
+
+Symbol
+EVT1_R27_R_PRIV_PU
+EVT1 Source Ref
+R_PRIV_PU
+BOM Line
+BOM-24
+MPN
+R_SENSE ERA-2AEB2R2X (2.20R 0.1%) + R_LIMIT 249R (high side) + window divider R1=33.2k/R2=32.4k/R3=32.4k + R_PRIV_PU 10k + 1ms RC + R_CRST_A_PD 100k + R_DIR1_PU 10k + R_LS1_A4/B4 100k + 4x I2C 2.2k + R_LS3_EN 200k + R_BB_FB1 560k/R_BB_FB2 100k + R_VSET_1V8 + R_CHIP_PU 10k/C_CHIP_PU 1uF
+Manufacturer
+Panasonic / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+
+Origin Footprint
+
+Unique ID
+28145adf450505d9
+
+*
+]
+[
+DESIGNATOR
+R28
+FOOTPRINT
+
+PARTTYPE
+EVT1_R28_R_PRIV_RC
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R28_R_PRIV_RC
+PCB Layer
+Default
+Name
+EVT1_R28_R_PRIV_RC
+Designator
+R28
+Value
+R_PRIV_RC | 1k 1%
+UserDocLink
+
+Description
+
+Origin Footprint
+Resistor_SMD:R_0201_0603Metric
+Symbol
+EVT1_R28_R_PRIV_RC
+EVT1 Source Ref
+R_PRIV_RC
+BOM Line
+BOM-D1-PRIV-R_PRIV_RC
+MPN
+1k 1%
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+Analog node in 3V3_SYS domain. High is derived from V_INA_OUT through R_PRIV_PU/R_PRIV_RC.
+Unique ID
+d9f908b8ca857374
+Manufacturer Part
+1k 1%
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+R29
+FOOTPRINT
+
+PARTTYPE
+EVT1_R29_R_SCCB_SCL
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R29_R_SCCB_SCL
+PCB Layer
+Default
+Name
+EVT1_R29_R_SCCB_SCL
+Designator
+R29
+Value
+R_SCCB_SCL | 4.7k pull-up to CAM_DOVDD_1V8
+UserDocLink
+
+Description
+
+Symbol
+EVT1_R29_R_SCCB_SCL
+EVT1 Source Ref
+R_SCCB_SCL
+BOM Line
+BOM-49
+MPN
+R_XREQ 330R + D_XREQ RB521S-30 + C_XREQ 100nF + R_XREQ_BLEED 100k + R_CAMRST 10k/100nF + R_CAMPWDN 10k + 2x R_SCCB 4.7k + R_LS4_EN 200k
+Manufacturer
+Yageo/Murata/ROHM
+Footprint Status
+BLOCKED
+Design Notes
+Explicit return expanded from inherited Rev D function text
+Origin Footprint
+
+Unique ID
+9e71ce6b7342da3b
+Manufacturer Part
+R_XREQ 330R + D_XREQ RB521S-30 + C_XREQ 100nF + R_XREQ_BLEED 100k + R_CAMRST 10k/100nF + R_CAMPWDN 10k + 2x R_SCCB 4.7k + R_LS4_EN 200k
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+R30
+FOOTPRINT
+
+PARTTYPE
+EVT1_R30_R_SCCB_SDA
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R30_R_SCCB_SDA
+PCB Layer
+Default
+Name
+EVT1_R30_R_SCCB_SDA
+Designator
+R30
+Value
+R_SCCB_SDA | 4.7k pull-up to CAM_DOVDD_1V8
+UserDocLink
+
+Description
+
+Symbol
+EVT1_R30_R_SCCB_SDA
+EVT1 Source Ref
+R_SCCB_SDA
+BOM Line
+BOM-49
+MPN
+R_XREQ 330R + D_XREQ RB521S-30 + C_XREQ 100nF + R_XREQ_BLEED 100k + R_CAMRST 10k/100nF + R_CAMPWDN 10k + 2x R_SCCB 4.7k + R_LS4_EN 200k
+Manufacturer
+Yageo/Murata/ROHM
+Footprint Status
+BLOCKED
+Design Notes
+Explicit return expanded from inherited Rev D function text
+Origin Footprint
+
+Unique ID
+8a972535593efa61
+Manufacturer Part
+R_XREQ 330R + D_XREQ RB521S-30 + C_XREQ 100nF + R_XREQ_BLEED 100k + R_CAMRST 10k/100nF + R_CAMPWDN 10k + 2x R_SCCB 4.7k + R_LS4_EN 200k
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+R31
+FOOTPRINT
+
+PARTTYPE
+EVT1_R31_R_SENSE
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R31_R_SENSE
+PCB Layer
+Default
+Name
+EVT1_R31_R_SENSE
+Designator
+R31
+Value
+R_SENSE | 2.20R 0.1% (Kelvin)
+UserDocLink
+https://www.ti.com/lit/ds/symlink/ina185.pdf
+Description
+
+Symbol
+EVT1_R31_R_SENSE
+EVT1 Source Ref
+R_SENSE
+BOM Line
+BOM-24
+MPN
+R_SENSE ERA-2AEB2R2X (2.20R 0.1%) + R_LIMIT 249R (high side) + window divider R1=33.2k/R2=32.4k/R3=32.4k + R_PRIV_PU 10k + 1ms RC + R_CRST_A_PD 100k + R_DIR1_PU 10k + R_LS1_A4/B4 100k + 4x I2C 2.2k + R_LS3_EN 200k + R_BB_FB1 560k/R_BB_FB2 100k + R_VSET_1V8 + R_CHIP_PU 10k/C_CHIP_PU 1uF
+Manufacturer
+Panasonic / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+
+Origin Footprint
+
+Unique ID
+b304d0fb6138316f
+
+*
+]
+[
+DESIGNATOR
+R33
+FOOTPRINT
+
+PARTTYPE
+EVT1_R33_R_WIN_BOT
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R33_R_WIN_BOT
+PCB Layer
+Default
+Name
+EVT1_R33_R_WIN_BOT
+Designator
+R33
+Value
+R_WIN_BOT | 32.4k 1%
+UserDocLink
+
+Description
+
+Origin Footprint
+Resistor_SMD:R_0201_0603Metric
+Symbol
+EVT1_R33_R_WIN_BOT
+EVT1 Source Ref
+R_WIN_BOT
+BOM Line
+BOM-D1-PRIV-R_WIN_BOT
+MPN
+32.4k 1%
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+
+Unique ID
+e0ee0f05e2f0b4da
+Manufacturer Part
+32.4k 1%
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+R34
+FOOTPRINT
+
+PARTTYPE
+EVT1_R34_R_WIN_MID
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R34_R_WIN_MID
+PCB Layer
+Default
+Name
+EVT1_R34_R_WIN_MID
+Designator
+R34
+Value
+R_WIN_MID | 32.4k 1%
+UserDocLink
+
+Description
+
+Origin Footprint
+Resistor_SMD:R_0201_0603Metric
+Symbol
+EVT1_R34_R_WIN_MID
+EVT1 Source Ref
+R_WIN_MID
+BOM Line
+BOM-D1-PRIV-R_WIN_MID
+MPN
+32.4k 1%
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+
+Unique ID
+c7fcac2dc179deab
+Manufacturer Part
+32.4k 1%
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+R35
+FOOTPRINT
+
+PARTTYPE
+EVT1_R35_R_WIN_TOP
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R35_R_WIN_TOP
+PCB Layer
+Default
+Name
+EVT1_R35_R_WIN_TOP
+Designator
+R35
+Value
+R_WIN_TOP | 33.2k 1%
+UserDocLink
+
+Description
+
+Origin Footprint
+Resistor_SMD:R_0201_0603Metric
+Symbol
+EVT1_R35_R_WIN_TOP
+EVT1 Source Ref
+R_WIN_TOP
+BOM Line
+BOM-D1-PRIV-R_WIN_TOP
+MPN
+33.2k 1%
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+
+Unique ID
+ed5ed49cac6cc905
+Manufacturer Part
+33.2k 1%
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+R36
+FOOTPRINT
+
+PARTTYPE
+EVT1_R36_R_XREQ
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R36_R_XREQ
+PCB Layer
+Default
+Name
+EVT1_R36_R_XREQ
+Designator
+R36
+Value
+R_XREQ | 330R series to detector
+UserDocLink
+
+Description
+
+Symbol
+EVT1_R36_R_XREQ
+EVT1 Source Ref
+R_XREQ
+BOM Line
+BOM-49
+MPN
+R_XREQ 330R + D_XREQ RB521S-30 + C_XREQ 100nF + R_XREQ_BLEED 100k + R_CAMRST 10k/100nF + R_CAMPWDN 10k + 2x R_SCCB 4.7k + R_LS4_EN 200k
+Manufacturer
+Yageo/Murata/ROHM
+Footprint Status
+BLOCKED
+Design Notes
+
+Origin Footprint
+
+Unique ID
+ee084f684bde39fa
+Manufacturer Part
+R_XREQ 330R + D_XREQ RB521S-30 + C_XREQ 100nF + R_XREQ_BLEED 100k + R_CAMRST 10k/100nF + R_CAMPWDN 10k + 2x R_SCCB 4.7k + R_LS4_EN 200k
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+R37
+FOOTPRINT
+
+PARTTYPE
+EVT1_R37_R_XREQ_BLEED
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R37_R_XREQ_BLEED
+PCB Layer
+Default
+Name
+EVT1_R37_R_XREQ_BLEED
+Designator
+R37
+Value
+R_XREQ_BLEED | 100k to GND
+UserDocLink
+
+Description
+
+Symbol
+EVT1_R37_R_XREQ_BLEED
+EVT1 Source Ref
+R_XREQ_BLEED
+BOM Line
+BOM-49
+MPN
+R_XREQ 330R + D_XREQ RB521S-30 + C_XREQ 100nF + R_XREQ_BLEED 100k + R_CAMRST 10k/100nF + R_CAMPWDN 10k + 2x R_SCCB 4.7k + R_LS4_EN 200k
+Manufacturer
+Yageo/Murata/ROHM
+Footprint Status
+BLOCKED
+Design Notes
+Explicit return expanded from inherited Rev D function text
+Origin Footprint
+
+Unique ID
+0e69257913149112
+Manufacturer Part
+R_XREQ 330R + D_XREQ RB521S-30 + C_XREQ 100nF + R_XREQ_BLEED 100k + R_CAMRST 10k/100nF + R_CAMPWDN 10k + 2x R_SCCB 4.7k + R_LS4_EN 200k
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+U1
+FOOTPRINT
+
+PARTTYPE
+EVT1_U1_U1_HOST
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_U1_U1_HOST
+PCB Layer
+Default
+Name
+EVT1_U1_U1_HOST
+Designator
+U1
+Value
+U1_HOST | ESP32-S3-PICO-1-N8R8
+UserDocLink
+https://documentation.espressif.com/esp32-s3-pico-1_datasheet_en.pdf
+Description
+
+Symbol
+EVT1_U1_U1_HOST
+EVT1 Source Ref
+U1_HOST
+BOM Line
+BOM-02
+MPN
+ESP32-S3-PICO-1-N8R8
+Manufacturer
+Espressif
+Footprint Status
+BLOCKED
+Design Notes
+RF matching is inside the SiP; RN_ESP_RF = antenna tuning pi only | SiP3.0..3.6V; integrated local decoupling; external bulk C_ESP_BULK | RC delay: R_CHIP_PU to 3V3_SYS + C_CHIP_PU to GND (values per Espressif HW design guidelines) | STRAP_BOOT | STRAP_JTAG_EFUSE_GATED | REV_D_REMAP (was PDM_CLK) | active-low falling-edge IRQ | N8R2:28PSRAM internal; unused GPIO38..42 board NC; N8R8 also internally reservesGPIO33..37 | Internal memory supply output; decouple, do not short to3V3_SYS; strapGPIO45=0 at reset | REV_D_REMAP (was I2S1_BCLK); U0TXD ROM log harmless into nRF SDIN | REV_D_REMAP (was I2S1_LRCLK); U0RXD is input at reset | STRAP_VDD_SPI; REV_D_REMAP (was I2S1_DOUT): only ESP32 drives it | STRAP_BOOT_PRINT
+Origin Footprint
+
+Unique ID
+1bdc0ab44f99f92d
+Manufacturer Part
+ESP32-S3-PICO-1-N8R8
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+U18
+FOOTPRINT
+
+PARTTYPE
+EVT1_U18_U8_LS1
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_U18_U8_LS1
+PCB Layer
+Default
+Name
+EVT1_U18_U8_LS1
+Designator
+U18
+Value
+U8_LS1 | SN74AXC8T245RJWR
+UserDocLink
+https://www.ti.com/lit/ds/symlink/sn74axc8t245.pdf
+Description
+
+Symbol
+EVT1_U18_U8_LS1
+EVT1 Source Ref
+U8_LS1
+BOM Line
+BOM-16
+MPN
+SN74AXC8T245RJWR
+Manufacturer
+Texas Instruments
+Footprint Status
+BLOCKED
+Design Notes
+DIR1=CTRL:QSPI_DIR1_EN | bank=1 dir=CTRL:QSPI_DIR1_EN; Bank1 A1 | bank=1 dir=CTRL:QSPI_DIR1_EN; Bank1 A2 | bank=1 dir=CTRL:QSPI_DIR1_EN; Bank1 A3 | bank=1 dir=CTRL:QSPI_DIR1_EN; Bank1 A4 | bank=2 dir=H; Bank2 A5 | bank=2 dir=H; Bank2 A6 | bank=2 dir=H; Bank2 A7 | bank=2 dir=H; Bank2 A8 | DIR2=H | bank=2 dir=H; Bank2 B8 | bank=2 dir=H; Bank2 B7 | bank=2 dir=H; Bank2 B6 | bank=2 dir=H; Bank2 B5 | bank=1 dir=CTRL:QSPI_DIR1_EN; Bank1 B4 | bank=1 dir=CTRL:QSPI_DIR1_EN; Bank1 B3 | bank=1 dir=CTRL:QSPI_DIR1_EN; Bank1 B2 | bank=1 dir=CTRL:QSPI_DIR1_EN; Bank1 B1 | OE active-low tied GND | VCCA
+Origin Footprint
+
+Unique ID
+3b01714176430545
+Manufacturer Part
+SN74AXC8T245RJWR
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+U19
+FOOTPRINT
+
+PARTTYPE
+EVT1_U19_U8_LS3
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_U19_U8_LS3
+PCB Layer
+Default
+Name
+EVT1_U19_U8_LS3
+Designator
+U19
+Value
+U8_LS3 | PCA9306DQER
+UserDocLink
+https://www.ti.com/lit/ds/symlink/pca9306.pdf
+Description
+
+Origin Footprint
+Package_SON:X2SON-8_1.4x1mm_P0.35mm
+Symbol
+EVT1_U19_U8_LS3
+EVT1 Source Ref
+U8_LS3
+BOM Line
+BOM-03
+MPN
+PCA9306DQER
+Manufacturer
+Texas Instruments
+Footprint Status
+PASS
+Design Notes
+VREF2 tied to EN (TI typical application)
+Unique ID
+a4a6b0395ae03088
+Manufacturer Part
+PCA9306DQER
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+U20
+FOOTPRINT
+
+PARTTYPE
+EVT1_U20_U8_LS4
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_U20_U8_LS4
+PCB Layer
+Default
+Name
+EVT1_U20_U8_LS4
+Designator
+U20
+Value
+U8_LS4 | PCA9306DQER
+UserDocLink
+https://www.ti.com/lit/ds/symlink/pca9306.pdf
+Description
+
+Origin Footprint
+Package_SON:X2SON-8_1.4x1mm_P0.35mm
+Symbol
+EVT1_U20_U8_LS4
+EVT1 Source Ref
+U8_LS4
+BOM Line
+BOM-48
+MPN
+PCA9306DQER
+Manufacturer
+Texas Instruments
+Footprint Status
+PASS
+Design Notes
+Explicit U8_CAM_SCCB_EN clamp required; VREF1=0 alone is NOT isolation
+Unique ID
+bbc2f931070973b7
+Manufacturer Part
+PCA9306DQER
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+U12
+FOOTPRINT
+
+PARTTYPE
+EVT1_U12_U12_ESD_USB
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_U12_U12_ESD_USB
+PCB Layer
+Default
+Name
+EVT1_U12_U12_ESD_USB
+Designator
+U12
+Value
+U12_ESD_USB | BLOCKED | MPN_TBD (USB2 FS 2-line + VBUS TVS, <=1 mm2)
+UserDocLink
+
+Description
+
+Symbol
+EVT1_U12_U12_ESD_USB
+EVT1 Source Ref
+U12_ESD_USB
+BOM Line
+BOM-51
+MPN
+MPN_TBD (USB2 FS 2-line + VBUS TVS, <=1 mm2)
+Manufacturer
+TBD
+Footprint Status
+BLOCKED
+Design Notes
+
+Origin Footprint
+
+Unique ID
+b6112465b0588c80
+
+*
+]
+[
+DESIGNATOR
+C10
+FOOTPRINT
+
+PARTTYPE
+EVT1_C10_C_CHIP_PU
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C10_C_CHIP_PU
+PCB Layer
+Default
+Name
+EVT1_C10_C_CHIP_PU
+Designator
+C10
+Value
+C_CHIP_PU | 1 uF to GND
+UserDocLink
+https://www.ti.com/lit/ds/symlink/ina185.pdf
+Description
+
+Symbol
+EVT1_C10_C_CHIP_PU
+EVT1 Source Ref
+C_CHIP_PU
+BOM Line
+BOM-24
+MPN
+R_SENSE ERA-2AEB2R2X (2.20R 0.1%) + R_LIMIT 249R (high side) + window divider R1=33.2k/R2=32.4k/R3=32.4k + R_PRIV_PU 10k + 1ms RC + R_CRST_A_PD 100k + R_DIR1_PU 10k + R_LS1_A4/B4 100k + 4x I2C 2.2k + R_LS3_EN 200k + R_BB_FB1 560k/R_BB_FB2 100k + R_VSET_1V8 + R_CHIP_PU 10k/C_CHIP_PU 1uF
+Manufacturer
+Panasonic / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+Completes CHIP_PU RC return
+Origin Footprint
+
+Unique ID
+3e75135af30e0f04
+Manufacturer Part
+
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C11
+FOOTPRINT
+
+PARTTYPE
+EVT1_C11_C_ESP_BULK
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C11_C_ESP_BULK
+PCB Layer
+Default
+Name
+EVT1_C11_C_ESP_BULK
+Designator
+C11
+Value
+C_ESP_BULK | 22 uF nominal (DCbias qualification pending)
+UserDocLink
+
+Description
+
+Symbol
+EVT1_C11_C_ESP_BULK
+EVT1 Source Ref
+C_ESP_BULK
+BOM Line
+BOM-SOC-01
+MPN
+22uF bulk +1uF VDD_SPI +10k GPIO0 pull-up +3x100k strap pull-down +0RRFseries +2DNPshunts
+Manufacturer
+TBD (value/package selected; exact procurement MPN open)
+Footprint Status
+BLOCKED
+Design Notes
+Espressif peripheral schematic bulk22uF; stable supply >=500mA
+Origin Footprint
+
+Unique ID
+20764de07767b3a1
+Manufacturer Part
+22uF bulk +1uF VDD_SPI +10k GPIO0 pull-up +3x100k strap pull-down +0RRFseries +2DNPshunts
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C12
+FOOTPRINT
+
+PARTTYPE
+EVT1_C12_C_ESP_RF_IN
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C12_C_ESP_RF_IN
+PCB Layer
+Default
+Name
+EVT1_C12_C_ESP_RF_IN
+Designator
+C12
+Value
+C_ESP_RF_IN | DNP antenna tuning shunt
+UserDocLink
+
+Description
+
+Symbol
+EVT1_C12_C_ESP_RF_IN
+EVT1 Source Ref
+C_ESP_RF_IN
+BOM Line
+BOM-SOC-01
+MPN
+22uF bulk +1uF VDD_SPI +10k GPIO0 pull-up +3x100k strap pull-down +0RRFseries +2DNPshunts
+Manufacturer
+TBD (value/package selected; exact procurement MPN open)
+Footprint Status
+BLOCKED
+Design Notes
+No invented antenna tuning capacitance
+Origin Footprint
+
+Unique ID
+26a39bcafcc8ce7c
+Manufacturer Part
+22uF bulk +1uF VDD_SPI +10k GPIO0 pull-up +3x100k strap pull-down +0RRFseries +2DNPshunts
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C13
+FOOTPRINT
+
+PARTTYPE
+EVT1_C13_C_ESP_RF_OUT
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C13_C_ESP_RF_OUT
+PCB Layer
+Default
+Name
+EVT1_C13_C_ESP_RF_OUT
+Designator
+C13
+Value
+C_ESP_RF_OUT | DNP antenna tuning shunt
+UserDocLink
+
+Description
+
+Symbol
+EVT1_C13_C_ESP_RF_OUT
+EVT1 Source Ref
+C_ESP_RF_OUT
+BOM Line
+BOM-SOC-01
+MPN
+22uF bulk +1uF VDD_SPI +10k GPIO0 pull-up +3x100k strap pull-down +0RRFseries +2DNPshunts
+Manufacturer
+TBD (value/package selected; exact procurement MPN open)
+Footprint Status
+BLOCKED
+Design Notes
+No invented antenna tuning capacitance
+Origin Footprint
+
+Unique ID
+e7ba3aba9f9889c8
+Manufacturer Part
+22uF bulk +1uF VDD_SPI +10k GPIO0 pull-up +3x100k strap pull-down +0RRFseries +2DNPshunts
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C14
+FOOTPRINT
+
+PARTTYPE
+EVT1_C14_C_ESP_VDD_SPI
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C14_C_ESP_VDD_SPI
+PCB Layer
+Default
+Name
+EVT1_C14_C_ESP_VDD_SPI
+Designator
+C14
+Value
+C_ESP_VDD_SPI | 1 uF
+UserDocLink
+
+Description
+
+Symbol
+EVT1_C14_C_ESP_VDD_SPI
+EVT1 Source Ref
+C_ESP_VDD_SPI
+BOM Line
+BOM-SOC-01
+MPN
+22uF bulk +1uF VDD_SPI +10k GPIO0 pull-up +3x100k strap pull-down +0RRFseries +2DNPshunts
+Manufacturer
+TBD (value/package selected; exact procurement MPN open)
+Footprint Status
+BLOCKED
+Design Notes
+Local decoupling design allowance; qualify stable VDD_SPI per selected SiP
+Origin Footprint
+
+Unique ID
+00361082df9d4549
+Manufacturer Part
+22uF bulk +1uF VDD_SPI +10k GPIO0 pull-up +3x100k strap pull-down +0RRFseries +2DNPshunts
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C35
+FOOTPRINT
+
+PARTTYPE
+EVT1_C35_C_U8_LS1_A
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C35_C_U8_LS1_A
+PCB Layer
+Default
+Name
+EVT1_C35_C_U8_LS1_A
+Designator
+C35
+Value
+C_U8_LS1_A | 100nF X7R 6.3V 0201
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0201_0603Metric
+Symbol
+EVT1_C35_C_U8_LS1_A
+EVT1 Source Ref
+C_U8_LS1_A
+BOM Line
+BOM-D1-AT03
+MPN
+0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+TI power-supply recommendations: nearest VCC/GND pins
+Unique ID
+2b4e6e580c7acde0
+Manufacturer Part
+0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+C36
+FOOTPRINT
+
+PARTTYPE
+EVT1_C36_C_U8_LS1_B
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_C36_C_U8_LS1_B
+PCB Layer
+Default
+Name
+EVT1_C36_C_U8_LS1_B
+Designator
+C36
+Value
+C_U8_LS1_B | 100nF X7R 6.3V 0201
+UserDocLink
+
+Description
+
+Origin Footprint
+Capacitor_SMD:C_0201_0603Metric
+Symbol
+EVT1_C36_C_U8_LS1_B
+EVT1 Source Ref
+C_U8_LS1_B
+BOM Line
+BOM-D1-AT03
+MPN
+0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification
+Manufacturer
+TBD
+Footprint Status
+PASS
+Design Notes
+TI power-supply recommendations: nearest VCC/GND pins
+Unique ID
+3db1f6a400993974
+Manufacturer Part
+0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+R7
+FOOTPRINT
+
+PARTTYPE
+EVT1_R7_R_CHIP_PU
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R7_R_CHIP_PU
+PCB Layer
+Default
+Name
+EVT1_R7_R_CHIP_PU
+Designator
+R7
+Value
+R_CHIP_PU | 10k to 3V3_SYS
+UserDocLink
+https://www.ti.com/lit/ds/symlink/ina185.pdf
+Description
+
+Symbol
+EVT1_R7_R_CHIP_PU
+EVT1 Source Ref
+R_CHIP_PU
+BOM Line
+BOM-24
+MPN
+R_SENSE ERA-2AEB2R2X (2.20R 0.1%) + R_LIMIT 249R (high side) + window divider R1=33.2k/R2=32.4k/R3=32.4k + R_PRIV_PU 10k + 1ms RC + R_CRST_A_PD 100k + R_DIR1_PU 10k + R_LS1_A4/B4 100k + 4x I2C 2.2k + R_LS3_EN 200k + R_BB_FB1 560k/R_BB_FB2 100k + R_VSET_1V8 + R_CHIP_PU 10k/C_CHIP_PU 1uF
+Manufacturer
+Panasonic / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+
+Origin Footprint
+
+Unique ID
+ba2c6d155e7fd301
+
+*
+]
+[
+DESIGNATOR
+R8
+FOOTPRINT
+
+PARTTYPE
+EVT1_R8_R_CRST_A_PD
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R8_R_CRST_A_PD
+PCB Layer
+Default
+Name
+EVT1_R8_R_CRST_A_PD
+Designator
+R8
+Value
+R_CRST_A_PD | 100k pull-down (FPGA held in reset until GPIO18 drives)
+UserDocLink
+https://www.ti.com/lit/ds/symlink/ina185.pdf
+Description
+
+Symbol
+EVT1_R8_R_CRST_A_PD
+EVT1 Source Ref
+R_CRST_A_PD
+BOM Line
+BOM-24
+MPN
+R_SENSE ERA-2AEB2R2X (2.20R 0.1%) + R_LIMIT 249R (high side) + window divider R1=33.2k/R2=32.4k/R3=32.4k + R_PRIV_PU 10k + 1ms RC + R_CRST_A_PD 100k + R_DIR1_PU 10k + R_LS1_A4/B4 100k + 4x I2C 2.2k + R_LS3_EN 200k + R_BB_FB1 560k/R_BB_FB2 100k + R_VSET_1V8 + R_CHIP_PU 10k/C_CHIP_PU 1uF
+Manufacturer
+Panasonic / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+Explicit return expanded from inherited Rev D function text
+Origin Footprint
+
+Unique ID
+86d447fa2a9c8586
+
+*
+]
+[
+DESIGNATOR
+R9
+FOOTPRINT
+
+PARTTYPE
+EVT1_R9_R_DIR1_PU
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R9_R_DIR1_PU
+PCB Layer
+Default
+Name
+EVT1_R9_R_DIR1_PU
+Designator
+R9
+Value
+R_DIR1_PU | 10k pull-up (GPIO0 boot strap)
+UserDocLink
+https://www.ti.com/lit/ds/symlink/ina185.pdf
+Description
+
+Symbol
+EVT1_R9_R_DIR1_PU
+EVT1 Source Ref
+R_DIR1_PU
+BOM Line
+BOM-24
+MPN
+R_SENSE ERA-2AEB2R2X (2.20R 0.1%) + R_LIMIT 249R (high side) + window divider R1=33.2k/R2=32.4k/R3=32.4k + R_PRIV_PU 10k + 1ms RC + R_CRST_A_PD 100k + R_DIR1_PU 10k + R_LS1_A4/B4 100k + 4x I2C 2.2k + R_LS3_EN 200k + R_BB_FB1 560k/R_BB_FB2 100k + R_VSET_1V8 + R_CHIP_PU 10k/C_CHIP_PU 1uF
+Manufacturer
+Panasonic / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+Explicit return expanded from inherited Rev D function text
+Origin Footprint
+
+Unique ID
+1e1ffada38203b9e
+
+*
+]
+[
+DESIGNATOR
+R10
+FOOTPRINT
+
+PARTTYPE
+EVT1_R10_R_ESP_BOOT
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R10_R_ESP_BOOT
+PCB Layer
+Default
+Name
+EVT1_R10_R_ESP_BOOT
+Designator
+R10
+Value
+R_ESP_BOOT | 10k
+UserDocLink
+
+Description
+
+Symbol
+EVT1_R10_R_ESP_BOOT
+EVT1 Source Ref
+R_ESP_BOOT
+BOM Line
+BOM-SOC-01
+MPN
+22uF bulk +1uF VDD_SPI +10k GPIO0 pull-up +3x100k strap pull-down +0RRFseries +2DNPshunts
+Manufacturer
+TBD (value/package selected; exact procurement MPN open)
+Footprint Status
+BLOCKED
+Design Notes
+GPIO0 boot pull-up; BOOT fixture pulls toGND
+Origin Footprint
+
+Unique ID
+41bc0941336b1513
+Manufacturer Part
+22uF bulk +1uF VDD_SPI +10k GPIO0 pull-up +3x100k strap pull-down +0RRFseries +2DNPshunts
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+R11
+FOOTPRINT
+
+PARTTYPE
+EVT1_R11_R_ESP_RF
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R11_R_ESP_RF
+PCB Layer
+Default
+Name
+EVT1_R11_R_ESP_RF
+Designator
+R11
+Value
+R_ESP_RF | 0R initial series tuning link
+UserDocLink
+
+Description
+
+Symbol
+EVT1_R11_R_ESP_RF
+EVT1 Source Ref
+R_ESP_RF
+BOM Line
+BOM-SOC-01
+MPN
+22uF bulk +1uF VDD_SPI +10k GPIO0 pull-up +3x100k strap pull-down +0RRFseries +2DNPshunts
+Manufacturer
+TBD (value/package selected; exact procurement MPN open)
+Footprint Status
+BLOCKED
+Design Notes
+SiP RFmatch internal; external antenna tune after VNA/OTA
+Origin Footprint
+
+Unique ID
+763cf8d5648cb4fd
+Manufacturer Part
+22uF bulk +1uF VDD_SPI +10k GPIO0 pull-up +3x100k strap pull-down +0RRFseries +2DNPshunts
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+R12
+FOOTPRINT
+
+PARTTYPE
+EVT1_R12_R_ESP_STRAP3
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R12_R_ESP_STRAP3
+PCB Layer
+Default
+Name
+EVT1_R12_R_ESP_STRAP3
+Designator
+R12
+Value
+R_ESP_STRAP3 | 100k
+UserDocLink
+
+Description
+
+Symbol
+EVT1_R12_R_ESP_STRAP3
+EVT1 Source Ref
+R_ESP_STRAP3
+BOM Line
+BOM-SOC-01
+MPN
+22uF bulk +1uF VDD_SPI +10k GPIO0 pull-up +3x100k strap pull-down +0RRFseries +2DNPshunts
+Manufacturer
+TBD (value/package selected; exact procurement MPN open)
+Footprint Status
+BLOCKED
+Design Notes
+Deterministic GPIO3 JTAG strap while camera isolation holds
+Origin Footprint
+
+Unique ID
+15ac9218146e0f4b
+Manufacturer Part
+22uF bulk +1uF VDD_SPI +10k GPIO0 pull-up +3x100k strap pull-down +0RRFseries +2DNPshunts
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+R13
+FOOTPRINT
+
+PARTTYPE
+EVT1_R13_R_ESP_STRAP45
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R13_R_ESP_STRAP45
+PCB Layer
+Default
+Name
+EVT1_R13_R_ESP_STRAP45
+Designator
+R13
+Value
+R_ESP_STRAP45 | 100k
+UserDocLink
+
+Description
+
+Symbol
+EVT1_R13_R_ESP_STRAP45
+EVT1 Source Ref
+R_ESP_STRAP45
+BOM Line
+BOM-SOC-01
+MPN
+22uF bulk +1uF VDD_SPI +10k GPIO0 pull-up +3x100k strap pull-down +0RRFseries +2DNPshunts
+Manufacturer
+TBD (value/package selected; exact procurement MPN open)
+Footprint Status
+BLOCKED
+Design Notes
+Keep flash3.3V strap low during reset; active PDM clock after reset
+Origin Footprint
+
+Unique ID
+ff4077a9ca69db92
+Manufacturer Part
+22uF bulk +1uF VDD_SPI +10k GPIO0 pull-up +3x100k strap pull-down +0RRFseries +2DNPshunts
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+R14
+FOOTPRINT
+
+PARTTYPE
+EVT1_R14_R_ESP_STRAP46
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R14_R_ESP_STRAP46
+PCB Layer
+Default
+Name
+EVT1_R14_R_ESP_STRAP46
+Designator
+R14
+Value
+R_ESP_STRAP46 | 100k
+UserDocLink
+
+Description
+
+Symbol
+EVT1_R14_R_ESP_STRAP46
+EVT1 Source Ref
+R_ESP_STRAP46
+BOM Line
+BOM-SOC-01
+MPN
+22uF bulk +1uF VDD_SPI +10k GPIO0 pull-up +3x100k strap pull-down +0RRFseries +2DNPshunts
+Manufacturer
+TBD (value/package selected; exact procurement MPN open)
+Footprint Status
+BLOCKED
+Design Notes
+GPIO46 low during download boot; drive XCLK only after reset strap hold
+Origin Footprint
+
+Unique ID
+8b54177fc4d64d35
+Manufacturer Part
+22uF bulk +1uF VDD_SPI +10k GPIO0 pull-up +3x100k strap pull-down +0RRFseries +2DNPshunts
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+R15
+FOOTPRINT
+
+PARTTYPE
+EVT1_R15_R_I2C_SCL_1V8
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R15_R_I2C_SCL_1V8
+PCB Layer
+Default
+Name
+EVT1_R15_R_I2C_SCL_1V8
+Designator
+R15
+Value
+R_I2C_SCL_1V8 | 2.2k pull-up to 1V8_SYS
+UserDocLink
+https://www.ti.com/lit/ds/symlink/ina185.pdf
+Description
+
+Symbol
+EVT1_R15_R_I2C_SCL_1V8
+EVT1 Source Ref
+R_I2C_SCL_1V8
+BOM Line
+BOM-24
+MPN
+R_SENSE ERA-2AEB2R2X (2.20R 0.1%) + R_LIMIT 249R (high side) + window divider R1=33.2k/R2=32.4k/R3=32.4k + R_PRIV_PU 10k + 1ms RC + R_CRST_A_PD 100k + R_DIR1_PU 10k + R_LS1_A4/B4 100k + 4x I2C 2.2k + R_LS3_EN 200k + R_BB_FB1 560k/R_BB_FB2 100k + R_VSET_1V8 + R_CHIP_PU 10k/C_CHIP_PU 1uF
+Manufacturer
+Panasonic / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+Explicit return expanded from inherited Rev D function text
+Origin Footprint
+
+Unique ID
+feece054417b9159
+
+*
+]
+[
+DESIGNATOR
+R16
+FOOTPRINT
+
+PARTTYPE
+EVT1_R16_R_I2C_SCL_3V3
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R16_R_I2C_SCL_3V3
+PCB Layer
+Default
+Name
+EVT1_R16_R_I2C_SCL_3V3
+Designator
+R16
+Value
+R_I2C_SCL_3V3 | 2.2k pull-up to 3V3_SYS
+UserDocLink
+https://www.ti.com/lit/ds/symlink/ina185.pdf
+Description
+
+Symbol
+EVT1_R16_R_I2C_SCL_3V3
+EVT1 Source Ref
+R_I2C_SCL_3V3
+BOM Line
+BOM-24
+MPN
+R_SENSE ERA-2AEB2R2X (2.20R 0.1%) + R_LIMIT 249R (high side) + window divider R1=33.2k/R2=32.4k/R3=32.4k + R_PRIV_PU 10k + 1ms RC + R_CRST_A_PD 100k + R_DIR1_PU 10k + R_LS1_A4/B4 100k + 4x I2C 2.2k + R_LS3_EN 200k + R_BB_FB1 560k/R_BB_FB2 100k + R_VSET_1V8 + R_CHIP_PU 10k/C_CHIP_PU 1uF
+Manufacturer
+Panasonic / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+Explicit return expanded from inherited Rev D function text
+Origin Footprint
+
+Unique ID
+3c543c7c58e1cc80
+
+*
+]
+[
+DESIGNATOR
+R17
+FOOTPRINT
+
+PARTTYPE
+EVT1_R17_R_I2C_SDA_1V8
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R17_R_I2C_SDA_1V8
+PCB Layer
+Default
+Name
+EVT1_R17_R_I2C_SDA_1V8
+Designator
+R17
+Value
+R_I2C_SDA_1V8 | 2.2k pull-up to 1V8_SYS
+UserDocLink
+https://www.ti.com/lit/ds/symlink/ina185.pdf
+Description
+
+Symbol
+EVT1_R17_R_I2C_SDA_1V8
+EVT1 Source Ref
+R_I2C_SDA_1V8
+BOM Line
+BOM-24
+MPN
+R_SENSE ERA-2AEB2R2X (2.20R 0.1%) + R_LIMIT 249R (high side) + window divider R1=33.2k/R2=32.4k/R3=32.4k + R_PRIV_PU 10k + 1ms RC + R_CRST_A_PD 100k + R_DIR1_PU 10k + R_LS1_A4/B4 100k + 4x I2C 2.2k + R_LS3_EN 200k + R_BB_FB1 560k/R_BB_FB2 100k + R_VSET_1V8 + R_CHIP_PU 10k/C_CHIP_PU 1uF
+Manufacturer
+Panasonic / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+Explicit return expanded from inherited Rev D function text
+Origin Footprint
+
+Unique ID
+6346d187b4e0bc9c
+
+*
+]
+[
+DESIGNATOR
+R18
+FOOTPRINT
+
+PARTTYPE
+EVT1_R18_R_I2C_SDA_3V3
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R18_R_I2C_SDA_3V3
+PCB Layer
+Default
+Name
+EVT1_R18_R_I2C_SDA_3V3
+Designator
+R18
+Value
+R_I2C_SDA_3V3 | 2.2k pull-up to 3V3_SYS
+UserDocLink
+https://www.ti.com/lit/ds/symlink/ina185.pdf
+Description
+
+Symbol
+EVT1_R18_R_I2C_SDA_3V3
+EVT1 Source Ref
+R_I2C_SDA_3V3
+BOM Line
+BOM-24
+MPN
+R_SENSE ERA-2AEB2R2X (2.20R 0.1%) + R_LIMIT 249R (high side) + window divider R1=33.2k/R2=32.4k/R3=32.4k + R_PRIV_PU 10k + 1ms RC + R_CRST_A_PD 100k + R_DIR1_PU 10k + R_LS1_A4/B4 100k + 4x I2C 2.2k + R_LS3_EN 200k + R_BB_FB1 560k/R_BB_FB2 100k + R_VSET_1V8 + R_CHIP_PU 10k/C_CHIP_PU 1uF
+Manufacturer
+Panasonic / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+Explicit return expanded from inherited Rev D function text
+Origin Footprint
+
+Unique ID
+5f673669f0d56d8f
+
+*
+]
+[
+DESIGNATOR
+R22
+FOOTPRINT
+
+PARTTYPE
+EVT1_R22_R_LS1_A4
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R22_R_LS1_A4
+PCB Layer
+Default
+Name
+EVT1_R22_R_LS1_A4
+Designator
+R22
+Value
+R_LS1_A4 | 100k to GND
+UserDocLink
+https://www.ti.com/lit/ds/symlink/ina185.pdf
+Description
+
+Symbol
+EVT1_R22_R_LS1_A4
+EVT1 Source Ref
+R_LS1_A4
+BOM Line
+BOM-24
+MPN
+R_SENSE ERA-2AEB2R2X (2.20R 0.1%) + R_LIMIT 249R (high side) + window divider R1=33.2k/R2=32.4k/R3=32.4k + R_PRIV_PU 10k + 1ms RC + R_CRST_A_PD 100k + R_DIR1_PU 10k + R_LS1_A4/B4 100k + 4x I2C 2.2k + R_LS3_EN 200k + R_BB_FB1 560k/R_BB_FB2 100k + R_VSET_1V8 + R_CHIP_PU 10k/C_CHIP_PU 1uF
+Manufacturer
+Panasonic / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+
+Origin Footprint
+
+Unique ID
+fa394caafc8878d8
+
+*
+]
+[
+DESIGNATOR
+R23
+FOOTPRINT
+
+PARTTYPE
+EVT1_R23_R_LS1_B4
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R23_R_LS1_B4
+PCB Layer
+Default
+Name
+EVT1_R23_R_LS1_B4
+Designator
+R23
+Value
+R_LS1_B4 | 100k to GND
+UserDocLink
+https://www.ti.com/lit/ds/symlink/ina185.pdf
+Description
+
+Symbol
+EVT1_R23_R_LS1_B4
+EVT1 Source Ref
+R_LS1_B4
+BOM Line
+BOM-24
+MPN
+R_SENSE ERA-2AEB2R2X (2.20R 0.1%) + R_LIMIT 249R (high side) + window divider R1=33.2k/R2=32.4k/R3=32.4k + R_PRIV_PU 10k + 1ms RC + R_CRST_A_PD 100k + R_DIR1_PU 10k + R_LS1_A4/B4 100k + 4x I2C 2.2k + R_LS3_EN 200k + R_BB_FB1 560k/R_BB_FB2 100k + R_VSET_1V8 + R_CHIP_PU 10k/C_CHIP_PU 1uF
+Manufacturer
+Panasonic / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+
+Origin Footprint
+
+Unique ID
+d92c635076b33213
+
+*
+]
+[
+DESIGNATOR
+R24
+FOOTPRINT
+
+PARTTYPE
+EVT1_R24_R_LS3_EN
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R24_R_LS3_EN
+PCB Layer
+Default
+Name
+EVT1_R24_R_LS3_EN
+Designator
+R24
+Value
+R_LS3_EN | 200k
+UserDocLink
+https://www.ti.com/lit/ds/symlink/ina185.pdf
+Description
+
+Symbol
+EVT1_R24_R_LS3_EN
+EVT1 Source Ref
+R_LS3_EN
+BOM Line
+BOM-24
+MPN
+R_SENSE ERA-2AEB2R2X (2.20R 0.1%) + R_LIMIT 249R (high side) + window divider R1=33.2k/R2=32.4k/R3=32.4k + R_PRIV_PU 10k + 1ms RC + R_CRST_A_PD 100k + R_DIR1_PU 10k + R_LS1_A4/B4 100k + 4x I2C 2.2k + R_LS3_EN 200k + R_BB_FB1 560k/R_BB_FB2 100k + R_VSET_1V8 + R_CHIP_PU 10k/C_CHIP_PU 1uF
+Manufacturer
+Panasonic / Yageo
+Footprint Status
+BLOCKED
+Design Notes
+
+Origin Footprint
+
+Unique ID
+f7952e9f9cd6773b
+
+*
+]
+[
+DESIGNATOR
+R25
+FOOTPRINT
+
+PARTTYPE
+EVT1_R25_R_LS3_VREF_BLEED
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R25_R_LS3_VREF_BLEED
+PCB Layer
+Default
+Name
+EVT1_R25_R_LS3_VREF_BLEED
+Designator
+R25
+Value
+R_LS3_VREF_BLEED | 100k 1%
+UserDocLink
+
+Description
+
+Symbol
+EVT1_R25_R_LS3_VREF_BLEED
+EVT1 Source Ref
+R_LS3_VREF_BLEED
+BOM Line
+BOM-D1-AT03
+MPN
+0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification
+Manufacturer
+TBD
+Footprint Status
+BLOCKED
+Design Notes
+PCA9306 8.1.7 bias leakage path; about32uW nominal
+Origin Footprint
+
+Unique ID
+6f4c4beafd605d3e
+Manufacturer Part
+0201 R/C + two0402 10uF capacitors; exact MPNs require bias/assembly qualification
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+R26
+FOOTPRINT
+
+PARTTYPE
+EVT1_R26_R_LS4_EN
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_R26_R_LS4_EN
+PCB Layer
+Default
+Name
+EVT1_R26_R_LS4_EN
+Designator
+R26
+Value
+R_LS4_EN | 200k
+UserDocLink
+
+Description
+
+Symbol
+EVT1_R26_R_LS4_EN
+EVT1 Source Ref
+R_LS4_EN
+BOM Line
+BOM-49
+MPN
+R_XREQ 330R + D_XREQ RB521S-30 + C_XREQ 100nF + R_XREQ_BLEED 100k + R_CAMRST 10k/100nF + R_CAMPWDN 10k + 2x R_SCCB 4.7k + R_LS4_EN 200k
+Manufacturer
+Yageo/Murata/ROHM
+Footprint Status
+BLOCKED
+Design Notes
+
+Origin Footprint
+
+Unique ID
+09b823a69019dbbf
+Manufacturer Part
+R_XREQ 330R + D_XREQ RB521S-30 + C_XREQ 100nF + R_XREQ_BLEED 100k + R_CAMRST 10k/100nF + R_CAMPWDN 10k + 2x R_SCCB 4.7k + R_LS4_EN 200k
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+ANT1
+FOOTPRINT
+
+PARTTYPE
+EVT1_ANT1_ANT1
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_ANT1_ANT1
+PCB Layer
+Default
+Name
+EVT1_ANT1_ANT1
+Designator
+ANT1
+Value
+ANT1 | 2450AT18B100E
+UserDocLink
+URL_TBD (Johanson 2450AT18B100E; Rev C linked the ESP32 datasheet)
+Description
+
+Symbol
+EVT1_ANT1_ANT1
+EVT1 Source Ref
+ANT1
+BOM Line
+BOM-01
+MPN
+2450AT18B100E
+Manufacturer
+Johanson Technology
+Footprint Status
+BLOCKED
+Design Notes
+
+Origin Footprint
+
+Unique ID
+2f7980bda1e20d52
+Manufacturer Part
+2450AT18B100E
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+TP3
+FOOTPRINT
+
+PARTTYPE
+EVT1_TP3_TP_ESP_BOOT
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_TP3_TP_ESP_BOOT
+PCB Layer
+Default
+Name
+EVT1_TP3_TP_ESP_BOOT
+Designator
+TP3
+Value
+TP_ESP_BOOT | test pad on GPIO0 (download mode)
+UserDocLink
+
+Description
+
+Symbol
+EVT1_TP3_TP_ESP_BOOT
+EVT1 Source Ref
+TP_ESP_BOOT
+BOM Line
+BOM-58
+MPN
+TP_ESP_EN (CHIP_PU) + TP_ESP_BOOT (GPIO0) pads
+Manufacturer
+PCB
+Footprint Status
+BLOCKED
+Design Notes
+
+Origin Footprint
+
+Unique ID
+8df4c48c9acaaf69
+Manufacturer Part
+TP_ESP_EN (CHIP_PU) + TP_ESP_BOOT (GPIO0) pads
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+TP4
+FOOTPRINT
+
+PARTTYPE
+EVT1_TP4_TP_ESP_EN
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_TP4_TP_ESP_EN
+PCB Layer
+Default
+Name
+EVT1_TP4_TP_ESP_EN
+Designator
+TP4
+Value
+TP_ESP_EN | test pad (reset/boot fixture)
+UserDocLink
+
+Description
+
+Symbol
+EVT1_TP4_TP_ESP_EN
+EVT1 Source Ref
+TP_ESP_EN
+BOM Line
+BOM-58
+MPN
+TP_ESP_EN (CHIP_PU) + TP_ESP_BOOT (GPIO0) pads
+Manufacturer
+PCB
+Footprint Status
+BLOCKED
+Design Notes
+
+Origin Footprint
+
+Unique ID
+6410be24ff53b3b6
+Manufacturer Part
+TP_ESP_EN (CHIP_PU) + TP_ESP_BOOT (GPIO0) pads
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+J1
+FOOTPRINT
+
+PARTTYPE
+EVT1_J1_J_BTB_L
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_J1_J_BTB_L
+PCB Layer
+Default
+Name
+EVT1_J1_J_BTB_L
+Designator
+J1
+Value
+J_BTB_L | BM28B0.6-30DS/2-0.35V(53)
+UserDocLink
+https://www.hirose.com/en/product/document?clcode=CL0673-5043-0-51&productname=BM28B0.6-16DS/2-0.35V(51)&series=BM28&documenttype=Catalog&lang=en&documentid=D49354_en
+Description
+
+Symbol
+EVT1_J1_J_BTB_L
+EVT1 Source Ref
+J_BTB_L
+BOM Line
+BOM-15
+MPN
+BM28B0.6-30DS/2-0.35V(53)
+Manufacturer
+Hirose (HRS)
+Footprint Status
+BLOCKED
+Design Notes
+0.45 A is the total VSYS branch peak across P2/P3, not per contact. Sharing and derating remain unverified.
+Origin Footprint
+
+Unique ID
+51bfc0e5166a1c40
+Manufacturer Part
+BM28B0.6-30DS/2-0.35V(53)
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+J2
+FOOTPRINT
+
+PARTTYPE
+EVT1_J2_J_CAM
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_J2_J_CAM
+PCB Layer
+Default
+Name
+EVT1_J2_J_CAM
+Designator
+J2
+Value
+J_CAM | BLOCKED | BM28B0.6-24DS/2-0.35V(53)
+UserDocLink
+https://www.hirose.com/en/product/document?clcode=CL0673-5043-0-51&productname=BM28B0.6-16DS/2-0.35V(51)&series=BM28&documenttype=Catalog&lang=en&documentid=D49354_en
+Description
+
+Symbol
+EVT1_J2_J_CAM
+EVT1 Source Ref
+J_CAM
+BOM Line
+BOM-05
+MPN
+BM28B0.6-24DS/2-0.35V(53)
+Manufacturer
+Hirose (HRS)
+Footprint Status
+BLOCKED
+Design Notes
+BLOCKED sensor-specific pinout, power sequence and PWDN polarity.
+Origin Footprint
+
+Unique ID
+1fb9863844ab5169
+Manufacturer Part
+BM28B0.6-24DS/2-0.35V(53)
+Supplier
+
+Supplier Part
+
+
+*
+]
+[
+DESIGNATOR
+J3
+FOOTPRINT
+
+PARTTYPE
+EVT1_J3_J_CHG
+DESCRIPTION
+
+Component Kind
+Standard
+Add into BOM
+yes
+Convert to PCB
+yes
+Device
+EVT1_J3_J_CHG
+PCB Layer
+Default
+Name
+EVT1_J3_J_CHG
+Designator
+J3
+Value
+J_CHG | BLOCKED | MPN_TBD (4-pos magnetic pogo: VBUS, D-, D+,...
+UserDocLink
+
+Description
+
+Symbol
+EVT1_J3_J_CHG
+EVT1 Source Ref
+J_CHG
+BOM Line
+BOM-50
+MPN
+MPN_TBD (4-pos magnetic pogo: VBUS, D-, D+, GND)
+Manufacturer
+TBD
+Footprint Status
+BLOCKED
+Design Notes
+Combined default charger/system demand and pre-enumeration input current are not limited by this port. Source contract BLOCKED.
+Origin Footprint
+
+Unique ID
+bd3ee0abdb58119f
+
+*
+]
+(
+1V8_SYS 
+U21-1 EVT1_U21_U8_PDM_LS-DIR1 Passive 
+U21-24 EVT1_U21_U8_PDM_LS-VCCA Passive 
+U8-3 EVT1_U8_U8_AUD_LS2-VCCA Passive 
+U8-4 EVT1_U8_U8_AUD_LS2-1DIR Passive 
+U8-5 EVT1_U8_U8_AUD_LS2-2DIR Passive 
+MK1-2 EVT1_MK1_MK1_L-VDD Passive 
+C24-1 EVT1_C24_C_MK1_L-~ Passive 
+C29-1 EVT1_C29_C_U8_AUD_LS2_A-~ Passive 
+C37-1 EVT1_C37_C_U8_PDM_LS_A-~ Passive 
+U4-8 EVT1_U4_U4_1V8-VOS Input   
+C4-1 EVT1_C4_C_BK_OUT-~ Passive 
+L2-2 EVT1_L2_L2_1V8-~ Passive 
+U19-2 EVT1_U19_U8_LS3-VREF1 Passive 
+R15-2 EVT1_R15_R_I2C_SCL_1V8-~ Passive 
+R17-2 EVT1_R17_R_I2C_SDA_1V8-~ Passive 
+R25-1 EVT1_R25_R_LS3_VREF_BLEED-~ Passive 
+J1-P4 EVT1_J1_J_BTB_L-SIGNAL_0.3A Passive 
+J1-P5 EVT1_J1_J_BTB_L-SIGNAL_0.3A Passive 
+)
+(
+FPGA_CDONE_VSYNC_N 
+U21-2 EVT1_U21_U8_PDM_LS-A1 Input   
+J1-P16 EVT1_J1_J_BTB_L-SIGNAL_0.3A Passive 
+)
+(
+IPC_NRF_TX_1V8 
+U21-3 EVT1_U21_U8_PDM_LS-A2 Input   
+J1-P25 EVT1_J1_J_BTB_L-SIGNAL_0.3A Passive 
+)
+(
+PDM_D0_1V8 
+U21-4 EVT1_U21_U8_PDM_LS-A3 Input   
+MK1-1 EVT1_MK1_MK1_L-DATA Passive 
+J1-P22 EVT1_J1_J_BTB_L-SIGNAL_0.3A Passive 
+)
+(
+PDM_D1_1V8 
+U21-5 EVT1_U21_U8_PDM_LS-A4 Input   
+J1-P23 EVT1_J1_J_BTB_L-SIGNAL_0.3A Passive 
+)
+(
+PDM_CLK_1V8 
+U21-6 EVT1_U21_U8_PDM_LS-A5 Output  
+MK1-3 EVT1_MK1_MK1_L-CLOCK Input   
+J1-P20 EVT1_J1_J_BTB_L-SIGNAL_0.3A Passive 
+)
+(
+I2S_S3_DOUT_1V8 
+U21-7 EVT1_U21_U8_PDM_LS-A6 Output  
+J1-P29 EVT1_J1_J_BTB_L-SIGNAL_0.3A Passive 
+)
+(
+IPC_S3_TX_1V8 
+U21-8 EVT1_U21_U8_PDM_LS-A7 Output  
+J1-P24 EVT1_J1_J_BTB_L-SIGNAL_0.3A Passive 
+)
+(
+GND 
+U21-10 EVT1_U21_U8_PDM_LS-DIR2 Passive 
+U21-11 EVT1_U21_U8_PDM_LS-GND Passive 
+U21-12 EVT1_U21_U8_PDM_LS-GND Passive 
+U21-13 EVT1_U21_U8_PDM_LS-B8 Passive 
+U21-21 EVT1_U21_U8_PDM_LS-OE Passive 
+U8-1 EVT1_U8_U8_AUD_LS2-1OE Passive 
+U8-8 EVT1_U8_U8_AUD_LS2-2A1 Passive 
+U8-9 EVT1_U8_U8_AUD_LS2-2A2 Passive 
+U8-10 EVT1_U8_U8_AUD_LS2-GND Passive 
+U8-11 EVT1_U8_U8_AUD_LS2-GND Passive 
+U8-16 EVT1_U8_U8_AUD_LS2-2OE Passive 
+U10-B2 EVT1_U10_U10_AMP_L-GAIN_SLOT Passive 
+U10-C2 EVT1_U10_U10_AMP_L-GND Passive 
+MK1-4 EVT1_MK1_MK1_L-SELECT Passive 
+MK1-5 EVT1_MK1_MK1_L-GND Passive 
+C24-2 EVT1_C24_C_MK1_L-~ Passive 
+C29-2 EVT1_C29_C_U8_AUD_LS2_A-~ Passive 
+C30-2 EVT1_C30_C_U8_AUD_LS2_B-~ Passive 
+C37-2 EVT1_C37_C_U8_PDM_LS_A-~ Passive 
+C38-2 EVT1_C38_C_U8_PDM_LS_B-~ Passive 
+C39-2 EVT1_C39_C_U10_AMP_L_BULK-~ Passive 
+C40-2 EVT1_C40_C_U10_AMP_L_HF-~ Passive 
+U2-B1 EVT1_U2_U4_BB-MODE Passive 
+U2-C1 EVT1_U2_U4_BB-AGND Passive 
+U2-C2 EVT1_U2_U4_BB-GND Passive 
+U2-C3 EVT1_U2_U4_BB-GND Passive 
+U3-D2 EVT1_U3_U3_L-GND Passive 
+U4-1 EVT1_U4_U4_1V8-GND Passive 
+U4-3 EVT1_U4_U4_1V8-MODE Passive 
+U4-6 EVT1_U4_U4_1V8-STOP Passive 
+U9-1 EVT1_U9_U4_OR-GND Passive 
+U9-4 EVT1_U9_U4_OR-/ON Passive 
+U9-5 EVT1_U9_U4_OR-GND Passive 
+BAT1-NTC_RETURN EVT1_BAT1_BAT_L-NTC return Passive 
+BAT1-P- EVT1_BAT1_BAT_L-protected pack negative Passive 
+C1-2 EVT1_C1_C_BB_IN-~ Passive 
+C2-2 EVT1_C2_C_BB_OUT-~ Passive 
+C3-2 EVT1_C3_C_BK_IN-~ Passive 
+C4-2 EVT1_C4_C_BK_OUT-~ Passive 
+C7-2 EVT1_C7_C_CHG_L_BAT-~ Passive 
+C8-2 EVT1_C8_C_CHG_L_IN-~ Passive 
+C9-2 EVT1_C9_C_CHG_L_SYS-~ Passive 
+C25-2 EVT1_C25_C_OR_IN1-~ Passive 
+C26-2 EVT1_C26_C_OR_IN2-~ Passive 
+C27-2 EVT1_C27_C_OR_OUT-~ Passive 
+R2-2 EVT1_R2_R_BB_FB2-~ Passive 
+R20-2 EVT1_R20_R_ISO_PD-~ Passive 
+R32-2 EVT1_R32_R_VSET_1V8-~ Passive 
+TP1-1 EVT1_TP1_TP_BAT_L_N-~ Passive 
+U15-11 EVT1_U15_U8_CAM_ISO1-GND Passive 
+U15-12 EVT1_U15_U8_CAM_ISO1-GND Passive 
+U15-21 EVT1_U15_U8_CAM_ISO1-OE Passive 
+U16-10 EVT1_U16_U8_CAM_ISO2-DIR2 Passive 
+U16-11 EVT1_U16_U8_CAM_ISO2-GND Passive 
+U16-12 EVT1_U16_U8_CAM_ISO2-GND Passive 
+U16-13 EVT1_U16_U8_CAM_ISO2-B8 Passive 
+U16-14 EVT1_U16_U8_CAM_ISO2-B7 Passive 
+U16-15 EVT1_U16_U8_CAM_ISO2-B6 Passive 
+U16-21 EVT1_U16_U8_CAM_ISO2-OE Passive 
+U14-4 EVT1_U14_U7_WIN-VEE Passive 
+U14-9 EVT1_U14_U7_WIN-EP_GND Passive 
+U7-2 EVT1_U7_U7_INA-GND Passive 
+U7-5 EVT1_U7_U7_INA-REF Passive 
+U5-2 EVT1_U5_U5_LED2V8-GND Passive 
+U5-5 EVT1_U5_U5_LED2V8-EP_GND Passive 
+U6-2 EVT1_U6_U6_CAM_AVDD-GND Passive 
+U6-5 EVT1_U6_U6_CAM_AVDD-EP_GND Passive 
+U11-2 EVT1_U11_U6_CAM_DOVDD-GND Passive 
+U11-5 EVT1_U11_U6_CAM_DOVDD-EP_GND Passive 
+U13-2 EVT1_U13_U6_CAM_DVDD-GND Passive 
+U13-5 EVT1_U13_U6_CAM_DVDD-EP_GND Passive 
+U17-3 EVT1_U17_U8_CAM_SCCB_EN-GND Passive 
+C5-2 EVT1_C5_C_CAM_SCCB_EN-~ Passive 
+C6-2 EVT1_C6_C_CAMRST-~ Passive 
+C15-2 EVT1_C15_C_INA_SUPPLY-~ Passive 
+C16-2 EVT1_C16_C_LDO_AVDD_IN-~ Passive 
+C17-2 EVT1_C17_C_LDO_AVDD_OUT-~ Passive 
+C18-2 EVT1_C18_C_LDO_DOVDD_IN-~ Passive 
+C19-2 EVT1_C19_C_LDO_DOVDD_OUT-~ Passive 
+C20-2 EVT1_C20_C_LDO_DVDD_IN-~ Passive 
+C21-2 EVT1_C21_C_LDO_DVDD_OUT-~ Passive 
+C22-2 EVT1_C22_C_LDO_LED_IN-~ Passive 
+C23-2 EVT1_C23_C_LDO_LED_OUT-~ Passive 
+C28-2 EVT1_C28_C_PRIV_RC-~ Passive 
+C31-2 EVT1_C31_C_U8_CAM_ISO1_A-~ Passive 
+C32-2 EVT1_C32_C_U8_CAM_ISO1_B-~ Passive 
+C33-2 EVT1_C33_C_U8_CAM_ISO2_A-~ Passive 
+C34-2 EVT1_C34_C_U8_CAM_ISO2_B-~ Passive 
+C41-2 EVT1_C41_C_WIN_SUPPLY-~ Passive 
+C42-2 EVT1_C42_C_XREQ-~ Passive 
+R3-2 EVT1_R3_R_CAM_DOVDD_BLEED-~ Passive 
+R4-2 EVT1_R4_R_CAM_DOVDD_OK_PD-~ Passive 
+R5-2 EVT1_R5_R_CAMPWDN-~ Passive 
+R33-2 EVT1_R33_R_WIN_BOT-~ Passive 
+R37-2 EVT1_R37_R_XREQ_BLEED-~ Passive 
+U1-57 EVT1_U1_U1_HOST-EPAD GND Passive 
+U18-11 EVT1_U18_U8_LS1-GND Passive 
+U18-12 EVT1_U18_U8_LS1-GND Passive 
+U18-21 EVT1_U18_U8_LS1-OE Passive 
+U19-1 EVT1_U19_U8_LS3-GND Passive 
+U20-1 EVT1_U20_U8_LS4-GND Passive 
+C10-2 EVT1_C10_C_CHIP_PU-~ Passive 
+C11-2 EVT1_C11_C_ESP_BULK-~ Passive 
+C12-2 EVT1_C12_C_ESP_RF_IN-~ Passive 
+C13-2 EVT1_C13_C_ESP_RF_OUT-~ Passive 
+C14-2 EVT1_C14_C_ESP_VDD_SPI-~ Passive 
+C35-2 EVT1_C35_C_U8_LS1_A-~ Passive 
+C36-2 EVT1_C36_C_U8_LS1_B-~ Passive 
+R8-2 EVT1_R8_R_CRST_A_PD-~ Passive 
+R12-2 EVT1_R12_R_ESP_STRAP3-~ Passive 
+R13-2 EVT1_R13_R_ESP_STRAP45-~ Passive 
+R14-2 EVT1_R14_R_ESP_STRAP46-~ Passive 
+R22-2 EVT1_R22_R_LS1_A4-~ Passive 
+R23-2 EVT1_R23_R_LS1_B4-~ Passive 
+R25-2 EVT1_R25_R_LS3_VREF_BLEED-~ Passive 
+J1-P7 EVT1_J1_J_BTB_L-SIGNAL_0.3A Passive 
+J1-P9 EVT1_J1_J_BTB_L-SIGNAL_0.3A Passive 
+J1-P21 EVT1_J1_J_BTB_L-SIGNAL_0.3A Passive 
+J1-PWR2 EVT1_J1_J_BTB_L-POWER_5A Passive 
+J2-P2 EVT1_J2_J_CAM-SIGNAL_0.3A Passive 
+J2-P7 EVT1_J2_J_CAM-SIGNAL_0.3A Passive 
+J2-P9 EVT1_J2_J_CAM-SIGNAL_0.3A Passive 
+J2-P11 EVT1_J2_J_CAM-SIGNAL_0.3A Passive 
+J2-P24 EVT1_J2_J_CAM-SIGNAL_0.3A Passive 
+J2-PWR2 EVT1_J2_J_CAM-POWER_5A Passive 
+J3-4 EVT1_J3_J_CHG-GND Passive 
+)
+(
+IPC_S3_TX_3V3 
+U21-14 EVT1_U21_U8_PDM_LS-B7 Input   
+U1-36 EVT1_U1_U1_HOST-GPIO48 Output  
+)
+(
+I2S_S3_DOUT_3V3 
+U21-15 EVT1_U21_U8_PDM_LS-B6 Input   
+U1-49 EVT1_U1_U1_HOST-GPIO43 Output  
+)
+(
+PDM_CLK_3V3 
+U21-16 EVT1_U21_U8_PDM_LS-B5 Input   
+U1-51 EVT1_U1_U1_HOST-GPIO45 Output  
+R13-1 EVT1_R13_R_ESP_STRAP45-~ Passive 
+)
+(
+PDM_D1_3V3 
+U21-17 EVT1_U21_U8_PDM_LS-B4 Output  
+U1-22 EVT1_U1_U1_HOST-GPIO16 Input   
+)
+(
+PDM_D0_3V3 
+U21-18 EVT1_U21_U8_PDM_LS-B3 Output  
+U1-21 EVT1_U1_U1_HOST-GPIO15 Input   
+)
+(
+IPC_NRF_TX_3V3 
+U21-19 EVT1_U21_U8_PDM_LS-B2 Output  
+U1-37 EVT1_U1_U1_HOST-GPIO47 Input   
+)
+(
+VSYNC_CDONE_3V3 
+U21-20 EVT1_U21_U8_PDM_LS-B1 Output  
+U1-27 EVT1_U1_U1_HOST-GPIO21 Input   
+)
+(
+3V3_SYS 
+U21-22 EVT1_U21_U8_PDM_LS-VCCB Passive 
+U21-23 EVT1_U21_U8_PDM_LS-VCCB Passive 
+U8-2 EVT1_U8_U8_AUD_LS2-VCCB Passive 
+C30-1 EVT1_C30_C_U8_AUD_LS2_B-~ Passive 
+C38-1 EVT1_C38_C_U8_PDM_LS_B-~ Passive 
+U2-E2 EVT1_U2_U4_BB-VOUT Passive 
+U2-E3 EVT1_U2_U4_BB-VOUT Passive 
+C2-1 EVT1_C2_C_BB_OUT-~ Passive 
+R1-1 EVT1_R1_R_BB_FB1-~ Passive 
+U15-22 EVT1_U15_U8_CAM_ISO1-VCCB Passive 
+U15-23 EVT1_U15_U8_CAM_ISO1-VCCB Passive 
+U16-22 EVT1_U16_U8_CAM_ISO2-VCCB Passive 
+U16-23 EVT1_U16_U8_CAM_ISO2-VCCB Passive 
+U14-8 EVT1_U14_U7_WIN-VCC Passive 
+U7-6 EVT1_U7_U7_INA-VS Passive 
+U5-4 EVT1_U5_U5_LED2V8-IN Passive 
+U6-4 EVT1_U6_U6_CAM_AVDD-IN Passive 
+U11-4 EVT1_U11_U6_CAM_DOVDD-IN Passive 
+U13-4 EVT1_U13_U6_CAM_DVDD-IN Passive 
+U17-5 EVT1_U17_U8_CAM_SCCB_EN-VCC Passive 
+C5-1 EVT1_C5_C_CAM_SCCB_EN-~ Passive 
+C15-1 EVT1_C15_C_INA_SUPPLY-~ Passive 
+C16-1 EVT1_C16_C_LDO_AVDD_IN-~ Passive 
+C18-1 EVT1_C18_C_LDO_DOVDD_IN-~ Passive 
+C20-1 EVT1_C20_C_LDO_DVDD_IN-~ Passive 
+C22-1 EVT1_C22_C_LDO_LED_IN-~ Passive 
+C32-1 EVT1_C32_C_U8_CAM_ISO1_B-~ Passive 
+C34-1 EVT1_C34_C_U8_CAM_ISO2_B-~ Passive 
+C41-1 EVT1_C41_C_WIN_SUPPLY-~ Passive 
+R35-1 EVT1_R35_R_WIN_TOP-~ Passive 
+U1-2 EVT1_U1_U1_HOST-VDD3P3 Passive 
+U1-3 EVT1_U1_U1_HOST-VDD3P3 Passive 
+U1-20 EVT1_U1_U1_HOST-VDD3P3_RTC Passive 
+U1-46 EVT1_U1_U1_HOST-VDD3P3_CPU Passive 
+U1-55 EVT1_U1_U1_HOST-VDDA Passive 
+U1-56 EVT1_U1_U1_HOST-VDDA Passive 
+U18-10 EVT1_U18_U8_LS1-DIR2 Passive 
+U18-24 EVT1_U18_U8_LS1-VCCA Passive 
+C11-1 EVT1_C11_C_ESP_BULK-~ Passive 
+C35-1 EVT1_C35_C_U8_LS1_A-~ Passive 
+R7-2 EVT1_R7_R_CHIP_PU-~ Passive 
+R9-2 EVT1_R9_R_DIR1_PU-~ Passive 
+R10-2 EVT1_R10_R_ESP_BOOT-~ Passive 
+R16-2 EVT1_R16_R_I2C_SCL_3V3-~ Passive 
+R18-2 EVT1_R18_R_I2C_SDA_3V3-~ Passive 
+R24-2 EVT1_R24_R_LS3_EN-~ Passive 
+R26-2 EVT1_R26_R_LS4_EN-~ Passive 
+)
+(
+I2S_BCLK_1V8 
+U8-6 EVT1_U8_U8_AUD_LS2-1A1 Input   
+U10-C1 EVT1_U10_U10_AMP_L-BCLK Input   
+J1-P26 EVT1_J1_J_BTB_L-SIGNAL_0.3A Passive 
+)
+(
+I2S_LRCLK_1V8 
+U8-7 EVT1_U8_U8_AUD_LS2-1A2 Input   
+U10-C3 EVT1_U10_U10_AMP_L-LRCLK Input   
+J1-P27 EVT1_J1_J_BTB_L-SIGNAL_0.3A Passive 
+)
+(
+I2S_LRCLK_3V3 
+U8-14 EVT1_U8_U8_AUD_LS2-1B2 Output  
+U1-23 EVT1_U1_U1_HOST-GPIO17 Input   
+)
+(
+I2S_BCLK_3V3 
+U8-15 EVT1_U8_U8_AUD_LS2-1B1 Output  
+U1-50 EVT1_U1_U1_HOST-GPIO44 Input   
+)
+(
+AMP_SD_MODE_1V8 
+U10-A1 EVT1_U10_U10_AMP_L-SD_MODE Input   
+J1-P30 EVT1_J1_J_BTB_L-SIGNAL_0.3A Passive 
+)
+(
+VSYS 
+U10-A2 EVT1_U10_U10_AMP_L-VDD Passive 
+C39-1 EVT1_C39_C_U10_AMP_L_BULK-~ Passive 
+C40-1 EVT1_C40_C_U10_AMP_L_HF-~ Passive 
+U2-A1 EVT1_U2_U4_BB-EN Passive 
+U2-A2 EVT1_U2_U4_BB-VIN Passive 
+U2-A3 EVT1_U2_U4_BB-VIN Passive 
+U4-2 EVT1_U4_U4_1V8-VIN Passive 
+U4-4 EVT1_U4_U4_1V8-EN Passive 
+U9-2 EVT1_U9_U4_OR-VOUT Passive 
+U9-7 EVT1_U9_U4_OR-VOUT Passive 
+C1-1 EVT1_C1_C_BB_IN-~ Passive 
+C3-1 EVT1_C3_C_BK_IN-~ Passive 
+C27-1 EVT1_C27_C_OR_OUT-~ Passive 
+J1-P2 EVT1_J1_J_BTB_L-SIGNAL_0.3A Passive 
+J1-P3 EVT1_J1_J_BTB_L-SIGNAL_0.3A Passive 
+)
+(
+SPK_L_P 
+U10-A3 EVT1_U10_U10_AMP_L-OUTP Output  
+SPK1-+ EVT1_SPK1_SPK_L-speaker + Passive 
+TP7-1 EVT1_TP7_TP_SPK_L_P-~ Passive 
+)
+(
+I2S_AMP_DIN_1V8 
+U10-B1 EVT1_U10_U10_AMP_L-DIN Input   
+J1-P28 EVT1_J1_J_BTB_L-SIGNAL_0.3A Passive 
+)
+(
+SPK_L_N 
+U10-B3 EVT1_U10_U10_AMP_L-OUTN Output  
+SPK1-- EVT1_SPK1_SPK_L-speaker - Passive 
+TP6-1 EVT1_TP6_TP_SPK_L_N-~ Passive 
+)
+(
+BB_L1 
+U2-B2 EVT1_U2_U4_BB-L1 Passive 
+U2-B3 EVT1_U2_U4_BB-L1 Passive 
+L1-1 EVT1_L1_L1_BB-~ Passive 
+)
+(
+BB_FB 
+U2-D1 EVT1_U2_U4_BB-FB Passive 
+R1-2 EVT1_R1_R_BB_FB1-~ Passive 
+R2-1 EVT1_R2_R_BB_FB2-~ Passive 
+)
+(
+BB_L2 
+U2-D2 EVT1_U2_U4_BB-L2 Passive 
+U2-D3 EVT1_U2_U4_BB-L2 Passive 
+L1-2 EVT1_L1_L1_BB-~ Passive 
+)
+(
+VBUS_5V 
+U3-A2 EVT1_U3_U3_L-IN Passive 
+C8-1 EVT1_C8_C_CHG_L_IN-~ Passive 
+R19-1 EVT1_R19_R_ISO_GATE-~ Passive 
+U12-1 EVT1_U12_U12_ESD_USB-VBUS clamp Passive 
+J1-P1 EVT1_J1_J_BTB_L-SIGNAL_0.3A Passive 
+J3-1 EVT1_J3_J_CHG-VBUS Passive 
+)
+(
+SYS_I2C_SCL_1V8 
+U3-B1 EVT1_U3_U3_L-SCL Passive 
+U19-3 EVT1_U19_U8_LS3-SCL1 Passive 
+R15-1 EVT1_R15_R_I2C_SCL_1V8-~ Passive 
+J1-P17 EVT1_J1_J_BTB_L-SIGNAL_0.3A Passive 
+)
+(
+VOUT_L_PPATH 
+U3-B2 EVT1_U3_U3_L-SYS Passive 
+U9-3 EVT1_U9_U4_OR-VIN1 Passive 
+C9-1 EVT1_C9_C_CHG_L_SYS-~ Passive 
+C25-1 EVT1_C25_C_OR_IN1-~ Passive 
+)
+(
+SYS_I2C_SDA_1V8 
+U3-C1 EVT1_U3_U3_L-SDA Passive 
+U19-4 EVT1_U19_U8_LS3-SDA1 Passive 
+R17-1 EVT1_R17_R_I2C_SDA_1V8-~ Passive 
+J1-P18 EVT1_J1_J_BTB_L-SIGNAL_0.3A Passive 
+)
+(
+VBAT_L 
+U3-C2 EVT1_U3_U3_L-BAT Passive 
+BAT1-P+ EVT1_BAT1_BAT_L-protected pack positive Passive 
+C7-1 EVT1_C7_C_CHG_L_BAT-~ Passive 
+TP2-1 EVT1_TP2_TP_BAT_L_P-~ Passive 
+)
+(
+NTC_TS_L 
+U3-D1 EVT1_U3_U3_L-TS/MR Input   
+BAT1-NTC EVT1_BAT1_BAT_L-10k NTC at cell Passive 
+TP5-1 EVT1_TP5_TP_NTC_L-~ Passive 
+)
+(
+BK_VSET 
+U4-5 EVT1_U4_U4_1V8-VSET Passive 
+R32-1 EVT1_R32_R_VSET_1V8-~ Passive 
+)
+(
+BK_SW 
+U4-7 EVT1_U4_U4_1V8-SW Passive 
+L2-1 EVT1_L2_L2_1V8-~ Passive 
+)
+(
+EVT1_#FLG03_SUPPLY_ORIGIN 
+U9-6 EVT1_U9_U4_OR-VIN2 Passive 
+Q1-3 EVT1_Q1_Q_CHG_ISO_R-D Passive 
+C26-1 EVT1_C26_C_OR_IN2-~ Passive 
+)
+(
+CHG_ISO_GATE 
+Q1-1 EVT1_Q1_Q_CHG_ISO_R-G Passive 
+R19-2 EVT1_R19_R_ISO_GATE-~ Passive 
+R20-1 EVT1_R20_R_ISO_PD-~ Passive 
+)
+(
+EVT1_#FLG02_SUPPLY_ORIGIN 
+Q1-2 EVT1_Q1_Q_CHG_ISO_R-S Passive 
+J1-PWR1 EVT1_J1_J_BTB_L-POWER_5A Passive 
+)
+(
+CAM_DOVDD_1V8 
+U15-1 EVT1_U15_U8_CAM_ISO1-DIR1 Passive 
+U15-10 EVT1_U15_U8_CAM_ISO1-DIR2 Passive 
+U15-24 EVT1_U15_U8_CAM_ISO1-VCCA Passive 
+U16-1 EVT1_U16_U8_CAM_ISO2-DIR1 Passive 
+U16-5 EVT1_U16_U8_CAM_ISO2-A4 Input   
+U16-24 EVT1_U16_U8_CAM_ISO2-VCCA Passive 
+U11-1 EVT1_U11_U6_CAM_DOVDD-OUT Passive 
+C19-1 EVT1_C19_C_LDO_DOVDD_OUT-~ Passive 
+C31-1 EVT1_C31_C_U8_CAM_ISO1_A-~ Passive 
+C33-1 EVT1_C33_C_U8_CAM_ISO2_A-~ Passive 
+R3-1 EVT1_R3_R_CAM_DOVDD_BLEED-~ Passive 
+R6-2 EVT1_R6_R_CAMRST-~ Passive 
+R29-2 EVT1_R29_R_SCCB_SCL-~ Passive 
+R30-2 EVT1_R30_R_SCCB_SDA-~ Passive 
+U20-2 EVT1_U20_U8_LS4-VREF1 Passive 
+J2-P15 EVT1_J2_J_CAM-SIGNAL_0.3A Passive 
+)
+(
+CAM_D0_1V8 
+U15-2 EVT1_U15_U8_CAM_ISO1-A1 Input   
+J2-P16 EVT1_J2_J_CAM-SIGNAL_0.3A Passive 
+)
+(
+CAM_D1_1V8 
+U15-3 EVT1_U15_U8_CAM_ISO1-A2 Input   
+J2-P17 EVT1_J2_J_CAM-SIGNAL_0.3A Passive 
+)
+(
+CAM_D2_1V8 
+U15-4 EVT1_U15_U8_CAM_ISO1-A3 Input   
+J2-P18 EVT1_J2_J_CAM-SIGNAL_0.3A Passive 
+)
+(
+CAM_D3_1V8 
+U15-5 EVT1_U15_U8_CAM_ISO1-A4 Input   
+J2-P19 EVT1_J2_J_CAM-SIGNAL_0.3A Passive 
+)
+(
+CAM_D4_1V8 
+U15-6 EVT1_U15_U8_CAM_ISO1-A5 Input   
+J2-P20 EVT1_J2_J_CAM-SIGNAL_0.3A Passive 
+)
+(
+CAM_D5_1V8 
+U15-7 EVT1_U15_U8_CAM_ISO1-A6 Input   
+J2-P21 EVT1_J2_J_CAM-SIGNAL_0.3A Passive 
+)
+(
+CAM_D6_1V8 
+U15-8 EVT1_U15_U8_CAM_ISO1-A7 Input   
+J2-P22 EVT1_J2_J_CAM-SIGNAL_0.3A Passive 
+)
+(
+CAM_D7_1V8 
+U15-9 EVT1_U15_U8_CAM_ISO1-A8 Input   
+J2-P23 EVT1_J2_J_CAM-SIGNAL_0.3A Passive 
+)
+(
+CAM_D7_3V3 
+U15-13 EVT1_U15_U8_CAM_ISO1-B8 Output  
+U1-45 EVT1_U1_U1_HOST-GPIO40 Input   
+)
+(
+CAM_D6_3V3 
+U15-14 EVT1_U15_U8_CAM_ISO1-B7 Output  
+U1-44 EVT1_U1_U1_HOST-GPIO39 Input   
+)
+(
+CAM_D5_3V3 
+U15-15 EVT1_U15_U8_CAM_ISO1-B6 Output  
+U1-43 EVT1_U1_U1_HOST-GPIO38 Input   
+)
+(
+CAM_D4_3V3 
+U15-16 EVT1_U15_U8_CAM_ISO1-B5 Output  
+U1-13 EVT1_U1_U1_HOST-GPIO8 Input   
+)
+(
+CAM_D3_3V3 
+U15-17 EVT1_U15_U8_CAM_ISO1-B4 Output  
+U1-12 EVT1_U1_U1_HOST-GPIO7 Input   
+)
+(
+CAM_D2_3V3 
+U15-18 EVT1_U15_U8_CAM_ISO1-B3 Output  
+U1-11 EVT1_U1_U1_HOST-GPIO6 Input   
+)
+(
+CAM_D1_3V3 
+U15-19 EVT1_U15_U8_CAM_ISO1-B2 Output  
+U1-10 EVT1_U1_U1_HOST-GPIO5 Input   
+)
+(
+CAM_D0_3V3 
+U15-20 EVT1_U15_U8_CAM_ISO1-B1 Output  
+U1-9 EVT1_U1_U1_HOST-GPIO4 Input   
+)
+(
+CAM_PCLK_1V8 
+U16-2 EVT1_U16_U8_CAM_ISO2-A1 Input   
+J2-P10 EVT1_J2_J_CAM-SIGNAL_0.3A Passive 
+)
+(
+CAM_VSYNC_1V8 
+U16-3 EVT1_U16_U8_CAM_ISO2-A2 Input   
+J2-P12 EVT1_J2_J_CAM-SIGNAL_0.3A Passive 
+)
+(
+CAM_HREF_1V8 
+U16-4 EVT1_U16_U8_CAM_ISO2-A3 Input   
+J2-P13 EVT1_J2_J_CAM-SIGNAL_0.3A Passive 
+)
+(
+CAM_XCLK_1V8 
+U16-6 EVT1_U16_U8_CAM_ISO2-A5 Output  
+J2-P8 EVT1_J2_J_CAM-SIGNAL_0.3A Passive 
+)
+(
+CAM_XCLK_3V3 
+U16-16 EVT1_U16_U8_CAM_ISO2-B5 Input   
+R36-1 EVT1_R36_R_XREQ-~ Passive 
+U1-52 EVT1_U1_U1_HOST-GPIO46 Output  
+R14-1 EVT1_R14_R_ESP_STRAP46-~ Passive 
+)
+(
+CAM_DOVDD_OK_3V3 
+U16-17 EVT1_U16_U8_CAM_ISO2-B4 Output  
+U17-2 EVT1_U17_U8_CAM_SCCB_EN-A Input   
+R4-1 EVT1_R4_R_CAM_DOVDD_OK_PD-~ Passive 
+)
+(
+CAM_HREF_3V3 
+U16-18 EVT1_U16_U8_CAM_ISO2-B3 Output  
+U1-8 EVT1_U1_U1_HOST-GPIO3 Input   
+R12-1 EVT1_R12_R_ESP_STRAP3-~ Passive 
+)
+(
+CAM_VSYNC_3V3 
+U16-19 EVT1_U16_U8_CAM_ISO2-B2 Output  
+U1-48 EVT1_U1_U1_HOST-GPIO42 Input   
+)
+(
+CAM_PCLK_3V3 
+U16-20 EVT1_U16_U8_CAM_ISO2-B1 Output  
+U1-47 EVT1_U1_U1_HOST-GPIO41 Input   
+)
+(
+PRIV_WINDOW_OK 
+U14-1 EVT1_U14_U7_WIN-OUTA Passive 
+U14-7 EVT1_U14_U7_WIN-OUTB Passive 
+R27-1 EVT1_R27_R_PRIV_PU-~ Passive 
+R28-1 EVT1_R28_R_PRIV_RC-~ Passive 
+)
+(
+PRIV_VTH_L 
+U14-2 EVT1_U14_U7_WIN-INA- Input   
+R33-1 EVT1_R33_R_WIN_BOT-~ Passive 
+R34-2 EVT1_R34_R_WIN_MID-~ Passive 
+)
+(
+V_INA_OUT 
+U14-3 EVT1_U14_U7_WIN-INA+ Input   
+U14-6 EVT1_U14_U7_WIN-INB- Input   
+U7-1 EVT1_U7_U7_INA-OUT Output  
+R27-2 EVT1_R27_R_PRIV_PU-~ Passive 
+)
+(
+PRIV_VTH_H 
+U14-5 EVT1_U14_U7_WIN-INB+ Input   
+R34-1 EVT1_R34_R_WIN_MID-~ Passive 
+R35-2 EVT1_R35_R_WIN_TOP-~ Passive 
+)
+(
+LED_2V8 
+U7-3 EVT1_U7_U7_INA-IN+ Input   
+U5-1 EVT1_U5_U5_LED2V8-OUT Passive 
+C23-1 EVT1_C23_C_LDO_LED_OUT-~ Passive 
+R31-1 EVT1_R31_R_SENSE-~ Passive 
+)
+(
+ISENSE_N 
+U7-4 EVT1_U7_U7_INA-IN- Input   
+R21-1 EVT1_R21_R_LIMIT-~ Passive 
+R31-2 EVT1_R31_R_SENSE-~ Passive 
+)
+(
+CAM_PWR_REQ 
+U5-3 EVT1_U5_U5_LED2V8-EN Input   
+C42-1 EVT1_C42_C_XREQ-~ Passive 
+D1-K EVT1_D1_D_XREQ-~ Passive 
+R37-1 EVT1_R37_R_XREQ_BLEED-~ Passive 
+)
+(
+CAM_AVDD_2V8 
+U6-1 EVT1_U6_U6_CAM_AVDD-OUT Passive 
+C17-1 EVT1_C17_C_LDO_AVDD_OUT-~ Passive 
+J2-P1 EVT1_J2_J_CAM-SIGNAL_0.3A Passive 
+J2-PWR1 EVT1_J2_J_CAM-POWER_5A Passive 
+)
+(
+PRIV_WINDOW_OK_F 
+U6-3 EVT1_U6_U6_CAM_AVDD-EN Input   
+U11-3 EVT1_U11_U6_CAM_DOVDD-EN Input   
+U13-3 EVT1_U13_U6_CAM_DVDD-EN Input   
+C28-1 EVT1_C28_C_PRIV_RC-~ Passive 
+R28-2 EVT1_R28_R_PRIV_RC-~ Passive 
+)
+(
+CAM_DVDD_1V2 
+U13-1 EVT1_U13_U6_CAM_DVDD-OUT Passive 
+C21-1 EVT1_C21_C_LDO_DVDD_OUT-~ Passive 
+J2-P14 EVT1_J2_J_CAM-SIGNAL_0.3A Passive 
+)
+(
+LS4_VREF2_EN 
+U17-4 EVT1_U17_U8_CAM_SCCB_EN-Y Passive 
+U20-7 EVT1_U20_U8_LS4-VREF2 Input   
+U20-8 EVT1_U20_U8_LS4-EN Input   
+R26-1 EVT1_R26_R_LS4_EN-~ Passive 
+)
+(
+CAM_RESET_N 
+C6-1 EVT1_C6_C_CAMRST-~ Passive 
+R6-1 EVT1_R6_R_CAMRST-~ Passive 
+J2-P5 EVT1_J2_J_CAM-SIGNAL_0.3A Passive 
+)
+(
+XREQ_A 
+D1-A EVT1_D1_D_XREQ-~ Passive 
+R36-2 EVT1_R36_R_XREQ-~ Passive 
+)
+(
+CAM_PWDN 
+R5-1 EVT1_R5_R_CAMPWDN-~ Passive 
+J2-P6 EVT1_J2_J_CAM-SIGNAL_0.3A Passive 
+)
+(
+PRIV_LED_ANODE 
+R21-2 EVT1_R21_R_LIMIT-~ Passive 
+J1-P19 EVT1_J1_J_BTB_L-SIGNAL_0.3A Passive 
+)
+(
+CAM_SCCB_SCL 
+R29-1 EVT1_R29_R_SCCB_SCL-~ Passive 
+U20-3 EVT1_U20_U8_LS4-SCL1 Passive 
+J2-P3 EVT1_J2_J_CAM-SIGNAL_0.3A Passive 
+)
+(
+CAM_SCCB_SDA 
+R30-1 EVT1_R30_R_SCCB_SDA-~ Passive 
+U20-4 EVT1_U20_U8_LS4-SDA1 Passive 
+J2-P4 EVT1_J2_J_CAM-SIGNAL_0.3A Passive 
+)
+(
+ESP_RF_ANT 
+U1-1 EVT1_U1_U1_HOST-LNA_IN Passive 
+C12-1 EVT1_C12_C_ESP_RF_IN-~ Passive 
+R11-1 EVT1_R11_R_ESP_RF-~ Passive 
+)
+(
+ESP_CHIP_PU 
+U1-4 EVT1_U1_U1_HOST-CHIP_PU Input   
+C10-1 EVT1_C10_C_CHIP_PU-~ Passive 
+R7-1 EVT1_R7_R_CHIP_PU-~ Passive 
+TP4-1 EVT1_TP4_TP_ESP_EN-~ Passive 
+)
+(
+QSPI_DIR1_EN 
+U1-5 EVT1_U1_U1_HOST-GPIO0 Output  
+U18-1 EVT1_U18_U8_LS1-DIR1 Input   
+R9-1 EVT1_R9_R_DIR1_PU-~ Passive 
+R10-1 EVT1_R10_R_ESP_BOOT-~ Passive 
+TP3-1 EVT1_TP3_TP_ESP_BOOT-~ Passive 
+)
+(
+SYS_I2C_SDA_3V3 
+U1-6 EVT1_U1_U1_HOST-GPIO1 Passive 
+U19-5 EVT1_U19_U8_LS3-SDA2 Passive 
+U20-5 EVT1_U20_U8_LS4-SDA2 Passive 
+R18-1 EVT1_R18_R_I2C_SDA_3V3-~ Passive 
+)
+(
+SYS_I2C_SCL_3V3 
+U1-7 EVT1_U1_U1_HOST-GPIO2 Passive 
+U19-6 EVT1_U19_U8_LS3-SCL2 Passive 
+U20-6 EVT1_U20_U8_LS4-SCL2 Passive 
+R16-1 EVT1_R16_R_I2C_SCL_3V3-~ Passive 
+)
+(
+host_qio3_3v3 
+U1-14 EVT1_U1_U1_HOST-GPIO9 Passive 
+U18-4 EVT1_U18_U8_LS1-A3 Passive 
+)
+(
+host_cs_n_3v3 
+U1-15 EVT1_U1_U1_HOST-GPIO10 Output  
+U18-7 EVT1_U18_U8_LS1-A6 Input   
+)
+(
+host_qio0_3v3 
+U1-16 EVT1_U1_U1_HOST-GPIO11 Output  
+U18-9 EVT1_U18_U8_LS1-A8 Input   
+)
+(
+host_sck_3v3 
+U1-17 EVT1_U1_U1_HOST-GPIO12 Output  
+U18-6 EVT1_U18_U8_LS1-A5 Input   
+)
+(
+host_qio1_3v3 
+U1-18 EVT1_U1_U1_HOST-GPIO13 Passive 
+U18-2 EVT1_U18_U8_LS1-A1 Passive 
+)
+(
+host_qio2_3v3 
+U1-19 EVT1_U1_U1_HOST-GPIO14 Passive 
+U18-3 EVT1_U18_U8_LS1-A2 Passive 
+)
+(
+FPGA_CRESET_3V3 
+U1-24 EVT1_U1_U1_HOST-GPIO18 Output  
+U18-8 EVT1_U18_U8_LS1-A7 Input   
+R8-1 EVT1_R8_R_CRST_A_PD-~ Passive 
+)
+(
+USB_DM 
+U1-25 EVT1_U1_U1_HOST-GPIO19 Passive 
+U12-2 EVT1_U12_U12_ESD_USB-D- clamp Passive 
+J3-2 EVT1_J3_J_CHG-D- Passive 
+)
+(
+USB_DP 
+U1-26 EVT1_U1_U1_HOST-GPIO20 Passive 
+U12-3 EVT1_U12_U12_ESD_USB-D+ clamp Passive 
+J3-3 EVT1_J3_J_CHG-D+ Passive 
+)
+(
+ESP_VDD_SPI_3V3 
+U1-29 EVT1_U1_U1_HOST-VDD_SPI Passive 
+C14-1 EVT1_C14_C_ESP_VDD_SPI-~ Passive 
+)
+(
+LS1_A4_TIE_100K_GND 
+U18-5 EVT1_U18_U8_LS1-A4 Passive 
+R22-1 EVT1_R22_R_LS1_A4-~ Passive 
+)
+(
+host_qio0 
+U18-13 EVT1_U18_U8_LS1-B8 Output  
+J1-P12 EVT1_J1_J_BTB_L-SIGNAL_0.3A Passive 
+)
+(
+FPGA_CRESET_B 
+U18-14 EVT1_U18_U8_LS1-B7 Output  
+J1-P11 EVT1_J1_J_BTB_L-SIGNAL_0.3A Passive 
+)
+(
+host_cs_n 
+U18-15 EVT1_U18_U8_LS1-B6 Output  
+J1-P10 EVT1_J1_J_BTB_L-SIGNAL_0.3A Passive 
+)
+(
+host_sck 
+U18-16 EVT1_U18_U8_LS1-B5 Output  
+J1-P8 EVT1_J1_J_BTB_L-SIGNAL_0.3A Passive 
+)
+(
+LS1_B4_TIE_100K_GND 
+U18-17 EVT1_U18_U8_LS1-B4 Passive 
+R23-1 EVT1_R23_R_LS1_B4-~ Passive 
+)
+(
+host_qio3 
+U18-18 EVT1_U18_U8_LS1-B3 Passive 
+J1-P15 EVT1_J1_J_BTB_L-SIGNAL_0.3A Passive 
+)
+(
+host_qio2 
+U18-19 EVT1_U18_U8_LS1-B2 Passive 
+J1-P14 EVT1_J1_J_BTB_L-SIGNAL_0.3A Passive 
+)
+(
+host_qio1 
+U18-20 EVT1_U18_U8_LS1-B1 Passive 
+J1-P13 EVT1_J1_J_BTB_L-SIGNAL_0.3A Passive 
+)
+(
+EVT1_#FLG01_SUPPLY_ORIGIN 
+U18-22 EVT1_U18_U8_LS1-VCCB Passive 
+U18-23 EVT1_U18_U8_LS1-VCCB Passive 
+C36-1 EVT1_C36_C_U8_LS1_B-~ Passive 
+J1-P6 EVT1_J1_J_BTB_L-SIGNAL_0.3A Passive 
+)
+(
+LS3_VREF2_EN 
+U19-7 EVT1_U19_U8_LS3-VREF2 Input   
+U19-8 EVT1_U19_U8_LS3-EN Input   
+R24-1 EVT1_R24_R_LS3_EN-~ Passive 
+)
+(
+ESP_ANT_FEED 
+C13-1 EVT1_C13_C_ESP_RF_OUT-~ Passive 
+R11-2 EVT1_R11_R_ESP_RF-~ Passive 
+ANT1-FEED EVT1_ANT1_ANT1-feed terminal (second terminal ... Passive 
+)

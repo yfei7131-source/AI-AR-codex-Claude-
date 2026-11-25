@@ -1,0 +1,174 @@
+{
+  "schema_version": "1.0-archive",
+  "date": "2026-11-16",
+  "project": "EVT-1 Rev C latest engineering archive",
+  "status": "ARCHIVED_SOURCE_ONLY_NOT_FOR_FAB",
+  "outer_archive": "ZY_AIAR_V1_0_KIMI_HANDOFF_PACKAGE gemini新输出.zip",
+  "outer_archive_bytes": 538904,
+  "outer_archive_sha256": "0ea8ddc0489a42f95b62109b2bcc91af0794501b0415793a4e99333206cf8b01",
+  "outer_delivery_validation": {
+    "zip_integrity": "PASS",
+    "nested_archive": "ZY_AIAR_V1_0_KIMI_HANDOFF_PACKAGE (1).zip",
+    "nested_archive_sha256": "d41ceed708bb2e5c8bb0be2f1f30dce65a06b6cf866042194d7d15bc15831753",
+    "outer_view_files_checked": 5,
+    "outer_view_content_matches_after_crlf_normalization": 5,
+    "content_differences": 0,
+    "duplicate_files_excluded": [],
+    "conversation_export_excluded": true
+  },
+  "source_archive": "ZY_AIAR_V1_0_KIMI_HANDOFF_PACKAGE (1).zip",
+  "source_archive_bytes": 486375,
+  "source_archive_sha256": "d41ceed708bb2e5c8bb0be2f1f30dce65a06b6cf866042194d7d15bc15831753",
+  "bundle": {
+    "path": "handoff_evt1_rev_c.bundle",
+    "bytes": 337787,
+    "sha256": "f5abcca84d1216015e329250b10d1c130a55c9c3d938c28b55a954dbb2b69886",
+    "verified": true,
+    "complete_history": true,
+    "head": "bb876238fd25ac6be7c8f706b3d273b05d85a847",
+    "parent": "a678be1437b965ac83874138f28792202e0901a9",
+    "requested_commit": "bb876238fd25ac6be7c8f706b3d273b05d85a847",
+    "requested_commit_is_head": true,
+    "ref": "refs/heads/handoff/evt1-rev-c-feasibility-20261115",
+    "tree_file_count": 22
+  },
+  "source_counts": {
+    "zip_entries": 24,
+    "bundle_tree_files": 22,
+    "archived_tree_files": 21,
+    "tree_matches": 21,
+    "tree_mismatches": 0,
+    "archive_project_and_source_artifacts": 23
+  },
+  "source_ci": {
+    "bundle_path": ".github/workflows/fpga_eda_ci.yml",
+    "handling": "Not duplicated into the archive; the repository root workflow is retained with adapted archive paths and explicit 48 MHz PnR/STA gates."
+  },
+  "files": [
+    {
+      "path": "0001-evt1-rev-c-feasibility.patch",
+      "bytes": 138980,
+      "sha256": "873038adc12e01c42951c769651b4e80e6d19f69c59cf986ab3668b9fd6cda54"
+    },
+    {
+      "path": "handoff_evt1_rev_c.bundle",
+      "bytes": 337787,
+      "sha256": "f5abcca84d1216015e329250b10d1c130a55c9c3d938c28b55a954dbb2b69886"
+    },
+    {
+      "path": "BLOCKED_ITEMS_CHECKLIST.csv",
+      "bytes": 5058,
+      "sha256": "874afc1d72872f8894948d9faef8301e74362323211a23a5a1084a581c816af6"
+    },
+    {
+      "path": "BOM_V1_0_FROZEN.csv",
+      "bytes": 19925,
+      "sha256": "14030d5dc42c60bd662f5891ba2ba969812d2c9e512aaa96bea2c069eed2b581"
+    },
+    {
+      "path": "build_handoff_package.py",
+      "bytes": 90500,
+      "sha256": "a7d149c147025f437911fb03b067034bc95c4e08a380af1128e72394b84212b6"
+    },
+    {
+      "path": "CHANGELOG_EVT1_REV_C.md",
+      "bytes": 3435,
+      "sha256": "1f4b27c656f1e378bbdceb3721eba84471fb5db4a7ef1f3496d1f04ebfaa0d19"
+    },
+    {
+      "path": "evidence/eda_toolchain_execution.log",
+      "bytes": 3355,
+      "sha256": "f18d6fa52fa4cc300029d9804bf5dd121c892fabeeb4197113eea2c1929ae5c8"
+    },
+    {
+      "path": "evidence/v1_0_verification_log.json",
+      "bytes": 4740,
+      "sha256": "35583fb6eafc583070e0c945e17a115af2ce5cf170a8fa7e3782089902a9a7c4"
+    },
+    {
+      "path": "evidence/v1_0_verification_report.txt",
+      "bytes": 6343,
+      "sha256": "c1ee4d572c708851a0bbe073598410173e01c7bb7bf658b7118f3ca4d9d39ad2"
+    },
+    {
+      "path": "GITHUB_DRAFT_PR_INSTRUCTIONS.md",
+      "bytes": 2802,
+      "sha256": "cec56b49a7a4259a554444b988c82e716056e4e36f57579a7da1315a2a553fd9"
+    },
+    {
+      "path": "ICD_FPGA_HOST_OPTICS_SPEC_REV_C.md",
+      "bytes": 10929,
+      "sha256": "294831c2efe8048c77b1608e55df150baaf38e896b2539042ec0865f421ed18b"
+    },
+    {
+      "path": "ICD_INTERFACE_CONTROL_TABLE.csv",
+      "bytes": 4395,
+      "sha256": "9f9599af1b0878244329d077d3d594c6d6f48148c2e1a9dd6a22e10a4093e2d3"
+    },
+    {
+      "path": "KIMI_ENGINEERING_HANDOFF_V1_0.md",
+      "bytes": 5075,
+      "sha256": "bf93a34812915e5e9a5c8c40250d41ac0e34e612f5db0bc7c35fdd4a55626cb1"
+    },
+    {
+      "path": "PINMAP_V1_0_FROZEN.csv",
+      "bytes": 17386,
+      "sha256": "1d578e95644f22e6243bc123448dbb790a9dcb2ca720cf175d2395859af0da2d"
+    },
+    {
+      "path": "rtl/evt1_ar_display_fpga_bridge_rev_c.v",
+      "bytes": 30213,
+      "sha256": "65e734254af2f3d8735629759c0ce39ee9122bd6e394fae06c4d45197460bfed"
+    },
+    {
+      "path": "rtl/ice40_spram_ebr_sim.v",
+      "bytes": 2369,
+      "sha256": "656c79d8a22c3cf315d718ec9b941489288e5da22185d6d2fd97e464ee91cc2e"
+    },
+    {
+      "path": "rtl/ice40up5k_uwg30_rev_c.pcf",
+      "bytes": 1989,
+      "sha256": "be395107dcd3ccb37030e6f0b00c2d35c7e46e9ad526d9d39f5d682605393b03"
+    },
+    {
+      "path": "rtl/Makefile",
+      "bytes": 1238,
+      "sha256": "c5ba5597852dd77975fb1893f9d433c1e7cd53d382df4f6f73864347c23409cb"
+    },
+    {
+      "path": "rtl/tb_evt1_ar_display_fpga_bridge_rev_c.v",
+      "bytes": 14296,
+      "sha256": "7fe13f6cf69777f046956784a777b03127d383b4e94e4d3dcb7e0a52b9d09ba0"
+    },
+    {
+      "path": "SOC_ARCHITECTURE_COMPARISON.csv",
+      "bytes": 3347,
+      "sha256": "435bbcc5bb96daaa16bf28b343b9d93060d3ba106f331459d9f6d68fa7a92323"
+    },
+    {
+      "path": "SYSTEM_BUDGETS_V1_0.json",
+      "bytes": 33198,
+      "sha256": "d9c61827ca7ad4242ffefafb9db59d65b80cd3dcb25de5dd6c8db790cbb15e63"
+    },
+    {
+      "path": "v1_0_verification_report.txt",
+      "bytes": 6343,
+      "sha256": "c1ee4d572c708851a0bbe073598410173e01c7bb7bf658b7118f3ca4d9d39ad2"
+    },
+    {
+      "path": "verify_v1_0_engineering.py",
+      "bytes": 45099,
+      "sha256": "8ccbdec377c57c82b61eafb93b3e2d75d014fa0d586ebb426fa20140f4ceda05"
+    }
+  ],
+  "verification": {
+    "constraint_mhz": 48,
+    "native_ci": "SEE_LATEST_GITHUB_ACTIONS_RUN",
+    "pnr_sta_explicit_min_frequency_check": true,
+    "local_engineering_check": "6 PASS; 5 BLOCKED; 1 UNVERIFIED; 0 FAIL",
+    "pcb_cad_drc": "BLOCKED",
+    "physical_validation": "UNVERIFIED",
+    "manufacturing_release": false
+  },
+  "source_note": "Outer delivery validated; the Gemini conversation export and duplicate outer copies are intentionally not versioned."
+}

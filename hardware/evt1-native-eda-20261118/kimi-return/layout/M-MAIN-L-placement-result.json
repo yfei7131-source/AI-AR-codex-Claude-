@@ -1,0 +1,237 @@
+{
+  "board": "M-MAIN-L",
+  "pcbUuid": "8fbc3cae65886fe5",
+  "projectUuid": "cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662",
+  "scope": "PARTIAL_UNROUTED_CANDIDATE_NOT_FOR_FAB",
+  "startedAt": "2026-11-18T16:00:42.603805+00:00",
+  "planSha256": "1b6be4903cab872569b998ff318f7afaf9977d4a90edd91067aa2015650ba202",
+  "placements": [
+    {
+      "ref": "U1",
+      "sourceRef": "U1_HOST",
+      "stage": "immediate",
+      "primitiveId": "1412a27bbaf807a6",
+      "uniqueId": "",
+      "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+      "expectedCenterMm": {
+        "x": 4.1,
+        "y": 9.0
+      },
+      "observedCenterMil": {
+        "x": 161.41732283464566,
+        "y": 354.33070866141736
+      },
+      "anchorMil": {
+        "x": 152.61632283464564,
+        "y": 354.33070866141736
+      },
+      "rotation": 180,
+      "layer": 1,
+      "bboxMil": {
+        "maxX": 317.5643228346457,
+        "maxY": 501.67670866141736,
+        "minX": 5.27032283464564,
+        "minY": 206.98470866141733
+      },
+      "padCount": 57,
+      "connectedPadNetCount": 43,
+      "ncAndLocalNcPadsRemainNetless": 14,
+      "manufacturerId": "ESP32-S3-PICO-1-N8R8",
+      "verificationErrors": [],
+      "verified": true,
+      "placementReceipt": {
+        "assignedNets": 43,
+        "bindingVerified": true,
+        "designator": "U1",
+        "embeddedVias": {
+          "assigned": 9,
+          "failed": [],
+          "verified": 9
+        },
+        "padCount": 57,
+        "primitiveId": "1412a27bbaf807a6",
+        "uniqueId": "",
+        "unmatchedPads": []
+      }
+    },
+    {
+      "ref": "MK1",
+      "sourceRef": "MK1_L",
+      "stage": "immediate",
+      "primitiveId": "08da4ea71a40c02c",
+      "uniqueId": "",
+      "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+      "expectedCenterMm": {
+        "x": 2.9,
+        "y": 36.9
+      },
+      "observedCenterMil": {
+        "x": 114.17322834645671,
+        "y": 1452.7559055118109
+      },
+      "anchorMil": {
+        "x": 109.05872834645685,
+        "y": 1440.790155511811
+      },
+      "rotation": 90,
+      "layer": 1,
+      "bboxMil": {
+        "maxX": 197.9127283464568,
+        "maxY": 1529.765655511811,
+        "minX": 30.433728346456626,
+        "minY": 1375.746155511811
+      },
+      "padCount": 8,
+      "connectedPadNetCount": 5,
+      "ncAndLocalNcPadsRemainNetless": 0,
+      "manufacturerId": "IM69D130V01XTSA1",
+      "verificationErrors": [
+        "physical pad-number set/count mismatch"
+      ],
+      "verified": false,
+      "placementReceipt": {
+        "assignedNets": 8,
+        "bindingVerified": true,
+        "designator": "MK1",
+        "padCount": 8,
+        "primitiveId": "08da4ea71a40c02c",
+        "uniqueId": "",
+        "unmatchedPads": []
+      }
+    }
+  ],
+  "offlineFailedPlacements": [],
+  "requiredButNotPlaced": [
+    "J_BTB_L",
+    "J_CAM",
+    "J_CHG",
+    "U12_ESD_USB",
+    "TP_BAT_L_P",
+    "TP_BAT_L_N",
+    "SPK_L",
+    "R_CRST_A_PD",
+    "R_DIR1_PU",
+    "R_LS1_A4",
+    "R_LS1_B4",
+    "R_I2C_SCL_3V3",
+    "R_I2C_SDA_3V3",
+    "R_I2C_SCL_1V8",
+    "R_I2C_SDA_1V8",
+    "R_SCCB_SCL",
+    "R_SCCB_SDA",
+    "R_SENSE",
+    "R_LIMIT",
+    "R_PRIV_PU",
+    "R_XREQ",
+    "D_XREQ",
+    "C_XREQ",
+    "R_XREQ_BLEED",
+    "R_CAMRST",
+    "R_CAMPWDN",
+    "TP_NTC_L",
+    "R_LS3_EN",
+    "R_LS4_EN",
+    "L1_BB",
+    "R_BB_FB1",
+    "R_BB_FB2",
+    "L2_1V8",
+    "R_VSET_1V8",
+    "ANT1",
+    "R_CHIP_PU",
+    "C_CHIP_PU",
+    "TP_ESP_EN",
+    "TP_ESP_BOOT",
+    "R_ISO_GATE",
+    "R_ISO_PD",
+    "C_CHG_L_IN",
+    "C_CHG_L_SYS",
+    "C_CHG_L_BAT",
+    "C_OR_IN1",
+    "C_OR_IN2",
+    "C_OR_OUT",
+    "C_BB_IN",
+    "C_BB_OUT",
+    "C_BK_IN",
+    "C_BK_OUT",
+    "C_LDO_LED_IN",
+    "C_LDO_LED_OUT",
+    "C_LDO_DOVDD_IN",
+    "C_LDO_DOVDD_OUT",
+    "C_LDO_DVDD_IN",
+    "C_LDO_DVDD_OUT",
+    "C_LDO_AVDD_IN",
+    "C_LDO_AVDD_OUT",
+    "BAT_L",
+    "C_ESP_BULK",
+    "C_ESP_VDD_SPI",
+    "R_ESP_BOOT",
+    "R_ESP_STRAP45",
+    "R_ESP_STRAP46",
+    "R_ESP_STRAP3",
+    "R_ESP_RF",
+    "C_ESP_RF_IN",
+    "C_ESP_RF_OUT",
+    "C_U8_LS1_A",
+    "C_U8_LS1_B",
+    "C_U8_PDM_LS_A",
+    "C_U8_PDM_LS_B",
+    "C_U8_CAM_ISO1_A",
+    "C_U8_CAM_ISO1_B",
+    "C_U8_CAM_ISO2_A",
+    "C_U8_CAM_ISO2_B",
+    "C_U8_AUD_LS2_A",
+    "C_U8_AUD_LS2_B",
+    "C_MK1_L",
+    "R_CAM_DOVDD_OK_PD",
+    "R_CAM_DOVDD_BLEED",
+    "C_CAM_SCCB_EN",
+    "R_LS3_VREF_BLEED",
+    "C_U10_AMP_L_HF",
+    "C_U10_AMP_L_BULK",
+    "U7_INA",
+    "R_WIN_TOP",
+    "R_WIN_MID",
+    "R_WIN_BOT",
+    "R_PRIV_RC",
+    "C_PRIV_RC",
+    "C_INA_SUPPLY",
+    "C_WIN_SUPPLY",
+    "C_CAMRST",
+    "TP_SPK_L_P",
+    "TP_SPK_L_N"
+  ],
+  "routing": {
+    "tracksViasPoursAuthored": false,
+    "status": "UNROUTED"
+  },
+  "status": "FAILED_OR_PARTIAL_READBACK_REQUIRED",
+  "beforeDump": "layout\\M-MAIN-L-01-before-dump.json",
+  "finishedAt": "2026-11-18T16:00:53.459741+00:00",
+  "error": "MK1: immediate verification failed: ['physical pad-number set/count mismatch']",
+  "failureReadback": [
+    {
+      "ref": "U1",
+      "primitiveId": "1412a27bbaf807a6",
+      "center": {
+        "x": 161.41732283464566,
+        "y": 354.33070866141736
+      },
+      "layer": 1,
+      "rotation": 180,
+      "uniqueId": "",
+      "padCount": 57
+    },
+    {
+      "ref": "MK1",
+      "primitiveId": "08da4ea71a40c02c",
+      "center": {
+        "x": 114.17322834645671,
+        "y": 1452.7559055118109
+      },
+      "layer": 1,
+      "rotation": 90,
+      "uniqueId": "",
+      "padCount": 8
+    }
+  ]
+}

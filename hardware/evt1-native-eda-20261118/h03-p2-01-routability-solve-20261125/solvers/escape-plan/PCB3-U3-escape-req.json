@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 3,
+  "units": "mil",
+  "coordinateSemantic": "footprint-anchor",
+  "minGapMil": 6,
+  "routing": {
+    "owners": [
+      "U3"
+    ],
+    "stepMil": 2,
+    "maxDetourMil": 120,
+    "maxStates": 200000,
+    "demands": [
+      {
+        "id": "u3-1-vbus_5v",
+        "kind": "power",
+        "from": "U3.1",
+        "net": "VBUS_5V",
+        "widthMil": 4,
+        "layer": 2,
+        "maxVias": 2,
+        "toward": "R7.1",
+        "congested": {
+          "minX": 21.6,
+          "minY": 480.8,
+          "maxX": 106.4,
+          "maxY": 549.9
+        },
+        "exits": [
+          [
+            88.68,
+            556.05
+          ]
+        ],
+        "maxAwayMil": 80
+      },
+      {
+        "id": "u3-2-chg_r_iset",
+        "kind": "signal",
+        "from": "U3.2",
+        "net": "CHG_R_ISET",
+        "widthMil": 4,
+        "layer": 2,
+        "maxVias": 2,
+        "toward": "R6.1",
+        "congested": {
+          "minX": 21.6,
+          "minY": 480.8,
+          "maxX": 106.4,
+          "maxY": 549.9
+        },
+        "exits": [
+          [
+            25.32,
+            556.78
+          ]
+        ],
+        "maxAwayMil": 80
+      },
+      {
+        "id": "u3-3-ntc_ts_r",
+        "kind": "signal",
+        "from": "U3.3",
+        "net": "NTC_TS_R",
+        "widthMil": 4,
+        "layer": 2,
+        "maxVias": 2,
+        "toward": "TP3.1",
+        "congested": {
+          "minX": 21.6,
+          "minY": 480.8,
+          "maxX": 106.4,
+          "maxY": 549.9
+        },
+        "exits": [
+          [
+            82.22,
+            554.86
+          ]
+        ],
+        "maxAwayMil": 80
+      },
+      {
+        "id": "u3-4-gnd",
+        "kind": "ground",
+        "from": "U3.4",
+        "net": "GND",
+        "widthMil": 4,
+        "layer": 2,
+        "maxVias": 2,
+        "toward": "TP1.1",
+        "congested": {
+          "minX": 21.6,
+          "minY": 480.8,
+          "maxX": 106.4,
+          "maxY": 549.9
+        },
+        "exits": [
+          [
+            34.0,
+            554.14
+          ]
+        ],
+        "maxAwayMil": 80
+      },
+      {
+        "id": "u3-5-nc",
+        "kind": "nc",
+        "from": "U3.5",
+        "ncReason": "unconnected in native netlist"
+      },
+      {
+        "id": "u3-6-nc",
+        "kind": "nc",
+        "from": "U3.6",
+        "ncReason": "unconnected in native netlist"
+      },
+      {
+        "id": "u3-7-chg_r_vset",
+        "kind": "signal",
+        "from": "U3.7",
+        "net": "CHG_R_VSET",
+        "widthMil": 4,
+        "layer": 2,
+        "maxVias": 2,
+        "toward": "R10.1",
+        "congested": {
+          "minX": 21.6,
+          "minY": 480.8,
+          "maxX": 106.4,
+          "maxY": 549.9
+        },
+        "exits": [
+          [
+            109.94,
+            554.5
+          ]
+        ],
+        "maxAwayMil": 80
+      },
+      {
+        "id": "u3-8-vbat_r_ret",
+        "kind": "power",
+        "from": "U3.8",
+        "net": "VBAT_R_RET",
+        "widthMil": 4,
+        "layer": 2,
+        "maxVias": 2,
+        "toward": "TP2.1",
+        "congested": {
+          "minX": 21.6,
+          "minY": 480.8,
+          "maxX": 106.4,
+          "maxY": 549.9
+        },
+        "exits": [
+          [
+            104.98,
+            554.25
+          ]
+        ],
+        "maxAwayMil": 80
+      },
+      {
+        "id": "u3-9-gnd",
+        "kind": "ground",
+        "from": "U3.9",
+        "net": "GND",
+        "widthMil": 4,
+        "layer": 2,
+        "maxVias": 2,
+        "to": "C13.2",
+        "congested": {
+          "minX": 21.6,
+          "minY": 480.8,
+          "maxX": 106.4,
+          "maxY": 549.9
+        },
+        "maxAwayMil": 60
+      }
+    ]
+  }
+}

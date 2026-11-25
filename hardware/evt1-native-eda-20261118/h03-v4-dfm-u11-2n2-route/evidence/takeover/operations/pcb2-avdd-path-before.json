@@ -1,0 +1,43 @@
+{
+  "measurementPathKind": "copper-contact-fallback",
+  "connected": false,
+  "reason": "no single continuous path constrained to layer 2 visits the requested pads in order without reusing copper primitives",
+  "net": "AVDD_WD_Q",
+  "from": "R3.1",
+  "to": "R6.1",
+  "waypointOrder": [
+    "R3.1",
+    "R6.1"
+  ],
+  "requestedLayer": 2,
+  "viaCount": 0,
+  "primitiveCount": 0,
+  "lengthMil": 0,
+  "turnCount": 0,
+  "legs": [
+    {
+      "from": "R3.1",
+      "to": "R6.1",
+      "connected": false,
+      "reason": "no continuous path in listed copper constrained to layer 2 (physical vias, pours, and PLANE connectivity are excluded)",
+      "viaCount": 0,
+      "primitiveCount": 0,
+      "lengthMil": 0,
+      "turnCount": 0
+    }
+  ],
+  "scope": "placed pad copper + listed tracks/arcs constrained to layer 2; physical vias, copper pours, fills, and PLANE connectivity excluded",
+  "excludedCopper": [
+    "pours",
+    "filled regions",
+    "PLANE layers",
+    "physical vias (--layer constraint)",
+    "tracks/arcs outside layer 2"
+  ],
+  "limitations": [
+    "does not infer connectivity through copper pours, filled regions, or PLANE layers",
+    "arc primitives are measured on their reconstructed centerlines; ambiguous or unsupported interior contacts make path measurement unknown",
+    "rotated RECT/rounded RECT and OVAL contacts use shape geometry; ELLIPSE, NGON, and pad-to-pad contacts use conservative inscribed geometry that may miss edge landings but cannot invent them",
+    "--layer 2 builds a layer-restricted graph; physical vias and all other-layer tracks/arcs are excluded"
+  ]
+}

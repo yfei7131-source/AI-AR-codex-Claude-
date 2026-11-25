@@ -1,0 +1,79 @@
+{
+  "cli": "v1.20.0",
+  "daemon": "v1.20.0",
+  "skill": "1.20.0",
+  "hostCompatibility": {
+    "baseline": "4.0.0",
+    "recommended": "4.1.60",
+    "verdict": "ok",
+    "findings": [
+      {
+        "windowId": "19d5a2d7-657a-4234-8257-7d682be4d627",
+        "version": "4.1.97",
+        "severity": "ok",
+        "reason": "EasyEDA Pro 4.1.97 满足 V4 主线基线"
+      },
+      {
+        "windowId": "4c66c905-f4b0-4d58-9779-69b8d852e246",
+        "version": "4.1.97",
+        "severity": "ok",
+        "reason": "EasyEDA Pro 4.1.97 满足 V4 主线基线"
+      },
+      {
+        "windowId": "5095e7f7-071b-4d2e-ab41-c5aa3ae3fd02",
+        "version": "4.1.97",
+        "severity": "ok",
+        "reason": "EasyEDA Pro 4.1.97 满足 V4 主线基线"
+      },
+      {
+        "windowId": "c66f4622-8859-4742-816b-f9a780fe3f36",
+        "version": "4.1.97",
+        "severity": "ok",
+        "reason": "EasyEDA Pro 4.1.97 满足 V4 主线基线"
+      }
+    ]
+  },
+  "pinnedConnector": {
+    "windowId": "5095e7f7-071b-4d2e-ab41-c5aa3ae3fd02",
+    "connectorVersion": "1.20.0",
+    "easyedaVersion": "4.1.97",
+    "capabilities": [
+      "schematic.v1",
+      "pcb.v1"
+    ],
+    "host": {
+      "kind": "electron",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) JLCEDAPro/4.1.97.04b092ac Chrome/146.0.7680.188 Electron/41.2.1-jlc-sa-win-x64.6 Safari/537.36"
+    },
+    "context": {
+      "pageVisibility": "visible"
+    },
+    "connectedAt": "2026-11-25T07:59:22.4009399Z",
+    "lastSeen": "2026-11-25T08:04:40.2355886Z",
+    "connectorVersionOk": true
+  },
+  "allRegistrations": [
+    {
+      "id": "19d5a2d7-657a-4234-8257-7d682be4d627",
+      "version": "1.17.0",
+      "reportedCompatible": false
+    },
+    {
+      "id": "4c66c905-f4b0-4d58-9779-69b8d852e246",
+      "version": "1.18.0",
+      "reportedCompatible": false
+    },
+    {
+      "id": "5095e7f7-071b-4d2e-ab41-c5aa3ae3fd02",
+      "version": "1.20.0",
+      "reportedCompatible": true
+    },
+    {
+      "id": "c66f4622-8859-4742-816b-f9a780fe3f36",
+      "version": "1.17.0",
+      "reportedCompatible": false
+    }
+  ],
+  "aggregateVersionGate": "block",
+  "connectorPackageSha256": "54ee0e39f011d3c4c9483ac302031468bf77fd2a4479c528905205c3fbc35b0e"
+}

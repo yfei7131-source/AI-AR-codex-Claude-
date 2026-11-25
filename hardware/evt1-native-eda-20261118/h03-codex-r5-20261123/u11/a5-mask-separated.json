@@ -1,0 +1,45 @@
+{
+  "scope": "Nominal geometry derived from PR52 top native archive and copper dump. Requires native DRC, L2 connectivity and assembly/stackup EQ.",
+  "r4_native_sha256": "178f0098acb0fa4194578f01674a84fb26a0d14e27b77b35937b6c27607ea7da",
+  "r4_top_dump_sha256": "dd28f0a5e013eef3b20b6b682121767fe69e87f6c45edd21f05bf7968b5f50dd",
+  "ref": "U11.A5",
+  "net": "GND",
+  "start": [
+    33.46456,
+    341.53541
+  ],
+  "end": [
+    32.6,
+    330.6
+  ],
+  "layer": 1,
+  "width_mil": 4,
+  "top_trace_gap_mil": 7.94103,
+  "top_trace_nearest": "U11.B5",
+  "via": {
+    "drill_mil": 4,
+    "diameter_mil": 10,
+    "rule": {
+      "name": "BV_L1_L2",
+      "staLayerId": 1,
+      "endLayerId": 15,
+      "viaSizeRule": ""
+    },
+    "point": [
+      32.6,
+      330.6
+    ],
+    "board_edge_copper_gap_mil": 27.6,
+    "layer_end_id": 15,
+    "nearest_foreign_top_copper": "U11.B4",
+    "foreign_top_copper_gap_mil": 6.07922,
+    "critical_hole_wall_gap_mil": 43.1236,
+    "critical_hole_wall_candidate": "c05bf22129468014",
+    "critical_hole_wall_min_mil": 5.11811,
+    "independent_nominal_screen": true
+  },
+  "l2_native_ground_pad_edge_to_fill_boundary_mil": 17.1,
+  "closest_ball_mask": "A5",
+  "hole_edge_to_mask_mil": 3.131033,
+  "capture_copper_edge_to_mask_mil": 0.131033
+}

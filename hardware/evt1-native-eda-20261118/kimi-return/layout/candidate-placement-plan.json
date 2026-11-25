@@ -1,0 +1,5045 @@
+{
+  "status": "CANDIDATE_PARTIAL_NOT_FOR_FAB",
+  "sourceSha256": {
+    "devicePlan": "c64f56acd39009b64a1f331dd8075aa5020d9622e214f55be5c103ee1edf8685",
+    "nativePadAudit": "8b603ec309f278a706de3efb48149a835e4acc492bf7f3a3e1e748b6fc98823d",
+    "freshPadReadback": "366aeeaef1b1bbbd22354d39cb4e0b60146c47976eab13e845b90ee2fff51db1"
+  },
+  "boards": {
+    "M-MAIN-L": {
+      "pcbUuid": "8fbc3cae65886fe5",
+      "outlinePolygonMm": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          46
+        ],
+        [
+          5.8,
+          46
+        ],
+        [
+          5.8,
+          14
+        ],
+        [
+          8.2,
+          14
+        ],
+        [
+          8.2,
+          4.2
+        ],
+        [
+          5.8,
+          4.2
+        ],
+        [
+          5.8,
+          0
+        ]
+      ],
+      "scope": "PARTIAL_EXACT_DEVICE_CANDIDATE_NOT_COMPLETE_LAYOUT",
+      "minimumCandidateBboxGapMm": 0.2,
+      "placements": [
+        {
+          "board": "M-MAIN-L",
+          "ref": "U1",
+          "sourceRef": "U1_HOST",
+          "mpn": "ESP32-S3-PICO-1-N8R8",
+          "device": {
+            "deviceUuid": "6b9f2fd1fbdd415a9fe17c35acdeee3b",
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "name": "ESP32-S3-PICO-1-N8R8_C7545129"
+          },
+          "bomLine": "BOM-02",
+          "auditReference": "AUDIT_ESP32",
+          "auditPrimitiveId": "ec9eed662fc7e562",
+          "bboxWidthMm": 7.932267599999998,
+          "bboxHeightMm": 7.4851768,
+          "requestedCenter": {
+            "x": 4.1,
+            "y": 9.0
+          },
+          "preferredLayer": "TOP",
+          "sourceSide": "TOP",
+          "rotation": 180,
+          "pins": [
+            {
+              "number": "1",
+              "name": "LNA_IN",
+              "net": "ESP_RF_ANT",
+              "localState": "CONNECTED",
+              "role": "PASSIVE"
+            },
+            {
+              "number": "2",
+              "name": "VDD3P3",
+              "net": "3V3_SYS",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "3",
+              "name": "VDD3P3",
+              "net": "3V3_SYS",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "4",
+              "name": "CHIP_PU",
+              "net": "ESP_CHIP_PU",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "5",
+              "name": "GPIO0",
+              "net": "QSPI_DIR1_EN",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "6",
+              "name": "GPIO1",
+              "net": "SYS_I2C_SDA_3V3",
+              "localState": "CONNECTED",
+              "role": "DRV_OD"
+            },
+            {
+              "number": "7",
+              "name": "GPIO2",
+              "net": "SYS_I2C_SCL_3V3",
+              "localState": "CONNECTED",
+              "role": "DRV_OD"
+            },
+            {
+              "number": "8",
+              "name": "GPIO3",
+              "net": "CAM_HREF_3V3",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "9",
+              "name": "GPIO4",
+              "net": "CAM_D0_3V3",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "10",
+              "name": "GPIO5",
+              "net": "CAM_D1_3V3",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "11",
+              "name": "GPIO6",
+              "net": "CAM_D2_3V3",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "12",
+              "name": "GPIO7",
+              "net": "CAM_D3_3V3",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "13",
+              "name": "GPIO8",
+              "net": "CAM_D4_3V3",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "14",
+              "name": "GPIO9",
+              "net": "host_qio3_3v3",
+              "localState": "CONNECTED",
+              "role": "BIDIR_FW"
+            },
+            {
+              "number": "15",
+              "name": "GPIO10",
+              "net": "host_cs_n_3v3",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "16",
+              "name": "GPIO11",
+              "net": "host_qio0_3v3",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "17",
+              "name": "GPIO12",
+              "net": "host_sck_3v3",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "18",
+              "name": "GPIO13",
+              "net": "host_qio1_3v3",
+              "localState": "CONNECTED",
+              "role": "BIDIR_FW"
+            },
+            {
+              "number": "19",
+              "name": "GPIO14",
+              "net": "host_qio2_3v3",
+              "localState": "CONNECTED",
+              "role": "BIDIR_FW"
+            },
+            {
+              "number": "20",
+              "name": "VDD3P3_RTC",
+              "net": "3V3_SYS",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "21",
+              "name": "GPIO15",
+              "net": "PDM_D0_3V3",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "22",
+              "name": "GPIO16",
+              "net": "PDM_D1_3V3",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "23",
+              "name": "GPIO17",
+              "net": "I2S_LRCLK_3V3",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "24",
+              "name": "GPIO18",
+              "net": "FPGA_CRESET_3V3",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "25",
+              "name": "GPIO19",
+              "net": "USB_DM",
+              "localState": "CONNECTED",
+              "role": "BIDIR"
+            },
+            {
+              "number": "26",
+              "name": "GPIO20",
+              "net": "USB_DP",
+              "localState": "CONNECTED",
+              "role": "BIDIR"
+            },
+            {
+              "number": "27",
+              "name": "GPIO21",
+              "net": "VSYNC_CDONE_3V3",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "28",
+              "name": "SPICS1/PSRAM_RESERVED",
+              "net": "",
+              "localState": "NC",
+              "role": "NC"
+            },
+            {
+              "number": "29",
+              "name": "VDD_SPI",
+              "net": "ESP_VDD_SPI_3V3",
+              "localState": "CONNECTED",
+              "role": "SRC"
+            },
+            {
+              "number": "30",
+              "name": "NC",
+              "net": "",
+              "localState": "NC",
+              "role": "NC"
+            },
+            {
+              "number": "31",
+              "name": "NC",
+              "net": "",
+              "localState": "NC",
+              "role": "NC"
+            },
+            {
+              "number": "32",
+              "name": "NC",
+              "net": "",
+              "localState": "NC",
+              "role": "NC"
+            },
+            {
+              "number": "33",
+              "name": "NC",
+              "net": "",
+              "localState": "NC",
+              "role": "NC"
+            },
+            {
+              "number": "34",
+              "name": "NC",
+              "net": "",
+              "localState": "NC",
+              "role": "NC"
+            },
+            {
+              "number": "35",
+              "name": "NC",
+              "net": "",
+              "localState": "NC",
+              "role": "NC"
+            },
+            {
+              "number": "36",
+              "name": "GPIO48",
+              "net": "IPC_S3_TX_3V3",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "37",
+              "name": "GPIO47",
+              "net": "IPC_NRF_TX_3V3",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "38",
+              "name": "GPIO33",
+              "net": "",
+              "localState": "NC",
+              "role": "NC"
+            },
+            {
+              "number": "39",
+              "name": "GPIO34",
+              "net": "",
+              "localState": "NC",
+              "role": "NC"
+            },
+            {
+              "number": "40",
+              "name": "GPIO35",
+              "net": "",
+              "localState": "NC",
+              "role": "NC"
+            },
+            {
+              "number": "41",
+              "name": "GPIO36",
+              "net": "",
+              "localState": "NC",
+              "role": "NC"
+            },
+            {
+              "number": "42",
+              "name": "GPIO37",
+              "net": "",
+              "localState": "NC",
+              "role": "NC"
+            },
+            {
+              "number": "43",
+              "name": "GPIO38",
+              "net": "CAM_D5_3V3",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "44",
+              "name": "GPIO39",
+              "net": "CAM_D6_3V3",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "45",
+              "name": "GPIO40",
+              "net": "CAM_D7_3V3",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "46",
+              "name": "VDD3P3_CPU",
+              "net": "3V3_SYS",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "47",
+              "name": "GPIO41",
+              "net": "CAM_PCLK_3V3",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "48",
+              "name": "GPIO42",
+              "net": "CAM_VSYNC_3V3",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "49",
+              "name": "GPIO43",
+              "net": "I2S_S3_DOUT_3V3",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "50",
+              "name": "GPIO44",
+              "net": "I2S_BCLK_3V3",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "51",
+              "name": "GPIO45",
+              "net": "PDM_CLK_3V3",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "52",
+              "name": "GPIO46",
+              "net": "CAM_XCLK_3V3",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "53",
+              "name": "NC",
+              "net": "",
+              "localState": "NC",
+              "role": "NC"
+            },
+            {
+              "number": "54",
+              "name": "NC",
+              "net": "",
+              "localState": "NC",
+              "role": "NC"
+            },
+            {
+              "number": "55",
+              "name": "VDDA",
+              "net": "3V3_SYS",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "56",
+              "name": "VDDA",
+              "net": "3V3_SYS",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "57",
+              "name": "EPAD GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            }
+          ],
+          "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+          "landPatternQualification": "UNVERIFIED",
+          "nativePadSetStatus": "PASS",
+          "center": {
+            "x": 4.1,
+            "y": 9.0
+          },
+          "layer": "TOP",
+          "bbox": {
+            "minX": 0.13386620000000082,
+            "maxX": 8.0661338,
+            "minY": 5.2574116,
+            "maxY": 12.742588399999999,
+            "width": 7.932267599999998,
+            "height": 7.4851768
+          },
+          "placementStatus": "CANDIDATE_OFFLINE",
+          "displacementMm": null
+        },
+        {
+          "board": "M-MAIN-L",
+          "ref": "MK1",
+          "sourceRef": "MK1_L",
+          "mpn": "IM69D130V01XTSA1",
+          "device": {
+            "deviceUuid": "0669b752c8ff491ebce2eed3ac6000fe",
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "name": "IM69D130V01XTSA1_C42464166"
+          },
+          "bomLine": "BOM-14",
+          "auditReference": "AUDIT_06",
+          "auditPrimitiveId": "7f7c93a1e9059615",
+          "bboxWidthMm": 3.9120953000000083,
+          "bboxHeightMm": 4.253966599999999,
+          "requestedCenter": {
+            "x": 2.9,
+            "y": 36.9
+          },
+          "preferredLayer": "TOP",
+          "sourceSide": "TOP",
+          "rotation": 90,
+          "pins": [
+            {
+              "number": "1",
+              "name": "DATA",
+              "net": "PDM_D0_1V8",
+              "localState": "CONNECTED",
+              "role": "DRV_TRI_SLOT"
+            },
+            {
+              "number": "2",
+              "name": "VDD",
+              "net": "1V8_SYS",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "3",
+              "name": "CLOCK",
+              "net": "PDM_CLK_1V8",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "4",
+              "name": "SELECT",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "TIE"
+            },
+            {
+              "number": "5",
+              "name": "GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            }
+          ],
+          "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+          "landPatternQualification": "UNVERIFIED",
+          "nativePadSetStatus": "PASS",
+          "center": {
+            "x": 2.9,
+            "y": 36.9
+          },
+          "layer": "TOP",
+          "bbox": {
+            "minX": 0.7730167000000003,
+            "maxX": 5.0269832999999995,
+            "minY": 34.943952349999996,
+            "maxY": 38.85604765,
+            "width": 4.253966599999999,
+            "height": 3.9120953000000083
+          },
+          "placementStatus": "CANDIDATE_OFFLINE",
+          "displacementMm": 0.0
+        },
+        {
+          "board": "M-MAIN-L",
+          "ref": "U10",
+          "sourceRef": "U10_AMP_L",
+          "mpn": "MAX98357AEWL+T",
+          "device": {
+            "deviceUuid": "fae901b9c5d84f939c98bcdbe4b8c978",
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "name": "MAX98357AEWL+T"
+          },
+          "bomLine": "BOM-04",
+          "auditReference": "AUDIT_04",
+          "auditPrimitiveId": "28a14b34691a105f",
+          "bboxWidthMm": 1.9405854000000073,
+          "bboxHeightMm": 1.5500604000000002,
+          "requestedCenter": {
+            "x": 4.0,
+            "y": 15.2
+          },
+          "preferredLayer": "TOP",
+          "sourceSide": "TOP",
+          "rotation": 0,
+          "pins": [
+            {
+              "number": "A1",
+              "name": "SD_MODE",
+              "net": "AMP_SD_MODE_1V8",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "A2",
+              "name": "VDD",
+              "net": "VSYS",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "A3",
+              "name": "OUTP",
+              "net": "SPK_L_P",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "B1",
+              "name": "DIN",
+              "net": "I2S_AMP_DIN_1V8",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "B2",
+              "name": "GAIN_SLOT",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "TIE"
+            },
+            {
+              "number": "B3",
+              "name": "OUTN",
+              "net": "SPK_L_N",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "C1",
+              "name": "BCLK",
+              "net": "I2S_BCLK_1V8",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "C2",
+              "name": "GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "C3",
+              "name": "LRCLK",
+              "net": "I2S_LRCLK_1V8",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            }
+          ],
+          "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+          "landPatternQualification": "UNVERIFIED",
+          "nativePadSetStatus": "PASS",
+          "center": {
+            "x": 4.0,
+            "y": 15.2
+          },
+          "layer": "TOP",
+          "bbox": {
+            "minX": 3.0297072999999966,
+            "maxX": 4.9702927000000034,
+            "minY": 14.4249698,
+            "maxY": 15.975030199999999,
+            "width": 1.9405854000000073,
+            "height": 1.5500604000000002
+          },
+          "placementStatus": "CANDIDATE_OFFLINE",
+          "displacementMm": 0.0
+        },
+        {
+          "board": "M-MAIN-L",
+          "ref": "U18",
+          "sourceRef": "U8_LS1",
+          "mpn": "SN74AXC8T245RJWR",
+          "device": {
+            "deviceUuid": "adfb74f2e1e14840bffbd314e529747d",
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "name": "SN74AXC8T245RJWR"
+          },
+          "bomLine": "BOM-16",
+          "auditReference": "AUDIT_02",
+          "auditPrimitiveId": "08aed7825b14bf30",
+          "bboxWidthMm": 4.660138000000001,
+          "bboxHeightMm": 3.2353503999999993,
+          "requestedCenter": {
+            "x": 1.5,
+            "y": 6.8
+          },
+          "preferredLayer": "BOTTOM",
+          "sourceSide": "BOTTOM",
+          "rotation": 90,
+          "pins": [
+            {
+              "number": "1",
+              "name": "DIR1",
+              "net": "QSPI_DIR1_EN",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "2",
+              "name": "A1",
+              "net": "host_qio1_3v3",
+              "localState": "CONNECTED",
+              "role": "BIDIR_DIRCTL"
+            },
+            {
+              "number": "3",
+              "name": "A2",
+              "net": "host_qio2_3v3",
+              "localState": "CONNECTED",
+              "role": "BIDIR_DIRCTL"
+            },
+            {
+              "number": "4",
+              "name": "A3",
+              "net": "host_qio3_3v3",
+              "localState": "CONNECTED",
+              "role": "BIDIR_DIRCTL"
+            },
+            {
+              "number": "5",
+              "name": "A4",
+              "net": "LS1_A4_TIE_100K_GND",
+              "localState": "CONNECTED",
+              "role": "TIE"
+            },
+            {
+              "number": "6",
+              "name": "A5",
+              "net": "host_sck_3v3",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "7",
+              "name": "A6",
+              "net": "host_cs_n_3v3",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "8",
+              "name": "A7",
+              "net": "FPGA_CRESET_3V3",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "9",
+              "name": "A8",
+              "net": "host_qio0_3v3",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "10",
+              "name": "DIR2",
+              "net": "3V3_SYS",
+              "localState": "CONNECTED",
+              "role": "TIE"
+            },
+            {
+              "number": "11",
+              "name": "GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "12",
+              "name": "GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "13",
+              "name": "B8",
+              "net": "host_qio0",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "14",
+              "name": "B7",
+              "net": "FPGA_CRESET_B",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "15",
+              "name": "B6",
+              "net": "host_cs_n",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "16",
+              "name": "B5",
+              "net": "host_sck",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "17",
+              "name": "B4",
+              "net": "LS1_B4_TIE_100K_GND",
+              "localState": "CONNECTED",
+              "role": "TIE"
+            },
+            {
+              "number": "18",
+              "name": "B3",
+              "net": "host_qio3",
+              "localState": "CONNECTED",
+              "role": "BIDIR_DIRCTL"
+            },
+            {
+              "number": "19",
+              "name": "B2",
+              "net": "host_qio2",
+              "localState": "CONNECTED",
+              "role": "BIDIR_DIRCTL"
+            },
+            {
+              "number": "20",
+              "name": "B1",
+              "net": "host_qio1",
+              "localState": "CONNECTED",
+              "role": "BIDIR_DIRCTL"
+            },
+            {
+              "number": "21",
+              "name": "OE",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "TIE"
+            },
+            {
+              "number": "22",
+              "name": "VCCB",
+              "net": "1V8_FPGA_IO",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "23",
+              "name": "VCCB",
+              "net": "1V8_FPGA_IO",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "24",
+              "name": "VCCA",
+              "net": "3V3_SYS",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            }
+          ],
+          "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+          "landPatternQualification": "UNVERIFIED",
+          "nativePadSetStatus": "PASS",
+          "center": {
+            "x": 1.7,
+            "y": 6.8
+          },
+          "layer": "BOTTOM",
+          "bbox": {
+            "minX": 0.08232480000000031,
+            "maxX": 3.3176751999999996,
+            "minY": 4.469930999999999,
+            "maxY": 9.130069,
+            "width": 3.2353503999999993,
+            "height": 4.660138000000001
+          },
+          "placementStatus": "CANDIDATE_OFFLINE",
+          "displacementMm": 0.2
+        },
+        {
+          "board": "M-MAIN-L",
+          "ref": "U21",
+          "sourceRef": "U8_PDM_LS",
+          "mpn": "SN74AXC8T245RJWR",
+          "device": {
+            "deviceUuid": "adfb74f2e1e14840bffbd314e529747d",
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "name": "SN74AXC8T245RJWR"
+          },
+          "bomLine": "BOM-19",
+          "auditReference": "AUDIT_02",
+          "auditPrimitiveId": "08aed7825b14bf30",
+          "bboxWidthMm": 4.660138000000001,
+          "bboxHeightMm": 3.2353503999999993,
+          "requestedCenter": {
+            "x": 2.9,
+            "y": 19.5
+          },
+          "preferredLayer": "BOTTOM",
+          "sourceSide": "BOTTOM",
+          "rotation": 0,
+          "pins": [
+            {
+              "number": "1",
+              "name": "DIR1",
+              "net": "1V8_SYS",
+              "localState": "CONNECTED",
+              "role": "TIE"
+            },
+            {
+              "number": "2",
+              "name": "A1",
+              "net": "FPGA_CDONE_VSYNC_N",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "3",
+              "name": "A2",
+              "net": "IPC_NRF_TX_1V8",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "4",
+              "name": "A3",
+              "net": "PDM_D0_1V8",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "5",
+              "name": "A4",
+              "net": "PDM_D1_1V8",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "6",
+              "name": "A5",
+              "net": "PDM_CLK_1V8",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "7",
+              "name": "A6",
+              "net": "I2S_S3_DOUT_1V8",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "8",
+              "name": "A7",
+              "net": "IPC_S3_TX_1V8",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "9",
+              "name": "A8",
+              "net": "",
+              "localState": "NC",
+              "role": "NC"
+            },
+            {
+              "number": "10",
+              "name": "DIR2",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "TIE"
+            },
+            {
+              "number": "11",
+              "name": "GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "12",
+              "name": "GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "13",
+              "name": "B8",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "TIE"
+            },
+            {
+              "number": "14",
+              "name": "B7",
+              "net": "IPC_S3_TX_3V3",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "15",
+              "name": "B6",
+              "net": "I2S_S3_DOUT_3V3",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "16",
+              "name": "B5",
+              "net": "PDM_CLK_3V3",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "17",
+              "name": "B4",
+              "net": "PDM_D1_3V3",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "18",
+              "name": "B3",
+              "net": "PDM_D0_3V3",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "19",
+              "name": "B2",
+              "net": "IPC_NRF_TX_3V3",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "20",
+              "name": "B1",
+              "net": "VSYNC_CDONE_3V3",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "21",
+              "name": "OE",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "TIE"
+            },
+            {
+              "number": "22",
+              "name": "VCCB",
+              "net": "3V3_SYS",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "23",
+              "name": "VCCB",
+              "net": "3V3_SYS",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "24",
+              "name": "VCCA",
+              "net": "1V8_SYS",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            }
+          ],
+          "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+          "landPatternQualification": "UNVERIFIED",
+          "nativePadSetStatus": "PASS",
+          "center": {
+            "x": 2.9,
+            "y": 19.5
+          },
+          "layer": "BOTTOM",
+          "bbox": {
+            "minX": 0.5699309999999995,
+            "maxX": 5.230069,
+            "minY": 17.8823248,
+            "maxY": 21.1176752,
+            "width": 4.660138000000001,
+            "height": 3.2353503999999993
+          },
+          "placementStatus": "CANDIDATE_OFFLINE",
+          "displacementMm": 0.0
+        },
+        {
+          "board": "M-MAIN-L",
+          "ref": "U8",
+          "sourceRef": "U8_AUD_LS2",
+          "mpn": "SN74AXC4T245RSVR",
+          "device": {
+            "deviceUuid": "e12e3a2873214150a212ce73193a23c6",
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "name": "SN74AXC4T245RSVR"
+          },
+          "bomLine": "BOM-47",
+          "auditReference": "AUDIT_03",
+          "auditPrimitiveId": "d0101746700981da",
+          "bboxWidthMm": 3.1293054000000007,
+          "bboxHeightMm": 2.754972899999999,
+          "requestedCenter": {
+            "x": 2.9,
+            "y": 43.6
+          },
+          "preferredLayer": "BOTTOM",
+          "sourceSide": "BOTTOM",
+          "rotation": 0,
+          "pins": [
+            {
+              "number": "1",
+              "name": "1OE",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "TIE"
+            },
+            {
+              "number": "2",
+              "name": "VCCB",
+              "net": "3V3_SYS",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "3",
+              "name": "VCCA",
+              "net": "1V8_SYS",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "4",
+              "name": "1DIR",
+              "net": "1V8_SYS",
+              "localState": "CONNECTED",
+              "role": "TIE"
+            },
+            {
+              "number": "5",
+              "name": "2DIR",
+              "net": "1V8_SYS",
+              "localState": "CONNECTED",
+              "role": "TIE"
+            },
+            {
+              "number": "6",
+              "name": "1A1",
+              "net": "I2S_BCLK_1V8",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "7",
+              "name": "1A2",
+              "net": "I2S_LRCLK_1V8",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "8",
+              "name": "2A1",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "TIE"
+            },
+            {
+              "number": "9",
+              "name": "2A2",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "TIE"
+            },
+            {
+              "number": "10",
+              "name": "GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "11",
+              "name": "GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "12",
+              "name": "2B2",
+              "net": "",
+              "localState": "NC",
+              "role": "NC"
+            },
+            {
+              "number": "13",
+              "name": "2B1",
+              "net": "",
+              "localState": "NC",
+              "role": "NC"
+            },
+            {
+              "number": "14",
+              "name": "1B2",
+              "net": "I2S_LRCLK_3V3",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "15",
+              "name": "1B1",
+              "net": "I2S_BCLK_3V3",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "16",
+              "name": "2OE",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "TIE"
+            }
+          ],
+          "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+          "landPatternQualification": "UNVERIFIED",
+          "nativePadSetStatus": "PASS",
+          "center": {
+            "x": 2.9,
+            "y": 43.6
+          },
+          "layer": "BOTTOM",
+          "bbox": {
+            "minX": 1.3353472999999996,
+            "maxX": 4.4646527,
+            "minY": 42.22251355,
+            "maxY": 44.97748645,
+            "width": 3.1293054000000007,
+            "height": 2.754972899999999
+          },
+          "placementStatus": "CANDIDATE_OFFLINE",
+          "displacementMm": 0.0
+        },
+        {
+          "board": "M-MAIN-L",
+          "ref": "U15",
+          "sourceRef": "U8_CAM_ISO1",
+          "mpn": "SN74AXC8T245RJWR",
+          "device": {
+            "deviceUuid": "adfb74f2e1e14840bffbd314e529747d",
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "name": "SN74AXC8T245RJWR"
+          },
+          "bomLine": "BOM-17",
+          "auditReference": "AUDIT_02",
+          "auditPrimitiveId": "08aed7825b14bf30",
+          "bboxWidthMm": 4.660138000000001,
+          "bboxHeightMm": 3.2353503999999993,
+          "requestedCenter": {
+            "x": 6.7,
+            "y": 6.8
+          },
+          "preferredLayer": "BOTTOM",
+          "sourceSide": "BOTTOM",
+          "rotation": 90,
+          "pins": [
+            {
+              "number": "1",
+              "name": "DIR1",
+              "net": "CAM_DOVDD_1V8",
+              "localState": "CONNECTED",
+              "role": "TIE"
+            },
+            {
+              "number": "2",
+              "name": "A1",
+              "net": "CAM_D0_1V8",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "3",
+              "name": "A2",
+              "net": "CAM_D1_1V8",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "4",
+              "name": "A3",
+              "net": "CAM_D2_1V8",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "5",
+              "name": "A4",
+              "net": "CAM_D3_1V8",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "6",
+              "name": "A5",
+              "net": "CAM_D4_1V8",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "7",
+              "name": "A6",
+              "net": "CAM_D5_1V8",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "8",
+              "name": "A7",
+              "net": "CAM_D6_1V8",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "9",
+              "name": "A8",
+              "net": "CAM_D7_1V8",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "10",
+              "name": "DIR2",
+              "net": "CAM_DOVDD_1V8",
+              "localState": "CONNECTED",
+              "role": "TIE"
+            },
+            {
+              "number": "11",
+              "name": "GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "12",
+              "name": "GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "13",
+              "name": "B8",
+              "net": "CAM_D7_3V3",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "14",
+              "name": "B7",
+              "net": "CAM_D6_3V3",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "15",
+              "name": "B6",
+              "net": "CAM_D5_3V3",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "16",
+              "name": "B5",
+              "net": "CAM_D4_3V3",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "17",
+              "name": "B4",
+              "net": "CAM_D3_3V3",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "18",
+              "name": "B3",
+              "net": "CAM_D2_3V3",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "19",
+              "name": "B2",
+              "net": "CAM_D1_3V3",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "20",
+              "name": "B1",
+              "net": "CAM_D0_3V3",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "21",
+              "name": "OE",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "TIE"
+            },
+            {
+              "number": "22",
+              "name": "VCCB",
+              "net": "3V3_SYS",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "23",
+              "name": "VCCB",
+              "net": "3V3_SYS",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "24",
+              "name": "VCCA",
+              "net": "CAM_DOVDD_1V8",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            }
+          ],
+          "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+          "landPatternQualification": "UNVERIFIED",
+          "nativePadSetStatus": "PASS",
+          "center": {
+            "x": 6.5,
+            "y": 7.0
+          },
+          "layer": "BOTTOM",
+          "bbox": {
+            "minX": 4.8823248,
+            "maxX": 8.117675199999999,
+            "minY": 4.669931,
+            "maxY": 9.330069,
+            "width": 3.2353503999999993,
+            "height": 4.660138000000001
+          },
+          "placementStatus": "CANDIDATE_OFFLINE",
+          "displacementMm": 0.28284
+        },
+        {
+          "board": "M-MAIN-L",
+          "ref": "U16",
+          "sourceRef": "U8_CAM_ISO2",
+          "mpn": "SN74AXC8T245RJWR",
+          "device": {
+            "deviceUuid": "adfb74f2e1e14840bffbd314e529747d",
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "name": "SN74AXC8T245RJWR"
+          },
+          "bomLine": "BOM-18",
+          "auditReference": "AUDIT_02",
+          "auditPrimitiveId": "08aed7825b14bf30",
+          "bboxWidthMm": 4.660138000000001,
+          "bboxHeightMm": 3.2353503999999993,
+          "requestedCenter": {
+            "x": 2.9,
+            "y": 14.2
+          },
+          "preferredLayer": "BOTTOM",
+          "sourceSide": "BOTTOM",
+          "rotation": 0,
+          "pins": [
+            {
+              "number": "1",
+              "name": "DIR1",
+              "net": "CAM_DOVDD_1V8",
+              "localState": "CONNECTED",
+              "role": "TIE"
+            },
+            {
+              "number": "2",
+              "name": "A1",
+              "net": "CAM_PCLK_1V8",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "3",
+              "name": "A2",
+              "net": "CAM_VSYNC_1V8",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "4",
+              "name": "A3",
+              "net": "CAM_HREF_1V8",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "5",
+              "name": "A4",
+              "net": "CAM_DOVDD_1V8",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "6",
+              "name": "A5",
+              "net": "CAM_XCLK_1V8",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "7",
+              "name": "A6",
+              "net": "",
+              "localState": "NC",
+              "role": "NC"
+            },
+            {
+              "number": "8",
+              "name": "A7",
+              "net": "",
+              "localState": "NC",
+              "role": "NC"
+            },
+            {
+              "number": "9",
+              "name": "A8",
+              "net": "",
+              "localState": "NC",
+              "role": "NC"
+            },
+            {
+              "number": "10",
+              "name": "DIR2",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "TIE"
+            },
+            {
+              "number": "11",
+              "name": "GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "12",
+              "name": "GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "13",
+              "name": "B8",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "TIE"
+            },
+            {
+              "number": "14",
+              "name": "B7",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "TIE"
+            },
+            {
+              "number": "15",
+              "name": "B6",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "TIE"
+            },
+            {
+              "number": "16",
+              "name": "B5",
+              "net": "CAM_XCLK_3V3",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "17",
+              "name": "B4",
+              "net": "CAM_DOVDD_OK_3V3",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "18",
+              "name": "B3",
+              "net": "CAM_HREF_3V3",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "19",
+              "name": "B2",
+              "net": "CAM_VSYNC_3V3",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "20",
+              "name": "B1",
+              "net": "CAM_PCLK_3V3",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "21",
+              "name": "OE",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "TIE"
+            },
+            {
+              "number": "22",
+              "name": "VCCB",
+              "net": "3V3_SYS",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "23",
+              "name": "VCCB",
+              "net": "3V3_SYS",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "24",
+              "name": "VCCA",
+              "net": "CAM_DOVDD_1V8",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            }
+          ],
+          "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+          "landPatternQualification": "UNVERIFIED",
+          "nativePadSetStatus": "PASS",
+          "center": {
+            "x": 2.9,
+            "y": 14.2
+          },
+          "layer": "BOTTOM",
+          "bbox": {
+            "minX": 0.5699309999999995,
+            "maxX": 5.230069,
+            "minY": 12.5823248,
+            "maxY": 15.817675199999998,
+            "width": 4.660138000000001,
+            "height": 3.2353503999999993
+          },
+          "placementStatus": "CANDIDATE_OFFLINE",
+          "displacementMm": 0.0
+        },
+        {
+          "board": "M-MAIN-L",
+          "ref": "U3",
+          "sourceRef": "U3_L",
+          "mpn": "BQ25180YBGR",
+          "device": {
+            "deviceUuid": "e4301a7d92c0448b9e603c325f56f468",
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "name": "BQ25180YBGR"
+          },
+          "bomLine": "BOM-20",
+          "auditReference": "AUDIT_05",
+          "auditPrimitiveId": "dd2034a0b8a4bd87",
+          "bboxWidthMm": 1.9500087999999982,
+          "bboxHeightMm": 1.5523463999999996,
+          "requestedCenter": {
+            "x": 2.9,
+            "y": 25.5
+          },
+          "preferredLayer": "BOTTOM",
+          "sourceSide": "BOTTOM",
+          "rotation": 0,
+          "pins": [
+            {
+              "number": "A1",
+              "name": "/INT",
+              "net": "",
+              "localState": "NC",
+              "role": "NC"
+            },
+            {
+              "number": "A2",
+              "name": "IN",
+              "net": "VBUS_5V",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "B1",
+              "name": "SCL",
+              "net": "SYS_I2C_SCL_1V8",
+              "localState": "CONNECTED",
+              "role": "BIDIR_OD"
+            },
+            {
+              "number": "B2",
+              "name": "SYS",
+              "net": "VOUT_L_PPATH",
+              "localState": "CONNECTED",
+              "role": "SRC"
+            },
+            {
+              "number": "C1",
+              "name": "SDA",
+              "net": "SYS_I2C_SDA_1V8",
+              "localState": "CONNECTED",
+              "role": "BIDIR_OD"
+            },
+            {
+              "number": "C2",
+              "name": "BAT",
+              "net": "VBAT_L",
+              "localState": "CONNECTED",
+              "role": "BIDIR"
+            },
+            {
+              "number": "D1",
+              "name": "TS/MR",
+              "net": "NTC_TS_L",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "D2",
+              "name": "GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            }
+          ],
+          "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+          "landPatternQualification": "UNVERIFIED",
+          "nativePadSetStatus": "PASS",
+          "center": {
+            "x": 2.9,
+            "y": 25.5
+          },
+          "layer": "BOTTOM",
+          "bbox": {
+            "minX": 1.9249956000000008,
+            "maxX": 3.875004399999999,
+            "minY": 24.7238268,
+            "maxY": 26.2761732,
+            "width": 1.9500087999999982,
+            "height": 1.5523463999999996
+          },
+          "placementStatus": "CANDIDATE_OFFLINE",
+          "displacementMm": 0.0
+        },
+        {
+          "board": "M-MAIN-L",
+          "ref": "U19",
+          "sourceRef": "U8_LS3",
+          "mpn": "PCA9306DQER",
+          "device": {
+            "deviceUuid": "1428090c2de2440db0c296ed79b6ebb3",
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "name": "PCA9306DQER"
+          },
+          "bomLine": "BOM-03",
+          "auditReference": "AUDIT_07",
+          "auditPrimitiveId": "175cfd0f6ad43d1a",
+          "bboxWidthMm": 1.7500092000000005,
+          "bboxHeightMm": 1.8236184000000013,
+          "requestedCenter": {
+            "x": 1.8,
+            "y": 15.2
+          },
+          "preferredLayer": "TOP",
+          "sourceSide": "TOP",
+          "rotation": 0,
+          "pins": [
+            {
+              "number": "1",
+              "name": "GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "2",
+              "name": "VREF1",
+              "net": "1V8_SYS",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "3",
+              "name": "SCL1",
+              "net": "SYS_I2C_SCL_1V8",
+              "localState": "CONNECTED",
+              "role": "BIDIR_OD"
+            },
+            {
+              "number": "4",
+              "name": "SDA1",
+              "net": "SYS_I2C_SDA_1V8",
+              "localState": "CONNECTED",
+              "role": "BIDIR_OD"
+            },
+            {
+              "number": "5",
+              "name": "SDA2",
+              "net": "SYS_I2C_SDA_3V3",
+              "localState": "CONNECTED",
+              "role": "BIDIR_OD"
+            },
+            {
+              "number": "6",
+              "name": "SCL2",
+              "net": "SYS_I2C_SCL_3V3",
+              "localState": "CONNECTED",
+              "role": "BIDIR_OD"
+            },
+            {
+              "number": "7",
+              "name": "VREF2",
+              "net": "LS3_VREF2_EN",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "8",
+              "name": "EN",
+              "net": "LS3_VREF2_EN",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            }
+          ],
+          "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+          "landPatternQualification": "UNVERIFIED",
+          "nativePadSetStatus": "PASS",
+          "center": {
+            "x": 1.6,
+            "y": 15.0
+          },
+          "layer": "TOP",
+          "bbox": {
+            "minX": 0.7249953999999998,
+            "maxX": 2.4750046,
+            "minY": 14.0881908,
+            "maxY": 15.9118092,
+            "width": 1.7500092000000005,
+            "height": 1.8236184000000013
+          },
+          "placementStatus": "CANDIDATE_OFFLINE",
+          "displacementMm": 0.28284
+        },
+        {
+          "board": "M-MAIN-L",
+          "ref": "U20",
+          "sourceRef": "U8_LS4",
+          "mpn": "PCA9306DQER",
+          "device": {
+            "deviceUuid": "1428090c2de2440db0c296ed79b6ebb3",
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "name": "PCA9306DQER"
+          },
+          "bomLine": "BOM-48",
+          "auditReference": "AUDIT_07",
+          "auditPrimitiveId": "175cfd0f6ad43d1a",
+          "bboxWidthMm": 1.7500092000000005,
+          "bboxHeightMm": 1.8236184000000013,
+          "requestedCenter": {
+            "x": 1.8,
+            "y": 13.4
+          },
+          "preferredLayer": "TOP",
+          "sourceSide": "TOP",
+          "rotation": 0,
+          "pins": [
+            {
+              "number": "1",
+              "name": "GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "2",
+              "name": "VREF1",
+              "net": "CAM_DOVDD_1V8",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "3",
+              "name": "SCL1",
+              "net": "CAM_SCCB_SCL",
+              "localState": "CONNECTED",
+              "role": "BIDIR_OD"
+            },
+            {
+              "number": "4",
+              "name": "SDA1",
+              "net": "CAM_SCCB_SDA",
+              "localState": "CONNECTED",
+              "role": "BIDIR_OD"
+            },
+            {
+              "number": "5",
+              "name": "SDA2",
+              "net": "SYS_I2C_SDA_3V3",
+              "localState": "CONNECTED",
+              "role": "BIDIR_OD"
+            },
+            {
+              "number": "6",
+              "name": "SCL2",
+              "net": "SYS_I2C_SCL_3V3",
+              "localState": "CONNECTED",
+              "role": "BIDIR_OD"
+            },
+            {
+              "number": "7",
+              "name": "VREF2",
+              "net": "LS4_VREF2_EN",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "8",
+              "name": "EN",
+              "net": "LS4_VREF2_EN",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            }
+          ],
+          "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+          "landPatternQualification": "UNVERIFIED",
+          "nativePadSetStatus": "PASS",
+          "center": {
+            "x": 1.0,
+            "y": 23.0
+          },
+          "layer": "TOP",
+          "bbox": {
+            "minX": 0.12499539999999976,
+            "maxX": 1.8750046000000002,
+            "minY": 22.0881908,
+            "maxY": 23.9118092,
+            "width": 1.7500092000000005,
+            "height": 1.8236184000000013
+          },
+          "placementStatus": "CANDIDATE_OFFLINE",
+          "displacementMm": 9.63328
+        },
+        {
+          "board": "M-MAIN-L",
+          "ref": "U5",
+          "sourceRef": "U5_LED2V8",
+          "mpn": "TLV75528PDQNR",
+          "device": {
+            "deviceUuid": "e7370160c30041608b55a2fb9a66a975",
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "name": "TLV75528PDQNR"
+          },
+          "bomLine": "BOM-10",
+          "auditReference": "AUDIT_08",
+          "auditPrimitiveId": "0cb4a5560e62eba8",
+          "bboxWidthMm": 1.4806675999999965,
+          "bboxHeightMm": 1.2116054000000005,
+          "requestedCenter": {
+            "x": 1.6,
+            "y": 32.0
+          },
+          "preferredLayer": "TOP",
+          "sourceSide": "TOP",
+          "rotation": 0,
+          "pins": [
+            {
+              "number": "1",
+              "name": "OUT",
+              "net": "LED_2V8",
+              "localState": "CONNECTED",
+              "role": "SRC"
+            },
+            {
+              "number": "2",
+              "name": "GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "3",
+              "name": "EN",
+              "net": "CAM_PWR_REQ",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "4",
+              "name": "IN",
+              "net": "3V3_SYS",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "5",
+              "name": "EP_GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            }
+          ],
+          "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+          "landPatternQualification": "UNVERIFIED",
+          "nativePadSetStatus": "PASS",
+          "center": {
+            "x": 1.6,
+            "y": 32.0
+          },
+          "layer": "TOP",
+          "bbox": {
+            "minX": 0.8596662000000018,
+            "maxX": 2.3403337999999985,
+            "minY": 31.3941973,
+            "maxY": 32.6058027,
+            "width": 1.4806675999999965,
+            "height": 1.2116054000000005
+          },
+          "placementStatus": "CANDIDATE_OFFLINE",
+          "displacementMm": 0.0
+        },
+        {
+          "board": "M-MAIN-L",
+          "ref": "U11",
+          "sourceRef": "U6_CAM_DOVDD",
+          "mpn": "TLV75518PDQNR",
+          "device": {
+            "deviceUuid": "82b47b2125fe40b896cbc9d367057553",
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "name": "TLV75518PDQNR"
+          },
+          "bomLine": "BOM-11",
+          "auditReference": "AUDIT_09",
+          "auditPrimitiveId": "f3cd8dd83b8ec7f4",
+          "bboxWidthMm": 1.4806675999999965,
+          "bboxHeightMm": 1.2116054000000005,
+          "requestedCenter": {
+            "x": 3.0,
+            "y": 31.2
+          },
+          "preferredLayer": "TOP",
+          "sourceSide": "TOP",
+          "rotation": 90,
+          "pins": [
+            {
+              "number": "1",
+              "name": "OUT",
+              "net": "CAM_DOVDD_1V8",
+              "localState": "CONNECTED",
+              "role": "SRC"
+            },
+            {
+              "number": "2",
+              "name": "GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "3",
+              "name": "EN",
+              "net": "PRIV_WINDOW_OK_F",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "4",
+              "name": "IN",
+              "net": "3V3_SYS",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "5",
+              "name": "EP_GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            }
+          ],
+          "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+          "landPatternQualification": "UNVERIFIED",
+          "nativePadSetStatus": "PASS",
+          "center": {
+            "x": 3.2,
+            "y": 31.0
+          },
+          "layer": "TOP",
+          "bbox": {
+            "minX": 2.5941973,
+            "maxX": 3.8058027000000005,
+            "minY": 30.2596662,
+            "maxY": 31.7403338,
+            "width": 1.2116054000000005,
+            "height": 1.4806675999999965
+          },
+          "placementStatus": "CANDIDATE_OFFLINE",
+          "displacementMm": 0.28284
+        },
+        {
+          "board": "M-MAIN-L",
+          "ref": "U13",
+          "sourceRef": "U6_CAM_DVDD",
+          "mpn": "TLV75512PDQNR",
+          "device": {
+            "deviceUuid": "53182ba115aa46a2a877ba45531ccbf8",
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "name": "TLV75512PDQNR"
+          },
+          "bomLine": "BOM-12",
+          "auditReference": "AUDIT_10",
+          "auditPrimitiveId": "491159826df3090d",
+          "bboxWidthMm": 1.4806675999999965,
+          "bboxHeightMm": 1.2116054000000005,
+          "requestedCenter": {
+            "x": 4.4,
+            "y": 31.2
+          },
+          "preferredLayer": "TOP",
+          "sourceSide": "TOP",
+          "rotation": 0,
+          "pins": [
+            {
+              "number": "1",
+              "name": "OUT",
+              "net": "CAM_DVDD_1V2",
+              "localState": "CONNECTED",
+              "role": "SRC"
+            },
+            {
+              "number": "2",
+              "name": "GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "3",
+              "name": "EN",
+              "net": "PRIV_WINDOW_OK_F",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "4",
+              "name": "IN",
+              "net": "3V3_SYS",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "5",
+              "name": "EP_GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            }
+          ],
+          "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+          "landPatternQualification": "UNVERIFIED",
+          "nativePadSetStatus": "PASS",
+          "center": {
+            "x": 4.8,
+            "y": 30.8
+          },
+          "layer": "TOP",
+          "bbox": {
+            "minX": 4.059666200000002,
+            "maxX": 5.540333799999999,
+            "minY": 30.1941973,
+            "maxY": 31.405802700000002,
+            "width": 1.4806675999999965,
+            "height": 1.2116054000000005
+          },
+          "placementStatus": "CANDIDATE_OFFLINE",
+          "displacementMm": 0.56569
+        },
+        {
+          "board": "M-MAIN-L",
+          "ref": "U6",
+          "sourceRef": "U6_CAM_AVDD",
+          "mpn": "TLV75528PDQNR",
+          "device": {
+            "deviceUuid": "e7370160c30041608b55a2fb9a66a975",
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "name": "TLV75528PDQNR"
+          },
+          "bomLine": "BOM-13",
+          "auditReference": "AUDIT_08",
+          "auditPrimitiveId": "0cb4a5560e62eba8",
+          "bboxWidthMm": 1.4806675999999965,
+          "bboxHeightMm": 1.2116054000000005,
+          "requestedCenter": {
+            "x": 3.7,
+            "y": 33.0
+          },
+          "preferredLayer": "TOP",
+          "sourceSide": "TOP",
+          "rotation": 0,
+          "pins": [
+            {
+              "number": "1",
+              "name": "OUT",
+              "net": "CAM_AVDD_2V8",
+              "localState": "CONNECTED",
+              "role": "SRC"
+            },
+            {
+              "number": "2",
+              "name": "GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "3",
+              "name": "EN",
+              "net": "PRIV_WINDOW_OK_F",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "4",
+              "name": "IN",
+              "net": "3V3_SYS",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "5",
+              "name": "EP_GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            }
+          ],
+          "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+          "landPatternQualification": "UNVERIFIED",
+          "nativePadSetStatus": "PASS",
+          "center": {
+            "x": 3.7,
+            "y": 33.0
+          },
+          "layer": "TOP",
+          "bbox": {
+            "minX": 2.959666200000002,
+            "maxX": 4.4403337999999986,
+            "minY": 32.3941973,
+            "maxY": 33.6058027,
+            "width": 1.4806675999999965,
+            "height": 1.2116054000000005
+          },
+          "placementStatus": "CANDIDATE_OFFLINE",
+          "displacementMm": 0.0
+        },
+        {
+          "board": "M-MAIN-L",
+          "ref": "U2",
+          "sourceRef": "U4_BB",
+          "mpn": "TPS63805YFFR",
+          "device": {
+            "deviceUuid": "82d4e6675fc84e21b92ae8f7c0ab14b0",
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "name": "TPS63805YFFR"
+          },
+          "bomLine": "BOM-06",
+          "auditReference": "AUDIT_11",
+          "auditPrimitiveId": "c1fdf5e49c615b13",
+          "bboxWidthMm": 1.9506311000000096,
+          "bboxHeightMm": 2.3879048000000043,
+          "requestedCenter": {
+            "x": 1.8,
+            "y": 23.2
+          },
+          "preferredLayer": "TOP",
+          "sourceSide": "TOP",
+          "rotation": 0,
+          "pins": [
+            {
+              "number": "A1",
+              "name": "EN",
+              "net": "VSYS",
+              "localState": "CONNECTED",
+              "role": "TIE"
+            },
+            {
+              "number": "A2",
+              "name": "VIN",
+              "net": "VSYS",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "A3",
+              "name": "VIN",
+              "net": "VSYS",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "B1",
+              "name": "MODE",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "TIE"
+            },
+            {
+              "number": "B2",
+              "name": "L1",
+              "net": "BB_L1",
+              "localState": "CONNECTED",
+              "role": "PASSIVE"
+            },
+            {
+              "number": "B3",
+              "name": "L1",
+              "net": "BB_L1",
+              "localState": "CONNECTED",
+              "role": "PASSIVE"
+            },
+            {
+              "number": "C1",
+              "name": "AGND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "C2",
+              "name": "GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "C3",
+              "name": "GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "D1",
+              "name": "FB",
+              "net": "BB_FB",
+              "localState": "CONNECTED",
+              "role": "PASSIVE"
+            },
+            {
+              "number": "D2",
+              "name": "L2",
+              "net": "BB_L2",
+              "localState": "CONNECTED",
+              "role": "PASSIVE"
+            },
+            {
+              "number": "D3",
+              "name": "L2",
+              "net": "BB_L2",
+              "localState": "CONNECTED",
+              "role": "PASSIVE"
+            },
+            {
+              "number": "E1",
+              "name": "PG",
+              "net": "",
+              "localState": "NC",
+              "role": "NC"
+            },
+            {
+              "number": "E2",
+              "name": "VOUT",
+              "net": "3V3_SYS",
+              "localState": "CONNECTED",
+              "role": "SRC"
+            },
+            {
+              "number": "E3",
+              "name": "VOUT",
+              "net": "3V3_SYS",
+              "localState": "CONNECTED",
+              "role": "SRC"
+            }
+          ],
+          "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+          "landPatternQualification": "UNVERIFIED",
+          "nativePadSetStatus": "PASS",
+          "center": {
+            "x": 3.2,
+            "y": 23.2
+          },
+          "layer": "TOP",
+          "bbox": {
+            "minX": 2.2246844499999954,
+            "maxX": 4.175315550000005,
+            "minY": 22.0060476,
+            "maxY": 24.3939524,
+            "width": 1.9506311000000096,
+            "height": 2.3879048000000043
+          },
+          "placementStatus": "CANDIDATE_OFFLINE",
+          "displacementMm": 1.4
+        },
+        {
+          "board": "M-MAIN-L",
+          "ref": "U4",
+          "sourceRef": "U4_1V8",
+          "mpn": "TPS62840DLCR",
+          "device": {
+            "deviceUuid": "2bf1f0242e7847c98af4ccfa94e90322",
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "name": "TPS62840DLCR"
+          },
+          "bomLine": "BOM-08",
+          "auditReference": "AUDIT_12",
+          "auditPrimitiveId": "4df99c599d4802c4",
+          "bboxWidthMm": 2.4540463999999997,
+          "bboxHeightMm": 2.479217800000005,
+          "requestedCenter": {
+            "x": 1.8,
+            "y": 27.5
+          },
+          "preferredLayer": "TOP",
+          "sourceSide": "TOP",
+          "rotation": 0,
+          "pins": [
+            {
+              "number": "1",
+              "name": "GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "2",
+              "name": "VIN",
+              "net": "VSYS",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "3",
+              "name": "MODE",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "TIE"
+            },
+            {
+              "number": "4",
+              "name": "EN",
+              "net": "VSYS",
+              "localState": "CONNECTED",
+              "role": "TIE"
+            },
+            {
+              "number": "5",
+              "name": "VSET",
+              "net": "BK_VSET",
+              "localState": "CONNECTED",
+              "role": "PASSIVE"
+            },
+            {
+              "number": "6",
+              "name": "STOP",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "TIE"
+            },
+            {
+              "number": "7",
+              "name": "SW",
+              "net": "BK_SW",
+              "localState": "CONNECTED",
+              "role": "PASSIVE"
+            },
+            {
+              "number": "8",
+              "name": "VOS",
+              "net": "1V8_SYS",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            }
+          ],
+          "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+          "landPatternQualification": "UNVERIFIED",
+          "nativePadSetStatus": "PASS",
+          "center": {
+            "x": 1.8,
+            "y": 27.5
+          },
+          "layer": "TOP",
+          "bbox": {
+            "minX": 0.5729768000000002,
+            "maxX": 3.0270232,
+            "minY": 26.260391099999996,
+            "maxY": 28.739608900000004,
+            "width": 2.4540463999999997,
+            "height": 2.479217800000005
+          },
+          "placementStatus": "CANDIDATE_OFFLINE",
+          "displacementMm": 0.0
+        },
+        {
+          "board": "M-MAIN-L",
+          "ref": "U9",
+          "sourceRef": "U4_OR",
+          "mpn": "LM66200DRLR",
+          "device": {
+            "deviceUuid": "423f61e390bc4a4a838a96ddb292c530",
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "name": "LM66200DRLR"
+          },
+          "bomLine": "BOM-21",
+          "auditReference": "AUDIT_13",
+          "auditPrimitiveId": "6da3dd3e25bb02a8",
+          "bboxWidthMm": 2.6198322000000007,
+          "bboxHeightMm": 1.9801586000000073,
+          "requestedCenter": {
+            "x": 2.9,
+            "y": 30.5
+          },
+          "preferredLayer": "BOTTOM",
+          "sourceSide": "BOTTOM",
+          "rotation": 0,
+          "pins": [
+            {
+              "number": "1",
+              "name": "GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "2",
+              "name": "VOUT",
+              "net": "VSYS",
+              "localState": "CONNECTED",
+              "role": "SRC"
+            },
+            {
+              "number": "3",
+              "name": "VIN1",
+              "net": "VOUT_L_PPATH",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "4",
+              "name": "/ON",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "TIE"
+            },
+            {
+              "number": "5",
+              "name": "GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "6",
+              "name": "VIN2",
+              "net": "VBAT_R_ISOLATED",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "7",
+              "name": "VOUT",
+              "net": "VSYS",
+              "localState": "CONNECTED",
+              "role": "SRC"
+            },
+            {
+              "number": "8",
+              "name": "ST",
+              "net": "",
+              "localState": "NC",
+              "role": "NC"
+            }
+          ],
+          "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+          "landPatternQualification": "UNVERIFIED",
+          "nativePadSetStatus": "PASS",
+          "center": {
+            "x": 2.9,
+            "y": 30.5
+          },
+          "layer": "BOTTOM",
+          "bbox": {
+            "minX": 1.5900838999999996,
+            "maxX": 4.2099161,
+            "minY": 29.509920699999995,
+            "maxY": 31.490079300000005,
+            "width": 2.6198322000000007,
+            "height": 1.9801586000000073
+          },
+          "placementStatus": "CANDIDATE_OFFLINE",
+          "displacementMm": 0.0
+        },
+        {
+          "board": "M-MAIN-L",
+          "ref": "Q1",
+          "sourceRef": "Q_CHG_ISO_R",
+          "mpn": "PMV65XP",
+          "device": {
+            "deviceUuid": "d01492eea61a4a7ca03fe1fa505bd69c",
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "name": "PMV65XP"
+          },
+          "bomLine": "BOM-D1-PWR-Q_CHG_ISO_R",
+          "auditReference": "AUDIT_14",
+          "auditPrimitiveId": "ec4436bc4d2522b6",
+          "bboxWidthMm": 3.1401003999999935,
+          "bboxHeightMm": 3.175,
+          "requestedCenter": {
+            "x": null,
+            "y": null
+          },
+          "preferredLayer": "BOTTOM",
+          "sourceSide": "UNPLACED",
+          "rotation": 0,
+          "pins": [
+            {
+              "number": "1",
+              "name": "G",
+              "net": "CHG_ISO_GATE",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "2",
+              "name": "S",
+              "net": "VBAT_R_RET",
+              "localState": "CONNECTED",
+              "role": "PASSIVE"
+            },
+            {
+              "number": "3",
+              "name": "D",
+              "net": "VBAT_R_ISOLATED",
+              "localState": "CONNECTED",
+              "role": "PASSIVE"
+            }
+          ],
+          "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+          "landPatternQualification": "UNVERIFIED",
+          "nativePadSetStatus": "PASS",
+          "center": {
+            "x": 2.75,
+            "y": 38.25
+          },
+          "layer": "BOTTOM",
+          "bbox": {
+            "minX": 1.1799498000000033,
+            "maxX": 4.320050199999997,
+            "minY": 36.6625,
+            "maxY": 39.8375,
+            "width": 3.1401003999999935,
+            "height": 3.175
+          },
+          "placementStatus": "CANDIDATE_OFFLINE",
+          "displacementMm": 15.25074
+        },
+        {
+          "board": "M-MAIN-L",
+          "ref": "U17",
+          "sourceRef": "U8_CAM_SCCB_EN",
+          "mpn": "SN74LVC1G07DPWR",
+          "device": {
+            "deviceUuid": "823ee1eefa1f4bf58882b2173187cef7",
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "name": "SN74LVC1G07DPWR"
+          },
+          "bomLine": "BOM-D1-AT01",
+          "auditReference": "AUDIT_15",
+          "auditPrimitiveId": "d84782fb29beffd4",
+          "bboxWidthMm": 1.2151486999999948,
+          "bboxHeightMm": 1.1660123999999987,
+          "requestedCenter": {
+            "x": null,
+            "y": null
+          },
+          "preferredLayer": "BOTTOM",
+          "sourceSide": "UNPLACED",
+          "rotation": 0,
+          "pins": [
+            {
+              "number": "1",
+              "name": "NC",
+              "net": "",
+              "localState": "NC",
+              "role": "NC"
+            },
+            {
+              "number": "2",
+              "name": "A",
+              "net": "CAM_DOVDD_OK_3V3",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "3",
+              "name": "GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "4",
+              "name": "Y",
+              "net": "LS4_VREF2_EN",
+              "localState": "CONNECTED",
+              "role": "DRV_OD"
+            },
+            {
+              "number": "5",
+              "name": "VCC",
+              "net": "3V3_SYS",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            }
+          ],
+          "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+          "landPatternQualification": "UNVERIFIED",
+          "nativePadSetStatus": "PASS",
+          "center": {
+            "x": 2.9,
+            "y": 23.0
+          },
+          "layer": "BOTTOM",
+          "bbox": {
+            "minX": 2.2924256500000024,
+            "maxX": 3.5075743499999974,
+            "minY": 22.4169938,
+            "maxY": 23.5830062,
+            "width": 1.2151486999999948,
+            "height": 1.1660123999999987
+          },
+          "placementStatus": "CANDIDATE_OFFLINE",
+          "displacementMm": 0.0
+        },
+        {
+          "board": "M-MAIN-L",
+          "ref": "U14",
+          "sourceRef": "U7_WIN",
+          "mpn": "TLV7042DSGR",
+          "device": {
+            "deviceUuid": "173b24ef9eb140759a355c8c88767a97",
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "name": "TLV7042DSGR"
+          },
+          "bomLine": "BOM-23",
+          "auditReference": "AUDIT_16",
+          "auditPrimitiveId": "b9789ad4aae7d800",
+          "bboxWidthMm": 2.8106623999999987,
+          "bboxHeightMm": 2.4661876000000014,
+          "requestedCenter": {
+            "x": 3.9,
+            "y": 35.5
+          },
+          "preferredLayer": "BOTTOM",
+          "sourceSide": "BOTTOM",
+          "rotation": 0,
+          "pins": [
+            {
+              "number": "1",
+              "name": "OUTA",
+              "net": "PRIV_WINDOW_OK",
+              "localState": "CONNECTED",
+              "role": "DRV_OD"
+            },
+            {
+              "number": "2",
+              "name": "INA-",
+              "net": "PRIV_VTH_L",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "3",
+              "name": "INA+",
+              "net": "V_INA_OUT",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "4",
+              "name": "VEE",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "5",
+              "name": "INB+",
+              "net": "PRIV_VTH_H",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "6",
+              "name": "INB-",
+              "net": "V_INA_OUT",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "7",
+              "name": "OUTB",
+              "net": "PRIV_WINDOW_OK",
+              "localState": "CONNECTED",
+              "role": "DRV_OD"
+            },
+            {
+              "number": "8",
+              "name": "VCC",
+              "net": "3V3_SYS",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "9",
+              "name": "EP_GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            }
+          ],
+          "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+          "landPatternQualification": "UNVERIFIED",
+          "nativePadSetStatus": "PASS",
+          "center": {
+            "x": 4.3,
+            "y": 35.1
+          },
+          "layer": "BOTTOM",
+          "bbox": {
+            "minX": 2.8946688000000007,
+            "maxX": 5.705331199999999,
+            "minY": 33.8669062,
+            "maxY": 36.3330938,
+            "width": 2.8106623999999987,
+            "height": 2.4661876000000014
+          },
+          "placementStatus": "CANDIDATE_OFFLINE",
+          "displacementMm": 0.56569
+        }
+      ],
+      "failedPlacements": [],
+      "reservations": [
+        {
+          "ref": "ANT1",
+          "kind": "UNQUALIFIED_MECHANICAL_ENVELOPE",
+          "source": "effective_bom.csv nominal body; no copper authored",
+          "center": {
+            "x": 2.9,
+            "y": 2.0
+          },
+          "layers": [
+            "TOP"
+          ],
+          "bbox": {
+            "minX": 1.2999999999999998,
+            "maxX": 4.5,
+            "minY": 1.2,
+            "maxY": 2.8,
+            "width": 3.2,
+            "height": 1.6
+          },
+          "status": "BLOCKED"
+        },
+        {
+          "ref": "J_CAM",
+          "kind": "UNQUALIFIED_MECHANICAL_ENVELOPE",
+          "source": "effective_bom.csv nominal body; no copper authored",
+          "center": {
+            "x": 2.9,
+            "y": 19.0
+          },
+          "layers": [
+            "TOP"
+          ],
+          "bbox": {
+            "minX": 2.05,
+            "maxX": 3.75,
+            "minY": 16.25,
+            "maxY": 21.75,
+            "width": 1.7,
+            "height": 5.5
+          },
+          "status": "BLOCKED"
+        },
+        {
+          "ref": "J_BTB_L",
+          "kind": "UNQUALIFIED_MECHANICAL_ENVELOPE",
+          "source": "effective_bom.csv nominal body; no copper authored",
+          "center": {
+            "x": 2.9,
+            "y": 42.4
+          },
+          "layers": [
+            "TOP"
+          ],
+          "bbox": {
+            "minX": 2.05,
+            "maxX": 3.75,
+            "minY": 39.125,
+            "maxY": 45.675,
+            "width": 1.7,
+            "height": 6.55
+          },
+          "status": "BLOCKED"
+        },
+        {
+          "ref": "J_CHG",
+          "status": "BLOCKED_UNPLACED_NOMINAL_ENVELOPE",
+          "layers": []
+        },
+        {
+          "ref": "R_SENSE",
+          "status": "BLOCKED_MISSING_NOMINAL_ENVELOPE",
+          "layers": []
+        },
+        {
+          "ref": "U7_INA",
+          "kind": "UNQUALIFIED_MECHANICAL_ENVELOPE",
+          "source": "effective_bom.csv nominal body; no copper authored",
+          "center": {
+            "x": 1.8,
+            "y": 35.5
+          },
+          "layers": [
+            "BOTTOM"
+          ],
+          "bbox": {
+            "minX": 1.0,
+            "maxX": 2.6,
+            "minY": 34.7,
+            "maxY": 36.3,
+            "width": 1.6,
+            "height": 1.6
+          },
+          "status": "UNVERIFIED"
+        },
+        {
+          "ref": "TP_BAT_L_P",
+          "status": "BLOCKED_MISSING_NOMINAL_ENVELOPE",
+          "layers": []
+        },
+        {
+          "ref": "TP_BAT_L_N",
+          "status": "BLOCKED_MISSING_NOMINAL_ENVELOPE",
+          "layers": []
+        },
+        {
+          "ref": "TP_NTC_L",
+          "status": "BLOCKED_MISSING_NOMINAL_ENVELOPE",
+          "layers": []
+        },
+        {
+          "ref": "RF_FRONT_0_TO_4P2",
+          "kind": "RF_NO_COMPONENT_ZONE",
+          "layers": [
+            "TOP",
+            "BOTTOM"
+          ],
+          "bbox": {
+            "minX": 0,
+            "maxX": 5.8,
+            "minY": 0,
+            "maxY": 4.2
+          },
+          "status": "UNVERIFIED"
+        }
+      ],
+      "requiredButNotPlaced": [
+        "J_BTB_L",
+        "J_CAM",
+        "J_CHG",
+        "U12_ESD_USB",
+        "TP_BAT_L_P",
+        "TP_BAT_L_N",
+        "SPK_L",
+        "R_CRST_A_PD",
+        "R_DIR1_PU",
+        "R_LS1_A4",
+        "R_LS1_B4",
+        "R_I2C_SCL_3V3",
+        "R_I2C_SDA_3V3",
+        "R_I2C_SCL_1V8",
+        "R_I2C_SDA_1V8",
+        "R_SCCB_SCL",
+        "R_SCCB_SDA",
+        "R_SENSE",
+        "R_LIMIT",
+        "R_PRIV_PU",
+        "R_XREQ",
+        "D_XREQ",
+        "C_XREQ",
+        "R_XREQ_BLEED",
+        "R_CAMRST",
+        "R_CAMPWDN",
+        "TP_NTC_L",
+        "R_LS3_EN",
+        "R_LS4_EN",
+        "L1_BB",
+        "R_BB_FB1",
+        "R_BB_FB2",
+        "L2_1V8",
+        "R_VSET_1V8",
+        "ANT1",
+        "R_CHIP_PU",
+        "C_CHIP_PU",
+        "TP_ESP_EN",
+        "TP_ESP_BOOT",
+        "R_ISO_GATE",
+        "R_ISO_PD",
+        "C_CHG_L_IN",
+        "C_CHG_L_SYS",
+        "C_CHG_L_BAT",
+        "C_OR_IN1",
+        "C_OR_IN2",
+        "C_OR_OUT",
+        "C_BB_IN",
+        "C_BB_OUT",
+        "C_BK_IN",
+        "C_BK_OUT",
+        "C_LDO_LED_IN",
+        "C_LDO_LED_OUT",
+        "C_LDO_DOVDD_IN",
+        "C_LDO_DOVDD_OUT",
+        "C_LDO_DVDD_IN",
+        "C_LDO_DVDD_OUT",
+        "C_LDO_AVDD_IN",
+        "C_LDO_AVDD_OUT",
+        "BAT_L",
+        "C_ESP_BULK",
+        "C_ESP_VDD_SPI",
+        "R_ESP_BOOT",
+        "R_ESP_STRAP45",
+        "R_ESP_STRAP46",
+        "R_ESP_STRAP3",
+        "R_ESP_RF",
+        "C_ESP_RF_IN",
+        "C_ESP_RF_OUT",
+        "C_U8_LS1_A",
+        "C_U8_LS1_B",
+        "C_U8_PDM_LS_A",
+        "C_U8_PDM_LS_B",
+        "C_U8_CAM_ISO1_A",
+        "C_U8_CAM_ISO1_B",
+        "C_U8_CAM_ISO2_A",
+        "C_U8_CAM_ISO2_B",
+        "C_U8_AUD_LS2_A",
+        "C_U8_AUD_LS2_B",
+        "C_MK1_L",
+        "R_CAM_DOVDD_OK_PD",
+        "R_CAM_DOVDD_BLEED",
+        "C_CAM_SCCB_EN",
+        "R_LS3_VREF_BLEED",
+        "C_U10_AMP_L_HF",
+        "C_U10_AMP_L_BULK",
+        "U7_INA",
+        "R_WIN_TOP",
+        "R_WIN_MID",
+        "R_WIN_BOT",
+        "R_PRIV_RC",
+        "C_PRIV_RC",
+        "C_INA_SUPPLY",
+        "C_WIN_SUPPLY",
+        "C_CAMRST",
+        "TP_SPK_L_P",
+        "TP_SPK_L_N"
+      ],
+      "unverified": [
+        "pin-1/package orientation against vendor top view",
+        "supplier courtyard/mask/paste",
+        "complete peripheral placement",
+        "FPC/shell/optical/battery/acoustic fit",
+        "routability and return paths"
+      ]
+    },
+    "M-OPT-BRIDGE": {
+      "pcbUuid": "9ce45f14cb79dc9d",
+      "outlinePolygonMm": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          22
+        ],
+        [
+          4.2,
+          22
+        ],
+        [
+          4.2,
+          0
+        ]
+      ],
+      "scope": "PARTIAL_EXACT_DEVICE_CANDIDATE_NOT_COMPLETE_LAYOUT",
+      "minimumCandidateBboxGapMm": 0.2,
+      "placements": [
+        {
+          "board": "M-OPT-BRIDGE",
+          "ref": "U2",
+          "sourceRef": "U2_FPGA",
+          "mpn": "iCE40UP5K-UWG30ITR",
+          "device": {
+            "deviceUuid": "61d5eb13eb6749f4806848ca40a4240f",
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "name": "ICE40UP5K-UWG30ITR"
+          },
+          "bomLine": "BOM-28",
+          "auditReference": "AUDIT_17",
+          "auditPrimitiveId": "be88d1842b06ce20",
+          "bboxWidthMm": 2.800235699999988,
+          "bboxHeightMm": 2.926206999999998,
+          "requestedCenter": {
+            "x": 2.1,
+            "y": 9.5
+          },
+          "preferredLayer": "TOP",
+          "sourceSide": "TOP",
+          "rotation": 0,
+          "pins": [
+            {
+              "number": "A1",
+              "name": "IOT_36B",
+              "net": "opt_l_qdo0",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "A2",
+              "name": "IOT_37A",
+              "net": "opt_l_qdo1",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "A3",
+              "name": "VCCIO_0",
+              "net": "1V8_FPGA_IO",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "A4",
+              "name": "IOT_47A",
+              "net": "opt_l_qdo2",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "A5",
+              "name": "RGB2",
+              "net": "",
+              "localState": "NC",
+              "role": "NC"
+            },
+            {
+              "number": "B1",
+              "name": "IOB_24A",
+              "net": "host_qio3",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "B2",
+              "name": "VCCPLL",
+              "net": "1V2_FPGA_PLL",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "B3",
+              "name": "IOT_46B_G0",
+              "net": "clk_48m",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "B4",
+              "name": "GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "B5",
+              "name": "RGB1",
+              "net": "",
+              "localState": "NC",
+              "role": "NC"
+            },
+            {
+              "number": "C1",
+              "name": "IOB_35B_SPI_SS",
+              "net": "host_cs_n",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "C2",
+              "name": "VCC",
+              "net": "1V2_FPGA_CORE",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "C3",
+              "name": "IOB_10A",
+              "net": "opt_cs_n",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "C4",
+              "name": "VCCIO_2",
+              "net": "1V8_FPGA_IO",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "C5",
+              "name": "RGB0",
+              "net": "",
+              "localState": "NC",
+              "role": "NC"
+            },
+            {
+              "number": "D1",
+              "name": "IOB_34A_SPI_SCK",
+              "net": "host_sck",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "D2",
+              "name": "SPI_VCCIO1",
+              "net": "1V8_FPGA_IO",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "D3",
+              "name": "IOB_12A_G4_CDONE",
+              "net": "FPGA_CDONE_VSYNC_N",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "D4",
+              "name": "VPP_2V5",
+              "net": "1V8_FPGA_VPP",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "D5",
+              "name": "IOB_2A",
+              "net": "opt_r_qdo1",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "E1",
+              "name": "IOB_33B_SPI_SI",
+              "net": "host_qio0",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "E2",
+              "name": "GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "E3",
+              "name": "IOB_13B",
+              "net": "opt_sck",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "E4",
+              "name": "IOB_9B",
+              "net": "opt_l_qdo3",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "E5",
+              "name": "IOB_0A",
+              "net": "opt_r_qdo0",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "F1",
+              "name": "IOB_32A_SPI_SO",
+              "net": "host_qio1",
+              "localState": "CONNECTED",
+              "role": "BIDIR_CFG"
+            },
+            {
+              "number": "F2",
+              "name": "IOB_25B_G3",
+              "net": "host_qio2",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "F3",
+              "name": "CRESET_B",
+              "net": "FPGA_CRESET_B",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "F4",
+              "name": "IOB_11B_G5",
+              "net": "opt_r_qdo3",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "F5",
+              "name": "IOB_3B_G6",
+              "net": "opt_r_qdo2",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            }
+          ],
+          "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+          "landPatternQualification": "UNVERIFIED",
+          "nativePadSetStatus": "PASS",
+          "center": {
+            "x": 2.1,
+            "y": 9.5
+          },
+          "layer": "TOP",
+          "bbox": {
+            "minX": 0.6998821500000061,
+            "maxX": 3.5001178499999943,
+            "minY": 8.036896500000001,
+            "maxY": 10.963103499999999,
+            "width": 2.800235699999988,
+            "height": 2.926206999999998
+          },
+          "placementStatus": "CANDIDATE_OFFLINE",
+          "displacementMm": null
+        },
+        {
+          "board": "M-OPT-BRIDGE",
+          "ref": "U9",
+          "sourceRef": "U9_IMU",
+          "mpn": "ICM-42688-P",
+          "device": {
+            "deviceUuid": "443ba5de268a403d978bf2f06e3d8d0e",
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "name": "ICM-42688-P"
+          },
+          "bomLine": "BOM-30",
+          "auditReference": "AUDIT_19",
+          "auditPrimitiveId": "a668799a32f1b06f",
+          "bboxWidthMm": 3.7073332000000008,
+          "bboxHeightMm": 2.804820399999987,
+          "requestedCenter": {
+            "x": 2.1,
+            "y": 18.8
+          },
+          "preferredLayer": "TOP",
+          "sourceSide": "TOP",
+          "rotation": 0,
+          "pins": [
+            {
+              "number": "1",
+              "name": "AP_SDO/AP_AD0",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "TIE"
+            },
+            {
+              "number": "2",
+              "name": "RESV",
+              "net": "",
+              "localState": "NC",
+              "role": "NC"
+            },
+            {
+              "number": "3",
+              "name": "RESV",
+              "net": "",
+              "localState": "NC",
+              "role": "NC"
+            },
+            {
+              "number": "4",
+              "name": "INT1/INT",
+              "net": "",
+              "localState": "NC",
+              "role": "NC"
+            },
+            {
+              "number": "5",
+              "name": "VDDIO",
+              "net": "1V8_SYS",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "6",
+              "name": "GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "7",
+              "name": "RESV",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "TIE"
+            },
+            {
+              "number": "8",
+              "name": "VDD",
+              "net": "1V8_SYS",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "9",
+              "name": "INT2/FSYNC/CLKIN",
+              "net": "FPGA_CDONE_VSYNC_N",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "10",
+              "name": "RESV",
+              "net": "",
+              "localState": "NC",
+              "role": "NC"
+            },
+            {
+              "number": "11",
+              "name": "RESV",
+              "net": "",
+              "localState": "NC",
+              "role": "NC"
+            },
+            {
+              "number": "12",
+              "name": "AP_CS",
+              "net": "1V8_SYS",
+              "localState": "CONNECTED",
+              "role": "TIE"
+            },
+            {
+              "number": "13",
+              "name": "AP_SCL/AP_SCLK",
+              "net": "SYS_I2C_SCL_1V8",
+              "localState": "CONNECTED",
+              "role": "BIDIR_OD"
+            },
+            {
+              "number": "14",
+              "name": "AP_SDA/AP_SDIO/AP_SDI",
+              "net": "SYS_I2C_SDA_1V8",
+              "localState": "CONNECTED",
+              "role": "BIDIR_OD"
+            }
+          ],
+          "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+          "landPatternQualification": "UNVERIFIED",
+          "nativePadSetStatus": "PASS",
+          "center": {
+            "x": 2.1,
+            "y": 18.8
+          },
+          "layer": "TOP",
+          "bbox": {
+            "minX": 0.2463333999999997,
+            "maxX": 3.9536666000000005,
+            "minY": 17.397589800000006,
+            "maxY": 20.202410199999996,
+            "width": 3.7073332000000008,
+            "height": 2.804820399999987
+          },
+          "placementStatus": "CANDIDATE_OFFLINE",
+          "displacementMm": 0.0
+        },
+        {
+          "board": "M-OPT-BRIDGE",
+          "ref": "MK2",
+          "sourceRef": "MK2_C",
+          "mpn": "IM69D130V01XTSA1",
+          "device": {
+            "deviceUuid": "0669b752c8ff491ebce2eed3ac6000fe",
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "name": "IM69D130V01XTSA1_C42464166"
+          },
+          "bomLine": "BOM-34",
+          "auditReference": "AUDIT_06",
+          "auditPrimitiveId": "7f7c93a1e9059615",
+          "bboxWidthMm": 3.9120953000000083,
+          "bboxHeightMm": 4.253966599999999,
+          "requestedCenter": {
+            "x": 2.1,
+            "y": 15.5
+          },
+          "preferredLayer": "BOTTOM",
+          "sourceSide": "BOTTOM",
+          "rotation": 0,
+          "pins": [
+            {
+              "number": "1",
+              "name": "DATA",
+              "net": "PDM_D0_1V8",
+              "localState": "CONNECTED",
+              "role": "DRV_TRI_SLOT"
+            },
+            {
+              "number": "2",
+              "name": "VDD",
+              "net": "1V8_SYS",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "3",
+              "name": "CLOCK",
+              "net": "PDM_CLK_1V8",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "4",
+              "name": "SELECT",
+              "net": "1V8_SYS",
+              "localState": "CONNECTED",
+              "role": "TIE"
+            },
+            {
+              "number": "5",
+              "name": "GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            }
+          ],
+          "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+          "landPatternQualification": "UNVERIFIED",
+          "nativePadSetStatus": "PASS",
+          "center": {
+            "x": 2.1,
+            "y": 15.5
+          },
+          "layer": "BOTTOM",
+          "bbox": {
+            "minX": 0.14395234999999595,
+            "maxX": 4.0560476500000044,
+            "minY": 13.3730167,
+            "maxY": 17.6269833,
+            "width": 3.9120953000000083,
+            "height": 4.253966599999999
+          },
+          "placementStatus": "CANDIDATE_OFFLINE",
+          "displacementMm": 0.0
+        },
+        {
+          "board": "M-OPT-BRIDGE",
+          "ref": "U4",
+          "sourceRef": "U4_1V2",
+          "mpn": "TLV75512PDQNR",
+          "device": {
+            "deviceUuid": "53182ba115aa46a2a877ba45531ccbf8",
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "name": "TLV75512PDQNR"
+          },
+          "bomLine": "BOM-32",
+          "auditReference": "AUDIT_10",
+          "auditPrimitiveId": "491159826df3090d",
+          "bboxWidthMm": 1.4806675999999965,
+          "bboxHeightMm": 1.2116054000000005,
+          "requestedCenter": {
+            "x": 1.4,
+            "y": 7.6
+          },
+          "preferredLayer": "BOTTOM",
+          "sourceSide": "BOTTOM",
+          "rotation": 0,
+          "pins": [
+            {
+              "number": "1",
+              "name": "OUT",
+              "net": "1V2_FPGA_CORE",
+              "localState": "CONNECTED",
+              "role": "SRC"
+            },
+            {
+              "number": "2",
+              "name": "GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "3",
+              "name": "EN",
+              "net": "VSYS",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "4",
+              "name": "IN",
+              "net": "VSYS",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "5",
+              "name": "EP_GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            }
+          ],
+          "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+          "landPatternQualification": "UNVERIFIED",
+          "nativePadSetStatus": "PASS",
+          "center": {
+            "x": 0.8,
+            "y": 18.6
+          },
+          "layer": "BOTTOM",
+          "bbox": {
+            "minX": 0.05966620000000156,
+            "maxX": 1.5403337999999982,
+            "minY": 17.9941973,
+            "maxY": 19.205802700000003,
+            "width": 1.4806675999999965,
+            "height": 1.2116054000000005
+          },
+          "placementStatus": "CANDIDATE_OFFLINE",
+          "displacementMm": 11.01635
+        },
+        {
+          "board": "M-OPT-BRIDGE",
+          "ref": "U1",
+          "sourceRef": "U4_1V8F",
+          "mpn": "TLV75518PDQNR",
+          "device": {
+            "deviceUuid": "82b47b2125fe40b896cbc9d367057553",
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "name": "TLV75518PDQNR"
+          },
+          "bomLine": "BOM-46",
+          "auditReference": "AUDIT_09",
+          "auditPrimitiveId": "f3cd8dd83b8ec7f4",
+          "bboxWidthMm": 1.4806675999999965,
+          "bboxHeightMm": 1.2116054000000005,
+          "requestedCenter": {
+            "x": 2.8,
+            "y": 7.6
+          },
+          "preferredLayer": "BOTTOM",
+          "sourceSide": "BOTTOM",
+          "rotation": 90,
+          "pins": [
+            {
+              "number": "1",
+              "name": "OUT",
+              "net": "1V8_FPGA_IO",
+              "localState": "CONNECTED",
+              "role": "SRC"
+            },
+            {
+              "number": "2",
+              "name": "GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "3",
+              "name": "EN",
+              "net": "1V2_FPGA_PLL",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "4",
+              "name": "IN",
+              "net": "VSYS",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "5",
+              "name": "EP_GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            }
+          ],
+          "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+          "landPatternQualification": "UNVERIFIED",
+          "nativePadSetStatus": "PASS",
+          "center": {
+            "x": 2.4,
+            "y": 18.6
+          },
+          "layer": "BOTTOM",
+          "bbox": {
+            "minX": 1.7941972999999996,
+            "maxX": 3.0058027000000003,
+            "minY": 17.859666200000003,
+            "maxY": 19.3403338,
+            "width": 1.2116054000000005,
+            "height": 1.4806675999999965
+          },
+          "placementStatus": "CANDIDATE_OFFLINE",
+          "displacementMm": 11.00727
+        },
+        {
+          "board": "M-OPT-BRIDGE",
+          "ref": "U8",
+          "sourceRef": "U_AVDD_LS",
+          "mpn": "SN74LVC2T45DCUR",
+          "device": {
+            "deviceUuid": "5c75c471d44a42c18b81c95575085e21",
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "name": "SN74LVC2T45DCUR"
+          },
+          "bomLine": "BOM-D11-U_AVDD_LS",
+          "auditReference": "AUDIT_20",
+          "auditPrimitiveId": "d4615161b17cf5a2",
+          "bboxWidthMm": 4.0728899999999975,
+          "bboxHeightMm": 2.2159976000000037,
+          "requestedCenter": {
+            "x": null,
+            "y": null
+          },
+          "preferredLayer": "BOTTOM",
+          "sourceSide": "UNPLACED",
+          "rotation": 0,
+          "pins": [
+            {
+              "number": "1",
+              "name": "VCCA",
+              "net": "1V8_FPGA_IO",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "2",
+              "name": "A1",
+              "net": "FPGA_CDONE_VSYNC_N",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "3",
+              "name": "A2",
+              "net": "FPGA_CRESET_B",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "4",
+              "name": "GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "5",
+              "name": "DIR",
+              "net": "1V8_FPGA_IO",
+              "localState": "CONNECTED",
+              "role": "TIE"
+            },
+            {
+              "number": "6",
+              "name": "B2",
+              "net": "AVDD_CRESET_VSYS",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "7",
+              "name": "B1",
+              "net": "AVDD_D3_VSYS",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "8",
+              "name": "VCCB",
+              "net": "VSYS",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            }
+          ],
+          "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+          "landPatternQualification": "UNVERIFIED",
+          "nativePadSetStatus": "PASS",
+          "center": {
+            "x": 2.1,
+            "y": 1.6
+          },
+          "layer": "TOP",
+          "bbox": {
+            "minX": 0.06355500000000136,
+            "maxX": 4.136444999999998,
+            "minY": 0.4920011999999978,
+            "maxY": 2.7079988000000013,
+            "width": 4.0728899999999975,
+            "height": 2.2159976000000037
+          },
+          "placementStatus": "CANDIDATE_OFFLINE",
+          "displacementMm": 9.4
+        },
+        {
+          "board": "M-OPT-BRIDGE",
+          "ref": "U7",
+          "sourceRef": "U_AVDD_IO_PG",
+          "mpn": "TPS389018DSET",
+          "device": {
+            "deviceUuid": "341cd4db1fb9470bb75624340e7b9310",
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "name": "TPS389018DSET"
+          },
+          "bomLine": "BOM-D11-U_AVDD_IO_PG",
+          "auditReference": "AUDIT_22",
+          "auditPrimitiveId": "e7377be8d5cecc4a",
+          "bboxWidthMm": 2.693669999999993,
+          "bboxHeightMm": 2.0040599999999906,
+          "requestedCenter": {
+            "x": null,
+            "y": null
+          },
+          "preferredLayer": "BOTTOM",
+          "sourceSide": "UNPLACED",
+          "rotation": 0,
+          "pins": [
+            {
+              "number": "1",
+              "name": "SENSE",
+              "net": "1V8_FPGA_IO",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "2",
+              "name": "GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "3",
+              "name": "MR",
+              "net": "AVDD_CRESET_VSYS",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "4",
+              "name": "VDD",
+              "net": "VSYS",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "5",
+              "name": "CT",
+              "net": "",
+              "localState": "NC",
+              "role": "NC"
+            },
+            {
+              "number": "6",
+              "name": "RESET",
+              "net": "AVDD_PG_NODE",
+              "localState": "CONNECTED",
+              "role": "DRV_OD"
+            }
+          ],
+          "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+          "landPatternQualification": "UNVERIFIED",
+          "nativePadSetStatus": "PASS",
+          "center": {
+            "x": 2.1,
+            "y": 12.2
+          },
+          "layer": "TOP",
+          "bbox": {
+            "minX": 0.7531650000000036,
+            "maxX": 3.4468349999999965,
+            "minY": 11.197970000000003,
+            "maxY": 13.202029999999995,
+            "width": 2.693669999999993,
+            "height": 2.0040599999999906
+          },
+          "placementStatus": "CANDIDATE_OFFLINE",
+          "displacementMm": 1.2
+        },
+        {
+          "board": "M-OPT-BRIDGE",
+          "ref": "U13",
+          "sourceRef": "U_AVDD_SYS_PG",
+          "mpn": "TPS389025DSET",
+          "device": {
+            "deviceUuid": "fbd52791be1b41a5a970dfb7ca996f4e",
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "name": "TPS389025DSET"
+          },
+          "bomLine": "BOM-D11-U_AVDD_SYS_PG",
+          "auditReference": "AUDIT_23",
+          "auditPrimitiveId": "f59892205363b537",
+          "bboxWidthMm": 2.693669999999993,
+          "bboxHeightMm": 2.0040599999999906,
+          "requestedCenter": {
+            "x": null,
+            "y": null
+          },
+          "preferredLayer": "BOTTOM",
+          "sourceSide": "UNPLACED",
+          "rotation": 0,
+          "pins": [
+            {
+              "number": "1",
+              "name": "SENSE",
+              "net": "VSYS",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "2",
+              "name": "GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "3",
+              "name": "MR",
+              "net": "AVDD_REQ_FILTER",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "4",
+              "name": "VDD",
+              "net": "VSYS",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "5",
+              "name": "CT",
+              "net": "",
+              "localState": "NC",
+              "role": "NC"
+            },
+            {
+              "number": "6",
+              "name": "RESET",
+              "net": "AVDD_PG_NODE",
+              "localState": "CONNECTED",
+              "role": "DRV_OD"
+            }
+          ],
+          "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+          "landPatternQualification": "UNVERIFIED",
+          "nativePadSetStatus": "PASS",
+          "center": {
+            "x": 2.1,
+            "y": 6.8
+          },
+          "layer": "TOP",
+          "bbox": {
+            "minX": 0.7531650000000036,
+            "maxX": 3.4468349999999965,
+            "minY": 5.797970000000005,
+            "maxY": 7.802029999999995,
+            "width": 2.693669999999993,
+            "height": 2.0040599999999906
+          },
+          "placementStatus": "CANDIDATE_OFFLINE",
+          "displacementMm": 4.2
+        },
+        {
+          "board": "M-OPT-BRIDGE",
+          "ref": "U12",
+          "sourceRef": "U_AVDD_SYS_CLAMP",
+          "mpn": "TPS389025DSET",
+          "device": {
+            "deviceUuid": "fbd52791be1b41a5a970dfb7ca996f4e",
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "name": "TPS389025DSET"
+          },
+          "bomLine": "BOM-D11-U_AVDD_SYS_CLAMP",
+          "auditReference": "AUDIT_23",
+          "auditPrimitiveId": "f59892205363b537",
+          "bboxWidthMm": 2.693669999999993,
+          "bboxHeightMm": 2.0040599999999906,
+          "requestedCenter": {
+            "x": null,
+            "y": null
+          },
+          "preferredLayer": "BOTTOM",
+          "sourceSide": "UNPLACED",
+          "rotation": 0,
+          "pins": [
+            {
+              "number": "1",
+              "name": "SENSE",
+              "net": "VSYS",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "2",
+              "name": "GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "3",
+              "name": "MR",
+              "net": "VSYS",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "4",
+              "name": "VDD",
+              "net": "VSYS",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "5",
+              "name": "CT",
+              "net": "",
+              "localState": "NC",
+              "role": "NC"
+            },
+            {
+              "number": "6",
+              "name": "RESET",
+              "net": "OPT_AVDD_EN",
+              "localState": "CONNECTED",
+              "role": "DRV_OD"
+            }
+          ],
+          "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+          "landPatternQualification": "UNVERIFIED",
+          "nativePadSetStatus": "PASS",
+          "center": {
+            "x": 2.1,
+            "y": 20.6
+          },
+          "layer": "BOTTOM",
+          "bbox": {
+            "minX": 0.7531650000000036,
+            "maxX": 3.4468349999999965,
+            "minY": 19.597970000000007,
+            "maxY": 21.602029999999996,
+            "width": 2.693669999999993,
+            "height": 2.0040599999999906
+          },
+          "placementStatus": "CANDIDATE_OFFLINE",
+          "displacementMm": 9.6
+        },
+        {
+          "board": "M-OPT-BRIDGE",
+          "ref": "Y1",
+          "sourceRef": "Y1_OSC",
+          "mpn": "ASADV-48.000MHZ-LC-T",
+          "device": {
+            "deviceUuid": "906435bfbc2d4adc8aadaeb659d1eccc",
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "name": "ASADV-48.000MHZ-LC-T"
+          },
+          "bomLine": "BOM-27",
+          "auditReference": "AUDIT_18",
+          "auditPrimitiveId": "5aba74188f4f22c7",
+          "bboxWidthMm": 2.945999695999994,
+          "bboxHeightMm": 2.4220230959999967,
+          "requestedCenter": {
+            "x": null,
+            "y": null
+          },
+          "preferredLayer": "BOTTOM",
+          "sourceSide": "TBD",
+          "rotation": 90,
+          "pins": [
+            {
+              "number": "1",
+              "name": "TRISTATE",
+              "net": "1V8_FPGA_IO",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "2",
+              "name": "GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "3",
+              "name": "OUT",
+              "net": "clk_48m",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "4",
+              "name": "VDD",
+              "net": "1V8_FPGA_IO",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            }
+          ],
+          "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+          "landPatternQualification": "UNVERIFIED",
+          "nativePadSetStatus": "PASS",
+          "center": {
+            "x": 2.95,
+            "y": 9.200000000000001
+          },
+          "layer": "BOTTOM",
+          "bbox": {
+            "minX": 1.7389884520000018,
+            "maxX": 4.1610115479999985,
+            "minY": 7.727000152000004,
+            "maxY": 10.672999847999998,
+            "width": 2.4220230959999967,
+            "height": 2.945999695999994
+          },
+          "placementStatus": "CANDIDATE_OFFLINE",
+          "fpgaB3ToOscPin3CenterDistanceMm": 0.00462,
+          "clockOptimization": "Minimize measured pad-center distance; opposite-side via and SI/startup remain UNVERIFIED."
+        }
+      ],
+      "failedPlacements": [
+        {
+          "ref": "U14",
+          "sourceRef": "U_AVDD_WD",
+          "status": "BLOCKED_NO_LEGAL_CANDIDATE_IN_SEARCH",
+          "reason": "Fixed anchor conflict or bounded 0.20 mm full-bbox search found no legal position."
+        },
+        {
+          "ref": "U10",
+          "sourceRef": "U_AVDD_QUAL",
+          "status": "BLOCKED_NO_LEGAL_CANDIDATE_IN_SEARCH",
+          "reason": "Fixed anchor conflict or bounded 0.20 mm full-bbox search found no legal position."
+        }
+      ],
+      "reservations": [
+        {
+          "ref": "J_DISP_L",
+          "kind": "UNQUALIFIED_MECHANICAL_ENVELOPE",
+          "source": "effective_bom.csv nominal body; no copper authored",
+          "center": {
+            "x": 2.1,
+            "y": 4.2
+          },
+          "layers": [
+            "TOP"
+          ],
+          "bbox": {
+            "minX": 0.30000000000000004,
+            "maxX": 3.9000000000000004,
+            "minY": 3.35,
+            "maxY": 5.05,
+            "width": 3.6,
+            "height": 1.7
+          },
+          "status": "BLOCKED"
+        },
+        {
+          "ref": "J_DISP_R",
+          "kind": "UNQUALIFIED_MECHANICAL_ENVELOPE",
+          "source": "effective_bom.csv nominal body; no copper authored",
+          "center": {
+            "x": 2.1,
+            "y": 14.8
+          },
+          "layers": [
+            "TOP"
+          ],
+          "bbox": {
+            "minX": 0.30000000000000004,
+            "maxX": 3.9000000000000004,
+            "minY": 13.950000000000001,
+            "maxY": 15.65,
+            "width": 3.6,
+            "height": 1.7
+          },
+          "status": "BLOCKED"
+        },
+        {
+          "ref": "J_BRIDGE_IN",
+          "kind": "UNQUALIFIED_MECHANICAL_ENVELOPE",
+          "source": "effective_bom.csv nominal body; no copper authored",
+          "center": {
+            "x": 2.1,
+            "y": 3.6
+          },
+          "layers": [
+            "BOTTOM"
+          ],
+          "bbox": {
+            "minX": 1.25,
+            "maxX": 2.95,
+            "minY": 0.3250000000000002,
+            "maxY": 6.875,
+            "width": 1.7,
+            "height": 6.55
+          },
+          "status": "BLOCKED"
+        },
+        {
+          "ref": "U6_OPT_AVDD",
+          "kind": "UNQUALIFIED_MECHANICAL_ENVELOPE",
+          "source": "effective_bom.csv nominal body; no copper authored",
+          "center": {
+            "x": 2.1,
+            "y": 12.2
+          },
+          "layers": [
+            "BOTTOM"
+          ],
+          "bbox": {
+            "minX": 1.6,
+            "maxX": 2.6,
+            "minY": 11.7,
+            "maxY": 12.7,
+            "width": 1.0,
+            "height": 1.0
+          },
+          "status": "UNVERIFIED"
+        },
+        {
+          "ref": "J_DISP_L_FPC_CORRIDOR",
+          "kind": "OPTICAL_FPC_ASSEMBLY_CORRIDOR",
+          "layers": [
+            "TOP"
+          ],
+          "bbox": {
+            "minX": 0,
+            "maxX": 4.2,
+            "minY": 3.0300000000000002,
+            "maxY": 5.37
+          },
+          "status": "UNVERIFIED"
+        },
+        {
+          "ref": "J_DISP_R_FPC_CORRIDOR",
+          "kind": "OPTICAL_FPC_ASSEMBLY_CORRIDOR",
+          "layers": [
+            "TOP"
+          ],
+          "bbox": {
+            "minX": 0,
+            "maxX": 4.2,
+            "minY": 13.63,
+            "maxY": 15.97
+          },
+          "status": "UNVERIFIED"
+        },
+        {
+          "ref": "Y1_CLOCK_SEARCH_RESERVE",
+          "kind": "CLOCK_OPPOSITE_SIDE_CANDIDATE_REGION",
+          "layers": [
+            "BOTTOM"
+          ],
+          "bbox": {
+            "minX": 0.627000152000003,
+            "maxX": 3.572999847999997,
+            "minY": 8.288988452000002,
+            "maxY": 10.711011547999998
+          },
+          "status": "UNVERIFIED"
+        }
+      ],
+      "requiredButNotPlaced": [
+        "J_BRIDGE_IN",
+        "J_DISP_L",
+        "J_DISP_R",
+        "R_DAMP_SCK_L",
+        "R_DAMP_CS_L",
+        "R_OPTCS_PU_L",
+        "R_DAMP_LD0",
+        "R_DAMP_LD1",
+        "R_DAMP_LD2",
+        "R_DAMP_LD3",
+        "R_DAMP_SCK_R",
+        "R_DAMP_CS_R",
+        "R_OPTCS_PU_R",
+        "R_DAMP_RD0",
+        "R_DAMP_RD1",
+        "R_DAMP_RD2",
+        "R_DAMP_RD3",
+        "R_PLL",
+        "R_VPP",
+        "R_CDONE_PU",
+        "R_CRST_PD",
+        "R_SS_PD",
+        "D3_PRIV",
+        "U6_OPT_AVDD",
+        "C_LDO_1V2F_IN",
+        "C_LDO_1V2F_OUT",
+        "C_LDO_1V8F_IN",
+        "C_LDO_1V8F_OUT",
+        "C_LDO_OPT_IN",
+        "C_LDO_OPT_OUT",
+        "C_IMU_VDD1",
+        "C_IMU_VDD2",
+        "C_IMU_VDDIO",
+        "C_MK2_C",
+        "U_AVDD_CLEAR_OD",
+        "U_AVDD_SCHMITT",
+        "U_AVDD_EN_OD",
+        "R_AVDD_WD_SET",
+        "R_AVDD_WD_DIV_H",
+        "R_AVDD_WD_DIV_L",
+        "R_AVDD_D3_PD",
+        "R_AVDD_CRST_PD",
+        "R_AVDD_PG_PU",
+        "R_AVDD_REQ_FILTER",
+        "R_AVDD_QUAL_PU",
+        "R_AVDD_EN_FEED",
+        "R_AVDD_EN_PD",
+        "C_AVDD_REQ_FILTER",
+        "C_AVDD_QUAL",
+        "C_AVDD_U_AVDD_LS_V",
+        "C_AVDD_U_AVDD_WD_V",
+        "C_AVDD_U_AVDD_IO_PG_V",
+        "C_AVDD_U_AVDD_SYS_PG_V",
+        "C_AVDD_U_AVDD_SYS_CLAMP_V",
+        "C_AVDD_U_AVDD_CLEAR_OD_V",
+        "C_AVDD_U_AVDD_SCHMITT_V",
+        "C_AVDD_U_AVDD_QUAL_V",
+        "C_AVDD_U_AVDD_EN_OD_V",
+        "C_AVDD_LS_A",
+        "TP_AVDD_SAFE",
+        "C_FPGA_PLL_BULK",
+        "C_FPGA_PLL_HF",
+        "C_FPGA_VPP_BULK",
+        "C_FPGA_VPP_HF",
+        "C_FPGA_CORE_BULK",
+        "C_FPGA_CORE_HF",
+        "C_FPGA_IO_BULK",
+        "C_FPGA_IO_HF0",
+        "C_FPGA_IO_HF1",
+        "C_FPGA_IO_HF2",
+        "C_FPGA_OSC_HF"
+      ],
+      "unverified": [
+        "pin-1/package orientation against vendor top view",
+        "supplier courtyard/mask/paste",
+        "complete peripheral placement",
+        "FPC/shell/optical/battery/acoustic fit",
+        "routability and return paths"
+      ]
+    },
+    "M-AUD-R": {
+      "pcbUuid": "1db01a36f669a47a",
+      "outlinePolygonMm": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          34
+        ],
+        [
+          5.2,
+          34
+        ],
+        [
+          5.2,
+          0
+        ]
+      ],
+      "scope": "PARTIAL_EXACT_DEVICE_CANDIDATE_NOT_COMPLETE_LAYOUT",
+      "minimumCandidateBboxGapMm": 0.2,
+      "placements": [
+        {
+          "board": "M-AUD-R",
+          "ref": "MK3",
+          "sourceRef": "MK3_R",
+          "mpn": "IM69D130V01XTSA1",
+          "device": {
+            "deviceUuid": "0669b752c8ff491ebce2eed3ac6000fe",
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "name": "IM69D130V01XTSA1_C42464166"
+          },
+          "bomLine": "BOM-39",
+          "auditReference": "AUDIT_06",
+          "auditPrimitiveId": "7f7c93a1e9059615",
+          "bboxWidthMm": 3.9120953000000083,
+          "bboxHeightMm": 4.253966599999999,
+          "requestedCenter": {
+            "x": 2.6,
+            "y": 24.5
+          },
+          "preferredLayer": "TOP",
+          "sourceSide": "TOP",
+          "rotation": 0,
+          "pins": [
+            {
+              "number": "1",
+              "name": "DATA",
+              "net": "PDM_D1_1V8",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "2",
+              "name": "VDD",
+              "net": "1V8_SYS",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "3",
+              "name": "CLOCK",
+              "net": "PDM_CLK_1V8",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "4",
+              "name": "SELECT",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "TIE"
+            },
+            {
+              "number": "5",
+              "name": "GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            }
+          ],
+          "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+          "landPatternQualification": "UNVERIFIED",
+          "nativePadSetStatus": "PASS",
+          "center": {
+            "x": 2.6,
+            "y": 24.5
+          },
+          "layer": "TOP",
+          "bbox": {
+            "minX": 0.643952349999996,
+            "maxX": 4.5560476500000044,
+            "minY": 22.3730167,
+            "maxY": 26.6269833,
+            "width": 3.9120953000000083,
+            "height": 4.253966599999999
+          },
+          "placementStatus": "CANDIDATE_OFFLINE",
+          "displacementMm": 0.0
+        },
+        {
+          "board": "M-AUD-R",
+          "ref": "U10",
+          "sourceRef": "U10_AMP_R",
+          "mpn": "MAX98357AEWL+T",
+          "device": {
+            "deviceUuid": "fae901b9c5d84f939c98bcdbe4b8c978",
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "name": "MAX98357AEWL+T"
+          },
+          "bomLine": "BOM-38",
+          "auditReference": "AUDIT_04",
+          "auditPrimitiveId": "28a14b34691a105f",
+          "bboxWidthMm": 1.9405854000000073,
+          "bboxHeightMm": 1.5500604000000002,
+          "requestedCenter": {
+            "x": 2.6,
+            "y": 19.0
+          },
+          "preferredLayer": "TOP",
+          "sourceSide": "TOP",
+          "rotation": 0,
+          "pins": [
+            {
+              "number": "A1",
+              "name": "SD_MODE",
+              "net": "AMP_R_SD_MODE",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "A2",
+              "name": "VDD",
+              "net": "VBAT_R_RET",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "A3",
+              "name": "OUTP",
+              "net": "SPK_R_P",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "B1",
+              "name": "DIN",
+              "net": "I2S_AMP_DIN_1V8",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "B2",
+              "name": "GAIN_SLOT",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "TIE"
+            },
+            {
+              "number": "B3",
+              "name": "OUTN",
+              "net": "SPK_R_N",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "C1",
+              "name": "BCLK",
+              "net": "I2S_BCLK_1V8",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "C2",
+              "name": "GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "C3",
+              "name": "LRCLK",
+              "net": "I2S_LRCLK_1V8",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            }
+          ],
+          "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+          "landPatternQualification": "UNVERIFIED",
+          "nativePadSetStatus": "PASS",
+          "center": {
+            "x": 2.6,
+            "y": 19.0
+          },
+          "layer": "TOP",
+          "bbox": {
+            "minX": 1.6297072999999964,
+            "maxX": 3.570292700000004,
+            "minY": 18.2249698,
+            "maxY": 19.7750302,
+            "width": 1.9405854000000073,
+            "height": 1.5500604000000002
+          },
+          "placementStatus": "CANDIDATE_OFFLINE",
+          "displacementMm": 0.0
+        },
+        {
+          "board": "M-AUD-R",
+          "ref": "U3",
+          "sourceRef": "U3_R",
+          "mpn": "BQ25170DSGR",
+          "device": {
+            "deviceUuid": "65a0e95b40f14858a520fe79d094ae87",
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "name": "BQ25170DSGR"
+          },
+          "bomLine": "BOM-37",
+          "auditReference": "AUDIT_25",
+          "auditPrimitiveId": "012f83c6d88155aa",
+          "bboxWidthMm": 2.8106624,
+          "bboxHeightMm": 2.4661876000000014,
+          "requestedCenter": {
+            "x": 2.6,
+            "y": 14.5
+          },
+          "preferredLayer": "TOP",
+          "sourceSide": "TOP",
+          "rotation": 0,
+          "pins": [
+            {
+              "number": "1",
+              "name": "IN",
+              "net": "VBUS_5V",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "2",
+              "name": "ISET",
+              "net": "CHG_R_ISET",
+              "localState": "CONNECTED",
+              "role": "PASSIVE"
+            },
+            {
+              "number": "3",
+              "name": "TS",
+              "net": "NTC_TS_R",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            },
+            {
+              "number": "4",
+              "name": "GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "5",
+              "name": "STAT",
+              "net": "",
+              "localState": "NC",
+              "role": "NC"
+            },
+            {
+              "number": "6",
+              "name": "/PG",
+              "net": "",
+              "localState": "NC",
+              "role": "NC"
+            },
+            {
+              "number": "7",
+              "name": "VSET",
+              "net": "CHG_R_VSET",
+              "localState": "CONNECTED",
+              "role": "PASSIVE"
+            },
+            {
+              "number": "8",
+              "name": "OUT",
+              "net": "VBAT_R_RET",
+              "localState": "CONNECTED",
+              "role": "SRC"
+            },
+            {
+              "number": "9",
+              "name": "EP_GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            }
+          ],
+          "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+          "landPatternQualification": "UNVERIFIED",
+          "nativePadSetStatus": "PASS",
+          "center": {
+            "x": 2.6,
+            "y": 14.5
+          },
+          "layer": "TOP",
+          "bbox": {
+            "minX": 1.1946688,
+            "maxX": 4.0053312000000005,
+            "minY": 13.2669062,
+            "maxY": 15.7330938,
+            "width": 2.8106624,
+            "height": 2.4661876000000014
+          },
+          "placementStatus": "CANDIDATE_OFFLINE",
+          "displacementMm": 0.0
+        },
+        {
+          "board": "M-AUD-R",
+          "ref": "U1",
+          "sourceRef": "U10_SD_BUF",
+          "mpn": "SN74LVC1G3157DSFR",
+          "device": {
+            "deviceUuid": "0c7a73ed91b5488286af3f992f3adb99",
+            "libraryUuid": "0819f05c4eef4c71ace90d822a990e87",
+            "name": "SN74LVC1G3157DSFR"
+          },
+          "bomLine": "BOM-D1-AT02",
+          "auditReference": "AUDIT_26",
+          "auditPrimitiveId": "b2e0cf5a71bd7e93",
+          "bboxWidthMm": 1.990191600000001,
+          "bboxHeightMm": 1.4200124000000218,
+          "requestedCenter": {
+            "x": null,
+            "y": null
+          },
+          "preferredLayer": "BOTTOM",
+          "sourceSide": "UNPLACED",
+          "rotation": 0,
+          "pins": [
+            {
+              "number": "1",
+              "name": "B2",
+              "net": "1V8_SYS",
+              "localState": "CONNECTED",
+              "role": "PASSIVE"
+            },
+            {
+              "number": "2",
+              "name": "GND",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "3",
+              "name": "B1",
+              "net": "GND",
+              "localState": "CONNECTED",
+              "role": "PASSIVE"
+            },
+            {
+              "number": "4",
+              "name": "A",
+              "net": "AMP_SD_MODE_1V8",
+              "localState": "CONNECTED",
+              "role": "DRV"
+            },
+            {
+              "number": "5",
+              "name": "VCC",
+              "net": "1V8_SYS",
+              "localState": "CONNECTED",
+              "role": "SINK"
+            },
+            {
+              "number": "6",
+              "name": "S",
+              "net": "AMP_SD_REQ_1V8",
+              "localState": "CONNECTED",
+              "role": "RCV"
+            }
+          ],
+          "schematicBinding": "UNBOUND_CONTROLLED_NETLIST_CANDIDATE",
+          "landPatternQualification": "UNVERIFIED",
+          "nativePadSetStatus": "PASS",
+          "center": {
+            "x": 2.6,
+            "y": 17.0
+          },
+          "layer": "BOTTOM",
+          "bbox": {
+            "minX": 1.6049041999999996,
+            "maxX": 3.5950958000000006,
+            "minY": 16.28999379999999,
+            "maxY": 17.71000620000001,
+            "width": 1.990191600000001,
+            "height": 1.4200124000000218
+          },
+          "placementStatus": "CANDIDATE_OFFLINE",
+          "displacementMm": 0.0
+        }
+      ],
+      "failedPlacements": [],
+      "reservations": [
+        {
+          "ref": "ANT2_BLE",
+          "kind": "UNQUALIFIED_MECHANICAL_ENVELOPE",
+          "source": "effective_bom.csv nominal body; no copper authored",
+          "center": {
+            "x": 2.6,
+            "y": 2.0
+          },
+          "layers": [
+            "TOP"
+          ],
+          "bbox": {
+            "minX": 1.0,
+            "maxX": 4.2,
+            "minY": 1.2,
+            "maxY": 2.8,
+            "width": 3.2,
+            "height": 1.6
+          },
+          "status": "BLOCKED"
+        },
+        {
+          "ref": "U11_BLE",
+          "kind": "UNQUALIFIED_MECHANICAL_ENVELOPE",
+          "source": "effective_bom.csv nominal body; no copper authored",
+          "center": {
+            "x": 2.6,
+            "y": 8.0
+          },
+          "layers": [
+            "TOP"
+          ],
+          "bbox": {
+            "minX": 0.605,
+            "maxX": 4.595000000000001,
+            "minY": 5.805,
+            "maxY": 10.195,
+            "width": 3.99,
+            "height": 4.39
+          },
+          "status": "BLOCKED"
+        },
+        {
+          "ref": "J_BTB_R",
+          "kind": "UNQUALIFIED_MECHANICAL_ENVELOPE",
+          "source": "effective_bom.csv nominal body; no copper authored",
+          "center": {
+            "x": 2.6,
+            "y": 30.5
+          },
+          "layers": [
+            "TOP"
+          ],
+          "bbox": {
+            "minX": 0.5500000000000003,
+            "maxX": 4.65,
+            "minY": 29.65,
+            "maxY": 31.35,
+            "width": 4.1,
+            "height": 1.7
+          },
+          "status": "BLOCKED"
+        },
+        {
+          "ref": "J_CHG_R",
+          "status": "BLOCKED_MISSING_NOMINAL_ENVELOPE",
+          "layers": []
+        },
+        {
+          "ref": "TP_BAT_R_P",
+          "status": "BLOCKED_MISSING_NOMINAL_ENVELOPE",
+          "layers": []
+        },
+        {
+          "ref": "TP_BAT_R_N",
+          "status": "BLOCKED_MISSING_NOMINAL_ENVELOPE",
+          "layers": []
+        },
+        {
+          "ref": "TP_NTC_R",
+          "status": "BLOCKED_MISSING_NOMINAL_ENVELOPE",
+          "layers": []
+        },
+        {
+          "ref": "TP_SWD_R",
+          "status": "BLOCKED_UNPLACED_NOMINAL_ENVELOPE",
+          "layers": []
+        },
+        {
+          "ref": "Y2_BLE",
+          "status": "BLOCKED_UNPLACED_NOMINAL_ENVELOPE",
+          "layers": []
+        },
+        {
+          "ref": "RF_FRONT_0_TO_4P0",
+          "kind": "RF_NO_COMPONENT_ZONE",
+          "layers": [
+            "TOP",
+            "BOTTOM"
+          ],
+          "bbox": {
+            "minX": 0,
+            "maxX": 5.2,
+            "minY": 0,
+            "maxY": 4.0
+          },
+          "status": "UNVERIFIED"
+        }
+      ],
+      "requiredButNotPlaced": [
+        "J_BTB_R",
+        "TP_BAT_R_P",
+        "TP_BAT_R_N",
+        "TP_NTC_R",
+        "SPK_R",
+        "R_IPC_PU",
+        "R_ISET_R",
+        "R_VSET_R",
+        "ANT2_BLE",
+        "R_SDR",
+        "Q_CHG_MUTE_R",
+        "R_MUTE_GATE",
+        "R_MUTE_PD",
+        "C_CHG_R_IN",
+        "C_CHG_R_OUT",
+        "BAT_R",
+        "U11_BLE",
+        "NRF_C1",
+        "NRF_C2",
+        "NRF_C3",
+        "NRF_C4",
+        "NRF_C5",
+        "NRF_C6",
+        "NRF_C7",
+        "NRF_C8",
+        "NRF_C9",
+        "NRF_C10",
+        "NRF_C11",
+        "NRF_C12",
+        "NRF_C13",
+        "NRF_C14",
+        "NRF_L1",
+        "NRF_L2",
+        "NRF_L3",
+        "NRF_L4",
+        "NRF_CT19",
+        "Y2_BLE",
+        "TP_SWD_R",
+        "C_MK3_R",
+        "R_AMP_REQ_PD",
+        "C_AMP_SD_BUF",
+        "C_U10_AMP_R_HF",
+        "C_U10_AMP_R_BULK",
+        "R_IDLE_I2S_BCLK_1V8",
+        "R_IDLE_I2S_LRCLK_1V8",
+        "R_IDLE_I2S_AMP_DIN_1V8",
+        "TP_SPK_R_P",
+        "TP_SPK_R_N"
+      ],
+      "unverified": [
+        "pin-1/package orientation against vendor top view",
+        "supplier courtyard/mask/paste",
+        "complete peripheral placement",
+        "FPC/shell/optical/battery/acoustic fit",
+        "routability and return paths"
+      ]
+    }
+  },
+  "counts": {
+    "candidate": 35,
+    "failed": 2
+  },
+  "systemModules": [
+    {
+      "ref": "DISP_L",
+      "bodyMm": [
+        "5.50",
+        "7.20",
+        "4.20"
+      ],
+      "positionMm": [
+        "-32.00",
+        "4.00"
+      ],
+      "status": "BLOCKED_VENDOR_STEP_AND_INIT_NDA"
+    },
+    {
+      "ref": "DISP_R",
+      "bodyMm": [
+        "5.50",
+        "7.20",
+        "4.20"
+      ],
+      "positionMm": [
+        "32.00",
+        "4.00"
+      ],
+      "status": "BLOCKED_VENDOR_STEP_AND_INIT_NDA"
+    },
+    {
+      "ref": "BAT_L",
+      "bodyMm": [
+        "3.71",
+        "43.50",
+        "11.00"
+      ],
+      "positionMm": [
+        "-66.00",
+        "104.00"
+      ],
+      "status": "BLOCKED_PROTECTED_PACK_NTC_AND_CURRENT_QUALIFICATION"
+    },
+    {
+      "ref": "BAT_R",
+      "bodyMm": [
+        "3.71",
+        "43.50",
+        "11.00"
+      ],
+      "positionMm": [
+        "66.00",
+        "104.00"
+      ],
+      "status": "BLOCKED_PROTECTED_PACK_NTC_AND_CURRENT_QUALIFICATION"
+    }
+  ],
+  "architecture": {
+    "binocularTransparentAR": true,
+    "assemblyMassTargetG": 40,
+    "massAchieved": false,
+    "routingAuthorized": false
+  }
+}

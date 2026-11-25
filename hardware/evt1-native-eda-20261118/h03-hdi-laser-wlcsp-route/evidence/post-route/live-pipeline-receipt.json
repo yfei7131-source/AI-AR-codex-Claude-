@@ -1,0 +1,294 @@
+{
+  "status": "CAPTURED_LIVE_EASYEDA_4_1_97_LASER_RING_CLOSED_AND_REIMPORT_VERIFIED",
+  "manufacturing": "BLOCKED",
+  "project_uuid": "5e40648f279e52464a77a9ebca9366b931f10b9719bafa4d3a26fbef928efa4a",
+  "reimport_project_uuid": "d411cffc87b2001dbabc2daf058d913b3b87aa346567b8b5c83022e9945f2442",
+  "exported_sha256": "7d72bad53f8825db29456f2ad1338537968bdf7c98ffe83cc1969034a008524d",
+  "official_stackup_set": {
+    "PCB2": {
+      "ok": true,
+      "verified": true,
+      "copperLayerCount": 6
+    },
+    "PCB3": {
+      "ok": true,
+      "verified": true,
+      "copperLayerCount": 6
+    },
+    "PCB1": {
+      "ok": true,
+      "verified": true,
+      "copperLayerCount": 6
+    }
+  },
+  "decap_relocations": {
+    "PCB1": [
+      "C14->C17_slot(77.2mil)",
+      "C17->R21_slot(88.1mil)",
+      "C3<->C28(82.7mil)",
+      "C33<->R29(51.2mil)"
+    ],
+    "PCB2": [
+      "C4<->R28(88.3mil)",
+      "C6<->R11(80.3mil)",
+      "C7<->R26(19.4mil)"
+    ]
+  },
+  "commits": {
+    "PCB2": {
+      "tracks_cmd": 304,
+      "mech_vias_cmd": 7,
+      "blind_vias_prebound": 39,
+      "failures": 0
+    },
+    "PCB3": {
+      "tracks_cmd": 305,
+      "mech_vias_cmd": 12,
+      "blind_vias_prebound": 38,
+      "failures": 0
+    },
+    "PCB1": {
+      "tracks_cmd": 630,
+      "mech_vias_cmd": 36,
+      "blind_vias_prebound": 62,
+      "failures": 0
+    }
+  },
+  "post_route_copper": {
+    "PCB1": {
+      "lines": 804,
+      "vias": 98
+    },
+    "PCB2": {
+      "lines": 384,
+      "vias": 46
+    },
+    "PCB3": {
+      "lines": 375,
+      "vias": 50
+    }
+  },
+  "post_route_drc": {
+    "PCB1": {
+      "total": 360,
+      "clearance": 0,
+      "connection": 359,
+      "non_gnd_connection": 307,
+      "gnd_connection": 52,
+      "netlist": 1,
+      "plane_zone": 0,
+      "by_rule": {
+        "Connection Error (SMD Pad)": 351,
+        "Connection Error (Via)": 5,
+        "Connection Error (Track)": 3,
+        "Netlist Error (Netlist Error)": 1
+      }
+    },
+    "PCB2": {
+      "total": 243,
+      "clearance": 0,
+      "connection": 242,
+      "non_gnd_connection": 206,
+      "gnd_connection": 36,
+      "netlist": 1,
+      "plane_zone": 0,
+      "by_rule": {
+        "Connection Error (SMD Pad)": 231,
+        "Connection Error (Via)": 11,
+        "Netlist Error (Netlist Error)": 1
+      }
+    },
+    "PCB3": {
+      "total": 139,
+      "clearance": 0,
+      "connection": 138,
+      "non_gnd_connection": 114,
+      "gnd_connection": 24,
+      "netlist": 1,
+      "plane_zone": 0,
+      "by_rule": {
+        "Connection Error (SMD Pad)": 131,
+        "Connection Error (Track)": 2,
+        "Connection Error (Via)": 5,
+        "Netlist Error (Netlist Error)": 1
+      }
+    }
+  },
+  "blind_rules_readback": {
+    "PCB1": [
+      {
+        "endLayer": 15,
+        "key": "blind0",
+        "name": "BV_L1_L2",
+        "startLayer": 1,
+        "used": true,
+        "viaSizeRule": ""
+      },
+      {
+        "endLayer": 2,
+        "key": "blind1",
+        "name": "BV_L5_L6",
+        "startLayer": 18,
+        "used": true,
+        "viaSizeRule": ""
+      }
+    ],
+    "PCB2": [
+      {
+        "endLayer": 15,
+        "key": "blind0",
+        "name": "BV_L1_L2",
+        "startLayer": 1,
+        "used": true,
+        "viaSizeRule": ""
+      },
+      {
+        "endLayer": 2,
+        "key": "blind1",
+        "name": "BV_L5_L6",
+        "startLayer": 18,
+        "used": true,
+        "viaSizeRule": ""
+      }
+    ],
+    "PCB3": [
+      {
+        "endLayer": 15,
+        "key": "blind0",
+        "name": "BV_L1_L2",
+        "startLayer": 1,
+        "used": true,
+        "viaSizeRule": ""
+      },
+      {
+        "endLayer": 2,
+        "key": "blind1",
+        "name": "BV_L5_L6",
+        "startLayer": 18,
+        "used": true,
+        "viaSizeRule": ""
+      }
+    ]
+  },
+  "reimport_verify": {
+    "drc": {
+      "PCB1": {
+        "total": 360,
+        "clearance": 0,
+        "connection": 359,
+        "non_gnd_connection": 307,
+        "gnd_connection": 52,
+        "netlist": 1,
+        "plane_zone": 0,
+        "by_rule": {
+          "Connection Error (SMD Pad)": 351,
+          "Connection Error (Via)": 5,
+          "Connection Error (Track)": 3,
+          "Netlist Error (Netlist Error)": 1
+        }
+      },
+      "PCB2": {
+        "total": 243,
+        "clearance": 0,
+        "connection": 242,
+        "non_gnd_connection": 206,
+        "gnd_connection": 36,
+        "netlist": 1,
+        "plane_zone": 0,
+        "by_rule": {
+          "Connection Error (SMD Pad)": 231,
+          "Connection Error (Via)": 11,
+          "Netlist Error (Netlist Error)": 1
+        }
+      },
+      "PCB3": {
+        "total": 139,
+        "clearance": 0,
+        "connection": 138,
+        "non_gnd_connection": 114,
+        "gnd_connection": 24,
+        "netlist": 1,
+        "plane_zone": 0,
+        "by_rule": {
+          "Connection Error (SMD Pad)": 131,
+          "Connection Error (Track)": 2,
+          "Connection Error (Via)": 5,
+          "Netlist Error (Netlist Error)": 1
+        }
+      }
+    },
+    "blind_rules": {
+      "PCB1": [
+        {
+          "endLayer": 15,
+          "key": "blind0",
+          "name": "BV_L1_L2",
+          "startLayer": 1,
+          "used": true,
+          "viaSizeRule": ""
+        },
+        {
+          "endLayer": 2,
+          "key": "blind1",
+          "name": "BV_L5_L6",
+          "startLayer": 18,
+          "used": true,
+          "viaSizeRule": ""
+        }
+      ],
+      "PCB2": [
+        {
+          "endLayer": 15,
+          "key": "blind0",
+          "name": "BV_L1_L2",
+          "startLayer": 1,
+          "used": true,
+          "viaSizeRule": ""
+        },
+        {
+          "endLayer": 2,
+          "key": "blind1",
+          "name": "BV_L5_L6",
+          "startLayer": 18,
+          "used": true,
+          "viaSizeRule": ""
+        }
+      ],
+      "PCB3": [
+        {
+          "endLayer": 15,
+          "key": "blind0",
+          "name": "BV_L1_L2",
+          "startLayer": 1,
+          "used": true,
+          "viaSizeRule": ""
+        },
+        {
+          "endLayer": 2,
+          "key": "blind1",
+          "name": "BV_L5_L6",
+          "startLayer": 18,
+          "used": true,
+          "viaSizeRule": ""
+        }
+      ]
+    },
+    "copper": {
+      "PCB1": {
+        "lines": 804,
+        "vias": 98
+      },
+      "PCB2": {
+        "lines": 384,
+        "vias": 46
+      },
+      "PCB3": {
+        "lines": 375,
+        "vias": 50
+      }
+    },
+    "drc_exact_match": true,
+    "copper_exact_match": true,
+    "blind_rules_exact_match": true
+  }
+}

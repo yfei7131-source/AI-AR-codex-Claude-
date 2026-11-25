@@ -1,0 +1,234 @@
+{
+  "releaseStatus": "NOT FOR FAB",
+  "comparedCaptures": [
+    {
+      "phase": "reimport",
+      "nativeProject": "11958b54c58d7eaf6e8577adea6fd85bec7ff99002a380b27f39875785d46584"
+    },
+    {
+      "phase": "before",
+      "nativeProject": "1737b982793410b56ef529f6a566d8bc6f1d8092871e4f40537ef601066d2149"
+    },
+    {
+      "phase": "after-v2",
+      "nativeProject": "4243478bdc6296779341cbef8ae384202a5b9143ca7305fdeecd719b509271b5"
+    },
+    {
+      "phase": "reimport-v2",
+      "nativeProject": "90aa02898fd4537651dd5372c66321f4aa51a4f6fab36a22bf0798123fcdc2c5"
+    }
+  ],
+  "electricalNetlistAndERCMatch": true,
+  "boards": {
+    "PCB1": {
+      "netlistSha256": "7586a150a92b4d5711b1a03498a15952b53937d3178c3750e5b4efa9945e2725",
+      "schematicDevices": 122,
+      "pcbDevices": 118,
+      "namedNetGroups": 112,
+      "matchedPlacedTerminals": 477,
+      "constrainedDevices": {
+        "BAT1": {
+          "role": "off-board assembly",
+          "convertToPCB": "no",
+          "addIntoBOM": "yes",
+          "terminalNets": {
+            "NTC_RETURN": "GND",
+            "P-": "GND",
+            "P+": "VBAT_L",
+            "NTC": "NTC_TS_L"
+          },
+          "boardSideLands": {
+            "P-": "TP1.1",
+            "NTC_RETURN": "TP1.1",
+            "P+": "TP2.1",
+            "NTC": "TP5.1"
+          }
+        },
+        "J2": {
+          "role": "unconfirmed on-board connector",
+          "convertToPCB": "yes",
+          "addIntoBOM": "yes",
+          "terminalNets": {
+            "P2": "GND",
+            "P7": "GND",
+            "P9": "GND",
+            "P11": "GND",
+            "P24": "GND",
+            "PWR2": "GND",
+            "P15": "CAM_DOVDD_1V8",
+            "P16": "CAM_D0_1V8",
+            "P17": "CAM_D1_1V8",
+            "P18": "CAM_D2_1V8",
+            "P19": "CAM_D3_1V8",
+            "P20": "CAM_D4_1V8",
+            "P21": "CAM_D5_1V8",
+            "P22": "CAM_D6_1V8",
+            "P23": "CAM_D7_1V8",
+            "P10": "CAM_PCLK_1V8",
+            "P12": "CAM_VSYNC_1V8",
+            "P13": "CAM_HREF_1V8",
+            "P8": "CAM_XCLK_1V8",
+            "P1": "CAM_AVDD_2V8",
+            "PWR1": "CAM_AVDD_2V8",
+            "P14": "CAM_DVDD_1V2",
+            "P5": "CAM_RESET_N",
+            "P6": "CAM_PWDN",
+            "P3": "CAM_SCCB_SCL",
+            "P4": "CAM_SCCB_SDA"
+          }
+        },
+        "J3": {
+          "role": "unconfirmed on-board connector",
+          "convertToPCB": "yes",
+          "addIntoBOM": "yes",
+          "terminalNets": {
+            "4": "GND",
+            "1": "VBUS_5V_USB",
+            "2": "USB_DM",
+            "3": "USB_DP"
+          }
+        },
+        "SPK1": {
+          "role": "off-board assembly",
+          "convertToPCB": "no",
+          "addIntoBOM": "yes",
+          "terminalNets": {
+            "+": "SPK_L_P",
+            "-": "SPK_L_N"
+          },
+          "boardSideLands": {
+            "+": "TP7.1",
+            "-": "TP6.1"
+          }
+        }
+      },
+      "strictERC": {
+        "fatal": 4,
+        "error": 0,
+        "warn": 0,
+        "info": 0,
+        "unknown": 0,
+        "total": 4
+      },
+      "ercObjects": [
+        [
+          "fatal",
+          "MISSFOOTPRINT",
+          "2ef9ed7773e0c42f",
+          "ie447",
+          "SPK1"
+        ],
+        [
+          "fatal",
+          "MISSFOOTPRINT",
+          "3fdc6001a068d82e",
+          "ie226",
+          "BAT1"
+        ],
+        [
+          "fatal",
+          "MISSFOOTPRINT",
+          "89cd87358a17e3c2",
+          "ie165",
+          "J2"
+        ],
+        [
+          "fatal",
+          "MISSFOOTPRINT",
+          "89cd87358a17e3c2",
+          "ie284",
+          "J3"
+        ]
+      ],
+      "pcbNetlistErrors": [
+        [
+          "Import Changes",
+          "Netlist Error",
+          "PCB and schematic netlist does not match. You can click on the rule name \"Import Changes\" to view the difference."
+        ]
+      ]
+    },
+    "PCB2": {
+      "netlistSha256": "1384cfc519ded82551192228cb2b776273a1ccc3df59bb2af1423c2240283926",
+      "schematicDevices": 86,
+      "pcbDevices": 86,
+      "namedNetGroups": 58,
+      "matchedPlacedTerminals": 303,
+      "constrainedDevices": {},
+      "strictERC": {
+        "fatal": 0,
+        "error": 0,
+        "warn": 0,
+        "info": 0,
+        "unknown": 0,
+        "total": 0
+      },
+      "ercObjects": [],
+      "pcbNetlistErrors": []
+    },
+    "PCB3": {
+      "netlistSha256": "545399c2bd10c7dfe6c73d5631798558abe42471756f6ce658c5946a7ef6ded0",
+      "schematicDevices": 55,
+      "pcbDevices": 53,
+      "namedNetGroups": 37,
+      "matchedPlacedTerminals": 191,
+      "constrainedDevices": {
+        "BAT1": {
+          "role": "off-board assembly",
+          "convertToPCB": "no",
+          "addIntoBOM": "yes",
+          "terminalNets": {
+            "NTC_RETURN": "GND",
+            "P-": "GND",
+            "P+": "VBAT_R_RET",
+            "NTC": "NTC_TS_R"
+          },
+          "boardSideLands": {
+            "P-": "TP1.1",
+            "NTC_RETURN": "TP1.1",
+            "P+": "TP2.1",
+            "NTC": "TP3.1"
+          }
+        },
+        "SPK1": {
+          "role": "off-board assembly",
+          "convertToPCB": "no",
+          "addIntoBOM": "yes",
+          "terminalNets": {
+            "+": "SPK_R_P",
+            "-": "SPK_R_N"
+          },
+          "boardSideLands": {
+            "+": "TP5.1",
+            "-": "TP4.1"
+          }
+        }
+      },
+      "strictERC": {
+        "fatal": 2,
+        "error": 0,
+        "warn": 0,
+        "info": 0,
+        "unknown": 0,
+        "total": 2
+      },
+      "ercObjects": [
+        [
+          "fatal",
+          "MISSFOOTPRINT",
+          "8fa31840ba825b92",
+          "ie377",
+          "SPK1"
+        ],
+        [
+          "fatal",
+          "MISSFOOTPRINT",
+          "bbbca101b360e299",
+          "ie65",
+          "BAT1"
+        ]
+      ],
+      "pcbNetlistErrors": []
+    }
+  }
+}

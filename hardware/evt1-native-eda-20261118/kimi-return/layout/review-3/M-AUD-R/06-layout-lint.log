@@ -1,0 +1,78 @@
+$ C:\Users\Admin（无密码）\.local\bin\easyeda.exe pcb layout-lint --json --min-gap 7.874015748031496 --project cc395d487bad78844a2449d2f05c8a71461fc6bf64e50f48cacb1ef5f7356662 --doc 1db01a36f669a47a
+{
+  "report": {
+    "ok": false,
+    "incomplete": true,
+    "coverage": {
+      "complete": false,
+      "componentsInventoryKnown": true,
+      "padsInventoryKnown": true,
+      "componentCount": 4,
+      "totalPads": 32,
+      "knownGeometryPads": 28,
+      "unsupportedGeometryPads": 4,
+      "unknownGeometryPads": 0,
+      "legacyGeometryPads": 0,
+      "unverifiedPads": [
+        {
+          "componentPrimitiveId": "0157613fc1d3c051",
+          "designator": "MK3",
+          "primitiveId": "0157613fc1d3c051e14",
+          "padNumber": "5",
+          "status": "unsupported",
+          "reason": "POLYGON pad geometry is not supported by pcb net-path"
+        },
+        {
+          "componentPrimitiveId": "0157613fc1d3c051",
+          "designator": "MK3",
+          "primitiveId": "0157613fc1d3c051e15",
+          "padNumber": "5",
+          "status": "unsupported",
+          "reason": "POLYGON pad geometry is not supported by pcb net-path"
+        },
+        {
+          "componentPrimitiveId": "0157613fc1d3c051",
+          "designator": "MK3",
+          "primitiveId": "0157613fc1d3c051e16",
+          "padNumber": "5",
+          "status": "unsupported",
+          "reason": "POLYGON pad geometry is not supported by pcb net-path"
+        },
+        {
+          "componentPrimitiveId": "0157613fc1d3c051",
+          "designator": "MK3",
+          "primitiveId": "0157613fc1d3c051e17",
+          "padNumber": "5",
+          "status": "unsupported",
+          "reason": "POLYGON pad geometry is not supported by pcb net-path"
+        }
+      ],
+      "limitations": [
+        "4 pad(s) have captured source shapes unsupported by exact pad-contact inspection"
+      ]
+    },
+    "score": 96,
+    "verdict": "incomplete",
+    "componentCount": 4,
+    "minGapMil": 7.874015748031496,
+    "overlaps": null,
+    "outsideOutline": null,
+    "tightSpacing": null,
+    "sides": {
+      "bottom": 1,
+      "top": 3
+    },
+    "signalNets": 2,
+    "ratsnestLenMil": 504.92,
+    "crossingCount": 1,
+    "crossings": [
+      {
+        "netA": "1V8_SYS",
+        "netB": "VBAT_R_RET",
+        "x": 120.62,
+        "y": 667.81
+      }
+    ],
+    "summary": "score 96/100 (incomplete): 4 comps [bottom 1 / top 3], 0 short, 0 overlap, 0 off-board, 0 tight; 2 signal nets, ratsnest 505mil, 1 crossings; geometry inspection incomplete"
+  }
+}

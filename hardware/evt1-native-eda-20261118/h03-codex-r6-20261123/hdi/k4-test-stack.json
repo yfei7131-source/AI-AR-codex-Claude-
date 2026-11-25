@@ -1,0 +1,198 @@
+{
+  "source_sha256": "84b99c1c60fd03aca74e19f025c3a37b421342d79de7c068009543e6b2e9b070",
+  "pcb": "1db01a36f669a47a",
+  "status": "NOMINAL TEST ONLY. Existing L2-L3 blind rule absent; no receiver connected. 0.80mm signed stack/EQ pending.",
+  "net": "I2S_LRCLK_1V8",
+  "source_pin": "U11.K4 P0.22",
+  "start": [
+    157.48031,
+    327.75588
+  ],
+  "landing": [
+    176.98031,
+    327.75588
+  ],
+  "l1_trace": {
+    "path": [
+      [
+        157.48031,
+        327.75588
+      ],
+      [
+        176.98031,
+        327.75588
+      ]
+    ],
+    "width_mil": 4,
+    "length_mil": 19.5,
+    "foreign_gap_mil": 7.939873567269444,
+    "foreign_id": "U11.J4",
+    "foreign_guard_mil": 6.05
+  },
+  "typed_solution": {
+    "via_type": "two aligned stage blind structures",
+    "spans_native_layer_ids": [
+      [
+        1,
+        15
+      ],
+      [
+        15,
+        16
+      ]
+    ],
+    "plane_net": "GND",
+    "plane_rule": "L2 is plane and its native cutout must be maintained",
+    "equal_top_target_center": true
+  },
+  "has_native_l3_same_net_route": false,
+  "nominal_options": {
+    "75": {
+      "hole_um": 75,
+      "hole_mil": 2.952755905511811,
+      "annulus_mil": 3,
+      "capture_target_copper_mil": 8.952755905511811,
+      "contact_area_capture_and_target_mil2": 62.951106596636855,
+      "L1_L2_L3_min_foreign_by_layer_mil": {
+        "1": [
+          6.60238242951428,
+          "U11.L3",
+          6.05
+        ],
+        "15": [
+          18.82718389532377,
+          "0e1cd2511bfb548a",
+          6.05
+        ],
+        "16": [
+          12.752583439720638,
+          "5687da4248f23be3",
+          12
+        ]
+      },
+      "hole_wall": [
+        24.828831890495586,
+        "0e1cd2511bfb548a",
+        9.448818897637794
+      ],
+      "locked_clearance_mil": 6,
+      "geometry_reserve_mil": 0.04999999999999982,
+      "antipad": {
+        "layer_uid": 15,
+        "radius_mil": 10.526377952755904,
+        "inside_copper_plane": true,
+        "cutout_boundary_to_nearest_original_plane_boundary_mil": 6.690140743870729,
+        "plane_return": {
+          "new_void_area_mil2": 348.17293550467,
+          "components_before": 1,
+          "components_after": 1,
+          "closest_ground_copper_to_cutout_mil": 12.776950765719295,
+          "ground_contact_overlap": []
+        }
+      },
+      "board_hole_to_edge_mil": 26.267712047244096,
+      "mask_min": [
+        7.60488156413307,
+        "U11.L3"
+      ]
+    },
+    "100": {
+      "hole_um": 100,
+      "hole_mil": 3.9370078740157486,
+      "annulus_mil": 3,
+      "capture_target_copper_mil": 9.937007874015748,
+      "contact_area_capture_and_target_mil2": 77.55345480475948,
+      "L1_L2_L3_min_foreign_by_layer_mil": {
+        "1": [
+          6.110109034955526,
+          "U11.L3",
+          6.05
+        ],
+        "15": [
+          18.3350064142184,
+          "0e1cd2511bfb548a",
+          6.05
+        ],
+        "16": [
+          12.260309191668796,
+          "5687da4248f23be3",
+          12
+        ]
+      },
+      "hole_wall": [
+        24.336705906243616,
+        "0e1cd2511bfb548a",
+        9.448818897637794
+      ],
+      "locked_clearance_mil": 6,
+      "geometry_reserve_mil": 0.04999999999999982,
+      "antipad": {
+        "layer_uid": 15,
+        "radius_mil": 11.018503937007875,
+        "inside_copper_plane": true,
+        "cutout_boundary_to_nearest_original_plane_boundary_mil": 6.197866495818915,
+        "plane_return": {
+          "new_void_area_mil2": 381.4892922853469,
+          "components_before": 1,
+          "components_after": 1,
+          "closest_ground_copper_to_cutout_mil": 12.284824781467316,
+          "ground_contact_overlap": []
+        }
+      },
+      "board_hole_to_edge_mil": 25.775586062992126,
+      "mask_min": [
+        7.112755579881101,
+        "U11.L3"
+      ]
+    },
+    "101.6": {
+      "hole_um": 101.6,
+      "hole_mil": 4.0,
+      "annulus_mil": 3,
+      "capture_target_copper_mil": 10.0,
+      "contact_area_capture_and_target_mil2": 78.53981633974483,
+      "L1_L2_L3_min_foreign_by_layer_mil": {
+        "1": [
+          6.078603542410553,
+          "U11.L3",
+          6.05
+        ],
+        "15": [
+          18.303507232633784,
+          "0e1cd2511bfb548a",
+          6.05
+        ],
+        "16": [
+          12.228803639793481,
+          "5687da4248f23be3",
+          12
+        ]
+      },
+      "hole_wall": [
+        24.30520984325149,
+        "0e1cd2511bfb548a",
+        9.448818897637794
+      ],
+      "locked_clearance_mil": 6,
+      "geometry_reserve_mil": 0.04999999999999982,
+      "antipad": {
+        "layer_uid": 15,
+        "radius_mil": 11.05,
+        "inside_copper_plane": true,
+        "cutout_boundary_to_nearest_original_plane_boundary_mil": 6.166360943943602,
+        "plane_return": {
+          "new_void_area_mil2": 383.67336077505024,
+          "components_before": 1,
+          "components_after": 1,
+          "closest_ground_copper_to_cutout_mil": 12.25332871847518,
+          "ground_contact_overlap": []
+        }
+      },
+      "board_hole_to_edge_mil": 25.74409,
+      "mask_min": [
+        7.081259516888975,
+        "U11.L3"
+      ]
+    }
+  }
+}

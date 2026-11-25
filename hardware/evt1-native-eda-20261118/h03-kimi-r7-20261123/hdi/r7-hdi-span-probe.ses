@@ -1,0 +1,29 @@
+(session "r7-hdi-span-probe.ses"
+  (base_design "PCB3-baseline.dsn")
+  (placement
+    (resolution mil 1)
+  )
+  (was_is)
+  (routes
+    (resolution mil 1)
+    (parser
+      (host_cad "KIMI R7 controlled capability probe")
+      (host_version "1")
+    )
+    (library_out
+      (padstack r7_bv_l2_l3
+        (shape (circle Inner1 9.937008 0 0))
+        (shape (circle Inner2 9.937008 0 0))
+        (attach off)
+      )
+    )
+    (network_out
+      (net I2S_LRCLK_1V8
+        (via r7_bv_l2_l3 180 318
+          (contact Inner1 Inner2)
+          (type route)
+        )
+      )
+    )
+  )
+)

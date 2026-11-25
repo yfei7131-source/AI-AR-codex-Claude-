@@ -1,0 +1,121 @@
+[
+  {
+    "label": "preflight/07dc7dde94c1bf76",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "sch",
+      "list",
+      "--page",
+      "07dc7dde94c1bf76",
+      "--stay",
+      "--include-pins",
+      "--include-bbox",
+      "--include-wires",
+      "--include-device-identity",
+      "--project",
+      "1f475f192d4be7445a42ac79ebc824fcc4a803375837a9318c923e3aa35fe737"
+    ],
+    "exitCode": 0,
+    "timedOut": false
+  },
+  {
+    "label": "library/preflight-M-AUD-R-ANT2",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "lib",
+      "device",
+      "get",
+      "--library",
+      "0819f05c4eef4c71ace90d822a990e87",
+      "--uuid",
+      "b95defd8f05d4097bad186a8867fbdc8",
+      "--project",
+      "1f475f192d4be7445a42ac79ebc824fcc4a803375837a9318c923e3aa35fe737"
+    ],
+    "exitCode": 0,
+    "timedOut": false
+  },
+  {
+    "label": "save/07dc7dde94c1bf76",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "sch",
+      "save",
+      "--doc",
+      "07dc7dde94c1bf76",
+      "--project",
+      "1f475f192d4be7445a42ac79ebc824fcc4a803375837a9318c923e3aa35fe737"
+    ],
+    "exitCode": 0,
+    "timedOut": false
+  },
+  {
+    "label": "after/07dc7dde94c1bf76",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "sch",
+      "list",
+      "--page",
+      "07dc7dde94c1bf76",
+      "--stay",
+      "--include-pins",
+      "--include-bbox",
+      "--include-wires",
+      "--include-device-identity",
+      "--project",
+      "1f475f192d4be7445a42ac79ebc824fcc4a803375837a9318c923e3aa35fe737"
+    ],
+    "exitCode": 0,
+    "timedOut": false
+  },
+  {
+    "label": "connectivity/07dc7dde94c1bf76",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "sch",
+      "connectivity",
+      "--page",
+      "07dc7dde94c1bf76",
+      "--project",
+      "1f475f192d4be7445a42ac79ebc824fcc4a803375837a9318c923e3aa35fe737"
+    ],
+    "exitCode": 0,
+    "timedOut": false
+  },
+  {
+    "label": "bom/07dc7dde94c1bf76",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "bom",
+      "export",
+      "--type",
+      "csv",
+      "--enrich=false",
+      "--doc",
+      "07dc7dde94c1bf76",
+      "--project",
+      "1f475f192d4be7445a42ac79ebc824fcc4a803375837a9318c923e3aa35fe737"
+    ],
+    "exitCode": 0,
+    "timedOut": false
+  },
+  {
+    "label": "preflight/bbbca101b360e299",
+    "command": [
+      "C:\\Users\\Admin（无密码）\\.local\\bin\\easyeda.exe",
+      "sch",
+      "list",
+      "--page",
+      "bbbca101b360e299",
+      "--stay",
+      "--include-pins",
+      "--include-bbox",
+      "--include-wires",
+      "--include-device-identity",
+      "--project",
+      "1f475f192d4be7445a42ac79ebc824fcc4a803375837a9318c923e3aa35fe737"
+    ],
+    "exitCode": 0,
+    "timedOut": false
+  }
+]

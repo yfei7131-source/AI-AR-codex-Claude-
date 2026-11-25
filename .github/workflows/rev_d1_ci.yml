@@ -1,0 +1,139 @@
+name: EVT-1 Rev D1 FPGA and Electrical Verification CI
+
+on:
+  push:
+    branches:
+      - "hardware/evt1-rev-d1-20261117"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  rev-d1-fpga-eda:
+    name: Preserved Rev D FPGA EDA and Rev D1 electrical checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    defaults:
+      run:
+        working-directory: hardware/evt1-rev-d1-20261117/03_FPGA_RTL
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install OSS CAD Suite
+        uses: YosysHQ/setup-oss-cad-suite@v3
+
+      - name: Verify toolchain
+        run: |
+          command -v iverilog
+          command -v vvp
+          command -v yosys
+          command -v nextpnr-ice40
+          command -v icetime
+          iverilog -V
+          yosys -V
+          nextpnr-ice40 --version
+
+      - name: Clean previous outputs
+        run: make clean
+
+      - name: Real Icarus Verilog simulation
+        id: sim
+        continue-on-error: true
+        run: make sim
+
+      - name: Real Yosys synthesis
+        id: synth
+        continue-on-error: true
+        run: make synth
+
+      - name: Real nextpnr-ice40 place and route
+        id: pnr
+        continue-on-error: true
+        run: |
+          make pnr
+          python3 - <<'PY'
+          import re
+          from pathlib import Path
+          log = Path("nextpnr_uwg30.log").read_text(encoding="utf-8")
+          frequencies = [float(value) for value in re.findall(r"Max frequency for clock.*?:\s*([0-9.]+) MHz", log)]
+          if not frequencies:
+              raise SystemExit("No nextpnr clock frequency results found")
+          if min(frequencies) < 48.0:
+              raise SystemExit(f"nextpnr timing constraint failed: {frequencies}")
+          print(f"nextpnr clock frequencies (MHz): {frequencies}; all meet 48 MHz")
+          PY
+
+      - name: Real icetime static timing analysis
+        id: sta
+        continue-on-error: true
+        run: |
+          make sta
+          test -s evt1_ar_display_fpga_bridge_rev_c_sta.rpt
+          python3 - <<'PY'
+          import re
+          from pathlib import Path
+          report = Path("evt1_ar_display_fpga_bridge_rev_c_sta.rpt").read_text(encoding="utf-8")
+          frequencies = [float(value) for value in re.findall(r"Total path delay:.*?([0-9.]+) MHz", report)]
+          if not frequencies:
+              raise SystemExit("No icetime path frequency results found")
+          if min(frequencies) < 48.0:
+              raise SystemExit(f"icetime 48 MHz constraint failed: {frequencies}")
+          print(f"icetime path frequencies (MHz): {frequencies}; all meet 48 MHz")
+          PY
+
+      - name: Summarize real EDA results
+        env:
+          SIM_RESULT: ${{ steps.sim.outcome }}
+          SYNTH_RESULT: ${{ steps.synth.outcome }}
+          PNR_RESULT: ${{ steps.pnr.outcome }}
+          STA_RESULT: ${{ steps.sta.outcome }}
+        run: |
+          echo "simulation=$SIM_RESULT"
+          echo "synthesis=$SYNTH_RESULT"
+          echo "pnr=$PNR_RESULT"
+          echo "sta=$STA_RESULT"
+          if [ "$SIM_RESULT" != "success" ] || [ "$SYNTH_RESULT" != "success" ] || [ "$PNR_RESULT" != "success" ] || [ "$STA_RESULT" != "success" ]; then
+            echo "One or more native EDA stages failed. See step logs and artifact."
+            exit 1
+          fi
+
+      - name: Reproduce Rev D1 from clean PR20 baseline
+        working-directory: hardware/evt1-rev-d1-20261117
+        run: python3 05_Verification_Scripts/check_rev_d1_reproducibility.py
+
+      - name: Rev D1 electrical verification suite
+        id: electrical
+        continue-on-error: true
+        working-directory: hardware/evt1-rev-d1-20261117
+        run: python3 05_Verification_Scripts/verify_rev_d1_electrical.py
+
+      - name: Rev D1 audio, translator and isolation fault fixtures
+        working-directory: hardware/evt1-rev-d1-20261117
+        run: python3 05_Verification_Scripts/verify_rev_d1_audio_translators.py
+
+      - name: Enforce Rev D1 verification result
+        env:
+          ELEC_RESULT: ${{ steps.electrical.outcome }}
+        run: |
+          echo "electrical=$ELEC_RESULT"
+          test "$ELEC_RESULT" = "success"
+
+      - name: Upload EDA logs and reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: evt1-rev-d1-eda-results
+          if-no-files-found: warn
+          path: |
+            hardware/evt1-rev-d1-20261117/03_FPGA_RTL/iverilog_sim.log
+            hardware/evt1-rev-d1-20261117/03_FPGA_RTL/yosys_synth.log
+            hardware/evt1-rev-d1-20261117/03_FPGA_RTL/nextpnr_uwg30.log
+            hardware/evt1-rev-d1-20261117/03_FPGA_RTL/*_sta.rpt
+            hardware/evt1-rev-d1-20261117/03_FPGA_RTL/*.json
+            hardware/evt1-rev-d1-20261117/03_FPGA_RTL/*.asc
+            hardware/evt1-rev-d1-20261117/04_Verification_Evidence/rev_d1_verification_report.txt
+            hardware/evt1-rev-d1-20261117/04_Verification_Evidence/rev_d1_verification_log.json

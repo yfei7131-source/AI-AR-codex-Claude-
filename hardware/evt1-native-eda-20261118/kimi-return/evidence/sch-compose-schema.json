@@ -1,0 +1,889 @@
+{
+  "compositionSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "additionalProperties": false,
+    "allOf": [
+      {
+        "else": {
+          "required": [
+            "sheet"
+          ]
+        },
+        "if": {
+          "properties": {
+            "paperless": {
+              "const": true
+            }
+          },
+          "required": [
+            "paperless"
+          ]
+        },
+        "then": {
+          "not": {
+            "anyOf": [
+              {
+                "required": [
+                  "sheet"
+                ]
+              },
+              {
+                "required": [
+                  "sheetBorder"
+                ]
+              },
+              {
+                "required": [
+                  "titleBlock"
+                ]
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "properties": {
+      "connectionMode": {
+        "type": "string"
+      },
+      "connectivity": {
+        "additionalProperties": false,
+        "properties": {
+          "components": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "device": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "deviceUuid": {
+                      "type": "string"
+                    },
+                    "libraryUuid": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "deviceUuid"
+                  ],
+                  "type": "object"
+                },
+                "footprint": {
+                  "type": "string"
+                },
+                "footprintRef": {
+                  "additionalProperties": {},
+                  "type": "object"
+                },
+                "id": {
+                  "type": "string"
+                },
+                "pageId": {
+                  "type": "string"
+                },
+                "pageName": {
+                  "type": "string"
+                },
+                "pins": {
+                  "items": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "connectionState": {
+                        "enum": [
+                          "",
+                          "unconnected"
+                        ],
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "noConnected": {
+                        "type": "boolean"
+                      },
+                      "number": {
+                        "type": "string"
+                      },
+                      "type": {
+                        "type": "string"
+                      },
+                      "x": {
+                        "type": "number"
+                      },
+                      "y": {
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "number"
+                    ],
+                    "type": "object"
+                  },
+                  "type": "array"
+                },
+                "placement": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "bbox": {
+                      "additionalProperties": false,
+                      "properties": {
+                        "maxX": {
+                          "type": "number"
+                        },
+                        "maxY": {
+                          "type": "number"
+                        },
+                        "minX": {
+                          "type": "number"
+                        },
+                        "minY": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "minX",
+                        "minY",
+                        "maxX",
+                        "maxY"
+                      ],
+                      "type": "object"
+                    },
+                    "mirror": {
+                      "type": "boolean"
+                    },
+                    "rotation": {
+                      "type": "number"
+                    },
+                    "x": {
+                      "type": "number"
+                    },
+                    "y": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "x",
+                    "y"
+                  ],
+                  "type": "object"
+                },
+                "ref": {
+                  "type": "string"
+                },
+                "role": {
+                  "type": "string"
+                },
+                "uniqueId": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "ref",
+                "device",
+                "pins"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "connections": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "componentId": {
+                  "type": "string"
+                },
+                "kind": {
+                  "type": "string"
+                },
+                "netId": {
+                  "type": "string"
+                },
+                "pinNumber": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "componentId",
+                "pinNumber",
+                "netId"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "designatorPolicy": {
+            "additionalProperties": false,
+            "properties": {
+              "mode": {
+                "type": "string"
+              },
+              "pattern": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "mode"
+            ],
+            "type": "object"
+          },
+          "documentId": {
+            "type": "string"
+          },
+          "issues": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "code": {
+                  "type": "string"
+                },
+                "componentId": {
+                  "type": "string"
+                },
+                "message": {
+                  "type": "string"
+                },
+                "netId": {
+                  "type": "string"
+                },
+                "pinNumber": {
+                  "type": "string"
+                },
+                "severity": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "code",
+                "severity",
+                "message"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "modules": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "coreComponents": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                },
+                "id": {
+                  "type": "string"
+                },
+                "internalNets": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "peripheralComponents": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                },
+                "ports": {
+                  "items": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "name": {
+                        "type": "string"
+                      },
+                      "netId": {
+                        "type": "string"
+                      },
+                      "pinRefs": {
+                        "items": {
+                          "type": "string"
+                        },
+                        "type": "array"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "name",
+                      "netId"
+                    ],
+                    "type": "object"
+                  },
+                  "type": "array"
+                }
+              },
+              "required": [
+                "id",
+                "name"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "nets": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "role": {
+                  "type": "string"
+                },
+                "scope": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "projectId": {
+            "type": "string"
+          },
+          "schemaVersion": {
+            "const": "1.4",
+            "type": "string"
+          }
+        },
+        "required": [
+          "schemaVersion",
+          "components",
+          "nets",
+          "connections"
+        ],
+        "type": "object"
+      },
+      "keepouts": {
+        "items": {
+          "additionalProperties": false,
+          "properties": {
+            "maxX": {
+              "type": "number"
+            },
+            "maxY": {
+              "type": "number"
+            },
+            "minX": {
+              "type": "number"
+            },
+            "minY": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "minX",
+            "minY",
+            "maxX",
+            "maxY"
+          ],
+          "type": "object"
+        },
+        "type": "array"
+      },
+      "modules": {
+        "items": {
+          "additionalProperties": false,
+          "properties": {
+            "flags": {
+              "items": {
+                "additionalProperties": false,
+                "properties": {
+                  "anchor": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "componentId": {
+                        "type": "string"
+                      },
+                      "net": {
+                        "type": "string"
+                      },
+                      "pinNumber": {
+                        "type": "string"
+                      },
+                      "type": {
+                        "type": "string"
+                      },
+                      "x": {
+                        "type": "number"
+                      },
+                      "y": {
+                        "type": "number"
+                      },
+                      "zoneId": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "type"
+                    ],
+                    "type": "object"
+                  },
+                  "direction": {
+                    "type": "string"
+                  },
+                  "kind": {
+                    "type": "string"
+                  },
+                  "net": {
+                    "type": "string"
+                  },
+                  "offset": {
+                    "type": "number"
+                  },
+                  "pinX": {
+                    "type": "number"
+                  },
+                  "pinY": {
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "net",
+                  "kind",
+                  "pinX",
+                  "pinY",
+                  "direction",
+                  "offset"
+                ],
+                "type": "object"
+              },
+              "type": "array"
+            },
+            "id": {
+              "type": "string"
+            },
+            "placements": {
+              "items": {
+                "additionalProperties": false,
+                "properties": {
+                  "bbox": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "maxX": {
+                        "type": "number"
+                      },
+                      "maxY": {
+                        "type": "number"
+                      },
+                      "minX": {
+                        "type": "number"
+                      },
+                      "minY": {
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "minX",
+                      "minY",
+                      "maxX",
+                      "maxY"
+                    ],
+                    "type": "object"
+                  },
+                  "designator": {
+                    "type": "string"
+                  },
+                  "mirror": {
+                    "type": "boolean"
+                  },
+                  "pins": {
+                    "items": {
+                      "additionalProperties": false,
+                      "properties": {
+                        "name": {
+                          "type": "string"
+                        },
+                        "net": {
+                          "type": "string"
+                        },
+                        "number": {
+                          "type": "string"
+                        },
+                        "rotation": {
+                          "type": "number"
+                        },
+                        "x": {
+                          "type": "number"
+                        },
+                        "y": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "number",
+                        "name",
+                        "net",
+                        "x",
+                        "y"
+                      ],
+                      "type": "object"
+                    },
+                    "type": "array"
+                  },
+                  "primitiveId": {
+                    "type": "string"
+                  },
+                  "rotation": {
+                    "type": "number"
+                  },
+                  "textBboxes": {
+                    "items": {
+                      "additionalProperties": false,
+                      "properties": {
+                        "maxX": {
+                          "type": "number"
+                        },
+                        "maxY": {
+                          "type": "number"
+                        },
+                        "minX": {
+                          "type": "number"
+                        },
+                        "minY": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "minX",
+                        "minY",
+                        "maxX",
+                        "maxY"
+                      ],
+                      "type": "object"
+                    },
+                    "type": "array"
+                  },
+                  "value": {
+                    "type": "string"
+                  },
+                  "x": {
+                    "type": "number"
+                  },
+                  "y": {
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "primitiveId",
+                  "designator",
+                  "x",
+                  "y",
+                  "rotation",
+                  "mirror",
+                  "bbox",
+                  "pins"
+                ],
+                "type": "object"
+              },
+              "type": "array"
+            },
+            "terminals": {
+              "items": {
+                "additionalProperties": false,
+                "properties": {
+                  "designator": {
+                    "type": "string"
+                  },
+                  "direction": {
+                    "type": "string"
+                  },
+                  "kind": {
+                    "type": "string"
+                  },
+                  "pin": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "designator",
+                  "pin",
+                  "direction"
+                ],
+                "type": "object"
+              },
+              "type": "array"
+            },
+            "title": {
+              "type": "string"
+            },
+            "titleMetrics": {
+              "additionalProperties": false,
+              "properties": {
+                "fontSize": {
+                  "type": "number"
+                },
+                "height": {
+                  "type": "number"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "width": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "title",
+                "fontSize",
+                "width",
+                "height"
+              ],
+              "type": "object"
+            },
+            "wires": {
+              "items": {
+                "additionalProperties": false,
+                "properties": {
+                  "net": {
+                    "type": "string"
+                  },
+                  "points": {
+                    "items": {
+                      "items": {
+                        "type": "number"
+                      },
+                      "maxItems": 2,
+                      "minItems": 2,
+                      "type": "array"
+                    },
+                    "type": "array"
+                  }
+                },
+                "required": [
+                  "net",
+                  "points"
+                ],
+                "type": "object"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "id",
+            "title",
+            "placements",
+            "wires",
+            "flags"
+          ],
+          "type": "object"
+        },
+        "type": "array"
+      },
+      "paperless": {
+        "type": "boolean"
+      },
+      "paperlessRowBreaks": {
+        "items": {
+          "type": "integer"
+        },
+        "type": "array"
+      },
+      "schemaVersion": {
+        "const": 1,
+        "type": "integer"
+      },
+      "sheet": {
+        "additionalProperties": false,
+        "properties": {
+          "maxX": {
+            "type": "number"
+          },
+          "maxY": {
+            "type": "number"
+          },
+          "minX": {
+            "type": "number"
+          },
+          "minY": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "minX",
+          "minY",
+          "maxX",
+          "maxY"
+        ],
+        "type": "object"
+      },
+      "sheetBorder": {
+        "additionalProperties": false,
+        "properties": {
+          "maxX": {
+            "type": "number"
+          },
+          "maxY": {
+            "type": "number"
+          },
+          "minX": {
+            "type": "number"
+          },
+          "minY": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "minX",
+          "minY",
+          "maxX",
+          "maxY"
+        ],
+        "type": "object"
+      },
+      "titleBlock": {
+        "additionalProperties": {
+          "oneOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "additionalProperties": false,
+              "properties": {
+                "showTitle": {
+                  "type": "boolean"
+                },
+                "showValue": {
+                  "type": "boolean"
+                },
+                "value": {
+                  "minLength": 1,
+                  "type": "string"
+                }
+              },
+              "required": [
+                "value"
+              ],
+              "type": "object"
+            }
+          ]
+        },
+        "type": "object"
+      }
+    },
+    "required": [
+      "schemaVersion",
+      "connectivity",
+      "keepouts",
+      "modules"
+    ],
+    "type": "object"
+  },
+  "connectivityEditsSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "additionalProperties": false,
+    "properties": {
+      "beforeSha256": {
+        "type": "string"
+      },
+      "pins": {
+        "items": {
+          "additionalProperties": false,
+          "properties": {
+            "after": {
+              "additionalProperties": false,
+              "properties": {
+                "net": {
+                  "type": "string"
+                },
+                "noConnected": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "net",
+                "noConnected"
+              ],
+              "type": "object"
+            },
+            "before": {
+              "additionalProperties": false,
+              "properties": {
+                "net": {
+                  "type": "string"
+                },
+                "noConnected": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "net",
+                "noConnected"
+              ],
+              "type": "object"
+            },
+            "componentId": {
+              "type": "string"
+            },
+            "pinName": {
+              "type": "string"
+            },
+            "pinNumber": {
+              "type": "string"
+            },
+            "ref": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "componentId",
+            "ref",
+            "pinNumber",
+            "pinName",
+            "before",
+            "after"
+          ],
+          "type": "object"
+        },
+        "type": "array"
+      },
+      "schemaVersion": {
+        "const": 1,
+        "type": "integer"
+      },
+      "sourceSha256": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "schemaVersion",
+      "beforeSha256",
+      "sourceSha256",
+      "pins"
+    ],
+    "type": "object"
+  },
+  "notes": [
+    "No BOM, device UUIDs, pin coordinates or layout answers are supplied. Read real library and placed-instance facts first.",
+    "Schematic geometry uses raw units, y up, normally grid 5. Placements, local pin coordinates, wires and flags must use one consistent module coordinate system.",
+    "connectivity.modules declares coreComponents and peripheralComponents as canonical component IDs. Every component belongs to exactly one module; geometry modules use the same module IDs.",
+    "Connected pins are represented in connectivity.connections; omit connectionState (or leave it empty). Only explicitly open pins use connectionState:unconnected; do not invent connected/net states.",
+    "With preserve-instances, bind canonical component IDs to each actual part's otherProperty[EasyEDA Agent Component ID] and retain its actual uniqueId, device and physical pins. Missing binding is not permission to guess it.",
+    "connectivityEdits lists each changed physical pin once with componentId/ref/pinNumber/pinName and exact before/after net/noConnected. Desk injects the exact snapshot/source hashes; source evidence is never rewritten.",
+    "Required title-block values stay visible. Do not hide Name/Description/Drawed to pass bounds; repair native sheet text through attribute-move with complete original state and x/y only.",
+    "titleBlock object fields use value/showTitle/showValue (not showKey). When a native KeyVisible or ValueVisible boolean is missing or unknown, explicitly declare its showTitle/showValue in the source; do not guess an existing visibility state. A string update only works when both native visibility booleans are known.",
+    "After moving title-block text, inspect the official full-page export for text crossing table borders or other visible text. Bounds and strict checks alone do not prove legibility.",
+    "JSON Schema describes fields and primitive types, not circuit correctness. Compose still checks identities, complete pins, ownership, real wire trees, measured geometry and protection guards."
+  ],
+  "schemaVersion": 1,
+  "scope": "accepted-input-shapes; semantic validation still required"
+}

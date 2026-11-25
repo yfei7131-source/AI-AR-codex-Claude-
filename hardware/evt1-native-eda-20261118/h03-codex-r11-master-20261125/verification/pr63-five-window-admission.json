@@ -1,0 +1,932 @@
+{
+  "status": "OFFLINE_GEOMETRY_SCREEN_BEFORE_NATIVE_ACCEPTANCE",
+  "nativeCheckpoint": {
+    "commit": "59fb25511ad82649d26de0016137bb2e18c4332d",
+    "epro2Sha256": "28f7f37f0a9b4cae0c2ab162445829d30062b91e34616b7f267917a95621248b"
+  },
+  "pr63Commit": "a2d427e1cea87922cd3f3bae396a2c8c4306cd6b",
+  "sourceFiles": 62,
+  "verifiedSha256Entries": 61,
+  "sourceManifestSha256": "e5f759952b8710081a78d46cc96e85d6d97f0a3eb4dd9fcd1753805e2fae780b",
+  "windows": [
+    {
+      "window": "Neno0",
+      "board": "PCB1",
+      "status": "adapted-for-native-trial",
+      "inputRoutes": 15,
+      "inputTracks": 19,
+      "inputVias": 9,
+      "admission": [
+        {
+          "candidate": 1,
+          "net": "GND",
+          "sourceIds": [
+            "r10f3c95ace1a954",
+            "r102c5d6d2eac902"
+          ],
+          "layer": 1,
+          "width": 6,
+          "sourcePoint": [
+            150.984,
+            1283.268
+          ],
+          "targetPoint": [
+            156.984,
+            1293.66
+          ],
+          "from": "C24.2",
+          "fromId": "838d1143fd21349fre4p110",
+          "fromNativeOpen": false,
+          "via": {
+            "x": 156.984,
+            "y": 1293.66,
+            "rule": "BV_L1_L2",
+            "diameter": 10,
+            "drill": 4
+          },
+          "to": "plane:15",
+          "planeCoversViaLand": true,
+          "holeWallMil": 53.318,
+          "status": "already-grounded"
+        },
+        {
+          "candidate": 2,
+          "net": "GND",
+          "sourceIds": [
+            "r10cbf27ac103525",
+            "r100b66400e03d2c"
+          ],
+          "layer": 2,
+          "width": 6,
+          "sourcePoint": [
+            299.804,
+            402.165
+          ],
+          "targetPoint": [
+            287.804,
+            402.165
+          ],
+          "from": "U2.C3",
+          "fromId": "a7c07a72302f8948e25",
+          "fromNativeOpen": false,
+          "via": {
+            "x": 287.804,
+            "y": 402.165,
+            "rule": "BV_L5_L6",
+            "diameter": 10,
+            "drill": 4
+          },
+          "to": "plane:18",
+          "planeCoversViaLand": true,
+          "holeWallMil": 47.406,
+          "points": [
+            [
+              299.804,
+              402.165
+            ],
+            [
+              287.804,
+              402.165
+            ]
+          ],
+          "status": "hold-no-clear-dogbone"
+        },
+        {
+          "candidate": 3,
+          "net": "GND",
+          "sourceIds": [
+            "r10fc27eb10877a9"
+          ],
+          "layer": 1,
+          "width": 6,
+          "sourcePoint": [
+            48.622,
+            1306.89
+          ],
+          "targetPoint": [
+            48.622,
+            1377.756
+          ],
+          "from": "C12.2",
+          "fromId": "9d7dc3f3cfcca0bfre4p110",
+          "fromNativeOpen": false,
+          "to": "R2.2",
+          "toId": "0f934102aa101226re4p110",
+          "toNativeOpen": false,
+          "status": "already-connected"
+        },
+        {
+          "candidate": 4,
+          "net": "GND",
+          "sourceIds": [
+            "r107714d9b27dbdf",
+            "r10e0a3a2346cc13"
+          ],
+          "layer": 1,
+          "width": 6,
+          "sourcePoint": [
+            99.803,
+            1306.89
+          ],
+          "targetPoint": [
+            105.803,
+            1317.282
+          ],
+          "from": "C13.2",
+          "fromId": "b3d90913213225e3re4p110",
+          "fromNativeOpen": true,
+          "via": {
+            "x": 105.803,
+            "y": 1317.282,
+            "rule": "BV_L1_L2",
+            "diameter": 10,
+            "drill": 4
+          },
+          "to": "plane:15",
+          "planeCoversViaLand": true,
+          "holeWallMil": 78.486,
+          "points": [
+            [
+              99.803,
+              1306.89
+            ],
+            [
+              105.803,
+              1312.89
+            ],
+            [
+              105.803,
+              1317.282
+            ]
+          ],
+          "status": "hold-no-clear-dogbone"
+        },
+        {
+          "candidate": 5,
+          "net": "GND",
+          "sourceIds": [
+            "r10c280a29a6f2e7",
+            "r10f12607d56ab56"
+          ],
+          "layer": 2,
+          "width": 6,
+          "sourcePoint": [
+            181.991,
+            916.138
+          ],
+          "targetPoint": [
+            149.991,
+            916.138
+          ],
+          "from": "U18.11",
+          "fromId": "45582490ff996334e38",
+          "fromNativeOpen": false,
+          "via": {
+            "x": 149.991,
+            "y": 916.138,
+            "rule": "BV_L5_L6",
+            "diameter": 10,
+            "drill": 4
+          },
+          "to": "plane:18",
+          "planeCoversViaLand": true,
+          "holeWallMil": 51.739,
+          "points": [
+            [
+              181.991,
+              916.138
+            ],
+            [
+              149.991,
+              916.138
+            ]
+          ],
+          "status": "native-trial-candidate",
+          "checks": {
+            "holeWallMil": 51.739,
+            "annulusToExpandedSMDMaskMil": 6.862,
+            "sensitiveGapMil": 73.9,
+            "sameFaceAcousticAntennaBodyGapMil": 658.185,
+            "otherNetViaCuGapMil": 8.862
+          },
+          "annulusToExpandedSMDMaskMil": 6.862,
+          "sensitiveGapMil": 73.9,
+          "sameFaceAcousticAntennaBodyGapMil": 658.185,
+          "otherNetViaCuGapMil": 8.862
+        },
+        {
+          "candidate": 6,
+          "net": "GND",
+          "sourceIds": [
+            "r10d670cc6cce996",
+            "r106caf7703598ae"
+          ],
+          "layer": 1,
+          "width": 6,
+          "sourcePoint": [
+            133.465,
+            189.961
+          ],
+          "targetPoint": [
+            123.072,
+            195.961
+          ],
+          "from": "C15.2",
+          "fromId": "6e93eed7e817dfd8re5p110",
+          "fromNativeOpen": true,
+          "via": {
+            "x": 123.072,
+            "y": 195.961,
+            "rule": "BV_L1_L2",
+            "diameter": 10,
+            "drill": 4
+          },
+          "to": "plane:15",
+          "planeCoversViaLand": true,
+          "holeWallMil": 93.162,
+          "points": [
+            [
+              133.465,
+              189.961
+            ],
+            [
+              127.465,
+              195.961
+            ],
+            [
+              123.072,
+              195.961
+            ]
+          ],
+          "status": "hold-no-clear-dogbone"
+        },
+        {
+          "candidate": 7,
+          "net": "GND",
+          "sourceIds": [
+            "r10cc9c213678d7a",
+            "r103f0c9918c40bf"
+          ],
+          "layer": 1,
+          "width": 6,
+          "sourcePoint": [
+            204.331,
+            189.961
+          ],
+          "targetPoint": [
+            193.938,
+            195.961
+          ],
+          "from": "C16.2",
+          "fromId": "86b8a52ecd01fae1re5p110",
+          "fromNativeOpen": true,
+          "via": {
+            "x": 193.938,
+            "y": 195.961,
+            "rule": "BV_L1_L2",
+            "diameter": 10,
+            "drill": 4
+          },
+          "to": "plane:15",
+          "planeCoversViaLand": true,
+          "holeWallMil": 57.382,
+          "points": [
+            [
+              204.331,
+              189.961
+            ],
+            [
+              198.331,
+              195.961
+            ],
+            [
+              193.938,
+              195.961
+            ]
+          ],
+          "status": "hold-no-clear-dogbone"
+        },
+        {
+          "candidate": 8,
+          "net": "GND",
+          "sourceIds": [
+            "r1000449b987f7c1"
+          ],
+          "layer": 2,
+          "width": 6,
+          "sourcePoint": [
+            64.559,
+            1711.217
+          ],
+          "targetPoint": [
+            53.149,
+            1674.407
+          ],
+          "from": "MK1.5",
+          "fromId": "7014f7f2697246a2e14",
+          "fromNativeOpen": true,
+          "status": "hold-microphone-acoustic-port-and-assembly"
+        },
+        {
+          "candidate": 9,
+          "net": "GND",
+          "sourceIds": [
+            "r108fcc69561a0d1"
+          ],
+          "layer": 2,
+          "width": 6,
+          "sourcePoint": [
+            108.069,
+            1710.627
+          ],
+          "targetPoint": [
+            53.149,
+            1674.407
+          ],
+          "from": "MK1.5",
+          "fromId": "7014f7f2697246a2e15",
+          "fromNativeOpen": true,
+          "status": "hold-microphone-acoustic-port-and-assembly"
+        },
+        {
+          "candidate": 10,
+          "net": "GND",
+          "sourceIds": [
+            "r1024414f147ecf9",
+            "r100ecafe2f79553"
+          ],
+          "layer": 2,
+          "width": 6,
+          "sourcePoint": [
+            108.659,
+            1754.137
+          ],
+          "targetPoint": [
+            120.659,
+            1754.137
+          ],
+          "from": "MK1.5",
+          "fromId": "7014f7f2697246a2e16",
+          "fromNativeOpen": true,
+          "status": "hold-microphone-acoustic-port-and-assembly"
+        },
+        {
+          "candidate": 11,
+          "net": "GND",
+          "sourceIds": [
+            "r1073f80a36958b5"
+          ],
+          "layer": 2,
+          "width": 6,
+          "sourcePoint": [
+            65.149,
+            1754.727
+          ],
+          "targetPoint": [
+            53.149,
+            1674.407
+          ],
+          "from": "MK1.5",
+          "fromId": "7014f7f2697246a2e17",
+          "fromNativeOpen": true,
+          "status": "hold-microphone-acoustic-port-and-assembly"
+        },
+        {
+          "candidate": 12,
+          "net": "GND",
+          "sourceIds": [
+            "r10e10104a9f2968"
+          ],
+          "layer": 1,
+          "width": 6,
+          "sourcePoint": [
+            19.487,
+            1060.04
+          ],
+          "targetPoint": [
+            36.417,
+            1072.84
+          ],
+          "from": "U11.2",
+          "fromId": "981a4faa649e821ee12",
+          "fromNativeOpen": false,
+          "to": "U11.5",
+          "toId": "981a4faa649e821ee15",
+          "toNativeOpen": false,
+          "status": "already-connected"
+        },
+        {
+          "candidate": 13,
+          "net": "GND",
+          "sourceIds": [
+            "r10ff72cca8fbe35",
+            "r10c1af406f102fc"
+          ],
+          "layer": 1,
+          "width": 6,
+          "sourcePoint": [
+            52.951,
+            613.11
+          ],
+          "targetPoint": [
+            52.951,
+            625.11
+          ],
+          "from": "U15.21",
+          "fromId": "45a75ba74b6e57dce48",
+          "fromNativeOpen": true,
+          "via": {
+            "x": 52.951,
+            "y": 625.11,
+            "rule": "BV_L1_L2",
+            "diameter": 10,
+            "drill": 4
+          },
+          "to": "plane:15",
+          "planeCoversViaLand": true,
+          "holeWallMil": 17.583,
+          "points": [
+            [
+              52.951,
+              613.11
+            ],
+            [
+              52.951,
+              625.11
+            ]
+          ],
+          "status": "hold-no-clear-dogbone"
+        },
+        {
+          "candidate": 14,
+          "net": "GND",
+          "sourceIds": [
+            "r10e81698afe2312",
+            "r10b4590fb8adf9e"
+          ],
+          "layer": 1,
+          "width": 6,
+          "sourcePoint": [
+            52.951,
+            739.094
+          ],
+          "targetPoint": [
+            52.951,
+            751.094
+          ],
+          "from": "U16.21",
+          "fromId": "85b8a96060e76675e48",
+          "fromNativeOpen": true,
+          "via": {
+            "x": 52.951,
+            "y": 751.094,
+            "rule": "BV_L1_L2",
+            "diameter": 10,
+            "drill": 4
+          },
+          "to": "plane:15",
+          "planeCoversViaLand": true,
+          "holeWallMil": 58.619,
+          "points": [
+            [
+              52.951,
+              739.094
+            ],
+            [
+              52.951,
+              751.094
+            ]
+          ],
+          "status": "hold-no-clear-dogbone"
+        },
+        {
+          "candidate": 15,
+          "net": "VSYS",
+          "sourceIds": [
+            "r105a3c1f9da0bf3",
+            "r10402a296fc5ce8",
+            "r10135d61293924c",
+            "r1041091875b0b21",
+            "r10a4ea3d429fc52"
+          ],
+          "layer": 2,
+          "width": 20,
+          "sourcePoint": [
+            138.386,
+            612.205
+          ],
+          "targetPoint": [
+            200.197,
+            625.984
+          ],
+          "from": "J1.P2",
+          "fromId": "71506cffd0eeb781bm30p110",
+          "fromNativeOpen": true,
+          "to": "J1.P3",
+          "toId": "71506cffd0eeb781bm30p111",
+          "toNativeOpen": true,
+          "status": "width-or-geometry-conflict"
+        }
+      ],
+      "nativeMasterAcceptance": {
+        "candidate": 5,
+        "board": "PCB1",
+        "removedConnectionErrors": 2
+      }
+    },
+    {
+      "window": "Neno1",
+      "board": "PCB3",
+      "status": "incompatible-with-retained-stack-rules-and-ground-copper",
+      "net": "I2S_LRCLK_1V8",
+      "actualNativeRules": {
+        "BV_L1_L2": [
+          1,
+          15
+        ],
+        "BV_L5_L6": [
+          2,
+          18
+        ]
+      },
+      "requiredMissingSpans": [
+        [
+          15,
+          16
+        ],
+        [
+          16,
+          17
+        ],
+        [
+          17,
+          18
+        ]
+      ],
+      "groundIntersections": [
+        {
+          "id": "s_l2_stg",
+          "layer": 15,
+          "net": "I2S_LRCLK_1V8"
+        },
+        {
+          "id": "s_l5_j1",
+          "layer": 18,
+          "net": "I2S_LRCLK_1V8"
+        },
+        {
+          "id": "s_l5_u10",
+          "layer": 18,
+          "net": "I2S_LRCLK_1V8"
+        },
+        {
+          "id": "s_l5_r4",
+          "layer": 18,
+          "net": "I2S_LRCLK_1V8"
+        }
+      ],
+      "signalViaLandsIntersectingGround": 8,
+      "candidateVias": 9,
+      "pads": [
+        "U11.K4 (L1)",
+        "J1.P12 (L6)",
+        "U10.C3 (L6)",
+        "R4.1 (L6)"
+      ],
+      "overlapNeno2": [
+        "U10.C3 and R4.1 move in Neno2"
+      ],
+      "decision": "No new span or antipad was assumed. The input script delegates antipad generation to a later manual step."
+    },
+    {
+      "window": "Neno2",
+      "board": "PCB3",
+      "status": "reject-combined-plan",
+      "componentsMoved": [
+        "U10",
+        "R6",
+        "R10",
+        "C3",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "newTracks": 238,
+      "newVias": 26,
+      "groundIntersections": [
+        {
+          "id": "r10_line_0028",
+          "layer": 15,
+          "net": "I2S_BCLK_1V8"
+        },
+        {
+          "id": "r10_line_0029",
+          "layer": 15,
+          "net": "I2S_BCLK_1V8"
+        },
+        {
+          "id": "r10_line_0030",
+          "layer": 15,
+          "net": "I2S_BCLK_1V8"
+        },
+        {
+          "id": "r10_line_0032",
+          "layer": 15,
+          "net": "I2S_BCLK_1V8"
+        },
+        {
+          "id": "r10_line_0033",
+          "layer": 15,
+          "net": "I2S_BCLK_1V8"
+        },
+        {
+          "id": "r10_line_0034",
+          "layer": 15,
+          "net": "I2S_BCLK_1V8"
+        },
+        {
+          "id": "r10_line_0035",
+          "layer": 15,
+          "net": "I2S_BCLK_1V8"
+        },
+        {
+          "id": "r10_line_0036",
+          "layer": 15,
+          "net": "I2S_BCLK_1V8"
+        },
+        {
+          "id": "r10_line_0037",
+          "layer": 15,
+          "net": "I2S_BCLK_1V8"
+        },
+        {
+          "id": "r10_line_0038",
+          "layer": 15,
+          "net": "I2S_BCLK_1V8"
+        },
+        {
+          "id": "r10_line_0039",
+          "layer": 15,
+          "net": "I2S_BCLK_1V8"
+        },
+        {
+          "id": "r10_line_0040",
+          "layer": 15,
+          "net": "I2S_BCLK_1V8"
+        },
+        {
+          "id": "r10_line_0041",
+          "layer": 15,
+          "net": "I2S_BCLK_1V8"
+        },
+        {
+          "id": "r10_line_0042",
+          "layer": 15,
+          "net": "I2S_BCLK_1V8"
+        },
+        {
+          "id": "r10_line_0043",
+          "layer": 15,
+          "net": "I2S_BCLK_1V8"
+        },
+        {
+          "id": "r10_line_0044",
+          "layer": 15,
+          "net": "I2S_BCLK_1V8"
+        },
+        {
+          "id": "r10_line_0045",
+          "layer": 15,
+          "net": "I2S_BCLK_1V8"
+        },
+        {
+          "id": "r10_line_0047",
+          "layer": 15,
+          "net": "I2S_BCLK_1V8"
+        },
+        {
+          "id": "r10_line_0059",
+          "layer": 15,
+          "net": "I2S_LRCLK_1V8"
+        },
+        {
+          "id": "r10_line_0060",
+          "layer": 15,
+          "net": "I2S_LRCLK_1V8"
+        },
+        {
+          "id": "r10_line_0061",
+          "layer": 15,
+          "net": "I2S_LRCLK_1V8"
+        },
+        {
+          "id": "r10_line_0062",
+          "layer": 15,
+          "net": "I2S_LRCLK_1V8"
+        },
+        {
+          "id": "r10_line_0063",
+          "layer": 15,
+          "net": "I2S_LRCLK_1V8"
+        },
+        {
+          "id": "r10_line_0064",
+          "layer": 15,
+          "net": "I2S_LRCLK_1V8"
+        },
+        {
+          "id": "r10_line_0065",
+          "layer": 15,
+          "net": "I2S_LRCLK_1V8"
+        },
+        {
+          "id": "r10_line_0066",
+          "layer": 15,
+          "net": "I2S_LRCLK_1V8"
+        },
+        {
+          "id": "r10_line_0067",
+          "layer": 15,
+          "net": "I2S_LRCLK_1V8"
+        },
+        {
+          "id": "r10_line_0068",
+          "layer": 15,
+          "net": "I2S_LRCLK_1V8"
+        },
+        {
+          "id": "r10_line_0108",
+          "layer": 18,
+          "net": "VBAT_R_RET"
+        },
+        {
+          "id": "r10_line_0119",
+          "layer": 18,
+          "net": "VBAT_R_RET"
+        },
+        {
+          "id": "r10_line_0120",
+          "layer": 18,
+          "net": "VBAT_R_RET"
+        },
+        {
+          "id": "r10_line_0121",
+          "layer": 18,
+          "net": "VBAT_R_RET"
+        },
+        {
+          "id": "r10_line_0122",
+          "layer": 18,
+          "net": "VBAT_R_RET"
+        },
+        {
+          "id": "r10_line_0123",
+          "layer": 18,
+          "net": "VBAT_R_RET"
+        },
+        {
+          "id": "r10_line_0124",
+          "layer": 18,
+          "net": "VBAT_R_RET"
+        },
+        {
+          "id": "r10_line_0125",
+          "layer": 18,
+          "net": "VBAT_R_RET"
+        },
+        {
+          "id": "r10_line_0126",
+          "layer": 18,
+          "net": "VBAT_R_RET"
+        },
+        {
+          "id": "r10_line_0127",
+          "layer": 18,
+          "net": "VBAT_R_RET"
+        },
+        {
+          "id": "r10_line_0128",
+          "layer": 18,
+          "net": "VBAT_R_RET"
+        },
+        {
+          "id": "r10_line_0129",
+          "layer": 18,
+          "net": "VBAT_R_RET"
+        },
+        {
+          "id": "r10_line_0130",
+          "layer": 18,
+          "net": "VBAT_R_RET"
+        },
+        {
+          "id": "r10_line_0131",
+          "layer": 18,
+          "net": "VBAT_R_RET"
+        },
+        {
+          "id": "r10_line_0132",
+          "layer": 18,
+          "net": "VBAT_R_RET"
+        },
+        {
+          "id": "r10_line_0133",
+          "layer": 18,
+          "net": "VBAT_R_RET"
+        },
+        {
+          "id": "r10_line_0135",
+          "layer": 18,
+          "net": "VBAT_R_RET"
+        },
+        {
+          "id": "r10_line_0136",
+          "layer": 18,
+          "net": "VBAT_R_RET"
+        }
+      ],
+      "powerAndSignalViasWithoutExplicitSpan": 18,
+      "nominalThroughViaLandsIntersectingBothGroundPlanes": 18,
+      "eco": "I2S_BCLK K5 to L9 requires schematic/firmware/netlist reconciliation; original PCB cannot accept this PCB-only ECO.",
+      "powerTrunk": {
+        "net": "1V8_SYS",
+        "newSegments": 102,
+        "widthMil": 4
+      },
+      "decision": "No pin swap, plane change or multi-component relocation carried forward. No blanket reduction accepted."
+    },
+    {
+      "window": "Neno3",
+      "board": "PCB1",
+      "status": "retain-interface-witness-data-only",
+      "J2": {
+        "logicTerminals": 26,
+        "candidateLandCount": 28,
+        "gates": [
+          "sensor FPC mirror and pin numbering",
+          "end-pair power polarity and continuity"
+        ]
+      },
+      "J3": {
+        "candidateOptions": [
+          "narrow target with enclosure magnet",
+          "4P FPC and mating subassembly"
+        ],
+        "gates": [
+          "tail cavity and magnet STEP fit",
+          "mating pinout, maximum-current temperature rise and reverse orientation"
+        ]
+      },
+      "offboard": "BAT1 and SPK1 remain in schematic/BOM.",
+      "pcb1U12": {
+        "part": "TPD2E001DRYR",
+        "reference": "Texas Instruments SLLS684I section 5, DRY package pin functions and DRY0006A example land pattern",
+        "datasheet": "https://www.ti.com/lit/ds/symlink/tpd2e001.pdf#page=3",
+        "landPattern": "https://www.ti.com/lit/ds/symlink/tpd2e001.pdf#page=19",
+        "requiredDRY": {
+          "1": "VCC",
+          "2": "NC",
+          "3": "IO",
+          "4": "GND",
+          "5": "NC",
+          "6": "IO"
+        },
+        "nativePR62": {
+          "1": "USB_DP",
+          "2": "GND",
+          "3": "USB_DM",
+          "4": "",
+          "5": "VBUS_5V_USB",
+          "6": ""
+        },
+        "finding": "Neno3 repeats the incorrect native pin numbers. U12.1 touches USB_DP, U12.2 touches existing ground copper and U12.3 touches USB_DM. Reconcile the package land pattern, schematic pin numbers, populated PCB nets, traces and VCC bypass before fabrication."
+      }
+    },
+    {
+      "window": "Neno4",
+      "board": "PCB2",
+      "status": "adapted-for-native-trial",
+      "originalCandidate": "C11 (90,366) L6, 180 deg, unconfigured L6-L4 VSYS transition",
+      "originalMaskClearMil": 0,
+      "originalGroundLandCoveredByLayer18": true,
+      "correctedCandidate": "C11 L6 (84,366), 180 deg; short grounded dogbone and surface VSYS branch to U14.5",
+      "decision": "Retains the board stack and acoustic clearance. C11 is assigned to U13. The local VSYS branch still requires upstream routing and connection to U13.1/4.",
+      "adaptedPowerChecks": {
+        "vsysForeignGapMil": 7.253405460951764,
+        "vsysSensitiveGapMil": 113.9902357385772,
+        "parallelPairsUnder3W": [],
+        "endpointInsideU14Pad": true,
+        "terminalInsetMil": 1.400000000000006
+      },
+      "nativeMasterAcceptance": {
+        "board": "PCB2",
+        "scope": "C11 mechanical clearance, local VSYS and GND branches",
+        "requiredUpstream": [
+          "U13.1",
+          "U13.4",
+          "J1.P2/P3"
+        ]
+      }
+    }
+  ]
+}

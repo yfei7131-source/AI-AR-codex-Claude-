@@ -1,0 +1,19 @@
+Board,RefDes,Input_Pin,Input_Net,Output_Pin,Output_Net,Nominal_or_Contract,Control,Qualification,Status
+M-MAIN-L,U3_L,A2,VBUS_5V,B2,VOUT_L_PPATH,4.50V default regulated when adapter present,BQ25180 SYS_REG via I2C,"Measure input limit, pass-through exclusion, thermal behavior and supplement on source loss",UNVERIFIED
+M-MAIN-L,U3_L,A2,VBUS_5V,C2,VBAT_L,"4.20V candidate; 10mA after POR, 50mA configured","I2C/TS, qualified protected pack",Pack/NTC spec must accept reset and watchdog profile,BLOCKED
+M-MAIN-L,U3_L,C2,VBAT_L,B2,VOUT_L_PPATH,Battery-derived when adapter absent or in supplement,U3_L power-path FET,U3_L battery-only rising POR is 3.08/3.21/3.46V min/typ/max; running UVLO is separate. Confirm pack sag and cold start without the right OR input.,BLOCKED
+M-AUD-R,U3_R,1,VBUS_5V,8,VBAT_R_RET,4.20V candidate; 54.64mA nominal,27k VSET; 5.49k ISET; TS,"Protected pack/NTC vendor approval, termination and current with right amplifier muted",BLOCKED
+M-MAIN-L,Q_CHG_ISO_R,2,VBAT_R_RET,3,VBAT_R_ISOLATED,"Battery-derived, reverse-current path requires test",CHG_ISO_GATE from VBUS,No direct battery paralleling. Measure reverse and fault currents on VBUS edges,UNVERIFIED
+M-MAIN-L,U4_OR,3,VOUT_L_PPATH,2,VSYS,Variable; 4.50V default nominal charger mode,/ON tied low; LM66200 highest available input,"Measure differential, transition and peak current; board/flex drop is unverified",UNVERIFIED
+M-MAIN-L,U4_OR,6,VBAT_R_ISOLATED,7,VSYS,Variable with pack and load,/ON tied low; LM66200 highest available input,Measure both source and current direction through charger transitions,UNVERIFIED
+M-MAIN-L,U4_BB,A2,VSYS,E2,3V3_SYS,3.30V,EN follows VSYS,"ESP32-S3 burst/reboot/strap capture; fit, copper and external parts per TI design curves",UNVERIFIED
+M-MAIN-L,U4_1V8,2,VSYS,8,1V8_SYS,"1.80V sense at COUT, not SW pad",EN follows VSYS,"Verify nRF5340, ICM42688, microphones, translator IO and distribution to all three boards",UNVERIFIED
+M-OPT-BRIDGE,U4_1V2,4,VSYS,1,1V2_FPGA_CORE,1.20V,EN follows VSYS,Scope 1V2_FPGA_CORE and 1V2_FPGA_PLL simultaneously through all ramps,UNVERIFIED
+M-OPT-BRIDGE,R_PLL,1,1V2_FPGA_CORE,2,1V2_FPGA_PLL,1.20V source via 100R; filtered,Passive local filter,Lattice FPGA-TN-02006. Verify voltage and ramp at B2 and qualify LDO enable sourcing,UNVERIFIED
+M-OPT-BRIDGE,U4_1V8F,4,VSYS,1,1V8_FPGA_IO,1.80V,EN senses 1V2_FPGA_PLL,BLOCKED: TLV755P EN has only 0.3V low and 1.0V high guarantees. Direct PLL sensing does not establish the 0.5V minimum before SPI VCCIO1 is applied. Qualify a guaranteed sequence and verify ramp/partial-power recovery.,BLOCKED
+M-OPT-BRIDGE,R_VPP,1,1V8_FPGA_IO,2,1V8_FPGA_VPP,1.80V source via 10R; Slave SPI conditional,Passive local filter,Verify VPP at D4 within device limits and retain no oscillator/RGB IP requirement,UNVERIFIED
+M-OPT-BRIDGE,U6_OPT_AVDD,4,VSYS,1,AVDD_OPT_BIAS,,Population held DNP; Rev D1.1 OPT_AVDD_EN remains available for no-panel measurement,Populate only after JBD rail/load/order and measured discharge/backfeed close; both panel connectors DNP as well,BLOCKED
+M-MAIN-L,U5_LED2V8,4,3V3_SYS,1,LED_2V8,2.80V,CAM_PWR_REQ,"APHD1608LCGCK candidate. Verify the full current and luminance window, supply ramps and fault latching.",BLOCKED
+M-MAIN-L,U6_CAM_DOVDD,4,3V3_SYS,1,CAM_DOVDD_1V8,1.80V candidate,PRIV_WINDOW_OK_F,"Camera module, vendor power sequencing and partial-power IO are open",BLOCKED
+M-MAIN-L,U6_CAM_DVDD,4,3V3_SYS,1,CAM_DVDD_1V2,1.20V candidate,PRIV_WINDOW_OK_F,"Camera module, vendor power sequencing and partial-power IO are open",BLOCKED
+M-MAIN-L,U6_CAM_AVDD,4,3V3_SYS,1,CAM_AVDD_2V8,2.80V candidate,PRIV_WINDOW_OK_F,"Camera module, vendor power sequencing and partial-power IO are open",BLOCKED

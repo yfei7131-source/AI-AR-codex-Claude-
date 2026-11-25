@@ -1,0 +1,13 @@
+BASELINE_PR25_RESERVED_CTRL_BUG: PASS (witness only: invalid flag0xB granted power/scan; baseline is not safety-approved)
+C:\codex-tools\evt1-r4-iverilog\regression\hardware\evt1-rev-d1-1-20261117\03_FPGA_RTL\tb_evt1_host_framing.v:85: $finish called at 1704000 (1ps)
+HOST_FRAMING_CASE truncated_controls_0_to_9_nibbles: PASS
+HOST_FRAMING_CASE all_reserved_bit_controls_rejected: PASS
+HOST_FRAMING_CASE rejected_word_cannot_retry_inside_same_CS: PASS
+HOST_FRAMING_CASE high_CS_serial_noise_ignored: PASS
+HOST_FRAMING_CASE RAW_reserved_pattern_remains_opaque: PASS
+HOST_FRAMING_CASE legitimate_OFF_after_RAW: PASS
+HOST_FRAMING_CASE truncated_pixel_headers_and_words: PASS
+HOST_FRAMING_CASE partial_burst_tail_and_next_CS_recovery: PASS
+EVT1_HOST_FRAMING_RESULT: PASS (8 directed groups; no physical pad/CDC/optical qualification claimed)
+C:\codex-tools\evt1-r4-iverilog\regression\hardware\evt1-rev-d1-1-20261117\03_FPGA_RTL\tb_evt1_host_framing.v:178: $finish called at 6671203761 (1ps)
+HOST_FRAMING_NATIVE_SUITE: PASS (pinned defect witnessed; repaired decoder and CS recovery verified)
