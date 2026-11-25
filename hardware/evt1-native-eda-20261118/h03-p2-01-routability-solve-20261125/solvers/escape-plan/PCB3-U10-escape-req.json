@@ -1,0 +1,223 @@
+{
+  "schemaVersion": 3,
+  "units": "mil",
+  "coordinateSemantic": "footprint-anchor",
+  "minGapMil": 6,
+  "routing": {
+    "owners": [
+      "U10"
+    ],
+    "stepMil": 2,
+    "maxDetourMil": 120,
+    "maxStates": 200000,
+    "demands": [
+      {
+        "id": "u10-A1-amp_r_sd_mode",
+        "kind": "signal",
+        "from": "U10.A1",
+        "net": "AMP_R_SD_MODE",
+        "widthMil": 4,
+        "layer": 2,
+        "maxVias": 2,
+        "toward": "Q1.3",
+        "congested": {
+          "minX": 145.8,
+          "minY": 362.3,
+          "maxX": 187.3,
+          "maxY": 403.8
+        },
+        "exits": [
+          [
+            145.18,
+            408.2
+          ]
+        ],
+        "maxAwayMil": 80
+      },
+      {
+        "id": "u10-A2-vbat_r_ret",
+        "kind": "power",
+        "from": "U10.A2",
+        "net": "VBAT_R_RET",
+        "widthMil": 4,
+        "layer": 2,
+        "maxVias": 2,
+        "toward": "C3.1",
+        "congested": {
+          "minX": 145.8,
+          "minY": 362.3,
+          "maxX": 187.3,
+          "maxY": 403.8
+        },
+        "exits": [
+          [
+            166.42,
+            355.64
+          ]
+        ],
+        "maxAwayMil": 80
+      },
+      {
+        "id": "u10-A3-spk_r_p",
+        "kind": "signal",
+        "from": "U10.A3",
+        "net": "SPK_R_P",
+        "widthMil": 4,
+        "layer": 2,
+        "maxVias": 2,
+        "toward": "TP5.1",
+        "congested": {
+          "minX": 145.8,
+          "minY": 362.3,
+          "maxX": 187.3,
+          "maxY": 403.8
+        },
+        "exits": [
+          [
+            145.15,
+            412.05
+          ]
+        ],
+        "maxAwayMil": 80
+      },
+      {
+        "id": "u10-B1-i2s_amp_din_1v8",
+        "kind": "power",
+        "from": "U10.B1",
+        "net": "I2S_AMP_DIN_1V8",
+        "widthMil": 4,
+        "layer": 2,
+        "maxVias": 2,
+        "toward": "U11.J4",
+        "congested": {
+          "minX": 145.8,
+          "minY": 362.3,
+          "maxX": 187.3,
+          "maxY": 403.8
+        },
+        "exits": [
+          [
+            164.93,
+            358.22
+          ]
+        ],
+        "maxAwayMil": 80
+      },
+      {
+        "id": "u10-B2-gnd",
+        "kind": "ground",
+        "from": "U10.B2",
+        "net": "GND",
+        "widthMil": 4,
+        "layer": 2,
+        "maxVias": 2,
+        "toward": "U11.K6",
+        "congested": {
+          "minX": 145.8,
+          "minY": 362.3,
+          "maxX": 187.3,
+          "maxY": 403.8
+        },
+        "exits": [
+          [
+            158.4,
+            358.08
+          ]
+        ],
+        "maxAwayMil": 80
+      },
+      {
+        "id": "u10-B3-spk_r_n",
+        "kind": "signal",
+        "from": "U10.B3",
+        "net": "SPK_R_N",
+        "widthMil": 4,
+        "layer": 2,
+        "maxVias": 2,
+        "toward": "TP4.1",
+        "congested": {
+          "minX": 145.8,
+          "minY": 362.3,
+          "maxX": 187.3,
+          "maxY": 403.8
+        },
+        "exits": [
+          [
+            138.93,
+            402.33
+          ]
+        ],
+        "maxAwayMil": 80
+      },
+      {
+        "id": "u10-C1-i2s_bclk_1v8",
+        "kind": "power",
+        "from": "U10.C1",
+        "net": "I2S_BCLK_1V8",
+        "widthMil": 4,
+        "layer": 2,
+        "maxVias": 2,
+        "toward": "U11.K5",
+        "congested": {
+          "minX": 145.8,
+          "minY": 362.3,
+          "maxX": 187.3,
+          "maxY": 403.8
+        },
+        "exits": [
+          [
+            173.62,
+            358.27
+          ]
+        ],
+        "maxAwayMil": 80
+      },
+      {
+        "id": "u10-C2-gnd",
+        "kind": "ground",
+        "from": "U10.C2",
+        "net": "GND",
+        "widthMil": 4,
+        "layer": 2,
+        "maxVias": 2,
+        "toward": "U11.K6",
+        "congested": {
+          "minX": 145.8,
+          "minY": 362.3,
+          "maxX": 187.3,
+          "maxY": 403.8
+        },
+        "exits": [
+          [
+            159.53,
+            358.0
+          ]
+        ],
+        "maxAwayMil": 80
+      },
+      {
+        "id": "u10-C3-i2s_lrclk_1v8",
+        "kind": "power",
+        "from": "U10.C3",
+        "net": "I2S_LRCLK_1V8",
+        "widthMil": 4,
+        "layer": 2,
+        "maxVias": 2,
+        "toward": "U11.K4",
+        "congested": {
+          "minX": 145.8,
+          "minY": 362.3,
+          "maxX": 187.3,
+          "maxY": 403.8
+        },
+        "exits": [
+          [
+            152.48,
+            357.43
+          ]
+        ],
+        "maxAwayMil": 80
+      }
+    ]
+  }
+}

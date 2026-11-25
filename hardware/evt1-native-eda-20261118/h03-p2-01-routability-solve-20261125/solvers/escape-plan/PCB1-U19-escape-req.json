@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 3,
+  "units": "mil",
+  "coordinateSemantic": "footprint-anchor",
+  "minGapMil": 6,
+  "routing": {
+    "owners": [
+      "U19"
+    ],
+    "stepMil": 2,
+    "maxDetourMil": 120,
+    "maxStates": 200000,
+    "demands": [
+      {
+        "id": "u19-8-ls3_vref2_en",
+        "kind": "signal",
+        "from": "U19.8",
+        "net": "LS3_VREF2_EN",
+        "widthMil": 4,
+        "layer": 2,
+        "maxVias": 2,
+        "toward": "R24.1",
+        "congested": {
+          "minX": 135.1,
+          "minY": 1434.3,
+          "maxX": 182.9,
+          "maxY": 1485.7
+        },
+        "exits": [
+          [
+            167.49,
+            1491.01
+          ]
+        ],
+        "maxAwayMil": 80
+      },
+      {
+        "id": "u19-7-ls3_vref2_en",
+        "kind": "signal",
+        "from": "U19.7",
+        "net": "LS3_VREF2_EN",
+        "widthMil": 4,
+        "layer": 2,
+        "maxVias": 2,
+        "toward": "R24.1",
+        "congested": {
+          "minX": 135.1,
+          "minY": 1434.3,
+          "maxX": 182.9,
+          "maxY": 1485.7
+        },
+        "exits": [
+          [
+            168.08,
+            1490.47
+          ]
+        ],
+        "maxAwayMil": 80
+      },
+      {
+        "id": "u19-6-sys_i2c_scl_3v3",
+        "kind": "power",
+        "from": "U19.6",
+        "net": "SYS_I2C_SCL_3V3",
+        "widthMil": 4,
+        "layer": 2,
+        "maxVias": 2,
+        "toward": "R16.1",
+        "congested": {
+          "minX": 135.1,
+          "minY": 1434.3,
+          "maxX": 182.9,
+          "maxY": 1485.7
+        },
+        "exits": [
+          [
+            186.93,
+            1469.15
+          ]
+        ],
+        "maxAwayMil": 80
+      },
+      {
+        "id": "u19-5-sys_i2c_sda_3v3",
+        "kind": "power",
+        "from": "U19.5",
+        "net": "SYS_I2C_SDA_3V3",
+        "widthMil": 4,
+        "layer": 2,
+        "maxVias": 2,
+        "toward": "R18.1",
+        "congested": {
+          "minX": 135.1,
+          "minY": 1434.3,
+          "maxX": 182.9,
+          "maxY": 1485.7
+        },
+        "exits": [
+          [
+            136.58,
+            1430.06
+          ]
+        ],
+        "maxAwayMil": 80
+      },
+      {
+        "id": "u19-4-sys_i2c_sda_1v8",
+        "kind": "power",
+        "from": "U19.4",
+        "net": "SYS_I2C_SDA_1V8",
+        "widthMil": 4,
+        "layer": 2,
+        "maxVias": 2,
+        "toward": "R17.1",
+        "congested": {
+          "minX": 135.1,
+          "minY": 1434.3,
+          "maxX": 182.9,
+          "maxY": 1485.7
+        },
+        "exits": [
+          [
+            138.35,
+            1489.85
+          ]
+        ],
+        "maxAwayMil": 80
+      },
+      {
+        "id": "u19-3-sys_i2c_scl_1v8",
+        "kind": "power",
+        "from": "U19.3",
+        "net": "SYS_I2C_SCL_1V8",
+        "widthMil": 4,
+        "layer": 2,
+        "maxVias": 2,
+        "toward": "R15.1",
+        "congested": {
+          "minX": 135.1,
+          "minY": 1434.3,
+          "maxX": 182.9,
+          "maxY": 1485.7
+        },
+        "exits": [
+          [
+            131.06,
+            1470.91
+          ]
+        ],
+        "maxAwayMil": 80
+      },
+      {
+        "id": "u19-2-1v8_sys",
+        "kind": "power",
+        "from": "U19.2",
+        "net": "1V8_SYS",
+        "widthMil": 4,
+        "layer": 2,
+        "maxVias": 2,
+        "toward": "R15.2",
+        "congested": {
+          "minX": 135.1,
+          "minY": 1434.3,
+          "maxX": 182.9,
+          "maxY": 1485.7
+        },
+        "exits": [
+          [
+            131.06,
+            1452.84
+          ]
+        ],
+        "maxAwayMil": 80
+      },
+      {
+        "id": "u19-1-gnd",
+        "kind": "ground",
+        "from": "U19.1",
+        "net": "GND",
+        "widthMil": 4,
+        "layer": 2,
+        "maxVias": 2,
+        "toward": "R20.2",
+        "congested": {
+          "minX": 135.1,
+          "minY": 1434.3,
+          "maxX": 182.9,
+          "maxY": 1485.7
+        },
+        "exits": [
+          [
+            142.93,
+            1430.08
+          ]
+        ],
+        "maxAwayMil": 80
+      }
+    ]
+  }
+}

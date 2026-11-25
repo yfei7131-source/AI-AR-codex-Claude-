@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "units": "mil",
+  "layout": {
+    "groups": []
+  },
+  "routing": {
+    "demands": [
+      {
+        "id": "sda-1v8",
+        "net": "SYS_I2C_SDA_1V8",
+        "widthMil": 4,
+        "from": "U19.4",
+        "to": "R17.1",
+        "maxVias": 0
+      },
+      {
+        "id": "scl-1v8",
+        "net": "SYS_I2C_SCL_1V8",
+        "widthMil": 4,
+        "from": "U19.3",
+        "to": "R15.1",
+        "maxVias": 0
+      }
+    ]
+  }
+}

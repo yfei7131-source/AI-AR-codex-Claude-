@@ -1,0 +1,30 @@
+{
+  "classes": {
+    "gnd": {
+      "mil": 19.69,
+      "mm": 0.5,
+      "note": "ground — prefer pour/plane over a track"
+    },
+    "high-current": {
+      "mil": 19.69,
+      "mm": 0.5,
+      "note": "connector-in/battery/bus (VBUS/VIN/VBAT, ≥9V)"
+    },
+    "power-branch": {
+      "mil": 9.84,
+      "mm": 0.25,
+      "note": "regulated rail \u003c5V (3V3/1V8/VCC/VDD)"
+    },
+    "power-trunk": {
+      "mil": 15.75,
+      "mm": 0.4,
+      "note": "main rail 5–9V (+5V-class)"
+    },
+    "signal": {
+      "mil": 1.97,
+      "mm": 0.05,
+      "note": "logic/analog signal (live default)"
+    }
+  },
+  "source": "live"
+}
