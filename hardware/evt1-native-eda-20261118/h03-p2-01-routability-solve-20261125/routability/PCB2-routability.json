@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "status": "incomplete",
+  "reason": "board geometry capture is incomplete: 16 pad(s) have captured source shapes unsupported by exact pad-contact inspection",
+  "boardSemanticSha256": "3cdc90784ac512e36a704107c601242848b6bd8f89bc075058a27c161f76c1e9",
+  "boardSha256": "b69162126271de257ea3fb60a3c94c9ccde2c4daf57703ed51a25d724c419dfa",
+  "parameters": {
+    "stepMil": 2,
+    "radiusMil": 100,
+    "trackWidthMil": 0,
+    "clearanceMil": 0,
+    "viaDiameterMil": 0,
+    "viaDrillMil": 0
+  },
+  "summary": {
+    "checked": 0,
+    "passed": 0,
+    "trapped": 0,
+    "throughHole": 0,
+    "noNet": 0,
+    "unverified": 0
+  },
+  "trapped": [],
+  "pads": [],
+  "limitations": [
+    "Local necessary condition per pad: neighbouring pads may share one channel; a pass does not reserve capacity or prove whole-net routing.",
+    "Via sites are counted up to 32 in flood order (nearest track path first); viaSitesCapped marks more.",
+    "Track flood uses the minimum track width on the pad's own copper layer at a fixed grid; via sites are sampled on the same grid, so a fail means no witness at this resolution.",
+    "Via sites are checked against every pad, every via and the copper/keepouts on every copper layer that carries any; negative plane-layer copper (automatic anti-pads) is not modelled.",
+    "Escape radius is measured from the source pad's copper edge.",
+    "A reachable same-net via proves a layer change only on a measured two-layer board (via readback has no type or layer span); a reachable same-net through-hole pad needs a captured drill and metallization=true. Otherwise it is reported as unverified and, if it is the pad's only way out, the check is incomplete.",
+    "Board slots (MULTI-layer cutouts) keep max(8 mil, clearance, copper-to-edge) from copper and vias; stroked pour/fill outlines add half their stroke width.",
+    "Through-hole pads already reach every layer and are not flooded."
+  ]
+}

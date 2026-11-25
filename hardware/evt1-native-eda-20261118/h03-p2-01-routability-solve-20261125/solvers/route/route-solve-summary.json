@@ -1,0 +1,1019 @@
+[
+  {
+    "id": "PCB1-01-SYS_I2C_SDA_1V8-U19_4-R17_1",
+    "board": "PCB1",
+    "net": "SYS_I2C_SDA_1V8",
+    "netClass": "bus-interface",
+    "layer": 2,
+    "widthMil": 4,
+    "from": "U19.4",
+    "to": "R17.1",
+    "solveExit": 0,
+    "solveSeconds": 0.058,
+    "solveStatus": "pass",
+    "reason": null,
+    "segmentCount": 0,
+    "lengthMil": null,
+    "checkExit": 0,
+    "checkStatus": "pass",
+    "checkSeconds": 0.044,
+    "points": [
+      [
+        140.1,
+        1480.7
+      ],
+      [
+        140.1,
+        1488.1
+      ],
+      [
+        136.6,
+        1491.6
+      ],
+      [
+        136.6,
+        1499
+      ]
+    ]
+  },
+  {
+    "id": "PCB1-02-SYS_I2C_SCL_1V8-U19_3-R15_1",
+    "board": "PCB1",
+    "net": "SYS_I2C_SCL_1V8",
+    "netClass": "bus-interface",
+    "layer": 2,
+    "widthMil": 4,
+    "from": "U19.3",
+    "to": "R15.1",
+    "solveExit": 0,
+    "solveSeconds": 0.13,
+    "solveStatus": "pass",
+    "reason": null,
+    "segmentCount": 0,
+    "lengthMil": null,
+    "checkExit": 0,
+    "checkStatus": "pass",
+    "checkSeconds": 0.047,
+    "points": [
+      [
+        140.1,
+        1466.9
+      ],
+      [
+        126.69999999999982,
+        1466.9
+      ],
+      [
+        116,
+        1477.6
+      ]
+    ]
+  },
+  {
+    "id": "PCB1-03-SYS_I2C_SCL_3V3-U19_6-R16_1",
+    "board": "PCB1",
+    "net": "SYS_I2C_SCL_3V3",
+    "netClass": "bus-interface",
+    "layer": 2,
+    "widthMil": 4,
+    "from": "U19.6",
+    "to": "R16.1",
+    "solveExit": 0,
+    "solveSeconds": 0.181,
+    "solveStatus": "pass",
+    "reason": null,
+    "segmentCount": 0,
+    "lengthMil": null,
+    "checkExit": 0,
+    "checkStatus": "pass",
+    "checkSeconds": 0.045,
+    "points": [
+      [
+        177.9,
+        1466.9
+      ],
+      [
+        200.5,
+        1466.9
+      ],
+      [
+        208,
+        1474.4
+      ]
+    ]
+  },
+  {
+    "id": "PCB1-04-CHG_ISO_GATE-R19_2-R20_1",
+    "board": "PCB1",
+    "net": "CHG_ISO_GATE",
+    "netClass": "control-signal",
+    "layer": 1,
+    "widthMil": 4,
+    "from": "R19.2",
+    "to": "R20.1",
+    "solveExit": 0,
+    "solveSeconds": 0.053,
+    "solveStatus": "pass",
+    "reason": null,
+    "segmentCount": 0,
+    "lengthMil": null,
+    "checkExit": 0,
+    "checkStatus": "pass",
+    "checkSeconds": 0.045,
+    "points": [
+      [
+        99.8,
+        1377.8
+      ],
+      [
+        125.8,
+        1377.8
+      ]
+    ]
+  },
+  {
+    "id": "PCB1-05-PRIV_WINDOW_OK-U14_7-R28_1",
+    "board": "PCB1",
+    "net": "PRIV_WINDOW_OK",
+    "netClass": "control-signal",
+    "layer": 2,
+    "widthMil": 4,
+    "from": "U14.7",
+    "to": "R28.1",
+    "solveExit": 1,
+    "solveSeconds": 0.055,
+    "solveStatus": "incomplete",
+    "reason": "endpoint-blocked",
+    "segmentCount": 0,
+    "lengthMil": null,
+    "checkExit": null,
+    "checkStatus": null
+  },
+  {
+    "id": "PCB1-06-V_INA_OUT-U14_3-U14_6",
+    "board": "PCB1",
+    "net": "V_INA_OUT",
+    "netClass": "power-branch",
+    "layer": 2,
+    "widthMil": 6,
+    "from": "U14.3",
+    "to": "U14.6",
+    "solveExit": 1,
+    "solveSeconds": 0.195,
+    "solveStatus": "incomplete",
+    "reason": "no-path-within-bounds",
+    "segmentCount": 0,
+    "lengthMil": null,
+    "checkExit": null,
+    "checkStatus": null
+  },
+  {
+    "id": "PCB1-07-3V3_SYS-C32_1-R35_1",
+    "board": "PCB1",
+    "net": "3V3_SYS",
+    "netClass": "power-branch",
+    "layer": 1,
+    "widthMil": 6,
+    "from": "C32.1",
+    "to": "R35.1",
+    "solveExit": 0,
+    "solveSeconds": 0.054,
+    "solveStatus": "pass",
+    "reason": null,
+    "segmentCount": 0,
+    "lengthMil": null,
+    "checkExit": 0,
+    "checkStatus": "pass",
+    "checkSeconds": 0.045,
+    "points": [
+      [
+        66.7,
+        1259.6
+      ],
+      [
+        66.7,
+        1236
+      ]
+    ]
+  },
+  {
+    "id": "PCB1-08-3V3_SYS-R1_1-R26_2",
+    "board": "PCB1",
+    "net": "3V3_SYS",
+    "netClass": "power-branch",
+    "layer": 2,
+    "widthMil": 6,
+    "from": "R1.1",
+    "to": "R26.2",
+    "solveExit": 0,
+    "solveSeconds": 0.053,
+    "solveStatus": "pass",
+    "reason": null,
+    "segmentCount": 0,
+    "lengthMil": null,
+    "checkExit": 0,
+    "checkStatus": "pass",
+    "checkSeconds": 0.046,
+    "points": [
+      [
+        125.8,
+        1369.9
+      ],
+      [
+        99.8,
+        1369.9
+      ]
+    ]
+  },
+  {
+    "id": "PCB1-09-1V8_FPGA_IO-U18_22-U18_23",
+    "board": "PCB1",
+    "net": "1V8_FPGA_IO",
+    "netClass": "power-branch",
+    "layer": 2,
+    "widthMil": 6,
+    "from": "U18.22",
+    "to": "U18.23",
+    "solveExit": 0,
+    "solveSeconds": 0.055,
+    "solveStatus": "pass",
+    "reason": null,
+    "segmentCount": 0,
+    "lengthMil": null,
+    "checkExit": 0,
+    "checkStatus": "pass",
+    "checkSeconds": 0.048,
+    "points": [
+      [
+        37.2,
+        868.8
+      ],
+      [
+        37.2,
+        883.0999999999999
+      ],
+      [
+        34.2,
+        886.0999999999999
+      ],
+      [
+        34.2,
+        900.4
+      ]
+    ]
+  },
+  {
+    "id": "PCB1-10-CAM_DOVDD_1V8-U20_2-C19_1",
+    "board": "PCB1",
+    "net": "CAM_DOVDD_1V8",
+    "netClass": "power-branch",
+    "layer": 1,
+    "widthMil": 6,
+    "from": "U20.2",
+    "to": "C19.1",
+    "solveExit": 1,
+    "solveSeconds": 0.054,
+    "solveStatus": "incomplete",
+    "reason": "endpoint-blocked",
+    "segmentCount": 0,
+    "lengthMil": null,
+    "checkExit": null,
+    "checkStatus": null
+  },
+  {
+    "id": "PCB1-11-VOUT_L_PPATH-U9_3-U3_B2",
+    "board": "PCB1",
+    "net": "VOUT_L_PPATH",
+    "netClass": "high-current-power",
+    "layer": 2,
+    "widthMil": 10,
+    "from": "U9.3",
+    "to": "U3.B2",
+    "solveExit": 1,
+    "solveSeconds": 0.314,
+    "solveStatus": "incomplete",
+    "reason": "no-path-within-bounds",
+    "segmentCount": 0,
+    "lengthMil": null,
+    "checkExit": null,
+    "checkStatus": null
+  },
+  {
+    "id": "PCB1-12-LS4_VREF2_EN-U20_7-U20_8",
+    "board": "PCB1",
+    "net": "LS4_VREF2_EN",
+    "netClass": "control-signal",
+    "layer": 1,
+    "widthMil": 4,
+    "from": "U20.7",
+    "to": "U20.8",
+    "solveExit": 0,
+    "solveSeconds": 0.053,
+    "solveStatus": "pass",
+    "reason": null,
+    "segmentCount": 0,
+    "lengthMil": null,
+    "checkExit": 0,
+    "checkStatus": "pass",
+    "checkSeconds": 0.046,
+    "points": [
+      [
+        133.1,
+        1025.7
+      ],
+      [
+        133.1,
+        1011.9
+      ]
+    ]
+  },
+  {
+    "id": "PCB2-13-VSYS-C10_1-C5_1",
+    "board": "PCB2",
+    "net": "VSYS",
+    "netClass": "high-current-power",
+    "layer": 1,
+    "widthMil": 10,
+    "from": "C10.1",
+    "to": "C5.1",
+    "solveExit": 0,
+    "solveSeconds": 0.05,
+    "solveStatus": "pass",
+    "reason": null,
+    "segmentCount": 0,
+    "lengthMil": null,
+    "checkExit": 0,
+    "checkStatus": "pass",
+    "checkSeconds": 0.042,
+    "points": [
+      [
+        114,
+        859.8
+      ],
+      [
+        114,
+        838.2
+      ]
+    ]
+  },
+  {
+    "id": "PCB2-14-VSYS-C8_1-C12_1",
+    "board": "PCB2",
+    "net": "VSYS",
+    "netClass": "high-current-power",
+    "layer": 1,
+    "widthMil": 10,
+    "from": "C8.1",
+    "to": "C12.1",
+    "solveExit": 0,
+    "solveSeconds": 0.052,
+    "solveStatus": "pass",
+    "reason": null,
+    "segmentCount": 0,
+    "lengthMil": null,
+    "checkExit": 0,
+    "checkStatus": "pass",
+    "checkSeconds": 0.042,
+    "points": [
+      [
+        19.5,
+        859.8
+      ],
+      [
+        19.5,
+        881.5
+      ]
+    ]
+  },
+  {
+    "id": "PCB2-15-VSYS-U12_4-U13_1",
+    "board": "PCB2",
+    "net": "VSYS",
+    "netClass": "high-current-power",
+    "layer": 2,
+    "widthMil": 10,
+    "from": "U12.4",
+    "to": "U13.1",
+    "solveExit": 1,
+    "solveSeconds": 0.053,
+    "solveStatus": "incomplete",
+    "reason": "endpoint-blocked",
+    "segmentCount": 0,
+    "lengthMil": null,
+    "checkExit": null,
+    "checkStatus": null
+  },
+  {
+    "id": "PCB2-16-1V8_SYS-C26_1-C33_1",
+    "board": "PCB2",
+    "net": "1V8_SYS",
+    "netClass": "power-branch",
+    "layer": 1,
+    "widthMil": 6,
+    "from": "C26.1",
+    "to": "C33.1",
+    "solveExit": 1,
+    "solveSeconds": 0.088,
+    "solveStatus": "incomplete",
+    "reason": "no-path-within-bounds",
+    "segmentCount": 0,
+    "lengthMil": null,
+    "checkExit": null,
+    "checkStatus": null
+  },
+  {
+    "id": "PCB2-17-1V2_FPGA_CORE-C28_1-U2_C2",
+    "board": "PCB2",
+    "net": "1V2_FPGA_CORE",
+    "netClass": "power-branch",
+    "layer": 1,
+    "widthMil": 6,
+    "from": "C28.1",
+    "to": "U2.C2",
+    "solveExit": 1,
+    "solveSeconds": 0.051,
+    "solveStatus": "incomplete",
+    "reason": "endpoint-blocked",
+    "segmentCount": 0,
+    "lengthMil": null,
+    "checkExit": null,
+    "checkStatus": null
+  },
+  {
+    "id": "PCB2-18-AVDD_D3_VSYS-R2_1-R7_1",
+    "board": "PCB2",
+    "net": "AVDD_D3_VSYS",
+    "netClass": "power-branch",
+    "layer": 1,
+    "widthMil": 6,
+    "from": "R2.1",
+    "to": "R7.1",
+    "solveExit": 1,
+    "solveSeconds": 0.104,
+    "solveStatus": "incomplete",
+    "reason": "no-path-within-bounds",
+    "segmentCount": 0,
+    "lengthMil": null,
+    "checkExit": null,
+    "checkStatus": null
+  },
+  {
+    "id": "PCB2-19-AVDD_WD_Q-R3_1-R6_1",
+    "board": "PCB2",
+    "net": "AVDD_WD_Q",
+    "netClass": "control-signal",
+    "layer": 2,
+    "widthMil": 4,
+    "from": "R3.1",
+    "to": "R6.1",
+    "solveExit": 0,
+    "solveSeconds": 0.05,
+    "solveStatus": "pass",
+    "reason": null,
+    "segmentCount": 0,
+    "lengthMil": null,
+    "checkExit": 0,
+    "checkStatus": "pass",
+    "checkSeconds": 0.042,
+    "points": [
+      [
+        129.7,
+        899.2
+      ],
+      [
+        129.7,
+        920.9
+      ]
+    ]
+  },
+  {
+    "id": "PCB2-20-AVDD_QUAL_RC-U3_4-U3_6",
+    "board": "PCB2",
+    "net": "AVDD_QUAL_RC",
+    "netClass": "control-signal",
+    "layer": 2,
+    "widthMil": 4,
+    "from": "U3.4",
+    "to": "U3.6",
+    "solveExit": 1,
+    "solveSeconds": 0.047,
+    "solveStatus": "incomplete",
+    "reason": "endpoint-blocked",
+    "segmentCount": 0,
+    "lengthMil": null,
+    "checkExit": null,
+    "checkStatus": null
+  },
+  {
+    "id": "PCB2-21-AVDD_PG_OK-U3_3-U5_1",
+    "board": "PCB2",
+    "net": "AVDD_PG_OK",
+    "netClass": "control-signal",
+    "layer": 2,
+    "widthMil": 4,
+    "from": "U3.3",
+    "to": "U5.1",
+    "solveExit": 1,
+    "solveSeconds": 0.048,
+    "solveStatus": "incomplete",
+    "reason": "endpoint-blocked",
+    "segmentCount": 0,
+    "lengthMil": null,
+    "checkExit": null,
+    "checkStatus": null
+  },
+  {
+    "id": "PCB2-22-OPT_AVDD_EN-U5_4-U5_6",
+    "board": "PCB2",
+    "net": "OPT_AVDD_EN",
+    "netClass": "control-signal",
+    "layer": 2,
+    "widthMil": 4,
+    "from": "U5.4",
+    "to": "U5.6",
+    "solveExit": 1,
+    "solveSeconds": 0.332,
+    "solveStatus": "incomplete",
+    "reason": "no-path-within-bounds",
+    "segmentCount": 0,
+    "lengthMil": null,
+    "checkExit": null,
+    "checkStatus": null
+  },
+  {
+    "id": "PCB3-23-1V8_SYS-C18_1-TP6_4",
+    "board": "PCB3",
+    "net": "1V8_SYS",
+    "netClass": "power-branch",
+    "layer": 1,
+    "widthMil": 6,
+    "from": "C18.1",
+    "to": "TP6.4",
+    "solveExit": 0,
+    "solveSeconds": 0.047,
+    "solveStatus": "pass",
+    "reason": null,
+    "segmentCount": 0,
+    "lengthMil": null,
+    "checkExit": 0,
+    "checkStatus": "pass",
+    "checkSeconds": 0.04,
+    "points": [
+      [
+        54.9,
+        673
+      ],
+      [
+        49.25,
+        673
+      ],
+      [
+        33.25,
+        689
+      ],
+      [
+        27.6,
+        689
+      ]
+    ]
+  },
+  {
+    "id": "PCB3-24-1V8_SYS-C20_1-C4_1",
+    "board": "PCB3",
+    "net": "1V8_SYS",
+    "netClass": "power-branch",
+    "layer": 2,
+    "widthMil": 6,
+    "from": "C20.1",
+    "to": "C4.1",
+    "solveExit": 0,
+    "solveSeconds": 0.045,
+    "solveStatus": "pass",
+    "reason": null,
+    "segmentCount": 0,
+    "lengthMil": null,
+    "checkExit": 0,
+    "checkStatus": "pass",
+    "checkSeconds": 0.04,
+    "points": [
+      [
+        133.5,
+        567.9
+      ],
+      [
+        133.5,
+        571.3
+      ],
+      [
+        110,
+        594.8
+      ],
+      [
+        110,
+        598.2
+      ]
+    ]
+  },
+  {
+    "id": "PCB3-25-1V8_SYS-C1_1-U11_L11",
+    "board": "PCB3",
+    "net": "1V8_SYS",
+    "netClass": "power-branch",
+    "layer": 1,
+    "widthMil": 6,
+    "from": "C1.1",
+    "to": "U11.L11",
+    "solveExit": 1,
+    "solveSeconds": 0.047,
+    "solveStatus": "incomplete",
+    "reason": "endpoint-blocked",
+    "segmentCount": 0,
+    "lengthMil": null,
+    "checkExit": null,
+    "checkStatus": null
+  },
+  {
+    "id": "PCB3-26-1V8_SYS-C18_1-C19_1",
+    "board": "PCB3",
+    "net": "1V8_SYS",
+    "netClass": "power-branch",
+    "layer": 1,
+    "widthMil": 6,
+    "from": "C18.1",
+    "to": "C19.1",
+    "solveExit": 0,
+    "solveSeconds": 0.144,
+    "solveStatus": "pass",
+    "reason": null,
+    "segmentCount": 0,
+    "lengthMil": null,
+    "checkExit": 0,
+    "checkStatus": "pass",
+    "checkSeconds": 0.046,
+    "points": [
+      [
+        54.9,
+        673
+      ],
+      [
+        54.9,
+        675
+      ],
+      [
+        69.9,
+        690
+      ],
+      [
+        90.9,
+        690
+      ],
+      [
+        106.1,
+        674.8
+      ],
+      [
+        106.1,
+        673
+      ]
+    ]
+  },
+  {
+    "id": "PCB3-27-NRF_DECR_RF-U11_B1-U11_B4",
+    "board": "PCB3",
+    "net": "NRF_DECR_RF",
+    "netClass": "power-branch",
+    "layer": 1,
+    "widthMil": 6,
+    "from": "U11.B1",
+    "to": "U11.B4",
+    "solveExit": 1,
+    "solveSeconds": 0.058,
+    "solveStatus": "incomplete",
+    "reason": "no-path-within-bounds",
+    "segmentCount": 0,
+    "lengthMil": null,
+    "checkExit": null,
+    "checkStatus": null
+  },
+  {
+    "id": "PCB3-28-LFXO_XL1-U11_F11-Y3_1",
+    "board": "PCB3",
+    "net": "LFXO_XL1",
+    "netClass": "rf-clock-hs",
+    "layer": 1,
+    "widthMil": 4,
+    "from": "U11.F11",
+    "to": "Y3.1",
+    "solveExit": 1,
+    "solveSeconds": 0.054,
+    "solveStatus": "incomplete",
+    "reason": "no-path-within-bounds",
+    "segmentCount": 0,
+    "lengthMil": null,
+    "checkExit": null,
+    "checkStatus": null
+  },
+  {
+    "id": "PCB3-29-LFXO_XL2-Y3_2-U11_F12",
+    "board": "PCB3",
+    "net": "LFXO_XL2",
+    "netClass": "rf-clock-hs",
+    "layer": 1,
+    "widthMil": 4,
+    "from": "Y3.2",
+    "to": "U11.F12",
+    "solveExit": 1,
+    "solveSeconds": 0.049,
+    "solveStatus": "incomplete",
+    "reason": "endpoint-blocked",
+    "segmentCount": 0,
+    "lengthMil": null,
+    "checkExit": null,
+    "checkStatus": null
+  },
+  {
+    "id": "PCB3-30-AMP_R_SD_MODE-Q1_3-U10_A1",
+    "board": "PCB3",
+    "net": "AMP_R_SD_MODE",
+    "netClass": "control-signal",
+    "layer": 2,
+    "widthMil": 4,
+    "from": "Q1.3",
+    "to": "U10.A1",
+    "solveExit": 0,
+    "solveSeconds": 0.716,
+    "solveStatus": "pass",
+    "reason": null,
+    "segmentCount": 0,
+    "lengthMil": null,
+    "checkExit": 0,
+    "checkStatus": "pass",
+    "checkSeconds": 0.04,
+    "points": [
+      [
+        114.8,
+        415.9
+      ],
+      [
+        142.8,
+        443.9
+      ],
+      [
+        173.8,
+        443.9
+      ],
+      [
+        182.3,
+        435.4
+      ],
+      [
+        182.3,
+        398.8
+      ]
+    ]
+  },
+  {
+    "id": "PCB3-31-AMP_SD_MODE_1V8-J1_P15-U1_4",
+    "board": "PCB3",
+    "net": "AMP_SD_MODE_1V8",
+    "netClass": "control-signal",
+    "layer": 2,
+    "widthMil": 4,
+    "from": "J1.P15",
+    "to": "U1.4",
+    "solveExit": 1,
+    "solveSeconds": 0.698,
+    "solveStatus": "incomplete",
+    "reason": "no-path-within-bounds",
+    "segmentCount": 0,
+    "lengthMil": null,
+    "checkExit": null,
+    "checkStatus": null
+  },
+  {
+    "id": "PCB3-32-CHG_R_ISET-R6_1-U3_2",
+    "board": "PCB3",
+    "net": "CHG_R_ISET",
+    "netClass": "control-signal",
+    "layer": 2,
+    "widthMil": 4,
+    "from": "R6.1",
+    "to": "U3.2",
+    "solveExit": 1,
+    "solveSeconds": 0.051,
+    "solveStatus": "incomplete",
+    "reason": "endpoint-blocked",
+    "segmentCount": 0,
+    "lengthMil": null,
+    "checkExit": null,
+    "checkStatus": null
+  },
+  {
+    "id": "PCB3-33-CHG_R_VSET-R10_1-U3_7",
+    "board": "PCB3",
+    "net": "CHG_R_VSET",
+    "netClass": "control-signal",
+    "layer": 2,
+    "widthMil": 4,
+    "from": "R10.1",
+    "to": "U3.7",
+    "solveExit": 1,
+    "solveSeconds": 0.158,
+    "solveStatus": "incomplete",
+    "reason": "no-path-within-bounds",
+    "segmentCount": 0,
+    "lengthMil": null,
+    "checkExit": null,
+    "checkStatus": null
+  },
+  {
+    "id": "PCB3-34-I2S_BCLK_1V8-U10_C1-J1_P11",
+    "board": "PCB3",
+    "net": "I2S_BCLK_1V8",
+    "netClass": "bus-interface",
+    "layer": 2,
+    "widthMil": 4,
+    "from": "U10.C1",
+    "to": "J1.P11",
+    "solveExit": 1,
+    "solveSeconds": 0.05,
+    "solveStatus": "incomplete",
+    "reason": "endpoint-blocked",
+    "segmentCount": 0,
+    "lengthMil": null,
+    "checkExit": null,
+    "checkStatus": null
+  },
+  {
+    "id": "PCB3-35-I2S_AMP_DIN_1V8-J1_P13-U10_B1",
+    "board": "PCB3",
+    "net": "I2S_AMP_DIN_1V8",
+    "netClass": "bus-interface",
+    "layer": 2,
+    "widthMil": 4,
+    "from": "J1.P13",
+    "to": "U10.B1",
+    "solveExit": 1,
+    "solveSeconds": 0.425,
+    "solveStatus": "incomplete",
+    "reason": "no-path-within-bounds",
+    "segmentCount": 0,
+    "lengthMil": null,
+    "checkExit": null,
+    "checkStatus": null
+  },
+  {
+    "id": "PCB3-36-I2S_LRCLK_1V8-U10_C3-J1_P12",
+    "board": "PCB3",
+    "net": "I2S_LRCLK_1V8",
+    "netClass": "bus-interface",
+    "layer": 2,
+    "widthMil": 4,
+    "from": "U10.C3",
+    "to": "J1.P12",
+    "solveExit": 1,
+    "solveSeconds": 0.112,
+    "solveStatus": "incomplete",
+    "reason": "no-path-within-bounds",
+    "segmentCount": 0,
+    "lengthMil": null,
+    "checkExit": null,
+    "checkStatus": null
+  },
+  {
+    "id": "PCB2-37-VSYS-C4_1-C5_1",
+    "board": "PCB2",
+    "net": "VSYS",
+    "netClass": "high-current-power",
+    "layer": 1,
+    "widthMil": 10,
+    "from": "C4.1",
+    "to": "C5.1",
+    "solveExit": 1,
+    "solveSeconds": 0.091,
+    "solveStatus": "incomplete",
+    "reason": "no-path-within-bounds",
+    "lengthMil": 0,
+    "checkExit": null,
+    "checkStatus": null
+  },
+  {
+    "id": "PCB2-39-VSYS-C8_1-C9_1",
+    "board": "PCB2",
+    "net": "VSYS",
+    "netClass": "high-current-power",
+    "layer": 1,
+    "widthMil": 10,
+    "from": "C8.1",
+    "to": "C9.1",
+    "solveExit": 1,
+    "solveSeconds": 0.176,
+    "solveStatus": "incomplete",
+    "reason": "no-path-within-bounds",
+    "lengthMil": 0,
+    "checkExit": null,
+    "checkStatus": null
+  },
+  {
+    "id": "PCB2-40-VSYS-C10_1-C9_1",
+    "board": "PCB2",
+    "net": "VSYS",
+    "netClass": "high-current-power",
+    "layer": 1,
+    "widthMil": 10,
+    "from": "C10.1",
+    "to": "C9.1",
+    "solveExit": 1,
+    "solveSeconds": 0.152,
+    "solveStatus": "incomplete",
+    "reason": "no-path-within-bounds",
+    "lengthMil": 0,
+    "checkExit": null,
+    "checkStatus": null
+  },
+  {
+    "id": "PCB2-42-VSYS-C11_1-U3_5",
+    "board": "PCB2",
+    "net": "VSYS",
+    "netClass": "high-current-power",
+    "layer": 2,
+    "widthMil": 10,
+    "from": "C11.1",
+    "to": "U3.5",
+    "solveExit": 1,
+    "solveSeconds": 0.053,
+    "solveStatus": "incomplete",
+    "reason": "endpoint-blocked",
+    "lengthMil": 0,
+    "checkExit": null,
+    "checkStatus": null
+  },
+  {
+    "id": "PCB2-44-1V2_FPGA_PLL-R27_2-R30_1",
+    "board": "PCB2",
+    "net": "1V2_FPGA_PLL",
+    "netClass": "power-branch",
+    "layer": 1,
+    "widthMil": 6,
+    "from": "R27.2",
+    "to": "R30.1",
+    "solveExit": 1,
+    "solveSeconds": 0.121,
+    "solveStatus": "incomplete",
+    "reason": "no-path-within-bounds",
+    "lengthMil": 0,
+    "checkExit": null,
+    "checkStatus": null
+  },
+  {
+    "id": "PCB3-45-1V8_SYS-C15_1-C17_1",
+    "board": "PCB3",
+    "net": "1V8_SYS",
+    "netClass": "power-branch",
+    "layer": 2,
+    "widthMil": 6,
+    "from": "C15.1",
+    "to": "C17.1",
+    "solveExit": 1,
+    "solveSeconds": 0.122,
+    "solveStatus": "incomplete",
+    "reason": "no-path-within-bounds",
+    "lengthMil": 0,
+    "checkExit": null,
+    "checkStatus": null
+  },
+  {
+    "id": "PCB3-46-1V8_SYS-C18_1-R5_2",
+    "board": "PCB3",
+    "net": "1V8_SYS",
+    "netClass": "power-branch",
+    "layer": 1,
+    "widthMil": 6,
+    "from": "C18.1",
+    "to": "R5.2",
+    "solveExit": 1,
+    "solveSeconds": 2.115,
+    "solveStatus": "incomplete",
+    "reason": "state-budget",
+    "lengthMil": 0,
+    "checkExit": null,
+    "checkStatus": null
+  },
+  {
+    "id": "PCB3-47-1V8_SYS-C14_1-C19_1",
+    "board": "PCB3",
+    "net": "1V8_SYS",
+    "netClass": "power-branch",
+    "layer": 1,
+    "widthMil": 6,
+    "from": "C14.1",
+    "to": "C19.1",
+    "solveExit": 1,
+    "solveSeconds": 0.096,
+    "solveStatus": "incomplete",
+    "reason": "no-path-within-bounds",
+    "lengthMil": 0,
+    "checkExit": null,
+    "checkStatus": null
+  }
+]

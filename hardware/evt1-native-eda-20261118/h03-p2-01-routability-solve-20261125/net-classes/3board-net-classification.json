@@ -1,0 +1,2040 @@
+{
+  "PCB1": {
+    "netClassification": {
+      "power-branch": {
+        "netCount": 10,
+        "openNetCount": 10,
+        "openErrors": 88,
+        "nets": [
+          "1V8_FPGA_IO",
+          "1V8_SYS",
+          "3V3_SYS",
+          "CAM_AVDD_2V8",
+          "CAM_DOVDD_1V8",
+          "CAM_DOVDD_OK_3V3",
+          "CAM_DVDD_1V2",
+          "ESP_VDD_SPI_3V3",
+          "LED_3V3_PRIV",
+          "V_INA_OUT"
+        ]
+      },
+      "control-signal": {
+        "netCount": 42,
+        "openNetCount": 39,
+        "openErrors": 93,
+        "nets": [
+          "AMP_SD_MODE_1V8",
+          "BB_FB",
+          "BB_L1",
+          "BB_L2",
+          "BK_SW",
+          "BK_VSET",
+          "CAM_PWDN",
+          "CAM_PWR_REQ",
+          "CAM_RESET_N",
+          "CAM_SCCB_SCL",
+          "CAM_SCCB_SDA",
+          "CHG_ISO_GATE",
+          "ESP_CHIP_PU",
+          "FPGA_CDONE_VSYNC_N",
+          "FPGA_CRESET_3V3",
+          "FPGA_CRESET_B",
+          "ISENSE_N",
+          "LS1_A4_TIE_100K_GND",
+          "LS1_B4_TIE_100K_GND",
+          "LS3_VREF2_EN",
+          "LS4_VREF2_EN",
+          "NTC_TS_L",
+          "PRIV_LED_ANODE",
+          "PRIV_VTH_H",
+          "PRIV_VTH_L",
+          "PRIV_WINDOW_OK",
+          "PRIV_WINDOW_OK_F",
+          "USB_LIM_ILIM",
+          "VSYNC_CDONE_3V3",
+          "XREQ_A",
+          "host_cs_n",
+          "host_cs_n_3v3",
+          "host_qio0",
+          "host_qio0_3v3",
+          "host_qio1",
+          "host_qio1_3v3",
+          "host_qio2",
+          "host_qio2_3v3",
+          "host_qio3",
+          "host_qio3_3v3",
+          "host_sck",
+          "host_sck_3v3"
+        ]
+      },
+      "bus-interface": {
+        "netCount": 34,
+        "openNetCount": 22,
+        "openErrors": 53,
+        "nets": [
+          "CAM_D0_1V8",
+          "CAM_D0_3V3",
+          "CAM_D1_1V8",
+          "CAM_D1_3V3",
+          "CAM_D2_1V8",
+          "CAM_D2_3V3",
+          "CAM_D3_1V8",
+          "CAM_D3_3V3",
+          "CAM_D4_1V8",
+          "CAM_D4_3V3",
+          "CAM_D5_1V8",
+          "CAM_D5_3V3",
+          "CAM_D6_1V8",
+          "CAM_D6_3V3",
+          "CAM_D7_1V8",
+          "CAM_D7_3V3",
+          "CAM_HREF_1V8",
+          "CAM_HREF_3V3",
+          "CAM_VSYNC_1V8",
+          "CAM_VSYNC_3V3",
+          "I2S_AMP_DIN_1V8",
+          "I2S_S3_DOUT_1V8",
+          "I2S_S3_DOUT_3V3",
+          "IPC_S3_TX_1V8",
+          "IPC_S3_TX_3V3",
+          "PDM_D0_1V8",
+          "PDM_D0_3V3",
+          "PDM_D1_1V8",
+          "PDM_D1_3V3",
+          "QSPI_DIR1_EN",
+          "SYS_I2C_SCL_1V8",
+          "SYS_I2C_SCL_3V3",
+          "SYS_I2C_SDA_1V8",
+          "SYS_I2C_SDA_3V3"
+        ]
+      },
+      "rf-clock-hs": {
+        "netCount": 14,
+        "openNetCount": 12,
+        "openErrors": 30,
+        "nets": [
+          "CAM_PCLK_1V8",
+          "CAM_PCLK_3V3",
+          "CAM_XCLK_1V8",
+          "CAM_XCLK_3V3",
+          "ESP_ANT_FEED",
+          "ESP_RF_ANT",
+          "I2S_BCLK_1V8",
+          "I2S_BCLK_3V3",
+          "I2S_LRCLK_1V8",
+          "I2S_LRCLK_3V3",
+          "IPC_NRF_TX_1V8",
+          "IPC_NRF_TX_3V3",
+          "PDM_CLK_1V8",
+          "PDM_CLK_3V3"
+        ]
+      },
+      "gnd": {
+        "netCount": 1,
+        "openNetCount": 1,
+        "openErrors": 25,
+        "nets": [
+          "GND"
+        ]
+      },
+      "diff-or-paired": {
+        "netCount": 4,
+        "openNetCount": 2,
+        "openErrors": 4,
+        "nets": [
+          "SPK_L_N",
+          "SPK_L_P",
+          "USB_DM",
+          "USB_DP"
+        ]
+      },
+      "high-current-power": {
+        "netCount": 7,
+        "openNetCount": 6,
+        "openErrors": 29,
+        "nets": [
+          "VBAT_L",
+          "VBAT_R_ISOLATED",
+          "VBAT_R_RET",
+          "VBUS_5V",
+          "VBUS_5V_USB",
+          "VOUT_L_PPATH",
+          "VSYS"
+        ]
+      }
+    },
+    "tracksByLayer": {
+      "1": 299,
+      "17": 44,
+      "2": 392,
+      "16": 116
+    },
+    "unblockedSameLayerPairs": [
+      {
+        "net": "LS4_VREF2_EN",
+        "class": "control-signal",
+        "layer": 1,
+        "from": "U20.7",
+        "to": "U20.8",
+        "distMil": 13.8,
+        "padCount": 4,
+        "openErrs": 3,
+        "existingTracks": 0
+      },
+      {
+        "net": "3V3_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "U1.55",
+        "to": "U1.56",
+        "distMil": 15.7,
+        "padCount": 46,
+        "openErrs": 43,
+        "existingTracks": 0
+      },
+      {
+        "net": "3V3_SYS",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "U2.E2",
+        "to": "U2.E3",
+        "distMil": 15.7,
+        "padCount": 46,
+        "openErrs": 43,
+        "existingTracks": 0
+      },
+      {
+        "net": "BB_L1",
+        "class": "control-signal",
+        "layer": 2,
+        "from": "U2.B2",
+        "to": "U2.B3",
+        "distMil": 15.7,
+        "padCount": 3,
+        "openErrs": 2,
+        "existingTracks": 0
+      },
+      {
+        "net": "BB_L2",
+        "class": "control-signal",
+        "layer": 2,
+        "from": "U2.D2",
+        "to": "U2.D3",
+        "distMil": 15.7,
+        "padCount": 3,
+        "openErrs": 2,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "U8.3",
+        "to": "U8.4",
+        "distMil": 15.8,
+        "padCount": 18,
+        "openErrs": 13,
+        "existingTracks": 0
+      },
+      {
+        "net": "3V3_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "U1.3",
+        "to": "U1.2",
+        "distMil": 15.8,
+        "padCount": 46,
+        "openErrs": 43,
+        "existingTracks": 0
+      },
+      {
+        "net": "VSYS",
+        "class": "high-current-power",
+        "layer": 2,
+        "from": "U2.A1",
+        "to": "U2.A2",
+        "distMil": 15.8,
+        "padCount": 15,
+        "openErrs": 12,
+        "existingTracks": 0
+      },
+      {
+        "net": "SYS_I2C_SDA_1V8",
+        "class": "bus-interface",
+        "layer": 2,
+        "from": "U19.4",
+        "to": "R17.1",
+        "distMil": 18.63,
+        "padCount": 4,
+        "openErrs": 3,
+        "existingTracks": 0
+      },
+      {
+        "net": "3V3_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "C32.1",
+        "to": "R35.1",
+        "distMil": 23.6,
+        "padCount": 46,
+        "openErrs": 43,
+        "existingTracks": 0
+      },
+      {
+        "net": "3V3_SYS",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "R1.1",
+        "to": "R26.2",
+        "distMil": 26.0,
+        "padCount": 46,
+        "openErrs": 43,
+        "existingTracks": 0
+      },
+      {
+        "net": "CHG_ISO_GATE",
+        "class": "control-signal",
+        "layer": 1,
+        "from": "R19.2",
+        "to": "R20.1",
+        "distMil": 26.0,
+        "padCount": 3,
+        "openErrs": 2,
+        "existingTracks": 0
+      },
+      {
+        "net": "SYS_I2C_SCL_1V8",
+        "class": "bus-interface",
+        "layer": 2,
+        "from": "U19.3",
+        "to": "R15.1",
+        "distMil": 26.37,
+        "padCount": 4,
+        "openErrs": 3,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "U8.5",
+        "to": "U8.4",
+        "distMil": 26.45,
+        "padCount": 18,
+        "openErrs": 13,
+        "existingTracks": 0
+      },
+      {
+        "net": "SYS_I2C_SCL_3V3",
+        "class": "bus-interface",
+        "layer": 2,
+        "from": "U19.6",
+        "to": "R16.1",
+        "distMil": 31.02,
+        "padCount": 4,
+        "openErrs": 3,
+        "existingTracks": 0
+      },
+      {
+        "net": "VSYS",
+        "class": "high-current-power",
+        "layer": 2,
+        "from": "U2.A1",
+        "to": "U2.A3",
+        "distMil": 31.5,
+        "padCount": 15,
+        "openErrs": 12,
+        "existingTracks": 0
+      },
+      {
+        "net": "CAM_DOVDD_1V8",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "U20.2",
+        "to": "C19.1",
+        "distMil": 31.56,
+        "padCount": 15,
+        "openErrs": 11,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_FPGA_IO",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "U18.22",
+        "to": "U18.23",
+        "distMil": 31.74,
+        "padCount": 4,
+        "openErrs": 4,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "U21.1",
+        "to": "U21.24",
+        "distMil": 31.74,
+        "padCount": 18,
+        "openErrs": 13,
+        "existingTracks": 0
+      },
+      {
+        "net": "3V3_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "U15.22",
+        "to": "U15.23",
+        "distMil": 31.74,
+        "padCount": 46,
+        "openErrs": 43,
+        "existingTracks": 0
+      },
+      {
+        "net": "3V3_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "U16.22",
+        "to": "U16.23",
+        "distMil": 31.74,
+        "padCount": 46,
+        "openErrs": 43,
+        "existingTracks": 0
+      },
+      {
+        "net": "3V3_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "U21.22",
+        "to": "U21.23",
+        "distMil": 31.74,
+        "padCount": 46,
+        "openErrs": 43,
+        "existingTracks": 0
+      },
+      {
+        "net": "CAM_DOVDD_1V8",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "U16.1",
+        "to": "U16.24",
+        "distMil": 31.74,
+        "padCount": 15,
+        "openErrs": 11,
+        "existingTracks": 0
+      },
+      {
+        "net": "CAM_DOVDD_1V8",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "U15.24",
+        "to": "U15.1",
+        "distMil": 31.84,
+        "padCount": 15,
+        "openErrs": 11,
+        "existingTracks": 0
+      },
+      {
+        "net": "PRIV_WINDOW_OK",
+        "class": "control-signal",
+        "layer": 2,
+        "from": "U14.7",
+        "to": "R28.1",
+        "distMil": 33.36,
+        "padCount": 4,
+        "openErrs": 3,
+        "existingTracks": 0
+      },
+      {
+        "net": "3V3_SYS",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "C30.1",
+        "to": "R7.2",
+        "distMil": 34.53,
+        "padCount": 46,
+        "openErrs": 43,
+        "existingTracks": 0
+      },
+      {
+        "net": "3V3_SYS",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "C38.1",
+        "to": "R9.2",
+        "distMil": 34.53,
+        "padCount": 46,
+        "openErrs": 43,
+        "existingTracks": 0
+      },
+      {
+        "net": "CAM_DOVDD_1V8",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "C33.1",
+        "to": "U15.10",
+        "distMil": 38.9,
+        "padCount": 15,
+        "openErrs": 11,
+        "existingTracks": 0
+      },
+      {
+        "net": "VSYS",
+        "class": "high-current-power",
+        "layer": 2,
+        "from": "U4.2",
+        "to": "U4.4",
+        "distMil": 39.3,
+        "padCount": 15,
+        "openErrs": 12,
+        "existingTracks": 0
+      },
+      {
+        "net": "3V3_SYS",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "C20.1",
+        "to": "U13.4",
+        "distMil": 39.97,
+        "padCount": 46,
+        "openErrs": 43,
+        "existingTracks": 0
+      },
+      {
+        "net": "VOUT_L_PPATH",
+        "class": "high-current-power",
+        "layer": 2,
+        "from": "U3.B2",
+        "to": "U9.3",
+        "distMil": 41.47,
+        "padCount": 4,
+        "openErrs": 4,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "U8.3",
+        "to": "U8.5",
+        "distMil": 41.63,
+        "padCount": 18,
+        "openErrs": 13,
+        "existingTracks": 0
+      },
+      {
+        "net": "3V3_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "C16.1",
+        "to": "U1.20",
+        "distMil": 43.62,
+        "padCount": 46,
+        "openErrs": 43,
+        "existingTracks": 0
+      },
+      {
+        "net": "3V3_SYS",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "R26.2",
+        "to": "R9.2",
+        "distMil": 47.3,
+        "padCount": 46,
+        "openErrs": 43,
+        "existingTracks": 0
+      },
+      {
+        "net": "3V3_SYS",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "R16.2",
+        "to": "R24.2",
+        "distMil": 48.37,
+        "padCount": 46,
+        "openErrs": 43,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "C24.1",
+        "to": "C29.1",
+        "distMil": 51.2,
+        "padCount": 18,
+        "openErrs": 13,
+        "existingTracks": 0
+      },
+      {
+        "net": "3V3_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "C35.1",
+        "to": "R18.2",
+        "distMil": 53.89,
+        "padCount": 46,
+        "openErrs": 43,
+        "existingTracks": 0
+      },
+      {
+        "net": "3V3_SYS",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "R1.1",
+        "to": "R9.2",
+        "distMil": 53.97,
+        "padCount": 46,
+        "openErrs": 43,
+        "existingTracks": 0
+      },
+      {
+        "net": "3V3_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "C15.1",
+        "to": "U1.20",
+        "distMil": 55.43,
+        "padCount": 46,
+        "openErrs": 43,
+        "existingTracks": 0
+      },
+      {
+        "net": "3V3_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "U1.56",
+        "to": "U1.2",
+        "distMil": 57.16,
+        "padCount": 46,
+        "openErrs": 43,
+        "existingTracks": 0
+      },
+      {
+        "net": "3V3_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "C41.1",
+        "to": "U11.4",
+        "distMil": 58.13,
+        "padCount": 46,
+        "openErrs": 43,
+        "existingTracks": 0
+      },
+      {
+        "net": "VSYS",
+        "class": "high-current-power",
+        "layer": 2,
+        "from": "U9.7",
+        "to": "U9.2",
+        "distMil": 58.3,
+        "padCount": 15,
+        "openErrs": 12,
+        "existingTracks": 0
+      },
+      {
+        "net": "3V3_SYS",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "U5.4",
+        "to": "U6.4",
+        "distMil": 60.36,
+        "padCount": 46,
+        "openErrs": 43,
+        "existingTracks": 0
+      },
+      {
+        "net": "VSYS",
+        "class": "high-current-power",
+        "layer": 2,
+        "from": "U4.2",
+        "to": "U9.7",
+        "distMil": 61.24,
+        "padCount": 15,
+        "openErrs": 12,
+        "existingTracks": 0
+      },
+      {
+        "net": "CAM_DOVDD_1V8",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "U16.1",
+        "to": "U16.5",
+        "distMil": 63.0,
+        "padCount": 15,
+        "openErrs": 11,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "J1.P4",
+        "to": "J1.P5",
+        "distMil": 63.32,
+        "padCount": 18,
+        "openErrs": 13,
+        "existingTracks": 0
+      },
+      {
+        "net": "VSYS",
+        "class": "high-current-power",
+        "layer": 2,
+        "from": "J1.P2",
+        "to": "J1.P3",
+        "distMil": 63.32,
+        "padCount": 15,
+        "openErrs": 12,
+        "existingTracks": 0
+      },
+      {
+        "net": "3V3_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "C34.1",
+        "to": "C35.1",
+        "distMil": 64.13,
+        "padCount": 46,
+        "openErrs": 43,
+        "existingTracks": 0
+      },
+      {
+        "net": "3V3_SYS",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "C5.1",
+        "to": "U17.5",
+        "distMil": 65.37,
+        "padCount": 46,
+        "openErrs": 43,
+        "existingTracks": 0
+      },
+      {
+        "net": "3V3_SYS",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "C22.1",
+        "to": "U6.4",
+        "distMil": 65.88,
+        "padCount": 46,
+        "openErrs": 43,
+        "existingTracks": 0
+      }
+    ]
+  },
+  "PCB2": {
+    "netClassification": {
+      "power-branch": {
+        "netCount": 8,
+        "openNetCount": 8,
+        "openErrors": 56,
+        "nets": [
+          "1V2_FPGA_CORE",
+          "1V2_FPGA_PLL",
+          "1V8_FPGA_IO",
+          "1V8_FPGA_VPP",
+          "1V8_SYS",
+          "AVDD_CRESET_VSYS",
+          "AVDD_D3_VSYS",
+          "AVDD_OPT_BIAS"
+        ]
+      },
+      "control-signal": {
+        "netCount": 24,
+        "openNetCount": 24,
+        "openErrors": 77,
+        "nets": [
+          "AVDD_PG_NODE",
+          "AVDD_PG_OK",
+          "AVDD_PULSE_QUAL",
+          "AVDD_QUAL_CLR_N",
+          "AVDD_QUAL_RC",
+          "AVDD_REQ_FILTER",
+          "AVDD_WD_DIV",
+          "AVDD_WD_Q",
+          "AVDD_WD_SET",
+          "FPGA_1V2_SENSE",
+          "FPGA_1V8_EN",
+          "FPGA_CDONE_VSYNC_N",
+          "FPGA_CRESET_B",
+          "OPT_AVDD_EN",
+          "OPT_CS_N_L",
+          "OPT_CS_N_R",
+          "PRIV_LED_ANODE",
+          "host_cs_n",
+          "host_qio0",
+          "host_qio1",
+          "host_qio2",
+          "host_qio3",
+          "host_sck",
+          "opt_cs_n"
+        ]
+      },
+      "gnd": {
+        "netCount": 1,
+        "openNetCount": 1,
+        "openErrors": 28,
+        "nets": [
+          "GND"
+        ]
+      },
+      "rf-clock-hs": {
+        "netCount": 5,
+        "openNetCount": 4,
+        "openErrors": 9,
+        "nets": [
+          "OPT_SCK_L",
+          "OPT_SCK_R",
+          "PDM_CLK_1V8",
+          "clk_48m",
+          "opt_sck"
+        ]
+      },
+      "bus-interface": {
+        "netCount": 19,
+        "openNetCount": 16,
+        "openErrors": 32,
+        "nets": [
+          "PDM_D0_1V8",
+          "SYS_I2C_SCL_1V8",
+          "SYS_I2C_SDA_1V8",
+          "opt_l_qdo0",
+          "opt_l_qdo0_PANEL",
+          "opt_l_qdo1",
+          "opt_l_qdo1_PANEL",
+          "opt_l_qdo2",
+          "opt_l_qdo2_PANEL",
+          "opt_l_qdo3",
+          "opt_l_qdo3_PANEL",
+          "opt_r_qdo0",
+          "opt_r_qdo0_PANEL",
+          "opt_r_qdo1",
+          "opt_r_qdo1_PANEL",
+          "opt_r_qdo2",
+          "opt_r_qdo2_PANEL",
+          "opt_r_qdo3",
+          "opt_r_qdo3_PANEL"
+        ]
+      },
+      "high-current-power": {
+        "netCount": 1,
+        "openNetCount": 1,
+        "openErrors": 25,
+        "nets": [
+          "VSYS"
+        ]
+      },
+      "diff-or-paired": {
+        "netCount": 0,
+        "openNetCount": 0,
+        "openErrors": 0,
+        "nets": []
+      }
+    },
+    "tracksByLayer": {
+      "1": 242,
+      "2": 174,
+      "16": 16,
+      "17": 2
+    },
+    "unblockedSameLayerPairs": [
+      {
+        "net": "VSYS",
+        "class": "high-current-power",
+        "layer": 1,
+        "from": "C10.1",
+        "to": "C5.1",
+        "distMil": 21.6,
+        "padCount": 35,
+        "openErrs": 25,
+        "existingTracks": 0
+      },
+      {
+        "net": "AVDD_WD_Q",
+        "class": "control-signal",
+        "layer": 2,
+        "from": "R3.1",
+        "to": "R6.1",
+        "distMil": 21.7,
+        "padCount": 5,
+        "openErrs": 4,
+        "existingTracks": 0
+      },
+      {
+        "net": "VSYS",
+        "class": "high-current-power",
+        "layer": 1,
+        "from": "C8.1",
+        "to": "C12.1",
+        "distMil": 21.7,
+        "padCount": 35,
+        "openErrs": 25,
+        "existingTracks": 0
+      },
+      {
+        "net": "VSYS",
+        "class": "high-current-power",
+        "layer": 1,
+        "from": "U4.3",
+        "to": "U4.4",
+        "distMil": 25.6,
+        "padCount": 35,
+        "openErrs": 25,
+        "existingTracks": 0
+      },
+      {
+        "net": "AVDD_QUAL_RC",
+        "class": "control-signal",
+        "layer": 2,
+        "from": "U3.6",
+        "to": "U3.4",
+        "distMil": 27.6,
+        "padCount": 5,
+        "openErrs": 5,
+        "existingTracks": 0
+      },
+      {
+        "net": "OPT_AVDD_EN",
+        "class": "control-signal",
+        "layer": 2,
+        "from": "U5.6",
+        "to": "U5.4",
+        "distMil": 27.6,
+        "padCount": 7,
+        "openErrs": 7,
+        "existingTracks": 0
+      },
+      {
+        "net": "VSYS",
+        "class": "high-current-power",
+        "layer": 1,
+        "from": "C4.1",
+        "to": "C5.1",
+        "distMil": 43.3,
+        "padCount": 35,
+        "openErrs": 25,
+        "existingTracks": 0
+      },
+      {
+        "net": "VSYS",
+        "class": "high-current-power",
+        "layer": 1,
+        "from": "C8.1",
+        "to": "R8.1",
+        "distMil": 43.3,
+        "padCount": 35,
+        "openErrs": 25,
+        "existingTracks": 0
+      },
+      {
+        "net": "AVDD_D3_VSYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "R2.1",
+        "to": "R7.1",
+        "distMil": 43.7,
+        "padCount": 5,
+        "openErrs": 3,
+        "existingTracks": 0
+      },
+      {
+        "net": "VSYS",
+        "class": "high-current-power",
+        "layer": 2,
+        "from": "U1.4",
+        "to": "U13.4",
+        "distMil": 44.41,
+        "padCount": 35,
+        "openErrs": 25,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "C26.1",
+        "to": "C33.1",
+        "distMil": 47.2,
+        "padCount": 11,
+        "openErrs": 9,
+        "existingTracks": 0
+      },
+      {
+        "net": "VSYS",
+        "class": "high-current-power",
+        "layer": 1,
+        "from": "C8.1",
+        "to": "C9.1",
+        "distMil": 47.2,
+        "padCount": 35,
+        "openErrs": 25,
+        "existingTracks": 0
+      },
+      {
+        "net": "VSYS",
+        "class": "high-current-power",
+        "layer": 2,
+        "from": "U12.4",
+        "to": "U12.3",
+        "distMil": 47.2,
+        "padCount": 35,
+        "openErrs": 25,
+        "existingTracks": 0
+      },
+      {
+        "net": "VSYS",
+        "class": "high-current-power",
+        "layer": 1,
+        "from": "C10.1",
+        "to": "C9.1",
+        "distMil": 47.3,
+        "padCount": 35,
+        "openErrs": 25,
+        "existingTracks": 0
+      },
+      {
+        "net": "VSYS",
+        "class": "high-current-power",
+        "layer": 2,
+        "from": "C11.1",
+        "to": "U3.5",
+        "distMil": 48.6,
+        "padCount": 35,
+        "openErrs": 25,
+        "existingTracks": 0
+      },
+      {
+        "net": "VSYS",
+        "class": "high-current-power",
+        "layer": 1,
+        "from": "U15.6",
+        "to": "U15.1",
+        "distMil": 49.2,
+        "padCount": 35,
+        "openErrs": 25,
+        "existingTracks": 0
+      },
+      {
+        "net": "VSYS",
+        "class": "high-current-power",
+        "layer": 1,
+        "from": "C9.1",
+        "to": "C12.1",
+        "distMil": 51.95,
+        "padCount": 35,
+        "openErrs": 25,
+        "existingTracks": 0
+      },
+      {
+        "net": "VSYS",
+        "class": "high-current-power",
+        "layer": 1,
+        "from": "C5.1",
+        "to": "C9.1",
+        "distMil": 52.0,
+        "padCount": 35,
+        "openErrs": 25,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V2_FPGA_CORE",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "C28.1",
+        "to": "U2.C2",
+        "distMil": 52.45,
+        "padCount": 6,
+        "openErrs": 4,
+        "existingTracks": 0
+      },
+      {
+        "net": "VSYS",
+        "class": "high-current-power",
+        "layer": 2,
+        "from": "U12.4",
+        "to": "U13.1",
+        "distMil": 52.97,
+        "padCount": 35,
+        "openErrs": 25,
+        "existingTracks": 0
+      },
+      {
+        "net": "VSYS",
+        "class": "high-current-power",
+        "layer": 2,
+        "from": "U3.5",
+        "to": "U5.5",
+        "distMil": 53.1,
+        "padCount": 35,
+        "openErrs": 25,
+        "existingTracks": 0
+      },
+      {
+        "net": "VSYS",
+        "class": "high-current-power",
+        "layer": 2,
+        "from": "U1.4",
+        "to": "U5.5",
+        "distMil": 54.86,
+        "padCount": 35,
+        "openErrs": 25,
+        "existingTracks": 0
+      },
+      {
+        "net": "VSYS",
+        "class": "high-current-power",
+        "layer": 2,
+        "from": "U3.5",
+        "to": "U6.4",
+        "distMil": 57.9,
+        "padCount": 35,
+        "openErrs": 25,
+        "existingTracks": 0
+      },
+      {
+        "net": "AVDD_PG_OK",
+        "class": "control-signal",
+        "layer": 2,
+        "from": "U3.3",
+        "to": "U5.1",
+        "distMil": 60.73,
+        "padCount": 3,
+        "openErrs": 3,
+        "existingTracks": 0
+      },
+      {
+        "net": "VSYS",
+        "class": "high-current-power",
+        "layer": 2,
+        "from": "U12.4",
+        "to": "U12.1",
+        "distMil": 61.48,
+        "padCount": 35,
+        "openErrs": 25,
+        "existingTracks": 0
+      },
+      {
+        "net": "VSYS",
+        "class": "high-current-power",
+        "layer": 2,
+        "from": "U13.1",
+        "to": "U13.4",
+        "distMil": 61.56,
+        "padCount": 35,
+        "openErrs": 25,
+        "existingTracks": 0
+      },
+      {
+        "net": "VSYS",
+        "class": "high-current-power",
+        "layer": 1,
+        "from": "U15.6",
+        "to": "U4.4",
+        "distMil": 62.23,
+        "padCount": 35,
+        "openErrs": 25,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "J1.P5",
+        "to": "J1.P4",
+        "distMil": 63.32,
+        "padCount": 11,
+        "openErrs": 9,
+        "existingTracks": 0
+      },
+      {
+        "net": "VSYS",
+        "class": "high-current-power",
+        "layer": 2,
+        "from": "U8.8",
+        "to": "U14.5",
+        "distMil": 63.67,
+        "padCount": 35,
+        "openErrs": 25,
+        "existingTracks": 0
+      },
+      {
+        "net": "VSYS",
+        "class": "high-current-power",
+        "layer": 1,
+        "from": "C9.1",
+        "to": "R8.1",
+        "distMil": 64.05,
+        "padCount": 35,
+        "openErrs": 25,
+        "existingTracks": 0
+      },
+      {
+        "net": "VSYS",
+        "class": "high-current-power",
+        "layer": 1,
+        "from": "C10.1",
+        "to": "C4.1",
+        "distMil": 64.9,
+        "padCount": 35,
+        "openErrs": 25,
+        "existingTracks": 0
+      },
+      {
+        "net": "VSYS",
+        "class": "high-current-power",
+        "layer": 1,
+        "from": "C10.1",
+        "to": "R5.2",
+        "distMil": 65.14,
+        "padCount": 35,
+        "openErrs": 25,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "MK2.4",
+        "to": "MK2.2",
+        "distMil": 66.9,
+        "padCount": 11,
+        "openErrs": 9,
+        "existingTracks": 0
+      },
+      {
+        "net": "VSYS",
+        "class": "high-current-power",
+        "layer": 2,
+        "from": "U1.4",
+        "to": "U3.5",
+        "distMil": 68.11,
+        "padCount": 35,
+        "openErrs": 25,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V2_FPGA_PLL",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "R27.2",
+        "to": "R30.1",
+        "distMil": 70.0,
+        "padCount": 5,
+        "openErrs": 5,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "U9.5",
+        "to": "U9.8",
+        "distMil": 70.17,
+        "padCount": 11,
+        "openErrs": 9,
+        "existingTracks": 0
+      },
+      {
+        "net": "VSYS",
+        "class": "high-current-power",
+        "layer": 1,
+        "from": "U15.6",
+        "to": "U4.3",
+        "distMil": 72.31,
+        "padCount": 35,
+        "openErrs": 25,
+        "existingTracks": 0
+      },
+      {
+        "net": "VSYS",
+        "class": "high-current-power",
+        "layer": 2,
+        "from": "U1.4",
+        "to": "U13.1",
+        "distMil": 73.38,
+        "padCount": 35,
+        "openErrs": 25,
+        "existingTracks": 0
+      },
+      {
+        "net": "VSYS",
+        "class": "high-current-power",
+        "layer": 2,
+        "from": "U10.5",
+        "to": "U11.5",
+        "distMil": 74.8,
+        "padCount": 35,
+        "openErrs": 25,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "U9.8",
+        "to": "U9.12",
+        "distMil": 75.51,
+        "padCount": 11,
+        "openErrs": 9,
+        "existingTracks": 0
+      },
+      {
+        "net": "VSYS",
+        "class": "high-current-power",
+        "layer": 2,
+        "from": "C11.1",
+        "to": "U5.5",
+        "distMil": 78.54,
+        "padCount": 35,
+        "openErrs": 25,
+        "existingTracks": 0
+      },
+      {
+        "net": "VSYS",
+        "class": "high-current-power",
+        "layer": 2,
+        "from": "U13.4",
+        "to": "U3.5",
+        "distMil": 79.92,
+        "padCount": 35,
+        "openErrs": 25,
+        "existingTracks": 0
+      },
+      {
+        "net": "VSYS",
+        "class": "high-current-power",
+        "layer": 2,
+        "from": "C6.1",
+        "to": "U11.5",
+        "distMil": 80.04,
+        "padCount": 35,
+        "openErrs": 25,
+        "existingTracks": 0
+      },
+      {
+        "net": "VSYS",
+        "class": "high-current-power",
+        "layer": 1,
+        "from": "C4.1",
+        "to": "C9.1",
+        "distMil": 80.31,
+        "padCount": 35,
+        "openErrs": 25,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V2_FPGA_CORE",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "C14.1",
+        "to": "U2.C2",
+        "distMil": 80.43,
+        "padCount": 6,
+        "openErrs": 4,
+        "existingTracks": 0
+      },
+      {
+        "net": "VSYS",
+        "class": "high-current-power",
+        "layer": 2,
+        "from": "U13.4",
+        "to": "U6.4",
+        "distMil": 80.64,
+        "padCount": 35,
+        "openErrs": 25,
+        "existingTracks": 0
+      },
+      {
+        "net": "VSYS",
+        "class": "high-current-power",
+        "layer": 1,
+        "from": "C5.1",
+        "to": "R5.2",
+        "distMil": 81.55,
+        "padCount": 35,
+        "openErrs": 25,
+        "existingTracks": 0
+      },
+      {
+        "net": "VSYS",
+        "class": "high-current-power",
+        "layer": 2,
+        "from": "U13.1",
+        "to": "U12.1",
+        "distMil": 82.6,
+        "padCount": 35,
+        "openErrs": 25,
+        "existingTracks": 0
+      },
+      {
+        "net": "VSYS",
+        "class": "high-current-power",
+        "layer": 2,
+        "from": "U12.4",
+        "to": "U13.4",
+        "distMil": 82.7,
+        "padCount": 35,
+        "openErrs": 25,
+        "existingTracks": 0
+      },
+      {
+        "net": "VSYS",
+        "class": "high-current-power",
+        "layer": 2,
+        "from": "U12.4",
+        "to": "U7.4",
+        "distMil": 82.7,
+        "padCount": 35,
+        "openErrs": 25,
+        "existingTracks": 0
+      }
+    ]
+  },
+  "PCB3": {
+    "netClassification": {
+      "power-branch": {
+        "netCount": 5,
+        "openNetCount": 5,
+        "openErrors": 36,
+        "nets": [
+          "1V8_SYS",
+          "NRF_DECA",
+          "NRF_DECD",
+          "NRF_DECN",
+          "NRF_DECR_RF"
+        ]
+      },
+      "control-signal": {
+        "netCount": 8,
+        "openNetCount": 8,
+        "openErrors": 18,
+        "nets": [
+          "AMP_R_SD_MODE",
+          "AMP_SD_MODE_1V8",
+          "AMP_SD_REQ_1V8",
+          "BLE_NRESET",
+          "CHG_MUTE_GATE",
+          "CHG_R_ISET",
+          "CHG_R_VSET",
+          "NTC_TS_R"
+        ]
+      },
+      "rf-clock-hs": {
+        "netCount": 15,
+        "openNetCount": 14,
+        "openErrors": 32,
+        "nets": [
+          "BLE_ANT_FEED",
+          "BLE_RF_ANT",
+          "BLE_RF_MID",
+          "BLE_SWDCLK",
+          "BLE_SWDIO",
+          "BLE_XC1",
+          "BLE_XC2",
+          "I2S_BCLK_1V8",
+          "I2S_LRCLK_1V8",
+          "IPC_NRF_TX_1V8",
+          "LFXO_XL1",
+          "LFXO_XL2",
+          "NRF_DCC",
+          "NRF_DCCD",
+          "PDM_CLK_1V8"
+        ]
+      },
+      "gnd": {
+        "netCount": 1,
+        "openNetCount": 1,
+        "openErrors": 14,
+        "nets": [
+          "GND"
+        ]
+      },
+      "bus-interface": {
+        "netCount": 4,
+        "openNetCount": 4,
+        "openErrors": 10,
+        "nets": [
+          "I2S_AMP_DIN_1V8",
+          "I2S_S3_DOUT_1V8",
+          "IPC_S3_TX_1V8",
+          "PDM_D1_1V8"
+        ]
+      },
+      "diff-or-paired": {
+        "netCount": 2,
+        "openNetCount": 2,
+        "openErrors": 4,
+        "nets": [
+          "SPK_R_N",
+          "SPK_R_P"
+        ]
+      },
+      "high-current-power": {
+        "netCount": 2,
+        "openNetCount": 2,
+        "openErrors": 13,
+        "nets": [
+          "VBAT_R_RET",
+          "VBUS_5V"
+        ]
+      }
+    },
+    "tracksByLayer": {
+      "1": 186,
+      "2": 200,
+      "16": 23
+    },
+    "unblockedSameLayerPairs": [
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "U11.B10",
+        "to": "U11.B12",
+        "distMil": 27.6,
+        "padCount": 27,
+        "openErrs": 24,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "C18.1",
+        "to": "TP6.4",
+        "distMil": 31.64,
+        "padCount": 27,
+        "openErrs": 24,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "U1.5",
+        "to": "U1.1",
+        "distMil": 32.57,
+        "padCount": 27,
+        "openErrs": 24,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "C20.1",
+        "to": "C4.1",
+        "distMil": 38.35,
+        "padCount": 27,
+        "openErrs": 24,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "C1.1",
+        "to": "U11.L11",
+        "distMil": 38.64,
+        "padCount": 27,
+        "openErrs": 24,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "U11.B10",
+        "to": "U11.B7",
+        "distMil": 41.3,
+        "padCount": 27,
+        "openErrs": 24,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "U11.E11",
+        "to": "U11.H11",
+        "distMil": 41.3,
+        "padCount": 27,
+        "openErrs": 24,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "U11.H11",
+        "to": "U11.L11",
+        "distMil": 41.4,
+        "padCount": 27,
+        "openErrs": 24,
+        "existingTracks": 0
+      },
+      {
+        "net": "NRF_DECR_RF",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "U11.B1",
+        "to": "U11.B4",
+        "distMil": 41.4,
+        "padCount": 5,
+        "openErrs": 5,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "U11.A3",
+        "to": "U11.D2",
+        "distMil": 43.54,
+        "padCount": 27,
+        "openErrs": 24,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "U11.B10",
+        "to": "U11.E11",
+        "distMil": 43.64,
+        "padCount": 27,
+        "openErrs": 24,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "U11.B12",
+        "to": "U11.E11",
+        "distMil": 43.64,
+        "padCount": 27,
+        "openErrs": 24,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "C15.1",
+        "to": "C17.1",
+        "distMil": 51.2,
+        "padCount": 27,
+        "openErrs": 24,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "C18.1",
+        "to": "C19.1",
+        "distMil": 51.2,
+        "padCount": 27,
+        "openErrs": 24,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "C18.1",
+        "to": "R5.2",
+        "distMil": 53.51,
+        "padCount": 27,
+        "openErrs": 24,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "C14.1",
+        "to": "C19.1",
+        "distMil": 53.55,
+        "padCount": 27,
+        "openErrs": 24,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "C19.1",
+        "to": "R5.2",
+        "distMil": 53.89,
+        "padCount": 27,
+        "openErrs": 24,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "U11.A3",
+        "to": "U11.B7",
+        "distMil": 56.78,
+        "padCount": 27,
+        "openErrs": 24,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "U11.K1",
+        "to": "U11.L5",
+        "distMil": 56.8,
+        "padCount": 27,
+        "openErrs": 24,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "J1.P3",
+        "to": "J1.P4",
+        "distMil": 61.8,
+        "padCount": 27,
+        "openErrs": 24,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "J1.P4",
+        "to": "U1.1",
+        "distMil": 62.61,
+        "padCount": 27,
+        "openErrs": 24,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "C1.1",
+        "to": "U11.H11",
+        "distMil": 65.76,
+        "padCount": 27,
+        "openErrs": 24,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "U11.B12",
+        "to": "U11.B7",
+        "distMil": 68.9,
+        "padCount": 27,
+        "openErrs": 24,
+        "existingTracks": 0
+      },
+      {
+        "net": "LFXO_XL1",
+        "class": "rf-clock-hs",
+        "layer": 1,
+        "from": "U11.F11",
+        "to": "Y3.1",
+        "distMil": 68.9,
+        "padCount": 3,
+        "openErrs": 2,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "U11.B7",
+        "to": "U11.E11",
+        "distMil": 68.92,
+        "padCount": 27,
+        "openErrs": 24,
+        "existingTracks": 0
+      },
+      {
+        "net": "AMP_R_SD_MODE",
+        "class": "control-signal",
+        "layer": 2,
+        "from": "Q1.3",
+        "to": "U10.A1",
+        "distMil": 69.63,
+        "padCount": 3,
+        "openErrs": 2,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "C17.1",
+        "to": "C4.1",
+        "distMil": 72.64,
+        "padCount": 27,
+        "openErrs": 24,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "U11.B7",
+        "to": "U11.D2",
+        "distMil": 74.22,
+        "padCount": 27,
+        "openErrs": 24,
+        "existingTracks": 0
+      },
+      {
+        "net": "VBAT_R_RET",
+        "class": "high-current-power",
+        "layer": 1,
+        "from": "C6.1",
+        "to": "TP2.1",
+        "distMil": 78.37,
+        "padCount": 7,
+        "openErrs": 9,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "C15.1",
+        "to": "C4.1",
+        "distMil": 79.25,
+        "padCount": 27,
+        "openErrs": 24,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "C19.1",
+        "to": "TP6.4",
+        "distMil": 80.11,
+        "padCount": 27,
+        "openErrs": 24,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "R5.2",
+        "to": "TP6.4",
+        "distMil": 82.16,
+        "padCount": 27,
+        "openErrs": 24,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "U11.E11",
+        "to": "U11.L11",
+        "distMil": 82.7,
+        "padCount": 27,
+        "openErrs": 24,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "U11.L11",
+        "to": "U11.L5",
+        "distMil": 82.7,
+        "padCount": 27,
+        "openErrs": 24,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "C14.1",
+        "to": "R5.2",
+        "distMil": 83.38,
+        "padCount": 27,
+        "openErrs": 24,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "U11.B10",
+        "to": "U11.H11",
+        "distMil": 83.84,
+        "padCount": 27,
+        "openErrs": 24,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "U11.B12",
+        "to": "U11.H11",
+        "distMil": 83.84,
+        "padCount": 27,
+        "openErrs": 24,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "U11.K1",
+        "to": "U11.D2",
+        "distMil": 83.84,
+        "padCount": 27,
+        "openErrs": 24,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "C16.1",
+        "to": "R5.2",
+        "distMil": 88.64,
+        "padCount": 27,
+        "openErrs": 24,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "U11.H11",
+        "to": "U11.L5",
+        "distMil": 92.48,
+        "padCount": 27,
+        "openErrs": 24,
+        "existingTracks": 0
+      },
+      {
+        "net": "LFXO_XL2",
+        "class": "rf-clock-hs",
+        "layer": 1,
+        "from": "Y3.2",
+        "to": "U11.F12",
+        "distMil": 92.63,
+        "padCount": 3,
+        "openErrs": 2,
+        "existingTracks": 0
+      },
+      {
+        "net": "I2S_BCLK_1V8",
+        "class": "rf-clock-hs",
+        "layer": 2,
+        "from": "J1.P11",
+        "to": "U10.C1",
+        "distMil": 92.88,
+        "padCount": 4,
+        "openErrs": 4,
+        "existingTracks": 0
+      },
+      {
+        "net": "I2S_AMP_DIN_1V8",
+        "class": "bus-interface",
+        "layer": 2,
+        "from": "J1.P13",
+        "to": "U10.B1",
+        "distMil": 94.58,
+        "padCount": 4,
+        "openErrs": 4,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "J1.P4",
+        "to": "U1.5",
+        "distMil": 95.17,
+        "padCount": 27,
+        "openErrs": 24,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "U11.A3",
+        "to": "U11.B10",
+        "distMil": 97.37,
+        "padCount": 27,
+        "openErrs": 24,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "U11.B7",
+        "to": "U11.H11",
+        "distMil": 99.37,
+        "padCount": 27,
+        "openErrs": 24,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 2,
+        "from": "C17.1",
+        "to": "C20.1",
+        "distMil": 101.49,
+        "padCount": 27,
+        "openErrs": 24,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "C1.1",
+        "to": "U11.E11",
+        "distMil": 102.79,
+        "padCount": 27,
+        "openErrs": 24,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "C14.1",
+        "to": "C18.1",
+        "distMil": 103.6,
+        "padCount": 27,
+        "openErrs": 24,
+        "existingTracks": 0
+      },
+      {
+        "net": "1V8_SYS",
+        "class": "power-branch",
+        "layer": 1,
+        "from": "U11.L5",
+        "to": "U11.D2",
+        "distMil": 104.97,
+        "padCount": 27,
+        "openErrs": 24,
+        "existingTracks": 0
+      }
+    ]
+  }
+}

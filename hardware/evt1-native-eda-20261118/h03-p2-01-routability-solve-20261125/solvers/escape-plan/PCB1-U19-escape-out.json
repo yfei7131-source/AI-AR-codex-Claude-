@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "status": "fail",
+  "boardSemanticSha256": "cf5e0d58474fd567968472e78bf57f4ee40fbfc983938ae72078363bca403a71",
+  "intentSha256": "9044b1511a74049dc63e8e5cf00828143cad5f24619856346ac29c2e23a10003",
+  "boardSha256": "eff8900e6b5c840a137c99745a934fafa4d4834ebc3eb29716ea78be2aa05c40",
+  "layoutSha256": "253c62d94874ed2819d61505187707368ef779808f9116511851653718eb525a",
+  "routes": [],
+  "vias": [],
+  "budget": {
+    "maxStates": 200000,
+    "used": 0,
+    "exhausted": false
+  },
+  "reasons": [
+    "exit must clear congested envelope and advance toward target: u19-8-ls3_vref2_en"
+  ],
+  "limitations": [
+    "Reservations prove declared local/full pad paths only; they are not editor copper or whole-net completion.",
+    "Bounded TOP/BOTTOM/TOP transitions require a measured two-layer board and two spare whole-net vias; other transitions remain incomplete."
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 3,
+  "units": "mil",
+  "coordinateSemantic": "footprint-anchor",
+  "minGapMil": 6,
+  "routing": {
+    "owners": [
+      "U3"
+    ],
+    "stepMil": 2,
+    "maxDetourMil": 120,
+    "maxStates": 200000,
+    "demands": [
+      {
+        "id": "u3-6-avdd_qual_rc",
+        "kind": "signal",
+        "from": "U3.6",
+        "net": "AVDD_QUAL_RC",
+        "widthMil": 4,
+        "layer": 2,
+        "maxVias": 2,
+        "toward": "U11.3",
+        "congested": {
+          "minX": 70.4,
+          "minY": 299.5,
+          "maxX": 110.9,
+          "maxY": 337.1
+        },
+        "exits": [
+          [
+            98.32,
+            347.32
+          ]
+        ],
+        "maxAwayMil": 80
+      },
+      {
+        "id": "u3-5-vsys",
+        "kind": "power",
+        "from": "U3.5",
+        "net": "VSYS",
+        "widthMil": 4,
+        "layer": 2,
+        "maxVias": 2,
+        "toward": "U4.4",
+        "congested": {
+          "minX": 70.4,
+          "minY": 299.5,
+          "maxX": 110.9,
+          "maxY": 337.1
+        },
+        "exits": [
+          [
+            115.06,
+            311.09
+          ]
+        ],
+        "maxAwayMil": 80
+      },
+      {
+        "id": "u3-4-avdd_qual_rc",
+        "kind": "signal",
+        "from": "U3.4",
+        "net": "AVDD_QUAL_RC",
+        "widthMil": 4,
+        "layer": 2,
+        "maxVias": 2,
+        "toward": "U11.3",
+        "congested": {
+          "minX": 70.4,
+          "minY": 299.5,
+          "maxX": 110.9,
+          "maxY": 337.1
+        },
+        "exits": [
+          [
+            102.11,
+            352.13
+          ]
+        ],
+        "maxAwayMil": 80
+      },
+      {
+        "id": "u3-3-avdd_pg_ok",
+        "kind": "signal",
+        "from": "U3.3",
+        "net": "AVDD_PG_OK",
+        "widthMil": 4,
+        "layer": 2,
+        "maxVias": 2,
+        "toward": "U5.1",
+        "congested": {
+          "minX": 70.4,
+          "minY": 299.5,
+          "maxX": 110.9,
+          "maxY": 337.1
+        },
+        "exits": [
+          [
+            115.97,
+            311.4
+          ]
+        ],
+        "maxAwayMil": 80
+      },
+      {
+        "id": "u3-2-gnd",
+        "kind": "ground",
+        "from": "U3.2",
+        "net": "GND",
+        "widthMil": 4,
+        "layer": 2,
+        "maxVias": 2,
+        "toward": "U2.E2",
+        "congested": {
+          "minX": 70.4,
+          "minY": 299.5,
+          "maxX": 110.9,
+          "maxY": 337.1
+        },
+        "exits": [
+          [
+            75.01,
+            341.7
+          ]
+        ],
+        "maxAwayMil": 80
+      },
+      {
+        "id": "u3-1-avdd_wd_q",
+        "kind": "signal",
+        "from": "U3.1",
+        "net": "AVDD_WD_Q",
+        "widthMil": 4,
+        "layer": 2,
+        "maxVias": 2,
+        "toward": "U14.6",
+        "congested": {
+          "minX": 70.4,
+          "minY": 299.5,
+          "maxX": 110.9,
+          "maxY": 337.1
+        },
+        "exits": [
+          [
+            96.94,
+            343.99
+          ]
+        ],
+        "maxAwayMil": 80
+      }
+    ]
+  }
+}
