@@ -1,0 +1,140 @@
+{
+  "reimportProjectName": "EVT1-H03-P3-01-REIMPORT-FINAL-1795605089",
+  "reimportProjectUuid": "a687b8c8e53fea6282dac41b745786558df42322327cdd72cfd8692ed97c750b",
+  "candidateProjectUuid": "88f4b492002cdc82827828ee00ff07463b5e750fa4693bf4a7422d897997f66f",
+  "boards": {
+    "PCB1": {
+      "drc": {
+        "Connection Error": 320
+      },
+      "parityMatchesCandidate": true,
+      "componentCount": 118,
+      "visibleSilkAttrCount": 0,
+      "persistedPin1SilkDotCount": 24
+    },
+    "PCB2": {
+      "drc": {
+        "Connection Error": 225
+      },
+      "parityMatchesCandidate": true,
+      "componentCount": 86,
+      "visibleSilkAttrCount": 0,
+      "persistedPin1SilkDotCount": 20
+    },
+    "PCB3": {
+      "drc": {
+        "Connection Error": 127
+      },
+      "parityMatchesCandidate": true,
+      "componentCount": 53,
+      "visibleSilkAttrCount": 0,
+      "persistedPin1SilkDotCount": 10
+    }
+  },
+  "elapsedSeconds": 94.03,
+  "epro2Sha256": "1e9db8e70e1794ef4d7950440ad47ff2658f13d464dcd95772f79ac02ef69fb1",
+  "candidateMetrics": {
+    "PCB1": {
+      "drc": {
+        "Connection Error": 320,
+        "Netlist Error": 1
+      },
+      "pcbCheckCounts": {
+        "acute-angle": 33,
+        "non-orthogonal": 151,
+        "track-over-pad": 1,
+        "width-mismatch": 9,
+        "silkscreen-flipped": 116,
+        "decap-too-far": 2,
+        "via-in-pad": 28,
+        "fiducial-missing": 1,
+        "clearance": 41,
+        "antenna-keepout": 1,
+        "via-crosses-plane": 2,
+        "power-not-poured": 9,
+        "width-under-spec": 3
+      },
+      "componentCount": 118,
+      "persistedPin1Dots": 24,
+      "cplSha256": "8083e9134cf494f119ca36b1c4bcacce1131874e8cad794f906f249bc5d4ba83",
+      "bomSha256": "ba3fea1bafac829fe1feb873bd45a32baf8f86405c812e327e6d3dc1551048a5"
+    },
+    "PCB2": {
+      "drc": {
+        "Connection Error": 225
+      },
+      "pcbCheckCounts": {
+        "acute-angle": 21,
+        "non-orthogonal": 96,
+        "width-mismatch": 3,
+        "silkscreen-flipped": 86,
+        "decap-too-far": 9,
+        "via-in-pad": 8,
+        "fiducial-missing": 1,
+        "clearance": 41,
+        "via-crosses-plane": 2,
+        "power-not-poured": 15
+      },
+      "componentCount": 86,
+      "persistedPin1Dots": 20,
+      "cplSha256": "46db862226f6c77871ea401892194b9a7d8d2c1bcd1794edafd007713059b2fe",
+      "bomSha256": "01b1f09a2da41d70240cf993dbeb88369a7087597d6de468ebaa0b587216d9da"
+    },
+    "PCB3": {
+      "drc": {
+        "Connection Error": 127
+      },
+      "pcbCheckCounts": {
+        "acute-angle": 10,
+        "non-orthogonal": 85,
+        "silkscreen-flipped": 53,
+        "via-in-pad": 10,
+        "fiducial-missing": 1,
+        "clearance": 41,
+        "antenna-keepout": 1,
+        "via-crosses-plane": 2,
+        "power-not-poured": 1,
+        "width-under-spec": 1
+      },
+      "componentCount": 53,
+      "persistedPin1Dots": 10,
+      "cplSha256": "f5266324bc30360410d3667a820a7453f2a02297e66c03d50f2c14eb6f7203b7",
+      "bomSha256": "2192c5eb418505635277d28d060114ef6a6902dcdb3b483aee827db6b9e94003"
+    }
+  },
+  "schematicMetrics": {
+    "PCB1": {
+      "ercSummary": {
+        "fatal": 4,
+        "error": 0,
+        "warn": 0,
+        "info": 0,
+        "unknown": 0,
+        "total": 4
+      },
+      "netlistSha256": "66c72413d0474a6e01c0011abb576e56e3e9bf625eda60e0726a2fdf3d0a295d"
+    },
+    "PCB2": {
+      "ercSummary": {
+        "fatal": 0,
+        "error": 0,
+        "warn": 0,
+        "info": 0,
+        "unknown": 0,
+        "total": 0
+      },
+      "netlistSha256": "d922e0487ae989150bfd37e8a0c64961fb0a3b6f9b3dfc4646b8dc4147b91c97"
+    },
+    "PCB3": {
+      "ercSummary": {
+        "fatal": 2,
+        "error": 0,
+        "warn": 0,
+        "info": 0,
+        "unknown": 0,
+        "total": 2
+      },
+      "netlistSha256": "97208359e4a2cd900b113e5e74bc14788c17b56741e7eb70f78ce379d6e196a6"
+    }
+  }
+}

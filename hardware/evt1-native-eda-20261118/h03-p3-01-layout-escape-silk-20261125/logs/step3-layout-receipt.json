@@ -1,0 +1,135 @@
+{
+  "PCB1": {
+    "deletedInitialTracks": [
+      "029d6dfe830f9c1f",
+      "3be064b2bcae61b2"
+    ],
+    "moves": [
+      {
+        "designator": "C40",
+        "id": "8f8007e23293c01e",
+        "before": {
+          "x": 138.3858,
+          "y": 1299.0158,
+          "rotation": 0.0,
+          "layer": 2
+        },
+        "after": {
+          "x": 128.7,
+          "y": 1009.2,
+          "rotation": 270.0,
+          "layer": 2
+        },
+        "newDistToPinMil": 53.3,
+        "targetPin": "U10.A2",
+        "deletedLeafGndStubs": [
+          "3be064b2bcae61b2"
+        ],
+        "hasDirectRoute": false
+      }
+    ],
+    "liveMovedReadback": {
+      "C40": {
+        "anchor": {
+          "x": 128.7,
+          "y": 1009.2,
+          "layer": 2,
+          "rotation": 270
+        },
+        "pads": [
+          {
+            "pad": "1",
+            "net": "VSYS",
+            "x": 128.7,
+            "y": 1021.8,
+            "layer": 2
+          },
+          {
+            "pad": "2",
+            "net": "GND",
+            "x": 128.7,
+            "y": 996.6,
+            "layer": 2
+          }
+        ],
+        "distToTargetPinMil": 53.33,
+        "targetPin": "U10.A2"
+      }
+    },
+    "postMoveDumpPath": "C:\\Users\\Admin（无密码）\\.gemini\\antigravity\\brain\\d7cd42cb-da01-41c6-a95f-bb27876051b6\\scratch\\PCB1-post-move.json",
+    "drcAfterMove": {
+      "Connection Error": 324,
+      "Netlist Error": 1
+    }
+  },
+  "PCB2": {
+    "deletedInitialTracks": [
+      "938f05056fb5e0da"
+    ],
+    "moves": [
+      {
+        "designator": "C3",
+        "id": "6f1dedf9d15d0beb",
+        "before": {
+          "x": 32.0866,
+          "y": 838.189,
+          "rotation": 0.0,
+          "layer": 1
+        },
+        "after": {
+          "x": 86.0,
+          "y": 484.0,
+          "rotation": 90.0,
+          "layer": 2
+        },
+        "newDistToPinMil": 51.4,
+        "targetPin": "U13.3",
+        "deletedLeafGndStubs": [
+          "938f05056fb5e0da"
+        ],
+        "hasDirectRoute": false
+      }
+    ],
+    "liveMovedReadback": {
+      "C3": {
+        "anchor": {
+          "x": 86,
+          "y": 484,
+          "layer": 2,
+          "rotation": 90
+        },
+        "pads": [
+          {
+            "pad": "1",
+            "net": "AVDD_REQ_FILTER",
+            "x": 86,
+            "y": 471.4,
+            "layer": 2
+          },
+          {
+            "pad": "2",
+            "net": "GND",
+            "x": 86,
+            "y": 496.6,
+            "layer": 2
+          }
+        ],
+        "distToTargetPinMil": 281.29,
+        "targetPin": "U13.3"
+      }
+    },
+    "postMoveDumpPath": "C:\\Users\\Admin（无密码）\\.gemini\\antigravity\\brain\\d7cd42cb-da01-41c6-a95f-bb27876051b6\\scratch\\PCB2-post-move.json",
+    "drcAfterMove": {
+      "Connection Error": 229
+    }
+  },
+  "PCB3": {
+    "deletedInitialTracks": [],
+    "moves": [],
+    "liveMovedReadback": {},
+    "postMoveDumpPath": "C:\\Users\\Admin（无密码）\\.gemini\\antigravity\\brain\\d7cd42cb-da01-41c6-a95f-bb27876051b6\\scratch\\PCB3-post-move.json",
+    "drcAfterMove": {
+      "Connection Error": 127
+    }
+  }
+}
