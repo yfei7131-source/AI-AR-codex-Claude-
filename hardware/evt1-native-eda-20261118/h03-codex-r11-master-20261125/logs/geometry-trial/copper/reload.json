@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "windowId": "fd12c2d9-9df6-4dc8-ae62-4ea4c1f2d8d4",
+  "target": "9ce45f14cb79dc9d",
+  "documentType": "pcb",
+  "saved": true,
+  "closed": true,
+  "reloaded": "9ce45f14cb79dc9d",
+  "activeRestored": "9ce45f14cb79dc9d",
+  "startedAt": "2026-11-24T16:32:30.6518357Z",
+  "completedAt": "2026-11-24T16:32:37.8624328Z",
+  "timeSource": "cli-host-observation",
+  "targetContext": {
+    "projectUuid": "46da85618f4cf407efe836b6cb182a33f8fab136960cffcf132ad88731ba0ca0",
+    "projectName": "EVT1-H03-R11-GEOMETRY-TRIAL",
+    "documentUuid": "9ce45f14cb79dc9d",
+    "documentType": "pcb",
+    "tabId": "9ce45f14cb79dc9d@46da85618f4cf407efe836b6cb182a33f8fab136960cffcf132ad88731ba0ca0"
+  },
+  "finalContext": {
+    "projectUuid": "46da85618f4cf407efe836b6cb182a33f8fab136960cffcf132ad88731ba0ca0",
+    "projectName": "EVT1-H03-R11-GEOMETRY-TRIAL",
+    "documentUuid": "9ce45f14cb79dc9d",
+    "documentType": "pcb",
+    "tabId": "9ce45f14cb79dc9d@46da85618f4cf407efe836b6cb182a33f8fab136960cffcf132ad88731ba0ca0"
+  },
+  "readiness": {
+    "ready": true,
+    "scope": "component-inventory-readiness",
+    "active": {
+      "projectUuid": "46da85618f4cf407efe836b6cb182a33f8fab136960cffcf132ad88731ba0ca0",
+      "projectName": "EVT1-H03-R11-GEOMETRY-TRIAL",
+      "documentUuid": "9ce45f14cb79dc9d",
+      "documentType": "pcb",
+      "tabId": "9ce45f14cb79dc9d@46da85618f4cf407efe836b6cb182a33f8fab136960cffcf132ad88731ba0ca0"
+    },
+    "componentCount": 86,
+    "componentSha256": "259eb139000eac656232196a82ddf17afe42a79d7506da9da43f375fe9a09c4e",
+    "samples": 2,
+    "stableSamples": 2,
+    "requestIds": [
+      "req_270",
+      "req_271",
+      "req_272",
+      "req_273",
+      "req_274"
+    ],
+    "observedAt": "2026-11-24T16:32:37.8624328Z"
+  },
+  "steps": [
+    {
+      "stage": "inspect",
+      "action": "document.current",
+      "startedAt": "2026-11-24T16:32:30.6518357Z",
+      "completedAt": "2026-11-24T16:32:30.6836183Z",
+      "requestId": "req_265",
+      "responseCreatedAt": "2026-11-24T16:32:30.6829867Z",
+      "context": {
+        "projectUuid": "46da85618f4cf407efe836b6cb182a33f8fab136960cffcf132ad88731ba0ca0",
+        "projectName": "EVT1-H03-R11-GEOMETRY-TRIAL",
+        "documentUuid": "9ce45f14cb79dc9d",
+        "documentType": "pcb",
+        "tabId": "9ce45f14cb79dc9d@46da85618f4cf407efe836b6cb182a33f8fab136960cffcf132ad88731ba0ca0"
+      },
+      "ok": true
+    },
+    {
+      "stage": "save",
+      "action": "pcb.save",
+      "startedAt": "2026-11-24T16:32:30.6836183Z",
+      "completedAt": "2026-11-24T16:32:30.7357555Z",
+      "requestId": "req_266",
+      "responseCreatedAt": "2026-11-24T16:32:30.735033Z",
+      "context": {
+        "projectUuid": "46da85618f4cf407efe836b6cb182a33f8fab136960cffcf132ad88731ba0ca0",
+        "projectName": "EVT1-H03-R11-GEOMETRY-TRIAL",
+        "documentUuid": "9ce45f14cb79dc9d",
+        "documentType": "pcb",
+        "tabId": "9ce45f14cb79dc9d@46da85618f4cf407efe836b6cb182a33f8fab136960cffcf132ad88731ba0ca0"
+      },
+      "ok": true
+    },
+    {
+      "stage": "close",
+      "action": "document.close",
+      "startedAt": "2026-11-24T16:32:30.7357555Z",
+      "completedAt": "2026-11-24T16:32:31.2706736Z",
+      "requestId": "req_267",
+      "responseCreatedAt": "2026-11-24T16:32:31.2700352Z",
+      "context": {
+        "projectUuid": "46da85618f4cf407efe836b6cb182a33f8fab136960cffcf132ad88731ba0ca0",
+        "projectName": "EVT1-H03-R11-GEOMETRY-TRIAL"
+      },
+      "ok": true
+    },
+    {
+      "stage": "close-settle",
+      "action": "document.current",
+      "startedAt": "2026-11-24T16:32:31.2706736Z",
+      "completedAt": "2026-11-24T16:32:31.6997231Z",
+      "requestId": "req_268",
+      "responseCreatedAt": "2026-11-24T16:32:31.6991885Z",
+      "ok": false,
+      "error": "document.current failed: No active document."
+    },
+    {
+      "stage": "reopen",
+      "action": "document.open",
+      "startedAt": "2026-11-24T16:32:31.6997231Z",
+      "completedAt": "2026-11-24T16:32:37.0489997Z",
+      "requestId": "req_269",
+      "responseCreatedAt": "2026-11-24T16:32:37.0484909Z",
+      "context": {
+        "projectUuid": "46da85618f4cf407efe836b6cb182a33f8fab136960cffcf132ad88731ba0ca0",
+        "projectName": "EVT1-H03-R11-GEOMETRY-TRIAL",
+        "documentUuid": "9ce45f14cb79dc9d",
+        "documentType": "pcb",
+        "tabId": "9ce45f14cb79dc9d@46da85618f4cf407efe836b6cb182a33f8fab136960cffcf132ad88731ba0ca0"
+      },
+      "ok": true
+    },
+    {
+      "stage": "ready",
+      "startedAt": "2026-11-24T16:32:37.0489997Z",
+      "completedAt": "2026-11-24T16:32:37.8624328Z",
+      "context": {
+        "projectUuid": "46da85618f4cf407efe836b6cb182a33f8fab136960cffcf132ad88731ba0ca0",
+        "projectName": "EVT1-H03-R11-GEOMETRY-TRIAL",
+        "documentUuid": "9ce45f14cb79dc9d",
+        "documentType": "pcb",
+        "tabId": "9ce45f14cb79dc9d@46da85618f4cf407efe836b6cb182a33f8fab136960cffcf132ad88731ba0ca0"
+      },
+      "ok": true
+    }
+  ]
+}

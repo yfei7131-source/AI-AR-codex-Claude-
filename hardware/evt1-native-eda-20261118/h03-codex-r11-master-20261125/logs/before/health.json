@@ -1,0 +1,138 @@
+{
+  "status": "found",
+  "host": "127.0.0.1",
+  "ports": "60832-60841",
+  "found": {
+    "port": 60832,
+    "service": "easyeda-agent",
+    "raw": {
+      "pid": 4100,
+      "service": "easyeda-agent",
+      "version": "v1.17.0",
+      "status": "ok",
+      "port": 60832,
+      "windows": [
+        {
+          "windowId": "9dcb7d09-8d57-490f-a38b-04479bc95302",
+          "connectorVersion": "1.17.0",
+          "easyedaVersion": "4.1.97",
+          "capabilities": [
+            "schematic.v1",
+            "pcb.v1"
+          ],
+          "host": {
+            "kind": "electron",
+            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) JLCEDAPro/4.1.97.04b092ac Chrome/146.0.7680.188 Electron/41.2.1-jlc-sa-win-x64.6 Safari/537.36"
+          },
+          "context": {
+            "projectUuid": "11958b54c58d7eaf6e8577adea6fd85bec7ff99002a380b27f39875785d46584",
+            "projectName": "EVT1-H03-R10-MASTER-REIMPORT-NOT-FOR-FAB",
+            "pageVisibility": "hidden"
+          },
+          "connectedAt": "2026-11-24T10:01:57.7108746Z",
+          "lastSeen": "2026-11-24T10:04:01.2287481Z",
+          "connectorVersionOk": true
+        }
+      ],
+      "writeHealth": {
+        "9dcb7d09-8d57-490f-a38b-04479bc95302": {
+          "samples": 6,
+          "failures": 3,
+          "failureRate": 0.5,
+          "consecutiveFailures": 0,
+          "degraded": false,
+          "verified": 0,
+          "lastFailureAction": "project.import",
+          "lastFailureAt": "2026-11-24T10:03:08Z",
+          "lastFailureError": "EDA_CALL_FAILED: Official project import returned no project; outcome unknown (issue #203). Run project find by friendlyName before retrying.",
+          "actions": {
+            "project.current": {
+              "samples": 1,
+              "failures": 1,
+              "failureRate": 1,
+              "consecutiveFailures": 1,
+              "verified": 0,
+              "degraded": false
+            },
+            "project.import": {
+              "samples": 2,
+              "failures": 2,
+              "failureRate": 1,
+              "consecutiveFailures": 2,
+              "verified": 0,
+              "degraded": false
+            }
+          }
+        }
+      }
+    }
+  },
+  "versionGate": {
+    "cli": "v1.17.0",
+    "daemon": "v1.17.0",
+    "connectors": [
+      "1.17.0"
+    ],
+    "verdict": "ok",
+    "findings": [
+      {
+        "component": "daemon",
+        "version": "v1.17.0",
+        "severity": "ok",
+        "reason": "与 CLI 同版 v1.17.0"
+      },
+      {
+        "component": "connector",
+        "version": "1.17.0",
+        "severity": "ok",
+        "reason": "与 CLI 同版 v1.17.0"
+      }
+    ]
+  },
+  "hostCompatibility": {
+    "baseline": "4.0.0",
+    "recommended": "4.1.60",
+    "verdict": "ok",
+    "findings": [
+      {
+        "windowId": "9dcb7d09-8d57-490f-a38b-04479bc95302",
+        "version": "4.1.97",
+        "severity": "ok",
+        "reason": "EasyEDA Pro 4.1.97 满足 V4 主线基线"
+      }
+    ]
+  },
+  "checks": [
+    {
+      "name": "daemon",
+      "status": "ok",
+      "detail": "v1.17.0 运行在端口 60832"
+    },
+    {
+      "name": "connector",
+      "status": "ok",
+      "detail": "1 个窗口已连接（连接器 v1.17.0）"
+    },
+    {
+      "name": "versions",
+      "status": "ok",
+      "detail": "版本一致性:CLI / daemon 同版,connector major.minor 兼容 v1.17.0"
+    },
+    {
+      "name": "easyeda",
+      "status": "ok",
+      "detail": "EasyEDA 宿主:V4 主线（推荐基线 4.1.60）"
+    },
+    {
+      "name": "project",
+      "status": "ok",
+      "detail": "EVT1-H03-R10-MASTER-REIMPORT-NOT-FOR-FAB（当前 (unknown)），标签页在后台（操作照常；仅 PCB 画布截图需切到前台）"
+    }
+  ],
+  "checked": [
+    {
+      "port": 60832,
+      "status": "ok"
+    }
+  ]
+}

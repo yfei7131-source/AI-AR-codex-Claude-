@@ -1,0 +1,4 @@
+official auto-route (existing copper kept): map[cornerStyle:45 layers:[1 2] nets:[AVDD_WD_SET AVDD_WD_DIV AVDD_QUAL_CLR_N FPGA_1V8_EN AVDD_REQ_FILTER AVDD_PG_OK] optimization:completion] — may take minutes
+router: success=true nets 1/6 routed, failed=[AVDD_WD_SET AVDD_WD_DIV FPGA_1V8_EN AVDD_REQ_FILTER AVDD_PG_OK], 92663ms
+created: map[arcs:0 tracks:2 vias:0]; removed: []
+next: pcb save → doc reload → pcb drc / pcb check (routing results read before a reload may be stale)
