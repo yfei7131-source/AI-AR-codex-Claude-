@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "windowId": "fd12c2d9-9df6-4dc8-ae62-4ea4c1f2d8d4",
+  "target": "9ce45f14cb79dc9d",
+  "documentType": "pcb",
+  "saved": true,
+  "closed": true,
+  "reloaded": "9ce45f14cb79dc9d",
+  "activeRestored": "9ce45f14cb79dc9d",
+  "startedAt": "2026-11-24T16:25:20.1113702Z",
+  "completedAt": "2026-11-24T16:25:31.8392332Z",
+  "timeSource": "cli-host-observation",
+  "targetContext": {
+    "projectUuid": "c68a854faebdea6d2a63cfd31536e68aa8f425d9f84e343be645458e148e4ef0",
+    "projectName": "EVT1-H03-R11-VSYS-GND-TRIAL",
+    "documentUuid": "9ce45f14cb79dc9d",
+    "documentType": "pcb",
+    "tabId": "9ce45f14cb79dc9d@c68a854faebdea6d2a63cfd31536e68aa8f425d9f84e343be645458e148e4ef0"
+  },
+  "finalContext": {
+    "projectUuid": "c68a854faebdea6d2a63cfd31536e68aa8f425d9f84e343be645458e148e4ef0",
+    "projectName": "EVT1-H03-R11-VSYS-GND-TRIAL",
+    "documentUuid": "9ce45f14cb79dc9d",
+    "documentType": "pcb",
+    "tabId": "9ce45f14cb79dc9d@c68a854faebdea6d2a63cfd31536e68aa8f425d9f84e343be645458e148e4ef0"
+  },
+  "readiness": {
+    "ready": true,
+    "scope": "component-inventory-readiness",
+    "active": {
+      "projectUuid": "c68a854faebdea6d2a63cfd31536e68aa8f425d9f84e343be645458e148e4ef0",
+      "projectName": "EVT1-H03-R11-VSYS-GND-TRIAL",
+      "documentUuid": "9ce45f14cb79dc9d",
+      "documentType": "pcb",
+      "tabId": "9ce45f14cb79dc9d@c68a854faebdea6d2a63cfd31536e68aa8f425d9f84e343be645458e148e4ef0"
+    },
+    "componentCount": 86,
+    "componentSha256": "259eb139000eac656232196a82ddf17afe42a79d7506da9da43f375fe9a09c4e",
+    "samples": 2,
+    "stableSamples": 2,
+    "requestIds": [
+      "req_131",
+      "req_132",
+      "req_133",
+      "req_134",
+      "req_135"
+    ],
+    "observedAt": "2026-11-24T16:25:31.8392332Z"
+  },
+  "steps": [
+    {
+      "stage": "inspect",
+      "action": "document.current",
+      "startedAt": "2026-11-24T16:25:20.1113702Z",
+      "completedAt": "2026-11-24T16:25:20.1582689Z",
+      "requestId": "req_126",
+      "responseCreatedAt": "2026-11-24T16:25:20.1572092Z",
+      "context": {
+        "projectUuid": "c68a854faebdea6d2a63cfd31536e68aa8f425d9f84e343be645458e148e4ef0",
+        "projectName": "EVT1-H03-R11-VSYS-GND-TRIAL",
+        "documentUuid": "9ce45f14cb79dc9d",
+        "documentType": "pcb",
+        "tabId": "9ce45f14cb79dc9d@c68a854faebdea6d2a63cfd31536e68aa8f425d9f84e343be645458e148e4ef0"
+      },
+      "ok": true
+    },
+    {
+      "stage": "save",
+      "action": "pcb.save",
+      "startedAt": "2026-11-24T16:25:20.1582689Z",
+      "completedAt": "2026-11-24T16:25:20.1989103Z",
+      "requestId": "req_127",
+      "responseCreatedAt": "2026-11-24T16:25:20.1982496Z",
+      "context": {
+        "projectUuid": "c68a854faebdea6d2a63cfd31536e68aa8f425d9f84e343be645458e148e4ef0",
+        "projectName": "EVT1-H03-R11-VSYS-GND-TRIAL",
+        "documentUuid": "9ce45f14cb79dc9d",
+        "documentType": "pcb",
+        "tabId": "9ce45f14cb79dc9d@c68a854faebdea6d2a63cfd31536e68aa8f425d9f84e343be645458e148e4ef0"
+      },
+      "ok": true
+    },
+    {
+      "stage": "close",
+      "action": "document.close",
+      "startedAt": "2026-11-24T16:25:20.1989103Z",
+      "completedAt": "2026-11-24T16:25:21.2121453Z",
+      "requestId": "req_128",
+      "responseCreatedAt": "2026-11-24T16:25:21.2109974Z",
+      "context": {
+        "projectUuid": "c68a854faebdea6d2a63cfd31536e68aa8f425d9f84e343be645458e148e4ef0",
+        "projectName": "EVT1-H03-R11-VSYS-GND-TRIAL"
+      },
+      "ok": true
+    },
+    {
+      "stage": "close-settle",
+      "action": "document.current",
+      "startedAt": "2026-11-24T16:25:21.2121453Z",
+      "completedAt": "2026-11-24T16:25:21.3457448Z",
+      "requestId": "req_129",
+      "responseCreatedAt": "2026-11-24T16:25:21.3449794Z",
+      "ok": false,
+      "error": "document.current failed: No active document."
+    },
+    {
+      "stage": "reopen",
+      "action": "document.open",
+      "startedAt": "2026-11-24T16:25:21.3457448Z",
+      "completedAt": "2026-11-24T16:25:30.9698455Z",
+      "requestId": "req_130",
+      "responseCreatedAt": "2026-11-24T16:25:30.9681162Z",
+      "context": {
+        "projectUuid": "c68a854faebdea6d2a63cfd31536e68aa8f425d9f84e343be645458e148e4ef0",
+        "projectName": "EVT1-H03-R11-VSYS-GND-TRIAL",
+        "documentUuid": "9ce45f14cb79dc9d",
+        "documentType": "pcb",
+        "tabId": "9ce45f14cb79dc9d@c68a854faebdea6d2a63cfd31536e68aa8f425d9f84e343be645458e148e4ef0"
+      },
+      "ok": true
+    },
+    {
+      "stage": "ready",
+      "startedAt": "2026-11-24T16:25:30.9698455Z",
+      "completedAt": "2026-11-24T16:25:31.8392332Z",
+      "context": {
+        "projectUuid": "c68a854faebdea6d2a63cfd31536e68aa8f425d9f84e343be645458e148e4ef0",
+        "projectName": "EVT1-H03-R11-VSYS-GND-TRIAL",
+        "documentUuid": "9ce45f14cb79dc9d",
+        "documentType": "pcb",
+        "tabId": "9ce45f14cb79dc9d@c68a854faebdea6d2a63cfd31536e68aa8f425d9f84e343be645458e148e4ef0"
+      },
+      "ok": true
+    }
+  ]
+}

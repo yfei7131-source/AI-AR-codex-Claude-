@@ -1,0 +1,64 @@
+{
+  "blindViasByBoard": {
+    "PCB1": 62,
+    "PCB2": 42,
+    "PCB3": 42
+  },
+  "blindViaSubsetViolations": 0,
+  "comparison": {
+    "PCB1": {
+      "inheritedLegacyFlags": 1,
+      "newLegacyFlags": 0
+    },
+    "PCB2": {
+      "inheritedLegacyFlags": 8,
+      "newLegacyFlags": 0
+    },
+    "PCB3": {
+      "inheritedLegacyFlags": 3,
+      "newLegacyFlags": 3,
+      "circularPadReconciliation": [
+        {
+          "objectId": "4196f39ae665d6a3",
+          "nativePadId": "5bb0491d9b472a90tp1p109",
+          "nativeShape": [
+            "ELLIPSE",
+            31.5,
+            31.5
+          ],
+          "legacyGapMil": 2.63,
+          "exactNominalGapMil": 9.0046,
+          "conservativeLowerBoundMil": 8.8546,
+          "requiredGapMil": 6.2
+        },
+        {
+          "objectId": "c32ffe36b61f0ea9",
+          "nativePadId": "5bb0491d9b472a90tp1p109",
+          "nativeShape": [
+            "ELLIPSE",
+            31.5,
+            31.5
+          ],
+          "legacyGapMil": 0.63,
+          "exactNominalGapMil": 7.0046,
+          "conservativeLowerBoundMil": 6.8546,
+          "requiredGapMil": 6.2
+        },
+        {
+          "objectId": "1cf40bd16e827fe5",
+          "nativePadId": "5bb0491d9b472a90tp1p109",
+          "nativeShape": [
+            "ELLIPSE",
+            31.5,
+            31.5
+          ],
+          "legacyGapMil": 3.9,
+          "exactNominalGapMil": 9.2914,
+          "conservativeLowerBoundMil": 9.1414,
+          "requiredGapMil": 6.2
+        }
+      ]
+    }
+  },
+  "arcSha256": "758618cb4bbb12a5ed34200cbf7c51f2e476c80ed9eee96643efed4764791074"
+}

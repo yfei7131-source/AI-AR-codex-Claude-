@@ -1,0 +1,97 @@
+{
+  "baseSha": "28f7f37f0a9b4cae0c2ab162445829d30062b91e34616b7f267917a95621248b",
+  "routes": [
+    {
+      "from": "R16.1",
+      "to": "U19.6",
+      "minForeignCopperMil": 8.349999999999909,
+      "nearestForeign": "U19.5",
+      "lengthMil": 33.1722835503838,
+      "minEdgeMil": 18.38669999999999,
+      "adjacentGroundPlaneCoversFullTrack": true,
+      "groundPlaneBoundaryClearanceMil": 7.84020000000001,
+      "3WParallelOverlapViolations": [],
+      "worstOfNearby20milParallelRuns": null
+    },
+    {
+      "from": "R24.1",
+      "to": "U19.7",
+      "minForeignCopperMil": 6.414570696119983,
+      "nearestForeign": "U19.6",
+      "lengthMil": 63.10471035675052,
+      "minEdgeMil": 48.446499999999986,
+      "adjacentGroundPlaneCoversFullTrack": true,
+      "groundPlaneBoundaryClearanceMil": 37.900000000000006,
+      "3WParallelOverlapViolations": [],
+      "worstOfNearby20milParallelRuns": null
+    },
+    {
+      "from": "R24.2",
+      "to": "R16.2",
+      "minForeignCopperMil": 15.099999999999905,
+      "nearestForeign": "R16.1",
+      "lengthMil": 51.874854133283165,
+      "minEdgeMil": 17.38669999999999,
+      "adjacentGroundPlaneCoversFullTrack": true,
+      "groundPlaneBoundaryClearanceMil": 6.84020000000001,
+      "3WParallelOverlapViolations": [],
+      "worstOfNearby20milParallelRuns": null
+    }
+  ],
+  "placements": [
+    {
+      "ref": "R16",
+      "packageClearanceMil": 22.807489999999973,
+      "nearestPackage": "U19",
+      "boardEdgeMil": 14.440989999999912,
+      "pads": [
+        {
+          "pad": "R16.1",
+          "closest": [
+            12.50980000000007,
+            "U19.5"
+          ]
+        },
+        {
+          "pad": "R16.2",
+          "closest": [
+            15.048419773517923,
+            "U19.5"
+          ]
+        }
+      ]
+    },
+    {
+      "ref": "R24",
+      "packageClearanceMil": 11.627979999999981,
+      "nearestPackage": "U19",
+      "boardEdgeMil": 56.440989999999935,
+      "pads": [
+        {
+          "pad": "R24.1",
+          "closest": [
+            7.183100000000194,
+            "U19.5"
+          ]
+        },
+        {
+          "pad": "R24.2",
+          "closest": [
+            18.464053856615546,
+            "R17.1"
+          ]
+        }
+      ]
+    }
+  ],
+  "originalRoots": {
+    "R16": [
+      "b4050bb9b175fed6re4p109",
+      "b4050bb9b175fed6re4p110"
+    ],
+    "R24": [
+      "a9d57f15e25bbbc7re4p109",
+      "a9d57f15e25bbbc7re4p110"
+    ]
+  }
+}

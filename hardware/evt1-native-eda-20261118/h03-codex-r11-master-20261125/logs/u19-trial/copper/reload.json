@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "windowId": "fd12c2d9-9df6-4dc8-ae62-4ea4c1f2d8d4",
+  "target": "8fbc3cae65886fe5",
+  "documentType": "pcb",
+  "saved": true,
+  "closed": true,
+  "reloaded": "8fbc3cae65886fe5",
+  "activeRestored": "8fbc3cae65886fe5",
+  "startedAt": "2026-11-24T16:38:33.9098708Z",
+  "completedAt": "2026-11-24T16:38:37.8494382Z",
+  "timeSource": "cli-host-observation",
+  "targetContext": {
+    "projectUuid": "de51415f0c47cc5735e7e27af0e75950bf8b114dcfc71a256fd50d77ae754fb2",
+    "projectName": "EVT1-H03-R11-U19-OPEN-ISLAND-TRIAL",
+    "documentUuid": "8fbc3cae65886fe5",
+    "documentType": "pcb",
+    "tabId": "8fbc3cae65886fe5@de51415f0c47cc5735e7e27af0e75950bf8b114dcfc71a256fd50d77ae754fb2"
+  },
+  "finalContext": {
+    "projectUuid": "de51415f0c47cc5735e7e27af0e75950bf8b114dcfc71a256fd50d77ae754fb2",
+    "projectName": "EVT1-H03-R11-U19-OPEN-ISLAND-TRIAL",
+    "documentUuid": "8fbc3cae65886fe5",
+    "documentType": "pcb",
+    "tabId": "8fbc3cae65886fe5@de51415f0c47cc5735e7e27af0e75950bf8b114dcfc71a256fd50d77ae754fb2"
+  },
+  "readiness": {
+    "ready": true,
+    "scope": "component-inventory-readiness",
+    "active": {
+      "projectUuid": "de51415f0c47cc5735e7e27af0e75950bf8b114dcfc71a256fd50d77ae754fb2",
+      "projectName": "EVT1-H03-R11-U19-OPEN-ISLAND-TRIAL",
+      "documentUuid": "8fbc3cae65886fe5",
+      "documentType": "pcb",
+      "tabId": "8fbc3cae65886fe5@de51415f0c47cc5735e7e27af0e75950bf8b114dcfc71a256fd50d77ae754fb2"
+    },
+    "componentCount": 118,
+    "componentSha256": "3f8e0ea3b66c9295e535524d26b766bf03dbe779f2408951f3fbe85a5fb6cb7b",
+    "samples": 2,
+    "stableSamples": 2,
+    "requestIds": [
+      "req_724",
+      "req_725",
+      "req_726",
+      "req_727",
+      "req_728"
+    ],
+    "observedAt": "2026-11-24T16:38:37.8494382Z"
+  },
+  "steps": [
+    {
+      "stage": "inspect",
+      "action": "document.current",
+      "startedAt": "2026-11-24T16:38:33.9098708Z",
+      "completedAt": "2026-11-24T16:38:33.9238316Z",
+      "requestId": "req_719",
+      "responseCreatedAt": "2026-11-24T16:38:33.9233268Z",
+      "context": {
+        "projectUuid": "de51415f0c47cc5735e7e27af0e75950bf8b114dcfc71a256fd50d77ae754fb2",
+        "projectName": "EVT1-H03-R11-U19-OPEN-ISLAND-TRIAL",
+        "documentUuid": "8fbc3cae65886fe5",
+        "documentType": "pcb",
+        "tabId": "8fbc3cae65886fe5@de51415f0c47cc5735e7e27af0e75950bf8b114dcfc71a256fd50d77ae754fb2"
+      },
+      "ok": true
+    },
+    {
+      "stage": "save",
+      "action": "pcb.save",
+      "startedAt": "2026-11-24T16:38:33.9238316Z",
+      "completedAt": "2026-11-24T16:38:33.9448898Z",
+      "requestId": "req_720",
+      "responseCreatedAt": "2026-11-24T16:38:33.9442984Z",
+      "context": {
+        "projectUuid": "de51415f0c47cc5735e7e27af0e75950bf8b114dcfc71a256fd50d77ae754fb2",
+        "projectName": "EVT1-H03-R11-U19-OPEN-ISLAND-TRIAL",
+        "documentUuid": "8fbc3cae65886fe5",
+        "documentType": "pcb",
+        "tabId": "8fbc3cae65886fe5@de51415f0c47cc5735e7e27af0e75950bf8b114dcfc71a256fd50d77ae754fb2"
+      },
+      "ok": true
+    },
+    {
+      "stage": "close",
+      "action": "document.close",
+      "startedAt": "2026-11-24T16:38:33.9448898Z",
+      "completedAt": "2026-11-24T16:38:34.2870091Z",
+      "requestId": "req_721",
+      "responseCreatedAt": "2026-11-24T16:38:34.285886Z",
+      "context": {
+        "projectUuid": "de51415f0c47cc5735e7e27af0e75950bf8b114dcfc71a256fd50d77ae754fb2",
+        "projectName": "EVT1-H03-R11-U19-OPEN-ISLAND-TRIAL"
+      },
+      "ok": true
+    },
+    {
+      "stage": "close-settle",
+      "action": "document.current",
+      "startedAt": "2026-11-24T16:38:34.2870091Z",
+      "completedAt": "2026-11-24T16:38:34.3193404Z",
+      "requestId": "req_722",
+      "responseCreatedAt": "2026-11-24T16:38:34.3187619Z",
+      "ok": false,
+      "error": "document.current failed: No active document."
+    },
+    {
+      "stage": "reopen",
+      "action": "document.open",
+      "startedAt": "2026-11-24T16:38:34.3193404Z",
+      "completedAt": "2026-11-24T16:38:37.0078766Z",
+      "requestId": "req_723",
+      "responseCreatedAt": "2026-11-24T16:38:37.0070521Z",
+      "context": {
+        "projectUuid": "de51415f0c47cc5735e7e27af0e75950bf8b114dcfc71a256fd50d77ae754fb2",
+        "projectName": "EVT1-H03-R11-U19-OPEN-ISLAND-TRIAL",
+        "documentUuid": "8fbc3cae65886fe5",
+        "documentType": "pcb",
+        "tabId": "8fbc3cae65886fe5@de51415f0c47cc5735e7e27af0e75950bf8b114dcfc71a256fd50d77ae754fb2"
+      },
+      "ok": true
+    },
+    {
+      "stage": "ready",
+      "startedAt": "2026-11-24T16:38:37.0078766Z",
+      "completedAt": "2026-11-24T16:38:37.8494382Z",
+      "context": {
+        "projectUuid": "de51415f0c47cc5735e7e27af0e75950bf8b114dcfc71a256fd50d77ae754fb2",
+        "projectName": "EVT1-H03-R11-U19-OPEN-ISLAND-TRIAL",
+        "documentUuid": "8fbc3cae65886fe5",
+        "documentType": "pcb",
+        "tabId": "8fbc3cae65886fe5@de51415f0c47cc5735e7e27af0e75950bf8b114dcfc71a256fd50d77ae754fb2"
+      },
+      "ok": true
+    }
+  ]
+}

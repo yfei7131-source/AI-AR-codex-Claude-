@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "windowId": "9dcb7d09-8d57-490f-a38b-04479bc95302",
+  "target": "1db01a36f669a47a",
+  "documentType": "pcb",
+  "saved": true,
+  "closed": true,
+  "reloaded": "1db01a36f669a47a",
+  "activeRestored": "1db01a36f669a47a",
+  "startedAt": "2026-11-24T10:51:30.9602434Z",
+  "completedAt": "2026-11-24T10:51:34.0876247Z",
+  "timeSource": "cli-host-observation",
+  "targetContext": {
+    "projectUuid": "55a6557ab5a80b5708e6f651c9449a1f7064db957fb61681d1cb71b548ca4ffc",
+    "projectName": "EVT1-H03-R11-MULTIBOARD-FANOUT-TRIAL",
+    "documentUuid": "1db01a36f669a47a",
+    "documentType": "pcb",
+    "tabId": "1db01a36f669a47a@55a6557ab5a80b5708e6f651c9449a1f7064db957fb61681d1cb71b548ca4ffc"
+  },
+  "finalContext": {
+    "projectUuid": "55a6557ab5a80b5708e6f651c9449a1f7064db957fb61681d1cb71b548ca4ffc",
+    "projectName": "EVT1-H03-R11-MULTIBOARD-FANOUT-TRIAL",
+    "documentUuid": "1db01a36f669a47a",
+    "documentType": "pcb",
+    "tabId": "1db01a36f669a47a@55a6557ab5a80b5708e6f651c9449a1f7064db957fb61681d1cb71b548ca4ffc"
+  },
+  "readiness": {
+    "ready": true,
+    "scope": "component-inventory-readiness",
+    "active": {
+      "projectUuid": "55a6557ab5a80b5708e6f651c9449a1f7064db957fb61681d1cb71b548ca4ffc",
+      "projectName": "EVT1-H03-R11-MULTIBOARD-FANOUT-TRIAL",
+      "documentUuid": "1db01a36f669a47a",
+      "documentType": "pcb",
+      "tabId": "1db01a36f669a47a@55a6557ab5a80b5708e6f651c9449a1f7064db957fb61681d1cb71b548ca4ffc"
+    },
+    "componentCount": 53,
+    "componentSha256": "7d0ff78c04b858de84dd4be414c4c6b5834c3ecbb5a1ed0010134312879ddebd",
+    "samples": 2,
+    "stableSamples": 2,
+    "requestIds": [
+      "req_227",
+      "req_228",
+      "req_229",
+      "req_230",
+      "req_231"
+    ],
+    "observedAt": "2026-11-24T10:51:34.0876247Z"
+  },
+  "steps": [
+    {
+      "stage": "inspect",
+      "action": "document.current",
+      "startedAt": "2026-11-24T10:51:30.9602434Z",
+      "completedAt": "2026-11-24T10:51:30.9710216Z",
+      "requestId": "req_222",
+      "responseCreatedAt": "2026-11-24T10:51:30.9705175Z",
+      "context": {
+        "projectUuid": "55a6557ab5a80b5708e6f651c9449a1f7064db957fb61681d1cb71b548ca4ffc",
+        "projectName": "EVT1-H03-R11-MULTIBOARD-FANOUT-TRIAL",
+        "documentUuid": "1db01a36f669a47a",
+        "documentType": "pcb",
+        "tabId": "1db01a36f669a47a@55a6557ab5a80b5708e6f651c9449a1f7064db957fb61681d1cb71b548ca4ffc"
+      },
+      "ok": true
+    },
+    {
+      "stage": "save",
+      "action": "pcb.save",
+      "startedAt": "2026-11-24T10:51:30.9710216Z",
+      "completedAt": "2026-11-24T10:51:30.9888015Z",
+      "requestId": "req_223",
+      "responseCreatedAt": "2026-11-24T10:51:30.9882951Z",
+      "context": {
+        "projectUuid": "55a6557ab5a80b5708e6f651c9449a1f7064db957fb61681d1cb71b548ca4ffc",
+        "projectName": "EVT1-H03-R11-MULTIBOARD-FANOUT-TRIAL",
+        "documentUuid": "1db01a36f669a47a",
+        "documentType": "pcb",
+        "tabId": "1db01a36f669a47a@55a6557ab5a80b5708e6f651c9449a1f7064db957fb61681d1cb71b548ca4ffc"
+      },
+      "ok": true
+    },
+    {
+      "stage": "close",
+      "action": "document.close",
+      "startedAt": "2026-11-24T10:51:30.9888015Z",
+      "completedAt": "2026-11-24T10:51:31.2573363Z",
+      "requestId": "req_224",
+      "responseCreatedAt": "2026-11-24T10:51:31.2560947Z",
+      "context": {
+        "projectUuid": "55a6557ab5a80b5708e6f651c9449a1f7064db957fb61681d1cb71b548ca4ffc",
+        "projectName": "EVT1-H03-R11-MULTIBOARD-FANOUT-TRIAL"
+      },
+      "ok": true
+    },
+    {
+      "stage": "close-settle",
+      "action": "document.current",
+      "startedAt": "2026-11-24T10:51:31.2573363Z",
+      "completedAt": "2026-11-24T10:51:31.284507Z",
+      "requestId": "req_225",
+      "responseCreatedAt": "2026-11-24T10:51:31.284507Z",
+      "ok": false,
+      "error": "document.current failed: No active document."
+    },
+    {
+      "stage": "reopen",
+      "action": "document.open",
+      "startedAt": "2026-11-24T10:51:31.2850235Z",
+      "completedAt": "2026-11-24T10:51:33.4685227Z",
+      "requestId": "req_226",
+      "responseCreatedAt": "2026-11-24T10:51:33.4674942Z",
+      "context": {
+        "projectUuid": "55a6557ab5a80b5708e6f651c9449a1f7064db957fb61681d1cb71b548ca4ffc",
+        "projectName": "EVT1-H03-R11-MULTIBOARD-FANOUT-TRIAL",
+        "documentUuid": "1db01a36f669a47a",
+        "documentType": "pcb",
+        "tabId": "1db01a36f669a47a@55a6557ab5a80b5708e6f651c9449a1f7064db957fb61681d1cb71b548ca4ffc"
+      },
+      "ok": true
+    },
+    {
+      "stage": "ready",
+      "startedAt": "2026-11-24T10:51:33.4685227Z",
+      "completedAt": "2026-11-24T10:51:34.0876247Z",
+      "context": {
+        "projectUuid": "55a6557ab5a80b5708e6f651c9449a1f7064db957fb61681d1cb71b548ca4ffc",
+        "projectName": "EVT1-H03-R11-MULTIBOARD-FANOUT-TRIAL",
+        "documentUuid": "1db01a36f669a47a",
+        "documentType": "pcb",
+        "tabId": "1db01a36f669a47a@55a6557ab5a80b5708e6f651c9449a1f7064db957fb61681d1cb71b548ca4ffc"
+      },
+      "ok": true
+    }
+  ]
+}
