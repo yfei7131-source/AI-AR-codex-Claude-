@@ -1,0 +1,625 @@
+{
+  "schemaVersion": "zyd-p3-01-summary/1",
+  "task": "P3-01 三板联合布局与逃线优化 + 正反面丝印批量清理与方向标记",
+  "status": "NOT FOR FAB",
+  "validationLevel": "L3",
+  "inheritedBaseline": {
+    "pr67Commit": "0844b27d73a00bb25b12aa05bafa6cb1ef0cc74e",
+    "r11MasterCommit": "79ce0553f6aaa90ebfee773dceefaf5505d11f30",
+    "r11Epro2Sha256": "758618cb4bbb12a5ed34200cbf7c51f2e476c80ed9eee96643efed4764791074",
+    "connectionErrors": {
+      "PCB1": 322,
+      "PCB2": 227,
+      "PCB3": 127,
+      "total": 676
+    }
+  },
+  "deliverableEpro2": {
+    "file": "EVT1-H03-P3-01-NOT-FOR-FAB.epro2",
+    "sha256": "1e9db8e70e1794ef4d7950440ad47ff2658f13d464dcd95772f79ac02ef69fb1",
+    "bytes": 1613543
+  },
+  "productTargetsPreserved": {
+    "massTargetG": 40,
+    "trueBinocularTransparentAR": true,
+    "highDensityHDI": true,
+    "fabApproval": false
+  },
+  "netClassAndRuleBinding": {
+    "PCB1": {
+      "liveNetCount": 112,
+      "assignedNetCount": 112,
+      "classes": {
+        "NC_P3_LEGACY_PWR_3_6MIL": {
+          "rule": "P3_LEGACY_PWR_3_6MIL",
+          "specMil": {
+            "min": 3.0,
+            "default": 6.0
+          },
+          "netCount": 3
+        },
+        "NC_P3_LEGACY_SIG_3_4MIL": {
+          "rule": "P3_LEGACY_SIG_3_4MIL",
+          "specMil": {
+            "min": 3.0,
+            "default": 4.0
+          },
+          "netCount": 11
+        },
+        "NC_P3_PWR_BR_4_8MIL": {
+          "rule": "P3_PWR_BR_4_8MIL",
+          "specMil": {
+            "min": 4.0,
+            "default": 8.0
+          },
+          "netCount": 2
+        },
+        "NC_P3_PWR_BR_6MIL": {
+          "rule": "P3_PWR_BR_6MIL",
+          "specMil": {
+            "min": 6.0,
+            "default": 8.0
+          },
+          "netCount": 6
+        },
+        "NC_P3_PWR_HI_4_16MIL": {
+          "rule": "P3_PWR_HI_4_16MIL",
+          "specMil": {
+            "min": 4.0,
+            "default": 16.0
+          },
+          "netCount": 7
+        },
+        "NC_P3_SIG_4MIL": {
+          "rule": "P3_SIG_4MIL",
+          "specMil": {
+            "min": 4.0,
+            "default": 4.0
+          },
+          "netCount": 83
+        }
+      }
+    },
+    "PCB2": {
+      "liveNetCount": 58,
+      "assignedNetCount": 58,
+      "classes": {
+        "NC_P3_LEGACY_PWR_3_6MIL": {
+          "rule": "P3_LEGACY_PWR_3_6MIL",
+          "specMil": {
+            "min": 3.0,
+            "default": 6.0
+          },
+          "netCount": 6
+        },
+        "NC_P3_LEGACY_SIG_3_4MIL": {
+          "rule": "P3_LEGACY_SIG_3_4MIL",
+          "specMil": {
+            "min": 3.0,
+            "default": 4.0
+          },
+          "netCount": 10
+        },
+        "NC_P3_PWR_BR_6MIL": {
+          "rule": "P3_PWR_BR_6MIL",
+          "specMil": {
+            "min": 6.0,
+            "default": 8.0
+          },
+          "netCount": 3
+        },
+        "NC_P3_PWR_HI_4_16MIL": {
+          "rule": "P3_PWR_HI_4_16MIL",
+          "specMil": {
+            "min": 4.0,
+            "default": 16.0
+          },
+          "netCount": 1
+        },
+        "NC_P3_SIG_4MIL": {
+          "rule": "P3_SIG_4MIL",
+          "specMil": {
+            "min": 4.0,
+            "default": 4.0
+          },
+          "netCount": 38
+        }
+      }
+    },
+    "PCB3": {
+      "liveNetCount": 37,
+      "assignedNetCount": 37,
+      "classes": {
+        "NC_P3_LEGACY_PWR_3_6MIL": {
+          "rule": "P3_LEGACY_PWR_3_6MIL",
+          "specMil": {
+            "min": 3.0,
+            "default": 6.0
+          },
+          "netCount": 2
+        },
+        "NC_P3_LEGACY_SIG_3_4MIL": {
+          "rule": "P3_LEGACY_SIG_3_4MIL",
+          "specMil": {
+            "min": 3.0,
+            "default": 4.0
+          },
+          "netCount": 7
+        },
+        "NC_P3_PWR_BR_6MIL": {
+          "rule": "P3_PWR_BR_6MIL",
+          "specMil": {
+            "min": 6.0,
+            "default": 8.0
+          },
+          "netCount": 4
+        },
+        "NC_P3_PWR_HI_4_16MIL": {
+          "rule": "P3_PWR_HI_4_16MIL",
+          "specMil": {
+            "min": 4.0,
+            "default": 16.0
+          },
+          "netCount": 2
+        },
+        "NC_P3_SIG_4MIL": {
+          "rule": "P3_SIG_4MIL",
+          "specMil": {
+            "min": 4.0,
+            "default": 4.0
+          },
+          "netCount": 22
+        }
+      }
+    }
+  },
+  "layoutAndEscapeIncrements": {
+    "PCB1": {
+      "decapMoves": [
+        {
+          "designator": "C40",
+          "id": "8f8007e23293c01e",
+          "before": {
+            "x": 138.3858,
+            "y": 1299.0158,
+            "rotation": 0.0,
+            "layer": 2
+          },
+          "after": {
+            "x": 128.7,
+            "y": 1009.2,
+            "rotation": 270.0,
+            "layer": 2
+          },
+          "newDistToPinMil": 53.3,
+          "targetPin": "U10.A2",
+          "deletedLeafGndStubs": [
+            "3be064b2bcae61b2"
+          ],
+          "hasDirectRoute": false
+        }
+      ],
+      "liveMovedReadback": {
+        "C40": {
+          "anchor": {
+            "x": 128.7,
+            "y": 1009.2,
+            "layer": 2,
+            "rotation": 270
+          },
+          "pads": [
+            {
+              "pad": "1",
+              "net": "VSYS",
+              "x": 128.7,
+              "y": 1021.8,
+              "layer": 2
+            },
+            {
+              "pad": "2",
+              "net": "GND",
+              "x": 128.7,
+              "y": 996.6,
+              "layer": 2
+            }
+          ],
+          "distToTargetPinMil": 53.33,
+          "targetPin": "U10.A2"
+        }
+      },
+      "initialDeletedDanglingAndLeafStubs": [
+        "029d6dfe830f9c1f",
+        "3be064b2bcae61b2"
+      ],
+      "addedBlindVias": [
+        {
+          "pad": "C40.2",
+          "id": "891ea9d6441cee10",
+          "x": 128.7,
+          "y": 981.5999999999999,
+          "hole": 4,
+          "dia": 10,
+          "viaType": 1,
+          "rule": "BV_L5_L6",
+          "reused": true
+        },
+        {
+          "pad": "R41.2",
+          "id": "f459d4e8fea1f167",
+          "x": 202.2,
+          "y": 1345.5,
+          "hole": 4,
+          "dia": 10,
+          "viaType": 1,
+          "rule": "BV_L5_L6",
+          "reused": true
+        }
+      ],
+      "addedDirectRoutes": [
+        {
+          "net": "1V8_SYS",
+          "layer": 2,
+          "width": 6,
+          "from": "U8.3",
+          "to": "U8.5",
+          "points": [
+            [
+              29.4,
+              648.8
+            ],
+            [
+              38.6,
+              658.0
+            ],
+            [
+              38.6,
+              689.4
+            ]
+          ],
+          "createdTrackIds": [
+            "d60a341c2cb9839a",
+            "e0eeb6d755f4e817"
+          ]
+        },
+        {
+          "net": "3V3_SYS",
+          "layer": 2,
+          "width": 6,
+          "from": "R1.1",
+          "to": "R9.2",
+          "points": [
+            [
+              125.8,
+              1369.9
+            ],
+            [
+              99.8,
+              1343.9
+            ],
+            [
+              99.8,
+              1322.6
+            ]
+          ],
+          "createdTrackIds": [
+            "60f85b2c67e9e14e",
+            "ae835723047c759f"
+          ]
+        },
+        {
+          "net": "3V3_SYS",
+          "layer": 2,
+          "width": 6,
+          "from": "R16.2",
+          "to": "R24.2",
+          "points": [
+            [
+              208.0,
+              1499.6
+            ],
+            [
+              184.0,
+              1523.6
+            ],
+            [
+              166.0,
+              1523.6
+            ]
+          ],
+          "createdTrackIds": [
+            "3b47c41d2c9391f9",
+            "7a50bfff742e984c"
+          ]
+        },
+        {
+          "net": "3V3_SYS",
+          "layer": 1,
+          "width": 6,
+          "from": "U1.3",
+          "to": "U1.56",
+          "points": [
+            [
+              27.3,
+              429.1
+            ],
+            [
+              59.1,
+              460.9
+            ],
+            [
+              59.1,
+              492.4
+            ]
+          ],
+          "createdTrackIds": [
+            "f0b11055d8ef28e4",
+            "0c61bdc10ba02d7e"
+          ]
+        },
+        {
+          "net": "VSYS",
+          "layer": 2,
+          "width": 8,
+          "from": "U2.A3",
+          "to": "U2.A1",
+          "points": [
+            [
+              299.8,
+              370.7
+            ],
+            [
+              268.3,
+              370.7
+            ]
+          ],
+          "createdTrackIds": [
+            "f5992eac480f68ea"
+          ]
+        }
+      ],
+      "surgicalDeletedRedundantTracks": [
+        "08664a23d1d30c39",
+        "2fe2e4157ebf6637"
+      ]
+    },
+    "PCB2": {
+      "decapMoves": [
+        {
+          "designator": "C3",
+          "id": "6f1dedf9d15d0beb",
+          "before": {
+            "x": 32.0866,
+            "y": 838.189,
+            "rotation": 0.0,
+            "layer": 1
+          },
+          "after": {
+            "x": 86.0,
+            "y": 484.0,
+            "rotation": 90.0,
+            "layer": 2
+          },
+          "newDistToPinMil": 51.4,
+          "targetPin": "U13.3",
+          "deletedLeafGndStubs": [
+            "938f05056fb5e0da"
+          ],
+          "hasDirectRoute": false
+        }
+      ],
+      "liveMovedReadback": {
+        "C3": {
+          "anchor": {
+            "x": 86,
+            "y": 484,
+            "layer": 2,
+            "rotation": 90
+          },
+          "pads": [
+            {
+              "pad": "1",
+              "net": "AVDD_REQ_FILTER",
+              "x": 86,
+              "y": 471.4,
+              "layer": 2
+            },
+            {
+              "pad": "2",
+              "net": "GND",
+              "x": 86,
+              "y": 496.6,
+              "layer": 2
+            }
+          ],
+          "distToTargetPinMil": 281.29,
+          "targetPin": "U13.3"
+        }
+      },
+      "initialDeletedDanglingAndLeafStubs": [
+        "938f05056fb5e0da"
+      ],
+      "addedBlindVias": [
+        {
+          "pad": "C3.2",
+          "id": "6282eae36a39e1eb",
+          "x": 86,
+          "y": 511.6,
+          "hole": 4,
+          "dia": 10,
+          "viaType": 1,
+          "rule": "BV_L5_L6",
+          "reused": false
+        },
+        {
+          "pad": "Y1.2",
+          "id": "08d54e0d88ea0334",
+          "x": 77.1,
+          "y": 826.4,
+          "hole": 4,
+          "dia": 10,
+          "viaType": 1,
+          "rule": "BV_L5_L6",
+          "reused": false
+        }
+      ],
+      "addedDirectRoutes": [
+        {
+          "net": "VSYS",
+          "layer": 1,
+          "width": 10,
+          "from": "C8.1",
+          "to": "R8.1",
+          "points": [
+            [
+              19.5,
+              859.8
+            ],
+            [
+              19.5,
+              903.1
+            ]
+          ],
+          "createdTrackIds": [
+            "52bea1975b5492c5"
+          ]
+        },
+        {
+          "net": "VSYS",
+          "layer": 2,
+          "width": 10,
+          "from": "U12.4",
+          "to": "U7.4",
+          "points": [
+            [
+              111.8,
+              155.9
+            ],
+            [
+              111.8,
+              73.2
+            ]
+          ],
+          "createdTrackIds": [
+            "567ba17776fc0325"
+          ]
+        }
+      ],
+      "surgicalDeletedRedundantTracks": []
+    },
+    "PCB3": {
+      "decapMoves": [],
+      "liveMovedReadback": {},
+      "initialDeletedDanglingAndLeafStubs": [],
+      "addedBlindVias": [],
+      "addedDirectRoutes": [],
+      "surgicalDeletedRedundantTracks": [
+        "925a965420159658",
+        "7913eac8f7c9e3ef"
+      ]
+    }
+  },
+  "silkscreenAndDirectionalMarkers": {
+    "PCB1": {
+      "clearedVisibleDesignatorAttributes": 118,
+      "remainingVisibleAttributes": 0,
+      "engineeringDesignatorsIntact": "118/118",
+      "placedBoardPin1PolarityDots": 24,
+      "footprintEmbeddedPolarityOnly": [
+        {
+          "designator": "U11",
+          "footprintUuid": "7fc3ca1940b32b12",
+          "footprintSilkPolyCount": 7
+        },
+        {
+          "designator": "U13",
+          "footprintUuid": "7fc3ca1940b32b12",
+          "footprintSilkPolyCount": 7
+        },
+        {
+          "designator": "U17",
+          "footprintUuid": "2f8d631073922488",
+          "footprintSilkPolyCount": 3
+        }
+      ],
+      "silkOverPad": 0,
+      "silkOffBoard": 0,
+      "silkscreenFlipped": 116,
+      "bomSha256": "ba3fea1bafac829fe1feb873bd45a32baf8f86405c812e327e6d3dc1551048a5",
+      "cplSha256": "8083e9134cf494f119ca36b1c4bcacce1131874e8cad794f906f249bc5d4ba83"
+    },
+    "PCB2": {
+      "clearedVisibleDesignatorAttributes": 86,
+      "remainingVisibleAttributes": 0,
+      "engineeringDesignatorsIntact": "86/86",
+      "placedBoardPin1PolarityDots": 20,
+      "footprintEmbeddedPolarityOnly": [
+        {
+          "designator": "U2",
+          "footprintUuid": "05bd0224a92924f4",
+          "footprintSilkPolyCount": 7
+        }
+      ],
+      "silkOverPad": 0,
+      "silkOffBoard": 0,
+      "silkscreenFlipped": 86,
+      "bomSha256": "01b1f09a2da41d70240cf993dbeb88369a7087597d6de468ebaa0b587216d9da",
+      "cplSha256": "46db862226f6c77871ea401892194b9a7d8d2c1bcd1794edafd007713059b2fe"
+    },
+    "PCB3": {
+      "clearedVisibleDesignatorAttributes": 53,
+      "remainingVisibleAttributes": 0,
+      "engineeringDesignatorsIntact": "53/53",
+      "placedBoardPin1PolarityDots": 10,
+      "footprintEmbeddedPolarityOnly": [],
+      "silkOverPad": 0,
+      "silkOffBoard": 0,
+      "silkscreenFlipped": 53,
+      "bomSha256": "2192c5eb418505635277d28d060114ef6a6902dcdb3b483aee827db6b9e94003",
+      "cplSha256": "f5266324bc30360410d3667a820a7453f2a02297e66c03d50f2c14eb6f7203b7"
+    }
+  },
+  "l3Verification": {
+    "connectionErrorsAfter": {
+      "PCB1": 320,
+      "PCB2": 225,
+      "PCB3": 127,
+      "total": 672
+    },
+    "connectionErrorDelta": {
+      "PCB1": -2,
+      "PCB2": -2,
+      "PCB3": 0,
+      "total": -4
+    },
+    "newClearanceShortWidthSilkErrors": 0,
+    "nonPcbArchiveDocumentsByteIdenticalToR11": true,
+    "v4OfficialHdiViolations": {
+      "PCB1": 0,
+      "PCB2": 0,
+      "PCB3": 0
+    },
+    "independentReimport": {
+      "projectUuid": "a687b8c8e53fea6282dac41b745786558df42322327cdd72cfd8692ed97c750b",
+      "candidateProjectUuid": "88f4b492002cdc82827828ee00ff07463b5e750fa4693bf4a7422d897997f66f",
+      "allBoardsParityMatch": true,
+      "elapsedSeconds": 94.03
+    }
+  },
+  "blockedScope": [
+    {
+      "id": "BLK-01",
+      "status": "BLOCKED",
+      "item": "0.80 mm 6层 HDI 物理介质叠层参数及 PCB3 U11 (0.35 mm WLCSP 95球) 二阶 2+N+2 板厂 EQ 未确认"
+    },
+    {
+      "id": "BLK-02",
+      "status": "BLOCKED",
+      "item": "PCB1/PCB2 J2/J3 连接器实物针序极性及双目透明 AR 光机机械包络待外部定型"
+    },
+    {
+      "id": "BLK-03",
+      "status": "BLOCKED",
+      "item": "PCB1 U12 (TPD2E001DRYR) 原理图符号与封装引脚冲突待正式 ECO 授权"
+    }
+  ]
+}

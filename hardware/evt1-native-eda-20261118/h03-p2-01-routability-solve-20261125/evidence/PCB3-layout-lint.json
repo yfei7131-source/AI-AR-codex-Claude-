@@ -1,0 +1,3469 @@
+{
+  "report": {
+    "ok": false,
+    "incomplete": true,
+    "coverage": {
+      "complete": false,
+      "componentsInventoryKnown": true,
+      "padsInventoryKnown": true,
+      "componentCount": 53,
+      "totalPads": 239,
+      "knownGeometryPads": 235,
+      "unsupportedGeometryPads": 4,
+      "unknownGeometryPads": 0,
+      "legacyGeometryPads": 0,
+      "unverifiedPads": [
+        {
+          "componentPrimitiveId": "b8b6b53fbd07ce73",
+          "designator": "MK3",
+          "primitiveId": "b8b6b53fbd07ce73e14",
+          "padNumber": "5",
+          "status": "unsupported",
+          "reason": "POLYGON pad geometry is not supported by pcb net-path"
+        },
+        {
+          "componentPrimitiveId": "b8b6b53fbd07ce73",
+          "designator": "MK3",
+          "primitiveId": "b8b6b53fbd07ce73e15",
+          "padNumber": "5",
+          "status": "unsupported",
+          "reason": "POLYGON pad geometry is not supported by pcb net-path"
+        },
+        {
+          "componentPrimitiveId": "b8b6b53fbd07ce73",
+          "designator": "MK3",
+          "primitiveId": "b8b6b53fbd07ce73e16",
+          "padNumber": "5",
+          "status": "unsupported",
+          "reason": "POLYGON pad geometry is not supported by pcb net-path"
+        },
+        {
+          "componentPrimitiveId": "b8b6b53fbd07ce73",
+          "designator": "MK3",
+          "primitiveId": "b8b6b53fbd07ce73e17",
+          "padNumber": "5",
+          "status": "unsupported",
+          "reason": "POLYGON pad geometry is not supported by pcb net-path"
+        }
+      ],
+      "limitations": [
+        "4 pad(s) have captured source shapes unsupported by exact pad-contact inspection"
+      ]
+    },
+    "score": 0,
+    "verdict": "incomplete",
+    "componentCount": 53,
+    "minGapMil": 5.98,
+    "overlaps": null,
+    "outsideOutline": null,
+    "tightSpacing": null,
+    "silk": [
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 3,
+        "designator": "ANT2",
+        "primitives": [
+          "0e662df7218ff5faa2"
+        ],
+        "message": "silk text Designator \"ANT2\" overlaps pad ANT2.FEED — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 49.2,
+          "y": 206.7
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 3,
+        "designator": "C1",
+        "primitives": [
+          "738787509fb5dc5aa2"
+        ],
+        "message": "silk text Designator \"C1\" overlaps pad C1.1 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 184.8,
+          "y": 460.4
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 3,
+        "designator": "C10",
+        "primitives": [
+          "f65ed56443881272a2"
+        ],
+        "message": "silk text Designator \"C10\" overlaps pad C10.1 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 106.1,
+          "y": 649.4
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "C11",
+        "primitives": [
+          "a127ad7939452de7a2"
+        ],
+        "message": "silk text Designator \"C11\" overlaps pad C11.2 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 172.8,
+          "y": 532.5
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "C12",
+        "primitives": [
+          "68b6b96264fcf62ca2"
+        ],
+        "message": "silk text Designator \"C12\" overlaps pad C12.1 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 23.4,
+          "y": 657.3
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 3,
+        "designator": "C13",
+        "primitives": [
+          "3ffbbc7ba026154ca2"
+        ],
+        "message": "silk text Designator \"C13\" overlaps pad C13.1 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 58.7,
+          "y": 552.2
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 3,
+        "designator": "C10",
+        "primitives": [
+          "66a2dae80b810ef7a2"
+        ],
+        "message": "silk text Designator \"C14\" overlaps pad C10.2 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 131.3,
+          "y": 649.4
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "C15",
+        "primitives": [
+          "697c9508f9053f88a2"
+        ],
+        "message": "silk text Designator \"C15\" overlaps pad C15.1 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 74.6,
+          "y": 669.1
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 3,
+        "designator": "C13",
+        "primitives": [
+          "0a959985bda75dd0a2"
+        ],
+        "message": "silk text Designator \"C16\" overlaps pad C13.2 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 98,
+          "y": 552.2
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "C17",
+        "primitives": [
+          "dcefb04326357f2aa2"
+        ],
+        "message": "silk text Designator \"C17\" overlaps pad C17.1 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 125.8,
+          "y": 669.1
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 3,
+        "designator": "C18",
+        "primitives": [
+          "dbd3cb52b0b1e6b0a2"
+        ],
+        "message": "silk text Designator \"C18\" overlaps pad C18.1 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 54.9,
+          "y": 673
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 3,
+        "designator": "C18",
+        "primitives": [
+          "0bf68aa6753a86bfa2"
+        ],
+        "message": "silk text Designator \"C19\" overlaps pad C18.2 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 80.1,
+          "y": 673
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 3,
+        "designator": "C2",
+        "primitives": [
+          "083fafdb76ae0ec6a2"
+        ],
+        "message": "silk text Designator \"C2\" overlaps pad C2.1 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 94.1,
+          "y": 260.8
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "C20",
+        "primitives": [
+          "89798d4e509cca44a2"
+        ],
+        "message": "silk text Designator \"C20\" overlaps pad C20.2 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 172.8,
+          "y": 567.9
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "C21",
+        "primitives": [
+          "3f1b6b91baeec3d7a2"
+        ],
+        "message": "silk text Designator \"C21\" overlaps pad C21.1 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 177,
+          "y": 649.4
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "C22",
+        "primitives": [
+          "a5ac8b0d801f01c3a2"
+        ],
+        "message": "silk text Designator \"C22\" overlaps pad C22.1 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 74.6,
+          "y": 692.7
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "C23",
+        "primitives": [
+          "d5a1c326f8db810ea2"
+        ],
+        "message": "silk text Designator \"C23\" overlaps pad C23.1 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 125.8,
+          "y": 692.7
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "C3",
+        "primitives": [
+          "04821a712662b59fa2"
+        ],
+        "message": "silk text Designator \"C3\" overlaps pad C3.2 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 166.3,
+          "y": 330.3
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "C21",
+        "primitives": [
+          "5432466a974791a8a2"
+        ],
+        "message": "silk text Designator \"C4\" overlaps pad C21.1 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 177,
+          "y": 649.4
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 3,
+        "designator": "C5",
+        "primitives": [
+          "72ed1be1d38eee9fa2"
+        ],
+        "message": "silk text Designator \"C5\" overlaps pad C5.1 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 23.2,
+          "y": 260.8
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 3,
+        "designator": "C10",
+        "primitives": [
+          "c0f07bd4076fc966a2"
+        ],
+        "message": "silk text Designator \"C6\" overlaps pad C10.2 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 131.3,
+          "y": 649.4
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 3,
+        "designator": "C18",
+        "primitives": [
+          "6b660619ae3faa60a2"
+        ],
+        "message": "silk text Designator \"C7\" overlaps pad C18.1 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 54.9,
+          "y": 673
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "C8",
+        "primitives": [
+          "33c749d605dd1485a2"
+        ],
+        "message": "silk text Designator \"C8\" overlaps pad C8.2 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 158.5,
+          "y": 464.2
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "C11",
+        "primitives": [
+          "736ef29f62298015a2"
+        ],
+        "message": "silk text Designator \"C9\" overlaps pad C11.2 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 172.8,
+          "y": 532.5
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "J1",
+        "primitives": [
+          "d2732f172a8d0a5aa2"
+        ],
+        "message": "silk text Designator \"J1\" overlaps pad J1.P7 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 133.3,
+          "y": 260.8
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "C15",
+        "primitives": [
+          "3b3202596e686d14a2"
+        ],
+        "message": "silk text Designator \"L1\" overlaps pad C15.1 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 74.6,
+          "y": 669.1
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 3,
+        "designator": "C19",
+        "primitives": [
+          "76bcb55d2910677ca2"
+        ],
+        "message": "silk text Designator \"L2\" overlaps pad C19.2 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 131.3,
+          "y": 673
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "J1",
+        "primitives": [
+          "5effaea3e7551183a2"
+        ],
+        "message": "silk text Designator \"L3\" overlaps pad J1.P2 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 71.5,
+          "y": 219.5
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "L4",
+        "primitives": [
+          "e7c56a4dfb6cf98ca2"
+        ],
+        "message": "silk text Designator \"L4\" overlaps pad L4.2 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 172.8,
+          "y": 253.5
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "MK3",
+        "primitives": [
+          "b8b6b53fbd07ce73a2"
+        ],
+        "message": "silk text Designator \"MK3\" overlaps pad MK3.5 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 72.4,
+          "y": 1238.8
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "Q1",
+        "primitives": [
+          "7b31177d1e716521a2"
+        ],
+        "message": "silk text Designator \"Q1\" overlaps pad Q1.3 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 114.8,
+          "y": 415.9
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "C12",
+        "primitives": [
+          "b1a0cccd392c5ca0a2"
+        ],
+        "message": "silk text Designator \"R1\" overlaps pad C12.1 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 23.4,
+          "y": 657.3
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "C17",
+        "primitives": [
+          "b9c164720d748dbea2"
+        ],
+        "message": "silk text Designator \"R10\" overlaps pad C17.1 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 125.8,
+          "y": 669.1
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "C15",
+        "primitives": [
+          "3a744b76679fe0efa2"
+        ],
+        "message": "silk text Designator \"R2\" overlaps pad C15.1 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 74.6,
+          "y": 669.1
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "C17",
+        "primitives": [
+          "79e4a98aa449786ba2"
+        ],
+        "message": "silk text Designator \"R3\" overlaps pad C17.1 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 125.8,
+          "y": 669.1
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "C21",
+        "primitives": [
+          "63182b5c3c167d13a2"
+        ],
+        "message": "silk text Designator \"R4\" overlaps pad C21.1 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 177,
+          "y": 649.4
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 3,
+        "designator": "C18",
+        "primitives": [
+          "bdcab4db0bc2dba5a2"
+        ],
+        "message": "silk text Designator \"R5\" overlaps pad C18.1 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 54.9,
+          "y": 673
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "C12",
+        "primitives": [
+          "91837dfb439f134ba2"
+        ],
+        "message": "silk text Designator \"R6\" overlaps pad C12.1 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 23.4,
+          "y": 657.3
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 3,
+        "designator": "C10",
+        "primitives": [
+          "09c21ca1cfbb645fa2"
+        ],
+        "message": "silk text Designator \"R7\" overlaps pad C10.2 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 131.3,
+          "y": 649.4
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "C15",
+        "primitives": [
+          "81922e74062c455ca2"
+        ],
+        "message": "silk text Designator \"R8\" overlaps pad C15.1 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 74.6,
+          "y": 669.1
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 3,
+        "designator": "C10",
+        "primitives": [
+          "be2e47d4c58fac0aa2"
+        ],
+        "message": "silk text Designator \"R9\" overlaps pad C10.1 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 106.1,
+          "y": 649.4
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 3,
+        "designator": "C18",
+        "primitives": [
+          "9b97b65cf3e82357a2"
+        ],
+        "message": "silk text Designator \"TP1\" overlaps pad C18.1 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 54.9,
+          "y": 673
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 3,
+        "designator": "C10",
+        "primitives": [
+          "a8e55eba7a1d2051a2"
+        ],
+        "message": "silk text Designator \"TP2\" overlaps pad C10.1 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 106.1,
+          "y": 649.4
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 3,
+        "designator": "C10",
+        "primitives": [
+          "5bb0491d9b472a90a2"
+        ],
+        "message": "silk text Designator \"TP3\" overlaps pad C10.1 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 106.1,
+          "y": 649.4
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "C12",
+        "primitives": [
+          "ca678039a27639b6a2"
+        ],
+        "message": "silk text Designator \"TP4\" overlaps pad C12.1 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 23.4,
+          "y": 657.3
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "C15",
+        "primitives": [
+          "756ee9a47ecd1167a2"
+        ],
+        "message": "silk text Designator \"TP5\" overlaps pad C15.1 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 74.6,
+          "y": 669.1
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 3,
+        "designator": "TP6",
+        "primitives": [
+          "74025dccbdaca19ca2"
+        ],
+        "message": "silk text Designator \"TP6\" overlaps pad TP6.3 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 27.6,
+          "y": 649.6
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "J1",
+        "primitives": [
+          "c32488012288d90da2"
+        ],
+        "message": "silk text Designator \"U1\" overlaps pad J1.P14 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 71.5,
+          "y": 302.2
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "C8",
+        "primitives": [
+          "6ef83c9c880e6eeda2"
+        ],
+        "message": "silk text Designator \"U10\" overlaps pad C8.1 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 158.5,
+          "y": 424.8
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 3,
+        "designator": "U11",
+        "primitives": [
+          "fb9a90e154948529a2"
+        ],
+        "message": "silk text Designator \"U11\" overlaps pad U11.C10 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 61,
+          "y": 410.4
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "TP5",
+        "primitives": [
+          "fca0b40d995a47c0a2"
+        ],
+        "message": "silk text Designator \"U3\" overlaps pad TP5.1 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 75.4,
+          "y": 575.4
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 3,
+        "designator": "C13",
+        "primitives": [
+          "d1222eef53e01ff7a2"
+        ],
+        "message": "silk text Designator \"Y2\" overlaps pad C13.1 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 58.7,
+          "y": 552.2
+        }
+      },
+      {
+        "type": "silk-over-pad",
+        "level": "WARN",
+        "layer": 3,
+        "designator": "C13",
+        "primitives": [
+          "86b1d8eabf8bdda4a2"
+        ],
+        "message": "silk text Designator \"Y3\" overlaps pad C13.2 — fab clips silk on exposed copper; move it (`pcb silk-align` / `pcb silk-set`) [规范 §11.2 丝印不压焊盘 — pcb-design-rules.md]",
+        "at": {
+          "x": 98,
+          "y": 552.2
+        }
+      },
+      {
+        "type": "silk-off-board",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "C21",
+        "primitives": [
+          "3f1b6b91baeec3d7a2"
+        ],
+        "message": "silkscreen text 'C21' extends outside the board outline (text 177..222 × 662..733 mil, board -2..207 × -2..1341) — it will not be printed; move it with `pcb silk-set --ids 3f1b6b91baeec3d7a2 --x … --y …`",
+        "at": {
+          "x": 176.97,
+          "y": 662.01
+        }
+      },
+      {
+        "type": "silk-off-board",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "C3",
+        "primitives": [
+          "04821a712662b59fa2"
+        ],
+        "message": "silkscreen text 'C3' extends outside the board outline (text 166..211 × 311..364 mil, board -2..207 × -2..1341) — it will not be printed; move it with `pcb silk-set --ids 04821a712662b59fa2 --x … --y …`",
+        "at": {
+          "x": 166.34,
+          "y": 310.63
+        }
+      },
+      {
+        "type": "silk-off-board",
+        "level": "WARN",
+        "layer": 3,
+        "designator": "C5",
+        "primitives": [
+          "72ed1be1d38eee9fa2"
+        ],
+        "message": "silkscreen text 'C5' extends outside the board outline (text -2..43 × 261..314 mil, board -2..207 × -2..1341) — it will not be printed; move it with `pcb silk-set --ids 72ed1be1d38eee9fa2 --x … --y …`",
+        "at": {
+          "x": 42.91,
+          "y": 260.83
+        }
+      },
+      {
+        "type": "silk-off-board",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "L4",
+        "primitives": [
+          "e7c56a4dfb6cf98ca2"
+        ],
+        "message": "silkscreen text 'L4' extends outside the board outline (text 173..218 × 222..273 mil, board -2..207 × -2..1341) — it will not be printed; move it with `pcb silk-set --ids e7c56a4dfb6cf98ca2 --x … --y …`",
+        "at": {
+          "x": 172.83,
+          "y": 222.05
+        }
+      },
+      {
+        "type": "silk-off-board",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "R4",
+        "primitives": [
+          "63182b5c3c167d13a2"
+        ],
+        "message": "silkscreen text 'R4' extends outside the board outline (text 177..222 × 611..664 mil, board -2..207 × -2..1341) — it will not be printed; move it with `pcb silk-set --ids 63182b5c3c167d13a2 --x … --y …`",
+        "at": {
+          "x": 176.97,
+          "y": 610.83
+        }
+      },
+      {
+        "type": "silk-off-board",
+        "level": "WARN",
+        "layer": 3,
+        "designator": "TP6",
+        "primitives": [
+          "74025dccbdaca19ca2"
+        ],
+        "message": "silkscreen text 'TP6' extends outside the board outline (text -17..28 × 650..729 mil, board -2..207 × -2..1341) — it will not be printed; move it with `pcb silk-set --ids 74025dccbdaca19ca2 --x … --y …`",
+        "at": {
+          "x": 27.56,
+          "y": 649.61
+        }
+      },
+      {
+        "type": "silk-off-board",
+        "level": "WARN",
+        "layer": 4,
+        "designator": "U10",
+        "primitives": [
+          "6ef83c9c880e6eeda2"
+        ],
+        "message": "silkscreen text 'U10' extends outside the board outline (text 167..212 × 383..453 mil, board -2..207 × -2..1341) — it will not be printed; move it with `pcb silk-set --ids 6ef83c9c880e6eeda2 --x … --y …`",
+        "at": {
+          "x": 166.54,
+          "y": 383.07
+        }
+      }
+    ],
+    "sides": {
+      "bottom": 30,
+      "top": 23
+    },
+    "signalNets": 36,
+    "ratsnestLenMil": 13149.4,
+    "crossingCount": 426,
+    "crossings": [
+      {
+        "netA": "1V8_SYS",
+        "netB": "AMP_R_SD_MODE",
+        "x": 127.37,
+        "y": 575.8
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "AMP_R_SD_MODE",
+        "x": 115.45,
+        "y": 424.2
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "AMP_SD_MODE_1V8",
+        "x": 29.4,
+        "y": 318.19
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "AMP_SD_MODE_1V8",
+        "x": 123.79,
+        "y": 424.2
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "AMP_SD_MODE_1V8",
+        "x": 108.39,
+        "y": 599.68
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "AMP_SD_REQ_1V8",
+        "x": 40.73,
+        "y": 351
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "BLE_ANT_FEED",
+        "x": 142.64,
+        "y": 530.38
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "BLE_ANT_FEED",
+        "x": 62.14,
+        "y": 251.53
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "BLE_ANT_FEED",
+        "x": 111.99,
+        "y": 424.2
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "BLE_NRESET",
+        "x": 85,
+        "y": 423
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "BLE_RF_ANT",
+        "x": 73.9,
+        "y": 299.89
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "BLE_RF_ANT",
+        "x": 48.89,
+        "y": 676.52
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "BLE_RF_ANT",
+        "x": 66.15,
+        "y": 416.72
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "BLE_RF_MID",
+        "x": 76.43,
+        "y": 654.71
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "BLE_RF_MID",
+        "x": 129.34,
+        "y": 667.78
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "BLE_SWDCLK",
+        "x": 73.68,
+        "y": 419.23
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "BLE_SWDIO",
+        "x": 67.98,
+        "y": 417.33
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "BLE_XC1",
+        "x": 33.63,
+        "y": 313.65
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "BLE_XC1",
+        "x": 33.72,
+        "y": 331.41
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "BLE_XC2",
+        "x": 35.65,
+        "y": 308.29
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "BLE_XC2",
+        "x": 64.26,
+        "y": 416.09
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "CHG_MUTE_GATE",
+        "x": 77.64,
+        "y": 645.17
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "CHG_R_VSET",
+        "x": 116.17,
+        "y": 590.24
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "I2S_AMP_DIN_1V8",
+        "x": 163.6,
+        "y": 424.56
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "I2S_BCLK_1V8",
+        "x": 148.13,
+        "y": 521.27
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "I2S_BCLK_1V8",
+        "x": 169.66,
+        "y": 424.28
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "I2S_LRCLK_1V8",
+        "x": 165.08,
+        "y": 493.14
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "I2S_LRCLK_1V8",
+        "x": 157.32,
+        "y": 424.78
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "IPC_S3_TX_1V8",
+        "x": 130.16,
+        "y": 424.21
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "IPC_S3_TX_1V8",
+        "x": 167.18,
+        "y": 325.04
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "IPC_S3_TX_1V8",
+        "x": 163.35,
+        "y": 309.76
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "LFXO_XL1",
+        "x": 105.7,
+        "y": 602.17
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "LFXO_XL1",
+        "x": 82.38,
+        "y": 670.06
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "LFXO_XL2",
+        "x": 149.4,
+        "y": 519.16
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "LFXO_XL2",
+        "x": 129.18,
+        "y": 667.83
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "NRF_DCC",
+        "x": 38.55,
+        "y": 300.58
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "NRF_DCCD",
+        "x": 152.17,
+        "y": 274.71
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "NRF_DCCD",
+        "x": 47.2,
+        "y": 382.62
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "NRF_DECA",
+        "x": 49.11,
+        "y": 411.04
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "NRF_DECD",
+        "x": 42.89,
+        "y": 357.06
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "NRF_DECD",
+        "x": 135.58,
+        "y": 238.3
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "NRF_DECD",
+        "x": 61.74,
+        "y": 415.25
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "NRF_DECD",
+        "x": 47.2,
+        "y": 391.49
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "NRF_DECN",
+        "x": 45.48,
+        "y": 364.3
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "NRF_DECR_RF",
+        "x": 47.2,
+        "y": 290.51
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "NRF_DECR_RF",
+        "x": 96.37,
+        "y": 424.2
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "NRF_DECR_RF",
+        "x": 46.47,
+        "y": 282.05
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "NRF_DECR_RF",
+        "x": 116.91,
+        "y": 589.3
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "NTC_TS_R",
+        "x": 125.66,
+        "y": 578.01
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "PDM_CLK_1V8",
+        "x": 78.55,
+        "y": 949.32
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "PDM_CLK_1V8",
+        "x": 119.49,
+        "y": 424.2
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "PDM_CLK_1V8",
+        "x": 105.6,
+        "y": 602.26
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "PDM_CLK_1V8",
+        "x": 100.15,
+        "y": 672.26
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "PDM_D1_1V8",
+        "x": 131.5,
+        "y": 570.47
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "PDM_D1_1V8",
+        "x": 130.94,
+        "y": 667.17
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "PDM_D1_1V8",
+        "x": 132.35,
+        "y": 424.25
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "PDM_D1_1V8",
+        "x": 131.56,
+        "y": 560.3
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "PDM_D1_1V8",
+        "x": 131.63,
+        "y": 548.66
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "SPK_R_N",
+        "x": 125.43,
+        "y": 424.2
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "SPK_R_P",
+        "x": 139.87,
+        "y": 424.41
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "VBAT_R_RET",
+        "x": 143.23,
+        "y": 255.08
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "VBAT_R_RET",
+        "x": 129.2,
+        "y": 233.3
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "VBAT_R_RET",
+        "x": 147.22,
+        "y": 424.56
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "VBAT_R_RET",
+        "x": 166.36,
+        "y": 321.76
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "VBAT_R_RET",
+        "x": 116.31,
+        "y": 590.06
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "VBUS_5V",
+        "x": 120.2,
+        "y": 233.3
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "VBUS_5V",
+        "x": 47.2,
+        "y": 417.13
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "VBUS_5V",
+        "x": 49.04,
+        "y": 411.01
+      },
+      {
+        "netA": "1V8_SYS",
+        "netB": "VBUS_5V",
+        "x": 117.45,
+        "y": 588.6
+      },
+      {
+        "netA": "AMP_R_SD_MODE",
+        "netB": "AMP_SD_MODE_1V8",
+        "x": 119.39,
+        "y": 474.34
+      },
+      {
+        "netA": "AMP_R_SD_MODE",
+        "netB": "AMP_SD_MODE_1V8",
+        "x": 124.74,
+        "y": 413.38
+      },
+      {
+        "netA": "AMP_R_SD_MODE",
+        "netB": "BLE_ANT_FEED",
+        "x": 116.75,
+        "y": 440.69
+      },
+      {
+        "netA": "AMP_R_SD_MODE",
+        "netB": "I2S_AMP_DIN_1V8",
+        "x": 174.31,
+        "y": 400.83
+      },
+      {
+        "netA": "AMP_R_SD_MODE",
+        "netB": "I2S_AMP_DIN_1V8",
+        "x": 122.62,
+        "y": 515.42
+      },
+      {
+        "netA": "AMP_R_SD_MODE",
+        "netB": "I2S_BCLK_1V8",
+        "x": 174.89,
+        "y": 400.68
+      },
+      {
+        "netA": "AMP_R_SD_MODE",
+        "netB": "I2S_BCLK_1V8",
+        "x": 129.63,
+        "y": 604.62
+      },
+      {
+        "netA": "AMP_R_SD_MODE",
+        "netB": "I2S_LRCLK_1V8",
+        "x": 155.15,
+        "y": 405.68
+      },
+      {
+        "netA": "AMP_R_SD_MODE",
+        "netB": "IPC_S3_TX_1V8",
+        "x": 135.19,
+        "y": 410.74
+      },
+      {
+        "netA": "AMP_R_SD_MODE",
+        "netB": "IPC_S3_TX_1V8",
+        "x": 118.01,
+        "y": 456.75
+      },
+      {
+        "netA": "AMP_R_SD_MODE",
+        "netB": "LFXO_XL1",
+        "x": 116.64,
+        "y": 439.35
+      },
+      {
+        "netA": "AMP_R_SD_MODE",
+        "netB": "LFXO_XL1",
+        "x": 125.02,
+        "y": 545.94
+      },
+      {
+        "netA": "AMP_R_SD_MODE",
+        "netB": "LFXO_XL2",
+        "x": 118.7,
+        "y": 465.53
+      },
+      {
+        "netA": "AMP_R_SD_MODE",
+        "netB": "NRF_DECD",
+        "x": 122.56,
+        "y": 514.63
+      },
+      {
+        "netA": "AMP_R_SD_MODE",
+        "netB": "NRF_DECR_RF",
+        "x": 124.92,
+        "y": 544.7
+      },
+      {
+        "netA": "AMP_R_SD_MODE",
+        "netB": "NRF_DECR_RF",
+        "x": 118.93,
+        "y": 468.43
+      },
+      {
+        "netA": "AMP_R_SD_MODE",
+        "netB": "NTC_TS_R",
+        "x": 127.63,
+        "y": 579.06
+      },
+      {
+        "netA": "AMP_R_SD_MODE",
+        "netB": "PDM_CLK_1V8",
+        "x": 120.24,
+        "y": 414.52
+      },
+      {
+        "netA": "AMP_R_SD_MODE",
+        "netB": "PDM_CLK_1V8",
+        "x": 117.48,
+        "y": 449.96
+      },
+      {
+        "netA": "AMP_R_SD_MODE",
+        "netB": "PDM_D1_1V8",
+        "x": 132.43,
+        "y": 411.43
+      },
+      {
+        "netA": "AMP_R_SD_MODE",
+        "netB": "PDM_D1_1V8",
+        "x": 131.19,
+        "y": 624.41
+      },
+      {
+        "netA": "AMP_R_SD_MODE",
+        "netB": "SPK_R_N",
+        "x": 133.47,
+        "y": 411.17
+      },
+      {
+        "netA": "AMP_R_SD_MODE",
+        "netB": "SPK_R_N",
+        "x": 116.58,
+        "y": 438.54
+      },
+      {
+        "netA": "AMP_R_SD_MODE",
+        "netB": "SPK_R_P",
+        "x": 119.26,
+        "y": 472.67
+      },
+      {
+        "netA": "AMP_R_SD_MODE",
+        "netB": "SPK_R_P",
+        "x": 146.98,
+        "y": 407.75
+      },
+      {
+        "netA": "AMP_R_SD_MODE",
+        "netB": "VBAT_R_RET",
+        "x": 128.39,
+        "y": 588.73
+      },
+      {
+        "netA": "AMP_R_SD_MODE",
+        "netB": "VBAT_R_RET",
+        "x": 162.8,
+        "y": 403.74
+      },
+      {
+        "netA": "AMP_R_SD_MODE",
+        "netB": "VBAT_R_RET",
+        "x": 118.5,
+        "y": 462.95
+      },
+      {
+        "netA": "AMP_R_SD_MODE",
+        "netB": "VBUS_5V",
+        "x": 129.44,
+        "y": 602.18
+      },
+      {
+        "netA": "AMP_SD_MODE_1V8",
+        "netB": "AMP_SD_REQ_1V8",
+        "x": 47.31,
+        "y": 317.8
+      },
+      {
+        "netA": "AMP_SD_MODE_1V8",
+        "netB": "BLE_ANT_FEED",
+        "x": 121.04,
+        "y": 455.56
+      },
+      {
+        "netA": "AMP_SD_MODE_1V8",
+        "netB": "BLE_ANT_FEED",
+        "x": 81.06,
+        "y": 317.05
+      },
+      {
+        "netA": "AMP_SD_MODE_1V8",
+        "netB": "BLE_NRESET",
+        "x": 112,
+        "y": 316.37
+      },
+      {
+        "netA": "AMP_SD_MODE_1V8",
+        "netB": "BLE_RF_ANT",
+        "x": 72.75,
+        "y": 317.24
+      },
+      {
+        "netA": "AMP_SD_MODE_1V8",
+        "netB": "BLE_SWDCLK",
+        "x": 98.43,
+        "y": 316.67
+      },
+      {
+        "netA": "AMP_SD_MODE_1V8",
+        "netB": "BLE_SWDIO",
+        "x": 94.42,
+        "y": 316.76
+      },
+      {
+        "netA": "AMP_SD_MODE_1V8",
+        "netB": "BLE_XC1",
+        "x": 33.65,
+        "y": 318.1
+      },
+      {
+        "netA": "AMP_SD_MODE_1V8",
+        "netB": "BLE_XC2",
+        "x": 38.22,
+        "y": 318
+      },
+      {
+        "netA": "AMP_SD_MODE_1V8",
+        "netB": "CHG_R_VSET",
+        "x": 111.55,
+        "y": 563.73
+      },
+      {
+        "netA": "AMP_SD_MODE_1V8",
+        "netB": "I2S_AMP_DIN_1V8",
+        "x": 114.14,
+        "y": 534.24
+      },
+      {
+        "netA": "AMP_SD_MODE_1V8",
+        "netB": "I2S_LRCLK_1V8",
+        "x": 131.61,
+        "y": 315.94
+      },
+      {
+        "netA": "AMP_SD_MODE_1V8",
+        "netB": "I2S_LRCLK_1V8",
+        "x": 133.23,
+        "y": 316.68
+      },
+      {
+        "netA": "AMP_SD_MODE_1V8",
+        "netB": "I2S_S3_DOUT_1V8",
+        "x": 98.1,
+        "y": 316.68
+      },
+      {
+        "netA": "AMP_SD_MODE_1V8",
+        "netB": "I2S_S3_DOUT_1V8",
+        "x": 131.63,
+        "y": 334.93
+      },
+      {
+        "netA": "AMP_SD_MODE_1V8",
+        "netB": "IPC_S3_TX_1V8",
+        "x": 121.84,
+        "y": 446.49
+      },
+      {
+        "netA": "AMP_SD_MODE_1V8",
+        "netB": "LFXO_XL1",
+        "x": 109.02,
+        "y": 592.51
+      },
+      {
+        "netA": "AMP_SD_MODE_1V8",
+        "netB": "LFXO_XL1",
+        "x": 121.97,
+        "y": 445.01
+      },
+      {
+        "netA": "AMP_SD_MODE_1V8",
+        "netB": "LFXO_XL2",
+        "x": 119.98,
+        "y": 467.68
+      },
+      {
+        "netA": "AMP_SD_MODE_1V8",
+        "netB": "NRF_DCC",
+        "x": 41.29,
+        "y": 317.93
+      },
+      {
+        "netA": "AMP_SD_MODE_1V8",
+        "netB": "NRF_DCCD",
+        "x": 111.63,
+        "y": 316.38
+      },
+      {
+        "netA": "AMP_SD_MODE_1V8",
+        "netB": "NRF_DECD",
+        "x": 74,
+        "y": 317.21
+      },
+      {
+        "netA": "AMP_SD_MODE_1V8",
+        "netB": "NRF_DECD",
+        "x": 116.7,
+        "y": 505.05
+      },
+      {
+        "netA": "AMP_SD_MODE_1V8",
+        "netB": "NRF_DECR_RF",
+        "x": 119.77,
+        "y": 470.08
+      },
+      {
+        "netA": "AMP_SD_MODE_1V8",
+        "netB": "NRF_DECR_RF",
+        "x": 47.2,
+        "y": 317.8
+      },
+      {
+        "netA": "AMP_SD_MODE_1V8",
+        "netB": "NTC_TS_R",
+        "x": 110.98,
+        "y": 570.19
+      },
+      {
+        "netA": "AMP_SD_MODE_1V8",
+        "netB": "PDM_CLK_1V8",
+        "x": 127.92,
+        "y": 316.02
+      },
+      {
+        "netA": "AMP_SD_MODE_1V8",
+        "netB": "PDM_D1_1V8",
+        "x": 132.98,
+        "y": 315.91
+      },
+      {
+        "netA": "AMP_SD_MODE_1V8",
+        "netB": "PDM_D1_1V8",
+        "x": 132.96,
+        "y": 319.8
+      },
+      {
+        "netA": "AMP_SD_MODE_1V8",
+        "netB": "SPK_R_N",
+        "x": 123.52,
+        "y": 427.29
+      },
+      {
+        "netA": "AMP_SD_MODE_1V8",
+        "netB": "SPK_R_P",
+        "x": 119.61,
+        "y": 471.85
+      },
+      {
+        "netA": "AMP_SD_MODE_1V8",
+        "netB": "VBAT_R_RET",
+        "x": 120.65,
+        "y": 460.08
+      },
+      {
+        "netA": "AMP_SD_MODE_1V8",
+        "netB": "VBAT_R_RET",
+        "x": 109.17,
+        "y": 590.85
+      },
+      {
+        "netA": "AMP_SD_MODE_1V8",
+        "netB": "VBUS_5V",
+        "x": 77.2,
+        "y": 317.14
+      },
+      {
+        "netA": "AMP_SD_MODE_1V8",
+        "netB": "VBUS_5V",
+        "x": 110.1,
+        "y": 580.28
+      },
+      {
+        "netA": "AMP_SD_REQ_1V8",
+        "netB": "BLE_ANT_FEED",
+        "x": 79.77,
+        "y": 312.61
+      },
+      {
+        "netA": "AMP_SD_REQ_1V8",
+        "netB": "BLE_NRESET",
+        "x": 114.35,
+        "y": 307.09
+      },
+      {
+        "netA": "AMP_SD_REQ_1V8",
+        "netB": "BLE_RF_ANT",
+        "x": 72.99,
+        "y": 313.7
+      },
+      {
+        "netA": "AMP_SD_REQ_1V8",
+        "netB": "BLE_SWDCLK",
+        "x": 100.19,
+        "y": 309.35
+      },
+      {
+        "netA": "AMP_SD_REQ_1V8",
+        "netB": "BLE_SWDIO",
+        "x": 96.2,
+        "y": 309.99
+      },
+      {
+        "netA": "AMP_SD_REQ_1V8",
+        "netB": "BLE_XC1",
+        "x": 34.28,
+        "y": 447.43
+      },
+      {
+        "netA": "AMP_SD_REQ_1V8",
+        "netB": "BLE_XC2",
+        "x": 41.99,
+        "y": 332.17
+      },
+      {
+        "netA": "AMP_SD_REQ_1V8",
+        "netB": "CHG_MUTE_GATE",
+        "x": 37.97,
+        "y": 392.15
+      },
+      {
+        "netA": "AMP_SD_REQ_1V8",
+        "netB": "CHG_R_ISET",
+        "x": 24.34,
+        "y": 595.89
+      },
+      {
+        "netA": "AMP_SD_REQ_1V8",
+        "netB": "I2S_AMP_DIN_1V8",
+        "x": 134.01,
+        "y": 303.95
+      },
+      {
+        "netA": "AMP_SD_REQ_1V8",
+        "netB": "I2S_BCLK_1V8",
+        "x": 139.95,
+        "y": 303
+      },
+      {
+        "netA": "AMP_SD_REQ_1V8",
+        "netB": "I2S_LRCLK_1V8",
+        "x": 112.83,
+        "y": 307.33
+      },
+      {
+        "netA": "AMP_SD_REQ_1V8",
+        "netB": "I2S_S3_DOUT_1V8",
+        "x": 88.17,
+        "y": 311.27
+      },
+      {
+        "netA": "AMP_SD_REQ_1V8",
+        "netB": "IPC_NRF_TX_1V8",
+        "x": 149.78,
+        "y": 301.43
+      },
+      {
+        "netA": "AMP_SD_REQ_1V8",
+        "netB": "IPC_S3_TX_1V8",
+        "x": 148.2,
+        "y": 301.69
+      },
+      {
+        "netA": "AMP_SD_REQ_1V8",
+        "netB": "NRF_DCC",
+        "x": 42.45,
+        "y": 325.25
+      },
+      {
+        "netA": "AMP_SD_REQ_1V8",
+        "netB": "NRF_DCCD",
+        "x": 121.83,
+        "y": 305.9
+      },
+      {
+        "netA": "AMP_SD_REQ_1V8",
+        "netB": "NRF_DCCD",
+        "x": 37.98,
+        "y": 392.1
+      },
+      {
+        "netA": "AMP_SD_REQ_1V8",
+        "netB": "NRF_DECD",
+        "x": 77.27,
+        "y": 313.01
+      },
+      {
+        "netA": "AMP_SD_REQ_1V8",
+        "netB": "NRF_DECD",
+        "x": 40.08,
+        "y": 360.67
+      },
+      {
+        "netA": "AMP_SD_REQ_1V8",
+        "netB": "NRF_DECD",
+        "x": 38.92,
+        "y": 377.96
+      },
+      {
+        "netA": "AMP_SD_REQ_1V8",
+        "netB": "NRF_DECR_RF",
+        "x": 47.2,
+        "y": 317.81
+      },
+      {
+        "netA": "AMP_SD_REQ_1V8",
+        "netB": "NTC_TS_R",
+        "x": 28.99,
+        "y": 526.47
+      },
+      {
+        "netA": "AMP_SD_REQ_1V8",
+        "netB": "PDM_CLK_1V8",
+        "x": 128.8,
+        "y": 304.78
+      },
+      {
+        "netA": "AMP_SD_REQ_1V8",
+        "netB": "PDM_D1_1V8",
+        "x": 133.05,
+        "y": 304.1
+      },
+      {
+        "netA": "AMP_SD_REQ_1V8",
+        "netB": "VBUS_5V",
+        "x": 78.5,
+        "y": 312.82
+      },
+      {
+        "netA": "AMP_SD_REQ_1V8",
+        "netB": "VBUS_5V",
+        "x": 31.35,
+        "y": 491.17
+      },
+      {
+        "netA": "AMP_SD_REQ_1V8",
+        "netB": "VBUS_5V",
+        "x": 33.17,
+        "y": 463.89
+      },
+      {
+        "netA": "BLE_ANT_FEED",
+        "netB": "BLE_NRESET",
+        "x": 97.45,
+        "y": 373.83
+      },
+      {
+        "netA": "BLE_ANT_FEED",
+        "netB": "BLE_RF_ANT",
+        "x": 74.32,
+        "y": 293.7
+      },
+      {
+        "netA": "BLE_ANT_FEED",
+        "netB": "BLE_RF_MID",
+        "x": 160.67,
+        "y": 675.51
+      },
+      {
+        "netA": "BLE_ANT_FEED",
+        "netB": "BLE_SWDCLK",
+        "x": 90.47,
+        "y": 349.65
+      },
+      {
+        "netA": "BLE_ANT_FEED",
+        "netB": "BLE_SWDIO",
+        "x": 88.01,
+        "y": 341.14
+      },
+      {
+        "netA": "BLE_ANT_FEED",
+        "netB": "CHG_MUTE_GATE",
+        "x": 172.77,
+        "y": 634.76
+      },
+      {
+        "netA": "BLE_ANT_FEED",
+        "netB": "I2S_AMP_DIN_1V8",
+        "x": 132.2,
+        "y": 494.2
+      },
+      {
+        "netA": "BLE_ANT_FEED",
+        "netB": "I2S_BCLK_1V8",
+        "x": 144.6,
+        "y": 537.17
+      },
+      {
+        "netA": "BLE_ANT_FEED",
+        "netB": "I2S_LRCLK_1V8",
+        "x": 72.98,
+        "y": 289.08
+      },
+      {
+        "netA": "BLE_ANT_FEED",
+        "netB": "I2S_S3_DOUT_1V8",
+        "x": 77.75,
+        "y": 305.6
+      },
+      {
+        "netA": "BLE_ANT_FEED",
+        "netB": "IPC_S3_TX_1V8",
+        "x": 119.91,
+        "y": 451.65
+      },
+      {
+        "netA": "BLE_ANT_FEED",
+        "netB": "LFXO_XL1",
+        "x": 137.04,
+        "y": 510.97
+      },
+      {
+        "netA": "BLE_ANT_FEED",
+        "netB": "LFXO_XL1",
+        "x": 116.24,
+        "y": 438.92
+      },
+      {
+        "netA": "BLE_ANT_FEED",
+        "netB": "LFXO_XL2",
+        "x": 146.2,
+        "y": 542.71
+      },
+      {
+        "netA": "BLE_ANT_FEED",
+        "netB": "LFXO_XL2",
+        "x": 128.88,
+        "y": 482.71
+      },
+      {
+        "netA": "BLE_ANT_FEED",
+        "netB": "NRF_DCCD",
+        "x": 87.9,
+        "y": 340.77
+      },
+      {
+        "netA": "BLE_ANT_FEED",
+        "netB": "NRF_DECD",
+        "x": 79.18,
+        "y": 310.56
+      },
+      {
+        "netA": "BLE_ANT_FEED",
+        "netB": "NRF_DECR_RF",
+        "x": 133.31,
+        "y": 498.06
+      },
+      {
+        "netA": "BLE_ANT_FEED",
+        "netB": "NRF_DECR_RF",
+        "x": 132.36,
+        "y": 494.76
+      },
+      {
+        "netA": "BLE_ANT_FEED",
+        "netB": "PDM_CLK_1V8",
+        "x": 117.89,
+        "y": 444.65
+      },
+      {
+        "netA": "BLE_ANT_FEED",
+        "netB": "PDM_D1_1V8",
+        "x": 131.95,
+        "y": 493.35
+      },
+      {
+        "netA": "BLE_ANT_FEED",
+        "netB": "SPK_R_N",
+        "x": 116.27,
+        "y": 439.04
+      },
+      {
+        "netA": "BLE_ANT_FEED",
+        "netB": "SPK_R_P",
+        "x": 123.27,
+        "y": 463.28
+      },
+      {
+        "netA": "BLE_ANT_FEED",
+        "netB": "VBAT_R_RET",
+        "x": 56.44,
+        "y": 231.8
+      },
+      {
+        "netA": "BLE_ANT_FEED",
+        "netB": "VBAT_R_RET",
+        "x": 158.52,
+        "y": 585.4
+      },
+      {
+        "netA": "BLE_ANT_FEED",
+        "netB": "VBAT_R_RET",
+        "x": 121.87,
+        "y": 458.44
+      },
+      {
+        "netA": "BLE_ANT_FEED",
+        "netB": "VBUS_5V",
+        "x": 79.18,
+        "y": 310.54
+      },
+      {
+        "netA": "BLE_NRESET",
+        "netB": "BLE_RF_ANT",
+        "x": 58.88,
+        "y": 526.1
+      },
+      {
+        "netA": "BLE_NRESET",
+        "netB": "BLE_XC2",
+        "x": 75.77,
+        "y": 459.43
+      },
+      {
+        "netA": "BLE_NRESET",
+        "netB": "CHG_MUTE_GATE",
+        "x": 57.9,
+        "y": 529.98
+      },
+      {
+        "netA": "BLE_NRESET",
+        "netB": "I2S_LRCLK_1V8",
+        "x": 114.14,
+        "y": 307.94
+      },
+      {
+        "netA": "BLE_NRESET",
+        "netB": "I2S_S3_DOUT_1V8",
+        "x": 110.25,
+        "y": 323.29
+      },
+      {
+        "netA": "BLE_NRESET",
+        "netB": "NRF_DCCD",
+        "x": 112.13,
+        "y": 315.87
+      },
+      {
+        "netA": "BLE_NRESET",
+        "netB": "NRF_DECA",
+        "x": 57.34,
+        "y": 532.18
+      },
+      {
+        "netA": "BLE_NRESET",
+        "netB": "NRF_DECD",
+        "x": 79.58,
+        "y": 444.39
+      },
+      {
+        "netA": "BLE_NRESET",
+        "netB": "NRF_DECR_RF",
+        "x": 88.57,
+        "y": 408.9
+      },
+      {
+        "netA": "BLE_NRESET",
+        "netB": "NTC_TS_R",
+        "x": 55.24,
+        "y": 540.47
+      },
+      {
+        "netA": "BLE_NRESET",
+        "netB": "SPK_R_N",
+        "x": 56.34,
+        "y": 536.13
+      },
+      {
+        "netA": "BLE_NRESET",
+        "netB": "VBUS_5V",
+        "x": 59.62,
+        "y": 523.17
+      },
+      {
+        "netA": "BLE_RF_ANT",
+        "netB": "BLE_RF_MID",
+        "x": 50.39,
+        "y": 653.91
+      },
+      {
+        "netA": "BLE_RF_ANT",
+        "netB": "BLE_SWDCLK",
+        "x": 63.05,
+        "y": 463.27
+      },
+      {
+        "netA": "BLE_RF_ANT",
+        "netB": "BLE_SWDIO",
+        "x": 65.47,
+        "y": 426.86
+      },
+      {
+        "netA": "BLE_RF_ANT",
+        "netB": "BLE_XC2",
+        "x": 65.8,
+        "y": 421.89
+      },
+      {
+        "netA": "BLE_RF_ANT",
+        "netB": "CHG_MUTE_GATE",
+        "x": 58.4,
+        "y": 533.41
+      },
+      {
+        "netA": "BLE_RF_ANT",
+        "netB": "I2S_LRCLK_1V8",
+        "x": 74.57,
+        "y": 289.81
+      },
+      {
+        "netA": "BLE_RF_ANT",
+        "netB": "I2S_S3_DOUT_1V8",
+        "x": 73.67,
+        "y": 303.38
+      },
+      {
+        "netA": "BLE_RF_ANT",
+        "netB": "NRF_DCCD",
+        "x": 69.96,
+        "y": 359.21
+      },
+      {
+        "netA": "BLE_RF_ANT",
+        "netB": "NRF_DECA",
+        "x": 57.91,
+        "y": 540.64
+      },
+      {
+        "netA": "BLE_RF_ANT",
+        "netB": "NRF_DECD",
+        "x": 65.8,
+        "y": 421.88
+      },
+      {
+        "netA": "BLE_RF_ANT",
+        "netB": "NRF_DECD",
+        "x": 72.64,
+        "y": 318.95
+      },
+      {
+        "netA": "BLE_RF_ANT",
+        "netB": "NRF_DECR_RF",
+        "x": 69.19,
+        "y": 370.91
+      },
+      {
+        "netA": "BLE_RF_ANT",
+        "netB": "NTC_TS_R",
+        "x": 57.83,
+        "y": 541.85
+      },
+      {
+        "netA": "BLE_RF_ANT",
+        "netB": "SPK_R_N",
+        "x": 58.44,
+        "y": 532.73
+      },
+      {
+        "netA": "BLE_RF_ANT",
+        "netB": "VBUS_5V",
+        "x": 71.5,
+        "y": 336.15
+      },
+      {
+        "netA": "BLE_RF_ANT",
+        "netB": "VBUS_5V",
+        "x": 59.11,
+        "y": 522.59
+      },
+      {
+        "netA": "BLE_RF_MID",
+        "netB": "LFXO_XL1",
+        "x": 86.77,
+        "y": 657.27
+      },
+      {
+        "netA": "BLE_RF_MID",
+        "netB": "LFXO_XL2",
+        "x": 129.19,
+        "y": 667.74
+      },
+      {
+        "netA": "BLE_RF_MID",
+        "netB": "PDM_CLK_1V8",
+        "x": 101.04,
+        "y": 660.79
+      },
+      {
+        "netA": "BLE_RF_MID",
+        "netB": "PDM_D1_1V8",
+        "x": 130.94,
+        "y": 668.17
+      },
+      {
+        "netA": "BLE_SWDCLK",
+        "netB": "BLE_XC2",
+        "x": 69.59,
+        "y": 436.17
+      },
+      {
+        "netA": "BLE_SWDCLK",
+        "netB": "CHG_MUTE_GATE",
+        "x": 53.8,
+        "y": 501.62
+      },
+      {
+        "netA": "BLE_SWDCLK",
+        "netB": "I2S_LRCLK_1V8",
+        "x": 101.89,
+        "y": 302.32
+      },
+      {
+        "netA": "BLE_SWDCLK",
+        "netB": "I2S_S3_DOUT_1V8",
+        "x": 98.39,
+        "y": 316.83
+      },
+      {
+        "netA": "BLE_SWDCLK",
+        "netB": "NRF_DCCD",
+        "x": 94.16,
+        "y": 334.34
+      },
+      {
+        "netA": "BLE_SWDCLK",
+        "netB": "NRF_DECA",
+        "x": 54.94,
+        "y": 496.88
+      },
+      {
+        "netA": "BLE_SWDCLK",
+        "netB": "NRF_DECD",
+        "x": 70.99,
+        "y": 430.36
+      },
+      {
+        "netA": "BLE_SWDCLK",
+        "netB": "NRF_DECR_RF",
+        "x": 80.15,
+        "y": 392.41
+      },
+      {
+        "netA": "BLE_SWDCLK",
+        "netB": "NTC_TS_R",
+        "x": 45.66,
+        "y": 535.36
+      },
+      {
+        "netA": "BLE_SWDCLK",
+        "netB": "SPK_R_N",
+        "x": 38.5,
+        "y": 565.04
+      },
+      {
+        "netA": "BLE_SWDCLK",
+        "netB": "VBUS_5V",
+        "x": 50.96,
+        "y": 513.37
+      },
+      {
+        "netA": "BLE_SWDIO",
+        "netB": "BLE_XC2",
+        "x": 66.29,
+        "y": 423.74
+      },
+      {
+        "netA": "BLE_SWDIO",
+        "netB": "CHG_MUTE_GATE",
+        "x": 50.97,
+        "y": 482.03
+      },
+      {
+        "netA": "BLE_SWDIO",
+        "netB": "I2S_LRCLK_1V8",
+        "x": 98.61,
+        "y": 300.82
+      },
+      {
+        "netA": "BLE_SWDIO",
+        "netB": "I2S_S3_DOUT_1V8",
+        "x": 94.9,
+        "y": 314.94
+      },
+      {
+        "netA": "BLE_SWDIO",
+        "netB": "NRF_DCCD",
+        "x": 88.18,
+        "y": 340.49
+      },
+      {
+        "netA": "BLE_SWDIO",
+        "netB": "NRF_DECA",
+        "x": 53.32,
+        "y": 473.06
+      },
+      {
+        "netA": "BLE_SWDIO",
+        "netB": "NRF_DECD",
+        "x": 66.49,
+        "y": 423
+      },
+      {
+        "netA": "BLE_SWDIO",
+        "netB": "NRF_DECN",
+        "x": 30.84,
+        "y": 558.58
+      },
+      {
+        "netA": "BLE_SWDIO",
+        "netB": "NRF_DECR_RF",
+        "x": 76.44,
+        "y": 385.13
+      },
+      {
+        "netA": "BLE_SWDIO",
+        "netB": "NTC_TS_R",
+        "x": 38.02,
+        "y": 531.29
+      },
+      {
+        "netA": "BLE_SWDIO",
+        "netB": "VBUS_5V",
+        "x": 44.61,
+        "y": 506.19
+      },
+      {
+        "netA": "BLE_XC1",
+        "netB": "BLE_XC2",
+        "x": 33.57,
+        "y": 300.45
+      },
+      {
+        "netA": "BLE_XC1",
+        "netB": "NRF_DCCD",
+        "x": 34.03,
+        "y": 396.16
+      },
+      {
+        "netA": "BLE_XC1",
+        "netB": "NRF_DECD",
+        "x": 33.9,
+        "y": 369.76
+      },
+      {
+        "netA": "BLE_XC1",
+        "netB": "NRF_DECD",
+        "x": 33.9,
+        "y": 368.59
+      },
+      {
+        "netA": "BLE_XC1",
+        "netB": "VBUS_5V",
+        "x": 34.34,
+        "y": 460.01
+      },
+      {
+        "netA": "BLE_XC2",
+        "netB": "NRF_DCC",
+        "x": 45.83,
+        "y": 346.67
+      },
+      {
+        "netA": "BLE_XC2",
+        "netB": "NRF_DCCD",
+        "x": 53.62,
+        "y": 376.01
+      },
+      {
+        "netA": "BLE_XC2",
+        "netB": "NRF_DECD",
+        "x": 65.8,
+        "y": 421.88
+      },
+      {
+        "netA": "BLE_XC2",
+        "netB": "NRF_DECD",
+        "x": 47.15,
+        "y": 351.61
+      },
+      {
+        "netA": "BLE_XC2",
+        "netB": "NRF_DECN",
+        "x": 46.59,
+        "y": 349.53
+      },
+      {
+        "netA": "BLE_XC2",
+        "netB": "SPK_R_N",
+        "x": 84.16,
+        "y": 491.06
+      },
+      {
+        "netA": "BLE_XC2",
+        "netB": "VBUS_5V",
+        "x": 56.4,
+        "y": 386.47
+      },
+      {
+        "netA": "CHG_MUTE_GATE",
+        "netB": "CHG_R_VSET",
+        "x": 124.84,
+        "y": 640.01
+      },
+      {
+        "netA": "CHG_MUTE_GATE",
+        "netB": "IPC_S3_TX_1V8",
+        "x": 67.05,
+        "y": 593.26
+      },
+      {
+        "netA": "CHG_MUTE_GATE",
+        "netB": "LFXO_XL1",
+        "x": 91.45,
+        "y": 643.66
+      },
+      {
+        "netA": "CHG_MUTE_GATE",
+        "netB": "LFXO_XL2",
+        "x": 133.09,
+        "y": 639.1
+      },
+      {
+        "netA": "CHG_MUTE_GATE",
+        "netB": "NRF_DCCD",
+        "x": 37.97,
+        "y": 392.11
+      },
+      {
+        "netA": "CHG_MUTE_GATE",
+        "netB": "NRF_DECA",
+        "x": 56.56,
+        "y": 520.73
+      },
+      {
+        "netA": "CHG_MUTE_GATE",
+        "netB": "NRF_DECN",
+        "x": 41.53,
+        "y": 416.75
+      },
+      {
+        "netA": "CHG_MUTE_GATE",
+        "netB": "NRF_DECR_RF",
+        "x": 107.45,
+        "y": 641.91
+      },
+      {
+        "netA": "CHG_MUTE_GATE",
+        "netB": "NTC_TS_R",
+        "x": 59.76,
+        "y": 542.88
+      },
+      {
+        "netA": "CHG_MUTE_GATE",
+        "netB": "PDM_CLK_1V8",
+        "x": 102.47,
+        "y": 642.45
+      },
+      {
+        "netA": "CHG_MUTE_GATE",
+        "netB": "PDM_D1_1V8",
+        "x": 131.1,
+        "y": 639.32
+      },
+      {
+        "netA": "CHG_MUTE_GATE",
+        "netB": "SPK_R_N",
+        "x": 58.32,
+        "y": 532.92
+      },
+      {
+        "netA": "CHG_MUTE_GATE",
+        "netB": "VBUS_5V",
+        "x": 43.41,
+        "y": 429.76
+      },
+      {
+        "netA": "CHG_MUTE_GATE",
+        "netB": "VBUS_5V",
+        "x": 56.38,
+        "y": 519.5
+      },
+      {
+        "netA": "CHG_R_VSET",
+        "netB": "I2S_AMP_DIN_1V8",
+        "x": 108.56,
+        "y": 546.6
+      },
+      {
+        "netA": "CHG_R_VSET",
+        "netB": "LFXO_XL1",
+        "x": 114.03,
+        "y": 577.94
+      },
+      {
+        "netA": "CHG_R_VSET",
+        "netB": "NRF_DECR_RF",
+        "x": 116.45,
+        "y": 591.84
+      },
+      {
+        "netA": "CHG_R_VSET",
+        "netB": "NTC_TS_R",
+        "x": 112.85,
+        "y": 571.18
+      },
+      {
+        "netA": "CHG_R_VSET",
+        "netB": "PDM_CLK_1V8",
+        "x": 109.52,
+        "y": 552.07
+      },
+      {
+        "netA": "CHG_R_VSET",
+        "netB": "SPK_R_P",
+        "x": 102.51,
+        "y": 511.89
+      },
+      {
+        "netA": "CHG_R_VSET",
+        "netB": "VBAT_R_RET",
+        "x": 102.87,
+        "y": 513.93
+      },
+      {
+        "netA": "CHG_R_VSET",
+        "netB": "VBAT_R_RET",
+        "x": 116.14,
+        "y": 590.08
+      },
+      {
+        "netA": "CHG_R_VSET",
+        "netB": "VBUS_5V",
+        "x": 115.5,
+        "y": 586.4
+      },
+      {
+        "netA": "I2S_AMP_DIN_1V8",
+        "netB": "I2S_BCLK_1V8",
+        "x": 179.64,
+        "y": 379.29
+      },
+      {
+        "netA": "I2S_AMP_DIN_1V8",
+        "netB": "I2S_BCLK_1V8",
+        "x": 175.4,
+        "y": 398.41
+      },
+      {
+        "netA": "I2S_AMP_DIN_1V8",
+        "netB": "I2S_LRCLK_1V8",
+        "x": 140.54,
+        "y": 320.03
+      },
+      {
+        "netA": "I2S_AMP_DIN_1V8",
+        "netB": "I2S_LRCLK_1V8",
+        "x": 154.8,
+        "y": 343.71
+      },
+      {
+        "netA": "I2S_AMP_DIN_1V8",
+        "netB": "I2S_LRCLK_1V8",
+        "x": 158.56,
+        "y": 435.73
+      },
+      {
+        "netA": "I2S_AMP_DIN_1V8",
+        "netB": "IPC_S3_TX_1V8",
+        "x": 158.33,
+        "y": 348.75
+      },
+      {
+        "netA": "I2S_AMP_DIN_1V8",
+        "netB": "LFXO_XL1",
+        "x": 143.87,
+        "y": 468.31
+      },
+      {
+        "netA": "I2S_AMP_DIN_1V8",
+        "netB": "LFXO_XL2",
+        "x": 133.7,
+        "y": 490.86
+      },
+      {
+        "netA": "I2S_AMP_DIN_1V8",
+        "netB": "NRF_DECD",
+        "x": 122.8,
+        "y": 515.02
+      },
+      {
+        "netA": "I2S_AMP_DIN_1V8",
+        "netB": "NRF_DECR_RF",
+        "x": 132.14,
+        "y": 494.33
+      },
+      {
+        "netA": "I2S_AMP_DIN_1V8",
+        "netB": "NTC_TS_R",
+        "x": 100.45,
+        "y": 564.58
+      },
+      {
+        "netA": "I2S_AMP_DIN_1V8",
+        "netB": "PDM_CLK_1V8",
+        "x": 110.23,
+        "y": 542.89
+      },
+      {
+        "netA": "I2S_AMP_DIN_1V8",
+        "netB": "PDM_D1_1V8",
+        "x": 131.94,
+        "y": 494.76
+      },
+      {
+        "netA": "I2S_AMP_DIN_1V8",
+        "netB": "VBAT_R_RET",
+        "x": 166.43,
+        "y": 360.36
+      },
+      {
+        "netA": "I2S_AMP_DIN_1V8",
+        "netB": "VBAT_R_RET",
+        "x": 104.99,
+        "y": 554.52
+      },
+      {
+        "netA": "I2S_AMP_DIN_1V8",
+        "netB": "VBUS_5V",
+        "x": 99.02,
+        "y": 567.75
+      },
+      {
+        "netA": "I2S_BCLK_1V8",
+        "netB": "I2S_LRCLK_1V8",
+        "x": 149.61,
+        "y": 324.18
+      },
+      {
+        "netA": "I2S_BCLK_1V8",
+        "netB": "I2S_LRCLK_1V8",
+        "x": 155.81,
+        "y": 337.78
+      },
+      {
+        "netA": "I2S_BCLK_1V8",
+        "netB": "I2S_LRCLK_1V8",
+        "x": 161.46,
+        "y": 461.22
+      },
+      {
+        "netA": "I2S_BCLK_1V8",
+        "netB": "IPC_S3_TX_1V8",
+        "x": 136.52,
+        "y": 295.46
+      },
+      {
+        "netA": "I2S_BCLK_1V8",
+        "netB": "IPC_S3_TX_1V8",
+        "x": 160.05,
+        "y": 344.15
+      },
+      {
+        "netA": "I2S_BCLK_1V8",
+        "netB": "LFXO_XL2",
+        "x": 149.11,
+        "y": 516.87
+      },
+      {
+        "netA": "I2S_BCLK_1V8",
+        "netB": "NRF_DCCD",
+        "x": 135.07,
+        "y": 292.29
+      },
+      {
+        "netA": "I2S_BCLK_1V8",
+        "netB": "NTC_TS_R",
+        "x": 134.49,
+        "y": 582.73
+      },
+      {
+        "netA": "I2S_BCLK_1V8",
+        "netB": "PDM_D1_1V8",
+        "x": 131.35,
+        "y": 596.89
+      },
+      {
+        "netA": "I2S_BCLK_1V8",
+        "netB": "VBAT_R_RET",
+        "x": 166.41,
+        "y": 350.77
+      },
+      {
+        "netA": "I2S_BCLK_1V8",
+        "netB": "VBAT_R_RET",
+        "x": 133.28,
+        "y": 588.19
+      },
+      {
+        "netA": "I2S_BCLK_1V8",
+        "netB": "VBUS_5V",
+        "x": 130.03,
+        "y": 602.84
+      },
+      {
+        "netA": "I2S_LRCLK_1V8",
+        "netB": "IPC_S3_TX_1V8",
+        "x": 150.94,
+        "y": 368.54
+      },
+      {
+        "netA": "I2S_LRCLK_1V8",
+        "netB": "NRF_DCCD",
+        "x": 118.09,
+        "y": 309.74
+      },
+      {
+        "netA": "I2S_LRCLK_1V8",
+        "netB": "NRF_DECD",
+        "x": 89.9,
+        "y": 296.83
+      },
+      {
+        "netA": "I2S_LRCLK_1V8",
+        "netB": "PDM_CLK_1V8",
+        "x": 128.05,
+        "y": 314.31
+      },
+      {
+        "netA": "I2S_LRCLK_1V8",
+        "netB": "PDM_D1_1V8",
+        "x": 132.98,
+        "y": 316.56
+      },
+      {
+        "netA": "I2S_LRCLK_1V8",
+        "netB": "VBAT_R_RET",
+        "x": 155.97,
+        "y": 412.87
+      },
+      {
+        "netA": "I2S_LRCLK_1V8",
+        "netB": "VBAT_R_RET",
+        "x": 175.34,
+        "y": 583.54
+      },
+      {
+        "netA": "I2S_LRCLK_1V8",
+        "netB": "VBUS_5V",
+        "x": 84.09,
+        "y": 294.17
+      },
+      {
+        "netA": "I2S_S3_DOUT_1V8",
+        "netB": "NRF_DCCD",
+        "x": 106.76,
+        "y": 321.39
+      },
+      {
+        "netA": "I2S_S3_DOUT_1V8",
+        "netB": "NRF_DECD",
+        "x": 81.47,
+        "y": 307.63
+      },
+      {
+        "netA": "I2S_S3_DOUT_1V8",
+        "netB": "PDM_CLK_1V8",
+        "x": 126.66,
+        "y": 332.22
+      },
+      {
+        "netA": "I2S_S3_DOUT_1V8",
+        "netB": "PDM_D1_1V8",
+        "x": 132.87,
+        "y": 335.6
+      },
+      {
+        "netA": "I2S_S3_DOUT_1V8",
+        "netB": "VBUS_5V",
+        "x": 80.25,
+        "y": 306.96
+      },
+      {
+        "netA": "IPC_NRF_TX_1V8",
+        "netB": "IPC_S3_TX_1V8",
+        "x": 150.78,
+        "y": 303.06
+      },
+      {
+        "netA": "IPC_NRF_TX_1V8",
+        "netB": "NRF_DCCD",
+        "x": 140.64,
+        "y": 286.56
+      },
+      {
+        "netA": "IPC_S3_TX_1V8",
+        "netB": "LFXO_XL1",
+        "x": 122.27,
+        "y": 445.33
+      },
+      {
+        "netA": "IPC_S3_TX_1V8",
+        "netB": "LFXO_XL2",
+        "x": 116.27,
+        "y": 461.42
+      },
+      {
+        "netA": "IPC_S3_TX_1V8",
+        "netB": "NRF_DCCD",
+        "x": 133.53,
+        "y": 293.87
+      },
+      {
+        "netA": "IPC_S3_TX_1V8",
+        "netB": "NRF_DECD",
+        "x": 104.35,
+        "y": 278.31
+      },
+      {
+        "netA": "IPC_S3_TX_1V8",
+        "netB": "NRF_DECD",
+        "x": 106.31,
+        "y": 488.08
+      },
+      {
+        "netA": "IPC_S3_TX_1V8",
+        "netB": "NRF_DECR_RF",
+        "x": 115.88,
+        "y": 462.45
+      },
+      {
+        "netA": "IPC_S3_TX_1V8",
+        "netB": "NTC_TS_R",
+        "x": 81.52,
+        "y": 554.48
+      },
+      {
+        "netA": "IPC_S3_TX_1V8",
+        "netB": "PDM_CLK_1V8",
+        "x": 129.8,
+        "y": 291.88
+      },
+      {
+        "netA": "IPC_S3_TX_1V8",
+        "netB": "PDM_CLK_1V8",
+        "x": 116.67,
+        "y": 460.34
+      },
+      {
+        "netA": "IPC_S3_TX_1V8",
+        "netB": "PDM_D1_1V8",
+        "x": 132.39,
+        "y": 418.24
+      },
+      {
+        "netA": "IPC_S3_TX_1V8",
+        "netB": "PDM_D1_1V8",
+        "x": 133.11,
+        "y": 293.64
+      },
+      {
+        "netA": "IPC_S3_TX_1V8",
+        "netB": "SPK_R_N",
+        "x": 137.4,
+        "y": 404.81
+      },
+      {
+        "netA": "IPC_S3_TX_1V8",
+        "netB": "VBAT_R_RET",
+        "x": 102.11,
+        "y": 499.35
+      },
+      {
+        "netA": "IPC_S3_TX_1V8",
+        "netB": "VBAT_R_RET",
+        "x": 166.37,
+        "y": 327.21
+      },
+      {
+        "netA": "IPC_S3_TX_1V8",
+        "netB": "VBAT_R_RET",
+        "x": 112.9,
+        "y": 470.43
+      },
+      {
+        "netA": "IPC_S3_TX_1V8",
+        "netB": "VBAT_R_RET",
+        "x": 166.34,
+        "y": 311.35
+      },
+      {
+        "netA": "IPC_S3_TX_1V8",
+        "netB": "VBUS_5V",
+        "x": 90.98,
+        "y": 271.19
+      },
+      {
+        "netA": "IPC_S3_TX_1V8",
+        "netB": "VBUS_5V",
+        "x": 83.24,
+        "y": 549.89
+      },
+      {
+        "netA": "LFXO_XL1",
+        "netB": "LFXO_XL2",
+        "x": 140.19,
+        "y": 501.8
+      },
+      {
+        "netA": "LFXO_XL1",
+        "netB": "NRF_DECD",
+        "x": 131.03,
+        "y": 528.46
+      },
+      {
+        "netA": "LFXO_XL1",
+        "netB": "NRF_DECR_RF",
+        "x": 124.35,
+        "y": 547.9
+      },
+      {
+        "netA": "LFXO_XL1",
+        "netB": "NTC_TS_R",
+        "x": 115.81,
+        "y": 572.76
+      },
+      {
+        "netA": "LFXO_XL1",
+        "netB": "PDM_CLK_1V8",
+        "x": 118.18,
+        "y": 440.98
+      },
+      {
+        "netA": "LFXO_XL1",
+        "netB": "PDM_CLK_1V8",
+        "x": 105.58,
+        "y": 602.52
+      },
+      {
+        "netA": "LFXO_XL1",
+        "netB": "PDM_D1_1V8",
+        "x": 132.17,
+        "y": 455.86
+      },
+      {
+        "netA": "LFXO_XL1",
+        "netB": "PDM_D1_1V8",
+        "x": 131.76,
+        "y": 526.33
+      },
+      {
+        "netA": "LFXO_XL1",
+        "netB": "SPK_R_N",
+        "x": 116.3,
+        "y": 438.99
+      },
+      {
+        "netA": "LFXO_XL1",
+        "netB": "SPK_R_P",
+        "x": 128.23,
+        "y": 451.67
+      },
+      {
+        "netA": "LFXO_XL1",
+        "netB": "VBAT_R_RET",
+        "x": 109.61,
+        "y": 590.8
+      },
+      {
+        "netA": "LFXO_XL1",
+        "netB": "VBAT_R_RET",
+        "x": 127.51,
+        "y": 450.91
+      },
+      {
+        "netA": "LFXO_XL1",
+        "netB": "VBUS_5V",
+        "x": 112.35,
+        "y": 582.83
+      },
+      {
+        "netA": "LFXO_XL2",
+        "netB": "NRF_DECR_RF",
+        "x": 109.66,
+        "y": 450.26
+      },
+      {
+        "netA": "LFXO_XL2",
+        "netB": "NTC_TS_R",
+        "x": 140.33,
+        "y": 585.84
+      },
+      {
+        "netA": "LFXO_XL2",
+        "netB": "PDM_CLK_1V8",
+        "x": 116.55,
+        "y": 461.89
+      },
+      {
+        "netA": "LFXO_XL2",
+        "netB": "PDM_D1_1V8",
+        "x": 131.98,
+        "y": 487.95
+      },
+      {
+        "netA": "LFXO_XL2",
+        "netB": "PDM_D1_1V8",
+        "x": 131.02,
+        "y": 654.34
+      },
+      {
+        "netA": "LFXO_XL2",
+        "netB": "SPK_R_N",
+        "x": 109.51,
+        "y": 450
+      },
+      {
+        "netA": "LFXO_XL2",
+        "netB": "SPK_R_P",
+        "x": 120.8,
+        "y": 469.07
+      },
+      {
+        "netA": "LFXO_XL2",
+        "netB": "VBAT_R_RET",
+        "x": 140.12,
+        "y": 587.43
+      },
+      {
+        "netA": "LFXO_XL2",
+        "netB": "VBAT_R_RET",
+        "x": 117.76,
+        "y": 463.94
+      },
+      {
+        "netA": "LFXO_XL2",
+        "netB": "VBUS_5V",
+        "x": 136.96,
+        "y": 610.68
+      },
+      {
+        "netA": "NRF_DCC",
+        "netB": "NRF_DECD",
+        "x": 46.71,
+        "y": 352.18
+      },
+      {
+        "netA": "NRF_DCC",
+        "netB": "NRF_DECN",
+        "x": 46.5,
+        "y": 350.85
+      },
+      {
+        "netA": "NRF_DCC",
+        "netB": "VBAT_R_RET",
+        "x": 31.16,
+        "y": 253.86
+      },
+      {
+        "netA": "NRF_DCCD",
+        "netB": "NRF_DECD",
+        "x": 43.87,
+        "y": 386.04
+      },
+      {
+        "netA": "NRF_DCCD",
+        "netB": "NRF_DECN",
+        "x": 43.84,
+        "y": 386.07
+      },
+      {
+        "netA": "NRF_DCCD",
+        "netB": "NRF_DECR_RF",
+        "x": 65.54,
+        "y": 363.76
+      },
+      {
+        "netA": "NRF_DCCD",
+        "netB": "PDM_CLK_1V8",
+        "x": 129.31,
+        "y": 298.21
+      },
+      {
+        "netA": "NRF_DCCD",
+        "netB": "PDM_D1_1V8",
+        "x": 133.11,
+        "y": 294.31
+      },
+      {
+        "netA": "NRF_DCCD",
+        "netB": "VBAT_R_RET",
+        "x": 154.4,
+        "y": 272.42
+      },
+      {
+        "netA": "NRF_DCCD",
+        "netB": "VBUS_5V",
+        "x": 62.17,
+        "y": 367.22
+      },
+      {
+        "netA": "NRF_DECA",
+        "netB": "NRF_DECD",
+        "x": 47.86,
+        "y": 392.56
+      },
+      {
+        "netA": "NRF_DECA",
+        "netB": "NTC_TS_R",
+        "x": 58,
+        "y": 541.94
+      },
+      {
+        "netA": "NRF_DECA",
+        "netB": "SPK_R_N",
+        "x": 57.48,
+        "y": 534.28
+      },
+      {
+        "netA": "NRF_DECA",
+        "netB": "VBUS_5V",
+        "x": 49.1,
+        "y": 410.81
+      },
+      {
+        "netA": "NRF_DECA",
+        "netB": "VBUS_5V",
+        "x": 56.49,
+        "y": 519.62
+      },
+      {
+        "netA": "NRF_DECD",
+        "netB": "NRF_DECN",
+        "x": 43.85,
+        "y": 386.01
+      },
+      {
+        "netA": "NRF_DECD",
+        "netB": "NRF_DECN",
+        "x": 46.36,
+        "y": 352.62
+      },
+      {
+        "netA": "NRF_DECD",
+        "netB": "NRF_DECR_RF",
+        "x": 128.57,
+        "y": 524.44
+      },
+      {
+        "netA": "NRF_DECD",
+        "netB": "NRF_DECR_RF",
+        "x": 54.52,
+        "y": 342.16
+      },
+      {
+        "netA": "NRF_DECD",
+        "netB": "PDM_CLK_1V8",
+        "x": 113.58,
+        "y": 499.95
+      },
+      {
+        "netA": "NRF_DECD",
+        "netB": "PDM_D1_1V8",
+        "x": 131.74,
+        "y": 529.62
+      },
+      {
+        "netA": "NRF_DECD",
+        "netB": "SPK_R_N",
+        "x": 96.2,
+        "y": 471.55
+      },
+      {
+        "netA": "NRF_DECD",
+        "netB": "SPK_R_P",
+        "x": 110.07,
+        "y": 494.21
+      },
+      {
+        "netA": "NRF_DECD",
+        "netB": "VBAT_R_RET",
+        "x": 103.34,
+        "y": 483.21
+      },
+      {
+        "netA": "NRF_DECD",
+        "netB": "VBAT_R_RET",
+        "x": 133.85,
+        "y": 240.52
+      },
+      {
+        "netA": "NRF_DECD",
+        "netB": "VBUS_5V",
+        "x": 52.36,
+        "y": 399.92
+      },
+      {
+        "netA": "NRF_DECD",
+        "netB": "VBUS_5V",
+        "x": 79.16,
+        "y": 310.59
+      },
+      {
+        "netA": "NRF_DECN",
+        "netB": "NTC_TS_R",
+        "x": 33.09,
+        "y": 528.66
+      },
+      {
+        "netA": "NRF_DECN",
+        "netB": "VBUS_5V",
+        "x": 39.59,
+        "y": 442.51
+      },
+      {
+        "netA": "NRF_DECN",
+        "netB": "VBUS_5V",
+        "x": 35.56,
+        "y": 495.94
+      },
+      {
+        "netA": "NRF_DECR_RF",
+        "netB": "NTC_TS_R",
+        "x": 119.52,
+        "y": 574.74
+      },
+      {
+        "netA": "NRF_DECR_RF",
+        "netB": "PDM_CLK_1V8",
+        "x": 116.42,
+        "y": 463.51
+      },
+      {
+        "netA": "NRF_DECR_RF",
+        "netB": "PDM_D1_1V8",
+        "x": 131.88,
+        "y": 506.03
+      },
+      {
+        "netA": "NRF_DECR_RF",
+        "netB": "PDM_D1_1V8",
+        "x": 131.95,
+        "y": 493.96
+      },
+      {
+        "netA": "NRF_DECR_RF",
+        "netB": "SPK_R_N",
+        "x": 109.52,
+        "y": 449.98
+      },
+      {
+        "netA": "NRF_DECR_RF",
+        "netB": "SPK_R_P",
+        "x": 120.09,
+        "y": 470.72
+      },
+      {
+        "netA": "NRF_DECR_RF",
+        "netB": "VBAT_R_RET",
+        "x": 40.38,
+        "y": 245.81
+      },
+      {
+        "netA": "NRF_DECR_RF",
+        "netB": "VBAT_R_RET",
+        "x": 117.09,
+        "y": 464.83
+      },
+      {
+        "netA": "NRF_DECR_RF",
+        "netB": "VBAT_R_RET",
+        "x": 116.78,
+        "y": 590.01
+      },
+      {
+        "netA": "NRF_DECR_RF",
+        "netB": "VBUS_5V",
+        "x": 117.1,
+        "y": 588.21
+      },
+      {
+        "netA": "NRF_DECR_RF",
+        "netB": "VBUS_5V",
+        "x": 64.07,
+        "y": 360.88
+      },
+      {
+        "netA": "NTC_TS_R",
+        "netB": "PDM_CLK_1V8",
+        "x": 108.22,
+        "y": 568.72
+      },
+      {
+        "netA": "NTC_TS_R",
+        "netB": "PDM_D1_1V8",
+        "x": 131.44,
+        "y": 581.1
+      },
+      {
+        "netA": "NTC_TS_R",
+        "netB": "SPK_R_N",
+        "x": 54.05,
+        "y": 539.84
+      },
+      {
+        "netA": "NTC_TS_R",
+        "netB": "SPK_R_P",
+        "x": 83.81,
+        "y": 555.7
+      },
+      {
+        "netA": "NTC_TS_R",
+        "netB": "VBAT_R_RET",
+        "x": 105.66,
+        "y": 567.35
+      },
+      {
+        "netA": "NTC_TS_R",
+        "netB": "VBAT_R_RET",
+        "x": 142.77,
+        "y": 587.14
+      },
+      {
+        "netA": "NTC_TS_R",
+        "netB": "VBUS_5V",
+        "x": 92.44,
+        "y": 560.3
+      },
+      {
+        "netA": "PDM_CLK_1V8",
+        "netB": "SPK_R_N",
+        "x": 118.63,
+        "y": 435.22
+      },
+      {
+        "netA": "PDM_CLK_1V8",
+        "netB": "SPK_R_P",
+        "x": 114.91,
+        "y": 482.85
+      },
+      {
+        "netA": "PDM_CLK_1V8",
+        "netB": "VBAT_R_RET",
+        "x": 106.73,
+        "y": 587.83
+      },
+      {
+        "netA": "PDM_CLK_1V8",
+        "netB": "VBAT_R_RET",
+        "x": 116.23,
+        "y": 465.98
+      },
+      {
+        "netA": "PDM_CLK_1V8",
+        "netB": "VBUS_5V",
+        "x": 107.54,
+        "y": 577.39
+      },
+      {
+        "netA": "PDM_D1_1V8",
+        "netB": "SPK_R_N",
+        "x": 132.42,
+        "y": 412.88
+      },
+      {
+        "netA": "PDM_D1_1V8",
+        "netB": "SPK_R_P",
+        "x": 132.25,
+        "y": 442.25
+      },
+      {
+        "netA": "PDM_D1_1V8",
+        "netB": "VBAT_R_RET",
+        "x": 132.23,
+        "y": 444.59
+      },
+      {
+        "netA": "PDM_D1_1V8",
+        "netB": "VBAT_R_RET",
+        "x": 131.4,
+        "y": 588.4
+      },
+      {
+        "netA": "PDM_D1_1V8",
+        "netB": "VBUS_5V",
+        "x": 131.31,
+        "y": 604.29
+      },
+      {
+        "netA": "SPK_R_N",
+        "netB": "VBUS_5V",
+        "x": 62.4,
+        "y": 526.31
+      },
+      {
+        "netA": "SPK_R_P",
+        "netB": "VBAT_R_RET",
+        "x": 129.94,
+        "y": 447.66
+      },
+      {
+        "netA": "SPK_R_P",
+        "netB": "VBAT_R_RET",
+        "x": 102.74,
+        "y": 511.37
+      },
+      {
+        "netA": "SPK_R_P",
+        "netB": "VBUS_5V",
+        "x": 85.3,
+        "y": 552.22
+      },
+      {
+        "netA": "VBAT_R_RET",
+        "netB": "VBUS_5V",
+        "x": 106.1,
+        "y": 575.76
+      },
+      {
+        "netA": "VBAT_R_RET",
+        "netB": "VBUS_5V",
+        "x": 118.52,
+        "y": 589.82
+      },
+      {
+        "netA": "VBAT_R_RET",
+        "netB": "VBUS_5V",
+        "x": 125.56,
+        "y": 227.65
+      }
+    ],
+    "summary": "score 0/100 (incomplete): 53 comps [bottom 30 / top 23], 0 short, 0 overlap, 0 off-board, 0 tight; 36 signal nets, ratsnest 13149mil, 426 crossings; geometry inspection incomplete"
+  }
+}

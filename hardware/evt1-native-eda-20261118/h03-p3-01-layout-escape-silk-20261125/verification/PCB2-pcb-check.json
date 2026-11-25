@@ -1,0 +1,4139 @@
+{
+  "passed": false,
+  "summary": {
+    "danglingEnds": 0,
+    "acuteAngles": 21,
+    "nonOrthogonal": 96,
+    "trackOverPad": 0,
+    "clearance": 41,
+    "silkscreenFlipped": 86,
+    "overlappingVias": 0,
+    "singleLayerVias": 0,
+    "widthMismatches": 3,
+    "duplicateSegments": 0,
+    "parallelCoupling": 0,
+    "antennaKeepout": 0,
+    "netlessPours": 0,
+    "viaCrossesPlane": 2,
+    "floatingIslands": 0,
+    "powerNotPoured": 15,
+    "netlessViaInPad": 0,
+    "widthUnderSpec": 0,
+    "silkOverPad": 0,
+    "silkOffBoard": 0,
+    "decapTooFar": 9,
+    "viaInPad": 8,
+    "copperNearEdge": 0,
+    "fiducialMissing": 1,
+    "zoneViolation": 0,
+    "internalOnEdge": 0,
+    "connectorPlugClearance": 0,
+    "connectorMatingBlocked": 0,
+    "connectorOpeningInward": 0,
+    "errors": 41,
+    "warnings": 275,
+    "total": 282
+  },
+  "trackCount": 434,
+  "viaCount": 51,
+  "padCount": 328,
+  "findings": [
+    {
+      "type": "acute-angle",
+      "level": "WARN",
+      "net": "1V2_FPGA_CORE",
+      "layer": 1,
+      "primitives": [
+        "060eae02cc19cd77",
+        "8bd76f8488158cdc"
+      ],
+      "angleDeg": 45,
+      "message": "trace bends 45° (<90°) — acid-trap acute angle [规范 §4.1 转角禁直角/锐角 — pcb-design-rules.md]",
+      "at": {
+        "x": 106,
+        "y": 326
+      }
+    },
+    {
+      "type": "acute-angle",
+      "level": "WARN",
+      "net": "1V8_SYS",
+      "layer": 2,
+      "primitives": [
+        "27292b47100ff1d6",
+        "f897647c5eaea528"
+      ],
+      "angleDeg": 85.64,
+      "message": "trace bends 86° (<90°) — acid-trap acute angle [规范 §4.1 转角禁直角/锐角 — pcb-design-rules.md]",
+      "at": {
+        "x": 38,
+        "y": 66
+      }
+    },
+    {
+      "type": "acute-angle",
+      "level": "WARN",
+      "net": "AVDD_OPT_BIAS",
+      "layer": 1,
+      "primitives": [
+        "36835d336e8bc328",
+        "1d626ddf81823e26"
+      ],
+      "angleDeg": 43.11,
+      "message": "trace bends 43° (<90°) — acid-trap acute angle [规范 §4.1 转角禁直角/锐角 — pcb-design-rules.md]",
+      "at": {
+        "x": 44,
+        "y": 156
+      }
+    },
+    {
+      "type": "acute-angle",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "bdef84745e2b2255",
+        "39143c1d9bb7da92"
+      ],
+      "angleDeg": 48,
+      "message": "trace bends 48° (<90°) — acid-trap acute angle [规范 §4.1 转角禁直角/锐角 — pcb-design-rules.md]",
+      "at": {
+        "x": 120.25,
+        "y": 756
+      }
+    },
+    {
+      "type": "acute-angle",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "7d1b032c9527c41f",
+        "0ff69f79344b72e0"
+      ],
+      "angleDeg": 47.92,
+      "message": "trace bends 48° (<90°) — acid-trap acute angle [规范 §4.1 转角禁直角/锐角 — pcb-design-rules.md]",
+      "at": {
+        "x": 132,
+        "y": 810
+      }
+    },
+    {
+      "type": "acute-angle",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "50b83b7eedd0f3ef",
+        "0ff69f79344b72e0"
+      ],
+      "angleDeg": 63.93,
+      "message": "trace bends 64° (<90°) — acid-trap acute angle [规范 §4.1 转角禁直角/锐角 — pcb-design-rules.md]",
+      "at": {
+        "x": 132,
+        "y": 812.98
+      }
+    },
+    {
+      "type": "acute-angle",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "3c80c142b1ba9f5b",
+        "68d83455641f3d25"
+      ],
+      "angleDeg": 65.46,
+      "message": "trace bends 65° (<90°) — acid-trap acute angle [规范 §4.1 转角禁直角/锐角 — pcb-design-rules.md]",
+      "at": {
+        "x": 132,
+        "y": 834.91
+      }
+    },
+    {
+      "type": "acute-angle",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "c413671a65f89f17",
+        "68d83455641f3d25"
+      ],
+      "angleDeg": 51.15,
+      "message": "trace bends 51° (<90°) — acid-trap acute angle [规范 §4.1 转角禁直角/锐角 — pcb-design-rules.md]",
+      "at": {
+        "x": 132,
+        "y": 844
+      }
+    },
+    {
+      "type": "acute-angle",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "d03af4df3e133d9b",
+        "9476eaf3798fa3fc"
+      ],
+      "angleDeg": 51.15,
+      "message": "trace bends 51° (<90°) — acid-trap acute angle [规范 §4.1 转角禁直角/锐角 — pcb-design-rules.md]",
+      "at": {
+        "x": 132,
+        "y": 854
+      }
+    },
+    {
+      "type": "acute-angle",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "b151d0af17d7a52f",
+        "84aabf67d5a10a9c"
+      ],
+      "angleDeg": 83.91,
+      "message": "trace bends 84° (<90°) — acid-trap acute angle [规范 §4.1 转角禁直角/锐角 — pcb-design-rules.md]",
+      "at": {
+        "x": 140,
+        "y": 824
+      }
+    },
+    {
+      "type": "acute-angle",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "7311b00225d65340",
+        "e156fba9ca917f77"
+      ],
+      "angleDeg": 77.97,
+      "message": "trace bends 78° (<90°) — acid-trap acute angle [规范 §4.1 转角禁直角/锐角 — pcb-design-rules.md]",
+      "at": {
+        "x": 144,
+        "y": 765.84
+      }
+    },
+    {
+      "type": "acute-angle",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "5e2b139ac3a95858",
+        "8849275bb3ab1983"
+      ],
+      "angleDeg": 88.02,
+      "message": "trace bends 88° (<90°) — acid-trap acute angle [规范 §4.1 转角禁直角/锐角 — pcb-design-rules.md]",
+      "at": {
+        "x": 144,
+        "y": 768.07
+      }
+    },
+    {
+      "type": "acute-angle",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "6ae4033d47354ba0",
+        "654e65168517812f"
+      ],
+      "angleDeg": 49.24,
+      "message": "trace bends 49° (<90°) — acid-trap acute angle [规范 §4.1 转角禁直角/锐角 — pcb-design-rules.md]",
+      "at": {
+        "x": 36,
+        "y": 824
+      }
+    },
+    {
+      "type": "acute-angle",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "fde4a27ba2bd29be",
+        "557be5acbc5abe40"
+      ],
+      "angleDeg": 48.12,
+      "message": "trace bends 48° (<90°) — acid-trap acute angle [规范 §4.1 转角禁直角/锐角 — pcb-design-rules.md]",
+      "at": {
+        "x": 36,
+        "y": 852
+      }
+    },
+    {
+      "type": "acute-angle",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "93991649fa04b863",
+        "878446b62d5c5c73"
+      ],
+      "angleDeg": 45.62,
+      "message": "trace bends 46° (<90°) — acid-trap acute angle [规范 §4.1 转角禁直角/锐角 — pcb-design-rules.md]",
+      "at": {
+        "x": 84,
+        "y": 846
+      }
+    },
+    {
+      "type": "acute-angle",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "ea9dfa6bd641461c",
+        "3d106b1dd1b80af3"
+      ],
+      "angleDeg": 45.36,
+      "message": "trace bends 45° (<90°) — acid-trap acute angle [规范 §4.1 转角禁直角/锐角 — pcb-design-rules.md]",
+      "at": {
+        "x": 84,
+        "y": 852
+      }
+    },
+    {
+      "type": "acute-angle",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 2,
+      "primitives": [
+        "cbf2bc272c31e7f9",
+        "72477370c236117a"
+      ],
+      "angleDeg": 88.29,
+      "message": "trace bends 88° (<90°) — acid-trap acute angle [规范 §4.1 转角禁直角/锐角 — pcb-design-rules.md]",
+      "at": {
+        "x": 132,
+        "y": 208
+      }
+    },
+    {
+      "type": "acute-angle",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 2,
+      "primitives": [
+        "7f8d7091a9410e91",
+        "ab8dddfc3263e4d8"
+      ],
+      "angleDeg": 60.54,
+      "message": "trace bends 61° (<90°) — acid-trap acute angle [规范 §4.1 转角禁直角/锐角 — pcb-design-rules.md]",
+      "at": {
+        "x": 144,
+        "y": 766.87
+      }
+    },
+    {
+      "type": "acute-angle",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 2,
+      "primitives": [
+        "0652d159a38d27a1",
+        "6309cb86520b8e96"
+      ],
+      "angleDeg": 34.14,
+      "message": "trace bends 34° (<90°) — acid-trap acute angle [规范 §4.1 转角禁直角/锐角 — pcb-design-rules.md]",
+      "at": {
+        "x": 144,
+        "y": 776.97
+      }
+    },
+    {
+      "type": "acute-angle",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 2,
+      "primitives": [
+        "8a28ffcebafe7df7",
+        "3543183c95a86370"
+      ],
+      "angleDeg": 85.91,
+      "message": "trace bends 86° (<90°) — acid-trap acute angle [规范 §4.1 转角禁直角/锐角 — pcb-design-rules.md]",
+      "at": {
+        "x": 156,
+        "y": 748
+      }
+    },
+    {
+      "type": "acute-angle",
+      "level": "WARN",
+      "net": "opt_l_qdo3_PANEL",
+      "layer": 1,
+      "primitives": [
+        "98105b6a028b1c4b",
+        "3fbc02d90900b06b"
+      ],
+      "angleDeg": 88.81,
+      "message": "trace bends 89° (<90°) — acid-trap acute angle [规范 §4.1 转角禁直角/锐角 — pcb-design-rules.md]",
+      "at": {
+        "x": 104,
+        "y": 120
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "FPGA_CRESET_B",
+      "layer": 2,
+      "primitives": [
+        "1d8f3cf8465930cd"
+      ],
+      "angleDeg": 2.03,
+      "message": "trace runs at 2.0° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 37.55,
+        "y": 565.7
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "FPGA_CDONE_VSYNC_N",
+      "layer": 2,
+      "primitives": [
+        "94b6a35a08a1a407"
+      ],
+      "angleDeg": 1.02,
+      "message": "trace runs at 1.0° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 37.55,
+        "y": 545.85
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "FPGA_CDONE_VSYNC_N",
+      "layer": 1,
+      "primitives": [
+        "88dc3d8d9c8945b3"
+      ],
+      "angleDeg": 20.73,
+      "message": "trace runs at 20.7° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 117.25,
+        "y": 681.5
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "OPT_CS_N_L",
+      "layer": 1,
+      "primitives": [
+        "6ae5e9c6029925b7"
+      ],
+      "angleDeg": 86.82,
+      "message": "trace runs at 86.8° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 76.4,
+        "y": 127.2
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "OPT_CS_N_L",
+      "layer": 1,
+      "primitives": [
+        "9ff4abe76a7c880d"
+      ],
+      "angleDeg": 42.97,
+      "message": "trace runs at 43.0° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 41.65,
+        "y": 223.4
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "opt_l_qdo2_PANEL",
+      "layer": 1,
+      "primitives": [
+        "67b08ae2d7334e3d"
+      ],
+      "angleDeg": 91.47,
+      "message": "trace runs at 91.5° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 104.15,
+        "y": 202.15
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "opt_l_qdo3_PANEL",
+      "layer": 1,
+      "primitives": [
+        "98105b6a028b1c4b"
+      ],
+      "angleDeg": 88.81,
+      "message": "trace runs at 88.8° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 104.15,
+        "y": 127.2
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "opt_l_qdo3_PANEL",
+      "layer": 1,
+      "primitives": [
+        "b6bbad07692eeea0"
+      ],
+      "angleDeg": 88.7,
+      "message": "trace runs at 88.7° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 138.1,
+        "y": 222.4
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "opt_r_qdo1_PANEL",
+      "layer": 1,
+      "primitives": [
+        "dbf8dcc1258d941d"
+      ],
+      "angleDeg": 92.07,
+      "message": "trace runs at 92.1° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 91.15,
+        "y": 536.55
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "AVDD_QUAL_CLR_N",
+      "layer": 2,
+      "primitives": [
+        "020c29b9b6efd739"
+      ],
+      "angleDeg": 22.8,
+      "message": "trace runs at 22.8° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 106.35,
+        "y": 728.35
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "AVDD_D3_VSYS",
+      "layer": 2,
+      "primitives": [
+        "eed08728237ee8e7"
+      ],
+      "angleDeg": 22.19,
+      "message": "trace runs at 22.2° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 39.05,
+        "y": 610.35
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "AVDD_D3_VSYS",
+      "layer": 2,
+      "primitives": [
+        "7865addddaeb2867"
+      ],
+      "angleDeg": 23.5,
+      "message": "trace runs at 23.5° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 50.2,
+        "y": 432
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "AVDD_PG_NODE",
+      "layer": 2,
+      "primitives": [
+        "fc40f43020a71259"
+      ],
+      "angleDeg": 92.76,
+      "message": "trace runs at 92.8° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 151.6,
+        "y": 230.3
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "AVDD_OPT_BIAS",
+      "layer": 1,
+      "primitives": [
+        "1d626ddf81823e26"
+      ],
+      "angleDeg": 133.11,
+      "message": "trace runs at 133.1° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 39.6,
+        "y": 160.7
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "1V2_FPGA_CORE",
+      "layer": 1,
+      "primitives": [
+        "e5074663779b8b76"
+      ],
+      "angleDeg": 132.44,
+      "message": "trace runs at 132.4° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 141.35,
+        "y": 324.15
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "1V2_FPGA_CORE",
+      "layer": 1,
+      "primitives": [
+        "5d4117610276137b"
+      ],
+      "angleDeg": 159.54,
+      "message": "trace runs at 159.5° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 31.3,
+        "y": 398.5
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "1V8_SYS",
+      "layer": 2,
+      "primitives": [
+        "27292b47100ff1d6"
+      ],
+      "angleDeg": 175.64,
+      "message": "trace runs at 175.6° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 32.1,
+        "y": 66.45
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "1V8_SYS",
+      "layer": 2,
+      "primitives": [
+        "8f8e104288a78f7e"
+      ],
+      "angleDeg": 3.34,
+      "message": "trace runs at 3.3° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 82,
+        "y": 80.35
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "1V8_FPGA_IO",
+      "layer": 2,
+      "primitives": [
+        "c7ec0b9c231484aa"
+      ],
+      "angleDeg": 82.36,
+      "message": "trace runs at 82.4° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 152.85,
+        "y": 597.3
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "VSYS",
+      "layer": 2,
+      "primitives": [
+        "46d66f361ee9d65f"
+      ],
+      "angleDeg": 137.19,
+      "message": "trace runs at 137.2° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 132.8,
+        "y": 469.7
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "VSYS",
+      "layer": 2,
+      "primitives": [
+        "ecfaa6d31fc5d5e1"
+      ],
+      "angleDeg": 119.21,
+      "message": "trace runs at 119.2° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 148.6,
+        "y": 113.35
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "VSYS",
+      "layer": 2,
+      "primitives": [
+        "b496027e64aae323"
+      ],
+      "angleDeg": 67.94,
+      "message": "trace runs at 67.9° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 114.9,
+        "y": 116.35
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "VSYS",
+      "layer": 2,
+      "primitives": [
+        "32804e1f79551b77"
+      ],
+      "angleDeg": 1.44,
+      "message": "trace runs at 1.4° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 44.1,
+        "y": 53.55
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "VSYS",
+      "layer": 2,
+      "primitives": [
+        "4877f9b6a6c5a88e"
+      ],
+      "angleDeg": 4.29,
+      "message": "trace runs at 4.3° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 82,
+        "y": 66.45
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "b93830d3025ae8e9"
+      ],
+      "angleDeg": 83.99,
+      "message": "trace runs at 84.0° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 145.8,
+        "y": 349.15
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "9a6f6b8b8b50aaf1"
+      ],
+      "angleDeg": 83.99,
+      "message": "trace runs at 84.0° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 23.7,
+        "y": 362.95
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 2,
+      "primitives": [
+        "7abff05ac94359fa"
+      ],
+      "angleDeg": 83.99,
+      "message": "trace runs at 84.0° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 25.5,
+        "y": 389.86
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 2,
+      "primitives": [
+        "1f553539838eb69c"
+      ],
+      "angleDeg": 83.99,
+      "message": "trace runs at 84.0° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 137.9,
+        "y": 384.55
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "efa0683ec1d2fc12"
+      ],
+      "angleDeg": 83.99,
+      "message": "trace runs at 84.0° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 145.8,
+        "y": 418.05
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "196cb4dcc3a63db9"
+      ],
+      "angleDeg": 83.99,
+      "message": "trace runs at 84.0° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 23.7,
+        "y": 431.85
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "83423c0ad41589e6"
+      ],
+      "angleDeg": 156,
+      "message": "trace runs at 156.0° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 102.87,
+        "y": 437.8
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 2,
+      "primitives": [
+        "adef0b6102a03128"
+      ],
+      "angleDeg": 83.99,
+      "message": "trace runs at 84.0° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 153.6,
+        "y": 640.44
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "8c26e4e821a9cc93"
+      ],
+      "angleDeg": 83.98,
+      "message": "trace runs at 84.0° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 160.52,
+        "y": 527.97
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "a1b9a4f933e7fc7b"
+      ],
+      "angleDeg": 72.01,
+      "message": "trace runs at 72.0° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 36.92,
+        "y": 38.14
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 2,
+      "primitives": [
+        "aafca225634d8ca5"
+      ],
+      "angleDeg": 167.99,
+      "message": "trace runs at 168.0° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 78.95,
+        "y": 96.43
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 2,
+      "primitives": [
+        "7ae69c3196968f8f"
+      ],
+      "angleDeg": 83.98,
+      "message": "trace runs at 84.0° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 56.34,
+        "y": 266.54
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "b5fafc5972c28e89"
+      ],
+      "angleDeg": 35.99,
+      "message": "trace runs at 36.0° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 57.74,
+        "y": 547.98
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 2,
+      "primitives": [
+        "3afd738c0b68132d"
+      ],
+      "angleDeg": 83.98,
+      "message": "trace runs at 84.0° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 155.61,
+        "y": 949.19
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 2,
+      "primitives": [
+        "218dfb2c2f0254fd"
+      ],
+      "angleDeg": 36,
+      "message": "trace runs at 36.0° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 103.75,
+        "y": 282.75
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 2,
+      "primitives": [
+        "f04dd0d7974aee87"
+      ],
+      "angleDeg": 12,
+      "message": "trace runs at 12.0° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 42.43,
+        "y": 709.72
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "fae24d01ccb324c0"
+      ],
+      "angleDeg": 84,
+      "message": "trace runs at 84.0° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 27.72,
+        "y": 730.3
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "80644a902e3335b1"
+      ],
+      "angleDeg": 144.01,
+      "message": "trace runs at 144.0° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 103.12,
+        "y": 650.19
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 2,
+      "primitives": [
+        "cbf2bc272c31e7f9"
+      ],
+      "angleDeg": 88.29,
+      "message": "trace runs at 88.3° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 131.75,
+        "y": 199.65
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "e5583cbb0fa85a3f"
+      ],
+      "angleDeg": 94.76,
+      "message": "trace runs at 94.8° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 93,
+        "y": 454.9
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 2,
+      "primitives": [
+        "d4ca5cb6211b4cf9"
+      ],
+      "angleDeg": 142.86,
+      "message": "trace runs at 142.9° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 122.45,
+        "y": 283.8
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 2,
+      "primitives": [
+        "f98d4e895950c5b4"
+      ],
+      "angleDeg": 142.86,
+      "message": "trace runs at 142.9° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 27.95,
+        "y": 313.3
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "5e2b139ac3a95858"
+      ],
+      "angleDeg": 178.02,
+      "message": "trace runs at 178.0° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 145,
+        "y": 768.03
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "951790ab9e7ba202"
+      ],
+      "angleDeg": 150.99,
+      "message": "trace runs at 151.0° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 139.95,
+        "y": 168.7
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "OPT_SCK_R",
+      "layer": 1,
+      "primitives": [
+        "9c4cd8d2cfd86a8f"
+      ],
+      "angleDeg": 91.15,
+      "message": "trace runs at 91.2° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 76.65,
+        "y": 621.05
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "OPT_SCK_R",
+      "layer": 1,
+      "primitives": [
+        "8affe4a153c37f1e"
+      ],
+      "angleDeg": 119.55,
+      "message": "trace runs at 119.6° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 19.25,
+        "y": 526.15
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "802b910b7e6aaec3"
+      ],
+      "angleDeg": 124.14,
+      "message": "trace runs at 124.1° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 53.65,
+        "y": 781.7
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 2,
+      "primitives": [
+        "651a0b582ea4324b"
+      ],
+      "angleDeg": 124.14,
+      "message": "trace runs at 124.1° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 149.55,
+        "y": 768.79
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 2,
+      "primitives": [
+        "6309cb86520b8e96"
+      ],
+      "angleDeg": 124.14,
+      "message": "trace runs at 124.1° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 140.62,
+        "y": 781.95
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 2,
+      "primitives": [
+        "1d6334cdd7c3c3e9"
+      ],
+      "angleDeg": 177.58,
+      "message": "trace runs at 177.6° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 158.45,
+        "y": 834.15
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 2,
+      "primitives": [
+        "65f1bec6aedc6d54"
+      ],
+      "angleDeg": 85.91,
+      "message": "trace runs at 85.9° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 159.65,
+        "y": 817.1
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "VSYS",
+      "layer": 1,
+      "primitives": [
+        "260d1c302112b877"
+      ],
+      "angleDeg": 31.68,
+      "message": "trace runs at 31.7° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 68.7,
+        "y": 306.9
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "VSYS",
+      "layer": 1,
+      "primitives": [
+        "773b950e5cc1d210"
+      ],
+      "angleDeg": 143.37,
+      "message": "trace runs at 143.4° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 28.1,
+        "y": 306.9
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "b151d0af17d7a52f"
+      ],
+      "angleDeg": 83.91,
+      "message": "trace runs at 83.9° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 139.6,
+        "y": 820.25
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "3d1aff6f6299ba9a"
+      ],
+      "angleDeg": 24.54,
+      "message": "trace runs at 24.5° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 131,
+        "y": 834.46
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "6466caef140c0af1"
+      ],
+      "angleDeg": 97.11,
+      "message": "trace runs at 97.1° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 139.57,
+        "y": 791.45
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 2,
+      "primitives": [
+        "ab8dddfc3263e4d8"
+      ],
+      "angleDeg": 150.54,
+      "message": "trace runs at 150.5° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 143,
+        "y": 767.44
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "557be5acbc5abe40"
+      ],
+      "angleDeg": 41.88,
+      "message": "trace runs at 41.9° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 40.35,
+        "y": 855.9
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "e62eea7bda8167a0"
+      ],
+      "angleDeg": 30.87,
+      "message": "trace runs at 30.9° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 131,
+        "y": 876.6
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "47c00777ef5bf7ff"
+      ],
+      "angleDeg": 95.63,
+      "message": "trace runs at 95.6° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 133.65,
+        "y": 899.55
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "6867d22dbb786214"
+      ],
+      "angleDeg": 109.12,
+      "message": "trace runs at 109.1° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 79.4,
+        "y": 647.5
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "d5f05f61e87bb6ed"
+      ],
+      "angleDeg": 37.38,
+      "message": "trace runs at 37.4° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 135.6,
+        "y": 878.75
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "725645068f43fbd5"
+      ],
+      "angleDeg": 96,
+      "message": "trace runs at 96.0° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 116.95,
+        "y": 145.34
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 2,
+      "primitives": [
+        "8a28ffcebafe7df7"
+      ],
+      "angleDeg": 94.09,
+      "message": "trace runs at 94.1° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 155.55,
+        "y": 754.3
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "83616d366859d91a"
+      ],
+      "angleDeg": 36,
+      "message": "trace runs at 36.0° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 147.41,
+        "y": 755.82
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "8080f682293e6c19"
+      ],
+      "angleDeg": 48.12,
+      "message": "trace runs at 48.1° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 132,
+        "y": 149.9
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 2,
+      "primitives": [
+        "34959b182d267843"
+      ],
+      "angleDeg": 83.99,
+      "message": "trace runs at 84.0° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 155.4,
+        "y": 726.46
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "654e65168517812f"
+      ],
+      "angleDeg": 139.24,
+      "message": "trace runs at 139.2° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 40.35,
+        "y": 820.25
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 2,
+      "primitives": [
+        "723e12865e9d08e7"
+      ],
+      "angleDeg": 87.95,
+      "message": "trace runs at 88.0° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 131.75,
+        "y": 33
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "7e2ca7d57fb98ecb"
+      ],
+      "angleDeg": 119.74,
+      "message": "trace runs at 119.7° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 136.6,
+        "y": 799.45
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "e156fba9ca917f77"
+      ],
+      "angleDeg": 167.97,
+      "message": "trace runs at 168.0° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 150.65,
+        "y": 764.42
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 2,
+      "primitives": [
+        "6bff2ad59f01bdc7"
+      ],
+      "angleDeg": 4.29,
+      "message": "trace runs at 4.3° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 82,
+        "y": 190.45
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "bdef84745e2b2255"
+      ],
+      "angleDeg": 48,
+      "message": "trace runs at 48.0° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 125.87,
+        "y": 762.25
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "d0a6687143c7ae6c"
+      ],
+      "angleDeg": 83.98,
+      "message": "trace runs at 84.0° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 45.41,
+        "y": 888.19
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "cf9565f5ebc8af07"
+      ],
+      "angleDeg": 178.03,
+      "message": "trace runs at 178.0° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 137.75,
+        "y": 768.28
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 2,
+      "primitives": [
+        "fd44879c59049b6d"
+      ],
+      "angleDeg": 118.24,
+      "message": "trace runs at 118.2° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 151.25,
+        "y": 723.95
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "9b4aeef58fd090d0"
+      ],
+      "angleDeg": 107.99,
+      "message": "trace runs at 108.0° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 89.55,
+        "y": 888.75
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 2,
+      "primitives": [
+        "7b21d16ee3955853"
+      ],
+      "angleDeg": 111.8,
+      "message": "trace runs at 111.8° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 138.6,
+        "y": 783.5
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "50b83b7eedd0f3ef"
+      ],
+      "angleDeg": 26.07,
+      "message": "trace runs at 26.1° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 131,
+        "y": 812.49
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "d03af4df3e133d9b"
+      ],
+      "angleDeg": 38.85,
+      "message": "trace runs at 38.9° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 135.6,
+        "y": 856.9
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "d68cfb7f7ef593d4"
+      ],
+      "angleDeg": 133.34,
+      "message": "trace runs at 133.3° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 41.35,
+        "y": 798.45
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "371c24025e7710b8"
+      ],
+      "angleDeg": 136.49,
+      "message": "trace runs at 136.5° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 87.95,
+        "y": 820.25
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "7d1b032c9527c41f"
+      ],
+      "angleDeg": 42.08,
+      "message": "trace runs at 42.1° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 135.6,
+        "y": 813.25
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 2,
+      "primitives": [
+        "ff959c1397a0551e"
+      ],
+      "angleDeg": 150.54,
+      "message": "trace runs at 150.5° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 149.55,
+        "y": 763.74
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "f2cec0a1bf7e240d"
+      ],
+      "angleDeg": 26.06,
+      "message": "trace runs at 26.1° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 135.6,
+        "y": 814.74
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "42ea6ed78bea64a0"
+      ],
+      "angleDeg": 48,
+      "message": "trace runs at 48.0° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 117.61,
+        "y": 753.07
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "3c80c142b1ba9f5b"
+      ],
+      "angleDeg": 24.54,
+      "message": "trace runs at 24.5° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 135.6,
+        "y": 836.56
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 2,
+      "primitives": [
+        "2797b384bda8ac3b"
+      ],
+      "angleDeg": 96.52,
+      "message": "trace runs at 96.5° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 137.6,
+        "y": 783.5
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "c413671a65f89f17"
+      ],
+      "angleDeg": 141.15,
+      "message": "trace runs at 141.1° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 135.6,
+        "y": 841.1
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "5f1d2f06f67a54f0"
+      ],
+      "angleDeg": 151.74,
+      "message": "trace runs at 151.7° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 152.65,
+        "y": 765.5
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "90f1a6aec3fc06bc"
+      ],
+      "angleDeg": 122.38,
+      "message": "trace runs at 122.4° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 136.6,
+        "y": 863.9
+      }
+    },
+    {
+      "type": "non-orthogonal",
+      "level": "WARN",
+      "net": "GND",
+      "layer": 1,
+      "primitives": [
+        "b26119c3f24923eb"
+      ],
+      "angleDeg": 167.97,
+      "message": "trace runs at 168.0° — not on the 0/45/90° grid (free-angle routing) [规范 §4.1 推荐45°折线或圆弧 — pcb-design-rules.md]",
+      "at": {
+        "x": 137.75,
+        "y": 767.17
+      }
+    },
+    {
+      "type": "width-mismatch",
+      "level": "INFO",
+      "net": "VSYS",
+      "designator": "C11",
+      "widths": [
+        20,
+        6
+      ],
+      "message": "2-pin part C11: entering track widths differ (20.0 vs 6.0 mil) [规范 §1.2 推荐线宽 — pcb-design-rules.md]"
+    },
+    {
+      "type": "width-mismatch",
+      "level": "INFO",
+      "net": "VSYS",
+      "designator": "C12",
+      "widths": [
+        10,
+        3.5
+      ],
+      "message": "2-pin part C12: entering track widths differ (10.0 vs 3.5 mil) [规范 §1.2 推荐线宽 — pcb-design-rules.md]"
+    },
+    {
+      "type": "width-mismatch",
+      "level": "INFO",
+      "net": "VSYS",
+      "designator": "C8",
+      "widths": [
+        10,
+        3.5
+      ],
+      "message": "2-pin part C8: entering track widths differ (10.0 vs 3.5 mil) [规范 §1.2 推荐线宽 — pcb-design-rules.md]"
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "C1",
+      "primitives": [
+        "6989fd7e3972d2a0a2"
+      ],
+      "message": "designator 'C1' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 126.57,
+        "y": 816.54
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "C10",
+      "primitives": [
+        "ff1989fffd1dcf8ba2"
+      ],
+      "message": "designator 'C10' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 126.57,
+        "y": 859.84
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "C11",
+      "primitives": [
+        "b460041b1be7d129a2"
+      ],
+      "message": "designator 'C11' is rotated 270° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 84,
+        "y": 366
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "C12",
+      "primitives": [
+        "73d5b500099048b1a2"
+      ],
+      "message": "designator 'C12' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 32.09,
+        "y": 881.5
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "C13",
+      "primitives": [
+        "b8aa8c34d071b943a2"
+      ],
+      "message": "designator 'C13' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 146.65,
+        "y": 337.99
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "C14",
+      "primitives": [
+        "4d1d241597a3ce0ba2"
+      ],
+      "message": "designator 'C14' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 132.48,
+        "y": 452.36
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "C15",
+      "primitives": [
+        "bc68286d793a696ea2"
+      ],
+      "message": "designator 'C15' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 24.61,
+        "y": 351.77
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "C16",
+      "primitives": [
+        "b1529d5d463211ffa2"
+      ],
+      "message": "designator 'C16' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 32.09,
+        "y": 468.11
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "C17",
+      "primitives": [
+        "5901f8c37c1faa86a2"
+      ],
+      "message": "designator 'C17' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 79.33,
+        "y": 468.11
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "C18",
+      "primitives": [
+        "e9b657a0733f5749a2"
+      ],
+      "message": "designator 'C18' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 126.57,
+        "y": 474.02
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "C19",
+      "primitives": [
+        "dbd30f59f54f1c1da2"
+      ],
+      "message": "designator 'C19' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 155.32,
+        "y": 655.91
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "C2",
+      "primitives": [
+        "716d1039ae2e8d89a2"
+      ],
+      "message": "designator 'C2' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 142.32,
+        "y": 834.25
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "C20",
+      "primitives": [
+        "d2fe78ad41c0c277a2"
+      ],
+      "message": "designator 'C20' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 24.61,
+        "y": 361.61
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "C21",
+      "primitives": [
+        "131266a903501025a2"
+      ],
+      "message": "designator 'C21' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 155.32,
+        "y": 703.15
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "C22",
+      "primitives": [
+        "73d3ee0aeba58dd1a2"
+      ],
+      "message": "designator 'C22' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 138.78,
+        "y": 373.43
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "C23",
+      "primitives": [
+        "0d460a75340a72fea2"
+      ],
+      "message": "designator 'C23' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 157.28,
+        "y": 750.39
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "C24",
+      "primitives": [
+        "6271b4f9a39cb400a2"
+      ],
+      "message": "designator 'C24' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 154.53,
+        "y": 698.23
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "C25",
+      "primitives": [
+        "5834b130fe097de5a2"
+      ],
+      "message": "designator 'C25' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 135.43,
+        "y": 760.63
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "C26",
+      "primitives": [
+        "0eae8e989120ae49a2"
+      ],
+      "message": "designator 'C26' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 32.09,
+        "y": 816.54
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "C27",
+      "primitives": [
+        "b08bf9a6f0bb090fa2"
+      ],
+      "message": "designator 'C27' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 146.65,
+        "y": 406.89
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "C28",
+      "primitives": [
+        "62d22cb60c57007fa2"
+      ],
+      "message": "designator 'C28' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 24.61,
+        "y": 420.67
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "C29",
+      "primitives": [
+        "5eb7463fb00b02b5a2"
+      ],
+      "message": "designator 'C29' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 74.41,
+        "y": 441.73
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "C3",
+      "primitives": [
+        "6f1dedf9d15d0beba2"
+      ],
+      "message": "designator 'C3' is rotated 180° (upside-down (上下颠倒)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 86,
+        "y": 484
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "C30",
+      "primitives": [
+        "482e76c446e02ddda2"
+      ],
+      "message": "designator 'C30' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 154.53,
+        "y": 629.33
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "C31",
+      "primitives": [
+        "da17ff9cfd867a89a2"
+      ],
+      "message": "designator 'C31' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 42.91,
+        "y": 768.5
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "C32",
+      "primitives": [
+        "a99d6a238c9ac376a2"
+      ],
+      "message": "designator 'C32' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 111.81,
+        "y": 768.5
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "C33",
+      "primitives": [
+        "3e02f4d3fdf273a8a2"
+      ],
+      "message": "designator 'C33' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 79.33,
+        "y": 816.54
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "C4",
+      "primitives": [
+        "3db05b76f926c0cca2"
+      ],
+      "message": "designator 'C4' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 126.57,
+        "y": 794.88
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "C5",
+      "primitives": [
+        "0ef47cdb2c14fdf8a2"
+      ],
+      "message": "designator 'C5' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 126.57,
+        "y": 838.19
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "C6",
+      "primitives": [
+        "835b86ea155a758ba2"
+      ],
+      "message": "designator 'C6' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 124.61,
+        "y": 787.01
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "C7",
+      "primitives": [
+        "215529ebad173a14a2"
+      ],
+      "message": "designator 'C7' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 159.84,
+        "y": 508.66
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "C8",
+      "primitives": [
+        "d1d955f7a7c3957aa2"
+      ],
+      "message": "designator 'C8' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 32.09,
+        "y": 859.84
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "C9",
+      "primitives": [
+        "66f600bef5e77bdea2"
+      ],
+      "message": "designator 'C9' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 79.33,
+        "y": 859.84
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "D3",
+      "primitives": [
+        "113b68bafa8f4098a2"
+      ],
+      "message": "designator 'D3' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 33.46,
+        "y": 57.09
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "J1",
+      "primitives": [
+        "c7a3bf451856c7c3a2"
+      ],
+      "message": "designator 'J1' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 57.09,
+        "y": 149.61
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "J2",
+      "primitives": [
+        "0fae57a9b4b0e18da2"
+      ],
+      "message": "designator 'J2' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 90.55,
+        "y": 165.35
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "J3",
+      "primitives": [
+        "4a39ccc1070ff81aa2"
+      ],
+      "message": "designator 'J3' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 90.55,
+        "y": 582.68
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "MK2",
+      "primitives": [
+        "3571daebd6374c67a2"
+      ],
+      "message": "designator 'MK2' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 66.14,
+        "y": 897.64
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "R1",
+      "primitives": [
+        "8c5c4b597e348008a2"
+      ],
+      "message": "designator 'R1' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 79.33,
+        "y": 881.5
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "R10",
+      "primitives": [
+        "da5999f83b2c5e9ba2"
+      ],
+      "message": "designator 'R10' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 120.67,
+        "y": 946.46
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "R11",
+      "primitives": [
+        "c009d3829af0516ca2"
+      ],
+      "message": "designator 'R11' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 142.32,
+        "y": 855.91
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "R12",
+      "primitives": [
+        "34fd5c84a64d3ff9a2"
+      ],
+      "message": "designator 'R12' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 32.09,
+        "y": 794.88
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "R13",
+      "primitives": [
+        "a204e1009732aebfa2"
+      ],
+      "message": "designator 'R13' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 45.28,
+        "y": 239.37
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "R14",
+      "primitives": [
+        "432a89367e334fafa2"
+      ],
+      "message": "designator 'R14' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 45.28,
+        "y": 508.66
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "R15",
+      "primitives": [
+        "1c329b71dd21078ca2"
+      ],
+      "message": "designator 'R15' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 68.5,
+        "y": 239.37
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "R16",
+      "primitives": [
+        "fa5975ca1718baffa2"
+      ],
+      "message": "designator 'R16' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 91.73,
+        "y": 239.37
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "R17",
+      "primitives": [
+        "bab7a9407562401ba2"
+      ],
+      "message": "designator 'R17' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 114.96,
+        "y": 239.37
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "R18",
+      "primitives": [
+        "7b32cc59dad8423ca2"
+      ],
+      "message": "designator 'R18' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 138.19,
+        "y": 239.37
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "R19",
+      "primitives": [
+        "f3bca7348c619e6ca2"
+      ],
+      "message": "designator 'R19' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 68.5,
+        "y": 508.66
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "R2",
+      "primitives": [
+        "7dad6c7c38ee49eca2"
+      ],
+      "message": "designator 'R2' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 126.57,
+        "y": 881.5
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "R20",
+      "primitives": [
+        "619d6a2325d5c1aca2"
+      ],
+      "message": "designator 'R20' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 91.73,
+        "y": 508.66
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "R21",
+      "primitives": [
+        "139abc1b681f952ca2"
+      ],
+      "message": "designator 'R21' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 114.96,
+        "y": 508.66
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "R22",
+      "primitives": [
+        "a414f17efa63ab4aa2"
+      ],
+      "message": "designator 'R22' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 138.19,
+        "y": 508.66
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "R23",
+      "primitives": [
+        "4c835c131afea110a2"
+      ],
+      "message": "designator 'R23' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 22.05,
+        "y": 239.37
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "R24",
+      "primitives": [
+        "646a7565ebe119d0a2"
+      ],
+      "message": "designator 'R24' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 22.05,
+        "y": 508.66
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "R25",
+      "primitives": [
+        "dd29d4e7a8b60bf2a2"
+      ],
+      "message": "designator 'R25' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 159.84,
+        "y": 239.37
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "R26",
+      "primitives": [
+        "8c9fe476a45db9eba2"
+      ],
+      "message": "designator 'R26' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 161.22,
+        "y": 844.88
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "R27",
+      "primitives": [
+        "1f0a558414fb5771a2"
+      ],
+      "message": "designator 'R27' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 79.33,
+        "y": 794.88
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "R28",
+      "primitives": [
+        "e022a3577dd5639da2"
+      ],
+      "message": "designator 'R28' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 79.33,
+        "y": 838.19
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "R29",
+      "primitives": [
+        "bd53e61193f500e8a2"
+      ],
+      "message": "designator 'R29' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 124.61,
+        "y": 808.66
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "R3",
+      "primitives": [
+        "21383e79d4ff4036a2"
+      ],
+      "message": "designator 'R3' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 142.32,
+        "y": 899.21
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "R30",
+      "primitives": [
+        "929251a74a282277a2"
+      ],
+      "message": "designator 'R30' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 161.22,
+        "y": 797.64
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "R31",
+      "primitives": [
+        "c5fcce86e0d72810a2"
+      ],
+      "message": "designator 'R31' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 159.25,
+        "y": 799.61
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "R4",
+      "primitives": [
+        "8b1597b265bc938ca2"
+      ],
+      "message": "designator 'R4' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 120.67,
+        "y": 903.15
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "R5",
+      "primitives": [
+        "889b25a6d880fb8ca2"
+      ],
+      "message": "designator 'R5' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 161.22,
+        "y": 892.13
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "R6",
+      "primitives": [
+        "559735368334f801a2"
+      ],
+      "message": "designator 'R6' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 142.32,
+        "y": 920.87
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "R7",
+      "primitives": [
+        "e15deb1d8c39f842a2"
+      ],
+      "message": "designator 'R7' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 120.67,
+        "y": 924.8
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "R8",
+      "primitives": [
+        "e9efcb64c1c2ad09a2"
+      ],
+      "message": "designator 'R8' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 19.49,
+        "y": 915.75
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "R9",
+      "primitives": [
+        "ffa5d7e7cdfe7bfda2"
+      ],
+      "message": "designator 'R9' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 142.32,
+        "y": 942.52
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "TP1",
+      "primitives": [
+        "b6e79ce885fde532a2"
+      ],
+      "message": "designator 'TP1' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 103.94,
+        "y": 58.46
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "U1",
+      "primitives": [
+        "c8e0ab5b0080ff86a2"
+      ],
+      "message": "designator 'U1' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 130.91,
+        "y": 277.36
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "U10",
+      "primitives": [
+        "dfc76cb6407cdd81a2"
+      ],
+      "message": "designator 'U10' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 73.43,
+        "y": 632.28
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "U11",
+      "primitives": [
+        "a58afe0093ae7de7a2"
+      ],
+      "message": "designator 'U11' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 73.43,
+        "y": 707.09
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "U12",
+      "primitives": [
+        "77bd1229d6a9baf8a2"
+      ],
+      "message": "designator 'U12' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 131.5,
+        "y": 132.28
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "U13",
+      "primitives": [
+        "f4248be9af4dc8aba2"
+      ],
+      "message": "designator 'U13' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 131.5,
+        "y": 214.96
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "U14",
+      "primitives": [
+        "5252ec4b97f2e1dda2"
+      ],
+      "message": "designator 'U14' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 87.99,
+        "y": 463.39
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "U15",
+      "primitives": [
+        "3decae6651870f63a2"
+      ],
+      "message": "designator 'U15' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 48.82,
+        "y": 290.16
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "U2",
+      "primitives": [
+        "c489db83c3ffdfdfa2"
+      ],
+      "message": "designator 'U2' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 90.55,
+        "y": 377.95
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "U3",
+      "primitives": [
+        "e543af78d26c8241a2"
+      ],
+      "message": "designator 'U3' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 90.63,
+        "y": 318.31
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "U4",
+      "primitives": [
+        "1d6034c9636c4e6aa2"
+      ],
+      "message": "designator 'U4' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 117.13,
+        "y": 283.27
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "U5",
+      "primitives": [
+        "38e3101c2eb6ff76a2"
+      ],
+      "message": "designator 'U5' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 143.78,
+        "y": 318.31
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "U6",
+      "primitives": [
+        "52a9930df4fcde16a2"
+      ],
+      "message": "designator 'U6' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 36.42,
+        "y": 306.89
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "U7",
+      "primitives": [
+        "1c582c3050ee4f23a2"
+      ],
+      "message": "designator 'U7' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 131.5,
+        "y": 49.61
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "U8",
+      "primitives": [
+        "bbd64b18f082a0c0a2"
+      ],
+      "message": "designator 'U8' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 90.16,
+        "y": 555.51
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 3,
+      "designator": "U9",
+      "primitives": [
+        "8689cf4fe98e0082a2"
+      ],
+      "message": "designator 'U9' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 76.77,
+        "y": 694.88
+      }
+    },
+    {
+      "type": "silkscreen-flipped",
+      "level": "WARN",
+      "layer": 4,
+      "designator": "Y1",
+      "primitives": [
+        "655f45aeef0106c6a2"
+      ],
+      "message": "designator 'Y1' is rotated 90° (sideways (侧向)) — not upright (放反/朝向不正) [规范 §11.2 位号清晰可辨 — pcb-design-rules.md]",
+      "at": {
+        "x": 54.92,
+        "y": 783.07
+      }
+    },
+    {
+      "type": "decap-too-far",
+      "level": "WARN",
+      "net": "VSYS",
+      "designator": "C10",
+      "message": "decoupling cap C10 sits 153mil (3.9mm) from the nearest VSYS pin U11.5 — a decap must hug its IC (≤100mil / 2.54mm) [规范 §3.1 去耦电容紧贴IC — pcb-design-rules.md]",
+      "at": {
+        "x": 114,
+        "y": 859.8
+      }
+    },
+    {
+      "type": "decap-too-far",
+      "level": "WARN",
+      "net": "VSYS",
+      "designator": "C12",
+      "message": "decoupling cap C12 sits 200mil (5.1mm) from the nearest VSYS pin U11.5 — a decap must hug its IC (≤100mil / 2.54mm) [规范 §3.1 去耦电容紧贴IC — pcb-design-rules.md]",
+      "at": {
+        "x": 19.5,
+        "y": 881.5
+      }
+    },
+    {
+      "type": "decap-too-far",
+      "level": "WARN",
+      "net": "AVDD_QUAL_RC",
+      "designator": "C2",
+      "message": "decoupling cap C2 sits 142mil (3.6mm) from the nearest AVDD_QUAL_RC pin U11.3 — a decap must hug its IC (≤100mil / 2.54mm) [规范 §3.1 去耦电容紧贴IC — pcb-design-rules.md]",
+      "at": {
+        "x": 129.7,
+        "y": 834.3
+      }
+    },
+    {
+      "type": "decap-too-far",
+      "level": "WARN",
+      "net": "AVDD_REQ_FILTER",
+      "designator": "C3",
+      "message": "decoupling cap C3 sits 281mil (7.1mm) from the nearest AVDD_REQ_FILTER pin U13.3 — a decap must hug its IC (≤100mil / 2.54mm) [规范 §3.1 去耦电容紧贴IC — pcb-design-rules.md]",
+      "at": {
+        "x": 86,
+        "y": 471.4
+      }
+    },
+    {
+      "type": "decap-too-far",
+      "level": "WARN",
+      "net": "VSYS",
+      "designator": "C31",
+      "message": "decoupling cap C31 sits 111mil (2.8mm) from the nearest VSYS pin U10.3 — a decap must hug its IC (≤100mil / 2.54mm) [规范 §3.1 去耦电容紧贴IC — pcb-design-rules.md]",
+      "at": {
+        "x": 23.2,
+        "y": 768.5
+      }
+    },
+    {
+      "type": "decap-too-far",
+      "level": "WARN",
+      "net": "AVDD_OPT_BIAS",
+      "designator": "C32",
+      "message": "decoupling cap C32 sits 480mil (12.2mm) from the nearest AVDD_OPT_BIAS pin U6.1 — a decap must hug its IC (≤100mil / 2.54mm) [规范 §3.1 去耦电容紧贴IC — pcb-design-rules.md]",
+      "at": {
+        "x": 92.1,
+        "y": 768.5
+      }
+    },
+    {
+      "type": "decap-too-far",
+      "level": "WARN",
+      "net": "VSYS",
+      "designator": "C5",
+      "message": "decoupling cap C5 sits 131mil (3.3mm) from the nearest VSYS pin U11.5 — a decap must hug its IC (≤100mil / 2.54mm) [规范 §3.1 去耦电容紧贴IC — pcb-design-rules.md]",
+      "at": {
+        "x": 114,
+        "y": 838.2
+      }
+    },
+    {
+      "type": "decap-too-far",
+      "level": "WARN",
+      "net": "VSYS",
+      "designator": "C8",
+      "message": "decoupling cap C8 sits 181mil (4.6mm) from the nearest VSYS pin U11.5 — a decap must hug its IC (≤100mil / 2.54mm) [规范 §3.1 去耦电容紧贴IC — pcb-design-rules.md]",
+      "at": {
+        "x": 19.5,
+        "y": 859.8
+      }
+    },
+    {
+      "type": "decap-too-far",
+      "level": "WARN",
+      "net": "VSYS",
+      "designator": "C9",
+      "message": "decoupling cap C9 sits 161mil (4.1mm) from the nearest VSYS pin U11.5 — a decap must hug its IC (≤100mil / 2.54mm) [规范 §3.1 去耦电容紧贴IC — pcb-design-rules.md]",
+      "at": {
+        "x": 66.7,
+        "y": 859.8
+      }
+    },
+    {
+      "type": "via-in-pad",
+      "level": "WARN",
+      "net": "GND",
+      "designator": "MK2",
+      "primitives": [
+        "d66a84af7c151bc9"
+      ],
+      "message": "via sits ON pad MK2.5 (net GND) — solder wicks down the barrel; offset the via and enter with a short stub (dog-bone) [规范 §2.3 禁止过孔打在焊盘上 — pcb-design-rules.md]",
+      "at": {
+        "x": 46.11,
+        "y": 894.88
+      }
+    },
+    {
+      "type": "via-in-pad",
+      "level": "WARN",
+      "net": "GND",
+      "designator": "MK2",
+      "primitives": [
+        "3ee8ab886f357cc2"
+      ],
+      "message": "via sits ON pad MK2.5 (net GND) — solder wicks down the barrel; offset the via and enter with a short stub (dog-bone) [规范 §2.3 禁止过孔打在焊盘上 — pcb-design-rules.md]",
+      "at": {
+        "x": 87.13,
+        "y": 896.19
+      }
+    },
+    {
+      "type": "via-in-pad",
+      "level": "WARN",
+      "net": "GND",
+      "designator": "R9",
+      "primitives": [
+        "6a6db1dc889f416a"
+      ],
+      "message": "via sits ON pad R9.2 (net GND) — solder wicks down the barrel; offset the via and enter with a short stub (dog-bone) [规范 §2.3 禁止过孔打在焊盘上 — pcb-design-rules.md]",
+      "at": {
+        "x": 146.75,
+        "y": 946.5
+      }
+    },
+    {
+      "type": "via-in-pad",
+      "level": "WARN",
+      "net": "GND",
+      "designator": "U4",
+      "primitives": [
+        "584b5375092b5e50"
+      ],
+      "message": "via sits ON pad U4.2 (net GND) — solder wicks down the barrel; offset the via and enter with a short stub (dog-bone) [规范 §2.3 禁止过孔打在焊盘上 — pcb-design-rules.md]",
+      "at": {
+        "x": 93.49,
+        "y": 275.3
+      }
+    },
+    {
+      "type": "via-in-pad",
+      "level": "WARN",
+      "net": "GND",
+      "designator": "U6",
+      "primitives": [
+        "7a9a00092f252d56"
+      ],
+      "message": "via sits ON pad U6.5 (net GND) — solder wicks down the barrel; offset the via and enter with a short stub (dog-bone) [规范 §2.3 禁止过孔打在焊盘上 — pcb-design-rules.md]",
+      "at": {
+        "x": 42.7,
+        "y": 290.2
+      }
+    },
+    {
+      "type": "via-in-pad",
+      "level": "WARN",
+      "net": "GND",
+      "designator": "U2",
+      "primitives": [
+        "d6e5bb9e76d289c7"
+      ],
+      "message": "via sits ON pad U2.E2 (net GND) — solder wicks down the barrel; offset the via and enter with a short stub (dog-bone) [规范 §2.3 禁止过孔打在焊盘上 — pcb-design-rules.md]",
+      "at": {
+        "x": 74.8,
+        "y": 354.3
+      }
+    },
+    {
+      "type": "via-in-pad",
+      "level": "WARN",
+      "net": "GND",
+      "designator": "U2",
+      "primitives": [
+        "8a2b07870a0e0ccd"
+      ],
+      "message": "via sits ON pad U2.B4 (net GND) — solder wicks down the barrel; offset the via and enter with a short stub (dog-bone) [规范 §2.3 禁止过孔打在焊盘上 — pcb-design-rules.md]",
+      "at": {
+        "x": 106.3,
+        "y": 401.6
+      }
+    },
+    {
+      "type": "via-in-pad",
+      "level": "WARN",
+      "net": "GND",
+      "designator": "U5",
+      "primitives": [
+        "b288a4698f8901fc"
+      ],
+      "message": "via sits ON pad U5.2 (net GND) — solder wicks down the barrel; offset the via and enter with a short stub (dog-bone) [规范 §2.3 禁止过孔打在焊盘上 — pcb-design-rules.md]",
+      "at": {
+        "x": 117,
+        "y": 312
+      }
+    },
+    {
+      "type": "fiducial-missing",
+      "level": "INFO",
+      "message": "board has 188 top-layer pads (SMT-scale) but only 1 fiducial(s) (FID*/MARK*) — SMT wants ≥3 non-collinear 1mm marks (JLC panel rails add their own; local marks needed for fine-pitch) [规范 §9 Mark点设计 — pcb-design-rules.md]"
+    },
+    {
+      "type": "clearance",
+      "level": "ERROR",
+      "net": "FPGA_CRESET_B",
+      "layer": 16,
+      "primitives": [
+        "2a557a8fcb3c4cc7",
+        "887a0eee3522b2a1"
+      ],
+      "message": "track (net FPGA_CRESET_B) runs 3.1mil from via (net GND) — under the 6mil spacing rule [规范 §1.1 最小间距 — pcb-design-rules.md]",
+      "at": {
+        "x": 55.57,
+        "y": 259.28
+      }
+    },
+    {
+      "type": "clearance",
+      "level": "ERROR",
+      "net": "FPGA_CRESET_B",
+      "layer": 16,
+      "primitives": [
+        "2a557a8fcb3c4cc7",
+        "7a9a00092f252d56"
+      ],
+      "message": "track (net FPGA_CRESET_B) runs 0.0mil from via (net GND) — under the 6mil spacing rule [规范 §1.1 最小间距 — pcb-design-rules.md]",
+      "at": {
+        "x": 42.7,
+        "y": 290.2
+      }
+    },
+    {
+      "type": "clearance",
+      "level": "ERROR",
+      "net": "FPGA_CRESET_B",
+      "layer": 16,
+      "primitives": [
+        "2a557a8fcb3c4cc7",
+        "653f9e9012c3d570"
+      ],
+      "message": "track (net FPGA_CRESET_B) runs 0.0mil from via (net GND) — under the 6mil spacing rule [规范 §1.1 最小间距 — pcb-design-rules.md]",
+      "at": {
+        "x": 52.38,
+        "y": 366
+      }
+    },
+    {
+      "type": "clearance",
+      "level": "ERROR",
+      "net": "FPGA_CRESET_B",
+      "layer": 16,
+      "primitives": [
+        "2800dfef901e4064",
+        "7d3455ccc292f592"
+      ],
+      "message": "track (net FPGA_CRESET_B) runs 0.0mil from via (net GND) — under the 6mil spacing rule [规范 §1.1 最小间距 — pcb-design-rules.md]",
+      "at": {
+        "x": 52.48,
+        "y": 544.16
+      }
+    },
+    {
+      "type": "clearance",
+      "level": "ERROR",
+      "net": "FPGA_CDONE_VSYNC_N",
+      "layer": 2,
+      "primitives": [
+        "94b6a35a08a1a407",
+        "7d3455ccc292f592"
+      ],
+      "message": "track (net FPGA_CDONE_VSYNC_N) runs 0.2mil from via (net GND) — under the 6mil spacing rule [规范 §1.1 最小间距 — pcb-design-rules.md]",
+      "at": {
+        "x": 52.48,
+        "y": 544.16
+      }
+    },
+    {
+      "type": "clearance",
+      "level": "ERROR",
+      "net": "FPGA_CDONE_VSYNC_N",
+      "layer": 2,
+      "primitives": [
+        "711cfbf45b5b76ad",
+        "7d3455ccc292f592"
+      ],
+      "message": "track (net FPGA_CDONE_VSYNC_N) runs 0.2mil from via (net GND) — under the 6mil spacing rule [规范 §1.1 最小间距 — pcb-design-rules.md]",
+      "at": {
+        "x": 52.48,
+        "y": 544.16
+      }
+    },
+    {
+      "type": "clearance",
+      "level": "ERROR",
+      "net": "FPGA_CDONE_VSYNC_N",
+      "layer": 2,
+      "primitives": [
+        "127ad27b7fce582d",
+        "7d3455ccc292f592"
+      ],
+      "message": "track (net FPGA_CDONE_VSYNC_N) runs 0.0mil from via (net GND) — under the 6mil spacing rule [规范 §1.1 最小间距 — pcb-design-rules.md]",
+      "at": {
+        "x": 52.48,
+        "y": 544.16
+      }
+    },
+    {
+      "type": "clearance",
+      "level": "ERROR",
+      "net": "FPGA_CDONE_VSYNC_N",
+      "layer": 2,
+      "primitives": [
+        "bc04b31aeda6435a",
+        "7d3455ccc292f592"
+      ],
+      "message": "track (net FPGA_CDONE_VSYNC_N) runs 0.0mil from via (net GND) — under the 6mil spacing rule [规范 §1.1 最小间距 — pcb-design-rules.md]",
+      "at": {
+        "x": 52.48,
+        "y": 544.16
+      }
+    },
+    {
+      "type": "clearance",
+      "level": "ERROR",
+      "net": "FPGA_CDONE_VSYNC_N",
+      "layer": 2,
+      "primitives": [
+        "e5525a880aa9687c",
+        "7d3455ccc292f592"
+      ],
+      "message": "track (net FPGA_CDONE_VSYNC_N) runs 1.4mil from via (net GND) — under the 6mil spacing rule [规范 §1.1 最小间距 — pcb-design-rules.md]",
+      "at": {
+        "x": 52.48,
+        "y": 544.16
+      }
+    },
+    {
+      "type": "clearance",
+      "level": "ERROR",
+      "net": "FPGA_CDONE_VSYNC_N",
+      "layer": 2,
+      "primitives": [
+        "09e897abca994d95",
+        "7d3455ccc292f592"
+      ],
+      "message": "track (net FPGA_CDONE_VSYNC_N) runs 1.4mil from via (net GND) — under the 6mil spacing rule [规范 §1.1 最小间距 — pcb-design-rules.md]",
+      "at": {
+        "x": 52.48,
+        "y": 544.16
+      }
+    },
+    {
+      "type": "clearance",
+      "level": "ERROR",
+      "net": "FPGA_CDONE_VSYNC_N",
+      "layer": 2,
+      "primitives": [
+        "aab0a28a8347c0b3",
+        "7d3455ccc292f592"
+      ],
+      "message": "track (net FPGA_CDONE_VSYNC_N) runs 3.3mil from via (net GND) — under the 6mil spacing rule [规范 §1.1 最小间距 — pcb-design-rules.md]",
+      "at": {
+        "x": 52.48,
+        "y": 544.16
+      }
+    },
+    {
+      "type": "clearance",
+      "level": "ERROR",
+      "net": "FPGA_CDONE_VSYNC_N",
+      "layer": 2,
+      "primitives": [
+        "f7ebd135c25ef3c4",
+        "7d3455ccc292f592"
+      ],
+      "message": "track (net FPGA_CDONE_VSYNC_N) runs 3.5mil from via (net GND) — under the 6mil spacing rule [规范 §1.1 最小间距 — pcb-design-rules.md]",
+      "at": {
+        "x": 52.48,
+        "y": 544.16
+      }
+    },
+    {
+      "type": "clearance",
+      "level": "ERROR",
+      "net": "OPT_CS_N_L",
+      "layer": 1,
+      "primitives": [
+        "3d1f69863b3d54d9",
+        "edbb1e25173edee5"
+      ],
+      "message": "track (net OPT_CS_N_L) runs 0.0mil from via (net GND) — under the 6mil spacing rule [规范 §1.1 最小间距 — pcb-design-rules.md]",
+      "at": {
+        "x": 51,
+        "y": 108.3
+      }
+    },
+    {
+      "type": "clearance",
+      "level": "ERROR",
+      "net": "OPT_CS_N_L",
+      "layer": 1,
+      "primitives": [
+        "a0bc7293001f6df2",
+        "edbb1e25173edee5"
+      ],
+      "message": "track (net OPT_CS_N_L) runs 1.1mil from via (net GND) — under the 6mil spacing rule [规范 §1.1 最小间距 — pcb-design-rules.md]",
+      "at": {
+        "x": 51,
+        "y": 108.3
+      }
+    },
+    {
+      "type": "clearance",
+      "level": "ERROR",
+      "net": "opt_l_qdo3_PANEL",
+      "layer": 1,
+      "primitives": [
+        "69cceb5374d1f0b2",
+        "a72d849708c0d56e"
+      ],
+      "message": "track (net opt_l_qdo3_PANEL) runs 5.5mil from via (net GND) — under the 6mil spacing rule [规范 §1.1 最小间距 — pcb-design-rules.md]",
+      "at": {
+        "x": 126,
+        "y": 212
+      }
+    },
+    {
+      "type": "clearance",
+      "level": "ERROR",
+      "net": "opt_r_qdo1_PANEL",
+      "layer": 1,
+      "primitives": [
+        "dbf8dcc1258d941d",
+        "6282eae36a39e1eb"
+      ],
+      "message": "track (net opt_r_qdo1_PANEL) runs 4.8mil from via (net GND) — under the 6mil spacing rule [规范 §1.1 最小间距 — pcb-design-rules.md]",
+      "at": {
+        "x": 86,
+        "y": 511.6
+      }
+    },
+    {
+      "type": "clearance",
+      "level": "ERROR",
+      "net": "AVDD_QUAL_CLR_N",
+      "layer": 17,
+      "primitives": [
+        "316b5453f4801351",
+        "e5ebf1dd9fbc84a4"
+      ],
+      "message": "track (net AVDD_QUAL_CLR_N) runs 0.0mil from via (net GND) — under the 6mil spacing rule [规范 §1.1 最小间距 — pcb-design-rules.md]",
+      "at": {
+        "x": 109.73,
+        "y": 645.39
+      }
+    },
+    {
+      "type": "clearance",
+      "level": "ERROR",
+      "net": "AVDD_D3_VSYS",
+      "layer": 16,
+      "primitives": [
+        "23f35836d297c54f",
+        "e5ebf1dd9fbc84a4"
+      ],
+      "message": "track (net AVDD_D3_VSYS) runs 5.8mil from via (net GND) — under the 6mil spacing rule [规范 §1.1 最小间距 — pcb-design-rules.md]",
+      "at": {
+        "x": 109.73,
+        "y": 645.39
+      }
+    },
+    {
+      "type": "clearance",
+      "level": "ERROR",
+      "net": "AVDD_D3_VSYS",
+      "layer": 16,
+      "primitives": [
+        "23f35836d297c54f",
+        "6c76674ee2ac3b22"
+      ],
+      "message": "track (net AVDD_D3_VSYS) runs 0.0mil from via (net GND) — under the 6mil spacing rule [规范 §1.1 最小间距 — pcb-design-rules.md]",
+      "at": {
+        "x": 128,
+        "y": 644
+      }
+    },
+    {
+      "type": "clearance",
+      "level": "ERROR",
+      "net": "AVDD_D3_VSYS",
+      "layer": 2,
+      "primitives": [
+        "781cd7db3965bb13",
+        "6df04d0016b6e8f7"
+      ],
+      "message": "track (net AVDD_D3_VSYS) runs 0.6mil from via (net GND) — under the 6mil spacing rule [规范 §1.1 最小间距 — pcb-design-rules.md]",
+      "at": {
+        "x": 129.1,
+        "y": 551.8
+      }
+    },
+    {
+      "type": "clearance",
+      "level": "ERROR",
+      "net": "AVDD_D3_VSYS",
+      "layer": 2,
+      "primitives": [
+        "42d68e3665ede3c3",
+        "6df04d0016b6e8f7"
+      ],
+      "message": "track (net AVDD_D3_VSYS) runs 0.0mil from via (net GND) — under the 6mil spacing rule [规范 §1.1 最小间距 — pcb-design-rules.md]",
+      "at": {
+        "x": 129.1,
+        "y": 551.8
+      }
+    },
+    {
+      "type": "clearance",
+      "level": "ERROR",
+      "net": "AVDD_D3_VSYS",
+      "layer": 2,
+      "primitives": [
+        "303976ee33fe18ac",
+        "6df04d0016b6e8f7"
+      ],
+      "message": "track (net AVDD_D3_VSYS) runs 2.7mil from via (net GND) — under the 6mil spacing rule [规范 §1.1 最小间距 — pcb-design-rules.md]",
+      "at": {
+        "x": 129.1,
+        "y": 551.8
+      }
+    },
+    {
+      "type": "clearance",
+      "level": "ERROR",
+      "net": "1V2_FPGA_CORE",
+      "layer": 1,
+      "primitives": [
+        "83ba42190368a1ba",
+        "653f9e9012c3d570"
+      ],
+      "message": "track (net 1V2_FPGA_CORE) runs 5.1mil from via (net GND) — under the 6mil spacing rule [规范 §1.1 最小间距 — pcb-design-rules.md]",
+      "at": {
+        "x": 52.38,
+        "y": 366
+      }
+    },
+    {
+      "type": "clearance",
+      "level": "ERROR",
+      "net": "1V2_FPGA_CORE",
+      "layer": 1,
+      "primitives": [
+        "e369fce419d8c8b4",
+        "653f9e9012c3d570"
+      ],
+      "message": "track (net 1V2_FPGA_CORE) runs 0.0mil from via (net GND) — under the 6mil spacing rule [规范 §1.1 最小间距 — pcb-design-rules.md]",
+      "at": {
+        "x": 52.38,
+        "y": 366
+      }
+    },
+    {
+      "type": "clearance",
+      "level": "ERROR",
+      "net": "1V2_FPGA_CORE",
+      "layer": 1,
+      "primitives": [
+        "01308d8e4dfe07c5",
+        "890f67b8c5232ab4"
+      ],
+      "message": "track (net 1V2_FPGA_CORE) runs 5.1mil from via (net GND) — under the 6mil spacing rule [规范 §1.1 最小间距 — pcb-design-rules.md]",
+      "at": {
+        "x": 26.4,
+        "y": 398.41
+      }
+    },
+    {
+      "type": "clearance",
+      "level": "ERROR",
+      "net": "1V2_FPGA_CORE",
+      "layer": 1,
+      "primitives": [
+        "5d4117610276137b",
+        "890f67b8c5232ab4"
+      ],
+      "message": "track (net 1V2_FPGA_CORE) runs 0.0mil from via (net GND) — under the 6mil spacing rule [规范 §1.1 最小间距 — pcb-design-rules.md]",
+      "at": {
+        "x": 26.4,
+        "y": 398.41
+      }
+    },
+    {
+      "type": "clearance",
+      "level": "ERROR",
+      "net": "1V8_FPGA_IO",
+      "layer": 2,
+      "primitives": [
+        "c7ec0b9c231484aa",
+        "f10ad1d77ccd6d28"
+      ],
+      "message": "track (net 1V8_FPGA_IO) runs 2.8mil from via (net GND) — under the 6mil spacing rule [规范 §1.1 最小间距 — pcb-design-rules.md]",
+      "at": {
+        "x": 160.5,
+        "y": 582.7
+      }
+    },
+    {
+      "type": "clearance",
+      "level": "ERROR",
+      "net": "VSYS",
+      "layer": 2,
+      "primitives": [
+        "32804e1f79551b77",
+        "9cce57f15e1e0954"
+      ],
+      "message": "track (net VSYS) runs 0.0mil from via (net GND) — under the 6mil spacing rule [规范 §1.1 最小间距 — pcb-design-rules.md]",
+      "at": {
+        "x": 40.34,
+        "y": 48.67
+      }
+    },
+    {
+      "type": "clearance",
+      "level": "ERROR",
+      "net": "1V2_FPGA_CORE",
+      "layer": 1,
+      "designator": "U4",
+      "primitives": [
+        "f85579b4f8b2c2b6"
+      ],
+      "message": "track (net 1V2_FPGA_CORE) runs 2.6mil from pad U4.5 (net GND) — under the 6mil spacing rule [规范 §1.1 最小间距 — pcb-design-rules.md]",
+      "at": {
+        "x": 117.1,
+        "y": 283.3
+      }
+    },
+    {
+      "type": "clearance",
+      "level": "ERROR",
+      "net": "1V2_FPGA_CORE",
+      "layer": 1,
+      "designator": "U4",
+      "primitives": [
+        "f90c46ed8a3deb1c"
+      ],
+      "message": "track (net 1V2_FPGA_CORE) runs 1.8mil from pad U4.5 (net GND) — under the 6mil spacing rule [规范 §1.1 最小间距 — pcb-design-rules.md]",
+      "at": {
+        "x": 117.1,
+        "y": 283.3
+      }
+    },
+    {
+      "type": "clearance",
+      "level": "ERROR",
+      "net": "1V2_FPGA_CORE",
+      "layer": 1,
+      "designator": "U4",
+      "primitives": [
+        "d29a8f9a7b763d4c"
+      ],
+      "message": "track (net 1V2_FPGA_CORE) runs 1.8mil from pad U4.5 (net GND) — under the 6mil spacing rule [规范 §1.1 最小间距 — pcb-design-rules.md]",
+      "at": {
+        "x": 117.1,
+        "y": 283.3
+      }
+    },
+    {
+      "type": "clearance",
+      "level": "ERROR",
+      "net": "VSYS",
+      "layer": 1,
+      "primitives": [
+        "f107eac6f32289c0",
+        "b08842b31aa45cf3"
+      ],
+      "message": "track (net VSYS) runs 0.0mil from via (net GND) — under the 6mil spacing rule [规范 §1.1 最小间距 — pcb-design-rules.md]",
+      "at": {
+        "x": 156.31,
+        "y": 955.88
+      }
+    },
+    {
+      "type": "clearance",
+      "level": "ERROR",
+      "net": "VSYS",
+      "layer": 1,
+      "primitives": [
+        "59709a5d9c7c9c3c",
+        "b08842b31aa45cf3"
+      ],
+      "message": "track (net VSYS) runs 0.0mil from via (net GND) — under the 6mil spacing rule [规范 §1.1 最小间距 — pcb-design-rules.md]",
+      "at": {
+        "x": 156.31,
+        "y": 955.88
+      }
+    },
+    {
+      "type": "clearance",
+      "level": "ERROR",
+      "net": "VSYS",
+      "layer": 1,
+      "primitives": [
+        "84a0838759cad068",
+        "b08842b31aa45cf3"
+      ],
+      "message": "track (net VSYS) runs 1.8mil from via (net GND) — under the 6mil spacing rule [规范 §1.1 最小间距 — pcb-design-rules.md]",
+      "at": {
+        "x": 156.31,
+        "y": 955.88
+      }
+    },
+    {
+      "type": "clearance",
+      "level": "ERROR",
+      "net": "VSYS",
+      "layer": 1,
+      "designator": "U4",
+      "primitives": [
+        "a6a735d912bc8559"
+      ],
+      "message": "track (net VSYS) runs 3.6mil from pad U4.5 (net GND) — under the 6mil spacing rule [规范 §1.1 最小间距 — pcb-design-rules.md]",
+      "at": {
+        "x": 117.1,
+        "y": 283.3
+      }
+    },
+    {
+      "type": "clearance",
+      "level": "ERROR",
+      "net": "VSYS",
+      "layer": 1,
+      "designator": "U4",
+      "primitives": [
+        "70c53330c30f14b5"
+      ],
+      "message": "track (net VSYS) runs 3.6mil from pad U4.5 (net GND) — under the 6mil spacing rule [规范 §1.1 最小间距 — pcb-design-rules.md]",
+      "at": {
+        "x": 117.1,
+        "y": 283.3
+      }
+    },
+    {
+      "type": "clearance",
+      "level": "ERROR",
+      "net": "VSYS",
+      "layer": 2,
+      "primitives": [
+        "300b08a8ea409e7f",
+        "8a2b07870a0e0ccd"
+      ],
+      "message": "track (net VSYS) runs 0.0mil from via (net GND) — under the 6mil spacing rule [规范 §1.1 最小间距 — pcb-design-rules.md]",
+      "at": {
+        "x": 106.3,
+        "y": 401.6
+      }
+    },
+    {
+      "type": "clearance",
+      "level": "ERROR",
+      "net": "VSYS",
+      "layer": 2,
+      "primitives": [
+        "c70c23465d102e6f",
+        "8a2b07870a0e0ccd"
+      ],
+      "message": "track (net VSYS) runs 5.7mil from via (net GND) — under the 6mil spacing rule [规范 §1.1 最小间距 — pcb-design-rules.md]",
+      "at": {
+        "x": 106.3,
+        "y": 401.6
+      }
+    },
+    {
+      "type": "clearance",
+      "level": "ERROR",
+      "net": "VSYS",
+      "layer": 2,
+      "primitives": [
+        "ab11a2e0feff52b1",
+        "f1e6bafdeb6091fd"
+      ],
+      "message": "track (net VSYS) runs 2.5mil from via (net GND) — under the 6mil spacing rule [规范 §1.1 最小间距 — pcb-design-rules.md]",
+      "at": {
+        "x": 111.64,
+        "y": 433.89
+      }
+    },
+    {
+      "type": "clearance",
+      "level": "ERROR",
+      "net": "VSYS",
+      "layer": 2,
+      "primitives": [
+        "6034198cebbe1d54",
+        "de3daf8ccb0beac2"
+      ],
+      "message": "track (net VSYS) runs 0.0mil from via (net GND) — under the 6mil spacing rule [规范 §1.1 最小间距 — pcb-design-rules.md]",
+      "at": {
+        "x": 115.8,
+        "y": 156.28
+      }
+    },
+    {
+      "type": "clearance",
+      "level": "ERROR",
+      "message": "+57 more clearance violation(s) not listed (capped at 40) — run `pcb drc` for the full set"
+    },
+    {
+      "type": "via-crosses-plane",
+      "level": "INFO",
+      "layer": 15,
+      "message": "inner PLANE Inner1 has no net-bound pour visible — plane net unknown; NOTE (#110): after `doc reload` PLANE-layer pours are invisible to pcb.pour.list, so this may be a false positive — treat `pcb drc` Connection=0 as the arbiter before adding any pour; if the plane is genuinely empty, pour the net while the layer is still SIGNAL, then flip to PLANE and pour-rebuild (`pcb power-planes` does this)"
+    },
+    {
+      "type": "via-crosses-plane",
+      "level": "INFO",
+      "layer": 18,
+      "message": "inner PLANE Inner4 has no net-bound pour visible — plane net unknown; NOTE (#110): after `doc reload` PLANE-layer pours are invisible to pcb.pour.list, so this may be a false positive — treat `pcb drc` Connection=0 as the arbiter before adding any pour; if the plane is genuinely empty, pour the net while the layer is still SIGNAL, then flip to PLANE and pour-rebuild (`pcb power-planes` does this)"
+    },
+    {
+      "type": "power-not-poured",
+      "level": "WARN",
+      "net": "AVDD_CRESET_VSYS",
+      "message": "power net AVDD_CRESET_VSYS (3 pads) has no copper pour/plane — power should be poured, not carried by thin tracks: `pcb pour-fit --net AVDD_CRESET_VSYS` (2-layer) or `pcb power-planes` (4-layer) [规范 §5.2 铺铜策略 — pcb-design-rules.md]"
+    },
+    {
+      "type": "power-not-poured",
+      "level": "WARN",
+      "net": "AVDD_D3_VSYS",
+      "message": "power net AVDD_D3_VSYS (5 pads) has no copper pour/plane — power should be poured, not carried by thin tracks: `pcb pour-fit --net AVDD_D3_VSYS` (2-layer) or `pcb power-planes` (4-layer) [规范 §5.2 铺铜策略 — pcb-design-rules.md]"
+    },
+    {
+      "type": "power-not-poured",
+      "level": "WARN",
+      "net": "AVDD_OPT_BIAS",
+      "message": "power net AVDD_OPT_BIAS (7 pads) has no copper pour/plane — power should be poured, not carried by thin tracks: `pcb pour-fit --net AVDD_OPT_BIAS` (2-layer) or `pcb power-planes` (4-layer) [规范 §5.2 铺铜策略 — pcb-design-rules.md]"
+    },
+    {
+      "type": "power-not-poured",
+      "level": "WARN",
+      "net": "AVDD_PG_NODE",
+      "message": "power net AVDD_PG_NODE (5 pads) has no copper pour/plane — power should be poured, not carried by thin tracks: `pcb pour-fit --net AVDD_PG_NODE` (2-layer) or `pcb power-planes` (4-layer) [规范 §5.2 铺铜策略 — pcb-design-rules.md]"
+    },
+    {
+      "type": "power-not-poured",
+      "level": "WARN",
+      "net": "AVDD_PG_OK",
+      "message": "power net AVDD_PG_OK (3 pads) has no copper pour/plane — power should be poured, not carried by thin tracks: `pcb pour-fit --net AVDD_PG_OK` (2-layer) or `pcb power-planes` (4-layer) [规范 §5.2 铺铜策略 — pcb-design-rules.md]"
+    },
+    {
+      "type": "power-not-poured",
+      "level": "WARN",
+      "net": "AVDD_PULSE_QUAL",
+      "message": "power net AVDD_PULSE_QUAL (3 pads) has no copper pour/plane — power should be poured, not carried by thin tracks: `pcb pour-fit --net AVDD_PULSE_QUAL` (2-layer) or `pcb power-planes` (4-layer) [规范 §5.2 铺铜策略 — pcb-design-rules.md]"
+    },
+    {
+      "type": "power-not-poured",
+      "level": "WARN",
+      "net": "AVDD_QUAL_CLR_N",
+      "message": "power net AVDD_QUAL_CLR_N (3 pads) has no copper pour/plane — power should be poured, not carried by thin tracks: `pcb pour-fit --net AVDD_QUAL_CLR_N` (2-layer) or `pcb power-planes` (4-layer) [规范 §5.2 铺铜策略 — pcb-design-rules.md]"
+    },
+    {
+      "type": "power-not-poured",
+      "level": "WARN",
+      "net": "AVDD_QUAL_RC",
+      "message": "power net AVDD_QUAL_RC (5 pads) has no copper pour/plane — power should be poured, not carried by thin tracks: `pcb pour-fit --net AVDD_QUAL_RC` (2-layer) or `pcb power-planes` (4-layer) [规范 §5.2 铺铜策略 — pcb-design-rules.md]"
+    },
+    {
+      "type": "power-not-poured",
+      "level": "WARN",
+      "net": "AVDD_REQ_FILTER",
+      "message": "power net AVDD_REQ_FILTER (3 pads) has no copper pour/plane — power should be poured, not carried by thin tracks: `pcb pour-fit --net AVDD_REQ_FILTER` (2-layer) or `pcb power-planes` (4-layer) [规范 §5.2 铺铜策略 — pcb-design-rules.md]"
+    },
+    {
+      "type": "power-not-poured",
+      "level": "WARN",
+      "net": "AVDD_WD_DIV",
+      "message": "power net AVDD_WD_DIV (3 pads) has no copper pour/plane — power should be poured, not carried by thin tracks: `pcb pour-fit --net AVDD_WD_DIV` (2-layer) or `pcb power-planes` (4-layer) [规范 §5.2 铺铜策略 — pcb-design-rules.md]"
+    },
+    {
+      "type": "power-not-poured",
+      "level": "WARN",
+      "net": "AVDD_WD_Q",
+      "message": "power net AVDD_WD_Q (5 pads) has no copper pour/plane — power should be poured, not carried by thin tracks: `pcb pour-fit --net AVDD_WD_Q` (2-layer) or `pcb power-planes` (4-layer) [规范 §5.2 铺铜策略 — pcb-design-rules.md]"
+    },
+    {
+      "type": "power-not-poured",
+      "level": "WARN",
+      "net": "AVDD_WD_SET",
+      "message": "power net AVDD_WD_SET (2 pads) has no copper pour/plane — power should be poured, not carried by thin tracks: `pcb pour-fit --net AVDD_WD_SET` (2-layer) or `pcb power-planes` (4-layer) [规范 §5.2 铺铜策略 — pcb-design-rules.md]"
+    },
+    {
+      "type": "power-not-poured",
+      "level": "INFO",
+      "net": "GND",
+      "message": "power net GND (79 pads) has no VISIBLE pour — but the board carries 2 inner PLANE layer(s) with unknown net: PLANE-layer pours are invisible to pcb.pour.list after a doc reload (#110), so this is most likely that pour; treat `pcb drc` Connection=0 as the arbiter — do NOT re-run `pcb power-planes` just to clear this finding (#117)"
+    },
+    {
+      "type": "power-not-poured",
+      "level": "WARN",
+      "net": "OPT_AVDD_EN",
+      "message": "power net OPT_AVDD_EN (7 pads) has no copper pour/plane — power should be poured, not carried by thin tracks: `pcb pour-fit --net OPT_AVDD_EN` (2-layer) or `pcb power-planes` (4-layer) [规范 §5.2 铺铜策略 — pcb-design-rules.md]"
+    },
+    {
+      "type": "power-not-poured",
+      "level": "WARN",
+      "net": "VSYS",
+      "message": "power net VSYS (35 pads) has no copper pour/plane — power should be poured, not carried by thin tracks: `pcb pour-fit --net VSYS` (2-layer) or `pcb power-planes` (4-layer) [规范 §5.2 铺铜策略 — pcb-design-rules.md]"
+    }
+  ],
+  "limitations": [
+    "pad MK2.5: POLYGON pad geometry is not supported by pcb net-path",
+    "pad U1.3: POLYGON pad geometry is not supported by pcb net-path",
+    "pad U1.2: POLYGON pad geometry is not supported by pcb net-path",
+    "pad U1.1: POLYGON pad geometry is not supported by pcb net-path",
+    "pad U1.4: POLYGON pad geometry is not supported by pcb net-path",
+    "pad U4.3: POLYGON pad geometry is not supported by pcb net-path",
+    "pad U4.2: POLYGON pad geometry is not supported by pcb net-path",
+    "pad U4.1: POLYGON pad geometry is not supported by pcb net-path",
+    "pad U4.4: POLYGON pad geometry is not supported by pcb net-path",
+    "pad U6.3: POLYGON pad geometry is not supported by pcb net-path",
+    "pad U6.2: POLYGON pad geometry is not supported by pcb net-path",
+    "pad U6.1: POLYGON pad geometry is not supported by pcb net-path",
+    "pad U6.4: POLYGON pad geometry is not supported by pcb net-path",
+    "16 pad(s) have captured source shapes unsupported by exact pad-contact inspection"
+  ],
+  "incomplete": true,
+  "coverage": {
+    "complete": false,
+    "componentsInventoryKnown": true,
+    "padsInventoryKnown": true,
+    "componentCount": 86,
+    "totalPads": 328,
+    "knownGeometryPads": 312,
+    "unsupportedGeometryPads": 16,
+    "unknownGeometryPads": 0,
+    "legacyGeometryPads": 0,
+    "unverifiedPads": [
+      {
+        "componentPrimitiveId": "3571daebd6374c67",
+        "designator": "MK2",
+        "primitiveId": "3571daebd6374c67e14",
+        "padNumber": "5",
+        "status": "unsupported",
+        "reason": "POLYGON pad geometry is not supported by pcb net-path"
+      },
+      {
+        "componentPrimitiveId": "3571daebd6374c67",
+        "designator": "MK2",
+        "primitiveId": "3571daebd6374c67e15",
+        "padNumber": "5",
+        "status": "unsupported",
+        "reason": "POLYGON pad geometry is not supported by pcb net-path"
+      },
+      {
+        "componentPrimitiveId": "3571daebd6374c67",
+        "designator": "MK2",
+        "primitiveId": "3571daebd6374c67e16",
+        "padNumber": "5",
+        "status": "unsupported",
+        "reason": "POLYGON pad geometry is not supported by pcb net-path"
+      },
+      {
+        "componentPrimitiveId": "3571daebd6374c67",
+        "designator": "MK2",
+        "primitiveId": "3571daebd6374c67e17",
+        "padNumber": "5",
+        "status": "unsupported",
+        "reason": "POLYGON pad geometry is not supported by pcb net-path"
+      },
+      {
+        "componentPrimitiveId": "c8e0ab5b0080ff86",
+        "designator": "U1",
+        "primitiveId": "c8e0ab5b0080ff86e11",
+        "padNumber": "3",
+        "status": "unsupported",
+        "reason": "POLYGON pad geometry is not supported by pcb net-path"
+      },
+      {
+        "componentPrimitiveId": "c8e0ab5b0080ff86",
+        "designator": "U1",
+        "primitiveId": "c8e0ab5b0080ff86e12",
+        "padNumber": "2",
+        "status": "unsupported",
+        "reason": "POLYGON pad geometry is not supported by pcb net-path"
+      },
+      {
+        "componentPrimitiveId": "c8e0ab5b0080ff86",
+        "designator": "U1",
+        "primitiveId": "c8e0ab5b0080ff86e13",
+        "padNumber": "1",
+        "status": "unsupported",
+        "reason": "POLYGON pad geometry is not supported by pcb net-path"
+      },
+      {
+        "componentPrimitiveId": "c8e0ab5b0080ff86",
+        "designator": "U1",
+        "primitiveId": "c8e0ab5b0080ff86e14",
+        "padNumber": "4",
+        "status": "unsupported",
+        "reason": "POLYGON pad geometry is not supported by pcb net-path"
+      },
+      {
+        "componentPrimitiveId": "1d6034c9636c4e6a",
+        "designator": "U4",
+        "primitiveId": "1d6034c9636c4e6ae11",
+        "padNumber": "3",
+        "status": "unsupported",
+        "reason": "POLYGON pad geometry is not supported by pcb net-path"
+      },
+      {
+        "componentPrimitiveId": "1d6034c9636c4e6a",
+        "designator": "U4",
+        "primitiveId": "1d6034c9636c4e6ae12",
+        "padNumber": "2",
+        "status": "unsupported",
+        "reason": "POLYGON pad geometry is not supported by pcb net-path"
+      },
+      {
+        "componentPrimitiveId": "1d6034c9636c4e6a",
+        "designator": "U4",
+        "primitiveId": "1d6034c9636c4e6ae13",
+        "padNumber": "1",
+        "status": "unsupported",
+        "reason": "POLYGON pad geometry is not supported by pcb net-path"
+      },
+      {
+        "componentPrimitiveId": "1d6034c9636c4e6a",
+        "designator": "U4",
+        "primitiveId": "1d6034c9636c4e6ae14",
+        "padNumber": "4",
+        "status": "unsupported",
+        "reason": "POLYGON pad geometry is not supported by pcb net-path"
+      },
+      {
+        "componentPrimitiveId": "52a9930df4fcde16",
+        "designator": "U6",
+        "primitiveId": "52a9930df4fcde16e11",
+        "padNumber": "3",
+        "status": "unsupported",
+        "reason": "POLYGON pad geometry is not supported by pcb net-path"
+      },
+      {
+        "componentPrimitiveId": "52a9930df4fcde16",
+        "designator": "U6",
+        "primitiveId": "52a9930df4fcde16e12",
+        "padNumber": "2",
+        "status": "unsupported",
+        "reason": "POLYGON pad geometry is not supported by pcb net-path"
+      },
+      {
+        "componentPrimitiveId": "52a9930df4fcde16",
+        "designator": "U6",
+        "primitiveId": "52a9930df4fcde16e13",
+        "padNumber": "1",
+        "status": "unsupported",
+        "reason": "POLYGON pad geometry is not supported by pcb net-path"
+      },
+      {
+        "componentPrimitiveId": "52a9930df4fcde16",
+        "designator": "U6",
+        "primitiveId": "52a9930df4fcde16e14",
+        "padNumber": "4",
+        "status": "unsupported",
+        "reason": "POLYGON pad geometry is not supported by pcb net-path"
+      }
+    ],
+    "limitations": [
+      "16 pad(s) have captured source shapes unsupported by exact pad-contact inspection"
+    ]
+  }
+}

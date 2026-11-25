@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "units": "mil",
+  "layout": {
+    "groups": []
+  },
+  "routing": {
+    "demands": [
+      {
+        "id": "chg-iset",
+        "net": "CHG_R_ISET",
+        "widthMil": 4,
+        "from": "R6.1",
+        "to": "U3.2",
+        "maxVias": 0
+      },
+      {
+        "id": "chg-vset",
+        "net": "CHG_R_VSET",
+        "widthMil": 4,
+        "from": "R10.1",
+        "to": "U3.7",
+        "maxVias": 0
+      }
+    ]
+  }
+}

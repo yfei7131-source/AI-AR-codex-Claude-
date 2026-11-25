@@ -1,0 +1,247 @@
+{
+  "PCB1": {
+    "drcAfterStep4": {
+      "Connection Error": 320,
+      "Netlist Error": 1
+    },
+    "keptBlindVias": [
+      {
+        "pad": "C40.2",
+        "id": "891ea9d6441cee10",
+        "x": 128.7,
+        "y": 981.5999999999999,
+        "hole": 4,
+        "dia": 10,
+        "viaType": 1,
+        "rule": "BV_L5_L6",
+        "reused": true
+      },
+      {
+        "pad": "R41.2",
+        "id": "f459d4e8fea1f167",
+        "x": 202.2,
+        "y": 1345.5,
+        "hole": 4,
+        "dia": 10,
+        "viaType": 1,
+        "rule": "BV_L5_L6",
+        "reused": true
+      }
+    ],
+    "totalBoardVias": 100,
+    "appliedExtraRoutes": [
+      {
+        "net": "1V8_SYS",
+        "layer": 2,
+        "width": 6,
+        "from": "U8.3",
+        "to": "U8.5",
+        "points": [
+          [
+            29.4,
+            648.8
+          ],
+          [
+            38.6,
+            658.0
+          ],
+          [
+            38.6,
+            689.4
+          ]
+        ],
+        "createdTrackIds": [
+          "d60a341c2cb9839a",
+          "e0eeb6d755f4e817"
+        ]
+      },
+      {
+        "net": "3V3_SYS",
+        "layer": 2,
+        "width": 6,
+        "from": "R1.1",
+        "to": "R9.2",
+        "points": [
+          [
+            125.8,
+            1369.9
+          ],
+          [
+            99.8,
+            1343.9
+          ],
+          [
+            99.8,
+            1322.6
+          ]
+        ],
+        "createdTrackIds": [
+          "60f85b2c67e9e14e",
+          "ae835723047c759f"
+        ]
+      },
+      {
+        "net": "3V3_SYS",
+        "layer": 2,
+        "width": 6,
+        "from": "R16.2",
+        "to": "R24.2",
+        "points": [
+          [
+            208.0,
+            1499.6
+          ],
+          [
+            184.0,
+            1523.6
+          ],
+          [
+            166.0,
+            1523.6
+          ]
+        ],
+        "createdTrackIds": [
+          "3b47c41d2c9391f9",
+          "7a50bfff742e984c"
+        ]
+      },
+      {
+        "net": "3V3_SYS",
+        "layer": 1,
+        "width": 6,
+        "from": "U1.3",
+        "to": "U1.56",
+        "points": [
+          [
+            27.3,
+            429.1
+          ],
+          [
+            59.1,
+            460.9
+          ],
+          [
+            59.1,
+            492.4
+          ]
+        ],
+        "createdTrackIds": [
+          "f0b11055d8ef28e4",
+          "0c61bdc10ba02d7e"
+        ]
+      },
+      {
+        "net": "VSYS",
+        "layer": 2,
+        "width": 8,
+        "from": "U2.A3",
+        "to": "U2.A1",
+        "points": [
+          [
+            299.8,
+            370.7
+          ],
+          [
+            268.3,
+            370.7
+          ]
+        ],
+        "createdTrackIds": [
+          "f5992eac480f68ea"
+        ]
+      }
+    ],
+    "surgicalDeletedRedundantTracks": [
+      "08664a23d1d30c39",
+      "2fe2e4157ebf6637"
+    ],
+    "postRouteDump": "C:\\Users\\Admin（无密码）\\.gemini\\antigravity\\brain\\d7cd42cb-da01-41c6-a95f-bb27876051b6\\scratch\\PCB1-post-route.json"
+  },
+  "PCB2": {
+    "drcAfterStep4": {
+      "Connection Error": 225
+    },
+    "keptBlindVias": [
+      {
+        "pad": "C3.2",
+        "id": "6282eae36a39e1eb",
+        "x": 86,
+        "y": 511.6,
+        "hole": 4,
+        "dia": 10,
+        "viaType": 1,
+        "rule": "BV_L5_L6",
+        "reused": false
+      },
+      {
+        "pad": "Y1.2",
+        "id": "08d54e0d88ea0334",
+        "x": 77.1,
+        "y": 826.4,
+        "hole": 4,
+        "dia": 10,
+        "viaType": 1,
+        "rule": "BV_L5_L6",
+        "reused": false
+      }
+    ],
+    "totalBoardVias": 51,
+    "appliedExtraRoutes": [
+      {
+        "net": "VSYS",
+        "layer": 1,
+        "width": 10,
+        "from": "C8.1",
+        "to": "R8.1",
+        "points": [
+          [
+            19.5,
+            859.8
+          ],
+          [
+            19.5,
+            903.1
+          ]
+        ],
+        "createdTrackIds": [
+          "52bea1975b5492c5"
+        ]
+      },
+      {
+        "net": "VSYS",
+        "layer": 2,
+        "width": 10,
+        "from": "U12.4",
+        "to": "U7.4",
+        "points": [
+          [
+            111.8,
+            155.9
+          ],
+          [
+            111.8,
+            73.2
+          ]
+        ],
+        "createdTrackIds": [
+          "567ba17776fc0325"
+        ]
+      }
+    ],
+    "surgicalDeletedRedundantTracks": [],
+    "postRouteDump": "C:\\Users\\Admin（无密码）\\.gemini\\antigravity\\brain\\d7cd42cb-da01-41c6-a95f-bb27876051b6\\scratch\\PCB2-post-route.json"
+  },
+  "PCB3": {
+    "drcAfterStep4": {
+      "Connection Error": 127
+    },
+    "keptBlindVias": [],
+    "totalBoardVias": 54,
+    "appliedExtraRoutes": [],
+    "surgicalDeletedRedundantTracks": [
+      "925a965420159658",
+      "7913eac8f7c9e3ef"
+    ],
+    "postRouteDump": "C:\\Users\\Admin（无密码）\\.gemini\\antigravity\\brain\\d7cd42cb-da01-41c6-a95f-bb27876051b6\\scratch\\PCB3-post-route.json"
+  }
+}
